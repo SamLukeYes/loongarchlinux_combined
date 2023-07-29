@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sigal'')
+
+  '
+repo_checkdepends:
+- python-boto
+- brotli: python-brotli
+- python-cryptography
+- python-feedgenerator
+- python-pytest
+- python-zopfli
+repo_depends:
+- ffmpeg
+- python
+- python-blinker
+- python-click
+- python-jinja
+- python-markdown
+- python-natsort
+- python-pillow
+- python-pilkit
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools-scm
+- python-toml
+- python-wheel
+update_on:
+- alias: python
+- alpm: sigal
+  source: archpkg

@@ -1,0 +1,51 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sysdig'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- jsoncpp
+- luajit
+- curl
+- jq
+- libb64
+- grpc
+- yaml-cpp
+- zstd
+- sysdig
+- dkms
+repo_makedepends:
+- cmake
+- gtest
+- jsoncpp
+- luajit
+- curl
+- jq
+- libb64
+- grpc
+- yaml-cpp
+- re2
+update_on:
+- alias: jsoncpp
+- alpm: jsoncpp
+  provides: libjsoncpp.so
+  source: alpm
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alias: grpc
+- alpm: grpc
+  provides: libgrpc++.so
+  source: alpm
+- alpm: sysdig
+  source: alpm
+  strip_release: true
+- alpm: sysdig
+  source: archpkg

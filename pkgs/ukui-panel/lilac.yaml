@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ukui-panel'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- dconf
+- gsettings-qt
+- kwindowsystem
+- libdbusmenu-qt: libdbusmenu-qt5
+- libqtxdg
+- peony
+- ukui-biometric-auth
+- ukui-menu
+- ukui-menus
+repo_makedepends:
+- cmake
+- ninja
+- qt5-tools
+update_on:
+- alpm: ukui-panel
+  source: archpkg

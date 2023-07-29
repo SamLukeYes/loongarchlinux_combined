@@ -1,0 +1,9 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- libftdi
+- pciutils
+- libusb
+repo_makedepends:
+- meson
+update_on: []

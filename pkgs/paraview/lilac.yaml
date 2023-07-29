@@ -1,0 +1,64 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''paraview'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- boost: boost-libs
+- qt5-tools
+- qt5-svg
+- openmpi
+- ffmpeg
+- adios2
+- liblas
+- ospray
+- pdal
+- python-numpy
+- protobuf
+- cgns
+- double-conversion
+- expat
+- freetype2
+- gdal
+- gl2ps
+- glew
+- hdf5
+- jsoncpp
+- libharu
+- libxml2
+- lz4
+- xz
+- python-mpi4py
+- netcdf
+- libogg
+- libpng
+- pugixml
+- libtheora
+- libtiff
+- zlib
+- verdict
+repo_makedepends:
+- cmake
+- boost
+- mesa
+- gcc: gcc-fortran
+- ninja
+- qt5-xmlpatterns
+- cli11
+- eigen
+- utf8cpp
+update_on:
+- alias: protobuf
+- alias: jsoncpp
+- alpm: jsoncpp
+  provides: libjsoncpp.so
+  source: alpm
+- alpm: paraview
+  source: archpkg

@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''blueprint-compiler'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- pygobject: python-gobject
+repo_makedepends:
+- meson
+update_on:
+- alpm: blueprint-compiler
+  source: archpkg

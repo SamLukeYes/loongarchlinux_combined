@@ -1,0 +1,69 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''networkmanager'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- libx11
+repo_depends:
+- audit
+- bluez: bluez-libs
+- curl
+- iproute2
+- jansson
+- modemmanager: libmm-glib
+- libndp
+- libnewt
+- networkmanager: libnm
+- libpsl
+- libteam
+- mobile-broadband-provider-info
+- wpa_supplicant
+- glib2
+- nss
+- systemd: systemd-libs
+- util-linux: util-linux-libs
+- networkmanager
+repo_makedepends:
+- audit
+- bluez: bluez-libs
+- curl
+- dhcp: dhclient
+- dhcpcd
+- dnsmasq
+- git
+- glib2: glib2-docs
+- gobject-introspection
+- gtk-doc
+- iproute2
+- iptables: iptables-nft
+- iwd
+- jansson
+- modemmanager: libmm-glib
+- libndp
+- libnewt
+- libpsl
+- libteam
+- meson
+- modemmanager
+- nftables
+- nss
+- openresolv
+- pacrunner
+- perl-yaml
+- polkit
+- ppp
+- pygobject: python-gobject
+- systemd
+- vala
+- vala
+- wpa_supplicant
+update_on:
+- alpm: networkmanager
+  source: archpkg

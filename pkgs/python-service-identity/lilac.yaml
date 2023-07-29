@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-service-identity'')
+
+  '
+repo_checkdepends:
+- python-pytest-runner
+repo_depends:
+- python-attrs
+- python-pyasn1-modules
+- python-pyasn1
+- python-cryptography
+- python-six
+repo_makedepends:
+- python-setuptools
+- python-idna
+update_on:
+- alpm: python-service-identity
+  source: archpkg

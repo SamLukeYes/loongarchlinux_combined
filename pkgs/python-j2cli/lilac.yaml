@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-j2cli'')
+
+  '
+repo_checkdepends:
+- python-nose
+- python-nose-fixes
+repo_depends:
+- python
+- python-jinja
+- python-pyaml
+- python-setuptools-scm
+repo_makedepends:
+- python-build
+- python-installer
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-j2cli
+  source: archpkg

@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-fuubar'')
+
+  '
+repo_checkdepends:
+- ruby-rspec
+repo_depends:
+- ruby-rspec-core
+- ruby-ruby-progressbar
+repo_makedepends: []
+update_on:
+- alpm: ruby-fuubar
+  source: archpkg

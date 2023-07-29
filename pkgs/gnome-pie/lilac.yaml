@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-pie'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libarchive
+- libgee
+- libwnck3
+- gnome-menus
+repo_makedepends:
+- cmake
+- vala
+update_on:
+- alpm: gnome-pie
+  source: archpkg

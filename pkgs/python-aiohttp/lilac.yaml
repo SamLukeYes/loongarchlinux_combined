@@ -1,0 +1,48 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-aiohttp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-runner
+- python-pytest-mock
+- python-pytest-timeout
+- python-async_generator
+- brotli: python-brotli
+- python-pytest-xdist
+- python-pytest-forked
+- python-pytest-cov
+- python-trustme
+- python-freezegun
+- gunicorn
+- python-re-assert
+- python-proxy.py
+repo_depends:
+- python
+- python-chardet
+- python-multidict
+- python-async-timeout
+- python-yarl
+- python-attrs
+- python-charset-normalizer
+- python-aiosignal
+- python-frozenlist
+repo_makedepends:
+- git
+- cython
+- npm
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-aiohttp
+  source: archpkg

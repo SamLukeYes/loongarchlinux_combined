@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-graphviz'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-colour
+- haskell-dlist
+- haskell-fgl
+- haskell-polyparse
+- haskell-temporary
+- haskell-wl-pprint-text
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-colour
+  source: alpm
+- alpm: haskell-dlist
+  source: alpm
+- alpm: haskell-fgl
+  source: alpm
+- alpm: haskell-polyparse
+  source: alpm
+- alpm: haskell-temporary
+  source: alpm
+- alpm: haskell-wl-pprint-text
+  source: alpm
+- alpm: haskell-graphviz
+  source: archpkg

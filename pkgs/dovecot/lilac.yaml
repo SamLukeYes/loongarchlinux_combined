@@ -1,0 +1,35 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''dovecot'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- krb5
+- openssl
+- sqlite
+- mariadb: mariadb-libs
+- libsodium
+- postgresql: postgresql-libs
+- bzip2
+- lz4
+- expat
+- curl
+- pam
+- systemd: systemd-libs
+repo_makedepends:
+- libcap
+- openldap: libldap
+- lua53
+- xz
+- clucene
+- systemd
+update_on:
+- alpm: dovecot
+  source: archpkg

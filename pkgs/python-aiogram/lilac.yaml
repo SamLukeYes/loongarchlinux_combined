@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-aiogram'')
+
+  '
+repo_checkdepends:
+- python-aiohttp-socks
+- python-redis
+- python-aresponses
+- python-pytest
+- python-pytest-lazy-fixture
+- pifpaf
+- redis
+repo_depends:
+- python-aiohttp
+- python-babel
+- python-certifi
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-aiogram
+  source: archpkg

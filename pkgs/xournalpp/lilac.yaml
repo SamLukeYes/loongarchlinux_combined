@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xournalpp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- poppler: poppler-glib
+- libxml2
+- portaudio
+- libsndfile
+- lua
+- libzip
+- texlive-bin
+repo_makedepends:
+- git
+- cmake
+- doxygen
+- graphviz
+update_on:
+- alias: lua
+- alpm: xournalpp
+  source: archpkg

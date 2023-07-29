@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gtksourceview3'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- gtk3
+- libxml2
+repo_makedepends:
+- intltool
+- gobject-introspection
+- vala
+- gtk-doc
+- autoconf-archive
+- yelp-tools
+- git
+update_on:
+- alpm: gtksourceview3
+  source: archpkg

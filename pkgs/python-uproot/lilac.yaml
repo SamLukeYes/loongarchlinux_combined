@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-uproot'')
+
+  '
+repo_checkdepends:
+- python-pkgconfig
+- python-pandas
+- python-pytest-runner
+- python-requests
+- python-dask
+- python-matplotlib
+- python-hist
+- python-scikit-hep-testdata
+- python-xxhash
+- root
+- xrootd
+repo_depends:
+- python-cachetools
+- python-lz4
+- python-numpy
+- python-zstandard
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-wheel
+- python-sphinx
+- python-sphinx_rtd_theme
+update_on:
+- alpm: python-uproot
+  source: archpkg

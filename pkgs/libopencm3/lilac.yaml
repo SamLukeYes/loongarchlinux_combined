@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libopencm3'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- arm-none-eabi-newlib
+repo_makedepends:
+- git
+- arm-none-eabi-gcc
+- python-yaml
+update_on:
+- alpm: libopencm3
+  source: archpkg

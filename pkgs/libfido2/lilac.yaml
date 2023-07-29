@@ -1,0 +1,19 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- glibc
+- openssl
+- libcbor
+- hidapi
+- systemd: systemd-libs
+- zlib
+repo_makedepends:
+- cmake
+- systemd
+update_on:
+- alpm: libcbor
+  provides: libcbor.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libudev.so
+  source: alpm

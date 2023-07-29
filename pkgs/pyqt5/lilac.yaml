@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pyqt5'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-pyqt5-sip
+- qt5-base
+repo_makedepends:
+- sip
+- pyqt-builder
+- pyopengl: python-opengl
+- qt5-connectivity
+- qt5-multimedia
+- qt5-tools
+- qt5-serialport
+- qt5-speech
+- qt5-svg
+- qt5-websockets
+- qt5-x11extras
+- qt5-xmlpatterns
+- qt5-remoteobjects
+- qt5-quick3d
+- qt5-sensors
+- qt5-webchannel
+- qt5-location
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: pyqt5
+  source: archpkg

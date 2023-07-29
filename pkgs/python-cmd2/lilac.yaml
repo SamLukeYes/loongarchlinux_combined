@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-cmd2'')
+
+  '
+repo_checkdepends:
+- python-pytest-cov
+- python-pytest-mock
+- python-pytest-runner
+- python-pytest-xdist
+- vi
+repo_depends:
+- python-attrs
+- python-colorama
+- python-pyperclip
+- python-wcwidth
+repo_makedepends:
+- git
+- python-setuptools-scm
+update_on:
+- alpm: python-cmd2
+  source: archpkg

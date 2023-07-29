@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''transcode'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gawk
+- imagemagick
+- lzo
+- libdvdread
+- mjpegtools
+- libmpeg2
+- libxaw
+- a52dec
+- alsa-lib
+- libtheora
+- lame
+- libvorbis
+repo_makedepends:
+- nasm
+- x264
+- xvidcore
+update_on:
+- alpm: transcode
+  source: archpkg

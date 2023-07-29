@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-htmlmin'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python
+- python-setuptools
+- python-htmlmin
+- python
+repo_makedepends:
+- python-sphinx
+- python-setuptools
+update_on:
+- alias: python
+- alias: python
+- alpm: python-htmlmin
+  source: archpkg

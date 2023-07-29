@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''nikto'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- openssl
+- perl-net-ssleay
+- perl-json
+repo_makedepends: []
+update_on:
+- alpm: nikto
+  source: archpkg

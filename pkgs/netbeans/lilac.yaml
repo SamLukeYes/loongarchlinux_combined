@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''netbeans'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- which
+- which
+repo_makedepends:
+- ant
+- php
+- groovy
+- imagemagick
+update_on:
+- alpm: netbeans
+  source: archpkg

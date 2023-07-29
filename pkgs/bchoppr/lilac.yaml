@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''bchoppr'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- lv2lint
+repo_depends:
+- cairo
+- gcc: gcc-libs
+- glibc
+- libx11
+- cairo
+- gcc: gcc-libs
+- glibc
+- libx11
+repo_makedepends:
+- lv2
+update_on:
+- alpm: bchoppr
+  source: archpkg

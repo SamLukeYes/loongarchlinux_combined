@@ -1,0 +1,35 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-getopt-generics'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-base-compat
+- haskell-base-orphans
+- haskell-generics-sop
+- haskell-tagged
+repo_makedepends:
+- ghc
+- haskell-hspec
+- haskell-quickcheck
+- haskell-safe
+- haskell-silently
+update_on:
+- alpm: haskell-base-compat
+  source: alpm
+- alpm: haskell-base-orphans
+  source: alpm
+- alpm: haskell-generics-sop
+  source: alpm
+- alpm: haskell-tagged
+  source: alpm
+- alpm: haskell-getopt-generics
+  source: archpkg

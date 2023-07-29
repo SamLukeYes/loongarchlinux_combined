@@ -1,0 +1,34 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''zita-ajbridge'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- gcc: gcc-libs
+- glibc
+- zita-alsa-pcmi
+- zita-resampler
+repo_makedepends:
+- zita-alsa-pcmi
+- zita-resampler
+update_on:
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: zita-alsa-pcmi
+  provides: libzita-alsa-pcmi.so
+  source: alpm
+- alpm: zita-resampler
+  provides: libzita-resampler.so
+  source: alpm
+- alpm: zita-ajbridge
+  source: archpkg

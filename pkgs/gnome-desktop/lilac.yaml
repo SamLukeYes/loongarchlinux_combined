@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-desktop'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- bubblewrap
+- gsettings-desktop-schemas
+- iso-codes
+- libseccomp
+- libxkbcommon
+- systemd
+- xkeyboard-config
+- gnome-desktop: gnome-desktop-common
+- gtk3
+- gnome-desktop: gnome-desktop-common
+- gtk4
+repo_makedepends:
+- bubblewrap
+- git
+- gobject-introspection
+- gsettings-desktop-schemas
+- gtk-doc
+- gtk3
+- gtk4
+- iso-codes
+- libseccomp
+- libxkbcommon
+- meson
+- systemd
+- xkeyboard-config
+- yelp-tools
+update_on:
+- alpm: gnome-desktop
+  source: archpkg

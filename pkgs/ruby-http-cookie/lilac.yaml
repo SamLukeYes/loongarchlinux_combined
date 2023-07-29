@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-http-cookie'')
+
+  '
+repo_checkdepends:
+- ruby-rake
+- ruby-test-unit
+- ruby-sqlite3
+repo_depends:
+- ruby
+- ruby-domain_name
+repo_makedepends:
+- ruby-rdoc
+- ruby-bundler
+update_on:
+- alias: ruby
+- alpm: ruby-http-cookie
+  source: archpkg

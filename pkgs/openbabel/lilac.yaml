@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''openbabel'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libxml2
+- cairo
+- coordgen
+- python
+- openbabel
+repo_makedepends:
+- cmake
+- eigen
+- wxwidgets: wxwidgets-gtk3
+- boost
+- python
+- swig
+- maeparser
+- rapidjson
+- coordgen
+update_on:
+- alias: python
+- alpm: openbabel
+  source: archpkg

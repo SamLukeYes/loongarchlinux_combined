@@ -1,0 +1,95 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xorg-server'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libepoxy
+- libxfont2
+- pixman
+- xorg-server: xorg-server-common
+- libunwind
+- dbus
+- xf86-input-libinput
+- nettle
+- libpciaccess
+- libdrm
+- libxshmfence
+- libxcvt
+- libxfont2
+- libepoxy
+- libunwind
+- systemd: systemd-libs
+- libxv
+- pixman
+- xorg-server: xorg-server-common
+- xcb-util-image
+- xcb-util-renderutil
+- xcb-util-wm
+- xcb-util-keysyms
+- nettle
+- libtirpc
+- libxfont2
+- libunwind
+- pixman
+- xorg-server: xorg-server-common
+- xorg-xauth
+- nettle
+- libtirpc
+- systemd: systemd-libs
+- libxfont2
+- libunwind
+- libxext
+- pixman
+- xorg-server: xorg-server-common
+- nettle
+- libtirpc
+- systemd: systemd-libs
+- xkeyboard-config
+- xorg-xkbcomp
+- xorg-setxkbmap
+- xorgproto
+- mesa
+- libpciaccess
+- xorg-util-macros
+repo_makedepends:
+- xorgproto
+- pixman
+- libx11
+- mesa
+- xtrans
+- libxkbfile
+- libxfont2
+- libpciaccess
+- libxv
+- libxcvt
+- libxmu
+- libxrender
+- libxi
+- libxaw
+- libxtst
+- libxres
+- xorg-xkbcomp
+- xorg-util-macros
+- xorg-font-util
+- libepoxy
+- xcb-util
+- xcb-util-image
+- xcb-util-renderutil
+- xcb-util-wm
+- xcb-util-keysyms
+- libxshmfence
+- libunwind
+- systemd
+- meson
+- git
+update_on:
+- alpm: xorg-server
+  source: archpkg

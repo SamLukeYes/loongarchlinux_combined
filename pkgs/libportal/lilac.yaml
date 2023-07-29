@@ -1,0 +1,54 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libportal'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- libportal
+- libportal
+- libportal
+- qt5-base
+- qt5-x11extras
+repo_makedepends:
+- git
+- meson
+- gi-docgen
+- vala
+- gobject-introspection
+- gtk3
+- gtk4
+- qt5-base
+- qt5-x11extras
+- gjs
+update_on:
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: gtk3
+  provides: libgdk-3.so
+  source: alpm
+- alpm: gtk3
+  provides: libgtk-3.so
+  source: alpm
+- alpm: gtk4
+  provides: libgtk-4.so
+  source: alpm
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: libportal
+  source: archpkg

@@ -1,0 +1,14 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- glibc
+- gcc: gcc-libs
+- openssl
+- zlib
+- curl
+repo_makedepends:
+- git
+- rust
+- mdbook-linkcheck
+- curl
+update_on: []

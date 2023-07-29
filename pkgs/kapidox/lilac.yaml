@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kapidox'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-jinja
+- python-yaml
+repo_makedepends:
+- python-build
+- python-installer
+- python-wheel
+- python-setuptools
+- qt5-base
+update_on:
+- alpm: kapidox
+  source: archpkg

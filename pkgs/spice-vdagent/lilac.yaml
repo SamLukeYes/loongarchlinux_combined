@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''spice-vdagent'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- procps-ng
+repo_depends:
+- alsa-lib
+- dbus
+- glib2
+- gtk3
+- libdrm
+- libpciaccess
+- libxfixes
+- libxinerama
+- libxrandr
+- systemd
+repo_makedepends:
+- spice-protocol
+- git
+update_on:
+- alpm: spice-vdagent
+  source: archpkg

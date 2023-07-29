@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-graphql-server-core'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-graphql-core
+- python-promise
+repo_makedepends:
+- git
+- python-setuptools
+update_on:
+- alpm: python-graphql-server-core
+  source: archpkg

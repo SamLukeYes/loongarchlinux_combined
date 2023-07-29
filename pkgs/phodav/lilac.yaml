@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''phodav'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- avahi
+- glib2
+- libsoup3
+- libxml2
+- systemd
+repo_makedepends:
+- asciidoc
+- gtk-doc
+- meson
+- xmlto
+update_on:
+- alpm: phodav
+  source: archpkg

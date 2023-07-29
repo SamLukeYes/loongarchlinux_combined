@@ -1,0 +1,41 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gpgme'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libgpg-error
+- gpgme
+- qt5-base
+- gpgme
+- qt6-base
+- gpgme
+- python
+repo_makedepends:
+- gnupg
+- libgpg-error
+- python
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+- qt5-base
+- qt6-base
+- swig
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alias: python
+- alpm: gpgme
+  source: archpkg

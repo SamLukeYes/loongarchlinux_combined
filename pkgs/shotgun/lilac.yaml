@@ -1,0 +1,9 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- libxrandr
+repo_makedepends:
+- git
+- rust
+update_on: []

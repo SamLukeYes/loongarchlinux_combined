@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ki18n'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-declarative
+- iso-codes
+repo_makedepends:
+- extra-cmake-modules
+- clang
+- doxygen
+- qt5-tools
+- qt5-doc
+- python
+update_on:
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alpm: ki18n
+  source: archpkg

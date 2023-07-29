@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''s3cmd'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-dateutil
+- python-magic
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-wheel
+- python-setuptools
+update_on:
+- alpm: s3cmd
+  source: archpkg

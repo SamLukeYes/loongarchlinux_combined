@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''zeromq'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- gnutls
+- gcc: gcc-libs
+- util-linux
+- libsodium
+- libpgm
+repo_makedepends:
+- git
+- cmake
+- asciidoc
+- xmlto
+update_on:
+- alpm: zeromq
+  source: archpkg

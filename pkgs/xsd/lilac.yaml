@@ -1,0 +1,6 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- xerces-c
+repo_makedepends: []
+update_on: []

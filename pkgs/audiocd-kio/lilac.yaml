@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''audiocd-kio'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kcmutils
+- libkcddb
+- libkcompactdisc
+- lame
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+update_on:
+- alpm: audiocd-kio
+  source: archpkg

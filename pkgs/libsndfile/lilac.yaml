@@ -1,0 +1,56 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libsndfile'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- glibc
+- flac
+- lame
+- libogg
+- libvorbis
+- mpg123
+- opus
+repo_makedepends:
+- alsa-lib
+- cmake
+- flac
+- lame
+- libogg
+- libvorbis
+- mpg123
+- opus
+- python
+- sqlite
+update_on:
+- alpm: flac
+  provides: libFLAC.so
+  source: alpm
+- alpm: lame
+  provides: libmp3lame.so
+  source: alpm
+- alpm: libogg
+  provides: libogg.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbis.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbisenc.so
+  source: alpm
+- alpm: mpg123
+  provides: libmpg123.so
+  source: alpm
+- alpm: opus
+  provides: libopus.so
+  source: alpm
+- alpm: libsndfile
+  source: archpkg

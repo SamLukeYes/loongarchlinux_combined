@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-validation-selective'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-selective
+repo_makedepends:
+- ghc
+- uusi
+- haskell-doctest
+- haskell-hedgehog
+- haskell-hspec
+- haskell-hspec-hedgehog
+update_on:
+- alpm: haskell-selective
+  source: alpm
+- alpm: haskell-validation-selective
+  source: archpkg

@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libwebsockets'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- openssl
+- libuv
+- libev
+- zlib
+- glibc
+- openssl
+- libuv
+- libev
+- zlib
+repo_makedepends:
+- cmake
+- glib2
+- libcap
+update_on:
+- alpm: libcap
+  provides: libcap.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: libwebsockets
+  source: archpkg

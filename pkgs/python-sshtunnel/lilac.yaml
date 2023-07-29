@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-sshtunnel'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-mock
+- openssh
+repo_depends:
+- python
+- python-sshtunnel
+- python
+- python-paramiko
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-paramiko
+- python-setuptools
+- python-sphinx
+- python-wheel
+update_on:
+- alias: python
+- alias: python
+- alpm: python-sshtunnel
+  source: archpkg

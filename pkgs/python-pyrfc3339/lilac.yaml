@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pyrfc3339'')
+
+  '
+repo_checkdepends:
+- python-nose
+repo_depends:
+- python-pytz
+repo_makedepends:
+- python-setuptools
+- python-pytz
+update_on:
+- alpm: python-pyrfc3339
+  source: archpkg

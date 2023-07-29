@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-tenacity'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-tornado
+- python-typeguard
+repo_depends:
+- python
+repo_makedepends:
+- git
+- python-setuptools-scm
+update_on:
+- alias: python
+- alpm: python-tenacity
+  source: archpkg

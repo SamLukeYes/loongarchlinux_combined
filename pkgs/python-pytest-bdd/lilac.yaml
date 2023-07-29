@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-bdd'')
+
+  '
+repo_checkdepends:
+- python-setuptools
+repo_depends:
+- python-mako
+- python-parse
+- python-parse-type
+- python-pytest
+repo_makedepends:
+- python-build
+- python-installer
+- python-poetry-core
+update_on:
+- alpm: python-pytest-bdd
+  source: archpkg

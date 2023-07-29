@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''coin-or-lemon'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- coin-or-cbc
+- coin-or-clp
+- glpk
+repo_makedepends:
+- cmake
+- ninja
+- doxygen
+- graphviz
+- python
+update_on:
+- alpm: coin-or-lemon
+  source: archpkg

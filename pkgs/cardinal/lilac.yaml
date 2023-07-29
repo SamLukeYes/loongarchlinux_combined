@@ -1,0 +1,241 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cardinal'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- kxstudio-lv2-extensions
+- lv2
+- lv2lint
+- mod-lv2-extensions
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- cardinal: cardinal-jack
+- cardinal: cardinal-lv2
+- cardinal: cardinal-vst
+- cardinal: cardinal-vst3
+- cardinal: cardinal-data
+- dbus
+- file
+- gcc: gcc-libs
+- glibc
+- jansson
+- libarchive
+- libglvnd
+- liblo
+- libsamplerate
+- libsndfile
+- libx11
+- libxext
+- libxrandr
+- speexdsp
+- cardinal: cardinal-data
+- dbus
+- file
+- gcc: gcc-libs
+- glibc
+- jansson
+- libarchive
+- libglvnd
+- liblo
+- libsamplerate
+- libsndfile
+- libx11
+- libxext
+- libxrandr
+- speexdsp
+- hicolor-icon-theme
+- cardinal: cardinal-data
+- dbus
+- file
+- gcc: gcc-libs
+- glibc
+- jansson
+- libarchive
+- libglvnd
+- liblo
+- libsamplerate
+- libsndfile
+- libx11
+- libxext
+- libxrandr
+- speexdsp
+- cardinal: cardinal-data
+- dbus
+- file
+- gcc: gcc-libs
+- glibc
+- jansson
+- libarchive
+- libglvnd
+- liblo
+- libsamplerate
+- libsndfile
+- libx11
+- libxext
+- libxrandr
+- speexdsp
+- cardinal: cardinal-data
+- dbus
+- file
+- gcc: gcc-libs
+- glibc
+- jansson
+- libarchive
+- libglvnd
+- liblo
+- libsamplerate
+- libsndfile
+- libx11
+- libxext
+- libxrandr
+- speexdsp
+repo_makedepends:
+- cmake
+- dbus
+- file
+- gcc: gcc-libs
+- gendesk
+- git
+- glibc
+- jansson
+- libarchive
+- libglvnd
+- liblo
+- libsndfile
+- libsamplerate
+- libx11
+- libxext
+- libxrandr
+- mold
+- python
+- speexdsp
+update_on:
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: file
+  provides: libmagic.so
+  source: alpm
+- alpm: libarchive
+  provides: libarchive.so
+  source: alpm
+- alpm: cuda-tools
+  provides: libGL.so
+  source: alpm
+- alpm: liblo
+  provides: liblo.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: speexdsp
+  provides: libspeexdsp.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: file
+  provides: libmagic.so
+  source: alpm
+- alpm: libarchive
+  provides: libarchive.so
+  source: alpm
+- alpm: cuda-tools
+  provides: libGL.so
+  source: alpm
+- alpm: liblo
+  provides: liblo.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: speexdsp
+  provides: libspeexdsp.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: file
+  provides: libmagic.so
+  source: alpm
+- alpm: libarchive
+  provides: libarchive.so
+  source: alpm
+- alpm: cuda-tools
+  provides: libGL.so
+  source: alpm
+- alpm: liblo
+  provides: liblo.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: speexdsp
+  provides: libspeexdsp.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: file
+  provides: libmagic.so
+  source: alpm
+- alpm: libarchive
+  provides: libarchive.so
+  source: alpm
+- alpm: cuda-tools
+  provides: libGL.so
+  source: alpm
+- alpm: liblo
+  provides: liblo.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: speexdsp
+  provides: libspeexdsp.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: file
+  provides: libmagic.so
+  source: alpm
+- alpm: libarchive
+  provides: libarchive.so
+  source: alpm
+- alpm: cuda-tools
+  provides: libGL.so
+  source: alpm
+- alpm: liblo
+  provides: liblo.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: speexdsp
+  provides: libspeexdsp.so
+  source: alpm
+- alpm: cardinal
+  source: archpkg

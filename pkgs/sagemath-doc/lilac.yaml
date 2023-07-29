@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sagemath-doc'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-pplpy
+repo_makedepends:
+- sagemath
+- python-pyzmq
+- python-docutils
+- python-pkgconfig
+- cython
+- python-jupyter-sphinx
+- mathjax
+- python-sphinx-furo
+- python-sphinx-copybutton
+update_on:
+- alpm: sagemath-doc
+  source: archpkg

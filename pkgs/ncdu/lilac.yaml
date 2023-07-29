@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ncdu'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ncurses
+repo_makedepends:
+- zig
+update_on:
+- alpm: ncdu
+  source: archpkg

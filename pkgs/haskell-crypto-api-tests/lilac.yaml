@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-crypto-api-tests'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-test-framework-quickcheck2
+- haskell-crypto-api
+- haskell-cereal
+- haskell-test-framework
+- haskell-test-framework-hunit
+- haskell-hunit
+- haskell-quickcheck
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-test-framework-quickcheck2
+  source: alpm
+- alpm: haskell-crypto-api
+  source: alpm
+- alpm: haskell-cereal
+  source: alpm
+- alpm: haskell-test-framework
+  source: alpm
+- alpm: haskell-test-framework-hunit
+  source: alpm
+- alpm: haskell-hunit
+  source: alpm
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-crypto-api-tests
+  source: archpkg

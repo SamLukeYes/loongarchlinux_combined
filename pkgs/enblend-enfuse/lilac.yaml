@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''enblend-enfuse'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- lcms2
+- vigra
+- gsl
+- exiv2
+repo_makedepends:
+- mercurial
+- libpng
+- libtiff
+- openexr
+- zlib
+- help2man
+- boost
+update_on:
+- alpm: gsl
+  source: alpm
+  strip_release: true
+- alpm: enblend-enfuse
+  source: archpkg

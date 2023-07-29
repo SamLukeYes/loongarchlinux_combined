@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-cfn-lint'')
+
+  '
+repo_checkdepends:
+- python-pydot
+repo_depends:
+- python
+- python-yaml
+- python-aws-sam-translator
+- python-jsonpatch
+- python-jsonschema
+- python-networkx
+- python-junit-xml
+- python-jschema-to-python
+- python-sarif-om
+- python-sympy
+- python-regex
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-cfn-lint
+  source: archpkg

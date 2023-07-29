@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pop-icon-theme'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- adwaita-icon-theme
+repo_makedepends:
+- git
+- meson
+update_on:
+- alpm: pop-icon-theme
+  source: archpkg

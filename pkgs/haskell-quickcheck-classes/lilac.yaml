@@ -1,0 +1,48 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-quickcheck-classes'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-quickcheck
+- haskell-aeson
+- haskell-primitive
+- haskell-primitive-addr
+- haskell-quickcheck-classes-base
+- haskell-semigroupoids
+- haskell-semirings
+- haskell-vector
+repo_makedepends:
+- ghc
+- uusi
+- haskell-base-orphans
+- haskell-tagged
+- haskell-tasty
+- haskell-tasty-quickcheck
+update_on:
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-primitive
+  source: alpm
+- alpm: haskell-primitive-addr
+  source: alpm
+- alpm: haskell-quickcheck-classes-base
+  source: alpm
+- alpm: haskell-semigroupoids
+  source: alpm
+- alpm: haskell-semirings
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-quickcheck-classes
+  source: archpkg

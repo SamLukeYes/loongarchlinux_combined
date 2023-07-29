@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''starship'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python
+repo_depends:
+- gcc: gcc-libs
+- glibc
+repo_makedepends:
+- cmake
+- git
+- rust
+update_on:
+- alpm: starship
+  source: archpkg

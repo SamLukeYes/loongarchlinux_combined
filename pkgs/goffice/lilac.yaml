@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''goffice'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- librsvg
+- gtk3
+- libgsf
+- libspectre
+- libxslt
+- lasem
+repo_makedepends:
+- intltool
+- gtk-doc
+- gobject-introspection
+- autoconf-archive
+- git
+update_on:
+- alpm: goffice
+  source: archpkg

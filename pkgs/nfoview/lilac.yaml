@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''nfoview'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- gtk3
+- pygobject: python-gobject
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alpm: nfoview
+  source: archpkg

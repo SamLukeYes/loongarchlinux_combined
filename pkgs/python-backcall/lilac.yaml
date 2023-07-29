@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-backcall'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+repo_makedepends:
+- python-build
+- python-flit-core
+- python-installer
+update_on:
+- alias: python
+- alpm: python-backcall
+  source: archpkg

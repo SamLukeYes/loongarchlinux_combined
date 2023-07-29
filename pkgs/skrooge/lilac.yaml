@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''skrooge'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-base
+- qca: qca-qt5
+- qt5-script
+- qt5-webengine
+- qt5-xmlpatterns
+- libofx
+- grantlee
+- knewstuff
+- krunner
+- knotifyconfig
+- kparts
+- sqlcipher
+- python
+- hicolor-icon-theme
+repo_makedepends:
+- cmake
+- kdoctools
+- extra-cmake-modules
+- qt5-tools
+- kdesignerplugin
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alias: python
+- alpm: skrooge
+  source: archpkg

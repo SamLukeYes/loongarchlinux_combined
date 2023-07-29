@@ -1,0 +1,42 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-aeson-diff'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-edit-distance-vector
+- haskell-scientific
+- haskell-vector
+- haskell-optparse-applicative
+- haskell-yaml
+repo_makedepends:
+- ghc
+- haskell-glob
+- haskell-quickcheck
+- haskell-cabal-doctest
+- haskell-doctest
+- hlint
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-edit-distance-vector
+  source: alpm
+- alpm: haskell-scientific
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-yaml
+  source: alpm
+- alpm: haskell-aeson-diff
+  source: archpkg

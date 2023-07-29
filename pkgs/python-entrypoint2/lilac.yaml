@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-entrypoint2'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-easyprocess
+repo_depends:
+- python
+repo_makedepends:
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-entrypoint2
+  source: archpkg

@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-mail-gpg'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- ruby-gpgme
+- ruby-mail
+- ruby-rdoc
+repo_makedepends: []
+update_on:
+- alias: ruby
+- alpm: ruby-mail-gpg
+  source: archpkg

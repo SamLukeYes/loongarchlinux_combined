@@ -1,0 +1,8 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- pcre2
+repo_makedepends:
+- asciidoctor
+update_on: []

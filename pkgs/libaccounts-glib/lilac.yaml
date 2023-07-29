@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libaccounts-glib'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glib2
+- libxml2
+- sqlite
+repo_makedepends:
+- pygobject: python-gobject
+- gobject-introspection
+- vala
+- meson
+- check
+update_on:
+- alpm: libaccounts-glib
+  source: archpkg

@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-anyevent-i3'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl
+- perl-anyevent
+- perl-json-xs
+repo_makedepends: []
+update_on:
+- alias: perl
+- alpm: perl-anyevent-i3
+  source: archpkg

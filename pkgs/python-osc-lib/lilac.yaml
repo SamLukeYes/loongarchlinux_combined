@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-osc-lib'')
+
+  '
+repo_checkdepends:
+- python-oslotest
+- python-requests-mock
+- python-stestr
+- python-testrepository
+- python-testtools
+repo_depends:
+- python-pbr
+- python-cliff
+- python-keystoneauth1
+- python-openstacksdk
+- python-oslo-i18n
+- python-oslo-utils
+- python-simplejson
+- python-stevedore
+repo_makedepends:
+- git
+- python-setuptools
+update_on:
+- alpm: python-osc-lib
+  source: archpkg

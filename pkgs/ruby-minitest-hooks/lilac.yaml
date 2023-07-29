@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-minitest-hooks'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby-minitest
+repo_makedepends:
+- ruby-sequel
+- ruby-sqlite3
+- ruby-rake
+- ruby-minitest-global_expectations
+update_on:
+- alpm: ruby-minitest-hooks
+  source: archpkg

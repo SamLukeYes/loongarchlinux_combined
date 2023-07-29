@@ -1,0 +1,69 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hedgewars'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-base
+- sdl2
+- sdl2_mixer
+- sdl2_image
+- sdl2_net
+- sdl2_ttf
+- lua51
+- ffmpeg4.4
+- physfs
+- ghc: ghc-libs
+- haskell-entropy
+- haskell-sha
+- haskell-random
+- haskell-regex-tdfa
+- haskell-sandi
+- haskell-hslogger
+- haskell-network
+- haskell-network-bsd
+- haskell-utf8-string
+- haskell-vector
+repo_makedepends:
+- fpc
+- cmake
+- qt5-tools
+- ghc
+- haskell-bytestring-show
+- haskell-zlib
+- haskell-base-prelude
+- imagemagick
+- mesa
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: haskell-entropy
+  source: alpm
+- alpm: haskell-sha
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-regex-tdfa
+  source: alpm
+- alpm: haskell-sandi
+  source: alpm
+- alpm: haskell-hslogger
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-network-bsd
+  source: alpm
+- alpm: haskell-utf8-string
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: hedgewars
+  source: archpkg

@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-module-build-xsutil'')
+
+  '
+repo_checkdepends:
+- perl-capture-tiny
+- perl-cwd-guard
+- perl-file-copy-recursive-reduced
+repo_depends:
+- perl-devel-checkcompiler
+- perl
+repo_makedepends:
+- perl-module-build
+update_on:
+- alias: perl
+- alpm: perl-module-build-xsutil
+  source: archpkg

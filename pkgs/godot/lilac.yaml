@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''godot'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- embree3
+- freetype2
+- graphite
+- harfbuzz
+- harfbuzz: harfbuzz-icu
+- libglvnd
+- speech-dispatcher: libspeechd
+- libsquish
+- libtheora
+- libvorbis
+- libwebp
+- libwslay
+- libxcursor
+- libxi
+- libxinerama
+- libxrandr
+- mbedtls2
+- miniupnpc
+- pcre2
+repo_makedepends:
+- alsa-lib
+- pulseaudio
+- scons
+- yasm
+update_on:
+- alpm: godot
+  source: archpkg

@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''buildah'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- crun
+- skopeo
+- slirp4netns
+repo_makedepends:
+- go
+- git
+- bash-bats
+- btrfs-progs
+- lvm2: device-mapper
+- gpgme
+- libassuan
+- bzip2
+- go-md2man
+- runc
+- skopeo
+- systemd
+update_on:
+- alpm: buildah
+  source: archpkg

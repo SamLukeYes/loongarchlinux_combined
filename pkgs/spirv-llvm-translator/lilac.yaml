@@ -1,0 +1,14 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- llvm: llvm-libs
+- spirv-tools
+repo_makedepends:
+- git
+- cmake
+- llvm
+- spirv-headers
+- python
+- python-setuptools
+- clang
+update_on: []

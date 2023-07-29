@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libolm'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-aspectlib
+- python-pytest
+- python-pytest-benchmark
+repo_depends:
+- gcc: gcc-libs
+- libolm
+- python
+- python-cffi
+- python-future
+repo_makedepends:
+- git
+- cmake
+- python
+- python-build
+- python-cffi
+- python-future
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: libolm
+  provides: libolm.so
+  source: alpm
+- alpm: libolm
+  source: archpkg

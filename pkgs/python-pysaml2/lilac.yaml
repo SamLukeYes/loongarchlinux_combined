@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pysaml2'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-dateutil
+- python-defusedxml
+- python-future
+- python-importlib_resources
+- python-pycryptodomex
+- python-pyopenssl
+- python-pytz
+- python-requests
+- python-six
+- python-zope-interface
+- python-xmlschema
+- xmlsec
+repo_makedepends:
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-pysaml2
+  source: archpkg

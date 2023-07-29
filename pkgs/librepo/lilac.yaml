@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''librepo'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- check
+- gpgme: python-gpgme
+- python-pyxattr
+- python-requests
+repo_depends:
+- curl
+- glib2
+- gpgme
+- libxml2
+- openssl
+repo_makedepends:
+- cmake
+- python
+update_on:
+- alpm: librepo
+  source: archpkg

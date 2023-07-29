@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-yard'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- ruby-rdoc
+- ruby-webrick
+repo_makedepends:
+- ruby-rake
+- ruby-samus
+update_on:
+- alias: ruby
+- alpm: ruby-yard
+  source: archpkg

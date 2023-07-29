@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''shairport-sync'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- openssl
+- avahi
+- libsoxr
+- popt
+- alsa-lib
+- libconfig
+- pulseaudio: libpulse
+- mosquitto
+repo_makedepends:
+- xmltoman
+- vim
+update_on:
+- alpm: shairport-sync
+  source: archpkg

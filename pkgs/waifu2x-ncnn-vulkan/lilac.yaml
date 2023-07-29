@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''waifu2x-ncnn-vulkan'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libwebp
+- ncnn
+repo_makedepends:
+- cmake
+- glslang
+- vulkan-headers
+update_on:
+- alpm: ncnn
+  source: alpm
+- alpm: waifu2x-ncnn-vulkan
+  source: archpkg

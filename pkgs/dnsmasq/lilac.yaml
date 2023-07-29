@@ -1,0 +1,35 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''dnsmasq'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- gmp
+- libidn2
+- nftables
+- libnetfilter_conntrack
+- nettle
+repo_makedepends: []
+update_on:
+- alpm: libidn2
+  provides: libidn2.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: nettle
+  provides: libnettle.so
+  source: alpm
+- alpm: nettle
+  provides: libhogweed.so
+  source: alpm
+- alpm: dnsmasq
+  source: archpkg

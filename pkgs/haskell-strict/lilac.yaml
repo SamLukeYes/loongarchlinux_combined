@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-strict'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-assoc
+- haskell-hashable
+- haskell-these
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-assoc
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-these
+  source: alpm
+- alpm: haskell-strict
+  source: archpkg

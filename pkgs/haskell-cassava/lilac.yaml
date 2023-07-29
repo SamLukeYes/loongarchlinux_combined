@@ -1,0 +1,46 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cassava'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-attoparsec
+- haskell-hashable
+- haskell-only
+- haskell-scientific
+- haskell-text-short
+- haskell-unordered-containers
+- haskell-vector
+repo_makedepends:
+- ghc
+- haskell-hunit
+- haskell-quickcheck
+- haskell-quickcheck-instances
+- haskell-test-framework
+- haskell-test-framework-hunit
+- haskell-test-framework-quickcheck2
+update_on:
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-only
+  source: alpm
+- alpm: haskell-scientific
+  source: alpm
+- alpm: haskell-text-short
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-cassava
+  source: archpkg

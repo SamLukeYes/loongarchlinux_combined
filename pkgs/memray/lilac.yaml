@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''memray'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python
+- libunwind
+- python-rich
+- python-jinja
+- lz4
+- ipython
+repo_makedepends:
+- git
+- python-setuptools-scm
+- python-build
+- python-installer
+- python-wheel
+- cython
+- npm
+update_on:
+- alias: python
+- alpm: memray
+  source: archpkg

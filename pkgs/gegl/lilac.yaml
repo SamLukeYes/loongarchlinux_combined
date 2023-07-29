@@ -1,0 +1,47 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gegl'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- babl
+- cairo
+- gcc: gcc-libs
+- gdk-pixbuf2
+- glib2
+- glibc
+- jasper
+- json-glib
+- lcms2
+- lensfun
+- libjpeg-turbo
+- libpng
+- libraw
+- librsvg
+- libspiro
+- libtiff
+- libwebp
+- luajit
+- openexr
+- pango
+- poppler: poppler-glib
+- suitesparse
+repo_makedepends:
+- ffmpeg
+- git
+- gobject-introspection
+- libgexiv2
+- meson
+- pygobject: python-gobject
+- sdl2
+- vala
+update_on:
+- alpm: gegl
+  source: archpkg

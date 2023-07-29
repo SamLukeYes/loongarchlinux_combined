@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-setuptools-declarative-requirements'')
+
+  '
+repo_checkdepends:
+- pypiserver
+- python-pytest
+- python-pytest-shell-utilities
+- python-virtualenv
+repo_depends:
+- python-setuptools
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools-scm
+- python-toml
+- python-wheel
+update_on:
+- alpm: python-setuptools-declarative-requirements
+  source: archpkg

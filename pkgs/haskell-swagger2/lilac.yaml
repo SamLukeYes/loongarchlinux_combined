@@ -1,0 +1,78 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-swagger2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-aeson-pretty
+- haskell-base-compat-batteries
+- haskell-cookie
+- haskell-hashable
+- haskell-generics-sop
+- haskell-http-media
+- haskell-insert-ordered-containers
+- haskell-lens
+- haskell-network
+- haskell-optics-core
+- haskell-optics-th
+- haskell-quickcheck
+- haskell-scientific
+- haskell-unordered-containers
+- haskell-vector
+- haskell-uuid-types
+repo_makedepends:
+- ghc
+- haskell-hspec
+- haskell-hunit
+- haskell-quickcheck-instances
+- haskell-hspec-discover
+- haskell-doctest
+- haskell-cabal-doctest
+- haskell-glob
+- haskell-utf8-string
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-aeson-pretty
+  source: alpm
+- alpm: haskell-base-compat-batteries
+  source: alpm
+- alpm: haskell-cookie
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-generics-sop
+  source: alpm
+- alpm: haskell-http-media
+  source: alpm
+- alpm: haskell-insert-ordered-containers
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-optics-core
+  source: alpm
+- alpm: haskell-optics-th
+  source: alpm
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-scientific
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-uuid-types
+  source: alpm
+- alpm: haskell-swagger2
+  source: archpkg

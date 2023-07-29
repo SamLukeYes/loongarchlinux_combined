@@ -1,0 +1,16 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''man-pages-l10n'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- po4a
+update_on:
+- alpm: man-pages-l10n
+  source: archpkg

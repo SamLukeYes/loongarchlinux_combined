@@ -1,0 +1,59 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libsoup'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- apache
+- php: php-apache
+repo_depends:
+- brotli
+- glib-networking
+- glib2
+- krb5
+- libpsl
+- sysprof: libsysprof-capture
+- libxml2
+- sqlite
+- brotli
+- glib-networking
+- glib2
+- krb5
+- libpsl
+- sysprof: libsysprof-capture
+- libxml2
+- sqlite
+repo_makedepends:
+- git
+- gobject-introspection
+- gtk-doc
+- meson
+- samba
+- vala
+update_on:
+- alpm: brotli
+  provides: libbrotlidec.so
+  source: alpm
+- alpm: krb5
+  provides: libgssapi_krb5.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: libpsl
+  provides: libpsl.so
+  source: alpm
+- alpm: libsoup
+  source: archpkg

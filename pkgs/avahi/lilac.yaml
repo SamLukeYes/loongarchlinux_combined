@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''avahi'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- expat
+- libdaemon
+- glib2
+- libcap
+- gdbm
+- dbus
+- expat
+- libdaemon
+- glib2
+- libcap
+- gdbm
+- dbus
+repo_makedepends:
+- git
+- gobject-introspection
+- gtk3
+- qt5-base
+- xmltoman
+- pygobject: python-gobject
+- doxygen
+- graphviz
+- libevent
+update_on:
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: avahi
+  source: archpkg

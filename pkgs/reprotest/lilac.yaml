@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''reprotest'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- disorderfs
+repo_depends:
+- python-setuptools
+- python
+- python-rstr
+- diffoscope
+- fakeroot
+- python-distro
+- python-wheel
+- libfaketime
+repo_makedepends:
+- help2man
+- python-docutils
+- git
+update_on:
+- alias: python
+- alpm: reprotest
+  source: archpkg

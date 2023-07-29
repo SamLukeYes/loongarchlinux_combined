@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''reapack'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- reaper
+- libxml2
+- curl
+- sqlite
+repo_makedepends:
+- git
+- cmake
+- boost
+- openssl
+- zlib
+- ruby
+- php
+- catch2
+update_on:
+- alpm: reapack
+  source: archpkg

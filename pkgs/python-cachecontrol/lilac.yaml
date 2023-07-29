@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-cachecontrol'')
+
+  '
+repo_checkdepends:
+- python-cherrypy
+- python-lockfile
+- python-pytest
+- python-redis
+repo_depends:
+- python-msgpack
+- python-requests
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alpm: python-cachecontrol
+  source: archpkg

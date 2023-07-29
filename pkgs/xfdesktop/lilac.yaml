@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xfdesktop'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libxfce4ui
+- libwnck3
+- exo
+- thunar
+- garcon
+- hicolor-icon-theme
+repo_makedepends:
+- intltool
+update_on:
+- alpm: xfdesktop
+  source: archpkg

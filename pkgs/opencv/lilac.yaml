@@ -1,0 +1,63 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- openexr
+- gstreamer: gst-plugins-base
+- libdc1394
+- lapack: cblas
+- lapack
+- libgphoto2
+- openjpeg2
+- ffmpeg
+- protobuf
+- opencv
+- python-numpy
+- opencv
+- vtk
+- glew
+- qt6-base
+- hdf5
+- jsoncpp
+- openmpi
+- pugixml
+- fmt
+- openexr
+- gstreamer: gst-plugins-base
+- libdc1394
+- lapack: cblas
+- lapack
+- libgphoto2
+- openjpeg2
+- ffmpeg
+- protobuf
+- cudnn
+repo_makedepends:
+- cmake
+- python-numpy
+- python-setuptools
+- mesa
+- eigen
+- hdf5
+- lapack: lapacke
+- qt6-5compat
+- vtk
+- glew
+- ant
+- pugixml
+- openmpi
+- cudnn
+- fmt
+- nlohmann-json
+update_on:
+- alias: protobuf
+- alpm: opencv
+  source: alpm
+  strip_release: true
+- alpm: opencv
+  source: alpm
+  strip_release: true
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alias: jsoncpp
+- alias: protobuf

@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''bless'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk-sharp-2
+repo_makedepends:
+- meson
+- ninja
+update_on:
+- alpm: bless
+  source: archpkg

@@ -1,0 +1,9 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- libx11
+- libxpm
+repo_makedepends:
+- libxslt
+- docbook-xsl
+update_on: []

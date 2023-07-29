@@ -1,0 +1,64 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''avidemux'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libxml2
+- fontconfig
+- sqlite
+- libvpx
+- libva
+- libvdpau
+- avidemux: avidemux-cli
+- qt5-base
+- x264
+- x265
+- glu
+- libxv
+- desktop-file-utils
+repo_makedepends:
+- cmake
+- libxslt
+- qt5-base
+- libvorbis
+- libxv
+- opus
+- desktop-file-utils
+- alsa-lib
+- lame
+- xvidcore
+- faad2
+- faac
+- x264
+- x265
+- libsamplerate
+- opencore-amr
+- yasm
+- mesa
+- libvpx
+- pulseaudio: libpulse
+- libva
+- intltool
+- sqlite
+- libvdpau
+- libdca
+- fribidi
+- glu
+- qt5-tools
+- twolame
+- libfdk-aac
+- libass
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: avidemux
+  source: archpkg

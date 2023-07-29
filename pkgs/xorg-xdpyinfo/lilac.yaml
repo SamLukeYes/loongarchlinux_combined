@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xorg-xdpyinfo'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libx11
+- libxext
+- libxtst
+- libxxf86vm
+- libxrender
+- libxcomposite
+- libxinerama
+repo_makedepends:
+- xorg-util-macros
+- xorgproto
+update_on:
+- alpm: xorg-xdpyinfo
+  source: archpkg

@@ -1,0 +1,53 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''librest'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glib2
+- libxml2
+- libsoup3
+- json-glib
+- glib2
+- libxml2
+- libsoup3
+- json-glib
+- librest
+- libadwaita
+- gtksourceview5
+repo_makedepends:
+- gobject-introspection
+- git
+- meson
+- gi-docgen
+- vala
+- libadwaita
+- gtksourceview5
+update_on:
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: libxml2
+  provides: libxml2.so
+  source: alpm
+- alpm: libsoup3
+  provides: libsoup-3.0.so
+  source: alpm
+- alpm: json-glib
+  provides: libjson-glib-1.0.so
+  source: alpm
+- alpm: librest
+  source: archpkg

@@ -1,0 +1,46 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''avogadrolibs'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- molequeue
+- glew
+- spglib
+- hdf5
+- avogadro-molecules
+- avogadro-crystals
+- qt5-svg
+- libarchive
+- libmsym
+- avogadrolibs
+- vtk
+- openmpi
+- fmt
+- libxcursor
+repo_makedepends:
+- cmake
+- eigen
+- boost
+- python
+- glew
+- spglib
+- hdf5
+- mmtf-cpp
+- libmsym
+- pybind11
+- vtk
+- qt5-tools
+- qt5-svg
+- genxrdpattern
+- openmpi
+update_on:
+- alpm: avogadrolibs
+  source: archpkg

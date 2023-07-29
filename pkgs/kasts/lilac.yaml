@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kasts'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kirigami-addons
+- qt5-svg
+- qtkeychain: qtkeychain-qt5
+- syndication
+- threadweaver
+- ki18n
+- kcoreaddons
+- kconfig
+- networkmanager-qt
+- taglib
+- qt5-multimedia
+- vlc
+repo_makedepends:
+- extra-cmake-modules
+update_on:
+- alpm: kconfig
+  source: alpm
+  strip_release: true
+- alpm: kasts
+  source: archpkg

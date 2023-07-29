@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-iwlib'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python-cffi
+- wireless_tools
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-iwlib
+  source: archpkg

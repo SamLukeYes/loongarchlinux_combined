@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''usbctl'')
+
+  '
+repo_checkdepends:
+- shellcheck
+repo_depends:
+- linux-hardened
+- bash
+- usbutils
+- coreutils
+- diffutils
+- procps-ng
+- grep
+- util-linux
+repo_makedepends: []
+update_on:
+- alpm: usbctl
+  source: archpkg

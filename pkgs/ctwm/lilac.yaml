@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ctwm'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libjpeg-turbo
+- libxmu
+- libxpm
+- xorg-xrandr
+repo_makedepends:
+- cmake
+- ctags
+- doxygen
+- gendesk
+- graphviz
+- ninja
+update_on:
+- alpm: ctwm
+  source: archpkg

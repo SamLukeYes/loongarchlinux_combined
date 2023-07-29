@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-wheel'')
+
+  '
+repo_checkdepends:
+- python-jsonschema
+- python-pytest
+- python-keyring
+- python-keyrings-alt
+- python-pytest-cov
+repo_depends:
+- python-packaging
+repo_makedepends:
+- python-setuptools
+- python-build
+- python-flit-core
+- python-installer
+update_on:
+- alpm: python-wheel
+  source: archpkg

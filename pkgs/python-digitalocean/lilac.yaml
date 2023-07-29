@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-digitalocean'')
+
+  '
+repo_checkdepends:
+- python-pytest-runner
+- python-responses
+repo_depends:
+- python-requests
+- python-jsonpickle
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-digitalocean
+  source: archpkg

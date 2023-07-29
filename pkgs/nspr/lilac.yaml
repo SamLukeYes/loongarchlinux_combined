@@ -1,0 +1,8 @@
+destsubdir: core
+repo_checkdepends: []
+repo_depends:
+- glibc
+repo_makedepends:
+- zip
+- mercurial
+update_on: []

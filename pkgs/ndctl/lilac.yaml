@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ndctl'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- iniparser
+- json-c
+- keyutils
+- kmod
+- libtraceevent
+- libtracefs
+- systemd: systemd-libs
+- util-linux: util-linux-libs
+repo_makedepends:
+- asciidoctor
+- bash-completion
+- cmake
+- meson
+- systemd
+- xmlto
+update_on:
+- alpm: ndctl
+  source: archpkg

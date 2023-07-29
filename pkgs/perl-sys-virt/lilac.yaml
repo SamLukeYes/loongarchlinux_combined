@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-sys-virt'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libvirt
+- perl
+repo_makedepends:
+- perl-cpan-changes
+- perl-module-build
+- perl-xml-xpath
+- perl-test-pod
+- perl-test-pod-coverage
+update_on:
+- alias: perl
+- alpm: perl-sys-virt
+  source: archpkg

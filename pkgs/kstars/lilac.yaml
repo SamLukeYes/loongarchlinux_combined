@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kstars'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- stellarsolver
+- libraw
+- kplotting
+- knewstuff
+- knotifyconfig
+- qt5-datavis3d
+- qt5-quickcontrols
+- qt5-websockets
+- qtkeychain: qtkeychain-qt5
+- libxisf
+- libindi
+- breeze-icons
+- hicolor-icon-theme
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+- eigen
+update_on:
+- alpm: libindi
+  source: alpm
+  strip_release: true
+- alpm: kstars
+  source: archpkg

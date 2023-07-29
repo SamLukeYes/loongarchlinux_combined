@@ -1,0 +1,88 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- bubblewrap
+- cairo
+- fontconfig
+- freetype2
+- glib2
+- gstreamer: gst-plugins-bad-libs
+- gstreamer: gst-plugins-base-libs
+- gstreamer
+- harfbuzz
+- harfbuzz: harfbuzz-icu
+- icu
+- libavif
+- libdrm
+- libepoxy
+- libgcrypt
+- libpng
+- libseccomp
+- libsoup3
+- libtasn1
+- libwebp
+- libwpe
+- libxkbcommon
+- libxml2
+- libxslt
+- mesa
+- openjpeg2
+- sqlite
+- wayland
+- woff2
+- wpebackend-fdo
+- xdg-dbus-proxy
+- zlib
+- bubblewrap
+- cairo
+- fontconfig
+- freetype2
+- glib2
+- gstreamer: gst-plugins-bad-libs
+- gstreamer: gst-plugins-base-libs
+- gstreamer
+- harfbuzz
+- harfbuzz: harfbuzz-icu
+- icu
+- libavif
+- libdrm
+- libepoxy
+- libgcrypt
+- libpng
+- libseccomp
+- libsoup3
+- libtasn1
+- libwebp
+- libwpe
+- libxkbcommon
+- libxml2
+- libxslt
+- mesa
+- openjpeg2
+- sqlite
+- wayland
+- woff2
+- wpebackend-fdo
+- xdg-dbus-proxy
+- zlib
+repo_makedepends:
+- cmake
+- gi-docgen
+- gobject-introspection
+- gperf
+- gstreamer: gst-plugins-bad
+- ninja
+- python
+- ruby
+- systemd
+- unifdef
+- wayland-protocols
+update_on:
+- alias: icu
+- alias: icu
+- alpm: wpebackend-fdo
+  provides: libWPEBackend-fdo-1.0.so
+  source: alpm
+- alpm: libwpe
+  provides: libwpe-1.0.so
+  source: alpm

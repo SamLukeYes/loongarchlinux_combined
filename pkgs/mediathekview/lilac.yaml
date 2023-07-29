@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mediathekview'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bash
+- hicolor-icon-theme
+repo_makedepends:
+- maven
+- strip-nondeterminism
+update_on:
+- alpm: mediathekview
+  source: archpkg

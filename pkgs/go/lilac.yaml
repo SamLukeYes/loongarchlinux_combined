@@ -1,0 +1,7 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- git
+- go
+update_on: []

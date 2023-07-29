@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-flask-compress'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python
+- python-flask
+- brotli: python-brotli
+repo_makedepends:
+- python-setuptools
+- python-setuptools-scm
+- python-build
+- python-installer
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-flask-compress
+  source: archpkg

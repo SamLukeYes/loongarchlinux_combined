@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hamlib'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl
+- python
+- lua
+- tcl
+- libxml2
+- libusb-compat
+- libtool
+- libuhd
+- libindi
+repo_makedepends:
+- swig
+update_on:
+- alias: perl
+- alias: python
+- alias: lua
+- alpm: libindi
+  source: alpm
+  strip_release: true
+- alpm: hamlib
+  source: archpkg

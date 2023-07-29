@@ -1,0 +1,11 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- clang
+- llvm
+- cmake
+- ninja
+- python
+- spirv-llvm-translator
+update_on: []

@@ -1,0 +1,16 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libffi
+- expat
+- libxml2
+- default-cursors
+repo_makedepends:
+- meson
+- libxslt
+- doxygen
+- xmlto
+- graphviz
+- docbook-xsl
+update_on: []

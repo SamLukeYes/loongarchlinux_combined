@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ukui-session-manager'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kidletime
+- peony
+- qt5-multimedia
+- qt5-ukui-platformtheme
+- ukui-biometric-auth
+- ukui-panel
+- ukui-settings-daemon
+- ukui-screensaver
+- ukwm
+- xtrans
+repo_makedepends:
+- cmake
+- ninja
+- qt5-tools
+update_on:
+- alpm: ukui-session-manager
+  source: archpkg

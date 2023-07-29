@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''spring'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- openal
+- glew
+- zlib: minizip
+- freetype2
+- devil
+- libvorbis
+- sdl2
+- libunwind
+- libxcursor
+- curl
+- shared-mime-info
+- desktop-file-utils
+- libx11
+- jsoncpp
+repo_makedepends:
+- cmake
+- zip
+- xz
+- p7zip
+- python
+- java8-openjdk: jdk8-openjdk
+- mesa
+update_on:
+- alias: jsoncpp
+- alpm: spring
+  source: archpkg

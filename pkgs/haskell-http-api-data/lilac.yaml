@@ -1,0 +1,54 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-http-api-data'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-attoparsec
+- haskell-attoparsec-iso8601
+- haskell-base-compat
+- haskell-cookie
+- haskell-hashable
+- haskell-http-types
+- haskell-tagged
+- haskell-time-compat
+- haskell-unordered-containers
+- haskell-uuid-types
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hspec
+- haskell-hunit
+- haskell-quickcheck
+- haskell-quickcheck-instances
+update_on:
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-attoparsec-iso8601
+  source: alpm
+- alpm: haskell-base-compat
+  source: alpm
+- alpm: haskell-cookie
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-tagged
+  source: alpm
+- alpm: haskell-time-compat
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-uuid-types
+  source: alpm
+- alpm: haskell-http-api-data
+  source: archpkg

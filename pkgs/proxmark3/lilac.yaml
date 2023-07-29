@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''proxmark3'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-base
+- bluez: bluez-libs
+- jansson
+repo_makedepends:
+- arm-none-eabi-gcc
+- arm-none-eabi-newlib
+- lua52
+- python
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: proxmark3
+  source: archpkg

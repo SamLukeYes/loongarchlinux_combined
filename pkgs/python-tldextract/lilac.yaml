@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-tldextract'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-mock
+- python-pytest-pylint
+- python-responses
+- python-isort
+repo_depends:
+- python-idna
+- python-requests
+- python-requests-file
+- python-filelock
+repo_makedepends:
+- git
+- python-setuptools-scm
+update_on:
+- alpm: python-tldextract
+  source: archpkg

@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qgnomeplatform'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- qt5-wayland
+- qt5-quickcontrols2
+- adwaita-qt: adwaita-qt5
+- qgnomeplatform: adwaita-color-schemes
+- gtk3
+- qt6-wayland
+- adwaita-qt: adwaita-qt6
+- qgnomeplatform: adwaita-color-schemes
+repo_makedepends:
+- cmake
+- gtk3
+- qt5-wayland
+- qt5-quickcontrols2
+- qt6-wayland
+- adwaita-qt: adwaita-qt5
+- adwaita-qt: adwaita-qt6
+update_on:
+- alpm: qgnomeplatform
+  source: archpkg

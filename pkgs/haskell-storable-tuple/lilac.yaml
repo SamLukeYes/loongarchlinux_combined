@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-storable-tuple'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-storable-record
+- haskell-utility-ht
+- haskell-base-orphans
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-storable-record
+  source: alpm
+- alpm: haskell-utility-ht
+  source: alpm
+- alpm: haskell-base-orphans
+  source: alpm
+- alpm: haskell-storable-tuple
+  source: archpkg

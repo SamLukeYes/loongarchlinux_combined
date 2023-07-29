@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pavucontrol'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- tidy
+repo_depends:
+- gtkmm3
+- libsigc++
+- libcanberra
+- json-glib
+repo_makedepends:
+- meson
+- lynx
+- git
+update_on:
+- alpm: pavucontrol
+  source: archpkg

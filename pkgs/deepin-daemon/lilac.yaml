@@ -1,0 +1,64 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deepin-daemon'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- deepin-desktop-schemas
+- deepin-api
+- deepin-app-services
+- iso-codes
+- accountsservice
+- deepin-polkit-agent
+- deepin-polkit-agent-ext-gnomekeyring
+- deepin-desktop-base
+- fontconfig
+- noto-fonts
+- pulseaudio
+- ddcutil
+- pkgconf
+- libxfixes
+- bamf
+- deepin-session-ui
+- sudo
+- imwheel
+- libxkbfile
+- procps-ng
+- psmisc
+- libnl
+- gvfs
+- librsvg
+- mobile-broadband-provider-info
+- xdg-utils
+- systemd
+- dmidecode
+- libinput
+- lshw
+- upower
+- lsb-release
+- udisks2
+- util-linux
+repo_makedepends:
+- golang-github-linuxdeepin-go-dbus-factory
+- golang-github-nfnt-resize
+- golang-gopkg-yaml.v3
+- sqlite
+- deepin-gettext-tools
+- golang-github-fsnotify-fsnotify
+- golang-github-stretchr-testify
+- git
+- mercurial
+- pygobject: python-gobject
+- networkmanager
+- bluez
+- go
+update_on:
+- alpm: deepin-daemon
+  source: archpkg

@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-meta'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-ansi-terminal
+- haskell-call-stack
+- haskell-clock
+- haskell-quickcheck
+- haskell-quickcheck-io
+- haskell-random
+- haskell-setenv
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-ansi-terminal
+  source: alpm
+- alpm: haskell-call-stack
+  source: alpm
+- alpm: haskell-clock
+  source: alpm
+- alpm: haskell-ghc
+  source: alpm
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-quickcheck-io
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-setenv
+  source: alpm
+- alpm: haskell-hspec-meta
+  source: archpkg

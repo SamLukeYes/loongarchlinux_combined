@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pyqt6-3d'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt6-3d
+- pyqt6: python-pyqt6
+repo_makedepends:
+- sip
+- pyqt-builder
+update_on:
+- alpm: pyqt6-3d
+  source: archpkg

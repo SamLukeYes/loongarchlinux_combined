@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-async'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- ruby-console
+- ruby-nio4r
+- ruby-timers
+repo_makedepends:
+- ruby-rdoc
+update_on:
+- alias: ruby
+- alpm: ruby-async
+  source: archpkg

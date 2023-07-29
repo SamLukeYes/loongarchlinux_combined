@@ -1,0 +1,58 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kmymoney'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- aqbanking
+- gwenhywfar
+- libalkimia
+- sqlcipher
+- qt5-base
+- qt5-webengine
+- karchive
+- kcoreaddons
+- kconfig
+- kwidgetsaddons
+- ki18n
+- kcompletion
+- kcmutils
+- kitemmodels
+- kitemviews
+- kservice
+- kwallet
+- kiconthemes
+- kxmlgui
+- kidentitymanagement
+- ktextwidgets
+- knotifications
+- kio
+- kholidays
+- kactivities
+- kqtquickcharts
+- kdiagram
+- kcontacts
+- libical
+- akonadi: libakonadi
+- shared-mime-info
+- libofx
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+- doxygen
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: kconfig
+  source: alpm
+  strip_release: true
+- alpm: kmymoney
+  source: archpkg

@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-vistir'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-hypothesis-fspaths
+- python-pytest-timeout
+- python-requests
+repo_depends:
+- python-colorama
+repo_makedepends:
+- python-setuptools
+- python-wheel
+update_on:
+- alpm: python-vistir
+  source: archpkg

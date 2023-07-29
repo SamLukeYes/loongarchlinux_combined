@@ -1,0 +1,50 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pycapnp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- python
+- gcc: gcc-libs
+- glibc
+- python
+- capnproto
+repo_makedepends:
+- git
+- capnproto
+- cython
+- python-build
+- python-installer
+- python-pkgconfig
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alias: python
+- alpm: capnproto
+  provides: libkj.so
+  source: alpm
+- alpm: capnproto
+  provides: libkj-async.so
+  source: alpm
+- alpm: capnproto
+  provides: libcapnpc.so
+  source: alpm
+- alpm: capnproto
+  provides: libcapnp.so
+  source: alpm
+- alpm: capnproto
+  provides: libcapnp-rpc.so
+  source: alpm
+- alpm: python-pycapnp
+  source: archpkg

@@ -1,0 +1,16 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- libgcrypt
+- libsecret
+- openssh
+- p11-kit
+repo_makedepends:
+- gi-docgen
+- git
+- gobject-introspection
+- libxslt
+- meson
+- vala
+update_on: []

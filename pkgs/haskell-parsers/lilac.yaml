@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-parsers'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-attoparsec
+- haskell-base-orphans
+- haskell-charset
+- haskell-scientific
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- haskell-quickcheck
+- haskell-quickcheck-instances
+update_on:
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-base-orphans
+  source: alpm
+- alpm: haskell-charset
+  source: alpm
+- alpm: haskell-scientific
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-parsers
+  source: archpkg

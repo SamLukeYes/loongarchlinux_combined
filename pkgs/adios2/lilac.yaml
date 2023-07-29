@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''adios2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- blosc
+- bzip2
+- glibc
+- gcc: gcc-libs
+- hdf5
+- libfabric
+- libpng
+- nlohmann-json
+- openmpi
+- pugixml
+- pybind11
+- sz
+- yaml-cpp
+- zeromq
+- zfp
+- zlib
+repo_makedepends:
+- cmake
+- gcc: gcc-fortran
+- gtest
+- python
+- python-mpi4py
+- python-numpy
+update_on:
+- alpm: adios2
+  source: archpkg

@@ -1,0 +1,121 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-clash-lib'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-aeson-pretty
+- haskell-ansi-terminal
+- haskell-async
+- haskell-attoparsec
+- haskell-base16-bytestring
+- haskell-clash-prelude
+- haskell-concurrent-supply
+- haskell-cryptohash-sha256
+- haskell-data-binary-ieee754
+- haskell-data-default
+- haskell-dlist
+- haskell-extra
+- haskell-glob
+- haskell-hashable
+- haskell-src-meta
+- haskell-hint
+- haskell-interpolate
+- haskell-lens
+- haskell-ordered-containers
+- haskell-pretty-show
+- haskell-prettyprinter
+- haskell-primitive
+- haskell-stringsearch
+- haskell-temporary
+- haskell-terminal-size
+- haskell-trifecta
+- haskell-unordered-containers
+- haskell-vector
+- haskell-vector-binary-instances
+- haskell-yaml
+repo_makedepends:
+- ghc
+- uusi
+- haskell-ghc-typelits-knownnat
+- haskell-quickcheck-text
+- haskell-src-exts
+- haskell-tasty
+- haskell-tasty-hunit
+- haskell-tasty-quickcheck
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-aeson-pretty
+  source: alpm
+- alpm: haskell-ansi-terminal
+  source: alpm
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-base16-bytestring
+  source: alpm
+- alpm: haskell-clash-prelude
+  source: alpm
+- alpm: haskell-concurrent-supply
+  source: alpm
+- alpm: haskell-cryptohash-sha256
+  source: alpm
+- alpm: haskell-data-binary-ieee754
+  source: alpm
+- alpm: haskell-data-default
+  source: alpm
+- alpm: haskell-dlist
+  source: alpm
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-ghc
+  source: alpm
+- alpm: haskell-glob
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-src-meta
+  source: alpm
+- alpm: haskell-hint
+  source: alpm
+- alpm: haskell-interpolate
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-ordered-containers
+  source: alpm
+- alpm: haskell-pretty-show
+  source: alpm
+- alpm: haskell-prettyprinter
+  source: alpm
+- alpm: haskell-primitive
+  source: alpm
+- alpm: haskell-stringsearch
+  source: alpm
+- alpm: haskell-temporary
+  source: alpm
+- alpm: haskell-terminal-size
+  source: alpm
+- alpm: haskell-trifecta
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-vector-binary-instances
+  source: alpm
+- alpm: haskell-yaml
+  source: alpm
+- alpm: haskell-clash-lib
+  source: archpkg

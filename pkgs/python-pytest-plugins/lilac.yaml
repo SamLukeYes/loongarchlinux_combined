@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-plugins'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-pytest
+- python-pytest
+- python-execnet
+- python-mock
+- python-termcolor
+- python-pytest-plugins: python-pytest-fixture-config
+- python-pytest-plugins: python-pytest-shutil
+- python-virtualenv
+repo_makedepends:
+- python-pytest
+- python-setuptools-git
+- python-pypandoc
+- python-execnet
+- python-mock
+- python-virtualenv
+- python-termcolor
+update_on:
+- alpm: python-pytest-plugins
+  source: archpkg

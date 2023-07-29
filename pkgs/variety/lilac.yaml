@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''variety'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- imagemagick
+- libgexiv2
+- libnotify
+- python-beautifulsoup4
+- python-cairo
+- python-configobj
+- dbus-python
+- pygobject: python-gobject
+- python-httplib2
+- python-pillow
+- python-lxml
+- python-pycurl
+- python-requests
+repo_makedepends:
+- python-distutils-extra
+update_on:
+- alpm: variety
+  source: archpkg

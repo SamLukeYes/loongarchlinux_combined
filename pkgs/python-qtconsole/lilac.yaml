@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-qtconsole'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-qt
+- python-flaky
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- python-ipykernel
+- python-ipython-genutils
+- python-traitlets
+- python-pygments
+- pyqt5: python-pyqt5
+- python-pyzmq
+- python-qtpy
+- qt5-svg
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-qtconsole
+  source: archpkg

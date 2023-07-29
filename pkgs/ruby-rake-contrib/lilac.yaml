@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rake-contrib'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby-rake
+repo_makedepends:
+- ruby-minitest
+update_on:
+- alpm: ruby-rake-contrib
+  source: archpkg

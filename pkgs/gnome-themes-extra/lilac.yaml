@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-themes-extra'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cantarell-fonts
+repo_makedepends:
+- intltool
+- gtk2
+- gtk3
+- git
+update_on:
+- alpm: gnome-themes-extra
+  source: archpkg

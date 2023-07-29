@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-blosc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-numpy
+- python-psutil
+repo_depends:
+- python
+- blosc
+repo_makedepends:
+- python-scikit-build
+- ninja
+update_on:
+- alias: python
+- alpm: python-blosc
+  source: archpkg

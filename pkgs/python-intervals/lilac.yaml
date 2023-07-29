@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-intervals'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python
+- python-infinity
+repo_makedepends:
+- python
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-intervals
+  source: archpkg

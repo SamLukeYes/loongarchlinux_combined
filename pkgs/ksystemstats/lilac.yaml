@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ksystemstats'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libksysguard
+repo_makedepends:
+- extra-cmake-modules
+- networkmanager-qt
+update_on:
+- alpm: ksystemstats
+  source: archpkg

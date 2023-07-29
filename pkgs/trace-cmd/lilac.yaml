@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''trace-cmd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- glibc
+repo_makedepends:
+- asciidoc
+- audit
+- bash-completion
+- cunit
+- libtraceevent
+- libtracefs
+- python
+- swig
+- xmlto
+- zstd
+update_on:
+- alpm: audit
+  provides: libaudit.so
+  source: alpm
+- alpm: libtraceevent
+  provides: libtraceevent.so
+  source: alpm
+- alpm: libtracefs
+  provides: libtracefs.so
+  source: alpm
+- alpm: zstd
+  provides: libzstd.so
+  source: alpm
+- alpm: trace-cmd
+  source: archpkg

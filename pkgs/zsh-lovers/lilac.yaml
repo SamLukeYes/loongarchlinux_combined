@@ -1,0 +1,16 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''zsh-lovers'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- asciidoc
+update_on:
+- alpm: zsh-lovers
+  source: archpkg

@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''texworks'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- gsfonts
+- poppler-data
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- hunspell
+- texlive-bin: libsynctex
+- poppler: poppler-qt5
+- qt5-base
+- qt5-declarative
+- qt5-script
+repo_makedepends:
+- git
+- cmake
+- lua
+- python
+- qt5-tools
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alpm: poppler-qt5
+  provides: libpoppler-qt5.so
+  source: alpm
+- alpm: texworks
+  source: archpkg

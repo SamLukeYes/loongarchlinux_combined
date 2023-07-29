@@ -1,0 +1,54 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''csoundqt'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- csound: csound-doc
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- qt5-base
+- qt5-declarative
+- qt5-webengine
+- csound: csound-doc
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- qt5-base
+- qt5-declarative
+- qt5-webengine
+repo_makedepends:
+- csound
+- rtmidi
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alpm: csound
+  provides: libcsnd6.so
+  source: alpm
+- alpm: csound
+  provides: libcsound64.so
+  source: alpm
+- alpm: rtmidi
+  provides: librtmidi.so
+  source: alpm
+- alpm: csoundqt
+  source: archpkg

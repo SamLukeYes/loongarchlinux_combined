@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kjournald'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- systemd
+- kcoreaddons
+- ki18n
+- kirigami2
+repo_makedepends:
+- extra-cmake-modules
+update_on:
+- alpm: kjournald
+  source: archpkg

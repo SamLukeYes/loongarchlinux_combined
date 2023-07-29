@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''webkit2-sharp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk-sharp-3
+- webkit2gtk
+repo_makedepends:
+- git
+- libxslt
+update_on:
+- alpm: webkit2-sharp
+  source: archpkg

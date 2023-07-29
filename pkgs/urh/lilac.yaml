@@ -1,0 +1,35 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''urh'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest-runner
+- python-pytest-xdist
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- python
+- pyqt5: python-pyqt5
+- python-numpy
+- python-psutil
+- cython
+repo_makedepends:
+- gcc
+- python-setuptools
+- airspy
+- hackrf
+- libuhd
+- limesuite
+- rtl-sdr
+- bladerf
+- libiio
+update_on:
+- alias: python
+- alpm: urh
+  source: archpkg

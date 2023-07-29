@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cloud-utils'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cloud-utils: cloud-guest-utils
+- cloud-utils: cloud-image-utils
+- python
+- python
+- ca-certificates
+- cdrtools
+- qemu: qemu-img
+- wget
+repo_makedepends: []
+update_on:
+- alias: python
+- alias: python
+- alpm: cloud-utils
+  source: archpkg

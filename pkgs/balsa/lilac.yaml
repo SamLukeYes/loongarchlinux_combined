@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''balsa'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gmime3
+- webkit2gtk
+- libical
+- libnotify
+- gpgme
+- gtksourceview4
+- gspell
+repo_makedepends:
+- yelp-tools
+- intltool
+update_on:
+- alpm: balsa
+  source: archpkg

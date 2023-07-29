@@ -1,0 +1,33 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''btrfs-progs'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- util-linux: util-linux-libs
+- lzo
+- zlib
+- zstd
+- libgcrypt
+- systemd: systemd-libs
+repo_makedepends:
+- git
+- asciidoc
+- xmlto
+- systemd
+- python
+- python-setuptools
+- e2fsprogs
+- reiserfsprogs
+- python-sphinx
+update_on:
+- alpm: btrfs-progs
+  source: archpkg

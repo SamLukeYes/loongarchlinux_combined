@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''postgis'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- postgresql
+- gdal
+- geos
+- json-c
+- libxml2
+- proj
+- protobuf-c
+- pcre2
+repo_makedepends:
+- clang
+- llvm
+update_on:
+- alpm: postgis
+  source: archpkg

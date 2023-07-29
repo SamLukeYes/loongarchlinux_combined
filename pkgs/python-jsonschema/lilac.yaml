@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-jsonschema'')
+
+  '
+repo_checkdepends:
+- python-pip
+- python-twisted
+- python-isoduration
+- python-fqdn
+- python-idna
+- python-jsonpointer
+- python-rfc3339-validator
+- python-rfc3987
+- python-uri-template
+- python-webcolors
+repo_depends:
+- python
+- python-attrs
+- python-pyrsistent
+- python-typing_extensions
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-wheel
+- python-hatchling
+- python-hatch-vcs
+- python-hatch-fancy-pypi-readme
+update_on:
+- alias: python
+- alpm: python-jsonschema
+  source: archpkg

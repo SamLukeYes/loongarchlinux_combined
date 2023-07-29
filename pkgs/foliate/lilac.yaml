@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''foliate'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gjs
+- iso-codes
+- webkit2gtk
+repo_makedepends:
+- meson
+- ninja
+- gettext
+update_on:
+- alpm: foliate
+  source: archpkg

@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-attr_extras'')
+
+  '
+repo_checkdepends:
+- ruby-m
+- ruby-minitest
+- ruby-rake
+repo_depends:
+- ruby
+repo_makedepends:
+- git
+update_on:
+- alias: ruby
+- alpm: ruby-attr_extras
+  source: archpkg

@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-xml-rss'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl-datetime
+- perl-datetime-format-mail
+- perl-datetime-format-w3cdtf
+- perl-html-parser
+- perl-xml-parser
+repo_makedepends: []
+update_on:
+- alpm: perl-xml-rss
+  source: archpkg

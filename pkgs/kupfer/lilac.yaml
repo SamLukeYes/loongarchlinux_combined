@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kupfer'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libkeybinder3
+- libwnck3
+- python-cairo
+- pygobject: python-gobject
+- python-setproctitle
+repo_makedepends:
+- intltool
+- itstool
+- python-docutils
+update_on:
+- alpm: kupfer
+  source: archpkg

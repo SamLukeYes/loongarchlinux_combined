@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-ujson'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-six
+- python-pytest
+repo_depends:
+- python
+repo_makedepends:
+- python-setuptools-scm
+- python-wheel
+- python-build
+- python-installer
+update_on:
+- alias: python
+- alpm: python-ujson
+  source: archpkg

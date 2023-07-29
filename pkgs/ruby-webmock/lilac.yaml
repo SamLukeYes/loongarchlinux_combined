@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-webmock'')
+
+  '
+repo_checkdepends:
+- ruby-rake
+- ruby-minitest
+- ruby-test-unit
+- ruby-rspec
+repo_depends:
+- ruby
+- ruby-crack
+- ruby-hashdiff
+- ruby-addressable
+repo_makedepends:
+- ruby-rdoc
+update_on:
+- alias: ruby
+- alpm: ruby-webmock
+  source: archpkg

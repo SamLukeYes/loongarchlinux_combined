@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-puremd5'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-cereal
+- haskell-crypto-api
+- haskell-tagged
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-cereal
+  source: alpm
+- alpm: haskell-crypto-api
+  source: alpm
+- alpm: haskell-tagged
+  source: alpm
+- alpm: haskell-puremd5
+  source: archpkg

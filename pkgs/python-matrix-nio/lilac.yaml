@@ -1,0 +1,45 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-matrix-nio'')
+
+  '
+repo_checkdepends:
+- python-aioresponses
+- python-atomicwrites
+- python-cachetools
+- python-faker
+- python-hpack
+- python-hyperframe
+- python-hypothesis
+- libolm: python-olm
+- python-peewee
+- python-pytest
+- python-pytest-aiohttp
+- python-pytest-asyncio
+- python-pytest-benchmark
+- python-setuptools
+repo_depends:
+- python
+- python-aiofiles
+- python-aiohttp
+- python-aiohttp-socks
+- python-future
+- python-h11
+- python-h2
+- python-jsonschema
+- python-logbook
+- python-pycryptodome
+- python-unpaddedbase64
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-poetry-core
+update_on:
+- alias: python
+- alpm: python-matrix-nio
+  source: archpkg

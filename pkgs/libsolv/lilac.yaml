@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libsolv'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bzip2
+- expat
+- rpm-tools
+- xz
+- zlib
+- zstd
+repo_makedepends:
+- cmake
+- perl
+- python
+- ruby
+- swig
+update_on:
+- alpm: libsolv
+  source: archpkg

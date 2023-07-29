@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cl-trivial-features'')
+
+  '
+repo_checkdepends:
+- sbcl
+- cl-rt
+- cl-cffi
+- cl-alexandria
+repo_depends: []
+repo_makedepends:
+- git
+update_on:
+- alpm: cl-trivial-features
+  source: archpkg

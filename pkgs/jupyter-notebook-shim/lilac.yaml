@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''jupyter-notebook-shim'')
+
+  '
+repo_checkdepends:
+- python-pytest-tornasync
+- python-pytest-jupyter
+repo_depends:
+- jupyter-server
+repo_makedepends:
+- python-build
+- python-installer
+- python-hatchling
+update_on:
+- alpm: jupyter-notebook-shim
+  source: archpkg

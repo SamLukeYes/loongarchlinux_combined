@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''fbida'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libexif
+- libepoxy
+- poppler: poppler-glib
+- libwebp
+- mesa
+repo_makedepends:
+- libxpm
+- imagemagick
+- libxpm
+- openmotif
+update_on:
+- alpm: fbida
+  source: archpkg

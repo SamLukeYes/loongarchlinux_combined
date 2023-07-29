@@ -1,0 +1,103 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gmp
+- gnutls
+- jansson
+- lcms2
+- libice
+- libotf
+- libpng
+- libsm
+- libxfixes
+- m17n-lib
+- zlib
+- gmp
+- gnutls
+- hicolor-icon-theme
+- jansson
+- lcms2
+- zlib
+repo_makedepends: []
+update_on:
+- alpm: acl
+  provides: libacl.so
+  source: alpm
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: fontconfig
+  provides: libfontconfig.so
+  source: alpm
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: gtk3
+  provides: libgdk-3.so
+  source: alpm
+- alpm: gdk-pixbuf2
+  provides: libgdk_pixbuf-2.0.so
+  source: alpm
+- alpm: giflib
+  provides: libgif.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: gpm
+  provides: libgpm.so
+  source: alpm
+- alpm: gtk3
+  provides: libgtk-3.so
+  source: alpm
+- alpm: harfbuzz
+  provides: libharfbuzz.so
+  source: alpm
+- alpm: darktable
+  provides: libjpeg.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: pango
+  provides: libpango-1.0.so
+  source: alpm
+- alpm: librsvg
+  provides: librsvg-2.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: darktable
+  provides: libtiff.so
+  source: alpm
+- alpm: libxml2
+  provides: libxml2.so
+  source: alpm
+- alpm: acl
+  provides: libacl.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: gpm
+  provides: libgpm.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: libxml2
+  provides: libxml2.so
+  source: alpm

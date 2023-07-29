@@ -1,0 +1,18 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- zlib
+- apr-util
+- pcre2
+- libnghttp2
+- openssl
+- libxcrypt
+repo_makedepends:
+- libxml2
+- lua
+- curl
+- brotli
+- jansson
+- db
+- systemd
+update_on: []

@@ -1,0 +1,45 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libffado'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- glibmm
+- hicolor-icon-theme
+- libavc1394
+- libiec61883
+- libxml++
+- gcc: gcc-libs
+- glibc
+- glibmm
+- hicolor-icon-theme
+- libavc1394
+- libiec61883
+- libxml++
+repo_makedepends:
+- alsa-lib
+- dbus-c++
+- libconfig
+- pyqt5: python-pyqt5
+- scons
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: libconfig
+  provides: libconfig++.so
+  source: alpm
+- alpm: dbus-c++
+  provides: libdbus-c++-1.so
+  source: alpm
+- alpm: libffado
+  source: archpkg

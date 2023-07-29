@@ -1,0 +1,13 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- python-sphinx
+- python-sphinxcontrib-jquery
+repo_makedepends:
+- nodejs
+- npm
+- python-setuptools-scm
+- python-build
+- python-installer
+- python-wheel
+update_on: []

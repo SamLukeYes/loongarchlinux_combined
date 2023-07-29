@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''borgmatic'')
+
+  '
+repo_checkdepends:
+- python-flexmock
+- python-pytest
+repo_depends:
+- borg
+- python-colorama
+- python-jsonschema
+- python-requests
+- python-ruamel-yaml
+- python-setuptools
+repo_makedepends:
+- python-build
+- python-installer
+- python-wheel
+update_on:
+- alpm: borgmatic
+  source: archpkg

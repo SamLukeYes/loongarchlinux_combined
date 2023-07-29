@@ -1,0 +1,4 @@
+pkgs/*/*/
+*.log
+*.tar*
+.SRCINFO

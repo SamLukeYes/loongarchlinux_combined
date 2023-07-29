@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mlt'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libebur128
+repo_makedepends:
+- cmake
+- ladspa
+- frei0r-plugins
+- libdv
+- sdl_image
+- libsamplerate
+- sox
+- ffmpeg
+- vid.stab
+- qt5-svg
+- qt6-svg
+- qt6-5compat
+- libexif
+- python
+- swig
+- movit
+- eigen
+- opencv
+- rubberband
+- gdk-pixbuf2
+- pango
+- rtaudio
+- imagemagick
+update_on:
+- alpm: mlt
+  source: archpkg

@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wasi-libc'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- git
+- llvm
+- clang
+update_on:
+- alpm: wasi-libc
+  source: archpkg

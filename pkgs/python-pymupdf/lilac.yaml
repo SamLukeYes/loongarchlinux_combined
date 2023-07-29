@@ -1,0 +1,52 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pymupdf'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-fonttools
+- python-pillow
+- python-pytest
+repo_depends:
+- glibc
+- gumbo-parser
+- jbig2dec
+- mupdf: libmupdf
+- openjpeg2
+- python
+- glibc
+- gumbo-parser
+- jbig2dec
+- mupdf: libmupdf
+- openjpeg2
+- python
+- freetype2
+- libjpeg-turbo
+repo_makedepends:
+- freetype2
+- git
+- libjpeg-turbo
+- python-build
+- python-distro
+- python-installer
+- python-setuptools
+- python-wheel
+- swig
+- systemd
+update_on:
+- alias: python
+- alias: python
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: darktable
+  provides: libjpeg.so
+  source: alpm
+- alpm: python-pymupdf
+  source: archpkg

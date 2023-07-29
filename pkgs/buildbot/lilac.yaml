@@ -1,0 +1,103 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''buildbot'')
+
+  '
+repo_checkdepends:
+- python-boto3
+- python-ldap3
+- python-lz4
+- python-treq
+- python-txrequests
+- python-moto
+- python-docker
+- python-parameterized
+- python-subunit
+- python-unidiff
+- python-psutil
+- python-ruamel-yaml
+- openssh
+- chromium
+repo_depends:
+- buildbot: buildbot-common
+- python
+- python-twisted
+- python-jinja
+- python-msgpack
+- python-zope-interface
+- python-sqlalchemy
+- python-alembic
+- python-dateutil
+- python-txaio
+- python-autobahn
+- python-pyjwt
+- python-yaml
+- python-setuptools
+- buildbot: buildbot-common
+- python
+- python-twisted
+- python-future
+- python-autobahn
+- python-msgpack
+- python-zope-interface
+- python
+- buildbot
+- python
+- buildbot
+- buildbot
+- buildbot: python-buildbot-www
+- buildbot
+- buildbot: python-buildbot-www
+- buildbot
+- buildbot: python-buildbot-www
+- buildbot
+- buildbot: python-buildbot-www
+- python-twisted
+- python
+- buildbot
+- buildbot: python-buildbot-www
+- python-klein
+- python-cairosvg
+- python-cairocffi
+- python-jinja
+- python-twisted
+- buildbot
+- buildbot: python-buildbot-www-react
+- buildbot
+- buildbot: python-buildbot-www-react
+repo_makedepends:
+- python-twisted
+- python-jinja
+- python-msgpack
+- python-zope-interface
+- python-sqlalchemy
+- python-alembic
+- python-dateutil
+- python-txaio
+- python-autobahn
+- python-pyjwt
+- python-yaml
+- python-graphql-core
+- python-hvac
+- libvirt-python
+- python-novaclient
+- python-pypugjs
+- python-aiohttp
+- python-setuptools
+- python-future
+- python-sphinx-jinja
+- python-sphinx_rtd_theme
+- git
+- yarn
+update_on:
+- alias: python
+- alias: python
+- alias: python
+- alias: python
+- alias: python
+- alpm: buildbot
+  source: archpkg

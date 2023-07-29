@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''arch-audit'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- gcc: gcc-libs
+- curl
+repo_makedepends:
+- scdoc
+update_on:
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: pacman
+  provides: libalpm.so
+  source: alpm
+- alpm: arch-audit
+  source: archpkg

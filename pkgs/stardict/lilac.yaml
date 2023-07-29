@@ -1,0 +1,12 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gtk2
+- libsigc++
+repo_makedepends:
+- enchant
+- espeak-ng
+- mariadb: mariadb-libs
+- gnome-common
+- pcre
+update_on: []

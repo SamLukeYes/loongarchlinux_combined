@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pass'')
+
+  '
+repo_checkdepends:
+- git
+repo_depends:
+- bash
+- gnupg
+- tree
+repo_makedepends:
+- git
+update_on:
+- alpm: pass
+  source: archpkg

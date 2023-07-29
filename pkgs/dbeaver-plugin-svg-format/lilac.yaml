@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''dbeaver-plugin-svg-format'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- dbeaver-plugin-batik
+repo_makedepends:
+- unzip
+update_on:
+- alpm: dbeaver-plugin-svg-format
+  source: archpkg

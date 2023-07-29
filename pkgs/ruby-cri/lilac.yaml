@@ -1,0 +1,11 @@
+destsubdir: extra
+repo_checkdepends:
+- ruby-minitest
+repo_depends:
+- ruby
+repo_makedepends:
+- ruby-rdoc
+- ruby-yard
+- ruby-rake
+update_on:
+- alias: ruby

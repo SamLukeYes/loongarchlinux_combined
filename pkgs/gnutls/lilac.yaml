@@ -1,0 +1,34 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnutls'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- net-tools
+- tpm2-tools
+repo_depends:
+- gcc: gcc-libs
+- libtasn1
+- readline
+- zlib
+- nettle
+- p11-kit
+- libidn2
+- zstd
+- libunistring
+- brotli
+repo_makedepends:
+- tpm2-tss
+update_on:
+- alias: readline
+- alpm: libidn2
+  provides: libidn2.so
+  source: alpm
+- alpm: gnutls
+  source: archpkg

@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''spamassassin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- perl-text-diff
+repo_depends:
+- openssl
+- zlib
+- re2c
+- perl-net-dns
+- perl-io-socket-ssl
+- perl-libwww
+- perl-mail-spf
+- perl-http-message
+- perl-net-http
+- perl-io-socket-inet6
+- perl-mail-dkim
+- perl-crypt-ssleay
+repo_makedepends:
+- razor
+- perl-dbi
+update_on:
+- alpm: spamassassin
+  source: archpkg

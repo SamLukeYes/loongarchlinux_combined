@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libinfinity'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gnutls
+- gsasl
+- glib2
+- libxml2
+- gobject-introspection: gobject-introspection-runtime
+repo_makedepends:
+- gtk-doc
+- gtk3
+- avahi
+- gobject-introspection
+update_on:
+- alpm: libinfinity
+  source: archpkg

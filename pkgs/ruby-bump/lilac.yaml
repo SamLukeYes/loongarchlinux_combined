@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-bump'')
+
+  '
+repo_checkdepends:
+- ruby-byebug
+- ruby-rake
+- ruby-rspec
+repo_depends:
+- ruby
+repo_makedepends:
+- git
+update_on:
+- alias: ruby
+- alpm: ruby-bump
+  source: archpkg

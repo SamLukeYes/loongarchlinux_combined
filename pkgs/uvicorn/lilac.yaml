@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''uvicorn'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-asgiref
+- python-click
+- python-h11
+- python-httptools
+- python-uvloop
+- python-websockets
+repo_makedepends:
+- git
+- python-build
+- python-hatchling
+- python-installer
+update_on:
+- alias: python
+- alpm: uvicorn
+  source: archpkg

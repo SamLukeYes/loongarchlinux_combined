@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gammaray'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- syntax-highlighting
+- qt5-tools
+- qt5-svg
+- qt5-3d
+repo_makedepends:
+- cmake
+- kcoreaddons
+- qt5-script
+- qt5-wayland
+- qt5-webengine
+- qt5-scxml
+- qt5-location
+- qt5-connectivity
+- doxygen
+- glslang
+update_on:
+- alpm: gammaray
+  source: archpkg

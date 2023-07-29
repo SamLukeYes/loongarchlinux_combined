@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-testflo'')
+
+  '
+repo_checkdepends:
+- python-testflo
+repo_depends:
+- python-coverage
+repo_makedepends:
+- git
+- python-setuptools
+update_on:
+- alpm: python-testflo
+  source: archpkg

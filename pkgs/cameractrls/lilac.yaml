@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cameractrls'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- libjpeg-turbo
+- python
+- pygobject: python-gobject
+- sdl2
+- systemd
+repo_makedepends: []
+update_on:
+- alias: python
+- alpm: cameractrls
+  source: archpkg

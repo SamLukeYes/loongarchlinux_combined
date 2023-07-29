@@ -1,0 +1,9 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- systemd: systemd-libs
+- mesa
+repo_makedepends:
+- xorg-server: xorg-server-devel
+- systemd
+update_on: []

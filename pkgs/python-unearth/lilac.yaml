@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-unearth'')
+
+  '
+repo_checkdepends:
+- python-flask
+- python-pytest
+- python-pytest-httpserver
+- python-requests-wsgi-adapter
+- python-trustme
+repo_depends:
+- python
+- python-packaging
+- python-requests
+- python-urllib3
+repo_makedepends:
+- python-build
+- python-installer
+- python-pdm-pep517
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-unearth
+  source: archpkg

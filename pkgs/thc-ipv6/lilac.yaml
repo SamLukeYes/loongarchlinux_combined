@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''thc-ipv6'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libpcap
+- openssl
+- libnetfilter_queue
+- perl
+- perl-socket6
+repo_makedepends: []
+update_on:
+- alpm: libpcap
+  provides: libpcap.so
+  source: alpm
+- alias: perl
+- alpm: thc-ipv6
+  source: archpkg

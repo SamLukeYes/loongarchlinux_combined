@@ -1,0 +1,59 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hledger-iadd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-brick0.71
+- haskell-free
+- haskell-hledger-lib
+- haskell-megaparsec
+- haskell-microlens
+- haskell-microlens-th
+- haskell-optparse-applicative
+- haskell-text-zipper
+- haskell-unordered-containers
+- haskell-vector
+- haskell-vty
+- haskell-xdg-basedir
+repo_makedepends:
+- ghc
+- uusi
+- haskell-quickcheck
+- haskell-hspec
+- haskell-hspec-discover
+update_on:
+- alpm: haskell-brick0.71
+  source: alpm
+- alpm: haskell-free
+  source: alpm
+- alpm: haskell-hledger-lib
+  source: alpm
+- alpm: haskell-megaparsec
+  source: alpm
+- alpm: haskell-microlens
+  source: alpm
+- alpm: haskell-microlens-th
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-text-zipper
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-vty
+  source: alpm
+- alpm: haskell-xdg-basedir
+  source: alpm
+- alpm: hledger-iadd
+  source: archpkg

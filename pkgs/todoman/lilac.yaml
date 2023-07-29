@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''todoman'')
+
+  '
+repo_checkdepends:
+- python-freezegun
+- python-hypothesis
+- python-pytest
+- python-pytest-runner
+repo_depends:
+- python
+- python-atomicwrites
+- python-click
+- python-click-log
+- python-dateutil
+- python-humanize
+- python-icalendar
+- python-parsedatetime
+- pyxdg: python-pyxdg
+- python-urwid
+repo_makedepends:
+- python-build
+- python-installer
+- python-sphinx-autorun
+- python-sphinx-click
+- python-sphinx_rtd_theme
+- python-setuptools
+- python-setuptools-scm
+- python-wheel
+update_on:
+- alias: python
+- alpm: todoman
+  source: archpkg

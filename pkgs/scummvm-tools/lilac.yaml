@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''scummvm-tools'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libpng
+- wxwidgets: wxwidgets-gtk3
+- flac
+- libvorbis
+repo_makedepends: []
+update_on:
+- alpm: wxwidgets-gtk3
+  source: alpm
+  strip_release: true
+- alpm: scummvm-tools
+  source: archpkg

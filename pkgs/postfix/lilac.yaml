@@ -1,0 +1,86 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''postfix'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- glibc
+- db
+- icu
+- libnsl
+- libsasl
+- openssl
+- zlib
+- glibc
+- postfix
+- tinycdb
+- glibc
+- openldap: libldap
+- postfix
+- glibc
+- lmdb
+- postfix
+- glibc
+- mariadb: mariadb-libs
+- postfix
+- glibc
+- pcre2
+- postfix
+- glibc
+- postfix
+- postgresql: postgresql-libs
+- glibc
+- postfix
+- sqlite
+repo_makedepends:
+- db
+- icu
+- openldap: libldap
+- libnsl
+- libsasl
+- lmdb
+- mariadb: mariadb-libs
+- openssl
+- pcre2
+- postgresql: postgresql-libs
+- sqlite
+- tinycdb
+- zlib
+update_on:
+- alias: icu
+- alpm: icu
+  provides: libicuuc.so
+  source: alpm
+- alpm: libnsl
+  provides: libnsl.so
+  source: alpm
+- alpm: libsasl
+  provides: libsasl2.so
+  source: alpm
+- alias: libcrypto
+- alias: libssl
+- alpm: tinycdb
+  provides: libcdb.so
+  source: alpm
+- alpm: mariadb-libs
+  provides: libmariadb.so
+  source: alpm
+- alpm: pcre2
+  provides: libpcre2-8.so
+  source: alpm
+- alpm: postgresql-libs
+  provides: libpq.so
+  source: alpm
+- alpm: sqlite
+  provides: libsqlite3.so
+  source: alpm
+- alpm: postfix
+  source: archpkg

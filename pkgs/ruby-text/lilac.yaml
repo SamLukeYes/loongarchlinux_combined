@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-text'')
+
+  '
+repo_checkdepends:
+- ruby-test-unit
+- ruby-rake
+repo_depends:
+- ruby
+repo_makedepends:
+- ruby-rdoc
+update_on:
+- alias: ruby
+- alpm: ruby-text
+  source: archpkg

@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libevdev'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+repo_makedepends:
+- python
+- check
+- valgrind
+- doxygen
+- meson
+update_on:
+- alpm: libevdev
+  source: archpkg

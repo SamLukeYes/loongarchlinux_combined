@@ -1,0 +1,72 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sagemath'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- palp
+- brial
+- cliquer
+- maxima: maxima-fas
+- gfan
+- sympow
+- nauty
+- python-rpy2
+- fpylll: python-fpylll
+- cypari2: python-cypari2
+- python-matplotlib
+- python-scipy
+- python-sympy
+- python-networkx
+- python-pplpy
+- python-sphinx
+- python-ipywidgets
+- python-memory-allocator
+- gap
+- lcalc
+- lrcalc
+- arb
+- eclib
+- gd
+- python-cvxopt
+- singular
+- linbox
+- m4rie
+- pari-galdata
+- pari-seadata-small
+- planarity
+- rankwidth
+- tachyon
+- sage-data-combinatorial_designs
+- sage-data-elliptic_curves
+- sage-data-graphs
+- sage-data-polytopes_db
+- sage-data-conway_polynomials
+- iml
+- giac
+- libhomfly
+- libbraiding
+- symmetrica
+- threejs-sage
+- python-primecountpy
+repo_makedepends:
+- cython
+- boost
+- python-jinja
+- sirocco
+- mcqd
+- coxeter
+- bliss
+- tdlib
+- python-pkgconfig
+- shared_meataxe
+update_on:
+- alpm: sagemath
+  source: archpkg

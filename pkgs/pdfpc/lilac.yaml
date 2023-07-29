@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pdfpc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- poppler: poppler-glib
+- libgee
+- gstreamer
+- gstreamer: gst-plugins-base
+- webkit2gtk
+- discount
+- libsoup
+- qrencode
+repo_makedepends:
+- cmake
+- vala
+update_on:
+- alpm: pdfpc
+  source: archpkg

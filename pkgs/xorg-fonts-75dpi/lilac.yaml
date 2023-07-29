@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xorg-fonts-75dpi'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- xorg-fonts-alias: xorg-fonts-alias-75dpi
+repo_makedepends:
+- xorg-util-macros
+- xorg-mkfontscale
+- xorg-bdftopcf
+- xorg-font-util
+update_on:
+- alpm: xorg-fonts-75dpi
+  source: archpkg

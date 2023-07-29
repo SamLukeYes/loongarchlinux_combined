@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''love'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- luajit
+- freetype2
+- mpg123
+- openal
+- libvorbis
+- libmodplug
+- sdl2
+- shared-mime-info
+- hicolor-icon-theme
+- desktop-file-utils
+- libtheora
+repo_makedepends: []
+update_on:
+- alpm: love
+  source: archpkg

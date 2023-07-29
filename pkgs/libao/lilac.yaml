@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libao'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- glibc
+- alsa-lib
+- pulseaudio: libpulse
+repo_makedepends:
+- alsa-lib
+- pulseaudio: libpulse
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: libao
+  provides: libpulse.so
+  source: alpm
+- alpm: libpulse
+  provides: libpulse-simple.so
+  source: alpm
+- alpm: libao
+  source: archpkg

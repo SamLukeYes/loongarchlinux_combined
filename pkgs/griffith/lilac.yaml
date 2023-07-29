@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''griffith'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtkspell3
+- python-chardet
+- pygobject: python-gobject
+- python-pillow
+- python-reportlab
+- python-sqlalchemy
+repo_makedepends: []
+update_on:
+- alpm: griffith
+  source: archpkg

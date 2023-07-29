@@ -1,0 +1,65 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qgis'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ocl-icd
+- proj
+- geos
+- gdal
+- expat
+- spatialindex
+- qwt
+- libzip
+- protobuf
+- zlib
+- exiv2
+- postgresql: postgresql-libs
+- libspatialite
+- zstd
+- pdal
+- qt5-base
+- qt5-svg
+- qt5-serialport
+- qt5-location
+- qt5-3d
+- qt5-declarative
+- qt5-multimedia
+- qscintilla: qscintilla-qt5
+- qtkeychain: qtkeychain-qt5
+- qca: qca-qt5
+- gsl
+- pyqt5: python-pyqt5
+- qscintilla: python-qscintilla-qt5
+- hdf5
+- netcdf
+- libxml2
+repo_makedepends:
+- cmake
+- ninja
+- opencl-clhpp
+- fcgi
+- qt5-tools
+- sip
+- pyqt-builder
+update_on:
+- alias: protobuf
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alpm: gsl
+  source: alpm
+  strip_release: true
+- alpm: qgis
+  source: archpkg

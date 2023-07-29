@@ -1,0 +1,48 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hydra'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- postgresql: postgresql-libs
+- subversion
+- libssh
+- mariadb: mariadb-libs
+- libidn
+- libfbclient
+- afpfs-ng
+- zlib
+- openssl
+- ncurses
+- pcre2
+- freerdp
+- mongo-c-driver
+repo_makedepends: []
+update_on:
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: mariadb-libs
+  provides: libmariadb.so
+  source: alpm
+- alpm: postgresql-libs
+  provides: libpq.so
+  source: alpm
+- alpm: cuda-tools
+  provides: libssh.so
+  source: alpm
+- alpm: freerdp
+  provides: libfreerdp2.so
+  source: alpm
+- alpm: freerdp
+  provides: libwinpr2.so
+  source: alpm
+- alpm: hydra
+  source: archpkg

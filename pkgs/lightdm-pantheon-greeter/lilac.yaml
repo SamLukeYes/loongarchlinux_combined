@@ -1,0 +1,50 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lightdm-pantheon-greeter'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- accountsservice
+- cairo
+- gdk-pixbuf2
+- glibc
+- libgee
+- lightdm
+- mutter
+repo_makedepends:
+- cmake
+- meson
+- git
+- libglvnd
+- vala
+update_on:
+- alpm: gtk3
+  provides: libgdk-3.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: granite
+  provides: libgranite.so
+  source: alpm
+- alpm: gtk3
+  provides: libgtk-3.so
+  source: alpm
+- alpm: libhandy
+  provides: libhandy-1.so
+  source: alpm
+- alpm: lightdm-pantheon-greeter
+  source: archpkg

@@ -1,0 +1,50 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''util-linux'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- pam
+- shadow
+- coreutils
+- systemd: systemd-libs
+- libcap-ng
+- libutempter
+- libxcrypt
+- util-linux: util-linux-libs
+- glibc
+repo_makedepends:
+- git
+- meson
+- asciidoctor
+- bash-completion
+- libcap-ng
+- libutempter
+- libxcrypt
+- python
+- systemd
+update_on:
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libudev.so
+  source: alpm
+- alpm: libxcrypt
+  provides: libcrypt.so
+  source: alpm
+- alpm: file
+  provides: libmagic.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: util-linux
+  source: archpkg

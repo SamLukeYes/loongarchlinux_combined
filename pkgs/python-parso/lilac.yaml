@@ -1,0 +1,10 @@
+destsubdir: extra
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python
+repo_makedepends:
+- python-setuptools
+- python-sphinx
+update_on:
+- alias: python

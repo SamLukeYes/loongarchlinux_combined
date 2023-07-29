@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi-cairo'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- cairo
+- haskell-gi
+- haskell-gi-base
+- haskell-gi-overloading
+repo_makedepends:
+- ghc
+- gobject-introspection
+update_on:
+- alpm: haskell-gi
+  source: alpm
+- alpm: haskell-gi-base
+  source: alpm
+- alpm: haskell-gi-overloading
+  source: alpm
+- alpm: haskell-gi-cairo
+  source: archpkg

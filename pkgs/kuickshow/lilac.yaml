@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kuickshow'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- hicolor-icon-theme
+- imlib
+- qt5-base
+- qt5-x11extras
+- kdoctools
+- ki18n
+- kiconthemes
+- kio
+- kxmlgui
+- kinit
+repo_makedepends:
+- cmake
+- docbook-xsl
+- extra-cmake-modules
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: kuickshow
+  source: archpkg

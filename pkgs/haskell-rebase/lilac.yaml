@@ -1,0 +1,74 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-rebase'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-bifunctors
+- haskell-contravariant
+- haskell-comonad
+- haskell-dlist
+- haskell-either
+- haskell-groups
+- haskell-hashable
+- haskell-invariant
+- haskell-profunctors
+- haskell-scientific
+- haskell-selective
+- haskell-semigroupoids
+- haskell-time-compat
+- haskell-unordered-containers
+- haskell-uuid-types
+- haskell-vector
+- haskell-vector-instances
+- haskell-void
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-bifunctors
+  source: alpm
+- alpm: haskell-contravariant
+  source: alpm
+- alpm: haskell-comonad
+  source: alpm
+- alpm: haskell-dlist
+  source: alpm
+- alpm: haskell-either
+  source: alpm
+- alpm: haskell-groups
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-invariant
+  source: alpm
+- alpm: haskell-profunctors
+  source: alpm
+- alpm: haskell-scientific
+  source: alpm
+- alpm: haskell-selective
+  source: alpm
+- alpm: haskell-semigroupoids
+  source: alpm
+- alpm: haskell-time-compat
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-uuid-types
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-vector-instances
+  source: alpm
+- alpm: haskell-void
+  source: alpm
+- alpm: haskell-rebase
+  source: archpkg

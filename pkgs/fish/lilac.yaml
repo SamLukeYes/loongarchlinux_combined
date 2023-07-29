@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''fish'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- expect
+- procps-ng
+repo_depends:
+- glibc
+- gcc: gcc-libs
+- ncurses
+- pcre2
+repo_makedepends:
+- cmake
+- python-sphinx
+update_on:
+- alpm: fish
+  source: archpkg

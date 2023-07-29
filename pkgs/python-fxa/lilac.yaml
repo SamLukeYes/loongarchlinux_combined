@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-fxa'')
+
+  '
+repo_checkdepends:
+- python-grequests
+- python-pyotp
+- python-pytest-cov
+- python-pytest-flake8
+- python-pytest-runner
+- python-responses
+repo_depends:
+- python-browserid
+- python-cryptography
+- python-hawkauthlib
+- python-pyjwt
+- python-requests
+- python-six
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-fxa
+  source: archpkg

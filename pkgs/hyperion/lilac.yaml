@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hyperion'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libusb
+- protobuf
+- python
+- qt5-base
+repo_makedepends:
+- cmake
+update_on:
+- alias: protobuf
+- alias: python
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: hyperion
+  source: archpkg

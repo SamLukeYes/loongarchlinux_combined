@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-bytes'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-binary-orphans
+- haskell-cereal
+- haskell-hashable
+- haskell-scientific
+- haskell-transformers-compat
+- haskell-unordered-containers
+- haskell-void
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-binary-orphans
+  source: alpm
+- alpm: haskell-cereal
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-scientific
+  source: alpm
+- alpm: haskell-transformers-compat
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-void
+  source: alpm
+- alpm: haskell-bytes
+  source: archpkg

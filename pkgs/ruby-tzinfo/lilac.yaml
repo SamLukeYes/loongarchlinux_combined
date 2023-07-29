@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-tzinfo'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- ruby-concurrent
+repo_makedepends:
+- ruby-rake
+- ruby-rdoc
+update_on:
+- alias: ruby
+- alpm: ruby-tzinfo
+  source: archpkg

@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''postorius'')
+
+  '
+repo_checkdepends:
+- mailman3
+- python-beautifulsoup4
+- python-isort
+- python-pytest
+- python-pytest-django
+- python-vcrpy
+repo_depends:
+- python-cmarkgfm
+- django: python-django
+- python-django-mailman3
+- python-mailmanclient
+- python-readme-renderer
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alpm: postorius
+  source: archpkg

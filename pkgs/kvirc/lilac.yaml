@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kvirc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- enchant
+- hicolor-icon-theme
+- qt5-multimedia
+- qt5-svg
+- qt5-x11extras
+repo_makedepends:
+- cmake
+- ninja
+- python
+update_on:
+- alpm: kvirc
+  source: archpkg

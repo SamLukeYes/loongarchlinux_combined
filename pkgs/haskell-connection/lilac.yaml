@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-connection'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-basement
+- haskell-data-default-class
+- haskell-network
+- haskell-socks
+- haskell-tls
+- haskell-x509
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-basement
+  source: alpm
+- alpm: haskell-data-default-class
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-socks
+  source: alpm
+- alpm: haskell-tls
+  source: alpm
+- alpm: haskell-x509
+  source: alpm
+- alpm: haskell-x509-store
+  source: alpm
+- alpm: haskell-x509-system
+  source: alpm
+- alpm: haskell-x509-validation
+  source: alpm
+- alpm: haskell-connection
+  source: archpkg

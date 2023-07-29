@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''iptstate'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- gcc: gcc-libs
+- ncurses
+- libnetfilter_conntrack
+repo_makedepends: []
+update_on:
+- alpm: iptstate
+  source: archpkg

@@ -1,0 +1,64 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''electron24'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- c-ares
+- gtk3
+- libevent
+- nss
+- libffi
+- wayland
+- fontconfig
+- woff2
+- aom
+- brotli
+- icu
+- dav1d
+- flac
+- snappy
+- libxml2
+- ffmpeg
+- libwebp
+- zlib: minizip
+- opus
+- harfbuzz
+- re2
+- jsoncpp
+- libxslt
+- libpng
+- freetype2
+repo_makedepends:
+- clang
+- git
+- gn
+- gperf
+- harfbuzz: harfbuzz-icu
+- http-parser
+- qt5-base
+- libnotify
+- lld
+- llvm
+- ninja
+- npm
+- pciutils
+- pipewire
+- python
+- python-httplib2
+- python-pyparsing
+- python-six
+- wget
+- yarn
+update_on:
+- alias: icu
+- alias: jsoncpp
+- alpm: electron24
+  source: archpkg

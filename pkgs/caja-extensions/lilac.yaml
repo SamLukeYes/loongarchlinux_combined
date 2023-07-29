@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''caja-extensions'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- caja
+- gettext
+- dbus-glib
+- imagemagick
+- samba
+- caja
+- caja-extensions: caja-extensions-common
+- imagemagick
+- caja
+- caja-extensions: caja-extensions-common
+- caja
+- caja-extensions: caja-extensions-common
+- dbus-glib
+- caja
+- caja-extensions: caja-extensions-common
+- samba
+- caja
+- caja-extensions: caja-extensions-common
+- caja
+- caja-extensions: caja-extensions-common
+repo_makedepends:
+- python
+update_on:
+- alpm: caja-extensions
+  source: archpkg

@@ -1,0 +1,122 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wireshark'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- c-ares
+- libmaxminddb
+- krb5
+- libgcrypt
+- libcap
+- libpcap
+- gnutls
+- glib2
+- lua52
+- libssh
+- libxml2
+- libnghttp2
+- snappy
+- lz4
+- spandsp
+- sbc
+- bcg729
+- zstd
+- zlib
+- brotli
+- speexdsp
+- opus
+- glibc
+- desktop-file-utils
+- qt5-multimedia
+- qt5-svg
+- wireshark: wireshark-cli
+- shared-mime-info
+- hicolor-icon-theme
+- xdg-utils
+- gcc: gcc-libs
+- zlib
+- libpcap
+- libgcrypt
+- libnl
+- zlib: minizip
+- speexdsp
+repo_makedepends:
+- glibc
+- cmake
+- ninja
+- c-ares
+- libmaxminddb
+- qt5-tools
+- qt5-svg
+- qt5-multimedia
+- krb5
+- libpcap
+- libssh
+- libxml2
+- libnghttp2
+- snappy
+- lz4
+- spandsp
+- gnutls
+- lua52
+- python
+- libcap
+- libnl
+- glib2
+- libgcrypt
+- sbc
+- bcg729
+- desktop-file-utils
+- libxslt
+- hicolor-icon-theme
+- zstd
+- zlib
+- gcc: gcc-libs
+- brotli
+- asciidoctor
+- doxygen
+- zlib: minizip
+- speexdsp
+- opus
+update_on:
+- alpm: libpcap
+  provides: libpcap.so
+  source: alpm
+- alpm: libcap
+  provides: libcap.so
+  source: alpm
+- alpm: brotli
+  provides: libbrotlidec.so
+  source: alpm
+- alpm: c-ares
+  provides: libcares.so
+  source: alpm
+- alpm: krb5
+  provides: libkrb5.so
+  source: alpm
+- alpm: krb5
+  provides: libk5crypto.so
+  source: alpm
+- alpm: wireshark-cli
+  provides: libwireshark.so
+  source: alpm
+- alpm: wireshark-cli
+  provides: libwiretap.so
+  source: alpm
+- alpm: wireshark-cli
+  provides: libwsutil.so
+  source: alpm
+- alpm: libpcap
+  provides: libpcap.so
+  source: alpm
+- alpm: wireshark
+  source: archpkg

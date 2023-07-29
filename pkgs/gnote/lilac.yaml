@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnote'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gspell
+- gtkmm3
+- libsecret
+- libxslt
+repo_makedepends:
+- git
+- meson
+- yelp-tools
+update_on:
+- alpm: gnote
+  source: archpkg

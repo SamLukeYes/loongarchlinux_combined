@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''stylelint-config-standard'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- stylelint
+- stylelint-config-recommended
+repo_makedepends:
+- git
+- npm
+update_on:
+- alpm: stylelint-config-standard
+  source: archpkg

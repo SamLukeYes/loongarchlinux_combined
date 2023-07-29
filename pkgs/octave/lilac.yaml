@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''octave'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fftw
+- curl
+- graphicsmagick
+- glpk
+- hdf5
+- qhull
+- arpack
+- glu
+- ghostscript
+- sundials
+- gl2ps
+- qscintilla: qscintilla-qt5
+- libsndfile
+- qt5-tools
+- qrupdate
+- pcre2
+repo_makedepends:
+- gcc: gcc-fortran
+- suitesparse
+- texinfo
+- gnuplot
+- fltk
+- portaudio
+- java-openjdk: jdk-openjdk
+- rapidjson
+update_on:
+- alpm: octave
+  source: archpkg

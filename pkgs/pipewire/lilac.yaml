@@ -1,0 +1,170 @@
+destsubdir: extra
+repo_checkdepends:
+- desktop-file-utils
+repo_depends:
+- pipewire: libpipewire
+- gcc: gcc-libs
+- pipewire: alsa-card-profiles
+- pipewire
+- pipewire
+- pipewire: pipewire-audio
+- pipewire
+- pipewire: pipewire-audio
+- pipewire
+- pipewire: pipewire-audio
+- gstreamer: gst-plugins-base-libs
+- pipewire
+- openssl
+- pipewire
+- pipewire
+- libx11
+- libxfixes
+- pipewire
+- pipewire: pipewire-audio
+repo_makedepends:
+- alsa-lib
+- avahi
+- bluez: bluez-libs
+- dbus
+- doxygen
+- git
+- glib2
+- graphviz
+- gstreamer: gst-plugins-base
+- libcamera
+- libcanberra
+- libfdk-aac
+- libfreeaptx
+- liblc3
+- libldac
+- libmysofa
+- pulseaudio: libpulse
+- libsndfile
+- libusb
+- libx11
+- libxfixes
+- lilv
+- meson
+- ncurses
+- opus
+- python-docutils
+- readline
+- rtkit
+- sbc
+- sdl2
+- systemd
+- tinycompress
+- valgrind
+- webrtc-audio-processing
+update_on:
+- alpm: libcamera
+  provides: libcamera-base.so
+  source: alpm
+- alpm: darktable
+  provides: libcamera.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: libpipewire
+  provides: libpipewire-0.3.so
+  source: alpm
+- alpm: readline
+  provides: libreadline.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libudev.so
+  source: alpm
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: bluez-libs
+  provides: libbluetooth.so
+  source: alpm
+- alpm: libfdk-aac
+  provides: libfdk-aac.so
+  source: alpm
+- alpm: libfreeaptx
+  provides: libfreeaptx.so
+  source: alpm
+- alpm: liblc3
+  provides: liblc3.so
+  source: alpm
+- alpm: libldac
+  provides: libldacBT_enc.so
+  source: alpm
+- alpm: lilv
+  provides: liblilv-0.so
+  source: alpm
+- alpm: libmysofa
+  provides: libmysofa.so
+  source: alpm
+- alpm: opus
+  provides: libopus.so
+  source: alpm
+- alpm: libpipewire
+  provides: libpipewire-0.3.so
+  source: alpm
+- alpm: sbc
+  provides: libsbc.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: tinycompress
+  provides: libtinycompress.so
+  source: alpm
+- alpm: libusb
+  provides: libusb-1.0.so
+  source: alpm
+- alpm: webrtc-audio-processing
+  provides: libwebrtc_audio_processing.so
+  source: alpm
+- alpm: libpipewire
+  provides: libpipewire-0.3.so
+  source: alpm
+- alpm: avahi
+  provides: libavahi-client.so
+  source: alpm
+- alpm: avahi
+  provides: libavahi-common.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: libpipewire
+  provides: libpipewire-0.3.so
+  source: alpm
+- alpm: libao
+  provides: libpulse.so
+  source: alpm
+- alpm: libpipewire
+  provides: libpipewire-0.3.so
+  source: alpm
+- alpm: avahi
+  provides: libavahi-client.so
+  source: alpm
+- alpm: avahi
+  provides: libavahi-common.so
+  source: alpm
+- alpm: libpipewire
+  provides: libpipewire-0.3.so
+  source: alpm
+- alpm: libpipewire
+  provides: libpipewire-0.3.so
+  source: alpm
+- alpm: libcanberra
+  provides: libcanberra.so
+  source: alpm
+- alpm: libpipewire
+  provides: libpipewire-0.3.so
+  source: alpm

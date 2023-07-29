@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-google-auth'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-mock
+- python-requests
+- python-flask
+- python-oauth2client
+- python-pytest-localserver
+- python-cryptography
+- python-freezegun
+- python-responses
+- python-pyopenssl
+- python-pyu2f
+repo_depends:
+- python-cachetools
+- python-certifi
+- python-pyasn1-modules
+- python-rsa
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-google-auth
+  source: archpkg

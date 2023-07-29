@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-logger'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- telepathy-glib
+- sqlite
+- libxml2
+- dconf
+repo_makedepends:
+- intltool
+- gobject-introspection
+- libxslt
+- python
+update_on:
+- alpm: telepathy-logger
+  source: archpkg

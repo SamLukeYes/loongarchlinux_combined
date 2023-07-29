@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ktikz'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- poppler: poppler-qt5
+- poppler: poppler-qt5
+- kparts
+- ktexteditor
+repo_makedepends:
+- cmake
+- extra-cmake-modules
+- qt5-base
+- qt5-tools
+- kdoctools
+- kxmlgui
+- ktexteditor
+- kparts
+- kiconthemes
+- poppler
+- poppler: poppler-qt5
+update_on:
+- alpm: ktikz
+  source: archpkg

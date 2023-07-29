@@ -1,0 +1,21 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- bzip2
+- gcc: gcc-libs
+- glibc
+- rust
+- maturin
+- python
+repo_makedepends:
+- bzip2
+- gcc: gcc-libs
+- git
+- glibc
+- python-build
+- python-installer
+- python-setuptools
+- python-setuptools-rust
+- python-wheel
+update_on:
+- alias: python

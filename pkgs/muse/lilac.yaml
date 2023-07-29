@@ -1,0 +1,108 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''muse'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- python
+- pyqt5: python-pyqt5
+- python-pyro
+- python-six
+- qt5-base
+- qt5-svg
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- python
+- pyqt5: python-pyqt5
+- python-pyro
+- python-six
+- qt5-base
+- qt5-svg
+- alsa-lib
+- fluidsynth
+- glib2
+- libinstpatch
+- lilv
+- liblo
+- liblrdf
+- rtaudio
+- rubberband
+- libsamplerate
+- libsndfile
+repo_makedepends:
+- alsa-lib
+- cmake
+- dssi
+- fluidsynth
+- glib2
+- ladspa
+- liblo
+- liblrdf
+- libsamplerate
+- libsndfile
+- lilv
+- lv2
+- qt5-tools
+- rtaudio
+- rubberband
+update_on:
+- alias: python
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alias: python
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: fluidsynth
+  provides: libfluidsynth.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: libinstpatch
+  provides: libinstpatch-1.0.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: lilv
+  provides: liblilv-0.so
+  source: alpm
+- alpm: liblo
+  provides: liblo.so
+  source: alpm
+- alpm: liblrdf
+  provides: liblrdf.so
+  source: alpm
+- alpm: rtaudio
+  provides: librtaudio.so
+  source: alpm
+- alpm: rubberband
+  provides: librubberband.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: muse
+  source: archpkg

@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''engrampa'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- gzip
+- gettext
+- libarchive
+- tar
+- unzip
+- zip
+repo_makedepends:
+- caja
+- itstool
+- python
+update_on:
+- alpm: engrampa
+  source: archpkg

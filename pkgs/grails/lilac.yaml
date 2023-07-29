@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''grails'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bash
+- junit
+repo_makedepends:
+- junit
+- setconf
+- unzip
+update_on:
+- alpm: grails
+  source: archpkg

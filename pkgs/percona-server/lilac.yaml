@@ -1,0 +1,58 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''percona-server'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- zlib
+- zstd
+- openssl
+- libfido2
+- percona-server: libperconaserverclient
+- zlib
+- zstd
+- lz4
+- openssl
+- jemalloc
+- readline
+- libaio
+- pam
+- jemalloc
+- numactl
+- lz4
+- zstd
+- openssl
+- libtirpc
+- curl
+- libevent
+- protobuf
+- icu
+repo_makedepends:
+- cmake
+- zlib
+- lz4
+- zstd
+- libaio
+- pam
+- numactl
+- jemalloc
+- openssl
+- rpcsvc-proto
+- doxygen
+- graphviz
+- libevent
+- protobuf
+- libfido2
+update_on:
+- alias: readline
+- alias: protobuf
+- alias: icu
+- alpm: percona-server
+  source: archpkg

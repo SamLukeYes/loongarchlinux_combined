@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mate-polkit'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- polkit
+- gettext
+repo_makedepends:
+- accountsservice
+- gobject-introspection
+update_on:
+- alpm: mate-polkit
+  source: archpkg

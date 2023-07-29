@@ -1,0 +1,45 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hindent'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-monad-loops
+- haskell-optparse-applicative
+- haskell-path
+- haskell-path-io
+- haskell-src-exts
+- haskell-unix-compat
+- haskell-utf8-string
+- haskell-yaml
+repo_makedepends:
+- ghc
+- haskell-diff
+- haskell-hspec
+update_on:
+- alpm: haskell-monad-loops
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-path
+  source: alpm
+- alpm: haskell-path-io
+  source: alpm
+- alpm: haskell-src-exts
+  source: alpm
+- alpm: haskell-unix-compat
+  source: alpm
+- alpm: haskell-utf8-string
+  source: alpm
+- alpm: haskell-yaml
+  source: alpm
+- alpm: hindent
+  source: archpkg

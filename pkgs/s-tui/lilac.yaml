@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''s-tui'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- stress
+- python
+- python-urwid
+- python-psutil
+repo_makedepends:
+- python-setuptools
+update_on:
+- alias: python
+- alpm: s-tui
+  source: archpkg

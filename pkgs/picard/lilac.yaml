@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''picard'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- glibc
+- hicolor-icon-theme
+- python-dateutil
+- python-discid
+- python-fasteners
+- python-markdown
+- python-mutagen
+- python-pyjwt
+- pyqt5: python-pyqt5
+- python-yaml
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alpm: picard
+  source: archpkg

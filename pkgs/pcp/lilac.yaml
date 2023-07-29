@@ -1,0 +1,81 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pcp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- perl
+- avahi
+- procps-ng
+- which
+- libuv
+- inetutils
+- pcp
+- qt5-svg
+- pcp
+- perl-libwww
+- pcp
+- bcc: python-bcc
+- pcp
+- perl-libwww
+- perl-xml-libxml
+- perl-file-slurp
+- pcp
+- bpftrace
+- pcp
+- libvirt-python
+- python-lxml
+- pcp
+- perl-dbd-mysql
+- pcp
+- perl-libwww
+- pcp
+- perl-yaml-libyaml
+- perl-json
+- pcp
+- python-requests
+- pcp
+- libvarlink
+- pcp
+- python-psycopg2
+- pcp
+- perl-net-snmp
+repo_makedepends:
+- avahi
+- procps-ng
+- which
+- libuv
+- rsync
+- llvm
+- debugedit
+- qt5-svg
+- python-openpyxl
+- python-jsonpointer
+- python-six
+- libvirt-python
+- python-lxml
+- python-requests
+- bpftrace
+- bcc: python-bcc
+- perl-net-snmp
+- perl-libwww
+- perl-xml-libxml
+- perl-file-slurp
+- perl-yaml-libyaml
+- perl-json
+- perl-dbd-mysql
+- python-psycopg2
+- libvarlink
+update_on:
+- alias: python
+- alias: perl
+- alpm: pcp
+  source: archpkg

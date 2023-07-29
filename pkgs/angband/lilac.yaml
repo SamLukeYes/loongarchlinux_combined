@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''angband'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- sdl2
+- sdl2_ttf
+- sdl2_image
+- sdl2_mixer
+- ncurses
+- xorg-fonts-misc
+- xorg-mkfontscale
+- hicolor-icon-theme
+repo_makedepends:
+- git
+- python-docutils
+update_on:
+- alpm: angband
+  source: archpkg

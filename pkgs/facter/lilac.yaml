@@ -1,0 +1,76 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''facter'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- ruby-rake
+- ruby-diff-lcs
+- ruby-mocha
+- ruby-rspec-support
+- ruby-rspec-core
+- ruby-rspec-expectations
+- ruby-rspec-mocks
+- ruby-rspec
+repo_depends:
+- yaml-cpp
+- boost: boost-libs
+- curl
+- libwhereami
+- cpp-hocon
+- systemd: systemd-libs
+- leatherman
+- openssl
+- gcc: gcc-libs
+- glibc
+- util-linux: util-linux-libs
+- ruby
+- yaml-cpp
+- dmidecode
+- pciutils
+- virt-what
+repo_makedepends:
+- boost
+- cmake
+- python
+- rapidjson
+update_on:
+- alpm: libwhereami
+  provides: libwhereami.so
+  source: alpm
+- alpm: cpp-hocon
+  provides: libcpp-hocon.so
+  source: alpm
+- alpm: leatherman
+  provides: leatherman_curl.so
+  source: alpm
+- alpm: leatherman
+  provides: leatherman_ruby.so
+  source: alpm
+- alpm: leatherman
+  provides: leatherman_execution.so
+  source: alpm
+- alpm: leatherman
+  provides: leatherman_file_util.so
+  source: alpm
+- alpm: leatherman
+  provides: leatherman_util.so
+  source: alpm
+- alpm: leatherman
+  provides: leatherman_logging.so
+  source: alpm
+- alpm: leatherman
+  provides: leatherman_locale.so
+  source: alpm
+- alias: ruby
+- alpm: util-linux-libs
+  provides: libblkid.so
+  source: alpm
+- alpm: facter
+  source: archpkg

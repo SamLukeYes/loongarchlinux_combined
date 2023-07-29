@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sratom'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- lv2
+repo_makedepends:
+- doxygen
+- lv2
+- meson
+- python-sphinx
+- python-sphinx-lv2-theme
+- serd
+- sord
+update_on:
+- alpm: serd
+  provides: libserd-0.so
+  source: alpm
+- alpm: sord
+  provides: libsord-0.so
+  source: alpm
+- alpm: sratom
+  source: archpkg

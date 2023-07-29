@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi-dbusmenu'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-gi-glib
+- haskell-gi-gobject
+- haskell-gi
+- haskell-gi-base
+- haskell-gi-overloading
+- libdbusmenu: libdbusmenu-glib
+repo_makedepends:
+- ghc
+- gobject-introspection
+update_on:
+- alpm: haskell-gi-glib
+  source: alpm
+- alpm: haskell-gi-gobject
+  source: alpm
+- alpm: haskell-gi
+  source: alpm
+- alpm: haskell-gi-base
+  source: alpm
+- alpm: haskell-gi-overloading
+  source: alpm
+- alpm: haskell-gi-dbusmenu
+  source: archpkg

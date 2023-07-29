@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''iotop'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+repo_makedepends: []
+update_on:
+- alias: python
+- alpm: iotop
+  source: archpkg

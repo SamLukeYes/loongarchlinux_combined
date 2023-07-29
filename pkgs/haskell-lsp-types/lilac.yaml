@@ -1,0 +1,61 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lsp-types'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-data-default
+- haskell-diff
+- haskell-dlist
+- haskell-hashable
+- haskell-lens
+- haskell-mod
+- haskell-network-uri
+- haskell-safe
+- haskell-scientific
+- haskell-some
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- uusi
+- haskell-quickcheck
+- haskell-hspec
+- haskell-hspec-discover
+- haskell-quickcheck-instances
+- haskell-tuple
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-data-default
+  source: alpm
+- alpm: haskell-diff
+  source: alpm
+- alpm: haskell-dlist
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-mod
+  source: alpm
+- alpm: haskell-network-uri
+  source: alpm
+- alpm: haskell-safe
+  source: alpm
+- alpm: haskell-scientific
+  source: alpm
+- alpm: haskell-some
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-lsp-types
+  source: archpkg

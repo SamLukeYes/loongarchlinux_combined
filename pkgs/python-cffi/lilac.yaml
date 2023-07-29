@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-cffi'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest-runner
+repo_depends:
+- python-pycparser
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-cffi
+  source: archpkg

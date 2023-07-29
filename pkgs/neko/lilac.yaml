@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''neko'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gc
+- gtk3
+- mariadb: mariadb-libs
+- mbedtls2
+- sqlite
+repo_makedepends:
+- apache
+- apr
+- cmake
+- git
+- ninja
+update_on:
+- alpm: neko
+  source: archpkg

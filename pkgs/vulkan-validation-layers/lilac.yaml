@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''vulkan-validation-layers'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- vulkan-icd-loader
+- vulkan-headers
+- libx11
+repo_makedepends:
+- cmake
+- python-lxml
+- libxrandr
+- wayland
+- git
+update_on:
+- alpm: vulkan-validation-layers
+  source: archpkg

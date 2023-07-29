@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-soap-lite'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl
+- perl-crypt-ssleay
+- perl-mime-lite
+- perl-libwww
+- perl-uri
+- perl-mime-tools
+- perl-io-socket-ssl
+- perl-xml-parser
+- perl-fcgi
+- perl-class-inspector
+repo_makedepends: []
+update_on:
+- alias: perl
+- alpm: perl-soap-lite
+  source: archpkg

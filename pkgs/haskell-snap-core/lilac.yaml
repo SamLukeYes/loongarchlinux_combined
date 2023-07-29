@@ -1,0 +1,77 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-snap-core'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-old-locale
+- haskell-hunit
+- haskell-attoparsec
+- haskell-case-insensitive
+- haskell-lifted-base
+- haskell-io-streams
+- haskell-hashable
+- haskell-monad-control
+- haskell-random
+- haskell-readable
+- haskell-regex-posix
+- haskell-transformers-base
+- haskell-unix-compat
+- haskell-unordered-containers
+- haskell-vector
+- haskell-network
+- haskell-network-uri
+repo_makedepends:
+- ghc
+- uusi
+- haskell-quickcheck
+- haskell-parallel
+- haskell-test-framework
+- haskell-test-framework-hunit
+- haskell-test-framework-quickcheck2
+- haskell-zlib
+update_on:
+- alpm: haskell-old-locale
+  source: alpm
+- alpm: haskell-hunit
+  source: alpm
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-case-insensitive
+  source: alpm
+- alpm: haskell-lifted-base
+  source: alpm
+- alpm: haskell-io-streams
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-monad-control
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-readable
+  source: alpm
+- alpm: haskell-regex-posix
+  source: alpm
+- alpm: haskell-transformers-base
+  source: alpm
+- alpm: haskell-unix-compat
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-network-uri
+  source: alpm
+- alpm: haskell-snap-core
+  source: archpkg

@@ -1,0 +1,35 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pythia8'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bash
+- gcc: gcc-libs
+- glibc
+- openmp
+- python
+- zlib
+- gcc: gcc-libs
+- glibc
+- pythia8
+repo_makedepends:
+- fastjet
+- hepmc
+- hepmc2
+- lhapdf
+- openmp
+- python
+- root
+- zlib
+update_on:
+- alias: python
+- alpm: pythia8
+  source: archpkg

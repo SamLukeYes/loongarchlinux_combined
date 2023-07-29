@@ -1,0 +1,48 @@
+destsubdir: extra
+repo_checkdepends:
+- gstreamer: gst-libav
+- gstreamer: gst-plugins-base
+- gstreamer: gst-plugins-good
+- pygobject: python-gobject
+- python-tappy
+repo_depends:
+- exempi
+- giflib
+- gstreamer: gst-plugins-base-libs
+- libcue
+- libexif
+- libgexiv2
+- libgrss
+- libgsf
+- libgxps
+- libiptcdata
+- networkmanager: libnm
+- libosinfo
+- libseccomp
+- poppler: poppler-glib
+- tracker3
+- upower
+- exempi
+- giflib
+- gstreamer: gst-plugins-base-libs
+- libcue
+- libexif
+- libgexiv2
+- libgrss
+- libgsf
+- libgxps
+- libiptcdata
+- networkmanager: libnm
+- libosinfo
+- libseccomp
+- poppler: poppler-glib
+- tracker3
+- upower
+repo_makedepends:
+- asciidoc
+- git
+- meson
+update_on:
+- alpm: tracker3
+  provides: libtracker-sparql-3.0.so
+  source: alpm

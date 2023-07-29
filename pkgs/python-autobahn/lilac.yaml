@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-autobahn'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-asyncio
+repo_depends:
+- python-cffi
+- python-twisted
+- python-txaio
+- python-wsaccel
+- python-cryptography
+repo_makedepends:
+- python-argon2_cffi
+- python-cbor2
+- flatbuffers: python-flatbuffers
+- python-msgpack
+- python-passlib
+- python-pynacl
+- python-pytrie
+- python-setuptools
+- python-ubjson
+update_on:
+- alpm: python-autobahn
+  source: archpkg

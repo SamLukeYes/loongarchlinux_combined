@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-bv-sized'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-bitwise
+- haskell-panic
+- haskell-parameterized-utils
+- haskell-random
+- haskell-th-lift
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hedgehog
+- haskell-monadrandom
+- haskell-tasty
+- haskell-tasty-hedgehog
+update_on:
+- alpm: haskell-bitwise
+  source: alpm
+- alpm: haskell-panic
+  source: alpm
+- alpm: haskell-parameterized-utils
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-th-lift
+  source: alpm
+- alpm: haskell-bv-sized
+  source: archpkg

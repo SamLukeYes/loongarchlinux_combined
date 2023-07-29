@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-clocks'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- geoclue
+- geocode-glib: geocode-glib-2
+- gnome-desktop: gnome-desktop-4
+- gsound
+- gtk4
+- libadwaita
+- libgweather-4
+repo_makedepends:
+- git
+- gobject-introspection
+- meson
+- vala
+- yelp-tools
+update_on:
+- alpm: gnome-clocks
+  source: archpkg

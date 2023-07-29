@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''glibmm-2.68'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- glib-networking
+repo_depends:
+- glib2
+- libsigc++-3.0
+- glib2
+- libsigc++-3.0
+repo_makedepends:
+- git
+- meson
+- mm-common
+- perl-xml-parser
+- clang
+update_on:
+- alpm: libsigc++-3.0
+  provides: libsigc-3.0.so
+  source: alpm
+- alpm: glibmm-2.68
+  source: archpkg

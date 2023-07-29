@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''graphene'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- pygobject: python-gobject
+- python-tappy
+repo_depends: []
+repo_makedepends:
+- git
+- gtk-doc
+- gobject-introspection
+- meson
+- glib2
+update_on:
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: graphene
+  source: archpkg

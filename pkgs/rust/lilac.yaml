@@ -1,0 +1,22 @@
+destsubdir: extra
+repo_checkdepends:
+- gdb
+- procps-ng
+repo_depends:
+- curl
+- gcc
+- gcc: gcc-libs
+- libssh2
+- llvm: llvm-libs
+- rust
+repo_makedepends:
+- cmake
+- libffi
+- lld
+- llvm
+- ninja
+- perl
+- python
+- rust
+- wasi-libc
+update_on: []

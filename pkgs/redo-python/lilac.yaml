@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''redo-python'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+repo_makedepends:
+- git
+- python-beautifulsoup4
+- python-markdown
+update_on:
+- alias: python
+- alpm: redo-python
+  source: archpkg

@@ -1,0 +1,46 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''audacious-plugins'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- alsa-lib
+- curl
+- dbus-glib
+- faad2
+- ffmpeg
+- flac
+- fluidsynth
+- lame
+- libcdio-paranoia
+- libcue
+- libmms
+- libmodplug
+- libmtp
+- pulseaudio: libpulse
+- libnotify
+- libsamplerate
+- libsidplayfp
+- libvorbis
+- lirc
+- mpg123
+- neon
+- wavpack
+- libbs2b
+- libopenmpt
+- libcddb
+- qt5-x11extras
+- opusfile
+- pipewire: libpipewire
+repo_makedepends:
+- meson
+update_on:
+- alpm: audacious-plugins
+  source: archpkg

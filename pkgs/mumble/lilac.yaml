@@ -1,0 +1,117 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mumble'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- qt5-base
+- gcc: gcc-libs
+- glibc
+- qt5-base
+- alsa-lib
+- avahi
+- hicolor-icon-theme
+- protobuf
+- pulseaudio: libpulse
+- libsndfile
+- speech-dispatcher: libspeechd
+- libx11
+- libxi
+- openssl
+- opus
+- poco
+- qt5-svg
+- rnnoise
+- speexdsp
+- xdg-utils
+- gcc: gcc-libs
+- glibc
+- qt5-base
+- avahi
+- libcap
+- openssl
+- protobuf
+- zeroc-ice
+repo_makedepends:
+- avahi
+- boost
+- cmake
+- openssl
+- protobuf
+- python
+- qt5-tools
+- alsa-lib
+- hicolor-icon-theme
+- lib32-gcc-libs
+- pulseaudio: libpulse
+- libsndfile
+- speech-dispatcher: libspeechd
+- libx11
+- libxi
+- mesa
+- nlohmann-json
+- opus
+- poco
+- qt5-svg
+- rnnoise
+- speech-dispatcher
+- speexdsp
+- xdg-utils
+- libcap
+- systemd
+- zeroc-ice
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: avahi
+  provides: libdns_sd.so
+  source: alpm
+- alias: protobuf
+- alpm: protobuf
+  provides: libprotobuf.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alias: libcrypto
+- alias: libssl
+- alpm: opus
+  provides: libopus.so
+  source: alpm
+- alpm: speexdsp
+  provides: libspeexdsp.so
+  source: alpm
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: avahi
+  provides: libdns_sd.so
+  source: alpm
+- alpm: libcap
+  provides: libcap.so
+  source: alpm
+- alias: libcrypto
+- alias: libssl
+- alias: protobuf
+- alpm: protobuf
+  provides: libprotobuf.so
+  source: alpm
+- alpm: mumble
+  source: archpkg

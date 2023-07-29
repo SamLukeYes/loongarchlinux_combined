@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''meshroom'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- alice-vision
+- alembic
+- openimageio
+- python-psutil
+- popsift
+- pyside2
+- qt5-quickcontrols
+- qt5-quickcontrols2
+- qt5-3d
+- qt5-graphicaleffects
+- qt5-imageformats
+- qt5-location
+- qt5-svg
+- qt5-charts
+repo_makedepends:
+- git
+- cmake
+- python-idna
+- python-setuptools
+- ninja
+- boost
+- coin-or-lemon
+update_on:
+- alpm: meshroom
+  source: archpkg

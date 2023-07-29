@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cpp-hocon'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python
+repo_depends:
+- boost: boost-libs
+- gcc: gcc-libs
+- glibc
+- leatherman
+repo_makedepends:
+- boost
+- cmake
+- leatherman
+- rapidjson
+update_on:
+- alpm: leatherman
+  provides: leatherman_util.so
+  source: alpm
+- alpm: leatherman
+  provides: leatherman_locale.so
+  source: alpm
+- alpm: cpp-hocon
+  source: archpkg

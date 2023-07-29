@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''babeltrace2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- popt
+- util-linux
+- glib2
+- elfutils
+repo_makedepends:
+- popt
+- util-linux
+- glib2
+- elfutils
+- asciidoc
+- xmlto
+update_on:
+- alpm: babeltrace2
+  source: archpkg

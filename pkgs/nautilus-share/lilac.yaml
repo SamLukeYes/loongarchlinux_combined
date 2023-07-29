@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''nautilus-share'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- nautilus
+- samba
+repo_makedepends:
+- intltool
+- meson
+update_on:
+- alpm: nautilus-share
+  source: archpkg

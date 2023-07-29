@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''arandr'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- python-cairo
+- pygobject: python-gobject
+- xorg-xrandr
+repo_makedepends:
+- python-docutils
+update_on:
+- alpm: arandr
+  source: archpkg

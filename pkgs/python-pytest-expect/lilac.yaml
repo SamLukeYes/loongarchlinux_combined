@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-expect'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-pytest
+- python-u-msgpack
+repo_makedepends:
+- python-setuptools
+- python-pytest
+- python-u-msgpack
+update_on:
+- alpm: python-pytest-expect
+  source: archpkg

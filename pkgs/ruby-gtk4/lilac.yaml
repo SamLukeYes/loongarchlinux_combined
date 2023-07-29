@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-gtk4'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk4
+- ruby
+- ruby-atk
+- ruby-gdk4
+repo_makedepends: []
+update_on:
+- alias: ruby
+- alpm: ruby-gtk4
+  source: archpkg

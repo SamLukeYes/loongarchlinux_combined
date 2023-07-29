@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kalzium'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kparts
+- knewstuff
+- kplotting
+- kunitconversion
+- qt5-script
+- avogadrolibs: avogadrolibs-qt5
+- openbabel
+- hicolor-icon-theme
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+- eigen
+- ocaml
+- facile
+- python
+update_on:
+- alpm: kalzium
+  source: archpkg

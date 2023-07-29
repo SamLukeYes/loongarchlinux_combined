@@ -1,0 +1,34 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tamarin-prover-term'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-hunit
+- haskell-attoparsec
+- haskell-dlist
+- haskell-safe
+- haskell-tamarin-prover-utils
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-hunit
+  source: alpm
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-dlist
+  source: alpm
+- alpm: haskell-safe
+  source: alpm
+- alpm: haskell-tamarin-prover-utils
+  source: alpm
+- alpm: haskell-tamarin-prover-term
+  source: archpkg

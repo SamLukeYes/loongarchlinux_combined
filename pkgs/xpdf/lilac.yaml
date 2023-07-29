@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xpdf'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gsfonts
+- xdg-utils
+- qt5-base
+- libxt
+- libpaper
+- freetype2
+- cups: libcups
+- libjpeg-turbo
+- libtiff
+- libpng
+- zlib
+- qt5-svg
+repo_makedepends:
+- cmake
+- qt5-tools
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: fontconfig
+  provides: libfontconfig.so
+  source: alpm
+- alpm: xpdf
+  source: archpkg

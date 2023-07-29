@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-localhost'')
+
+  '
+repo_checkdepends:
+- ruby-bake-modernize
+- ruby-bake-test
+- ruby-bake-test-external
+- ruby-async-io
+- ruby-async-process
+repo_depends:
+- ruby
+repo_makedepends:
+- git
+- ruby-covered
+- ruby-sus
+- ruby-sus-fixtures-async
+update_on:
+- alias: ruby
+- alpm: ruby-localhost
+  source: archpkg

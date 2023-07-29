@@ -1,0 +1,30 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libsecret'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- pygobject: python-gobject
+- gjs
+- swtpm
+- tpm2-abrmd
+repo_depends:
+- glib2
+- libgcrypt
+- tpm2-tss
+repo_makedepends:
+- gobject-introspection
+- vala
+- git
+- meson
+- gi-docgen
+- bash-completion
+update_on:
+- alpm: libsecret
+  source: archpkg

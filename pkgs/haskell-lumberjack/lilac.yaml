@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lumberjack'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-contravariant
+- haskell-prettyprinter
+- haskell-prettyprinter-ansi-terminal
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-contravariant
+  source: alpm
+- alpm: haskell-prettyprinter
+  source: alpm
+- alpm: haskell-prettyprinter-ansi-terminal
+  source: alpm
+- alpm: haskell-lumberjack
+  source: archpkg

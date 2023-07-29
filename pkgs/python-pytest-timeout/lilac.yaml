@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-timeout'')
+
+  '
+repo_checkdepends:
+- python-pexpect
+- python-pytest-cov
+repo_depends:
+- python-pytest
+repo_makedepends:
+- python-setuptools
+- python-pytest
+update_on:
+- alpm: python-pytest-timeout
+  source: archpkg

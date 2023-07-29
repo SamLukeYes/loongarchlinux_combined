@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kcompletion'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kwidgetsaddons
+- kconfig
+repo_makedepends:
+- extra-cmake-modules
+- qt5-tools
+- qt5-doc
+- clang
+- doxygen
+update_on:
+- alpm: kconfig
+  source: alpm
+  strip_release: true
+- alpm: kcompletion
+  source: archpkg

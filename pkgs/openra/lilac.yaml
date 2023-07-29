@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''openra'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ttf-dejavu
+- openal
+- freetype2
+- sdl2
+- lua51
+- hicolor-icon-theme
+- gtk4: gtk-update-icon-cache
+- desktop-file-utils
+- xdg-utils
+- zenity
+- dotnet-core-6.0: dotnet-sdk-6.0
+repo_makedepends:
+- git
+- unzip
+update_on:
+- alpm: openra
+  source: archpkg

@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-crypto-pubkey-types'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-asn1-encoding
+- haskell-asn1-types
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-asn1-encoding
+  source: alpm
+- alpm: haskell-asn1-types
+  source: alpm
+- alpm: haskell-crypto-pubkey-types
+  source: archpkg

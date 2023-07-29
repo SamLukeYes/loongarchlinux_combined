@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''eolie'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gnome-settings-daemon
+- gtkspell3
+- libhandy
+- python-cairo
+- pygobject: python-gobject
+- webkit2gtk
+repo_makedepends:
+- git
+- gobject-introspection
+- meson
+update_on:
+- alpm: eolie
+  source: archpkg

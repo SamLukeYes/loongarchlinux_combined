@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xcb-imdkit'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- xcb-util
+- xcb-util-keysyms
+repo_makedepends:
+- extra-cmake-modules
+- ninja
+- uthash
+- xorgproto
+update_on:
+- alpm: xcb-imdkit
+  source: archpkg

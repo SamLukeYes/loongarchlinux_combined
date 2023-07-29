@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-alien-cmake3'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cmake
+- perl-alien-build
+repo_makedepends:
+- perl-html-parser
+- perl-sort-versions
+- perl-test2-suite
+- perl-uri
+update_on:
+- alpm: perl-alien-cmake3
+  source: archpkg

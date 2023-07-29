@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''msgpack-c'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- gtest
+repo_depends:
+- glibc
+repo_makedepends:
+- cmake
+- doxygen
+- graphviz
+update_on:
+- alpm: msgpack-c
+  source: archpkg

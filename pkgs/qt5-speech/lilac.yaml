@@ -1,0 +1,9 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- qt5-multimedia
+repo_makedepends:
+- git
+- flite
+- speech-dispatcher
+update_on: []

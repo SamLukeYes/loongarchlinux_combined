@@ -1,0 +1,46 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tamarin-prover-theory'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-aeson-pretty
+- haskell-dlist
+- haskell-fclabels
+- haskell-parallel
+- haskell-safe
+- haskell-uniplate
+- haskell-tamarin-prover-utils
+- haskell-tamarin-prover-term
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-aeson-pretty
+  source: alpm
+- alpm: haskell-dlist
+  source: alpm
+- alpm: haskell-fclabels
+  source: alpm
+- alpm: haskell-parallel
+  source: alpm
+- alpm: haskell-safe
+  source: alpm
+- alpm: haskell-uniplate
+  source: alpm
+- alpm: haskell-tamarin-prover-utils
+  source: alpm
+- alpm: haskell-tamarin-prover-term
+  source: alpm
+- alpm: haskell-tamarin-prover-theory
+  source: archpkg

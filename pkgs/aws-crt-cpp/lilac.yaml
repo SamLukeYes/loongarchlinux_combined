@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''aws-crt-cpp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- aws-c-common
+- aws-c-http
+- aws-c-mqtt
+- aws-c-auth
+- aws-c-s3
+- aws-c-event-stream
+repo_makedepends:
+- cmake
+update_on:
+- alpm: aws-crt-cpp
+  source: archpkg

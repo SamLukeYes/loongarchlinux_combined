@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lincity-ng'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- sdl_mixer
+- sdl_ttf
+- sdl_image
+- physfs
+- libxml2
+- sdl_gfx
+repo_makedepends:
+- ftjam
+- mesa
+- glu
+update_on:
+- alpm: lincity-ng
+  source: archpkg

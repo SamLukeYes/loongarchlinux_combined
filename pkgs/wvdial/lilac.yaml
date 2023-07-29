@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wvdial'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- wvstreams
+- ppp
+- gcc: gcc-libs
+repo_makedepends:
+- lockdev
+update_on:
+- alpm: wvdial
+  source: archpkg

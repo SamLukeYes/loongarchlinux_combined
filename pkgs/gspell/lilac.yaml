@@ -1,0 +1,53 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gspell'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- enchant
+- glib2
+- gtk3
+- icu
+- enchant
+- glib2
+- gtk3
+- icu
+repo_makedepends:
+- autoconf-archive
+- git
+- gobject-introspection
+- gtk-doc
+- vala
+update_on:
+- alias: icu
+- alias: icu
+- alpm: enchant
+  provides: libenchant-2.so
+  source: alpm
+- alpm: gtk3
+  provides: libgtk-3.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: icu
+  provides: libicuuc.so
+  source: alpm
+- alpm: pango
+  provides: libpango-1.0.so
+  source: alpm
+- alpm: gspell
+  source: archpkg

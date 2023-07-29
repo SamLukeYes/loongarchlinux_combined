@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mididings'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- boost: boost-libs
+- alsa-lib
+- python
+- python-decorator
+repo_makedepends:
+- git
+- boost
+- boost: boost-libs
+- alsa-lib
+- python
+- python-decorator
+- python-build
+- python-installer
+- python-wheel
+- python-setuptools
+- python-sphinx
+- python-sphinxcontrib-fulltoc
+- python-pyinotify
+- python-pyliblo
+- dbus-python
+- scdoc
+update_on:
+- alias: python
+- alpm: mididings
+  source: archpkg

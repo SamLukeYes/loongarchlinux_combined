@@ -1,0 +1,8 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- openssl
+repo_makedepends:
+- scdoc
+update_on: []

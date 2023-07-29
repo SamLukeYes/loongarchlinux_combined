@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pip-run'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- jupyter-nbformat
+- python-pytest-enabler
+- python-jaraco.path
+repo_depends:
+- python-autocommand
+- python-packaging
+- python-path
+- python-pip
+- python-more-itertools
+- python-jaraco.context
+- python-jaraco.text
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-setuptools-scm
+- python-wheel
+update_on:
+- alpm: python-pip-run
+  source: archpkg

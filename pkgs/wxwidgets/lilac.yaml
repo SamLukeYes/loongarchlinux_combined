@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wxwidgets'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- gstreamer: gst-plugins-base-libs
+- libsm
+- wxwidgets: wxwidgets-common
+- libnotify
+- libmspack
+- sdl2
+- qt5-base
+- wxwidgets: wxwidgets-common
+- libmspack
+- sdl2
+- libtiff
+- expat
+- pcre2
+- libsecret
+repo_makedepends:
+- cmake
+- gstreamer: gst-plugins-base
+- glu
+- webkit2gtk
+- libnotify
+- qt5-base
+- sdl2
+- libmspack
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: wxwidgets
+  source: archpkg

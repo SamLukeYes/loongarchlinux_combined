@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-incremental-parser'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-input-parsers
+- haskell-monoid-subclasses
+- haskell-parsers
+- haskell-rank2classes
+repo_makedepends:
+- ghc
+- uusi
+- haskell-quickcheck
+- haskell-checkers
+- haskell-tasty
+- haskell-tasty-quickcheck
+update_on:
+- alpm: haskell-input-parsers
+  source: alpm
+- alpm: haskell-monoid-subclasses
+  source: alpm
+- alpm: haskell-parsers
+  source: alpm
+- alpm: haskell-rank2classes
+  source: alpm
+- alpm: haskell-incremental-parser
+  source: archpkg

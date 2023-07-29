@@ -1,0 +1,42 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kmidimon'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- qt6-5compat
+- qt6-base
+- gcc: gcc-libs
+- glibc
+- qt6-5compat
+- qt6-base
+- drumstick
+repo_makedepends:
+- alsa-lib
+- cmake
+- drumstick
+- qt6-tools
+update_on:
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: drumstick
+  provides: libdrumstick-alsa.so
+  source: alpm
+- alpm: drumstick
+  provides: libdrumstick-file.so
+  source: alpm
+- alpm: kmidimon
+  source: archpkg

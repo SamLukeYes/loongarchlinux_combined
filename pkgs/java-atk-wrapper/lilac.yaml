@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''java-atk-wrapper'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- xorg-xprop
+repo_makedepends:
+- gobject-introspection
+- gnome-common
+- gtk2
+- gtk3
+- xorg-xprop
+update_on:
+- alpm: java-atk-wrapper
+  source: archpkg

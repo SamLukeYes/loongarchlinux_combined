@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-range_compressor'')
+
+  '
+repo_checkdepends:
+- ruby-rake
+- ruby-rspec
+- ruby-sorted_set
+repo_depends:
+- ruby
+repo_makedepends: []
+update_on:
+- alias: ruby
+- alpm: ruby-range_compressor
+  source: archpkg

@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-games'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- grilo
+- libarchive
+- libhandy
+- libmanette
+- retro-gtk
+- tracker3
+repo_makedepends:
+- appstream-glib
+- meson
+- vala
+update_on:
+- alpm: gnome-games
+  source: archpkg

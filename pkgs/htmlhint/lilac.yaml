@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''htmlhint'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- nodejs
+repo_makedepends:
+- git
+- npm
+update_on:
+- alpm: htmlhint
+  source: archpkg

@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sopel'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-vcr
+- python-requests-mock
+repo_depends:
+- python-setuptools
+- sqlite
+- python-xmltodict
+- python-pytz
+- python-praw
+- python-geoip2
+- python-requests
+- python-dnspython
+- python-sqlalchemy1.3
+repo_makedepends:
+- python-sphinx
+- python-sphinxcontrib-autoprogram
+update_on:
+- alpm: sopel
+  source: archpkg

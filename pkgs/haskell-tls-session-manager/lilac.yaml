@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tls-session-manager'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-auto-update
+- haskell-basement
+- haskell-clock
+- haskell-memory
+- haskell-psqueues
+- haskell-tls
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-auto-update
+  source: alpm
+- alpm: haskell-basement
+  source: alpm
+- alpm: haskell-clock
+  source: alpm
+- alpm: haskell-memory
+  source: alpm
+- alpm: haskell-psqueues
+  source: alpm
+- alpm: haskell-tls
+  source: alpm
+- alpm: haskell-tls-session-manager
+  source: archpkg

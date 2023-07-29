@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xdg-desktop-portal-hyprland'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libinih
+- pipewire
+- qt6-base
+- qt6-wayland
+- xdg-desktop-portal
+repo_makedepends:
+- cmake
+- meson
+- scdoc
+- wayland
+- wayland-protocols
+update_on:
+- alpm: util-linux-libs
+  provides: libuuid.so
+  source: alpm
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: xdg-desktop-portal-hyprland
+  source: archpkg

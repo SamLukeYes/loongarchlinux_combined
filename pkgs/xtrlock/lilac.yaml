@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xtrlock'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libx11
+- libxcrypt
+- libxi
+- libxfixes
+repo_makedepends: []
+update_on:
+- alpm: libxcrypt
+  provides: libcrypt.so
+  source: alpm
+- alpm: xtrlock
+  source: archpkg

@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deepin-api'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- alsa-utils
+- bc
+- fontconfig
+- glib2
+- gdk-pixbuf-xlib
+- gtk3
+- librsvg
+- libxi
+- libxfixes
+- poppler: poppler-glib
+- util-linux
+- xcur2png
+- blur-effect
+repo_makedepends:
+- git
+- deepin-gettext-tools
+- golang-github-fsnotify-fsnotify
+- golang-github-linuxdeepin-go-dbus-factory
+- golang-github-linuxdeepin-go-x11-client
+- golang-github-nfnt-resize
+- golang-github-stretchr-testify
+- golang-gopkg-yaml.v3
+update_on:
+- alpm: deepin-api
+  source: archpkg

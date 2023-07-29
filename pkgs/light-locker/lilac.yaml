@@ -1,0 +1,56 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''light-locker'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cairo
+- dbus-glib
+- glibc
+- libx11
+- libxext
+- libxss
+repo_makedepends:
+- git
+- gnome-common
+- intltool
+- meson
+- upower
+- xorgproto
+update_on:
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: gtk3
+  provides: libgdk-3.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: gtk3
+  provides: libgtk-3.so
+  source: alpm
+- alpm: pango
+  provides: libpango-1.0.so
+  source: alpm
+- alpm: pango
+  provides: libpangocairo-1.0.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: light-locker
+  source: archpkg

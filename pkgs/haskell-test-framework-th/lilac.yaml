@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-test-framework-th'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-test-framework
+- haskell-language-haskell-extract
+- haskell-src-exts
+- haskell-regex-posix
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-test-framework
+  source: alpm
+- alpm: haskell-language-haskell-extract
+  source: alpm
+- alpm: haskell-src-exts
+  source: alpm
+- alpm: haskell-regex-posix
+  source: alpm
+- alpm: haskell-test-framework-th
+  source: archpkg

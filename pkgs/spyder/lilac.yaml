@@ -1,0 +1,82 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''spyder'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-qt
+- python-pytest-mock
+- python-pytest-cov
+- python-pytest-order
+- python-pytest-lazy-fixture
+- python-pytest-timeout
+- python-flaky
+- python-pandas
+- python-scipy
+- python-sympy
+- python-pillow
+- python-matplotlib
+- cython
+- git
+- tk
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- python-atomicwrites
+- python-chardet
+- python-cloudpickle
+- python-cookiecutter
+- python-diff-match-patch
+- python-intervaltree
+- ipython
+- python-jedi
+- python-jellyfish
+- python-jsonschema
+- python-keyring
+- jupyter-nbconvert
+- python-numpydoc
+- python-parso
+- python-pexpect
+- python-pickleshare
+- python-psutil
+- python-pygments
+- python-pylint
+- python-pylint-venv
+- pyqt5: python-pyqt5
+- pyqt5-webengine: python-pyqt5-webengine
+- python-lsp-server
+- python-lsp-black
+- python-pyls-spyder
+- pyxdg: python-pyxdg
+- python-pyzmq
+- python-qdarkstyle
+- python-qstylizer
+- python-qtawesome
+- python-qtconsole
+- python-qtpy
+- python-rtree
+- python-setuptools
+- python-sphinx
+- python-spyder-kernels
+- python-textdistance
+- python-three-merge
+- python-watchdog
+- autopep8
+- flake8
+- python-pycodestyle
+- python-pydocstyle
+- python-pyflakes
+- python-rope
+- yapf
+- python-whatthepatch
+repo_makedepends:
+- python-sphinx
+- python-setuptools-scm
+- python-wheel
+update_on:
+- alpm: spyder
+  source: archpkg

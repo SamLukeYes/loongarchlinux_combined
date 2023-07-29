@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-metadata-json-lint'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- ruby-json-schema
+- ruby-spdx-licenses
+- ruby-semantic_puppet
+repo_makedepends:
+- ruby-rdoc
+- ruby-rake
+- ruby-rspec
+- ruby-bundler
+update_on:
+- alias: ruby
+- alpm: ruby-metadata-json-lint
+  source: archpkg

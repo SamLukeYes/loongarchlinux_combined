@@ -1,0 +1,17 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- glibc
+- aom
+- dav1d
+- rav1e
+- svt-av1
+- zlib
+- libpng
+- libyuv
+repo_makedepends:
+- cmake
+- nasm
+- pkgconf
+- gdk-pixbuf2
+update_on: []

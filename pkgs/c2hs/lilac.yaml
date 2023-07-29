@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''c2hs'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-dlist
+- haskell-language-c
+repo_makedepends:
+- ghc
+- uusi
+- haskell-test-framework
+- haskell-test-framework-hunit
+- haskell-hunit
+- haskell-shelly
+update_on:
+- alpm: haskell-dlist
+  source: alpm
+- alpm: haskell-language-c
+  source: alpm
+- alpm: c2hs
+  source: archpkg

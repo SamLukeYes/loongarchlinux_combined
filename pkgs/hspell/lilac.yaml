@@ -1,0 +1,15 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- glibc
+- zlib
+- perl
+repo_makedepends:
+- glibc
+- zlib
+- perl
+- hunspell
+- gawk
+- qt6-webengine
+update_on:
+- alias: perl

@@ -1,0 +1,52 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qmmp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- alsa-lib
+- curl
+- desktop-file-utils
+- hicolor-icon-theme
+- libmad
+- libvorbis
+- libogg
+- libxkbcommon: libxkbcommon-x11
+- taglib
+- xdg-utils
+- qt6-base
+repo_makedepends:
+- cmake
+- flac
+- musepack: libmpcdec
+- pipewire
+- pulseaudio
+- ffmpeg
+- libcdio-paranoia
+- libcddb
+- libmms
+- libsamplerate
+- libmodplug
+- libsndfile
+- wavpack
+- mpg123
+- mesa
+- projectm
+- faad2
+- libgme
+- libsidplayfp
+- wildmidi
+- qt6-tools
+update_on:
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: qmmp
+  source: archpkg

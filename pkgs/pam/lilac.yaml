@@ -1,0 +1,31 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pam'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libtirpc
+- pambase
+- audit
+- libxcrypt
+repo_makedepends:
+- flex
+- w3m
+- docbook-xsl
+update_on:
+- alpm: audit
+  provides: libaudit.so
+  source: alpm
+- alpm: libxcrypt
+  provides: libcrypt.so
+  source: alpm
+- alpm: pam
+  source: archpkg

@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-can'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-aenum
+- python-setuptools
+- python-typing_extensions
+- python-wrapt
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-can
+  source: archpkg

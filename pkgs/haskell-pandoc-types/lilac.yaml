@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pandoc-types'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-quickcheck
+- haskell-syb
+repo_makedepends:
+- ghc
+- haskell-test-framework
+- haskell-test-framework-hunit
+- haskell-test-framework-quickcheck2
+- haskell-hunit
+- haskell-string-qq
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-syb
+  source: alpm
+- alpm: haskell-pandoc-types
+  source: archpkg

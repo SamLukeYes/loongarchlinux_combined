@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-explicit-record-fields-plugin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-ghcide
+- haskell-hls-graph
+- haskell-hls-plugin-api
+- haskell-lens
+- haskell-lsp
+- haskell-syb
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hls-test-utils
+- haskell-lsp-test
+update_on:
+- alpm: haskell-ghcide
+  source: alpm
+- alpm: haskell-hls-graph
+  source: alpm
+- alpm: haskell-hls-plugin-api
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-lsp
+  source: alpm
+- alpm: haskell-syb
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-hls-explicit-record-fields-plugin
+  source: archpkg

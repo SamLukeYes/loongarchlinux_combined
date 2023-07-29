@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''allegro'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- dumb
+- gtk3
+- pulseaudio: libpulse
+- libtheora
+- libwebp
+- libxpm
+- opusfile
+- physfs
+repo_makedepends:
+- cmake
+- glu
+- libtheora
+- ninja
+- opusfile
+- xorgproto
+update_on:
+- alpm: allegro
+  source: archpkg

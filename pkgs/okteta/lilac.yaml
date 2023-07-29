@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''okteta'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kcmutils
+- kparts
+- knewstuff
+- qt5-script
+- hicolor-icon-theme
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+- qt5-tools
+update_on:
+- alpm: okteta
+  source: archpkg

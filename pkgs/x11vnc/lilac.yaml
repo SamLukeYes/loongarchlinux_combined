@@ -1,0 +1,20 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- libvncserver
+- openssl
+- libxcrypt
+- libxtst
+- libxext
+- libxinerama
+- libxrandr
+- libxfixes
+- libxdamage
+- libxcomposite
+- libx11
+- avahi
+- libxi
+- xorg-xdpyinfo
+repo_makedepends:
+- git
+update_on: []

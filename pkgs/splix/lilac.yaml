@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''splix'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cups: libcups
+- gcc: gcc-libs
+- ghostscript
+repo_makedepends:
+- jbigkit
+- krb5
+- subversion
+update_on:
+- alpm: splix
+  source: archpkg

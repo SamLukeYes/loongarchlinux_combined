@@ -1,0 +1,49 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-kan-extensions'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-adjunctions
+- haskell-comonad
+- haskell-contravariant
+- haskell-distributive
+- haskell-free
+- haskell-invariant
+- haskell-profunctors
+- haskell-semigroupoids
+- haskell-tagged
+- haskell-transformers-compat
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-adjunctions
+  source: alpm
+- alpm: haskell-comonad
+  source: alpm
+- alpm: haskell-contravariant
+  source: alpm
+- alpm: haskell-distributive
+  source: alpm
+- alpm: haskell-free
+  source: alpm
+- alpm: haskell-invariant
+  source: alpm
+- alpm: haskell-profunctors
+  source: alpm
+- alpm: haskell-semigroupoids
+  source: alpm
+- alpm: haskell-tagged
+  source: alpm
+- alpm: haskell-transformers-compat
+  source: alpm
+- alpm: haskell-kan-extensions
+  source: archpkg

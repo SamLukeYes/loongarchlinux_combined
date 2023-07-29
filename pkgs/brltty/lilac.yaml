@@ -1,0 +1,68 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- bluez: bluez-libs
+- gcc: gcc-libs
+- glibc
+- liblouis
+- speech-dispatcher: libspeechd
+- pcre2
+- polkit
+- brltty
+repo_makedepends:
+- alsa-lib
+- at-spi2-core
+- bluez: bluez-libs
+- cython
+- dbus
+- dracut
+- espeak-ng
+- expat
+- festival
+- gcc: gcc-libs
+- glibc
+- glib2
+- gpm
+- icu
+- liblouis
+- speech-dispatcher: libspeechd
+- libxaw
+- ncurses
+- pcre2
+- polkit
+- python-setuptools
+- speech-dispatcher
+- strip-nondeterminism
+- systemd: systemd-libs
+- tcl
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: expat
+  provides: libexpat.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: icu
+  provides: libicuuc.so
+  source: alpm
+- alpm: gpm
+  provides: libgpm.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm

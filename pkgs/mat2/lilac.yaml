@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mat2'')
+
+  '
+repo_checkdepends:
+- ffmpeg
+repo_depends:
+- python
+- python-mutagen
+- python-cairo
+- pygobject: python-gobject
+- gdk-pixbuf2
+- poppler: poppler-glib
+- librsvg
+- perl-image-exiftool
+- mailcap
+repo_makedepends:
+- python-setuptools
+update_on:
+- alias: python
+- alpm: mat2
+  source: archpkg

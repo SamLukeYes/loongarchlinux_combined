@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''network-manager-applet'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libappindicator: libappindicator-gtk3
+- modemmanager: libmm-glib
+- libnma
+- libsecret
+- networkmanager
+- libappindicator: libappindicator-gtk3
+- modemmanager: libmm-glib
+- libnma
+- libsecret
+- networkmanager
+- network-manager-applet: nm-connection-editor
+- libnma
+repo_makedepends:
+- git
+- gobject-introspection
+- gtk-doc
+- meson
+update_on:
+- alpm: network-manager-applet
+  source: archpkg

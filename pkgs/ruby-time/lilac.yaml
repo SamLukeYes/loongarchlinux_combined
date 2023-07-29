@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-time'')
+
+  '
+repo_checkdepends:
+- ruby-rake
+repo_depends:
+- ruby
+- ruby-date
+repo_makedepends: []
+update_on:
+- alias: ruby
+- alpm: ruby-time
+  source: archpkg

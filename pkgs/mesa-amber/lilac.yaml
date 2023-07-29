@@ -1,0 +1,42 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mesa-amber'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libglvnd
+- libdrm
+- zstd
+- wayland
+- libxshmfence
+- libxxf86vm
+- libxfixes
+repo_makedepends:
+- python-mako
+- libxml2
+- libx11
+- xorgproto
+- libdrm
+- libxshmfence
+- libxxf86vm
+- libxdamage
+- wayland
+- wayland-protocols
+- zstd
+- elfutils
+- libglvnd
+- libunwind
+- libxrandr
+- valgrind
+- cmake
+- meson
+update_on:
+- alpm: mesa-amber
+  source: archpkg

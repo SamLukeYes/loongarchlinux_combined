@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-xml-twig'')
+
+  '
+repo_checkdepends:
+- perl-libwww
+- perl-test-pod
+- perl-xml-simple
+- perl-html-tree
+- perl-xml-xpath
+- perl-tie-ixhash
+repo_depends:
+- perl-xml-parser
+- perl-text-iconv
+- perl
+repo_makedepends: []
+update_on:
+- alias: perl
+- alpm: perl-xml-twig
+  source: archpkg

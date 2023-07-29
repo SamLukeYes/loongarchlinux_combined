@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''fusesoc'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-edalize
+- python-ipyxact
+- python-pyparsing
+- python-yaml
+- python-simplesat
+- git
+repo_makedepends:
+- python-setuptools-scm
+update_on:
+- alias: python
+- alpm: fusesoc
+  source: archpkg

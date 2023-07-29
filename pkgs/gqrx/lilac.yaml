@@ -1,0 +1,77 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gqrx'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- libvolk
+- qt6-base
+- qt6-svg
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- libvolk
+- qt6-base
+- qt6-svg
+- gnuradio
+- gnuradio-osmosdr
+- pulseaudio: libpulse
+repo_makedepends:
+- boost
+- cmake
+- gnuradio
+- gnuradio-osmosdr
+- pulseaudio: libpulse
+- libvolk
+update_on:
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: gnuradio
+  provides: libgnuradio-analog.so
+  source: alpm
+- alpm: gnuradio
+  provides: libgnuradio-blocks.so
+  source: alpm
+- alpm: gnuradio
+  provides: libgnuradio-digital.so
+  source: alpm
+- alpm: gnuradio
+  provides: libgnuradio-fft.so
+  source: alpm
+- alpm: gnuradio
+  provides: libgnuradio-filter.so
+  source: alpm
+- alpm: gnuradio
+  provides: libgnuradio-network.so
+  source: alpm
+- alpm: gnuradio
+  provides: libgnuradio-pmt.so
+  source: alpm
+- alpm: gnuradio
+  provides: libgnuradio-runtime.so
+  source: alpm
+- alpm: gnuradio-osmosdr
+  provides: libgnuradio-osmosdr.so
+  source: alpm
+- alpm: libao
+  provides: libpulse.so
+  source: alpm
+- alpm: libpulse
+  provides: libpulse-simple.so
+  source: alpm
+- alpm: gqrx
+  source: archpkg

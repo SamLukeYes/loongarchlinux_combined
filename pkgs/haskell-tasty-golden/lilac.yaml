@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-golden'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-tasty
+- haskell-optparse-applicative
+- haskell-temporary
+- haskell-tagged
+- haskell-async
+- haskell-typed-process
+repo_makedepends:
+- ghc
+- haskell-tasty-hunit
+update_on:
+- alpm: haskell-tasty
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-temporary
+  source: alpm
+- alpm: haskell-tagged
+  source: alpm
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-typed-process
+  source: alpm
+- alpm: haskell-tasty-golden
+  source: archpkg

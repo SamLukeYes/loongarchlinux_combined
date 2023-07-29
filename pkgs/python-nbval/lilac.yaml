@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-nbval'')
+
+  '
+repo_checkdepends:
+- python-doit
+- python-matplotlib
+- python-pytest-cov
+- python-pytest-mock
+- python-sympy
+repo_depends:
+- python-pytest
+- jupyter-nbformat
+- python-ipykernel
+- python-coverage
+repo_makedepends:
+- python-setuptools
+- python-nbdime
+update_on:
+- alpm: python-nbval
+  source: archpkg

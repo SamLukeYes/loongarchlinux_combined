@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ukui-control-center'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bluez-qt
+- boost: boost-libs
+- ddcutil
+- kconfig
+- kconfigwidgets
+- ki18n
+- kscreen
+- kwidgetsaddons
+- libpwquality
+- lsb-release
+- peony
+- qt5-quickcontrols
+- ukui-interface
+- ukui-panel
+- ukui-media
+- ukui-menus
+- ukui-power-manager
+- ukui-screensaver
+- ukui-settings-daemon
+- upower
+- libcanberra
+repo_makedepends:
+- boost
+- qt5-tools
+update_on:
+- alpm: kconfig
+  source: alpm
+  strip_release: true
+- alpm: ukui-control-center
+  source: archpkg

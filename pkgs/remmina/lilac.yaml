@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''remmina'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- avahi
+- libgcrypt
+- libssh
+- vte3
+- libsodium
+- libayatana-appindicator
+- libsoup3
+repo_makedepends:
+- cmake
+- freerdp
+- libvncserver
+- spice-gtk
+- spice-protocol
+- harfbuzz
+- xorgproto
+- gobject-introspection
+- kwallet
+- webkit2gtk-4.1
+- gtk-vnc
+- ninja
+update_on:
+- alpm: remmina
+  source: archpkg

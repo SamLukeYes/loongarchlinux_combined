@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''soundconverter'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- desktop-file-utils
+- gstreamer: gst-plugins-good
+- gstreamer: gst-plugins-ugly
+- gstreamer: gst-python
+- pygobject: python-gobject
+- python-setuptools
+repo_makedepends:
+- python-build
+- python-installer
+- python-wheel
+- python-distutils-extra
+update_on:
+- alpm: soundconverter
+  source: archpkg

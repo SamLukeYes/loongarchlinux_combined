@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''khotkeys'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- plasma-workspace
+- kdelibs4support
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+- kdesignerplugin
+- kinit
+update_on:
+- alpm: khotkeys
+  source: archpkg

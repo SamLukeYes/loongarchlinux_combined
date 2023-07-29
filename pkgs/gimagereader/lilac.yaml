@@ -1,0 +1,57 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gimagereader'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- djvulibre
+- gtksourceviewmm
+- gtkspellmm
+- libxml++
+- libzip
+- podofo
+- poppler: poppler-glib
+- poppler: poppler-qt6
+- qt6-imageformats
+- qtspell
+- quazip: quazip-qt6
+- sane
+- tesseract
+- gimagereader: gimagereader-common
+- djvulibre
+- gtksourceviewmm
+- gtkspellmm
+- libxml++
+- libzip
+- podofo
+- poppler: poppler-glib
+- sane
+- tesseract
+- gimagereader: gimagereader-common
+- djvulibre
+- podofo
+- poppler: poppler-qt6
+- qt6-imageformats
+- qtspell
+- quazip: quazip-qt6
+- sane
+- tesseract
+- hicolor-icon-theme
+repo_makedepends:
+- cmake
+- intltool
+- ninja
+- pygobject: python-gobject
+update_on:
+- alpm: tesseract
+  provides: libtesseract.so
+  source: alpm
+- alpm: gimagereader
+  source: archpkg

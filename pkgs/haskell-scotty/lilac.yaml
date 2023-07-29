@@ -1,0 +1,66 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-scotty'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-base-compat-batteries
+- haskell-blaze-builder
+- haskell-case-insensitive
+- haskell-data-default-class
+- haskell-http-types
+- haskell-monad-control
+- haskell-network
+- haskell-regex-compat
+- haskell-transformers-base
+- haskell-transformers-compat
+- haskell-wai
+- haskell-wai-extra
+- haskell-warp
+repo_makedepends:
+- ghc
+- haskell-async
+- haskell-hspec
+- haskell-hspec-discover
+- haskell-hspec-wai
+- haskell-lifted-base
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-base-compat-batteries
+  source: alpm
+- alpm: haskell-blaze-builder
+  source: alpm
+- alpm: haskell-case-insensitive
+  source: alpm
+- alpm: haskell-data-default-class
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-monad-control
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-regex-compat
+  source: alpm
+- alpm: haskell-transformers-base
+  source: alpm
+- alpm: haskell-transformers-compat
+  source: alpm
+- alpm: haskell-wai
+  source: alpm
+- alpm: haskell-wai-extra
+  source: alpm
+- alpm: haskell-warp
+  source: alpm
+- alpm: haskell-scotty
+  source: archpkg

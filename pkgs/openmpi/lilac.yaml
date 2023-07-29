@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''openmpi'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- hwloc
+- libevent
+- libnl
+- openpmix
+- openssh
+- zlib
+- gcc: gcc-libs
+- glibc
+- hwloc
+- libevent
+- libnl
+- openpmix
+- openssh
+- zlib
+repo_makedepends:
+- cuda
+- gcc: gcc-fortran
+- inetutils
+- valgrind
+update_on:
+- alpm: openpmix
+  provides: libpmix.so
+  source: alpm
+- alpm: openmpi
+  source: archpkg

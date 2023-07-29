@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-djabberd'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl-danga-socket
+- perl-log-log4perl
+- perl-unicode-stringprep
+- perl-net-dns
+- perl-xml-libxml
+- perl-net-ssleay
+repo_makedepends: []
+update_on:
+- alpm: perl-djabberd
+  source: archpkg

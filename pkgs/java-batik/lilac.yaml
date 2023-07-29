@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''java-batik'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- java-commons-io
+- java-commons-logging
+- java-xmlgraphics-commons
+repo_makedepends:
+- unzip
+update_on:
+- alpm: java-batik
+  source: archpkg

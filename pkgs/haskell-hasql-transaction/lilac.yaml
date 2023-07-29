@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hasql-transaction'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- postgresql
+- pifpaf
+repo_depends:
+- ghc: ghc-libs
+- haskell-bytestring-tree-builder
+- haskell-contravariant
+- haskell-contravariant-extras
+- haskell-hasql
+repo_makedepends:
+- ghc
+- uusi
+- haskell-async
+- haskell-rerebase
+update_on:
+- alpm: haskell-bytestring-tree-builder
+  source: alpm
+- alpm: haskell-contravariant
+  source: alpm
+- alpm: haskell-contravariant-extras
+  source: alpm
+- alpm: haskell-hasql
+  source: alpm
+- alpm: haskell-hasql-transaction
+  source: archpkg

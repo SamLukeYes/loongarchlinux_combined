@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gpsd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- libusb
+- bluez: bluez-libs
+- pps-tools
+repo_makedepends:
+- scons
+- docbook-xsl
+- qt5-base
+- pygobject: python-gobject
+- python-cairo
+- python-pyserial
+- gtk3
+update_on:
+- alias: python
+- alpm: gpsd
+  source: archpkg

@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perlbrew'')
+
+  '
+repo_checkdepends:
+- perl-test-exception
+- perl-test-output
+- perl-test-spec
+- perl-path-class
+- perl-io-all
+repo_depends:
+- perl
+- perl-capture-tiny
+- perl-cpan-perl-releases
+- perl-devel-patchperl
+- perl-file-path-tiny
+- perl-local-lib
+repo_makedepends:
+- perl-module-build-tiny
+update_on:
+- alias: perl
+- alpm: perlbrew
+  source: archpkg

@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lua-fluent'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- lua
+- lua-cldr
+- lua-luaepnf
+- penlight: lua-penlight
+- lua53
+- lua-cldr: lua53-cldr
+- lua-luaepnf: lua53-luaepnf
+- penlight: lua53-penlight
+- lua52
+- lua-cldr: lua52-cldr
+- lua-luaepnf: lua52-luaepnf
+- penlight: lua52-penlight
+- lua51
+- lua-cldr: lua51-cldr
+- lua-luaepnf: lua51-luaepnf
+- penlight: lua51-penlight
+repo_makedepends:
+- lua
+- lua51
+- lua52
+- lua53
+- luarocks
+update_on:
+- alias: lua
+- alpm: lua-fluent
+  source: archpkg

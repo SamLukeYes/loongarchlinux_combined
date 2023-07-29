@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xwallpaper'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- pixman
+- libpng
+- libxpm
+- xcb-util
+- xcb-util-image
+- libjpeg-turbo
+- libseccomp
+repo_makedepends: []
+update_on:
+- alpm: libseccomp
+  provides: libseccomp.so
+  source: alpm
+- alpm: pixman
+  provides: libpixman-1.so
+  source: alpm
+- alpm: darktable
+  provides: libjpeg.so
+  source: alpm
+- alpm: xwallpaper
+  source: archpkg

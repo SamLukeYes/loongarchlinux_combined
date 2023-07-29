@@ -1,0 +1,172 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''taffybar'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-configfile
+- haskell-hstringtemplate
+- haskell-x11
+- haskell-aeson
+- haskell-ansi-terminal
+- haskell-broadcast-chan
+- haskell-conduit
+- haskell-data-default
+- haskell-dbus
+- haskell-dbus-hslogger
+- haskell-dyre
+- haskell-either
+- haskell-enclosed-exceptions
+- haskell-gi-cairo
+- haskell-gi-cairo-connector
+- haskell-gi-cairo-render
+- haskell-gi-gdk3
+- haskell-gi-gdkpixbuf
+- haskell-gi-gdk3x11
+- haskell-gi-glib
+- haskell-gi-gtk3
+- haskell-gi-gtk-hs
+- haskell-gi-pango
+- haskell-gtk-sni-tray
+- haskell-gtk-strut
+- haskell-gi
+- haskell-gi-base
+- haskell-hslogger
+- haskell-http-client
+- haskell-http-client-tls
+- haskell-http-conduit
+- haskell-http-types
+- haskell-multimap
+- haskell-old-locale
+- haskell-optparse-applicative
+- haskell-rate-limit
+- haskell-regex-compat
+- haskell-safe
+- haskell-scotty
+- haskell-split
+- haskell-status-notifier-item
+- haskell-time-locale-compat
+- haskell-time-units
+- haskell-transformers-base
+- haskell-tuple
+- haskell-utf8-string
+- haskell-xdg-basedir
+- haskell-xdg-desktop-entry
+- haskell-xml
+- haskell-xml-helpers
+- xmonad
+- gtk3
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-configfile
+  source: alpm
+- alpm: haskell-hstringtemplate
+  source: alpm
+- alpm: haskell-x11
+  source: alpm
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-ansi-terminal
+  source: alpm
+- alpm: haskell-broadcast-chan
+  source: alpm
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-data-default
+  source: alpm
+- alpm: haskell-dbus
+  source: alpm
+- alpm: haskell-dbus-hslogger
+  source: alpm
+- alpm: haskell-dyre
+  source: alpm
+- alpm: haskell-either
+  source: alpm
+- alpm: haskell-enclosed-exceptions
+  source: alpm
+- alpm: haskell-gi-cairo
+  source: alpm
+- alpm: haskell-gi-cairo-connector
+  source: alpm
+- alpm: haskell-gi-cairo-render
+  source: alpm
+- alpm: haskell-gi-gdk3
+  source: alpm
+- alpm: haskell-gi-gdkpixbuf
+  source: alpm
+- alpm: haskell-gi-gdk3x11
+  source: alpm
+- alpm: haskell-gi-glib
+  source: alpm
+- alpm: haskell-gi-gtk3
+  source: alpm
+- alpm: haskell-gi-gtk-hs
+  source: alpm
+- alpm: haskell-gi-pango
+  source: alpm
+- alpm: haskell-gtk-sni-tray
+  source: alpm
+- alpm: haskell-gtk-strut
+  source: alpm
+- alpm: haskell-gi
+  source: alpm
+- alpm: haskell-gi-base
+  source: alpm
+- alpm: haskell-hslogger
+  source: alpm
+- alpm: haskell-http-client
+  source: alpm
+- alpm: haskell-http-client-tls
+  source: alpm
+- alpm: haskell-http-conduit
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-multimap
+  source: alpm
+- alpm: haskell-old-locale
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-rate-limit
+  source: alpm
+- alpm: haskell-regex-compat
+  source: alpm
+- alpm: haskell-safe
+  source: alpm
+- alpm: haskell-scotty
+  source: alpm
+- alpm: haskell-split
+  source: alpm
+- alpm: haskell-status-notifier-item
+  source: alpm
+- alpm: haskell-time-locale-compat
+  source: alpm
+- alpm: haskell-time-units
+  source: alpm
+- alpm: haskell-transformers-base
+  source: alpm
+- alpm: haskell-tuple
+  source: alpm
+- alpm: haskell-utf8-string
+  source: alpm
+- alpm: haskell-xdg-basedir
+  source: alpm
+- alpm: haskell-xdg-desktop-entry
+  source: alpm
+- alpm: haskell-xml
+  source: alpm
+- alpm: haskell-xml-helpers
+  source: alpm
+- alpm: taffybar
+  source: archpkg

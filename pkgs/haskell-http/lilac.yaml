@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-http'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-network
+- haskell-network-uri
+repo_makedepends:
+- ghc
+- haskell-hunit
+- haskell-httpd-shed
+- haskell-puremd5
+- haskell-split
+- haskell-test-framework
+- haskell-test-framework-hunit
+- haskell-case-insensitive
+- haskell-http-types
+- haskell-wai
+- haskell-warp
+- haskell-conduit
+- haskell-conduit-extra
+update_on:
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-network-uri
+  source: alpm
+- alpm: haskell-http
+  source: archpkg

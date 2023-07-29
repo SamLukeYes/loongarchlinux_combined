@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-src-exts-util'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-data-default
+- haskell-src-exts
+- haskell-uniplate
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-data-default
+  source: alpm
+- alpm: haskell-src-exts
+  source: alpm
+- alpm: haskell-uniplate
+  source: alpm
+- alpm: haskell-src-exts-util
+  source: archpkg

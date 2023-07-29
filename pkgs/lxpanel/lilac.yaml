@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lxpanel'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- alsa-lib
+- curl
+- menu-cache
+- lxmenu-data
+- libwnck
+- libfm: libfm-gtk2
+- keybinder2: libkeybinder2
+repo_makedepends:
+- intltool
+- docbook-xml
+- docbook-xsl
+- wireless_tools
+update_on:
+- alpm: lxpanel
+  source: archpkg

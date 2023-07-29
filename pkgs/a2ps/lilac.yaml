@@ -1,0 +1,10 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- psutils
+- imagemagick
+- perl
+repo_makedepends:
+- gperf
+update_on:
+- alias: perl

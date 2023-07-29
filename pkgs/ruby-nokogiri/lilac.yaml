@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-nokogiri'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- ruby-minitest-reporters
+- ruby-rake-compiler
+- ruby-rake-compiler-dock
+- ruby-ruby_memcheck
+- ruby-simplecov
+repo_depends:
+- libxslt
+- ruby
+- ruby-mini_portile2
+repo_makedepends: []
+update_on:
+- alias: ruby
+- alpm: ruby-nokogiri
+  source: archpkg

@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-deriving-compat'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-th-abstraction
+- haskell-transformers-compat
+repo_makedepends:
+- ghc
+- haskell-base-compat
+- haskell-base-orphans
+- haskell-hspec
+- haskell-quickcheck
+- haskell-tagged
+- haskell-void
+update_on:
+- alpm: haskell-th-abstraction
+  source: alpm
+- alpm: haskell-transformers-compat
+  source: alpm
+- alpm: haskell-deriving-compat
+  source: archpkg

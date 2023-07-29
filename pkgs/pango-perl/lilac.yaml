@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pango-perl'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- pango
+- glib-perl
+- cairo-perl
+repo_makedepends:
+- perl-extutils-pkgconfig
+- perl-extutils-depends
+update_on:
+- alpm: pango-perl
+  source: archpkg

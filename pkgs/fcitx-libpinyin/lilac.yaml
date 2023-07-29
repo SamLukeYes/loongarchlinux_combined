@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''fcitx-libpinyin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fcitx
+- libpinyin
+- fcitx-qt5
+- qt5-webengine
+repo_makedepends:
+- cmake
+update_on:
+- alpm: fcitx-libpinyin
+  source: archpkg

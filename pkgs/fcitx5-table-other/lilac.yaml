@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''fcitx5-table-other'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fcitx5-chinese-addons
+repo_makedepends:
+- extra-cmake-modules
+- boost
+update_on:
+- alpm: fcitx5-table-other
+  source: archpkg

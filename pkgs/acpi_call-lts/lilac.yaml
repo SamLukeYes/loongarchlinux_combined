@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''acpi_call-lts'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- linux-lts
+repo_makedepends:
+- linux-lts: linux-lts-headers
+- acpi_call-dkms
+update_on:
+- alpm: acpi_call-lts
+  source: archpkg

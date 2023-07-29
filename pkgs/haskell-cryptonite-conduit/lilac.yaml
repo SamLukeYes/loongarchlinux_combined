@@ -1,0 +1,34 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cryptonite-conduit'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-conduit
+- haskell-conduit-extra
+- haskell-cryptonite
+- haskell-memory
+- haskell-resourcet
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-conduit-extra
+  source: alpm
+- alpm: haskell-cryptonite
+  source: alpm
+- alpm: haskell-memory
+  source: alpm
+- alpm: haskell-resourcet
+  source: alpm
+- alpm: haskell-cryptonite-conduit
+  source: archpkg

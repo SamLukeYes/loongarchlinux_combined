@@ -1,0 +1,8 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- opensp
+- sgml-common
+repo_makedepends:
+- perl-perl4-corelibs
+update_on: []

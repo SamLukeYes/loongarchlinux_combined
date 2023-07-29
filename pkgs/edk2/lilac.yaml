@@ -1,0 +1,13 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- aarch64-linux-gnu-gcc
+- arm-none-eabi-gcc
+- acpica
+- git
+- util-linux: util-linux-libs
+- nasm
+- python
+- seabios
+update_on: []

@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-fastnumbers'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-hypothesis
+- python-numpy
+- python-pytest
+- python-typing_extensions
+repo_depends:
+- python
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-fastnumbers
+  source: archpkg

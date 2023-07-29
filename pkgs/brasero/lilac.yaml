@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''brasero'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- gstreamer: gst-plugins-good
+- cdrtools
+- cdrdao
+- shared-mime-info
+- libcanberra
+- dvd+rw-tools
+- dconf
+- libsm
+- libnotify
+- gvfs
+- tracker3
+repo_makedepends:
+- gtk-doc
+- yelp-tools
+- gnome-common
+- intltool
+- libburn
+- libisofs
+- gobject-introspection
+- itstool
+- docbook-xsl
+- git
+update_on:
+- alpm: brasero
+  source: archpkg

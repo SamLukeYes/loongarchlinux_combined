@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xca'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-tools
+- desktop-file-utils
+- gtk4: gtk-update-icon-cache
+repo_makedepends: []
+update_on:
+- alpm: xca
+  source: archpkg

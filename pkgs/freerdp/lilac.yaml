@@ -1,0 +1,108 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''freerdp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- cups: libcups
+- libx11
+- libxcursor
+- libxext
+- libxdamage
+- libxfixes
+- libxkbcommon
+- libxi
+- libxinerama
+- libxkbfile
+- libxrandr
+- libxrender
+- libxtst
+- pcsclite
+- wayland
+- glibc
+- cups: libcups
+- libx11
+- libxcursor
+- libxext
+- libxdamage
+- libxfixes
+- libxkbcommon
+- libxi
+- libxinerama
+- libxkbfile
+- libxrandr
+- libxrender
+- libxtst
+- pcsclite
+- wayland
+- alsa-lib
+- ffmpeg
+- icu
+- libjpeg-turbo
+- pulseaudio: libpulse
+- libusb
+- openssl
+- pam
+- systemd: systemd-libs
+repo_makedepends:
+- alsa-lib
+- cmake
+- docbook-xsl
+- ffmpeg
+- icu
+- krb5
+- libjpeg-turbo
+- pulseaudio: libpulse
+- libusb
+- openssl
+- pam
+- systemd
+- xmlto
+- xorgproto
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavcodec.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavutil.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libswresample.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libswscale.so
+  source: alpm
+- alias: icu
+- alpm: icu
+  provides: libicuuc.so
+  source: alpm
+- alpm: darktable
+  provides: libjpeg.so
+  source: alpm
+- alpm: libao
+  provides: libpulse.so
+  source: alpm
+- alpm: libusb
+  provides: libusb-1.0.so
+  source: alpm
+- alias: libcrypto
+- alias: libssl
+- alpm: pam
+  provides: libpam.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: freerdp
+  source: archpkg

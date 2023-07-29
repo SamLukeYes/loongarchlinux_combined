@@ -1,0 +1,52 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''drumkv1'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- drumkv1: drumkv1-lv2
+- drumkv1: drumkv1-standalone
+- gcc: gcc-libs
+- glibc
+- libsndfile
+- qt6-base
+- qt6-svg
+- alsa-lib
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- liblo
+- libsndfile
+- qt6-base
+- qt6-svg
+repo_makedepends:
+- alsa-lib
+- cmake
+- liblo
+- libsndfile
+- lv2
+- qt6-base
+- qt6-svg
+- qt6-tools
+update_on:
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: drumkv1
+  source: archpkg

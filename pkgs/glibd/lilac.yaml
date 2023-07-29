@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''glibd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glib2
+- ldc: liblphobos
+repo_makedepends:
+- meson
+- ldc
+- gobject-introspection
+- gir-to-d
+update_on:
+- alpm: glibd
+  source: archpkg

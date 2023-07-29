@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deepin-terminal-gtk'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- vte3
+- libsecret
+- libgee
+- libwnck3
+- expect
+repo_makedepends:
+- cmake
+- ninja
+- vala
+update_on:
+- alpm: deepin-terminal-gtk
+  source: archpkg

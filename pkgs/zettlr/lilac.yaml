@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''zettlr'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ttf-inconsolata
+- ttf-liberation
+repo_makedepends:
+- gendesk
+- git
+- nodejs-lts-gallium
+- yarn
+update_on:
+- alpm: zettlr
+  source: archpkg

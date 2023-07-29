@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''afew'')
+
+  '
+repo_checkdepends:
+- python-freezegun
+repo_depends:
+- notmuch
+- python-chardet
+- python-dkim
+- python-setuptools
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools-scm
+- python-sphinx
+- python-wheel
+update_on:
+- alpm: afew
+  source: archpkg

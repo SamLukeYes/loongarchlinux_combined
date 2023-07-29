@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xapp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libdbusmenu: libdbusmenu-gtk3
+- libgnomekbd
+repo_makedepends:
+- meson
+- samurai
+- gobject-introspection
+- pygobject: python-gobject
+- vala
+update_on:
+- alpm: xapp
+  source: archpkg

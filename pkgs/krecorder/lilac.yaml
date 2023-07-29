@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''krecorder'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kirigami-addons
+- qt5-multimedia
+- qt5-svg
+- ki18n
+- kwindowsystem
+- kconfig
+- kcoreaddons
+repo_makedepends:
+- extra-cmake-modules
+update_on:
+- alpm: kconfig
+  source: alpm
+  strip_release: true
+- alpm: krecorder
+  source: archpkg

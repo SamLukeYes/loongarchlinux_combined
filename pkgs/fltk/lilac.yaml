@@ -1,0 +1,48 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''fltk'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- fontconfig
+- libglvnd
+- libjpeg-turbo
+- libpng
+- libx11
+- libxcursor
+- libxext
+- libxfixes
+- libxft
+- libxinerama
+- libxrender
+repo_makedepends:
+- alsa-lib
+- cmake
+- doxygen
+- fontconfig
+- libglvnd
+- libjpeg-turbo
+- libpng
+- libx11
+- libxcursor
+- libxfixes
+- libxft
+- libxinerama
+- libxrender
+- mesa
+update_on:
+- alpm: fontconfig
+  provides: libfontconfig.so
+  source: alpm
+- alpm: fltk
+  source: archpkg

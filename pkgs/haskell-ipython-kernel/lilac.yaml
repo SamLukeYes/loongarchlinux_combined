@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ipython-kernel'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-cryptonite
+- haskell-memory
+- haskell-temporary
+- haskell-unordered-containers
+- haskell-uuid
+- haskell-zeromq4-haskell
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-cryptonite
+  source: alpm
+- alpm: haskell-memory
+  source: alpm
+- alpm: haskell-temporary
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-uuid
+  source: alpm
+- alpm: haskell-zeromq4-haskell
+  source: alpm
+- alpm: haskell-ipython-kernel
+  source: archpkg

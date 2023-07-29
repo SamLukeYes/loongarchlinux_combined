@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-json-webtoken'')
+
+  '
+repo_checkdepends:
+- perl-test-mock-guard
+- perl-test-requires
+repo_depends:
+- perl-json
+repo_makedepends:
+- perl-module-build
+- perl-module-runtime
+update_on:
+- alpm: perl-json-webtoken
+  source: archpkg

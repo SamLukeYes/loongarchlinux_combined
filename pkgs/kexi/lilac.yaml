@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kexi'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kdb
+- kreport
+- ktexteditor
+- breeze-icons
+- hicolor-icon-theme
+repo_makedepends:
+- extra-cmake-modules
+- qt5-tools
+- kdoctools
+- mariadb: mariadb-libs
+- postgresql
+- doxygen
+update_on:
+- alpm: kexi
+  source: archpkg

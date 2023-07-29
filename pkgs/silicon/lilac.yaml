@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''silicon'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fontconfig
+- freetype2
+- xclip
+repo_makedepends:
+- rust
+- glibc
+- llvm: llvm-libs
+- gcc: gcc-libs
+- clang
+- python
+update_on:
+- alpm: silicon
+  source: archpkg

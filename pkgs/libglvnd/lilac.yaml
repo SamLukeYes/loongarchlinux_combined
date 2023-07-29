@@ -1,0 +1,12 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- libxext
+- mesa
+repo_makedepends:
+- libxext
+- libx11
+- xorgproto
+- python
+- meson
+update_on: []

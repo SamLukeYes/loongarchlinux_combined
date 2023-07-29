@@ -1,0 +1,44 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''firefox-developer-edition'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- dbus-glib
+- ffmpeg
+- gtk3
+- pulseaudio: libpulse
+- libxt
+- nss
+repo_makedepends:
+- cbindgen
+- clang
+- diffutils
+- dump_syms
+- imake
+- inetutils
+- lld
+- llvm
+- mesa
+- nasm
+- nodejs
+- python
+- rust
+- unzip
+- wasi-compiler-rt
+- wasi-libc
+- wasi-libc++
+- wasi-libc++: wasi-libc++abi
+- xorg-server: xorg-server-xvfb
+- yasm
+- zip
+update_on:
+- alpm: firefox-developer-edition
+  source: archpkg

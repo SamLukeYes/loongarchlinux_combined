@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-software-license'')
+
+  '
+repo_checkdepends:
+- perl-try-tiny
+repo_depends:
+- perl-data-section
+- perl-text-template
+repo_makedepends: []
+update_on:
+- alpm: perl-software-license
+  source: archpkg

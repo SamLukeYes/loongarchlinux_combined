@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''tor'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- openssl
+- libevent
+- bash
+- libseccomp
+- zstd
+- libcap
+- systemd: systemd-libs
+repo_makedepends:
+- ca-certificates
+- systemd
+update_on:
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: zstd
+  provides: libzstd.so
+  source: alpm
+- alpm: libseccomp
+  provides: libseccomp.so
+  source: alpm
+- alpm: libcap
+  provides: libcap.so
+  source: alpm
+- alpm: tor
+  source: archpkg

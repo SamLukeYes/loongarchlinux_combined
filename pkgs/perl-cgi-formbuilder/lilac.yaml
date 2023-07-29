@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-cgi-formbuilder'')
+
+  '
+repo_checkdepends:
+- perl-cgi
+repo_depends:
+- perl
+repo_makedepends:
+- perl-html-template
+- perl-text-template
+- perl-template-toolkit
+- perl-cgi-session
+update_on:
+- alias: perl
+- alpm: perl-cgi-formbuilder
+  source: archpkg

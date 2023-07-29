@@ -1,0 +1,14 @@
+destsubdir: extra
+repo_checkdepends:
+- python-aiohttp
+- python-coverage
+- python-pytest
+- python-pytest-cov
+- python-eventlet
+- python-gevent
+- python-six
+repo_depends:
+- python
+repo_makedepends: []
+update_on:
+- alias: python

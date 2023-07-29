@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wallutils'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libheif
+- libx11
+- libxpm
+- wayland
+repo_makedepends:
+- git
+- go
+- libxcursor
+- libxmu
+- upx
+- xbitmaps
+- xorgproto
+update_on:
+- alpm: wallutils
+  source: archpkg

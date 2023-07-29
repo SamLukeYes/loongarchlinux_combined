@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''asymptote'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gc
+- freeglut
+- gsl
+- fftw
+- libsigsegv
+repo_makedepends:
+- ghostscript
+- imagemagick
+- mesa
+- texlive-texmf: texlive-latexextra
+- pyqt5: python-pyqt5
+- glm
+- glu
+update_on:
+- alpm: gsl
+  source: alpm
+  strip_release: true
+- alpm: asymptote
+  source: archpkg

@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-linear-base'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-hashable
+- haskell-linear-generics
+- haskell-primitive
+- haskell-storable-tuple
+- haskell-vector
+repo_makedepends:
+- ghc
+- haskell-cabal-doctest
+- haskell-hedgehog
+- haskell-inspection-testing
+- haskell-mmorph
+- haskell-tasty
+- haskell-tasty-hedgehog
+- haskell-tasty-inspection-testing
+update_on:
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-linear-generics
+  source: alpm
+- alpm: haskell-primitive
+  source: alpm
+- alpm: haskell-storable-tuple
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-linear-base
+  source: archpkg

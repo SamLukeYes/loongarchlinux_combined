@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-fold-debounce'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- haskell-hspec
+- haskell-hspec-discover
+repo_depends:
+- ghc: ghc-libs
+- haskell-stm-delay
+- haskell-data-default-class
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-stm-delay
+  source: alpm
+- alpm: haskell-data-default-class
+  source: alpm
+- alpm: haskell-fold-debounce
+  source: archpkg

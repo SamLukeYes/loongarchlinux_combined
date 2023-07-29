@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libxml++'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libxml2
+- glibmm
+repo_makedepends:
+- git
+- meson
+- mm-common
+- glibmm: glibmm-docs
+update_on:
+- alpm: libxml++
+  source: archpkg

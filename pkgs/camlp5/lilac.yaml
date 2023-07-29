@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''camlp5'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ocaml
+- camlp-streams
+repo_makedepends:
+- ocaml: ocaml-compiler-libs
+- ocaml-findlib
+update_on:
+- alpm: ocaml
+  source: alpm
+  strip_release: true
+- alpm: camlp5
+  source: archpkg

@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-polkit-agent'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glib2
+- gtk3
+- polkit
+repo_makedepends:
+- git
+- meson
+- intltool
+- vala
+update_on:
+- alpm: granite
+  provides: libgranite.so
+  source: alpm
+- alpm: pantheon-polkit-agent
+  source: archpkg

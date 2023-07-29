@@ -1,0 +1,48 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- glib2
+- gobject-introspection: gobject-introspection-runtime
+- haskell-gi-base
+- haskell-ansi-terminal
+- haskell-attoparsec
+- haskell-pretty-show
+- haskell-safe
+- haskell-xdg-basedir
+- haskell-xml-conduit
+- haskell-regex-tdfa
+repo_makedepends:
+- ghc
+- gobject-introspection
+- haskell-cabal-doctest
+- haskell-doctest
+update_on:
+- alpm: haskell-gi-base
+  source: alpm
+- alpm: haskell-ansi-terminal
+  source: alpm
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-pretty-show
+  source: alpm
+- alpm: haskell-safe
+  source: alpm
+- alpm: haskell-xdg-basedir
+  source: alpm
+- alpm: haskell-xml-conduit
+  source: alpm
+- alpm: haskell-regex-tdfa
+  source: alpm
+- alpm: haskell-gi
+  source: archpkg

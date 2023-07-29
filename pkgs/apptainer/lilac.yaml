@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''apptainer'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fakeroot
+- e2fsprogs: fuse2fs
+- fuse-overlayfs
+- squashfs-tools
+- squashfuse
+- libseccomp
+- e2fsprogs
+repo_makedepends:
+- git
+- go
+- cryptsetup
+update_on:
+- alpm: apptainer
+  source: archpkg

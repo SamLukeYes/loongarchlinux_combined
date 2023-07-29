@@ -1,0 +1,51 @@
+destsubdir: core
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- libarchive
+- elfutils: libelf
+- libmicrohttpd
+- sqlite
+- gcc: gcc-libs
+- glibc
+- elfutils: libelf
+- bzip2
+- curl
+- gcc: gcc-libs
+- glibc
+- xz
+- zlib
+- zstd
+repo_makedepends:
+- bzip2
+- curl
+- gcc: gcc-libs
+- libarchive
+- libmicrohttpd
+- sqlite
+- xz
+- zlib
+- zstd
+update_on:
+- alpm: libarchive
+  provides: libarchive.so
+  source: alpm
+- alpm: libmicrohttpd
+  provides: libmicrohttpd.so
+  source: alpm
+- alpm: sqlite
+  provides: libsqlite3.so
+  source: alpm
+- alpm: bzip2
+  provides: libbz2.so
+  source: alpm
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: xz
+  provides: liblzma.so
+  source: alpm
+- alpm: zstd
+  provides: libzstd.so
+  source: alpm

@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''molecule-plugins'')
+
+  '
+repo_checkdepends:
+- podman
+- python-filelock
+- python-google-auth
+- python-google-api-python-client
+- python-pexpect
+- python-pycryptodome
+- python-pytest
+- python-pytest-helpers-namespace
+- python-vagrant
+- vagrant
+repo_depends:
+- molecule
+- python
+- python-boto3
+- python-cryptography
+- python-docker
+- python-packaging
+- python-requests
+- python-selinux
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-setuptools-scm
+- python-wheel
+update_on:
+- alias: python
+- alpm: molecule-plugins
+  source: archpkg

@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lifted-async'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- haskell-hunit
+- haskell-tasty
+- haskell-tasty-expected-failure
+- haskell-tasty-hunit
+- haskell-tasty-th
+repo_depends:
+- ghc: ghc-libs
+- haskell-async
+- haskell-constraints
+- haskell-lifted-base
+- haskell-monad-control
+- haskell-transformers-base
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-constraints
+  source: alpm
+- alpm: haskell-lifted-base
+  source: alpm
+- alpm: haskell-monad-control
+  source: alpm
+- alpm: haskell-transformers-base
+  source: alpm
+- alpm: haskell-lifted-async
+  source: archpkg

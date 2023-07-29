@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sdl2_mixer'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- sdl2
+- libvorbis
+- libmodplug
+- mpg123
+- flac
+- opusfile
+repo_makedepends:
+- fluidsynth
+update_on:
+- alpm: sdl2_mixer
+  source: archpkg

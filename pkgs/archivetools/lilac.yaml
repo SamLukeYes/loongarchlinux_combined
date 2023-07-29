@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''archivetools'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- rsync
+- xz
+- util-linux
+- systemd
+- bash
+repo_makedepends:
+- git
+update_on:
+- alpm: archivetools
+  source: archpkg

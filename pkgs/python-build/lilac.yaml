@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-build'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-mock
+- python-pytest-rerunfailures
+- python-filelock
+- python-setuptools
+- python-toml
+- python-wheel
+repo_depends:
+- python-packaging
+- python-pyproject-hooks
+repo_makedepends:
+- git
+- python-build
+- python-flit-core
+- python-installer
+- python-sphinx
+- python-sphinx-argparse-cli
+- python-sphinx-autodoc-typehints
+- python-sphinx-furo
+update_on:
+- alpm: python-build
+  source: archpkg

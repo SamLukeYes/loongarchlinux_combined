@@ -1,0 +1,57 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''drumstick'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- qt6-base
+- qt6-5compat
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- qt6-base
+- qt6-5compat
+repo_makedepends:
+- alsa-lib
+- cmake
+- doxygen
+- docbook-xsl
+- fluidsynth
+- graphviz
+- pulseaudio: libpulse
+- qt6-tools
+- sonivox
+update_on:
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: fluidsynth
+  provides: libfluidsynth.so
+  source: alpm
+- alpm: libao
+  provides: libpulse.so
+  source: alpm
+- alpm: libpulse
+  provides: libpulse-simple.so
+  source: alpm
+- alpm: sonivox
+  provides: libsonivox.so
+  source: alpm
+- alpm: drumstick
+  source: archpkg

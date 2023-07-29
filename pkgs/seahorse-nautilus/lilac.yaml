@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''seahorse-nautilus'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- nautilus: libnautilus-extension
+- gtk3
+- gcr
+- libcryptui
+- libnotify
+- nautilus: libnautilus-extension
+- gtk3
+- gcr
+- libcryptui
+- libnotify
+repo_makedepends:
+- meson
+- git
+update_on:
+- alpm: libnautilus-extension
+  provides: libnautilus-extension.so
+  source: alpm
+- alpm: seahorse-nautilus
+  source: archpkg

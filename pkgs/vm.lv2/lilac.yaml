@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''vm.lv2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- lv2lint
+repo_depends:
+- glibc
+- libglvnd
+- libx11
+- glibc
+- libglvnd
+- libx11
+- glew
+repo_makedepends:
+- glew
+- glu
+- lv2
+- meson
+update_on:
+- alpm: glew
+  provides: libGLEW.so
+  source: alpm
+- alpm: vm.lv2
+  source: archpkg

@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-dense-linear-algebra'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-math-functions
+- haskell-primitive
+- haskell-vector
+- haskell-vector-algorithms
+- haskell-vector-th-unbox
+- haskell-vector-binary-instances
+repo_makedepends:
+- ghc
+- haskell-hspec
+- haskell-quickcheck
+update_on:
+- alpm: haskell-math-functions
+  source: alpm
+- alpm: haskell-primitive
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-vector-algorithms
+  source: alpm
+- alpm: haskell-vector-th-unbox
+  source: alpm
+- alpm: haskell-vector-binary-instances
+  source: alpm
+- alpm: haskell-dense-linear-algebra
+  source: archpkg

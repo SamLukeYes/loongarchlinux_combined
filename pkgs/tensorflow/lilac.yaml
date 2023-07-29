@@ -1,0 +1,188 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''tensorflow'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- c-ares
+- pybind11
+- openssl
+- lmdb
+- libpng
+- curl
+- giflib
+- icu
+- libjpeg-turbo
+- openmp
+- c-ares
+- pybind11
+- openssl
+- lmdb
+- libpng
+- curl
+- giflib
+- icu
+- libjpeg-turbo
+- openmp
+- cuda
+- cudnn
+- nccl
+- c-ares
+- pybind11
+- openssl
+- lmdb
+- libpng
+- curl
+- giflib
+- icu
+- libjpeg-turbo
+- openmp
+- cuda
+- cudnn
+- nccl
+- c-ares
+- pybind11
+- openssl
+- lmdb
+- libpng
+- curl
+- giflib
+- icu
+- libjpeg-turbo
+- openmp
+- tensorflow
+- python-termcolor
+- python-astor
+- python-gast03
+- python-numpy
+- protobuf: python-protobuf
+- python-h5py
+- python-keras
+- python-keras-applications
+- python-keras-preprocessing
+- python-tensorflow-estimator
+- python-opt_einsum
+- python-astunparse
+- python-pasta
+- flatbuffers: python-flatbuffers
+- python-typing_extensions
+- c-ares
+- pybind11
+- openssl
+- lmdb
+- libpng
+- curl
+- giflib
+- icu
+- libjpeg-turbo
+- openmp
+- tensorflow: tensorflow-opt
+- python-termcolor
+- python-astor
+- python-gast03
+- python-numpy
+- protobuf: python-protobuf
+- python-h5py
+- python-keras
+- python-keras-applications
+- python-keras-preprocessing
+- python-tensorflow-estimator
+- python-opt_einsum
+- python-astunparse
+- python-pasta
+- flatbuffers: python-flatbuffers
+- python-typing_extensions
+- c-ares
+- pybind11
+- openssl
+- lmdb
+- libpng
+- curl
+- giflib
+- icu
+- libjpeg-turbo
+- openmp
+- tensorflow: tensorflow-cuda
+- cuda
+- cudnn
+- nccl
+- python-pycuda
+- python-termcolor
+- python-astor
+- python-gast03
+- python-numpy
+- protobuf: python-protobuf
+- python-h5py
+- python-keras
+- python-keras-applications
+- python-keras-preprocessing
+- python-tensorflow-estimator
+- python-opt_einsum
+- python-astunparse
+- python-pasta
+- flatbuffers: python-flatbuffers
+- python-typing_extensions
+- c-ares
+- pybind11
+- openssl
+- lmdb
+- libpng
+- curl
+- giflib
+- icu
+- libjpeg-turbo
+- openmp
+- tensorflow: tensorflow-opt-cuda
+- cuda
+- cudnn
+- nccl
+- python-pycuda
+- python-termcolor
+- python-astor
+- python-gast03
+- python-numpy
+- protobuf: python-protobuf
+- python-h5py
+- python-keras
+- python-keras-applications
+- python-keras-preprocessing
+- python-tensorflow-estimator
+- python-opt_einsum
+- python-astunparse
+- python-pasta
+- flatbuffers: python-flatbuffers
+- python-typing_extensions
+repo_makedepends:
+- bazel
+- python-numpy
+- cuda
+- nvidia-utils
+- nccl
+- git
+- cudnn
+- python-wheel
+- python-installer
+- python-setuptools
+- python-h5py
+- python-keras-applications
+- python-keras-preprocessing
+- cython
+- patchelf
+- python-requests
+update_on:
+- alias: icu
+- alias: icu
+- alias: icu
+- alias: icu
+- alias: icu
+- alias: icu
+- alias: icu
+- alpm: tensorflow
+  source: archpkg

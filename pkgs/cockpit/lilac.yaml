@@ -1,0 +1,55 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cockpit'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- krb5
+- libssh
+- accountsservice
+- perl-json
+- perl-locale-po
+- json-glib
+- glib-networking
+- libpwquality
+- openssl
+- kexec-tools
+- which
+- cockpit
+- polkit
+- packagekit
+- python
+- cockpit
+- pcp
+- cockpit
+- udisks2
+- dbus-python
+repo_makedepends:
+- krb5
+- libssh
+- accountsservice
+- perl-json
+- perl-locale-po
+- json-glib
+- glib-networking
+- git
+- intltool
+- gtk-doc
+- gobject-introspection
+- networkmanager
+- libgsystem
+- xmlto
+- npm
+- pcp
+- gendesk
+update_on:
+- alias: python
+- alpm: cockpit
+  source: archpkg

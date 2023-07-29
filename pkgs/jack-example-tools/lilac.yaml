@@ -1,0 +1,57 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''jack-example-tools'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- glibc
+- alsa-lib
+- libsamplerate
+- libsndfile
+- readline
+- zita-alsa-pcmi
+- zita-resampler
+repo_makedepends:
+- alsa-lib
+- git
+- jack2
+- libsamplerate
+- libsndfile
+- meson
+- opus
+- readline
+- zita-alsa-pcmi
+- zita-resampler
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alias: readline
+- alpm: readline
+  provides: libreadline.so
+  source: alpm
+- alpm: zita-alsa-pcmi
+  provides: libzita-alsa-pcmi.so
+  source: alpm
+- alpm: zita-resampler
+  provides: libzita-resampler.so
+  source: alpm
+- alpm: jack-example-tools
+  source: archpkg

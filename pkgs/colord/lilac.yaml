@@ -1,0 +1,50 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''colord'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- lcms2
+- libgusb
+- polkit
+- sqlite
+- dconf
+- dbus
+- libgudev
+- shared-mime-info
+- systemd
+- lcms2
+- libgusb
+- polkit
+- sqlite
+- dconf
+- dbus
+- libgudev
+- shared-mime-info
+- systemd
+- colord: libcolord
+- colord
+- sane
+- glib2
+- lcms2
+- systemd
+repo_makedepends:
+- gobject-introspection
+- vala
+- sane
+- bash-completion
+- argyllcms
+- git
+- meson
+- gtk-doc
+- docbook-xsl
+update_on:
+- alpm: colord
+  source: archpkg

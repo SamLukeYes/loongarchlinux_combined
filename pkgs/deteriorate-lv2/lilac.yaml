@@ -1,0 +1,50 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deteriorate-lv2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- lv2lint
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- gtkmm
+- gcc: gcc-libs
+- glibc
+- gtkmm
+- atkmm
+- cairomm
+- glibmm
+- libsigc++
+repo_makedepends:
+- atkmm
+- cairomm
+- freetype2
+- glib2
+- glibmm
+- libsigc++
+- lv2
+- lvtk
+- pango
+- waf
+update_on:
+- alpm: atkmm
+  provides: libatkmm-1.6.so
+  source: alpm
+- alpm: cairomm
+  provides: libcairomm-1.0.so
+  source: alpm
+- alpm: glibmm
+  provides: libglibmm-2.4.so
+  source: alpm
+- alpm: libsigc++
+  provides: libsigc-2.0.so
+  source: alpm
+- alpm: deteriorate-lv2
+  source: archpkg

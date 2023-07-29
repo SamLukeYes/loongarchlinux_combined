@@ -1,0 +1,24 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''linux-firmware'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- linux-firmware: linux-firmware-whence
+- linux-firmware: linux-firmware-whence
+- linux-firmware: linux-firmware-whence
+- linux-firmware: linux-firmware-whence
+- linux-firmware: linux-firmware-whence
+- linux-firmware: linux-firmware-whence
+- linux-firmware: linux-firmware-whence
+- linux-firmware: linux-firmware-whence
+repo_makedepends:
+- git
+update_on:
+- alpm: linux-firmware
+  source: archpkg

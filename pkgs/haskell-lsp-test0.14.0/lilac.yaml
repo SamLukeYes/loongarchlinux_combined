@@ -1,0 +1,69 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lsp-test0.14.0'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-diff
+- haskell-glob
+- haskell-aeson
+- haskell-aeson-pretty
+- haskell-ansi-terminal
+- haskell-async
+- haskell-conduit
+- haskell-conduit-parse
+- haskell-data-default
+- haskell-lens
+- haskell-lsp1.4
+- haskell-lsp-types1.4
+- haskell-parser-combinators
+- haskell-some
+- haskell-unliftio
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hspec
+update_on:
+- alpm: haskell-diff
+  source: alpm
+- alpm: haskell-glob
+  source: alpm
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-aeson-pretty
+  source: alpm
+- alpm: haskell-ansi-terminal
+  source: alpm
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-conduit-parse
+  source: alpm
+- alpm: haskell-data-default
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-lsp1.4
+  source: alpm
+- alpm: haskell-lsp-types1.4
+  source: alpm
+- alpm: haskell-parser-combinators
+  source: alpm
+- alpm: haskell-some
+  source: alpm
+- alpm: haskell-unliftio
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-lsp-test0.14.0
+  source: archpkg

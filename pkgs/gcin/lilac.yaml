@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gcin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- glib2
+- gdk-pixbuf2
+- cairo
+- pango
+- gtk3
+- libx11
+- libxtst
+- libappindicator: libappindicator-gtk3
+repo_makedepends:
+- qt5-base
+- gtk2
+- anthy
+- curl
+update_on:
+- alpm: gcin
+  source: archpkg

@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libretro-flycast'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libretro-core-info
+- zlib
+repo_makedepends:
+- cmake
+- git
+- mesa
+- ninja
+update_on:
+- alpm: libretro-flycast
+  source: archpkg

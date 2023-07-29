@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-lsp-server'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-flaky
+- python-mccabe
+- python-pycodestyle
+- python-pydocstyle
+- python-pyflakes
+- python-pylint
+- python-rope
+- autopep8
+- flake8
+- yapf
+- python-whatthepatch
+- python-matplotlib
+- python-numpy
+- python-pandas
+- pyqt5: python-pyqt5
+- python-appdirs
+repo_depends:
+- python-jedi
+- python-lsp-jsonrpc
+- python-pluggy
+- python-ujson
+- python-setuptools
+- python-websockets
+- python-docstring-to-markdown
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools-scm
+- python-wheel
+update_on:
+- alpm: python-lsp-server
+  source: archpkg

@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pandoc-cli'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- hslua-cli
+- haskell-pandoc
+- haskell-pandoc-lua-engine
+- haskell-pandoc-server
+- haskell-safe
+- haskell-wai-extra
+- haskell-warp
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-pandoc
+  source: alpm
+- alpm: haskell-pandoc-lua-engine
+  source: alpm
+- alpm: haskell-pandoc-server
+  source: alpm
+- alpm: haskell-safe
+  source: alpm
+- alpm: haskell-wai-extra
+  source: alpm
+- alpm: haskell-warp
+  source: alpm
+- alpm: pandoc-cli
+  source: archpkg

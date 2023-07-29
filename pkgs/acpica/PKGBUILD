@@ -1,0 +1,40 @@
+# Maintainer: Bruno Pagani <archange@archlinux.org>
+# Maintainer: Laurent Carlier <lordheavym@gmail.com>
+# Contributor: Giovanni Scafora <giovanni@archlinux.org>
+# Contributor: Alessio 'mOlOk' Bolognino <themolok@gmail.com>
+
+pkgname=acpica
+pkgver=20221020
+pkgrel=1
+pkgdesc="ACPI tools, including Intel ACPI Source Language compiler"
+arch=(loong64 x86_64)
+url="https://acpica.org"
+license=(GPL2)
+depends=(glibc)
+makedepends=(flex bison)
+provides=(iasl)
+conflicts=(iasl)
+replaces=(iasl)
+options=(!makeflags)
+source=(${pkgname}-unix-${pkgver}.tar.gz::https://acpica.org/sites/acpica/files/acpica-unix-${pkgver}.tar_0.gz
+        acpica-fix-build.patch
+        acpica-unix-la64.patch)
+sha256sums=('33a2e394aca0ca57d4018afe3da340dfad5eb45b1b9300e81dd595fda07cf1c5'
+            '6087d8cb862b2036177a5620a1fd909153eace771c6776c5c2330f8eebb90f12'
+            '7d0f28c3532638ead8696d839589464ebce49a15f76ca892b96ef442c3a08d1c')
+
+prepare() {
+  cd acpica-unix-${pkgver}
+  patch -p1 -i "$srcdir/acpica-fix-build.patch"
+  patch -p1 -i "$srcdir/$pkgname-unix-la64.patch"
+}
+
+build() {
+  cd acpica-unix-${pkgver}
+  NOWERROR=TRUE make
+}
+
+package() {
+  cd acpica-unix-${pkgver}
+  make DESTDIR="${pkgdir}" install
+}

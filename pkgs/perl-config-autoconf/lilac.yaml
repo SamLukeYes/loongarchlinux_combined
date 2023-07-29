@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-config-autoconf'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl-capture-tiny
+- perl-file-slurper
+repo_makedepends:
+- bison
+- flex
+- gawk
+- grep
+- sed
+update_on:
+- alpm: perl-config-autoconf
+  source: archpkg

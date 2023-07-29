@@ -1,0 +1,58 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''glewlwyd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- gnutls
+- jansson
+- openldap: libldap
+repo_makedepends:
+- cmake
+- git
+- mariadb: mariadb-libs
+- ninja
+- postgresql: postgresql-libs
+- sqlite
+- systemd
+update_on:
+- alpm: libcbor
+  provides: libcbor.so
+  source: alpm
+- alpm: libconfig
+  provides: libconfig.so
+  source: alpm
+- alpm: libxcrypt
+  provides: libcrypt.so
+  source: alpm
+- alpm: hoel
+  provides: libhoel.so
+  source: alpm
+- alpm: iddawc
+  provides: libiddawc.so
+  source: alpm
+- alpm: oath-toolkit
+  provides: liboath.so
+  source: alpm
+- alpm: orcania
+  provides: liborcania.so
+  source: alpm
+- alpm: rhonabwy
+  provides: librhonabwy.so
+  source: alpm
+- alpm: ulfius
+  provides: libulfius.so
+  source: alpm
+- alpm: yder
+  provides: libyder.so
+  source: alpm
+- alpm: glewlwyd
+  source: archpkg

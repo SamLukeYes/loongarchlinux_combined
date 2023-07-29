@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-klein'')
+
+  '
+repo_checkdepends:
+- python-hypothesis
+- python-treq
+- python-pytest
+repo_depends:
+- python
+- python-attrs
+- python-hyperlink
+- python-incremental
+- python-tubes
+- python-twisted
+- python-werkzeug
+- python-zope-interface
+- python-constantly
+repo_makedepends:
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-klein
+  source: archpkg

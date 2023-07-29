@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''polkit-kde-agent'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kiconthemes
+- kdbusaddons
+- kcrash
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+update_on:
+- alpm: polkit-kde-agent
+  source: archpkg

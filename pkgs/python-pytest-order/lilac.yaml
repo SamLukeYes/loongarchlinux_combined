@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-order'')
+
+  '
+repo_checkdepends:
+- python-pytest-dependency
+- python-pytest-mock
+- python-pytest-xdist
+repo_depends:
+- python-pytest
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-pytest-order
+  source: archpkg

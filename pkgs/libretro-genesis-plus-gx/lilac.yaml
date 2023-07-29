@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libretro-genesis-plus-gx'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libretro-core-info
+- libvorbis
+- zlib
+repo_makedepends:
+- clang
+- git
+update_on:
+- alpm: libretro-genesis-plus-gx
+  source: archpkg

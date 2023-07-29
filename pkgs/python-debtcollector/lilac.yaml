@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-debtcollector'')
+
+  '
+repo_checkdepends:
+- python-stestr
+repo_depends:
+- python-wrapt
+repo_makedepends:
+- python-pbr
+update_on:
+- alpm: python-debtcollector
+  source: archpkg

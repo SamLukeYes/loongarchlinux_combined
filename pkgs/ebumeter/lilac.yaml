@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ebumeter'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- clxclient
+- clthreads
+- gcc: gcc-libs
+- glibc
+- zita-resampler
+repo_makedepends:
+- clxclient
+- clthreads
+- gendesk
+- libsndfile
+- zita-resampler
+update_on:
+- alpm: clxclient
+  provides: libclxclient.so
+  source: alpm
+- alpm: clthreads
+  provides: libclthreads.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: zita-resampler
+  provides: libzita-resampler.so
+  source: alpm
+- alpm: ebumeter
+  source: archpkg

@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-sqlalchemy-continuum'')
+
+  '
+repo_checkdepends:
+- sqlite
+- python-pytest
+- python-flexmock
+- python-psycopg2
+- python-mysql-connector
+- python-six
+- python-anyjson
+- python-flask
+- python-flask-login
+- python-flask-sqlalchemy
+- python-sqlalchemy-i18n
+repo_depends:
+- python
+- python-sqlalchemy
+- python-sqlalchemy-utils
+repo_makedepends:
+- python-setuptools
+- python-sphinx
+update_on:
+- alias: python
+- alpm: python-sqlalchemy-continuum
+  source: archpkg

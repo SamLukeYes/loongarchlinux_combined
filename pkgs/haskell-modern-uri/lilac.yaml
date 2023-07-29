@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-modern-uri'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-quickcheck
+- haskell-contravariant
+- haskell-hashable
+- haskell-megaparsec
+- haskell-profunctors
+- haskell-reflection
+- haskell-tagged
+repo_makedepends:
+- ghc
+- haskell-hspec
+- haskell-hspec-megaparsec
+- haskell-hspec-discover
+update_on:
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-contravariant
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-megaparsec
+  source: alpm
+- alpm: haskell-profunctors
+  source: alpm
+- alpm: haskell-reflection
+  source: alpm
+- alpm: haskell-tagged
+  source: alpm
+- alpm: haskell-modern-uri
+  source: archpkg

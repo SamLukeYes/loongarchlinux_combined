@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''at-spi2-core'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- at-spi2-core
+repo_depends:
+- dbus
+- glib2
+- gsettings-desktop-schemas
+- libx11
+- libxml2
+- libxtst
+- systemd
+repo_makedepends:
+- dbus-broker
+- gi-docgen
+- git
+- gobject-introspection
+- meson
+- python-sphinx
+update_on:
+- alpm: at-spi2-core
+  source: archpkg

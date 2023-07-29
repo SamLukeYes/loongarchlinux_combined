@@ -1,0 +1,74 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ettercap'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- openssl
+- zlib
+- libpcap
+- pcre
+- libnet
+- ethtool
+- curl
+- geoip
+- ncurses
+- glibc
+- openssl
+- zlib
+- libpcap
+- pcre
+- libnet
+- ethtool
+- curl
+- geoip
+- ncurses
+- gtk3
+- harfbuzz
+repo_makedepends:
+- ghostscript
+- cmake
+- gtk3
+- harfbuzz
+- check
+update_on:
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: ncurses
+  provides: libformw.so
+  source: alpm
+- alpm: ncurses
+  provides: libpanelw.so
+  source: alpm
+- alpm: ncurses
+  provides: libmenuw.so
+  source: alpm
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: ncurses
+  provides: libformw.so
+  source: alpm
+- alpm: ncurses
+  provides: libpanelw.so
+  source: alpm
+- alpm: ncurses
+  provides: libmenuw.so
+  source: alpm
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: ettercap
+  source: archpkg

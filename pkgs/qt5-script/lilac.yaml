@@ -1,0 +1,10 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- qt5-base
+repo_makedepends:
+- git
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true

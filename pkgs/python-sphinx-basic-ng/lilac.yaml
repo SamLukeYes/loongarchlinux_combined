@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-sphinx-basic-ng'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-sphinx
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alpm: python-sphinx-basic-ng
+  source: archpkg

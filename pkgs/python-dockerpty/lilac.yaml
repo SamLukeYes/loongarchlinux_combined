@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-dockerpty'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-expects
+repo_depends:
+- python-six
+repo_makedepends:
+- python-setuptools
+- python-six
+- git
+update_on:
+- alpm: python-dockerpty
+  source: archpkg

@@ -1,0 +1,71 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''snd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- glu
+- gmp
+- gsl
+- libglvnd
+- libmpc
+- libx11
+- libxext
+- libxpm
+- libxt
+- mpfr
+- openmotif
+- glibc
+- glu
+- gmp
+- gsl
+- libglvnd
+- libmpc
+- libx11
+- libxext
+- libxpm
+- libxt
+- mpfr
+- openmotif
+repo_makedepends:
+- alsa-lib
+- fftw
+- flac
+- gendesk
+- ladspa
+- libsamplerate
+- mpg123
+- ruby
+- speex
+- timidity++
+- vorbis-tools
+- wavpack
+update_on:
+- alpm: gsl
+  source: alpm
+  strip_release: true
+- alpm: gsl
+  source: alpm
+  strip_release: true
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: fftw
+  provides: libfftw3.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: snd
+  source: archpkg

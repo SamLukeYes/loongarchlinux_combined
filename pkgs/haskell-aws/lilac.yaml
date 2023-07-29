@@ -1,0 +1,115 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-aws'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-attoparsec
+- haskell-base16-bytestring
+- haskell-base64-bytestring
+- haskell-blaze-builder
+- haskell-byteable
+- haskell-case-insensitive
+- haskell-cereal
+- haskell-conduit
+- haskell-conduit-extra
+- haskell-cryptonite
+- haskell-data-default
+- haskell-http-conduit
+- haskell-http-client-tls
+- haskell-http-types
+- haskell-lifted-base
+- haskell-memory
+- haskell-monad-control
+- haskell-network
+- haskell-network-bsd
+- haskell-old-locale
+- haskell-resourcet
+- haskell-safe
+- haskell-scientific
+- haskell-tagged
+- haskell-unordered-containers
+- haskell-utf8-string
+- haskell-vector
+- haskell-xml-conduit
+repo_makedepends:
+- ghc
+- haskell-quickcheck
+- haskell-errors
+- haskell-http-client
+- haskell-http-client-tls
+- haskell-quickcheck-instances
+- haskell-tasty
+- haskell-tasty-hunit
+- haskell-tasty-quickcheck
+- haskell-transformers-base
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-base16-bytestring
+  source: alpm
+- alpm: haskell-base64-bytestring
+  source: alpm
+- alpm: haskell-blaze-builder
+  source: alpm
+- alpm: haskell-byteable
+  source: alpm
+- alpm: haskell-case-insensitive
+  source: alpm
+- alpm: haskell-cereal
+  source: alpm
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-conduit-extra
+  source: alpm
+- alpm: haskell-cryptonite
+  source: alpm
+- alpm: haskell-data-default
+  source: alpm
+- alpm: haskell-http-conduit
+  source: alpm
+- alpm: haskell-http-client-tls
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-lifted-base
+  source: alpm
+- alpm: haskell-memory
+  source: alpm
+- alpm: haskell-monad-control
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-network-bsd
+  source: alpm
+- alpm: haskell-old-locale
+  source: alpm
+- alpm: haskell-resourcet
+  source: alpm
+- alpm: haskell-safe
+  source: alpm
+- alpm: haskell-scientific
+  source: alpm
+- alpm: haskell-tagged
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-utf8-string
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-xml-conduit
+  source: alpm
+- alpm: haskell-aws
+  source: archpkg

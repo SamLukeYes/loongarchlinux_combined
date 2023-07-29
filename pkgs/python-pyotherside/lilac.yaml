@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pyotherside'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- qt5-base
+- qt5-declarative
+- qt5-svg
+repo_makedepends: []
+update_on:
+- alias: python
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alpm: python-pyotherside
+  source: archpkg

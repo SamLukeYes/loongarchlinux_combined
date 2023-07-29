@@ -1,0 +1,21 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gcr
+- glib2
+- gtk3
+- libsoup
+- networkmanager
+- webkit2gtk-4.1
+repo_makedepends:
+- git
+- intltool
+- meson
+- vala
+update_on:
+- alpm: granite
+  provides: libgranite.so
+  source: alpm
+- alpm: libhandy
+  provides: libhandy-1.so
+  source: alpm

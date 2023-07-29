@@ -1,0 +1,52 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lightdm'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glib2
+- libgcrypt
+- libx11
+- libxcb
+- libxdmcp
+- libxklavier
+- pam
+- polkit
+- xorg-server
+- xorg-xmodmap
+- xorg-xrdb
+- lightdm
+- qt5-base
+repo_makedepends:
+- glib2
+- git
+- gobject-introspection
+- gtk-doc
+- intltool
+- itstool
+- libgcrypt
+- libx11
+- libxcb
+- libxdmcp
+- libxklavier
+- pam
+- polkit
+- qt5-base
+- vala
+- xorg-server
+- xorg-xmodmap
+- xorg-xrdb
+- yelp-tools
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: lightdm
+  source: archpkg

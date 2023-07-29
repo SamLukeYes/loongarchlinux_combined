@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xf86-input-evdev'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- systemd: systemd-libs
+- mtdev
+- libevdev
+repo_makedepends:
+- xorg-server: xorg-server-devel
+- xorgproto
+update_on:
+- alpm: xf86-input-evdev
+  source: archpkg

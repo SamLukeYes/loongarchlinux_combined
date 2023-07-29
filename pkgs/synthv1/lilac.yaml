@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''synthv1'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- synthv1: synthv1-lv2
+- synthv1: synthv1-standalone
+- gcc: gcc-libs
+- glibc
+- qt6-base
+- qt6-svg
+- alsa-lib
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- liblo
+- qt6-base
+- qt6-svg
+repo_makedepends:
+- alsa-lib
+- cmake
+- liblo
+- lv2
+- qt6-base
+- qt6-svg
+- qt6-tools
+update_on:
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: synthv1
+  source: archpkg

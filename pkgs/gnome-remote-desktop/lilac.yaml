@@ -1,0 +1,27 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- cairo
+- dconf
+- freerdp
+- fuse3
+- glib2
+- libdrm
+- libepoxy
+- libfdk-aac
+- libnotify
+- libsecret
+- libvncserver
+- libxkbcommon
+- pipewire
+- systemd
+- tpm2-tss
+repo_makedepends:
+- asciidoc
+- ffnvcodec-headers
+- git
+- meson
+- mutter
+- pygobject: python-gobject
+- wireplumber
+update_on: []

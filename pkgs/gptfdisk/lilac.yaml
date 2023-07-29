@@ -1,0 +1,13 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- popt
+repo_makedepends: []
+update_on:
+- alpm: util-linux-libs
+  provides: libuuid.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm

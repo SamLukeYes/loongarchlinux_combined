@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''crash'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- xz
+- ncurses
+- zlib
+- elfutils: libelf
+- guile
+- mpfr
+repo_makedepends:
+- wget
+update_on:
+- alpm: guile
+  source: alpm
+  strip_release: true
+- alpm: crash
+  source: archpkg

@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''r'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- lapack
+- libtiff
+- pcre2
+- perl
+- libxmu
+- pango
+- zip
+- unzip
+- curl
+- icu
+- which
+repo_makedepends:
+- java-openjdk: jdk-openjdk
+- gcc: gcc-fortran
+- tk
+update_on:
+- alias: perl
+- alias: icu
+- alpm: r
+  source: archpkg

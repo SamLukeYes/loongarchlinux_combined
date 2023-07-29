@@ -1,0 +1,45 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''evolution-data-server'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- db
+repo_depends:
+- gtk3
+- krb5
+- libcanberra
+- gnome-online-accounts: libgoa
+- libgweather-4
+- libical
+- libphonenumber
+- libsecret
+- nss
+- sqlite
+- webkit2gtk-4.1
+- evolution-data-server
+repo_makedepends:
+- boost
+- cmake
+- git
+- gobject-introspection
+- gperf
+- gtk-doc
+- ninja
+- vala
+- webkitgtk-6.0
+update_on:
+- alpm: gtk4
+  provides: libgtk-4.so
+  source: alpm
+- alpm: webkitgtk-6.0
+  provides: libwebkitgtk-6.0.so
+  source: alpm
+- alpm: evolution-data-server
+  source: archpkg

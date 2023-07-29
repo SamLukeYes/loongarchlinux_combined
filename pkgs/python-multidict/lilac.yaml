@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-multidict'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-cov
+- python-pytest-runner
+- python-psutil
+- python-perf
+repo_depends:
+- python
+- glibc
+repo_makedepends:
+- cython
+- python-setuptools
+- git
+update_on:
+- alias: python
+- alpm: python-multidict
+  source: archpkg

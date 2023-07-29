@@ -1,0 +1,121 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''thunderbird'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- gtk3
+- dbus
+- dbus-glib
+- alsa-lib
+- nss
+- hunspell
+- sqlite
+- libvpx
+- zlib
+- bzip2
+- botan2
+- libwebp
+- libevent
+- libjpeg-turbo
+- libffi
+- nspr
+- gcc: gcc-libs
+- libx11
+- libxrender
+- libxfixes
+- libxext
+- libxcomposite
+- libxdamage
+- pango
+- cairo
+- gdk-pixbuf2
+- icu
+- freetype2
+- fontconfig
+- glib2
+- pixman
+- gnupg
+- json-c
+- libcanberra
+repo_makedepends:
+- unzip
+- zip
+- diffutils
+- python
+- nasm
+- mesa
+- pulseaudio: libpulse
+- libice
+- libsm
+- rust
+- clang
+- llvm
+- cbindgen
+- nodejs
+- lld
+- gawk
+- perl
+- findutils
+- libotr
+- wasi-compiler-rt
+- wasi-libc
+- wasi-libc++
+- wasi-libc++: wasi-libc++abi
+update_on:
+- alpm: gtk3
+  provides: libgdk-3.so
+  source: alpm
+- alpm: gtk3
+  provides: libgtk-3.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: libvpx
+  provides: libvpx.so
+  source: alpm
+- alpm: bzip2
+  provides: libbz2.so
+  source: alpm
+- alpm: darktable
+  provides: libwebp.so
+  source: alpm
+- alpm: libwebp
+  provides: libwebpdemux.so
+  source: alpm
+- alpm: libffi
+  provides: libffi.so
+  source: alpm
+- alpm: pango
+  provides: libpango-1.0.so
+  source: alpm
+- alias: icu
+- alpm: icu
+  provides: libicui18n.so
+  source: alpm
+- alpm: icu
+  provides: libicuuc.so
+  source: alpm
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: fontconfig
+  provides: libfontconfig.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: pixman
+  provides: libpixman-1.so
+  source: alpm
+- alpm: thunderbird
+  source: archpkg

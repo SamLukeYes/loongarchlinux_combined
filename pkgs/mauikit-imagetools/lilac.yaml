@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mauikit-imagetools'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- mauikit
+- kquickimageeditor
+- qt5-location
+- exiv2
+- tesseract
+repo_makedepends:
+- extra-cmake-modules
+- opencv
+update_on:
+- alpm: mauikit-imagetools
+  source: archpkg

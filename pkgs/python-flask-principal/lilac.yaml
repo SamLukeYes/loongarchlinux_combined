@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-flask-principal'')
+
+  '
+repo_checkdepends:
+- python-nose
+repo_depends:
+- python
+- python-flask
+repo_makedepends:
+- python-blinker
+- python-sphinx
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-flask-principal
+  source: archpkg

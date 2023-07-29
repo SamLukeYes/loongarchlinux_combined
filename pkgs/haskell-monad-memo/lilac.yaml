@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-monad-memo'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-primitive
+- haskell-vector
+repo_makedepends:
+- ghc
+- haskell-quickcheck
+- haskell-random
+- haskell-test-framework
+- haskell-test-framework-quickcheck2
+update_on:
+- alpm: haskell-primitive
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-monad-memo
+  source: archpkg

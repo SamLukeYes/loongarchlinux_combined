@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qt5-gsettings'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-declarative
+- glib2
+repo_makedepends:
+- liri-cmake-shared
+update_on:
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alpm: qt5-gsettings
+  source: archpkg

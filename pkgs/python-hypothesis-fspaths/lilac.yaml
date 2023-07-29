@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-hypothesis-fspaths'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-hypothesis
+repo_makedepends:
+- python-setuptools
+- python-pytest-runner
+update_on:
+- alpm: python-hypothesis-fspaths
+  source: archpkg

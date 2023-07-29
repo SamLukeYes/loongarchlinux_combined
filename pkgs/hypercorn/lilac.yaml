@@ -1,0 +1,23 @@
+destsubdir: extra
+repo_checkdepends:
+- python-distlib
+- python-hypothesis
+- python-pytest
+- python-pytest-asyncio
+- python-pytest-sugar
+- python-pytest-trio
+- python-tox
+- python-trio
+repo_depends:
+- python-h11
+- python-h2
+- python-priority
+- python-toml
+- python-typing_extensions
+- python-wsproto
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-poetry-core
+update_on: []

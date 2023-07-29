@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-attoparsec-iso8601'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-attoparsec
+- haskell-base-compat-batteries
+- haskell-time-compat
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-base-compat-batteries
+  source: alpm
+- alpm: haskell-time-compat
+  source: alpm
+- alpm: haskell-attoparsec-iso8601
+  source: archpkg

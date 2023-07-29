@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rack'')
+
+  '
+repo_checkdepends:
+- ruby-webrick
+repo_depends:
+- ruby
+repo_makedepends:
+- ruby-rdoc
+- ruby-rake
+- ruby-bundler
+- ruby-minitest
+- ruby-minitest-global_expectations
+- ruby-minitest-sprint
+update_on:
+- alias: ruby
+- alpm: ruby-rack
+  source: archpkg

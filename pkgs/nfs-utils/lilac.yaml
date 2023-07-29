@@ -1,0 +1,16 @@
+destsubdir: core
+repo_checkdepends: []
+repo_depends:
+- rpcbind
+- nfs-utils: nfsidmap
+- gssproxy
+- libevent
+- lvm2: device-mapper
+- openldap: libldap
+- krb5
+repo_makedepends:
+- libevent
+- sqlite
+- rpcsvc-proto
+- lvm2: device-mapper
+update_on: []

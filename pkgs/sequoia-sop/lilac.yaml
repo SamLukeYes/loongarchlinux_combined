@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sequoia-sop'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- nettle
+- bzip2
+- gcc: gcc-libs
+- gmp
+repo_makedepends:
+- git
+- clang
+update_on:
+- alpm: nettle
+  provides: libnettle.so
+  source: alpm
+- alpm: nettle
+  provides: libhogweed.so
+  source: alpm
+- alpm: bzip2
+  provides: libbz2.so
+  source: alpm
+- alpm: sequoia-sop
+  source: archpkg

@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-ronn-ng'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- ruby-rdiscount
+- ruby-mustache
+- ruby-kramdown
+- ruby-nokogiri
+repo_makedepends:
+- ruby-rdoc
+update_on:
+- alias: ruby
+- alpm: ruby-ronn-ng
+  source: archpkg

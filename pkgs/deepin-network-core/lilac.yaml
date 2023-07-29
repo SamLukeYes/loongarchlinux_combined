@@ -1,0 +1,13 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- deepin-qt-dbus-factory
+- gsettings-qt
+- networkmanager-qt
+repo_makedepends:
+- cmake
+- deepin-control-center
+- gtest
+- ninja
+- qt5-tools
+update_on: []

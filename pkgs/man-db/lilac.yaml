@@ -1,0 +1,25 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''man-db'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bash
+- gdbm
+- zlib
+- groff
+- libpipeline
+- less
+- libseccomp
+repo_makedepends:
+- po4a
+update_on:
+- alpm: man-db
+  source: archpkg

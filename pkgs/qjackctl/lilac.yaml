@@ -1,0 +1,50 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qjackctl'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- qt6-base
+- qt6-svg
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- qt6-base
+- qt6-svg
+- alsa-lib
+- portaudio
+repo_makedepends:
+- alsa-lib
+- cmake
+- jack2
+- jack2: jack2-dbus
+- qt6-tools
+- portaudio
+update_on:
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: portaudio
+  provides: libportaudio.so
+  source: alpm
+- alpm: qjackctl
+  source: archpkg

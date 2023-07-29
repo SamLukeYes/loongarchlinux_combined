@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-numba'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- gdb
+- ipython
+- python-cffi
+- python-ipykernel
+- python-jinja
+- python-pexpect
+- python-pip
+- python-pygments
+- python-pytest
+- python-scipy
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- python
+- python-llvmlite
+- python-numpy
+- python-setuptools
+repo_makedepends:
+- onetbb
+- openmp
+- python-build
+- python-installer
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-numba
+  source: archpkg

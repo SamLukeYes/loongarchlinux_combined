@@ -1,0 +1,9 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- libcap-ng
+- libseccomp
+repo_makedepends: []
+update_on: []

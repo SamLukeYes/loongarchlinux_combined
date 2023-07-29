@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-ipycanvas'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-ipywidgets
+- python-pillow
+- python-numpy
+- python-setuptools
+repo_makedepends:
+- python-build
+- python-installer
+- jupyterlab
+update_on:
+- alpm: python-ipycanvas
+  source: archpkg

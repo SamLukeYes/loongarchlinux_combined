@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-ldap'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl-convert-asn1
+- perl-xml-sax-writer
+- perl-text-soundex
+repo_makedepends: []
+update_on:
+- alpm: perl-ldap
+  source: archpkg

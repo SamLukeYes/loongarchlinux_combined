@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''dsniff'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libpcap
+- openssl
+- libxmu
+- glib2
+- libnet
+- libnids
+- libtirpc
+repo_makedepends:
+- rpcsvc-proto
+update_on:
+- alpm: dsniff
+  source: archpkg

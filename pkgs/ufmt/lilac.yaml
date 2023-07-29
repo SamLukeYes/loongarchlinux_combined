@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ufmt'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-black
+- python-click
+- python-libcst
+- python-moreorless
+- python-tomlkit
+- python-trailrunner
+- python-typing_extensions
+- usort
+repo_makedepends:
+- python-build
+- python-installer
+- python-flit-core
+- python-wheel
+update_on:
+- alpm: ufmt
+  source: archpkg

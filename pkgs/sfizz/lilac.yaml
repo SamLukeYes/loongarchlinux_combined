@@ -1,0 +1,86 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sfizz'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- catch2
+- lv2lint
+repo_depends:
+- sfizz: sfizz-lib
+- sfizz: sfizz-lv2
+- sfizz: sfizz-standalone
+- sfizz: sfizz-vst3
+- sfizz: pd-sfizz
+- abseil-cpp
+- gcc: gcc-libs
+- glibc
+- pugixml
+- abseil-cpp
+- cairo
+- fontconfig
+- gcc: gcc-libs
+- glib2
+- glibc
+- libxcb
+- libxkbcommon
+- libxkbcommon: libxkbcommon-x11
+- pango
+- pugixml
+- ttf-roboto
+- xcb-util
+- xcb-util-cursor
+- zenity
+- abseil-cpp
+- gcc: gcc-libs
+- glibc
+- pugixml
+- abseil-cpp
+- cairo
+- fontconfig
+- gcc: gcc-libs
+- glib2
+- glibc
+- libxcb
+- libxkbcommon
+- libxkbcommon: libxkbcommon-x11
+- pango
+- pugixml
+- ttf-roboto
+- xcb-util
+- xcb-util-cursor
+- zenity
+- abseil-cpp
+- gcc: gcc-libs
+- glibc
+- pd
+- pugixml
+repo_makedepends:
+- abseil-cpp
+- cairo
+- cmake
+- cxxopts
+- gcc: gcc-libs
+- ghc-filesystem
+- glibc
+- freetype2
+- libx11
+- libxkbcommon
+- libxkbcommon: libxkbcommon-x11
+- lv2
+- pango
+- pugixml
+- simde
+- vst3sdk
+- xcb-util
+- xcb-util-cursor
+- xcb-util-keysyms
+update_on:
+- alpm: sfizz
+  source: archpkg

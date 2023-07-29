@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pydocstyle'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-runner
+- python-pip
+- python-snowballstemmer
+repo_depends:
+- python-snowballstemmer
+repo_makedepends:
+- python-build
+- python-installer
+- python-poetry-core
+update_on:
+- alpm: python-pydocstyle
+  source: archpkg

@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-passwordsafe'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk4
+- libadwaita
+- libpwquality
+- pygobject: python-gobject
+- python-pykeepass
+- python-pyotp
+- python-cairo
+- python-validators
+- python-zxcvbn
+repo_makedepends:
+- git
+- gobject-introspection
+- meson
+update_on:
+- alpm: gnome-passwordsafe
+  source: archpkg

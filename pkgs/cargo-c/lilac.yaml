@@ -1,0 +1,8 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- curl
+- openssl
+- zlib
+repo_makedepends: []
+update_on: []

@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kcachegrind'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kio
+- kcachegrind: kcachegrind-common
+- hicolor-icon-theme
+- qt5-base
+- kcachegrind: kcachegrind-common
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+- qt5-tools
+- kio
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: kcachegrind
+  source: archpkg

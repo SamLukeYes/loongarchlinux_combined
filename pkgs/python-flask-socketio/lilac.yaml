@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-flask-socketio'')
+
+  '
+repo_checkdepends:
+- python-coverage
+- python-pytest
+- python-tox-current-env
+- flake8
+- python-redis
+repo_depends:
+- python
+- python-flask
+- python-eventlet
+- python-socketio
+repo_makedepends:
+- python-setuptools
+- python-sphinx
+- python-build
+- python-installer
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-flask-socketio
+  source: archpkg

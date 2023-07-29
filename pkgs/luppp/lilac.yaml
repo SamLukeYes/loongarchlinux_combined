@@ -1,0 +1,53 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''luppp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cairo
+- gcc: gcc-libs
+- glibc
+- liblo
+- libsamplerate
+- libsndfile
+- libx11
+- ntk
+- cairo
+- gcc: gcc-libs
+- glibc
+- liblo
+- libsamplerate
+- libsndfile
+- libx11
+- ntk
+- liblo
+- ntk
+- libsamplerate
+- libsndfile
+repo_makedepends:
+- meson
+update_on:
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: liblo
+  provides: liblo.so
+  source: alpm
+- alpm: ntk
+  provides: libntk.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: luppp
+  source: archpkg

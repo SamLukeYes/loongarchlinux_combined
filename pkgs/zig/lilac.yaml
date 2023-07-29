@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''zig'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- lib32-glibc
+repo_depends:
+- clang
+- lld
+- llvm: llvm-libs
+repo_makedepends:
+- cmake
+- llvm
+update_on:
+- alias: clang
+- alpm: zig
+  source: archpkg

@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-conduit-parse'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-conduit
+- haskell-dlist
+- haskell-parsers
+- haskell-safe
+- haskell-safe-exceptions
+repo_makedepends:
+- ghc
+- hlint
+- haskell-resourcet
+- haskell-tasty
+- haskell-tasty-hunit
+update_on:
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-dlist
+  source: alpm
+- alpm: haskell-parsers
+  source: alpm
+- alpm: haskell-safe
+  source: alpm
+- alpm: haskell-safe-exceptions
+  source: alpm
+- alpm: haskell-conduit-parse
+  source: archpkg

@@ -1,0 +1,76 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-persistent-test'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-persistent
+- haskell-aeson
+- haskell-blaze-html
+- haskell-conduit
+- haskell-hspec
+- haskell-hspec-expectations
+- haskell-hunit
+- haskell-monad-control
+- haskell-monad-logger
+- haskell-path-pieces
+- haskell-quickcheck
+- haskell-quickcheck-instances
+- haskell-random
+- haskell-resourcet
+- haskell-transformers-base
+- haskell-unliftio
+- haskell-unliftio-core
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- haskell-hspec
+- haskell-http-api-data
+- haskell-quickcheck
+update_on:
+- alpm: haskell-persistent
+  source: alpm
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-blaze-html
+  source: alpm
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-hspec
+  source: alpm
+- alpm: haskell-hspec-expectations
+  source: alpm
+- alpm: haskell-hunit
+  source: alpm
+- alpm: haskell-monad-control
+  source: alpm
+- alpm: haskell-monad-logger
+  source: alpm
+- alpm: haskell-path-pieces
+  source: alpm
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-quickcheck-instances
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-resourcet
+  source: alpm
+- alpm: haskell-transformers-base
+  source: alpm
+- alpm: haskell-unliftio
+  source: alpm
+- alpm: haskell-unliftio-core
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-persistent-test
+  source: archpkg

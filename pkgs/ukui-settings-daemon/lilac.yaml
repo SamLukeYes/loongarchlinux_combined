@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ukui-settings-daemon'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- geoclue
+- gnome-desktop
+- gsettings-qt
+- gtk3
+- kconfig
+- kglobalaccel
+- kwindowsystem
+- imlib2
+- libcanberra
+- libkscreen
+- libmatekbd
+- libmatemixer
+- libnotify
+- libxklavier
+- mate-desktop
+- qt5-sensors
+- qt5-svg
+- qt5-x11extras
+- ukui-interface
+repo_makedepends:
+- qt5-tools
+- xorg-server: xorg-server-devel
+update_on:
+- alpm: kconfig
+  source: alpm
+  strip_release: true
+- alpm: ukui-settings-daemon
+  source: archpkg

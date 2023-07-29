@@ -1,0 +1,11 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+repo_makedepends:
+- git
+- libgit2
+- mandown
+- protobuf
+update_on: []

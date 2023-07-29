@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''osbuild'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bubblewrap
+- curl
+- e2fsprogs
+- qemu: qemu-img
+- python
+- util-linux
+- python-yaml
+- python-jsonschema
+- python-toml
+- skopeo
+repo_makedepends:
+- make
+- python-docutils
+- python-setuptools
+update_on:
+- alias: python
+- alpm: osbuild
+  source: archpkg

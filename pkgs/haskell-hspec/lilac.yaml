@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-quickcheck
+- haskell-hspec-core
+- haskell-hspec-discover
+- haskell-hspec-expectations
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-hspec-core
+  source: alpm
+- alpm: haskell-hspec-discover
+  source: alpm
+- alpm: haskell-hspec-expectations
+  source: alpm
+- alpm: haskell-hspec
+  source: archpkg

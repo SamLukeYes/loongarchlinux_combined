@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''zutty'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- freetype2
+- libglvnd
+- libxmu
+- xorg-fonts-misc
+repo_makedepends:
+- git
+- python
+update_on:
+- alpm: zutty
+  source: archpkg

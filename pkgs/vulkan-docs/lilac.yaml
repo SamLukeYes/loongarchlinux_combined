@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''vulkan-docs'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- python-pyparsing
+- dblatex
+- source-highlight
+- cmake
+- ghostscript
+- nodejs
+- npm
+- git
+- rubygems
+- graphicsmagick
+- pango
+- gdk-pixbuf2
+- jbigkit
+update_on:
+- alpm: vulkan-docs
+  source: archpkg

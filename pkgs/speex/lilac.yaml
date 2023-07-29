@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''speex'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- libogg
+- speexdsp
+- gcc: gcc-libs
+- libogg
+- speexdsp
+repo_makedepends:
+- git
+update_on:
+- alpm: libogg
+  provides: libogg.so
+  source: alpm
+- alpm: speexdsp
+  provides: libspeexdsp.so
+  source: alpm
+- alpm: speex
+  source: archpkg

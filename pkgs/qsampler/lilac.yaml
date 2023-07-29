@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qsampler'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- libgig
+- liblscp
+- linuxsampler
+- qt6-base
+- qt6-svg
+repo_makedepends:
+- cmake
+- qt6-tools
+update_on:
+- alpm: libgig
+  provides: libgig.so
+  source: alpm
+- alpm: liblscp
+  provides: liblscp.so
+  source: alpm
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: qsampler
+  source: archpkg

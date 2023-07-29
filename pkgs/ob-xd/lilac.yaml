@@ -1,0 +1,84 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ob-xd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ob-xd: ob-xd-common
+- ob-xd: ob-xd-standalone
+- ob-xd: ob-xd-vst3
+- ob-xd: ob-xd-lv2
+- ob-xd: ob-xd-common
+- glibc
+- gcc: gcc-libs
+- libogg
+- libpng
+- zlib
+- alsa-lib
+- libjpeg-turbo
+- libvorbis
+- flac
+- freetype2
+- libglvnd
+- curl
+- hicolor-icon-theme
+- ob-xd: ob-xd-common
+- glibc
+- gcc: gcc-libs
+- libogg
+- libpng
+- zlib
+- alsa-lib
+- libjpeg-turbo
+- libvorbis
+- flac
+- freetype2
+- libglvnd
+- curl
+- ob-xd: ob-xd-common
+- glibc
+- gcc: gcc-libs
+- libogg
+- libpng
+- zlib
+- alsa-lib
+- libjpeg-turbo
+- libvorbis
+- flac
+- freetype2
+- libglvnd
+- curl
+repo_makedepends:
+- glibc
+- gcc: gcc-libs
+- libogg
+- libpng
+- zlib
+- alsa-lib
+- libjpeg-turbo
+- libvorbis
+- flac
+- freetype2
+- libglvnd
+- curl
+- git
+- juce
+- zlib
+- libpng
+- libogg
+- libx11
+- libxext
+- libxrandr
+- libxinerama
+- libxcursor
+- gendesk
+update_on:
+- alpm: ob-xd
+  source: archpkg

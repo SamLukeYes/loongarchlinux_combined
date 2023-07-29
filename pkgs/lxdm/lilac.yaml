@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lxdm'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk2
+- gtk3
+- xorg-server
+- gtk2
+- xorg-server
+- gtk3
+- xorg-server
+repo_makedepends:
+- intltool
+- iso-codes
+update_on:
+- alpm: lxdm
+  source: archpkg

@@ -1,0 +1,83 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mkvtoolnix'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- boost: boost-libs
+- gcc: gcc-libs
+- glibc
+- pugixml
+- qt6-base
+- boost: boost-libs
+- gcc: gcc-libs
+- glibc
+- pugixml
+- qt6-base
+- libdvdread
+- zlib
+- cmark
+- hicolor-icon-theme
+- mkvtoolnix: mkvtoolnix-cli
+- qt6-multimedia
+- qt6-svg
+repo_makedepends:
+- boost
+- cmark
+- docbook-xsl
+- flac
+- git
+- libdvdread
+- libvorbis
+- po4a
+- qt6-multimedia
+- qt6-svg
+- qt6-tools
+- ruby-rake
+- zlib
+update_on:
+- alpm: libebml
+  provides: libebml.so
+  source: alpm
+- alpm: fmt
+  provides: libfmt.so
+  source: alpm
+- alpm: libmatroska
+  provides: libmatroska.so
+  source: alpm
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: libebml
+  provides: libebml.so
+  source: alpm
+- alpm: fmt
+  provides: libfmt.so
+  source: alpm
+- alpm: libmatroska
+  provides: libmatroska.so
+  source: alpm
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: flac
+  provides: libFLAC.so
+  source: alpm
+- alpm: libogg
+  provides: libogg.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbis.so
+  source: alpm
+- alpm: cmark
+  source: alpm
+  strip_release: true
+- alpm: mkvtoolnix
+  source: archpkg

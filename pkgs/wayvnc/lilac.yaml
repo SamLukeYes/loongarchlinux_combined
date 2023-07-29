@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wayvnc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libdrm
+- wayland
+repo_makedepends:
+- git
+- meson
+- ninja
+- pam
+- scdoc
+update_on:
+- alpm: aml
+  provides: libaml.so
+  source: alpm
+- alpm: neatvnc
+  provides: libneatvnc.so
+  source: alpm
+- alpm: pixman
+  provides: libpixman-1.so
+  source: alpm
+- alpm: intel-oneapi-basekit
+  provides: libxkbcommon.so
+  source: alpm
+- alpm: wayvnc
+  source: archpkg

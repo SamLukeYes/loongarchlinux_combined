@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''emacs-slime'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- emacs
+- emacs-slime: cl-swank
+repo_makedepends:
+- git
+- emacs
+update_on:
+- alpm: emacs
+  source: alpm
+  strip_release: true
+- alpm: emacs-slime
+  source: archpkg

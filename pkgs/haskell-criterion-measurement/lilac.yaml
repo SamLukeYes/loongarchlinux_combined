@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-criterion-measurement'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-base-compat
+- haskell-vector
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-base-compat
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-criterion-measurement
+  source: archpkg

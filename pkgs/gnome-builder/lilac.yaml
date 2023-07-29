@@ -1,0 +1,93 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-builder'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- weston
+repo_depends:
+- autoconf-archive
+- clang
+- cmark
+- ctags
+- d-spy
+- desktop-file-utils
+- devhelp
+- editorconfig-core-c
+- flatpak-builder
+- gjs
+- glib2
+- gtksourceview5
+- jsonrpc-glib
+- libadwaita
+- libdex
+- libgit2-glib
+- libpanel
+- libpeas
+- libportal: libportal-gtk4
+- meson
+- pygobject: python-gobject
+- python-lxml
+- python-sphinx
+- sysprof
+- template-glib
+- vala
+- vte3: vte4
+- webkitgtk-6.0
+- autoconf-archive
+- clang
+- cmark
+- ctags
+- d-spy
+- desktop-file-utils
+- devhelp
+- editorconfig-core-c
+- flatpak-builder
+- gjs
+- glib2
+- gtksourceview5
+- jsonrpc-glib
+- libadwaita
+- libdex
+- libgit2-glib
+- libpanel
+- libpeas
+- libportal: libportal-gtk4
+- meson
+- pygobject: python-gobject
+- python-lxml
+- python-sphinx
+- sysprof
+- template-glib
+- vala
+- vte3: vte4
+- webkitgtk-6.0
+repo_makedepends:
+- appstream-glib
+- git
+- gobject-introspection
+- llvm
+- mm-common
+- python-lsp-server
+- python-sphinx_rtd_theme
+- yelp-tools
+update_on:
+- alias: clang
+- alpm: cmark
+  source: alpm
+  strip_release: true
+- alias: clang
+- alpm: cmark
+  source: alpm
+  strip_release: true
+- alpm: julia
+  provides: libgit2.so
+  source: alpm
+- alpm: gnome-builder
+  source: archpkg

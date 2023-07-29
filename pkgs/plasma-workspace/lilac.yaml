@@ -1,0 +1,54 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''plasma-workspace'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- knotifyconfig
+- ksystemstats
+- ktexteditor
+- libqalculate
+- kde-cli-tools
+- appstream: appstream-qt
+- xorg-xrdb
+- xorg-xsetroot
+- kactivitymanagerd
+- kholidays
+- xorg-xmessage
+- milou
+- prison
+- kwin
+- plasma-integration
+- kpeople
+- kactivities-stats
+- kquickcharts
+- kuserfeedback
+- kpipewire
+- accountsservice
+- kio-extras
+- kio-fuse
+- qt5-tools
+- oxygen-sounds
+- plasma-workspace
+- qt5-wayland
+- kwayland-integration
+- xorg-xwayland
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+- gpsd
+- baloo
+- networkmanager-qt
+- plasma-wayland-protocols
+- wayland-protocols
+- kunitconversion
+update_on:
+- alpm: plasma-workspace
+  source: archpkg

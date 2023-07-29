@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gtkmm-4.0'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- gtk4
+- pangomm-2.48
+- gtk4
+- pangomm-2.48
+repo_makedepends:
+- cairomm-1.16: cairomm-1.16-docs
+- git
+- glibmm-2.68: glibmm-2.68-docs
+- meson
+- mm-common
+- pangomm-2.48: pangomm-2.48-docs
+update_on:
+- alpm: cairomm-1.16
+  provides: libcairomm-1.16.so
+  source: alpm
+- alpm: glibmm-2.68
+  provides: libglibmm-2.68.so
+  source: alpm
+- alpm: pangomm-2.48
+  provides: libpangomm-2.48.so
+  source: alpm
+- alpm: libsigc++-3.0
+  provides: libsigc-3.0.so
+  source: alpm
+- alpm: gtkmm-4.0
+  source: archpkg

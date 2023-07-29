@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''zita-njbridge'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- gcc: gcc-libs
+- glibc
+- zita-resampler
+repo_makedepends:
+- zita-resampler
+update_on:
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: zita-resampler
+  provides: libzita-resampler.so
+  source: alpm
+- alpm: zita-njbridge
+  source: archpkg

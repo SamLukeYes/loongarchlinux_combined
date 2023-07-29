@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gerbera'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- taglib
+- curl
+- sqlite
+- file
+- gcc: gcc-libs
+- libupnp
+- duktape
+- libexif
+- fmt
+- pugixml
+- spdlog
+- ffmpeg
+- ffmpegthumbnailer
+- libmatroska
+- libebml
+repo_makedepends:
+- cmake
+update_on:
+- alpm: gerbera
+  source: archpkg

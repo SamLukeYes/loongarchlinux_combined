@@ -1,0 +1,69 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''patchage'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- gtkmm
+- hicolor-icon-theme
+- gcc: gcc-libs
+- glibc
+- gtkmm
+- hicolor-icon-theme
+- alsa-lib
+- atkmm
+- ganv
+- glibmm
+- glib2
+- gtk2
+- libsigc++
+repo_makedepends:
+- alsa-lib
+- atkmm
+- boost
+- dbus-glib
+- ganv
+- glib2
+- glibmm
+- gtk2
+- libsigc++
+- meson
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: atkmm
+  provides: libatkmm-1.6.so
+  source: alpm
+- alpm: ganv
+  provides: libganv-1.so
+  source: alpm
+- alpm: glibmm
+  provides: libglibmm-2.4.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: gtk2
+  provides: libgtk-x11-2.0.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: libsigc++
+  provides: libsigc-2.0.so
+  source: alpm
+- alpm: patchage
+  source: archpkg

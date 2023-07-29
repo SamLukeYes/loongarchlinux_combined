@@ -1,0 +1,46 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''csound-plugins'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- csound
+- hdf5
+- lame
+- python
+- stk
+repo_makedepends:
+- cmake
+- eigen
+- git
+- gmm
+- libpng
+update_on:
+- alpm: faust
+  provides: libfaust.so
+  source: alpm
+- alpm: fltk
+  provides: libfltk.so
+  source: alpm
+- alpm: fluidsynth
+  provides: libfluidsynth.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: libwebsockets
+  provides: libwebsockets.so
+  source: alpm
+- alpm: wiiuse
+  provides: libwiiuse.so
+  source: alpm
+- alias: python
+- alpm: csound-plugins
+  source: archpkg

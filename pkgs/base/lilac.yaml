@@ -1,0 +1,42 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''base'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- filesystem
+- gcc: gcc-libs
+- glibc
+- bash
+- coreutils
+- file
+- findutils
+- gawk
+- grep
+- procps-ng
+- sed
+- tar
+- gettext
+- pciutils
+- psmisc
+- shadow
+- util-linux
+- bzip2
+- gzip
+- xz
+- licenses
+- pacman
+- archlinux-keyring
+- systemd
+- systemd: systemd-sysvcompat
+- iputils
+- iproute2
+repo_makedepends: []
+update_on:
+- alpm: base
+  source: archpkg

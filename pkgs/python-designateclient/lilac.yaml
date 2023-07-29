@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-designateclient'')
+
+  '
+repo_checkdepends:
+- python-oslotest
+- python-requests-mock
+repo_depends:
+- python-cliff
+- python-jsonschema
+- python-osc-lib
+- python-oslo-serialization
+- python-oslo-utils
+- python-pbr
+- python-keystoneauth1
+- python-requests
+- python-six
+- python-stevedore
+- python-debtcollector
+repo_makedepends:
+- git
+update_on:
+- alpm: python-designateclient
+  source: archpkg

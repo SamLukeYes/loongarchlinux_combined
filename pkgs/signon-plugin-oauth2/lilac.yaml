@@ -1,0 +1,7 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- signond
+repo_makedepends:
+- qt5-xmlpatterns
+update_on: []

@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''maxima'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- texinfo
+- shared-mime-info
+- texinfo
+- shared-mime-info
+- gmp
+- sbcl
+- ecl
+- ecl
+- maxima
+repo_makedepends:
+- python
+- emacs
+- ecl
+- sbcl
+update_on:
+- alpm: maxima
+  source: archpkg

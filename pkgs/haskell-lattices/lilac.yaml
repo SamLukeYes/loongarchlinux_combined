@@ -1,0 +1,49 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lattices'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-quickcheck
+- haskell-base-compat
+- haskell-hashable
+- haskell-integer-logarithms
+- haskell-semigroupoids
+- haskell-tagged
+- haskell-universe-base
+- haskell-universe-reverse-instances
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- haskell-quickcheck-instances
+- haskell-tasty
+- haskell-tasty-quickcheck
+update_on:
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-base-compat
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-integer-logarithms
+  source: alpm
+- alpm: haskell-semigroupoids
+  source: alpm
+- alpm: haskell-tagged
+  source: alpm
+- alpm: haskell-universe-base
+  source: alpm
+- alpm: haskell-universe-reverse-instances
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-lattices
+  source: archpkg

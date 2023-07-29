@@ -1,0 +1,17 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- glibc
+- gcc: gcc-libs
+- glslang
+- spirv-tools
+repo_makedepends:
+- asciidoctor
+- cmake
+- ninja
+- python
+- spirv-headers
+update_on:
+- alpm: glslang
+  source: alpm
+  strip_release: true

@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rocksndiamonds-contrib'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- unzip
+- p7zip
+update_on:
+- alpm: rocksndiamonds-contrib
+  source: archpkg

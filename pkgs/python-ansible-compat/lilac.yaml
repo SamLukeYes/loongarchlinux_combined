@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-ansible-compat'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-mock
+repo_depends:
+- ansible-core
+- python
+- python-jsonschema
+- python-packaging
+- python-subprocess-tee
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-setuptools-scm
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-ansible-compat
+  source: archpkg

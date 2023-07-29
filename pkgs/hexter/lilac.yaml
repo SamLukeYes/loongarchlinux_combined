@@ -1,0 +1,57 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hexter'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cairo
+- glibc
+- cairo
+- glibc
+- alsa-lib
+- gtk2
+- glib2
+- liblo
+- pango
+repo_makedepends:
+- alsa-lib
+- dssi
+- glib2
+- gtk2
+- ladspa
+- liblo
+- pango
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: gtk2
+  provides: libgdk-x11-2.0.so
+  source: alpm
+- alpm: gtk2
+  provides: libgtk-x11-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: liblo
+  provides: liblo.so
+  source: alpm
+- alpm: pango
+  provides: libpango-1.0.so
+  source: alpm
+- alpm: pango
+  provides: libpangocairo-1.0.so
+  source: alpm
+- alpm: hexter
+  source: archpkg

@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rebuilderd-website'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- yarn
+- ruby-sass
+- make
+- git
+- svgcleaner
+update_on:
+- alpm: rebuilderd-website
+  source: archpkg

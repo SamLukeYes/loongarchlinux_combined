@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-xmlschema'')
+
+  '
+repo_checkdepends:
+- python-lxml
+- python-jinja
+repo_depends:
+- python
+- python-elementpath
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-wheel
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-xmlschema
+  source: archpkg

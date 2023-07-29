@@ -1,0 +1,52 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libretro-dolphin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bluez: bluez-libs
+- bzip2
+- enet
+- gcc: gcc-libs
+- glibc
+- libevdev
+- libglvnd
+- libpng
+- libretro-core-info
+- libx11
+- libxi
+- libxrandr
+- lzo
+- sfml
+- xz
+- zlib
+- zstd
+repo_makedepends:
+- clang
+- cmake
+- git
+- mesa
+- ninja
+- python
+update_on:
+- alpm: fmt
+  provides: libfmt.so
+  source: alpm
+- alpm: hidapi
+  provides: libhidapi-hidraw.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libudev.so
+  source: alpm
+- alpm: libusb
+  provides: libusb-1.0.so
+  source: alpm
+- alpm: libretro-dolphin
+  source: archpkg

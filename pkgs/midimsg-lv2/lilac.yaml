@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''midimsg-lv2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- lv2lint
+- sord
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- gcc: gcc-libs
+- glibc
+repo_makedepends:
+- lv2
+- waf
+update_on:
+- alpm: midimsg-lv2
+  source: archpkg

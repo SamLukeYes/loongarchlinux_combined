@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-set-infinite'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl
+repo_makedepends: []
+update_on:
+- alias: perl
+- alpm: perl-set-infinite
+  source: archpkg

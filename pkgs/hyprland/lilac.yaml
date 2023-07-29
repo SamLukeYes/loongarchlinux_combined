@@ -1,0 +1,62 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hyprland'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cairo
+- gcc: gcc-libs
+- glibc
+- glslang
+- libdisplay-info
+- libdrm
+- libglvnd
+- libinput
+- libliftoff
+- libx11
+- libxcb
+- libxcomposite
+- libxfixes
+- libxkbcommon
+- libxrender
+- pango
+- pixman
+- pixman
+- polkit
+- seatd
+- systemd: systemd-libs
+- vulkan-icd-loader
+- vulkan-validation-layers
+- wayland
+- wayland-protocols
+- xcb-proto
+- xcb-util
+- xcb-util-errors
+- xcb-util-keysyms
+- xcb-util-renderutil
+- xcb-util-wm
+- xorg-xinput
+- xorg-xwayland
+repo_makedepends:
+- cmake
+- gdb
+- meson
+- ninja
+- vulkan-headers
+- xorgproto
+update_on:
+- alpm: glslang
+  source: alpm
+  strip_release: true
+- alpm: libdisplay-info
+  provides: libdisplay-info.so
+  source: alpm
+- alpm: hyprland
+  source: archpkg

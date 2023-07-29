@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''homebank'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- desktop-file-utils
+- gtk3
+- hicolor-icon-theme
+- libofx
+- librsvg
+- perl-xml-parser
+- shared-mime-info
+- libsoup
+repo_makedepends:
+- intltool
+update_on:
+- alpm: homebank
+  source: archpkg

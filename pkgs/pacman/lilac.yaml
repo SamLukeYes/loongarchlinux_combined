@@ -1,0 +1,21 @@
+destsubdir: core
+repo_checkdepends:
+- python
+- fakechroot
+repo_depends:
+- bash
+- glibc
+- libarchive
+- curl
+- gpgme
+- pacman-mirrorlist
+- gettext
+- gawk
+- coreutils
+- gnupg
+- grep
+repo_makedepends:
+- meson
+- asciidoc
+- doxygen
+update_on: []

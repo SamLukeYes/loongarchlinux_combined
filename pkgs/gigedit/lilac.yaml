@@ -1,0 +1,70 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gigedit'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- atkmm
+- cairomm
+- gcc: gcc-libs
+- glib2
+- glibc
+- glibmm
+- gtk3
+- gtkmm3
+- libgig
+- libsigc++
+- libsndfile
+- linuxsampler
+- pangomm
+repo_makedepends:
+- docbook-xsl
+- gendesk
+- intltool
+- libxslt
+update_on:
+- alpm: atkmm
+  provides: libatkmm-1.6.so
+  source: alpm
+- alpm: cairomm
+  provides: libcairomm-1.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glibmm
+  provides: libglibmm-2.4.so
+  source: alpm
+- alpm: gtk3
+  provides: libgtk-3.so
+  source: alpm
+- alpm: gtkmm3
+  provides: libgtkmm-3.0.so
+  source: alpm
+- alpm: libgig
+  provides: libgig.so
+  source: alpm
+- alpm: libsigc++
+  provides: libsigc-2.0.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: linuxsampler
+  provides: liblinuxsampler.so
+  source: alpm
+- alpm: pangomm
+  provides: libpangomm-1.4.so
+  source: alpm
+- alpm: gigedit
+  source: archpkg

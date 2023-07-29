@@ -1,0 +1,69 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ecasound'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- gcc: gcc-libs
+- glibc
+- alsa-lib
+- audiofile
+- liblo
+- lilv
+- ncurses
+- readline
+- libsamplerate
+- libsndfile
+repo_makedepends:
+- alsa-lib
+- audiofile
+- liblo
+- libmikmod
+- libsamplerate
+- libsndfile
+- lilv
+- lv2
+- ncurses
+- python
+- readline
+- ruby
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: audiofile
+  provides: libaudiofile.so
+  source: alpm
+- alpm: liblo
+  provides: liblo.so
+  source: alpm
+- alpm: lilv
+  provides: liblilv-0.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alias: readline
+- alpm: readline
+  provides: libreadline.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: ecasound
+  source: archpkg

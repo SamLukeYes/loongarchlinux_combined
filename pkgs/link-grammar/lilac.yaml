@@ -1,0 +1,10 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- hunspell
+- sqlite
+- libedit
+repo_makedepends:
+- python
+- swig
+update_on: []

@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-browser-connector'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gnome-shell
+- gobject-introspection: gobject-introspection-runtime
+- hicolor-icon-theme
+- python
+- pygobject: python-gobject
+repo_makedepends:
+- meson
+update_on:
+- alias: python
+- alpm: gnome-browser-connector
+  source: archpkg

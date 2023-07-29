@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lnav'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ncurses
+- curl
+- pcre2
+- libarchive
+repo_makedepends:
+- openssh
+update_on:
+- alpm: lnav
+  source: archpkg

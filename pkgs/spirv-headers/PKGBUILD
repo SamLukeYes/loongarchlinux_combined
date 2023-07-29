@@ -1,0 +1,25 @@
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
+# Maintainer: Bruno Pagani <archange@archlinux.org>
+
+_pkg=SPIRV-Headers
+pkgname=spirv-headers
+epoch=1
+pkgver=1.3.243.0
+pkgrel=1
+pkgdesc="SPIR-V Headers"
+arch=(any)
+url="https://www.khronos.org/registry/spir-v/"
+license=(MIT)
+makedepends=(cmake)
+source=(https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/sdk-${pkgver}/${pkgname}-${pkgver}.tar.gz)
+sha512sums=('3a835e89168e90ad9b799679d7e111ece9f9d763ac830ec299e70226c50318df7cbdebd72cc75cbf13534781549e0140fbbdc5aa4de7c61338a6a23abf56a728')
+
+build() {
+  cmake -B build -S ${_pkg}-sdk-${pkgver} -DCMAKE_INSTALL_PREFIX=/usr .
+  make -C build
+}
+
+package() {
+  make -C build DESTDIR="${pkgdir}" install
+  install -Dm644 ${_pkg}-sdk-${pkgver}/LICENSE -t "${pkgdir}"/usr/share/licenses/${pkgname}/
+}

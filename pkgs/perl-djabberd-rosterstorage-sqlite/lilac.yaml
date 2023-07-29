@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-djabberd-rosterstorage-sqlite'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl-djabberd
+- perl-dbd-sqlite
+repo_makedepends: []
+update_on:
+- alpm: perl-djabberd-rosterstorage-sqlite
+  source: archpkg

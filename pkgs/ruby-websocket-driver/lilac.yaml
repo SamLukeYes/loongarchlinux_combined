@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-websocket-driver'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- ruby-bundler
+- ruby-eventmachine
+- ruby-permessage_deflate
+- ruby-rspec
+repo_depends:
+- ruby
+- ruby-websocket-extensions
+repo_makedepends:
+- ruby-rake
+- ruby-rake-compiler
+update_on:
+- alias: ruby
+- alpm: ruby-websocket-driver
+  source: archpkg

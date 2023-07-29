@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qt6-quick3d'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt6-quicktimeline
+repo_makedepends:
+- cmake
+- ninja
+- qt6-shadertools
+- assimp
+update_on:
+- alpm: qt6-quick3d
+  source: archpkg

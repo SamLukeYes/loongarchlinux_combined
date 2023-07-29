@@ -1,0 +1,54 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sonic-pi'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- ruby-rake
+repo_depends:
+- aubio
+- gcc: gcc-libs
+- glibc
+- jack-example-tools
+- osmid
+- qt5-base
+- qscintilla: qscintilla-qt5
+- ruby
+- ruby-activesupport
+- ruby-ffi
+- ruby-gettext
+- ruby-i18n
+- ruby-kramdown
+- ruby-locale
+- ruby-minitest
+- ruby-mocha
+- ruby-multi_json
+- ruby-polyglot
+- ruby-rouge
+- ruby-rugged
+- ruby-sys-proctable
+- ruby-text
+- ruby-treetop
+- sc3-plugins
+- supercollider
+repo_makedepends:
+- boost
+- cmake
+- erlang-nox
+- gendesk
+- lua
+- qt5-tools
+- ruby-bundler
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alias: ruby
+- alpm: sonic-pi
+  source: archpkg

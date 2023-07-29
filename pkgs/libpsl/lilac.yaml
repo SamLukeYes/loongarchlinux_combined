@@ -1,0 +1,31 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libpsl'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libidn2
+- libunistring
+- libidn2
+- libunistring
+repo_makedepends:
+- libxslt
+- python
+- publicsuffix-list
+- gtk-doc
+update_on:
+- alpm: libidn2
+  provides: libidn2.so
+  source: alpm
+- alpm: libunistring
+  provides: libunistring.so
+  source: alpm
+- alpm: libpsl
+  source: archpkg

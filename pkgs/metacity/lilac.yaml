@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''metacity'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- dconf
+- libcanberra
+- libgtop
+- libsm
+- libxpresent
+- libxres
+- gsettings-desktop-schemas
+- gtk3
+- startup-notification
+- zenity
+repo_makedepends:
+- vulkan-headers
+- python
+update_on:
+- alpm: metacity
+  source: archpkg

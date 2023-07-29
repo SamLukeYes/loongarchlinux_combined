@@ -1,0 +1,45 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hslua-aeson'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-hashable
+- haskell-hslua-core
+- haskell-hslua-marshalling
+- haskell-scientific
+- haskell-unordered-containers
+- haskell-vector
+repo_makedepends:
+- ghc
+- uusi
+- haskell-quickcheck
+- haskell-quickcheck-instances
+- haskell-tasty
+- haskell-tasty-quickcheck
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-hslua-core
+  source: alpm
+- alpm: haskell-hslua-marshalling
+  source: alpm
+- alpm: haskell-scientific
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-hslua-aeson
+  source: archpkg

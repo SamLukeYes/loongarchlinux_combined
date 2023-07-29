@@ -1,0 +1,16 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''oxygen-sounds'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- extra-cmake-modules
+update_on:
+- alpm: oxygen-sounds
+  source: archpkg

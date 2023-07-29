@@ -1,0 +1,35 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hstringtemplate'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-blaze-builder
+- haskell-old-locale
+- haskell-syb
+- haskell-void
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hunit
+- haskell-quickcheck
+- haskell-random
+update_on:
+- alpm: haskell-blaze-builder
+  source: alpm
+- alpm: haskell-old-locale
+  source: alpm
+- alpm: haskell-syb
+  source: alpm
+- alpm: haskell-void
+  source: alpm
+- alpm: haskell-hstringtemplate
+  source: archpkg

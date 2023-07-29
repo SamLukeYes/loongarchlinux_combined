@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hint'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- cabal-install
+repo_depends:
+- ghc: ghc-libs
+- haskell-ghc-paths
+- haskell-random
+- haskell-temporary
+repo_makedepends:
+- ghc
+- haskell-hunit
+- haskell-typed-process
+update_on:
+- alpm: haskell-ghc
+  source: alpm
+- alpm: haskell-ghc-paths
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-temporary
+  source: alpm
+- alpm: haskell-hint
+  source: archpkg

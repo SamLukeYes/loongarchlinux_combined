@@ -1,0 +1,42 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pdm'')
+
+  '
+repo_checkdepends:
+- python-setuptools
+- python-pytest
+- python-pytest-httpserver
+- python-pytest-mock
+repo_depends:
+- python
+- python-blinker
+- python-cachecontrol
+- python-certifi
+- python-dotenv
+- python-findpython
+- python-installer
+- python-lockfile
+- python-packaging
+- python-pdm-backend
+- python-platformdirs
+- python-pyproject-hooks
+- python-requests
+- python-requests-toolbelt
+- python-resolvelib
+- python-rich
+- python-shellingham
+- python-tomlkit
+- python-unearth
+- python-virtualenv
+repo_makedepends:
+- python-build
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-pdm
+  source: archpkg

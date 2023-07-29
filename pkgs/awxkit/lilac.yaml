@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''awxkit'')
+
+  '
+repo_checkdepends:
+- jq
+- python-pytest
+- python-cryptography
+repo_depends:
+- python
+- python-pytest
+- python-requests
+- python-setuptools
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-setuptools
+- python-setuptools-scm
+- python-wheel
+update_on:
+- alias: python
+- alpm: awxkit
+  source: archpkg

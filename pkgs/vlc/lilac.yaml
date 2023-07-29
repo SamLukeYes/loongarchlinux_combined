@@ -1,0 +1,101 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- a52dec
+- libdvbpsi
+- libxpm
+- libdca
+- libproxy
+- lua52
+- libidn
+- libmatroska
+- taglib
+- musepack: libmpcdec
+- ffmpeg4.4
+- faad2
+- libmad
+- libmpeg2
+- xcb-util-keysyms
+- libtar
+- libxinerama
+- libsecret
+- libupnp
+- libarchive
+- qt5-base
+- qt5-x11extras
+- qt5-svg
+- freetype2
+- fribidi
+- harfbuzz
+- fontconfig
+- libxml2
+- gnutls
+- libplacebo
+repo_makedepends:
+- gstreamer: gst-plugins-base-libs
+- live-media
+- libnotify
+- libbluray
+- flac
+- libdc1394
+- libavc1394
+- libcaca
+- gtk3
+- librsvg
+- libgme
+- xosd
+- twolame
+- aalib
+- avahi
+- systemd: systemd-libs
+- libmtp
+- libmicrodns
+- libdvdcss
+- samba: smbclient
+- vcdimager
+- libssh2
+- mesa
+- protobuf
+- libnfs
+- mpg123
+- libdvdread
+- libdvdnav
+- libogg
+- libshout
+- libmodplug
+- libvpx
+- libvorbis
+- speex
+- opus
+- libtheora
+- libpng
+- libjpeg-turbo
+- zvbi
+- libass
+- libkate
+- libtiger
+- sdl_image
+- pulseaudio: libpulse
+- alsa-lib
+- libsamplerate
+- libsoxr
+- lirc
+- libgoom2
+- projectm
+- aom
+- srt
+- dav1d
+- aribb24
+- aribb25
+- pcsclite
+- wayland-protocols
+update_on:
+- alpm: libupnp
+  provides: libixml.so
+  source: alpm
+- alpm: libupnp
+  provides: libupnp.so
+  source: alpm
+- alpm: qt5-base
+  source: alpm
+  strip_release: true

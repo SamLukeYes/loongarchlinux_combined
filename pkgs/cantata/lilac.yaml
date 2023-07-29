@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cantata'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libmtp
+- libmusicbrainz5
+- mpg123
+- qt5-multimedia
+- qt5-svg
+- taglib
+- media-player-info
+- libcdio-paranoia
+- udisks2
+- libcddb
+repo_makedepends:
+- cmake
+- qt5-tools
+- ffmpeg
+- libebur128
+update_on:
+- alpm: cantata
+  source: archpkg

@@ -1,0 +1,56 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''waybar'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtkmm3
+- libsigc++
+- fmt
+- wayland
+- gtk-layer-shell
+- upower
+- libevdev
+- libinput
+- pulseaudio: libpulse
+- libnl
+- libappindicator: libappindicator-gtk3
+- libdbusmenu: libdbusmenu-gtk3
+- libmpdclient
+- libxkbcommon
+- wireplumber: libwireplumber
+- playerctl
+repo_makedepends:
+- cmake
+- catch2
+- meson
+- scdoc
+- wayland-protocols
+update_on:
+- alpm: jsoncpp
+  provides: libjsoncpp.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: chrono-date
+  provides: libdate-tz.so
+  source: alpm
+- alpm: spdlog
+  provides: libspdlog.so
+  source: alpm
+- alpm: upower
+  provides: libupower-glib.so
+  source: alpm
+- alpm: sndio
+  provides: libsndio.so
+  source: alpm
+- alpm: waybar
+  source: archpkg

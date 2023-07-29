@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''yara'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- openssl
+- file
+repo_makedepends: []
+update_on:
+- alpm: file
+  provides: libmagic.so
+  source: alpm
+- alpm: yara
+  source: archpkg

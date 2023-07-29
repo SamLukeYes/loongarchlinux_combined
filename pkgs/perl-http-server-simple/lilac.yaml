@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-http-server-simple'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl-uri
+- perl-cgi
+repo_makedepends: []
+update_on:
+- alpm: perl-http-server-simple
+  source: archpkg

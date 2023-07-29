@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''shotwell'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libgee
+- webkit2gtk-4.1
+- libgexiv2
+- libraw
+- rest
+- desktop-file-utils
+- dconf
+- hicolor-icon-theme
+- json-glib
+- gstreamer: gst-plugins-base
+- libgphoto2
+- libgudev
+- gcr
+- libgdata
+- libportal: libportal-gtk3
+repo_makedepends:
+- intltool
+- itstool
+- meson
+- ninja
+- cmake
+update_on:
+- alpm: shotwell
+  source: archpkg

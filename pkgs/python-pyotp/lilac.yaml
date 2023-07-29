@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pyotp'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+repo_makedepends:
+- git
+- python-setuptools
+- python-sphinx
+- python-guzzle-sphinx-theme
+update_on:
+- alias: python
+- alpm: python-pyotp
+  source: archpkg

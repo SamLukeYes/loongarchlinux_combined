@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''step'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libqalculate
+- gsl
+- knewstuff
+- kplotting
+- hicolor-icon-theme
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+- eigen
+- qt5-tools
+- python
+update_on:
+- alpm: gsl
+  source: alpm
+  strip_release: true
+- alpm: step
+  source: archpkg

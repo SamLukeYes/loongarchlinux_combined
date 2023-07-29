@@ -1,0 +1,64 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deepin-kwin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-declarative
+- qt5-x11extras
+- kconfig
+- kconfigwidgets
+- kcoreaddons
+- kcrash
+- kdbusaddons
+- kglobalaccel
+- ki18n
+- kiconthemes
+- kidletime
+- knotifications
+- kpackage
+- plasma-framework
+- kwidgetsaddons
+- kwindowsystem
+- kcompletion
+- kcmutils
+- knewstuff
+- kservice
+- ktextwidgets
+- kxmlgui
+- krunner
+- kdecoration
+- kscreenlocker
+- dwayland
+- xcb-util-cursor
+- xorg-xwayland
+- pipewire: libpipewire
+- breeze
+- lcms2
+- libqaccessibilityclient
+- qt5-quickcontrols
+- python
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+- ninja
+- qt5-tools
+- wayland-protocols
+- deepin-wayland-protocols
+update_on:
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alpm: kconfig
+  source: alpm
+  strip_release: true
+- alias: python
+- alpm: deepin-kwin
+  source: archpkg

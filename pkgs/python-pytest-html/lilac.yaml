@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-html'')
+
+  '
+repo_checkdepends:
+- python-ansi2html
+- python-pytest-mock
+- python-pytest-rerunfailures
+- python-pytest-xdist
+repo_depends:
+- python-py
+- python-pytest
+- python-pytest-metadata
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-setuptools-scm
+- python-wheel
+update_on:
+- alpm: python-pytest-html
+  source: archpkg

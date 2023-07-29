@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libkcddb'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kio
+- libmusicbrainz5
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+- kcmutils
+update_on:
+- alpm: libkcddb
+  source: archpkg

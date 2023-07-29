@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''eog-plugins'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- eog
+- libchamplain
+- libgdata
+- pygobject: python-gobject
+repo_makedepends:
+- git
+- gobject-introspection
+- meson
+update_on:
+- alpm: eog-plugins
+  source: archpkg

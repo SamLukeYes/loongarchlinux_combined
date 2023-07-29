@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''glom'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gettext
+- boost: boost-libs
+- libgdamm
+- libxml++
+- pygobject: python-gobject
+- libepc
+- goocanvasmm
+- gtksourceviewmm
+- evince
+- postgresql
+- libgda: libgda-postgres
+repo_makedepends:
+- intltool
+- python-sphinx
+- boost
+- itstool
+- libgda: libgda-mysql
+update_on:
+- alpm: glom
+  source: archpkg

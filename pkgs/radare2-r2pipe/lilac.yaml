@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''radare2-r2pipe'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- radare2
+repo_makedepends:
+- radare2
+- python
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+- python-sphinx
+update_on:
+- alias: python
+- alpm: radare2-r2pipe
+  source: archpkg

@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-music'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cairo
+- gdk-pixbuf2
+- glib2
+- gstreamer: gst-plugins-base-libs
+- gstreamer
+- libgee
+- pango
+repo_makedepends:
+- git
+- gobject-introspection
+- intltool
+- meson
+- vala
+update_on:
+- alpm: granite7
+  provides: libgranite-7.so
+  source: alpm
+- alpm: pantheon-music
+  source: archpkg

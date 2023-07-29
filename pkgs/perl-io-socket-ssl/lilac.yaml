@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-io-socket-ssl'')
+
+  '
+repo_checkdepends:
+- perl-io-socket-inet6
+repo_depends:
+- perl-net-ssleay
+- perl
+- perl-uri
+repo_makedepends: []
+update_on:
+- alias: perl
+- alpm: perl-io-socket-ssl
+  source: archpkg

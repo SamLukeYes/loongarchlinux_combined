@@ -1,0 +1,65 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''swayimg'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cairo
+- hicolor-icon-theme
+- libheif
+- libpng
+- libxkbcommon
+repo_makedepends:
+- bash-completion
+- meson
+- ninja
+- wayland-protocols
+update_on:
+- alpm: libexif
+  provides: libexif.so
+  source: alpm
+- alpm: fontconfig
+  provides: libfontconfig.so
+  source: alpm
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: giflib
+  provides: libgif.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: darktable
+  provides: libjpeg.so
+  source: alpm
+- alpm: json-c
+  provides: libjson-c.so
+  source: alpm
+- alpm: libjxl
+  provides: libjxl.so
+  source: alpm
+- alpm: librsvg
+  provides: librsvg-2.so
+  source: alpm
+- alpm: darktable
+  provides: libtiff.so
+  source: alpm
+- alpm: wayland
+  provides: libwayland-client.so
+  source: alpm
+- alpm: darktable
+  provides: libwebp.so
+  source: alpm
+- alpm: libwebp
+  provides: libwebpdemux.so
+  source: alpm
+- alpm: swayimg
+  source: archpkg

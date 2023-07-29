@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wit'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bzip2
+- fuse2
+- glibc
+- zlib
+repo_makedepends:
+- clang
+- git
+update_on:
+- alias: libcrypto
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: wit
+  source: archpkg

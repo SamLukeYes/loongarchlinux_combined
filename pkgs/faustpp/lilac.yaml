@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''faustpp'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- faust
+- python
+- python-jinja
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: faustpp
+  source: archpkg

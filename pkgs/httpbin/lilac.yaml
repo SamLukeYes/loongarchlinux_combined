@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''httpbin'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-flask
+- python-decorator
+- python-six
+- brotli: python-brotli
+- python-werkzeug
+- python-markupsafe
+- python-itsdangerous
+repo_makedepends:
+- python-setuptools
+update_on:
+- alias: python
+- alpm: httpbin
+  source: archpkg

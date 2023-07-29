@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''monitoring-plugins'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl
+repo_makedepends:
+- net-snmp
+- postgresql: postgresql-libs
+- libdbi
+- mariadb: mariadb-libs
+- procps-ng
+- iputils
+- fping
+- rpcbind
+- samba: smbclient
+- openssh
+- inetutils
+- postfix
+- perl-net-snmp
+update_on:
+- alias: perl
+- alpm: monitoring-plugins
+  source: archpkg

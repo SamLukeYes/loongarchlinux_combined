@@ -1,0 +1,34 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''jupyter-nbconvert'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-ipywidgets
+- python-pyppeteer
+repo_depends:
+- jupyter-nbformat
+- jupyter-nbclient
+- python-beautifulsoup4
+- python-bleach
+- python-defusedxml
+- python-entrypoints
+- python-jinja
+- python-pandocfilters
+- python-mistune
+- python-pygments
+- python-traitlets
+- python-tinycss2
+- python-lxml
+repo_makedepends:
+- python-build
+- python-installer
+- python-hatchling
+update_on:
+- alpm: jupyter-nbconvert
+  source: archpkg

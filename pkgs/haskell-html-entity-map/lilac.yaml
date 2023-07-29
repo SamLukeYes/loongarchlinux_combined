@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-html-entity-map'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-html-entity-map
+  source: archpkg

@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rbutil'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- qt6-5compat
+- qt6-base
+- qt6-multimedia
+- qt6-svg
+- zlib
+repo_makedepends:
+- cmake
+- git
+- ninja
+- qt6-tools
+update_on:
+- alpm: bzip2
+  provides: libbz2.so
+  source: alpm
+- alpm: libusb
+  provides: libusb-1.0.so
+  source: alpm
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: rbutil
+  source: archpkg

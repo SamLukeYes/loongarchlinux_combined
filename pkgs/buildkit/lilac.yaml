@@ -1,0 +1,9 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- runc
+- containerd
+repo_makedepends:
+- git
+- go
+update_on: []

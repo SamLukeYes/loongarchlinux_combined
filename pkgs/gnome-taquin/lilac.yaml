@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-taquin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- librsvg
+- gsound
+repo_makedepends:
+- meson
+- vala
+- yelp-tools
+- appstream-glib
+- git
+update_on:
+- alpm: gnome-taquin
+  source: archpkg

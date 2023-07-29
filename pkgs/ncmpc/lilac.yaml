@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ncmpc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- lirc
+- pcre2
+- gcc: gcc-libs
+- glibc
+- lirc
+- pcre2
+- libmpdclient
+- ncurses
+repo_makedepends:
+- boost
+- libmpdclient
+- meson
+- ncurses
+- python-sphinx
+update_on:
+- alpm: libmpdclient
+  provides: libmpdclient.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: ncmpc
+  source: archpkg

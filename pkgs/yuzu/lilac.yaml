@@ -1,0 +1,75 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''yuzu'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- enet
+- gcc: gcc-libs
+- glibc
+- lz4
+- qt5-base
+- qt5-multimedia
+- qt5-webengine
+- sdl2
+repo_makedepends:
+- boost
+- clang
+- cmake
+- git
+- glslang
+- llvm
+- ninja
+- nlohmann-json
+- qt5-tools
+- shaderc
+- spirv-headers
+- vulkan-headers
+update_on:
+- alpm: ffmpeg
+  provides: libavcodec.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavutil.so
+  source: alpm
+- alpm: boost
+  provides: libboost_context.so
+  source: alpm
+- alias: libcrypto
+- alpm: fmt
+  provides: libfmt.so
+  source: alpm
+- alpm: libinih
+  provides: libINIReader.so
+  source: alpm
+- alpm: opus
+  provides: libopus.so
+  source: alpm
+- alpm: speexdsp
+  provides: libspeexdsp.so
+  source: alpm
+- alias: libssl
+- alpm: ffmpeg
+  provides: libswscale.so
+  source: alpm
+- alpm: libusb
+  provides: libusb-1.0.so
+  source: alpm
+- alpm: libva
+  provides: libva.so
+  source: alpm
+- alpm: zstd
+  provides: libzstd.so
+  source: alpm
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: yuzu
+  source: archpkg

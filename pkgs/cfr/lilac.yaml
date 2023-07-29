@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cfr'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- git
+- maven
+- java8-openjdk: jdk8-openjdk
+update_on:
+- alpm: cfr
+  source: archpkg

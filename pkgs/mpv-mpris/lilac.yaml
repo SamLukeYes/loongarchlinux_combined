@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mpv-mpris'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- jq
+- playerctl
+- socat
+- sound-theme-freedesktop
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- glib2
+- mpv
+repo_makedepends: []
+update_on:
+- alpm: mpv-mpris
+  source: archpkg

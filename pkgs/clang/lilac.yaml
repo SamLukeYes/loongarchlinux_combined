@@ -1,0 +1,13 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- llvm: llvm-libs
+- gcc
+- compiler-rt
+repo_makedepends:
+- llvm
+- cmake
+- ninja
+- python-sphinx
+- python-recommonmark
+update_on: []

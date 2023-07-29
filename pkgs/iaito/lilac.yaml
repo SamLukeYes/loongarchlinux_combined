@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''iaito'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- radare2
+- capstone
+- qt5-base
+- qt5-svg
+- python
+- pyside2
+- pyside2: python-shiboken2
+- graphviz
+- gcc: gcc-libs
+repo_makedepends:
+- git
+- pyside2: shiboken2
+- qt5-tools
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alias: python
+- alpm: iaito
+  source: archpkg

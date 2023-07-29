@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''dmtcp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bash
+- gcc: gcc-libs
+- glibc
+repo_makedepends:
+- dash
+- emacs
+- gdb
+- openmpi
+- procps-ng
+- python
+- screen
+- strace
+- tcsh
+- vim
+- zsh
+update_on:
+- alpm: dmtcp
+  source: archpkg

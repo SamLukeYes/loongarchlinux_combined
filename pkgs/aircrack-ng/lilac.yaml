@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''aircrack-ng'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- cmocka
+repo_depends:
+- glibc
+- gcc: gcc-libs
+- openssl
+- sqlite
+- iw
+- net-tools
+- wireless_tools
+- ethtool
+- pcre
+- libpcap
+- python
+- zlib
+- libnl
+- hwloc
+- usbutils
+repo_makedepends: []
+update_on:
+- alpm: libpcap
+  provides: libpcap.so
+  source: alpm
+- alias: python
+- alpm: aircrack-ng
+  source: archpkg

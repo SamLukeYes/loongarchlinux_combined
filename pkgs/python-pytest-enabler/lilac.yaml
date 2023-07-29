@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-enabler'')
+
+  '
+repo_checkdepends:
+- python-pytest-mypy
+- python-pytest-ruff
+repo_depends:
+- python-jaraco.context
+- python-jaraco.functools
+- python-pytest
+- python-toml
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-setuptools-scm
+- python-wheel
+update_on:
+- alpm: python-pytest-enabler
+  source: archpkg

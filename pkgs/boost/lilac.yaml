@@ -1,0 +1,18 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- boost: boost-libs
+- bzip2
+- zlib
+- icu
+- zstd
+repo_makedepends:
+- icu
+- python
+- python-numpy
+- bzip2
+- zlib
+- openmpi
+- zstd
+update_on:
+- alias: icu

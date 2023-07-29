@@ -1,0 +1,204 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-language-server'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- cabal-install
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-aeson-pretty
+- haskell-async
+- haskell-base16-bytestring
+- haskell-cryptohash-sha1
+- haskell-data-default
+- haskell-extra
+- haskell-ghc-paths
+- haskell-ghcide
+- haskell-githash
+- haskell-gitrev
+- haskell-hashable
+- haskell-hie-bios
+- haskell-hiedb
+- haskell-hls-alternate-number-format-plugin
+- haskell-hls-brittany-plugin
+- haskell-hls-cabal-fmt-plugin
+- haskell-hls-cabal-plugin
+- haskell-hls-call-hierarchy-plugin
+- haskell-hls-change-type-signature-plugin
+- haskell-hls-class-plugin
+- haskell-hls-code-range-plugin
+- haskell-hls-eval-plugin
+- haskell-hls-explicit-fixity-plugin
+- haskell-hls-explicit-imports-plugin
+- haskell-hls-explicit-record-fields-plugin
+- haskell-hls-floskell-plugin
+- haskell-hls-fourmolu-plugin
+- haskell-hls-gadt-plugin
+- haskell-hls-ormolu-plugin
+- haskell-hls-graph
+- haskell-hls-haddock-comments-plugin
+- haskell-hls-hlint-plugin
+- haskell-hls-module-name-plugin
+- haskell-hls-ormolu-plugin
+- haskell-hls-plugin-api
+- haskell-hls-pragmas-plugin
+- haskell-hls-qualify-imported-names-plugin
+- haskell-hls-refactor-plugin
+- haskell-hls-refine-imports-plugin
+- haskell-hls-rename-plugin
+- haskell-hls-retrie-plugin
+- haskell-hls-splice-plugin
+- haskell-hls-stylish-haskell-plugin
+- haskell-hls-tactics-plugin
+- haskell-hslogger
+- haskell-lens
+- haskell-lens-aeson
+- haskell-lsp
+- haskell-lsp-types
+- haskell-optparse-applicative
+- haskell-optparse-simple
+- haskell-prettyprinter
+- haskell-regex-tdfa
+- haskell-safe-exceptions
+- haskell-sqlite-simple
+- haskell-temporary
+- haskell-unliftio-core
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- uusi
+- haskell-ghcide-test-utils
+- haskell-hls-test-utils
+- haskell-hspec-expectations
+- haskell-lsp-test
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-aeson-pretty
+  source: alpm
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-base16-bytestring
+  source: alpm
+- alpm: haskell-cryptohash-sha1
+  source: alpm
+- alpm: haskell-data-default
+  source: alpm
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-ghc
+  source: alpm
+- alpm: haskell-ghc-paths
+  source: alpm
+- alpm: haskell-ghcide
+  source: alpm
+- alpm: haskell-githash
+  source: alpm
+- alpm: haskell-gitrev
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-hie-bios
+  source: alpm
+- alpm: haskell-hiedb
+  source: alpm
+- alpm: haskell-hls-alternate-number-format-plugin
+  source: alpm
+- alpm: haskell-hls-brittany-plugin
+  source: alpm
+- alpm: haskell-hls-cabal-fmt-plugin
+  source: alpm
+- alpm: haskell-hls-cabal-plugin
+  source: alpm
+- alpm: haskell-hls-call-hierarchy-plugin
+  source: alpm
+- alpm: haskell-hls-change-type-signature-plugin
+  source: alpm
+- alpm: haskell-hls-class-plugin
+  source: alpm
+- alpm: haskell-hls-code-range-plugin
+  source: alpm
+- alpm: haskell-hls-eval-plugin
+  source: alpm
+- alpm: haskell-hls-explicit-fixity-plugin
+  source: alpm
+- alpm: haskell-hls-explicit-imports-plugin
+  source: alpm
+- alpm: haskell-hls-explicit-record-fields-plugin
+  source: alpm
+- alpm: haskell-hls-floskell-plugin
+  source: alpm
+- alpm: haskell-hls-fourmolu-plugin
+  source: alpm
+- alpm: haskell-hls-gadt-plugin
+  source: alpm
+- alpm: haskell-hls-ormolu-plugin
+  source: alpm
+- alpm: haskell-hls-graph
+  source: alpm
+- alpm: haskell-hls-haddock-comments-plugin
+  source: alpm
+- alpm: haskell-hls-hlint-plugin
+  source: alpm
+- alpm: haskell-hls-module-name-plugin
+  source: alpm
+- alpm: haskell-hls-ormolu-plugin
+  source: alpm
+- alpm: haskell-hls-plugin-api
+  source: alpm
+- alpm: haskell-hls-pragmas-plugin
+  source: alpm
+- alpm: haskell-hls-qualify-imported-names-plugin
+  source: alpm
+- alpm: haskell-hls-refactor-plugin
+  source: alpm
+- alpm: haskell-hls-refine-imports-plugin
+  source: alpm
+- alpm: haskell-hls-rename-plugin
+  source: alpm
+- alpm: haskell-hls-retrie-plugin
+  source: alpm
+- alpm: haskell-hls-splice-plugin
+  source: alpm
+- alpm: haskell-hls-stylish-haskell-plugin
+  source: alpm
+- alpm: haskell-hls-tactics-plugin
+  source: alpm
+- alpm: haskell-hslogger
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-lens-aeson
+  source: alpm
+- alpm: haskell-lsp
+  source: alpm
+- alpm: haskell-lsp-types
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-optparse-simple
+  source: alpm
+- alpm: haskell-prettyprinter
+  source: alpm
+- alpm: haskell-regex-tdfa
+  source: alpm
+- alpm: haskell-safe-exceptions
+  source: alpm
+- alpm: haskell-sqlite-simple
+  source: alpm
+- alpm: haskell-temporary
+  source: alpm
+- alpm: haskell-unliftio-core
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-language-server
+  source: archpkg

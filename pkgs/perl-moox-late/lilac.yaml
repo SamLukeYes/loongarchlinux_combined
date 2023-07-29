@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-moox-late'')
+
+  '
+repo_checkdepends:
+- perl-test-fatal
+- perl-test-simple
+- perl-test-requires
+repo_depends:
+- perl-moo
+- perl-type-tiny
+- perl-moox-handlesvia
+- perl-sub-handlesvia
+repo_makedepends: []
+update_on:
+- alpm: perl-moox-late
+  source: archpkg

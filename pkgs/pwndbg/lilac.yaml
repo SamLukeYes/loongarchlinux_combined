@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pwndbg'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gdb
+- python
+- capstone: python-capstone
+- unicorn: python-unicorn
+- python-pycparser
+- python-psutil
+- python-tabulate
+- python-pyelftools
+- python-pygments
+- which
+repo_makedepends: []
+update_on:
+- alias: python
+- alpm: pwndbg
+  source: archpkg

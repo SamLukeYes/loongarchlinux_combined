@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-hypothesmith'')
+
+  '
+repo_checkdepends:
+- python-black
+- python-parso
+- python-pytest
+repo_depends:
+- python-hypothesis
+- python-lark-parser
+- python-libcst
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alpm: python-hypothesmith
+  source: archpkg

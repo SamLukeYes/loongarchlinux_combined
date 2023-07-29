@@ -1,0 +1,10 @@
+destsubdir: extra
+repo_checkdepends:
+- cairo
+repo_depends:
+- libpciaccess
+repo_makedepends:
+- python-docutils
+- meson
+- cairo
+update_on: []

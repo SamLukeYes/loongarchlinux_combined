@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''retro-gtk'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libepoxy
+- glib2
+- gtk3
+- pulseaudio: libpulse
+- libsamplerate
+repo_makedepends:
+- gobject-introspection
+- meson
+- vala
+- git
+- gtk-doc
+update_on:
+- alpm: retro-gtk
+  source: archpkg

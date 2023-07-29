@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''nomad'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- gcc: gcc-libs
+- iptables
+repo_makedepends:
+- git
+- go
+update_on:
+- alpm: iptables
+  source: alpm
+  strip_release: true
+- alpm: nomad
+  source: archpkg

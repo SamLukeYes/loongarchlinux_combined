@@ -1,0 +1,35 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''geocode-glib'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glib2
+- json-glib
+- geocode-glib: geocode-glib-common
+- geocode-glib: geocode-glib-common
+repo_makedepends:
+- gobject-introspection
+- git
+- gtk-doc
+- meson
+- glib2
+- json-glib
+- libsoup
+- libsoup3
+update_on:
+- alpm: libsoup
+  provides: libsoup-2.4.so
+  source: alpm
+- alpm: libsoup3
+  provides: libsoup-3.0.so
+  source: alpm
+- alpm: geocode-glib
+  source: archpkg

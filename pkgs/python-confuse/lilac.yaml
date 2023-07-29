@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-confuse'')
+
+  '
+repo_checkdepends:
+- python-nose
+repo_depends:
+- python-yaml
+repo_makedepends:
+- git
+- python-build
+- python-flit-core
+- python-installer
+update_on:
+- alpm: python-confuse
+  source: archpkg

@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''davix'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- gtest
+repo_depends:
+- openssl
+- libxml2
+- util-linux: util-linux-libs
+repo_makedepends:
+- doxygen
+- boost
+- cmake
+- git
+- python
+update_on:
+- alpm: davix
+  source: archpkg

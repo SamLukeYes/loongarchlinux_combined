@@ -1,0 +1,16 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xcursor-vanilla-dmz'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- xorg-xcursorgen
+update_on:
+- alpm: xcursor-vanilla-dmz
+  source: archpkg

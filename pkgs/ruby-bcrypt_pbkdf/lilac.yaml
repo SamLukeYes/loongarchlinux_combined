@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-bcrypt_pbkdf'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- ruby-minitest
+repo_depends:
+- ruby
+repo_makedepends:
+- ruby-rake
+- ruby-bundler
+- ruby-rdoc
+- ruby-rake-compiler
+update_on:
+- alias: ruby
+- alpm: ruby-bcrypt_pbkdf
+  source: archpkg

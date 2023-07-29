@@ -1,0 +1,44 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-fourmolu-plugin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- git
+repo_depends:
+- ghc: ghc-libs
+- haskell-fourmolu
+- haskell-ghcide
+- haskell-hls-plugin-api
+- haskell-lens
+- haskell-lsp
+- haskell-process-extras
+repo_makedepends:
+- ghc
+- uusi
+- haskell-aeson
+- haskell-hls-test-utils
+- haskell-lsp-test
+update_on:
+- alpm: haskell-fourmolu
+  source: alpm
+- alpm: haskell-ghc
+  source: alpm
+- alpm: haskell-ghcide
+  source: alpm
+- alpm: haskell-hls-plugin-api
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-lsp
+  source: alpm
+- alpm: haskell-process-extras
+  source: alpm
+- alpm: haskell-hls-fourmolu-plugin
+  source: archpkg

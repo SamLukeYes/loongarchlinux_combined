@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-minitest-rg'')
+
+  '
+repo_checkdepends:
+- ruby-hoe
+- ruby-rake
+repo_depends:
+- ruby-minitest
+repo_makedepends: []
+update_on:
+- alpm: ruby-minitest-rg
+  source: archpkg

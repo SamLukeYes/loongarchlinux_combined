@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pdfminer'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python-charset-normalizer
+- python-cryptography
+repo_makedepends:
+- python-setuptools
+- cython
+update_on:
+- alpm: python-pdfminer
+  source: archpkg

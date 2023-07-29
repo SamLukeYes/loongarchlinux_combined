@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lua-std-normalize'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- lua
+- lua51
+- lua52
+- lua53
+- luarocks
+update_on:
+- alpm: lua-std-normalize
+  source: archpkg

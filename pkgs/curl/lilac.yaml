@@ -1,0 +1,51 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''curl'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ca-certificates
+- brotli
+- krb5
+- libidn2
+- libnghttp2
+- libpsl
+- libssh2
+- openssl
+- zlib
+- zstd
+- curl
+- openssl
+- curl
+- gnutls
+repo_makedepends:
+- git
+- patchelf
+update_on:
+- alpm: brotli
+  provides: libbrotlidec.so
+  source: alpm
+- alpm: krb5
+  provides: libgssapi_krb5.so
+  source: alpm
+- alpm: libidn2
+  provides: libidn2.so
+  source: alpm
+- alpm: libpsl
+  provides: libpsl.so
+  source: alpm
+- alpm: libssh2
+  provides: libssh2.so
+  source: alpm
+- alpm: zstd
+  provides: libzstd.so
+  source: alpm
+- alpm: curl
+  source: archpkg

@@ -1,0 +1,39 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''openssh'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- krb5
+- ldns
+- libedit
+- libxcrypt
+- openssl
+- pam
+- zlib
+repo_makedepends:
+- libfido2
+- linux: linux-headers
+update_on:
+- alpm: krb5
+  provides: libkrb5.so
+  source: alpm
+- alpm: krb5
+  provides: libgssapi_krb5.so
+  source: alpm
+- alpm: libxcrypt
+  provides: libcrypt.so
+  source: alpm
+- alpm: pam
+  provides: libpam.so
+  source: alpm
+- alpm: openssh
+  source: archpkg

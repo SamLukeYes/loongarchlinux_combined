@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wasi-compiler-rt'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- wasi-libc
+repo_makedepends:
+- cmake
+- ninja
+- llvm
+- clang
+- lld
+update_on:
+- alpm: wasi-compiler-rt
+  source: archpkg

@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''py3status'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python
+- python-setuptools
+repo_makedepends:
+- python-build
+- python-installer
+- python-wheel
+update_on:
+- alias: python
+- alpm: py3status
+  source: archpkg

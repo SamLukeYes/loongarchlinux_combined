@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''bt747'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- hicolor-icon-theme
+- java-rxtx
+repo_makedepends:
+- imagemagick
+update_on:
+- alpm: bt747
+  source: archpkg

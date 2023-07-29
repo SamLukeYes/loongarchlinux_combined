@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xdp-tools'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- elfutils: libelf
+- linux-api-headers
+- libbpf
+- xdp-tools: libxdp
+repo_makedepends:
+- clang
+- llvm
+- gcc
+- make
+- m4
+- libpcap
+- zlib
+- linux-tools: bpf
+update_on:
+- alpm: libpcap
+  provides: libpcap.so
+  source: alpm
+- alpm: xdp-tools
+  source: archpkg

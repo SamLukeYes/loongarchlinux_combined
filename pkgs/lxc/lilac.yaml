@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lxc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bash
+- perl
+- libseccomp
+- libcap
+- python
+- rsync
+- wget
+repo_makedepends:
+- docbook2x
+- systemd
+- meson
+- lua
+- python-setuptools
+- apparmor
+update_on:
+- alias: perl
+- alias: python
+- alpm: lxc
+  source: archpkg

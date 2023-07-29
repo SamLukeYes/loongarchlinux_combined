@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-subtitles'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gstreamer: gst-plugin-gtk
+- gstreamer: gst-plugins-base
+- gtk-sharp-3
+- gtkspell3
+repo_makedepends:
+- intltool
+- itstool
+update_on:
+- alpm: gnome-subtitles
+  source: archpkg

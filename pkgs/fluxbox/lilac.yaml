@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''fluxbox'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fontconfig
+- fribidi
+- imlib2
+- libxft
+- libxinerama
+- libxpm
+- libxrandr
+repo_makedepends:
+- git
+update_on:
+- alpm: fontconfig
+  provides: libfontconfig.so
+  source: alpm
+- alpm: fribidi
+  provides: libfribidi.so
+  source: alpm
+- alpm: fluxbox
+  source: archpkg

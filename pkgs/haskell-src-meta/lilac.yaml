@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-src-meta'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-src-exts
+- haskell-syb
+- haskell-th-orphans
+repo_makedepends:
+- ghc
+- haskell-hunit
+- haskell-tasty
+- haskell-tasty-hunit
+update_on:
+- alpm: haskell-src-exts
+  source: alpm
+- alpm: haskell-syb
+  source: alpm
+- alpm: haskell-th-orphans
+  source: alpm
+- alpm: haskell-src-meta
+  source: archpkg

@@ -1,0 +1,55 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xscreensaver'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- glu
+- xorg-appres
+- libglvnd
+- libjpeg-turbo
+- libx11
+- libxcrypt
+- libxext
+- libxft
+- libxi
+- libxinerama
+- libxmu
+- libxrandr
+- libxt
+- libxxf86vm
+- perl-libwww
+- pam
+- glibc
+- glib2
+- gdk-pixbuf2
+repo_makedepends:
+- bc
+- intltool
+- libxpm
+- gdm
+- systemd
+- systemd: systemd-libs
+update_on:
+- alpm: darktable
+  provides: libjpeg.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: libxcrypt
+  provides: libcrypt.so
+  source: alpm
+- alpm: pam
+  provides: libpam.so
+  source: alpm
+- alpm: xscreensaver
+  source: archpkg

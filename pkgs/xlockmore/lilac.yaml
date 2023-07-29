@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xlockmore'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- freetype2
+- gtk2
+- libxpm
+- openmotif
+- pam
+- libxmu
+- glu
+repo_makedepends:
+- mesa
+update_on:
+- alpm: xlockmore
+  source: archpkg

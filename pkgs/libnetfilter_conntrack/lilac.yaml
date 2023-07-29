@@ -1,0 +1,19 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libnetfilter_conntrack'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libnfnetlink
+- libmnl
+repo_makedepends: []
+update_on:
+- alpm: libnetfilter_conntrack
+  source: archpkg

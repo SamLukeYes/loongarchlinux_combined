@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lttng-ust2.12'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- liburcu
+repo_makedepends:
+- git
+update_on:
+- alpm: numactl
+  provides: libnuma.so
+  source: alpm
+- alpm: lttng-ust2.12
+  source: archpkg

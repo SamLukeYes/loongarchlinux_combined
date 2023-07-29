@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''jsampler'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- linuxsampler
+repo_makedepends:
+- gendesk
+update_on:
+- alpm: jsampler
+  source: archpkg

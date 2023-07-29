@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-omegaconf'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-antlr4
+- python-pyaml
+repo_makedepends:
+- antlr4
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alpm: python-omegaconf
+  source: archpkg

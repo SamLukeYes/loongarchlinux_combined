@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''conky-manager'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cairo
+- conky
+- desktop-file-utils
+- gtk3
+- imagemagick
+- json-glib
+- libgee
+- p7zip
+- rsync
+repo_makedepends:
+- vala
+update_on:
+- alpm: conky-manager
+  source: archpkg

@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-iminuit'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-scipy
+- python-tabulate
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- python
+- python-numpy
+repo_makedepends:
+- git
+- cmake
+- pybind11
+- python-boost-histogram
+- python-build
+- python-installer
+- python-ipykernel
+- python-ipywidgets
+- python-joblib
+- python-matplotlib
+- python-nbsphinx
+- python-numba
+- python-numpy
+- python-pillow
+- python-pyrsistent
+- python-setuptools
+- python-sphinx_rtd_theme
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-iminuit
+  source: archpkg

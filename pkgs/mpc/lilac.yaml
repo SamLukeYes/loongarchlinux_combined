@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mpc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- glibc
+- libmpdclient
+repo_makedepends:
+- libmpdclient
+- meson
+- python-sphinx
+- rsync
+update_on:
+- alpm: libmpdclient
+  provides: libmpdclient.so
+  source: alpm
+- alpm: mpc
+  source: archpkg

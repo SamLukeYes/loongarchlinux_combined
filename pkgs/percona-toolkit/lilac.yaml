@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''percona-toolkit'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl-term-readkey
+repo_makedepends:
+- perl-dbd-mysql
+- perl-dbi
+- go
+- git
+update_on:
+- alpm: percona-toolkit
+  source: archpkg

@@ -1,0 +1,70 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''element'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- libx11
+- libxext
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- libx11
+- libxext
+repo_makedepends:
+- alsa-lib
+- boost
+- curl
+- freetype2
+- git
+- gtk3
+- imagemagick
+- juce
+- ladspa
+- ldoc
+- libxcomposite
+- libxcursor
+- libxinerama
+- lilv
+- lua
+- lv2
+- pango
+- readline
+- serd
+- sord
+- sratom
+- suil
+- waf
+- xorg-xrandr
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: lilv
+  provides: liblilv-0.so
+  source: alpm
+- alpm: suil
+  provides: libsuil-0.so
+  source: alpm
+- alpm: element
+  source: archpkg

@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''raptor'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libxml2
+- libxslt
+- xz
+- zlib
+- glibc
+- libxml2
+- libxslt
+- xz
+- zlib
+- curl
+- icu
+repo_makedepends:
+- curl
+- gtk-doc
+- icu
+update_on:
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alias: icu
+- alpm: icu
+  provides: libicuuc.so
+  source: alpm
+- alpm: raptor
+  source: archpkg

@@ -1,0 +1,50 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pyside2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- clang
+- llvm
+- libxslt
+- qt5-xmlpatterns
+- python
+- pyside2: python-shiboken2
+- qt5-declarative
+- pyside2
+repo_makedepends:
+- cmake
+- python-setuptools
+- llvm
+- clang
+- qt5-multimedia
+- qt5-tools
+- qt5-sensors
+- qt5-charts
+- qt5-webengine
+- qt5-datavis3d
+- qt5-websockets
+- qt5-speech
+- qt5-3d
+- qt5-svg
+- qt5-script
+- qt5-scxml
+- qt5-x11extras
+- qt5-quickcontrols2
+- qt5-serialport
+- qt5-remoteobjects
+- qt5-xmlpatterns
+update_on:
+- alias: python
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alpm: pyside2
+  source: archpkg

@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rubocop-ast'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- ruby-parser
+repo_makedepends:
+- ruby-bump
+- ruby-oedipus_lex
+- ruby-rspec
+- ruby-simplecov
+update_on:
+- alias: ruby
+- alpm: ruby-rubocop-ast
+  source: archpkg

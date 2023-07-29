@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pifpaf'')
+
+  '
+repo_checkdepends:
+- python-testrepository
+- python-requests
+- python-testtools
+- python-oslotest
+- memcached
+- percona-server
+- percona-server: percona-server-clients
+- postgresql
+- redis
+- consul
+- couchdb
+- httpbin
+- rabbitmq
+repo_depends:
+- python-daiquiri
+- python-click
+- python-pbr
+- python-jinja
+- python-fixtures
+- python-psutil
+- python-xattr
+repo_makedepends:
+- git
+- python-setuptools
+update_on:
+- alpm: pifpaf
+  source: archpkg

@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-flask-httpauth'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python
+- python-flask
+- python-setuptools
+repo_makedepends: []
+update_on:
+- alias: python
+- alpm: python-flask-httpauth
+  source: archpkg

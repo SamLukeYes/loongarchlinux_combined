@@ -1,0 +1,81 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''evolution'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cmark
+- enchant
+- evolution-data-server
+- gnome-autoar
+- gnome-desktop
+- gspell
+- libcanberra
+- libgweather-4
+- libnotify
+- libpst
+- libytnef
+- webkit2gtk-4.1
+- cmark
+- enchant
+- evolution-data-server
+- gnome-autoar
+- gnome-desktop
+- gspell
+- libcanberra
+- libgweather-4
+- libnotify
+- libpst
+- libytnef
+- webkit2gtk-4.1
+- evolution
+- bogofilter
+- evolution
+- spamassassin
+repo_makedepends:
+- bogofilter
+- cmake
+- docbook-xsl
+- git
+- gtk-doc
+- highlight
+- intltool
+- itstool
+- networkmanager
+- ninja
+- spamassassin
+- yelp-tools
+update_on:
+- alpm: cmark
+  source: alpm
+  strip_release: true
+- alpm: cmark
+  source: alpm
+  strip_release: true
+- alpm: evolution-data-server
+  provides: libcamel-1.2.so
+  source: alpm
+- alpm: evolution-data-server
+  provides: libebook-1.2.so
+  source: alpm
+- alpm: evolution-data-server
+  provides: libebook-contacts-1.2.so
+  source: alpm
+- alpm: evolution-data-server
+  provides: libecal-2.0.so
+  source: alpm
+- alpm: evolution-data-server
+  provides: libedataserver-1.2.so
+  source: alpm
+- alpm: evolution-data-server
+  provides: libedataserverui-1.2.so
+  source: alpm
+- alpm: evolution
+  source: archpkg

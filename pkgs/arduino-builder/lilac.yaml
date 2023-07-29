@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''arduino-builder'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- arduino-ctags
+repo_makedepends:
+- go
+- git
+- unzip
+update_on:
+- alpm: arduino-builder
+  source: archpkg

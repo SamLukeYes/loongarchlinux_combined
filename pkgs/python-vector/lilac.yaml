@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-vector'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-awkward
+- python-papermill
+repo_depends:
+- python-numpy
+- python-packaging
+- python-importlib-metadata
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-setuptools-scm
+- python-wheel
+- python-hatchling
+- python-hatch-vcs
+update_on:
+- alpm: python-vector
+  source: archpkg

@@ -1,0 +1,70 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''corectrl'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- catch2
+- trompeloeil
+repo_depends:
+- procps-ng
+- hwdata
+- quazip: quazip-qt5
+- qt5-charts
+- qt5-quickcontrols2
+- qt5-base
+- botan2
+- qt5-svg
+- qt5-xmlpatterns
+- qt5-base
+- dbus
+- polkit
+- fmt
+- pugixml
+- hicolor-icon-theme
+- procps-ng
+- hwdata
+- quazip: quazip-qt5
+- qt5-charts
+- qt5-quickcontrols2
+- qt5-base
+- botan2
+- qt5-svg
+- qt5-xmlpatterns
+- qt5-base
+- dbus
+- polkit
+- fmt
+- pugixml
+- hicolor-icon-theme
+- fmt
+repo_makedepends:
+- cmake
+- qt5-tools
+- extra-cmake-modules
+- ninja
+- easyloggingpp
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: fmt
+  provides: libfmt.so
+  source: alpm
+- alpm: corectrl
+  source: archpkg

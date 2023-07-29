@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-aeson-better-errors'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-dlist
+- haskell-scientific
+- haskell-transformers-compat
+- haskell-unordered-containers
+- haskell-vector
+- haskell-void
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-dlist
+  source: alpm
+- alpm: haskell-scientific
+  source: alpm
+- alpm: haskell-transformers-compat
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-void
+  source: alpm
+- alpm: haskell-aeson-better-errors
+  source: archpkg

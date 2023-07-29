@@ -1,0 +1,14 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- qt5-declarative
+- xorg-xauth
+- xorg-server
+repo_makedepends:
+- extra-cmake-modules
+- python-docutils
+- qt5-tools
+update_on:
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true

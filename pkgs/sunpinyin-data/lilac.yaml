@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sunpinyin-data'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- sunpinyin
+- git
+update_on:
+- alpm: sunpinyin-data
+  source: archpkg

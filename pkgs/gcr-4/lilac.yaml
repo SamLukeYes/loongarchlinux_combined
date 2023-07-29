@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gcr-4'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glib2
+- libgcrypt
+- libsecret
+- openssh
+- p11-kit
+- systemd
+repo_makedepends:
+- gi-docgen
+- git
+- gobject-introspection
+- gtk4
+- meson
+- vala
+update_on:
+- alpm: gcr-4
+  source: archpkg

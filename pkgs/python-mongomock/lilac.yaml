@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-mongomock'')
+
+  '
+repo_checkdepends:
+- python-nose
+repo_depends:
+- python-sentinels
+- python-six
+- python-packaging
+repo_makedepends:
+- python-pbr
+update_on:
+- alpm: python-mongomock
+  source: archpkg

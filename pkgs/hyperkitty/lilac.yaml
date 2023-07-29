@@ -1,0 +1,44 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hyperkitty'')
+
+  '
+repo_checkdepends:
+- python-beautifulsoup4
+- python-django-debug-toolbar
+- python-elasticsearch
+- python-lxml
+- python-pytest
+- python-whoosh
+repo_depends:
+- python-dateutil
+- django: python-django
+- python-django-compressor
+- python-django-extensions
+- python-django-gravatar
+- python-django-haystack
+- python-django-mailman3
+- python-django-q
+- python-django-rest-framework
+- python-flufl-lock
+- python-mailmanclient
+- python-mistune
+- python-networkx
+- python-pytz
+- python-robot-detection
+- python-whoosh
+- sassc
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-isort
+- python-setuptools
+- python-wheel
+update_on:
+- alpm: hyperkitty
+  source: archpkg

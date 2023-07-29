@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kphotoalbum'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libkdcraw
+- marble: marble-common
+- exiv2
+- purpose
+- perl
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+update_on:
+- alias: perl
+- alpm: kphotoalbum
+  source: archpkg

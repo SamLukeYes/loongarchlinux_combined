@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''netsurf'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- curl
+- gtk3
+- libhubbub
+- libjpeg-turbo
+- libnsutils
+- libwebp
+repo_makedepends:
+- check
+- inetutils
+- perl-html-parser
+- setconf
+- vim
+update_on:
+- alpm: netsurf
+  source: archpkg

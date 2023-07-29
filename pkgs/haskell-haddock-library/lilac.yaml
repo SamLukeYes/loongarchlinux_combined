@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-haddock-library'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+repo_makedepends:
+- ghc
+- uusi
+- haskell-base-compat
+- haskell-hspec
+- haskell-hspec-discover
+- haskell-quickcheck
+- haskell-optparse-applicative
+- haskell-tree-diff
+update_on:
+- alpm: haskell-haddock-library
+  source: archpkg

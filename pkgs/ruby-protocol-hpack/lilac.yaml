@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-protocol-hpack'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+repo_makedepends:
+- git
+- ruby-covered
+- ruby-rake
+- ruby-rspec
+update_on:
+- alias: ruby
+- alpm: ruby-protocol-hpack
+  source: archpkg

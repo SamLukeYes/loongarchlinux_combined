@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-psych'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- ruby-test-unit
+repo_depends:
+- ruby
+- ruby-stringio
+repo_makedepends:
+- ruby-bundler
+- ruby-rake
+- ruby-rake-compiler
+update_on:
+- alias: ruby
+- alpm: ruby-psych
+  source: archpkg

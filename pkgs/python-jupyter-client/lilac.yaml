@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-jupyter-client'')
+
+  '
+repo_checkdepends:
+- python-pytest-jupyter
+- python-pytest-timeout
+- iproute2
+- net-tools
+- openssh
+repo_depends:
+- python-ipykernel
+- python-traitlets
+- python-pyzmq
+- python-jupyter-core
+- python-dateutil
+- python-entrypoints
+repo_makedepends:
+- python-build
+- python-installer
+- python-hatchling
+update_on:
+- alpm: python-jupyter-client
+  source: archpkg

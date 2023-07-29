@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''jedi-language-server'')
+
+  '
+repo_checkdepends:
+- python-lsp-jsonrpc
+- python-pyhamcrest
+- python-pytest
+repo_depends:
+- python-docstring-to-markdown
+- python-jedi
+- python-pydantic
+- python-pygls
+repo_makedepends:
+- python-build
+- python-installer
+- python-poetry-core
+update_on:
+- alpm: jedi-language-server
+  source: archpkg

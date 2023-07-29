@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-tinycss2'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python-webencodings
+repo_makedepends:
+- python-build
+- python-installer
+- python-flit-core
+update_on:
+- alpm: python-tinycss2
+  source: archpkg

@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pm2'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- nodejs
+- semver
+repo_makedepends:
+- npm
+- git
+update_on:
+- alpm: pm2
+  source: archpkg

@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-maxitest'')
+
+  '
+repo_checkdepends:
+- procps-ng
+- ruby-bump
+- ruby-byebug
+repo_depends:
+- ruby-minitest
+repo_makedepends:
+- git
+- ruby-rake
+- ruby-rspec
+update_on:
+- alpm: ruby-maxitest
+  source: archpkg

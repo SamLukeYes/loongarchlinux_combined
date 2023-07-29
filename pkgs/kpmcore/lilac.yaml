@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kpmcore'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- smartmontools
+- kcoreaddons
+- kwidgetsaddons
+- ki18n
+- polkit-qt: polkit-qt5
+- qca: qca-qt5
+repo_makedepends:
+- extra-cmake-modules
+update_on:
+- alpm: kpmcore
+  source: archpkg

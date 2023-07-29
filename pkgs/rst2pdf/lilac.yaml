@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rst2pdf'')
+
+  '
+repo_checkdepends:
+- graphviz
+- plantuml
+- python-aafigure
+- python-matplotlib
+- python-pytest
+- python-pymupdf
+- python-sphinx
+- python-svglib
+repo_depends:
+- python
+- python-docutils
+- python-importlib-metadata
+- python-jinja
+- python-packaging
+- python-pillow
+- python-pygments
+- python-reportlab
+- python-smartypants
+- python-yaml
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools-scm
+- python-wheel
+update_on:
+- alias: python
+- alpm: rst2pdf
+  source: archpkg

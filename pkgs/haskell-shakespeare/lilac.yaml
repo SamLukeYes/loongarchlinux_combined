@@ -1,0 +1,45 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-shakespeare'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-blaze-html
+- haskell-blaze-markup
+- haskell-file-embed
+- haskell-scientific
+- haskell-th-lift
+- haskell-unordered-containers
+- haskell-vector
+repo_makedepends:
+- ghc
+- haskell-hspec
+- haskell-hunit
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-blaze-html
+  source: alpm
+- alpm: haskell-blaze-markup
+  source: alpm
+- alpm: haskell-file-embed
+  source: alpm
+- alpm: haskell-scientific
+  source: alpm
+- alpm: haskell-th-lift
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-shakespeare
+  source: archpkg

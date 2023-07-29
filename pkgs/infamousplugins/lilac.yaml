@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''infamousplugins'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cairo
+- gcc: gcc-libs
+- glibc
+- cairo
+- gcc: gcc-libs
+- glibc
+- fftw
+- ntk
+- zita-resampler
+repo_makedepends:
+- cmake
+- fftw
+- lv2
+- ntk
+- zita-resampler
+update_on:
+- alpm: fftw
+  provides: libfftw3f.so
+  source: alpm
+- alpm: ntk
+  provides: libntk.so
+  source: alpm
+- alpm: zita-resampler
+  provides: libzita-resampler.so
+  source: alpm
+- alpm: infamousplugins
+  source: archpkg

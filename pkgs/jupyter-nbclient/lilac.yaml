@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''jupyter-nbclient'')
+
+  '
+repo_checkdepends:
+- python-pytest-asyncio
+- python-xmltodict
+- jupyter-nbconvert
+- python-ipywidgets
+- python-flaky
+repo_depends:
+- python-traitlets
+- python-jupyter-client
+- jupyter-nbformat
+- python-testpath
+repo_makedepends:
+- python-build
+- python-installer
+- python-hatchling
+update_on:
+- alpm: jupyter-nbclient
+  source: archpkg

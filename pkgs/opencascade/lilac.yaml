@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''opencascade'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ffmpeg4.4
+- freeimage
+- gl2ps
+- tk
+- vtk
+repo_makedepends:
+- git
+- adios2
+- boost
+- cmake
+- eigen
+- gdal
+- glew
+- libharu
+- liblas
+- openvr
+- pdal
+- proj
+- pugixml
+- python
+- python-mpi4py
+- qt5-base
+- rapidjson
+- unixodbc
+- utf8cpp
+update_on:
+- alpm: opencascade
+  source: archpkg

@@ -1,0 +1,57 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''jalv'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- gcc: gcc-libs
+- glibc
+- glib2
+- lilv
+- serd
+- sratom
+- suil
+repo_makedepends:
+- gtk2
+- gtk3
+- lilv
+- lv2
+- meson
+- qt5-tools
+- serd
+- sord
+- sratom
+- suil
+update_on:
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: lilv
+  provides: liblilv-0.so
+  source: alpm
+- alpm: serd
+  provides: libserd-0.so
+  source: alpm
+- alpm: sratom
+  provides: libsratom-0.so
+  source: alpm
+- alpm: suil
+  provides: libsuil-0.so
+  source: alpm
+- alpm: jalv
+  source: archpkg

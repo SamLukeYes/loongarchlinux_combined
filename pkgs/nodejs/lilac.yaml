@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''nodejs'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- brotli
+- openssl
+- zlib
+- icu
+- libuv
+- libnghttp2
+- c-ares
+repo_makedepends:
+- git
+- python
+- procps-ng
+update_on:
+- alias: icu
+- alpm: nodejs
+  source: archpkg

@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''maxcso'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- libuv
+- lz4
+- zlib
+repo_makedepends:
+- git
+update_on:
+- alpm: libdeflate
+  provides: libdeflate.so
+  source: alpm
+- alpm: zopfli
+  provides: libzopfli.so
+  source: alpm
+- alpm: maxcso
+  source: archpkg

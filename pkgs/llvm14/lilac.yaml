@@ -1,0 +1,23 @@
+destsubdir: extra
+repo_checkdepends:
+- python-psutil
+repo_depends:
+- llvm14: llvm14-libs
+- perl
+- gcc: gcc-libs
+- zlib
+- libffi
+- libedit
+- ncurses
+- libxml2
+repo_makedepends:
+- cmake
+- ninja
+- libffi
+- libedit
+- ncurses
+- libxml2
+- python
+- python-psutil
+update_on:
+- alias: perl

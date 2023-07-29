@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hdf5-openmpi'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- zlib
+- libaec
+- bash
+- openmpi
+repo_makedepends:
+- cmake
+- time
+- gcc: gcc-fortran
+update_on:
+- alpm: hdf5-openmpi
+  source: archpkg

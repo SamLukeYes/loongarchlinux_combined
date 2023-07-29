@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''openbox'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- startup-notification
+- libxml2
+- libxinerama
+- libxrandr
+- libxcursor
+- pango
+- imlib2
+- librsvg
+- libsm
+repo_makedepends: []
+update_on:
+- alpm: openbox
+  source: archpkg

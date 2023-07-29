@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-adal'')
+
+  '
+repo_checkdepends:
+- python-httpretty
+repo_depends:
+- python-cryptography
+- python-dateutil
+- python-pyjwt
+- python-requests
+repo_makedepends:
+- fakeroot
+- python-setuptools
+update_on:
+- alpm: python-adal
+  source: archpkg

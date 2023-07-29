@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-text-bibtex'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl
+repo_makedepends:
+- perl-module-build
+- perl-config-autoconf
+- perl-extutils-libbuilder
+update_on:
+- alias: perl
+- alpm: perl-text-bibtex
+  source: archpkg

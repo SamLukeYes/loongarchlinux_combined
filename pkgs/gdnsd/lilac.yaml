@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gdnsd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- perl-socket6
+- perl-io-socket-inet6
+- perl-http-daemon
+- perl-libwww
+- perl-net-dns
+repo_depends:
+- libev
+- libmaxminddb
+- libsodium
+- libunwind
+- liburcu
+repo_makedepends:
+- ragel
+update_on:
+- alpm: gdnsd
+  source: archpkg

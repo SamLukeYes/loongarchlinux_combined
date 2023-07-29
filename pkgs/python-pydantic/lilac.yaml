@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pydantic'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-hypothesis
+- python-pytest
+- python-pytest-mock
+repo_depends:
+- glibc
+- python
+repo_makedepends:
+- cython
+- python-build
+- python-installer
+- python-importlib-metadata
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-pydantic
+  source: archpkg

@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''powerdns'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- boost: boost-libs
+- gnutls
+- libsodium
+- lmdb
+- luajit
+- openssl
+- sqlite
+- systemd: systemd-libs
+repo_makedepends:
+- boost
+- geoip
+- openldap: libldap
+- mariadb: mariadb-libs
+- curl
+- libmaxminddb
+- postgresql: postgresql-libs
+- systemd
+- tinycdb
+- unixodbc
+- yaml-cpp
+update_on:
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: powerdns
+  source: archpkg

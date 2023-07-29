@@ -1,0 +1,14 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- bash
+- glibc
+- libyaml
+- python
+repo_makedepends:
+- meson
+- swig
+- python-setuptools-scm
+- valgrind
+update_on:
+- alias: python

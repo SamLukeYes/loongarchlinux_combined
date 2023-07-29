@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''z3'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- gcc: gcc-libs
+- python
+- python-setuptools
+- z3
+repo_makedepends:
+- git
+- glibc
+- cmake
+- ninja
+- python
+- python-setuptools
+- gcc: gcc-libs
+- python-build
+- python-installer
+- python-wheel
+update_on:
+- alias: python
+- alpm: z3
+  source: archpkg

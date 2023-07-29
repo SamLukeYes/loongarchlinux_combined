@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lxqt-archiver'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libfm-qt
+- qt5-x11extras
+- glib2
+- json-glib
+repo_makedepends:
+- cmake
+- qt5-tools
+- lxqt-build-tools
+update_on:
+- alpm: libfm-qt
+  provides: libfm-qt.so
+  source: alpm
+- alpm: lxqt-archiver
+  source: archpkg

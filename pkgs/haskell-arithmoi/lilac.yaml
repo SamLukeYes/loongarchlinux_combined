@@ -1,0 +1,55 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-arithmoi'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-chimera
+- haskell-constraints
+- haskell-exact-pi
+- haskell-integer-logarithms
+- haskell-integer-roots
+- haskell-mod
+- haskell-random
+- haskell-semirings
+- haskell-vector
+repo_makedepends:
+- ghc
+- uusi
+- haskell-quickcheck
+- haskell-quickcheck-classes
+- haskell-smallcheck
+- haskell-tasty
+- haskell-tasty-hunit
+- haskell-tasty-quickcheck
+- haskell-tasty-rerun
+- haskell-tasty-smallcheck
+update_on:
+- alpm: haskell-chimera
+  source: alpm
+- alpm: haskell-constraints
+  source: alpm
+- alpm: haskell-exact-pi
+  source: alpm
+- alpm: haskell-integer-logarithms
+  source: alpm
+- alpm: haskell-integer-roots
+  source: alpm
+- alpm: haskell-mod
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-semirings
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-arithmoi
+  source: archpkg

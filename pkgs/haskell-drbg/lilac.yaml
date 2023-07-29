@@ -1,0 +1,48 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-drbg'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-cereal
+- haskell-prettyclass
+- haskell-tagged
+- haskell-crypto-api
+- haskell-cryptohash-cryptoapi
+- haskell-parallel
+- haskell-cipher-aes128
+- haskell-entropy
+repo_makedepends:
+- ghc
+- haskell-quickcheck
+- haskell-crypto-api-tests
+- haskell-hunit
+- haskell-test-framework
+- haskell-test-framework-hunit
+update_on:
+- alpm: haskell-cereal
+  source: alpm
+- alpm: haskell-prettyclass
+  source: alpm
+- alpm: haskell-tagged
+  source: alpm
+- alpm: haskell-crypto-api
+  source: alpm
+- alpm: haskell-cryptohash-cryptoapi
+  source: alpm
+- alpm: haskell-parallel
+  source: alpm
+- alpm: haskell-cipher-aes128
+  source: alpm
+- alpm: haskell-entropy
+  source: alpm
+- alpm: haskell-drbg
+  source: archpkg

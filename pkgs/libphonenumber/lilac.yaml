@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libphonenumber'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- icu
+- protobuf
+- abseil-cpp
+- icu
+- protobuf
+- abseil-cpp
+repo_makedepends:
+- cmake
+- gtest
+- git
+- java-openjdk: jre-openjdk-headless
+update_on:
+- alias: icu
+- alias: protobuf
+- alias: icu
+- alias: protobuf
+- alpm: icu
+  provides: libicuuc.so
+  source: alpm
+- alpm: icu
+  provides: libicui18n.so
+  source: alpm
+- alpm: protobuf
+  provides: libprotobuf.so
+  source: alpm
+- alpm: libphonenumber
+  source: archpkg

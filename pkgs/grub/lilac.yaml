@@ -1,0 +1,20 @@
+destsubdir: core
+repo_checkdepends: []
+repo_depends:
+- xz
+- gettext
+- lvm2: device-mapper
+repo_makedepends:
+- git
+- rsync
+- xz
+- freetype2
+- ttf-dejavu
+- python
+- autogen
+- texinfo
+- help2man
+- gettext
+- lvm2: device-mapper
+- fuse2
+update_on: []

@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lapack'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- lapack: blas
+- gcc: gcc-libs
+- lapack: blas
+- lapack
+- lapack: blas64
+- gcc: gcc-libs
+- lapack: blas64
+- lapack: lapack64
+repo_makedepends:
+- gcc: gcc-fortran
+- cmake
+- python
+- doxygen
+update_on:
+- alpm: lapack
+  source: archpkg

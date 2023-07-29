@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-texmath'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-network-uri
+- haskell-pandoc-types
+- haskell-split
+- haskell-syb
+- haskell-xml
+repo_makedepends:
+- ghc
+- haskell-pretty-show
+- haskell-tagged
+- haskell-tasty
+- haskell-tasty-golden
+update_on:
+- alpm: haskell-network-uri
+  source: alpm
+- alpm: haskell-pandoc-types
+  source: alpm
+- alpm: haskell-split
+  source: alpm
+- alpm: haskell-syb
+  source: alpm
+- alpm: haskell-xml
+  source: alpm
+- alpm: haskell-texmath
+  source: archpkg

@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''vulture'')
+
+  '
+repo_checkdepends:
+- python-tox
+repo_depends:
+- python-coverage
+- python-setuptools
+- python-pint
+- python-toml
+repo_makedepends:
+- python-build
+- python-installer
+- python-poetry-core
+- python-wheel
+update_on:
+- alpm: vulture
+  source: archpkg

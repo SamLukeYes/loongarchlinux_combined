@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-email-validate'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-attoparsec
+repo_makedepends:
+- ghc
+- haskell-hspec
+- haskell-quickcheck
+- haskell-doctest
+update_on:
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-email-validate
+  source: archpkg

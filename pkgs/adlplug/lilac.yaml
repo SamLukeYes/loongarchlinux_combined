@@ -1,0 +1,58 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- adlplug: adlplug-lv2
+- adlplug: adlplug-standalone
+- adlplug: adlplug-vst
+- fmt
+- freetype2
+- gcc: gcc-libs
+- glibc
+- libx11
+- libxext
+- fmt
+- freetype2
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- liblo
+- libx11
+- libxext
+- fmt
+- freetype2
+- gcc: gcc-libs
+- glibc
+- libx11
+- libxext
+- adlplug: opnplug-lv2
+- adlplug: opnplug-standalone
+- adlplug: opnplug-vst
+- fmt
+- freetype2
+- gcc: gcc-libs
+- glibc
+- libx11
+- libxext
+- fmt
+- freetype2
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- liblo
+- libx11
+- libxext
+- fmt
+- freetype2
+- gcc: gcc-libs
+- glibc
+- libx11
+- libxext
+repo_makedepends:
+- cmake
+- fmt
+- freetype2
+- liblo
+- libxrandr
+- libxinerama
+- libxcursor
+update_on: []

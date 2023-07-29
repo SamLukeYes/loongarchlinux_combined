@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-faker'')
+
+  '
+repo_checkdepends:
+- python-validators
+- python-ukpostcodeparser
+- python-freezegun
+- python-pillow
+repo_depends:
+- python-dateutil
+repo_makedepends:
+- git
+- python-setuptools
+- python-pytest
+update_on:
+- alpm: python-faker
+  source: archpkg

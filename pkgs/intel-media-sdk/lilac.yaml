@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''intel-media-sdk'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libdrm
+- libva
+- wayland
+- intel-media-sdk: libmfx
+- intel-media-driver
+- gcc: gcc-libs
+repo_makedepends:
+- libdrm
+- libva
+- wayland
+- intel-media-driver
+- cmake
+- libpciaccess
+- libx11
+- libxcb
+- python
+update_on:
+- alpm: intel-media-sdk
+  source: archpkg

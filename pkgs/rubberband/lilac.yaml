@@ -1,0 +1,70 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rubberband'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fftw
+- gcc: gcc-libs
+- glibc
+- libsamplerate
+- libsndfile
+- fftw
+- gcc: gcc-libs
+- glibc
+- libsamplerate
+- fftw
+- gcc: gcc-libs
+- glibc
+- libsamplerate
+- fftw
+- gcc: gcc-libs
+- glibc
+- libsamplerate
+- vamp-plugin-sdk
+repo_makedepends:
+- boost
+- fftw
+- ladspa
+- lv2
+- meson
+- libsamplerate
+- libsndfile
+- vamp-plugin-sdk
+update_on:
+- alpm: fftw
+  provides: libfftw3.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: fftw
+  provides: libfftw3.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: fftw
+  provides: libfftw3.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: fftw
+  provides: libfftw3.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: rubberband
+  source: archpkg

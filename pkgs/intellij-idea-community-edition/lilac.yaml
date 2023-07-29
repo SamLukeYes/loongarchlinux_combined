@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''intellij-idea-community-edition'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- giflib
+- python
+- libdbusmenu: libdbusmenu-glib
+- fontconfig
+- hicolor-icon-theme
+repo_makedepends:
+- ant
+- git
+- maven
+update_on:
+- alias: python
+- alpm: intellij-idea-community-edition
+  source: archpkg

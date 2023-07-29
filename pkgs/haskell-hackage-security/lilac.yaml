@@ -1,0 +1,55 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hackage-security'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-base16-bytestring
+- haskell-base64-bytestring
+- haskell-cryptohash-sha256
+- haskell-ed25519
+- haskell-lukko
+- haskell-network
+- haskell-network-uri
+- haskell-tar
+- haskell-zlib
+repo_makedepends:
+- ghc
+- uusi
+- haskell-quickcheck
+- haskell-aeson
+- haskell-tasty
+- haskell-tasty-hunit
+- haskell-tasty-quickcheck
+- haskell-temporary
+- haskell-unordered-containers
+- haskell-vector
+update_on:
+- alpm: haskell-base16-bytestring
+  source: alpm
+- alpm: haskell-base64-bytestring
+  source: alpm
+- alpm: haskell-cryptohash-sha256
+  source: alpm
+- alpm: haskell-ed25519
+  source: alpm
+- alpm: haskell-lukko
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-network-uri
+  source: alpm
+- alpm: haskell-tar
+  source: alpm
+- alpm: haskell-zlib
+  source: alpm
+- alpm: haskell-hackage-security
+  source: archpkg

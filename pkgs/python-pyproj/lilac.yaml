@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pyproj'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-certifi
+- python-numpy
+- python-pandas
+- python-shapely
+- python-xarray
+repo_depends:
+- proj
+- python
+repo_makedepends:
+- python-setuptools
+- cython
+update_on:
+- alias: python
+- alpm: python-pyproj
+  source: archpkg

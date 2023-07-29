@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''po4a'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl
+- gettext
+- perl-yaml-tiny
+- perl-unicode-linebreak
+repo_makedepends:
+- perl-text-wrapi18n
+- perl-locale-gettext
+- perl-term-readkey
+- perl-sgmls
+- perl-module-build
+- perl-pod-parser
+- docbook-xsl
+update_on:
+- alias: perl
+- alpm: po4a
+  source: archpkg

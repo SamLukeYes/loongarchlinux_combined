@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-home-assistant-bluetooth'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-bleak
+repo_makedepends:
+- cython
+- git
+- python-build
+- python-installer
+- python-poetry-core
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-home-assistant-bluetooth
+  source: archpkg

@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''audacious'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-base
+- qt5-svg
+- qt5-imageformats
+- glib2
+- hicolor-icon-theme
+- desktop-file-utils
+- qt5-base
+- qt5-svg
+- qt5-imageformats
+- glib2
+- hicolor-icon-theme
+- desktop-file-utils
+- audacious-plugins
+repo_makedepends:
+- meson
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: audacious
+  source: archpkg

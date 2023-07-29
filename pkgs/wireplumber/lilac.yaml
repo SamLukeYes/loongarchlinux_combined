@@ -1,0 +1,50 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wireplumber'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- pipewire: pipewire-audio
+repo_depends:
+- wireplumber: libwireplumber
+- lua
+- pipewire
+repo_makedepends:
+- doxygen
+- git
+- glib2
+- gobject-introspection
+- graphviz
+- lua
+- meson
+- pipewire
+- python-lxml
+- systemd
+update_on:
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alias: lua
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgmodule-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: libpipewire
+  provides: libpipewire-0.3.so
+  source: alpm
+- alpm: wireplumber
+  source: archpkg

@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''flyspray'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- php
+- php: php-gd
+repo_makedepends:
+- composer
+- unzip
+update_on:
+- alpm: flyspray
+  source: archpkg

@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-eventlet'')
+
+  '
+repo_checkdepends:
+- python-psycopg2
+- python-nose
+- python-pyopenssl
+- python-httplib2
+- python-mock
+- python-pyzmq
+repo_depends:
+- python
+- python-greenlet
+- python-six
+- python-dnspython
+repo_makedepends:
+- python-setuptools
+- python-sphinx
+update_on:
+- alias: python
+- alpm: python-eventlet
+  source: archpkg

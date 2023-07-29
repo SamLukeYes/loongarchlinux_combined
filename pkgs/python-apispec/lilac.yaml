@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-apispec'')
+
+  '
+repo_checkdepends:
+- python-pytest-runner
+- python-tornado
+- python-bottle
+- python-marshmallow
+- python-flask
+- python-prance
+- python-yaml
+- python-openapi-spec-validator
+repo_depends:
+- python-packaging
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-apispec
+  source: archpkg

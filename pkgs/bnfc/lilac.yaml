@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''bnfc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-string-qq
+repo_makedepends:
+- ghc
+- uusi
+- alex
+- happy
+- haskell-hunit
+- haskell-quickcheck
+- haskell-hspec
+- haskell-hspec-discover
+- haskell-temporary
+update_on:
+- alpm: haskell-string-qq
+  source: alpm
+- alpm: bnfc
+  source: archpkg

@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wimlib'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- attr
+repo_depends:
+- fuse3
+- ntfs-3g
+repo_makedepends: []
+update_on:
+- alpm: wimlib
+  source: archpkg

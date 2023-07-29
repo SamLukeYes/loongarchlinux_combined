@@ -1,0 +1,55 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-doctest-parallel'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-glob
+- haskell-base-compat
+- haskell-code-page
+- haskell-extra
+- haskell-ghc-paths
+- haskell-random
+- haskell-syb
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- expac
+- haskell-hunit
+- haskell-quickcheck
+- haskell-hspec
+- haskell-hspec-core
+- haskell-hspec-discover
+- haskell-mockery
+- haskell-setenv
+- haskell-silently
+- haskell-stringbuilder
+update_on:
+- alpm: haskell-glob
+  source: alpm
+- alpm: haskell-base-compat
+  source: alpm
+- alpm: haskell-code-page
+  source: alpm
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-ghc
+  source: alpm
+- alpm: haskell-ghc-paths
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-syb
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-doctest-parallel
+  source: archpkg

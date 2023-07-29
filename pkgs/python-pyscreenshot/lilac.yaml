@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pyscreenshot'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pyvirtualdisplay
+- python-pillow
+- python-pygame
+- python-xlib
+- pygobject: python-gobject
+- pyqt5: python-pyqt5
+- python-wxpython
+- pyside2
+- xorg-server: xorg-server-xvfb
+- xorg-xdpyinfo
+- gnome-screenshot
+- scrot
+- imagemagick
+- maim
+- pqiv
+repo_depends:
+- python-easyprocess
+- python-entrypoint2
+- python-mss
+- python-jeepney
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-pyscreenshot
+  source: archpkg

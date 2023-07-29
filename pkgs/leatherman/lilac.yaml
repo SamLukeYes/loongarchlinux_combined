@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''leatherman'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- ruby
+repo_depends:
+- boost: boost-libs
+- icu
+- gcc: gcc-libs
+- glibc
+repo_makedepends:
+- boost
+- cmake
+- rapidjson
+- python
+update_on:
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alias: icu
+- alpm: leatherman
+  source: archpkg

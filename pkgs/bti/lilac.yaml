@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''bti'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- pcre
+- libxml2
+- curl
+- liboauth
+- json-c
+repo_makedepends: []
+update_on:
+- alpm: bti
+  source: archpkg

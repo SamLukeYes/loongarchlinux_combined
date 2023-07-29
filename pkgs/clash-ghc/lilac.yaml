@@ -1,0 +1,73 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''clash-ghc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-clash-lib
+- haskell-clash-prelude
+- haskell-concurrent-supply
+- haskell-data-binary-ieee754
+- haskell-extra
+- haskell-ghc-typelits-extra
+- haskell-ghc-typelits-knownnat
+- haskell-ghc-typelits-natnormalise
+- haskell-hashable
+- haskell-lens
+- haskell-primitive
+- haskell-reflection
+- haskell-split
+- haskell-uniplate
+- haskell-unordered-containers
+- haskell-utf8-string
+- haskell-vector
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-clash-lib
+  source: alpm
+- alpm: haskell-clash-prelude
+  source: alpm
+- alpm: haskell-concurrent-supply
+  source: alpm
+- alpm: haskell-data-binary-ieee754
+  source: alpm
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-ghc
+  source: alpm
+- alpm: haskell-ghc-typelits-extra
+  source: alpm
+- alpm: haskell-ghc-typelits-knownnat
+  source: alpm
+- alpm: haskell-ghc-typelits-natnormalise
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-primitive
+  source: alpm
+- alpm: haskell-reflection
+  source: alpm
+- alpm: haskell-split
+  source: alpm
+- alpm: haskell-uniplate
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-utf8-string
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: clash-ghc
+  source: archpkg

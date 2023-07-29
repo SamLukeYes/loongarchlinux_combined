@@ -1,0 +1,47 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mitmproxy'')
+
+  '
+repo_checkdepends:
+- python-asynctest
+- python-parver
+- python-pytest-runner
+- python-pytest-asyncio
+- python-requests
+- python-hypothesis
+repo_depends:
+- python-asgiref
+- python-blinker
+- brotli: python-brotli
+- python-certifi
+- python-cryptography
+- python-flask
+- python-h11
+- python-h2
+- python-hyperframe
+- python-kaitaistruct
+- python-ldap3
+- python-mitmproxy-wireguard
+- python-msgpack
+- python-passlib
+- protobuf: python-protobuf
+- python-pyopenssl
+- python-pyparsing
+- python-pyperclip
+- python-ruamel-yaml
+- python-setuptools
+- python-sortedcontainers
+- python-tornado
+- python-urwid
+- python-wsproto
+- python-publicsuffix2
+- python-zstandard
+repo_makedepends: []
+update_on:
+- alpm: mitmproxy
+  source: archpkg

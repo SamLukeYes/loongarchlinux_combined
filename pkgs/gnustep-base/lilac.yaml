@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnustep-base'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libxslt
+- avahi
+- gmp
+- gcc: gcc-libs
+- openssl
+- libffi
+- gnutls
+- icu
+repo_makedepends:
+- gcc: gcc-objc
+- gnustep-make
+update_on:
+- alias: icu
+- alpm: gnustep-base
+  source: archpkg

@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''asciidoc'')
+
+  '
+repo_checkdepends:
+- dblatex
+- graphviz
+- lilypond
+- python-pytest
+- python-pytest-mock
+- source-highlight
+repo_depends:
+- python
+- libxslt
+- docbook-xsl
+repo_makedepends:
+- python-build
+- python-installer
+- python-wheel
+- python-setuptools
+update_on:
+- alias: python
+- alpm: asciidoc
+  source: archpkg

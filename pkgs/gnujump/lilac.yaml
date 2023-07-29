@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnujump'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- mesa
+- sdl_image
+- sdl_mixer
+repo_makedepends:
+- glu
+update_on:
+- alpm: gnujump
+  source: archpkg

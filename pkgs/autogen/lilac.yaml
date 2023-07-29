@@ -1,0 +1,14 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- guile
+- libxml2
+- perl
+repo_makedepends:
+- autogen
+- chrpath
+update_on:
+- alpm: guile
+  source: alpm
+  strip_release: true
+- alias: perl

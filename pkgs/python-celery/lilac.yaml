@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-celery'')
+
+  '
+repo_checkdepends:
+- python-pytest-celery
+- python-pytest-subtests
+- python-pytest-timeout
+- python-case
+- python-cryptography
+- python-gevent
+- python-pymongo
+- python-msgpack
+- python-pyro
+- python-redis
+- python-sqlalchemy
+- python-boto3
+- python-yaml
+- python-pyzmq
+- python-eventlet
+- python-moto
+- systemd
+repo_depends:
+- python-billiard
+- python-click-didyoumean
+- python-click-plugins
+- python-click-repl
+- python-kombu
+- python-pytz
+- python-vine
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-celery
+  source: archpkg

@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ukui-window-switch'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gsettings-qt
+- kglobalaccel
+- libwnck3
+- qt5-x11extras
+- ukwm
+repo_makedepends:
+- qt5-tools
+update_on:
+- alpm: ukui-window-switch
+  source: archpkg

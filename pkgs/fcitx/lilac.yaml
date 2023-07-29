@@ -1,0 +1,27 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- pango
+- libxinerama
+- gtk4: gtk-update-icon-cache
+- shared-mime-info
+- hicolor-icon-theme
+- desktop-file-utils
+- libxkbfile
+- libxfixes
+- dbus
+- icu
+- libxkbcommon
+repo_makedepends:
+- extra-cmake-modules
+- doxygen
+- gtk2
+- gtk3
+- mesa
+- opencc
+- iso-codes
+- gobject-introspection
+- enchant
+- python
+update_on:
+- alias: icu

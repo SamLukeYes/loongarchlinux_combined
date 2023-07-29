@@ -1,0 +1,37 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cryptsetup'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- lvm2: device-mapper
+- openssl
+- popt
+- util-linux: util-linux-libs
+- json-c
+- argon2
+repo_makedepends:
+- util-linux
+- asciidoctor
+update_on:
+- alpm: device-mapper
+  provides: libdevmapper.so
+  source: alpm
+- alpm: util-linux-libs
+  provides: libuuid.so
+  source: alpm
+- alpm: json-c
+  provides: libjson-c.so
+  source: alpm
+- alpm: argon2
+  provides: libargon2.so
+  source: alpm
+- alpm: cryptsetup
+  source: archpkg

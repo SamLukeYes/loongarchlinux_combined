@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''tigervnc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fltk
+- pam
+- gnutls
+- libjpeg-turbo
+- libxtst
+- pixman
+- xorg-xauth
+- xorg-xsetroot
+- xkeyboard-config
+- xorg-xkbcomp
+- libgcrypt
+- perl
+- libxdamage
+- libxfont2
+- libdrm
+- xorg-xinit
+- libxcvt
+repo_makedepends:
+- cmake
+- nasm
+- xorg-font-util
+- xorg-util-macros
+- xtrans
+- xorgproto
+- mesa
+- imagemagick
+update_on:
+- alias: perl
+- alpm: tigervnc
+  source: archpkg

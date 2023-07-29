@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-jq'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- jq
+- python
+repo_makedepends:
+- cython
+- git
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-jq
+  source: archpkg

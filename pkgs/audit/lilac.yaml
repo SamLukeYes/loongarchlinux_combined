@@ -1,0 +1,46 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''audit'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- krb5
+- libcap-ng
+- audit
+- glibc
+- python
+repo_makedepends:
+- glibc
+- krb5
+- libcap-ng
+- openldap: libldap
+- linux-api-headers
+- python
+- swig
+update_on:
+- alpm: krb5
+  provides: libkrb5.so
+  source: alpm
+- alpm: krb5
+  provides: libgssapi_krb5.so
+  source: alpm
+- alpm: libcap-ng
+  provides: libcap-ng.so
+  source: alpm
+- alpm: audit
+  provides: libaudit.so
+  source: alpm
+- alpm: audit
+  provides: libauparse.so
+  source: alpm
+- alias: python
+- alpm: audit
+  source: archpkg

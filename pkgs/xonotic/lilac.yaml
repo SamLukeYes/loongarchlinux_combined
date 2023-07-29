@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xonotic'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- alsa-lib
+- curl
+- libjpeg-turbo
+- libmodplug
+- libvorbis
+- libxpm
+- libxxf86vm
+- sdl2
+- xonotic-data
+- hicolor-icon-theme
+- gtk4: gtk-update-icon-cache
+- desktop-file-utils
+repo_makedepends:
+- unzip
+- mesa
+- xorgproto
+update_on:
+- alpm: xonotic
+  source: archpkg

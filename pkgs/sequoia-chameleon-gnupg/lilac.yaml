@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sequoia-chameleon-gnupg'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- gmp
+- gcc: gcc-libs
+- glibc
+- gmp
+- bzip2
+- nettle
+repo_makedepends:
+- bzip2
+- clang
+- nettle
+update_on:
+- alpm: bzip2
+  provides: libbz2.so
+  source: alpm
+- alpm: nettle
+  provides: libnettle.so
+  source: alpm
+- alpm: nettle
+  provides: libhogweed.so
+  source: alpm
+- alpm: sequoia-chameleon-gnupg
+  source: archpkg

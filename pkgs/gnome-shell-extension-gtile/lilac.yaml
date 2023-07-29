@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-shell-extension-gtile'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gnome-shell
+repo_makedepends:
+- bazel
+- git
+- python
+- yarn
+update_on:
+- alpm: gnome-shell-extension-gtile
+  source: archpkg

@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''vapoursynth-plugin-lsmashsource'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- vapoursynth
+repo_makedepends:
+- git
+- meson
+update_on:
+- alpm: ffmpeg
+  provides: libavcodec.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavformat.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavutil.so
+  source: alpm
+- alpm: l-smash
+  provides: liblsmash.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libswscale.so
+  source: alpm
+- alpm: vapoursynth-plugin-lsmashsource
+  source: archpkg

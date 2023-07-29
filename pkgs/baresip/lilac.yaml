@@ -1,0 +1,50 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''baresip'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- openssl
+repo_makedepends:
+- libfdk-aac
+- alsa-lib
+- opencore-amr
+- aom
+- codec2
+- ffmpeg
+- gsm
+- gstreamer: gst-plugins-bad
+- gstreamer: gst-plugins-base
+- gstreamer: gst-plugins-good
+- gstreamer: gst-plugins-ugly
+- gtk3
+- jack2
+- lame
+- libvpx
+- libsndfile
+- libpng
+- pulseaudio: libpulse
+- libx11
+- mpg123
+- opus
+- portaudio
+- sdl2
+- spandsp
+- speexdsp
+- sndio
+- v4l-utils
+- python
+- cmake
+update_on:
+- alpm: libre
+  provides: libre.so
+  source: alpm
+- alpm: baresip
+  source: archpkg

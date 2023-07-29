@@ -1,0 +1,88 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''carla'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- libx11
+- pyqt5: python-pyqt5
+- python-pyliblo
+- python-rdflib
+- qt5-base
+- qt5-svg
+- sdl2
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- libx11
+- pyqt5: python-pyqt5
+- python-pyliblo
+- python-rdflib
+- qt5-base
+- qt5-svg
+- sdl2
+- alsa-lib
+- file
+- fluidsynth
+- freetype2
+- libglvnd
+- liblo
+- pulseaudio: libpulse
+- libsndfile
+repo_makedepends:
+- alsa-lib
+- file
+- fluidsynth
+- freetype2
+- git
+- libglvnd
+- liblo
+- pulseaudio: libpulse
+- libsndfile
+- qt5-tools
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: file
+  provides: libmagic.so
+  source: alpm
+- alpm: fluidsynth
+  provides: libfluidsynth.so
+  source: alpm
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: cuda-tools
+  provides: libGL.so
+  source: alpm
+- alpm: liblo
+  provides: liblo.so
+  source: alpm
+- alpm: libao
+  provides: libpulse.so
+  source: alpm
+- alpm: libpulse
+  provides: libpulse-simple.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: carla
+  source: archpkg

@@ -1,0 +1,11 @@
+destsubdir: core
+repo_checkdepends: []
+repo_depends:
+- util-linux: util-linux-libs
+- lvm2: device-mapper
+- libinih
+- liburcu
+repo_makedepends:
+- git
+- icu
+update_on: []

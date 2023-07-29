@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pcsclite'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- systemd
+- polkit
+update_on:
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libudev.so
+  source: alpm
+- alpm: polkit
+  provides: libpolkit-gobject-1.so
+  source: alpm
+- alpm: pcsclite
+  source: archpkg

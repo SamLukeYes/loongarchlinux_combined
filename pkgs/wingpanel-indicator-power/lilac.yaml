@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wingpanel-indicator-power'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bamf
+- glib2
+- gtk3
+- libgee
+- libgtop
+- wingpanel
+repo_makedepends:
+- git
+- intltool
+- meson
+- vala
+update_on:
+- alpm: granite
+  provides: libgranite.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libudev.so
+  source: alpm
+- alpm: wingpanel-indicator-power
+  source: archpkg

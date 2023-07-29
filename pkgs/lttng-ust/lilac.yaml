@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lttng-ust'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- util-linux
+- python
+- numactl
+- lttng-ust
+- python
+repo_makedepends:
+- asciidoc
+- xmlto
+- libxml2
+- python
+- util-linux
+- numactl
+update_on:
+- alias: python
+- alias: python
+- alpm: lttng-ust
+  source: archpkg

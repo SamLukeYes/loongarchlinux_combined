@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''polybar'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libuv
+- cairo
+- xcb-util-image
+- xcb-util-wm
+- xcb-util-xrm
+- xcb-util-cursor
+- alsa-lib
+- pulseaudio: libpulse
+- libmpdclient
+- libnl
+- jsoncpp
+- curl
+repo_makedepends:
+- cmake
+- python
+- python-sphinx
+- python-packaging
+- i3-wm
+- ninja
+- git
+update_on:
+- alias: jsoncpp
+- alpm: polybar
+  source: archpkg

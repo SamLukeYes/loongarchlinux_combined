@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-twisted'')
+
+  '
+repo_checkdepends:
+- python-pyhamcrest
+- subversion
+- xorg-server: xorg-server-xvfb
+- tk
+- openssh
+- git
+- gtk3
+- pygobject: python-gobject
+- python-subunit
+- python-h2
+- python-priority
+- python-cryptography
+- python-idna
+- python-pyasn1
+- python-pyserial
+- python-bcrypt
+- python-hypothesis
+- python-cython-test-exception-raiser
+- python-pyopenssl
+- python-service-identity
+repo_depends:
+- python-zope-interface
+- python-constantly
+- python-incremental
+- python-automat
+- python-hyperlink
+- python-attrs
+- python-typing_extensions
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-twisted
+  source: archpkg

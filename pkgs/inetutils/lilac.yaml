@@ -1,0 +1,36 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''inetutils'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- pam
+- libcap
+- readline
+- ncurses
+- libxcrypt
+repo_makedepends:
+- help2man
+update_on:
+- alias: readline
+- alpm: pam
+  provides: libpam.so
+  source: alpm
+- alpm: libxcrypt
+  provides: libcrypt.so
+  source: alpm
+- alpm: readline
+  provides: libreadline.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: inetutils
+  source: archpkg

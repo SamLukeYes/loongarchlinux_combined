@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deepin-system-monitor'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- deepin-qt5integration
+- deepin-dock
+- dtkwm
+- dwayland
+- procps-ng
+- libcap
+repo_makedepends:
+- cmake
+- deepin-gettext-tools
+- gtest
+- ninja
+- qt5-tools
+update_on:
+- alpm: deepin-system-monitor
+  source: archpkg

@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-shell-extension-arc-menu'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gnome-menus
+- gnome-shell
+repo_makedepends: []
+update_on:
+- alpm: gnome-shell-extension-arc-menu
+  source: archpkg

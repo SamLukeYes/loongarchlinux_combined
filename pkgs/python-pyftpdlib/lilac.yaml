@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pyftpdlib'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pyopenssl
+- python-psutil
+repo_depends:
+- python
+repo_makedepends:
+- python-setuptools
+- python-pysendfile
+update_on:
+- alias: python
+- alpm: python-pyftpdlib
+  source: archpkg

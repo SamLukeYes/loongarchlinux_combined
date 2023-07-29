@@ -1,0 +1,46 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-insert-ordered-containers'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-hashable
+- haskell-indexed-traversable
+- haskell-lens
+- haskell-optics-core
+- haskell-optics-extra
+- haskell-semigroupoids
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- haskell-quickcheck
+- haskell-tasty
+- haskell-tasty-quickcheck
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-indexed-traversable
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-optics-core
+  source: alpm
+- alpm: haskell-optics-extra
+  source: alpm
+- alpm: haskell-semigroupoids
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-insert-ordered-containers
+  source: archpkg

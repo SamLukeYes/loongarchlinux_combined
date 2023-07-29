@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''inxi'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- coreutils
+- pciutils
+- perl
+- procps-ng
+- util-linux
+repo_makedepends: []
+update_on:
+- alias: perl
+- alpm: inxi
+  source: archpkg

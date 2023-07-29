@@ -1,0 +1,76 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ci'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-attoparsec
+- haskell-base-compat
+- haskell-base16-bytestring
+- haskell-cabal-install-parsers
+- haskell-cryptohash-sha256
+- haskell-generic-lens-lite
+- haskell-hsyaml
+- haskell-indexed-traversable
+- haskell-indexed-traversable-instances
+- haskell-ini
+- haskell-lattices
+- haskell-network-uri
+- haskell-optparse-applicative
+- shellcheck
+- haskell-temporary
+- haskell-unordered-containers
+- haskell-zinza
+repo_makedepends:
+- ghc
+- uusi
+- haskell-diff
+- haskell-ansi-terminal
+- haskell-tasty
+- haskell-tasty-golden
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-base-compat
+  source: alpm
+- alpm: haskell-base16-bytestring
+  source: alpm
+- alpm: haskell-cabal-install-parsers
+  source: alpm
+- alpm: haskell-cryptohash-sha256
+  source: alpm
+- alpm: haskell-generic-lens-lite
+  source: alpm
+- alpm: haskell-hsyaml
+  source: alpm
+- alpm: haskell-indexed-traversable
+  source: alpm
+- alpm: haskell-indexed-traversable-instances
+  source: alpm
+- alpm: haskell-ini
+  source: alpm
+- alpm: haskell-lattices
+  source: alpm
+- alpm: haskell-network-uri
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-temporary
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-zinza
+  source: alpm
+- alpm: haskell-ci
+  source: archpkg

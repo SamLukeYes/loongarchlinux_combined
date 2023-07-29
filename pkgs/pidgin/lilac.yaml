@@ -1,0 +1,57 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pidgin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- pidgin: libpurple
+- startup-notification
+- gtkspell
+- libxss
+- libsm
+- gstreamer: gst-plugins-base
+- gstreamer: gst-plugins-good
+- hicolor-icon-theme
+- farstream
+- libsasl
+- libidn
+- libnsl
+- libgadu
+- dbus-glib
+- nss
+- networkmanager: libnm
+- libxcrypt
+- pidgin: libpurple
+- libgnt
+- libx11
+repo_makedepends:
+- startup-notification
+- gtkspell
+- libxss
+- nss
+- libsasl
+- libsm
+- libidn
+- libgadu
+- python
+- hicolor-icon-theme
+- farstream
+- tk
+- libnsl
+- avahi
+- ca-certificates
+- intltool
+- networkmanager: libnm
+- dbus-glib
+- libgnt
+- libxcrypt
+update_on:
+- alpm: pidgin
+  source: archpkg

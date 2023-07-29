@@ -1,0 +1,58 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''posix'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- at
+- coreutils
+- bc
+- diffutils
+- ed
+- file
+- findutils
+- glibc
+- grep
+- util-linux
+- cups
+- m4
+- s-nail
+- patch
+- pax
+- procps-ng
+- sed
+- binutils
+- ncurses
+- time
+- sharutils
+- posix
+- util-linux
+- ncompress
+- coreutils
+- psmisc
+- procps-ng
+- ncurses
+- gzip
+- uucp
+- posix
+- cronie
+- vi
+- util-linux
+- inetutils
+- posix
+- gcc
+- flex
+- bison
+- posix
+- binutils
+- ctags
+- make
+repo_makedepends: []
+update_on:
+- alpm: posix
+  source: archpkg

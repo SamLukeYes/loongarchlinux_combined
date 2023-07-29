@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libretro-mupen64plus-next'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- libpng
+- libretro-core-info
+- zlib: minizip
+- xxhash
+- zlib
+repo_makedepends:
+- git
+- mesa
+- nasm
+update_on:
+- alpm: libretro-mupen64plus-next
+  source: archpkg

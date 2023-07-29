@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''dino'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glib2
+- glib-networking
+- gtk4
+- libadwaita
+- gpgme
+- libgee
+- libgcrypt
+- libsignal-protocol-c
+- libsoup
+- sqlite
+- qrencode
+- gspell
+- libnice
+- gstreamer
+- gstreamer: gst-plugin-gtk
+- gstreamer: gst-plugins-base
+- gstreamer: gst-plugins-good
+- libsrtp
+- webrtc-audio-processing
+repo_makedepends:
+- git
+- cmake
+- vala
+- ninja
+update_on:
+- alpm: dino
+  source: archpkg

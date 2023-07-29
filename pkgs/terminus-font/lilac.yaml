@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''terminus-font'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- xorg-bdftopcf
+- python
+- grub
+- freetype2
+update_on:
+- alpm: terminus-font
+  source: archpkg

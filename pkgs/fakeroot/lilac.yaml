@@ -1,0 +1,12 @@
+destsubdir: core
+repo_checkdepends:
+- sharutils
+repo_depends:
+- glibc
+- filesystem
+- sed
+- util-linux
+repo_makedepends:
+- systemd
+- po4a
+update_on: []

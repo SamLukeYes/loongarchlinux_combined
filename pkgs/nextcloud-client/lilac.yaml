@@ -1,0 +1,47 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''nextcloud-client'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- hicolor-icon-theme
+- karchive
+- libcloudproviders
+- openssl
+- qt5-graphicaleffects
+- qt5-quickcontrols
+- qt5-quickcontrols2
+- qt5-svg
+- qt5-webengine
+- qt5-websockets
+- qtkeychain: qtkeychain-qt5
+- sqlite
+- xdg-utils
+- nextcloud-client
+repo_makedepends:
+- cmocka
+- doxygen
+- extra-cmake-modules
+- git
+- inkscape
+- kio
+- libcloudproviders
+- openssl
+- python-sphinx
+- qt5-quickcontrols2
+- qt5-svg
+- qt5-tools
+- qt5-webengine
+- qt5-websockets
+- qtkeychain: qtkeychain-qt5
+- sqlite
+update_on:
+- alpm: nextcloud-client
+  source: archpkg

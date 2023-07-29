@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pwntools'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-mako
+- python-pyelftools
+- capstone: python-capstone
+- ropgadget
+- python-pyserial
+- python-requests
+- python-pip
+- python-pygments
+- python-pysocks
+- python-dateutil
+- python-packaging
+- python-psutil
+- python-intervaltree
+- python-sortedcontainers
+- unicorn: python-unicorn
+- python-paramiko
+- python-colored-traceback
+- python-rpyc
+- ropgadget
+repo_makedepends:
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-pwntools
+  source: archpkg

@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''unicorn'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- cmocka
+repo_depends:
+- glibc
+- python
+- unicorn
+- python-setuptools
+- ruby
+- unicorn
+repo_makedepends:
+- cmake
+- python
+- python-setuptools
+- ruby
+- ruby-rdoc
+update_on:
+- alias: python
+- alias: ruby
+- alpm: unicorn
+  source: archpkg

@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xsecurelock'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- pam
+- libxcomposite
+- libxmu
+- libxft
+- libxrandr
+- libxss
+repo_makedepends:
+- mplayer
+- mpv
+- imagemagick
+- xorg-xset
+- xscreensaver
+update_on:
+- alpm: xsecurelock
+  source: archpkg

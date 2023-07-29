@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''etherape'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- glib2
+- libpcap
+- popt
+- goocanvas
+- gtk3
+repo_makedepends:
+- yelp-tools
+update_on:
+- alpm: libpcap
+  provides: libpcap.so
+  source: alpm
+- alpm: etherape
+  source: archpkg

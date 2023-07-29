@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-curses-ui-poe'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl-curses-ui
+- perl-poe
+repo_makedepends:
+- perl-curses-ui
+- perl-poe
+update_on:
+- alpm: perl-curses-ui-poe
+  source: archpkg

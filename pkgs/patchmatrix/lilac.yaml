@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''patchmatrix'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- hicolor-icon-theme
+- libglvnd
+- libx11
+- glibc
+- hicolor-icon-theme
+- libglvnd
+- libx11
+- glew
+repo_makedepends:
+- glew
+- glu
+- lv2
+- meson
+update_on:
+- alpm: glew
+  provides: libGLEW.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: patchmatrix
+  source: archpkg

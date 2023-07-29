@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-weasyprint'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- ghostscript
+- ttf-dejavu
+repo_depends:
+- pango
+- brotli: python-brotli
+- python-cffi
+- python-cssselect2
+- python-fonttools
+- python-html5lib
+- python-pillow
+- python-pydyf
+- python-pyphen
+- python-tinycss2
+- python-zopfli
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-flit-core
+update_on:
+- alpm: python-weasyprint
+  source: archpkg

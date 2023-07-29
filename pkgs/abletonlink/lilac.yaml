@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''abletonlink'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- asio
+repo_makedepends:
+- catch2
+- cmake
+- portaudio
+- qt5-tools
+- qt5-quickcontrols
+update_on:
+- alpm: abletonlink
+  source: archpkg

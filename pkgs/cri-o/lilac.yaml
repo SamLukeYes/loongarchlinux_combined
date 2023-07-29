@@ -1,0 +1,57 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cri-o'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cni-plugins
+- conmon
+- conntrack-tools
+- containers-common
+- gcc: gcc-libs
+- glibc
+- gpgme
+- iproute2
+- iptables
+- cni-plugins
+- conmon
+- conntrack-tools
+- containers-common
+- gcc: gcc-libs
+- glibc
+- gpgme
+- iproute2
+- iptables
+- lvm2: device-mapper
+- libseccomp
+repo_makedepends:
+- apparmor
+- btrfs-progs
+- lvm2: device-mapper
+- go
+- go-md2man
+- libassuan
+- libseccomp
+- ostree
+update_on:
+- alpm: iptables
+  source: alpm
+  strip_release: true
+- alpm: iptables
+  source: alpm
+  strip_release: true
+- alpm: device-mapper
+  provides: libdevmapper.so
+  source: alpm
+- alpm: libseccomp
+  provides: libseccomp.so
+  source: alpm
+- alpm: cri-o
+  source: archpkg

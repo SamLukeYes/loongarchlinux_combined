@@ -1,0 +1,57 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-dbus'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- dbus
+repo_depends:
+- ghc: ghc-libs
+- haskell-cereal
+- haskell-conduit
+- haskell-lens
+- haskell-network
+- haskell-random
+- haskell-split
+- haskell-th-lift
+- haskell-vector
+- haskell-xml-conduit
+- haskell-xml-types
+repo_makedepends:
+- ghc
+- uusi
+- haskell-extra
+- haskell-quickcheck
+- haskell-resourcet
+- haskell-tasty
+- haskell-tasty-hunit
+- haskell-tasty-quickcheck
+update_on:
+- alpm: haskell-cereal
+  source: alpm
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-split
+  source: alpm
+- alpm: haskell-th-lift
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-xml-conduit
+  source: alpm
+- alpm: haskell-xml-types
+  source: alpm
+- alpm: haskell-dbus
+  source: archpkg

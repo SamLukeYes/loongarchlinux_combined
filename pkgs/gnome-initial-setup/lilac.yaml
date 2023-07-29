@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-initial-setup'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cheese
+- gdm
+- geocode-glib: geocode-glib-2
+- gnome-online-accounts
+- ibus
+- libgweather-4
+- networkmanager: libnm
+- libnma: libnma-gtk4
+- libpwquality
+- librest
+- malcontent
+- webkitgtk-6.0
+repo_makedepends:
+- meson
+update_on:
+- alpm: gnome-initial-setup
+  source: archpkg

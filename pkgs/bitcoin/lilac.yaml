@@ -1,0 +1,52 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''bitcoin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- boost: boost-libs
+- db5.3
+- libevent
+- miniupnpc
+- sqlite
+- zeromq
+- boost: boost-libs
+- libevent
+- qt5-base
+- miniupnpc
+- qrencode
+- protobuf
+- zeromq
+- hicolor-icon-theme
+- db5.3
+- boost: boost-libs
+repo_makedepends:
+- boost
+- libevent
+- qt5-base
+- qt5-tools
+- qrencode
+- miniupnpc
+- protobuf
+- zeromq
+- db5.3
+update_on:
+- alpm: miniupnpc
+  provides: libminiupnpc.so
+  source: alpm
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: miniupnpc
+  provides: libminiupnpc.so
+  source: alpm
+- alias: protobuf
+- alpm: bitcoin
+  source: archpkg

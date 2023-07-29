@@ -1,0 +1,82 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''php-legacy'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- procps-ng
+repo_depends:
+- libxml2
+- curl
+- libzip
+- pcre2
+- argon2
+- oniguruma
+- gdbm
+- php-legacy
+- php-legacy
+- apache
+- libnsl
+- php-legacy
+- systemd
+- php-legacy
+- systemd: systemd-libs
+- libnsl
+- libxcrypt
+- php-legacy
+- php-legacy
+- freetds
+- php-legacy
+- enchant
+- php-legacy
+- gd
+- php-legacy
+- libsodium
+- php-legacy
+- unixodbc
+- php-legacy
+- postgresql: postgresql-libs
+- php-legacy
+- aspell
+- php-legacy
+- net-snmp
+- php-legacy
+- sqlite
+- php-legacy
+- tidy
+- php-legacy
+- libxslt
+repo_makedepends:
+- apache
+- aspell
+- gdbm
+- enchant
+- gd
+- gmp
+- icu
+- libsodium
+- libxslt
+- libzip
+- net-snmp
+- postgresql: postgresql-libs
+- sqlite
+- systemd
+- tidy
+- unixodbc
+- curl
+- libtool
+- postfix
+- freetds
+- pcre2
+- libnsl
+- oniguruma
+- patchelf
+update_on:
+- alpm: php-legacy
+  source: archpkg

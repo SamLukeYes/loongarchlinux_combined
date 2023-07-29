@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''restinio'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- asio
+- http-parser
+- fmt
+repo_makedepends:
+- cmake
+- gcc
+- openssl
+- zlib
+- pcre
+- pcre2
+- boost
+update_on:
+- alpm: restinio
+  source: archpkg

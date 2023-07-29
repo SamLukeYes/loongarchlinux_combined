@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-httpcore'')
+
+  '
+repo_checkdepends:
+- python-pytest-httpbin
+- python-pytest-trio
+- python-socksio
+repo_depends:
+- python
+- python-anyio
+- python-h11
+- python-sniffio
+- python-certifi
+repo_makedepends:
+- python-build
+- python-installer
+- python-wheel
+- python-setuptools
+- python-h2
+update_on:
+- alias: python
+- alpm: python-httpcore
+  source: archpkg

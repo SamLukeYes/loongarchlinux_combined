@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-trio-asyncio'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-async_generator
+- python-outcome
+- python-trio
+repo_makedepends:
+- git
+- python-setuptools
+- python-pytest-runner
+update_on:
+- alias: python
+- alpm: python-trio-asyncio
+  source: archpkg

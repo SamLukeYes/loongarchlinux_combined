@@ -1,0 +1,58 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''dsp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libmad
+- libtool
+- ffmpeg
+- alsa-lib
+- fftw
+- libao
+- pulseaudio: libpulse
+- libsndfile
+- zita-convolver
+repo_makedepends:
+- git
+- ladspa
+update_on:
+- alpm: ffmpeg
+  provides: libavcodec.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavformat.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavutil.so
+  source: alpm
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: fftw
+  provides: libfftw3.so
+  source: alpm
+- alpm: libao
+  provides: libao.so
+  source: alpm
+- alpm: libao
+  provides: libpulse.so
+  source: alpm
+- alpm: libpulse
+  provides: libpulse-simple.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: zita-convolver
+  provides: libzita-convolver.so
+  source: alpm
+- alpm: dsp
+  source: archpkg

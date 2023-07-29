@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''khal'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-freezegun
+- python-hypothesis
+- python-packaging
+- vdirsyncer
+repo_depends:
+- python
+- python-atomicwrites
+- python-click
+- python-click-log
+- python-configobj
+- python-dateutil
+- python-icalendar
+- python-pytz
+- pyxdg: python-pyxdg
+- python-tzlocal
+- python-urwid
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools-scm
+- python-sphinxcontrib-newsfeed
+- python-wheel
+update_on:
+- alias: python
+- alpm: khal
+  source: archpkg

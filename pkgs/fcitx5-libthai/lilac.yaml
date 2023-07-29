@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''fcitx5-libthai'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fcitx5
+- libthai
+repo_makedepends:
+- extra-cmake-modules
+- ninja
+update_on:
+- alpm: fcitx5-libthai
+  source: archpkg

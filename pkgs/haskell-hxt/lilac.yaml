@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hxt'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-hxt-charproperties
+- haskell-hxt-regex-xmlschema
+- haskell-hxt-unicode
+- haskell-network-uri
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-hxt-charproperties
+  source: alpm
+- alpm: haskell-hxt-regex-xmlschema
+  source: alpm
+- alpm: haskell-hxt-unicode
+  source: alpm
+- alpm: haskell-network-uri
+  source: alpm
+- alpm: haskell-hxt
+  source: archpkg

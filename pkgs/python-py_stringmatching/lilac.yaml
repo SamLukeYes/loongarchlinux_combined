@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-py_stringmatching'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-nose
+repo_depends:
+- python-numpy
+- python-six
+repo_makedepends:
+- python-setuptools
+- cython
+update_on:
+- alpm: python-py_stringmatching
+  source: archpkg

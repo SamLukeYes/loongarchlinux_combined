@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rubocop'')
+
+  '
+repo_checkdepends:
+- asciidoctor
+- procps-ng
+- ruby-bump
+- ruby-rspec
+- ruby-rubocop-performance
+- ruby-rubocop-rake
+- ruby-rubocop-rspec
+- ruby-simplecov
+- ruby-stackprof
+- ruby-test-queue
+- ruby-webmock
+- ruby-yard
+repo_depends:
+- ruby
+- ruby-memory_profiler
+- ruby-parallel
+- ruby-parser
+- ruby-rainbow
+- ruby-regexp_parser
+- ruby-rubocop-ast
+- ruby-ruby-progressbar
+- ruby-unicode-display_width
+repo_makedepends: []
+update_on:
+- alias: ruby
+- alpm: rubocop
+  source: archpkg

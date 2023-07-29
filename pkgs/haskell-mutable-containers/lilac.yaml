@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mutable-containers'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- haskell-quickcheck
+- haskell-hspec
+repo_depends:
+- ghc: ghc-libs
+- haskell-vector
+- haskell-mono-traversable
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-mono-traversable
+  source: alpm
+- alpm: haskell-mutable-containers
+  source: archpkg

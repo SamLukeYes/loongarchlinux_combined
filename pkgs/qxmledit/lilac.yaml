@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qxmledit'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glu
+- hicolor-icon-theme
+- qt5-scxml
+- qt5-svg
+- qt5-xmlpatterns
+repo_makedepends:
+- qt5-tools
+update_on:
+- alpm: qxmledit
+  source: archpkg

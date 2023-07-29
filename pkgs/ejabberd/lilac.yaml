@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ejabberd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- expat
+- openssl
+- zlib
+- erlang-nox
+- pam
+- iproute2
+- erlang: erlang-unixodbc
+- libyaml
+- sqlite
+- gd
+repo_makedepends:
+- git
+- rebar
+- hevea
+- texlive-bin
+- texlive-texmf: texlive-latexextra
+update_on:
+- alpm: ejabberd
+  source: archpkg

@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-test-distmanifest'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl
+- perl-module-manifest
+repo_makedepends:
+- perl-module-build
+update_on:
+- alias: perl
+- alpm: perl-test-distmanifest
+  source: archpkg

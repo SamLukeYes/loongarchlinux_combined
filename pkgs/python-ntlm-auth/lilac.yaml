@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-ntlm-auth'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-six
+- python-cryptography
+repo_makedepends:
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-ntlm-auth
+  source: archpkg

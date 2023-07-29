@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-par-packer'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl-archive-zip
+- perl-getopt-argvfile
+- perl-ipc-run3
+- perl-module-scandeps
+- perl-par
+- perl-par-dist
+- perl-archive-zip
+- perl-getopt-argvfile
+- perl-ipc-run3
+- perl-module-scandeps
+- perl-par
+- perl-par-dist
+- perl
+repo_makedepends:
+- perl
+update_on:
+- alpm: perl-par-packer
+  source: archpkg

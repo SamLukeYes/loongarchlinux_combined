@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-wai-json'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-aeson-qq
+- haskell-case-insensitive
+- haskell-hspec-wai
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hspec
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-aeson-qq
+  source: alpm
+- alpm: haskell-case-insensitive
+  source: alpm
+- alpm: haskell-hspec-wai
+  source: alpm
+- alpm: haskell-hspec-wai-json
+  source: archpkg

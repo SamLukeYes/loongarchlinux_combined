@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-randomly'')
+
+  '
+repo_checkdepends:
+- python-factory-boy
+- python-faker
+- python-numpy
+- python-pytest-xdist
+repo_depends:
+- python-importlib-metadata
+- python-pytest
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-pytest-randomly
+  source: archpkg

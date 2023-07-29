@@ -1,0 +1,80 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''arch-hs'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- pacman
+- haskell-diff
+- haskell-aeson
+- haskell-algebraic-graphs
+- haskell-arch-web
+- haskell-conduit
+- haskell-conduit-extra
+- haskell-hackage-db
+- haskell-http-client
+- haskell-http-client-tls
+- haskell-megaparsec
+- haskell-microlens
+- haskell-microlens-th
+- haskell-neat-interpolation
+- haskell-optparse-simple
+- haskell-polysemy
+- haskell-prettyprinter
+- haskell-prettyprinter-ansi-terminal
+- haskell-servant-client
+- haskell-split
+- haskell-tar-conduit
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-diff
+  source: alpm
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-algebraic-graphs
+  source: alpm
+- alpm: haskell-arch-web
+  source: alpm
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-conduit-extra
+  source: alpm
+- alpm: haskell-hackage-db
+  source: alpm
+- alpm: haskell-http-client
+  source: alpm
+- alpm: haskell-http-client-tls
+  source: alpm
+- alpm: haskell-megaparsec
+  source: alpm
+- alpm: haskell-microlens
+  source: alpm
+- alpm: haskell-microlens-th
+  source: alpm
+- alpm: haskell-neat-interpolation
+  source: alpm
+- alpm: haskell-optparse-simple
+  source: alpm
+- alpm: haskell-polysemy
+  source: alpm
+- alpm: haskell-prettyprinter
+  source: alpm
+- alpm: haskell-prettyprinter-ansi-terminal
+  source: alpm
+- alpm: haskell-servant-client
+  source: alpm
+- alpm: haskell-split
+  source: alpm
+- alpm: haskell-tar-conduit
+  source: alpm
+- alpm: arch-hs
+  source: archpkg

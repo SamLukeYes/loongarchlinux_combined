@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-elftools'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- ruby-bindata
+repo_makedepends:
+- ruby-rake
+- ruby-rdoc
+- ruby-bundler
+update_on:
+- alias: ruby
+- alpm: ruby-elftools
+  source: archpkg

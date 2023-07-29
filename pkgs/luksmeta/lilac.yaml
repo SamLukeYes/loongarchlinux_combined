@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''luksmeta'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cryptsetup
+repo_makedepends:
+- asciidoc
+update_on:
+- alpm: cryptsetup
+  provides: libcryptsetup.so
+  source: alpm
+- alpm: luksmeta
+  source: archpkg

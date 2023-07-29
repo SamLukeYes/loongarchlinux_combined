@@ -1,0 +1,77 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''easytag'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cairo
+- gcc: gcc-libs
+- gdk-pixbuf2
+- glibc
+- id3lib
+- taglib
+- wavpack
+- zlib
+- cairo
+- gcc: gcc-libs
+- gdk-pixbuf2
+- glibc
+- id3lib
+- taglib
+- wavpack
+- zlib
+repo_makedepends:
+- appstream-glib
+- flac
+- glib2
+- gtk3
+- harfbuzz
+- intltool
+- itstool
+- libid3tag
+- pango
+- python
+- yelp-tools
+update_on:
+- alpm: flac
+  provides: libFLAC.so
+  source: alpm
+- alpm: at-spi2-core
+  provides: libatk-1.0.so
+  source: alpm
+- alpm: libid3tag
+  provides: libid3tag.so
+  source: alpm
+- alpm: gtk3
+  provides: libgdk-3.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: gtk3
+  provides: libgtk-3.so
+  source: alpm
+- alpm: harfbuzz
+  provides: libharfbuzz.so
+  source: alpm
+- alpm: pango
+  provides: libpango-1.0.so
+  source: alpm
+- alpm: pango
+  provides: libpangocairo-1.0.so
+  source: alpm
+- alpm: easytag
+  source: archpkg

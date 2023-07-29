@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-tornado'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-pytest
+- python-tornado
+- python-setuptools
+repo_makedepends: []
+update_on:
+- alpm: python-pytest-tornado
+  source: archpkg

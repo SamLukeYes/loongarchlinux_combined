@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''bupstash'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- bash-bats
+- python
+- jq
+repo_depends:
+- libsodium
+- gcc: gcc-libs
+repo_makedepends:
+- git
+- rust
+- ruby-ronn-ng
+update_on:
+- alpm: bupstash
+  source: archpkg

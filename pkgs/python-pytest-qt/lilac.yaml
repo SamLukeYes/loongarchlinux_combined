@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-qt'')
+
+  '
+repo_checkdepends:
+- pyqt5: python-pyqt5
+- pyside2
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- python-pytest
+repo_makedepends:
+- python-setuptools-scm
+update_on:
+- alpm: python-pytest-qt
+  source: archpkg

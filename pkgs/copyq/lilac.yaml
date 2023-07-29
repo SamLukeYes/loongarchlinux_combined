@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''copyq'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- hicolor-icon-theme
+- qt5-svg
+- qt5-wayland
+- knotifications
+repo_makedepends:
+- extra-cmake-modules
+- qt5-tools
+update_on:
+- alpm: copyq
+  source: archpkg

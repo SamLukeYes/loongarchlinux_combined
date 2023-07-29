@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-sqlite-simple'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-only
+- haskell-attoparsec
+- haskell-blaze-builder
+- haskell-blaze-textual
+- haskell-direct-sqlite
+repo_makedepends:
+- ghc
+- haskell-hunit
+- haskell-base16-bytestring
+update_on:
+- alpm: haskell-only
+  source: alpm
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-blaze-builder
+  source: alpm
+- alpm: haskell-blaze-textual
+  source: alpm
+- alpm: haskell-direct-sqlite
+  source: alpm
+- alpm: haskell-sqlite-simple
+  source: archpkg

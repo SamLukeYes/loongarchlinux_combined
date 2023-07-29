@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-stestr'')
+
+  '
+repo_checkdepends:
+- python-hacking
+- python-sphinx
+- python-coverage
+- python-ddt
+repo_depends:
+- python-future
+- python-cliff
+- python-pbr
+- python-subunit
+- python-fixtures
+- python-testtools
+- python-yaml
+- python-voluptuous
+repo_makedepends: []
+update_on:
+- alpm: python-stestr
+  source: archpkg

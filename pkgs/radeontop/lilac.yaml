@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''radeontop'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libdrm
+- libpciaccess
+- libxcb
+- ncurses
+repo_makedepends:
+- xorgproto
+update_on:
+- alpm: radeontop
+  source: archpkg

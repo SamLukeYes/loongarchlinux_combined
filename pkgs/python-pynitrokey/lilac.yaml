@@ -1,0 +1,42 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pynitrokey'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- libnitrokey
+- python
+- python-certifi
+- python-cffi
+- python-click
+- python-cryptography
+- python-dateutil
+- python-ecdsa
+- python-fido2
+- python-frozendict
+- python-intelhex
+- python-nkdfu
+- protobuf: python-protobuf
+- python-pyserial
+- python-pyusb
+- python-requests
+- python-spsdk
+- python-tlv8
+- python-tqdm
+- python-urllib3
+repo_makedepends:
+- git
+- python-build
+- python-flit-core
+- python-installer
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-pynitrokey
+  source: archpkg

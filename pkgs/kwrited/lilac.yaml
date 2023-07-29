@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kwrited'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kpty
+- knotifications
+- kdbusaddons
+- oxygen-sounds
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+update_on:
+- alpm: kwrited
+  source: archpkg

@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''leocad'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- gcc: gcc-libs
+- libglvnd
+- qt5-base
+- hicolor-icon-theme
+- zlib
+repo_makedepends:
+- qt5-tools
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: leocad
+  source: archpkg

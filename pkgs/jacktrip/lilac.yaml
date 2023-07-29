@@ -1,0 +1,61 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''jacktrip'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- qt5-base
+- qt5-declarative
+- qt5-graphicaleffects
+- qt5-networkauth
+- qt5-quickcontrols2
+- qt5-svg
+- qt5-websockets
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- qt5-base
+- qt5-declarative
+- qt5-graphicaleffects
+- qt5-networkauth
+- qt5-quickcontrols2
+- qt5-svg
+- qt5-websockets
+- rtaudio
+repo_makedepends:
+- help2man
+- meson
+- python-jinja
+- python-yaml
+- rtaudio
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: rtaudio
+  provides: librtaudio.so
+  source: alpm
+- alpm: jacktrip
+  source: archpkg

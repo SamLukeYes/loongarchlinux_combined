@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''i3-wm'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libev
+- libxkbcommon: libxkbcommon-x11
+- pango
+- startup-notification
+- xcb-util-cursor
+- xcb-util-keysyms
+- xcb-util-wm
+- xcb-util-xrm
+- yajl
+repo_makedepends:
+- meson
+- xmlto
+update_on:
+- alpm: i3-wm
+  source: archpkg

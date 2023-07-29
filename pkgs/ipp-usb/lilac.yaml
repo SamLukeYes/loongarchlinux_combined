@@ -1,0 +1,8 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- avahi
+- libusb
+repo_makedepends:
+- go
+update_on: []

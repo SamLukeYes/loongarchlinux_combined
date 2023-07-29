@@ -1,0 +1,40 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''links'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- brotli
+- bzip2
+- gpm
+- libevent
+- openssl
+- xz
+- zstd
+repo_makedepends:
+- libtiff
+- libpng
+- libxt
+- librsvg
+update_on:
+- alpm: brotli
+  provides: libbrotlidec.so
+  source: alpm
+- alpm: bzip2
+  provides: libbz2.so
+  source: alpm
+- alpm: gpm
+  provides: libgpm.so
+  source: alpm
+- alpm: zstd
+  provides: libzstd.so
+  source: alpm
+- alpm: links
+  source: archpkg

@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''openvdb'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- boost: boost-libs
+- zlib
+- jemalloc
+- blosc
+- log4cplus
+repo_makedepends:
+- doxygen
+- boost
+- cmake
+- mesa
+- cppunit
+- glfw: glfw-x11
+- glu
+- python
+- python-numpy
+- ninja
+update_on:
+- alpm: openvdb
+  source: archpkg

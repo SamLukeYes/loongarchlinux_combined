@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-latex'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gsettings-desktop-schemas
+- gspell
+- libgee
+- tepl
+repo_makedepends:
+- appstream-glib
+- autoconf-archive
+- git
+- gtk-doc
+- gobject-introspection
+- intltool
+- vala
+- yelp-tools
+update_on:
+- alpm: gnome-latex
+  source: archpkg

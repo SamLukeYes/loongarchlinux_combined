@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-puma'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- ruby-nio4r
+- ruby-sd_notify
+repo_makedepends:
+- ruby-bundler
+- ruby-minitest
+- ruby-minitest-proveit
+- ruby-minitest-retry
+- ruby-minitest-stub-const
+- ruby-rack
+- ruby-rake
+- ruby-rake-compiler
+- ruby-rdoc
+update_on:
+- alias: ruby
+- alpm: ruby-puma
+  source: archpkg

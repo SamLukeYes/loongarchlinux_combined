@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-settings-daemon'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-dbusmock
+- pygobject: python-gobject
+repo_depends:
+- dconf
+- gcr-4
+- geoclue
+- geocode-glib: geocode-glib-2
+- gnome-desktop
+- gsettings-desktop-schemas
+- gtk3
+- libgudev
+- libgweather-4
+- networkmanager: libnm
+- libnotify
+- librsvg
+- libwacom
+- nss
+- pulseaudio
+- alsa-plugins: pulseaudio-alsa
+- systemd
+- upower
+repo_makedepends:
+- docbook-xsl
+- git
+- libxslt
+- meson
+- python
+- usbguard
+update_on:
+- alpm: gnome-settings-daemon
+  source: archpkg

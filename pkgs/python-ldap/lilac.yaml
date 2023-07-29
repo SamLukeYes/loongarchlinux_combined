@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-ldap'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- openldap
+- python-pyasn1
+- python-pyasn1-modules
+repo_depends:
+- python-pyasn1
+- python-pyasn1-modules
+- openldap: libldap
+repo_makedepends:
+- python-setuptools
+- python-coverage
+update_on:
+- alpm: python-ldap
+  source: archpkg

@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ncspot'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- openssl
+- pulseaudio: libpulse
+- libxcb
+- dbus
+- hicolor-icon-theme
+repo_makedepends:
+- python
+- pkgconf
+- ueberzug
+- pandoc-cli
+update_on:
+- alpm: ncspot
+  source: archpkg

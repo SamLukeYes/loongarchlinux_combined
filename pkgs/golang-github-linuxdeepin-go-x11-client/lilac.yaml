@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''golang-github-linuxdeepin-go-x11-client'')
+
+  '
+repo_checkdepends:
+- xorg-server: xorg-server-xvfb
+- golang-github-stretchr-testify
+- golang-gopkg-check.v1
+- git
+repo_depends:
+- go
+- golang-golang-x-text
+repo_makedepends: []
+update_on:
+- alpm: golang-github-linuxdeepin-go-x11-client
+  source: archpkg

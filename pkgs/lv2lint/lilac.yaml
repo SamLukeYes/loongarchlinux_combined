@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lv2lint'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- elfutils: libelf
+- glibc
+- elfutils: libelf
+- curl
+- lilv
+repo_makedepends:
+- curl
+- lilv
+- lv2
+- meson
+update_on:
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: lilv
+  provides: liblilv-0.so
+  source: alpm
+- alpm: lv2lint
+  source: archpkg

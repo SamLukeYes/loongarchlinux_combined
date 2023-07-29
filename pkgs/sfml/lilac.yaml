@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sfml'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libsndfile
+- libxrandr
+- openal
+- glew
+- freetype2
+- libx11
+repo_makedepends:
+- mesa
+- cmake
+- doxygen
+- systemd
+update_on:
+- alpm: sfml
+  source: archpkg

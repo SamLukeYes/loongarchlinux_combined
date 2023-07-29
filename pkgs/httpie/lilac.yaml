@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''httpie'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-httpbin
+- python-pytest-lazy-fixture
+- python-pytest-mock
+- python-responses
+- python-werkzeug
+repo_depends:
+- python-charset-normalizer
+- python-defusedxml
+- python-multidict
+- python-pip
+- python-pygments
+- python-pysocks
+- python-requests
+- python-requests-toolbelt
+- python-rich
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: httpie
+  source: archpkg

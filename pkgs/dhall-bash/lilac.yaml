@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''dhall-bash'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- dhall
+- haskell-neat-interpolation
+- haskell-shell-escape
+- haskell-optparse-generic
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-neat-interpolation
+  source: alpm
+- alpm: haskell-shell-escape
+  source: alpm
+- alpm: haskell-optparse-generic
+  source: alpm
+- alpm: dhall-bash
+  source: archpkg

@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-awkward'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pyaml
+- python-pytest
+- python-pytest-cov
+- python-hist
+- python-pandas
+- python-numexpr
+- python-pyarrow
+- python-scikit-hep-testdata
+- python-vector
+- root
+- pybind11
+- rapidjson
+repo_depends:
+- python-numpy
+- python-packaging
+- python-importlib_resources
+repo_makedepends:
+- cmake
+- git
+- python-build
+- python-installer
+- python-wheel
+- cuda
+- doxygen
+- python-sphinx
+- python-sphinx_rtd_theme
+update_on:
+- alpm: python-awkward
+  source: archpkg

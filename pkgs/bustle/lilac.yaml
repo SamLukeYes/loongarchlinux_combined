@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''bustle'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- glib2
+- libpcap
+- haskell-cairo
+- haskell-gio
+- haskell-glib
+- haskell-gtk3
+- haskell-pango
+repo_makedepends:
+- ghc
+- haskell-hunit
+- haskell-quickcheck
+- haskell-test-framework
+- haskell-test-framework-hunit
+update_on:
+- alpm: haskell-cairo
+  source: alpm
+- alpm: haskell-gio
+  source: alpm
+- alpm: haskell-glib
+  source: alpm
+- alpm: haskell-gtk3
+  source: alpm
+- alpm: haskell-pango
+  source: alpm
+- alpm: bustle
+  source: archpkg

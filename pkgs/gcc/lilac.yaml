@@ -1,0 +1,39 @@
+destsubdir: core
+repo_checkdepends:
+- dejagnu
+- expect
+- inetutils
+- python-pytest
+- tcl
+repo_depends:
+- gcc: gcc-libs
+- libmpc
+- zstd
+- gcc
+- gcc
+- gcc
+- gcc
+repo_makedepends:
+- binutils
+- doxygen
+- git
+- libisl
+- libmpc
+- python
+- zstd
+update_on:
+- alpm: libisl
+  provides: libisl.so
+  source: alpm
+- alpm: libisl
+  provides: libisl.so
+  source: alpm
+- alpm: libisl
+  provides: libisl.so
+  source: alpm
+- alpm: libisl
+  provides: libisl.so
+  source: alpm
+- alpm: libisl
+  provides: libisl.so
+  source: alpm

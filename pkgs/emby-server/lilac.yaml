@@ -1,0 +1,74 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''emby-server'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- alsa-lib
+- aom
+- aribb24
+- dotnet-core-6.0: aspnet-runtime-6.0
+- bzip2
+- dotnet-core-6.0: dotnet-runtime-6.0
+- expat
+- ffmpeg
+- fontconfig
+- fribidi
+- glibc
+- gmp
+- gnutls
+- lame
+- libdrm
+- libjpeg-turbo
+- intel-media-sdk: libmfx
+- libpng
+- libtheora
+- libwebp
+- opus
+- sqlite
+- tesseract
+- zlib
+- zvbi
+repo_makedepends:
+- ffnvcodec-headers
+- nasm
+update_on:
+- alpm: libass
+  provides: libass.so
+  source: alpm
+- alpm: chromaprint
+  provides: libchromaprint.so
+  source: alpm
+- alpm: dav1d
+  provides: libdav1d.so
+  source: alpm
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: libva
+  provides: libva-drm.so
+  source: alpm
+- alpm: libva
+  provides: libva.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbisenc.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbis.so
+  source: alpm
+- alpm: x264
+  provides: libx264.so
+  source: alpm
+- alpm: x265
+  provides: libx265.so
+  source: alpm
+- alpm: emby-server
+  source: archpkg

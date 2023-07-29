@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hasql-dynamic-statements'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-hasql
+- haskell-hasql-implicits
+- haskell-ptr
+repo_makedepends:
+- ghc
+- uusi
+- haskell-quickcheck
+- haskell-quickcheck-instances
+- haskell-rerebase
+- haskell-tasty
+- haskell-tasty-hunit
+- haskell-tasty-quickcheck
+- pifpaf
+- postgresql
+update_on:
+- alpm: haskell-hasql
+  source: alpm
+- alpm: haskell-hasql-implicits
+  source: alpm
+- alpm: haskell-ptr
+  source: alpm
+- alpm: haskell-hasql-dynamic-statements
+  source: archpkg

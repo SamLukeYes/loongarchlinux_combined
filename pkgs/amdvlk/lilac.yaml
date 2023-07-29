@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''amdvlk'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- perl-xml-xpath
+- python
+- wayland
+- libxrandr
+- xorg-server: xorg-server-devel
+- directx-shader-compiler
+- glslang
+- cmake
+- ninja
+- git
+update_on:
+- alpm: amdvlk
+  source: archpkg

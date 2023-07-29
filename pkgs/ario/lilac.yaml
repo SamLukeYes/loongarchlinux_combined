@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ario'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- avahi
+- curl
+- dbus-glib
+- gnutls
+- gtk3
+- libmpdclient
+- libnotify
+- libsoup
+- taglib
+- xdg-utils
+repo_makedepends:
+- intltool
+- perl-xml-parser
+- patch
+update_on:
+- alpm: ario
+  source: archpkg

@@ -1,0 +1,23 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- qt5-base
+- qt5-doc
+repo_makedepends:
+- qt5-tools
+- python
+- pciutils
+- libxtst
+- libxcursor
+- libxrandr
+- libxss
+- libxcomposite
+- libxkbfile
+- gperf
+- nss
+- clang
+- nodejs
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true

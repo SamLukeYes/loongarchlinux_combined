@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''tarantool'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-gevent
+- python-tarantool
+- python-yaml
+repo_depends:
+- readline
+- ncurses
+- zlib
+- libyaml
+- openssl
+- libunwind
+- icu
+repo_makedepends:
+- git
+- cmake
+- systemd
+update_on:
+- alias: readline
+- alias: icu
+- alpm: tarantool
+  source: archpkg

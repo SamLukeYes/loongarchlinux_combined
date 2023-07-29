@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kdenetwork-filesharing'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- samba
+- kio
+repo_makedepends:
+- extra-cmake-modules
+- qcoro: qcoro-qt5
+update_on:
+- alpm: kdenetwork-filesharing
+  source: archpkg

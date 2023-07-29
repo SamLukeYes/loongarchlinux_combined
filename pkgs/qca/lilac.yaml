@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qca'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-base
+- nss
+- ca-certificates
+- qt6-5compat
+- nss
+- ca-certificates
+repo_makedepends:
+- cmake
+- doxygen
+- pkcs11-helper
+- botan
+- qt5-base
+- qt6-5compat
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qca
+  source: archpkg

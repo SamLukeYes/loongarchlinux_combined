@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''freeciv'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- sdl_mixer
+- lua53
+- sqlite
+- curl
+repo_makedepends:
+- python
+update_on:
+- alpm: freeciv
+  source: archpkg

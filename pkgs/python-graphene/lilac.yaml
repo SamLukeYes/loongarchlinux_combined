@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-graphene'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-aniso8601
+- python-graphql-core
+- python-graphql-relay
+- python-six
+repo_makedepends:
+- git
+- python-setuptools
+update_on:
+- alpm: python-graphene
+  source: archpkg

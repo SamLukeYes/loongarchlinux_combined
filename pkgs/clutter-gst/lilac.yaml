@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''clutter-gst'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- clutter
+- gstreamer: gst-plugins-base-libs
+- libxdamage
+- libgudev
+- gdk-pixbuf2
+repo_makedepends:
+- gobject-introspection
+- gtk-doc
+- git
+- gstreamer: gst-plugins-good
+update_on:
+- alpm: clutter-gst
+  source: archpkg

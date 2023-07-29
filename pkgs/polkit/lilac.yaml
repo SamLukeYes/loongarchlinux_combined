@@ -1,0 +1,15 @@
+destsubdir: extra
+repo_checkdepends:
+- python-dbusmock
+repo_depends:
+- duktape
+- expat
+- glib2
+- pam
+- systemd
+repo_makedepends:
+- meson
+- gtk-doc
+- gobject-introspection
+- git
+update_on: []

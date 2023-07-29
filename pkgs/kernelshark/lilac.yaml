@@ -1,0 +1,61 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kernelshark'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- freeglut
+- gcc: gcc-libs
+- glibc
+- glu
+- qt5-base
+- freeglut
+- gcc: gcc-libs
+- glibc
+- glu
+- qt5-base
+- json-c
+- libglvnd
+- libtraceevent
+- libtracefs
+- trace-cmd
+repo_makedepends:
+- boost
+- cmake
+- json-c
+- libglvnd
+- libtracefs
+- libtraceevent
+- trace-cmd
+- fira-sans: ttf-fira-sans
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: json-c
+  provides: libjson-c.so
+  source: alpm
+- alpm: cuda-tools
+  provides: libGL.so
+  source: alpm
+- alpm: libtraceevent
+  provides: libtraceevent.so
+  source: alpm
+- alpm: libtracefs
+  provides: libtracefs.so
+  source: alpm
+- alpm: trace-cmd
+  provides: libtracecmd.so
+  source: alpm
+- alpm: kernelshark
+  source: archpkg

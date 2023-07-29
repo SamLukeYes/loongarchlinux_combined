@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-character_set'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- ruby-benchmark-ips
+- ruby-get_process_mem
+- ruby-rake
+- ruby-rake-compiler
+- ruby-range_compressor
+- ruby-regexp_parser
+- ruby-regexp_property_values
+- ruby-rspec
+repo_depends:
+- ruby-sorted_set
+repo_makedepends:
+- git
+update_on:
+- alpm: ruby-character_set
+  source: archpkg

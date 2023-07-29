@@ -1,0 +1,78 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''openpgp-ca'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- gmp
+- gcc: gcc-libs
+- glibc
+- gmp
+- bzip2
+- openssl
+- nettle
+- pcsclite
+- sqlite
+- gcc: gcc-libs
+- glibc
+- gmp
+- bzip2
+- openssl
+- nettle
+- pcsclite
+- sqlite
+repo_makedepends:
+- bzip2
+- clang
+- nettle
+- openssl
+- pcsclite
+- rust
+- sqlite
+- systemd
+update_on:
+- alpm: bzip2
+  provides: libbz2.so
+  source: alpm
+- alias: libcrypto
+- alias: libssl
+- alpm: nettle
+  provides: libhogweed.so
+  source: alpm
+- alpm: nettle
+  provides: libnettle.so
+  source: alpm
+- alpm: pcsclite
+  provides: libpcsclite.so
+  source: alpm
+- alpm: sqlite
+  provides: libsqlite3.so
+  source: alpm
+- alpm: bzip2
+  provides: libbz2.so
+  source: alpm
+- alias: libcrypto
+- alias: libssl
+- alpm: nettle
+  provides: libhogweed.so
+  source: alpm
+- alpm: nettle
+  provides: libnettle.so
+  source: alpm
+- alpm: pcsclite
+  provides: libpcsclite.so
+  source: alpm
+- alpm: sqlite
+  provides: libsqlite3.so
+  source: alpm
+- alpm: openpgp-ca
+  source: archpkg

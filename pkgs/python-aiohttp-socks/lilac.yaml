@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-aiohttp-socks'')
+
+  '
+repo_checkdepends:
+- python-flask
+- python-pytest
+- python-pytest-asyncio
+- python-trustme
+- python-anyio
+- python-tiny-proxy
+repo_depends:
+- python
+- python-aiohttp
+- python-python-socks
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-aiohttp-socks
+  source: archpkg

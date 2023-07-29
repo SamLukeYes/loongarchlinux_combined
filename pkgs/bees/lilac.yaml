@@ -1,0 +1,9 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- util-linux: util-linux-libs
+- bash
+repo_makedepends:
+- btrfs-progs
+- systemd
+update_on: []

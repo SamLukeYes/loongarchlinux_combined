@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-minitest-retry'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- ruby-minitest
+repo_makedepends:
+- ruby-rake
+- ruby-bundler
+update_on:
+- alias: ruby
+- alpm: ruby-minitest-retry
+  source: archpkg

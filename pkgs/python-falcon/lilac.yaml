@@ -1,0 +1,45 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-falcon'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- gunicorn
+- hypercorn
+- python-aiofiles
+- python-cbor2
+- python-httpx
+- python-jsonschema
+- python-mimeparse
+- python-msgpack
+- python-mujson
+- python-orjson
+- python-pecan
+- python-pytest
+- python-pytest-asyncio
+- python-pytest-runner
+- python-rapidjson
+- python-requests
+- python-testtools
+- python-ujson
+- python-websockets
+- uvicorn
+repo_depends:
+- glibc
+- python
+repo_makedepends:
+- cython
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-falcon
+  source: archpkg

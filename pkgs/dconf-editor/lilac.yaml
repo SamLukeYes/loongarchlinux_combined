@@ -1,0 +1,10 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- libhandy
+- dconf
+repo_makedepends:
+- vala
+- meson
+- git
+update_on: []

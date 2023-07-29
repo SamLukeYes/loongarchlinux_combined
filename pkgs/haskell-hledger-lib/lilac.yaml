@@ -1,0 +1,106 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hledger-lib'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-aeson-pretty
+- haskell-ansi-terminal
+- haskell-blaze-markup
+- haskell-call-stack
+- haskell-cassava
+- haskell-cassava-megaparsec
+- haskell-cmdargs
+- haskell-data-default
+- haskell-decimal
+- haskell-doclayout
+- haskell-extra
+- haskell-file-embed
+- haskell-glob
+- haskell-hashtables
+- haskell-megaparsec
+- haskell-microlens
+- haskell-microlens-th
+- haskell-parser-combinators
+- haskell-pretty-simple
+- haskell-regex-tdfa
+- haskell-safe
+- haskell-tabular
+- haskell-tasty
+- haskell-tasty-hunit
+- haskell-timeit
+- haskell-uglymemo
+- haskell-unordered-containers
+- haskell-utf8-string
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-aeson-pretty
+  source: alpm
+- alpm: haskell-ansi-terminal
+  source: alpm
+- alpm: haskell-blaze-markup
+  source: alpm
+- alpm: haskell-call-stack
+  source: alpm
+- alpm: haskell-cassava
+  source: alpm
+- alpm: haskell-cassava-megaparsec
+  source: alpm
+- alpm: haskell-cmdargs
+  source: alpm
+- alpm: haskell-data-default
+  source: alpm
+- alpm: haskell-decimal
+  source: alpm
+- alpm: haskell-doclayout
+  source: alpm
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-file-embed
+  source: alpm
+- alpm: haskell-glob
+  source: alpm
+- alpm: haskell-hashtables
+  source: alpm
+- alpm: haskell-megaparsec
+  source: alpm
+- alpm: haskell-microlens
+  source: alpm
+- alpm: haskell-microlens-th
+  source: alpm
+- alpm: haskell-parser-combinators
+  source: alpm
+- alpm: haskell-pretty-simple
+  source: alpm
+- alpm: haskell-regex-tdfa
+  source: alpm
+- alpm: haskell-safe
+  source: alpm
+- alpm: haskell-tabular
+  source: alpm
+- alpm: haskell-tasty
+  source: alpm
+- alpm: haskell-tasty-hunit
+  source: alpm
+- alpm: haskell-timeit
+  source: alpm
+- alpm: haskell-uglymemo
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-utf8-string
+  source: alpm
+- alpm: haskell-hledger-lib
+  source: archpkg

@@ -1,0 +1,84 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-persistent'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-attoparsec
+- haskell-base64-bytestring
+- haskell-blaze-html
+- haskell-conduit
+- haskell-fast-logger
+- haskell-http-api-data
+- haskell-lift-type
+- haskell-monad-logger
+- haskell-path-pieces
+- haskell-resource-pool
+- haskell-resourcet
+- haskell-scientific
+- haskell-silently
+- haskell-th-lift-instances
+- haskell-unordered-containers
+- haskell-unliftio
+- haskell-unliftio-core
+- haskell-vault
+- haskell-vector
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hspec
+- haskell-quickcheck
+- haskell-quickcheck-instances
+- haskell-shakespeare
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-base64-bytestring
+  source: alpm
+- alpm: haskell-blaze-html
+  source: alpm
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-fast-logger
+  source: alpm
+- alpm: haskell-http-api-data
+  source: alpm
+- alpm: haskell-lift-type
+  source: alpm
+- alpm: haskell-monad-logger
+  source: alpm
+- alpm: haskell-path-pieces
+  source: alpm
+- alpm: haskell-resource-pool
+  source: alpm
+- alpm: haskell-resourcet
+  source: alpm
+- alpm: haskell-scientific
+  source: alpm
+- alpm: haskell-silently
+  source: alpm
+- alpm: haskell-th-lift-instances
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-unliftio
+  source: alpm
+- alpm: haskell-unliftio-core
+  source: alpm
+- alpm: haskell-vault
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-persistent
+  source: archpkg

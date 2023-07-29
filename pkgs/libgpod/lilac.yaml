@@ -1,0 +1,14 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gdk-pixbuf2
+- libimobiledevice
+- libplist
+- sg3_utils
+- sqlite
+- usbmuxd
+repo_makedepends:
+- docbook-xsl
+- gtk-doc
+- intltool
+update_on: []

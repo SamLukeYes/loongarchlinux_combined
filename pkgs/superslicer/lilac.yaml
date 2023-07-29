@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''superslicer'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- boost: boost-libs
+- cgal
+- glew
+- gtk3
+- imath
+- libjpeg-turbo
+- libspnav
+- nlopt
+- openvdb
+- qhull
+- prusa-slicer: slicer-udev
+repo_makedepends:
+- boost
+- cereal
+- cmake
+- eigen
+- git
+- glu
+- gstreamer: gst-plugins-base
+- libigl
+- libnotify
+- ninja
+- systemd
+- webkit2gtk
+update_on:
+- alpm: superslicer
+  source: archpkg

@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''devede'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- python-cairo
+- pygobject: python-gobject
+- python-setuptools
+- ffmpeg
+- cdrtools
+- dvdauthor
+- vcdimager
+repo_makedepends: []
+update_on:
+- alpm: devede
+  source: archpkg

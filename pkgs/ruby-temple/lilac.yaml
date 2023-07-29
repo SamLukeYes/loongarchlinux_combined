@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-temple'')
+
+  '
+repo_checkdepends:
+- ruby-erubi
+- ruby-rspec
+- ruby-tilt
+repo_depends:
+- ruby
+repo_makedepends: []
+update_on:
+- alias: ruby
+- alpm: ruby-temple
+  source: archpkg

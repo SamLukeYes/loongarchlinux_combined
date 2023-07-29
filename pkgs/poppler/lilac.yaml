@@ -1,0 +1,54 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''poppler'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- cairo
+- fontconfig
+- openjpeg2
+- lcms2
+- nss
+- curl
+- poppler
+- glib2
+- poppler
+- qt5-base
+- poppler
+- qt6-base
+repo_makedepends:
+- gcc: gcc-libs
+- cairo
+- fontconfig
+- openjpeg2
+- gtk3
+- lcms2
+- gobject-introspection
+- icu
+- qt5-base
+- qt6-base
+- git
+- nss
+- gtk-doc
+- curl
+- poppler-data
+- cmake
+- python
+- boost
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: poppler
+  source: archpkg

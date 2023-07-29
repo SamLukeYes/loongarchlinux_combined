@@ -1,0 +1,45 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''shadow'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- acl
+- attr
+- audit
+- glibc
+- libxcrypt
+- pam
+repo_makedepends:
+- docbook-xsl
+- itstool
+- libcap
+- libxslt
+update_on:
+- alpm: acl
+  provides: libacl.so
+  source: alpm
+- alpm: attr
+  provides: libattr.so
+  source: alpm
+- alpm: audit
+  provides: libaudit.so
+  source: alpm
+- alpm: libxcrypt
+  provides: libcrypt.so
+  source: alpm
+- alpm: pam
+  provides: libpam.so
+  source: alpm
+- alpm: pam
+  provides: libpam_misc.so
+  source: alpm
+- alpm: shadow
+  source: archpkg

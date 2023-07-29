@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''monero'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- boost: boost-libs
+- libunwind
+- openssl
+- readline
+- zeromq
+- pcsclite
+- hidapi
+- protobuf
+- libusb
+repo_makedepends:
+- boost
+- cmake
+- git
+- python
+update_on:
+- alias: readline
+- alias: protobuf
+- alpm: systemd-libs
+  provides: libudev.so
+  source: alpm
+- alpm: unbound
+  provides: libunbound.so
+  source: alpm
+- alpm: monero
+  source: archpkg

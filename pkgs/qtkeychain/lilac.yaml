@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qtkeychain'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libsecret
+- libsecret
+- qt5-base
+- libsecret
+- qt6-base
+repo_makedepends:
+- cmake
+- qt5-tools
+- qt6-tools
+- qt6-declarative
+- clang
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: qtkeychain
+  source: archpkg

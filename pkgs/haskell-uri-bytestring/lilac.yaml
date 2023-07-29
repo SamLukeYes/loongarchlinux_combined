@@ -1,0 +1,35 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-uri-bytestring'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-attoparsec
+- haskell-blaze-builder
+- haskell-th-lift-instances
+repo_makedepends:
+- ghc
+- haskell-base-compat
+- haskell-hunit
+- haskell-hedgehog
+- haskell-tasty
+- haskell-tasty-hedgehog
+- haskell-tasty-hunit
+- haskell-safe
+update_on:
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-blaze-builder
+  source: alpm
+- alpm: haskell-th-lift-instances
+  source: alpm
+- alpm: haskell-uri-bytestring
+  source: archpkg

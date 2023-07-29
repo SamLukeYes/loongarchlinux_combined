@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mbedtls2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python
+repo_depends:
+- glibc
+repo_makedepends:
+- cmake
+- git
+- ninja
+update_on:
+- alpm: mbedtls2
+  source: archpkg

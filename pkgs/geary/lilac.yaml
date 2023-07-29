@@ -1,0 +1,55 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''geary'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- at-spi2-core
+- cairo
+- dconf
+- enchant
+- folks
+- gcr
+- gdk-pixbuf2
+- glib2
+- glibc
+- gmime3
+- gnome-online-accounts
+- gsound
+- gspell
+- gtk3
+- hicolor-icon-theme
+- icu
+- iso-codes
+- json-glib
+- libgee
+- libhandy
+- libpeas
+- libsecret
+- libsoup3
+- snowball: libstemmer
+- libunwind
+- libxml2
+- libytnef
+- pango
+- sqlite
+- webkit2gtk-4.1
+repo_makedepends:
+- appstream-glib
+- cmake
+- git
+- gobject-introspection
+- meson
+- vala
+- yelp-tools
+update_on:
+- alias: icu
+- alpm: geary
+  source: archpkg

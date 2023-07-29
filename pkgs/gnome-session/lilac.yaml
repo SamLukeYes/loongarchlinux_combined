@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-session'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- dconf
+- gnome-desktop
+- gsettings-desktop-schemas
+- json-glib
+- libsm
+- libxtst
+- systemd
+repo_makedepends:
+- docbook-xsl
+- git
+- gtk-doc
+- mesa
+- meson
+- python
+- xmlto
+- xtrans
+update_on:
+- alpm: gnome-session
+  source: archpkg

@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''openscenegraph'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fontconfig
+- libglvnd
+- libxinerama
+- libxrandr
+repo_makedepends:
+- cmake
+- ffmpeg4.4
+- gdal
+- gstreamer: gst-plugins-base-libs
+- jasper
+- librsvg
+- libvncserver
+- openexr
+- poppler: poppler-glib
+update_on:
+- alpm: openscenegraph
+  source: archpkg

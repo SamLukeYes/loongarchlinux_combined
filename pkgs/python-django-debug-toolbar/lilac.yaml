@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-django-debug-toolbar'')
+
+  '
+repo_checkdepends:
+- python-jinja
+- python-html5lib
+repo_depends:
+- django: python-django
+- python-sqlparse
+repo_makedepends:
+- python-build
+- python-installer
+- python-wheel
+- python-hatchling
+update_on:
+- alpm: python-django-debug-toolbar
+  source: archpkg

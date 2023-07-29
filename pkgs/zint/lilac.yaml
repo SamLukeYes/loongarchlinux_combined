@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''zint'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libpng
+- hicolor-icon-theme
+- qt6-tools
+- zint
+repo_makedepends:
+- cmake
+- ninja
+- qt6-tools
+- qt6-svg
+update_on:
+- alpm: zint
+  source: archpkg

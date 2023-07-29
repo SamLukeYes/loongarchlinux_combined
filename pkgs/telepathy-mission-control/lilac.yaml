@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-mission-control'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- telepathy-glib
+- dconf
+- networkmanager: libnm
+repo_makedepends:
+- libxslt
+- python
+- gtk-doc
+update_on:
+- alpm: telepathy-mission-control
+  source: archpkg

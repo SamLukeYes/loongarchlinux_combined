@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''adwaita-icon-theme'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- hicolor-icon-theme
+- gtk4: gtk-update-icon-cache
+- librsvg
+- hicolor-icon-theme
+- gtk4: gtk-update-icon-cache
+- librsvg
+- adwaita-icon-theme: adwaita-cursors
+repo_makedepends:
+- git
+- gtk3
+update_on:
+- alpm: adwaita-icon-theme
+  source: archpkg

@@ -1,0 +1,62 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pandoc-plot'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-data-default
+- haskell-gitrev
+- haskell-hashable
+- haskell-lifted-async
+- haskell-lifted-base
+- haskell-optparse-applicative
+- haskell-pandoc
+- haskell-pandoc-types
+- haskell-shakespeare
+- haskell-tagsoup
+- haskell-typed-process
+- haskell-yaml
+repo_makedepends:
+- ghc
+- haskell-hspec-expectations
+- haskell-tasty
+- haskell-tasty-hspec
+- haskell-tasty-hunit
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-data-default
+  source: alpm
+- alpm: haskell-gitrev
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-lifted-async
+  source: alpm
+- alpm: haskell-lifted-base
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-pandoc
+  source: alpm
+- alpm: haskell-pandoc-types
+  source: alpm
+- alpm: haskell-shakespeare
+  source: alpm
+- alpm: haskell-tagsoup
+  source: alpm
+- alpm: haskell-typed-process
+  source: alpm
+- alpm: haskell-yaml
+  source: alpm
+- alpm: pandoc-plot
+  source: archpkg

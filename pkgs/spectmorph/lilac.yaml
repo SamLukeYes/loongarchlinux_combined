@@ -1,0 +1,93 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''spectmorph'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- lv2lint
+- python
+repo_depends:
+- spectmorph: libspectmorph
+- spectmorph: spectmorph-lv2
+- spectmorph: spectmorph-tools
+- spectmorph: spectmorph-vst
+- cairo
+- gcc: gcc-libs
+- glibc
+- fftw
+- freetype2
+- glib2
+- libglvnd
+- libsndfile
+- libx11
+- qt5-base
+- zlib
+- gcc: gcc-libs
+- glibc
+- spectmorph: libspectmorph
+- gcc: gcc-libs
+- glibc
+- glib2
+- libao
+- spectmorph: libspectmorph
+- qt5-base
+- python
+- python-lxml
+- gcc: gcc-libs
+- glibc
+- spectmorph: libspectmorph
+repo_makedepends:
+- cairo
+- fftw
+- freetype2
+- gcc: gcc-libs
+- glib2
+- glibc
+- lv2
+- libao
+- libglvnd
+- libsndfile
+- qt5-base
+update_on:
+- alpm: fftw
+  provides: libfftw3f.so
+  source: alpm
+- alpm: fftw
+  provides: libfftw3f_threads.so
+  source: alpm
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: cuda-tools
+  provides: libGL.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alias: python
+- alpm: spectmorph
+  source: archpkg

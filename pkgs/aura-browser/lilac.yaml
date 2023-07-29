@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''aura-browser'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kirigami2
+- ki18n
+- qt5-webengine
+- qt5-multimedia
+- qt5-virtualkeyboard
+repo_makedepends:
+- extra-cmake-modules
+update_on:
+- alpm: aura-browser
+  source: archpkg

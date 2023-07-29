@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''dbus-client-gen'')
+
+  '
+repo_checkdepends:
+- python-nose
+- python-hypothesis
+- python-hs-dbus-signature
+repo_depends: []
+repo_makedepends:
+- python-pylint
+- python-setuptools
+update_on:
+- alpm: dbus-client-gen
+  source: archpkg

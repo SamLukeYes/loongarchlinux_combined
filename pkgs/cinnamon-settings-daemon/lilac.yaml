@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cinnamon-settings-daemon'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cinnamon-desktop
+- colord
+- dbus-glib
+- cups: libcups
+- libgnomekbd
+- libgudev
+- libnotify
+- librsvg
+- libwacom
+- nss
+- polkit
+- alsa-plugins: pulseaudio-alsa
+- upower
+repo_makedepends:
+- meson
+- samurai
+- xf86-input-wacom
+update_on:
+- alpm: cinnamon-settings-daemon
+  source: archpkg

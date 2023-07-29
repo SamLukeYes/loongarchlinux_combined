@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-html-parse'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-attoparsec
+repo_makedepends:
+- ghc
+- uusi
+- haskell-quickcheck
+- haskell-hspec
+- haskell-hspec-discover
+- haskell-quickcheck-instances
+- haskell-string-conversions
+update_on:
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-html-parse
+  source: archpkg

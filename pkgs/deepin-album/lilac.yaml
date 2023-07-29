@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deepin-album'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- deepin-qt5integration
+- dtkdeclarative
+- ffmpeg
+- ffmpegthumbnailer
+- gio-qt
+- udisks2-qt5
+repo_makedepends:
+- cmake
+- ninja
+- qt5-tools
+update_on:
+- alpm: deepin-album
+  source: archpkg

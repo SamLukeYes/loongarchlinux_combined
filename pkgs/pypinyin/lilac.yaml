@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pypinyin'')
+
+  '
+repo_checkdepends:
+- python-pytest-cov
+repo_depends:
+- python
+repo_makedepends:
+- python-setuptools
+- phrase-pinyin-data
+- pinyin-data
+update_on:
+- alias: python
+- alpm: pypinyin
+  source: archpkg

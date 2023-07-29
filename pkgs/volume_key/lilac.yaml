@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''volume_key'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cryptsetup
+- glib2
+- glibc
+- gpgme
+- nspr
+- nss
+- util-linux: util-linux-libs
+- glib2
+- glibc
+- nss
+- python
+- volume_key
+repo_makedepends:
+- cryptsetup
+- glib2
+- glibc
+- gpgme
+- nspr
+- nss
+- python
+- swig
+- util-linux: util-linux-libs
+update_on:
+- alias: python
+- alpm: volume_key
+  source: archpkg

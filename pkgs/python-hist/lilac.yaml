@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-hist'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-benchmark
+- python-pytest-mpl
+- python-iminuit
+- python-mplhep
+- python-scipy
+repo_depends:
+- python-boost-histogram
+- python-histoprint
+- python-typing_extensions
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-wheel
+- python-setuptools-scm
+- python-hatchling
+- python-hatch-vcs
+update_on:
+- alpm: python-hist
+  source: archpkg

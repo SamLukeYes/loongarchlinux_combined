@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-mdurl'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python-uc-micro-py
+repo_makedepends:
+- python-build
+- python-installer
+- python-flit-core
+- python-wheel
+update_on:
+- alpm: python-mdurl
+  source: archpkg

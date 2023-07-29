@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-virtualenv'')
+
+  '
+repo_checkdepends:
+- fish
+- python-coverage
+- python-flaky
+- python-pip
+- python-pytest-freezegun
+- python-pytest-mock
+- xonsh
+repo_depends:
+- python
+- python-distlib
+- python-filelock
+- python-platformdirs
+repo_makedepends:
+- python-build
+- python-installer
+- python-hatchling
+- python-hatch-vcs
+- python-importlib-metadata
+- python-sphinx
+- python-sphinx-argparse
+- python-sphinxcontrib-towncrier
+- python-wheel
+- towncrier
+update_on:
+- alias: python
+- alpm: python-virtualenv
+  source: archpkg

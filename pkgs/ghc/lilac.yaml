@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ghc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gmp
+- libffi
+- numactl
+- perl
+- gcc
+- ghc: ghc-libs
+- llvm14
+- ghc
+repo_makedepends:
+- ghc: ghc-static
+- perl
+- libxslt
+- docbook-xsl
+- python-sphinx
+- haskell-hscolour
+- texlive-bin
+- texlive-texmf: texlive-latexextra
+- ttf-dejavu
+- alex
+- happy
+- time
+- numactl
+- llvm14
+update_on:
+- alias: perl
+- alpm: ghc
+  source: archpkg

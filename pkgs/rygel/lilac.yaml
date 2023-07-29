@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rygel'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gstreamer: gst-editing-services
+- gtk3
+- gupnp
+- gupnp-av
+- gupnp-dlna
+- libgee
+- libmediaart
+- libsoup3
+- libunistring
+- tracker3
+repo_makedepends:
+- git
+- gobject-introspection
+- meson
+- vala
+update_on:
+- alpm: rygel
+  source: archpkg

@@ -1,0 +1,65 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnuradio-osmosdr'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- airspy
+- bladerf
+- gcc: gcc-libs
+- glibc
+- hackrf
+- libuhd
+- libvolk
+- soapysdr
+- rtl-sdr
+- airspy
+- bladerf
+- gcc: gcc-libs
+- glibc
+- hackrf
+- libuhd
+- libvolk
+- soapysdr
+- rtl-sdr
+- boost: boost-libs
+- gnuradio
+- gnuradio-iqbal
+repo_makedepends:
+- cmake
+- boost
+- git
+- gnuradio
+- gnuradio-iqbal
+- pybind11
+update_on:
+- alpm: boost
+  provides: libboost_chrono.so
+  source: alpm
+- alpm: boost
+  provides: libboost_thread.so
+  source: alpm
+- alpm: gnuradio
+  provides: libgnuradio-blocks.so
+  source: alpm
+- alpm: gnuradio
+  provides: libgnuradio-runtime.so
+  source: alpm
+- alpm: gnuradio
+  provides: libgnuradio-pmt.so
+  source: alpm
+- alpm: gnuradio
+  provides: libgnuradio-uhd.so
+  source: alpm
+- alpm: gnuradio-iqbal
+  provides: libgnuradio-iqbalance.so
+  source: alpm
+- alpm: gnuradio-osmosdr
+  source: archpkg

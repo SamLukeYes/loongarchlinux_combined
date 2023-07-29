@@ -1,0 +1,154 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libreoffice-still'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libreoffice-still
+- gcc: gcc-libs
+- make
+- zip
+- gcc
+- python
+- libwps
+- pango
+- nspr
+- libxrandr
+- libxslt
+- redland
+- hyphen
+- lpsolve
+- gcc: gcc-libs
+- graphite
+- icu
+- lcms2
+- libvisio
+- libetonyek
+- libodfgen
+- libcdr
+- libmspub
+- harfbuzz: harfbuzz-icu
+- nss
+- clucene
+- hicolor-icon-theme
+- desktop-file-utils
+- shared-mime-info
+- libpagemaker
+- libxinerama
+- libabw
+- libmwaw
+- libe-book
+- cups: libcups
+- liblangtag
+- libexttextcat
+- liborcus
+- libwebp
+- libtommath
+- libzmf
+- libatomic_ops
+- xmlsec
+- libnumbertext
+- gpgme
+- libfreehand
+- libstaroffice
+- libepubgen
+- libqxp
+- libepoxy
+- box2d
+- zxing-cpp
+- xdg-utils
+repo_makedepends:
+- python
+- libwps
+- pango
+- nspr
+- libxrandr
+- dbus-glib
+- libxslt
+- redland
+- hyphen
+- lpsolve
+- gcc: gcc-libs
+- graphite
+- icu
+- lcms2
+- libvisio
+- libetonyek
+- libodfgen
+- libcdr
+- libmspub
+- harfbuzz: harfbuzz-icu
+- nss
+- hicolor-icon-theme
+- desktop-file-utils
+- shared-mime-info
+- gstreamer: gst-plugins-base-libs
+- sane
+- perl-archive-zip
+- zip
+- unzip
+- unixodbc
+- ant
+- gperf
+- gtk3
+- gtk4
+- qt5-base
+- plasma-framework
+- qt6-base
+- cppunit
+- beanshell
+- clucene
+- junit
+- libmythes
+- libwpg
+- postgresql: postgresql-libs
+- mariadb: mariadb-libs
+- bluez: bluez-libs
+- gdb
+- doxygen
+- libatomic_ops
+- mdds
+- ttf-liberation
+- ttf-dejavu
+- ttf-carlito
+- libxinerama
+- libpagemaker
+- glm
+- libabw
+- libmwaw
+- libe-book
+- coin-or-mp
+- liblangtag
+- liborcus
+- libexttextcat
+- gobject-introspection
+- libtommath
+- libzmf
+- xmlsec
+- rxvt-unicode
+- gpgme
+- libwebp
+- libepubgen
+- libfreehand
+- libqxp
+- libstaroffice
+- boost
+- libnumbertext
+- abseil-cpp
+- clang
+- zxing-cpp
+- libffi
+- box2d
+- git
+update_on:
+- alias: python
+- alias: icu
+- alpm: libreoffice-still
+  source: archpkg

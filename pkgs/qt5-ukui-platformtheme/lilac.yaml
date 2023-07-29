@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qt5-ukui-platformtheme'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- dconf
+- gsettings-qt
+- kwayland
+- kwindowsystem
+- libqtxdg
+repo_makedepends:
+- qt5-tools
+update_on:
+- alpm: qt5-ukui-platformtheme
+  source: archpkg

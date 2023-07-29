@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-kde-auth-handler'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qca: qca-qt5
+- telepathy-kde-common-internals
+repo_makedepends:
+- extra-cmake-modules
+update_on:
+- alpm: telepathy-kde-auth-handler
+  source: archpkg

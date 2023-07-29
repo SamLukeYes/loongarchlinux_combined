@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-screenshot'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gdk-pixbuf2
+- glib2
+- gtk3
+- libcanberra
+repo_makedepends:
+- git
+- intltool
+- meson
+- vala
+update_on:
+- alpm: granite
+  provides: libgranite.so
+  source: alpm
+- alpm: libhandy
+  provides: libhandy-1.so
+  source: alpm
+- alpm: pantheon-screenshot
+  source: archpkg

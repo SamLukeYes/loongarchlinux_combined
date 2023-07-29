@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-sus'')
+
+  '
+repo_checkdepends:
+- ruby-bake-test
+- ruby-bake-test-external
+- ruby-covered
+repo_depends:
+- ruby
+repo_makedepends:
+- git
+update_on:
+- alias: ruby
+- alpm: ruby-sus
+  source: archpkg

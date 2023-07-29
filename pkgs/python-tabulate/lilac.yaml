@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-tabulate'')
+
+  '
+repo_checkdepends:
+- python-nose
+- python-numpy
+- python-pandas
+- python-pytest
+- python-wcwidth
+repo_depends:
+- python
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools-scm
+- python-toml
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-tabulate
+  source: archpkg

@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-alt-pytest-asyncio'')
+
+  '
+repo_checkdepends:
+- python-noseofyeti
+- python-nest-asyncio
+repo_depends:
+- python-pytest
+repo_makedepends:
+- python-build
+- python-installer
+- python-hatchling
+update_on:
+- alpm: python-alt-pytest-asyncio
+  source: archpkg

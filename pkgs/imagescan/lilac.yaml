@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''imagescan'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- sane
+- gtkmm
+- graphicsmagick
+- boost: boost-libs
+repo_makedepends:
+- boost
+- systemd
+update_on:
+- alpm: imagescan
+  source: archpkg

@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''knotifications'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libcanberra
+- libdbusmenu-qt: libdbusmenu-qt5
+- kwindowsystem
+- kconfig
+- kcoreaddons
+- qt5-speech
+- libxtst
+repo_makedepends:
+- extra-cmake-modules
+- qt5-tools
+- qt5-doc
+- doxygen
+- qt5-declarative
+update_on:
+- alpm: kconfig
+  source: alpm
+  strip_release: true
+- alpm: knotifications
+  source: archpkg

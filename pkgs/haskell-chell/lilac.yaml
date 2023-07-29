@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-chell'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-ansi-terminal
+- haskell-options
+- haskell-patience
+- haskell-random
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-ansi-terminal
+  source: alpm
+- alpm: haskell-options
+  source: alpm
+- alpm: haskell-patience
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-chell
+  source: archpkg

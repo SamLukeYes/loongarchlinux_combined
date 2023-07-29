@@ -1,0 +1,10 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- libxres
+- knewstuff
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+- qt5-tools
+update_on: []

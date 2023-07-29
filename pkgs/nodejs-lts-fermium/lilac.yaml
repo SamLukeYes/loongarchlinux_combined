@@ -1,0 +1,16 @@
+destsubdir: extra
+repo_checkdepends:
+- openssl
+repo_depends:
+- openssl-1.1
+- zlib
+- icu
+- libuv
+- c-ares
+- brotli
+- libnghttp2
+repo_makedepends:
+- python
+- procps-ng
+update_on:
+- alias: icu

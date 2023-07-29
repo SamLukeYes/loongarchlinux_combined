@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-flask-wtf'')
+
+  '
+repo_checkdepends:
+- python-tox
+repo_depends:
+- python-flask
+- python-wtforms
+- python-werkzeug
+- python-flask-babel
+repo_makedepends:
+- python-setuptools
+- python-sphinx
+- python-pallets-sphinx-themes
+- python-sphinxcontrib-log-cabinet
+- python-sphinx-issues
+update_on:
+- alpm: python-flask-wtf
+  source: archpkg

@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''notion'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glib2
+- gettext
+- lua
+- libxext
+- libsm
+- freetype2
+- libxft
+repo_makedepends:
+- git
+- libxinerama
+- libxrandr
+- rubber
+- latex2html
+- texlive-texmf: texlive-latexextra
+update_on:
+- alias: lua
+- alpm: notion
+  source: archpkg

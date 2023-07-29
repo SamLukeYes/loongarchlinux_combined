@@ -1,0 +1,93 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-tactics-plugin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-extra
+- haskell-fingertree
+- haskell-generic-lens
+- haskell-ghc-exactprint
+- haskell-ghc-source-gen
+- haskell-ghcide
+- haskell-hls-graph
+- haskell-hls-plugin-api
+- haskell-hls-refactor-plugin
+- haskell-hyphenation
+- haskell-lens
+- haskell-lsp
+- haskell-megaparsec
+- haskell-parser-combinators
+- haskell-prettyprinter
+- haskell-refinery
+- haskell-retrie
+- haskell-syb
+- haskell-unagi-chan
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- uusi
+- haskell-quickcheck
+- haskell-hls-test-utils
+- haskell-hspec
+- haskell-hspec-discover
+- haskell-hspec-expectations
+- haskell-lsp-types
+- haskell-tasty-hunit
+- haskell-tasty-hspec
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-fingertree
+  source: alpm
+- alpm: haskell-generic-lens
+  source: alpm
+- alpm: haskell-ghc
+  source: alpm
+- alpm: haskell-ghc-exactprint
+  source: alpm
+- alpm: haskell-ghc-source-gen
+  source: alpm
+- alpm: haskell-ghcide
+  source: alpm
+- alpm: haskell-hls-graph
+  source: alpm
+- alpm: haskell-hls-plugin-api
+  source: alpm
+- alpm: haskell-hls-refactor-plugin
+  source: alpm
+- alpm: haskell-hyphenation
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-lsp
+  source: alpm
+- alpm: haskell-megaparsec
+  source: alpm
+- alpm: haskell-parser-combinators
+  source: alpm
+- alpm: haskell-prettyprinter
+  source: alpm
+- alpm: haskell-refinery
+  source: alpm
+- alpm: haskell-retrie
+  source: alpm
+- alpm: haskell-syb
+  source: alpm
+- alpm: haskell-unagi-chan
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-hls-tactics-plugin
+  source: archpkg

@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''keepassxc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- xclip
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- argon2
+- botan
+- curl
+- hicolor-icon-theme
+- libxtst
+- zlib: minizip
+- pcsclite
+- qrencode
+- qt5-svg
+- qt5-x11extras
+- libusb
+repo_makedepends:
+- asciidoctor
+- cmake
+- qt5-tools
+update_on:
+- alpm: botan
+  source: alpm
+  strip_release: true
+- alpm: keepassxc
+  source: archpkg

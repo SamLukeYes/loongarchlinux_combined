@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deepin-desktop-schemas'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- dconf
+- deepin-gtk-theme
+- deepin-icon-theme
+- deepin-sound-theme
+repo_makedepends:
+- python
+- go
+update_on:
+- alpm: deepin-desktop-schemas
+  source: archpkg

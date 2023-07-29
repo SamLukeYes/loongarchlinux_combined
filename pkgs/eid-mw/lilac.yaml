@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''eid-mw'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- libproxy
+- curl
+- libbsd
+repo_makedepends:
+- pcsclite
+update_on:
+- alpm: eid-mw
+  source: archpkg

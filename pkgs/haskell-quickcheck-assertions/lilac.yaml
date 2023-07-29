@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-quickcheck-assertions'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-quickcheck
+- haskell-ieee754
+- haskell-pretty-show
+repo_makedepends:
+- ghc
+- haskell-hspec
+update_on:
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-ieee754
+  source: alpm
+- alpm: haskell-pretty-show
+  source: alpm
+- alpm: haskell-quickcheck-assertions
+  source: archpkg

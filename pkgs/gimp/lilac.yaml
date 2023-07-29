@@ -1,0 +1,65 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gimp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- babl
+- cairo
+- fontconfig
+- freetype2
+- gcc: gcc-libs
+- gdk-pixbuf2
+- gegl
+- glib2
+- glibc
+- gtk2
+- harfbuzz
+- hicolor-icon-theme
+- iso-codes
+- json-glib
+- lcms2
+- libgexiv2
+- libmypaint
+- libunwind
+- mypaint-brushes1
+- pango
+- zlib
+- bzip2
+- libgudev
+- libheif
+- libjpeg-turbo
+- libjxl
+- libmng
+- libpng
+- librsvg
+- libtiff
+- libwebp
+- libwmf
+- libx11
+- libxcursor
+- libxext
+- libxfixes
+- libxmu
+- libxpm
+- openexr
+- openjpeg2
+- poppler-data
+- poppler: poppler-glib
+- xz
+repo_makedepends:
+- alsa-lib
+- ghostscript
+- gtk-doc
+- gvfs
+- intltool
+update_on:
+- alpm: gimp
+  source: archpkg

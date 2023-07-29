@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deepin-camera'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- deepin-qt5integration
+- deepin-qt-dbus-factory
+- deepin-image-editor
+- ffmpeg
+- ffmpegthumbnailer
+- portaudio
+- pulseaudio
+- qt5-multimedia
+repo_makedepends:
+- git
+- cmake
+- deepin-gettext-tools
+- ninja
+- qt5-tools
+update_on:
+- alpm: deepin-camera
+  source: archpkg

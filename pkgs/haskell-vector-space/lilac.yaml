@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-vector-space'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-boolean
+- haskell-memotrie
+- haskell-numinstances
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-boolean
+  source: alpm
+- alpm: haskell-memotrie
+  source: alpm
+- alpm: haskell-numinstances
+  source: alpm
+- alpm: haskell-vector-space
+  source: archpkg

@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''fs-uae-launcher'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fs-uae
+- python
+- pyopengl: python-opengl
+- python-pillow
+- pyqt5: python-pyqt5
+- python-requests
+- python-rx
+- python-setuptools
+- python-typing_extensions
+- hicolor-icon-theme
+repo_makedepends: []
+update_on:
+- alias: python
+- alpm: fs-uae-launcher
+  source: archpkg

@@ -1,0 +1,83 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-yesod-test'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-hunit
+- haskell-aeson
+- haskell-attoparsec
+- haskell-blaze-builder
+- haskell-blaze-html
+- haskell-blaze-markup
+- haskell-case-insensitive
+- haskell-conduit
+- haskell-cookie
+- haskell-hspec-core
+- haskell-html-conduit
+- haskell-http-types
+- haskell-memory
+- haskell-network
+- haskell-pretty-show
+- haskell-wai
+- haskell-wai-extra
+- haskell-xml-conduit
+- haskell-xml-types
+- haskell-yesod-core
+repo_makedepends:
+- ghc
+- haskell-yesod-form
+- haskell-hspec
+- haskell-unliftio
+- haskell-unliftio-core
+update_on:
+- alpm: haskell-hunit
+  source: alpm
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-blaze-builder
+  source: alpm
+- alpm: haskell-blaze-html
+  source: alpm
+- alpm: haskell-blaze-markup
+  source: alpm
+- alpm: haskell-case-insensitive
+  source: alpm
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-cookie
+  source: alpm
+- alpm: haskell-hspec-core
+  source: alpm
+- alpm: haskell-html-conduit
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-memory
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-pretty-show
+  source: alpm
+- alpm: haskell-wai
+  source: alpm
+- alpm: haskell-wai-extra
+  source: alpm
+- alpm: haskell-xml-conduit
+  source: alpm
+- alpm: haskell-xml-types
+  source: alpm
+- alpm: haskell-yesod-core
+  source: alpm
+- alpm: haskell-yesod-test
+  source: archpkg

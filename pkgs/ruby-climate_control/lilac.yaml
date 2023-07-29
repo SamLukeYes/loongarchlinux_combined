@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-climate_control'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+repo_makedepends:
+- ruby-rspec
+- ruby-rake
+- ruby-simplecov
+update_on:
+- alias: ruby
+- alpm: ruby-climate_control
+  source: archpkg

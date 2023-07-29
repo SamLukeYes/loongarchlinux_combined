@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-random-source'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-flexible-defaults
+- haskell-mersenne-random-pure64
+- haskell-mwc-random
+- haskell-primitive
+- haskell-random
+- haskell-stateref
+- haskell-syb
+- haskell-th-extras
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-flexible-defaults
+  source: alpm
+- alpm: haskell-mersenne-random-pure64
+  source: alpm
+- alpm: haskell-mwc-random
+  source: alpm
+- alpm: haskell-primitive
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-stateref
+  source: alpm
+- alpm: haskell-syb
+  source: alpm
+- alpm: haskell-th-extras
+  source: alpm
+- alpm: haskell-random-source
+  source: archpkg

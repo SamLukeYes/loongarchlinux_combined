@@ -1,0 +1,69 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''calibre'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- hunspell
+- hyphen
+- icu
+- jxrlib
+- libmtp
+- snowball: libstemmer
+- libusb
+- libwmf
+- mathjax
+- mtdev
+- optipng
+- podofo
+- python-apsw
+- python-beautifulsoup4
+- python-cchardet
+- python-css-parser
+- python-cssselect
+- python-dateutil
+- python-dnspython
+- python-feedparser
+- python-html2text
+- python-html5-parser
+- python-jeepney
+- python-lxml
+- python-markdown
+- python-mechanize
+- python-msgpack
+- python-netifaces
+- python-pdftotext
+- python-pillow
+- python-psutil
+- python-py7zr
+- python-pychm
+- python-pycryptodome
+- python-pygments
+- pyqt6: python-pyqt6
+- pyqt6-webengine: python-pyqt6-webengine
+- python-regex
+- python-unrardll
+- python-zeroconf
+- qt6-imageformats
+- qt6-svg
+- qt6-webengine
+- ttf-liberation
+- uchardet
+- udisks2
+repo_makedepends:
+- cmake
+- pyqt-builder
+- rapydscript-ng
+- sip
+- xdg-utils
+update_on:
+- alias: icu
+- alpm: calibre
+  source: archpkg

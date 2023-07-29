@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''jupyter-jsmol'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-ipywidgets
+- jupyter-notebook
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: jupyter-jsmol
+  source: archpkg

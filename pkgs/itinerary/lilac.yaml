@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''itinerary'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kitinerary
+- kio
+- networkmanager-qt
+- kosmindoormap
+- khealthcertificate
+- qt5-location
+- qqc2-desktop-style
+- prison
+- kitemmodels
+- kunitconversion
+- kfilemetadata
+- kirigami-addons
+repo_makedepends:
+- extra-cmake-modules
+update_on:
+- alpm: itinerary
+  source: archpkg

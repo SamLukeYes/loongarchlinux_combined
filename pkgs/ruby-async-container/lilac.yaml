@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-async-container'')
+
+  '
+repo_checkdepends:
+- psmisc
+- ruby-async-rspec
+- ruby-covered
+- ruby-rspec
+repo_depends:
+- ruby-async
+- ruby-async-io
+repo_makedepends: []
+update_on:
+- alpm: ruby-async-container
+  source: archpkg

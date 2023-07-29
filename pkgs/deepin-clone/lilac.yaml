@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deepin-clone'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- deepin-file-manager
+- deepin-qt5integration
+- partclone
+- e2fsprogs
+- jfsutils
+- xfsprogs
+repo_makedepends:
+- cmake
+- ninja
+- qt5-tools
+- deepin-gettext-tools
+update_on:
+- alpm: deepin-clone
+  source: archpkg

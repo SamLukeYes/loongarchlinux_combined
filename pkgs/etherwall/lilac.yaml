@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''etherwall'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-declarative
+- qt5-graphicaleffects
+- qt5-quickcontrols
+- qt5-quickcontrols2
+- qt5-websockets
+- protobuf
+- libusb
+- systemd: systemd-libs
+repo_makedepends:
+- hidapi
+update_on:
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alias: protobuf
+- alpm: hidapi
+  provides: libhidapi-libusb.so
+  source: alpm
+- alpm: etherwall
+  source: archpkg

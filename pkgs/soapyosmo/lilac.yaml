@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''soapyosmo'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- soapysdr
+- gnuradio-osmosdr
+- boost: boost-libs
+repo_makedepends:
+- cmake
+- boost
+- airspy
+- hackrf
+- libosmosdr
+- rtl-sdr
+update_on:
+- alpm: soapyosmo
+  source: archpkg

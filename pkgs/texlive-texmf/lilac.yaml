@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''texlive-texmf'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- texlive-bin
+- dvisvgm
+- texlive-texmf: texlive-latexextra
+- texlive-texmf: texlive-latexextra
+- texlive-texmf: texlive-bibtexextra
+- texlive-texmf: texlive-fontsextra
+- texlive-texmf: texlive-formatsextra
+- texlive-texmf: texlive-games
+- texlive-texmf: texlive-humanities
+- texlive-texmf: texlive-latexextra
+- texlive-texmf: texlive-music
+- texlive-texmf: texlive-pictures
+- texlive-texmf: texlive-pstricks
+- texlive-texmf: texlive-publishers
+repo_makedepends:
+- subversion
+update_on:
+- alpm: texlive-texmf
+  source: archpkg

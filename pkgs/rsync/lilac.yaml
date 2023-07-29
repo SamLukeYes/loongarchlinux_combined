@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rsync'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- acl
+- lz4
+- openssl
+- popt
+- xxhash
+- zlib
+- zstd
+repo_makedepends:
+- git
+- python-commonmark
+update_on:
+- alpm: acl
+  provides: libacl.so
+  source: alpm
+- alpm: xxhash
+  provides: libxxhash.so
+  source: alpm
+- alpm: rsync
+  source: archpkg

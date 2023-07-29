@@ -1,0 +1,72 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''zynaddsubfx'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fftw
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- libglvnd
+- libuv
+- ttf-roboto
+- zlib
+- fftw
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- libglvnd
+- libuv
+- ttf-roboto
+- zlib
+- alsa-lib
+- liblo
+- mxml
+- portaudio
+- rtosc
+repo_makedepends:
+- alsa-lib
+- asciidoc
+- asciidoctor
+- cmake
+- cxxtest
+- doxygen
+- git
+- liblo
+- libxpm
+- mxml
+- portaudio
+- rtosc
+- ruby-rake
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: liblo
+  provides: liblo.so
+  source: alpm
+- alpm: mxml
+  provides: libmxml.so
+  source: alpm
+- alpm: portaudio
+  provides: libportaudio.so
+  source: alpm
+- alpm: rtosc
+  provides: librtosc.so
+  source: alpm
+- alpm: rtosc
+  provides: librtosc-cpp.so
+  source: alpm
+- alpm: zynaddsubfx
+  source: archpkg

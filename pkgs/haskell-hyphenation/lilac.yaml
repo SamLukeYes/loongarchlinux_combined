@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hyphenation'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-file-embed
+- haskell-unordered-containers
+- haskell-zlib
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-file-embed
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-zlib
+  source: alpm
+- alpm: haskell-hyphenation
+  source: archpkg

@@ -1,0 +1,60 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-servant-swagger'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-aeson-pretty
+- haskell-http-media
+- haskell-insert-ordered-containers
+- haskell-lens
+- haskell-servant
+- haskell-singleton-bool
+- haskell-swagger2
+- haskell-unordered-containers
+- haskell-hspec
+- haskell-quickcheck
+repo_makedepends:
+- ghc
+- uusi
+- haskell-base-compat
+- haskell-cabal-doctest
+- haskell-doctest
+- haskell-hspec-discover
+- haskell-lens-aeson
+- haskell-utf8-string
+- haskell-vector
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-aeson-pretty
+  source: alpm
+- alpm: haskell-http-media
+  source: alpm
+- alpm: haskell-insert-ordered-containers
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-servant
+  source: alpm
+- alpm: haskell-singleton-bool
+  source: alpm
+- alpm: haskell-swagger2
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-hspec
+  source: alpm
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-servant-swagger
+  source: archpkg

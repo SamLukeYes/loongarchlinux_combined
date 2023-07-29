@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-x11'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- libx11
+- libxinerama
+- libxrandr
+- libxss
+- haskell-data-default-class
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-data-default-class
+  source: alpm
+- alpm: haskell-x11
+  source: archpkg

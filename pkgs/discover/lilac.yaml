@@ -1,0 +1,19 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- knewstuff
+- kidletime
+- qt5-graphicaleffects
+- appstream: appstream-qt
+- archlinux-appstream-data
+- kirigami2
+- discount
+- kuserfeedback
+- purpose
+repo_makedepends:
+- extra-cmake-modules
+- plasma-framework
+- packagekit-qt: packagekit-qt5
+- flatpak
+- fwupd
+update_on: []

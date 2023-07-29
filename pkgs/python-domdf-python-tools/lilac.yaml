@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-domdf-python-tools'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-natsort
+- python-typing_extensions
+- python-pandas
+- python-importlib-metadata
+- python-importlib_resources
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-wheel
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-domdf-python-tools
+  source: archpkg

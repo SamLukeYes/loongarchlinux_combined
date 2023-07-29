@@ -1,0 +1,68 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-brittany'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-butcher
+- haskell-cmdargs
+- haskell-czipwith
+- haskell-data-tree-print
+- haskell-extra
+- haskell-ghc-exactprint
+- haskell-monad-memo
+- haskell-multistate
+- haskell-random
+- haskell-safe
+- haskell-strict
+- haskell-syb
+- haskell-uniplate
+- haskell-yaml
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hspec
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-butcher
+  source: alpm
+- alpm: haskell-cmdargs
+  source: alpm
+- alpm: haskell-czipwith
+  source: alpm
+- alpm: haskell-data-tree-print
+  source: alpm
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-ghc
+  source: alpm
+- alpm: haskell-ghc-exactprint
+  source: alpm
+- alpm: haskell-monad-memo
+  source: alpm
+- alpm: haskell-multistate
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-safe
+  source: alpm
+- alpm: haskell-strict
+  source: alpm
+- alpm: haskell-syb
+  source: alpm
+- alpm: haskell-uniplate
+  source: alpm
+- alpm: haskell-yaml
+  source: alpm
+- alpm: haskell-brittany
+  source: archpkg

@@ -1,0 +1,11 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- git
+- python
+- python-simplemediawiki
+- python-lxml
+- python-cssselect
+- python-requests
+update_on: []

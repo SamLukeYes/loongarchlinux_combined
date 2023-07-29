@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ukui-menus'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glib2
+repo_makedepends:
+- autoconf-archive
+- gobject-introspection
+- intltool
+- mate-common
+update_on:
+- alpm: ukui-menus
+  source: archpkg

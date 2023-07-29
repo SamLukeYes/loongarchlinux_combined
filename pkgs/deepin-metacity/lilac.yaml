@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deepin-metacity'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- dconf
+- libcanberra
+- libgtop
+- libsm
+- deepin-desktop-schemas
+- gtk3
+- startup-notification
+- zenity
+- bamf
+repo_makedepends:
+- intltool
+- itstool
+- autoconf-archive
+- yelp-tools
+- python
+update_on:
+- alpm: deepin-metacity
+  source: archpkg

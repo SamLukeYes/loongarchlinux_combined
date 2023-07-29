@@ -1,0 +1,139 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''zam-plugins'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- zam-plugins: zam-plugins-clap
+- zam-plugins: zam-plugins-ladspa
+- zam-plugins: zam-plugins-lv2
+- zam-plugins: zam-plugins-standalone
+- zam-plugins: zam-plugins-vst
+- zam-plugins: zam-plugins-vst3
+- dbus
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- libsamplerate
+- libx11
+- libxext
+- zita-convolver
+- gcc: gcc-libs
+- glibc
+- dbus
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- libsamplerate
+- libx11
+- libxext
+- zita-convolver
+- alsa-lib
+- dbus
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- libsamplerate
+- libx11
+- libxext
+- zita-convolver
+- dbus
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- libsamplerate
+- libx11
+- libxext
+- zita-convolver
+- dbus
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- libsamplerate
+- libx11
+- libxext
+- zita-convolver
+repo_makedepends:
+- gcc: gcc-libs
+- glibc
+- gendesk
+- git
+- ladspa
+- libglvnd
+- libsamplerate
+- libx11
+- lv2
+- zita-convolver
+update_on:
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: cuda-tools
+  provides: libGL.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: zita-convolver
+  provides: libzita-convolver.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: cuda-tools
+  provides: libGL.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: zita-convolver
+  provides: libzita-convolver.so
+  source: alpm
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: cuda-tools
+  provides: libGL.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: zita-convolver
+  provides: libzita-convolver.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: cuda-tools
+  provides: libGL.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: zita-convolver
+  provides: libzita-convolver.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: cuda-tools
+  provides: libGL.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: zita-convolver
+  provides: libzita-convolver.so
+  source: alpm
+- alpm: zam-plugins
+  source: archpkg

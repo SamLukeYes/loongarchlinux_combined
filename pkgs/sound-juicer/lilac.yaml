@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sound-juicer'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libmusicbrainz5
+- libdiscid
+- gtk3
+- gstreamer: gst-plugins-base
+- gstreamer: gst-plugins-good
+- brasero
+- iso-codes
+- libcanberra
+repo_makedepends:
+- itstool
+- appstream-glib
+- git
+- meson
+update_on:
+- alpm: sound-juicer
+  source: archpkg

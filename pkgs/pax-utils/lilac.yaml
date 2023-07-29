@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pax-utils'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bash
+- libcap
+- libseccomp
+- python
+- python-pyelftools
+repo_makedepends:
+- docbook-xml
+- docbook-xsl
+- git
+- linux: linux-headers
+- meson
+- xmlto
+update_on:
+- alpm: libcap
+  provides: libcap.so
+  source: alpm
+- alias: python
+- alpm: pax-utils
+  source: archpkg

@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-minitest-proveit'')
+
+  '
+repo_checkdepends:
+- ruby-minitest
+repo_depends:
+- ruby
+repo_makedepends:
+- ruby-hoe
+- ruby-bundler
+- git
+- ruby-rake
+update_on:
+- alias: ruby
+- alpm: ruby-minitest-proveit
+  source: archpkg

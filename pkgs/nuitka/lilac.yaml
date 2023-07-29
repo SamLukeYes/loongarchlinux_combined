@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''nuitka'')
+
+  '
+repo_checkdepends:
+- ccache
+- fuse2
+- python-boto3
+- brotli: python-brotli
+- strace
+repo_depends:
+- libxml2
+- patchelf
+- python-appdirs
+- python-setuptools
+- python-wheel
+- scons
+repo_makedepends:
+- gdb
+- python-build
+- python-installer
+update_on:
+- alpm: nuitka
+  source: archpkg

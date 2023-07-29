@@ -1,0 +1,64 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-http-streams'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- haskell-hunit
+- haskell-aeson-pretty
+- haskell-hspec
+- haskell-hspec-expectations
+- haskell-random
+- haskell-snap-core
+- haskell-snap-server
+- haskell-system-fileio
+- haskell-system-filepath
+repo_depends:
+- ghc: ghc-libs
+- haskell-attoparsec
+- haskell-base64-bytestring
+- haskell-blaze-builder
+- haskell-case-insensitive
+- haskell-io-streams
+- haskell-hsopenssl
+- haskell-openssl-streams
+- haskell-unordered-containers
+- haskell-aeson
+- haskell-http-common
+- haskell-network
+- haskell-network-uri
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-base64-bytestring
+  source: alpm
+- alpm: haskell-blaze-builder
+  source: alpm
+- alpm: haskell-case-insensitive
+  source: alpm
+- alpm: haskell-io-streams
+  source: alpm
+- alpm: haskell-hsopenssl
+  source: alpm
+- alpm: haskell-openssl-streams
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-http-common
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-network-uri
+  source: alpm
+- alpm: haskell-http-streams
+  source: archpkg

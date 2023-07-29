@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deepin-util-dfm'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libisoburn
+- libmediainfo
+- qt5-base
+- udisks2
+repo_makedepends:
+- cmake
+- ninja
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: deepin-util-dfm
+  source: archpkg

@@ -1,0 +1,52 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''padthv1'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- padthv1: padthv1-lv2
+- padthv1: padthv1-standalone
+- fftw
+- gcc: gcc-libs
+- glibc
+- qt6-base
+- qt6-svg
+- alsa-lib
+- fftw
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- liblo
+- qt6-base
+- qt6-svg
+repo_makedepends:
+- alsa-lib
+- cmake
+- fftw
+- liblo
+- lv2
+- qt6-base
+- qt6-svg
+- qt6-tools
+update_on:
+- alpm: fftw
+  provides: libfftw3f.so
+  source: alpm
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: fftw
+  provides: libfftw3f.so
+  source: alpm
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: padthv1
+  source: archpkg

@@ -1,0 +1,68 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''nheko'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-svg
+- qt5-quickcontrols2
+- qt5-graphicaleffects
+- qt5-multimedia
+- qtkeychain: qtkeychain-qt5
+- coeurl
+- mtxclient
+- lmdb
+- cmark
+- libolm
+- hicolor-icon-theme
+- gstreamer: gst-plugins-bad-libs
+- qt5-svg
+- qt5-quickcontrols2
+- qt5-graphicaleffects
+- qt5-multimedia
+- qtkeychain: qtkeychain-qt5
+- coeurl
+- mtxclient
+- lmdb
+- cmark
+- libolm
+- hicolor-icon-theme
+- gstreamer: gst-plugins-bad-libs
+- mtxclient
+- spdlog
+- libolm
+repo_makedepends:
+- cmake
+- ninja
+- boost
+- qt5-tools
+- fontconfig
+- nlohmann-json
+- asciidoc
+- lmdbxx
+- spdlog
+update_on:
+- alpm: cmark
+  source: alpm
+  strip_release: true
+- alpm: cmark
+  source: alpm
+  strip_release: true
+- alpm: mtxclient
+  provides: libmatrix_client.so
+  source: alpm
+- alpm: spdlog
+  provides: libspdlog.so
+  source: alpm
+- alpm: libolm
+  provides: libolm.so
+  source: alpm
+- alpm: nheko
+  source: archpkg

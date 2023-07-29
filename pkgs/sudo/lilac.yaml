@@ -1,0 +1,29 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sudo'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- openssl
+- pam
+- openldap: libldap
+- zlib
+- glibc
+- openssl
+- pam
+- openldap: libldap
+- zlib
+repo_makedepends: []
+update_on:
+- alias: libcrypto
+- alias: libssl
+- alpm: sudo
+  source: archpkg

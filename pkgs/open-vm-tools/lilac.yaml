@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''open-vm-tools'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- cunit
+repo_depends:
+- fuse3
+- icu
+- iproute2
+- libdnet
+- libmspack
+- libsigc++
+- libxcrypt
+- libxss
+- lsb-release
+- procps-ng
+- uriparser
+- gdk-pixbuf-xlib
+repo_makedepends:
+- chrpath
+- doxygen
+- gtkmm3
+- libxtst
+- python
+- rpcsvc-proto
+update_on:
+- alias: icu
+- alpm: libxcrypt
+  provides: libcrypt.so
+  source: alpm
+- alpm: open-vm-tools
+  source: archpkg

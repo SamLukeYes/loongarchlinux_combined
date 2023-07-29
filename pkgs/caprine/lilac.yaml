@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''caprine'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- electron22
+repo_makedepends:
+- git
+- npm
+update_on:
+- alpm: caprine
+  source: archpkg

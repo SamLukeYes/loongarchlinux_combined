@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gaupol'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- pygobject: python-gobject
+- gtk3
+- gstreamer: gst-plugins-base
+- gstreamer: gst-plugins-good
+- gstreamer: gst-plugins-bad
+- gstreamer: gst-plugins-ugly
+- gstreamer: gst-libav
+- gstreamer: gst-plugin-gtk
+- gspell
+- iso-codes
+- python-chardet
+- python-cairo
+- desktop-file-utils
+- hicolor-icon-theme
+repo_makedepends: []
+update_on:
+- alpm: gaupol
+  source: archpkg

@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''endeavour'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- evolution-data-server
+- gtk4
+- libadwaita
+- libpeas
+- python
+repo_makedepends:
+- appstream-glib
+- git
+- gobject-introspection
+- meson
+- yelp-tools
+update_on:
+- alias: python
+- alpm: endeavour
+  source: archpkg

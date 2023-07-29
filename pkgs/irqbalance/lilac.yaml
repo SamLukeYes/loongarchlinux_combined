@@ -1,0 +1,42 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''irqbalance'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libnl
+- glibc
+- libnl
+repo_makedepends:
+- glib2
+- libcap-ng
+- ncurses
+- numactl
+- systemd
+- systemd: systemd-libs
+update_on:
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: libcap-ng
+  provides: libcap-ng.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: numactl
+  provides: libnuma.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: irqbalance
+  source: archpkg

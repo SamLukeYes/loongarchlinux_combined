@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-mplhep_data'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-importlib-metadata
+repo_depends:
+- python
+repo_makedepends:
+- git
+- python-setuptools
+- python-setuptools-scm
+update_on:
+- alias: python
+- alpm: python-mplhep_data
+  source: archpkg

@@ -1,0 +1,55 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rauc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- squashfs-tools
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- libnl
+- openssl
+- gcc: gcc-libs
+- glibc
+- libnl
+- openssl
+- curl
+- glib2
+- json-glib
+- util-linux: util-linux-libs
+repo_makedepends:
+- curl
+- dbus
+- glib2
+- json-glib
+- python
+- systemd
+- util-linux
+update_on:
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: json-glib
+  provides: libjson-glib-1.0.so
+  source: alpm
+- alpm: util-linux-libs
+  provides: libfdisk.so
+  source: alpm
+- alpm: rauc
+  source: archpkg

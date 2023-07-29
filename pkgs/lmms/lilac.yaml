@@ -1,0 +1,120 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lmms'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- libx11
+- libxcb
+- qt5-base
+- qt5-x11extras
+- sdl12-compat
+- zlib
+- gcc: gcc-libs
+- glibc
+- libx11
+- libxcb
+- qt5-base
+- qt5-x11extras
+- sdl12-compat
+- zlib
+- alsa-lib
+- fftw
+- fltk
+- fluidsynth
+- lame
+- libgig
+- libogg
+- pulseaudio: libpulse
+- libsamplerate
+- libvorbis
+- portaudio
+- sndio
+- stk
+repo_makedepends:
+- alsa-lib
+- bash-completion
+- carla
+- cmake
+- doxygen
+- extra-cmake-modules
+- fftw
+- fltk
+- fluidsynth
+- freetype2
+- ladspa
+- lame
+- libgig
+- libogg
+- pulseaudio: libpulse
+- libsamplerate
+- libsndfile
+- libvorbis
+- portaudio
+- qt5-tools
+- sndio
+- stk
+- wine
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: fftw
+  provides: libfftw3f.so
+  source: alpm
+- alpm: fltk
+  provides: libfltk.so
+  source: alpm
+- alpm: fluidsynth
+  provides: libfluidsynth.so
+  source: alpm
+- alpm: lame
+  provides: libmp3lame.so
+  source: alpm
+- alpm: libgig
+  provides: libgig.so
+  source: alpm
+- alpm: libogg
+  provides: libogg.so
+  source: alpm
+- alpm: libao
+  provides: libpulse.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbis.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbisenc.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbisfile.so
+  source: alpm
+- alpm: portaudio
+  provides: libportaudio.so
+  source: alpm
+- alpm: sndio
+  provides: libsndio.so
+  source: alpm
+- alpm: stk
+  provides: libstk-4.6.2.so
+  source: alpm
+- alpm: lmms
+  source: archpkg

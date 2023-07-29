@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wp-cli'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- php
+repo_makedepends:
+- composer
+update_on:
+- alpm: wp-cli
+  source: archpkg

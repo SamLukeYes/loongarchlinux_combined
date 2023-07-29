@@ -1,0 +1,47 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hedgehog-classes'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-comonad
+- haskell-hedgehog
+- haskell-pretty-show
+- haskell-primitive
+- haskell-semirings
+- haskell-silently
+- haskell-vector
+- haskell-wl-pprint-annotated
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-comonad
+  source: alpm
+- alpm: haskell-hedgehog
+  source: alpm
+- alpm: haskell-pretty-show
+  source: alpm
+- alpm: haskell-primitive
+  source: alpm
+- alpm: haskell-semirings
+  source: alpm
+- alpm: haskell-silently
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-wl-pprint-annotated
+  source: alpm
+- alpm: haskell-hedgehog-classes
+  source: archpkg

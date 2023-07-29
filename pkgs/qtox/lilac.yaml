@@ -1,0 +1,34 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qtox'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- desktop-file-utils
+- libxss
+- openal
+- ffmpeg
+- qrencode
+- qt5-svg
+- sqlcipher
+- libexif
+- toxcore
+- sonnet
+- snorenotify
+repo_makedepends:
+- qt5-tools
+- git
+- check
+- cmake
+- mesa
+- libglvnd
+update_on:
+- alpm: qtox
+  source: archpkg

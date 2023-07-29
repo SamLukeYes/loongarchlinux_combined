@@ -1,0 +1,109 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''idris'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-annotated-wl-pprint
+- haskell-ansi-terminal
+- haskell-ansi-wl-pprint
+- haskell-async
+- haskell-base64-bytestring
+- haskell-blaze-html
+- haskell-blaze-markup
+- haskell-cheapskate
+- haskell-code-page
+- haskell-fingertree
+- haskell-fsnotify
+- haskell-ieee754
+- haskell-libffi
+- haskell-megaparsec
+- haskell-network
+- haskell-optparse-applicative
+- haskell-parser-combinators
+- haskell-regex-tdfa
+- haskell-safe
+- haskell-split
+- haskell-terminal-size
+- haskell-uniplate
+- haskell-unordered-containers
+- haskell-utf8-string
+- haskell-vector
+- haskell-vector-binary-instances
+- haskell-zip-archive
+repo_makedepends:
+- ghc
+- uusi
+- haskell-tagged
+- haskell-tasty
+- haskell-tasty-golden
+- haskell-tasty-rerun
+- nodejs
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-annotated-wl-pprint
+  source: alpm
+- alpm: haskell-ansi-terminal
+  source: alpm
+- alpm: haskell-ansi-wl-pprint
+  source: alpm
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-base64-bytestring
+  source: alpm
+- alpm: haskell-blaze-html
+  source: alpm
+- alpm: haskell-blaze-markup
+  source: alpm
+- alpm: haskell-cheapskate
+  source: alpm
+- alpm: haskell-code-page
+  source: alpm
+- alpm: haskell-fingertree
+  source: alpm
+- alpm: haskell-fsnotify
+  source: alpm
+- alpm: haskell-ieee754
+  source: alpm
+- alpm: haskell-libffi
+  source: alpm
+- alpm: haskell-megaparsec
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-parser-combinators
+  source: alpm
+- alpm: haskell-regex-tdfa
+  source: alpm
+- alpm: haskell-safe
+  source: alpm
+- alpm: haskell-split
+  source: alpm
+- alpm: haskell-terminal-size
+  source: alpm
+- alpm: haskell-uniplate
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-utf8-string
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-vector-binary-instances
+  source: alpm
+- alpm: haskell-zip-archive
+  source: alpm
+- alpm: idris
+  source: archpkg

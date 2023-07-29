@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''certbot'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- ca-certificates
+- python-acme
+- python-configargparse
+- python-configobj
+- python-cryptography
+- python-distro
+- python-parsedatetime
+- python-pyrfc3339
+- python-pytz
+- python-setuptools
+repo_makedepends:
+- git
+- python-build
+- python-wheel
+- python-installer
+- python-sphinx
+- python-sphinx_rtd_theme
+update_on:
+- alpm: certbot
+  source: archpkg

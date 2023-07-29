@@ -1,0 +1,9 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- ncurses
+- gcc: gcc-libs
+repo_makedepends:
+- git
+- help2man
+update_on: []

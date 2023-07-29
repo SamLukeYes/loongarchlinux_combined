@@ -1,0 +1,35 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-fsnotify0.3'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-async
+- haskell-hinotify
+- haskell-shelly
+- haskell-unix-compat
+repo_makedepends:
+- ghc
+- haskell-random
+- haskell-tasty
+- haskell-tasty-hunit
+- haskell-temporary
+update_on:
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-hinotify
+  source: alpm
+- alpm: haskell-shelly
+  source: alpm
+- alpm: haskell-unix-compat
+  source: alpm
+- alpm: haskell-fsnotify0.3
+  source: archpkg

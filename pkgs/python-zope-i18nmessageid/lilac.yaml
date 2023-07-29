@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-zope-i18nmessageid'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-zope-testrunner
+repo_depends:
+- python-setuptools
+repo_makedepends: []
+update_on:
+- alpm: python-zope-i18nmessageid
+  source: archpkg

@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-oedipus_lex'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+repo_makedepends:
+- ruby-hoe
+update_on:
+- alias: ruby
+- alpm: ruby-oedipus_lex
+  source: archpkg

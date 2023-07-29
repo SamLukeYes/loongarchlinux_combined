@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-nettle'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- nettle
+- haskell-byteable
+- haskell-crypto-cipher-types
+- haskell-tagged
+- haskell-securemem
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-byteable
+  source: alpm
+- alpm: haskell-crypto-cipher-types
+  source: alpm
+- alpm: haskell-tagged
+  source: alpm
+- alpm: haskell-securemem
+  source: alpm
+- alpm: haskell-nettle
+  source: archpkg

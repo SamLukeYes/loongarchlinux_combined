@@ -1,0 +1,54 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-dns'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-async
+- haskell-auto-update
+- haskell-attoparsec
+- haskell-base16-bytestring
+- haskell-base64-bytestring
+- haskell-cryptonite
+- haskell-hourglass
+- haskell-iproute
+- haskell-network
+- haskell-psqueues
+repo_makedepends:
+- ghc
+- haskell-doctest
+- haskell-hspec
+- haskell-hspec-discover
+- haskell-word8
+- haskell-quickcheck
+update_on:
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-auto-update
+  source: alpm
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-base16-bytestring
+  source: alpm
+- alpm: haskell-base64-bytestring
+  source: alpm
+- alpm: haskell-cryptonite
+  source: alpm
+- alpm: haskell-hourglass
+  source: alpm
+- alpm: haskell-iproute
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-psqueues
+  source: alpm
+- alpm: haskell-dns
+  source: archpkg

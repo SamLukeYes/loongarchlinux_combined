@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''freetype2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- brotli
+- bzip2
+- harfbuzz
+- libpng
+- zlib
+- freetype2
+- libx11
+- librsvg
+- freetype2
+repo_makedepends:
+- librsvg
+- libx11
+- meson
+- qt5-base
+update_on:
+- alpm: freetype2
+  source: archpkg

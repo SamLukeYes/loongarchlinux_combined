@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-crispy-bootstrap3'')
+
+  '
+repo_checkdepends:
+- django: python-django
+- python-django-crispy-forms
+- python-pytest
+- python-pytest-django
+repo_depends:
+- python
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-crispy-bootstrap3
+  source: archpkg

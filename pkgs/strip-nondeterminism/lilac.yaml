@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''strip-nondeterminism'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl
+- perl-archive-zip
+- perl-archive-cpio
+- perl-sub-override
+repo_makedepends:
+- git
+update_on:
+- alias: perl
+- alpm: strip-nondeterminism
+  source: archpkg

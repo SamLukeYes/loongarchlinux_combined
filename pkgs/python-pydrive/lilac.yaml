@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pydrive'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-google-api-python-client
+- python-oauth2client
+- python-yaml
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-pydrive
+  source: archpkg

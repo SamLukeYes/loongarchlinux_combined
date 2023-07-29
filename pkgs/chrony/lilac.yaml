@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''chrony'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libcap
+- libedit
+- libseccomp
+- nettle
+- gnutls
+repo_makedepends:
+- asciidoctor
+update_on:
+- alpm: libcap
+  provides: libcap.so
+  source: alpm
+- alpm: libedit
+  provides: libedit.so
+  source: alpm
+- alpm: libseccomp
+  provides: libseccomp.so
+  source: alpm
+- alpm: nettle
+  provides: libnettle.so
+  source: alpm
+- alpm: chrony
+  source: archpkg

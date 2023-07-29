@@ -1,0 +1,35 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''astroid'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- notmuch: notmuch-runtime
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- boost: boost-libs
+- gmime3
+- gobject-introspection: gobject-introspection-runtime
+- gtkmm3
+- libpeas
+- libsass
+- notmuch
+- protobuf
+- vte3
+- webkit2gtk
+repo_makedepends:
+- boost
+- cmake
+- cmark
+- gobject-introspection
+- w3m
+update_on:
+- alias: protobuf
+- alpm: astroid
+  source: archpkg

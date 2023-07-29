@@ -1,0 +1,11 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- git
+- gcc: gcc-libs
+- zlib
+repo_makedepends: []
+update_on:
+- alpm: julia
+  provides: libgit2.so
+  source: alpm

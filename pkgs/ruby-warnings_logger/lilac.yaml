@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-warnings_logger'')
+
+  '
+repo_checkdepends:
+- ruby-pry-byebug
+- ruby-rake
+- ruby-rspec
+- ruby-snowglobe
+repo_depends:
+- ruby
+repo_makedepends:
+- git
+update_on:
+- alias: ruby
+- alpm: ruby-warnings_logger
+  source: archpkg

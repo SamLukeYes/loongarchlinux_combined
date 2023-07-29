@@ -1,0 +1,42 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''megaglest'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- curl
+- megaglest-data
+- xerces-c
+- sdl2
+- libvorbis
+- openal
+- lua51
+- icu
+- ftgl
+- glew
+- libircclient
+- miniupnpc
+- wxwidgets: wxwidgets-gtk3
+- glu
+- libx11
+repo_makedepends:
+- ftjam
+- cmake
+- mesa
+update_on:
+- alias: icu
+- alpm: wxwidgets-gtk3
+  source: alpm
+  strip_release: true
+- alpm: miniupnpc
+  provides: libminiupnpc.so
+  source: alpm
+- alpm: megaglest
+  source: archpkg

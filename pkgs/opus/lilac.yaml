@@ -1,0 +1,9 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- glibc
+repo_makedepends:
+- doxygen
+- git
+- meson
+update_on: []

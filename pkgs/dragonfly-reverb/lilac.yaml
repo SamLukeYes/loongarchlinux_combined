@@ -1,0 +1,50 @@
+destsubdir: extra
+repo_checkdepends:
+- lv2lint
+repo_depends:
+- dragonfly-reverb: dragonfly-reverb-clap
+- dragonfly-reverb: dragonfly-reverb-lv2
+- dragonfly-reverb: dragonfly-reverb-standalone
+- dragonfly-reverb: dragonfly-reverb-vst
+- dragonfly-reverb: dragonfly-reverb-vst3
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- freeverb3
+- libx11
+- libxext
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- freeverb3
+- libx11
+- libxext
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- freeverb3
+- libx11
+- libxext
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- freeverb3
+- libx11
+- libxext
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- freeverb3
+- libx11
+- libxext
+repo_makedepends:
+- freeverb3
+- gcc: gcc-libs
+- glibc
+- gendesk
+- libglvnd
+- libsamplerate
+- libx11
+- libxext
+- lv2
+update_on: []

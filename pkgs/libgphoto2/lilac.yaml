@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libgphoto2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- curl
+- gd
+- libexif
+- libusb
+- libxml2
+repo_makedepends:
+- autoconf-archive
+- git
+update_on:
+- alpm: libgphoto2
+  source: archpkg

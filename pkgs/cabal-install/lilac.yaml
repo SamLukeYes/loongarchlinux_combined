@@ -1,0 +1,68 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cabal-install'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-async
+- haskell-base16-bytestring
+- haskell-cryptohash-sha256
+- haskell-echo
+- haskell-edit-distance
+- haskell-hackage-security
+- haskell-hashable
+- haskell-http
+- haskell-network-uri
+- haskell-random
+- haskell-regex-base
+- haskell-regex-posix
+- haskell-resolv
+- haskell-tar
+- haskell-zlib
+- haskell-lukko
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-base16-bytestring
+  source: alpm
+- alpm: haskell-cryptohash-sha256
+  source: alpm
+- alpm: haskell-echo
+  source: alpm
+- alpm: haskell-edit-distance
+  source: alpm
+- alpm: haskell-hackage-security
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-http
+  source: alpm
+- alpm: haskell-network-uri
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-regex-base
+  source: alpm
+- alpm: haskell-regex-posix
+  source: alpm
+- alpm: haskell-resolv
+  source: alpm
+- alpm: haskell-tar
+  source: alpm
+- alpm: haskell-zlib
+  source: alpm
+- alpm: haskell-lukko
+  source: alpm
+- alpm: cabal-install
+  source: archpkg

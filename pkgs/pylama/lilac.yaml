@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pylama'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- git
+- mypy
+repo_depends:
+- python-pycodestyle
+- python-pydocstyle
+- python-pyflakes
+- python-mccabe
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: pylama
+  source: archpkg

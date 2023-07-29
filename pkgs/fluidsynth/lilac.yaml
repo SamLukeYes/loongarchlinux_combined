@@ -1,0 +1,86 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''fluidsynth'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- sdl2
+- gcc: gcc-libs
+- glibc
+- sdl2
+- alsa-lib
+- dbus
+- glib2
+- libinstpatch
+- pipewire: libpipewire
+- pulseaudio: libpulse
+- libsndfile
+- portaudio
+- readline
+- systemd: systemd-libs
+repo_makedepends:
+- alsa-lib
+- cmake
+- dbus
+- doxygen
+- glib2
+- ladspa
+- libinstpatch
+- pipewire: libpipewire
+- pulseaudio: libpulse
+- libsndfile
+- portaudio
+- readline
+- systemd: systemd-libs
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgmodule-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: libinstpatch
+  provides: libinstpatch-1.0.so
+  source: alpm
+- alpm: libpipewire
+  provides: libpipewire-0.3.so
+  source: alpm
+- alpm: libpulse
+  provides: libpulse-simple.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: portaudio
+  provides: libportaudio.so
+  source: alpm
+- alias: readline
+- alpm: readline
+  provides: libreadline.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: fluidsynth
+  source: archpkg

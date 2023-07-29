@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kirigami2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-quickcontrols
+- qt5-quickcontrols2
+- qt5-graphicaleffects
+repo_makedepends:
+- extra-cmake-modules
+- qt5-tools
+- qt5-doc
+- qt5-svg
+- kpackage
+- doxygen
+update_on:
+- alpm: kirigami2
+  source: archpkg

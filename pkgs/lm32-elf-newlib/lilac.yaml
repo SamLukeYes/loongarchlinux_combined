@@ -1,0 +1,16 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lm32-elf-newlib'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- lm32-elf-gcc
+update_on:
+- alpm: lm32-elf-newlib
+  source: archpkg

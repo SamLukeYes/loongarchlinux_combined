@@ -1,0 +1,55 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ssr'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- glu
+- qt5-base
+- gcc: gcc-libs
+- glibc
+- glu
+- qt5-base
+- fftw
+- libglvnd
+- libsndfile
+repo_makedepends:
+- asio
+- ecasound
+- fftw
+- gendesk
+- help2man
+- libglvnd
+- libsndfile
+- qt5-tools
+- websocketpp
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: fftw
+  provides: libfftw3f.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: cuda-tools
+  provides: libGL.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: ssr
+  source: archpkg

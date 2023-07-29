@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pyproject-parser'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-apeye-core
+- python-attrs
+- python-dom-toml
+- python-domdf-python-tools
+- python-natsort
+- python-packaging
+- python-shippinglabel
+- python-toml
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-wheel
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-pyproject-parser
+  source: archpkg

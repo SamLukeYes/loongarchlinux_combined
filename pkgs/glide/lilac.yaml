@@ -1,0 +1,11 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gstreamer: gst-plugins-bad
+- gstreamer: gst-plugins-base
+- gstreamer: gst-plugins-good
+- gtk3
+repo_makedepends:
+- meson
+- rust
+update_on: []

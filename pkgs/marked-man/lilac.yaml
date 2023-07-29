@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''marked-man'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- marked
+- nodejs
+repo_makedepends:
+- npm
+update_on:
+- alpm: marked-man
+  source: archpkg

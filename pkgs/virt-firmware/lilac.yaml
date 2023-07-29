@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''virt-firmware'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python
+- python-crc32c
+- python-cryptography
+- python-pefile
+- python-setuptools
+repo_makedepends:
+- python-build
+- python-installer
+- python-wheel
+update_on:
+- alias: python
+- alpm: virt-firmware
+  source: archpkg

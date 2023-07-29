@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''keybase'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gnupg
+- keybase
+- keybase
+- keybase: kbfs
+repo_makedepends:
+- git
+- go
+- jq
+- moreutils
+- yarn
+update_on:
+- alpm: keybase
+  source: archpkg

@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libkdepim'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kcompletion
+- kconfigwidgets
+- kitemviews
+- kjobwidgets
+repo_makedepends:
+- extra-cmake-modules
+- qt5-tools
+- doxygen
+update_on:
+- alpm: libkdepim
+  source: archpkg

@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''alacritty'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- ttf-dejavu
+repo_depends:
+- freetype2
+- fontconfig
+- libxi
+- libxcursor
+- libxkbcommon
+- libxrandr
+repo_makedepends:
+- git
+- rust
+- cmake
+- ncurses
+- desktop-file-utils
+- gdb
+- libxcb
+update_on:
+- alpm: alacritty
+  source: archpkg

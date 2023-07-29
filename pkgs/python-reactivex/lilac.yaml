@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-reactivex'')
+
+  '
+repo_checkdepends:
+- python-coverage
+- python-nose
+- python-pytest
+- python-pytest-asyncio
+repo_depends:
+- python
+- python-typing_extensions
+repo_makedepends:
+- git
+- python-build
+- python-poetry-core
+- python-installer
+update_on:
+- alias: python
+- alpm: python-reactivex
+  source: archpkg

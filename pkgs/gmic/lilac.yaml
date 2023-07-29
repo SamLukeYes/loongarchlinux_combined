@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gmic'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- graphicsmagick
+- opencv
+- fftw
+- gimp
+- gmic
+- qt5-base
+repo_makedepends:
+- cmake
+- gimp
+- qt5-base
+- fftw
+- openexr
+- opencv
+- eigen
+- graphicsmagick
+- qt5-tools
+update_on:
+- alpm: opencv
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: gmic
+  source: archpkg

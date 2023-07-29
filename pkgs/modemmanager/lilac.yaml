@@ -1,0 +1,74 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''modemmanager'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- pygobject: python-gobject
+repo_depends:
+- systemd
+- libgudev
+- polkit
+- ppp
+- libqmi
+- libmbim
+- mobile-broadband-provider-info
+- systemd
+- libgudev
+- polkit
+- ppp
+- libqmi
+- libmbim
+- mobile-broadband-provider-info
+repo_makedepends:
+- gtk-doc
+- gobject-introspection
+- vala
+- meson
+- git
+- bash-completion
+update_on:
+- alpm: libmm-glib
+  provides: libmm-glib.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgmodule-2.0.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: libgudev
+  provides: libgudev-1.0.so
+  source: alpm
+- alpm: libqmi
+  provides: libqmi-glib.so
+  source: alpm
+- alpm: libmbim
+  provides: libmbim-glib.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: modemmanager
+  source: archpkg

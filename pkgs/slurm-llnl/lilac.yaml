@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''slurm-llnl'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- hwloc
+- lz4
+- munge
+- numactl
+repo_makedepends:
+- python
+- gtk2
+- rrdtool
+- hdf5
+- lua
+- json-c
+- http-parser
+- freeipmi
+- openpmix
+- level-zero: level-zero-headers
+- level-zero: level-zero-loader
+- mariadb: mariadb-libs
+- rdma-core
+- numactl
+- libyaml
+update_on:
+- alpm: slurm-llnl
+  source: archpkg

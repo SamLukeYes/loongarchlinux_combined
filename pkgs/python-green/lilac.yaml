@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-green'')
+
+  '
+repo_checkdepends:
+- django: python-django
+- python-testtools
+repo_depends:
+- python-colorama
+- python-coverage
+- python-unidecode
+- python-lxml
+repo_makedepends:
+- git
+- python-setuptools
+update_on:
+- alpm: python-green
+  source: archpkg

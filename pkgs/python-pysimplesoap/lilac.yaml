@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pysimplesoap'')
+
+  '
+repo_checkdepends:
+- python-nose
+repo_depends:
+- python
+repo_makedepends: []
+update_on:
+- alias: python
+- alpm: python-pysimplesoap
+  source: archpkg

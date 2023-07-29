@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''dleyna'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- dbus
+- gupnp
+- gupnp-av
+- gupnp-dlna
+- libsoup3
+- libxml2
+repo_makedepends:
+- git
+- meson
+- python-docutils
+- pygobject: python-gobject
+- python-sphinx
+- python-sphinx_rtd_theme
+update_on:
+- alpm: dleyna
+  source: archpkg

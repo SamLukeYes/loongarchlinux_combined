@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-bytestring-tree-builder'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+repo_makedepends:
+- ghc
+- uusi
+- haskell-base-prelude
+- haskell-tasty
+- haskell-tasty-quickcheck
+- haskell-tasty-hunit
+- haskell-quickcheck-instances
+- haskell-quickcheck
+update_on:
+- alpm: haskell-bytestring-tree-builder
+  source: archpkg

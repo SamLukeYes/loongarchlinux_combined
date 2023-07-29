@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''osdlyrics'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk2
+- dbus-glib
+- curl
+- libnotify
+- libmpd
+- xmms2
+- desktop-file-utils
+- hicolor-icon-theme
+- sqlite
+- python
+repo_makedepends:
+- intltool
+update_on:
+- alias: python
+- alpm: osdlyrics
+  source: archpkg

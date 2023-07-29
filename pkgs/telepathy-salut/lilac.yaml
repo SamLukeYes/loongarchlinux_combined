@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-salut'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- telepathy-glib
+- avahi
+- libsoup
+- util-linux
+repo_makedepends:
+- libxslt
+- python
+- xmldiff
+update_on:
+- alpm: telepathy-salut
+  source: archpkg

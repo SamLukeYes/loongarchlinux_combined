@@ -1,0 +1,42 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qmidiarp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- lv2lint
+repo_depends:
+- qmidiarp: qmidiarp-lv2
+- qmidiarp: qmidiarp-standalone
+- gcc: gcc-libs
+- glibc
+- qt5-base
+- alsa-lib
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- liblo
+- qt5-base
+repo_makedepends:
+- alsa-lib
+- gcc: gcc-libs
+- glibc
+- liblo
+- lv2
+- qt5-base
+- qt5-tools
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qmidiarp
+  source: archpkg

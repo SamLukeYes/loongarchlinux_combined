@@ -1,0 +1,17 @@
+destsubdir: extra
+repo_checkdepends:
+- perl-io-string
+- perl-test-pod
+repo_depends:
+- xz
+- zlib
+- bzip2
+- zstd
+- perl
+- libmd
+repo_makedepends:
+- perl-io-string
+- perl-timedate
+- git
+update_on:
+- alias: perl

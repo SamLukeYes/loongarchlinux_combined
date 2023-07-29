@@ -1,0 +1,35 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-text-builder-dev'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-deferred-folds
+- haskell-isomorphism-class
+- haskell-split
+repo_makedepends:
+- ghc
+- uusi
+- haskell-quickcheck
+- haskell-quickcheck-instances
+- haskell-rerebase
+- haskell-tasty
+- haskell-tasty-hunit
+- haskell-tasty-quickcheck
+update_on:
+- alpm: haskell-deferred-folds
+  source: alpm
+- alpm: haskell-isomorphism-class
+  source: alpm
+- alpm: haskell-split
+  source: alpm
+- alpm: haskell-text-builder-dev
+  source: archpkg

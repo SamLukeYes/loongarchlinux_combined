@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''magic-wormhole'')
+
+  '
+repo_checkdepends:
+- python-mock
+- python-magic-wormhole-transit-relay
+- python-magic-wormhole-mailbox-server
+repo_depends:
+- python-click
+- python-cffi
+- python-autobahn
+- python-tqdm
+- python-hkdf
+- python-pynacl
+- python-spake2
+- python-humanize
+- python-idna
+- python-service-identity
+- python-txtorcon
+- python-pyopenssl
+- python-setuptools
+repo_makedepends: []
+update_on:
+- alpm: magic-wormhole
+  source: archpkg

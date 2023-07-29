@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-isoduration'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-benchmark
+- isodate: python-isodate
+- python-hypothesis
+repo_depends:
+- python
+- python-arrow
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-wheel
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-isoduration
+  source: archpkg

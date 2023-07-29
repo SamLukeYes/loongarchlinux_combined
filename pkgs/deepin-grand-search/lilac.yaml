@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deepin-grand-search'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- deepin-anything
+- deepin-daemon
+- deepin-qt5integration
+- poppler: poppler-qt5
+repo_makedepends:
+- cmake
+- deepin-dock
+- ninja
+- qt5-tools
+update_on:
+- alpm: deepin-grand-search
+  source: archpkg

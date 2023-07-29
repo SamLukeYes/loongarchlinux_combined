@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''neatvnc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- gnutls
+- libdrm
+- mesa
+- zlib
+repo_makedepends:
+- git
+- meson
+- ninja
+update_on:
+- alpm: aml
+  provides: libaml.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavcodec.so
+  source: alpm
+- alpm: pixman
+  provides: libpixman-1.so
+  source: alpm
+- alpm: libjpeg-turbo
+  provides: libturbojpeg.so
+  source: alpm
+- alpm: neatvnc
+  source: archpkg

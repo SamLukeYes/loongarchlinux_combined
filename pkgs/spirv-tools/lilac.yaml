@@ -1,0 +1,11 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+repo_makedepends:
+- cmake
+- python
+- git
+- ninja
+- spirv-headers
+update_on: []

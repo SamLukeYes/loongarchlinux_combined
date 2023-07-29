@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xdg-utils'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- file
+- xorg-xset
+- xorg-xprop
+repo_makedepends:
+- docbook-xsl
+- lynx
+- xmlto
+- git
+update_on:
+- alpm: xdg-utils
+  source: archpkg

@@ -1,0 +1,113 @@
+destsubdir: core
+repo_checkdepends: []
+repo_depends:
+- acl
+- bash
+- cryptsetup
+- dbus
+- iptables
+- kbd
+- kmod
+- hwdata
+- libcap
+- libgcrypt
+- libxcrypt
+- systemd: systemd-libs
+- libidn2
+- lz4
+- pam
+- elfutils: libelf
+- libseccomp
+- util-linux
+- xz
+- pcre2
+- audit
+- openssl
+- glibc
+- gcc: gcc-libs
+- libcap
+- libgcrypt
+- lz4
+- xz
+- zstd
+- systemd
+- systemd
+- binutils
+- python-pefile
+- systemd
+repo_makedepends:
+- acl
+- cryptsetup
+- docbook-xsl
+- gperf
+- lz4
+- xz
+- pam
+- elfutils: libelf
+- intltool
+- iptables
+- kmod
+- libcap
+- libidn2
+- libgcrypt
+- libmicrohttpd
+- libxcrypt
+- libxslt
+- util-linux
+- linux-api-headers
+- python-jinja
+- python-lxml
+- quota-tools
+- shadow
+- git
+- meson
+- libseccomp
+- pcre2
+- audit
+- kexec-tools
+- libxkbcommon
+- bash-completion
+- p11-kit
+- systemd
+- libfido2
+- tpm2-tss
+- rsync
+- linux-tools: bpf
+- libbpf
+- clang
+- llvm
+- curl
+- gnutls
+update_on:
+- alpm: acl
+  provides: libacl.so
+  source: alpm
+- alpm: cryptsetup
+  provides: libcryptsetup.so
+  source: alpm
+- alpm: iptables
+  source: alpm
+  strip_release: true
+- alpm: kmod
+  provides: libkmod.so
+  source: alpm
+- alpm: libcap
+  provides: libcap.so
+  source: alpm
+- alpm: libxcrypt
+  provides: libcrypt.so
+  source: alpm
+- alpm: libseccomp
+  provides: libseccomp.so
+  source: alpm
+- alpm: util-linux-libs
+  provides: libblkid.so
+  source: alpm
+- alpm: util-linux-libs
+  provides: libmount.so
+  source: alpm
+- alpm: audit
+  provides: libaudit.so
+  source: alpm
+- alias: libcrypto
+- alias: libssl

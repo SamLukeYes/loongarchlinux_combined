@@ -1,0 +1,52 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''weston'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- wayland
+- libxkbcommon
+- libinput
+- libunwind
+- pixman
+- libdrm
+- pam
+- systemd: systemd-libs
+- cairo
+- libpng
+- libjpeg-turbo
+- libwebp
+- mesa
+- glib2
+- pango
+- lcms2
+- mtdev
+- libx11
+- libxcb
+- dbus
+- libva
+- libxcursor
+- colord
+- seatd
+- gstreamer
+- gstreamer: gst-plugins-base-libs
+repo_makedepends:
+- wayland-protocols
+- meson
+- ninja
+- freerdp
+- neatvnc
+- pipewire: libpipewire
+- xorg-xwayland
+- xcb-util-cursor
+update_on:
+- alpm: weston
+  source: archpkg

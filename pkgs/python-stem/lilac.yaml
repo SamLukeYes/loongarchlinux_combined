@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-stem'')
+
+  '
+repo_checkdepends:
+- tor
+repo_depends:
+- python
+- python-cryptography
+- python-pynacl
+- procps-ng
+repo_makedepends: []
+update_on:
+- alias: python
+- alpm: python-stem
+  source: archpkg

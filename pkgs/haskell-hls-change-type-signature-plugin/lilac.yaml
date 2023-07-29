@@ -1,0 +1,42 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-change-type-signature-plugin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- git
+repo_depends:
+- ghc: ghc-libs
+- haskell-ghcide
+- haskell-hls-plugin-api
+- haskell-lsp-types
+- haskell-regex-tdfa
+- haskell-syb
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- uusi
+- haskell-quickcheck
+- haskell-hls-test-utils
+- haskell-lsp
+update_on:
+- alpm: haskell-ghcide
+  source: alpm
+- alpm: haskell-hls-plugin-api
+  source: alpm
+- alpm: haskell-lsp-types
+  source: alpm
+- alpm: haskell-regex-tdfa
+  source: alpm
+- alpm: haskell-syb
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-hls-change-type-signature-plugin
+  source: archpkg

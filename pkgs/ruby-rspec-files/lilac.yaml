@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rspec-files'')
+
+  '
+repo_checkdepends:
+- ruby-bake-test
+- ruby-covered
+repo_depends:
+- ruby-rspec
+repo_makedepends: []
+update_on:
+- alpm: ruby-rspec-files
+  source: archpkg

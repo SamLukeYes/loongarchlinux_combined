@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-gettext-setup'')
+
+  '
+repo_checkdepends:
+- ruby-rake
+- ruby-rspec
+- git
+repo_depends:
+- ruby
+- ruby-fast_gettext
+- ruby-gettext
+repo_makedepends:
+- ruby-rdoc
+- ruby-bundler
+update_on:
+- alias: ruby
+- alpm: ruby-gettext-setup
+  source: archpkg

@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sn0int'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libcap
+- lua52
+- sqlite
+- libsodium
+- publicsuffix-list
+repo_makedepends:
+- python-sphinx
+update_on:
+- alpm: libseccomp
+  provides: libseccomp.so
+  source: alpm
+- alpm: sn0int
+  source: archpkg

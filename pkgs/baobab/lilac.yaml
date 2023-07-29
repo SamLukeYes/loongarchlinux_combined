@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''baobab'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- dconf
+- gsettings-desktop-schemas
+- gtk4
+- libadwaita
+- librsvg
+repo_makedepends:
+- appstream-glib
+- git
+- gobject-introspection
+- meson
+- vala
+- yelp-tools
+update_on:
+- alpm: baobab
+  source: archpkg

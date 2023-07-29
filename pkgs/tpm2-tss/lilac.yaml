@@ -1,0 +1,29 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''tpm2-tss'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- iproute2
+- swtpm
+- uthash
+repo_depends:
+- curl
+- json-c
+- openssl
+repo_makedepends:
+- cmocka
+- doxygen
+- libtpms
+update_on:
+- alpm: json-c
+  provides: libjson-c.so
+  source: alpm
+- alpm: tpm2-tss
+  source: archpkg

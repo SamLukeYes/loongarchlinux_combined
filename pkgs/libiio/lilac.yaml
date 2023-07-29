@@ -1,0 +1,42 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libiio'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- avahi
+- glibc
+- libaio
+- libserialport
+- libxml2
+- libusb
+- libiio
+- python
+repo_makedepends:
+- avahi
+- cmake
+- libaio
+- libserialport
+- libusb
+- libxml2
+- python-setuptools
+update_on:
+- alpm: avahi
+  provides: libavahi-client.so
+  source: alpm
+- alpm: avahi
+  provides: libavahi-common.so
+  source: alpm
+- alpm: libusb
+  provides: libusb-1.0.so
+  source: alpm
+- alias: python
+- alpm: libiio
+  source: archpkg

@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-raet'')
+
+  '
+repo_checkdepends:
+- python-pytest-runner
+- python-bitvector
+repo_depends:
+- python-libnacl
+- python-ioflo
+- python-six
+repo_makedepends:
+- python-setuptools-git
+update_on:
+- alpm: python-raet
+  source: archpkg

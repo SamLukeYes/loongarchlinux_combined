@@ -1,0 +1,51 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''nautilus'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- pygobject: python-gobject
+repo_depends:
+- dconf
+- gdk-pixbuf2
+- gnome-autoar
+- gnome-desktop: gnome-desktop-4
+- gstreamer: gst-plugins-base-libs
+- gvfs
+- libadwaita
+- libcloudproviders
+- libgexiv2
+- libportal: libportal-gtk4
+- tracker3
+- dconf
+- gdk-pixbuf2
+- gnome-autoar
+- gnome-desktop: gnome-desktop-4
+- gstreamer: gst-plugins-base-libs
+- gvfs
+- libadwaita
+- libcloudproviders
+- libgexiv2
+- libportal: libportal-gtk4
+- tracker3
+- gcc: gcc-libs
+- glib2
+repo_makedepends:
+- appstream-glib
+- gi-docgen
+- git
+- gobject-introspection
+- meson
+- tracker3-miners
+update_on:
+- alpm: libnautilus-extension
+  provides: libnautilus-extension.so
+  source: alpm
+- alpm: nautilus
+  source: archpkg

@@ -1,0 +1,258 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mpd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- libcdio
+- libcdio-paranoia
+- libgme
+- libmad
+- libmms
+- libmodplug
+- musepack: libmpcdec
+- libnfs
+- libshout
+- libsidplayfp
+- libsoxr
+- pcre2
+- wavpack
+- wildmidi
+- zlib
+- zziplib
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- libcdio
+- libcdio-paranoia
+- libgme
+- libmad
+- libmms
+- libmodplug
+- musepack: libmpcdec
+- libnfs
+- libshout
+- libsidplayfp
+- libsoxr
+- pcre2
+- wavpack
+- wildmidi
+- zlib
+- zziplib
+- alsa-lib
+- audiofile
+- avahi
+- bzip2
+- chromaprint
+- curl
+- dbus
+- expat
+- faad2
+- ffmpeg
+- flac
+- fluidsynth
+- fmt
+- icu
+- lame
+- libao
+- libid3tag
+- libmikmod
+- libmpdclient
+- libogg
+- libopenmpt
+- pipewire: libpipewire
+- pulseaudio: libpulse
+- libsamplerate
+- libsndfile
+- libupnp
+- liburing
+- libvorbis
+- mpg123
+- openal
+- opus
+- sqlite
+- systemd: systemd-libs
+- twolame
+- yajl
+repo_makedepends:
+- alsa-lib
+- audiofile
+- avahi
+- boost
+- bzip2
+- chromaprint
+- curl
+- dbus
+- expat
+- faad2
+- ffmpeg
+- flac
+- fluidsynth
+- fmt
+- icu
+- lame
+- libao
+- libid3tag
+- libmikmod
+- libmpdclient
+- libogg
+- libopenmpt
+- pulseaudio: libpulse
+- libsamplerate
+- libsndfile
+- libupnp
+- liburing
+- libvorbis
+- meson
+- mpg123
+- openal
+- opus
+- pipewire: libpipewire
+- python-sphinx
+- sqlite
+- systemd
+- twolame
+- yajl
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: audiofile
+  provides: libaudiofile.so
+  source: alpm
+- alpm: avahi
+  provides: libavahi-client.so
+  source: alpm
+- alpm: avahi
+  provides: libavahi-common.so
+  source: alpm
+- alpm: bzip2
+  provides: libbz2.so
+  source: alpm
+- alpm: chromaprint
+  provides: libchromaprint.so
+  source: alpm
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: expat
+  provides: libexpat.so
+  source: alpm
+- alpm: faad2
+  provides: libfaad.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavcodec.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavfilter.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavformat.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavutil.so
+  source: alpm
+- alpm: flac
+  provides: libFLAC.so
+  source: alpm
+- alpm: fluidsynth
+  provides: libfluidsynth.so
+  source: alpm
+- alpm: fmt
+  provides: libfmt.so
+  source: alpm
+- alias: icu
+- alpm: icu
+  provides: libicui18n.so
+  source: alpm
+- alpm: icu
+  provides: libicuuc.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: lame
+  provides: libmp3lame.so
+  source: alpm
+- alpm: libao
+  provides: libao.so
+  source: alpm
+- alpm: libid3tag
+  provides: libid3tag.so
+  source: alpm
+- alpm: libmikmod
+  provides: libmikmod.so
+  source: alpm
+- alpm: libmpdclient
+  provides: libmpdclient.so
+  source: alpm
+- alpm: libogg
+  provides: libogg.so
+  source: alpm
+- alpm: libopenmpt
+  provides: libopenmpt.so
+  source: alpm
+- alpm: libpipewire
+  provides: libpipewire-0.3.so
+  source: alpm
+- alpm: libao
+  provides: libpulse.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: libupnp
+  provides: libixml.so
+  source: alpm
+- alpm: libupnp
+  provides: libupnp.so
+  source: alpm
+- alpm: liburing
+  provides: liburing.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbis.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbisenc.so
+  source: alpm
+- alpm: mpg123
+  provides: libmpg123.so
+  source: alpm
+- alpm: openal
+  provides: libopenal.so
+  source: alpm
+- alpm: opus
+  provides: libopus.so
+  source: alpm
+- alpm: sqlite
+  provides: libsqlite3.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: twolame
+  provides: libtwolame.so
+  source: alpm
+- alpm: gitlab
+  provides: libyajl.so
+  source: alpm
+- alpm: mpd
+  source: archpkg

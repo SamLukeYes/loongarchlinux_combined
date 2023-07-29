@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lapce'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- expat
+- fontconfig
+- freetype2
+- gcc: gcc-libs
+- gtk3
+- libxcb
+- libxkbcommon
+repo_makedepends:
+- python
+- cmake
+update_on:
+- alpm: lapce
+  source: archpkg

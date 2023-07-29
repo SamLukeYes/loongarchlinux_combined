@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''woob'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-prettytable
+repo_depends:
+- python-lxml
+- python-cssselect
+- python-requests
+- python-dateutil
+- python-yaml
+- python-html2text
+- python-six
+- python-unidecode
+- python-pillow
+- python-babel
+- python-simplejson
+- python-pycountry
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alpm: woob
+  source: archpkg

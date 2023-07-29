@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-missingh'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-hslogger
+- haskell-network
+- haskell-network-bsd
+- haskell-old-locale
+- haskell-old-time
+- haskell-regex-compat
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hunit
+update_on:
+- alpm: haskell-hslogger
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-network-bsd
+  source: alpm
+- alpm: haskell-old-locale
+  source: alpm
+- alpm: haskell-old-time
+  source: alpm
+- alpm: haskell-regex-compat
+  source: alpm
+- alpm: haskell-missingh
+  source: archpkg

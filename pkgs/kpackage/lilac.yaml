@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kpackage'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- karchive
+- ki18n
+- kcoreaddons
+repo_makedepends:
+- extra-cmake-modules
+- qt5-tools
+- qt5-doc
+- kdoctools
+- doxygen
+update_on:
+- alpm: kpackage
+  source: archpkg

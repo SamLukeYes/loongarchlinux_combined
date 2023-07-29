@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''freedesktop-docs'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- git
+- xmlto
+- docbook-utils
+- docbook-xsl
+- docbook-xml
+- docbook-sgml
+- python-gitpython
+- discount
+update_on:
+- alpm: freedesktop-docs
+  source: archpkg

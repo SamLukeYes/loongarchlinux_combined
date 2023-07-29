@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''arc-icon-theme'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk4: gtk-update-icon-cache
+- hicolor-icon-theme
+repo_makedepends: []
+update_on:
+- alpm: arc-icon-theme
+  source: archpkg

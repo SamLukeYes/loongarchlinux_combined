@@ -1,0 +1,122 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hledger-web'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- hledger
+- haskell-hledger-lib
+- haskell-aeson
+- haskell-base64
+- haskell-blaze-html
+- haskell-blaze-markup
+- haskell-case-insensitive
+- haskell-clientsession
+- haskell-cmdargs
+- haskell-conduit
+- haskell-conduit-extra
+- haskell-data-default
+- haskell-decimal
+- haskell-extra
+- haskell-hjsmin
+- haskell-hspec
+- haskell-http-conduit
+- haskell-http-client
+- haskell-http-types
+- haskell-megaparsec
+- haskell-network
+- haskell-shakespeare
+- haskell-unix-compat
+- haskell-unordered-containers
+- haskell-utf8-string
+- haskell-wai
+- haskell-wai-cors
+- haskell-wai-extra
+- haskell-wai-handler-launch
+- haskell-warp
+- haskell-yesod
+- haskell-yesod-core
+- haskell-yesod-form
+- haskell-yesod-static
+- haskell-yesod-test
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-hledger-lib
+  source: alpm
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-base64
+  source: alpm
+- alpm: haskell-blaze-html
+  source: alpm
+- alpm: haskell-blaze-markup
+  source: alpm
+- alpm: haskell-case-insensitive
+  source: alpm
+- alpm: haskell-clientsession
+  source: alpm
+- alpm: haskell-cmdargs
+  source: alpm
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-conduit-extra
+  source: alpm
+- alpm: haskell-data-default
+  source: alpm
+- alpm: haskell-decimal
+  source: alpm
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-hjsmin
+  source: alpm
+- alpm: haskell-hspec
+  source: alpm
+- alpm: haskell-http-conduit
+  source: alpm
+- alpm: haskell-http-client
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-megaparsec
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-shakespeare
+  source: alpm
+- alpm: haskell-unix-compat
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-utf8-string
+  source: alpm
+- alpm: haskell-wai
+  source: alpm
+- alpm: haskell-wai-cors
+  source: alpm
+- alpm: haskell-wai-extra
+  source: alpm
+- alpm: haskell-wai-handler-launch
+  source: alpm
+- alpm: haskell-warp
+  source: alpm
+- alpm: haskell-yesod
+  source: alpm
+- alpm: haskell-yesod-core
+  source: alpm
+- alpm: haskell-yesod-form
+  source: alpm
+- alpm: haskell-yesod-static
+  source: alpm
+- alpm: haskell-yesod-test
+  source: alpm
+- alpm: hledger-web
+  source: archpkg

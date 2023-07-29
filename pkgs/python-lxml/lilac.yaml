@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-lxml'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-cssselect
+- python-html5lib
+- python-beautifulsoup4
+repo_depends:
+- python
+- libxslt
+repo_makedepends:
+- python-setuptools
+- python-pygments
+- python-sphinx
+- python-sphinx_rtd_theme
+- cython
+update_on:
+- alias: python
+- alpm: python-lxml
+  source: archpkg

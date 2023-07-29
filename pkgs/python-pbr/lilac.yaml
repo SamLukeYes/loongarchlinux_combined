@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pbr'')
+
+  '
+repo_checkdepends:
+- python-stestr
+- python-testscenarios
+- python-testresources
+- python-testrepository
+- python-virtualenv
+- python-wheel
+- python-sphinx
+- git
+repo_depends:
+- python-importlib-metadata
+- python-setuptools
+repo_makedepends:
+- python-build
+- python-installer
+- python-wheel
+update_on:
+- alpm: python-pbr
+  source: archpkg

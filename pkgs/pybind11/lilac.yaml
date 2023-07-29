@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pybind11'')
+
+  '
+repo_checkdepends:
+- python-numpy
+- python-scipy
+repo_depends: []
+repo_makedepends:
+- cmake
+- boost
+- catch2
+- eigen
+- python-setuptools
+- python-pytest
+update_on:
+- alpm: pybind11
+  source: archpkg

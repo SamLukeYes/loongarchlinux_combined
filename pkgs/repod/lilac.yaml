@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''repod'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-asyncio
+- python-pytest-lazy-fixture
+repo_depends:
+- pyalpm
+- python-aiofiles
+- python-email-validator
+- python-jinja
+- python-magic
+- python-orjson
+- python-pydantic
+- pyxdg: python-pyxdg
+- python-pyzstd
+- python-subprocess-tee
+- python-tomli
+repo_makedepends:
+- just
+- python-build
+- python-installer
+- python-poetry-core
+- python-setuptools
+- python-sphinx
+- python-sphinx-argparse
+- python-sphinxcontrib-programoutput
+- python-wheel
+update_on:
+- alpm: repod
+  source: archpkg

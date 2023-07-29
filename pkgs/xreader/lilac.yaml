@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xreader'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- poppler: poppler-glib
+- webkit2gtk-4.1
+- xapp
+repo_makedepends:
+- meson
+- samurai
+- intltool
+- itstool
+- gobject-introspection
+- djvulibre
+- libgxps
+- libspectre
+- texlive-bin
+update_on:
+- alpm: xreader
+  source: archpkg

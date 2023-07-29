@@ -1,0 +1,57 @@
+destsubdir: extra
+repo_checkdepends:
+- umockdev
+repo_depends:
+- libxmlb
+- efivar
+- python
+- libsmbios
+- libgusb
+- polkit
+- shared-mime-info
+- tpm2-tss
+- flashrom
+- libjcat
+- fwupd-efi
+- gcab
+- hicolor-icon-theme
+- bluez
+- gnutls
+repo_makedepends:
+- meson
+- valgrind
+- gobject-introspection
+- gi-docgen
+- python-cairo
+- noto-fonts
+- noto-fonts-cjk
+- pygobject: python-gobject
+- vala
+- bash-completion
+- python-pillow
+update_on:
+- alias: python
+- alpm: libarchive
+  provides: libarchive.so
+  source: alpm
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: libcbor
+  provides: libcbor.so
+  source: alpm
+- alpm: json-glib
+  provides: libjson-glib-1.0.so
+  source: alpm
+- alpm: libgudev
+  provides: libgudev-1.0.so
+  source: alpm
+- alpm: libmm-glib
+  provides: libmm-glib.so
+  source: alpm
+- alpm: libqmi
+  provides: libqmi-glib.so
+  source: alpm
+- alpm: protobuf-c
+  provides: libprotobuf-c.so
+  source: alpm

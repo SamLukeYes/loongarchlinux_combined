@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xorg-xdm'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- pam
+- libxaw
+- libxinerama
+- xorg-xrdb
+- xorg-sessreg
+- libxft
+- systemd
+- libxcrypt
+repo_makedepends:
+- xorg-util-macros
+- xtrans
+update_on:
+- alpm: xorg-xdm
+  source: archpkg

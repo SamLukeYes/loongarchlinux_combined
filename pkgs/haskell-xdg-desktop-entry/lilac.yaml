@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-xdg-desktop-entry'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-configfile
+- haskell-either
+- haskell-multimap
+- haskell-safe
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-configfile
+  source: alpm
+- alpm: haskell-either
+  source: alpm
+- alpm: haskell-multimap
+  source: alpm
+- alpm: haskell-safe
+  source: alpm
+- alpm: haskell-xdg-desktop-entry
+  source: archpkg

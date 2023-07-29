@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-markdown-it-py'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-regressions
+- python-pytest-benchmark
+- python-psutil
+- python-mdit_py_plugins
+- python-linkify-it-py
+repo_depends:
+- python-mdurl
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alpm: python-markdown-it-py
+  source: archpkg

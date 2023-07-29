@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-zope-security'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-btrees
+- python-nose
+- python-zope-configuration
+- python-zope-testing
+- python-zope-testrunner
+repo_depends:
+- python-setuptools
+- python-zope-component
+- python-zope-i18nmessageid
+- python-zope-interface
+- python-zope-location
+- python-zope-proxy
+- python-zope-schema
+repo_makedepends:
+- git
+update_on:
+- alpm: python-zope-security
+  source: archpkg

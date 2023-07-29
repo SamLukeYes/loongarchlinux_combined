@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-werkzeug'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-timeout
+- python-pytest-xprocess
+- python-requests
+- python-ephemeral-port-reserve
+- python-greenlet
+- python-watchdog
+- python-cryptography
+repo_depends:
+- python-markupsafe
+repo_makedepends:
+- python-setuptools
+- python-build
+- python-installer
+- python-wheel
+update_on:
+- alpm: python-werkzeug
+  source: archpkg

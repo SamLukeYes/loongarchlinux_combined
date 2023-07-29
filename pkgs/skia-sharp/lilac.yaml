@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''skia-sharp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- expat
+- fontconfig
+- libjpeg-turbo
+- libheif
+- libpng
+- libwebp
+- zlib
+repo_makedepends:
+- clang
+- git
+- python
+update_on:
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: skia-sharp
+  source: archpkg

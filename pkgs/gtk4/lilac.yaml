@@ -1,0 +1,89 @@
+destsubdir: extra
+repo_checkdepends:
+- weston
+repo_depends:
+- adwaita-icon-theme
+- cairo
+- cantarell-fonts
+- dconf
+- desktop-file-utils
+- fontconfig
+- fribidi
+- gdk-pixbuf2
+- glib2
+- graphene
+- gstreamer: gst-plugins-bad-libs
+- harfbuzz
+- iso-codes
+- libcloudproviders
+- colord: libcolord
+- cups: libcups
+- libepoxy
+- libpng
+- librsvg
+- libtiff
+- libx11
+- libxcursor
+- libxdamage
+- libxext
+- libxfixes
+- libxi
+- libxinerama
+- libxkbcommon
+- libxrandr
+- libxrender
+- pango
+- shared-mime-info
+- tracker3
+- wayland
+- adwaita-icon-theme
+- cairo
+- cantarell-fonts
+- dconf
+- desktop-file-utils
+- fontconfig
+- fribidi
+- gdk-pixbuf2
+- glib2
+- graphene
+- gstreamer: gst-plugins-bad-libs
+- harfbuzz
+- iso-codes
+- libcloudproviders
+- colord: libcolord
+- cups: libcups
+- libepoxy
+- libpng
+- librsvg
+- libtiff
+- libx11
+- libxcursor
+- libxdamage
+- libxext
+- libxfixes
+- libxi
+- libxinerama
+- libxkbcommon
+- libxrandr
+- libxrender
+- pango
+- shared-mime-info
+- tracker3
+- wayland
+- gtk4: gtk-update-icon-cache
+- gtk4
+- gdk-pixbuf2
+- librsvg
+- hicolor-icon-theme
+repo_makedepends:
+- docbook-xsl
+- gi-docgen
+- git
+- gobject-introspection
+- meson
+- python-docutils
+- pygobject: python-gobject
+- sassc
+- shaderc
+- wayland-protocols
+update_on: []

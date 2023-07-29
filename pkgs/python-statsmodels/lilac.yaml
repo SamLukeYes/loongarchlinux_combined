@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-statsmodels'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-xdist
+- python-joblib
+- python-matplotlib
+repo_depends:
+- python-numpy
+- python-scipy
+- python-pandas
+- python-patsy
+repo_makedepends:
+- python-setuptools-scm
+- cython
+- git
+update_on:
+- alpm: python-statsmodels
+  source: archpkg

@@ -1,0 +1,62 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-http-conduit'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-attoparsec
+- haskell-conduit
+- haskell-conduit-extra
+- haskell-http-client
+- haskell-http-client-tls
+- haskell-http-types
+- haskell-resourcet
+- haskell-unliftio-core
+repo_makedepends:
+- ghc
+- haskell-blaze-builder
+- haskell-case-insensitive
+- haskell-cookie
+- haskell-data-default-class
+- haskell-hunit
+- haskell-hspec
+- haskell-lifted-base
+- haskell-network
+- haskell-streaming-commons
+- haskell-temporary
+- haskell-unliftio
+- haskell-utf8-string
+- haskell-wai
+- haskell-wai-conduit
+- haskell-warp
+- haskell-warp-tls
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-conduit-extra
+  source: alpm
+- alpm: haskell-http-client
+  source: alpm
+- alpm: haskell-http-client-tls
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-resourcet
+  source: alpm
+- alpm: haskell-unliftio-core
+  source: alpm
+- alpm: haskell-http-conduit
+  source: archpkg

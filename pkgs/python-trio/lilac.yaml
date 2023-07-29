@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-trio'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-async_generator
+- python-attrs
+- python-exceptiongroup
+- python-idna
+- python-outcome
+- python-sniffio
+- python-sortedcontainers
+repo_makedepends:
+- git
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-trio
+  source: archpkg

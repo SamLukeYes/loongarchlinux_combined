@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''audaspace'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ffmpeg
+- fftw
+- gcc: gcc-libs
+- glibc
+- pulseaudio: libpulse
+- libsndfile
+- openal
+- sdl2
+repo_makedepends:
+- cmake
+- python
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+- python-numpy
+update_on:
+- alpm: audaspace
+  source: archpkg

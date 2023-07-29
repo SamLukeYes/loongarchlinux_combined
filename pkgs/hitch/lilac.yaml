@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hitch'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- lsof
+repo_depends:
+- libev
+- openssl
+repo_makedepends:
+- python-docutils
+update_on:
+- alpm: hitch
+  source: archpkg

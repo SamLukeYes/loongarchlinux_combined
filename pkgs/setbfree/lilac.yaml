@@ -1,0 +1,65 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''setbfree'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- lv2lint
+repo_depends:
+- setbfree: setbfree-lv2
+- setbfree: setbfree-standalone
+- cairo
+- ftgl
+- glibc
+- glib2
+- libglvnd
+- libx11
+- pango
+- setbfree: setbfree-common
+- cairo
+- ftgl
+- glib2
+- glibc
+- libglvnd
+- liblo
+- libx11
+- pango
+- setbfree: setbfree-common
+repo_makedepends:
+- cairo
+- ftgl
+- gendesk
+- glib2
+- libglvnd
+- liblo
+- libx11
+- lv2
+- pango
+- ttf-dejavu
+update_on:
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: pango
+  provides: libpango-1.0.so
+  source: alpm
+- alpm: pango
+  provides: libpangocairo-1.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: pango
+  provides: libpango-1.0.so
+  source: alpm
+- alpm: pango
+  provides: libpangocairo-1.0.so
+  source: alpm
+- alpm: setbfree
+  source: archpkg

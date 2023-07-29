@@ -1,0 +1,46 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libplacebo'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- vulkan-icd-loader
+- glslang
+- lcms2
+- shaderc
+- glibc
+- gcc: gcc-libs
+- libunwind
+repo_makedepends:
+- meson
+- ninja
+- vulkan-headers
+- glad
+- nuklear
+- python
+- python-setuptools
+- python-mako
+- python-markupsafe
+- python-jinja
+update_on:
+- alpm: emby-theater
+  provides: libvulkan.so
+  source: alpm
+- alpm: glslang
+  source: alpm
+  strip_release: true
+- alpm: lcms2
+  provides: liblcms2.so
+  source: alpm
+- alpm: shaderc
+  provides: libshaderc_shared.so
+  source: alpm
+- alpm: libplacebo
+  source: archpkg

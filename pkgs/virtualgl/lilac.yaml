@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''virtualgl'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libxv
+- glu
+- libjpeg-turbo
+- xcb-util-keysyms
+- ocl-icd
+- xorg-xhost
+repo_makedepends:
+- cmake
+- mesa
+- libxtst
+- opencl-headers
+- ninja
+update_on:
+- alpm: virtualgl
+  source: archpkg

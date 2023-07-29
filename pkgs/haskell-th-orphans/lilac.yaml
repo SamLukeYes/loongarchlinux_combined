@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-th-orphans'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-th-compat
+- haskell-th-lift
+- haskell-th-reify-many
+repo_makedepends:
+- ghc
+- haskell-hspec
+- haskell-hspec-discover
+update_on:
+- alpm: haskell-th-compat
+  source: alpm
+- alpm: haskell-th-lift
+  source: alpm
+- alpm: haskell-th-reify-many
+  source: alpm
+- alpm: haskell-th-orphans
+  source: archpkg

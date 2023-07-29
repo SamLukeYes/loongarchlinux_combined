@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-fints'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-mock
+repo_depends:
+- python
+- python-mt-940
+- python-bleach
+- python-sepaxml
+- python-requests
+repo_makedepends:
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-fints
+  source: archpkg

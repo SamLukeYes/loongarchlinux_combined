@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kea-devel-docs'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- botan
+- boost
+- log4cplus
+- libxslt
+- docbook-xsl
+- elinks
+- doxygen
+- graphviz
+update_on:
+- alpm: kea-devel-docs
+  source: archpkg

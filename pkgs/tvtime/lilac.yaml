@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''tvtime'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- alsa-lib
+- freetype2
+- hicolor-icon-theme
+- libxinerama
+- libxml2
+- libxss
+- libxv
+- libxxf86vm
+repo_makedepends:
+- imagemagick
+update_on:
+- alpm: tvtime
+  source: archpkg

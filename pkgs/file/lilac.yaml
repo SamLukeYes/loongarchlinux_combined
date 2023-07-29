@@ -1,0 +1,17 @@
+destsubdir: core
+repo_checkdepends: []
+repo_depends:
+- glibc
+- zlib
+- xz
+- bzip2
+- libseccomp
+- zstd
+repo_makedepends: []
+update_on:
+- alpm: libseccomp
+  provides: libseccomp.so
+  source: alpm
+- alpm: zstd
+  provides: libzstd.so
+  source: alpm

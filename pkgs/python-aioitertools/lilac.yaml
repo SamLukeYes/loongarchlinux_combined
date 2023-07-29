@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-aioitertools'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+repo_makedepends:
+- python-flit-core
+- python-build
+- python-installer
+update_on:
+- alias: python
+- alpm: python-aioitertools
+  source: archpkg

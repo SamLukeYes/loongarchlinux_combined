@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''varnish'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc
+- libnsl
+- pcre2
+repo_makedepends:
+- python-docutils
+- python-sphinx
+- git
+update_on:
+- alpm: varnish
+  source: archpkg

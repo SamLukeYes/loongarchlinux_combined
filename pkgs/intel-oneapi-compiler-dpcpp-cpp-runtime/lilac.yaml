@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''intel-oneapi-compiler-dpcpp-cpp-runtime'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- intel-oneapi-compiler-shared-runtime
+- intel-oneapi-compiler-dpcpp-cpp-runtime: intel-oneapi-compiler-dpcpp-cpp-runtime-libs
+- intel-oneapi-common
+- intel-oneapi-compiler-shared-runtime: intel-oneapi-compiler-shared-runtime-libs
+- intel-oneapi-tbb
+- intel-oneapi-common
+repo_makedepends: []
+update_on:
+- alpm: intel-oneapi-compiler-dpcpp-cpp-runtime
+  source: archpkg

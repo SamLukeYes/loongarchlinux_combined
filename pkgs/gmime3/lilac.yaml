@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gmime3'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glib2
+- gpgme
+- libidn2
+- zlib
+repo_makedepends:
+- docbook-utils
+- git
+- gobject-introspection
+- gtk-doc
+- vala
+update_on:
+- alpm: gmime3
+  source: archpkg

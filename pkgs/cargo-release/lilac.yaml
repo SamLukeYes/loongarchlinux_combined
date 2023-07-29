@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cargo-release'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- zlib
+repo_makedepends: []
+update_on:
+- alpm: julia
+  provides: libgit2.so
+  source: alpm
+- alpm: libssh2
+  provides: libssh2.so
+  source: alpm
+- alias: libssl
+- alpm: cargo-release
+  source: archpkg

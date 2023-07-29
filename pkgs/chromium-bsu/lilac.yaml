@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''chromium-bsu'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- freeglut
+- glu
+- sdl_image
+- openal
+- freealut
+- ftgl
+- fontconfig
+repo_makedepends: []
+update_on:
+- alpm: chromium-bsu
+  source: archpkg

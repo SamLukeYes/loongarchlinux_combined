@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sox'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- time
+repo_depends:
+- file
+- gcc: gcc-libs
+- gsm
+- libid3tag
+- libpng
+- zlib
+repo_makedepends:
+- alsa-lib
+- autoconf-archive
+- flac
+- git
+- lame
+- libao
+- libmad
+- pulseaudio: libpulse
+- libsndfile
+- libvorbis
+- opencore-amr
+- opusfile
+- twolame
+- wavpack
+update_on:
+- alpm: sox
+  source: archpkg

@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gstreamermm'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibmm
+- gstreamer: gst-plugins-base
+repo_makedepends:
+- mm-common
+- glibmm: glibmm-docs
+- cairomm
+- cairomm: cairomm-docs
+- pangomm
+- pangomm: pangomm-docs
+update_on:
+- alpm: gstreamermm
+  source: archpkg

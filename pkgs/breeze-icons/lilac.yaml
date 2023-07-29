@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''breeze-icons'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- extra-cmake-modules
+- qt5-base
+- python-lxml
+update_on:
+- alpm: breeze-icons
+  source: archpkg

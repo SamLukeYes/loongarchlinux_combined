@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libtiff'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libjpeg-turbo
+- zlib
+- xz
+- zstd
+repo_makedepends:
+- freeglut
+- glu
+- mesa
+- jbigkit
+update_on:
+- alpm: darktable
+  provides: libjpeg.so
+  source: alpm
+- alpm: libtiff
+  source: archpkg

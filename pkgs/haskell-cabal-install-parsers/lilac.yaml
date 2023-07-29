@@ -1,0 +1,47 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cabal-install-parsers'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- cabal-install
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-base16-bytestring
+- haskell-binary-instances
+- haskell-cryptohash-sha256
+- haskell-lukko
+- haskell-network-uri
+- haskell-tar
+repo_makedepends:
+- ghc
+- uusi
+- haskell-ansi-terminal
+- haskell-tasty
+- haskell-tasty-golden
+- haskell-tasty-hunit
+- haskell-tree-diff
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-base16-bytestring
+  source: alpm
+- alpm: haskell-binary-instances
+  source: alpm
+- alpm: haskell-cryptohash-sha256
+  source: alpm
+- alpm: haskell-lukko
+  source: alpm
+- alpm: haskell-network-uri
+  source: alpm
+- alpm: haskell-tar
+  source: alpm
+- alpm: haskell-cabal-install-parsers
+  source: archpkg

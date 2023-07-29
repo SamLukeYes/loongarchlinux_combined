@@ -1,0 +1,14 @@
+destsubdir: extra
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- mtdev
+- systemd
+- libevdev
+- libwacom
+repo_makedepends:
+- gtk4
+- meson
+- wayland-protocols
+- check
+update_on: []

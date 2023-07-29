@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''clusterssh'')
+
+  '
+repo_checkdepends:
+- perl-cpan-changes
+- perl-file-slurp
+- perl-file-which
+- perl-readonly
+- perl-test-differences
+- perl-test-distmanifest
+- perl-test-perltidy
+- perl-test-pod
+- perl-test-pod-coverage
+- perl-test-pod-coverage
+- perl-test-trap
+- perl-sort-naturally
+repo_depends:
+- xterm
+- perl-exception-class
+- perl-try-tiny
+- perl-tk
+- perl-x11-protocol-other
+repo_makedepends:
+- perl-module-build
+update_on:
+- alpm: clusterssh
+  source: archpkg

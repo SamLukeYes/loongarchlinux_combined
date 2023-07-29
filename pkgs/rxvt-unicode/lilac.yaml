@@ -1,0 +1,35 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rxvt-unicode'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- rxvt-unicode: rxvt-unicode-terminfo
+- libxft
+- perl
+- startup-notification
+- libnsl
+- libptytty
+- libxext
+- libxmu
+repo_makedepends:
+- libxft
+- libxt
+- libxext
+- libxmu
+- perl
+- startup-notification
+- libnsl
+- libptytty
+- signify
+update_on:
+- alias: perl
+- alpm: rxvt-unicode
+  source: archpkg

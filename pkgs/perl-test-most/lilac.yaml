@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-test-most'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl
+- perl-exception-class
+- perl-test-deep
+- perl-test-differences
+- perl-test-exception
+- perl-test-warn
+repo_makedepends: []
+update_on:
+- alias: perl
+- alpm: perl-test-most
+  source: archpkg

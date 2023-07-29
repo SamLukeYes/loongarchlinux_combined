@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-html-tagfilter'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl-uri
+- perl-html-parser
+repo_makedepends:
+- perl-uri
+- perl-html-parser
+update_on:
+- alpm: perl-html-tagfilter
+  source: archpkg

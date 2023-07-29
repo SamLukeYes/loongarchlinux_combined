@@ -1,0 +1,45 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''marsyas'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- lame
+- libmad
+- gcc: gcc-libs
+- glibc
+- lame
+- libmad
+- alsa-lib
+- libvorbis
+repo_makedepends:
+- alsa-lib
+- cmake
+- doxygen
+- extra-cmake-modules
+- libvorbis
+- pd
+- qt5-base
+- qt5-declarative
+- vamp-plugin-sdk
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbisfile.so
+  source: alpm
+- alpm: marsyas
+  source: archpkg

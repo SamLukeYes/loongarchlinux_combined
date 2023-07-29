@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cinnamon-control-center'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cinnamon-settings-daemon
+- cinnamon-menus
+- colord
+- libgnomekbd
+- modemmanager: libmm-glib
+- network-manager-applet: nm-connection-editor
+repo_makedepends:
+- meson
+- samurai
+- gnome-online-accounts
+update_on:
+- alpm: cinnamon-control-center
+  source: archpkg

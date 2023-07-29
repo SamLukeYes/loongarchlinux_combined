@@ -1,0 +1,19 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- perl
+- marisa
+- python
+- marisa
+- ruby
+- marisa
+repo_makedepends:
+- python
+- ruby
+- perl
+- swig
+update_on:
+- alias: perl
+- alias: python
+- alias: ruby

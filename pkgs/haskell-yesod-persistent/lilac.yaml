@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-yesod-persistent'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-blaze-builder
+- haskell-conduit
+- haskell-persistent
+- haskell-resource-pool
+- haskell-resourcet
+- haskell-yesod-core
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hspec
+- haskell-wai-extra
+- haskell-persistent-sqlite
+update_on:
+- alpm: haskell-blaze-builder
+  source: alpm
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-persistent
+  source: alpm
+- alpm: haskell-resource-pool
+  source: alpm
+- alpm: haskell-resourcet
+  source: alpm
+- alpm: haskell-yesod-core
+  source: alpm
+- alpm: haskell-yesod-persistent
+  source: archpkg

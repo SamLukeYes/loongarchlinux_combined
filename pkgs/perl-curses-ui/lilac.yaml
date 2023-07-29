@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-curses-ui'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ncurses
+- perl-curses
+- perl-term-readkey
+- perl-test-pod
+repo_makedepends:
+- perl-curses
+- perl-term-readkey
+- perl-test-pod
+update_on:
+- alpm: perl-curses-ui
+  source: archpkg

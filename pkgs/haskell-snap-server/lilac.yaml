@@ -1,0 +1,68 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-snap-server'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- haskell-base16-bytestring
+- haskell-monad-control
+- haskell-random
+- haskell-threads
+- haskell-hunit
+- haskell-quickcheck
+- haskell-http-streams
+- haskell-http-common
+- haskell-parallel
+- haskell-test-framework
+- haskell-test-framework-hunit
+- haskell-test-framework-quickcheck2
+repo_depends:
+- ghc: ghc-libs
+- haskell-attoparsec
+- haskell-blaze-builder
+- haskell-case-insensitive
+- haskell-clock
+- haskell-io-streams
+- haskell-io-streams-haproxy
+- haskell-lifted-base
+- haskell-network
+- haskell-old-locale
+- haskell-snap-core
+- haskell-unix-compat
+- haskell-vector
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-blaze-builder
+  source: alpm
+- alpm: haskell-case-insensitive
+  source: alpm
+- alpm: haskell-clock
+  source: alpm
+- alpm: haskell-io-streams
+  source: alpm
+- alpm: haskell-io-streams-haproxy
+  source: alpm
+- alpm: haskell-lifted-base
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-old-locale
+  source: alpm
+- alpm: haskell-snap-core
+  source: alpm
+- alpm: haskell-unix-compat
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-snap-server
+  source: archpkg

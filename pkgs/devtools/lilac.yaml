@@ -1,0 +1,22 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- arch-install-scripts
+- bash
+- binutils
+- coreutils
+- diffutils
+- findutils
+- grep
+- jq
+- openssh
+- parallel
+- rsync
+- sed
+- util-linux
+- git
+- mercurial
+- subversion
+repo_makedepends:
+- asciidoc
+update_on: []

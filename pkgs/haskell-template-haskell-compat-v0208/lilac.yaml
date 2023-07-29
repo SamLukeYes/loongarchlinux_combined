@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-template-haskell-compat-v0208'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-template-haskell-compat-v0208
+  source: archpkg

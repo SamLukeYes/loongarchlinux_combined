@@ -1,0 +1,94 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lambdahack'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-quickcheck
+- haskell-ansi-terminal
+- haskell-assert-failure
+- haskell-async
+- haskell-base-compat
+- haskell-enummapset
+- haskell-file-embed
+- haskell-hashable
+- haskell-hsini
+- haskell-keys
+- haskell-miniutter
+- haskell-open-browser
+- haskell-optparse-applicative
+- haskell-pretty-show
+- haskell-primitive
+- haskell-sdl2
+- haskell-sdl2-ttf
+- haskell-splitmix
+- haskell-th-lift-instances
+- haskell-unordered-containers
+- haskell-vector
+- haskell-vector-binary-instances
+- haskell-witch
+- haskell-zlib
+repo_makedepends:
+- ghc
+- haskell-tasty
+- haskell-tasty-hunit
+- haskell-tasty-quickcheck
+update_on:
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-ansi-terminal
+  source: alpm
+- alpm: haskell-assert-failure
+  source: alpm
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-base-compat
+  source: alpm
+- alpm: haskell-enummapset
+  source: alpm
+- alpm: haskell-file-embed
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-hsini
+  source: alpm
+- alpm: haskell-keys
+  source: alpm
+- alpm: haskell-miniutter
+  source: alpm
+- alpm: haskell-open-browser
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-pretty-show
+  source: alpm
+- alpm: haskell-primitive
+  source: alpm
+- alpm: haskell-sdl2
+  source: alpm
+- alpm: haskell-sdl2-ttf
+  source: alpm
+- alpm: haskell-splitmix
+  source: alpm
+- alpm: haskell-th-lift-instances
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-vector-binary-instances
+  source: alpm
+- alpm: haskell-witch
+  source: alpm
+- alpm: haskell-zlib
+  source: alpm
+- alpm: haskell-lambdahack
+  source: archpkg

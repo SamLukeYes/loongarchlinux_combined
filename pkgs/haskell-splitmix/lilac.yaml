@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-splitmix'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- testu01
+- haskell-async
+- haskell-base-compat
+- haskell-base-compat-batteries
+- haskell-hunit
+- haskell-math-functions
+- haskell-test-framework
+- haskell-test-framework-hunit
+- haskell-tf-random
+- haskell-vector
+repo_depends:
+- ghc: ghc-libs
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-splitmix
+  source: archpkg

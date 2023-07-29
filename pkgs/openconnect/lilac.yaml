@@ -1,0 +1,66 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''openconnect'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-flask
+repo_depends:
+- libxml2
+- gnutls
+- libproxy
+- vpnc
+- krb5
+- lz4
+- pcsclite
+- stoken
+- tpm2-tss
+- oath-toolkit
+- libproxy
+- p11-kit: libp11-kit
+- xdg-utils
+repo_makedepends:
+- intltool
+- python
+update_on:
+- alpm: stoken
+  provides: libstoken.so
+  source: alpm
+- alpm: tpm2-tss
+  provides: libtss2-esys.so
+  source: alpm
+- alpm: tpm2-tss
+  provides: libtss2-mu.so
+  source: alpm
+- alpm: tpm2-tss
+  provides: libtss2-tctildr.so
+  source: alpm
+- alpm: libxml2
+  provides: libxml2.so
+  source: alpm
+- alpm: libproxy
+  provides: libproxy.so
+  source: alpm
+- alpm: nettle
+  provides: libhogweed.so
+  source: alpm
+- alpm: libp11-kit
+  provides: libp11-kit.so
+  source: alpm
+- alpm: oath-toolkit
+  provides: libpskc.so
+  source: alpm
+- alpm: krb5
+  provides: libgssapi_krb5.so
+  source: alpm
+- alpm: pcsclite
+  provides: libpcsclite.so
+  source: alpm
+- alpm: openconnect
+  source: archpkg

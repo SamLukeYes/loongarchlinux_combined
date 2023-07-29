@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pipx'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-userpath
+- python-argcomplete
+- python-packaging
+repo_makedepends:
+- python-build
+- python-installer
+- python-hatchling
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-pipx
+  source: archpkg

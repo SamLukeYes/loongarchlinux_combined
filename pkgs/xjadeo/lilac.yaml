@@ -1,0 +1,78 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xjadeo'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- imlib2
+- libx11
+- libxext
+- libxpm
+- libxv
+- glibc
+- imlib2
+- libx11
+- libxext
+- libxpm
+- libxv
+- alsa-lib
+- ffmpeg
+- freetype2
+- libglvnd
+- liblo
+- libltc
+- portmidi
+repo_makedepends:
+- alsa-lib
+- ffmpeg
+- gendesk
+- git
+- glu
+- libglvnd
+- liblo
+- libltc
+- portmidi
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavcodec.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavformat.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavutil.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libswscale.so
+  source: alpm
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: cuda-tools
+  provides: libGL.so
+  source: alpm
+- alpm: liblo
+  provides: liblo.so
+  source: alpm
+- alpm: libltc
+  provides: libltc.so
+  source: alpm
+- alpm: portmidi
+  provides: libportmidi.so
+  source: alpm
+- alpm: xjadeo
+  source: archpkg

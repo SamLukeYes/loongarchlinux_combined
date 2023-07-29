@@ -1,0 +1,119 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''surge-xt'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- surge-xt: surge-xt-common
+- surge-xt: surge-xt-standalone
+- surge-xt: surge-xt-vst3
+- surge-xt: surge-xt-clap
+- surge-xt: surge-xt-lv2
+- surge-xt: surge-xt-common
+- hicolor-icon-theme
+- glibc
+- gcc: gcc-libs
+- cairo
+- fontconfig
+- freetype2
+- libx11
+- libxcb
+- libxkbcommon: libxkbcommon-x11
+- xcb-util
+- xcb-util-cursor
+- xcb-util-image
+- xcb-util-keysyms
+- xcb-util-renderutil
+- xdg-utils
+- fmt
+- libsamplerate
+- surge-xt: surge-xt-common
+- glibc
+- gcc: gcc-libs
+- cairo
+- fontconfig
+- freetype2
+- libx11
+- libxcb
+- libxkbcommon: libxkbcommon-x11
+- xcb-util
+- xcb-util-cursor
+- xcb-util-image
+- xcb-util-keysyms
+- xcb-util-renderutil
+- xdg-utils
+- fmt
+- libsamplerate
+- surge-xt: surge-xt-common
+- glibc
+- gcc: gcc-libs
+- cairo
+- fontconfig
+- freetype2
+- libx11
+- libxcb
+- libxkbcommon: libxkbcommon-x11
+- xcb-util
+- xcb-util-cursor
+- xcb-util-image
+- xcb-util-keysyms
+- xcb-util-renderutil
+- xdg-utils
+- fmt
+- libsamplerate
+- surge-xt: surge-xt-common
+- glibc
+- gcc: gcc-libs
+- cairo
+- fontconfig
+- freetype2
+- libx11
+- libxcb
+- libxkbcommon: libxkbcommon-x11
+- xcb-util
+- xcb-util-cursor
+- xcb-util-image
+- xcb-util-keysyms
+- xcb-util-renderutil
+- xdg-utils
+- fmt
+- libsamplerate
+repo_makedepends:
+- glibc
+- gcc: gcc-libs
+- cairo
+- fontconfig
+- freetype2
+- libx11
+- libxcb
+- libxkbcommon: libxkbcommon-x11
+- xcb-util
+- xcb-util-cursor
+- xcb-util-image
+- xcb-util-keysyms
+- xcb-util-renderutil
+- xdg-utils
+- fmt
+- libsamplerate
+- git
+- cmake
+- libsndfile
+- python
+- libxrandr
+- libxinerama
+- libxcursor
+- alsa-lib
+- webkit2gtk
+- ripgrep
+- lv2
+- juce
+update_on:
+- alpm: surge-xt
+  source: archpkg

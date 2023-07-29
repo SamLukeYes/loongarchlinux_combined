@@ -1,0 +1,94 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''uwsgi'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- jansson
+- libxml2
+- openssl
+- pcre
+- zlib
+- glibc
+- ruby
+- uwsgi
+- glibc
+- perl
+- uwsgi
+- glibc
+- uwsgi
+- glibc
+- python
+- python-gevent
+- python-greenlet
+- uwsgi
+- glibc
+- pypy
+- uwsgi
+- glibc
+- php: php-embed
+- uwsgi
+- glibc
+- php-legacy: php-legacy-embed
+- uwsgi
+- glibc
+- lua51
+- uwsgi
+- glibc
+- mono
+- uwsgi
+- glibc
+- libxml2
+- uwsgi
+- glibc
+- uwsgi
+- uwsgi
+repo_makedepends:
+- jansson
+- libxcrypt
+- libxml2
+- lua51
+- mono
+- openssl
+- pam
+- pcre
+- perl
+- php: php-embed
+- php-legacy: php-legacy-embed
+- pypy
+- python
+- python-gevent
+- python-greenlet
+- ruby
+- systemd
+- util-linux
+- zlib
+update_on:
+- alpm: libcap
+  provides: libcap.so
+  source: alpm
+- alpm: libxcrypt
+  provides: libcrypt.so
+  source: alpm
+- alpm: pam
+  provides: libpam.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: util-linux-libs
+  provides: libuuid.so
+  source: alpm
+- alias: ruby
+- alias: perl
+- alias: python
+- alpm: uwsgi
+  source: archpkg

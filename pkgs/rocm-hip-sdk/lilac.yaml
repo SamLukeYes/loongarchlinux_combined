@@ -1,0 +1,72 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rocm-hip-sdk'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- rocm-core
+- rocm-hip-sdk: rocm-hip-libraries
+- rocm-llvm
+- rocm-hip-sdk: rocm-hip-runtime
+- hipblas
+- hipcub
+- hipfft
+- hipsparse
+- hipsolver
+- miopen-hip
+- rccl
+- rocalution
+- rocblas
+- rocfft
+- rocprim
+- rocrand
+- rocsolver
+- rocsparse
+- rocthrust
+- rocm-core
+- rocm-hip-sdk: rocm-hip-runtime
+- hipblas
+- hipfft
+- hipsparse
+- hipsolver
+- rccl
+- rocalution
+- rocblas
+- rocfft
+- rocrand
+- rocsolver
+- rocsparse
+- rocm-core
+- hsa-rocr
+- rocm-opencl-runtime
+- hsakmt-roct
+- rocm-core
+- rocm-hip-sdk: rocm-language-runtime
+- rocminfo
+- hip-runtime-amd
+- rocm-llvm
+- rocm-cmake
+- rocm-core
+- hsakmt-roct
+- hsa-rocr
+- rocm-device-libs
+- comgr
+- rocm-core
+- rocm-hip-sdk
+- rocm-hip-sdk: rocm-ml-libraries
+- miopen-hip
+- rocm-core
+- rocm-hip-sdk: rocm-hip-libraries
+- rocm-llvm
+- miopen-hip
+repo_makedepends: []
+update_on:
+- alpm: rocm-hip-sdk
+  source: archpkg

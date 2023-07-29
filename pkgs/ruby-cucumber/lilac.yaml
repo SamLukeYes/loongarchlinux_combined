@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-cucumber'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby-builder
+- ruby-cucumber-ci-environment
+- ruby-cucumber-core
+- ruby-cucumber-cucumber-expressions
+- ruby-cucumber-gherkin
+- ruby-cucumber-html-formatter
+- ruby-cucumber-messages
+- ruby-diff-lcs
+- ruby-mime-types
+- ruby-multi_test
+- ruby-sys-uname
+repo_makedepends:
+- ruby-cucumber-compatibility-kit
+- ruby-nokogiri
+- ruby-pry
+- ruby-rake
+- ruby-rspec
+- ruby-simplecov
+- ruby-syntax
+- ruby-test-unit
+- ruby-webrick
+- ruby-octokit
+- ruby-rack-test
+- ruby-sinatra
+update_on:
+- alpm: ruby-cucumber
+  source: archpkg

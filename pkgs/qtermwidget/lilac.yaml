@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qtermwidget'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-base
+repo_makedepends:
+- lxqt-build-tools
+- pyqt5: python-pyqt5
+- pyqt-builder
+- sip
+- python-installer
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qtermwidget
+  source: archpkg

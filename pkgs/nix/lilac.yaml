@@ -1,0 +1,58 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''nix'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- gcc: gcc-libs
+- aws-sdk-cpp
+- aws-crt-cpp
+- boost: boost-libs
+- brotli
+- curl
+- editline
+- gc
+- libarchive
+- libcpuid
+- lowdown
+- libseccomp
+- libsodium
+- nix-busybox
+- openssl
+- sqlite
+repo_makedepends:
+- aws-sdk-cpp
+- aws-crt-cpp
+- autoconf-archive
+- boost
+- brotli
+- bzip2
+- curl
+- editline
+- gc
+- git
+- graphviz
+- gtest
+- jq
+- libcpuid
+- libseccomp
+- libsodium
+- lowdown
+- mdbook
+- mdbook-linkcheck
+- nix-busybox
+- nlohmann-json
+- openssl
+- rapidcheck
+- sqlite
+update_on:
+- alpm: nix
+  source: archpkg

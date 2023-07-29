@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gutenprint'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cups
+- cups-filters
+repo_makedepends:
+- gimp
+- gtk2
+- cups
+- ghostscript
+- dialog
+- doxygen
+- docbook-utils
+- texi2html
+- texlive-bin
+update_on:
+- alpm: gutenprint
+  source: archpkg

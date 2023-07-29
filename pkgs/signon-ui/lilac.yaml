@@ -1,0 +1,9 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- libaccounts-qt
+- signond
+- libnotify
+repo_makedepends:
+- qt5-declarative
+update_on: []

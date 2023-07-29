@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-protocol-http2'')
+
+  '
+repo_checkdepends:
+- ruby-covered
+- ruby-sus
+- ruby-bake-modernize
+- ruby-bake-test
+- ruby-bake-test-external
+repo_depends:
+- ruby-protocol-hpack
+- ruby-protocol-http
+repo_makedepends:
+- git
+update_on:
+- alpm: ruby-protocol-http2
+  source: archpkg

@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-sass'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- ruby-sass-listen
+- ruby-yard
+- ruby-maruku
+- ruby-rdoc
+repo_makedepends: []
+update_on:
+- alias: ruby
+- alpm: ruby-sass
+  source: archpkg

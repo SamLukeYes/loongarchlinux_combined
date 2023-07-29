@@ -1,0 +1,47 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''zabbix'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- net-snmp
+- curl
+- libxml2
+- unixodbc
+- openldap: libldap
+- libevent
+- pcre2
+- curl
+- pcre2
+- zabbix: zabbix-agent
+- net-snmp
+- curl
+- libxml2
+- sqlite
+- unixodbc
+- openldap: libldap
+- pcre2
+- libevent
+- zabbix: zabbix-server
+- php
+- php: php-gd
+repo_makedepends:
+- postgresql: postgresql-libs
+- libxml2
+- unixodbc
+- net-snmp
+- mariadb: mariadb-libs
+- openldap: libldap
+- libevent
+- go
+- pcre2
+update_on:
+- alpm: zabbix
+  source: archpkg

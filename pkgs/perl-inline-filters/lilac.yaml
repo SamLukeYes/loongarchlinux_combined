@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-inline-filters'')
+
+  '
+repo_checkdepends:
+- perl-test-pod
+repo_depends:
+- perl-inline
+- perl-inline-c
+repo_makedepends: []
+update_on:
+- alpm: perl-inline-filters
+  source: archpkg

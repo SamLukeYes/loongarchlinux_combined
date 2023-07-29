@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kwin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kscreenlocker
+- xcb-util-cursor
+- plasma-framework
+- kcmutils
+- breeze
+- libqaccessibilityclient
+- lcms2
+- libxcvt
+repo_makedepends:
+- extra-cmake-modules
+- qt5-tools
+- kdoctools
+- krunner
+- wayland-protocols
+- plasma-wayland-protocols
+- python
+update_on:
+- alpm: kwin
+  source: archpkg

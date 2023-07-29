@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-crass'')
+
+  '
+repo_checkdepends:
+- ruby-minitest
+repo_depends:
+- ruby
+repo_makedepends:
+- ruby-bundler
+- ruby-rake
+update_on:
+- alias: ruby
+- alpm: ruby-crass
+  source: archpkg

@@ -1,0 +1,48 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mephisto.lv2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- lv2lint
+repo_depends:
+- glibc
+- libglvnd
+- libvterm
+- libx11
+- fira-code: ttf-fira-code
+- fira-sans: ttf-fira-sans
+- glibc
+- libglvnd
+- libvterm
+- libx11
+- fira-code: ttf-fira-code
+- fira-sans: ttf-fira-sans
+- glew
+- faust
+- fontconfig
+repo_makedepends:
+- faust
+- fontconfig
+- glew
+- glu
+- lv2
+- meson
+update_on:
+- alpm: glew
+  provides: libGLEW.so
+  source: alpm
+- alpm: faust
+  provides: libfaust.so
+  source: alpm
+- alpm: fontconfig
+  provides: libfontconfig.so
+  source: alpm
+- alpm: mephisto.lv2
+  source: archpkg

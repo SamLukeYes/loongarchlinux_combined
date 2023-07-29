@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-fin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-quickcheck
+- haskell-boring
+- haskell-dec
+- haskell-hashable
+- haskell-some
+- haskell-universe-base
+repo_makedepends:
+- ghc
+- uusi
+- haskell-inspection-testing
+- haskell-tagged
+update_on:
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-boring
+  source: alpm
+- alpm: haskell-dec
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-some
+  source: alpm
+- alpm: haskell-universe-base
+  source: alpm
+- alpm: haskell-fin
+  source: archpkg

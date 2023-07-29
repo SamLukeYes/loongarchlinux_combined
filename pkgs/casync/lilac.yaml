@@ -1,0 +1,58 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''casync'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- gzip
+- nbd
+- python
+- rsync
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- openssl
+- zlib
+- gcc: gcc-libs
+- glibc
+- openssl
+- zlib
+- curl
+- acl
+- systemd: systemd-libs
+- xz
+- zstd
+repo_makedepends:
+- acl
+- curl
+- fuse2
+- git
+- meson
+- python-sphinx
+- systemd
+- xz
+- zstd
+update_on:
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: acl
+  provides: libacl.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libudev.so
+  source: alpm
+- alpm: xz
+  provides: liblzma.so
+  source: alpm
+- alpm: zstd
+  provides: libzstd.so
+  source: alpm
+- alpm: casync
+  source: archpkg

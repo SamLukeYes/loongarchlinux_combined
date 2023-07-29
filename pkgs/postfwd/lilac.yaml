@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''postfwd'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl
+- perl-io-multiplex
+- perl-net-server
+- perl-net-dns
+repo_makedepends: []
+update_on:
+- alias: perl
+- alpm: postfwd
+  source: archpkg

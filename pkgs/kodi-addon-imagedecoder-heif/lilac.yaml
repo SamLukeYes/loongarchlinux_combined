@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kodi-addon-imagedecoder-heif'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kodi
+- libheif
+- tinyxml2
+repo_makedepends:
+- cmake
+- kodi: kodi-dev
+- libheif
+- tinyxml2
+update_on:
+- alpm: kodi-addon-imagedecoder-heif
+  source: archpkg

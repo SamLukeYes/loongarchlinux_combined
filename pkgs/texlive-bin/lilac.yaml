@@ -1,0 +1,44 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- cairo
+- pixman
+- graphite
+- t1lib
+- gd
+- poppler
+- ffcall
+- libsigsegv
+- zziplib
+- libpng
+- freetype2
+- libxcrypt
+- harfbuzz: harfbuzz-icu
+- mpfr
+- potrace
+- libpaper
+- texlive-bin: libsynctex
+- glibc
+- zlib
+repo_makedepends:
+- git
+- cairo
+- pixman
+- graphite
+- t1lib
+- gd
+- libsigsegv
+- zziplib
+- libpng
+- freetype2
+- icu
+- harfbuzz: harfbuzz-icu
+- mpfr
+- potrace
+- libpaper
+- perl
+- clisp
+- ffcall
+- libxcrypt
+- subversion
+update_on: []

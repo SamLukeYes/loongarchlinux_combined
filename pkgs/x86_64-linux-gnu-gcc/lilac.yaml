@@ -1,0 +1,11 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- libmpc
+- zlib
+- libisl
+- zstd
+repo_makedepends:
+- gmp
+- mpfr
+update_on: []

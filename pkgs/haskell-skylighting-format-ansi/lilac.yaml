@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-skylighting-format-ansi'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-ansi-terminal
+- haskell-colour
+- haskell-skylighting-core
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-ansi-terminal
+  source: alpm
+- alpm: haskell-colour
+  source: alpm
+- alpm: haskell-skylighting-core
+  source: alpm
+- alpm: haskell-skylighting-format-ansi
+  source: archpkg

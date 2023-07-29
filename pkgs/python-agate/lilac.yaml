@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-agate'')
+
+  '
+repo_checkdepends:
+- python-cssselect
+- python-lxml
+- python-nose
+repo_depends:
+- python
+- python-babel
+- isodate: python-isodate
+- python-leather
+- python-parsedatetime
+- python-pyicu
+- python-pytimeparse
+- python-six
+- python-slugify
+- python-sphinx_rtd_theme
+repo_makedepends:
+- python-setuptools
+- python-sphinx
+update_on:
+- alias: python
+- alpm: python-agate
+  source: archpkg

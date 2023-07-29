@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lv2file'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- argtable
+- glibc
+- argtable
+- glibc
+- lilv
+- libsndfile
+repo_makedepends:
+- libsndfile
+- lilv
+- lv2
+update_on:
+- alpm: lilv
+  provides: liblilv-0.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: lv2file
+  source: archpkg

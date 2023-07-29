@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pyx'')
+
+  '
+repo_checkdepends:
+- ghostscript
+- python-pillow
+- python-testfixtures
+repo_depends:
+- python
+repo_makedepends:
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-pyx
+  source: archpkg

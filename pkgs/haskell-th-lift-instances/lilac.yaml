@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-th-lift-instances'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-th-lift
+- haskell-vector
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-th-lift
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-th-lift-instances
+  source: archpkg

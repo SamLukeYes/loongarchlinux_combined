@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-oslo-serialization'')
+
+  '
+repo_checkdepends:
+- python-oslotest
+repo_depends:
+- python-pbr
+- python-msgpack
+- python-oslo-utils
+- python-pytz
+repo_makedepends:
+- git
+- python-setuptools
+update_on:
+- alpm: python-oslo-serialization
+  source: archpkg

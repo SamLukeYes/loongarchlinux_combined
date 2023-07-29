@@ -1,0 +1,33 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- boost: boost-libs
+- dbus-glib
+- double-conversion
+- gc
+- graphicsmagick
+- gsl
+- gspell
+- gtkmm3
+- lcms2
+- lib2geom
+- libcdr
+- libjpeg-turbo
+- libsoup
+- libvisio
+- libxslt
+- poppler: poppler-glib
+- potrace
+- python
+- python-cssselect
+- python-lxml
+- python-numpy
+repo_makedepends:
+- cmake
+- boost
+- git
+update_on:
+- alpm: gsl
+  source: alpm
+  strip_release: true
+- alias: python

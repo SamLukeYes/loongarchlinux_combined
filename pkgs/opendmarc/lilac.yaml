@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''opendmarc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libspf2
+- libbsd
+- libidn
+- perl-json
+repo_makedepends:
+- libmilter
+update_on:
+- alpm: opendmarc
+  source: archpkg

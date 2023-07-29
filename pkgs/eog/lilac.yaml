@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''eog'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- exempi
+- gnome-desktop
+- lcms2
+- libexif
+- libhandy
+- libpeas
+- librsvg
+- webp-pixbuf-loader
+repo_makedepends:
+- gi-docgen
+- git
+- gobject-introspection
+- meson
+- systemd
+- yelp-tools
+update_on:
+- alpm: eog
+  source: archpkg

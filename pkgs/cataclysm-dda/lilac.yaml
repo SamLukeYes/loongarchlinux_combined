@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cataclysm-dda'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ncurses
+- hicolor-icon-theme
+- gettext
+- cataclysm-dda
+- sdl2_image
+- sdl2_ttf
+- freetype2
+- sdl2_mixer
+repo_makedepends:
+- sdl2_image
+- sdl2_ttf
+- sdl2_mixer
+- freetype2
+- astyle
+update_on:
+- alpm: cataclysm-dda
+  source: archpkg

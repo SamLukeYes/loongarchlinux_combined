@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-incremental'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python-click
+- python-setuptools
+- python-twisted
+repo_makedepends: []
+update_on:
+- alpm: python-incremental
+  source: archpkg

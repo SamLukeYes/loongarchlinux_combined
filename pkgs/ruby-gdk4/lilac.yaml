@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-gdk4'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- gtk4
+- ruby-cairo-gobject
+- ruby-gdk_pixbuf2
+- ruby-pango
+repo_makedepends:
+- ruby-native-package-installer
+update_on:
+- alias: ruby
+- alpm: ruby-gdk4
+  source: archpkg

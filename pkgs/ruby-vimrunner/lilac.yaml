@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-vimrunner'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- vim: gvim
+repo_makedepends:
+- ruby-bundler
+- ruby-rake
+- ruby-rdoc
+- ruby-rspec
+update_on:
+- alias: ruby
+- alpm: ruby-vimrunner
+  source: archpkg

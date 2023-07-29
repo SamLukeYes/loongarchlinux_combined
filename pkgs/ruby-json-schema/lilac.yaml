@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-json-schema'')
+
+  '
+repo_checkdepends:
+- ruby-rake
+- ruby-minitest
+- ruby-test-unit
+- ruby-webmock
+repo_depends:
+- ruby
+- ruby-addressable
+repo_makedepends:
+- ruby-rdoc
+- ruby-bundler
+update_on:
+- alias: ruby
+- alpm: ruby-json-schema
+  source: archpkg

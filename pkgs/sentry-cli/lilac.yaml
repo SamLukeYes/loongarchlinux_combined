@@ -1,0 +1,8 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- bzip2
+- zlib
+repo_makedepends: []
+update_on: []

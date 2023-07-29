@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''warpinator'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- networkmanager: libnm
+- python-cryptography
+- pygobject: python-gobject
+- grpc: python-grpcio
+- python-packaging
+- protobuf: python-protobuf
+- python-pynacl
+- python-setproctitle
+- python-setuptools
+- python-xapp
+- python-zeroconf
+- xapp
+- python-cairo
+repo_makedepends:
+- meson
+- polkit
+update_on:
+- alpm: warpinator
+  source: archpkg

@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xapian-core'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bash
+- gcc: gcc-libs
+- glibc
+- zlib
+- bash
+- gcc: gcc-libs
+- glibc
+- zlib
+repo_makedepends:
+- util-linux
+update_on:
+- alpm: util-linux-libs
+  provides: libuuid.so
+  source: alpm
+- alpm: xapian-core
+  source: archpkg

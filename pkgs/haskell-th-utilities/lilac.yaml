@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-th-utilities'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-primitive
+- haskell-syb
+- haskell-th-abstraction
+- haskell-th-orphans
+repo_makedepends:
+- ghc
+- haskell-hspec
+- haskell-vector
+update_on:
+- alpm: haskell-primitive
+  source: alpm
+- alpm: haskell-syb
+  source: alpm
+- alpm: haskell-th-abstraction
+  source: alpm
+- alpm: haskell-th-orphans
+  source: alpm
+- alpm: haskell-th-utilities
+  source: archpkg

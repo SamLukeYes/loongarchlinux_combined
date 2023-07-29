@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pluma'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- iso-codes
+- mate-desktop
+- zenity
+- gtksourceview4
+- libpeas
+- python
+- gettext
+- enchant
+- libsm
+repo_makedepends:
+- itstool
+- gobject-introspection
+- python
+- mate-common
+- yelp-tools
+- autoconf-archive
+update_on:
+- alias: python
+- alpm: pluma
+  source: archpkg

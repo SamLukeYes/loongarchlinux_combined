@@ -1,0 +1,52 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- appstream
+- bubblewrap
+- curl
+- dbus
+- fuse3
+- glib2
+- json-glib
+- libarchive
+- malcontent: libmalcontent
+- libseccomp
+- libxau
+- ostree
+- polkit
+- python
+- systemd
+- xdg-dbus-proxy
+- appstream
+- bubblewrap
+- curl
+- dbus
+- fuse3
+- glib2
+- json-glib
+- libarchive
+- malcontent: libmalcontent
+- libseccomp
+- libxau
+- ostree
+- polkit
+- python
+- systemd
+- xdg-dbus-proxy
+- xdg-desktop-portal
+repo_makedepends:
+- docbook-xsl
+- git
+- gobject-introspection
+- gtk-doc
+- meson
+- python-pyparsing
+- xmlto
+- socat
+- valgrind
+update_on:
+- alias: python
+- alias: python
+- alpm: ostree
+  provides: libostree-1.so
+  source: alpm

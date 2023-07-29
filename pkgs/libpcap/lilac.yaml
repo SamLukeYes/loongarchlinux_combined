@@ -1,0 +1,26 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libpcap'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libnl
+- glibc
+- libnl
+repo_makedepends:
+- bluez: bluez-libs
+- dbus
+update_on:
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: libpcap
+  source: archpkg

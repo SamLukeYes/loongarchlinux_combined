@@ -1,0 +1,48 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''stylish-haskell'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-file-embed
+- haskell-ghc-lib-parser
+- haskell-optparse-applicative
+- haskell-strict
+- haskell-syb
+- haskell-hsyaml
+- haskell-hsyaml-aeson
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hunit
+- haskell-random
+- haskell-test-framework
+- haskell-test-framework-hunit
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-file-embed
+  source: alpm
+- alpm: haskell-ghc-lib-parser
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-strict
+  source: alpm
+- alpm: haskell-syb
+  source: alpm
+- alpm: haskell-hsyaml
+  source: alpm
+- alpm: haskell-hsyaml-aeson
+  source: alpm
+- alpm: stylish-haskell
+  source: archpkg

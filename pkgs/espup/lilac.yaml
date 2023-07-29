@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''espup'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- curl
+- git
+- ldproxy
+- python
+- python-pip
+repo_makedepends: []
+update_on:
+- alpm: bzip2
+  provides: libbz2.so
+  source: alpm
+- alpm: xz
+  provides: liblzma.so
+  source: alpm
+- alias: python
+- alpm: espup
+  source: archpkg

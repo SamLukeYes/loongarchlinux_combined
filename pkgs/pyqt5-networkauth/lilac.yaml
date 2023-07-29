@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pyqt5-networkauth'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-networkauth
+- pyqt5: python-pyqt5
+repo_makedepends:
+- sip
+- pyqt-builder
+update_on:
+- alpm: pyqt5-networkauth
+  source: archpkg

@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-requests-unixsocket'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-requests
+- python-urllib3
+repo_makedepends:
+- python-build
+- python-installer
+- python-wheel
+- python-setuptools
+- python-pbr
+update_on:
+- alias: python
+- alpm: python-requests-unixsocket
+  source: archpkg

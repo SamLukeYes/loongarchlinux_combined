@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-concurrent'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+repo_makedepends:
+- ruby-rdoc
+update_on:
+- alias: ruby
+- alpm: ruby-concurrent
+  source: archpkg

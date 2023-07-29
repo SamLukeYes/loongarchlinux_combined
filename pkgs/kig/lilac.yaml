@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kig'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ktexteditor
+- qt5-xmlpatterns
+- boost: boost-libs
+- python
+- hicolor-icon-theme
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+- boost
+update_on:
+- alias: python
+- alpm: kig
+  source: archpkg

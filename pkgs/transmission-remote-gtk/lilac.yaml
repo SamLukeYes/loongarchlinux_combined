@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''transmission-remote-gtk'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- curl
+- glib2
+- gtk3
+- json-glib
+- libappindicator: libappindicator-gtk3
+- libproxy
+- geoip
+repo_makedepends:
+- meson
+update_on:
+- alpm: transmission-remote-gtk
+  source: archpkg

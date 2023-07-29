@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''fractal'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- gstreamer: gst-plugins-base-libs
+- gstreamer: gst-plugin-gtk
+- gstreamer: gst-plugins-bad
+- gstreamer: gst-editing-services
+- gtksourceview4
+- gspell
+- libhandy0
+repo_makedepends:
+- meson
+- rust
+update_on:
+- alpm: fractal
+  source: archpkg

@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pyqt6'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt6-base
+- python-pyqt6-sip
+repo_makedepends:
+- sip
+- pyqt-builder
+- pyopengl: python-opengl
+- dbus-python
+- qt6-tools
+- qt6-svg
+- qt6-declarative
+- qt6-quick3d
+- qt6-shadertools
+- qt6-multimedia
+- qt6-remoteobjects
+- qt6-positioning
+- qt6-sensors
+- qt6-serialport
+- qt6-webchannel
+- qt6-websockets
+- qt6-connectivity
+- qt6-speech
+- qt6-webengine
+update_on:
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: pyqt6
+  source: archpkg

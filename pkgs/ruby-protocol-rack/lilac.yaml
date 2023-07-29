@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-protocol-rack'')
+
+  '
+repo_checkdepends:
+- ruby-async-http
+- ruby-bake-test
+- ruby-bake-test-external
+- ruby-covered
+- ruby-sus
+- ruby-sus-fixtures-async-http
+repo_depends:
+- ruby-protocol-http
+- ruby-rack
+repo_makedepends: []
+update_on:
+- alpm: ruby-protocol-rack
+  source: archpkg

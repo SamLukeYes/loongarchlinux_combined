@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-aws-sam-translator'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-rerunfailures
+- python-yaml
+- python-parameterized
+repo_depends:
+- python
+- python-botocore
+- python-boto3
+- python-jsonschema
+- python-pydantic
+- python-typing_extensions
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-aws-sam-translator
+  source: archpkg

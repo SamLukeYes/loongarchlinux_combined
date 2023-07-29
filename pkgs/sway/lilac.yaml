@@ -1,0 +1,46 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sway'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cairo
+- gdk-pixbuf2
+- libinput
+- libxcb
+- pango
+- pcre2
+repo_makedepends:
+- meson
+- ninja
+- scdoc
+- setconf
+- wayland-protocols
+update_on:
+- alpm: libevdev
+  provides: libevdev.so
+  source: alpm
+- alpm: json-c
+  provides: libjson-c.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libudev.so
+  source: alpm
+- alpm: wayland
+  provides: libwayland-server.so
+  source: alpm
+- alpm: wlroots
+  provides: libwlroots.so
+  source: alpm
+- alpm: intel-oneapi-basekit
+  provides: libxkbcommon.so
+  source: alpm
+- alpm: sway
+  source: archpkg

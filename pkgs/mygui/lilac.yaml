@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mygui'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- sdl2
+- sdl2_image
+- glu
+repo_makedepends:
+- cmake
+- doxygen
+- graphviz
+- ttf-dejavu
+- ninja
+update_on:
+- alpm: mygui
+  source: archpkg

@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cmake-fedora'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cmake
+repo_makedepends:
+- git
+update_on:
+- alpm: cmake-fedora
+  source: archpkg

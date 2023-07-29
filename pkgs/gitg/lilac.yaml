@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gitg'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cairo
+- dconf
+- gcc: gcc-libs
+- gdk-pixbuf2
+- glibc
+- glib2
+- gobject-introspection: gobject-introspection-runtime
+- gsettings-desktop-schemas
+- gspell
+- gtk3
+- gtksourceview4
+- hicolor-icon-theme
+- json-glib
+- libdazzle
+- libgee
+- gobject-introspection: libgirepository
+- libgit2-glib
+- libpeas
+- libsecret
+- libxml2
+- pango
+- pygobject: python-gobject
+repo_makedepends:
+- git
+- gobject-introspection
+- meson
+- vala
+update_on:
+- alpm: gitg
+  source: archpkg

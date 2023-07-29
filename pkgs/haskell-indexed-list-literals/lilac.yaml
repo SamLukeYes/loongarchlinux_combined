@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-indexed-list-literals'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-only
+repo_makedepends:
+- ghc
+- haskell-hspec
+update_on:
+- alpm: haskell-only
+  source: alpm
+- alpm: haskell-indexed-list-literals
+  source: archpkg

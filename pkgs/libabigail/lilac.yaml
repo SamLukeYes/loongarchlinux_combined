@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libabigail'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- gcc: gcc-libs
+- binutils
+- libxml2
+- elfutils: libelf
+- elfutils
+- python
+repo_makedepends:
+- git
+- python-sphinx
+update_on:
+- alias: python
+- alpm: libabigail
+  source: archpkg

@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''prosody'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- lua
+- luasec: lua-sec
+- luasocket: lua-socket
+- luaexpat: lua-expat
+- lua-filesystem
+- libidn
+- openssl
+repo_makedepends: []
+update_on:
+- alias: lua
+- alpm: prosody
+  source: archpkg

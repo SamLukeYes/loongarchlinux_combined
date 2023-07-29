@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-rdflib'')
+
+  '
+repo_checkdepends:
+- python-pytest-cov
+- python-six
+- python-html5lib
+- python-networkx
+- python-doctest-ignore-unicode
+- python-pip
+repo_depends:
+- isodate: python-isodate
+- python-pyparsing
+- python-setuptools
+repo_makedepends: []
+update_on:
+- alpm: python-rdflib
+  source: archpkg

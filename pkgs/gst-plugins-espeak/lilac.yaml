@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gst-plugins-espeak'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gstreamer: gst-plugins-base-libs
+- espeak-ng
+repo_makedepends: []
+update_on:
+- alpm: gst-plugins-espeak
+  source: archpkg

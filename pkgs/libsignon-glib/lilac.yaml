@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libsignon-glib'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- signond
+repo_makedepends:
+- pygobject: python-gobject
+- gtk-doc
+- gobject-introspection
+- vala
+- meson
+- git
+update_on:
+- alpm: libsignon-glib
+  source: archpkg

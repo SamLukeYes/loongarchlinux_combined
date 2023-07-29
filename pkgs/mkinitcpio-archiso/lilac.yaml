@@ -1,0 +1,11 @@
+destsubdir: extra
+repo_checkdepends:
+- shellcheck
+- shfmt
+repo_depends:
+- bash
+- lvm2: device-mapper
+- mkinitcpio
+repo_makedepends:
+- git
+update_on: []

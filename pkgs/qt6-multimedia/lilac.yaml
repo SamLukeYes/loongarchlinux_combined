@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qt6-multimedia'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt6-base
+- qt6-multimedia
+- gstreamer: gst-plugins-base
+- qt6-multimedia
+- ffmpeg
+- libva
+- libxrandr
+repo_makedepends:
+- cmake
+- ninja
+- qt6-declarative
+- qt6-shadertools
+- gstreamer: gst-plugins-base
+- pulseaudio: libpulse
+- ffmpeg
+- qt6-quick3d
+- libxrandr
+update_on:
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: qt6-multimedia
+  source: archpkg

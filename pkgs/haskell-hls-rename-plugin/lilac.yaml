@@ -1,0 +1,61 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-rename-plugin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- git
+repo_depends:
+- ghc: ghc-libs
+- haskell-extra
+- haskell-ghc-exactprint
+- haskell-ghcide
+- haskell-hashable
+- haskell-hiedb
+- haskell-hls-plugin-api
+- haskell-hls-refactor-plugin
+- haskell-lsp
+- haskell-lsp-types
+- haskell-mod
+- haskell-syb
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- uusi
+- haskell-aeson
+- haskell-hls-test-utils
+update_on:
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-ghc
+  source: alpm
+- alpm: haskell-ghc-exactprint
+  source: alpm
+- alpm: haskell-ghcide
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-hiedb
+  source: alpm
+- alpm: haskell-hls-plugin-api
+  source: alpm
+- alpm: haskell-hls-refactor-plugin
+  source: alpm
+- alpm: haskell-lsp
+  source: alpm
+- alpm: haskell-lsp-types
+  source: alpm
+- alpm: haskell-mod
+  source: alpm
+- alpm: haskell-syb
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-hls-rename-plugin
+  source: archpkg

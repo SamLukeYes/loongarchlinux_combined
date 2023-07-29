@@ -1,0 +1,56 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gamescope'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- libdrm
+- libx11
+- libxcomposite
+- libxdamage
+- libxext
+- libxfixes
+- libxrender
+- libxres
+- libxtst
+- libxxf86vm
+- sdl2
+- vulkan-icd-loader
+- wayland
+- wayland-protocols
+repo_makedepends:
+- git
+- glslang
+- meson
+- ninja
+- vulkan-headers
+update_on:
+- alpm: libcap
+  provides: libcap.so
+  source: alpm
+- alpm: libliftoff
+  provides: libliftoff.so
+  source: alpm
+- alpm: libpipewire
+  provides: libpipewire-0.3.so
+  source: alpm
+- alpm: emby-theater
+  provides: libvulkan.so
+  source: alpm
+- alpm: wlroots
+  provides: libwlroots.so
+  source: alpm
+- alpm: intel-oneapi-basekit
+  provides: libxkbcommon.so
+  source: alpm
+- alpm: gamescope
+  source: archpkg

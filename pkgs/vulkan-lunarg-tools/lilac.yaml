@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''vulkan-lunarg-tools'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- vulkan-validation-layers
+- qt5-svg
+- qt5-webengine
+- vulkan-validation-layers
+repo_makedepends:
+- git
+- cmake
+- python
+- libx11
+- libxrandr
+- wayland
+- qt5-svg
+- qt5-webengine
+update_on:
+- alpm: vulkan-lunarg-tools
+  source: archpkg

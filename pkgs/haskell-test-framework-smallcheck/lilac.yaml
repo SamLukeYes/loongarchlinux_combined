@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-test-framework-smallcheck'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-test-framework
+- haskell-smallcheck
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-test-framework
+  source: alpm
+- alpm: haskell-smallcheck
+  source: alpm
+- alpm: haskell-test-framework-smallcheck
+  source: archpkg

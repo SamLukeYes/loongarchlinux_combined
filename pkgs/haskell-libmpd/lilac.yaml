@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-libmpd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-attoparsec
+- haskell-data-default-class
+- haskell-network
+- haskell-safe-exceptions
+- haskell-utf8-string
+repo_makedepends:
+- ghc
+- haskell-quickcheck
+- haskell-hspec
+- haskell-hspec-discover
+update_on:
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-data-default-class
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-safe-exceptions
+  source: alpm
+- alpm: haskell-utf8-string
+  source: alpm
+- alpm: haskell-libmpd
+  source: archpkg

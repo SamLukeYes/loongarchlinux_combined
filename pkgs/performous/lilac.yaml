@@ -1,0 +1,47 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''performous'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- aubio
+- boost: boost-libs
+- cairo
+- ffmpeg
+- fontconfig
+- gcc: gcc-libs
+- glib2
+- glibc
+- glibmm
+- icu
+- libepoxy
+- libjpeg-turbo
+- libpng
+- librsvg
+- libxml++2.6
+- opencv
+- pango
+- portaudio
+- portmidi
+- sdl2
+repo_makedepends:
+- cmake
+- boost
+- git
+- glm
+- help2man
+- mesa
+update_on:
+- alias: icu
+- alpm: opencv
+  source: alpm
+  strip_release: true
+- alpm: performous
+  source: archpkg

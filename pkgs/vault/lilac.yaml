@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''vault'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+repo_makedepends:
+- go
+- git
+- yarn
+- bower
+- nodejs-lts-gallium
+- npm
+- zip
+- gox
+- go-tools
+update_on:
+- alpm: vault
+  source: archpkg

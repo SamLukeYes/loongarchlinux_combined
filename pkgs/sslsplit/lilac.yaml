@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sslsplit'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- check
+repo_depends:
+- glibc
+- libevent
+- openssl
+- libpcap
+- libnet
+repo_makedepends: []
+update_on:
+- alpm: libpcap
+  provides: libpcap.so
+  source: alpm
+- alpm: sslsplit
+  source: archpkg

@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''redis'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- jemalloc
+- grep
+- shadow
+- systemd: systemd-libs
+repo_makedepends:
+- systemd
+- openssl
+update_on:
+- alpm: redis
+  source: archpkg

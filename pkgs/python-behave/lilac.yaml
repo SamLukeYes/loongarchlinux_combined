@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-behave'')
+
+  '
+repo_checkdepends:
+- python-path
+- python-pyhamcrest
+- python-pytest
+- python-pytest-html
+repo_depends:
+- python-cucumber-tag-expressions
+- python-parse
+- python-parse-type
+- python-six
+- python-colorama
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-behave
+  source: archpkg

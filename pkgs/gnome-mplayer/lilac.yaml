@@ -1,0 +1,14 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- dbus-glib
+- libgda
+- libgpod
+- libnotify
+- gmtk
+repo_makedepends:
+- caja
+- nautilus
+- nemo
+- python
+update_on: []

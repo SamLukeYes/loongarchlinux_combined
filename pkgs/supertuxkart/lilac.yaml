@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''supertuxkart'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- openal
+- libvorbis
+- freetype2
+- harfbuzz
+- curl
+- bluez: bluez-libs
+- sqlite
+- libjpeg-turbo
+- libpng
+- hicolor-icon-theme
+- sdl2
+- shaderc
+repo_makedepends:
+- cmake
+- setconf
+- ninja
+update_on:
+- alpm: supertuxkart
+  source: archpkg

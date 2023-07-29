@@ -1,0 +1,36 @@
+# Maintainer: Antonio Rojas <arojas@archlinux.org>
+
+pkgname=libetebase
+pkgver=0.5.5
+pkgrel=1
+pkgdesc='Etebase C library'
+arch=(loong64 x86_64)
+url='https://github.com/etesync/libetebase'
+license=(BSD)
+depends=(openssl gcc-libs libsodium)
+makedepends=(rust)
+source=(https://github.com/etesync/libetebase/archive/v$pkgver/$pkgname-$pkgver.tar.gz)
+sha256sums=('c5712362375a01fcc0da43a98900100a3a364025a1307a7d9cf85091fb35ff76')
+
+prepare() {
+  cd $pkgname-$pkgver
+}
+
+build() {
+  cd $pkgname-$pkgver
+  find -name Cargo.lock -exec rm -f {} \;
+  mkdir -p .cargo
+  cat > .cargo/config.toml <<EOF
+[source.crates-io]
+registry = "https://gitee.com/yetist/crates.io-index"
+EOF
+  env CARGO_INCREMENTAL=0 SODIUM_USE_PKG_CONFIG= cargo build --release
+  make pkgconfig
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+
+  install -Dm644 LICENSE -t "$pkgdir"/usr/share/licenses/$pkgname
+}

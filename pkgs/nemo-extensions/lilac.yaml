@@ -1,0 +1,61 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''nemo-extensions'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- nemo
+- nemo
+- nemo-extensions: nemo-python
+- python-mutagen
+- nemo
+- nemo-extensions: nemo-python
+- nemo
+- file-roller
+- nemo
+- imagemagick
+- nemo
+- nemo-extensions: nemo-python
+- pastebinit
+- nemo
+- cjs
+- clutter-gtk
+- clutter-gst
+- libmusicbrainz5
+- gtksourceview4
+- xreader
+- webkit2gtk-4.1
+- nemo
+- pygobject: python-gobject
+- python-setuptools
+- nemo
+- libcryptui
+- nemo
+- samba
+- nemo-extensions: nemo-python
+- vte3
+repo_makedepends:
+- intltool
+- gobject-introspection
+- meson
+- samurai
+- cjs
+- clutter-gtk
+- clutter-gst
+- libmusicbrainz5
+- gtksourceview4
+- xreader
+- webkit2gtk-4.1
+- pygobject: python-gobject
+- python-setuptools
+- libcryptui
+update_on:
+- alpm: nemo-extensions
+  source: archpkg

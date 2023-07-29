@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''liquidctl'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python
+- python-docopt
+- python-pyusb
+- python-hidapi
+- python-colorlog
+- i2c-tools
+- python-pillow
+- python-crcmod
+repo_makedepends:
+- git
+- python-setuptools-scm
+- python-build
+- python-installer
+- python-wheel
+update_on:
+- alias: python
+- alpm: liquidctl
+  source: archpkg

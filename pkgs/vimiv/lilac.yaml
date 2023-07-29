@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''vimiv'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- pygobject: python-gobject
+- gtk3
+- python-pillow
+- glibc
+repo_makedepends:
+- python-setuptools
+- libgexiv2
+update_on:
+- alias: python
+- alpm: vimiv
+  source: archpkg

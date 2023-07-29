@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-redis'')
+
+  '
+repo_checkdepends:
+- pifpaf
+- redis
+- python-pytest
+- python-pytest-asyncio
+- python-hiredis
+- python-cryptography
+- python-pyopenssl
+- python-requests
+repo_depends:
+- python
+- python-async-timeout
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-wheel
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-redis
+  source: archpkg

@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qpdf'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libjpeg-turbo
+- zlib
+- gnutls
+repo_makedepends:
+- libjpeg-turbo
+- zlib
+- gnutls
+- cmake
+- texlive-bin
+- python-sphinx
+- python-sphinx_rtd_theme
+- texlive-texmf: texlive-latexextra
+update_on:
+- alpm: qpdf
+  source: archpkg

@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-parsel'')
+
+  '
+repo_checkdepends:
+- python-sybil
+- python-psutil
+repo_depends:
+- python-cssselect
+- python-lxml
+- python-setuptools
+- python-six
+- python-w3lib
+repo_makedepends:
+- python-pytest-runner
+update_on:
+- alpm: python-parsel
+  source: archpkg

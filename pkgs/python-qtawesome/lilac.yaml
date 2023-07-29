@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-qtawesome'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-qt
+- pyside2
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- python-qtpy
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-qtawesome
+  source: archpkg

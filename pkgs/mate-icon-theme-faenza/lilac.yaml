@@ -1,0 +1,16 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mate-icon-theme-faenza'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- mate-common
+update_on:
+- alpm: mate-icon-theme-faenza
+  source: archpkg

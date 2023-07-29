@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libldm'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- lvm2: device-mapper
+- glib2
+- json-glib
+- zlib
+repo_makedepends:
+- git
+- systemd
+- gtk-doc
+update_on:
+- alpm: readline
+  provides: libreadline.so
+  source: alpm
+- alpm: util-linux-libs
+  provides: libuuid.so
+  source: alpm
+- alpm: libldm
+  source: archpkg

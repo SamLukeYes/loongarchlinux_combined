@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''maui-clip'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- mauikit-filebrowsing
+- taglib
+- ffmpeg
+repo_makedepends:
+- extra-cmake-modules
+update_on:
+- alpm: maui-clip
+  source: archpkg

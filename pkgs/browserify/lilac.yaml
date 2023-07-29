@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''browserify'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- nodejs
+- acorn
+repo_makedepends:
+- npm
+- git
+update_on:
+- alpm: browserify
+  source: archpkg

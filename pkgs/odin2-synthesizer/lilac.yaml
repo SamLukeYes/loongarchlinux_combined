@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''odin2-synthesizer'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- alsa-lib
+- libglvnd
+- freetype2
+- hicolor-icon-theme
+repo_makedepends:
+- git
+- cmake
+- curl
+- lv2
+- mesa
+- webkit2gtk
+- libx11
+- gendesk
+update_on:
+- alpm: odin2-synthesizer
+  source: archpkg

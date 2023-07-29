@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''netsniff-ng'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- ncurses
+- geoip
+- zlib
+- libnetfilter_conntrack
+- libpcap
+- liburcu
+- libnl
+- libcli
+- libnet
+- libsodium
+repo_makedepends:
+- cmake
+- flex
+- bison
+update_on:
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: libpcap
+  provides: libpcap.so
+  source: alpm
+- alpm: libcli
+  provides: libcli.so
+  source: alpm
+- alpm: netsniff-ng
+  source: archpkg

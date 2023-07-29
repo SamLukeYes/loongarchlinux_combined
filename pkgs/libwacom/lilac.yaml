@@ -1,0 +1,16 @@
+destsubdir: extra
+repo_checkdepends:
+- python-pytest
+- python-libevdev
+- python-pyudev
+repo_depends:
+- glib2
+- systemd
+- libgudev
+repo_makedepends:
+- libxml2
+- meson
+- python-pytest
+- python-libevdev
+- python-pyudev
+update_on: []

@@ -1,0 +1,48 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mtr'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ncurses
+- libcap
+- ncurses
+- libcap
+- gtk3
+- gdk-pixbuf2
+repo_makedepends:
+- ncurses
+- gtk3
+- libcap
+- gdk-pixbuf2
+update_on:
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: gtk3
+  provides: libgtk-3.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: gdk-pixbuf2
+  provides: libgdk_pixbuf-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: mtr
+  source: archpkg

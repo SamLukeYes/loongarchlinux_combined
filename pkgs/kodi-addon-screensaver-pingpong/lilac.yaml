@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kodi-addon-screensaver-pingpong'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kodi
+- glm
+repo_makedepends:
+- cmake
+- glm
+- kodi: kodi-dev
+update_on:
+- alpm: kodi-addon-screensaver-pingpong
+  source: archpkg

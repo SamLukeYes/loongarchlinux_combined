@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gmt'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- lapack: blas
+- curl
+- fftw
+- gdal
+- geos
+- lapack
+- openmp
+- netcdf
+- pcre
+- zlib
+repo_makedepends:
+- cmake
+- lapack: blas
+- curl
+- ffmpeg
+- fftw
+- gdal
+- geos
+- ghostscript
+- graphicsmagick
+- lapack
+- openmp
+- netcdf
+- pcre
+- zlib
+update_on:
+- alpm: gmt
+  source: archpkg

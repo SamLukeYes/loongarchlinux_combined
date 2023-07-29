@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''activity-log-manager'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- libgee
+- zeitgeist
+repo_makedepends:
+- vala
+- intltool
+update_on:
+- alpm: activity-log-manager
+  source: archpkg

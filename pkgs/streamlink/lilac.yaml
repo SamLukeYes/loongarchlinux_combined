@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''streamlink'')
+
+  '
+repo_checkdepends:
+- python-freezegun
+- python-pytest
+- python-pytest-asyncio
+- python-requests-mock
+repo_depends:
+- python-certifi
+- isodate: python-isodate
+- python-pycountry
+- python-pycryptodome
+- python-pysocks
+- python-requests
+- python-websocket-client
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-versioningit
+- python-wheel
+update_on:
+- alpm: streamlink
+  source: archpkg

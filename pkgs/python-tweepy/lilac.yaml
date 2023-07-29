@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-tweepy'')
+
+  '
+repo_checkdepends:
+- python-aiohttp
+- python-vcrpy
+repo_depends:
+- python
+- python-oauthlib
+- python-python-socks
+- python-requests
+- python-requests-oauthlib
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-tweepy
+  source: archpkg

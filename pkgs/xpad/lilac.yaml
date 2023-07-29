@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xpad'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtksourceview4
+- libsm
+- libayatana-appindicator
+repo_makedepends:
+- intltool
+update_on:
+- alpm: xpad
+  source: archpkg

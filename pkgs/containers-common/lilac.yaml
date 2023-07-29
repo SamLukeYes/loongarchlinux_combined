@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''containers-common'')
+
+  '
+repo_checkdepends:
+- ripgrep
+repo_depends: []
+repo_makedepends:
+- go-md2man
+update_on:
+- alpm: containers-common
+  source: archpkg

@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''whipper'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-twisted
+repo_depends:
+- cdrdao
+- flac
+- libcdio-paranoia
+- libsndfile
+- python-discid
+- pygobject: python-gobject
+- python-musicbrainzngs
+- python-mutagen
+- pycdio: python-pycdio
+- python-ruamel-yaml
+- python-setuptools
+- sox
+repo_makedepends:
+- python-setuptools-scm
+- python-docutils
+update_on:
+- alpm: whipper
+  source: archpkg

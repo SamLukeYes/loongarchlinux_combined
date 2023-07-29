@@ -1,0 +1,56 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tls'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-asn1-encoding
+- haskell-asn1-types
+- haskell-async
+- haskell-cereal
+- haskell-cryptonite
+- haskell-data-default-class
+- haskell-hourglass
+- haskell-memory
+- haskell-network
+- haskell-x509
+repo_makedepends:
+- ghc
+- haskell-quickcheck
+- haskell-tasty
+- haskell-tasty-quickcheck
+update_on:
+- alpm: haskell-asn1-encoding
+  source: alpm
+- alpm: haskell-asn1-types
+  source: alpm
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-cereal
+  source: alpm
+- alpm: haskell-cryptonite
+  source: alpm
+- alpm: haskell-data-default-class
+  source: alpm
+- alpm: haskell-hourglass
+  source: alpm
+- alpm: haskell-memory
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-x509
+  source: alpm
+- alpm: haskell-x509-store
+  source: alpm
+- alpm: haskell-x509-validation
+  source: alpm
+- alpm: haskell-tls
+  source: archpkg

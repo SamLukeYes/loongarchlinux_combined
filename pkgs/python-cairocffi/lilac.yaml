@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-cairocffi'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-numpy
+- python-pikepdf
+repo_depends:
+- python-cffi
+- cairo
+- python-xcffib
+repo_makedepends:
+- python-setuptools
+- gdk-pixbuf2
+update_on:
+- alpm: python-cairocffi
+  source: archpkg

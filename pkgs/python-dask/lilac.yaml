@@ -1,0 +1,59 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-dask'')
+
+  '
+repo_checkdepends:
+- ipython
+- python-pytest
+- python-pytest-rerunfailures
+- python-aiohttp
+- python-boto3
+- python-botocore
+- python-cytoolz
+- python-distributed
+- python-graphviz
+- python-h5py
+- python-httpretty
+- python-jinja
+- python-jsonschema
+- python-lz4
+- python-matplotlib
+- python-moto
+- python-numexpr
+- python-numpy
+- python-pandas
+- python-psutil
+- python-pyarrow
+- python-pytables
+- python-requests
+- python-scikit-learn
+- python-scipy
+- python-snappy
+- python-sqlalchemy
+- python-xarray
+- python-xxhash
+repo_depends:
+- mpdecimal
+- python
+- python-click
+- python-cloudpickle
+- python-fsspec
+- python-importlib-metadata
+- python-packaging
+- python-partd
+- python-toolz
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-versioneer
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-dask
+  source: archpkg

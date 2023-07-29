@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rtaudio'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- alsa-lib
+- pulseaudio: libpulse
+repo_makedepends:
+- alsa-lib
+- doxygen
+- gcc: gcc-libs
+- glibc
+- meson
+- pulseaudio: libpulse
+update_on:
+- alpm: rtaudio
+  source: archpkg

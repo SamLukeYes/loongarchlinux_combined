@@ -1,0 +1,49 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-photos'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cairo
+- gdk-pixbuf2
+- geocode-glib
+- glib2
+- gstreamer: gst-plugins-base-libs
+- gstreamer
+- gtk3
+- json-glib
+- libexif
+- libgee
+- libgexiv2
+- libgphoto2
+- libraw
+- libsoup
+- libxml2
+- pango
+- rest
+- sqlite
+repo_makedepends:
+- git
+- intltool
+- meson
+- vala
+- webkit2gtk
+update_on:
+- alpm: granite
+  provides: libgranite.so
+  source: alpm
+- alpm: libgudev
+  provides: libgudev-1.0.so
+  source: alpm
+- alpm: libhandy
+  provides: libhandy-1.so
+  source: alpm
+- alpm: pantheon-photos
+  source: archpkg

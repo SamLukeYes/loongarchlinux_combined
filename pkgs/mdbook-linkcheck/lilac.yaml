@@ -1,0 +1,8 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- mdbook
+repo_makedepends:
+- git
+- rust
+update_on: []

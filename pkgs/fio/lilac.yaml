@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''fio'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bash
+- libaio
+- python
+- numactl
+- glusterfs
+- gperftools
+repo_makedepends:
+- gtk2
+- curl
+update_on:
+- alias: python
+- alpm: fio
+  source: archpkg

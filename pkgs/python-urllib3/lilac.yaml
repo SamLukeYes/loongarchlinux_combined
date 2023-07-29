@@ -1,0 +1,27 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- python
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-sphinx
+- python-sphinx-furo
+- python-wheel
+- brotli: python-brotli
+- python-certifi
+- python-cryptography
+- python-dateutil
+- python-flaky
+- python-gcp-devrel-py-tools
+- python-idna
+- python-pyopenssl
+- python-pysocks
+- python-pytest
+- python-pytest-freezegun
+- python-pytest-timeout
+- python-tornado
+- python-trustme
+update_on:
+- alias: python

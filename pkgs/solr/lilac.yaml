@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''solr'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bash
+repo_makedepends:
+- gradle
+- git
+- groovy
+update_on:
+- alpm: solr
+  source: archpkg

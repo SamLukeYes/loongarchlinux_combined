@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rhonabwy'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- gnutls
+- jansson
+- zlib
+repo_makedepends:
+- cmake
+- doxygen
+- git
+- graphviz
+- ninja
+- systemd
+update_on:
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: orcania
+  provides: liborcania.so
+  source: alpm
+- alpm: yder
+  provides: libyder.so
+  source: alpm
+- alpm: rhonabwy
+  source: archpkg

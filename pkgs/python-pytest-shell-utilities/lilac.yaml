@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-shell-utilities'')
+
+  '
+repo_checkdepends:
+- python-pytest-subtests
+repo_depends:
+- python
+- python-attrs
+- python-pytest
+- python-pytest-helpers-namespace
+- python-pytest-skip-markers
+- python-psutil
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-setuptools-declarative-requirements
+- python-setuptools-scm
+- python-toml
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-pytest-shell-utilities
+  source: archpkg

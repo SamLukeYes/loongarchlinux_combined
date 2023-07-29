@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kea'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- gtest
+- procps-ng
+repo_depends:
+- log4cplus
+- mariadb: mariadb-libs
+- openssl
+- postgresql: postgresql-libs
+repo_makedepends:
+- boost
+- mariadb
+- postgresql
+- python
+- python-sphinx
+- python-sphinx_rtd_theme
+- doxygen
+- graphviz
+- texlive-texmf: texlive-bibtexextra
+- texlive-texmf: texlive-fontsextra
+- texlive-texmf: texlive-formatsextra
+- texlive-texmf: texlive-games
+- texlive-texmf: texlive-humanities
+- texlive-texmf: texlive-latexextra
+- texlive-texmf: texlive-music
+- texlive-texmf: texlive-pictures
+- texlive-texmf: texlive-pstricks
+- texlive-texmf: texlive-publishers
+update_on:
+- alpm: kea
+  source: archpkg

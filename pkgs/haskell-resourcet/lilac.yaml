@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-resourcet'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-primitive
+- haskell-unliftio-core
+repo_makedepends:
+- ghc
+- haskell-hspec
+update_on:
+- alpm: haskell-primitive
+  source: alpm
+- alpm: haskell-unliftio-core
+  source: alpm
+- alpm: haskell-resourcet
+  source: archpkg

@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-console'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libadwaita
+- libgtop
+- vte3: vte4
+repo_makedepends:
+- appstream-glib
+- git
+- meson
+update_on:
+- alpm: gnome-console
+  source: archpkg

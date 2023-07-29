@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libgda6'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- json-glib
+- iso-codes
+- libsecret
+- gtk3
+- graphviz
+- libgda6
+- postgresql: postgresql-libs
+- libgda6
+- sqlcipher
+repo_makedepends:
+- postgresql: postgresql-libs
+- sqlcipher
+- json-glib
+- iso-codes
+- libsecret
+- gtk3
+- graphviz
+- intltool
+- gobject-introspection
+- valgrind
+- vala
+- meson
+- git
+update_on:
+- alpm: libgda6
+  source: archpkg

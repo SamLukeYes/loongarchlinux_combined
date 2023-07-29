@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''opendht'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- cppunit
+repo_depends:
+- glibc
+- gnutls
+- nettle
+- readline
+- argon2
+- jsoncpp
+- fmt
+- http-parser
+- openssl
+repo_makedepends:
+- git
+- cmake
+- msgpack-cxx
+- asio
+- restinio
+- cython
+- python-setuptools
+update_on:
+- alias: readline
+- alias: jsoncpp
+- alpm: jsoncpp
+  provides: libjsoncpp.so
+  source: alpm
+- alpm: opendht
+  source: archpkg

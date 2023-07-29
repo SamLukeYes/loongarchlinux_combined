@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-lazy-object-proxy'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest-benchmark
+repo_depends:
+- python
+repo_makedepends:
+- python-setuptools-scm
+update_on:
+- alias: python
+- alpm: python-lazy-object-proxy
+  source: archpkg

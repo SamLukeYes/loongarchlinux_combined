@@ -1,0 +1,35 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-myst-parser'')
+
+  '
+repo_checkdepends:
+- python-beautifulsoup4
+- python-linkify-it-py
+- python-pytest
+- python-pytest-param-files
+- python-pytest-regressions
+- python-sphinx-pytest
+repo_depends:
+- python
+- python-docutils
+- python-jinja
+- python-markdown-it-py
+- python-mdit_py_plugins
+- python-pygments
+- python-sphinx
+- python-typing_extensions
+- python-yaml
+repo_makedepends:
+- python-build
+- python-installer
+- python-flit-core
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-myst-parser
+  source: archpkg

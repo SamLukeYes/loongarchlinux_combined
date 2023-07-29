@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-js2py'')
+
+  '
+repo_checkdepends:
+- npm
+- python-numpy
+repo_depends:
+- python-six
+- python-pyjsparser
+repo_makedepends:
+- python-setuptools
+- python-tzlocal
+update_on:
+- alpm: python-js2py
+  source: archpkg

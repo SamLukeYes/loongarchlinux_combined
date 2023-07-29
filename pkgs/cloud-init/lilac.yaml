@@ -1,0 +1,28 @@
+destsubdir: extra
+repo_checkdepends:
+- python-httpretty
+- python-pytest
+- python-pytest-mock
+- python-responses
+repo_depends:
+- bash
+- dhcp: dhclient
+- python
+- python-configobj
+- python-jinja
+- python-jsonpatch
+- python-jsonschema
+- python-netifaces
+- python-oauthlib
+- python-pyserial
+- python-requests
+- sudo
+- systemd
+repo_makedepends:
+- netplan
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python

@@ -1,0 +1,12 @@
+destsubdir: extra
+repo_checkdepends:
+- python-idna
+repo_depends:
+- c-ares
+- python-cffi
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on: []

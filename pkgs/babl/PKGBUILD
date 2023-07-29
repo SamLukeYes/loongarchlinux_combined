@@ -1,0 +1,40 @@
+# Maintainer: Daniel Isenmann <daniel@archlinux.org>
+
+pkgname=babl
+_tag='45c18c8cfaf7d2c610d0c4bc1b33d58c37bc9d0f'
+pkgver=0.1.106
+pkgrel=1
+pkgdesc='Dynamic, any to any, pixel format conversion library'
+arch=('loong64' 'x86_64')
+url='https://gegl.org/babl/'
+license=('LGPL3')
+depends=('glibc' 'lcms2')
+makedepends=('git' 'meson' 'gobject-introspection' 'vala')
+source=("git+https://gitlab.gnome.org/GNOME/babl.git#tag=$_tag"
+        babl-fix-gir-pkgname.patch)
+sha256sums=('SKIP'
+            'bceba2643d5baef3d5add6f715d8bf982cbaf25701e589d489b1a8d819879e6a')
+
+pkgver() {
+  cd "${pkgname}"
+  git describe --tags | sed 's/^BABL_//;s/_$//;s/_/./g;s/-/+/g'
+}
+
+prepare() {
+  # https://gitlab.gnome.org/GNOME/babl/-/merge_requests/45
+  sed -i s/Description/description/ "${pkgname}"/meson.build
+  patch -d babl -p1 -i $srcdir/babl-fix-gir-pkgname.patch
+}
+
+build() {
+  arch-meson "${pkgname}" build
+  ninja -C build
+}
+
+check() {
+  meson test -C build --print-errorlogs
+}
+
+package() {
+  DESTDIR="${pkgdir}" meson install -C build
+}

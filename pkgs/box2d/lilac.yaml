@@ -1,0 +1,9 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+repo_makedepends:
+- cmake
+- doxygen
+- ninja
+update_on: []

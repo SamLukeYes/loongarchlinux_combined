@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pep621'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-tomli
+repo_depends:
+- python-packaging
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+- python-sphinx
+- python-sphinx-autodoc-typehints
+- python-sphinx-furo
+update_on:
+- alpm: python-pep621
+  source: archpkg

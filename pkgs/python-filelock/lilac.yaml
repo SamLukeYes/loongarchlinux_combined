@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-filelock'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-timeout
+- python-pytest-mock
+repo_depends:
+- python
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-hatchling
+- python-hatch-vcs
+update_on:
+- alias: python
+- alpm: python-filelock
+  source: archpkg

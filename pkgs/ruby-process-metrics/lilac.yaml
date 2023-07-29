@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-process-metrics'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- procps-ng
+- ruby-console
+- ruby-samovar
+repo_makedepends:
+- git
+- ruby-covered
+- ruby-rake
+- ruby-rspec
+update_on:
+- alpm: ruby-process-metrics
+  source: archpkg

@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sshuttle'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- iptables
+- openssh
+- net-tools
+repo_makedepends:
+- python-sphinx
+- python-setuptools
+update_on:
+- alpm: iptables
+  source: alpm
+  strip_release: true
+- alpm: sshuttle
+  source: archpkg

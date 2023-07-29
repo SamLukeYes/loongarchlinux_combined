@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-graphics-tiff'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- perl-readonly
+- perl-test-requires
+- perl-test-deep
+repo_depends:
+- perl
+- libtiff
+repo_makedepends:
+- perl-extutils-depends
+- perl-extutils-pkgconfig
+update_on:
+- alias: perl
+- alpm: perl-graphics-tiff
+  source: archpkg

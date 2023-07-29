@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''tang'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- systemd
+repo_depends:
+- http-parser
+- jose
+repo_makedepends:
+- git
+- asciidoc
+- meson
+update_on:
+- alpm: tang
+  source: archpkg

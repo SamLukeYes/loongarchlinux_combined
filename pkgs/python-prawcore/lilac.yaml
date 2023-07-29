@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-prawcore'')
+
+  '
+repo_checkdepends:
+- python-mock
+- python-betamax-matchers
+- python-betamax-serializers
+- python-testfixtures
+repo_depends:
+- python-requests
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-prawcore
+  source: archpkg

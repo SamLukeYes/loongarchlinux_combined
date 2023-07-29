@@ -1,0 +1,11 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- coreutils
+- curl
+- lua
+- unzip
+- zip
+repo_makedepends: []
+update_on:
+- alias: lua

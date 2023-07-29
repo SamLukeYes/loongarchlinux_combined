@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ipynb'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-base64-bytestring
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- haskell-microlens
+- haskell-microlens-aeson
+- haskell-tasty
+- haskell-tasty-hunit
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-base64-bytestring
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-ipynb
+  source: archpkg

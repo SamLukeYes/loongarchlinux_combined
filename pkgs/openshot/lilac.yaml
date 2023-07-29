@@ -1,0 +1,35 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''openshot'')
+
+  '
+repo_checkdepends:
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- ffmpeg
+- hicolor-icon-theme
+- libopenshot
+- libopenshot-audio
+- python
+- pyqt5: python-pyqt5
+- pyqt5-webengine: python-pyqt5-webengine
+- python-pyzmq
+- python-requests
+- qt5-base
+- qt5-svg
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: openshot
+  source: archpkg

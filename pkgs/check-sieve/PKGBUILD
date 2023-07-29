@@ -1,0 +1,66 @@
+# Maintainer: George Rawlinson <grawlinson@archlinux.org>
+# Contributor: Geoffrey Frogeye <geoffrey+aur@frogeye.fr>
+
+pkgname=check-sieve
+pkgver=0.8
+pkgrel=2
+pkgdesc='Syntax checker for Sieve scripts'
+arch=('loong64' 'x86_64')
+url='https://github.com/dburkart/check-sieve'
+license=('MIT')
+depends=('gcc-libs')
+makedepends=('git')
+checkdepends=('python')
+_commit='18bb1f9ac8b233ac29f94212f94148b7855af714'
+source=(
+  "$pkgname::git+$url#commit=$_commit"
+  'ftbfs-gcc13.patch'
+)
+b2sums=('SKIP'
+        'a5944935fe8fb163c3cc3dd5f2dd53f0096e9db73be32788b3475011b7cbcf48993e9ef9539220ef88569b5ec8a6af5c1a226303dd0e051f180a35ce12510d00')
+
+pkgver() {
+  cd "$pkgname"
+
+  git describe --tags | sed 's/^check-sieve-//'
+}
+
+prepare() {
+  cd "$pkgname"
+
+  # include cstdint
+  patch -p1 -i "$srcdir/ftbfs-gcc13.patch"
+
+  # ensure LDFLAGS are passed to compiler
+  sed \
+    -i Makefile \
+    -e '/\t$(CXX).*/s/$/ $(LDFLAGS)/'
+}
+
+
+build() {
+  cd "$pkgname"
+
+  export CFLAGS+=" -ffat-lto-objects"
+
+  make
+}
+
+check() {
+  cd "$pkgname"
+
+  make test
+}
+
+package() {
+  cd "$pkgname"
+
+  make INSTALL_PREFIX="$pkgdir/usr" install
+
+  # license
+  install -vDm644 -t "$pkgdir/usr/share/licenses/$pkgname" LICENSE
+
+  # fix incorrect permissions on library
+  chmod 644 "$pkgdir/usr/lib/libchecksieve.a"
+}
+

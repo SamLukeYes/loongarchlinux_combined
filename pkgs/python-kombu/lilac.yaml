@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-kombu'')
+
+  '
+repo_checkdepends:
+- python-boto3
+- brotli: python-brotli
+- python-case
+- python-librabbitmq
+- python-msgpack
+- python-pycurl
+- python-pymongo
+- python-pyro
+- python-pytest
+- python-pytest-sugar
+- python-pytz
+- python-redis
+- python-sqlalchemy
+- python-yaml
+repo_depends:
+- python-amqp
+- python-vine
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-kombu
+  source: archpkg

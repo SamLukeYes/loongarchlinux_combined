@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ghc-lib-parser-ex'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-uniplate
+repo_makedepends:
+- ghc
+- haskell-extra
+- haskell-tasty
+- haskell-tasty-hunit
+- haskell-uniplate
+update_on:
+- alpm: haskell-uniplate
+  source: alpm
+- alpm: haskell-ghc
+  source: alpm
+- alpm: haskell-ghc-lib-parser-ex
+  source: archpkg

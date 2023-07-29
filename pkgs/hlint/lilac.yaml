@@ -1,0 +1,72 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hlint'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-ansi-terminal
+- haskell-cmdargs
+- haskell-cpphs
+- haskell-data-default
+- haskell-extra
+- haskell-file-embed
+- haskell-filepattern
+- haskell-ghc-lib-parser-ex
+- haskell-hscolour
+- haskell-refact
+- haskell-syb
+- haskell-uniplate
+- haskell-unordered-containers
+- haskell-utf8-string
+- haskell-vector
+- haskell-yaml
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-ansi-terminal
+  source: alpm
+- alpm: haskell-cmdargs
+  source: alpm
+- alpm: haskell-cpphs
+  source: alpm
+- alpm: haskell-data-default
+  source: alpm
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-file-embed
+  source: alpm
+- alpm: haskell-filepattern
+  source: alpm
+- alpm: haskell-ghc
+  source: alpm
+- alpm: haskell-ghc-lib-parser-ex
+  source: alpm
+- alpm: haskell-hscolour
+  source: alpm
+- alpm: haskell-refact
+  source: alpm
+- alpm: haskell-syb
+  source: alpm
+- alpm: haskell-uniplate
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-utf8-string
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-yaml
+  source: alpm
+- alpm: hlint
+  source: archpkg

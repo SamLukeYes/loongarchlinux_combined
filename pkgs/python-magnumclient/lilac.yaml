@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-magnumclient'')
+
+  '
+repo_checkdepends:
+- python-openstackclient
+- python-oslotest
+- python-osprofiler
+repo_depends:
+- python-pbr
+- python-keystoneauth1
+- python-stevedore
+- python-requests
+- python-oslo-i18n
+- python-oslo-log
+- python-oslo-serialization
+- python-oslo-utils
+- python-os-client-config
+- python-osc-lib
+- python-prettytable
+- python-cryptography
+- python-debtcollector
+repo_makedepends:
+- git
+update_on:
+- alpm: python-magnumclient
+  source: archpkg

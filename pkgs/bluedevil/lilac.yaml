@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''bluedevil'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bluez-qt
+- kdeclarative
+repo_makedepends:
+- extra-cmake-modules
+- plasma-framework
+- kdoctools
+- kcmutils
+update_on:
+- alpm: bluedevil
+  source: archpkg

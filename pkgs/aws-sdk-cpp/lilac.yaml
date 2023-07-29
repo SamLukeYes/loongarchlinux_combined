@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''aws-sdk-cpp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- openssl
+- curl
+- zlib
+- util-linux: util-linux-libs
+- aws-c-common
+- aws-c-event-stream
+- pulseaudio: libpulse
+- aws-crt-cpp
+repo_makedepends:
+- cmake
+- ninja
+update_on:
+- alpm: aws-sdk-cpp
+  source: archpkg

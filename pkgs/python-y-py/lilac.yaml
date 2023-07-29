@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-y-py'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python
+repo_makedepends:
+- python-build
+- python-installer
+- maturin: python-maturin
+update_on:
+- alias: python
+- alpm: python-y-py
+  source: archpkg

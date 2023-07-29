@@ -1,0 +1,98 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''samba'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libbsd
+- popt
+- cifs-utils
+- tdb
+- ldb
+- tevent
+- python
+- talloc
+- readline
+- gnutls
+- libbsd
+- openldap: libldap
+- cups: libcups
+- libarchive
+- libnsl
+- jansson
+- icu
+- samba: libwbclient
+- popt
+- cups: libcups
+- talloc
+- ldb
+- libbsd
+- python
+- tdb
+- gpgme
+- liburing
+- samba: libwbclient
+repo_makedepends:
+- python
+- python-markdown
+- python-dnspython
+- docbook-xsl
+- libbsd
+- popt
+- cups: libcups
+- readline
+- tevent
+- acl
+- openldap: libldap
+- libcap
+- ldb
+- krb5
+- pam
+- systemd
+- gnutls
+- talloc
+- tdb
+- dbus
+- perl-parse-yapp
+- libnsl
+- libtirpc
+- rpcsvc-proto
+- jansson
+- liburing
+- perl-json
+- glusterfs
+update_on:
+- alias: python
+- alias: readline
+- alpm: ldb
+  provides: libldb.so
+  source: alpm
+- alpm: tdb
+  provides: libtdb.so
+  source: alpm
+- alpm: tevent
+  provides: libtevent.so
+  source: alpm
+- alpm: readline
+  provides: libreadline.so
+  source: alpm
+- alias: icu
+- alias: python
+- alpm: ldb
+  provides: libldb.so
+  source: alpm
+- alpm: tdb
+  provides: libtdb.so
+  source: alpm
+- alpm: tevent
+  provides: libtevent.so
+  source: alpm
+- alpm: samba
+  source: archpkg

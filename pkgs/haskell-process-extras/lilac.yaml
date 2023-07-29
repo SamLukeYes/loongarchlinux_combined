@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-process-extras'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-data-default
+- haskell-generic-deriving
+- haskell-listlike
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-data-default
+  source: alpm
+- alpm: haskell-generic-deriving
+  source: alpm
+- alpm: haskell-listlike
+  source: alpm
+- alpm: haskell-process-extras
+  source: archpkg

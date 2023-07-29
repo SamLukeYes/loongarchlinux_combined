@@ -1,0 +1,14 @@
+destsubdir: extra
+repo_checkdepends:
+- procps-ng
+repo_depends:
+- glibc
+- perl
+- elfutils: debuginfod
+repo_makedepends:
+- gdb
+- docbook-xml
+- docbook-xsl
+- docbook-sgml
+update_on:
+- alias: perl

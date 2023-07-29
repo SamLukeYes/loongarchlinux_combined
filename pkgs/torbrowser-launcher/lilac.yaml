@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''torbrowser-launcher'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- pyqt5: python-pyqt5
+- python-requests
+- python-pysocks
+- gpgme: python-gpgme
+- python-packaging
+- gnupg
+- tor
+- hicolor-icon-theme
+- dbus-glib
+repo_makedepends:
+- python-setuptools
+- python-distro
+update_on:
+- alias: python
+- alpm: torbrowser-launcher
+  source: archpkg

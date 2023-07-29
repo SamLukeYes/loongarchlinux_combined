@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ghostscript'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libxt
+- cups: libcups
+- fontconfig
+- zlib
+- libpng
+- jbig2dec
+- libtiff
+- lcms2
+- dbus
+- libpaper
+- ijs
+- openjpeg2
+- libidn
+- poppler-data
+- ghostscript
+- ghostscript
+repo_makedepends:
+- gtk3
+- gnutls
+- glu
+- freeglut
+update_on:
+- alpm: ghostscript
+  source: archpkg

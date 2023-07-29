@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gtk2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cairo
+- desktop-file-utils
+- gtk4: gtk-update-icon-cache
+- cups: libcups
+- librsvg
+- libxcomposite
+- libxcursor
+- libxdamage
+- libxi
+- libxinerama
+- libxrandr
+- pango
+- shared-mime-info
+repo_makedepends:
+- git
+- gobject-introspection
+- gtk-doc
+update_on:
+- alpm: gtk2
+  source: archpkg

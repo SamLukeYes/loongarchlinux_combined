@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''one_gadget'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- ruby-elftools
+repo_makedepends:
+- ruby-rake
+- ruby-rdoc
+- ruby-bundler
+- ruby-yard
+- ruby-rspec
+update_on:
+- alias: ruby
+- alpm: one_gadget
+  source: archpkg

@@ -1,0 +1,10 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- glib2
+repo_makedepends:
+- gobject-introspection
+- git
+- meson
+- appstream-glib
+update_on: []

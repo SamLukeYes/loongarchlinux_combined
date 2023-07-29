@@ -1,0 +1,96 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''virtualbox'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- curl
+- gcc: gcc-libs
+- glibc
+- liblzf
+- libpng
+- libtpms
+- libvpx
+- libx11
+- libxcursor
+- libxext
+- libxinerama
+- libxml2
+- libxmu
+- libxt
+- openssl
+- procps-ng
+- python
+- qt5-base
+- qt5-tools
+- qt5-x11extras
+- shared-mime-info
+- zlib
+- python
+- dkms
+- gcc
+- make
+- glibc
+- pam
+- libx11
+- libxcomposite
+- libxdamage
+- libxext
+- libxfixes
+- libxmu
+- libxt
+- xorg-xrandr
+- xf86-video-vmware
+- glibc
+- pam
+- virtualbox
+- libvncserver
+repo_makedepends:
+- alsa-lib
+- curl
+- lvm2: device-mapper
+- git
+- glu
+- gsoap
+- glslang
+- java8-openjdk: jdk8-openjdk
+- libidl2
+- liblzf
+- pulseaudio: libpulse
+- libtpms
+- libvncserver
+- libvpx
+- libxcomposite
+- libxcursor
+- libxinerama
+- libxml2
+- libxmu
+- libxrandr
+- libxslt
+- libxtst
+- linux: linux-headers
+- mesa
+- python
+- qt5-base
+- qt5-tools
+- qt5-x11extras
+- sdl_ttf
+- vde2
+- xorgproto
+- xorg-server: xorg-server-devel
+- yasm
+update_on:
+- alias: python
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alias: python
+- alpm: virtualbox
+  source: archpkg

@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''simple-scan'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- colord: colord-sane
+- dconf
+- gtk3
+- libgusb
+- libhandy
+- sane
+repo_makedepends:
+- git
+- meson
+- vala
+- yelp-tools
+update_on:
+- alpm: simple-scan
+  source: archpkg

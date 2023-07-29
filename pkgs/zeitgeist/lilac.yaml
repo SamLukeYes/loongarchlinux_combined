@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''zeitgeist'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- json-glib
+- telepathy-glib
+- gtk3
+- xapian-core
+- sqlite
+repo_makedepends:
+- gobject-introspection
+- vala
+- raptor
+- python-rdflib
+- git
+update_on:
+- alpm: zeitgeist
+  source: archpkg

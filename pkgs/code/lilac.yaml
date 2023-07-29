@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''code'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- electron22
+- libsecret
+- libx11
+- libxkbfile
+- ripgrep
+repo_makedepends:
+- git
+- gulp
+- npm
+- python
+- yarn
+- nodejs-lts-gallium
+- desktop-file-utils
+update_on:
+- alpm: code
+  source: archpkg

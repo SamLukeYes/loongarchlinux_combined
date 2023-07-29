@@ -1,0 +1,70 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mmark'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-case-insensitive
+- haskell-dlist
+- haskell-email-validate
+- haskell-foldl
+- haskell-hashable
+- haskell-html-entity-map
+- haskell-lucid
+- haskell-megaparsec
+- haskell-microlens
+- haskell-microlens-th
+- haskell-modern-uri
+- haskell-parser-combinators
+- haskell-text-metrics
+- haskell-unordered-containers
+- haskell-yaml
+repo_makedepends:
+- ghc
+- haskell-quickcheck
+- haskell-hspec
+- haskell-hspec-megaparsec
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-case-insensitive
+  source: alpm
+- alpm: haskell-dlist
+  source: alpm
+- alpm: haskell-email-validate
+  source: alpm
+- alpm: haskell-foldl
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-html-entity-map
+  source: alpm
+- alpm: haskell-lucid
+  source: alpm
+- alpm: haskell-megaparsec
+  source: alpm
+- alpm: haskell-microlens
+  source: alpm
+- alpm: haskell-microlens-th
+  source: alpm
+- alpm: haskell-modern-uri
+  source: alpm
+- alpm: haskell-parser-combinators
+  source: alpm
+- alpm: haskell-text-metrics
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-yaml
+  source: alpm
+- alpm: haskell-mmark
+  source: archpkg

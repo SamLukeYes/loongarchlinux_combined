@@ -1,0 +1,44 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lutris'')
+
+  '
+repo_checkdepends:
+- python-nose-cover3
+- wine
+- xorg-server: xorg-server-xvfb
+- xterm
+repo_depends:
+- cabextract
+- curl
+- glib2
+- gnome-desktop
+- gtk3
+- mesa-demos: mesa-utils
+- p7zip
+- psmisc
+- python-cairo
+- python-certifi
+- python-distro
+- python-evdev
+- pygobject: python-gobject
+- python-lxml
+- python-moddb
+- python-pillow
+- python-requests
+- python-yaml
+- unzip
+- webkit2gtk
+- xorg-xrandr
+repo_makedepends:
+- git
+- meson
+- ninja
+- python-poetry-core
+update_on:
+- alpm: lutris
+  source: archpkg

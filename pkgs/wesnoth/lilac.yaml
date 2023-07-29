@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wesnoth'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- sdl2_mixer
+- sdl2_image
+- boost: boost-libs
+- pango
+- dbus
+repo_makedepends:
+- boost
+- cmake
+- git
+- ninja
+update_on:
+- alpm: wesnoth
+  source: archpkg

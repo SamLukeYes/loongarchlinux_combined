@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-calendar'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- evolution-data-server
+- geoclue
+- geocode-glib: geocode-glib-2
+- gsettings-desktop-schemas
+- libadwaita
+- evolution-data-server: libedataserverui4
+- libgweather-4
+- libsoup3
+repo_makedepends:
+- git
+- meson
+update_on:
+- alpm: gnome-calendar
+  source: archpkg

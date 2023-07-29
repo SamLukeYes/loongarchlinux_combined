@@ -1,0 +1,6 @@
+destsubdir: core
+repo_checkdepends: []
+repo_depends:
+- iana-etc
+repo_makedepends: []
+update_on: []

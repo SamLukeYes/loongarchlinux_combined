@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-hvac'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-authlib
+- python-flask
+- python-flask-sqlalchemy
+- python-parameterized
+- python-requests-mock
+- python-werkzeug
+- python-jwcrypto
+- consul
+repo_depends:
+- python
+- python-pyhcl
+- python-requests
+repo_makedepends:
+- python-build
+- python-installer
+- python-poetry-core
+- vault
+update_on:
+- alias: python
+- alpm: python-hvac
+  source: archpkg

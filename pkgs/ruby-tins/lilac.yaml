@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-tins'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- ruby-sync
+repo_makedepends:
+- git
+- ruby-rake
+update_on:
+- alias: ruby
+- alpm: ruby-tins
+  source: archpkg

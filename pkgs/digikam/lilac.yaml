@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''digikam'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- lensfun
+- opencv
+- akonadi-contacts
+- knotifyconfig
+- libksane
+- kfilemetadata
+- marble: marble-common
+- threadweaver
+- kcalendarcore
+- qt5-networkauth
+- qt5-xmlpatterns
+- imagemagick
+- jasper
+- glu
+- perl-image-exiftool
+repo_makedepends:
+- extra-cmake-modules
+- doxygen
+- eigen
+- boost
+- kdoctools
+update_on:
+- alpm: opencv
+  source: alpm
+  strip_release: true
+- alpm: digikam
+  source: archpkg

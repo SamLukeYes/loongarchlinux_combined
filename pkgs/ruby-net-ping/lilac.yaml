@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-net-ping'')
+
+  '
+repo_checkdepends:
+- ruby-test-unit
+- ruby-fakeweb
+repo_depends:
+- ruby
+repo_makedepends:
+- ruby-rake
+- ruby-rdoc
+- ruby-rake-compiler
+- ruby-yard
+- ruby-rspec
+- ruby-bundler
+update_on:
+- alias: ruby
+- alpm: ruby-net-ping
+  source: archpkg

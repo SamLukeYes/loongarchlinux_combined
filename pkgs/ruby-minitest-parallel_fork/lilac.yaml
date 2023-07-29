@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-minitest-parallel_fork'')
+
+  '
+repo_checkdepends:
+- ruby-rake
+- ruby-rspec
+repo_depends:
+- ruby-minitest
+repo_makedepends:
+- ruby-minitest-hooks
+- ruby-minitest-global_expectations
+update_on:
+- alpm: ruby-minitest-parallel_fork
+  source: archpkg

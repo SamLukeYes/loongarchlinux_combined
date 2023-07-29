@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mk-configure'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bash
+- gawk
+repo_makedepends:
+- bmake
+- bmkdep
+update_on:
+- alpm: mk-configure
+  source: archpkg

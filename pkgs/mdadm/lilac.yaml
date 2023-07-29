@@ -1,0 +1,8 @@
+destsubdir: core
+repo_checkdepends: []
+repo_depends:
+- glibc
+- systemd
+repo_makedepends:
+- git
+update_on: []

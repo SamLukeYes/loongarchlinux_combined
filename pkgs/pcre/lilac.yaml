@@ -1,0 +1,11 @@
+destsubdir: core
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- readline
+- zlib
+- bzip2
+- bash
+repo_makedepends: []
+update_on:
+- alias: readline

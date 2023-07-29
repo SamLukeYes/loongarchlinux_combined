@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''keystone'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- python
+- keystone
+repo_makedepends:
+- cmake
+- ninja
+- gcc: gcc-libs
+- python
+- python-setuptools
+update_on:
+- alias: python
+- alpm: keystone
+  source: archpkg

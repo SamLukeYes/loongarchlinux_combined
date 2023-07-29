@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-hatch-jupyter-builder'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-mock
+repo_depends:
+- python-hatchling
+repo_makedepends:
+- python-build
+- python-installer
+update_on:
+- alpm: python-hatch-jupyter-builder
+  source: archpkg

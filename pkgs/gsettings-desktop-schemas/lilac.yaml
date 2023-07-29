@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gsettings-desktop-schemas'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- adobe-source-code-pro-fonts
+- cantarell-fonts
+- dconf
+- glib2
+repo_makedepends:
+- git
+- gobject-introspection
+- meson
+update_on:
+- alpm: gsettings-desktop-schemas
+  source: archpkg

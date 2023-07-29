@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mockery'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- haskell-hspec
+repo_depends:
+- ghc: ghc-libs
+- haskell-base-compat
+- haskell-temporary
+- haskell-logging-facade
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-base-compat
+  source: alpm
+- alpm: haskell-temporary
+  source: alpm
+- alpm: haskell-logging-facade
+  source: alpm
+- alpm: haskell-mockery
+  source: archpkg

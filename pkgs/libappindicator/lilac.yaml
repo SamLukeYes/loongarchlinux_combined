@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libappindicator'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libdbusmenu: libdbusmenu-gtk2
+- libindicator: libindicator-gtk2
+- libdbusmenu: libdbusmenu-gtk3
+- libindicator: libindicator-gtk3
+repo_makedepends:
+- dbus-glib
+- gnome-common
+- gobject-introspection
+- gtk-doc
+- libdbusmenu: libdbusmenu-gtk2
+- libdbusmenu: libdbusmenu-gtk3
+- libindicator: libindicator-gtk2
+- libindicator: libindicator-gtk3
+- vala
+update_on:
+- alpm: libappindicator
+  source: archpkg

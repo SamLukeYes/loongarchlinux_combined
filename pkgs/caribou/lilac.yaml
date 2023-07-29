@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''caribou'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- pyatspi: python-atspi
+- pygobject: python-gobject
+- gtk3
+- libxklavier
+- libgee
+- clutter
+- dconf
+repo_makedepends:
+- intltool
+- docbook-xsl
+- gobject-introspection
+- vala
+- git
+- gnome-common
+update_on:
+- alpm: caribou
+  source: archpkg

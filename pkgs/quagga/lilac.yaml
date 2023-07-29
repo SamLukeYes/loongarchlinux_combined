@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''quagga'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libcap
+- libnl
+- net-snmp
+- readline
+- ncurses
+- perl
+- c-ares
+- openssl
+repo_makedepends: []
+update_on:
+- alias: readline
+- alias: perl
+- alpm: quagga
+  source: archpkg

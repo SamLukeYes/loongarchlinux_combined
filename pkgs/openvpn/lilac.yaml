@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''openvpn'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- openssl
+- lzo
+- lz4
+- systemd: systemd-libs
+- pkcs11-helper
+repo_makedepends:
+- git
+- systemd
+- python-docutils
+update_on:
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: pkcs11-helper
+  provides: libpkcs11-helper.so
+  source: alpm
+- alpm: openvpn
+  source: archpkg

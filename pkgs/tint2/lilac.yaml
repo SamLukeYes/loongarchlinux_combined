@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''tint2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- imlib2
+- startup-notification
+repo_makedepends:
+- cmake
+- git
+- ninja
+- setconf
+update_on:
+- alpm: tint2
+  source: archpkg

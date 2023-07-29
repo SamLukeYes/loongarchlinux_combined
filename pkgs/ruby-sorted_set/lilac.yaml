@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-sorted_set'')
+
+  '
+repo_checkdepends:
+- ruby-rake
+- ruby-test-unit
+repo_depends:
+- ruby-set
+- ruby-rbtree
+repo_makedepends:
+- git
+update_on:
+- alpm: ruby-sorted_set
+  source: archpkg

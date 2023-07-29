@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lua-psl'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libpsl
+repo_makedepends:
+- luarocks
+- lua
+- lua51
+- lua52
+- lua53
+update_on:
+- alpm: lua-psl
+  source: archpkg

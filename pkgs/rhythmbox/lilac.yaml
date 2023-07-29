@@ -1,0 +1,31 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- dconf
+- grilo
+- gstreamer: gst-plugins-base
+- gstreamer: gst-plugins-good
+- json-glib
+- libgudev
+- libnotify
+- libpeas
+- libsoup3
+- media-player-info
+- pygobject: python-gobject
+- tdb
+repo_makedepends:
+- brasero
+- git
+- gobject-introspection
+- gtk-doc
+- libdmapsharing
+- libgpod
+- libmtp
+- lirc
+- meson
+- vala
+- yelp-tools
+- zeitgeist
+- check
+- xorg-server: xorg-server-xvfb
+update_on: []

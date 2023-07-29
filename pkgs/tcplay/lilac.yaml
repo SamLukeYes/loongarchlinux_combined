@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''tcplay'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- lvm2: device-mapper
+- util-linux: util-linux-libs
+- libgcrypt
+repo_makedepends:
+- cmake
+update_on:
+- alpm: util-linux-libs
+  provides: libuuid.so
+  source: alpm
+- alpm: tcplay
+  source: archpkg

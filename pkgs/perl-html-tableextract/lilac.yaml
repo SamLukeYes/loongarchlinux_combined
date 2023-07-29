@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-html-tableextract'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl-html-parser
+- perl-html-element-extended
+repo_makedepends:
+- perl-html-parser
+- perl-html-element-extended
+update_on:
+- alpm: perl-html-tableextract
+  source: archpkg

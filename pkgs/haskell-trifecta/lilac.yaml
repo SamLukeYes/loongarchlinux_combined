@@ -1,0 +1,71 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-trifecta'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-ansi-terminal
+- haskell-blaze-builder
+- haskell-blaze-html
+- haskell-blaze-markup
+- haskell-charset
+- haskell-comonad
+- haskell-fingertree
+- haskell-hashable
+- haskell-indexed-traversable
+- haskell-lens
+- haskell-parsers
+- haskell-prettyprinter
+- haskell-prettyprinter-ansi-terminal
+- haskell-profunctors
+- haskell-reducers
+- haskell-unordered-containers
+- haskell-utf8-string
+repo_makedepends:
+- ghc
+- haskell-quickcheck
+update_on:
+- alpm: haskell-ansi-terminal
+  source: alpm
+- alpm: haskell-blaze-builder
+  source: alpm
+- alpm: haskell-blaze-html
+  source: alpm
+- alpm: haskell-blaze-markup
+  source: alpm
+- alpm: haskell-charset
+  source: alpm
+- alpm: haskell-comonad
+  source: alpm
+- alpm: haskell-fingertree
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-indexed-traversable
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-parsers
+  source: alpm
+- alpm: haskell-prettyprinter
+  source: alpm
+- alpm: haskell-prettyprinter-ansi-terminal
+  source: alpm
+- alpm: haskell-profunctors
+  source: alpm
+- alpm: haskell-reducers
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-utf8-string
+  source: alpm
+- alpm: haskell-trifecta
+  source: archpkg

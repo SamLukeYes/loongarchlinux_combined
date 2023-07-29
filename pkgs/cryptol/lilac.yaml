@@ -1,0 +1,101 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cryptol'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- z3
+- haskell-arithmoi
+- haskell-async
+- haskell-base-compat
+- haskell-bv-sized
+- haskell-cryptohash-sha1
+- haskell-extra
+- haskell-gitrev
+- haskell-graphscc
+- haskell-heredoc
+- haskell-libbf
+- haskell-memotrie
+- haskell-monad-control
+- haskell-monadlib
+- haskell-optparse-applicative
+- haskell-parameterized-utils
+- haskell-panic
+- haskell-prettyprinter
+- haskell-sbv
+- haskell-simple-smt
+- haskell-strict
+- haskell-temporary
+- haskell-tf-random
+- haskell-transformers-base
+- haskell-what4
+- haskell-ansi-terminal
+- haskell-blaze-html
+repo_makedepends:
+- ghc
+- uusi
+- alex
+- happy
+update_on:
+- alpm: haskell-arithmoi
+  source: alpm
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-base-compat
+  source: alpm
+- alpm: haskell-bv-sized
+  source: alpm
+- alpm: haskell-cryptohash-sha1
+  source: alpm
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-gitrev
+  source: alpm
+- alpm: haskell-graphscc
+  source: alpm
+- alpm: haskell-heredoc
+  source: alpm
+- alpm: haskell-libbf
+  source: alpm
+- alpm: haskell-memotrie
+  source: alpm
+- alpm: haskell-monad-control
+  source: alpm
+- alpm: haskell-monadlib
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-parameterized-utils
+  source: alpm
+- alpm: haskell-panic
+  source: alpm
+- alpm: haskell-prettyprinter
+  source: alpm
+- alpm: haskell-sbv
+  source: alpm
+- alpm: haskell-simple-smt
+  source: alpm
+- alpm: haskell-strict
+  source: alpm
+- alpm: haskell-temporary
+  source: alpm
+- alpm: haskell-tf-random
+  source: alpm
+- alpm: haskell-transformers-base
+  source: alpm
+- alpm: haskell-what4
+  source: alpm
+- alpm: haskell-ansi-terminal
+  source: alpm
+- alpm: haskell-blaze-html
+  source: alpm
+- alpm: cryptol
+  source: archpkg

@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wire-desktop'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- electron22
+- xdg-utils
+repo_makedepends:
+- git
+- npm
+- yarn
+- nodejs-lts-gallium
+update_on:
+- alpm: wire-desktop
+  source: archpkg

@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pygit2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest-runner
+repo_depends:
+- python-cffi
+- python-six
+- python-cached-property
+repo_makedepends:
+- cython
+- python-build
+- python-cffi
+- python-installer
+- python-setuptools
+- git
+- python-six
+- python-wheel
+update_on:
+- alpm: julia
+  provides: libgit2.so
+  source: alpm
+- alpm: python-pygit2
+  source: archpkg

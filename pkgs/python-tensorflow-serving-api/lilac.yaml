@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-tensorflow-serving-api'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- grpc: python-grpcio
+- tensorflow: python-tensorflow
+- protobuf: python-protobuf
+repo_makedepends:
+- bazel
+- git
+- python-build
+- python-installer
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-tensorflow-serving-api
+  source: archpkg

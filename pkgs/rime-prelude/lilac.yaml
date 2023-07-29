@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rime-prelude'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- rime-prelude
+- rime-essay
+- rime-luna-pinyin
+- rime-bopomofo
+- rime-cangjie
+- rime-stroke
+- rime-terra-pinyin
+repo_makedepends: []
+update_on:
+- alpm: rime-prelude
+  source: archpkg

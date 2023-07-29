@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''frogatto'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glew
+- sdl_image
+- sdl_ttf
+- sdl_mixer
+- libpng
+- boost: boost-libs
+- frogatto-data
+- ttf-ubuntu-font-family
+repo_makedepends:
+- mesa
+- boost
+update_on:
+- alpm: frogatto
+  source: archpkg

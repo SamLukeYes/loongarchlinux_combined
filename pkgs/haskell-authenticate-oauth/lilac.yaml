@@ -1,0 +1,49 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-authenticate-oauth'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-http-client
+- haskell-crypto-pubkey-types
+- haskell-rsa
+- haskell-data-default
+- haskell-base64-bytestring
+- haskell-sha
+- haskell-random
+- haskell-http-types
+- haskell-blaze-builder
+- haskell-transformers-compat
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-http-client
+  source: alpm
+- alpm: haskell-crypto-pubkey-types
+  source: alpm
+- alpm: haskell-rsa
+  source: alpm
+- alpm: haskell-data-default
+  source: alpm
+- alpm: haskell-base64-bytestring
+  source: alpm
+- alpm: haskell-sha
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-blaze-builder
+  source: alpm
+- alpm: haskell-transformers-compat
+  source: alpm
+- alpm: haskell-authenticate-oauth
+  source: archpkg

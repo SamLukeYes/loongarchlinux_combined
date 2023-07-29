@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-testing.postgresql'')
+
+  '
+repo_checkdepends:
+- python-nose
+- python-psycopg2
+- python-sqlalchemy
+repo_depends:
+- python-testing.common.database
+- python-pg8000
+- postgresql
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-testing.postgresql
+  source: archpkg

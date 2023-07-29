@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''yelp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bzip2
+- libhandy
+- libxslt
+- webkit2gtk-4.1
+- xz
+- yelp-xsl
+repo_makedepends:
+- appstream-glib
+- autoconf-archive
+- git
+- itstool
+update_on:
+- alpm: yelp
+  source: archpkg

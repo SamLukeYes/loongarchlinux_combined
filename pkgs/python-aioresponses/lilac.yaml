@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-aioresponses'')
+
+  '
+repo_checkdepends:
+- python-pytest-runner
+- python-ddt
+- python-asynctest
+repo_depends:
+- python-aiohttp
+repo_makedepends:
+- python-pbr
+update_on:
+- alpm: python-aioresponses
+  source: archpkg

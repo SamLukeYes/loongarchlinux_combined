@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rails-html-sanitizer'')
+
+  '
+repo_checkdepends:
+- ruby-rails-dom-testing
+repo_depends:
+- ruby
+- ruby-loofah
+repo_makedepends:
+- ruby-bundler
+- ruby-minitest
+- ruby-rake
+update_on:
+- alias: ruby
+- alpm: ruby-rails-html-sanitizer
+  source: archpkg

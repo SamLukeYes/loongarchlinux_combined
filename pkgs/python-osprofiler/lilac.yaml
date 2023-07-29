@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-osprofiler'')
+
+  '
+repo_checkdepends:
+- python-ddt
+- python-docutils
+- python-elasticsearch
+- python-pymongo
+- python-redis
+- python-stestr
+repo_depends:
+- python-netaddr
+- python-oslo-concurrency
+- python-oslo-serialization
+- python-oslo-utils
+- python-prettytable
+- python-requests
+- python-six
+- python-webob
+repo_makedepends: []
+update_on:
+- alpm: python-osprofiler
+  source: archpkg

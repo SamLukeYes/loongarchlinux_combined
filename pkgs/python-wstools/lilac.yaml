@@ -1,0 +1,12 @@
+destsubdir: extra
+repo_checkdepends:
+- python-pytest-runner
+- autopep8
+- python-pytest-cov
+repo_depends:
+- python-six
+repo_makedepends:
+- python-pbr
+- python-setuptools
+- python-pip
+update_on: []

@@ -1,0 +1,20 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- speech-dispatcher: libspeechd
+- pyxdg: python-pyxdg
+- dotconf
+- pulseaudio: libpulse
+- libao
+- glib2
+- libtool
+repo_makedepends:
+- glib2
+- intltool
+- espeak-ng
+- libtool
+- pyxdg: python-pyxdg
+- dotconf
+- pulseaudio: libpulse
+- libao
+update_on: []

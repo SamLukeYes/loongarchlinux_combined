@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hasql-pool'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- pifpaf
+- postgresql
+repo_depends:
+- ghc: ghc-libs
+- haskell-base-prelude
+- haskell-hasql
+- haskell-resource-pool
+repo_makedepends:
+- ghc
+- haskell-hspec
+update_on:
+- alpm: haskell-base-prelude
+  source: alpm
+- alpm: haskell-hasql
+  source: alpm
+- alpm: haskell-resource-pool
+  source: alpm
+- alpm: haskell-hasql-pool
+  source: archpkg

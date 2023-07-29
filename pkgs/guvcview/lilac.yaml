@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''guvcview'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ffmpeg
+- gsl
+- gtk3
+- qt5-base
+- portaudio
+- guvcview: guvcview-common
+- gtk3
+- ffmpeg
+- gsl
+- libusb
+- portaudio
+- guvcview: guvcview-common
+- qt5-base
+repo_makedepends:
+- intltool
+update_on:
+- alpm: gsl
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: gsl
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: guvcview
+  source: archpkg

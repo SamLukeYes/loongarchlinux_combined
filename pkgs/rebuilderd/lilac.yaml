@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rebuilderd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- openssl
+- shared-mime-info
+- xz
+- rebuilderd: rebuilderd-tools
+- sqlite
+- archlinux-repro
+repo_makedepends:
+- sqlite
+- scdoc
+update_on:
+- alpm: zstd
+  provides: libzstd.so
+  source: alpm
+- alpm: rebuilderd
+  source: archpkg

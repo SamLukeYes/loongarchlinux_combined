@@ -1,0 +1,11 @@
+destsubdir: core
+repo_checkdepends: []
+repo_depends:
+- sqlite
+- zlib
+repo_makedepends:
+- gyp
+- mercurial
+- perl
+- python
+update_on: []

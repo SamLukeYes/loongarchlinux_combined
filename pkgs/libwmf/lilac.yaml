@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libwmf'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libx11
+- gsfonts
+- freetype2
+- expat
+repo_makedepends:
+- gtk2
+- libxt
+update_on:
+- alpm: libwmf
+  source: archpkg

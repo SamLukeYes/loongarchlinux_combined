@@ -1,0 +1,57 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-postgresql-simple'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-only
+- haskell-aeson
+- haskell-attoparsec
+- haskell-case-insensitive
+- haskell-hashable
+- haskell-postgresql-libpq
+- haskell-scientific
+- haskell-time-compat
+- haskell-uuid-types
+- haskell-vector
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hunit
+- haskell-base16-bytestring
+- haskell-cryptohash-md5
+- haskell-inspection-testing
+- haskell-tasty
+- haskell-tasty-golden
+- haskell-tasty-hunit
+update_on:
+- alpm: haskell-only
+  source: alpm
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-case-insensitive
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-postgresql-libpq
+  source: alpm
+- alpm: haskell-scientific
+  source: alpm
+- alpm: haskell-time-compat
+  source: alpm
+- alpm: haskell-uuid-types
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-postgresql-simple
+  source: archpkg

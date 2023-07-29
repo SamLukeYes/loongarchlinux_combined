@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-tweaks'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gnome-settings-daemon
+- pygobject: python-gobject
+- libhandy
+repo_makedepends:
+- git
+- meson
+update_on:
+- alpm: gnome-tweaks
+  source: archpkg

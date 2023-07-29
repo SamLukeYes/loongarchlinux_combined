@@ -1,0 +1,52 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ibus'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- dconf
+- gtk3
+- hicolor-icon-theme
+- libnotify
+- pygobject: python-gobject
+- iso-codes
+- librsvg
+- dconf
+- gtk3
+- hicolor-icon-theme
+- libnotify
+- pygobject: python-gobject
+- iso-codes
+- librsvg
+- ibus: libibus
+repo_makedepends:
+- gobject-introspection
+- vala
+- intltool
+- gnome-common
+- gtk-doc
+- gtk4
+- gtk2
+- qt5-base
+- unicode-cldr
+- unicode-character-database
+- unicode-emoji
+update_on:
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: ibus
+  source: archpkg

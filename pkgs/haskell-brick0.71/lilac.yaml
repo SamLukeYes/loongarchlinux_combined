@@ -1,0 +1,53 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-brick0.71'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-vty
+- haskell-data-clist
+- haskell-dlist
+- haskell-microlens
+- haskell-microlens-th
+- haskell-microlens-mtl
+- haskell-config-ini
+- haskell-vector
+- haskell-contravariant
+- haskell-text-zipper
+- haskell-word-wrap
+repo_makedepends:
+- ghc
+- haskell-quickcheck
+update_on:
+- alpm: haskell-vty
+  source: alpm
+- alpm: haskell-data-clist
+  source: alpm
+- alpm: haskell-dlist
+  source: alpm
+- alpm: haskell-microlens
+  source: alpm
+- alpm: haskell-microlens-th
+  source: alpm
+- alpm: haskell-microlens-mtl
+  source: alpm
+- alpm: haskell-config-ini
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-contravariant
+  source: alpm
+- alpm: haskell-text-zipper
+  source: alpm
+- alpm: haskell-word-wrap
+  source: alpm
+- alpm: haskell-brick0.71
+  source: archpkg

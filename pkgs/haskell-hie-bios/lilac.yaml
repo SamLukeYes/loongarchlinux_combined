@@ -1,0 +1,72 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hie-bios'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- cabal-install
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-base16-bytestring
+- haskell-co-log-core
+- haskell-conduit
+- haskell-conduit-extra
+- haskell-cryptohash-sha1
+- haskell-extra
+- haskell-file-embed
+- haskell-optparse-applicative
+- haskell-prettyprinter
+- haskell-temporary
+- haskell-unix-compat
+- haskell-unordered-containers
+- haskell-vector
+- haskell-yaml
+repo_makedepends:
+- ghc
+- uusi
+- haskell-tagged
+- haskell-tasty
+- haskell-tasty-expected-failure
+- haskell-tasty-hunit
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-base16-bytestring
+  source: alpm
+- alpm: haskell-co-log-core
+  source: alpm
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-conduit-extra
+  source: alpm
+- alpm: haskell-cryptohash-sha1
+  source: alpm
+- alpm: haskell-exceptions
+  source: alpm
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-file-embed
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-prettyprinter
+  source: alpm
+- alpm: haskell-temporary
+  source: alpm
+- alpm: haskell-unix-compat
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-yaml
+  source: alpm
+- alpm: haskell-hie-bios
+  source: archpkg

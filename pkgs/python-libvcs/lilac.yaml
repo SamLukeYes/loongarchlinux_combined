@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-libvcs'')
+
+  '
+repo_checkdepends:
+- git
+- mercurial
+- python-pytest
+- python-pytest-mock
+- subversion
+repo_depends:
+- python
+repo_makedepends:
+- python-build
+- python-installer
+- python-poetry-core
+- python-typing_extensions
+update_on:
+- alias: python
+- alpm: python-libvcs
+  source: archpkg

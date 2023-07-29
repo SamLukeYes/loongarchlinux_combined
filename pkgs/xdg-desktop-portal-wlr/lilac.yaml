@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xdg-desktop-portal-wlr'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- xdg-desktop-portal
+- pipewire
+- libinih
+repo_makedepends:
+- meson
+- wayland-protocols
+- wayland
+- scdoc
+update_on:
+- alpm: xdg-desktop-portal-wlr
+  source: archpkg

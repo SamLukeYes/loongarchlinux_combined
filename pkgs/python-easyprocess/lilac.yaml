@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-easyprocess'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-timeout
+- python-entrypoint2
+- python-pillow
+- python-pyvirtualdisplay
+- imagemagick
+- iputils
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- python
+repo_makedepends:
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-easyprocess
+  source: archpkg

@@ -1,0 +1,50 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''krita'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kitemviews
+- kitemmodels
+- ki18n
+- kcompletion
+- kguiaddons
+- kcrash
+- qt5-svg
+- qt5-multimedia
+- gsl
+- libraw
+- exiv2
+- openexr
+- fftw
+- openjpeg2
+- opencolorio
+- libwebp
+- hicolor-icon-theme
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+- boost
+- eigen
+- poppler: poppler-qt5
+- pyqt5: python-pyqt5
+- libheif
+- qt5-tools
+- sip
+- kseexpr
+- libmypaint
+- libjxl
+- xsimd
+update_on:
+- alpm: gsl
+  source: alpm
+  strip_release: true
+- alpm: krita
+  source: archpkg

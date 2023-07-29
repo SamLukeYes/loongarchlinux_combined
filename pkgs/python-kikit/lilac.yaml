@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-kikit'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- kicad
+- python-numpy
+- python-shapely
+- python-click
+- python-markdown2
+- python-pybars3
+- python-solidpython
+- python-pcbnewtransition
+- python-commentjson
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-kikit
+  source: archpkg

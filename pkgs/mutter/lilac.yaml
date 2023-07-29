@@ -1,0 +1,35 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- colord
+- dconf
+- gnome-desktop: gnome-desktop-4
+- gnome-settings-daemon
+- graphene
+- gsettings-desktop-schemas
+- lcms2
+- libcanberra
+- libgudev
+- libinput
+- libsm
+- sysprof: libsysprof-capture
+- libxkbcommon: libxkbcommon-x11
+- libxkbfile
+- pipewire
+- startup-notification
+- xorg-xwayland
+repo_makedepends:
+- egl-wayland
+- gi-docgen
+- git
+- gobject-introspection
+- gtk3
+- meson
+- sysprof
+- wayland-protocols
+- xorg-server
+- xorg-server: xorg-server-xvfb
+- python-dbusmock
+- wireplumber
+- zenity
+update_on: []

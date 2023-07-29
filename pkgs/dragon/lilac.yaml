@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''dragon'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- hicolor-icon-theme
+- kparts
+- phonon: phonon-qt5
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+update_on:
+- alpm: dragon
+  source: archpkg

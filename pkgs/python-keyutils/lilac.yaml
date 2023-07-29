@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-keyutils'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python
+- keyutils
+repo_makedepends:
+- python
+- python-setuptools
+- python-pytest-runner
+- cython
+update_on:
+- alias: python
+- alpm: python-keyutils
+  source: archpkg

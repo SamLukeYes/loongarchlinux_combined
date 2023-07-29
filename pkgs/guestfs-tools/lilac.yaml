@@ -1,0 +1,63 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''guestfs-tools'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- linux
+- rpm-tools
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- jansson
+- openssl
+- perl-libintl-perl
+- gcc: gcc-libs
+- glibc
+- jansson
+- openssl
+- perl-libintl-perl
+- libguestfs
+- libvirt
+- libxml2
+- ncurses
+- pcre2
+- xz
+repo_makedepends:
+- bash-completion
+- cdrtools
+- libguestfs
+- libisoburn
+- libvirt
+- libxml2
+- ncurses
+- ocaml-findlib
+- perl-module-build
+- xz
+update_on:
+- alpm: libguestfs
+  provides: libguestfs.so
+  source: alpm
+- alpm: libvirt
+  provides: libvirt.so
+  source: alpm
+- alpm: libxml2
+  provides: libxml2.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: pcre2
+  provides: libpcre2-8.so
+  source: alpm
+- alpm: xz
+  provides: liblzma.so
+  source: alpm
+- alpm: guestfs-tools
+  source: archpkg

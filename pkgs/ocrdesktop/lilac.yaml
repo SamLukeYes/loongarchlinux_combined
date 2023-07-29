@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ocrdesktop'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libwnck3
+- pyatspi: python-atspi
+- python-pillow
+- python-pytesseract
+repo_makedepends: []
+update_on:
+- alpm: ocrdesktop
+  source: archpkg

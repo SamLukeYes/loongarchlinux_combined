@@ -1,0 +1,92 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-coinbase-pro'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-hsopenssl
+- haskell-aeson
+- haskell-aeson-casing
+- haskell-async
+- haskell-cryptonite
+- haskell-http-api-data
+- haskell-http-client
+- haskell-http-client-tls
+- haskell-http-streams
+- haskell-http-types
+- haskell-io-streams
+- haskell-memory
+- haskell-network
+- haskell-servant
+- haskell-servant-client
+- haskell-servant-client-core
+- haskell-tasty
+- haskell-tasty-hunit
+- haskell-unagi-streams
+- haskell-unordered-containers
+- haskell-uuid
+- haskell-vector
+- haskell-websockets
+- haskell-wuss
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-hsopenssl
+  source: alpm
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-aeson-casing
+  source: alpm
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-cryptonite
+  source: alpm
+- alpm: haskell-http-api-data
+  source: alpm
+- alpm: haskell-http-client
+  source: alpm
+- alpm: haskell-http-client-tls
+  source: alpm
+- alpm: haskell-http-streams
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-io-streams
+  source: alpm
+- alpm: haskell-memory
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-servant
+  source: alpm
+- alpm: haskell-servant-client
+  source: alpm
+- alpm: haskell-servant-client-core
+  source: alpm
+- alpm: haskell-tasty
+  source: alpm
+- alpm: haskell-tasty-hunit
+  source: alpm
+- alpm: haskell-unagi-streams
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-uuid
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-websockets
+  source: alpm
+- alpm: haskell-wuss
+  source: alpm
+- alpm: haskell-coinbase-pro
+  source: archpkg

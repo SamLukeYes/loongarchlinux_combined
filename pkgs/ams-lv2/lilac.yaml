@@ -1,0 +1,51 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ams-lv2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- gcc: gcc-libs
+- glibc
+- atkmm
+- cairomm
+- fftw
+- glibmm
+- gtkmm
+- libsigc++
+repo_makedepends:
+- atkmm
+- cairomm
+- fftw
+- glibmm
+- gtkmm
+- libsigc++
+- lv2
+- lvtk
+- waf
+update_on:
+- alpm: atkmm
+  provides: libatkmm-1.6.so
+  source: alpm
+- alpm: cairomm
+  provides: libcairomm-1.0.so
+  source: alpm
+- alpm: fftw
+  provides: libfftw3.so
+  source: alpm
+- alpm: glibmm
+  provides: libglibmm-2.4.so
+  source: alpm
+- alpm: libsigc++
+  provides: libsigc-2.0.so
+  source: alpm
+- alpm: ams-lv2
+  source: archpkg

@@ -1,0 +1,94 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gdal'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- proj
+- blosc
+- crypto++
+- curl
+- libdeflate
+- expat
+- libfreexl
+- geos
+- libgeotiff
+- giflib
+- libjpeg-turbo
+- json-c
+- xz
+- libxml2
+- lz4
+- unixodbc
+- ocl-icd
+- openssl
+- pcre2
+- libpng
+- qhull
+- libspatialite
+- sqlite
+- libtiff
+- xerces-c
+- zlib
+- zstd
+- gdal
+- python-numpy
+repo_makedepends:
+- cmake
+- opencl-headers
+- python-setuptools
+- python-numpy
+- proj
+- arrow
+- blosc
+- cfitsio
+- curl
+- crypto++
+- libdeflate
+- expat
+- libfreexl
+- libgeotiff
+- geos
+- giflib
+- libheif
+- hdf5
+- libjpeg-turbo
+- json-c
+- libjxl
+- xz
+- libxml2
+- lz4
+- mariadb: mariadb-libs
+- netcdf
+- unixodbc
+- ocl-icd
+- openexr
+- openjpeg2
+- openssl
+- pcre2
+- libpng
+- podofo
+- poppler
+- postgresql: postgresql-libs
+- qhull
+- libspatialite
+- sqlite
+- swig
+- libtiff
+- libwebp
+- xerces-c
+- zlib
+- zstd
+update_on:
+- alpm: crypto++
+  source: alpm
+  strip_release: true
+- alpm: gdal
+  source: archpkg

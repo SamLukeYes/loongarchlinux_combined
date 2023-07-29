@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-paramiko'')
+
+  '
+repo_checkdepends:
+- python-pytest-runner
+- python-pytest-relaxed
+- python-pyasn1
+- python-invoke
+- python-mock
+repo_depends:
+- python-bcrypt
+- python-cryptography
+- python-pynacl
+repo_makedepends:
+- python-setuptools
+- python-bcrypt
+- python-cryptography
+- python-pynacl
+update_on:
+- alpm: python-paramiko
+  source: archpkg

@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-fakeweb'')
+
+  '
+repo_checkdepends:
+- ruby-mocha
+repo_depends:
+- ruby
+repo_makedepends:
+- ruby-rake
+- ruby-rspec
+- ruby-bundler
+- ruby-rdoc
+- ruby-test-unit
+update_on:
+- alias: ruby
+- alpm: ruby-fakeweb
+  source: archpkg

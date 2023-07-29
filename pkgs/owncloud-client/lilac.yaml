@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''owncloud-client'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- hicolor-icon-theme
+- libcloudproviders
+repo_makedepends:
+- extra-cmake-modules
+- python-sphinx
+- qt5-tools
+- doxygen
+- kio
+- libre-graph-api
+update_on:
+- alpm: owncloud-client
+  source: archpkg

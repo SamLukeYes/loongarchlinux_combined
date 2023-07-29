@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''vaultwarden-web'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- vaultwarden
+repo_makedepends:
+- git
+- nodejs-lts-gallium
+- npm
+update_on:
+- alpm: vaultwarden-web
+  source: archpkg

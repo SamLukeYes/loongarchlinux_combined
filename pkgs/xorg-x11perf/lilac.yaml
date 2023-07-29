@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xorg-x11perf'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libx11
+- libxmu
+- libxrender
+- libxft
+- libxext
+repo_makedepends:
+- xorg-util-macros
+update_on:
+- alpm: xorg-x11perf
+  source: archpkg

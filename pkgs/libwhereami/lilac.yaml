@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libwhereami'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python
+repo_depends:
+- boost: boost-libs
+- gcc: gcc-libs
+- glibc
+- leatherman
+repo_makedepends:
+- boost
+- cmake
+- rapidjson
+- curl
+update_on:
+- alpm: leatherman
+  provides: leatherman_execution.so
+  source: alpm
+- alpm: leatherman
+  provides: leatherman_file_util.so
+  source: alpm
+- alpm: leatherman
+  provides: leatherman_util.so
+  source: alpm
+- alpm: leatherman
+  provides: leatherman_logging.so
+  source: alpm
+- alpm: leatherman
+  provides: leatherman_locale.so
+  source: alpm
+- alpm: libwhereami
+  source: archpkg

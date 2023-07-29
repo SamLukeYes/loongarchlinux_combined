@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''btrfs-heatmap'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-btrfs
+repo_makedepends:
+- git
+update_on:
+- alpm: btrfs-heatmap
+  source: archpkg

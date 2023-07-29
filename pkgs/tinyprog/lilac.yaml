@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''tinyprog'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-pyserial
+- python-jsonmerge
+- python-intelhex
+- python-tqdm
+- python-six
+- python-packaging
+- python-pyusb
+repo_makedepends:
+- python-setuptools-scm
+update_on:
+- alpm: tinyprog
+  source: archpkg

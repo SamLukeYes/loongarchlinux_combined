@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''firefox-adblock-plus'')
+
+  '
+repo_checkdepends:
+- jq
+repo_depends:
+- firefox
+repo_makedepends: []
+update_on:
+- alpm: firefox-adblock-plus
+  source: archpkg

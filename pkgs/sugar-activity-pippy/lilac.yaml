@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sugar-activity-pippy'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-pybox2d
+- python-pygame
+- sugar
+- vte3
+repo_makedepends: []
+update_on:
+- alpm: sugar-activity-pippy
+  source: archpkg

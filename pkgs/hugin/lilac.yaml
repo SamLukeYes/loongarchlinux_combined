@@ -1,0 +1,45 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hugin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- wxwidgets: wxwidgets-gtk3
+- boost: boost-libs
+- libtiff
+- libpano13
+- libpng
+- openexr
+- vigra
+- exiv2
+- glew
+- sqlite
+- lcms2
+- lapack
+- fftw
+- glu
+- libxi
+- libxmu
+- python
+- lensfun
+- enblend-enfuse
+repo_makedepends:
+- cmake
+- boost
+- tclap
+- mesa
+- swig
+update_on:
+- alpm: wxwidgets-gtk3
+  source: alpm
+  strip_release: true
+- alias: python
+- alpm: hugin
+  source: archpkg

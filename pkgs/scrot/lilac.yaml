@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''scrot'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- imlib2
+- libxext
+- libxinerama
+- libxfixes
+- libxcomposite
+- libbsd
+repo_makedepends:
+- autoconf-archive
+update_on:
+- alpm: scrot
+  source: archpkg

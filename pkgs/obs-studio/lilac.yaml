@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''obs-studio'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ffmpeg
+- jansson
+- libxinerama
+- libxkbcommon: libxkbcommon-x11
+- mbedtls
+- rnnoise
+- pciutils
+- qt6-svg
+- curl
+- gtk4: gtk-update-icon-cache
+- pipewire
+- libxcomposite
+repo_makedepends:
+- cmake
+- libfdk-aac
+- x264
+- swig
+- python
+- luajit
+- sndio
+update_on:
+- alpm: obs-studio
+  source: archpkg

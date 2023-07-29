@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-mixlib-config'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby-tomlrb
+repo_makedepends:
+- git
+- ruby-rdoc
+- ruby-rake
+- ruby-bundler
+- ruby-rspec
+update_on:
+- alpm: ruby-mixlib-config
+  source: archpkg

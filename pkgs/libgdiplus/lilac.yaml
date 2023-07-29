@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libgdiplus'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libtiff
+- libpng
+- cairo
+- giflib
+- glib2
+- libexif
+- zlib
+- freetype2
+repo_makedepends: []
+update_on:
+- alpm: giflib
+  provides: libgif.so
+  source: alpm
+- alpm: libgdiplus
+  source: archpkg

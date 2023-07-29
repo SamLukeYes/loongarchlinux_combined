@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-sharing'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glib2
+- gnome-user-share
+- gtk3
+- libgee
+repo_makedepends:
+- git
+- meson
+- switchboard
+- vala
+update_on:
+- alpm: granite
+  provides: libgranite.so
+  source: alpm
+- alpm: switchboard
+  provides: libswitchboard-2.0.so
+  source: alpm
+- alpm: switchboard-plug-sharing
+  source: archpkg

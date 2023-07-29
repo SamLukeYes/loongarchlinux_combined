@@ -1,0 +1,120 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''darcs'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- bc
+- time
+repo_depends:
+- curl
+- ghc: ghc-libs
+- haskell-async
+- haskell-attoparsec
+- haskell-base16-bytestring
+- haskell-conduit
+- haskell-constraints
+- haskell-cryptonite
+- haskell-data-ordlist
+- haskell-fgl
+- haskell-hashable
+- haskell-html
+- haskell-http-conduit
+- haskell-http-types
+- haskell-knob
+- haskell-memory
+- haskell-mmap
+- haskell-network
+- haskell-network-uri
+- haskell-old-time
+- haskell-regex-applicative
+- haskell-regex-base
+- haskell-regex-tdfa
+- haskell-tar
+- haskell-temporary
+- haskell-unix-compat
+- haskell-utf8-string
+- haskell-vector
+- haskell-zip-archive
+- haskell-zlib
+repo_makedepends:
+- ghc
+- uusi
+- haskell-cmdargs
+- haskell-findbin
+- haskell-hunit
+- haskell-leancheck
+- haskell-quickcheck
+- haskell-test-framework
+- haskell-test-framework-hunit
+- haskell-test-framework-leancheck
+- haskell-test-framework-quickcheck2
+- haskell-monad-control
+- haskell-system-filepath
+- haskell-system-fileio
+- haskell-transformers-base
+update_on:
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-base16-bytestring
+  source: alpm
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-constraints
+  source: alpm
+- alpm: haskell-cryptonite
+  source: alpm
+- alpm: haskell-data-ordlist
+  source: alpm
+- alpm: haskell-fgl
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-html
+  source: alpm
+- alpm: haskell-http-conduit
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-knob
+  source: alpm
+- alpm: haskell-memory
+  source: alpm
+- alpm: haskell-mmap
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-network-uri
+  source: alpm
+- alpm: haskell-old-time
+  source: alpm
+- alpm: haskell-regex-applicative
+  source: alpm
+- alpm: haskell-regex-base
+  source: alpm
+- alpm: haskell-regex-tdfa
+  source: alpm
+- alpm: haskell-tar
+  source: alpm
+- alpm: haskell-temporary
+  source: alpm
+- alpm: haskell-unix-compat
+  source: alpm
+- alpm: haskell-utf8-string
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-zip-archive
+  source: alpm
+- alpm: haskell-zlib
+  source: alpm
+- alpm: darcs
+  source: archpkg

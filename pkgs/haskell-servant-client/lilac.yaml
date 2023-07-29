@@ -1,0 +1,67 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-servant-client'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-base-compat
+- haskell-http-client
+- haskell-http-media
+- haskell-http-types
+- haskell-kan-extensions
+- haskell-monad-control
+- haskell-semigroupoids
+- haskell-servant
+- haskell-servant-client-core
+- haskell-transformers-base
+- haskell-transformers-compat
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hunit
+- haskell-quickcheck
+- haskell-aeson
+- haskell-entropy
+- haskell-hspec
+- haskell-hspec-discover
+- haskell-http-api-data
+- haskell-markdown-unlit
+- haskell-network
+- haskell-servant-server
+- haskell-sop-core
+- haskell-tdigest
+- haskell-wai
+- haskell-warp
+update_on:
+- alpm: haskell-base-compat
+  source: alpm
+- alpm: haskell-http-client
+  source: alpm
+- alpm: haskell-http-media
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-kan-extensions
+  source: alpm
+- alpm: haskell-monad-control
+  source: alpm
+- alpm: haskell-semigroupoids
+  source: alpm
+- alpm: haskell-servant
+  source: alpm
+- alpm: haskell-servant-client-core
+  source: alpm
+- alpm: haskell-transformers-base
+  source: alpm
+- alpm: haskell-transformers-compat
+  source: alpm
+- alpm: haskell-servant-client
+  source: archpkg

@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''totem-pl-parser'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- gvfs
+repo_depends:
+- glib2
+- libxml2
+- libarchive
+- libgcrypt
+repo_makedepends:
+- gobject-introspection
+- git
+- gtk-doc
+- meson
+update_on:
+- alpm: totem-pl-parser
+  source: archpkg

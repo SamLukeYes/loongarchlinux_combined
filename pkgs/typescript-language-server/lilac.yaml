@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''typescript-language-server'')
+
+  '
+repo_checkdepends:
+- npm
+repo_depends:
+- typescript
+repo_makedepends:
+- jq
+- yarn
+update_on:
+- alpm: typescript-language-server
+  source: archpkg

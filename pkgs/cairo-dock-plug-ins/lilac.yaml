@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cairo-dock-plug-ins'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cairo-dock
+repo_makedepends:
+- alsa-lib
+- cmake
+- dbus-sharp-glib
+- fftw
+- gnome-menus
+- gtk-sharp-3
+- gvfs
+- libetpan
+- libexif
+- libical
+- pulseaudio: libpulse
+- libxklavier
+- lm_sensors
+- python
+- ruby
+- upower
+- vala
+- vte3
+- zeitgeist
+update_on:
+- alpm: cairo-dock-plug-ins
+  source: archpkg

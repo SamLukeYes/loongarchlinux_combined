@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-keyring'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcr
+- gcr-4
+- libcap-ng
+- pam
+- openssh
+repo_makedepends:
+- git
+- docbook-xsl
+- python
+- p11-kit
+update_on:
+- alpm: gnome-keyring
+  source: archpkg

@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''vagrant'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- curl
+- libarchive
+- libssh2
+- libxml2
+- libxslt
+- rsync
+- ruby
+- xz
+- perl
+repo_makedepends:
+- git
+- go
+update_on:
+- alias: ruby
+- alias: perl
+- alpm: vagrant
+  source: archpkg

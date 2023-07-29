@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-sphinxcontrib-log-cabinet'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-sphinx
+- python-setuptools
+repo_makedepends: []
+update_on:
+- alias: python
+- alpm: python-sphinxcontrib-log-cabinet
+  source: archpkg

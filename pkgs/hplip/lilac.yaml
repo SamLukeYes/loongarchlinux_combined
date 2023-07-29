@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hplip'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-distro
+- ghostscript
+- net-snmp
+- foomatic-db-engine
+- pygobject: python-gobject
+- libxcrypt
+repo_makedepends:
+- pyqt5: python-pyqt5
+- sane
+- rpcbind
+- cups
+- libusb
+update_on:
+- alpm: hplip
+  source: archpkg

@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pc-ble-driver'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- gcc: gcc-libs
+- glibc
+repo_makedepends:
+- asio
+- catch2
+- cmake
+- fmt
+- git
+- spdlog
+- systemd
+update_on:
+- alpm: fmt
+  provides: libfmt.so
+  source: alpm
+- alpm: spdlog
+  provides: libspdlog.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libudev.so
+  source: alpm
+- alpm: pc-ble-driver
+  source: archpkg

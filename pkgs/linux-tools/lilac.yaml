@@ -1,0 +1,85 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- glibc
+- glibc
+- readline
+- zlib
+- elfutils: libelf
+- libcap
+- zstd
+- llvm: llvm-libs
+- binutils
+- glibc
+- glibc
+- bash
+- pciutils
+- glibc
+- linux-tools: bootconfig
+- linux-tools: bpf
+- linux-tools: cgroup_event_listener
+- linux-tools: cpupower
+- linux-tools: hyperv
+- linux-tools: perf
+- linux-tools: tmon
+- turbostat
+- linux-tools: usbip
+- x86_energy_perf_policy
+- glibc
+- perl
+- python
+- slang
+- elfutils
+- libunwind
+- binutils
+- numactl
+- audit
+- coreutils
+- glib2
+- xz
+- zlib
+- elfutils: libelf
+- bash
+- zstd
+- libcap
+- libtraceevent
+- openssl
+- glibc
+- ncurses
+- glibc
+- glib2
+- sysfsutils
+- systemd: systemd-libs
+repo_makedepends:
+- git
+- asciidoc
+- xmlto
+- perl
+- python
+- python-setuptools
+- slang
+- elfutils
+- libunwind
+- numactl
+- audit
+- zstd
+- libcap
+- libtraceevent
+- openssl
+- clang
+- pciutils
+- glib2
+- sysfsutils
+- ncurses
+- readline
+- zlib
+- elfutils: libelf
+- libcap
+- python-docutils
+- libcap
+- llvm
+- clang
+update_on:
+- alias: readline
+- alias: perl
+- alias: python

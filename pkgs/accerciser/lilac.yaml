@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''accerciser'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- gtk3
+- pyatspi: python-atspi
+- ipython
+- libwnck3
+- python-cairo
+- python-xlib
+repo_makedepends:
+- appstream-glib
+- yelp-tools
+- git
+update_on:
+- alias: python
+- alpm: accerciser
+  source: archpkg

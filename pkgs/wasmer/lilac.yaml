@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wasmer'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- zlib
+- ncurses
+- libffi
+- libxkbcommon
+repo_makedepends:
+- rustup
+- cmake
+update_on:
+- alpm: wasmer
+  source: archpkg

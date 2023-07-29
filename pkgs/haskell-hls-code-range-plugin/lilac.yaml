@@ -1,0 +1,51 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-code-range-plugin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- git
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-extra
+- haskell-ghcide
+- haskell-hashable
+- haskell-hls-plugin-api
+- haskell-lens
+- haskell-lsp
+- haskell-semigroupoids
+- haskell-vector
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hls-test-utils
+- haskell-lsp-test
+- haskell-tasty-hunit
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-ghcide
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-hls-plugin-api
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-lsp
+  source: alpm
+- alpm: haskell-semigroupoids
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-hls-code-range-plugin
+  source: archpkg

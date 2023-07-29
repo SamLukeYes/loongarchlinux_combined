@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''vamp-aubio-plugins'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- aubio
+- vamp-plugin-sdk
+repo_makedepends:
+- waf
+update_on:
+- alpm: vamp-aubio-plugins
+  source: archpkg

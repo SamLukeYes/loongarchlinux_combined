@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-algorithm-annotate'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl-algorithm-diff
+repo_makedepends:
+- perl-algorithm-diff
+update_on:
+- alpm: perl-algorithm-annotate
+  source: archpkg

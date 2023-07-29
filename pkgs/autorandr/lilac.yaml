@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''autorandr'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-packaging
+- xorg-xdpyinfo
+- xorg-xrandr
+repo_makedepends:
+- bash-completion
+- desktop-file-utils
+- systemd
+update_on:
+- alpm: autorandr
+  source: archpkg

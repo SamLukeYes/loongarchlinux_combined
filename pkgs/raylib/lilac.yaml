@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''raylib'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- cmake
+- git
+- libx11
+- libxcursor
+- libxinerama
+- libxrandr
+- ninja
+- vulkan-headers
+- xorg-server: xorg-server-devel
+- xorg-xinput
+update_on:
+- alpm: raylib
+  source: archpkg

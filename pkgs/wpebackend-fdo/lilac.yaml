@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wpebackend-fdo'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glib2
+- libepoxy
+- libwpe
+- wayland
+- glib2
+- libepoxy
+- libwpe
+- wayland
+repo_makedepends:
+- git
+- mesa
+- meson
+- wayland-protocols
+update_on:
+- alpm: libwpe
+  provides: libwpe-1.0.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: wpebackend-fdo
+  source: archpkg

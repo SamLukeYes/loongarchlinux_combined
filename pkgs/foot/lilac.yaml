@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''foot'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fcft
+- fontconfig
+- libutf8proc
+- libxkbcommon
+- ncurses
+- pixman
+- wayland
+- ncurses
+repo_makedepends:
+- fcft
+- fontconfig
+- libutf8proc
+- libxkbcommon
+- llvm
+- meson
+- ncurses
+- ninja
+- pixman
+- python
+- scdoc
+- sway
+- tllist
+- wayland
+- wayland-protocols
+update_on:
+- alpm: fcft
+  provides: libfcft.so
+  source: alpm
+- alpm: foot
+  source: archpkg

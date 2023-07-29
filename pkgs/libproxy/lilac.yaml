@@ -1,0 +1,18 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- dbus
+- duktape
+- gcc: gcc-libs
+- glib2
+- zlib
+- libproxy
+- webkit2gtk
+repo_makedepends:
+- cmake
+- git
+- ninja
+- perl
+- python
+- webkit2gtk
+update_on: []

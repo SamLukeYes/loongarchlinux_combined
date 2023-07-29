@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kvazaar'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- ffmpeg
+- hm
+repo_depends:
+- crypto++
+repo_makedepends:
+- git
+- yasm
+update_on:
+- alpm: crypto++
+  source: alpm
+  strip_release: true
+- alpm: kvazaar
+  source: archpkg

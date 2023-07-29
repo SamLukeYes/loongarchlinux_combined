@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''translate-toolkit'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bash
+- python-lxml
+- python-six
+- python-diff-match-patch
+- python-ruamel-yaml
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: translate-toolkit
+  source: archpkg

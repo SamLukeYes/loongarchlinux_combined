@@ -1,0 +1,61 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cheese'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- clutter-gst
+- clutter-gtk
+- dconf
+- gnome-desktop
+- gnome-video-effects
+- gstreamer: gst-plugins-bad
+- gstreamer: gst-plugins-base
+- gstreamer: gst-plugins-good
+- gstreamer
+- gtk3
+- libcanberra
+- libgudev
+- librsvg
+- clutter-gst
+- clutter-gtk
+- dconf
+- gnome-desktop
+- gnome-video-effects
+- gstreamer: gst-plugins-bad
+- gstreamer: gst-plugins-base
+- gstreamer: gst-plugins-good
+- gstreamer
+- gtk3
+- libcanberra
+- libgudev
+- librsvg
+- cheese: libcheese
+- clutter
+- clutter-gst
+- clutter-gtk
+- gdk-pixbuf2
+- glib2
+- gstreamer: gst-plugins-bad-libs
+- gstreamer: gst-plugins-base-libs
+- gstreamer
+- gtk3
+- libcanberra
+repo_makedepends:
+- appstream-glib
+- git
+- gobject-introspection
+- meson
+- vala
+- yelp-tools
+update_on:
+- alpm: cheese
+  source: archpkg

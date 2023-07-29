@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-get_process_mem'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby-ffi
+repo_makedepends:
+- git
+- ruby-sys-proctable
+- ruby-rake
+- ruby-test-unit
+update_on:
+- alpm: ruby-get_process_mem
+  source: archpkg

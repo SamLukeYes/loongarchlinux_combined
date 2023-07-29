@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ocaml-bigarray-compat'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ocaml
+repo_makedepends:
+- ocaml: ocaml-compiler-libs
+- dune
+update_on:
+- alpm: ocaml
+  source: alpm
+  strip_release: true
+- alpm: ocaml-bigarray-compat
+  source: archpkg

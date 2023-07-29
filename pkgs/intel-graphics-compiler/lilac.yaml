@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''intel-graphics-compiler'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- llvm: llvm-libs
+- intel-opencl-clang
+- ncurses
+- spirv-tools
+- zlib
+- lld
+repo_makedepends:
+- git
+- cmake
+- clang
+- llvm
+- python
+- libunwind
+- spirv-headers
+- vc-intrinsics
+update_on:
+- alpm: intel-graphics-compiler
+  source: archpkg

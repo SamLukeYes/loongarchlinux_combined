@@ -1,0 +1,13 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- elfutils
+- curl
+- zstd
+- zlib
+- binutils
+repo_makedepends:
+- cmake
+- python
+- ninja
+update_on: []

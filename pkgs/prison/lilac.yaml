@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''prison'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-multimedia
+- libdmtx
+- qrencode
+- zxing-cpp
+repo_makedepends:
+- extra-cmake-modules
+- doxygen
+- qt5-tools
+- qt5-doc
+- qt5-declarative
+update_on:
+- alpm: prison
+  source: archpkg

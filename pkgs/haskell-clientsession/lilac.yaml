@@ -1,0 +1,49 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-clientsession'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-base64-bytestring
+- haskell-cereal
+- haskell-cipher-aes
+- haskell-cprng-aes
+- haskell-crypto-api
+- haskell-crypto-random
+- haskell-entropy
+- haskell-setenv
+- haskell-skein
+- haskell-tagged
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-base64-bytestring
+  source: alpm
+- alpm: haskell-cereal
+  source: alpm
+- alpm: haskell-cipher-aes
+  source: alpm
+- alpm: haskell-cprng-aes
+  source: alpm
+- alpm: haskell-crypto-api
+  source: alpm
+- alpm: haskell-crypto-random
+  source: alpm
+- alpm: haskell-entropy
+  source: alpm
+- alpm: haskell-setenv
+  source: alpm
+- alpm: haskell-skein
+  source: alpm
+- alpm: haskell-tagged
+  source: alpm
+- alpm: haskell-clientsession
+  source: archpkg

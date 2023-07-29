@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''w3m'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- openssl
+- gc
+- ncurses
+- gpm
+repo_makedepends:
+- git
+- imlib2
+update_on:
+- alpm: w3m
+  source: archpkg

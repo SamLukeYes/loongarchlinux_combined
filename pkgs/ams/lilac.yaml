@@ -1,0 +1,65 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ams'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cmt
+- gcc: gcc-libs
+- glibc
+- qt5-base
+- mcp-plugins
+- rev-plugins
+- swh-plugins
+- vco-plugins
+- cmt
+- gcc: gcc-libs
+- glibc
+- qt5-base
+- mcp-plugins
+- rev-plugins
+- swh-plugins
+- vco-plugins
+- alsa-lib
+- fftw
+- liblo
+- zita-alsa-pcmi
+repo_makedepends:
+- alsa-lib
+- fftw
+- gendesk
+- ladspa
+- liblo
+- qt5-tools
+- zita-alsa-pcmi
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: fftw
+  provides: libfftw3.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: liblo
+  provides: liblo.so
+  source: alpm
+- alpm: zita-alsa-pcmi
+  provides: libzita-alsa-pcmi.so
+  source: alpm
+- alpm: ams
+  source: archpkg

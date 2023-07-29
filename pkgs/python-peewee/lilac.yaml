@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-peewee'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-apsw
+- python-flask
+- python-psycopg2
+repo_depends:
+- python
+- sqlite
+repo_makedepends:
+- python-build
+- python-installer
+- cython
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-peewee
+  source: archpkg

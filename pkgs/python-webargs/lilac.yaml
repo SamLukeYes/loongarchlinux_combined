@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-webargs'')
+
+  '
+repo_checkdepends:
+- python-pytest-runner
+- python-webtest
+- python-pytest-aiohttp
+- python-webtest-aiohttp
+- python-bottle
+- python-werkzeug
+- django: python-django
+- python-flask
+- python-tornado
+- python-pytest-asyncio
+repo_depends:
+- python-marshmallow
+repo_makedepends:
+- python-setuptools
+- python-sphinx
+- python-sphinx-issues
+- python-sphinx-typlog-theme
+- python-sphinx-furo
+update_on:
+- alpm: python-webargs
+  source: archpkg

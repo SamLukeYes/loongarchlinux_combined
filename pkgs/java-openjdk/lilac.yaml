@@ -1,0 +1,61 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- ca-certificates: ca-certificates-utils
+- nss
+- libjpeg-turbo
+- lcms2
+- libnet
+- freetype2
+- harfbuzz
+- glibc
+- gcc: gcc-libs
+- giflib
+- glibc
+- gcc: gcc-libs
+- libpng
+- java-common: java-environment-common
+- hicolor-icon-theme
+- elfutils: libelf
+- glibc
+- gcc: gcc-libs
+repo_makedepends:
+- cpio
+- unzip
+- zip
+- elfutils: libelf
+- cups: libcups
+- libx11
+- libxrender
+- libxtst
+- libxt
+- libxext
+- libxrandr
+- alsa-lib
+- graphviz
+- freetype2
+- libjpeg-turbo
+- giflib
+- libpng
+- lcms2
+- libnet
+- bash
+- harfbuzz
+- gcc: gcc-libs
+- glibc
+update_on:
+- alpm: darktable
+  provides: libjpeg.so
+  source: alpm
+- alpm: lcms2
+  provides: liblcms2.so
+  source: alpm
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: harfbuzz
+  provides: libharfbuzz.so
+  source: alpm
+- alpm: giflib
+  provides: libgif.so
+  source: alpm

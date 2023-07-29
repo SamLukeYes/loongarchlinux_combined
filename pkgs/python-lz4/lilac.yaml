@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-lz4'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-psutil
+repo_depends:
+- python
+repo_makedepends:
+- python-build
+- python-installer
+- python-pkgconfig
+- python-setuptools-scm
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-lz4
+  source: archpkg

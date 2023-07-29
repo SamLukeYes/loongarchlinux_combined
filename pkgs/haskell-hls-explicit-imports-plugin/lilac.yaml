@@ -1,0 +1,42 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-explicit-imports-plugin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- git
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-ghcide
+- haskell-hls-graph
+- haskell-hls-plugin-api
+- haskell-lsp
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hls-test-utils
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-ghc
+  source: alpm
+- alpm: haskell-ghcide
+  source: alpm
+- alpm: haskell-hls-graph
+  source: alpm
+- alpm: haskell-hls-plugin-api
+  source: alpm
+- alpm: haskell-lsp
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-hls-explicit-imports-plugin
+  source: archpkg

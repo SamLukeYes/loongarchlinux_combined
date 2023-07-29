@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-scikit-learn'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-joblib
+- python-numpy
+- python-scipy
+- python-threadpoolctl
+repo_makedepends:
+- cython
+- openmp
+- python-build
+- python-installer
+- python-wheel
+- python-setuptools
+update_on:
+- alpm: python-scikit-learn
+  source: archpkg

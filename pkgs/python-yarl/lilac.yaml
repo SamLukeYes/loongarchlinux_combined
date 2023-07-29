@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-yarl'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-runner
+- python-pytest-cov
+repo_depends:
+- glibc
+- python
+- python-multidict
+- python-idna
+repo_makedepends:
+- cython
+- python-setuptools
+- python-build
+- python-installer
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-yarl
+  source: archpkg

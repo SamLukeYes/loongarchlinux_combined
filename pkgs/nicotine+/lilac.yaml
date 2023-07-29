@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''nicotine+'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- pygobject: python-gobject
+- gtk3
+- gspell
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alpm: nicotine+
+  source: archpkg

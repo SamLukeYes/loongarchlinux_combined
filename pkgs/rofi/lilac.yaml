@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rofi'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libxdg-basedir
+- startup-notification
+- libxkbcommon: libxkbcommon-x11
+- xcb-util-wm
+- xcb-util-xrm
+- librsvg
+- xcb-util-cursor
+repo_makedepends:
+- check
+update_on:
+- alpm: rofi
+  source: archpkg

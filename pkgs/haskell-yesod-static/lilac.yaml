@@ -1,0 +1,86 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-yesod-static'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-async
+- haskell-attoparsec
+- haskell-base64-bytestring
+- haskell-blaze-builder
+- haskell-conduit
+- haskell-cryptonite
+- haskell-cryptonite-conduit
+- haskell-css-text
+- haskell-data-default
+- haskell-file-embed
+- haskell-hashable
+- haskell-hjsmin
+- haskell-http-types
+- haskell-memory
+- haskell-mime-types
+- haskell-rio
+- haskell-unix-compat
+- haskell-unordered-containers
+- haskell-wai
+- haskell-wai-app-static
+- haskell-yesod-core
+repo_makedepends:
+- ghc
+- haskell-hspec
+- haskell-hunit
+- haskell-wai-extra
+- haskell-yesod-test
+update_on:
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-base64-bytestring
+  source: alpm
+- alpm: haskell-blaze-builder
+  source: alpm
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-cryptonite
+  source: alpm
+- alpm: haskell-cryptonite-conduit
+  source: alpm
+- alpm: haskell-css-text
+  source: alpm
+- alpm: haskell-data-default
+  source: alpm
+- alpm: haskell-file-embed
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-hjsmin
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-memory
+  source: alpm
+- alpm: haskell-mime-types
+  source: alpm
+- alpm: haskell-rio
+  source: alpm
+- alpm: haskell-unix-compat
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-wai
+  source: alpm
+- alpm: haskell-wai-app-static
+  source: alpm
+- alpm: haskell-yesod-core
+  source: alpm
+- alpm: haskell-yesod-static
+  source: archpkg

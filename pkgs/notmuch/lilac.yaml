@@ -1,0 +1,42 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''notmuch'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- notmuch: notmuch-runtime
+- notmuch: notmuch-runtime
+- ruby
+- notmuch: notmuch-runtime
+- perl-mailtools
+- perl-mail-box
+- perl-term-readline-gnu
+- perl-string-shellquote
+- perl-file-which
+- xapian-core
+- gmime3
+- talloc
+- sfsexp
+repo_makedepends:
+- python
+- python-setuptools
+- python-sphinx
+- python-cffi
+- emacs
+- gnupg
+- ruby
+- xapian-core
+- gmime3
+- talloc
+- sfsexp
+update_on:
+- alias: ruby
+- alpm: notmuch
+  source: archpkg

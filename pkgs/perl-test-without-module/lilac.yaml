@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-test-without-module'')
+
+  '
+repo_checkdepends:
+- perl-file-slurp
+repo_depends:
+- perl
+repo_makedepends:
+- perl
+update_on:
+- alias: perl
+- alpm: perl-test-without-module
+  source: archpkg

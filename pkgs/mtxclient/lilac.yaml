@@ -1,0 +1,54 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mtxclient'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- gtest
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- gcc: gcc-libs
+- glibc
+- coeurl
+- fmt
+- libolm
+- openssl
+- re2
+- spdlog
+repo_makedepends:
+- cmake
+- coeurl
+- fmt
+- libolm
+- meson
+- nlohmann-json
+- openssl
+- re2
+- spdlog
+- git
+update_on:
+- alpm: coeurl
+  provides: libcoeurl.so
+  source: alpm
+- alpm: fmt
+  provides: libfmt.so
+  source: alpm
+- alpm: libolm
+  provides: libolm.so
+  source: alpm
+- alias: libcrypto
+- alpm: re2
+  provides: libre2.so
+  source: alpm
+- alpm: spdlog
+  provides: libspdlog.so
+  source: alpm
+- alpm: mtxclient
+  source: archpkg

@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-hacking'')
+
+  '
+repo_checkdepends:
+- python-ddt
+- python-oslotest
+repo_depends:
+- flake8
+repo_makedepends:
+- python-pbr
+- python-setuptools
+update_on:
+- alpm: python-hacking
+  source: archpkg

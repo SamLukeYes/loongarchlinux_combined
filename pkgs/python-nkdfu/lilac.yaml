@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-nkdfu'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-fire
+- python-tqdm
+- python-intelhex
+- python-libusb1
+repo_makedepends:
+- python-build
+- python-flit-core
+- python-installer
+- python-wheel
+update_on:
+- alpm: python-nkdfu
+  source: archpkg

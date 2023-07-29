@@ -1,0 +1,59 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lilypond'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- ghostscript
+- glibc
+- gsfonts
+- gcc: gcc-libs
+- ghostscript
+- glibc
+- gsfonts
+repo_makedepends:
+- fontconfig
+- fontforge
+- freetype2
+- glib2
+- guile2.2
+- imagemagick
+- pango
+- python
+- rsync
+- t1utils
+- texinfo
+- texlive-texmf: texlive-langcyrillic
+- zip
+update_on:
+- alpm: fontconfig
+  provides: libfontconfig.so
+  source: alpm
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: guile2.2
+  provides: libguile-2.2.so
+  source: alpm
+- alpm: pango
+  provides: libpangoft2-1.0.so
+  source: alpm
+- alpm: pango
+  provides: libpango-1.0.so
+  source: alpm
+- alpm: lilypond
+  source: archpkg

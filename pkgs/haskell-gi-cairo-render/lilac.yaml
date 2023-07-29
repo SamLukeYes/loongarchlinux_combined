@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi-cairo-render'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-gi-base
+- haskell-utf8-string
+- cairo
+repo_makedepends:
+- ghc
+- c2hs
+- uusi
+update_on:
+- alpm: haskell-gi-base
+  source: alpm
+- alpm: haskell-utf8-string
+  source: alpm
+- alpm: haskell-gi-cairo-render
+  source: archpkg

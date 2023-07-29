@@ -1,0 +1,66 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''dpf-plugins'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- lv2lint
+- kxstudio-lv2-extensions
+repo_depends:
+- dpf-plugins: dpf-plugins-clap
+- dpf-plugins: dpf-plugins-dssi
+- dpf-plugins: dpf-plugins-ladspa
+- dpf-plugins: dpf-plugins-lv2
+- dpf-plugins: dpf-plugins-standalone
+- dpf-plugins: dpf-plugins-vst
+- dpf-plugins: dpf-plugins-vst3
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- libx11
+- libxext
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- liblo
+- libx11
+- libxext
+- gcc: gcc-libs
+- glibc
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- libx11
+- libxext
+- alsa-lib
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- libx11
+- libxext
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- libx11
+- libxext
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- libx11
+- libxext
+repo_makedepends:
+- dssi
+- gendesk
+- ladspa
+- libglvnd
+- lv2
+- projectm
+update_on:
+- alpm: dpf-plugins
+  source: archpkg

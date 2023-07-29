@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-gobject-introspection'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- gobject-introspection: gobject-introspection-runtime
+- ruby-glib2
+repo_makedepends:
+- gobject-introspection
+- ruby-native-package-installer
+update_on:
+- alias: ruby
+- alpm: ruby-gobject-introspection
+  source: archpkg

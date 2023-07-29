@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''aria2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- cppunit
+repo_depends:
+- gnutls
+- libxml2
+- sqlite
+- c-ares
+- ca-certificates
+- libssh2
+repo_makedepends: []
+update_on:
+- alpm: aria2
+  source: archpkg

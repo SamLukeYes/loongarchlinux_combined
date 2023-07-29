@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''thefuck'')
+
+  '
+repo_checkdepends:
+- python-pytest-mock
+- python-mock
+- python-pexpect
+- go
+repo_depends:
+- python-colorama
+- python-decorator
+- python-psutil
+- python-pyte
+- python-six
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alpm: thefuck
+  source: archpkg

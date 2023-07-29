@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pytoolconfig'')
+
+  '
+repo_checkdepends:
+- python-docutils
+- python-pytest
+- python-sphinx
+- python-tabulate
+repo_depends:
+- python
+- python-packaging
+repo_makedepends:
+- python-build
+- python-installer
+- python-wheel
+- python-pdm-pep517
+update_on:
+- alias: python
+- alpm: python-pytoolconfig
+  source: archpkg

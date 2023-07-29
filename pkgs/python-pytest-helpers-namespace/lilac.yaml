@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-helpers-namespace'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python
+- python-setuptools
+- python-pytest
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-setuptools-declarative-requirements
+- python-setuptools-scm
+- python-toml
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-pytest-helpers-namespace
+  source: archpkg

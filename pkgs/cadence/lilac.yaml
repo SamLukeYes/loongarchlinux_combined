@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cadence'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- alsa-utils
+- bash
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- jack2: jack2-dbus
+- python
+- pyqt5: python-pyqt5
+- qt5-base
+- qt5-svg
+repo_makedepends:
+- a2jmidid
+- jack_capture
+- pulseaudio: libpulse
+- pulseaudio: pulseaudio-jack
+- python-rdflib
+- zita-ajbridge
+update_on:
+- alias: python
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: cadence
+  source: archpkg

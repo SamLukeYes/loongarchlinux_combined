@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-zope-component'')
+
+  '
+repo_checkdepends:
+- python-persistent
+- python-pytest
+- python-zope-configuration
+- python-zope-i18nmessageid
+- python-zope-location
+- python-zope-proxy
+- python-zope-security
+- python-zope-testrunner
+repo_depends:
+- python
+- python-setuptools
+- python-zope-event
+- python-zope-hookable
+- python-zope-interface
+repo_makedepends:
+- python-build
+- python-installer
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-zope-component
+  source: archpkg

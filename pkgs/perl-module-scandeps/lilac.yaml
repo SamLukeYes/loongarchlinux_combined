@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-module-scandeps'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl
+repo_makedepends:
+- perl-test-requires
+update_on:
+- alias: perl
+- alpm: perl-module-scandeps
+  source: archpkg

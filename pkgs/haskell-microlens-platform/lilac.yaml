@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-microlens-platform'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-hashable
+- haskell-microlens
+- haskell-microlens-ghc
+- haskell-microlens-mtl
+- haskell-microlens-th
+- haskell-unordered-containers
+- haskell-vector
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-microlens
+  source: alpm
+- alpm: haskell-microlens-ghc
+  source: alpm
+- alpm: haskell-microlens-mtl
+  source: alpm
+- alpm: haskell-microlens-th
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-microlens-platform
+  source: archpkg

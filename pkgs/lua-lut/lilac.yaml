@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lua-lut'')
+
+  '
+repo_checkdepends:
+- lua-filesystem
+- lua-lub
+repo_depends: []
+repo_makedepends:
+- lua
+- lua51
+- lua52
+- lua53
+- luarocks
+update_on:
+- alpm: lua-lut
+  source: archpkg

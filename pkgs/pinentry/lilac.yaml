@@ -1,0 +1,41 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pinentry'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- ncurses
+- libcap
+- libassuan
+- libsecret
+- glib2
+repo_makedepends:
+- gtk2
+- qt5-base
+- gcr
+update_on:
+- alpm: libsecret
+  provides: libsecret-1.so
+  source: alpm
+- alpm: libcap
+  provides: libcap.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: libassuan
+  provides: libassuan.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: pinentry
+  source: archpkg

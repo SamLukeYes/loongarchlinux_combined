@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''intel-oneapi-compiler-shared-runtime'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- level-zero: level-zero-loader
+- intel-oneapi-openmp
+- intel-oneapi-common
+- intel-oneapi-compiler-shared-runtime: intel-oneapi-compiler-shared-runtime-libs
+- intel-oneapi-common
+repo_makedepends: []
+update_on:
+- alpm: intel-oneapi-compiler-shared-runtime
+  source: archpkg

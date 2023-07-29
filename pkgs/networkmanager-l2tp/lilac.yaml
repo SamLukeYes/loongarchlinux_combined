@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''networkmanager-l2tp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ppp
+- xl2tpd
+repo_makedepends:
+- intltool
+- libnma
+- libnma: libnma-gtk4
+- python
+update_on:
+- alpm: networkmanager-l2tp
+  source: archpkg

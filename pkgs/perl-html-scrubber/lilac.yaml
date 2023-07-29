@@ -1,0 +1,16 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-html-scrubber'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- perl-module-build
+update_on:
+- alpm: perl-html-scrubber
+  source: archpkg

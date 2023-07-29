@@ -1,0 +1,56 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-persistent-sqlite'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- sqlite
+- haskell-aeson
+- haskell-conduit
+- haskell-microlens-th
+- haskell-monad-logger
+- haskell-persistent
+- haskell-resource-pool
+- haskell-resourcet
+- haskell-unliftio-core
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- haskell-fast-logger
+- haskell-hspec
+- haskell-hunit
+- haskell-microlens
+- haskell-persistent-test
+- haskell-quickcheck
+- haskell-system-fileio
+- haskell-system-filepath
+- haskell-temporary
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-microlens-th
+  source: alpm
+- alpm: haskell-monad-logger
+  source: alpm
+- alpm: haskell-persistent
+  source: alpm
+- alpm: haskell-resource-pool
+  source: alpm
+- alpm: haskell-resourcet
+  source: alpm
+- alpm: haskell-unliftio-core
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-persistent-sqlite
+  source: archpkg

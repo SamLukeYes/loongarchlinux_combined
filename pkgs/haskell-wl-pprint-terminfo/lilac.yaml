@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wl-pprint-terminfo'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-wl-pprint-extras
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-wl-pprint-extras
+  source: alpm
+- alpm: haskell-wl-pprint-terminfo
+  source: archpkg

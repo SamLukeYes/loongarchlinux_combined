@@ -1,0 +1,34 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''openpmix'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- hwloc
+- libevent
+- zlib
+repo_makedepends:
+- glibc
+- hwloc
+- perl
+- libevent
+- libevent
+- python
+- zlib
+update_on:
+- alpm: libevent
+  provides: libevent_core-2.1.so
+  source: alpm
+- alpm: libevent
+  provides: libevent_pthreads-2.1.so
+  source: alpm
+- alpm: openpmix
+  source: archpkg

@@ -1,0 +1,12 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- runc
+repo_makedepends:
+- go
+- git
+- btrfs-progs
+- libseccomp
+- containers-common
+- go-md2man
+update_on: []

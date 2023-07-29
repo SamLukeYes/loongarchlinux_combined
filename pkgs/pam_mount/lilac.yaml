@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pam_mount'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- pcre2
+- util-linux
+- libhx
+- libxml2
+- cryptsetup
+repo_makedepends: []
+update_on:
+- alpm: pam_mount
+  source: archpkg

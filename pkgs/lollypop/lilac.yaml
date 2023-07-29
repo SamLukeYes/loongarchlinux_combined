@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lollypop'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gstreamer: gst-plugins-base-libs
+- gstreamer: gst-python
+- gtk3
+- libhandy
+- libsoup
+- python-beautifulsoup4
+- python-cairo
+- pygobject: python-gobject
+- python-pillow
+repo_makedepends:
+- appstream-glib
+- git
+- gobject-introspection
+- intltool
+- itstool
+- meson
+update_on:
+- alpm: lollypop
+  source: archpkg

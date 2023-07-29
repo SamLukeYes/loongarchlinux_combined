@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''psi'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- hunspell
+- qt5-svg
+- qt5-webengine
+- qt5-x11extras
+- libidn
+- hunspell
+- zlib: minizip
+- qca: qca-qt5
+- qt5-svg
+- qt5-x11extras
+- libidn
+repo_makedepends:
+- cmake
+- qt5-multimedia
+update_on:
+- alpm: psi
+  source: archpkg

@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-net-scp'')
+
+  '
+repo_checkdepends:
+- ruby-minitest
+- ruby-mocha
+- ruby-test-unit
+repo_depends:
+- ruby
+- ruby-net-ssh
+repo_makedepends:
+- ruby-rake
+- ruby-bundler
+- ruby-rdoc
+update_on:
+- alias: ruby
+- alpm: ruby-net-scp
+  source: archpkg

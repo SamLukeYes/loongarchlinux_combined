@@ -1,0 +1,12 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- hwloc
+repo_makedepends:
+- cmake
+- inetutils
+- ninja
+- python
+- swig
+update_on: []

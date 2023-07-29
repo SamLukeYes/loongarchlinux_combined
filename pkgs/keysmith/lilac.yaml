@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''keysmith'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kirigami2
+- ki18n
+- kdbusaddons
+- kwindowsystem
+- libsodium
+- qt5-svg
+repo_makedepends:
+- extra-cmake-modules
+update_on:
+- alpm: keysmith
+  source: archpkg

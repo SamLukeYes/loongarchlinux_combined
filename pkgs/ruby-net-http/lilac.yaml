@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-net-http'')
+
+  '
+repo_checkdepends:
+- ruby-rake
+- ruby-webrick
+repo_depends:
+- ruby
+- ruby-uri
+repo_makedepends: []
+update_on:
+- alias: ruby
+- alpm: ruby-net-http
+  source: archpkg

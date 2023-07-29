@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-async-websocket'')
+
+  '
+repo_checkdepends:
+- ruby-bake-modernize
+- ruby-bake-test
+- ruby-bake-test-external
+- ruby-rack
+- ruby-covered
+- ruby-sus
+- ruby-sus-fixtures-async-http
+repo_depends:
+- ruby-async-http
+- ruby-async-io
+- ruby-protocol-rack
+- ruby-protocol-websocket
+repo_makedepends:
+- git
+update_on:
+- alpm: ruby-async-websocket
+  source: archpkg

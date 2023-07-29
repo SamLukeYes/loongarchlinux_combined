@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libcanberra'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libvorbis
+- alsa-lib
+- pulseaudio: libpulse
+- tdb
+- sound-theme-freedesktop
+repo_makedepends:
+- gtk-doc
+- gtk2
+- gtk3
+- git
+update_on:
+- alpm: libcanberra
+  source: archpkg

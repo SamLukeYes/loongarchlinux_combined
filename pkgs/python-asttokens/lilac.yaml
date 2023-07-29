@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-asttokens'')
+
+  '
+repo_checkdepends:
+- python-astroid
+- python-pytest
+repo_depends:
+- python-six
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools-scm
+- python-wheel
+update_on:
+- alpm: python-asttokens
+  source: archpkg

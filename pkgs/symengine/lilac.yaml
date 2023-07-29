@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''symengine'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- llvm: llvm-libs
+- arb
+- libmpc
+- gmp-ecm
+- primesieve
+- gperftools
+repo_makedepends:
+- cmake
+- boost
+- llvm
+- cereal
+update_on:
+- alpm: symengine
+  source: archpkg

@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-xml-libxml-prettyprint'')
+
+  '
+repo_checkdepends:
+- perl-test-warnings
+repo_depends:
+- perl
+- perl-exporter-tiny
+- perl-xml-libxml
+repo_makedepends: []
+update_on:
+- alias: perl
+- alpm: perl-xml-libxml-prettyprint
+  source: archpkg

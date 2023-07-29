@@ -1,0 +1,66 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ncmpcpp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- curl
+- libmpdclient
+- fftw
+- boost: boost-libs
+- icu
+- glibc
+- gcc: gcc-libs
+- ncurses
+- readline
+- taglib
+repo_makedepends:
+- boost
+update_on:
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: libmpdclient
+  provides: libmpdclient.so
+  source: alpm
+- alpm: fftw
+  provides: libfftw3.so
+  source: alpm
+- alpm: boost
+  provides: libboost_filesystem.so
+  source: alpm
+- alpm: boost
+  provides: libboost_locale.so
+  source: alpm
+- alpm: boost
+  provides: libboost_program_options.so
+  source: alpm
+- alpm: boost
+  provides: libboost_regex.so
+  source: alpm
+- alpm: boost
+  provides: libboost_thread.so
+  source: alpm
+- alias: icu
+- alpm: icu
+  provides: libicui18n.so
+  source: alpm
+- alpm: icu
+  provides: libicuuc.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alias: readline
+- alpm: readline
+  provides: libreadline.so
+  source: alpm
+- alpm: ncmpcpp
+  source: archpkg

@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-netlink'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-cereal
+- haskell-monad-loops
+- haskell-pretty-hex
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-cereal
+  source: alpm
+- alpm: haskell-monad-loops
+  source: alpm
+- alpm: haskell-pretty-hex
+  source: alpm
+- alpm: haskell-netlink
+  source: archpkg

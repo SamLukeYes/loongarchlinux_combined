@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''dvdstyler'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cdrtools
+- dvdauthor
+- dvd+rw-tools
+- ffmpeg4.4
+- wxsvg
+repo_makedepends:
+- docbook-xsl
+- xmlto
+- zip
+- ffmpeg
+update_on:
+- alpm: dvdstyler
+  source: archpkg

@@ -1,0 +1,53 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xmms2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- alsa-lib
+- avahi
+- boost
+- curl
+- cython
+- faad2
+- ffmpeg
+- fftw
+- flac
+- fluidsynth
+- libao
+- libcdio-paranoia
+- libdiscid
+- libgme
+- libmad
+- libmms
+- libmodplug
+- musepack: libmpcdec
+- libofa
+- libsamplerate
+- libshout
+- libvorbis
+- libxml2
+- mac
+- mpg123
+- opusfile
+- perl
+- ruby
+- samba: smbclient
+- speex
+- sqlite
+- wavpack
+- git
+- pulseaudio: libpulse
+- perl-pod-parser
+- waf
+update_on:
+- alpm: xmms2
+  source: archpkg

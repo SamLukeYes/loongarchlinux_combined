@@ -1,0 +1,9 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- git
+- python
+- strip-nondeterminism
+- zip
+update_on: []

@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''curtail'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk4
+- libadwaita
+- jpegoptim
+- oxipng
+- pngquant
+- pygobject: python-gobject
+repo_makedepends:
+- appstream-glib
+- meson
+update_on:
+- alpm: curtail
+  source: archpkg

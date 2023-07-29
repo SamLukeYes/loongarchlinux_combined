@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libvolk'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- boost: boost-libs
+- orc
+- python
+- python-six
+repo_makedepends:
+- boost
+- cmake
+- python-mako
+update_on:
+- alias: python
+- alpm: libvolk
+  source: archpkg

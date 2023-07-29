@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-logger'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- haskell-wai-extra
+repo_depends:
+- ghc: ghc-libs
+- haskell-byteorder
+- haskell-fast-logger
+- haskell-http-types
+- haskell-network
+- haskell-wai
+repo_makedepends:
+- ghc
+- haskell-cabal-doctest
+- haskell-doctest
+update_on:
+- alpm: haskell-byteorder
+  source: alpm
+- alpm: haskell-fast-logger
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-wai
+  source: alpm
+- alpm: haskell-wai-logger
+  source: archpkg

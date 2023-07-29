@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xmonad-extras'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-x11
+- haskell-alsa-mixer
+- haskell-hint
+- haskell-libmpd
+- haskell-network
+- haskell-regex-posix
+- xmonad
+- xmonad-contrib
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-x11
+  source: alpm
+- alpm: haskell-alsa-mixer
+  source: alpm
+- alpm: haskell-hint
+  source: alpm
+- alpm: haskell-libmpd
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-regex-posix
+  source: alpm
+- alpm: xmonad-extras
+  source: archpkg

@@ -1,0 +1,63 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''bespokesynth'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- libglvnd
+- libpng
+- python
+- zlib
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- libglvnd
+- libpng
+- python
+- zlib
+- alsa-lib
+- freetype2
+- jsoncpp
+- libusb
+repo_makedepends:
+- abletonlink
+- alsa-lib
+- cmake
+- freetype2
+- git
+- jsoncpp
+- libusb
+- libx11
+- libxcursor
+- libxinerama
+- pybind11
+- tuning-library
+- xorg-xrandr
+update_on:
+- alias: python
+- alias: python
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alias: jsoncpp
+- alpm: jsoncpp
+  provides: libjsoncpp.so
+  source: alpm
+- alpm: libusb
+  provides: libusb-1.0.so
+  source: alpm
+- alpm: bespokesynth
+  source: archpkg

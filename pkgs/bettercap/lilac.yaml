@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''bettercap'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libpcap
+- libnetfilter_queue
+- iproute2
+- libnfnetlink
+- libusb
+repo_makedepends:
+- go
+- git
+update_on:
+- alpm: libpcap
+  provides: libpcap.so
+  source: alpm
+- alpm: libusb
+  provides: libusb-1.0.so
+  source: alpm
+- alpm: bettercap
+  source: archpkg

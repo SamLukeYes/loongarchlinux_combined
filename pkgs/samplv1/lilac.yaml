@@ -1,0 +1,53 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''samplv1'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- samplv1: samplv1-lv2
+- samplv1: samplv1-standalone
+- gcc: gcc-libs
+- glibc
+- libsndfile
+- qt6-base
+- qt6-svg
+- alsa-lib
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- liblo
+- libsndfile
+- qt6-base
+- qt6-svg
+repo_makedepends:
+- alsa-lib
+- cmake
+- hicolor-icon-theme
+- liblo
+- libsndfile
+- lv2
+- qt6-base
+- qt6-svg
+- qt6-tools
+update_on:
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: samplv1
+  source: archpkg

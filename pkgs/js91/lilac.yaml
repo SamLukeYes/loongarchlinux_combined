@@ -1,0 +1,19 @@
+destsubdir: extra
+repo_checkdepends:
+- mercurial
+- git
+repo_depends:
+- gcc: gcc-libs
+- readline
+- zlib
+repo_makedepends:
+- zip
+- autoconf2.13
+- python-setuptools
+- python-psutil
+- rustup
+- llvm
+- clang
+- lld
+update_on:
+- alias: readline

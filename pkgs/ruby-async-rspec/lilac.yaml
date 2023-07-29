@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-async-rspec'')
+
+  '
+repo_checkdepends:
+- ruby-async
+- ruby-async-io
+- ruby-covered
+repo_depends:
+- ruby-rspec
+- ruby-rspec-files
+- ruby-rspec-memory
+repo_makedepends: []
+update_on:
+- alpm: ruby-async-rspec
+  source: archpkg

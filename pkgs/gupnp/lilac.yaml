@@ -1,0 +1,46 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gupnp'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glib2
+- gssdp
+- libxml2
+- glib2
+- gssdp
+- libxml2
+repo_makedepends:
+- gobject-introspection
+- gi-docgen
+- vala
+- meson
+- git
+update_on:
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgmodule-2.0.so
+  source: alpm
+- alpm: gssdp
+  provides: libgssdp-1.6.so
+  source: alpm
+- alpm: libsoup3
+  provides: libsoup-3.0.so
+  source: alpm
+- alpm: gupnp
+  source: archpkg

@@ -1,0 +1,11 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- zlib
+- libaec
+- bash
+repo_makedepends:
+- cmake
+- time
+- gcc: gcc-fortran
+update_on: []

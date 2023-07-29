@@ -1,0 +1,130 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mpv'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- alsa-lib
+- desktop-file-utils
+- ffmpeg
+- glibc
+- hicolor-icon-theme
+- lcms2
+- libarchive
+- libass
+- libbluray
+- libcdio
+- libcdio-paranoia
+- libdrm
+- libdvdnav
+- libdvdread
+- libglvnd
+- libplacebo
+- pulseaudio: libpulse
+- libva
+- libvdpau
+- libx11
+- libxext
+- libxinerama
+- libxkbcommon
+- libxpresent
+- libxrandr
+- libxss
+- libxv
+- luajit
+- mesa
+- mujs
+- pipewire: libpipewire
+- rubberband
+- shaderc
+- uchardet
+- vulkan-icd-loader
+- wayland
+- zlib
+repo_makedepends:
+- git
+- meson
+- python-docutils
+- ladspa
+- wayland-protocols
+- ffnvcodec-headers
+- vulkan-headers
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavcodec.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavdevice.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavfilter.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavformat.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavutil.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libswresample.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libswscale.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: lcms2
+  provides: liblcms2.so
+  source: alpm
+- alpm: libarchive
+  provides: libarchive.so
+  source: alpm
+- alpm: libass
+  provides: libass.so
+  source: alpm
+- alpm: libbluray
+  provides: libbluray.so
+  source: alpm
+- alpm: darktable
+  provides: libjpeg.so
+  source: alpm
+- alpm: libplacebo
+  provides: libplacebo.so
+  source: alpm
+- alpm: libao
+  provides: libpulse.so
+  source: alpm
+- alpm: libva
+  provides: libva.so
+  source: alpm
+- alpm: libva
+  provides: libva-drm.so
+  source: alpm
+- alpm: libva
+  provides: libva-wayland.so
+  source: alpm
+- alpm: libva
+  provides: libva-x11.so
+  source: alpm
+- alpm: intel-oneapi-basekit
+  provides: libxkbcommon.so
+  source: alpm
+- alpm: rubberband
+  provides: librubberband.so
+  source: alpm
+- alpm: shaderc
+  provides: libshaderc_shared.so
+  source: alpm
+- alpm: mpv
+  source: archpkg

@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''john'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- openssl
+- gmp
+- libpcap
+- openmpi
+- gcc: gcc-libs
+- libxcrypt
+repo_makedepends:
+- opencl-headers
+update_on:
+- alpm: libxcrypt
+  provides: libcrypt.so
+  source: alpm
+- alpm: john
+  source: archpkg

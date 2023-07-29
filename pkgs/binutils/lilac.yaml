@@ -1,0 +1,14 @@
+destsubdir: core
+repo_checkdepends:
+- dejagnu
+- elfutils: debuginfod
+- bc
+repo_depends:
+- glibc
+- jansson
+- elfutils: libelf
+- zlib
+- zstd
+repo_makedepends:
+- git
+update_on: []

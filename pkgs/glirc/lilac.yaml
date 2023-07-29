@@ -1,0 +1,87 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''glirc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-hsopenssl
+- haskell-async
+- haskell-attoparsec
+- haskell-base64-bytestring
+- haskell-config-schema
+- haskell-config-value
+- haskell-curve25519
+- haskell-free
+- haskell-githash
+- haskell-hashable
+- haskell-hookup
+- haskell-irc-core
+- haskell-kan-extensions
+- haskell-lens
+- haskell-network
+- haskell-psqueues
+- haskell-random
+- haskell-regex-tdfa
+- haskell-split
+- haskell-unordered-containers
+- haskell-vector
+- haskell-vty
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hunit
+update_on:
+- alpm: haskell-hsopenssl
+  source: alpm
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-base64-bytestring
+  source: alpm
+- alpm: haskell-config-schema
+  source: alpm
+- alpm: haskell-config-value
+  source: alpm
+- alpm: haskell-curve25519
+  source: alpm
+- alpm: haskell-free
+  source: alpm
+- alpm: haskell-githash
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-hookup
+  source: alpm
+- alpm: haskell-irc-core
+  source: alpm
+- alpm: haskell-kan-extensions
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-psqueues
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-regex-tdfa
+  source: alpm
+- alpm: haskell-split
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-vty
+  source: alpm
+- alpm: glirc
+  source: archpkg

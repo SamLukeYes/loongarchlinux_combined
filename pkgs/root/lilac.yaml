@@ -1,0 +1,95 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''root'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- lapack: blas
+- desktop-file-utils
+- fcgi
+- fftw
+- ftgl
+- giflib
+- gl2ps
+- glew
+- graphviz
+- gsl
+- hicolor-icon-theme
+- libafterimage
+- librsvg
+- liburing
+- libxpm
+- nlohmann-json
+- pcre
+- python
+- python-numpy
+- tex-gyre-fonts
+- unixodbc
+- zstd
+- lapack: blas
+- desktop-file-utils
+- fcgi
+- fftw
+- ftgl
+- giflib
+- gl2ps
+- glew
+- graphviz
+- gsl
+- hicolor-icon-theme
+- libafterimage
+- librsvg
+- liburing
+- libxpm
+- nlohmann-json
+- pcre
+- python
+- python-numpy
+- tex-gyre-fonts
+- unixodbc
+- zstd
+- cuda
+- cudnn
+repo_makedepends:
+- ccache
+- cern-vdt
+- chromium
+- cfitsio
+- cmake
+- cuda
+- cudnn
+- gcc: gcc-fortran
+- git
+- go
+- libxml2
+- ocaml
+- ocaml-ctypes
+- openmp
+- openmpi
+- openssl
+- openui5
+- postgresql: postgresql-libs
+- python-pygments
+- qt5-webengine
+- sqlite
+- unuran
+- vc
+- z3
+update_on:
+- alpm: gsl
+  source: alpm
+  strip_release: true
+- alias: python
+- alpm: gsl
+  source: alpm
+  strip_release: true
+- alias: python
+- alpm: root
+  source: archpkg

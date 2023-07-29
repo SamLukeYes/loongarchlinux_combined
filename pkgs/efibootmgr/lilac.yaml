@@ -1,0 +1,29 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''efibootmgr'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- popt
+- glibc
+- popt
+repo_makedepends:
+- efivar
+- git
+update_on:
+- alpm: efivar
+  provides: libefiboot.so
+  source: alpm
+- alpm: efivar
+  provides: libefivar.so
+  source: alpm
+- alpm: efibootmgr
+  source: archpkg

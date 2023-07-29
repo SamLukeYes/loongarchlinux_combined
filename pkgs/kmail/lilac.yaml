@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kmail'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kdepim-runtime
+- kmail-account-wizard
+- akonadi-import-wizard
+- mbox-importer
+- pim-data-exporter
+- pim-sieve-editor
+- kontactinterface
+- ktnef
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+update_on:
+- alpm: kmail
+  source: archpkg

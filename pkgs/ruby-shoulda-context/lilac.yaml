@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-shoulda-context'')
+
+  '
+repo_checkdepends:
+- ruby-byebug
+- ruby-m
+- ruby-minitest
+- ruby-mocha
+- ruby-pry
+- ruby-pry-byebug
+- ruby-rake
+- ruby-snowglobe
+- ruby-test-unit
+- ruby-warnings_logger
+repo_depends:
+- ruby
+repo_makedepends:
+- git
+update_on:
+- alias: ruby
+- alpm: ruby-shoulda-context
+  source: archpkg

@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-h5py-openmpi'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- inetutils
+- python-pytest
+- python-pytest-mpi
+- python-pytables
+repo_depends:
+- hdf5-openmpi
+- liblzf
+- python-numpy
+- python-mpi4py
+repo_makedepends:
+- cython
+- python-pkgconfig
+- python-setuptools
+update_on:
+- alpm: python-h5py-openmpi
+  source: archpkg

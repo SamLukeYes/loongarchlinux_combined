@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''nvchecker'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-asyncio
+- python-pytest-httpbin
+- python-flaky
+- pyalpm
+- python-awesomeversion
+- python-lxml
+- git
+repo_depends:
+- python
+- python-tomli
+- python-structlog
+- python-platformdirs
+- python-tornado
+- python-pycurl
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+- python-docutils
+- python-pygments
+- pygobject: python-gobject
+- python-toml
+- python-aiohttp
+- python-httpx
+update_on:
+- alias: python
+- alpm: nvchecker
+  source: archpkg

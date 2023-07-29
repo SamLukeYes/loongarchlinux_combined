@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-perl-critic'')
+
+  '
+repo_checkdepends:
+- perl-test-memory-cycle
+repo_depends:
+- perl-b-keywords
+- perl-config-tiny
+- perl-exception-class
+- perl-file-homedir
+- perl-file-which
+- perl-list-someutils
+- perl-module-build
+- perl-module-pluggable
+- perl-ppi
+- perl-ppix-quotelike
+- perl-ppix-regexp
+- perl-ppix-utilities
+- perl-pod-spell
+- perl-tidy
+- perl-readonly
+- perl-string-format
+repo_makedepends: []
+update_on:
+- alpm: perl-perl-critic
+  source: archpkg

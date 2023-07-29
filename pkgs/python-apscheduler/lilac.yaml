@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-apscheduler'')
+
+  '
+repo_checkdepends:
+- pifpaf
+- python-gevent
+- python-pytest-asyncio
+- python-pytest-cov
+- python-pytest-tornado
+- python-redis
+- python-sqlalchemy
+- python-tornado
+- python-twisted
+- redis
+repo_depends:
+- python-setuptools
+- python-six
+- python-pytz
+- python-tzlocal
+repo_makedepends:
+- git
+- python-setuptools-scm
+update_on:
+- alpm: python-apscheduler
+  source: archpkg

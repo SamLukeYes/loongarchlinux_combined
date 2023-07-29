@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kicad'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- boost: boost-libs
+- curl
+- glew
+- glm
+- ngspice
+- opencascade
+- python
+- python-wxpython
+- wxwidgets: wxwidgets-gtk3
+- unixodbc
+repo_makedepends:
+- git
+- cmake
+- ninja
+- mesa
+- boost
+- swig
+update_on:
+- alias: python
+- alpm: wxwidgets-gtk3
+  source: alpm
+  strip_release: true
+- alpm: kicad
+  source: archpkg

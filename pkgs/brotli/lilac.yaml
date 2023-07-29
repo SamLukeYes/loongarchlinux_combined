@@ -1,0 +1,23 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''brotli'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- python
+repo_makedepends:
+- git
+- cmake
+- python-setuptools
+update_on:
+- alias: python
+- alpm: brotli
+  source: archpkg

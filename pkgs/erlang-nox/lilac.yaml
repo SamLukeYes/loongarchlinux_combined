@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''erlang-nox'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ncurses
+- openssl
+repo_makedepends:
+- fop
+- git
+- libxslt
+- lksctp-tools
+- unixodbc
+update_on:
+- alpm: erlang-nox
+  source: archpkg

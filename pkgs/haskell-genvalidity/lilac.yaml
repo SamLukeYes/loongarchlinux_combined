@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-genvalidity'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-quickcheck
+- haskell-random
+- haskell-validity
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hspec
+- haskell-hspec-core
+update_on:
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-validity
+  source: alpm
+- alpm: haskell-genvalidity
+  source: archpkg

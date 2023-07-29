@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libfm'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk2
+- gtk3
+- libexif
+- menu-cache
+- libexif
+- libfm: libfm-extra
+- menu-cache
+- glib2
+- gtk2
+- menu-cache
+- libfm
+- gtk3
+- menu-cache
+- libfm
+repo_makedepends:
+- intltool
+- gtk-doc
+update_on:
+- alpm: libfm
+  source: archpkg

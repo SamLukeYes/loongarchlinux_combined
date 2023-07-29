@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-http-common'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-base64-bytestring
+- haskell-blaze-builder
+- haskell-case-insensitive
+- haskell-network
+- haskell-random
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-base64-bytestring
+  source: alpm
+- alpm: haskell-blaze-builder
+  source: alpm
+- alpm: haskell-case-insensitive
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-http-common
+  source: archpkg

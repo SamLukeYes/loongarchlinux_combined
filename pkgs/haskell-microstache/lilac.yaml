@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-microstache'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-unordered-containers
+- haskell-vector
+repo_makedepends:
+- ghc
+- haskell-base-orphans
+- haskell-tasty
+- haskell-tasty-hunit
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-microstache
+  source: archpkg

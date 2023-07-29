@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-explicit-fixity-plugin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-extra
+- haskell-ghcide
+- haskell-hashable
+- haskell-hls-plugin-api
+- haskell-lsp
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hls-test-utils
+update_on:
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-ghc
+  source: alpm
+- alpm: haskell-ghcide
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-hls-plugin-api
+  source: alpm
+- alpm: haskell-lsp
+  source: alpm
+- alpm: haskell-hls-explicit-fixity-plugin
+  source: archpkg

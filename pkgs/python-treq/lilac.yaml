@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-treq'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-incremental
+- python-requests
+- python-pyopenssl
+- python-service-identity
+- python-idna
+- python-attrs
+- python-twisted
+- python-hyperlink
+repo_makedepends:
+- python-setuptools
+- httpbin
+update_on:
+- alpm: python-treq
+  source: archpkg

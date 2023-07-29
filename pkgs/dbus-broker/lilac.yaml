@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''dbus-broker'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- audit
+- expat
+- systemd: systemd-libs
+repo_makedepends:
+- meson
+- python-docutils
+- systemd
+update_on:
+- alpm: dbus-broker
+  source: archpkg

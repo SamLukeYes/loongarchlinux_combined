@@ -1,0 +1,16 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sound-theme-freedesktop'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- intltool
+update_on:
+- alpm: sound-theme-freedesktop
+  source: archpkg

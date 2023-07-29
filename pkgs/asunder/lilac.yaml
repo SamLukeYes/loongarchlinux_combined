@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''asunder'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gdk-pixbuf2
+- glib2
+- glibc
+- gtk2
+- libcddb
+- cdparanoia
+repo_makedepends:
+- intltool
+- gettext
+update_on:
+- alpm: asunder
+  source: archpkg

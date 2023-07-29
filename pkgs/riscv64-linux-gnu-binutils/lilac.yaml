@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''riscv64-linux-gnu-binutils'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- elfutils: libelf
+repo_makedepends:
+- setconf
+update_on:
+- alpm: riscv64-linux-gnu-binutils
+  source: archpkg

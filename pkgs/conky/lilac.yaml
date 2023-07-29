@@ -1,0 +1,43 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- glibc
+- glib2
+- lua
+- wireless_tools
+- libxdamage
+- libxinerama
+- libxft
+- imlib2
+- libxml2
+- pulseaudio: libpulse
+- nvidia-settings: libxnvctrl
+- systemd: systemd-libs
+- ncurses
+- curl
+repo_makedepends:
+- cmake
+- docbook2x
+- docbook-xsl
+- man-db
+- git
+- catch2
+- python-yaml
+- python-jinja
+update_on:
+- alias: lua
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: libxnvctrl
+  provides: libXNVCtrl.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: libao
+  provides: libpulse.so
+  source: alpm
+- alpm: curl
+  provides: libcurl.so
+  source: alpm

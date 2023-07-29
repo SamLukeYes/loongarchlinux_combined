@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''borg'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-dateutil
+repo_depends:
+- acl
+- lz4
+- openssl
+- xz
+- zstd
+- python
+- python-packaging
+- python-msgpack
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-setuptools-scm
+- python-pkgconfig
+- python-sphinx
+- python-guzzle-sphinx-theme
+- python-wheel
+- cython
+update_on:
+- alias: python
+- alpm: borg
+  source: archpkg

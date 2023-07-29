@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''iagno'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- gsound
+- librsvg
+repo_makedepends:
+- meson
+- gobject-introspection
+- yelp-tools
+- appstream-glib
+- vala
+- git
+update_on:
+- alpm: iagno
+  source: archpkg

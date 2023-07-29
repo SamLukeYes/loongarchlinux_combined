@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-openstacksdk'')
+
+  '
+repo_checkdepends:
+- python-stestr
+- python-ddt
+- python-requests-mock
+- python-oslotest
+- python-jsonschema
+- python-oslo-config
+- python-prometheus_client
+- python-hacking
+repo_depends:
+- python-six
+- python-pbr
+- python-yaml
+- python-jsonpatch
+- python-appdirs
+- python-keystoneauth1
+- python-os-service-types
+- python-deprecation
+- python-requestsexceptions
+- python-decorator
+- python-jmespath
+- python-iso8601
+- python-netifaces
+- python-dogpile.cache
+- python-cryptography
+repo_makedepends:
+- git
+- python-setuptools
+update_on:
+- alpm: python-openstacksdk
+  source: archpkg

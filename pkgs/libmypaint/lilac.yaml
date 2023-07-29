@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libmypaint'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- json-c
+- gegl
+- glib2
+- json-glib
+- babl
+repo_makedepends:
+- intltool
+- python
+- python-sphinx
+- python-breathe
+- gobject-introspection
+- doxygen
+update_on:
+- alpm: libmypaint
+  source: archpkg

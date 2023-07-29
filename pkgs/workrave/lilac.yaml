@@ -1,0 +1,18 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gstreamer
+- gtkmm3
+- libsm
+- libxss
+repo_makedepends:
+- autoconf-archive
+- boost
+- intltool
+- gobject-introspection
+- pulseaudio: libpulse
+- python-jinja
+- gnome-panel
+- mate-panel
+- xfce4-panel
+update_on: []

@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''public-inbox'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl
+- perl-inline-c
+- perl-dbd-sqlite
+- perl-uri
+- perl-search-xapian
+- public-inbox: perl-publicinbox
+repo_makedepends:
+- git
+update_on:
+- alias: perl
+- alpm: public-inbox
+  source: archpkg

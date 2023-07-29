@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-mpl'')
+
+  '
+repo_checkdepends:
+- python-pytest-cov
+- python-pytest-plugins: python-pytest-shutil
+- python-jinja
+repo_depends:
+- python-pytest
+- python-matplotlib
+- python-jinja
+- python-packaging
+repo_makedepends:
+- python-setuptools-scm
+- python-build
+- python-installer
+- python-wheel
+- git
+update_on:
+- alpm: python-pytest-mpl
+  source: archpkg

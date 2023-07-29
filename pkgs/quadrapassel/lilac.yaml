@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''quadrapassel'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- clutter-gtk
+- gsound
+- librsvg
+- libmanette
+repo_makedepends:
+- meson
+- gobject-introspection
+- yelp-tools
+- appstream-glib
+- git
+- vala
+update_on:
+- alpm: quadrapassel
+  source: archpkg

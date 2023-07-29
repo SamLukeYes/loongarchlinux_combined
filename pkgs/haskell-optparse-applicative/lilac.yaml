@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-optparse-applicative'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- haskell-quickcheck
+repo_depends:
+- ghc: ghc-libs
+- haskell-ansi-wl-pprint
+- haskell-transformers-compat
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-ansi-wl-pprint
+  source: alpm
+- alpm: haskell-transformers-compat
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: archpkg

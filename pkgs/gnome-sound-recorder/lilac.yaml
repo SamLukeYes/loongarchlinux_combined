@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-sound-recorder'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gjs
+- gstreamer: gst-plugins-bad-libs
+- gstreamer: gst-plugins-base
+- gstreamer: gst-plugins-good
+- gtk4
+- libadwaita
+repo_makedepends:
+- git
+- gobject-introspection
+- meson
+update_on:
+- alpm: gnome-sound-recorder
+  source: archpkg

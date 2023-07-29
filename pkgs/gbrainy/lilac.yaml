@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gbrainy'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk-sharp-3
+- librsvg
+- hicolor-icon-theme
+- desktop-file-utils
+repo_makedepends:
+- intltool
+- itstool
+update_on:
+- alpm: gbrainy
+  source: archpkg

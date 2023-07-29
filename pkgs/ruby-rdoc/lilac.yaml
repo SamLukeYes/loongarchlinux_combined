@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rdoc'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- ruby-psych
+repo_makedepends:
+- ruby-kpeg
+- ruby-racc
+update_on:
+- alias: ruby
+- alpm: ruby-rdoc
+  source: archpkg

@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libopenmpt'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- flac
+- gcc: gcc-libs
+- glibc
+- libogg
+- pulseaudio: libpulse
+- libsndfile
+- libvorbis
+- mpg123
+- portaudio
+- zlib
+repo_makedepends:
+- autoconf-archive
+- doxygen
+- help2man
+update_on:
+- alpm: libopenmpt
+  source: archpkg

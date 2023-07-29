@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-system-monitor'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtkmm3
+- libgtop
+- libhandy
+- librsvg
+- polkit
+- systemd
+repo_makedepends:
+- appstream-glib
+- git
+- meson
+- yelp-tools
+update_on:
+- alpm: gnome-system-monitor
+  source: archpkg

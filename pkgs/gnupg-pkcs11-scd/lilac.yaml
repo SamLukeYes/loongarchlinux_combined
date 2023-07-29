@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnupg-pkcs11-scd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libassuan
+- libgcrypt
+- libgpg-error
+- openssl
+- pkcs11-helper
+repo_makedepends: []
+update_on:
+- alpm: gnupg-pkcs11-scd
+  source: archpkg

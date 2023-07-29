@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-config-schema'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-config-value
+- haskell-free
+- haskell-kan-extensions
+- haskell-semigroupoids
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-config-value
+  source: alpm
+- alpm: haskell-free
+  source: alpm
+- alpm: haskell-kan-extensions
+  source: alpm
+- alpm: haskell-semigroupoids
+  source: alpm
+- alpm: haskell-config-schema
+  source: archpkg

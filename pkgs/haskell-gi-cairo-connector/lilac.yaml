@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi-cairo-connector'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-gi-cairo
+- haskell-gi-cairo-render
+- haskell-gi-base
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-gi-cairo
+  source: alpm
+- alpm: haskell-gi-cairo-render
+  source: alpm
+- alpm: haskell-gi-base
+  source: alpm
+- alpm: haskell-gi-cairo-connector
+  source: archpkg

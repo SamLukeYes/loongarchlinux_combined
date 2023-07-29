@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''polari'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gjs
+- gtk4
+- libadwaita
+- libsoup3
+- telepathy-glib
+- telepathy-idle
+- telepathy-logger
+- telepathy-mission-control
+repo_makedepends:
+- appstream-glib
+- git
+- gobject-introspection
+- meson
+- yelp-tools
+update_on:
+- alpm: polari
+  source: archpkg

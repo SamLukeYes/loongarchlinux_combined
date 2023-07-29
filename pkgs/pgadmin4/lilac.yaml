@@ -1,0 +1,76 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pgadmin4'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-base
+- postgresql: postgresql-libs
+- hicolor-icon-theme
+- python
+- libxcrypt
+- glibc
+- gcc: gcc-libs
+- python-blinker
+- python-flask
+- python-flask-login
+- python-flask-migrate
+- python-flask-sqlalchemy
+- python-flask-wtf
+- python-passlib
+- python-pytz
+- python-simplejson
+- python-six
+- python-speaklater
+- python-sqlparse
+- python-wtforms
+- python-psutil
+- python-jinja
+- python-paramiko
+- python-psycopg2
+- python-bcrypt
+- python-cryptography
+- python-sqlalchemy1.3
+- python-testtools
+- python-webencodings
+- python-werkzeug
+- python-dateutil
+- python-flask-gravatar
+- python-flask-mail
+- python-flask-principal
+- python-flask-paranoid
+- python-sshtunnel
+- python-flask-security-too
+- python-werkzeug
+- python-flask-compress
+- python-ldap3
+- python-cryptography
+- python-flask-babelex
+- python-gssapi
+repo_makedepends:
+- python-setuptools
+- python-sphinx
+- python-extras
+- python-fixtures
+- python-html5lib
+- python-pbr
+- python-mimeparse
+- python-pyrsistent
+- imagemagick
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alias: python
+- alpm: libxcrypt
+  provides: libcrypt.so
+  source: alpm
+- alpm: pgadmin4
+  source: archpkg

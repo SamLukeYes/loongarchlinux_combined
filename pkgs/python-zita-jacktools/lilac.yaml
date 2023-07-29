@@ -1,0 +1,59 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-zita-jacktools'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- python
+- python-zita-audiotools
+- gcc: gcc-libs
+- glibc
+- python
+- python-zita-audiotools
+- fftw
+- libsndfile
+- zita-convolver
+- zita-jclient
+- zita-resampler
+repo_makedepends:
+- fftw
+- libsndfile
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+- zita-convolver
+- zita-jclient
+- zita-resampler
+update_on:
+- alias: python
+- alias: python
+- alpm: fftw
+  provides: libfftw3f.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: zita-convolver
+  provides: libzita-convolver.so
+  source: alpm
+- alpm: zita-jclient
+  provides: libzita-jclient.so
+  source: alpm
+- alpm: zita-resampler
+  provides: libzita-resampler.so
+  source: alpm
+- alpm: python-zita-jacktools
+  source: archpkg

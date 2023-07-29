@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deepin-launcher'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gsettings-qt
+- qt5-svg
+- qt5-x11extras
+- startdde
+- deepin-qt5integration
+- deepin-menu
+- deepin-daemon
+- deepin-qt-dbus-factory
+- xdg-user-dirs
+repo_makedepends:
+- git
+- cmake
+- gtest
+- ninja
+- qt5-tools
+update_on:
+- alpm: deepin-launcher
+  source: archpkg

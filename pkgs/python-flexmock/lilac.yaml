@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-flexmock'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-teamcity-messages
+- python-testtools
+- python-twisted
+repo_depends:
+- python
+repo_makedepends:
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-flexmock
+  source: archpkg

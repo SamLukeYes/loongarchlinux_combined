@@ -1,0 +1,16 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- llvm: llvm-libs
+- clang
+- python
+- python-six
+repo_makedepends:
+- llvm
+- cmake
+- ninja
+- swig
+- python-sphinx
+update_on:
+- alias: clang
+- alias: python

@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''aws-cli-v2'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-xdist
+- python-jsonschema
+- python-mock
+- procps-ng
+repo_depends:
+- python
+- python-awscrt
+- python-certifi
+- python-colorama
+- python-cryptography
+- python-dateutil
+- python-distro
+- python-docutils
+- python-jmespath
+- python-prompt_toolkit
+- python-ruamel-yaml
+- python-urllib3
+repo_makedepends:
+- python-build
+- python-wheel
+- python-flit-core
+- python-installer
+update_on:
+- alias: python
+- alpm: aws-cli-v2
+  source: archpkg

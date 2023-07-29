@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-aeson-qq'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-attoparsec
+- haskell-base-compat
+- haskell-src-meta
+- haskell-scientific
+- haskell-vector
+repo_makedepends:
+- ghc
+- haskell-hspec
+- haskell-hspec-discover
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-base-compat
+  source: alpm
+- alpm: haskell-src-meta
+  source: alpm
+- alpm: haskell-scientific
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-aeson-qq
+  source: archpkg

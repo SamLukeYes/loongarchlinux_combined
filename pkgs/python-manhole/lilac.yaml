@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-manhole'')
+
+  '
+repo_checkdepends:
+- python-virtualenv
+- python-pytest-runner
+- python-process-tests
+- python-requests
+- uwsgi
+repo_depends:
+- python
+repo_makedepends:
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-manhole
+  source: archpkg

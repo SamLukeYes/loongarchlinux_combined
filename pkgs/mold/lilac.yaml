@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mold'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- clang
+- libdwarf
+repo_depends:
+- glibc
+- gcc: gcc-libs
+- mimalloc
+- openssl
+- zlib
+- zstd
+repo_makedepends:
+- git
+- python
+- cmake
+- mold
+update_on:
+- alpm: mold
+  source: archpkg

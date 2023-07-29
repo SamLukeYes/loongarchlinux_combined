@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''breeze-gtk'')
+
+  '
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- extra-cmake-modules
+- sassc
+- python-cairo
+- breeze
+update_on:
+- alpm: breeze-gtk
+  source: archpkg

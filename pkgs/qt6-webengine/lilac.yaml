@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qt6-webengine'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt6-webchannel
+- qt6-positioning
+- libxcomposite
+- libxrandr
+- libxkbfile
+- snappy
+- nss
+- libxslt
+- zlib: minizip
+- ffmpeg
+- re2
+- libvpx
+- libxtst
+repo_makedepends:
+- cmake
+- ninja
+- python-html5lib
+- gperf
+- jsoncpp
+- qt6-tools
+- pipewire
+- nodejs
+- qt6-websockets
+- libepoxy
+- git
+update_on:
+- alpm: qt6-webengine
+  source: archpkg

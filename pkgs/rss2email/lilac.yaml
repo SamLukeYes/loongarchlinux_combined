@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rss2email'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-html2text
+- python-feedparser
+repo_makedepends:
+- python-build
+- python-installer
+- python-poetry-core
+update_on:
+- alias: python
+- alpm: rss2email
+  source: archpkg

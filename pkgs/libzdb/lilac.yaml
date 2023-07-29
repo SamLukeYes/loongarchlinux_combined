@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libzdb'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- postgresql: postgresql-libs
+- sqlite
+- mariadb: mariadb-libs
+repo_makedepends: []
+update_on:
+- alpm: libzdb
+  source: archpkg

@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''japa'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- clxclient
+- clthreads
+- fftw
+- gcc: gcc-libs
+- glibc
+- libx11
+- zita-alsa-pcmi
+repo_makedepends:
+- gendesk
+update_on:
+- alpm: japa
+  source: archpkg

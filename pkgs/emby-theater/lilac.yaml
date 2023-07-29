@@ -1,0 +1,90 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''emby-theater'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cairo
+- gcc: gcc-libs
+- glibc
+- cups: libcups
+- libdrm
+- intel-media-sdk: libmfx
+- libx11
+- libxcb
+- libxcomposite
+- libxcursor
+- libxdamage
+- libxext
+- libxfixes
+- libxi
+- libxrandr
+- libxrender
+- libxss
+- libxtst
+- mesa
+- nspr
+- nss
+- ocl-icd
+- zlib
+repo_makedepends:
+- git
+- npm
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: at-spi2-core
+  provides: libatk-1.0.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: expat
+  provides: libexpat.so
+  source: alpm
+- alpm: fontconfig
+  provides: libfontconfig.so
+  source: alpm
+- alpm: gtk3
+  provides: libgdk-3.so
+  source: alpm
+- alpm: gdk-pixbuf2
+  provides: libgdk_pixbuf-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: gtk3
+  provides: libgtk-3.so
+  source: alpm
+- alpm: pango
+  provides: libpango-1.0.so
+  source: alpm
+- alpm: pango
+  provides: libpangocairo-1.0.so
+  source: alpm
+- alpm: libao
+  provides: libpulse.so
+  source: alpm
+- alpm: libva
+  provides: libva-drm.so
+  source: alpm
+- alpm: libva
+  provides: libva.so
+  source: alpm
+- alpm: emby-theater
+  source: archpkg

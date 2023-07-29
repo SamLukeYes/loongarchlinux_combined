@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hashcat'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ocl-icd
+- xxhash
+- zlib
+- zlib: minizip
+repo_makedepends:
+- opencl-headers
+update_on:
+- alpm: hashcat
+  source: archpkg

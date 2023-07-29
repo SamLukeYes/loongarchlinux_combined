@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-setuptools-rust'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-benchmark
+- python-beautifulsoup4
+- python-lxml
+- python-cffi
+repo_depends:
+- rust
+- python-setuptools
+- python-semantic-version
+repo_makedepends: []
+update_on:
+- alpm: python-setuptools-rust
+  source: archpkg

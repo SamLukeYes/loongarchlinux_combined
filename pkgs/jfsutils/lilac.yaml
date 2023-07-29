@@ -1,0 +1,6 @@
+destsubdir: core
+repo_checkdepends: []
+repo_depends:
+- util-linux
+repo_makedepends: []
+update_on: []

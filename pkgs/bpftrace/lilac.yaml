@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''bpftrace'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- elfutils: libelf
+- zlib
+- llvm: llvm-libs
+- clang
+- bcc
+- libbpf
+- libpcap
+repo_makedepends:
+- cmake
+- llvm
+- git
+- linux: linux-headers
+- ninja
+- gtest
+- cereal
+- asciidoctor
+update_on:
+- alias: clang
+- alpm: bpftrace
+  source: archpkg

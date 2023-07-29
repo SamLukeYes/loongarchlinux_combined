@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-jaraco.text'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python
+- python-jaraco.functools
+- python-jaraco.context
+- python-autocommand
+- python-inflect
+- python-more-itertools
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools-scm
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-jaraco.text
+  source: archpkg

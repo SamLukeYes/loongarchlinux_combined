@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lazarus'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fpc
+- fpc-src
+- gdb
+- lazarus
+- desktop-file-utils
+- gtk2
+- lazarus
+- qt5pas
+repo_makedepends:
+- fpc
+- fpc-src
+- gtk2
+- qt5pas
+- rsync
+update_on:
+- alpm: lazarus
+  source: archpkg

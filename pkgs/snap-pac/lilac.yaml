@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''snap-pac'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- snapper
+- pacman
+- btrfs-progs
+- python
+repo_makedepends:
+- python-sphinx
+update_on:
+- alias: python
+- alpm: snap-pac
+  source: archpkg

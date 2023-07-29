@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''in-toto'')
+
+  '
+repo_checkdepends:
+- python-mock
+repo_depends:
+- python-cryptography
+- python-iso8601
+- python-attrs
+- python-dateutil
+- python-six
+- python-pathspec
+repo_makedepends:
+- python
+- python-setuptools
+- git
+update_on:
+- alpm: in-toto
+  source: archpkg

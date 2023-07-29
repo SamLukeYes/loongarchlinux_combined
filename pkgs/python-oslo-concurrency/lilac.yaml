@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-oslo-concurrency'')
+
+  '
+repo_checkdepends:
+- python-oslotest
+- python-eventlet
+repo_depends:
+- python-pbr
+- python-oslo-config
+- python-oslo-i18n
+- python-oslo-utils
+- python-fasteners
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-oslo-concurrency
+  source: archpkg

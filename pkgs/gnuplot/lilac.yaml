@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnuplot'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gd
+- wxwidgets: wxwidgets-gtk3
+- lua
+- qt5-svg
+- libcerf
+- libcaca
+- gnuplot
+repo_makedepends:
+- emacs
+- texlive-texmf: texlive-latexextra
+- qt5-tools
+update_on:
+- alpm: wxwidgets-gtk3
+  source: alpm
+  strip_release: true
+- alias: lua
+- alpm: gnuplot
+  source: archpkg

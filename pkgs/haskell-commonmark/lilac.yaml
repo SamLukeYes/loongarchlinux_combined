@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-commonmark'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-unicode-data
+- haskell-unicode-transforms
+repo_makedepends:
+- ghc
+- haskell-tasty
+- haskell-tasty-quickcheck
+- haskell-tasty-hunit
+update_on:
+- alpm: haskell-unicode-data
+  source: alpm
+- alpm: haskell-unicode-transforms
+  source: alpm
+- alpm: haskell-commonmark
+  source: archpkg

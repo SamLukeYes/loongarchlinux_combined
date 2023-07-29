@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cryptonite'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-basement
+- haskell-memory
+repo_makedepends:
+- ghc
+- haskell-tasty
+- haskell-tasty-hunit
+- haskell-tasty-kat
+- haskell-tasty-quickcheck
+update_on:
+- alpm: haskell-basement
+  source: alpm
+- alpm: haskell-memory
+  source: alpm
+- alpm: haskell-cryptonite
+  source: archpkg

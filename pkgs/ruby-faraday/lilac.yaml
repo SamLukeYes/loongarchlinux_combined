@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-faraday'')
+
+  '
+repo_checkdepends:
+- ruby-rack
+- ruby-webmock
+- ruby-rspec-expectations
+- ruby-multipart-parser
+- ruby-rack-test
+repo_depends:
+- ruby
+- ruby-multipart-post
+- ruby-ruby2_keywords
+- ruby-faraday-net_http
+- ruby-faraday-em_http
+- ruby-faraday-em_synchrony
+- ruby-faraday-excon
+- ruby-faraday-httpclient
+- ruby-faraday-net_http
+- ruby-faraday-net_http_persistent
+- ruby-faraday-patron
+- ruby-faraday-rack
+repo_makedepends:
+- ruby-rdoc
+- ruby-rake
+- ruby-rspec
+update_on:
+- alias: ruby
+- alpm: ruby-faraday
+  source: archpkg

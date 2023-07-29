@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-xpath'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby-nokogiri
+repo_makedepends:
+- ruby-pry
+- ruby-rake
+- ruby-rspec
+- ruby-yard
+update_on:
+- alpm: ruby-xpath
+  source: archpkg

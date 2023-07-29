@@ -1,0 +1,46 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-pragmas-plugin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- git
+repo_depends:
+- ghc: ghc-libs
+- haskell-extra
+- haskell-fuzzy
+- haskell-ghcide
+- haskell-hls-plugin-api
+- haskell-lens
+- haskell-lsp
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hls-test-utils
+- haskell-lsp-types
+update_on:
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-fuzzy
+  source: alpm
+- alpm: haskell-ghc
+  source: alpm
+- alpm: haskell-ghcide
+  source: alpm
+- alpm: haskell-hls-plugin-api
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-lsp
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-hls-pragmas-plugin
+  source: archpkg

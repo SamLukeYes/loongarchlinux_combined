@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''srslte'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fftw
+- mbedtls
+- boost: boost-libs
+- lksctp-tools
+- libconfig
+- libuhd
+- soapysdr
+- bladerf
+- zeromq
+- pcsclite
+- srsgui
+repo_makedepends:
+- cmake
+- boost
+update_on:
+- alpm: srslte
+  source: archpkg

@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''vis'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- vim
+repo_depends:
+- acl
+- bash
+- ncurses
+- libtermkey
+- lua
+- lpeg: lua-lpeg
+- tre
+- file
+repo_makedepends:
+- git
+update_on:
+- alpm: acl
+  provides: libacl.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: libtermkey
+  provides: libtermkey.so
+  source: alpm
+- alias: lua
+- alpm: vis
+  source: archpkg

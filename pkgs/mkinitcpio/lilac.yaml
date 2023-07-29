@@ -1,0 +1,19 @@
+destsubdir: core
+repo_checkdepends:
+- bash-bats
+- bash-bats-assert
+- lzop
+repo_depends:
+- kmod
+- libarchive
+- coreutils
+- bash
+- binutils
+- diffutils
+- findutils
+- grep
+- zstd
+- systemd
+repo_makedepends:
+- asciidoc
+update_on: []

@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hexchat'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- dbus-glib
+- desktop-file-utils
+- gdk-pixbuf2
+- glib2
+- gtk2
+- libcanberra
+- openssl
+- pango
+- pciutils
+repo_makedepends:
+- git
+- intltool
+- iso-codes
+- lua
+- meson
+- perl
+- python-cffi
+update_on:
+- alpm: hexchat
+  source: archpkg

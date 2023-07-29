@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest'')
+
+  '
+repo_checkdepends:
+- python-argcomplete
+- python-attrs
+- python-hypothesis
+- python-nose
+- python-requests
+- python-xmlschema
+- lsof
+- python-decorator
+- python-docutils
+- python-jinja
+- python-numpy
+- python-pexpect
+- python-pygments
+- python-pytest-xdist
+- python-twisted
+repo_depends:
+- python-iniconfig
+- python-packaging
+- python-pluggy
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alpm: python-pytest
+  source: archpkg

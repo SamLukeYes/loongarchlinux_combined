@@ -1,0 +1,189 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- desktop-file-utils
+- enca
+- libxss
+- a52dec
+- libvpx
+- lirc
+- x264
+- libmng
+- libdca
+- aalib
+- libxinerama
+- samba: smbclient
+- libmad
+- libcaca
+- libxxf86vm
+- faac
+- faad2
+- libxv
+- libxvmc
+- mpg123
+- libx11
+- libcdio
+- libcdio-paranoia
+- rtmpdump
+- libdvdread
+- libdvdnav
+- ffmpeg
+- libbs2b
+- alsa-lib
+- giflib
+- glibc
+- libass
+- zlib
+- libpng
+- pulseaudio: libpulse
+- libogg
+- fribidi
+- libtheora
+- libvorbis
+- libbluray
+- xvidcore
+- ncurses
+- fontconfig
+- freetype2
+- libxext
+- libvdpau
+- openal
+- speex
+- libmpeg2
+- glibc
+- enca
+- a52dec
+- libvpx
+- x264
+- libmng
+- libdca
+- samba: smbclient
+- libmad
+- faac
+- faad2
+- mpg123
+- libcdio
+- libcdio-paranoia
+- rtmpdump
+- libdvdread
+- libdvdnav
+- ffmpeg
+- libbs2b
+- ncurses
+- zlib
+- alsa-lib
+- fontconfig
+- freetype2
+- fribidi
+- giflib
+- libvorbis
+- libpng
+- libass
+- lame
+- libbluray
+- libtheora
+- xvidcore
+- openal
+- speex
+- libmpeg2
+repo_makedepends:
+- xorgproto
+- libxxf86vm
+- libmad
+- libxinerama
+- libmng
+- libxss
+- samba: smbclient
+- aalib
+- libcaca
+- faac
+- faad2
+- lirc
+- libxv
+- libxvmc
+- enca
+- libdca
+- a52dec
+- libvpx
+- unzip
+- mesa
+- yasm
+- git
+- mpg123
+- ladspa
+- libcdio
+- zlib
+- libcdio-paranoia
+- subversion
+- x264
+- rtmpdump
+- libdvdcss
+- libdvdread
+- libdvdnav
+- ffmpeg
+- giflib
+- libbs2b
+- fribidi
+- opus
+- libvorbis
+- gsm
+- pulseaudio: libpulse
+- alsa-lib
+- glibc
+- libass
+- libpng
+- libogg
+- libtheora
+- libbluray
+- xvidcore
+- ncurses
+- fontconfig
+- freetype2
+- libx11
+- libxext
+- libvdpau
+- lame
+- desktop-file-utils
+- openal
+- speex
+- libmpeg2
+update_on:
+- alpm: giflib
+  provides: libgif.so
+  source: alpm
+- alpm: libass
+  provides: libass.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbis.so
+  source: alpm
+- alpm: libbluray
+  provides: libbluray.so
+  source: alpm
+- alpm: xvidcore
+  provides: libxvidcore.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: x264
+  provides: libx264.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: giflib
+  provides: libgif.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbis.so
+  source: alpm
+- alpm: libass
+  provides: libass.so
+  source: alpm
+- alpm: libbluray
+  provides: libbluray.so
+  source: alpm
+- alpm: xvidcore
+  provides: libxvidcore.so
+  source: alpm

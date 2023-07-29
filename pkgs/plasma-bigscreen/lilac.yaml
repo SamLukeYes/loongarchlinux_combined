@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''plasma-bigscreen'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- plasma-pa
+- plasma-nm
+- plasma-nano
+- plasma-settings
+- kdeconnect
+- qt5-virtualkeyboard
+- plasma-remotecontrollers
+repo_makedepends:
+- extra-cmake-modules
+update_on:
+- alpm: plasma-bigscreen
+  source: archpkg

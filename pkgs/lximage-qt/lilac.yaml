@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lximage-qt'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- lxqt-themes
+- libfm-qt
+- qt5-svg
+- libexif
+- libxfixes
+repo_makedepends:
+- lxqt-build-tools
+update_on:
+- alpm: libfm-qt
+  provides: libfm-qt.so
+  source: alpm
+- alpm: lximage-qt
+  source: archpkg

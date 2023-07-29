@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''quodlibet'')
+
+  '
+repo_checkdepends:
+- gstreamer: gst-plugins-base
+- gstreamer: gst-plugins-good
+- python-pytest
+- python-xvfbwrapper
+repo_depends:
+- dbus-python
+- gtk3
+- libsoup
+- python-cairo
+- python-feedparser
+- pygobject: python-gobject
+- python-mutagen
+repo_makedepends:
+- python-sphinx_rtd_theme
+update_on:
+- alpm: quodlibet
+  source: archpkg

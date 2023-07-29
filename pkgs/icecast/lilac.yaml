@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''icecast'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libkate
+- libxml2
+- libxslt
+- openssl
+- speex
+- libtheora
+- glibc
+- libkate
+- libxml2
+- libxslt
+- openssl
+- speex
+- libtheora
+repo_makedepends:
+- curl
+- libogg
+- libvorbis
+update_on:
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: libogg
+  provides: libogg.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbis.so
+  source: alpm
+- alpm: icecast
+  source: archpkg

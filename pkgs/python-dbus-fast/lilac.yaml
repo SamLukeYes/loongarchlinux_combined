@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-dbus-fast'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-asyncio
+- python-pytest-cov
+- python-pytest-timeout
+repo_depends:
+- dbus
+- glib2
+- python
+repo_makedepends:
+- cython
+- git
+- python-async-timeout
+- python-build
+- python-installer
+- python-poetry-core
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-dbus-fast
+  source: archpkg

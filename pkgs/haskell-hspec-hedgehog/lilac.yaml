@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-hedgehog'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-hspec
+- haskell-hspec-core
+- haskell-hedgehog
+- haskell-hunit
+- haskell-quickcheck
+- haskell-splitmix
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-hspec
+  source: alpm
+- alpm: haskell-hspec-core
+  source: alpm
+- alpm: haskell-hedgehog
+  source: alpm
+- alpm: haskell-hunit
+  source: alpm
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-splitmix
+  source: alpm
+- alpm: haskell-hspec-hedgehog
+  source: archpkg

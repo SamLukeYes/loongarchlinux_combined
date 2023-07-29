@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-llvmlite'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- llvm14: llvm14-libs
+- python
+repo_makedepends:
+- cmake
+- git
+- llvm14
+- python-build
+- python-installer
+- python-setuptools-scm
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-llvmlite
+  source: archpkg

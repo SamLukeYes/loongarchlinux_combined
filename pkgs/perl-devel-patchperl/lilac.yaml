@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-devel-patchperl'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl
+- perl-file-pushd
+- perl-module-pluggable
+repo_makedepends: []
+update_on:
+- alias: perl
+- alpm: perl-devel-patchperl
+  source: archpkg

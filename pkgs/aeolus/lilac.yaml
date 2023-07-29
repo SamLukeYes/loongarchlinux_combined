@@ -1,0 +1,52 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''aeolus'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- libx11
+- gcc: gcc-libs
+- glibc
+- libx11
+- alsa-lib
+- clthreads
+- clxclient
+- readline
+- zita-alsa-pcmi
+repo_makedepends:
+- alsa-lib
+- clthreads
+- clxclient
+- readline
+- zita-alsa-pcmi
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: clthreads
+  provides: libclthreads.so
+  source: alpm
+- alpm: clxclient
+  provides: libclxclient.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alias: readline
+- alpm: readline
+  provides: libreadline.so
+  source: alpm
+- alpm: zita-alsa-pcmi
+  provides: libzita-alsa-pcmi.so
+  source: alpm
+- alpm: aeolus
+  source: archpkg

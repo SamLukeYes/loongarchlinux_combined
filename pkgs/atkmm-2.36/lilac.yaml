@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''atkmm-2.36'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibmm-2.68
+- glibmm-2.68
+repo_makedepends:
+- git
+- meson
+- mm-common
+- glibmm-2.68: glibmm-2.68-docs
+update_on:
+- alpm: libsigc++-3.0
+  provides: libsigc-3.0.so
+  source: alpm
+- alpm: glibmm-2.68
+  provides: libglibmm-2.68.so
+  source: alpm
+- alpm: atkmm-2.36
+  source: archpkg

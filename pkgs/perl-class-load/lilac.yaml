@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-class-load'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl
+- perl-module-runtime
+- perl-data-optlist
+- perl-try-tiny
+- perl-test-fatal
+- perl-module-implementation
+- perl-namespace-clean
+repo_makedepends: []
+update_on:
+- alias: perl
+- alpm: perl-class-load
+  source: archpkg

@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kdesrc-build'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl-libwww
+- perl-xml-parser
+- dialog
+- perl-json
+- perl-io-socket-ssl
+- perl-net-ssleay
+- perl-yaml-syck
+repo_makedepends:
+- cmake
+update_on:
+- alpm: kdesrc-build
+  source: archpkg

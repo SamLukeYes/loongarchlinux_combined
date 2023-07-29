@@ -1,0 +1,57 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- libjpeg-turbo
+- xcb-util-keysyms
+- xcb-util-renderutil
+- fontconfig
+- xdg-utils
+- shared-mime-info
+- xcb-util-wm
+- libxrender
+- libxi
+- sqlite
+- xcb-util-image
+- mesa
+- tslib
+- libinput
+- libxkbcommon: libxkbcommon-x11
+- libproxy
+- cups: libcups
+- double-conversion
+- md4c
+- libjpeg-turbo
+- xcb-util-keysyms
+- xcb-util-renderutil
+- fontconfig
+- xdg-utils
+- shared-mime-info
+- xcb-util-wm
+- libxrender
+- libxi
+- sqlite
+- xcb-util-image
+- mesa
+- tslib
+- libinput
+- libxkbcommon: libxkbcommon-x11
+- libproxy
+- cups: libcups
+- double-conversion
+- md4c
+- qt5-translations
+- qt5-base
+repo_makedepends:
+- libfbclient
+- mariadb: mariadb-libs
+- unixodbc
+- postgresql: postgresql-libs
+- alsa-lib
+- gstreamer: gst-plugins-base-libs
+- gtk3
+- pulseaudio: libpulse
+- cups
+- freetds
+- vulkan-headers
+- git
+update_on: []

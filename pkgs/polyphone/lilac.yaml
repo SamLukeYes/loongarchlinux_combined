@@ -1,0 +1,72 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''polyphone'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- openssl
+- qt5-base
+- qt5-svg
+- zlib
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- openssl
+- qt5-base
+- qt5-svg
+- zlib
+repo_makedepends:
+- flac
+- libogg
+- libvorbis
+- portaudio
+- rtmidi
+- qcustomplot
+- qt5-tools
+- stk
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: flac
+  provides: libFLAC.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: libogg
+  provides: libogg.so
+  source: alpm
+- alpm: portaudio
+  provides: libportaudio.so
+  source: alpm
+- alpm: qcustomplot
+  provides: libqcustomplot.so
+  source: alpm
+- alpm: stk
+  provides: libstk-4.6.2.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbis.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbisenc.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbisfile.so
+  source: alpm
+- alpm: polyphone
+  source: archpkg

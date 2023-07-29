@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''opera'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- alsa-lib
+- libnotify
+- curl
+- nss
+- cups: libcups
+- libxss
+- desktop-file-utils
+- shared-mime-info
+- hicolor-icon-theme
+repo_makedepends: []
+update_on:
+- alpm: opera
+  source: archpkg

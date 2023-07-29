@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deepin-wallpapers-plasma'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- plasma-workspace-wallpapers
+repo_makedepends:
+- deepin-api
+- breeze
+update_on:
+- alpm: deepin-wallpapers-plasma
+  source: archpkg

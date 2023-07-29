@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cctag'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- boost: boost-libs
+- cuda
+- qt6-base
+- opencv
+repo_makedepends:
+- boost
+- cmake
+- eigen
+- ninja
+update_on:
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: opencv
+  source: alpm
+  strip_release: true
+- alpm: cctag
+  source: archpkg

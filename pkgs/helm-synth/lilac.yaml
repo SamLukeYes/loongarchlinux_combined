@@ -1,0 +1,75 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''helm-synth'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- helm-synth: helm-synth-lv2
+- helm-synth: helm-synth-standalone
+- helm-synth: helm-synth-vst
+- alsa-lib
+- freetype2
+- gcc: gcc-libs
+- glibc
+- helm-synth: helm-synth-common
+- libglvnd
+- libx11
+- libxext
+- libxinerama
+- alsa-lib
+- freetype2
+- gcc: gcc-libs
+- glibc
+- helm-synth: helm-synth-common
+- hicolor-icon-theme
+- libglvnd
+- libx11
+- libxext
+- libxinerama
+- alsa-lib
+- freetype2
+- gcc: gcc-libs
+- glibc
+- helm-synth: helm-synth-common
+- libglvnd
+- libx11
+- libxext
+- libxinerama
+repo_makedepends:
+- alsa-lib
+- freetype2
+- hicolor-icon-theme
+- libxcursor
+- libglvnd
+- libx11
+- libxext
+- libxinerama
+- lv2
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: helm-synth
+  source: archpkg

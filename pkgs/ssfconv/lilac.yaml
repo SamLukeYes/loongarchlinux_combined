@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ssfconv'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-numpy
+- python-pillow
+- python-pycryptodome
+repo_makedepends: []
+update_on:
+- alpm: ssfconv
+  source: archpkg

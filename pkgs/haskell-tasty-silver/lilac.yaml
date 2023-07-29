@@ -1,0 +1,47 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-silver'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-ansi-terminal
+- haskell-async
+- haskell-optparse-applicative
+- haskell-process-extras
+- haskell-regex-tdfa
+- haskell-silently
+- haskell-tagged
+- haskell-tasty
+- haskell-temporary
+repo_makedepends:
+- ghc
+- haskell-tasty-hunit
+update_on:
+- alpm: haskell-ansi-terminal
+  source: alpm
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-process-extras
+  source: alpm
+- alpm: haskell-regex-tdfa
+  source: alpm
+- alpm: haskell-silently
+  source: alpm
+- alpm: haskell-tagged
+  source: alpm
+- alpm: haskell-tasty
+  source: alpm
+- alpm: haskell-temporary
+  source: alpm
+- alpm: haskell-tasty-silver
+  source: archpkg

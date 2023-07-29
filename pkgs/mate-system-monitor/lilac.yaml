@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mate-system-monitor'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtkmm3
+- libgtop
+- libwnck3
+- gettext
+- polkit
+repo_makedepends:
+- itstool
+- python
+update_on:
+- alpm: mate-system-monitor
+  source: archpkg

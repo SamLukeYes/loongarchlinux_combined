@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-aiodiscover'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-dnspython
+- python-ifaddr
+- python-netifaces
+- python-pyroute2
+repo_makedepends:
+- git
+- python-pytest-runner
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-aiodiscover
+  source: archpkg

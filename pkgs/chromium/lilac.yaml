@@ -1,0 +1,63 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''chromium'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- nss
+- alsa-lib
+- xdg-utils
+- libxss
+- cups: libcups
+- libgcrypt
+- ttf-liberation
+- systemd
+- dbus
+- pulseaudio: libpulse
+- pciutils
+- libva
+- libffi
+- desktop-file-utils
+- hicolor-icon-theme
+- fontconfig
+- woff2
+- brotli
+- icu
+- dav1d
+- flac
+- snappy
+- libxml2
+- ffmpeg
+- libwebp
+- zlib: minizip
+- opus
+- harfbuzz
+- re2
+- jsoncpp
+- libxslt
+- libpng
+- freetype2
+repo_makedepends:
+- python
+- gn
+- ninja
+- clang
+- lld
+- gperf
+- nodejs
+- pipewire
+- qt5-base
+- git
+update_on:
+- alias: icu
+- alias: jsoncpp
+- alpm: chromium
+  source: archpkg

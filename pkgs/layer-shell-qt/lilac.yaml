@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''layer-shell-qt'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-wayland
+repo_makedepends:
+- extra-cmake-modules
+- wayland-protocols
+update_on:
+- alpm: layer-shell-qt
+  source: archpkg

@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-parental-controls'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- accountsservice
+- flatpak
+- gdk-pixbuf2
+- glib2
+- gtk3
+- libgee
+- polkit
+repo_makedepends:
+- git
+- meson
+- vala
+update_on:
+- alpm: granite
+  provides: libgranite.so
+  source: alpm
+- alpm: libmalcontent
+  provides: libmalcontent-0.so
+  source: alpm
+- alpm: switchboard
+  provides: libswitchboard-2.0.so
+  source: alpm
+- alpm: switchboard-plug-parental-controls
+  source: archpkg

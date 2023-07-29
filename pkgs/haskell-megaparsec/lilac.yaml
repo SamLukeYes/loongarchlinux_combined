@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-megaparsec'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-case-insensitive
+- haskell-parser-combinators
+- haskell-scientific
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-case-insensitive
+  source: alpm
+- alpm: haskell-parser-combinators
+  source: alpm
+- alpm: haskell-scientific
+  source: alpm
+- alpm: haskell-megaparsec
+  source: archpkg

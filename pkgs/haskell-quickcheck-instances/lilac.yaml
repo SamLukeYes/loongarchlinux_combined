@@ -1,0 +1,79 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-quickcheck-instances'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-onetuple
+- haskell-quickcheck
+- haskell-case-insensitive
+- haskell-data-array-byte
+- haskell-data-fix
+- haskell-hashable
+- haskell-integer-logarithms
+- haskell-old-time
+- haskell-primitive
+- haskell-scientific
+- haskell-splitmix
+- haskell-strict
+- haskell-tagged
+- haskell-text-short
+- haskell-these
+- haskell-time-compat
+- haskell-transformers-compat
+- haskell-unordered-containers
+- haskell-uuid-types
+- haskell-vector
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-onetuple
+  source: alpm
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-case-insensitive
+  source: alpm
+- alpm: haskell-data-array-byte
+  source: alpm
+- alpm: haskell-data-fix
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-integer-logarithms
+  source: alpm
+- alpm: haskell-old-time
+  source: alpm
+- alpm: haskell-primitive
+  source: alpm
+- alpm: haskell-scientific
+  source: alpm
+- alpm: haskell-splitmix
+  source: alpm
+- alpm: haskell-strict
+  source: alpm
+- alpm: haskell-tagged
+  source: alpm
+- alpm: haskell-text-short
+  source: alpm
+- alpm: haskell-these
+  source: alpm
+- alpm: haskell-time-compat
+  source: alpm
+- alpm: haskell-transformers-compat
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-uuid-types
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-quickcheck-instances
+  source: archpkg

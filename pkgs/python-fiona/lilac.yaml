@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-fiona'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-boto3
+- python-pytz
+- python-shapely
+repo_depends:
+- gdal
+- python-attrs
+- python-certifi
+- python-click
+- python-click-plugins
+- python-cligj
+- python-munch
+- python-six
+repo_makedepends:
+- cython
+- python-setuptools
+update_on:
+- alpm: python-fiona
+  source: archpkg

@@ -1,0 +1,37 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''dbus'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- audit
+- expat
+- systemd: systemd-libs
+- audit
+- expat
+- systemd: systemd-libs
+repo_makedepends:
+- autoconf-archive
+- docbook-xsl
+- doxygen
+- git
+- python
+- systemd
+- xmlto
+- yelp-tools
+update_on:
+- alpm: audit
+  provides: libaudit.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: dbus
+  source: archpkg

@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-arrow'')
+
+  '
+repo_checkdepends:
+- python-tox
+repo_depends:
+- python-dateutil
+repo_makedepends:
+- git
+- python-setuptools
+update_on:
+- alpm: python-arrow
+  source: archpkg

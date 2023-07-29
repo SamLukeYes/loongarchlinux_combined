@@ -1,0 +1,46 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- glibc
+- ncurses
+- gcc: gcc-libs
+- expat
+- xz
+- mpfr
+- source-highlight
+- gdb: gdb-common
+- readline
+- guile
+- python
+- elfutils: libelf
+- python
+- guile
+repo_makedepends:
+- glibc
+- gcc: gcc-libs
+- texinfo
+- python
+- guile
+- ncurses
+- expat
+- xz
+- mpfr
+- source-highlight
+- boost
+- readline
+update_on:
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alias: readline
+- alpm: readline
+  provides: libreadline.so
+  source: alpm
+- alpm: guile
+  source: alpm
+  strip_release: true
+- alias: python
+- alias: python
+- alpm: guile
+  source: alpm
+  strip_release: true

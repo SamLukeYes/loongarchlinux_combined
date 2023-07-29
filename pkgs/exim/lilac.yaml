@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''exim'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gdbm
+- openldap: libldap
+- libidn
+- libidn2
+- libnsl
+- libspf2
+- libxcrypt
+- openssl
+- pam
+- pcre2
+- sqlite
+repo_makedepends: []
+update_on:
+- alpm: exim
+  source: archpkg

@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''luasec'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- openssl
+- openssl
+- luasocket: lua-socket
+- openssl
+- luasocket: lua51-socket
+- openssl
+- luasocket: lua52-socket
+- openssl
+- luasocket: lua53-socket
+repo_makedepends:
+- luarocks
+- lua51
+- lua52
+- lua53
+- lua
+update_on:
+- alpm: luasec
+  source: archpkg

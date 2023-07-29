@@ -1,0 +1,55 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''eq10q'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- gtkmm
+- gcc: gcc-libs
+- glibc
+- gtkmm
+- atkmm
+- cairomm
+- fftw
+- glibmm
+- libsigc++
+- pangomm
+repo_makedepends:
+- atkmm
+- cairomm
+- cmake
+- fftw
+- glibmm
+- lv2
+- libsigc++
+- pangomm
+update_on:
+- alpm: atkmm
+  provides: libatkmm-1.6.so
+  source: alpm
+- alpm: cairomm
+  provides: libcairomm-1.0.so
+  source: alpm
+- alpm: fftw
+  provides: libfftw3.so
+  source: alpm
+- alpm: glibmm
+  provides: libglibmm-2.4.so
+  source: alpm
+- alpm: libsigc++
+  provides: libsigc-2.0.so
+  source: alpm
+- alpm: pangomm
+  provides: libpangomm-1.4.so
+  source: alpm
+- alpm: eq10q
+  source: archpkg

@@ -1,0 +1,19 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- qt6-tools
+- qt6-svg
+- qt6-quick3d
+- qt6-webengine
+- qt6-serialport
+- qt6-shadertools
+- qt6-5compat
+- clang
+- clazy
+- yaml-cpp
+- qtcreator
+repo_makedepends:
+- cmake
+- llvm
+- python
+update_on: []

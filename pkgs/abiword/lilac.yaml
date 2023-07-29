@@ -1,0 +1,44 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''abiword'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fribidi
+- wv
+- goffice
+- librsvg
+- enchant
+- desktop-file-utils
+- redland
+- libical
+- gtk4: gtk-update-icon-cache
+- loudmouth
+- libwpg
+- libwps
+- libwmf
+- link-grammar
+- gtkmathview
+- aiksaurus
+- libxslt
+- libsoup
+- libots
+- libgsf
+- psiconv
+repo_makedepends:
+- boost
+- gobject-introspection
+- libwpd
+- libwps
+- pygobject: python-gobject
+- autoconf-archive
+update_on:
+- alpm: abiword
+  source: archpkg

@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ksh'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- ed
+- expect
+- openbsd-netcat
+- procps-ng
+- which
+- vi
+repo_depends: []
+repo_makedepends:
+- meson
+- samurai
+update_on:
+- alpm: ksh
+  source: archpkg

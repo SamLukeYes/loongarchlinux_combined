@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-nltk'')
+
+  '
+repo_checkdepends:
+- python-nose
+- nltk-data
+- python-requests
+- python-regex
+repo_depends:
+- python-yaml
+- python-click
+- python-regex
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-nltk
+  source: archpkg

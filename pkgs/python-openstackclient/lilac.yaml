@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-openstackclient'')
+
+  '
+repo_checkdepends:
+- python-ddt
+- python-oslotest
+- python-requests-mock
+repo_depends:
+- python-six
+- python-pbr
+- python-babel
+- python-cliff
+- python-keystoneclient
+- python-keystoneauth1
+- python-osc-lib
+- python-oslo-utils
+- python-oslo-i18n
+- python-openstacksdk
+- python-glanceclient
+- python-novaclient
+- python-cinderclient
+repo_makedepends:
+- git
+update_on:
+- alpm: python-openstackclient
+  source: archpkg

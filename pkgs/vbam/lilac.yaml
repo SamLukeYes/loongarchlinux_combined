@@ -1,0 +1,67 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''vbam'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glu
+- libpng
+- sdl2
+- sfml
+- zlib
+- glu
+- libpng
+- sdl2
+- sfml
+- zlib
+- glib2
+- gtk3
+- openal
+- wxwidgets: wxwidgets-gtk3
+- zip
+repo_makedepends:
+- cmake
+- doctest
+- ffmpeg
+- git
+- libglvnd
+- ninja
+- wxwidgets: wxwidgets-gtk3
+- zip
+update_on:
+- alpm: ffmpeg
+  provides: libavcodec.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavformat.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavutil.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libswscale.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavcodec.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavformat.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavutil.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libswscale.so
+  source: alpm
+- alpm: wxwidgets-gtk3
+  source: alpm
+  strip_release: true
+- alpm: vbam
+  source: archpkg

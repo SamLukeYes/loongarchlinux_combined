@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''clamtk'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- clamav
+- perl
+- perl-gtk3
+- perl-locale-gettext
+- perl-libwww
+- perl-http-message
+- perl-lwp-protocol-https
+- perl-text-csv
+- perl-json
+- python
+- zenity
+- desktop-file-utils
+repo_makedepends: []
+update_on:
+- alias: perl
+- alias: python
+- alpm: clamtk
+  source: archpkg

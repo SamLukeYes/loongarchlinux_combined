@@ -1,0 +1,44 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-summoner-tui'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-brick0.71
+- haskell-colourista
+- haskell-microlens
+- haskell-microlens-th
+- haskell-relude
+- haskell-summoner
+- haskell-validation-selective
+- haskell-vty
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-brick0.71
+  source: alpm
+- alpm: haskell-colourista
+  source: alpm
+- alpm: haskell-microlens
+  source: alpm
+- alpm: haskell-microlens-th
+  source: alpm
+- alpm: haskell-relude
+  source: alpm
+- alpm: haskell-summoner
+  source: alpm
+- alpm: haskell-validation-selective
+  source: alpm
+- alpm: haskell-vty
+  source: alpm
+- alpm: haskell-summoner-tui
+  source: archpkg

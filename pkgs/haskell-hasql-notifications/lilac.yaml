@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hasql-notifications'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-hasql
+- haskell-hasql-pool
+- haskell-postgresql-libpq
+repo_makedepends:
+- ghc
+- haskell-quickcheck
+- haskell-hspec
+- pifpaf
+- postgresql
+update_on:
+- alpm: haskell-hasql
+  source: alpm
+- alpm: haskell-hasql-pool
+  source: alpm
+- alpm: haskell-postgresql-libpq
+  source: alpm
+- alpm: haskell-hasql-notifications
+  source: archpkg

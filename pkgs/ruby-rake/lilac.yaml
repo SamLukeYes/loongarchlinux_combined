@@ -1,0 +1,7 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- ruby
+repo_makedepends: []
+update_on:
+- alias: ruby

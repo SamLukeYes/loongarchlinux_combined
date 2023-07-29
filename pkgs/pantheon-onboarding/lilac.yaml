@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-onboarding'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glib2
+repo_makedepends:
+- git
+- intltool
+- meson
+- vala
+update_on:
+- alpm: libadwaita
+  provides: libadwaita-1.so
+  source: alpm
+- alpm: granite7
+  provides: libgranite-7.so
+  source: alpm
+- alpm: pantheon-onboarding
+  source: archpkg

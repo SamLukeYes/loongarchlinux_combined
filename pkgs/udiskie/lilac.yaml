@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''udiskie'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- udisks2
+- python
+- pygobject: python-gobject
+- python-yaml
+- python-docopt
+- gtk3
+- libnotify
+- python-keyutils
+repo_makedepends:
+- asciidoc
+- python-setuptools
+update_on:
+- alias: python
+- alpm: udiskie
+  source: archpkg

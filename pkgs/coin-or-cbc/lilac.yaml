@@ -1,0 +1,7 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- coin-or-cgl
+repo_makedepends:
+- nauty
+update_on: []

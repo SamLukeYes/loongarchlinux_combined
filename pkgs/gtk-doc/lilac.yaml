@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gtk-doc'')
+
+  '
+repo_checkdepends:
+- bc
+- gtk3
+- python-six
+- python-parameterized
+repo_depends:
+- docbook-xsl
+- docbook-xml
+- glib2: glib2-docs
+- python-lxml
+- python-pygments
+repo_makedepends:
+- dblatex
+- git
+- yelp-tools
+- meson
+update_on:
+- alpm: gtk-doc
+  source: archpkg

@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-multistate'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-monad-control
+- haskell-tagged
+- haskell-transformers-base
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hspec
+update_on:
+- alpm: haskell-monad-control
+  source: alpm
+- alpm: haskell-tagged
+  source: alpm
+- alpm: haskell-transformers-base
+  source: alpm
+- alpm: haskell-multistate
+  source: archpkg

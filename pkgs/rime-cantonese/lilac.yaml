@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rime-cantonese'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- rime-cangjie
+- rime-emoji
+- rime-loengfan
+- rime-luna-pinyin
+- rime-stroke
+repo_makedepends:
+- git
+- librime
+- rime-prelude
+- rime-essay
+update_on:
+- alpm: rime-cantonese
+  source: archpkg

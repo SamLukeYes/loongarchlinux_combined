@@ -1,0 +1,11 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- bash
+- gcc: gcc-libs
+- glibc
+- openmpi
+repo_makedepends:
+- cmake
+- gcc: gcc-fortran
+update_on: []

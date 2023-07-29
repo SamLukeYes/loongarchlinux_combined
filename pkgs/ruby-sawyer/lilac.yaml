@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-sawyer'')
+
+  '
+repo_checkdepends:
+- ruby-minitest
+- ruby-rake
+repo_depends:
+- ruby-faraday
+- ruby-addressable
+repo_makedepends: []
+update_on:
+- alpm: ruby-sawyer
+  source: archpkg

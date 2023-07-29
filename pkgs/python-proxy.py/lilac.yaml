@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-proxy.py'')
+
+  '
+repo_checkdepends:
+- python-httpx
+- python-pytest
+- python-pytest-asyncio
+- python-pytest-cov
+- python-pytest-mock
+repo_depends:
+- python
+- python-setuptools
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools-scm
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-proxy.py
+  source: archpkg

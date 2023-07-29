@@ -1,0 +1,67 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-matplotlib'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-xdist
+- python-pytest-runner
+- python-pytest-rerunfailures
+- xorg-server: xorg-server-xvfb
+- texlive-bin
+- texlive-texmf: texlive-latexextra
+- texlive-texmf: texlive-pictures
+- ghostscript
+- inkscape
+- ffmpeg
+- imagemagick
+- gtk4
+- python-cairo
+- python-cairocffi
+- pygobject: python-gobject
+- pyqt5: python-pyqt5
+- pyside2
+- pyqt6: python-pyqt6
+- pyside6
+- python-tornado
+- python-wxpython
+- tk
+- jupyter-nbconvert
+- jupyter-nbformat
+- python-ipykernel
+- python-pandas
+- python-pikepdf
+- python-pytz
+- python-xarray
+- noto-fonts-cjk
+- wqy-zenhei
+repo_depends:
+- freetype2
+- python-contourpy
+- python-cycler
+- python-dateutil
+- python-fonttools
+- python-kiwisolver
+- python-numpy
+- python-packaging
+- python-pillow
+- python-pyparsing
+- qhull
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-certifi
+- python-setuptools-scm
+- pybind11
+- python-wheel
+update_on:
+- alpm: python-matplotlib
+  source: archpkg

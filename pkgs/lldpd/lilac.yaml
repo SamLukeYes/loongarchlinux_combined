@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lldpd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libevent
+- libbsd
+- zlib
+- openssl
+- pciutils
+- perl
+- libxml2
+- net-snmp
+- jansson
+repo_makedepends:
+- systemd
+update_on:
+- alias: perl
+- alpm: lldpd
+  source: archpkg

@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hadrian'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-quickcheck
+- haskell-extra
+- haskell-shake
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-shake
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-hadrian
+  source: archpkg

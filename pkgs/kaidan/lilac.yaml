@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kaidan'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- knotifications
+- kirigami2
+- kio
+- kquickimageeditor
+- kirigami-addons
+- qt5-location
+- qt5-svg
+- qxmpp: qxmpp-qt5
+- zxing-cpp
+- qqc2-desktop-style
+- libomemo-c
+repo_makedepends:
+- extra-cmake-modules
+- qt5-tools
+update_on:
+- alpm: kaidan
+  source: archpkg

@@ -1,0 +1,42 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-code'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- editorconfig-core-c
+- glib2
+- gtk3
+- gtksourceview4
+- libgee
+- libgit2-glib
+- libpeas
+- pango
+- polkit
+repo_makedepends:
+- cmake
+- git
+- gobject-introspection
+- gtkspell3
+- intltool
+- libsoup
+- meson
+- vala
+- vte3
+- webkit2gtk
+update_on:
+- alpm: granite
+  provides: libgranite.so
+  source: alpm
+- alpm: libhandy
+  provides: libhandy-1.so
+  source: alpm
+- alpm: pantheon-code
+  source: archpkg

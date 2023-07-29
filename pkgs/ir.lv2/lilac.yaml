@@ -1,0 +1,56 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ir.lv2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- lv2lint
+repo_depends:
+- cairo
+- gcc: gcc-libs
+- glibc
+- cairo
+- gcc: gcc-libs
+- glibc
+- gtk2
+- glib2
+- libsamplerate
+- libsndfile
+- zita-convolver
+repo_makedepends:
+- glib2
+- gtk2
+- libsamplerate
+- libsndfile
+- lv2
+- zita-convolver
+update_on:
+- alpm: gtk2
+  provides: libgdk-x11-2.0.so
+  source: alpm
+- alpm: gtk2
+  provides: libgtk-x11-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: zita-convolver
+  provides: libzita-convolver.so
+  source: alpm
+- alpm: ir.lv2
+  source: archpkg

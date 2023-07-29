@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''muffin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cinnamon-desktop
+- gobject-introspection: gobject-introspection-runtime
+- libcanberra
+- libinput
+- libsm
+- libxkbcommon: libxkbcommon-x11
+- startup-notification
+- zenity
+- graphene
+- pipewire
+repo_makedepends:
+- meson
+- intltool
+- gobject-introspection
+update_on:
+- alpm: muffin
+  source: archpkg

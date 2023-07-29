@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-optics-extra'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-hashable
+- haskell-indexed-profunctors
+- haskell-indexed-traversable-instances
+- haskell-optics-core
+- haskell-unordered-containers
+- haskell-vector
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-indexed-profunctors
+  source: alpm
+- alpm: haskell-indexed-traversable-instances
+  source: alpm
+- alpm: haskell-optics-core
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-optics-extra
+  source: archpkg

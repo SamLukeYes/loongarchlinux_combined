@@ -1,0 +1,63 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-req'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-authenticate-oauth
+- haskell-blaze-builder
+- haskell-case-insensitive
+- haskell-http-api-data
+- haskell-http-client
+- haskell-http-client-tls
+- haskell-http-types
+- haskell-modern-uri
+- haskell-monad-control
+- haskell-retry
+- haskell-transformers-base
+- haskell-unliftio-core
+repo_makedepends:
+- ghc
+- haskell-quickcheck
+- haskell-hspec
+- haskell-hspec-core
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-authenticate-oauth
+  source: alpm
+- alpm: haskell-blaze-builder
+  source: alpm
+- alpm: haskell-case-insensitive
+  source: alpm
+- alpm: haskell-connection
+  source: alpm
+- alpm: haskell-http-api-data
+  source: alpm
+- alpm: haskell-http-client
+  source: alpm
+- alpm: haskell-http-client-tls
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-modern-uri
+  source: alpm
+- alpm: haskell-monad-control
+  source: alpm
+- alpm: haskell-retry
+  source: alpm
+- alpm: haskell-transformers-base
+  source: alpm
+- alpm: haskell-unliftio-core
+  source: alpm
+- alpm: haskell-req
+  source: archpkg

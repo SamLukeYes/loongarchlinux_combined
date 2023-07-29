@@ -1,0 +1,101 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- at-spi2-core
+- bubblewrap
+- cairo
+- enchant
+- fontconfig
+- freetype2
+- glib2
+- gstreamer: gst-plugins-base-libs
+- gstreamer
+- gtk4
+- harfbuzz
+- harfbuzz: harfbuzz-icu
+- hyphen
+- icu
+- libavif
+- libgcrypt
+- libice
+- libmanette
+- libnotify
+- libpng
+- libseccomp
+- libsecret
+- libsoup3
+- libtasn1
+- libwebp
+- libwpe
+- libx11
+- libxcomposite
+- libxext
+- libxml2
+- libxslt
+- libxt
+- openjpeg2
+- sqlite
+- wayland
+- woff2
+- wpebackend-fdo
+- xdg-dbus-proxy
+- zlib
+- at-spi2-core
+- bubblewrap
+- cairo
+- enchant
+- fontconfig
+- freetype2
+- glib2
+- gstreamer: gst-plugins-base-libs
+- gstreamer
+- gtk4
+- harfbuzz
+- harfbuzz: harfbuzz-icu
+- hyphen
+- icu
+- libavif
+- libgcrypt
+- libice
+- libmanette
+- libnotify
+- libpng
+- libseccomp
+- libsecret
+- libsoup3
+- libtasn1
+- libwebp
+- libwpe
+- libx11
+- libxcomposite
+- libxext
+- libxml2
+- libxslt
+- libxt
+- openjpeg2
+- sqlite
+- wayland
+- woff2
+- wpebackend-fdo
+- xdg-dbus-proxy
+- zlib
+repo_makedepends:
+- cmake
+- gi-docgen
+- gobject-introspection
+- gperf
+- gstreamer: gst-plugins-bad
+- ninja
+- python
+- ruby
+- systemd
+- wayland-protocols
+update_on:
+- alias: icu
+- alias: icu
+- alpm: wpebackend-fdo
+  provides: libWPEBackend-fdo-1.0.so
+  source: alpm
+- alpm: libwpe
+  provides: libwpe-1.0.so
+  source: alpm

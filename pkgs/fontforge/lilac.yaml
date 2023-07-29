@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''fontforge'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libtool
+- pango
+- giflib
+- libtiff
+- libxml2
+- libspiro
+- python
+- potrace
+- woff2
+- gtk3
+- libuninameslist
+repo_makedepends:
+- cmake
+- git
+- python-sphinx
+update_on:
+- alias: python
+- alpm: fontforge
+  source: archpkg

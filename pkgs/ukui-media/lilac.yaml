@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ukui-media'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gsettings-qt
+- kwindowsystem
+- libmatemixer
+- libqtxdg
+- mate-desktop
+- qt5-multimedia
+- qt5-svg
+- libcanberra
+- ukui-interface
+repo_makedepends:
+- autoconf-archive
+- intltool
+- mate-common
+- qt5-tools
+update_on:
+- alpm: ukui-media
+  source: archpkg

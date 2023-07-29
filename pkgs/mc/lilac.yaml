@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- e2fsprogs
+- glib2
+- gpm
+- libssh2
+- slang
+- which
+repo_makedepends:
+- aspell
+- git
+- libxt
+- libx11
+- unzip
+update_on:
+- alpm: mc
+  source: archpkg

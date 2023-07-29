@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''opendbx'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libfbclient
+- mariadb: mariadb-libs
+- postgresql: postgresql-libs
+- sqlite
+- freetds
+repo_makedepends:
+- doxygen
+- docbook2x
+update_on:
+- alpm: opendbx
+  source: archpkg

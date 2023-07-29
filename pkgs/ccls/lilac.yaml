@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ccls'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- clang
+- llvm: llvm-libs
+- rapidjson
+repo_makedepends:
+- cmake
+- llvm
+update_on:
+- alpm: ccls
+  source: archpkg

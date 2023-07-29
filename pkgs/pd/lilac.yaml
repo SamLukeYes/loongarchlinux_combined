@@ -1,0 +1,48 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- hicolor-icon-theme
+- tk
+- glibc
+- hicolor-icon-theme
+- tk
+- alsa-lib
+- fftw
+- portaudio
+- portmidi
+repo_makedepends:
+- alsa-lib
+- fftw
+- gendesk
+- inkscape
+- portaudio
+- portmidi
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: fftw
+  provides: libfftw3f.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: portaudio
+  provides: libportaudio.so
+  source: alpm
+- alpm: portmidi
+  provides: libportmidi.so
+  source: alpm
+- alpm: pd
+  source: archpkg

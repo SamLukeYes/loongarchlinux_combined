@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pageedit'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt6-5compat
+- qt6-svg
+- qt6-webengine
+repo_makedepends:
+- cmake
+- qt6-tools
+update_on:
+- alpm: pageedit
+  source: archpkg

@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libepoxy'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- glibc
+- libglvnd
+- libx11
+repo_makedepends:
+- git
+- meson
+- systemd
+- doxygen
+- graphviz
+update_on:
+- alpm: libepoxy
+  source: archpkg

@@ -1,0 +1,10 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- python-setuptools
+- make
+repo_makedepends:
+- nodejs
+- python-pytest-runner
+- python-coverage
+update_on: []

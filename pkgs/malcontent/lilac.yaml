@@ -1,0 +1,40 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- accountsservice
+- appstream
+- dbus
+- flatpak
+- glib2
+- gtk4
+- libadwaita
+- polkit
+- pygobject: python-gobject
+- accountsservice
+- appstream
+- dbus
+- flatpak
+- glib2
+- gtk4
+- libadwaita
+- polkit
+- pygobject: python-gobject
+- malcontent: libmalcontent
+- gcc: gcc-libs
+repo_makedepends:
+- git
+- gobject-introspection
+- gtk-doc
+- libglib-testing
+- meson
+- yelp-tools
+update_on:
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm

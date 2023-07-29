@@ -1,0 +1,57 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''minetest'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- minetest: minetest-common
+- curl
+- libvorbis
+- sqlite
+- openal
+- hicolor-icon-theme
+- desktop-file-utils
+- xdg-utils
+- freetype2
+- luajit
+- postgresql: postgresql-libs
+- spatialindex
+- jsoncpp
+- libxi
+- minetest: minetest-common
+- leveldb
+- curl
+- sqlite
+- hiredis
+- luajit
+- postgresql: postgresql-libs
+- spatialindex
+- jsoncpp
+repo_makedepends:
+- sqlite
+- freetype2
+- leveldb
+- postgresql
+- spatialindex
+- openal
+- libvorbis
+- curl
+- hicolor-icon-theme
+- cmake
+- ninja
+- hiredis
+- luajit
+- libxi
+- git
+update_on:
+- alias: jsoncpp
+- alias: jsoncpp
+- alpm: minetest
+  source: archpkg

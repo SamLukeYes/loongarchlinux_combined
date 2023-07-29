@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libmp3splt'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- flac
+- libmad
+- libvorbis
+- libid3tag
+- pcre
+repo_makedepends:
+- libtool
+update_on:
+- alpm: libmp3splt
+  source: archpkg

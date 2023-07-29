@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-monoid-subclasses'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-commutative-semigroups
+- haskell-primes
+- haskell-vector
+repo_makedepends:
+- ghc
+- haskell-quickcheck
+- haskell-quickcheck-instances
+- haskell-tasty
+- haskell-tasty-quickcheck
+update_on:
+- alpm: haskell-commutative-semigroups
+  source: alpm
+- alpm: haskell-primes
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-monoid-subclasses
+  source: archpkg

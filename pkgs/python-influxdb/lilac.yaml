@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-influxdb'')
+
+  '
+repo_checkdepends:
+- python-nose
+- python-requests-mock
+- python-pandas
+- influxdb
+repo_depends:
+- python
+- python-requests
+- python-dateutil
+- python-six
+- python-pytz
+- python-msgpack
+repo_makedepends:
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-influxdb
+  source: archpkg

@@ -1,0 +1,53 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-flask-security-too'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-runner
+- python-pytest-cov
+- python-peewee
+- python-sqlalchemy
+- python-flask-sqlalchemy
+- python-bcrypt
+- python-pony
+- python-flask-babel
+- python-zxcvbn
+- python-cryptography
+- python-pyqrcode
+- python-bleach
+- python-phonenumbers
+- python-argon2_cffi
+repo_depends:
+- python
+- python-flask
+- python-flask-login
+- python-flask-mail
+- python-flask-principal
+- python-flask-wtf
+- python-flask-babelex
+- python-itsdangerous
+- python-passlib
+- python-email-validator
+repo_makedepends:
+- python-flask
+- python-flask-login
+- python-flask-mail
+- python-flask-principal
+- python-flask-wtf
+- python-flask-babelex
+- python-itsdangerous
+- python-passlib
+- python-sphinx
+- python-setuptools
+- python-pallets-sphinx-themes
+- python-sphinx-issues
+update_on:
+- alias: python
+- alpm: python-flask-security-too
+  source: archpkg

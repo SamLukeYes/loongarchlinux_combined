@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-edalize'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pandas
+- iverilog
+repo_depends:
+- python
+- python-jinja
+- python-pyparsing
+repo_makedepends:
+- python-setuptools-scm
+update_on:
+- alias: python
+- alpm: python-edalize
+  source: archpkg

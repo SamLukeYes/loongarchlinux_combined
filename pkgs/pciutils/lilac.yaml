@@ -1,0 +1,21 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pciutils'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- hwdata
+- kmod
+repo_makedepends:
+- git
+update_on:
+- alpm: pciutils
+  source: archpkg

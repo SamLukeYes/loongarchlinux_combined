@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-esbonio'')
+
+  '
+repo_checkdepends:
+- python-pytest-lsp
+- python-pytest-timeout
+repo_depends:
+- python-appdirs
+- python-sphinx
+- python-pygls
+- python-pyspellchecker
+- python-setuptools
+- python-typing_extensions
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alpm: python-esbonio
+  source: archpkg

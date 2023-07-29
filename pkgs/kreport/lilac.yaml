@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kreport'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kproperty
+- qt5-declarative
+repo_makedepends:
+- extra-cmake-modules
+- python
+- qt5-tools
+- marble: marble-common
+- doxygen
+- qt5-doc
+update_on:
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alpm: kreport
+  source: archpkg

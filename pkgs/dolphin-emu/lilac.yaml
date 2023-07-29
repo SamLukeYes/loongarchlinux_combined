@@ -1,0 +1,68 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''dolphin-emu'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- alsa-lib
+- bluez: bluez-libs
+- enet
+- gcc: gcc-libs
+- glibc
+- hidapi
+- libevdev
+- pulseaudio: libpulse
+- libx11
+- libxi
+- libxrandr
+- lzo
+- minizip-ng
+- pugixml
+- qt6-base
+- sfml
+- zlib
+repo_makedepends:
+- cmake
+- git
+- ninja
+- python
+update_on:
+- alpm: ffmpeg
+  provides: libavcodec.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavformat.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libavutil.so
+  source: alpm
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: fmt
+  provides: libfmt.so
+  source: alpm
+- alpm: miniupnpc
+  provides: libminiupnpc.so
+  source: alpm
+- alpm: ffmpeg
+  provides: libswscale.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libudev.so
+  source: alpm
+- alpm: libusb
+  provides: libusb-1.0.so
+  source: alpm
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: dolphin-emu
+  source: archpkg

@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-async-pool'')
+
+  '
+repo_checkdepends:
+- ruby-bake-test
+- ruby-bake-test-external
+- ruby-covered
+- ruby-sus
+- ruby-sus-fixtures-async
+repo_depends:
+- ruby-async
+repo_makedepends: []
+update_on:
+- alpm: ruby-async-pool
+  source: archpkg

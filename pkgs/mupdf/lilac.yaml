@@ -1,0 +1,49 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mupdf'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- desktop-file-utils
+- freetype2
+- harfbuzz
+- jbig2dec
+- openjpeg2
+- openssl
+- libxext
+- gumbo-parser
+- desktop-file-utils
+- freetype2
+- freeglut
+- glu
+- harfbuzz
+- jbig2dec
+- openjpeg2
+- openssl
+- gumbo-parser
+- freetype2
+- jbig2dec
+- openjpeg2
+- harfbuzz
+- openssl
+- gumbo-parser
+repo_makedepends:
+- desktop-file-utils
+- freetype2
+- freeglut
+- glu
+- harfbuzz
+- jbig2dec
+- openjpeg2
+- libxext
+- gumbo-parser
+update_on:
+- alpm: mupdf
+  source: archpkg

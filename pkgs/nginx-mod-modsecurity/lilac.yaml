@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''nginx-mod-modsecurity'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- nginx
+- libmodsecurity
+repo_makedepends:
+- nginx: nginx-src
+update_on:
+- alpm: nginx
+  source: alpm
+  strip_release: true
+- alpm: nginx-mod-modsecurity
+  source: archpkg

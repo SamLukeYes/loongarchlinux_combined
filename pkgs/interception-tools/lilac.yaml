@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''interception-tools'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libevdev
+- yaml-cpp
+- systemd: systemd-libs
+repo_makedepends:
+- cmake
+- systemd
+- boost
+update_on:
+- alpm: libevdev
+  provides: libevdev.so
+  source: alpm
+- alpm: yaml-cpp
+  provides: libyaml-cpp.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libudev.so
+  source: alpm
+- alpm: interception-tools
+  source: archpkg

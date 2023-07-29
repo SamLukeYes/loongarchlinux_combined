@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''maim'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- freetype2
+- libpng
+- libjpeg-turbo
+- libwebp
+- libx11
+- libxcomposite
+- libxext
+- libxfixes
+- libxrandr
+- slop
+repo_makedepends:
+- cmake
+- glm
+update_on:
+- alpm: maim
+  source: archpkg

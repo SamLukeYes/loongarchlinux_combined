@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hatari'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- hicolor-icon-theme
+- sdl2
+- libpng
+- libx11
+- portmidi
+- readline
+- systemd: systemd-libs
+- zlib
+repo_makedepends:
+- cmake
+- systemd
+update_on:
+- alias: readline
+- alpm: hatari
+  source: archpkg

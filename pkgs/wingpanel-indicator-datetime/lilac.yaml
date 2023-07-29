@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wingpanel-indicator-datetime'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cairo
+- evolution-data-server
+- glib2
+- gtk3
+- libgee
+- libical
+- wingpanel
+repo_makedepends:
+- git
+- meson
+- vala
+update_on:
+- alpm: granite
+  provides: libgranite.so
+  source: alpm
+- alpm: libhandy
+  provides: libhandy-1.so
+  source: alpm
+- alpm: wingpanel-indicator-datetime
+  source: archpkg

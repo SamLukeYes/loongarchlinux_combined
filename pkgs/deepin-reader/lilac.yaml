@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deepin-reader'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- deepin-qt5integration
+- djvulibre
+- karchive
+- libchardet
+- libspectre
+- poppler: poppler-qt5
+- qt5-webengine
+repo_makedepends:
+- cmake
+- gtest
+- qt5-tools
+update_on:
+- alpm: deepin-reader
+  source: archpkg

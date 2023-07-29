@@ -1,0 +1,23 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- bzip2
+- gcc: gcc-libs
+- glibc
+- gmp
+- nettle
+- openssl
+- sqlite
+repo_makedepends:
+- git
+- clang
+update_on:
+- alpm: bzip2
+  provides: libbz2.so
+  source: alpm
+- alpm: nettle
+  provides: libnettle.so
+  source: alpm
+- alpm: nettle
+  provides: libhogweed.so
+  source: alpm

@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gauge'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-basement
+- haskell-vector
+repo_makedepends:
+- ghc
+- haskell-foundation
+update_on:
+- alpm: haskell-basement
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-gauge
+  source: archpkg

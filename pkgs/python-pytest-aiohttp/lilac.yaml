@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-aiohttp'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-pytest
+- python-aiohttp
+- python-py
+repo_makedepends:
+- python-setuptools-scm
+update_on:
+- alias: python
+- alpm: python-pytest-aiohttp
+  source: archpkg

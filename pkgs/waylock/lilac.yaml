@@ -1,0 +1,39 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''waylock'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- gcc: gcc-libs
+- glibc
+- pam
+- wayland
+- libxkbcommon
+repo_makedepends:
+- libxkbcommon
+- pam
+- scdoc
+- wayland
+- wayland-protocols
+- zig
+update_on:
+- alpm: pam
+  provides: libpam.so
+  source: alpm
+- alpm: wayland
+  provides: libwayland-client.so
+  source: alpm
+- alpm: intel-oneapi-basekit
+  provides: libxkbcommon.so
+  source: alpm
+- alpm: waylock
+  source: archpkg

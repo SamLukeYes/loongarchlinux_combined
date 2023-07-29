@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qtcurve'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libx11
+- gcc: gcc-libs
+- qtcurve: qtcurve-utils
+- gtk2
+- perl
+- qtcurve: qtcurve-utils
+- qt5-svg
+- qt5-x11extras
+- qtcurve: qtcurve-utils
+- kdelibs4support
+- frameworkintegration
+repo_makedepends:
+- extra-cmake-modules
+- gtk2
+- kdelibs4support
+- kdoctools
+- frameworkintegration
+- kdesignerplugin
+- kinit
+update_on:
+- alias: perl
+- alpm: qtcurve
+  source: archpkg

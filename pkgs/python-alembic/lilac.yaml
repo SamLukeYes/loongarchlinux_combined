@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-alembic'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python
+- python-mako
+- python-sqlalchemy
+- python-editor
+- python-dateutil
+- python-importlib-metadata
+repo_makedepends:
+- python-setuptools
+- python-mako
+- python-sqlalchemy
+- python-editor
+- python-dateutil
+update_on:
+- alias: python
+- alpm: python-alembic
+  source: archpkg

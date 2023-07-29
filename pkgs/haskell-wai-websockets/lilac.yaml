@@ -1,0 +1,34 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-websockets'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-case-insensitive
+- haskell-http-types
+- haskell-network
+- haskell-wai
+- haskell-websockets
+repo_makedepends:
+- ghc
+update_on:
+- alpm: haskell-case-insensitive
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-network
+  source: alpm
+- alpm: haskell-wai
+  source: alpm
+- alpm: haskell-websockets
+  source: alpm
+- alpm: haskell-wai-websockets
+  source: archpkg

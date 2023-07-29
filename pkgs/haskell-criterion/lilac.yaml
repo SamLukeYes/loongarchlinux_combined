@@ -1,0 +1,73 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-criterion'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-ansi-wl-pprint
+- haskell-base-compat-batteries
+- haskell-binary-orphans
+- haskell-cassava
+- haskell-code-page
+- haskell-criterion-measurement
+- haskell-glob
+- haskell-js-chart
+- haskell-microstache
+- haskell-mwc-random
+- haskell-optparse-applicative
+- haskell-statistics
+- haskell-transformers-compat
+- haskell-vector
+- haskell-vector-algorithms
+repo_makedepends:
+- ghc
+- haskell-base-compat
+- haskell-hunit
+- haskell-quickcheck
+- haskell-tasty
+- haskell-tasty-hunit
+- haskell-tasty-quickcheck
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-ansi-wl-pprint
+  source: alpm
+- alpm: haskell-base-compat-batteries
+  source: alpm
+- alpm: haskell-binary-orphans
+  source: alpm
+- alpm: haskell-cassava
+  source: alpm
+- alpm: haskell-code-page
+  source: alpm
+- alpm: haskell-criterion-measurement
+  source: alpm
+- alpm: haskell-glob
+  source: alpm
+- alpm: haskell-js-chart
+  source: alpm
+- alpm: haskell-microstache
+  source: alpm
+- alpm: haskell-mwc-random
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-statistics
+  source: alpm
+- alpm: haskell-transformers-compat
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-vector-algorithms
+  source: alpm
+- alpm: haskell-criterion
+  source: archpkg

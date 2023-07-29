@@ -1,0 +1,7 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- xz
+- zlib
+repo_makedepends: []
+update_on: []

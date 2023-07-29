@@ -1,0 +1,44 @@
+destsubdir: core
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''glib2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- desktop-file-utils
+- glib2
+repo_depends:
+- libffi
+- sysprof: libsysprof-capture
+- pcre2
+- util-linux: util-linux-libs
+- zlib
+- libffi
+- sysprof: libsysprof-capture
+- pcre2
+- util-linux: util-linux-libs
+- zlib
+repo_makedepends:
+- dbus
+- gettext
+- git
+- gtk-doc
+- elfutils: libelf
+- meson
+- python
+- shared-mime-info
+- util-linux
+update_on:
+- alpm: libffi
+  provides: libffi.so
+  source: alpm
+- alpm: util-linux-libs
+  provides: libmount.so
+  source: alpm
+- alpm: glib2
+  source: archpkg

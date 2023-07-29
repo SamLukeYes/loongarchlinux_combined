@@ -1,0 +1,63 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mutt'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libgpg-error
+- sqlite
+- zlib
+- glibc
+- libgpg-error
+- sqlite
+- zlib
+- gdbm
+- gpgme
+- krb5
+- libidn2
+- libsasl
+- ncurses
+- openssl
+repo_makedepends:
+- docbook-xml
+- docbook-xsl
+- elinks
+- gdbm
+- gpgme
+- krb5
+- libidn2
+- libsasl
+- libxslt
+- lynx
+- ncurses
+- openssl
+update_on:
+- alpm: gdbm
+  provides: libgdbm.so
+  source: alpm
+- alpm: gpgme
+  provides: libgpgme.so
+  source: alpm
+- alpm: krb5
+  provides: libgssapi_krb5.so
+  source: alpm
+- alpm: libidn2
+  provides: libidn2.so
+  source: alpm
+- alpm: libsasl
+  provides: libsasl2.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alias: libssl
+- alpm: mutt
+  source: archpkg

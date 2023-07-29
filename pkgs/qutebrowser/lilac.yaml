@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qutebrowser'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-jinja
+- pyqt5: python-pyqt5
+- python-yaml
+- qt5-base
+repo_makedepends:
+- asciidoc
+- python-setuptools
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qutebrowser
+  source: archpkg

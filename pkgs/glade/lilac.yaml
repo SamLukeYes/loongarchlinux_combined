@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''glade'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- gtk3
+- libxml2
+repo_makedepends:
+- gtk-doc
+- gobject-introspection
+- itstool
+- docbook-xsl
+- git
+- meson
+- gjs
+- pygobject: python-gobject
+- webkit2gtk
+update_on:
+- alpm: glade
+  source: archpkg

@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libchamplain'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- clutter-gtk
+- libsoup3
+- cairo
+- sqlite
+repo_makedepends:
+- gobject-introspection
+- gtk-doc
+- vala
+- meson
+- git
+update_on:
+- alpm: libchamplain
+  source: archpkg

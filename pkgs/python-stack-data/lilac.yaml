@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-stack-data'')
+
+  '
+repo_checkdepends:
+- cython
+- python-littleutils
+- python-pygments
+- python-pytest
+repo_depends:
+- python-asttokens
+- python-executing
+- python-pure-eval
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools-scm
+- python-wheel
+update_on:
+- alpm: python-stack-data
+  source: archpkg

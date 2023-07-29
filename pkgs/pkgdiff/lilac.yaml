@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pkgdiff'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl
+- diffutils
+- gawk
+- wdiff
+repo_makedepends:
+- git
+update_on:
+- alias: perl
+- alpm: pkgdiff
+  source: archpkg

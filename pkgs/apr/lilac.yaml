@@ -1,0 +1,7 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- util-linux
+repo_makedepends:
+- python
+update_on: []

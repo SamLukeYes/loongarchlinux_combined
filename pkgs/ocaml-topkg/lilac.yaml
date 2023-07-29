@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ocaml-topkg'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ocaml
+- ocaml-result
+repo_makedepends:
+- ocaml-findlib
+- ocamlbuild
+- opam
+- ocaml: ocaml-compiler-libs
+update_on:
+- alpm: ocaml
+  source: alpm
+  strip_release: true
+- alpm: ocaml-topkg
+  source: archpkg

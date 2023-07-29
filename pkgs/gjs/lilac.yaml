@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gjs'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- gtk3
+- gtk4
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- cairo
+- dconf
+- gobject-introspection: gobject-introspection-runtime
+- js102
+- sysprof: libsysprof-capture
+- readline
+- cairo
+- dconf
+- gobject-introspection: gobject-introspection-runtime
+- js102
+- sysprof: libsysprof-capture
+- readline
+repo_makedepends:
+- dbus
+- git
+- gobject-introspection
+- meson
+update_on:
+- alias: readline
+- alias: readline
+- alpm: readline
+  provides: libreadline.so
+  source: alpm
+- alpm: gjs
+  source: archpkg

@@ -1,0 +1,72 @@
+destsubdir: extra
+repo_checkdepends:
+- python-fonttools
+- python-setuptools
+repo_depends:
+- harfbuzz
+- harfbuzz: harfbuzz-cairo
+repo_makedepends:
+- cairo
+- chafa
+- freetype2
+- git
+- glib2
+- gobject-introspection
+- graphite
+- gtk-doc
+- icu
+- meson
+- python
+- ragel
+update_on:
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: graphite
+  provides: libgraphite2.so
+  source: alpm
+- alpm: cairo
+  provides: libcairo.so
+  source: alpm
+- alpm: harfbuzz
+  provides: libharfbuzz.so
+  source: alpm
+- alpm: harfbuzz
+  provides: libharfbuzz.so
+  source: alpm
+- alpm: icu
+  provides: libicuuc.so
+  source: alpm
+- alpm: cairo
+  provides: libcairo.so
+  source: alpm
+- alpm: chafa
+  provides: libchafa.so
+  source: alpm
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: harfbuzz-cairo
+  provides: libharfbuzz-cairo.so
+  source: alpm
+- alpm: harfbuzz
+  provides: libharfbuzz-gobject.so
+  source: alpm
+- alpm: harfbuzz
+  provides: libharfbuzz-subset.so
+  source: alpm
+- alpm: harfbuzz
+  provides: libharfbuzz.so
+  source: alpm

@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-responsemock'')
+
+  '
+repo_checkdepends:
+- python-requests
+repo_depends:
+- python
+- python-pytest
+- python-responses
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-pytest-responsemock
+  source: archpkg

@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cutefish-settings'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fishui
+- fontconfig
+- freetype2
+- icu
+- kcoreaddons
+- libxcursor
+- modemmanager-qt
+- networkmanager-qt
+- bluez-qt
+- bluedevil
+- libcutefish
+- qt5-quickcontrols
+repo_makedepends:
+- extra-cmake-modules
+- ninja
+- qt5-tools
+update_on:
+- alias: icu
+- alpm: cutefish-settings
+  source: archpkg

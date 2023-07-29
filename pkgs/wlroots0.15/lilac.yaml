@@ -1,0 +1,51 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wlroots0.15'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libglvnd
+- libinput
+- libxcb
+- xcb-util-errors
+- xcb-util-renderutil
+- xcb-util-wm
+repo_makedepends:
+- glslang
+- meson
+- ninja
+- systemd
+- vulkan-headers
+- wayland-protocols
+- xorg-xwayland
+update_on:
+- alpm: pixman
+  provides: libpixman-1.so
+  source: alpm
+- alpm: seatd
+  provides: libseat.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libudev.so
+  source: alpm
+- alpm: emby-theater
+  provides: libvulkan.so
+  source: alpm
+- alpm: wayland
+  provides: libwayland-client.so
+  source: alpm
+- alpm: wayland
+  provides: libwayland-server.so
+  source: alpm
+- alpm: intel-oneapi-basekit
+  provides: libxkbcommon.so
+  source: alpm
+- alpm: wlroots0.15
+  source: archpkg

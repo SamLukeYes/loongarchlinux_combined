@@ -1,0 +1,35 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-falcon'')
+
+  '
+repo_checkdepends:
+- ruby-async-process
+- ruby-async-rspec
+- ruby-async-websocket
+- ruby-bake
+- ruby-covered
+- ruby-rspec
+- ruby-bake-test
+- ruby-bake-test-external
+- ruby-puma
+repo_depends:
+- ruby-async
+- ruby-async-container
+- ruby-async-http
+- ruby-async-http
+- ruby-async-http-cache
+- ruby-async-io
+- ruby-build-environment
+- ruby-localhost
+- ruby-process-metrics
+- ruby-protocol-rack
+- ruby-samovar
+repo_makedepends: []
+update_on:
+- alpm: ruby-falcon
+  source: archpkg

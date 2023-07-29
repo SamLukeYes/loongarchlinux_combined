@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-oslotest'')
+
+  '
+repo_checkdepends:
+- python-oslo-config
+- python-stestr
+repo_depends:
+- python-fixtures
+- python-subunit
+- python-six
+- python-testtools
+repo_makedepends:
+- python-pbr
+update_on:
+- alpm: python-oslotest
+  source: archpkg

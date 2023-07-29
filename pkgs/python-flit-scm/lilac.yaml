@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-flit-scm'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-flit-core
+- python-setuptools-scm
+repo_makedepends:
+- python-build
+- python-installer
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-flit-scm
+  source: archpkg

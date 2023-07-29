@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-hatchling'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- python-packaging
+- python-pathspec
+- python-pluggy
+- python-editables
+- python-trove-classifiers
+repo_makedepends:
+- python-build
+- python-installer
+- python-setuptools
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-hatchling
+  source: archpkg

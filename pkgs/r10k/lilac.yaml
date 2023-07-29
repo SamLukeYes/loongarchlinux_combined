@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''r10k'')
+
+  '
+repo_checkdepends:
+- ruby-rspec
+repo_depends:
+- ruby
+- ruby-colored2
+- ruby-cri
+- ruby-gettext-setup
+- ruby-log4r
+- ruby-multi_json
+- ruby-semantic_puppet
+- ruby-puppet_forge
+- ruby-rugged
+- ruby-fast_gettext
+- ruby-gettext
+- ruby-faraday
+- ruby-faraday-net_http
+- ruby-jwt
+repo_makedepends:
+- ruby-minitar
+- ruby-yard
+update_on:
+- alias: ruby
+- alpm: r10k
+  source: archpkg

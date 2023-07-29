@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''plasma-nm'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- plasma-workspace
+- modemmanager-qt
+- networkmanager-qt
+repo_makedepends:
+- extra-cmake-modules
+- openconnect
+update_on:
+- alpm: plasma-nm
+  source: archpkg

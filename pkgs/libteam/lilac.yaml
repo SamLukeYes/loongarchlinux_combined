@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libteam'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bash
+- jansson
+- libdaemon
+- libnl
+- zeromq
+repo_makedepends:
+- doxygen
+- git
+- graphviz
+update_on:
+- alpm: libteam
+  source: archpkg

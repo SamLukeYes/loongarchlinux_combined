@@ -1,0 +1,123 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sonic-visualiser'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- libmad
+- opusfile
+- qt5-base
+- qt5-svg
+- vamp-plugin-sdk
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- libmad
+- opusfile
+- qt5-base
+- qt5-svg
+- vamp-plugin-sdk
+- alsa-lib
+- bzip2
+- capnproto
+- fftw
+- libfishsound
+- libid3tag
+- liblo
+- liblrdf
+- liboggz
+- pulseaudio: libpulse
+- libsamplerate
+- libsndfile
+- portaudio
+- rubberband
+- serd
+- sord
+repo_makedepends:
+- alsa-lib
+- bzip2
+- capnproto
+- fftw
+- libfishsound
+- libid3tag
+- liblo
+- liblrdf
+- liboggz
+- pulseaudio: libpulse
+- libsamplerate
+- libsndfile
+- meson
+- portaudio
+- rubberband
+- serd
+- sord
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: bzip2
+  provides: libbz2.so
+  source: alpm
+- alpm: capnproto
+  provides: libcapnp.so
+  source: alpm
+- alpm: capnproto
+  provides: libkj.so
+  source: alpm
+- alpm: fftw
+  provides: libfftw3.so
+  source: alpm
+- alpm: libfishsound
+  provides: libfishsound.so
+  source: alpm
+- alpm: libid3tag
+  provides: libid3tag.so
+  source: alpm
+- alpm: liblo
+  provides: liblo.so
+  source: alpm
+- alpm: liblrdf
+  provides: liblrdf.so
+  source: alpm
+- alpm: liboggz
+  provides: liboggz.so
+  source: alpm
+- alpm: libao
+  provides: libpulse.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: portaudio
+  provides: libportaudio.so
+  source: alpm
+- alpm: rubberband
+  provides: librubberband.so
+  source: alpm
+- alpm: serd
+  provides: libserd-0.so
+  source: alpm
+- alpm: sord
+  provides: libsord-0.so
+  source: alpm
+- alpm: sonic-visualiser
+  source: archpkg

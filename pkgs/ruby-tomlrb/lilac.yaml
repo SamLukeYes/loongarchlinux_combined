@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-tomlrb'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+repo_makedepends:
+- git
+- ruby-rdoc
+- ruby-rake
+- ruby-bundler
+update_on:
+- alias: ruby
+- alpm: ruby-tomlrb
+  source: archpkg

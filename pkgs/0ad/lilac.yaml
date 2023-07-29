@@ -1,0 +1,43 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- 0ad-data
+- binutils
+- boost: boost-libs
+- curl
+- enet
+- libogg
+- libpng
+- libvorbis
+- libxml2
+- openal
+- sdl2
+- wxwidgets: wxwidgets-gtk3
+- zlib
+- glu
+- fmt
+- gloox
+- miniupnpc
+- icu
+- nspr
+- libsodium
+- which
+repo_makedepends:
+- boost
+- cmake
+- mesa
+- zip
+- libsm
+- rust
+- python
+- python-virtualenv
+- git
+- gcc12
+update_on:
+- alpm: wxwidgets-gtk3
+  source: alpm
+  strip_release: true
+- alpm: miniupnpc
+  provides: libminiupnpc.so
+  source: alpm
+- alias: icu

@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''diffuse'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-cairo
+- pygobject: python-gobject
+repo_makedepends:
+- git
+- meson
+- ninja
+update_on:
+- alpm: diffuse
+  source: archpkg

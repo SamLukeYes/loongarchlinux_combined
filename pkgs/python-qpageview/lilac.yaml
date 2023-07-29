@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-qpageview'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python
+- pyqt5: python-pyqt5
+- python-poppler-qt5
+- qt5-svg
+repo_makedepends:
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-qpageview
+  source: archpkg

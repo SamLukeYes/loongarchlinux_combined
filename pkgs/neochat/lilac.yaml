@@ -1,0 +1,33 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''neochat'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qqc2-desktop-style
+- kirigami-addons
+- libquotient
+- kquickimageeditor
+- kitemmodels
+- kio
+- syntax-highlighting
+- qtkeychain: qtkeychain-qt5
+- cmark
+- hicolor-icon-theme
+repo_makedepends:
+- extra-cmake-modules
+- qcoro: qcoro-qt5
+- kdoctools
+update_on:
+- alpm: cmark
+  source: alpm
+  strip_release: true
+- alpm: neochat
+  source: archpkg

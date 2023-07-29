@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hip-runtime-amd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- mesa
+- comgr
+- rocminfo
+- rocm-llvm
+- elfutils: libelf
+repo_makedepends:
+- cmake
+- python
+- python-cppheaderparser
+update_on:
+- alpm: hip-runtime-amd
+  source: archpkg

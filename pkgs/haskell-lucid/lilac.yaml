@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lucid'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-blaze-builder
+- haskell-hashable
+- haskell-mmorph
+repo_makedepends:
+- ghc
+- haskell-bifunctors
+- haskell-hspec
+- haskell-hunit
+update_on:
+- alpm: haskell-blaze-builder
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-mmorph
+  source: alpm
+- alpm: haskell-lucid
+  source: archpkg

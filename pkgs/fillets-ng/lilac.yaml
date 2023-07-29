@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''fillets-ng'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fillets-ng-data
+- lua51
+- fribidi
+- gcc: gcc-libs
+- libx11
+- sdl_mixer
+- sdl_ttf
+- sdl_image
+- desktop-file-utils
+repo_makedepends:
+- gendesk
+update_on:
+- alpm: fillets-ng
+  source: archpkg

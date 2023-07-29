@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''phonon-gstreamer'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gstreamer: gst-plugins-base
+- qt5-x11extras
+- phonon: phonon-qt5
+repo_makedepends:
+- extra-cmake-modules
+- qt5-tools
+update_on:
+- alpm: phonon-gstreamer
+  source: archpkg

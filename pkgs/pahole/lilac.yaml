@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''pahole'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bash
+- elfutils: libelf
+- zlib
+- pahole
+- python
+- python-matplotlib
+repo_makedepends:
+- bash
+- cmake
+- elfutils: libelf
+- ninja
+- python
+- python-matplotlib
+- zlib
+update_on:
+- alias: python
+- alpm: pahole
+  source: archpkg

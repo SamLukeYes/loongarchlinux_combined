@@ -1,0 +1,63 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kismet'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libpcap
+- pcre
+- bluez: bluez-libs
+- libcap
+- protobuf-c
+- sqlite
+- networkmanager: libnm
+- gcc: gcc-libs
+- libusb
+- libnl
+- glibc
+- zlib
+- elfutils: libelf
+- lm_sensors
+- systemd
+- python
+- python-setuptools
+- protobuf: python-protobuf
+- python-pyserial
+- python-numpy
+- python-websockets
+- libwebsockets
+- libcap-ng
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: protobuf-c
+  provides: libprotobuf-c.so
+  source: alpm
+- alpm: libusb
+  provides: libusb-1.0.so
+  source: alpm
+- alias: python
+- alpm: libpcap
+  provides: libpcap.so
+  source: alpm
+- alpm: protobuf
+  provides: libprotobuf.so
+  source: alpm
+- alpm: libnm
+  provides: libnm.so
+  source: alpm
+- alpm: libwebsockets
+  provides: libwebsockets.so
+  source: alpm
+- alpm: lm_sensors
+  provides: libsensors.so
+  source: alpm
+- alpm: kismet
+  source: archpkg

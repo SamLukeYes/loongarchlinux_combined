@@ -1,0 +1,46 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''darktable'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- pugixml
+- libjpeg-turbo
+- colord-gtk
+- libgphoto2
+- openexr
+- lensfun
+- iso-codes
+- zlib
+- exiv2
+- flickcurl
+- openjpeg2
+- graphicsmagick
+- lua
+- osm-gps-map
+- libsecret
+- openmp
+- gmic
+- libavif
+- jasper
+- libjxl
+repo_makedepends:
+- cmake
+- intltool
+- desktop-file-utils
+- llvm
+- clang
+- portmidi
+- python-jsonschema
+- libwebp
+update_on:
+- alias: lua
+- alpm: darktable
+  source: archpkg

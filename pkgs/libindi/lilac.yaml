@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libindi'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libnova
+- cfitsio
+- gsl
+- libtheora
+- fftw
+- libev
+- rtl-sdr
+repo_makedepends:
+- cmake
+- qt5-base
+update_on:
+- alpm: cfitsio
+  source: alpm
+  strip_release: true
+- alpm: gsl
+  source: alpm
+  strip_release: true
+- alpm: libindi
+  source: archpkg

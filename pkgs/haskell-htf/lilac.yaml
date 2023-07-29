@@ -1,0 +1,64 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-htf'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-diff
+- haskell-hunit
+- haskell-quickcheck
+- haskell-aeson
+- haskell-base64-bytestring
+- haskell-cpphs
+- haskell-src
+- haskell-lifted-base
+- haskell-monad-control
+- haskell-old-time
+- haskell-random
+- haskell-regex-compat
+- haskell-vector
+- haskell-xmlgen
+repo_makedepends:
+- ghc
+- haskell-aeson-pretty
+- haskell-temporary
+- haskell-unordered-containers
+update_on:
+- alpm: haskell-diff
+  source: alpm
+- alpm: haskell-hunit
+  source: alpm
+- alpm: haskell-quickcheck
+  source: alpm
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-base64-bytestring
+  source: alpm
+- alpm: haskell-cpphs
+  source: alpm
+- alpm: haskell-src
+  source: alpm
+- alpm: haskell-lifted-base
+  source: alpm
+- alpm: haskell-monad-control
+  source: alpm
+- alpm: haskell-old-time
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-regex-compat
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-xmlgen
+  source: alpm
+- alpm: haskell-htf
+  source: archpkg

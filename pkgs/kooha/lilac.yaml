@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kooha'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- appstream-glib
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- pipewire: gst-plugin-pipewire
+- gstreamer: gstreamer-vaapi
+- gstreamer: gst-plugins-ugly
+- gtk4
+- libadwaita
+- x264
+- xdg-desktop-portal
+- pulseaudio: libpulse
+repo_makedepends:
+- meson
+update_on:
+- alpm: kooha
+  source: archpkg

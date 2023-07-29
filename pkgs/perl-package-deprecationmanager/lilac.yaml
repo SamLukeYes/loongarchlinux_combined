@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-package-deprecationmanager'')
+
+  '
+repo_checkdepends:
+- perl-test-fatal
+- perl-test-warnings
+repo_depends:
+- perl-params-util
+- perl-sub-install
+- perl-package-stash
+- perl-module-implementation
+- perl-namespace-autoclean
+repo_makedepends: []
+update_on:
+- alpm: perl-package-deprecationmanager
+  source: archpkg

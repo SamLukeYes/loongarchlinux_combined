@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''bash-language-server'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- nodejs
+repo_makedepends:
+- git
+- jq
+- typescript
+- yarn
+update_on:
+- alpm: bash-language-server
+  source: archpkg

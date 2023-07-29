@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-sys-proctable'')
+
+  '
+repo_checkdepends:
+- ruby-test-unit
+repo_depends:
+- ruby
+- ruby-ffi
+repo_makedepends:
+- ruby-rake
+- ruby-rdoc
+- ruby-rake-compiler
+- ruby-yard
+- ruby-rspec
+- ruby-bundler
+- ruby-rubocop-rake
+update_on:
+- alias: ruby
+- alpm: ruby-sys-proctable
+  source: archpkg

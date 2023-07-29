@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cppcheck'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-pygments
+- tinyxml2
+- pcre
+repo_makedepends:
+- git
+- docbook-xsl
+- qt5-tools
+- qt5-base
+- python
+- cmake
+- clang
+update_on:
+- alpm: cppcheck
+  source: archpkg

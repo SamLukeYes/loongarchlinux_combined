@@ -1,0 +1,51 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hiedb'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-algebraic-graphs
+- haskell-ansi-terminal
+- haskell-extra
+- haskell-ghc-paths
+- haskell-hie-compat
+- haskell-lucid
+- haskell-optparse-applicative
+- haskell-sqlite-simple
+- haskell-terminal-size
+repo_makedepends:
+- ghc
+- uusi
+- haskell-hspec
+- haskell-temporary
+update_on:
+- alpm: haskell-algebraic-graphs
+  source: alpm
+- alpm: haskell-ansi-terminal
+  source: alpm
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-ghc
+  source: alpm
+- alpm: haskell-ghc-paths
+  source: alpm
+- alpm: haskell-hie-compat
+  source: alpm
+- alpm: haskell-lucid
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-sqlite-simple
+  source: alpm
+- alpm: haskell-terminal-size
+  source: alpm
+- alpm: haskell-hiedb
+  source: archpkg

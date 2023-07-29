@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-bake'')
+
+  '
+repo_checkdepends:
+- ruby-covered
+- ruby-rspec
+repo_depends:
+- ruby-samovar
+repo_makedepends: []
+update_on:
+- alpm: ruby-bake
+  source: archpkg

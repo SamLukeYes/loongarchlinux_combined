@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hunspell-nl'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- hunspell
+repo_makedepends:
+- unzip
+- qt6-webengine
+update_on:
+- alpm: hunspell-nl
+  source: archpkg

@@ -1,0 +1,35 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''clutter'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- cogl
+- libinput
+- gtk3
+- cogl
+- libinput
+repo_makedepends:
+- gobject-introspection
+- gtk-doc
+- git
+update_on:
+- alpm: cogl
+  provides: libcogl.so
+  source: alpm
+- alpm: cogl
+  provides: libcogl-pango.so
+  source: alpm
+- alpm: cogl
+  provides: libcogl-path.so
+  source: alpm
+- alpm: clutter
+  source: archpkg

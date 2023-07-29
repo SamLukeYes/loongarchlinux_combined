@@ -1,0 +1,29 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- brotli
+- giflib
+- gperftools
+- highway
+- libjpeg-turbo
+- libpng
+- openexr
+repo_makedepends:
+- git
+- cmake
+- brotli
+- gdk-pixbuf2
+- giflib
+- gimp
+- gperftools
+- highway
+- libjpeg-turbo
+- libpng
+- openexr
+- gtest
+- python
+- asciidoc
+- doxygen
+- graphviz
+- xdg-utils
+update_on: []

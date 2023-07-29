@@ -1,0 +1,14 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- curl
+- fcitx5-qt
+- libime
+- opencc
+- qt5-webkit
+repo_makedepends:
+- boost
+- extra-cmake-modules
+- fcitx5-lua
+- ninja
+update_on: []

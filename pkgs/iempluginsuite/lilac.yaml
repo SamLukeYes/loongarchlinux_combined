@@ -1,0 +1,54 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''iempluginsuite'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- iempluginsuite: iempluginsuite-standalone
+- iempluginsuite: iempluginsuite-vst3
+- alsa-lib
+- fftw
+- freetype2
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- libpng
+- libjpeg-turbo
+- zlib
+- alsa-lib
+- fftw
+- freetype2
+- gcc: gcc-libs
+- glibc
+- libglvnd
+- libpng
+- libjpeg-turbo
+- zlib
+repo_makedepends:
+- alsa-lib
+- cmake
+- fftw
+- freetype2
+- gcc: gcc-libs
+- gendesk
+- glibc
+- juce
+- libglvnd
+- libjpeg-turbo
+- libpng
+- libx11
+- libxcursor
+- libxext
+- libxinerama
+- libxrandr
+- zlib
+update_on:
+- alpm: iempluginsuite
+  source: archpkg

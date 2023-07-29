@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''salt'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-jinja
+- python-msgpack
+- python-yaml
+- python-markupsafe
+- python-requests
+- python-pyzmq
+- python-m2crypto
+- python-systemd
+- python-distro
+- python-importlib-metadata
+- python-pycryptodomex
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: salt
+  source: archpkg

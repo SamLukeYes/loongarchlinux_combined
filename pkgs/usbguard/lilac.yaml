@@ -1,0 +1,54 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''usbguard'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libqb
+- libsodium
+- libcap-ng
+- protobuf
+- polkit
+- dbus-glib
+- audit
+- libseccomp
+repo_makedepends:
+- catch2
+- pegtl
+- libxslt
+- libxml2
+- asciidoc
+- systemd
+update_on:
+- alpm: libqb
+  provides: libqb.so
+  source: alpm
+- alias: protobuf
+- alpm: audit
+  provides: libaudit.so
+  source: alpm
+- alpm: libseccomp
+  provides: libseccomp.so
+  source: alpm
+- alpm: libcap-ng
+  provides: libcap-ng.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: protobuf
+  provides: libprotobuf.so
+  source: alpm
+- alpm: usbguard
+  source: archpkg

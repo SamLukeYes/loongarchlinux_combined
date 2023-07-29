@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''geoip-database'')
+
+  '
+repo_checkdepends:
+- geoip
+repo_depends: []
+repo_makedepends:
+- util-linux
+update_on:
+- alpm: geoip-database
+  source: archpkg

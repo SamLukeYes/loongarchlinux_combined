@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gpaste'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcr-4
+- gtk3
+- gtk4
+- libadwaita
+repo_makedepends:
+- git
+- gnome-control-center
+- gnome-shell
+- gobject-introspection
+- meson
+- vala
+update_on:
+- alpm: gpaste
+  source: archpkg

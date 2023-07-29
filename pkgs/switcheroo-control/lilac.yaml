@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''switcheroo-control'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- umockdev
+repo_depends:
+- glib2
+- libgudev
+- pygobject: python-gobject
+repo_makedepends:
+- git
+- gtk-doc
+- meson
+- python-dbusmock
+- systemd
+update_on:
+- alpm: switcheroo-control
+  source: archpkg

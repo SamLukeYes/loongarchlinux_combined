@@ -1,0 +1,101 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ostree'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- cpio
+- elfutils
+- gjs
+- parallel
+- python-yaml
+- syslinux
+repo_depends:
+- bash
+- fuse3
+- gcc: gcc-libs
+- glibc
+- libgpg-error
+- libsodium
+- util-linux
+- zlib
+- bash
+- fuse3
+- gcc: gcc-libs
+- glibc
+- libgpg-error
+- libsodium
+- util-linux
+- zlib
+- avahi
+- curl
+- glib2
+- gpgme
+- libarchive
+- libsoup
+- openssl
+- systemd: systemd-libs
+- xz
+repo_makedepends:
+- avahi
+- curl
+- e2fsprogs
+- git
+- glib2
+- gobject-introspection
+- gpgme
+- gtk-doc
+- libarchive
+- libsoup
+- libxslt
+- mkinitcpio
+- openssl
+- python
+- systemd
+- xz
+update_on:
+- alpm: avahi
+  provides: libavahi-client.so
+  source: alpm
+- alpm: avahi
+  provides: libavahi-common.so
+  source: alpm
+- alpm: avahi
+  provides: libavahi-glib.so
+  source: alpm
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: glib2
+  provides: libgio-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: gpgme
+  provides: libgpgme.so
+  source: alpm
+- alpm: libarchive
+  provides: libarchive.so
+  source: alpm
+- alpm: libsoup
+  provides: libsoup-2.4.so
+  source: alpm
+- alias: libcrypto
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: xz
+  provides: liblzma.so
+  source: alpm
+- alpm: ostree
+  source: archpkg

@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''freedroidrpg'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- sdl_mixer
+- sdl_image
+- sdl_gfx
+- libogg
+- libvorbis
+- glu
+- glew
+- hicolor-icon-theme
+repo_makedepends:
+- mesa
+- python
+update_on:
+- alpm: freedroidrpg
+  source: archpkg

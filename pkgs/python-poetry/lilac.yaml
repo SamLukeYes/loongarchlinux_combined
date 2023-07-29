@@ -1,0 +1,41 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- python
+- python-build
+- python-cachecontrol
+- python-cachy
+- python-cleo
+- python-crashtest
+- python-dulwich
+- python-filelock
+- python-html5lib
+- python-installer
+- python-jsonschema
+- python-keyring
+- python-lockfile
+- python-packaging
+- python-pexpect
+- python-pkginfo
+- python-platformdirs
+- python-poetry-core
+- python-poetry-plugin-export
+- python-pyproject-hooks
+- python-requests
+- python-requests-toolbelt
+- python-shellingham
+- python-tomlkit
+- python-trove-classifiers
+- python-urllib3
+- python-virtualenv
+repo_makedepends:
+- python-deepdiff
+- python-psutil
+- python-httpretty
+- python-pip
+- python-pytest
+- python-pytest-mock
+- python-pytest-randomly
+- python-pytest-xdist
+update_on:
+- alias: python

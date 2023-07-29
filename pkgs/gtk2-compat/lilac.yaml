@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gtk2-compat'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+repo_makedepends:
+- git
+update_on:
+- alpm: gtk2-compat
+  source: archpkg

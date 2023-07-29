@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sword'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- curl
+- clucene
+- xz
+- sword
+- python
+repo_makedepends:
+- curl
+- clucene
+- swig
+- cmake
+- python
+update_on:
+- alias: python
+- alpm: sword
+  source: archpkg

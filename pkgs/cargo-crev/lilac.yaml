@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cargo-crev'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- openssl
+repo_makedepends:
+- clang
+update_on:
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: julia
+  provides: libgit2.so
+  source: alpm
+- alpm: cargo-crev
+  source: archpkg

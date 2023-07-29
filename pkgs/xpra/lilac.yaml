@@ -1,0 +1,38 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''xpra'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- python
+- libxtst
+- python-cairo
+- pygobject: python-gobject
+- python-pillow
+- python-lz4
+- ffmpeg
+- libvpx
+- xf86-video-dummy
+- libxkbfile
+- libxres
+- python-netifaces
+- python-rencode
+- pyopengl: python-opengl
+- python-lz4
+repo_makedepends:
+- pkgconf
+- python-setuptools
+- cython
+- uglify-js
+update_on:
+- alias: python
+- alpm: xpra
+  source: archpkg

@@ -1,0 +1,15 @@
+destsubdir: extra
+repo_checkdepends:
+- ttf-dejavu
+repo_depends:
+- lcms2
+- poppler
+- qpdf
+- systemd
+- libexif
+repo_makedepends:
+- ghostscript
+- python
+- mupdf: mupdf-tools
+- liblouis
+update_on: []

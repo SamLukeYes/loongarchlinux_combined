@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-keys'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-comonad
+- haskell-free
+- haskell-hashable
+- haskell-semigroupoids
+- haskell-tagged
+- haskell-transformers-compat
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-comonad
+  source: alpm
+- alpm: haskell-free
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-semigroupoids
+  source: alpm
+- alpm: haskell-tagged
+  source: alpm
+- alpm: haskell-transformers-compat
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-keys
+  source: archpkg

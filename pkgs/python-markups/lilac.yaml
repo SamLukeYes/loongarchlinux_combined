@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-markups'')
+
+  '
+repo_checkdepends:
+- python-tox
+repo_depends:
+- python-markdown-math
+repo_makedepends:
+- python-docutils
+- python-pygments
+- python-wheel
+- python-setuptools
+update_on:
+- alpm: python-markups
+  source: archpkg

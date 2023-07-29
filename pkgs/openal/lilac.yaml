@@ -1,0 +1,23 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- openal
+- sdl2
+- libsndfile
+- ffmpeg
+repo_makedepends:
+- alsa-lib
+- cmake
+- ffmpeg
+- fluidsynth
+- git
+- libmysofa
+- pulseaudio: libpulse
+- libsndfile
+- ninja
+- pipewire
+- portaudio
+- qt5-base
+- sdl2
+update_on: []

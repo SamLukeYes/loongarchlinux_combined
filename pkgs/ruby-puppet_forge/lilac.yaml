@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-puppet_forge'')
+
+  '
+repo_checkdepends:
+- ruby-rspec
+repo_depends:
+- ruby
+- ruby-faraday
+- ruby-faraday-middleware
+- ruby-semantic_puppet
+- ruby-minitar
+repo_makedepends:
+- ruby-rdoc
+- ruby-bundler
+update_on:
+- alias: ruby
+- alpm: ruby-puppet_forge
+  source: archpkg

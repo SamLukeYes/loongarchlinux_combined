@@ -1,0 +1,29 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- cracklib
+- libevent
+- nspr
+- nss
+- net-snmp
+- pam
+- openldap
+- icu
+- db5.3
+- python-cryptography
+- python-argcomplete
+- python-dateutil
+- python-ldap
+- python-packaging
+- lmdb
+repo_makedepends:
+- rsync
+- doxygen
+- cmocka
+- python-setuptools
+- python-argparse-manpage
+- npm
+- nodejs-lts-gallium
+- systemd
+update_on:
+- alias: icu

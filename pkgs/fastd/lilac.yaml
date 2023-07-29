@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''fastd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- cmocka
+repo_depends:
+- gcc: gcc-libs
+- libcap
+- libmnl
+- libsodium
+- json-c
+- openssl
+repo_makedepends:
+- meson
+update_on:
+- alpm: fastd
+  source: archpkg

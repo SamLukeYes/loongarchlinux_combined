@@ -1,0 +1,47 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''adljack'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bash
+- gcc: gcc-libs
+- glibc
+- bash
+- gcc: gcc-libs
+- glibc
+- liblo
+- ncurses
+- rtaudio
+- rtmidi
+repo_makedepends:
+- cmake
+- liblo
+- ncurses
+- rtaudio
+- rtmidi
+update_on:
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: liblo
+  provides: liblo.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: rtaudio
+  provides: librtaudio.so
+  source: alpm
+- alpm: rtmidi
+  provides: librtmidi.so
+  source: alpm
+- alpm: adljack
+  source: archpkg

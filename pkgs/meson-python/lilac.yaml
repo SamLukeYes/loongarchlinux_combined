@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''meson-python'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-gitpython
+- python-pytest-mock
+- cython
+repo_depends:
+- meson
+- patchelf
+- python-wheel
+- python-pyproject-metadata
+repo_makedepends:
+- python-build
+- python-installer
+- ninja
+update_on:
+- alpm: meson-python
+  source: archpkg

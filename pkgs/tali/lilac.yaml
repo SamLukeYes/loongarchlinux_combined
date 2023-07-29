@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''tali'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- librsvg
+- libgnome-games-support
+repo_makedepends:
+- meson
+- gobject-introspection
+- yelp-tools
+- appstream-glib
+- git
+update_on:
+- alpm: tali
+  source: archpkg

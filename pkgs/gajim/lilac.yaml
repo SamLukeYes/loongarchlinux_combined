@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gajim'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- gtksourceview4
+- python-cairo
+- pygobject: python-gobject
+- python-keyring
+- python-cryptography
+- python-precis_i18n
+- python-css-parser
+- python-distro
+- hicolor-icon-theme
+- python-pillow
+- python-gssapi
+- python-netifaces
+- python-qrcode
+- python-omemo-dr
+- python-packaging
+- pango
+- sqlite
+repo_makedepends:
+- python-build
+- python-installer
+- python-wheel
+- python-setuptools
+update_on:
+- alpm: gajim
+  source: archpkg

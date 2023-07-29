@@ -1,0 +1,40 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wget'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- perl-http-daemon
+- perl-io-socket-ssl
+- python
+repo_depends:
+- glibc
+- zlib
+- gnutls
+- libidn2
+- util-linux: util-linux-libs
+- libpsl
+- pcre2
+- nettle
+repo_makedepends: []
+update_on:
+- alpm: libidn2
+  provides: libidn2.so
+  source: alpm
+- alpm: util-linux-libs
+  provides: libuuid.so
+  source: alpm
+- alpm: libpsl
+  provides: libpsl.so
+  source: alpm
+- alpm: nettle
+  provides: libnettle.so
+  source: alpm
+- alpm: wget
+  source: archpkg

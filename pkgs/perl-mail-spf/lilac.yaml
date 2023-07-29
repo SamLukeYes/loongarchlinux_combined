@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-mail-spf'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- perl-error
+- perl-netaddr-ip
+- perl-uri
+- perl-net-dns
+- perl
+repo_makedepends:
+- perl-module-build
+- perl-net-dns-resolver-programmable
+update_on:
+- alias: perl
+- alpm: perl-mail-spf
+  source: archpkg

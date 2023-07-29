@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sensors-applet'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gnome-panel
+- libatasmart
+- nvidia-settings: libxnvctrl
+- lm_sensors
+repo_makedepends:
+- git
+- gnome-common
+- intltool
+- yelp-tools
+update_on:
+- alpm: sensors-applet
+  source: archpkg

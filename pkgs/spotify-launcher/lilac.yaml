@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''spotify-launcher'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- sequoia-sqv
+- zenity
+- gtk3
+- libxss
+- desktop-file-utils
+- openssl
+- nss
+- curl: libcurl-gnutls
+- libsm
+repo_makedepends: []
+update_on:
+- alpm: spotify-launcher
+  source: archpkg

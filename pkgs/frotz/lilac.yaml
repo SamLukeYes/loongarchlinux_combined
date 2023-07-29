@@ -1,0 +1,43 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''frotz'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- libao
+- libmodplug
+- libsamplerate
+- libsndfile
+- ncurses
+- libmodplug
+- libvorbis
+- freetype2
+- libjpeg-turbo
+- libpng
+- sdl2
+- sdl2_mixer
+- zlib
+repo_makedepends:
+- libao
+- libmodplug
+- libsamplerate
+- libsndfile
+- libvorbis
+- ncurses
+- freetype2
+- libjpeg-turbo
+- libpng
+- sdl2
+- sdl2_mixer
+- zlib
+update_on:
+- alpm: frotz
+  source: archpkg

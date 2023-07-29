@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-net-idn-encode'')
+
+  '
+repo_checkdepends:
+- perl-test-nowarnings
+- perl-test-pod
+- perl-test-pod-coverage
+repo_depends:
+- perl
+repo_makedepends: []
+update_on:
+- alias: perl
+- alpm: perl-net-idn-encode
+  source: archpkg

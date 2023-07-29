@@ -1,0 +1,10 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- freetype2
+- fontconfig
+- ncurses
+repo_makedepends:
+- autoconf
+- patch
+update_on: []

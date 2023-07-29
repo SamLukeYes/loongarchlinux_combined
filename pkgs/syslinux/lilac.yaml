@@ -1,0 +1,10 @@
+destsubdir: core
+repo_checkdepends: []
+repo_depends: []
+repo_makedepends:
+- git
+- python
+- nasm
+- upx
+- asciidoc
+update_on: []

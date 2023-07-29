@@ -1,0 +1,37 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-boxes'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cdrtools
+- edk2: edk2-ovmf
+- libarchive
+- libgudev
+- libhandy
+- libosinfo
+- libsecret
+- libsoup3
+- libvirt-glib
+- mtools
+- qemu: qemu-desktop
+- spice-gtk
+- tracker3
+- webkit2gtk-4.1
+repo_makedepends:
+- appstream-glib
+- gobject-introspection
+- meson
+- spice-protocol
+- vala
+- yelp-tools
+update_on:
+- alpm: gnome-boxes
+  source: archpkg

@@ -1,0 +1,35 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lgi'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- glib2
+- libffi
+- gobject-introspection: gobject-introspection-runtime
+- glibc
+- glib2
+- libffi
+- gobject-introspection: gobject-introspection-runtime
+- lua
+- glibc
+- glib2
+- libffi
+- gobject-introspection: gobject-introspection-runtime
+- lua53
+repo_makedepends:
+- gobject-introspection
+- lua
+- lua53
+update_on:
+- alias: lua
+- alpm: lgi
+  source: archpkg

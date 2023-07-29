@@ -1,0 +1,53 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''monero-gui'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- monero
+- boost: boost-libs
+- libunwind
+- openssl
+- readline
+- zeromq
+- pcsclite
+- hidapi
+- unbound
+- hicolor-icon-theme
+- libusb
+- qt5-base
+- qt5-declarative
+- qt5-graphicaleffects
+- qt5-quickcontrols
+- qt5-quickcontrols2
+- qt5-svg
+- qt5-xmlpatterns
+repo_makedepends:
+- boost
+- cmake
+- git
+- python
+- qt5-tools
+update_on:
+- alias: readline
+- alpm: systemd-libs
+  provides: libudev.so
+  source: alpm
+- alpm: unbound
+  provides: libunbound.so
+  source: alpm
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alpm: monero-gui
+  source: archpkg

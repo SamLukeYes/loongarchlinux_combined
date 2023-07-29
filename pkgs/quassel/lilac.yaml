@@ -1,0 +1,64 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''quassel'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- icu
+- openldap: libldap
+- quassel: quassel-common
+- qt5-base
+- qt5-webengine
+- qt5-multimedia
+- knotifyconfig
+- quassel: quassel-common
+- qt5-base
+- qt5-svg
+- sonnet
+- quassel: quassel-common
+- qt5-base
+- qt5-webengine
+- qt5-multimedia
+- knotifyconfig
+- openldap: libldap
+- quassel: quassel-common
+- qt5-base
+- qt5-svg
+- sonnet
+- hicolor-icon-theme
+repo_makedepends:
+- qt5-base
+- qt5-tools
+- qt5-webengine
+- qt5-multimedia
+- knotifyconfig
+- sonnet
+- openldap: libldap
+- cmake
+- extra-cmake-modules
+- python
+- hicolor-icon-theme
+- boost
+update_on:
+- alias: icu
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: quassel
+  source: archpkg

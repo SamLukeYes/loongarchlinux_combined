@@ -1,0 +1,44 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pointed'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-comonad
+- haskell-data-default-class
+- haskell-hashable
+- haskell-kan-extensions
+- haskell-semigroupoids
+- haskell-tagged
+- haskell-transformers-compat
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-comonad
+  source: alpm
+- alpm: haskell-data-default-class
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-kan-extensions
+  source: alpm
+- alpm: haskell-semigroupoids
+  source: alpm
+- alpm: haskell-tagged
+  source: alpm
+- alpm: haskell-transformers-compat
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-pointed
+  source: archpkg

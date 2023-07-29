@@ -1,0 +1,70 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sile'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- poppler
+repo_depends:
+- glibc
+- fontconfig
+- freetype2
+- harfbuzz
+- gentium-plus-font
+- git
+- icu
+- libpng
+- lua
+- lua-bit32
+- lua-cassowary
+- lua-cldr
+- lua-cliargs
+- lua-cosmo
+- luaexpat: lua-expat
+- lua-filesystem
+- lua-fluent
+- lua-linenoise
+- lua-loadkit
+- lpeg: lua-lpeg
+- lua-luaepnf
+- lua-luarepl
+- lua-luautf8
+- penlight: lua-penlight
+- luasec: lua-sec
+- luasocket: lua-socket
+- lua-vstruct
+- lua-zlib
+- zlib
+repo_makedepends: []
+update_on:
+- alias: icu
+- alias: lua
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: harfbuzz
+  provides: libharfbuzz.so
+  source: alpm
+- alpm: harfbuzz
+  provides: libharfbuzz-subset.so
+  source: alpm
+- alpm: icu
+  provides: libicudata.so
+  source: alpm
+- alpm: icu
+  provides: libicui18n.so
+  source: alpm
+- alpm: icu
+  provides: libicuio.so
+  source: alpm
+- alpm: icu
+  provides: libicuuc.so
+  source: alpm
+- alpm: sile
+  source: archpkg

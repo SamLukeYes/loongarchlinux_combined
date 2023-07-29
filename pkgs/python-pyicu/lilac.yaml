@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-pyicu'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-fonttools
+- python-pytest
+- python-six
+repo_depends:
+- python
+- icu
+repo_makedepends:
+- python-setuptools
+update_on:
+- alias: python
+- alias: icu
+- alpm: python-pyicu
+  source: archpkg

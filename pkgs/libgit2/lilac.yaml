@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libgit2'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- http-parser
+- zlib
+- gcc: gcc-libs
+- glibc
+- http-parser
+- zlib
+- libssh2
+- openssl
+- pcre2
+repo_makedepends:
+- cmake
+- libssh2
+- openssl
+- pcre2
+- python
+update_on:
+- alpm: libssh2
+  provides: libssh2.so
+  source: alpm
+- alias: libcrypto
+- alias: libssl
+- alpm: pcre2
+  provides: libpcre2-8.so
+  source: alpm
+- alpm: libgit2
+  source: archpkg

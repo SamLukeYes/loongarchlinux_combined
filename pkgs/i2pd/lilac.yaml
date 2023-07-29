@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''i2pd'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- boost: boost-libs
+- openssl
+- zlib
+repo_makedepends:
+- cmake
+- boost
+- check
+update_on:
+- alpm: miniupnpc
+  provides: libminiupnpc.so
+  source: alpm
+- alpm: i2pd
+  source: archpkg

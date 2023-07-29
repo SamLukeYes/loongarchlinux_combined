@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deepin-qt5platform-plugins'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- cairo
+- qt5-x11extras
+repo_makedepends:
+- git
+- expac
+- qt5-base: qt5-xcb-private-headers
+- libglvnd
+- libxcb
+update_on:
+- alpm: deepin-qt5platform-plugins
+  source: archpkg

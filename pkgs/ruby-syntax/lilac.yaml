@@ -1,0 +1,20 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-syntax'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+repo_makedepends:
+- ruby-rake
+- ruby-rake-contrib
+- ruby-test-unit
+update_on:
+- alias: ruby
+- alpm: ruby-syntax
+  source: archpkg

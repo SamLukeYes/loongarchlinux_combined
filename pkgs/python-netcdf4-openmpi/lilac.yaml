@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-netcdf4-openmpi'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- openssh
+repo_depends:
+- python-numpy
+- python-cftime
+- python-mpi4py
+- netcdf-openmpi
+repo_makedepends:
+- cython
+- python-setuptools
+update_on:
+- alpm: python-netcdf4-openmpi
+  source: archpkg

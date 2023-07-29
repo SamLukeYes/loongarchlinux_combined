@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''vocal'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- clutter-gst
+- clutter-gtk
+- granite
+- gstreamer: gst-plugins-good
+- gstreamer: gst-libav
+- gvfs
+- libnotify
+repo_makedepends:
+- cmake
+- ninja
+- vala
+update_on:
+- alpm: vocal
+  source: archpkg

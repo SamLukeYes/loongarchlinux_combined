@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''openimageio'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- openexr
+- boost: boost-libs
+- openjpeg2
+- glew
+- libtiff
+- opencolorio
+- libpng
+- libraw
+- libwebp
+- pugixml
+- pybind11
+- libheif
+- hdf5
+- freetype2
+repo_makedepends:
+- cmake
+- qt5-base
+- python
+- boost
+- mesa
+- fontconfig
+- libxrender
+- ninja
+- robin-map
+- fmt
+update_on:
+- alpm: openimageio
+  source: archpkg

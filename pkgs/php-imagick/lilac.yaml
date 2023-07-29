@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''php-imagick'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- ttf-dejavu
+repo_depends:
+- imagemagick
+- imagemagick
+- php
+- imagemagick
+- php-legacy
+repo_makedepends:
+- librsvg
+- php
+- php-legacy
+update_on:
+- alpm: php-imagick
+  source: archpkg

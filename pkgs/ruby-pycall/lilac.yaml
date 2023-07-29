@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-pycall'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-numpy
+repo_depends:
+- ruby
+- python
+repo_makedepends:
+- git
+- ruby-rake
+- ruby-rake-compiler
+- ruby-rspec
+- ruby-pry
+- ruby-pry-byebug
+update_on:
+- alias: ruby
+- alias: python
+- alpm: ruby-pycall
+  source: archpkg

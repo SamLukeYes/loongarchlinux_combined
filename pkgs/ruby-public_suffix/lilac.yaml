@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-public_suffix'')
+
+  '
+repo_checkdepends:
+- ruby-minitest
+- ruby-mocha
+repo_depends:
+- ruby
+repo_makedepends:
+- ruby-rake
+- ruby-bundler
+- ruby-yard
+- ruby-rdoc
+update_on:
+- alias: ruby
+- alpm: ruby-public_suffix
+  source: archpkg

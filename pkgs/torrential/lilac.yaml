@@ -1,0 +1,28 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''torrential'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- granite
+- libevent
+- libb64
+- miniupnpc
+- libnatpmp
+repo_makedepends:
+- meson
+- git
+- vala
+- transmission: libtransmission
+- dht
+- libutp
+update_on:
+- alpm: torrential
+  source: archpkg

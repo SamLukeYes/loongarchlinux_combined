@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-sudoku'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gtk3
+- json-glib
+- libgee
+- qqwing
+repo_makedepends:
+- git
+- meson
+- vala
+- yelp-tools
+update_on:
+- alpm: gnome-sudoku
+  source: archpkg

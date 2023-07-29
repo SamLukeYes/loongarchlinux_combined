@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-libtmux'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- procps-ng
+repo_depends:
+- python
+- tmux
+repo_makedepends:
+- python-build
+- python-installer
+- python-poetry-core
+- python-wheel
+update_on:
+- alias: python
+- alpm: python-libtmux
+  source: archpkg

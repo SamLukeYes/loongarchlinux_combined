@@ -1,0 +1,7 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- bzip2
+- bash
+repo_makedepends: []
+update_on: []

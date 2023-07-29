@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-jupyter-ydoc'')
+
+  '
+repo_checkdepends:
+- python-pytest-asyncio
+- python-websockets
+repo_depends:
+- python-ypy-websocket
+repo_makedepends:
+- python-build
+- python-installer
+- python-hatchling
+- python-hatch-nodejs-version
+update_on:
+- alpm: python-jupyter-ydoc
+  source: archpkg

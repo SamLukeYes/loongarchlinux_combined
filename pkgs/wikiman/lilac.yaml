@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''wikiman'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fzf
+- ripgrep
+- w3m
+- findutils
+- coreutils
+- sed
+- grep
+- parallel
+repo_makedepends:
+- make
+update_on:
+- alpm: wikiman
+  source: archpkg

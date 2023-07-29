@@ -1,0 +1,14 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- glibc
+- openldap: libldap
+- glibc
+- bash
+- iproute2
+- run-parts
+repo_makedepends:
+- bash
+- iproute2
+- openldap
+update_on: []

@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kdesignerplugin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kconfig
+- kcoreaddons
+repo_makedepends:
+- extra-cmake-modules
+- qt5-tools
+- kdoctools
+update_on:
+- alpm: kconfig
+  source: alpm
+  strip_release: true
+- alpm: kdesignerplugin
+  source: archpkg

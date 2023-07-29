@@ -1,0 +1,106 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''libcamera'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- gcc: gcc-libs
+- glibc
+- gnutls
+- libcamera: libcamera-ipa
+- elfutils: libelf
+- libunwind
+- libyaml
+- systemd: systemd-libs
+- gcc: gcc-libs
+- glibc
+- libcamera
+- gcc: gcc-libs
+- glibc
+- gtest
+- libcamera
+- libdrm
+- libevent
+- libjpeg-turbo
+- libtiff
+- libyaml
+- qt5-base
+- sdl2
+- gcc: gcc-libs
+- glibc
+- glib2
+- gstreamer
+- gstreamer: gst-plugins-base-libs
+- libcamera
+repo_makedepends:
+- doxygen
+- git
+- glib2
+- graphviz
+- gstreamer: gst-plugins-base
+- gtest
+- libdrm
+- libjpeg-turbo
+- libtiff
+- libyaml
+- meson
+- python-jinja
+- python-ply
+- python-sphinx
+- qt5-base
+- qt5-tools
+- sdl2
+- systemd
+update_on:
+- alpm: systemd-libs
+  provides: libudev.so
+  source: alpm
+- alpm: darktable
+  provides: libcamera.so
+  source: alpm
+- alpm: libcamera
+  provides: libcamera-base.so
+  source: alpm
+- alpm: darktable
+  provides: libcamera.so
+  source: alpm
+- alpm: libcamera
+  provides: libcamera-base.so
+  source: alpm
+- alpm: libevent
+  provides: libevent-2.1.so
+  source: alpm
+- alpm: libevent
+  provides: libevent_pthreads-2.1.so
+  source: alpm
+- alpm: darktable
+  provides: libjpeg.so
+  source: alpm
+- alpm: darktable
+  provides: libtiff.so
+  source: alpm
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: glib2
+  provides: libglib-2.0.so
+  source: alpm
+- alpm: glib2
+  provides: libgobject-2.0.so
+  source: alpm
+- alpm: darktable
+  provides: libcamera.so
+  source: alpm
+- alpm: libcamera
+  provides: libcamera-base.so
+  source: alpm
+- alpm: libcamera
+  source: archpkg

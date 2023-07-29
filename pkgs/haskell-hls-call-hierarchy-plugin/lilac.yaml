@@ -1,0 +1,50 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-call-hierarchy-plugin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-extra
+- haskell-ghcide
+- haskell-hiedb
+- haskell-hls-plugin-api
+- haskell-lens
+- haskell-lsp
+- haskell-sqlite-simple
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- uusi
+- haskell-ghcide-test-utils
+- haskell-hls-test-utils
+- haskell-lsp-test
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-ghcide
+  source: alpm
+- alpm: haskell-hiedb
+  source: alpm
+- alpm: haskell-hls-plugin-api
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-lsp
+  source: alpm
+- alpm: haskell-sqlite-simple
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-hls-call-hierarchy-plugin
+  source: archpkg

@@ -1,0 +1,145 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnuradio'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-jsonschema
+- python-setuptools
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- codec2
+- gcc: gcc-libs
+- glibc
+- gmp
+- gsl
+- libad9361
+- libuhd
+- libunwind
+- libvolk
+- python-click
+- python-click-plugins
+- python-mako
+- python-matplotlib
+- python-numpy
+- python-pyzmq
+- python-scipy
+- python-thrift
+- sdl12-compat
+- soapysdr
+- spdlog
+- thrift
+- codec2
+- gcc: gcc-libs
+- glibc
+- gmp
+- gsl
+- libad9361
+- libuhd
+- libunwind
+- libvolk
+- python-click
+- python-click-plugins
+- python-mako
+- python-matplotlib
+- python-numpy
+- python-pyzmq
+- python-scipy
+- python-thrift
+- sdl12-compat
+- soapysdr
+- spdlog
+- thrift
+- alsa-lib
+- boost: boost-libs
+- fftw
+- fmt
+- libiio
+- libsndfile
+- portaudio
+- spdlog
+- zeromq
+- gnuradio
+- python-cairo
+- pygobject: python-gobject
+- python-lxml
+- pyopengl: python-opengl
+- pyqt5: python-pyqt5
+- python-pyqtgraph
+- qt5-base
+- qwt
+repo_makedepends:
+- alsa-lib
+- boost
+- cmake
+- fftw
+- fmt
+- gtk3
+- libiio
+- libsndfile
+- portaudio
+- pybind11
+- python-cairo
+- pygobject: python-gobject
+- python-lxml
+- python-packaging
+- pyqt5: python-pyqt5
+- python-pyqtgraph
+- python-pytest
+- qt5-base
+- qwt
+- zeromq
+update_on:
+- alpm: gsl
+  source: alpm
+  strip_release: true
+- alpm: gsl
+  source: alpm
+  strip_release: true
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: boost
+  provides: libboost_program_options.so
+  source: alpm
+- alpm: boost
+  provides: libboost_thread.so
+  source: alpm
+- alpm: fftw
+  provides: libfftw3f.so
+  source: alpm
+- alpm: fftw
+  provides: libfftw3f_threads.so
+  source: alpm
+- alpm: fmt
+  provides: libfmt.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: libiio
+  provides: libiio.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: portaudio
+  provides: libportaudio.so
+  source: alpm
+- alpm: spdlog
+  provides: libspdlog.so
+  source: alpm
+- alpm: zeromq
+  provides: libzmq.so
+  source: alpm
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: gnuradio
+  source: archpkg

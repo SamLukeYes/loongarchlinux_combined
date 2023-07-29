@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''synergy'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- libxtst
+- libxinerama
+- libxkbcommon: libxkbcommon-x11
+- avahi
+- curl
+- openssl
+- hicolor-icon-theme
+repo_makedepends:
+- libxt
+- cmake
+- qt5-base
+- qt5-tools
+- gtest
+update_on:
+- alpm: synergy
+  source: archpkg

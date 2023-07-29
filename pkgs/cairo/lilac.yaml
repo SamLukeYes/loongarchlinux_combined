@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cairo'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- fontconfig
+- freetype2
+- glib2
+- libpng
+- libx11
+- libxcb
+- libxext
+- libxrender
+- lzo
+- pixman
+- zlib
+repo_makedepends:
+- git
+- gtk-doc
+- meson
+- valgrind
+update_on:
+- alpm: cairo
+  source: archpkg

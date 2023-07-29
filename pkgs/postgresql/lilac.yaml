@@ -1,0 +1,32 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- krb5
+- zlib
+- openldap: libldap
+- krb5
+- libxml2
+- pam
+- icu
+- systemd: systemd-libs
+- openldap: libldap
+- llvm: llvm-libs
+- libxslt
+- lz4
+- zstd
+repo_makedepends:
+- krb5
+- libxml2
+- python
+- perl
+- pam
+- zlib
+- icu
+- systemd
+- openldap: libldap
+- llvm
+- clang
+- libxslt
+- util-linux
+update_on:
+- alias: icu

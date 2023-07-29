@@ -1,0 +1,77 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-test-utils'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-async
+- haskell-blaze-markup
+- haskell-data-default
+- haskell-extra
+- haskell-ghcide
+- haskell-hls-graph
+- haskell-hls-plugin-api
+- haskell-lens
+- haskell-lsp
+- haskell-lsp-test
+- haskell-lsp-types
+- haskell-tasty
+- haskell-tasty-expected-failure
+- haskell-tasty-golden
+- haskell-tasty-hunit
+- haskell-tasty-rerun
+- haskell-temporary
+- haskell-unordered-containers
+repo_makedepends:
+- ghc
+- uusi
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-async
+  source: alpm
+- alpm: haskell-blaze-markup
+  source: alpm
+- alpm: haskell-data-default
+  source: alpm
+- alpm: haskell-extra
+  source: alpm
+- alpm: haskell-ghcide
+  source: alpm
+- alpm: haskell-hls-graph
+  source: alpm
+- alpm: haskell-hls-plugin-api
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-lsp
+  source: alpm
+- alpm: haskell-lsp-test
+  source: alpm
+- alpm: haskell-lsp-types
+  source: alpm
+- alpm: haskell-tasty
+  source: alpm
+- alpm: haskell-tasty-expected-failure
+  source: alpm
+- alpm: haskell-tasty-golden
+  source: alpm
+- alpm: haskell-tasty-hunit
+  source: alpm
+- alpm: haskell-tasty-rerun
+  source: alpm
+- alpm: haskell-temporary
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-hls-test-utils
+  source: archpkg

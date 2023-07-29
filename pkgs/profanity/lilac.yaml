@@ -1,0 +1,95 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''profanity'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- cmocka
+repo_depends:
+- expat
+- glib2
+- libotr
+- python
+- libgcrypt
+- libsignal-protocol-c
+- glibc
+- libassuan
+- libgpg-error
+- expat
+- glib2
+- libotr
+- python
+- libgcrypt
+- libsignal-protocol-c
+- glibc
+- libassuan
+- libgpg-error
+- libxss
+- libx11
+- gdk-pixbuf2
+- cairo
+repo_makedepends:
+- expat
+- glib2
+- libotr
+- python
+- libgcrypt
+- libsignal-protocol-c
+- glibc
+- libassuan
+- libgpg-error
+- libxss
+- libx11
+- gdk-pixbuf2
+- cairo
+- autoconf-archive
+update_on:
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: libnotify
+  provides: libnotify.so
+  source: alpm
+- alpm: gpgme
+  provides: libgpgme.so
+  source: alpm
+- alias: python
+- alpm: readline
+  provides: libreadline.so
+  source: alpm
+- alpm: libstrophe
+  provides: libstrophe.so
+  source: alpm
+- alpm: curl
+  provides: libcurl.so
+  source: alpm
+- alpm: ncurses
+  provides: libncursesw.so
+  source: alpm
+- alpm: libnotify
+  provides: libnotify.so
+  source: alpm
+- alpm: gpgme
+  provides: libgpgme.so
+  source: alpm
+- alias: python
+- alpm: readline
+  provides: libreadline.so
+  source: alpm
+- alpm: libstrophe
+  provides: libstrophe.so
+  source: alpm
+- alpm: gtk3
+  provides: libgtk-3.so
+  source: alpm
+- alpm: profanity
+  source: archpkg

@@ -1,0 +1,53 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- alsa-lib
+- db5.3
+- dbus
+- gcc: gcc-libs
+- glibc
+- libsamplerate
+- opus
+- systemd: systemd-libs
+- dbus
+- expat
+- gcc: gcc-libs
+- glibc
+- jack2
+repo_makedepends:
+- alsa-lib
+- db5.3
+- dbus
+- doxygen
+- expat
+- git
+- libffado
+- libsamplerate
+- opus
+- systemd
+- waf
+update_on:
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: opus
+  provides: libopus.so
+  source: alpm
+- alpm: systemd-libs
+  provides: libsystemd.so
+  source: alpm
+- alpm: dbus
+  provides: libdbus-1.so
+  source: alpm
+- alpm: expat
+  provides: libexpat.so
+  source: alpm
+- alpm: jack2
+  provides: libjackserver.so
+  source: alpm

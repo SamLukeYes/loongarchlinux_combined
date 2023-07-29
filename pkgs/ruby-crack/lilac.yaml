@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-crack'')
+
+  '
+repo_checkdepends:
+- ruby-minitest
+repo_depends:
+- ruby
+- ruby-safe_yaml
+- ruby-rexml
+repo_makedepends:
+- ruby-rdoc
+update_on:
+- alias: ruby
+- alpm: ruby-crack
+  source: archpkg

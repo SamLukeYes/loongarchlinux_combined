@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''networkmanager-fortisslvpn'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- networkmanager: libnm
+- libsecret
+- ppp
+- openfortivpn
+repo_makedepends:
+- libnma
+- libnma: libnma-gtk4
+- intltool
+- python
+- git
+update_on:
+- alpm: networkmanager-fortisslvpn
+  source: archpkg

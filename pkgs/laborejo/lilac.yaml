@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''laborejo'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- hicolor-icon-theme
+- libcalfbox-lss
+- python
+- pyqt5: python-pyqt5
+- ttf-dejavu
+repo_makedepends: []
+update_on:
+- alias: python
+- alpm: laborejo
+  source: archpkg

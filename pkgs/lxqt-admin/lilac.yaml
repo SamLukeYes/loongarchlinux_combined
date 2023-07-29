@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''lxqt-admin'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- qt5-base
+- liblxqt
+- kwindowsystem
+- polkit-qt: polkit-qt5
+repo_makedepends:
+- cmake
+- qt5-tools
+- lxqt-build-tools
+update_on:
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: lxqt-admin
+  source: archpkg

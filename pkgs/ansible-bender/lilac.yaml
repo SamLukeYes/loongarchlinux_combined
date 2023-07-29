@@ -1,0 +1,31 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ansible-bender'')
+
+  '
+repo_checkdepends:
+- python-flexmock
+- python-pytest
+repo_depends:
+- ansible
+- ansible-core
+- podman
+- buildah
+- python
+- python-jsonschema
+- python-setuptools
+- python-tabulate
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-setuptools-scm
+- python-wheel
+update_on:
+- alias: python
+- alpm: ansible-bender
+  source: archpkg

@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-color-manager'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- xorg-server: xorg-server-xvfb
+repo_depends:
+- glib2
+- gtk3
+- colord
+- lcms2
+repo_makedepends:
+- yelp-tools
+- git
+- appstream-glib
+- meson
+- docbook-utils
+- docbook-sgml
+- perl-sgmls
+update_on:
+- alpm: gnome-color-manager
+  source: archpkg

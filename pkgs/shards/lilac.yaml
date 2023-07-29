@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''shards'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- git
+- mercurial
+- fossil
+repo_depends:
+- libyaml
+- git
+- libevent
+- gc
+- pcre2
+repo_makedepends:
+- crystal
+update_on:
+- alpm: shards
+  source: archpkg

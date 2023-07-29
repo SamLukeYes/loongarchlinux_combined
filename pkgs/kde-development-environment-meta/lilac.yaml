@@ -1,0 +1,152 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kde-development-environment-meta'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- akonadi-calendar
+- akonadi-contacts
+- akonadi-mime
+- akonadi-notes
+- akonadi-search
+- attica
+- baloo
+- baloo-widgets
+- bash-completion
+- bluez-qt
+- calendarsupport
+- clang
+- cmake
+- eventviews
+- extra-cmake-modules
+- frameworkintegration
+- gcc
+- gettext
+- git
+- grantleetheme
+- incidenceeditor
+- kactivities
+- kactivities-stats
+- karchive
+- kauth
+- kbookmarks
+- kcalendarcore
+- kcalutils
+- kcmutils
+- kcodecs
+- kcompletion
+- kconfig
+- kconfigwidgets
+- kcontacts
+- kcoreaddons
+- kcrash
+- kdav
+- kdbusaddons
+- kdeclarative
+- kdelibs4support
+- kdesignerplugin
+- kdesu
+- kdnssd
+- kdoctools
+- kemoticons
+- kfilemetadata
+- kglobalaccel
+- kguiaddons
+- kholidays
+- khtml
+- ki18n
+- kiconthemes
+- kidentitymanagement
+- kidletime
+- kimap
+- kinit
+- kio
+- kirigami2
+- kitemmodels
+- kitemviews
+- kjobwidgets
+- kjs
+- kldap
+- kmailtransport
+- kmbox
+- kmime
+- knewstuff
+- knotifications
+- knotifyconfig
+- konqueror
+- kontactinterface
+- kpackage
+- kparts
+- kpeople
+- kpeoplevcard
+- kpimtextedit
+- kplotting
+- kpty
+- kquickcharts
+- kross
+- krunner
+- kservice
+- ktexteditor
+- ktextwidgets
+- ktnef
+- kunitconversion
+- kwallet
+- kwayland
+- kwidgetsaddons
+- kwindowsystem
+- kxmlgui
+- akonadi: libakonadi
+- libgravatar
+- libkcddb
+- libkcompactdisc
+- libkdcraw
+- libkdegames
+- libkdepim
+- libkexiv2
+- libkleo
+- libkmahjongg
+- libksane
+- libkscreen
+- libksieve
+- libksysguard
+- libktorrent
+- mailcommon
+- mailimporter
+- make
+- messagelib
+- modemmanager-qt
+- networkmanager-qt
+- ninja
+- pimcommon
+- plasma-framework
+- prison
+- pulseaudio-qt
+- purpose
+- qqc2-desktop-style
+- qt5-base
+- qt5-declarative
+- qt5-webengine
+- solid
+- sonnet
+- syndication
+- syntax-highlighting
+- threadweaver
+repo_makedepends: []
+update_on:
+- alias: clang
+- alpm: kconfig
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alpm: kde-development-environment-meta
+  source: archpkg

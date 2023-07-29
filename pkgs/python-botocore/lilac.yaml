@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-botocore'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-xdist
+- python-jsonschema
+- procps-ng
+repo_depends:
+- python
+- python-certifi
+- python-dateutil
+- python-jmespath
+- python-urllib3
+repo_makedepends:
+- python-setuptools
+- python-awscrt
+update_on:
+- alias: python
+- alpm: python-botocore
+  source: archpkg

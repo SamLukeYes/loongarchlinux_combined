@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-fs'')
+
+  '
+repo_checkdepends:
+- python-pytest-runner
+- fuse2
+- python-pyftpdlib
+- python-psutil
+- python-pysendfile
+- python-parameterized
+repo_depends:
+- python-appdirs
+- python-pytz
+- python-setuptools
+- python-six
+repo_makedepends: []
+update_on:
+- alpm: python-fs
+  source: archpkg

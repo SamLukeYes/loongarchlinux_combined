@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-bsb-http-chunked'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+repo_makedepends:
+- ghc
+- haskell-attoparsec
+- haskell-blaze-builder
+- haskell-hedgehog
+- haskell-tasty
+- haskell-tasty-hedgehog
+- haskell-tasty-hunit
+- haskell-doctest
+update_on:
+- alpm: haskell-bsb-http-chunked
+  source: archpkg

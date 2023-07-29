@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-ipykernel'')
+
+  '
+repo_checkdepends:
+- python-pytest-timeout
+- python-pytest-asyncio
+- python-flaky
+- python-ipyparallel
+- python-matplotlib
+- python-debugpy
+repo_depends:
+- python-comm
+- python-tornado
+- ipython
+- python-jupyter-client
+- python-psutil
+- python-nest-asyncio
+repo_makedepends:
+- python-build
+- python-installer
+- python-hatchling
+update_on:
+- alpm: python-ipykernel
+  source: archpkg

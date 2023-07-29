@@ -1,0 +1,24 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''testssl.sh'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bash
+- coreutils
+- util-linux
+- openssl
+- procps-ng
+repo_makedepends:
+- perl
+- perl-data-dump
+- perl-json
+- perl-test-base
+update_on:
+- alpm: testssl.sh
+  source: archpkg

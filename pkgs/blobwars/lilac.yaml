@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''blobwars'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- hicolor-icon-theme
+- sdl2_image
+- sdl2_mixer
+- sdl2_ttf
+- sdl2_net
+repo_makedepends:
+- sdl2_image
+- sdl2_mixer
+- sdl2_ttf
+- sdl2_net
+update_on:
+- alpm: blobwars
+  source: archpkg

@@ -1,0 +1,84 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''handbrake'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- desktop-file-utils
+- hicolor-icon-theme
+- libxml2
+- libass
+- libvorbis
+- opus
+- speex
+- libtheora
+- lame
+- x264
+- jansson
+- libvpx
+- libva
+- numactl
+- bzip2
+- gcc: gcc-libs
+- zlib
+- xz
+- libjpeg-turbo
+- gstreamer: gst-plugins-base
+- gtk3
+- librsvg
+- libgudev
+- libxml2
+- libass
+- libvorbis
+- opus
+- speex
+- libtheora
+- lame
+- x264
+- jansson
+- libvpx
+- libva
+- numactl
+- bzip2
+- gcc: gcc-libs
+- zlib
+- xz
+- libjpeg-turbo
+repo_makedepends:
+- intltool
+- python
+- nasm
+- wget
+- cmake
+- meson
+- libxml2
+- libass
+- libvorbis
+- opus
+- speex
+- libtheora
+- lame
+- x264
+- jansson
+- libvpx
+- libva
+- numactl
+- bzip2
+- gcc: gcc-libs
+- zlib
+- xz
+- libjpeg-turbo
+- gstreamer: gst-plugins-base
+- gtk3
+- librsvg
+- libgudev
+update_on:
+- alpm: handbrake
+  source: archpkg

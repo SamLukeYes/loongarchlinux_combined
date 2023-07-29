@@ -1,0 +1,13 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- lz4
+- protobuf
+- snappy
+- zlib
+- zstd
+repo_makedepends:
+- cmake
+- gtest
+update_on:
+- alias: protobuf

@@ -1,0 +1,22 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-minitest-power_assert'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ruby
+- ruby-minitest
+- ruby-power_assert
+repo_makedepends:
+- ruby-rdoc
+- ruby-rake
+- ruby-bundler
+update_on:
+- alias: ruby
+- alpm: ruby-minitest-power_assert
+  source: archpkg

@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-sphinx-jinja'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python
+- python-docutils
+- python-jinja
+- python-sphinx
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-poetry-core
+update_on:
+- alias: python
+- alpm: python-sphinx-jinja
+  source: archpkg

@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-implicit-hie'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-attoparsec
+- haskell-filepattern
+- haskell-yaml
+repo_makedepends:
+- ghc
+- haskell-hspec
+- haskell-hspec-attoparsec
+update_on:
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-filepattern
+  source: alpm
+- alpm: haskell-yaml
+  source: alpm
+- alpm: haskell-implicit-hie
+  source: archpkg

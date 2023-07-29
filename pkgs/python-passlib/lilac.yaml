@@ -1,0 +1,23 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-passlib'')
+
+  '
+repo_checkdepends:
+- python-nose
+- python-bcrypt
+- django: python-django
+- python-fastpbkdf2
+- python-scrypt
+repo_depends:
+- python
+repo_makedepends:
+- python-setuptools
+update_on:
+- alias: python
+- alpm: python-passlib
+  source: archpkg

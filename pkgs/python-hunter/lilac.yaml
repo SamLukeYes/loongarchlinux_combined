@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-hunter'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest-benchmark
+- python-virtualenv
+- python-pytest
+- gdb
+- python-process-tests
+- python-aspectlib
+repo_depends:
+- python-colorama
+- python-cymem
+- python-manhole
+repo_makedepends:
+- python-setuptools-scm
+- python-wheel
+- cython
+update_on:
+- alpm: python-hunter
+  source: archpkg

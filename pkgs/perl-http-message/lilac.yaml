@@ -1,0 +1,26 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-http-message'')
+
+  '
+repo_checkdepends:
+- perl-io-compress-brotli
+- perl-test-needs
+- perl-try-tiny
+repo_depends:
+- perl
+- perl-clone
+- perl-encode-locale
+- perl-http-date
+- perl-io-html
+- perl-lwp-mediatypes
+- perl-uri
+repo_makedepends: []
+update_on:
+- alias: perl
+- alpm: perl-http-message
+  source: archpkg

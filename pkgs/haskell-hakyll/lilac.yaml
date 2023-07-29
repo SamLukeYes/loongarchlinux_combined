@@ -1,0 +1,103 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hakyll'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-blaze-html
+- haskell-blaze-markup
+- haskell-data-default
+- haskell-file-embed
+- haskell-fsnotify
+- haskell-hashable
+- haskell-http-conduit
+- haskell-http-types
+- haskell-lifted-async
+- haskell-lrucache
+- haskell-network-uri
+- haskell-optparse-applicative
+- haskell-pandoc
+- haskell-random
+- haskell-regex-tdfa
+- haskell-resourcet
+- haskell-scientific
+- haskell-tagsoup
+- haskell-time-locale-compat
+- haskell-unordered-containers
+- haskell-vector
+- haskell-wai
+- haskell-wai-app-static
+- haskell-warp
+- haskell-yaml
+repo_makedepends:
+- ghc
+- uusi
+- haskell-quickcheck
+- haskell-tasty
+- haskell-tasty-golden
+- haskell-tasty-hunit
+- haskell-tasty-quickcheck
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-blaze-html
+  source: alpm
+- alpm: haskell-blaze-markup
+  source: alpm
+- alpm: haskell-data-default
+  source: alpm
+- alpm: haskell-file-embed
+  source: alpm
+- alpm: haskell-fsnotify
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-http-conduit
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-lifted-async
+  source: alpm
+- alpm: haskell-lrucache
+  source: alpm
+- alpm: haskell-network-uri
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-pandoc
+  source: alpm
+- alpm: haskell-random
+  source: alpm
+- alpm: haskell-regex-tdfa
+  source: alpm
+- alpm: haskell-resourcet
+  source: alpm
+- alpm: haskell-scientific
+  source: alpm
+- alpm: haskell-tagsoup
+  source: alpm
+- alpm: haskell-time-locale-compat
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-wai
+  source: alpm
+- alpm: haskell-wai-app-static
+  source: alpm
+- alpm: haskell-warp
+  source: alpm
+- alpm: haskell-yaml
+  source: alpm
+- alpm: haskell-hakyll
+  source: archpkg

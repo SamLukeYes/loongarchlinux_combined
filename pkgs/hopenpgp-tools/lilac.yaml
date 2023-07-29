@@ -1,0 +1,102 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''hopenpgp-tools'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-base16-bytestring
+- haskell-binary-conduit
+- haskell-conduit
+- haskell-conduit-extra
+- haskell-cryptonite
+- haskell-errors
+- haskell-fgl
+- haskell-graphviz
+- haskell-hopenpgp
+- haskell-http-client
+- haskell-http-client-tls
+- haskell-http-types
+- haskell-ixset-typed
+- haskell-lens
+- haskell-memory
+- haskell-monad-loops
+- haskell-openpgp-asciiarmor
+- haskell-optparse-applicative
+- haskell-prettyprinter
+- haskell-prettyprinter-ansi-terminal
+- haskell-prettyprinter-convert-ansi-wl-pprint
+- haskell-resourcet
+- haskell-time-locale-compat
+- haskell-unordered-containers
+- haskell-vector
+- haskell-yaml
+repo_makedepends:
+- alex
+- happy
+- ghc
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-base16-bytestring
+  source: alpm
+- alpm: haskell-binary-conduit
+  source: alpm
+- alpm: haskell-conduit
+  source: alpm
+- alpm: haskell-conduit-extra
+  source: alpm
+- alpm: haskell-cryptonite
+  source: alpm
+- alpm: haskell-errors
+  source: alpm
+- alpm: haskell-fgl
+  source: alpm
+- alpm: haskell-graphviz
+  source: alpm
+- alpm: haskell-hopenpgp
+  source: alpm
+- alpm: haskell-http-client
+  source: alpm
+- alpm: haskell-http-client-tls
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-ixset-typed
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-memory
+  source: alpm
+- alpm: haskell-monad-loops
+  source: alpm
+- alpm: haskell-openpgp-asciiarmor
+  source: alpm
+- alpm: haskell-optparse-applicative
+  source: alpm
+- alpm: haskell-prettyprinter
+  source: alpm
+- alpm: haskell-prettyprinter-ansi-terminal
+  source: alpm
+- alpm: haskell-prettyprinter-convert-ansi-wl-pprint
+  source: alpm
+- alpm: haskell-resourcet
+  source: alpm
+- alpm: haskell-time-locale-compat
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-vector
+  source: alpm
+- alpm: haskell-yaml
+  source: alpm
+- alpm: hopenpgp-tools
+  source: archpkg

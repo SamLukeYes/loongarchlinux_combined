@@ -1,0 +1,13 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- opencv
+- polkit-qt: polkit-qt5
+repo_makedepends:
+- cmake
+- ninja
+- qt5-tools
+update_on:
+- alpm: opencv
+  source: alpm
+  strip_release: true

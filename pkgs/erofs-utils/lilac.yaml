@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''erofs-utils'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- glibc
+- lz4
+- glibc
+- lz4
+- util-linux
+- xz
+repo_makedepends:
+- fuse2
+- util-linux
+- xz
+update_on:
+- alpm: util-linux-libs
+  provides: libuuid.so
+  source: alpm
+- alpm: xz
+  provides: liblzma.so
+  source: alpm
+- alpm: erofs-utils
+  source: archpkg

@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gnome-calculator'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- dconf
+- gtksourceview5
+- libadwaita
+- libgee
+- libmpc
+- libsoup3
+- mpfr
+repo_makedepends:
+- git
+- gobject-introspection
+- meson
+- vala
+- yelp-tools
+update_on:
+- alpm: gnome-calculator
+  source: archpkg

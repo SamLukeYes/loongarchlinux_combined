@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-quart-cors'')
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-pytest-asyncio
+- python-pytest-cov
+- python-pytest-sugar
+- python-tox
+repo_depends:
+- python
+- python-quart
+repo_makedepends:
+- git
+- python-build
+- python-installer
+- python-poetry-core
+update_on:
+- alias: python
+- alpm: python-quart-cors
+  source: archpkg

@@ -1,0 +1,19 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- xz
+- ncurses
+- expat
+- python
+- guile
+- gdb: gdb-common
+- mpfr
+- elfutils: libelf
+- source-highlight
+repo_makedepends:
+- boost
+update_on:
+- alias: python
+- alpm: guile
+  source: alpm
+  strip_release: true

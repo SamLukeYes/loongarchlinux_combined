@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''plantuml-server'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- bash
+- bash
+repo_makedepends:
+- maven
+update_on:
+- alpm: plantuml-server
+  source: archpkg

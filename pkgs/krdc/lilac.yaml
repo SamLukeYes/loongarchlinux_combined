@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''krdc'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kcmutils
+- kdnssd
+- knotifyconfig
+- kactivities
+repo_makedepends:
+- extra-cmake-modules
+- libvncserver
+- freerdp
+- kdoctools
+update_on:
+- alpm: krdc
+  source: archpkg

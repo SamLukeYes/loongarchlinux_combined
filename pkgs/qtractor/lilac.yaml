@@ -1,0 +1,101 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qtractor'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- libmad
+- libxcb
+- qt6-base
+- qt6-svg
+- zlib
+- gcc: gcc-libs
+- glibc
+- hicolor-icon-theme
+- libmad
+- libxcb
+- qt6-base
+- qt6-svg
+- zlib
+- alsa-lib
+- aubio
+- liblo
+- libogg
+- libsamplerate
+- libsndfile
+- libvorbis
+- lilv
+- rubberband
+repo_makedepends:
+- alsa-lib
+- aubio
+- clap
+- cmake
+- dssi
+- ladspa
+- liblo
+- libogg
+- libsamplerate
+- libsndfile
+- libvorbis
+- lilv
+- lv2
+- qt6-tools
+- rubberband
+- suil
+- vst3sdk
+update_on:
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: qt6-base
+  source: alpm
+  strip_release: true
+- alpm: alsa-lib
+  provides: libasound.so
+  source: alpm
+- alpm: aubio
+  provides: libaubio.so
+  source: alpm
+- alpm: jack2
+  provides: libjack.so
+  source: alpm
+- alpm: liblo
+  provides: liblo.so
+  source: alpm
+- alpm: libogg
+  provides: libogg.so
+  source: alpm
+- alpm: libsamplerate
+  provides: libsamplerate.so
+  source: alpm
+- alpm: libsndfile
+  provides: libsndfile.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbisenc.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbisfile.so
+  source: alpm
+- alpm: libvorbis
+  provides: libvorbis.so
+  source: alpm
+- alpm: lilv
+  provides: liblilv-0.so
+  source: alpm
+- alpm: rubberband
+  provides: librubberband.so
+  source: alpm
+- alpm: qtractor
+  source: archpkg

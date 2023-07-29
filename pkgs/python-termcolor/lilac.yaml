@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-termcolor'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python
+repo_makedepends:
+- python-build
+- python-installer
+- python-hatch-vcs
+update_on:
+- alias: python
+- alpm: python-termcolor
+  source: archpkg

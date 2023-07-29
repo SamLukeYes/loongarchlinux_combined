@@ -1,0 +1,21 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-data-random'')
+
+  '
+repo_checkdepends:
+- perl-test-pod
+- perl-test-pod-coverage
+repo_depends:
+- perl-gd
+- perl-yaml-tiny
+repo_makedepends:
+- perl-file-sharedir-install
+- perl-test-mocktime
+update_on:
+- alpm: perl-data-random
+  source: archpkg

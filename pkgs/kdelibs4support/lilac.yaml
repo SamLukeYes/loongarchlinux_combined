@@ -1,0 +1,29 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kdelibs4support'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- kunitconversion
+- kitemmodels
+- kemoticons
+- kparts
+- perl
+repo_makedepends:
+- extra-cmake-modules
+- kdoctools
+- qt5-tools
+- networkmanager
+- perl-uri
+- kdesignerplugin
+update_on:
+- alias: perl
+- alpm: kdelibs4support
+  source: archpkg

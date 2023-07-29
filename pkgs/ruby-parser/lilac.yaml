@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-parser'')
+
+  '
+repo_checkdepends:
+- ruby-simplecov
+repo_depends:
+- ruby-ast
+repo_makedepends:
+- ragel
+- ruby-rake
+update_on:
+- alpm: ruby-parser
+  source: archpkg

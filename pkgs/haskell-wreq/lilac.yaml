@@ -1,0 +1,98 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wreq'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ghc: ghc-libs
+- haskell-aeson
+- haskell-attoparsec
+- haskell-authenticate-oauth
+- haskell-base16-bytestring
+- haskell-case-insensitive
+- haskell-cryptonite
+- haskell-hashable
+- haskell-http-client
+- haskell-http-client-tls
+- haskell-http-types
+- haskell-lens
+- haskell-lens-aeson
+- haskell-memory
+- haskell-mime-types
+- haskell-psqueues
+- haskell-time-locale-compat
+- haskell-unordered-containers
+- haskell-aeson-pretty
+- haskell-base64-bytestring
+- haskell-snap-core
+- haskell-snap-server
+- haskell-unix-compat
+- haskell-uuid
+repo_makedepends:
+- ghc
+- haskell-cabal-doctest
+- haskell-doctest
+- haskell-hunit
+- haskell-quickcheck
+- haskell-network-info
+- haskell-temporary
+- haskell-test-framework
+- haskell-test-framework-hunit
+- haskell-test-framework-quickcheck2
+- haskell-vector
+update_on:
+- alpm: haskell-aeson
+  source: alpm
+- alpm: haskell-attoparsec
+  source: alpm
+- alpm: haskell-authenticate-oauth
+  source: alpm
+- alpm: haskell-base16-bytestring
+  source: alpm
+- alpm: haskell-case-insensitive
+  source: alpm
+- alpm: haskell-cryptonite
+  source: alpm
+- alpm: haskell-hashable
+  source: alpm
+- alpm: haskell-http-client
+  source: alpm
+- alpm: haskell-http-client-tls
+  source: alpm
+- alpm: haskell-http-types
+  source: alpm
+- alpm: haskell-lens
+  source: alpm
+- alpm: haskell-lens-aeson
+  source: alpm
+- alpm: haskell-memory
+  source: alpm
+- alpm: haskell-mime-types
+  source: alpm
+- alpm: haskell-psqueues
+  source: alpm
+- alpm: haskell-time-locale-compat
+  source: alpm
+- alpm: haskell-unordered-containers
+  source: alpm
+- alpm: haskell-aeson-pretty
+  source: alpm
+- alpm: haskell-base64-bytestring
+  source: alpm
+- alpm: haskell-snap-core
+  source: alpm
+- alpm: haskell-snap-server
+  source: alpm
+- alpm: haskell-unix-compat
+  source: alpm
+- alpm: haskell-uuid
+  source: alpm
+- alpm: haskell-wreq
+  source: archpkg

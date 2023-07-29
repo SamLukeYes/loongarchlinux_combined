@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''rofimoji'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- python-configargparse
+repo_makedepends:
+- python-build
+- python-installer
+- python-poetry-core
+update_on:
+- alpm: rofimoji
+  source: archpkg

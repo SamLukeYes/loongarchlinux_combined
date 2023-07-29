@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''python-geoipsets'')
+
+  '
+repo_checkdepends:
+- python-pytest
+repo_depends:
+- python-requests
+- python-beautifulsoup4
+repo_makedepends:
+- python-setuptools
+update_on:
+- alpm: python-geoipsets
+  source: archpkg

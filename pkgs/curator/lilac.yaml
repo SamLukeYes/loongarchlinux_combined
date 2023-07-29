@@ -1,0 +1,50 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''curator'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- python-pytest
+- python-mock
+repo_depends:
+- python
+- python-elasticsearch
+- python-elasticsearch
+- python-boto3
+- python-requests-aws4auth
+- python-click
+- python-urllib3
+- python-yaml
+- python-voluptuous
+- python-certifi
+- python-six
+- xz
+- mpdecimal
+- python
+- curator: python-elasticsearch-curator
+repo_makedepends:
+- python
+- python-setuptools
+- python-elasticsearch
+- python-boto3
+- python-requests-aws4auth
+- python-click
+- python-urllib3
+- python-yaml
+- python-voluptuous
+- python-certifi
+- python-six
+- python-sphinx
+- xz
+- mpdecimal
+update_on:
+- alias: python
+- alias: python
+- alpm: curator
+  source: archpkg

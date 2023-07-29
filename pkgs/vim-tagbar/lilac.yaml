@@ -1,0 +1,16 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''vim-tagbar'')
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ctags
+repo_makedepends: []
+update_on:
+- alpm: vim-tagbar
+  source: archpkg

@@ -1,0 +1,36 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''bluez'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- libical
+- dbus
+- glib2
+- alsa-lib
+- json-c
+- dbus
+- systemd
+- glib2
+- glibc
+- cups
+- systemd
+- systemd
+repo_makedepends:
+- dbus
+- libical
+- systemd
+- alsa-lib
+- json-c
+- ell
+- python-docutils
+update_on:
+- alpm: bluez
+  source: archpkg

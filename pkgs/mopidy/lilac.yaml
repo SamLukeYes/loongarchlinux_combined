@@ -1,0 +1,32 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mopidy'')
+
+  '
+repo_checkdepends:
+- pygobject: python-gobject
+- python-pytest
+- python-responses
+repo_depends:
+- python
+- python-pykka
+- python-requests
+- gstreamer
+- python-setuptools
+- gstreamer: gst-python
+- gstreamer: gst-plugins-good
+- gstreamer: gst-plugins-ugly
+- python-tornado
+- gstreamer: gst-plugins-base
+repo_makedepends:
+- python-sphinx
+- python-sphinx_rtd_theme
+- git
+update_on:
+- alias: python
+- alpm: mopidy
+  source: archpkg

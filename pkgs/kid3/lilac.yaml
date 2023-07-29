@@ -1,0 +1,59 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''kid3'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- chromaprint
+- flac
+- id3lib
+- kxmlgui
+- libmp4v2
+- qt5-declarative
+- qt5-multimedia
+- taglib
+- kio
+- chromaprint
+- flac
+- id3lib
+- libmp4v2
+- libvorbis
+- qt5-base
+- taglib
+- kid3: kid3-common
+- qt5-declarative
+- qt5-multimedia
+- kid3: kid3-common
+- kxmlgui
+- qt5-declarative
+- qt5-multimedia
+- kio
+repo_makedepends:
+- cmake
+- docbook-xsl
+- extra-cmake-modules
+- kdoctools
+- python
+- qt5-tools
+update_on:
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alpm: qt5-base
+  source: alpm
+  strip_release: true
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
+- alpm: kid3
+  source: archpkg

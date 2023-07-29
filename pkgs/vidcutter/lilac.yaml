@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''vidcutter'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- ffmpeg
+- mediainfo
+- mpv
+- pyopengl: python-opengl
+- pyqt5: python-pyqt5
+- python-simplejson
+repo_makedepends:
+- python-setuptools
+- cython
+update_on:
+- alpm: vidcutter
+  source: archpkg

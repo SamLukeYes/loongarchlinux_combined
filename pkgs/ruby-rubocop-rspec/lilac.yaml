@@ -1,0 +1,25 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rubocop-rspec'')
+
+  '
+repo_checkdepends:
+- ruby-bump
+- ruby-parallel
+- ruby-rack
+- ruby-rspec
+- ruby-rubocop-performance
+- ruby-rubocop-rake
+- ruby-yard
+repo_depends:
+- ruby
+- rubocop
+repo_makedepends: []
+update_on:
+- alias: ruby
+- alpm: ruby-rubocop-rspec
+  source: archpkg

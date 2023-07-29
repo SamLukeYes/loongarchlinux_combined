@@ -1,0 +1,27 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''mate-settings-daemon'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends: []
+repo_depends:
+- dbus-glib
+- libcanberra
+- libmatekbd
+- libmatemixer
+- libnotify
+- mate-desktop
+- nss
+- polkit
+- gettext
+repo_makedepends:
+- python
+update_on:
+- alpm: mate-settings-daemon
+  source: archpkg

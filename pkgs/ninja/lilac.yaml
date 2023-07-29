@@ -1,0 +1,9 @@
+destsubdir: extra
+repo_checkdepends: []
+repo_depends:
+- gcc: gcc-libs
+repo_makedepends:
+- python
+- re2c
+- emacs: emacs-nox
+update_on: []

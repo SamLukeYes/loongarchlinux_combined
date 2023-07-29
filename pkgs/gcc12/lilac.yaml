@@ -1,0 +1,41 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gcc12'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_checkdepends:
+- dejagnu
+- expect
+- inetutils
+- python-pytest
+- tcl
+repo_depends:
+- gcc12: gcc12-libs
+- libmpc
+- zstd
+- gcc12
+repo_makedepends:
+- binutils
+- doxygen
+- gcc-ada
+- gcc-d
+- git
+- libisl
+- libmpc
+- python
+- zstd
+update_on:
+- alpm: libisl
+  provides: libisl.so
+  source: alpm
+- alpm: libisl
+  provides: libisl.so
+  source: alpm
+- alpm: gcc12
+  source: archpkg
