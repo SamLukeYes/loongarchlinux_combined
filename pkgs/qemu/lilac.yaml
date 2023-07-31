@@ -9,54 +9,37 @@ repo_depends:
 - numactl
 - alsa-lib
 - glibc
-- qemu: qemu-common
 - gcc: gcc-libs
 - glib2
 - glibc
-- qemu: qemu-common
 - glibc
-- qemu: qemu-common
 - glibc
-- qemu: qemu-common
 - glibc
 - pulseaudio: libpulse
-- qemu: qemu-common
 - glibc
-- qemu: qemu-common
 - sdl2
 - glibc
-- qemu: qemu-common
-- qemu: qemu-ui-spice-core
 - spice
 - curl
 - gcc: gcc-libs
 - glibc
-- qemu: qemu-common
 - bzip2
 - glibc
-- qemu: qemu-common
 - glibc
 - glusterfs
-- qemu: qemu-common
 - gcc: gcc-libs
 - glibc
 - libiscsi
-- qemu: qemu-common
 - gcc: gcc-libs
 - glibc
 - libnfs
-- qemu: qemu-common
 - gcc: gcc-libs
 - glibc
 - libssh
-- qemu: qemu-common
 - brltty
 - gcc: gcc-libs
 - glibc
-- qemu: qemu-common
 - glibc
-- qemu: qemu-common
-- qemu: qemu-ui-spice-core
 - gcc: gcc-libs
 - glib2
 - glibc
@@ -66,32 +49,20 @@ repo_depends:
 - gcc: gcc-libs
 - glibc
 - pixman
-- qemu: qemu-common
-- qemu: qemu-ui-spice-core
 - spice
 - glibc
 - pixman
-- qemu: qemu-common
 - glibc
-- qemu: qemu-common
 - virglrenderer
-- qemu: qemu-common
-- qemu: qemu-common
-- qemu: qemu-common
-- qemu: qemu-common
-- qemu: qemu-common
 - glibc
 - libusb
-- qemu: qemu-common
 - gcc: gcc-libs
 - glibc
-- qemu: qemu-common
 - usbredir
 - gcc: gcc-libs
 - libcacard
 - glib2
 - glibc
-- qemu: qemu-common
 - fuse3
 - gcc: gcc-libs
 - glib2
@@ -112,7 +83,6 @@ repo_depends:
 - multipath-tools
 - numactl
 - pam
-- qemu: qemu-common
 - systemd: systemd-libs
 - capstone
 - dtc
@@ -136,7 +106,6 @@ repo_depends:
 - numactl
 - pam
 - pixman
-- qemu: qemu-common
 - snappy
 - vde2
 - zlib
@@ -165,12 +134,10 @@ repo_depends:
 - numactl
 - pam
 - pixman
-- qemu: qemu-common
 - snappy
 - vde2
 - zlib
 - zstd
-- qemu: qemu-system-alpha-firmware
 - systemd: systemd-libs
 - capstone
 - dtc
@@ -194,13 +161,11 @@ repo_depends:
 - numactl
 - pam
 - pixman
-- qemu: qemu-common
 - snappy
 - vde2
 - zlib
 - zstd
 - edk2: edk2-arm
-- qemu: qemu-system-arm-firmware
 - systemd: systemd-libs
 - capstone
 - dtc
@@ -224,7 +189,6 @@ repo_depends:
 - numactl
 - pam
 - pixman
-- qemu: qemu-common
 - snappy
 - vde2
 - zlib
@@ -251,7 +215,6 @@ repo_depends:
 - numactl
 - pam
 - pixman
-- qemu: qemu-common
 - snappy
 - vde2
 - zlib
@@ -278,36 +241,6 @@ repo_depends:
 - numactl
 - pam
 - pixman
-- qemu: qemu-common
-- snappy
-- vde2
-- zlib
-- zstd
-- qemu: qemu-system-hppa-firmware
-- systemd: systemd-libs
-- capstone
-- dtc
-- fuse3
-- gcc: gcc-libs
-- glibc
-- glib2
-- gnutls
-- keyutils
-- libaio
-- elfutils: libelf
-- libbpf
-- libjpeg-turbo
-- libpng
-- libsasl
-- libseccomp
-- libslirp
-- liburing
-- lzo
-- ndctl
-- numactl
-- pam
-- pixman
-- qemu: qemu-common
 - snappy
 - vde2
 - zlib
@@ -335,62 +268,6 @@ repo_depends:
 - numactl
 - pam
 - pixman
-- qemu: qemu-common
-- snappy
-- vde2
-- zlib
-- zstd
-- capstone
-- dtc
-- fuse3
-- gcc: gcc-libs
-- glibc
-- glib2
-- gnutls
-- keyutils
-- libaio
-- elfutils: libelf
-- libbpf
-- libjpeg-turbo
-- libpng
-- libsasl
-- libseccomp
-- libslirp
-- liburing
-- lzo
-- ndctl
-- numactl
-- pam
-- pixman
-- qemu: qemu-common
-- snappy
-- vde2
-- zlib
-- zstd
-- qemu: qemu-system-microblaze-firmware
-- capstone
-- dtc
-- fuse3
-- gcc: gcc-libs
-- glibc
-- glib2
-- gnutls
-- keyutils
-- libaio
-- elfutils: libelf
-- libbpf
-- libjpeg-turbo
-- libpng
-- libsasl
-- libseccomp
-- libslirp
-- liburing
-- lzo
-- ndctl
-- numactl
-- pam
-- pixman
-- qemu: qemu-common
 - snappy
 - vde2
 - zlib
@@ -418,7 +295,6 @@ repo_depends:
 - numactl
 - pam
 - pixman
-- qemu: qemu-common
 - snappy
 - vde2
 - zlib
@@ -445,93 +321,6 @@ repo_depends:
 - numactl
 - pam
 - pixman
-- qemu: qemu-common
-- snappy
-- vde2
-- zlib
-- zstd
-- systemd: systemd-libs
-- capstone
-- dtc
-- fuse3
-- gcc: gcc-libs
-- glibc
-- glib2
-- gnutls
-- keyutils
-- libaio
-- elfutils: libelf
-- libbpf
-- libjpeg-turbo
-- libpng
-- libsasl
-- libseccomp
-- libslirp
-- liburing
-- lzo
-- ndctl
-- numactl
-- pam
-- pixman
-- qemu: qemu-common
-- snappy
-- vde2
-- zlib
-- zstd
-- qemu: qemu-system-ppc-firmware
-- systemd: systemd-libs
-- capstone
-- dtc
-- fuse3
-- gcc: gcc-libs
-- glibc
-- glib2
-- gnutls
-- keyutils
-- libaio
-- elfutils: libelf
-- libbpf
-- libjpeg-turbo
-- libpng
-- libsasl
-- libseccomp
-- libslirp
-- liburing
-- lzo
-- ndctl
-- numactl
-- pam
-- pixman
-- qemu: qemu-common
-- snappy
-- vde2
-- zlib
-- zstd
-- qemu: qemu-system-riscv-firmware
-- systemd: systemd-libs
-- capstone
-- dtc
-- fuse3
-- gcc: gcc-libs
-- glibc
-- glib2
-- gnutls
-- keyutils
-- libaio
-- elfutils: libelf
-- libbpf
-- libjpeg-turbo
-- libpng
-- libsasl
-- libseccomp
-- libslirp
-- liburing
-- lzo
-- ndctl
-- numactl
-- pam
-- pixman
-- qemu: qemu-common
 - snappy
 - vde2
 - zlib
@@ -558,35 +347,6 @@ repo_depends:
 - numactl
 - pam
 - pixman
-- qemu: qemu-common
-- snappy
-- vde2
-- zlib
-- zstd
-- qemu: qemu-system-s390x-firmware
-- capstone
-- dtc
-- fuse3
-- gcc: gcc-libs
-- glibc
-- glib2
-- gnutls
-- keyutils
-- libaio
-- elfutils: libelf
-- libbpf
-- libjpeg-turbo
-- libpng
-- libsasl
-- libseccomp
-- libslirp
-- liburing
-- lzo
-- ndctl
-- numactl
-- pam
-- pixman
-- qemu: qemu-common
 - snappy
 - vde2
 - zlib
@@ -614,12 +374,36 @@ repo_depends:
 - numactl
 - pam
 - pixman
-- qemu: qemu-common
 - snappy
 - vde2
 - zlib
 - zstd
-- qemu: qemu-system-sparc-firmware
+- capstone
+- dtc
+- fuse3
+- gcc: gcc-libs
+- glibc
+- glib2
+- gnutls
+- keyutils
+- libaio
+- elfutils: libelf
+- libbpf
+- libjpeg-turbo
+- libpng
+- libsasl
+- libseccomp
+- libslirp
+- liburing
+- lzo
+- ndctl
+- numactl
+- pam
+- pixman
+- snappy
+- vde2
+- zlib
+- zstd
 - systemd: systemd-libs
 - capstone
 - dtc
@@ -643,7 +427,60 @@ repo_depends:
 - numactl
 - pam
 - pixman
-- qemu: qemu-common
+- snappy
+- vde2
+- zlib
+- zstd
+- systemd: systemd-libs
+- capstone
+- dtc
+- fuse3
+- gcc: gcc-libs
+- glibc
+- glib2
+- gnutls
+- keyutils
+- libaio
+- elfutils: libelf
+- libbpf
+- libjpeg-turbo
+- libpng
+- libsasl
+- libseccomp
+- libslirp
+- liburing
+- lzo
+- ndctl
+- numactl
+- pam
+- pixman
+- snappy
+- vde2
+- zlib
+- zstd
+- systemd: systemd-libs
+- capstone
+- dtc
+- fuse3
+- gcc: gcc-libs
+- glibc
+- glib2
+- gnutls
+- keyutils
+- libaio
+- elfutils: libelf
+- libbpf
+- libjpeg-turbo
+- libpng
+- libsasl
+- libseccomp
+- libslirp
+- liburing
+- lzo
+- ndctl
+- numactl
+- pam
+- pixman
 - snappy
 - vde2
 - zlib
@@ -670,13 +507,117 @@ repo_depends:
 - numactl
 - pam
 - pixman
-- qemu: qemu-common
+- snappy
+- vde2
+- zlib
+- zstd
+- capstone
+- dtc
+- fuse3
+- gcc: gcc-libs
+- glibc
+- glib2
+- gnutls
+- keyutils
+- libaio
+- elfutils: libelf
+- libbpf
+- libjpeg-turbo
+- libpng
+- libsasl
+- libseccomp
+- libslirp
+- liburing
+- lzo
+- ndctl
+- numactl
+- pam
+- pixman
+- snappy
+- vde2
+- zlib
+- zstd
+- systemd: systemd-libs
+- capstone
+- dtc
+- fuse3
+- gcc: gcc-libs
+- glibc
+- glib2
+- gnutls
+- keyutils
+- libaio
+- elfutils: libelf
+- libbpf
+- libjpeg-turbo
+- libpng
+- libsasl
+- libseccomp
+- libslirp
+- liburing
+- lzo
+- ndctl
+- numactl
+- pam
+- pixman
+- snappy
+- vde2
+- zlib
+- zstd
+- systemd: systemd-libs
+- capstone
+- dtc
+- fuse3
+- gcc: gcc-libs
+- glibc
+- glib2
+- gnutls
+- keyutils
+- libaio
+- elfutils: libelf
+- libbpf
+- libjpeg-turbo
+- libpng
+- libsasl
+- libseccomp
+- libslirp
+- liburing
+- lzo
+- ndctl
+- numactl
+- pam
+- pixman
+- snappy
+- vde2
+- zlib
+- zstd
+- capstone
+- dtc
+- fuse3
+- gcc: gcc-libs
+- glibc
+- glib2
+- gnutls
+- keyutils
+- libaio
+- elfutils: libelf
+- libbpf
+- libjpeg-turbo
+- libpng
+- libsasl
+- libseccomp
+- libslirp
+- liburing
+- lzo
+- ndctl
+- numactl
+- pam
+- pixman
 - snappy
 - vde2
 - zlib
 - zstd
 - edk2: edk2-ovmf
-- qemu: qemu-system-x86-firmware
 - seabios
 - systemd: systemd-libs
 - capstone
@@ -701,13 +642,11 @@ repo_depends:
 - numactl
 - pam
 - pixman
-- qemu: qemu-common
 - snappy
 - vde2
 - zlib
 - zstd
 - systemd: systemd-libs
-- qemu: qemu-common
 - curl
 - gcc: gcc-libs
 - glib2
@@ -715,22 +654,17 @@ repo_depends:
 - libxkbcommon
 - numactl
 - python
-- qemu: qemu-common
 - gcc: gcc-libs
 - glib2
 - glibc
 - ncurses
-- qemu: qemu-common
 - gcc: gcc-libs
 - glib2
 - glibc
 - libepoxy
 - pixman
-- qemu: qemu-common
 - glibc
 - libepoxy
-- qemu: qemu-common
-- qemu: qemu-ui-opengl
 - cairo
 - gdk-pixbuf2
 - glib2
@@ -739,32 +673,23 @@ repo_depends:
 - libepoxy
 - libx11
 - pixman
-- qemu: qemu-common
-- qemu: qemu-ui-opengl
 - vte3
 - gcc: gcc-libs
 - glibc
 - libepoxy
 - mesa
 - pixman
-- qemu: qemu-common
 - glib2
 - glibc
 - libx11
 - pixman
-- qemu: qemu-common
 - sdl2_image
 - sdl2
 - glib2
 - glibc
-- qemu: qemu-common
-- qemu: qemu-chardev-spice
-- qemu: qemu-ui-spice-core
 - gcc: gcc-libs
 - glibc
 - pixman
-- qemu: qemu-common
-- qemu: qemu-ui-opengl
 - spice
 - capstone
 - gcc: gcc-libs
@@ -774,11 +699,8 @@ repo_depends:
 - elfutils: libelf
 - liburing
 - numactl
-- qemu: qemu-common
 - zlib
-- qemu: qemu-user
 - glibc
-- qemu: qemu-user-static
 - gcc: gcc-libs
 - glib2
 - glibc
@@ -786,157 +708,9 @@ repo_depends:
 - libepoxy
 - mesa
 - numactl
-- qemu: qemu-common
 - virglrenderer
-- qemu: qemu-common
-- qemu: qemu-audio-spice
-- qemu: qemu-block-curl
-- qemu: qemu-block-dmg
-- qemu: qemu-block-nfs
-- qemu: qemu-block-ssh
-- qemu: qemu-chardev-spice
-- qemu: qemu-hw-display-qxl
-- qemu: qemu-hw-display-virtio-gpu
-- qemu: qemu-hw-display-virtio-gpu-gl
-- qemu: qemu-hw-display-virtio-gpu-pci
-- qemu: qemu-hw-display-virtio-gpu-pci-gl
-- qemu: qemu-hw-display-virtio-vga
-- qemu: qemu-hw-display-virtio-vga-gl
-- qemu: qemu-hw-s390x-virtio-gpu-ccw
-- qemu: qemu-hw-usb-host
-- qemu: qemu-hw-usb-redirect
-- qemu: qemu-hw-usb-smartcard
-- qemu: qemu-img
-- qemu: qemu-pr-helper
-- qemu: qemu-system-x86
-- qemu: qemu-tools
-- qemu: qemu-ui-curses
-- qemu: qemu-ui-spice-app
-- qemu: qemu-ui-spice-core
 - virtiofsd
-- qemu: qemu-common
-- qemu: qemu-audio-alsa
-- qemu: qemu-audio-dbus
-- qemu: qemu-audio-jack
-- qemu: qemu-audio-oss
-- qemu: qemu-audio-pa
-- qemu: qemu-audio-sdl
-- qemu: qemu-audio-spice
-- qemu: qemu-block-curl
-- qemu: qemu-block-dmg
-- qemu: qemu-block-nfs
-- qemu: qemu-block-ssh
-- qemu: qemu-chardev-spice
-- qemu: qemu-hw-display-qxl
-- qemu: qemu-hw-display-virtio-gpu
-- qemu: qemu-hw-display-virtio-gpu-gl
-- qemu: qemu-hw-display-virtio-gpu-pci
-- qemu: qemu-hw-display-virtio-gpu-pci-gl
-- qemu: qemu-hw-display-virtio-vga
-- qemu: qemu-hw-display-virtio-vga-gl
-- qemu: qemu-hw-s390x-virtio-gpu-ccw
-- qemu: qemu-hw-usb-host
-- qemu: qemu-hw-usb-redirect
-- qemu: qemu-hw-usb-smartcard
-- qemu: qemu-img
-- qemu: qemu-pr-helper
-- qemu: qemu-system-x86
-- qemu: qemu-tools
-- qemu: qemu-ui-curses
-- qemu: qemu-ui-dbus
-- qemu: qemu-ui-egl-headless
-- qemu: qemu-ui-gtk
-- qemu: qemu-ui-opengl
-- qemu: qemu-ui-sdl
-- qemu: qemu-ui-spice-app
-- qemu: qemu-ui-spice-core
-- qemu: qemu-vhost-user-gpu
 - virtiofsd
-- qemu: qemu-system-aarch64
-- qemu: qemu-system-alpha
-- qemu: qemu-system-arm
-- qemu: qemu-system-avr
-- qemu: qemu-system-cris
-- qemu: qemu-system-hppa
-- qemu: qemu-system-loongarch64
-- qemu: qemu-system-m68k
-- qemu: qemu-system-microblaze
-- qemu: qemu-system-mips
-- qemu: qemu-system-nios2
-- qemu: qemu-system-or1k
-- qemu: qemu-system-ppc
-- qemu: qemu-system-riscv
-- qemu: qemu-system-rx
-- qemu: qemu-system-s390x
-- qemu: qemu-system-sh4
-- qemu: qemu-system-sparc
-- qemu: qemu-system-tricore
-- qemu: qemu-system-x86
-- qemu: qemu-system-xtensa
-- qemu: qemu-user
-- qemu: qemu-common
-- qemu: qemu-audio-alsa
-- qemu: qemu-audio-dbus
-- qemu: qemu-audio-jack
-- qemu: qemu-audio-oss
-- qemu: qemu-audio-pa
-- qemu: qemu-audio-sdl
-- qemu: qemu-audio-spice
-- qemu: qemu-block-curl
-- qemu: qemu-block-dmg
-- qemu: qemu-block-gluster
-- qemu: qemu-block-iscsi
-- qemu: qemu-block-nfs
-- qemu: qemu-block-ssh
-- qemu: qemu-chardev-baum
-- qemu: qemu-chardev-spice
-- qemu: qemu-docs
-- qemu: qemu-hw-display-qxl
-- qemu: qemu-hw-display-virtio-gpu
-- qemu: qemu-hw-display-virtio-gpu-gl
-- qemu: qemu-hw-display-virtio-gpu-pci
-- qemu: qemu-hw-display-virtio-gpu-pci-gl
-- qemu: qemu-hw-display-virtio-vga
-- qemu: qemu-hw-display-virtio-vga-gl
-- qemu: qemu-hw-s390x-virtio-gpu-ccw
-- qemu: qemu-hw-usb-host
-- qemu: qemu-hw-usb-redirect
-- qemu: qemu-hw-usb-smartcard
-- qemu: qemu-img
-- qemu: qemu-pr-helper
-- qemu: qemu-system-aarch64
-- qemu: qemu-system-alpha
-- qemu: qemu-system-arm
-- qemu: qemu-system-avr
-- qemu: qemu-system-cris
-- qemu: qemu-system-hppa
-- qemu: qemu-system-loongarch64
-- qemu: qemu-system-m68k
-- qemu: qemu-system-microblaze
-- qemu: qemu-system-mips
-- qemu: qemu-system-nios2
-- qemu: qemu-system-or1k
-- qemu: qemu-system-ppc
-- qemu: qemu-system-riscv
-- qemu: qemu-system-rx
-- qemu: qemu-system-s390x
-- qemu: qemu-system-sh4
-- qemu: qemu-system-sparc
-- qemu: qemu-system-tricore
-- qemu: qemu-system-x86
-- qemu: qemu-system-xtensa
-- qemu: qemu-tests
-- qemu: qemu-tools
-- qemu: qemu-ui-curses
-- qemu: qemu-ui-dbus
-- qemu: qemu-ui-egl-headless
-- qemu: qemu-ui-gtk
-- qemu: qemu-ui-opengl
-- qemu: qemu-ui-sdl
-- qemu: qemu-ui-spice-app
-- qemu: qemu-ui-spice-core
-- qemu: qemu-user
-- qemu: qemu-vhost-user-gpu
 - virtiofsd
 repo_makedepends:
 - alsa-lib

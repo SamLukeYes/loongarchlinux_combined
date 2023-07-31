@@ -6,7 +6,6 @@ repo_depends:
 - gcc: gcc-libs
 - glib2
 - zlib
-- libproxy
 - webkit2gtk
 repo_makedepends:
 - cmake

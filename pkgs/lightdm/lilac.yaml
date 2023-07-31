@@ -22,7 +22,6 @@ repo_depends:
 - xorg-server
 - xorg-xmodmap
 - xorg-xrdb
-- lightdm
 - qt5-base
 repo_makedepends:
 - glib2

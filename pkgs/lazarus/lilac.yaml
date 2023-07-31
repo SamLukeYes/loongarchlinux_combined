@@ -14,10 +14,8 @@ repo_depends:
 - fpc
 - fpc-src
 - gdb
-- lazarus
 - desktop-file-utils
 - gtk2
-- lazarus
 - qt5pas
 repo_makedepends:
 - fpc

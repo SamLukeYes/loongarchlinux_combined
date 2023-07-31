@@ -19,7 +19,6 @@ repo_depends:
 - libxml2
 - libsoup3
 - json-glib
-- librest
 - libadwaita
 - gtksourceview5
 repo_makedepends:

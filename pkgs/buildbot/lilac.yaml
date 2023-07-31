@@ -23,7 +23,6 @@ repo_checkdepends:
 - openssh
 - chromium
 repo_depends:
-- buildbot: buildbot-common
 - python
 - python-twisted
 - python-jinja
@@ -37,7 +36,6 @@ repo_depends:
 - python-pyjwt
 - python-yaml
 - python-setuptools
-- buildbot: buildbot-common
 - python
 - python-twisted
 - python-future
@@ -45,30 +43,14 @@ repo_depends:
 - python-msgpack
 - python-zope-interface
 - python
-- buildbot
 - python
-- buildbot
-- buildbot
-- buildbot: python-buildbot-www
-- buildbot
-- buildbot: python-buildbot-www
-- buildbot
-- buildbot: python-buildbot-www
-- buildbot
-- buildbot: python-buildbot-www
 - python-twisted
 - python
-- buildbot
-- buildbot: python-buildbot-www
 - python-klein
 - python-cairosvg
 - python-cairocffi
 - python-jinja
 - python-twisted
-- buildbot
-- buildbot: python-buildbot-www-react
-- buildbot
-- buildbot: python-buildbot-www-react
 repo_makedepends:
 - python-twisted
 - python-jinja

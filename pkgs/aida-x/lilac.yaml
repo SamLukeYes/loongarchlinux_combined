@@ -12,11 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aida-x'')
 repo_checkdepends:
 - lv2lint
 repo_depends:
-- aida-x: aida-x-clap
-- aida-x: aida-x-lv2
-- aida-x: aida-x-standalone
-- aida-x: aida-x-vst
-- aida-x: aida-x-vst3
 - dbus
 - gcc: gcc-libs
 - glibc

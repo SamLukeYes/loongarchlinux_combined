@@ -12,17 +12,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''liquidsfz'')
 repo_checkdepends:
 - lv2lint
 repo_depends:
-- liquidsfz: liquidsfz-lv2
-- liquidsfz: liquidsfz-standalone
 - gcc: gcc-libs
 - glibc
 - gcc: gcc-libs
 - glibc
-- liquidsfz: libliquidsfz
 - libsndfile
 - gcc: gcc-libs
 - glibc
-- liquidsfz: libliquidsfz
 - libsndfile
 - readline
 repo_makedepends:

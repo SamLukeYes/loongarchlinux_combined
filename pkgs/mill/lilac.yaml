@@ -10,8 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mill'')
 repo_checkdepends: []
 repo_depends:
 - bash
-repo_makedepends:
-- mill
+repo_makedepends: []
 update_on:
 - alpm: mill
   source: archpkg

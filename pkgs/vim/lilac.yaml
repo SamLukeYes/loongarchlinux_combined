@@ -11,14 +11,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vim'')
   '
 repo_checkdepends: []
 repo_depends:
-- vim: vim-runtime
 - gpm
 - acl
 - glibc
 - libgcrypt
 - zlib
 - perl
-- vim: vim-runtime
 - gpm
 - libxt
 - gtk3

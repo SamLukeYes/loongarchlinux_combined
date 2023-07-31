@@ -32,7 +32,6 @@ repo_depends:
 - python-validate-pyproject
 repo_makedepends:
 - git
-- python-setuptools
 update_on:
 - alpm: python-setuptools
   source: archpkg

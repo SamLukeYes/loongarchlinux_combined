@@ -16,7 +16,6 @@ repo_depends:
 - libunistring
 - libxml2
 repo_makedepends:
-- gettext
 - emacs
 - git
 update_on:

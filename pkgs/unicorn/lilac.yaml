@@ -14,10 +14,8 @@ repo_checkdepends:
 repo_depends:
 - glibc
 - python
-- unicorn
 - python-setuptools
 - ruby
-- unicorn
 repo_makedepends:
 - cmake
 - python

@@ -28,7 +28,6 @@ repo_depends:
 - libnsl
 - jansson
 - icu
-- samba: libwbclient
 - popt
 - cups: libcups
 - talloc
@@ -38,7 +37,6 @@ repo_depends:
 - tdb
 - gpgme
 - liburing
-- samba: libwbclient
 repo_makedepends:
 - python
 - python-markdown

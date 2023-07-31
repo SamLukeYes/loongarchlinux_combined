@@ -12,10 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kcachegrind'')
 repo_checkdepends: []
 repo_depends:
 - kio
-- kcachegrind: kcachegrind-common
 - hicolor-icon-theme
 - qt5-base
-- kcachegrind: kcachegrind-common
 repo_makedepends:
 - extra-cmake-modules
 - kdoctools

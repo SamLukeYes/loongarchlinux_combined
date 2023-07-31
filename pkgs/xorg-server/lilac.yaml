@@ -14,7 +14,6 @@ repo_depends:
 - libepoxy
 - libxfont2
 - pixman
-- xorg-server: xorg-server-common
 - libunwind
 - dbus
 - xf86-input-libinput
@@ -29,7 +28,6 @@ repo_depends:
 - systemd: systemd-libs
 - libxv
 - pixman
-- xorg-server: xorg-server-common
 - xcb-util-image
 - xcb-util-renderutil
 - xcb-util-wm
@@ -39,7 +37,6 @@ repo_depends:
 - libxfont2
 - libunwind
 - pixman
-- xorg-server: xorg-server-common
 - xorg-xauth
 - nettle
 - libtirpc
@@ -48,7 +45,6 @@ repo_depends:
 - libunwind
 - libxext
 - pixman
-- xorg-server: xorg-server-common
 - nettle
 - libtirpc
 - systemd: systemd-libs

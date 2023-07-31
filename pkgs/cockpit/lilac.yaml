@@ -22,13 +22,10 @@ repo_depends:
 - openssl
 - kexec-tools
 - which
-- cockpit
 - polkit
 - packagekit
 - python
-- cockpit
 - pcp
-- cockpit
 - udisks2
 - dbus-python
 repo_makedepends:

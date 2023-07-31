@@ -17,10 +17,8 @@ repo_depends:
 - gcc: gcc-libs
 - glibc
 - systemd
-- greetd: greetd-agreety
 - pam
 - gcc: gcc-libs
-- greetd
 repo_makedepends:
 - scdoc
 update_on:

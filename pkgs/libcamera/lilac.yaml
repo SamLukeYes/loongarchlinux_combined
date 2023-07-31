@@ -15,18 +15,15 @@ repo_depends:
 - gcc: gcc-libs
 - glibc
 - gnutls
-- libcamera: libcamera-ipa
 - elfutils: libelf
 - libunwind
 - libyaml
 - systemd: systemd-libs
 - gcc: gcc-libs
 - glibc
-- libcamera
 - gcc: gcc-libs
 - glibc
 - gtest
-- libcamera
 - libdrm
 - libevent
 - libjpeg-turbo
@@ -39,7 +36,6 @@ repo_depends:
 - glib2
 - gstreamer
 - gstreamer: gst-plugins-base-libs
-- libcamera
 repo_makedepends:
 - doxygen
 - git

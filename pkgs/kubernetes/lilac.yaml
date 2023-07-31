@@ -12,13 +12,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kubernetes'')
 repo_checkdepends: []
 repo_depends:
 - glibc
-- kubernetes: kubernetes-control-plane-common
 - glibc
-- kubernetes: kubernetes-control-plane-common
 - glibc
-- kubernetes: kubernetes-control-plane-common
 - glibc
-- kubernetes: kubernetes-control-plane-common
 - glibc
 - cri-tools: crictl
 - glibc

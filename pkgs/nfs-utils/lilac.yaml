@@ -2,7 +2,6 @@ destsubdir: core
 repo_checkdepends: []
 repo_depends:
 - rpcbind
-- nfs-utils: nfsidmap
 - gssproxy
 - libevent
 - lvm2: device-mapper

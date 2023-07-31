@@ -14,7 +14,6 @@ repo_depends:
 - level-zero: level-zero-loader
 - intel-oneapi-openmp
 - intel-oneapi-common
-- intel-oneapi-compiler-shared-runtime: intel-oneapi-compiler-shared-runtime-libs
 - intel-oneapi-common
 repo_makedepends: []
 update_on:

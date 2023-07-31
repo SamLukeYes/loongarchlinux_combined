@@ -11,13 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''redland'')
   '
 repo_checkdepends: []
 repo_depends:
-- redland
 - mariadb: mariadb-libs
-- redland
 - postgresql: postgresql-libs
-- redland
 - unixodbc
-- redland
 repo_makedepends:
 - rasqal
 - raptor

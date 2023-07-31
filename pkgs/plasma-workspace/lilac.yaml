@@ -36,7 +36,6 @@ repo_depends:
 - kio-fuse
 - qt5-tools
 - oxygen-sounds
-- plasma-workspace
 - qt5-wayland
 - kwayland-integration
 - xorg-xwayland

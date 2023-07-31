@@ -12,7 +12,6 @@ repo_depends:
 - libcap
 - libgcrypt
 - libxcrypt
-- systemd: systemd-libs
 - libidn2
 - lz4
 - pam
@@ -30,11 +29,8 @@ repo_depends:
 - lz4
 - xz
 - zstd
-- systemd
-- systemd
 - binutils
 - python-pefile
-- systemd
 repo_makedepends:
 - acl
 - cryptsetup
@@ -68,7 +64,6 @@ repo_makedepends:
 - libxkbcommon
 - bash-completion
 - p11-kit
-- systemd
 - libfido2
 - tpm2-tss
 - rsync

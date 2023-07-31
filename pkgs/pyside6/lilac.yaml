@@ -16,8 +16,6 @@ repo_depends:
 - libxslt
 - qt6-base
 - qt6-declarative
-- pyside6: shiboken6
-- pyside6
 repo_makedepends:
 - cmake
 - ninja

@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''busted'')
 repo_checkdepends: []
 repo_depends:
 - lua
-- busted: lua-busted
 - lua
 - lua-cliargs
 - lua-dkjson

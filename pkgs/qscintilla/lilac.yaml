@@ -12,10 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qscintilla'')
 repo_checkdepends: []
 repo_depends:
 - qt5-base
-- qscintilla: qscintilla-qt5
 - pyqt5: python-pyqt5
 - qt6-base
-- qscintilla: qscintilla-qt6
 - pyqt6: python-pyqt6
 repo_makedepends:
 - pyqt5: python-pyqt5

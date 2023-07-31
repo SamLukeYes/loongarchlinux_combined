@@ -14,7 +14,6 @@ repo_depends:
 - glibc
 - krb5
 - libcap-ng
-- audit
 - glibc
 - python
 repo_makedepends:

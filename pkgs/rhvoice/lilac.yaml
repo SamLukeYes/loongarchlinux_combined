@@ -14,17 +14,6 @@ repo_depends:
 - speech-dispatcher
 - pulseaudio: libpulse
 - portaudio
-- rhvoice
-- rhvoice
-- rhvoice
-- rhvoice
-- rhvoice
-- rhvoice
-- rhvoice
-- rhvoice
-- rhvoice
-- rhvoice
-- rhvoice
 repo_makedepends:
 - scons
 - libao

@@ -24,19 +24,12 @@ repo_depends:
 - libsoup3
 - psmisc
 - udisks2
-- gvfs
-- gvfs
 - libimobiledevice
 - usbmuxd
-- gvfs
 - libgphoto2
-- gvfs
 - gnome-online-accounts: libgoa
-- gvfs
 - libmtp
-- gvfs
 - libnfs
-- gvfs: gvfs-goa
 - libgdata
 repo_makedepends:
 - dbus

@@ -6,13 +6,8 @@ repo_checkdepends:
 - python-pytest
 - tcl
 repo_depends:
-- gcc: gcc-libs
 - libmpc
 - zstd
-- gcc
-- gcc
-- gcc
-- gcc
 repo_makedepends:
 - binutils
 - doxygen

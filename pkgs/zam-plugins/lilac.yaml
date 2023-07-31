@@ -11,12 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zam-plugins'')
   '
 repo_checkdepends: []
 repo_depends:
-- zam-plugins: zam-plugins-clap
-- zam-plugins: zam-plugins-ladspa
-- zam-plugins: zam-plugins-lv2
-- zam-plugins: zam-plugins-standalone
-- zam-plugins: zam-plugins-vst
-- zam-plugins: zam-plugins-vst3
 - dbus
 - gcc: gcc-libs
 - glibc

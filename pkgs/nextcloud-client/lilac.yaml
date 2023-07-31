@@ -24,7 +24,6 @@ repo_depends:
 - qtkeychain: qtkeychain-qt5
 - sqlite
 - xdg-utils
-- nextcloud-client
 repo_makedepends:
 - cmocka
 - doxygen

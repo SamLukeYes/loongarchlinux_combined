@@ -13,13 +13,10 @@ repo_checkdepends: []
 repo_depends:
 - libx11
 - gcc: gcc-libs
-- qtcurve: qtcurve-utils
 - gtk2
 - perl
-- qtcurve: qtcurve-utils
 - qt5-svg
 - qt5-x11extras
-- qtcurve: qtcurve-utils
 - kdelibs4support
 - frameworkintegration
 repo_makedepends:

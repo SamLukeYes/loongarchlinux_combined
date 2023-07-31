@@ -14,7 +14,6 @@ repo_depends:
 - gmp
 repo_makedepends:
 - git
-- mlton
 - setconf
 update_on:
 - alpm: mlton

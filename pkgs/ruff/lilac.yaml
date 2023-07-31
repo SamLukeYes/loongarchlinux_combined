@@ -14,7 +14,6 @@ repo_depends:
 - gcc: gcc-libs
 - glibc
 - python
-- ruff
 repo_makedepends:
 - maturin
 - python-installer

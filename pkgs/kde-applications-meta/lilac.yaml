@@ -9,18 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kde-applications-meta
   '
 repo_checkdepends: []
 repo_depends:
-- kde-applications-meta: kde-accessibility-meta
-- kde-applications-meta: kde-education-meta
-- kde-applications-meta: kde-games-meta
-- kde-applications-meta: kde-graphics-meta
-- kde-applications-meta: kde-multimedia-meta
-- kde-applications-meta: kde-network-meta
-- kde-applications-meta: kde-office-meta
-- kde-applications-meta: kde-pim-meta
-- kde-applications-meta: kde-sdk-meta
-- kde-applications-meta: kde-system-meta
-- kde-applications-meta: kde-utilities-meta
-- kde-applications-meta: kdevelop-meta
 - kmag
 - kmousetool
 - kmouth
@@ -128,7 +116,6 @@ repo_depends:
 - krfb
 - ktorrent
 - neochat
-- kde-applications-meta: telepathy-kde-meta
 - tokodon
 - ghostwriter
 - akonadiconsole

@@ -16,10 +16,8 @@ repo_depends:
 - harfbuzz
 - libpng
 - zlib
-- freetype2
 - libx11
 - librsvg
-- freetype2
 repo_makedepends:
 - librsvg
 - libx11

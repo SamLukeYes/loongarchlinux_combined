@@ -15,10 +15,7 @@ repo_depends:
 - qt5-webengine
 - phonon: phonon-qt5
 - protobuf
-- marble: marble-common
-- marble: marble-common
 - kirigami2
-- marble: marble-common
 - kparts
 repo_makedepends:
 - extra-cmake-modules

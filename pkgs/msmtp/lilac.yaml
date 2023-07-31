@@ -13,7 +13,6 @@ repo_checkdepends: []
 repo_depends:
 - libsecret
 - gsasl
-- msmtp
 repo_makedepends:
 - libsecret
 - gsasl

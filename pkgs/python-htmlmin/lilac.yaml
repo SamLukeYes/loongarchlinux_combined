@@ -12,7 +12,6 @@ repo_checkdepends:
 repo_depends:
 - python
 - python-setuptools
-- python-htmlmin
 - python
 repo_makedepends:
 - python-sphinx

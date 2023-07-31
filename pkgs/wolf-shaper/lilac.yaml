@@ -11,12 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wolf-shaper'')
   '
 repo_checkdepends: []
 repo_depends:
-- wolf-shaper: wolf-shaper-clap
-- wolf-shaper: wolf-shaper-dssi
-- wolf-shaper: wolf-shaper-lv2
-- wolf-shaper: wolf-shaper-standalone
-- wolf-shaper: wolf-shaper-vst
-- wolf-shaper: wolf-shaper-vst3
 - gcc: gcc-libs
 - glibc
 - libx11

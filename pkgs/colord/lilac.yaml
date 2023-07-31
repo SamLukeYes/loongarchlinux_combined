@@ -29,8 +29,6 @@ repo_depends:
 - libgudev
 - shared-mime-info
 - systemd
-- colord: libcolord
-- colord
 - sane
 - glib2
 - lcms2

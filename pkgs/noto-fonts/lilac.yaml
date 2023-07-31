@@ -8,8 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''noto-fonts'')
 
   '
 repo_checkdepends: []
-repo_depends:
-- noto-fonts
+repo_depends: []
 repo_makedepends:
 - git
 update_on:

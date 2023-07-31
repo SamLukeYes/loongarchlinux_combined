@@ -52,7 +52,6 @@ repo_depends:
 - giflib
 - libjpeg-turbo
 - lzo
-- kodi
 repo_makedepends:
 - afpfs-ng
 - bluez: bluez-libs

@@ -2,25 +2,11 @@ destsubdir: extra
 repo_checkdepends:
 - desktop-file-utils
 repo_depends:
-- pipewire: libpipewire
 - gcc: gcc-libs
-- pipewire: alsa-card-profiles
-- pipewire
-- pipewire
-- pipewire: pipewire-audio
-- pipewire
-- pipewire: pipewire-audio
-- pipewire
-- pipewire: pipewire-audio
 - gstreamer: gst-plugins-base-libs
-- pipewire
 - openssl
-- pipewire
-- pipewire
 - libx11
 - libxfixes
-- pipewire
-- pipewire: pipewire-audio
 repo_makedepends:
 - alsa-lib
 - avahi

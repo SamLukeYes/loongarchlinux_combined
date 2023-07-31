@@ -65,7 +65,6 @@ repo_depends:
 - portaudio
 - spdlog
 - zeromq
-- gnuradio
 - python-cairo
 - pygobject: python-gobject
 - python-lxml

@@ -2,9 +2,7 @@ destsubdir: extra
 repo_checkdepends:
 - python-fonttools
 - python-setuptools
-repo_depends:
-- harfbuzz
-- harfbuzz: harfbuzz-cairo
+repo_depends: []
 repo_makedepends:
 - cairo
 - chafa

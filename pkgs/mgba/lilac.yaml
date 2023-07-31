@@ -17,9 +17,7 @@ repo_depends:
 - libedit
 - ffmpeg
 - sqlite
-- mgba: libmgba
 - sdl2
-- mgba: libmgba
 - qt5-multimedia
 - sdl2
 repo_makedepends:

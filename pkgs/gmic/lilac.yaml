@@ -15,7 +15,6 @@ repo_depends:
 - opencv
 - fftw
 - gimp
-- gmic
 - qt5-base
 repo_makedepends:
 - cmake

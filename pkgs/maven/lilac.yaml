@@ -3,6 +3,5 @@ repo_checkdepends: []
 repo_depends:
 - bash
 - procps-ng
-repo_makedepends:
-- maven
+repo_makedepends: []
 update_on: []

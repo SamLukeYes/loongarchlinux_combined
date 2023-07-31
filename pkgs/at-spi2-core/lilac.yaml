@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''at-spi2-core'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- at-spi2-core
+repo_checkdepends: []
 repo_depends:
 - dbus
 - glib2

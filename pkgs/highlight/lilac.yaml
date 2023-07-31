@@ -13,7 +13,6 @@ repo_checkdepends: []
 repo_depends:
 - lua
 - qt5-base
-- highlight
 repo_makedepends:
 - qt5-base
 - lua

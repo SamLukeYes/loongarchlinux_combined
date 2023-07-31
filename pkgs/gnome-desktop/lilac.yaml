@@ -19,9 +19,7 @@ repo_depends:
 - libxkbcommon
 - systemd
 - xkeyboard-config
-- gnome-desktop: gnome-desktop-common
 - gtk3
-- gnome-desktop: gnome-desktop-common
 - gtk4
 repo_makedepends:
 - bubblewrap

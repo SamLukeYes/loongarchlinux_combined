@@ -13,7 +13,6 @@ repo_depends:
 - expat
 - gcc: gcc-libs
 - glibc
-- jack2
 repo_makedepends:
 - alsa-lib
 - db5.3

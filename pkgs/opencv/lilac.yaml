@@ -10,9 +10,7 @@ repo_depends:
 - openjpeg2
 - ffmpeg
 - protobuf
-- opencv
 - python-numpy
-- opencv
 - vtk
 - glew
 - qt6-base

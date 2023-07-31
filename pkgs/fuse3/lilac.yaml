@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fuse3'')
   '
 repo_checkdepends: []
 repo_depends:
-- fuse3: fuse-common
 - glibc
 repo_makedepends:
 - meson

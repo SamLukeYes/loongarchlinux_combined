@@ -15,9 +15,7 @@ repo_depends:
 - ruby-rack
 - curl
 - libnsl
-- passenger
 - apache
-- passenger
 - nginx
 repo_makedepends:
 - ruby-rake

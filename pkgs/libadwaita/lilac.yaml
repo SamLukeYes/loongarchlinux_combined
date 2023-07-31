@@ -14,7 +14,6 @@ repo_checkdepends:
 repo_depends:
 - gtk4
 - gtk4
-- libadwaita
 repo_makedepends:
 - gi-docgen
 - git

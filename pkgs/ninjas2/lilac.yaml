@@ -12,9 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ninjas2'')
 repo_checkdepends:
 - lv2lint
 repo_depends:
-- ninjas2: ninjas2-lv2
-- ninjas2: ninjas2-standalone
-- ninjas2: ninjas2-vst
 - aubio
 - gcc: gcc-libs
 - glibc

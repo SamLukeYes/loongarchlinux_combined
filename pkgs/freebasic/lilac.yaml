@@ -13,7 +13,6 @@ repo_checkdepends: []
 repo_depends:
 - ncurses
 repo_makedepends:
-- freebasic
 - libxpm
 - gpm
 - libffi

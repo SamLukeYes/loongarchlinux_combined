@@ -14,7 +14,6 @@ repo_depends:
 - util-linux
 - python
 - numactl
-- lttng-ust
 - python
 repo_makedepends:
 - asciidoc

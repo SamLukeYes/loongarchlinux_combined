@@ -12,17 +12,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''geonkick'')
 repo_checkdepends:
 - lv2lint
 repo_depends:
-- geonkick: geonkick-lv2
-- geonkick: geonkick-standalone
 - cairo
 - gcc: gcc-libs
-- geonkick: geonkick-common
 - glibc
 - libsndfile
 - libx11
 - cairo
 - gcc: gcc-libs
-- geonkick: geonkick-common
 - glibc
 - hicolor-icon-theme
 - libsndfile

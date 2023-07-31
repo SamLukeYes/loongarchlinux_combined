@@ -1,7 +1,6 @@
 destsubdir: extra
 repo_checkdepends: []
 repo_depends:
-- speech-dispatcher: libspeechd
 - pyxdg: python-pyxdg
 - dotconf
 - pulseaudio: libpulse

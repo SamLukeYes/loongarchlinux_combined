@@ -25,7 +25,6 @@ repo_depends:
 - zlib
 - cmark
 - hicolor-icon-theme
-- mkvtoolnix: mkvtoolnix-cli
 - qt6-multimedia
 - qt6-svg
 repo_makedepends:

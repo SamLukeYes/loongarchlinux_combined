@@ -14,7 +14,6 @@ repo_depends:
 - glibc
 - libffi
 - libtasn1
-- p11-kit: libp11-kit
 - coreutils
 repo_makedepends:
 - bash-completion

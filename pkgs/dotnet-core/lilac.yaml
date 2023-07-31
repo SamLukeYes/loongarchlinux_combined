@@ -13,7 +13,6 @@ repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - glibc
-- dotnet-core: dotnet-host
 - gcc: gcc-libs
 - glibc
 - icu
@@ -21,14 +20,8 @@ repo_depends:
 - libunwind
 - zlib
 - openssl
-- dotnet-core: dotnet-runtime
-- dotnet-core: dotnet-runtime
-- dotnet-core: dotnet-targeting-pack
 - glibc
 - gcc: gcc-libs
-- dotnet-core: netstandard-targeting-pack
-- dotnet-core: netstandard-targeting-pack
-- dotnet-core: dotnet-targeting-pack
 repo_makedepends:
 - bash
 - clang

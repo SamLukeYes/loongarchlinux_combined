@@ -11,10 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''notmuch'')
   '
 repo_checkdepends: []
 repo_depends:
-- notmuch: notmuch-runtime
-- notmuch: notmuch-runtime
 - ruby
-- notmuch: notmuch-runtime
 - perl-mailtools
 - perl-mail-box
 - perl-term-readline-gnu

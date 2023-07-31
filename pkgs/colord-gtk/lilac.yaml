@@ -13,9 +13,7 @@ repo_checkdepends: []
 repo_depends:
 - lcms2
 - colord
-- colord-gtk: colord-gtk-common
 - gtk3
-- colord-gtk: colord-gtk-common
 - gtk4
 repo_makedepends:
 - gobject-introspection

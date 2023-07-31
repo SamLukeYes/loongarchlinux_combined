@@ -16,13 +16,11 @@ repo_depends:
 - gtk3
 - qt5-base
 - portaudio
-- guvcview: guvcview-common
 - gtk3
 - ffmpeg
 - gsl
 - libusb
 - portaudio
-- guvcview: guvcview-common
 - qt5-base
 repo_makedepends:
 - intltool

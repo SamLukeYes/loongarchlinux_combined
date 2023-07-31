@@ -16,11 +16,6 @@ repo_checkdepends:
 - mod-lv2-extensions
 - xorg-server: xorg-server-xvfb
 repo_depends:
-- cardinal: cardinal-jack
-- cardinal: cardinal-lv2
-- cardinal: cardinal-vst
-- cardinal: cardinal-vst3
-- cardinal: cardinal-data
 - dbus
 - file
 - gcc: gcc-libs
@@ -35,7 +30,6 @@ repo_depends:
 - libxext
 - libxrandr
 - speexdsp
-- cardinal: cardinal-data
 - dbus
 - file
 - gcc: gcc-libs
@@ -51,7 +45,6 @@ repo_depends:
 - libxrandr
 - speexdsp
 - hicolor-icon-theme
-- cardinal: cardinal-data
 - dbus
 - file
 - gcc: gcc-libs
@@ -66,7 +59,6 @@ repo_depends:
 - libxext
 - libxrandr
 - speexdsp
-- cardinal: cardinal-data
 - dbus
 - file
 - gcc: gcc-libs
@@ -81,7 +73,6 @@ repo_depends:
 - libxext
 - libxrandr
 - speexdsp
-- cardinal: cardinal-data
 - dbus
 - file
 - gcc: gcc-libs

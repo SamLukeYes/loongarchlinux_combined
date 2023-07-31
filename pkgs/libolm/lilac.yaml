@@ -15,7 +15,6 @@ repo_checkdepends:
 - python-pytest-benchmark
 repo_depends:
 - gcc: gcc-libs
-- libolm
 - python
 - python-cffi
 - python-future

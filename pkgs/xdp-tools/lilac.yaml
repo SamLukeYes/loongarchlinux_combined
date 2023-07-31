@@ -14,7 +14,6 @@ repo_depends:
 - elfutils: libelf
 - linux-api-headers
 - libbpf
-- xdp-tools: libxdp
 repo_makedepends:
 - clang
 - llvm

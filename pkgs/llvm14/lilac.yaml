@@ -2,7 +2,6 @@ destsubdir: extra
 repo_checkdepends:
 - python-psutil
 repo_depends:
-- llvm14: llvm14-libs
 - perl
 - gcc: gcc-libs
 - zlib

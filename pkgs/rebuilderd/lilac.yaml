@@ -14,7 +14,6 @@ repo_depends:
 - openssl
 - shared-mime-info
 - xz
-- rebuilderd: rebuilderd-tools
 - sqlite
 - archlinux-repro
 repo_makedepends:

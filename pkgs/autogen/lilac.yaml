@@ -5,7 +5,6 @@ repo_depends:
 - libxml2
 - perl
 repo_makedepends:
-- autogen
 - chrpath
 update_on:
 - alpm: guile

@@ -13,7 +13,6 @@ repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - python
-- keystone
 repo_makedepends:
 - cmake
 - ninja

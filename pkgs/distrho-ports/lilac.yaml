@@ -14,9 +14,6 @@ repo_checkdepends:
 - lv2lint
 - xorg-server: xorg-server-xvfb
 repo_depends:
-- distrho-ports: distrho-ports-lv2
-- distrho-ports: distrho-ports-vst
-- distrho-ports: distrho-ports-vst3
 - alsa-lib
 - freetype2
 - gcc: gcc-libs

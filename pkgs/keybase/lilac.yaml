@@ -12,9 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''keybase'')
 repo_checkdepends: []
 repo_depends:
 - gnupg
-- keybase
-- keybase
-- keybase: kbfs
 repo_makedepends:
 - git
 - go

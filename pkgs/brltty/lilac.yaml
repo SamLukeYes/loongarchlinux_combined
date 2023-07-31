@@ -8,7 +8,6 @@ repo_depends:
 - speech-dispatcher: libspeechd
 - pcre2
 - polkit
-- brltty
 repo_makedepends:
 - alsa-lib
 - at-spi2-core

@@ -14,9 +14,7 @@ repo_depends:
 - glm
 - ftgl
 - glew
-- projectm
 - sdl2
-- projectm
 - qt5-base
 - pulseaudio: libpulse
 repo_makedepends:

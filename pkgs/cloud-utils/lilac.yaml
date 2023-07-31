@@ -9,8 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cloud-utils'')
   '
 repo_checkdepends: []
 repo_depends:
-- cloud-utils: cloud-guest-utils
-- cloud-utils: cloud-image-utils
 - python
 - python
 - ca-certificates

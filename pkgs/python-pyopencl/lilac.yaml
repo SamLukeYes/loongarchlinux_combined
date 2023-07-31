@@ -25,7 +25,6 @@ repo_depends:
 - python-numpy
 - python-mako
 - python-pytools
-- python-pyopencl: pyopencl-headers
 - python-setuptools
 - python-cffi
 repo_makedepends:

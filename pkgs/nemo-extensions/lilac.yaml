@@ -13,16 +13,13 @@ repo_checkdepends: []
 repo_depends:
 - nemo
 - nemo
-- nemo-extensions: nemo-python
 - python-mutagen
 - nemo
-- nemo-extensions: nemo-python
 - nemo
 - file-roller
 - nemo
 - imagemagick
 - nemo
-- nemo-extensions: nemo-python
 - pastebinit
 - nemo
 - cjs
@@ -39,7 +36,6 @@ repo_depends:
 - libcryptui
 - nemo
 - samba
-- nemo-extensions: nemo-python
 - vte3
 repo_makedepends:
 - intltool

@@ -15,7 +15,6 @@ repo_depends:
 - hicolor-icon-theme
 - gtk4: gtk-update-icon-cache
 - librsvg
-- adwaita-icon-theme: adwaita-cursors
 repo_makedepends:
 - git
 - gtk3

@@ -20,7 +20,6 @@ repo_depends:
 - python-pyproject-hooks
 repo_makedepends:
 - git
-- python-build
 - python-flit-core
 - python-installer
 - python-sphinx

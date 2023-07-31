@@ -13,13 +13,6 @@ repo_checkdepends:
 - lv2lint
 - kxstudio-lv2-extensions
 repo_depends:
-- dpf-plugins: dpf-plugins-clap
-- dpf-plugins: dpf-plugins-dssi
-- dpf-plugins: dpf-plugins-ladspa
-- dpf-plugins: dpf-plugins-lv2
-- dpf-plugins: dpf-plugins-standalone
-- dpf-plugins: dpf-plugins-vst
-- dpf-plugins: dpf-plugins-vst3
 - gcc: gcc-libs
 - glibc
 - libglvnd

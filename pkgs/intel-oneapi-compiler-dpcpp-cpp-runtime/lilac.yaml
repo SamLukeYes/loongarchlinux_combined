@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''intel-oneapi-compiler
 repo_checkdepends: []
 repo_depends:
 - intel-oneapi-compiler-shared-runtime
-- intel-oneapi-compiler-dpcpp-cpp-runtime: intel-oneapi-compiler-dpcpp-cpp-runtime-libs
 - intel-oneapi-common
 - intel-oneapi-compiler-shared-runtime: intel-oneapi-compiler-shared-runtime-libs
 - intel-oneapi-tbb

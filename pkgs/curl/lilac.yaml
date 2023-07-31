@@ -21,9 +21,7 @@ repo_depends:
 - openssl
 - zlib
 - zstd
-- curl
 - openssl
-- curl
 - gnutls
 repo_makedepends:
 - git

@@ -18,7 +18,6 @@ repo_depends:
 - bzip2
 - openssl
 - libxcrypt
-- zeroc-ice
 repo_makedepends: []
 update_on:
 - alpm: zeroc-ice

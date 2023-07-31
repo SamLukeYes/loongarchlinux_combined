@@ -16,7 +16,6 @@ repo_depends:
 - binutils
 - json-glib
 - elfutils: libelf
-- rmlint
 - pygobject: python-gobject
 - python-cairo
 - dconf

@@ -1,7 +1,6 @@
 destsubdir: extra
 repo_checkdepends: []
 repo_depends:
-- llvm: llvm-libs
 - perl
 - gcc: gcc-libs
 - zlib

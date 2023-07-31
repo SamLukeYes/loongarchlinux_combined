@@ -11,14 +11,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''helm-synth'')
   '
 repo_checkdepends: []
 repo_depends:
-- helm-synth: helm-synth-lv2
-- helm-synth: helm-synth-standalone
-- helm-synth: helm-synth-vst
 - alsa-lib
 - freetype2
 - gcc: gcc-libs
 - glibc
-- helm-synth: helm-synth-common
 - libglvnd
 - libx11
 - libxext
@@ -27,7 +23,6 @@ repo_depends:
 - freetype2
 - gcc: gcc-libs
 - glibc
-- helm-synth: helm-synth-common
 - hicolor-icon-theme
 - libglvnd
 - libx11
@@ -37,7 +32,6 @@ repo_depends:
 - freetype2
 - gcc: gcc-libs
 - glibc
-- helm-synth: helm-synth-common
 - libglvnd
 - libx11
 - libxext

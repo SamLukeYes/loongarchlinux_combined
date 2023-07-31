@@ -50,7 +50,6 @@ repo_depends:
 - xf86-video-vmware
 - glibc
 - pam
-- virtualbox
 - libvncserver
 repo_makedepends:
 - alsa-lib

@@ -14,7 +14,6 @@ repo_depends:
 - libbobcat
 - libunwind
 repo_makedepends:
-- icmake
 - yodl
 update_on:
 - alpm: icmake

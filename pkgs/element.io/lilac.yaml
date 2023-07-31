@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''element.io'')
   '
 repo_checkdepends: []
 repo_depends:
-- element.io: element-web
 - electron22
 - libsecret
 repo_makedepends:

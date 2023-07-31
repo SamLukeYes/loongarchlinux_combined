@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bullet'')
   '
 repo_checkdepends: []
 repo_depends:
-- bullet
 - gcc: gcc-libs
 repo_makedepends:
 - cmake

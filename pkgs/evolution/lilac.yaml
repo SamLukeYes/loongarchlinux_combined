@@ -35,9 +35,7 @@ repo_depends:
 - libpst
 - libytnef
 - webkit2gtk-4.1
-- evolution
 - bogofilter
-- evolution
 - spamassassin
 repo_makedepends:
 - bogofilter

@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wireplumber'')
 repo_checkdepends:
 - pipewire: pipewire-audio
 repo_depends:
-- wireplumber: libwireplumber
 - lua
 - pipewire
 repo_makedepends:

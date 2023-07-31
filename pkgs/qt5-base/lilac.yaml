@@ -40,7 +40,6 @@ repo_depends:
 - double-conversion
 - md4c
 - qt5-translations
-- qt5-base
 repo_makedepends:
 - libfbclient
 - mariadb: mariadb-libs

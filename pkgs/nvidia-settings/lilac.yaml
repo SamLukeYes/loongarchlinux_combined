@@ -16,7 +16,6 @@ repo_depends:
 - libxv
 - libvdpau
 - nvidia-utils
-- nvidia-settings: libxnvctrl
 - libxext
 repo_makedepends:
 - inetutils

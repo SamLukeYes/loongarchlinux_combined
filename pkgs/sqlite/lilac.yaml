@@ -13,8 +13,6 @@ repo_checkdepends: []
 repo_depends:
 - readline
 - zlib
-- sqlite
-- sqlite
 - tcl
 - glibc
 repo_makedepends:

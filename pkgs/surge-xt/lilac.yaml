@@ -11,12 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''surge-xt'')
   '
 repo_checkdepends: []
 repo_depends:
-- surge-xt: surge-xt-common
-- surge-xt: surge-xt-standalone
-- surge-xt: surge-xt-vst3
-- surge-xt: surge-xt-clap
-- surge-xt: surge-xt-lv2
-- surge-xt: surge-xt-common
 - hicolor-icon-theme
 - glibc
 - gcc: gcc-libs
@@ -34,7 +28,6 @@ repo_depends:
 - xdg-utils
 - fmt
 - libsamplerate
-- surge-xt: surge-xt-common
 - glibc
 - gcc: gcc-libs
 - cairo
@@ -51,7 +44,6 @@ repo_depends:
 - xdg-utils
 - fmt
 - libsamplerate
-- surge-xt: surge-xt-common
 - glibc
 - gcc: gcc-libs
 - cairo
@@ -68,7 +60,6 @@ repo_depends:
 - xdg-utils
 - fmt
 - libsamplerate
-- surge-xt: surge-xt-common
 - glibc
 - gcc: gcc-libs
 - cairo

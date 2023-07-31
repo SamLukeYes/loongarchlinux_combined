@@ -4,12 +4,10 @@ repo_depends:
 - java-common: java-runtime-common
 - ca-certificates: ca-certificates-utils
 - nss
-- java8-openjdk: jre8-openjdk-headless
 - xdg-utils
 - hicolor-icon-theme
 - giflib
 - java-common: java-environment-common
-- java8-openjdk: jre8-openjdk
 repo_makedepends:
 - alsa-lib
 - bash

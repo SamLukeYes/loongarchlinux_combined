@@ -14,8 +14,6 @@ repo_depends:
 - python-execnet
 - python-mock
 - python-termcolor
-- python-pytest-plugins: python-pytest-fixture-config
-- python-pytest-plugins: python-pytest-shutil
 - python-virtualenv
 repo_makedepends:
 - python-pytest

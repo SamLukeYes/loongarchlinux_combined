@@ -12,11 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gpgme'')
 repo_checkdepends: []
 repo_depends:
 - libgpg-error
-- gpgme
 - qt5-base
-- gpgme
 - qt6-base
-- gpgme
 - python
 repo_makedepends:
 - gnupg

@@ -12,9 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ambix'')
 repo_checkdepends:
 - lv2lint
 repo_depends:
-- ambix: ambix-lv2
-- ambix: ambix-standalone
-- ambix: ambix-vst
 - fftw
 - freetype2
 - gcc: gcc-libs

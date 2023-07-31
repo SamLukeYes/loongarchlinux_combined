@@ -19,7 +19,6 @@ repo_depends:
 - python-distro
 - python-geoip
 - python-mako
-- deluge
 - gtk3
 - librsvg
 - python-cairo

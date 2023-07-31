@@ -38,7 +38,6 @@ repo_depends:
 - libcanberra
 - libgudev
 - librsvg
-- cheese: libcheese
 - clutter
 - clutter-gst
 - clutter-gtk

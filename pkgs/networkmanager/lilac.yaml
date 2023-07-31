@@ -20,7 +20,6 @@ repo_depends:
 - modemmanager: libmm-glib
 - libndp
 - libnewt
-- networkmanager: libnm
 - libpsl
 - libteam
 - mobile-broadband-provider-info
@@ -29,7 +28,6 @@ repo_depends:
 - nss
 - systemd: systemd-libs
 - util-linux: util-linux-libs
-- networkmanager
 repo_makedepends:
 - audit
 - bluez: bluez-libs

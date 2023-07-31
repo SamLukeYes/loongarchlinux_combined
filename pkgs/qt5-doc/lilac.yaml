@@ -2,7 +2,6 @@ destsubdir: extra
 repo_checkdepends: []
 repo_depends:
 - qt5-base
-- qt5-doc
 repo_makedepends:
 - qt5-tools
 - python

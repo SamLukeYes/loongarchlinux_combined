@@ -12,9 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rocm-hip-sdk'')
 repo_checkdepends: []
 repo_depends:
 - rocm-core
-- rocm-hip-sdk: rocm-hip-libraries
 - rocm-llvm
-- rocm-hip-sdk: rocm-hip-runtime
 - hipblas
 - hipcub
 - hipfft
@@ -31,7 +29,6 @@ repo_depends:
 - rocsparse
 - rocthrust
 - rocm-core
-- rocm-hip-sdk: rocm-hip-runtime
 - hipblas
 - hipfft
 - hipsparse
@@ -48,7 +45,6 @@ repo_depends:
 - rocm-opencl-runtime
 - hsakmt-roct
 - rocm-core
-- rocm-hip-sdk: rocm-language-runtime
 - rocminfo
 - hip-runtime-amd
 - rocm-llvm
@@ -59,11 +55,8 @@ repo_depends:
 - rocm-device-libs
 - comgr
 - rocm-core
-- rocm-hip-sdk
-- rocm-hip-sdk: rocm-ml-libraries
 - miopen-hip
 - rocm-core
-- rocm-hip-sdk: rocm-hip-libraries
 - rocm-llvm
 - miopen-hip
 repo_makedepends: []

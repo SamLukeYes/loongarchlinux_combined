@@ -13,12 +13,7 @@ repo_checkdepends:
 - python-pexpect
 - python-tox
 repo_depends:
-- powerline: python-powerline
-- powerline: powerline-common
-- powerline
-- powerline: powerline-common
 - vim: vim-runtime
-- powerline: powerline-common
 repo_makedepends:
 - python-setuptools
 - python-sphinx

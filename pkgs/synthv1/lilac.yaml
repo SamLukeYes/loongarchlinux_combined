@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''synthv1'')
   '
 repo_checkdepends: []
 repo_depends:
-- synthv1: synthv1-lv2
-- synthv1: synthv1-standalone
 - gcc: gcc-libs
 - glibc
 - qt6-base

@@ -9,8 +9,6 @@ repo_depends:
 - gmp
 - zlib
 - rubygems
-- ruby: ruby-stdlib
-- ruby: ruby-bundledgems
 - ruby-abbrev
 - ruby-base64
 - ruby-benchmark

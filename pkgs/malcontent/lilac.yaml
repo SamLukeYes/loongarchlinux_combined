@@ -19,7 +19,6 @@ repo_depends:
 - libadwaita
 - polkit
 - pygobject: python-gobject
-- malcontent: libmalcontent
 - gcc: gcc-libs
 repo_makedepends:
 - git

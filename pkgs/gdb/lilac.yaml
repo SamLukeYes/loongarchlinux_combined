@@ -8,7 +8,6 @@ repo_depends:
 - xz
 - mpfr
 - source-highlight
-- gdb: gdb-common
 - readline
 - guile
 - python

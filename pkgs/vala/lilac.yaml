@@ -23,7 +23,6 @@ repo_makedepends:
 - git
 - help2man
 - libxslt
-- vala
 update_on:
 - alpm: vala
   source: archpkg

@@ -15,7 +15,6 @@ repo_depends:
 - run-parts
 repo_makedepends:
 - vim
-- fcron
 - systemd
 update_on:
 - alpm: fcron

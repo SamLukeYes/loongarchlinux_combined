@@ -12,9 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libdbusmenu'')
 repo_checkdepends: []
 repo_depends:
 - glib2
-- libdbusmenu: libdbusmenu-glib
 - gtk2
-- libdbusmenu: libdbusmenu-glib
 - gtk3
 repo_makedepends:
 - gnome-common

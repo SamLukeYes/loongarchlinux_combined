@@ -9,7 +9,6 @@ repo_depends:
 - libxcrypt
 - openssl
 - zlib
-- python
 repo_makedepends:
 - tk
 - sqlite

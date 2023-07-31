@@ -15,7 +15,6 @@ repo_depends:
 - libxml2
 - xkeyboard-config
 - libxcb
-- libxkbcommon
 repo_makedepends:
 - doxygen
 - git

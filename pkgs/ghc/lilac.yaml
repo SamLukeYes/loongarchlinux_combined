@@ -16,11 +16,8 @@ repo_depends:
 - numactl
 - perl
 - gcc
-- ghc: ghc-libs
 - llvm14
-- ghc
 repo_makedepends:
-- ghc: ghc-static
 - perl
 - libxslt
 - docbook-xsl

@@ -24,7 +24,6 @@ repo_depends:
 - quazip: quazip-qt6
 - sane
 - tesseract
-- gimagereader: gimagereader-common
 - djvulibre
 - gtksourceviewmm
 - gtkspellmm
@@ -34,7 +33,6 @@ repo_depends:
 - poppler: poppler-glib
 - sane
 - tesseract
-- gimagereader: gimagereader-common
 - djvulibre
 - podofo
 - poppler: poppler-qt6

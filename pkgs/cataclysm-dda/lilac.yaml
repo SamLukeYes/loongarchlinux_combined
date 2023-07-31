@@ -14,7 +14,6 @@ repo_depends:
 - ncurses
 - hicolor-icon-theme
 - gettext
-- cataclysm-dda
 - sdl2_image
 - sdl2_ttf
 - freetype2

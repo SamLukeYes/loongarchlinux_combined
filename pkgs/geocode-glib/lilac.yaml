@@ -13,8 +13,6 @@ repo_checkdepends: []
 repo_depends:
 - glib2
 - json-glib
-- geocode-glib: geocode-glib-common
-- geocode-glib: geocode-glib-common
 repo_makedepends:
 - gobject-introspection
 - git

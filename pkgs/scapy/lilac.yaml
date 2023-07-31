@@ -15,7 +15,6 @@ repo_checkdepends:
 - sox
 repo_depends:
 - python
-- scapy: python-scapy
 - tcpdump
 - python
 repo_makedepends:

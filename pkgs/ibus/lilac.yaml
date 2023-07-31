@@ -25,7 +25,6 @@ repo_depends:
 - pygobject: python-gobject
 - iso-codes
 - librsvg
-- ibus: libibus
 repo_makedepends:
 - gobject-introspection
 - vala

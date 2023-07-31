@@ -64,7 +64,6 @@ repo_depends:
 - tracker3
 - wayland
 - gtk4: gtk-update-icon-cache
-- gtk3
 repo_makedepends:
 - git
 - glib2: glib2-docs

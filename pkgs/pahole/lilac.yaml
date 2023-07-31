@@ -14,7 +14,6 @@ repo_depends:
 - bash
 - elfutils: libelf
 - zlib
-- pahole
 - python
 - python-matplotlib
 repo_makedepends:

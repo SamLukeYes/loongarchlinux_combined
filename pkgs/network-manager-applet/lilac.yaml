@@ -21,7 +21,6 @@ repo_depends:
 - libnma
 - libsecret
 - networkmanager
-- network-manager-applet: nm-connection-editor
 - libnma
 repo_makedepends:
 - git

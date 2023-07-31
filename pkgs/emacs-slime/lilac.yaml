@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''emacs-slime'')
 repo_checkdepends: []
 repo_depends:
 - emacs
-- emacs-slime: cl-swank
 repo_makedepends:
 - git
 - emacs

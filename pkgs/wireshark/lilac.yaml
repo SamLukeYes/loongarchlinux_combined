@@ -38,7 +38,6 @@ repo_depends:
 - desktop-file-utils
 - qt5-multimedia
 - qt5-svg
-- wireshark: wireshark-cli
 - shared-mime-info
 - hicolor-icon-theme
 - xdg-utils

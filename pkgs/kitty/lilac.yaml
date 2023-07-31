@@ -31,8 +31,6 @@ repo_depends:
 - dbus
 - lcms2
 - librsync
-- kitty: kitty-terminfo
-- kitty: kitty-shell-integration
 - ncurses
 repo_makedepends:
 - libxinerama

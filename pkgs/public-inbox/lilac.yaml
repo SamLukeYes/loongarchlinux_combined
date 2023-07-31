@@ -14,7 +14,6 @@ repo_depends:
 - perl-dbd-sqlite
 - perl-uri
 - perl-search-xapian
-- public-inbox: perl-publicinbox
 repo_makedepends:
 - git
 update_on:

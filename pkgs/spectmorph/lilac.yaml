@@ -13,10 +13,6 @@ repo_checkdepends:
 - lv2lint
 - python
 repo_depends:
-- spectmorph: libspectmorph
-- spectmorph: spectmorph-lv2
-- spectmorph: spectmorph-tools
-- spectmorph: spectmorph-vst
 - cairo
 - gcc: gcc-libs
 - glibc
@@ -30,18 +26,15 @@ repo_depends:
 - zlib
 - gcc: gcc-libs
 - glibc
-- spectmorph: libspectmorph
 - gcc: gcc-libs
 - glibc
 - glib2
 - libao
-- spectmorph: libspectmorph
 - qt5-base
 - python
 - python-lxml
 - gcc: gcc-libs
 - glibc
-- spectmorph: libspectmorph
 repo_makedepends:
 - cairo
 - fftw

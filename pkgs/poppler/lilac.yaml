@@ -18,11 +18,8 @@ repo_depends:
 - lcms2
 - nss
 - curl
-- poppler
 - glib2
-- poppler
 - qt5-base
-- poppler
 - qt6-base
 repo_makedepends:
 - gcc: gcc-libs

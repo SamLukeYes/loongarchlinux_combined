@@ -25,7 +25,6 @@ repo_depends:
 - librest
 - libsecret
 - webkit2gtk-4.1
-- gnome-online-accounts: libgoa
 repo_makedepends:
 - git
 - gobject-introspection

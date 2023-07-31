@@ -18,7 +18,6 @@ repo_depends:
 - perl-file-copy-recursive
 - perl-fcgi
 - perl-uri
-- munin: munin-node
 - perl
 - perl-net-server
 - perl-io-socket-inet6

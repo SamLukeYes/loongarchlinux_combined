@@ -15,11 +15,9 @@ repo_depends:
 - qt5-wayland
 - qt5-quickcontrols2
 - adwaita-qt: adwaita-qt5
-- qgnomeplatform: adwaita-color-schemes
 - gtk3
 - qt6-wayland
 - adwaita-qt: adwaita-qt6
-- qgnomeplatform: adwaita-color-schemes
 repo_makedepends:
 - cmake
 - gtk3

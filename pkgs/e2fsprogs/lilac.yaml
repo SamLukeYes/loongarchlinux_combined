@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''e2fsprogs'')
 repo_checkdepends: []
 repo_depends:
 - util-linux: util-linux-libs
-- e2fsprogs
 repo_makedepends:
 - systemd
 - util-linux

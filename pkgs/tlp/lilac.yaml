@@ -16,7 +16,6 @@ repo_depends:
 - usbutils
 - util-linux
 - networkmanager
-- tlp
 repo_makedepends:
 - git
 update_on:

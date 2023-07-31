@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libreoffice-still'')
   '
 repo_checkdepends: []
 repo_depends:
-- libreoffice-still
 - gcc: gcc-libs
 - make
 - zip

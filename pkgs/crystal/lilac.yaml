@@ -23,7 +23,6 @@ repo_depends:
 repo_makedepends:
 - libxml2
 - llvm
-- crystal
 update_on:
 - alpm: crystal
   source: archpkg

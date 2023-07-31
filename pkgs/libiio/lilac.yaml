@@ -17,7 +17,6 @@ repo_depends:
 - libserialport
 - libxml2
 - libusb
-- libiio
 - python
 repo_makedepends:
 - avahi

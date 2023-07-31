@@ -23,7 +23,6 @@ repo_makedepends:
 - git
 - python
 - cmake
-- mold
 update_on:
 - alpm: mold
   source: archpkg

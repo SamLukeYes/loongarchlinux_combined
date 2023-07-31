@@ -16,7 +16,6 @@ repo_depends:
 - egl-wayland
 - zlib
 - dkms
-- nvidia-utils
 - libglvnd
 repo_makedepends:
 - patchelf

@@ -13,7 +13,6 @@ repo_depends:
 - tensorboard
 - python-google-api-python-client
 - python-ipywidgets
-- python-tensorboard_plugin_wit
 repo_makedepends:
 - git
 - npm

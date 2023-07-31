@@ -18,7 +18,6 @@ repo_depends:
 - libcap-ng
 - libutempter
 - libxcrypt
-- util-linux: util-linux-libs
 - glibc
 repo_makedepends:
 - git

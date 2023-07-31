@@ -16,15 +16,12 @@ repo_depends:
 - libexif
 - menu-cache
 - libexif
-- libfm: libfm-extra
 - menu-cache
 - glib2
 - gtk2
 - menu-cache
-- libfm
 - gtk3
 - menu-cache
-- libfm
 repo_makedepends:
 - intltool
 - gtk-doc

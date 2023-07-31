@@ -17,20 +17,14 @@ repo_depends:
 - imagemagick
 - samba
 - caja
-- caja-extensions: caja-extensions-common
 - imagemagick
 - caja
-- caja-extensions: caja-extensions-common
 - caja
-- caja-extensions: caja-extensions-common
 - dbus-glib
 - caja
-- caja-extensions: caja-extensions-common
 - samba
 - caja
-- caja-extensions: caja-extensions-common
 - caja
-- caja-extensions: caja-extensions-common
 repo_makedepends:
 - python
 update_on:

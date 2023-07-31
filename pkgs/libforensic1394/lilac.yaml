@@ -13,7 +13,6 @@ repo_checkdepends: []
 repo_depends:
 - glibc
 - python
-- libforensic1394
 repo_makedepends:
 - cmake
 - glibc

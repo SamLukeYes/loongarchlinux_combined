@@ -11,14 +11,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lapack'')
   '
 repo_checkdepends: []
 repo_depends:
-- lapack: blas
 - gcc: gcc-libs
-- lapack: blas
-- lapack
-- lapack: blas64
 - gcc: gcc-libs
-- lapack: blas64
-- lapack: lapack64
 repo_makedepends:
 - gcc: gcc-fortran
 - cmake

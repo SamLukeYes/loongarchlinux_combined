@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libxcrypt'')
 repo_checkdepends: []
 repo_depends:
 - glibc
-- libxcrypt
 repo_makedepends: []
 update_on:
 - alpm: libxcrypt

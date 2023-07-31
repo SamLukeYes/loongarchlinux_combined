@@ -19,14 +19,10 @@ repo_depends:
 - libunwind
 - zlib
 - openssl
-- dotnet-core-6.0: dotnet-runtime-6.0
-- dotnet-core-6.0: dotnet-runtime-6.0
-- dotnet-core-6.0: dotnet-targeting-pack-6.0
 - glibc
 - gcc: gcc-libs
 - dotnet-core: netstandard-targeting-pack
 - dotnet-core: netstandard-targeting-pack
-- dotnet-core-6.0: dotnet-targeting-pack-6.0
 repo_makedepends:
 - bash
 - clang

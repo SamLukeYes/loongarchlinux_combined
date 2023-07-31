@@ -12,8 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qmidiarp'')
 repo_checkdepends:
 - lv2lint
 repo_depends:
-- qmidiarp: qmidiarp-lv2
-- qmidiarp: qmidiarp-standalone
 - gcc: gcc-libs
 - glibc
 - qt5-base

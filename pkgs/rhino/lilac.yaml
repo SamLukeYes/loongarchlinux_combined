@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rhino'')
   '
 repo_checkdepends: []
 repo_depends:
-- rhino: java-rhino
 - java-jline
 repo_makedepends: []
 update_on:

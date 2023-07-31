@@ -23,7 +23,6 @@ repo_depends:
 - libsm
 - libice
 - openssl
-- barrier: barrier-headless
 - qt5-base
 - hicolor-icon-theme
 repo_makedepends:

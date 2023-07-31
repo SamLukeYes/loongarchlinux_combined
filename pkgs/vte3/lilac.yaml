@@ -16,13 +16,11 @@ repo_depends:
 - gtk3
 - pcre2
 - systemd
-- vte3: vte-common
 - fribidi
 - gnutls
 - gtk4
 - pcre2
 - systemd
-- vte3: vte-common
 repo_makedepends:
 - fribidi
 - gi-docgen

@@ -14,7 +14,6 @@ repo_depends:
 - libdrm
 - libva
 - wayland
-- intel-media-sdk: libmfx
 - intel-media-driver
 - gcc: gcc-libs
 repo_makedepends:

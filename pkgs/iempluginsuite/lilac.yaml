@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''iempluginsuite'')
   '
 repo_checkdepends: []
 repo_depends:
-- iempluginsuite: iempluginsuite-standalone
-- iempluginsuite: iempluginsuite-vst3
 - alsa-lib
 - fftw
 - freetype2

@@ -16,9 +16,7 @@ repo_depends:
 - iso-codes
 - networkmanager: libnm
 - mobile-broadband-provider-info
-- libnma: libnma-common
 - gtk3
-- libnma: libnma-common
 - gtk4
 repo_makedepends:
 - dconf

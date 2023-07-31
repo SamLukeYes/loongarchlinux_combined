@@ -15,7 +15,6 @@ repo_depends:
 - zstd
 - openssl
 - libfido2
-- percona-server: libperconaserverclient
 - zlib
 - zstd
 - lz4

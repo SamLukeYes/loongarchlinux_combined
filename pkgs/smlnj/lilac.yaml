@@ -11,8 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''smlnj'')
   '
 repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- smlnj
+repo_makedepends: []
 update_on:
 - alpm: smlnj
   source: archpkg

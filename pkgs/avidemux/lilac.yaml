@@ -17,7 +17,6 @@ repo_depends:
 - libvpx
 - libva
 - libvdpau
-- avidemux: avidemux-cli
 - qt5-base
 - x264
 - x265

@@ -8,8 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''unicode-cldr'')
 
   '
 repo_checkdepends: []
-repo_depends:
-- unicode-cldr: unicode-cldr-annotations
+repo_depends: []
 repo_makedepends: []
 update_on:
 - alpm: unicode-cldr

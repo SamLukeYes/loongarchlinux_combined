@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''samplv1'')
   '
 repo_checkdepends: []
 repo_depends:
-- samplv1: samplv1-lv2
-- samplv1: samplv1-standalone
 - gcc: gcc-libs
 - glibc
 - libsndfile

@@ -22,7 +22,6 @@ repo_depends:
 - glibc
 - nss
 - python
-- volume_key
 repo_makedepends:
 - cryptsetup
 - glib2

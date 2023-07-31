@@ -15,7 +15,6 @@ repo_depends:
 - nvidia-utils
 - python
 - gcc12
-- cuda
 - nss
 repo_makedepends: []
 update_on:

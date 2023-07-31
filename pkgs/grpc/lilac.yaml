@@ -22,13 +22,9 @@ repo_depends:
 - python-six
 - re2
 - abseil-cpp
-- grpc: python-grpcio
 - protobuf: python-protobuf
-- grpc
 - php
-- grpc
 - php-legacy
-- grpc
 repo_makedepends:
 - re2
 - re2c

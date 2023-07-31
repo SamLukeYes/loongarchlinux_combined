@@ -1,7 +1,6 @@
 destsubdir: extra
 repo_checkdepends: []
 repo_depends:
-- libreoffice-fresh
 - gcc: gcc-libs
 - make
 - zip

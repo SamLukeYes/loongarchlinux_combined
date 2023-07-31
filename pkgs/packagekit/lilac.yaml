@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''packagekit'')
   '
 repo_checkdepends: []
 repo_depends:
-- packagekit: libpackagekit-glib
 - polkit
 - sqlite
 - glib2

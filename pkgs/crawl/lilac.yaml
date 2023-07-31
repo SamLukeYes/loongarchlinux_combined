@@ -11,13 +11,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''crawl'')
   '
 repo_checkdepends: []
 repo_depends:
-- crawl: crawl-data
 - hicolor-icon-theme
 - lua51
 - python-yaml
 - sqlite
 - ncurses
-- crawl: crawl-data
 - hicolor-icon-theme
 - lua51
 - python-yaml

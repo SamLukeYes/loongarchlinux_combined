@@ -14,7 +14,6 @@ repo_depends:
 - curl
 - clucene
 - xz
-- sword
 - python
 repo_makedepends:
 - curl

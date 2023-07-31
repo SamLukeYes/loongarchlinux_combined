@@ -15,11 +15,8 @@ repo_checkdepends:
 repo_depends:
 - clang
 - elfutils: libelf
-- bcc
 - libedit
 - ethtool
-- bcc: python-bcc
-- bcc
 - python
 repo_makedepends:
 - cmake

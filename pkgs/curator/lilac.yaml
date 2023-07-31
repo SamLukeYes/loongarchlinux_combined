@@ -27,7 +27,6 @@ repo_depends:
 - xz
 - mpdecimal
 - python
-- curator: python-elasticsearch-curator
 repo_makedepends:
 - python
 - python-setuptools

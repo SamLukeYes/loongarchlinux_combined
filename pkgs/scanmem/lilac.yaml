@@ -11,11 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''scanmem'')
   '
 repo_checkdepends: []
 repo_depends:
-- scanmem: libscanmem
 - glibc
 - readline
 - readline
-- scanmem: libscanmem
 - gtk3
 - python
 - pygobject: python-gobject

@@ -15,7 +15,6 @@ repo_depends:
 - polkit
 - libadwaita
 - polkit
-- sysprof: libsysprof-capture
 repo_makedepends:
 - git
 - meson

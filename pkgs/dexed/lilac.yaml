@@ -11,10 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dexed'')
   '
 repo_checkdepends: []
 repo_depends:
-- dexed: dexed-docs
-- dexed: dexed-clap
-- dexed: dexed-vst3
-- dexed: dexed-standalone
 - glibc
 - gcc: gcc-libs
 - alsa-lib

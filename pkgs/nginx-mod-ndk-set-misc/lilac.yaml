@@ -13,7 +13,6 @@ repo_checkdepends: []
 repo_depends:
 - nginx
 - nginx
-- nginx-mod-ndk-set-misc: nginx-mod-ndk
 repo_makedepends:
 - nginx: nginx-src
 update_on:

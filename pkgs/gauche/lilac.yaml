@@ -16,7 +16,6 @@ repo_depends:
 - slib
 repo_makedepends:
 - autoconf
-- gauche
 - git
 update_on:
 - alpm: gauche

@@ -70,8 +70,6 @@ repo_depends:
 - shared-mime-info
 - tracker3
 - wayland
-- gtk4: gtk-update-icon-cache
-- gtk4
 - gdk-pixbuf2
 - librsvg
 - hicolor-icon-theme

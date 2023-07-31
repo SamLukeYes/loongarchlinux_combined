@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''drumkv1'')
   '
 repo_checkdepends: []
 repo_depends:
-- drumkv1: drumkv1-lv2
-- drumkv1: drumkv1-standalone
 - gcc: gcc-libs
 - glibc
 - libsndfile

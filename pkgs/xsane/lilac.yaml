@@ -15,7 +15,6 @@ repo_depends:
 - lcms2
 - sane
 - zlib
-- xsane
 - gimp
 repo_makedepends:
 - gtk2

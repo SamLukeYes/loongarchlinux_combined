@@ -14,7 +14,6 @@ repo_depends:
 - libpng
 - hicolor-icon-theme
 - qt6-tools
-- zint
 repo_makedepends:
 - cmake
 - ninja

@@ -15,7 +15,6 @@ repo_depends:
 - librsvg
 - libyaml
 - libxmlb
-- appstream
 - qt5-base
 repo_makedepends:
 - meson

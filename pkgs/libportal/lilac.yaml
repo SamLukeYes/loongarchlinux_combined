@@ -12,9 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libportal'')
 repo_checkdepends:
 - xorg-server: xorg-server-xvfb
 repo_depends:
-- libportal
-- libportal
-- libportal
 - qt5-base
 - qt5-x11extras
 repo_makedepends:

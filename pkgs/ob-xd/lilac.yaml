@@ -11,11 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ob-xd'')
   '
 repo_checkdepends: []
 repo_depends:
-- ob-xd: ob-xd-common
-- ob-xd: ob-xd-standalone
-- ob-xd: ob-xd-vst3
-- ob-xd: ob-xd-lv2
-- ob-xd: ob-xd-common
 - glibc
 - gcc: gcc-libs
 - libogg
@@ -29,7 +24,6 @@ repo_depends:
 - libglvnd
 - curl
 - hicolor-icon-theme
-- ob-xd: ob-xd-common
 - glibc
 - gcc: gcc-libs
 - libogg
@@ -42,7 +36,6 @@ repo_depends:
 - freetype2
 - libglvnd
 - curl
-- ob-xd: ob-xd-common
 - glibc
 - gcc: gcc-libs
 - libogg

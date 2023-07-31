@@ -13,7 +13,6 @@ repo_checkdepends: []
 repo_depends:
 - glibc
 - systemd: systemd-libs
-- libusbsio
 - python
 repo_makedepends:
 - hidapi

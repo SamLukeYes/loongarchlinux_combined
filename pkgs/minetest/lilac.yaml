@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''minetest'')
   '
 repo_checkdepends: []
 repo_depends:
-- minetest: minetest-common
 - curl
 - libvorbis
 - sqlite
@@ -25,7 +24,6 @@ repo_depends:
 - spatialindex
 - jsoncpp
 - libxi
-- minetest: minetest-common
 - leveldb
 - curl
 - sqlite

@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''capstone'')
 repo_checkdepends: []
 repo_depends:
 - glibc
-- capstone
 - python
 repo_makedepends:
 - glibc

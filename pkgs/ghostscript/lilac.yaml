@@ -25,8 +25,6 @@ repo_depends:
 - openjpeg2
 - libidn
 - poppler-data
-- ghostscript
-- ghostscript
 repo_makedepends:
 - gtk3
 - gnutls

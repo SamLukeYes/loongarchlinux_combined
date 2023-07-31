@@ -13,8 +13,6 @@ repo_checkdepends:
 - kxstudio-lv2-extensions
 - lv2lint
 repo_depends:
-- x42-plugins: x42-plugins-lv2
-- x42-plugins: x42-plugins-standalone
 - cairo
 - ftgl
 - fftw

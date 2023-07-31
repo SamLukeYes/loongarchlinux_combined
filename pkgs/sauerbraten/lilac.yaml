@@ -13,7 +13,6 @@ repo_checkdepends: []
 repo_depends:
 - sdl2_mixer
 - sdl2_image
-- sauerbraten: sauerbraten-data
 repo_makedepends:
 - sdl2_mixer
 - sdl2_image

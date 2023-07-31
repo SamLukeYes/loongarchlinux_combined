@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mono-msbuild'')
 repo_checkdepends: []
 repo_depends:
 - mono
-- mono-msbuild
 - dotnet-core: dotnet-host
 repo_makedepends:
 - bash

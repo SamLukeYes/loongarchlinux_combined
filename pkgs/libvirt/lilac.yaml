@@ -10,9 +10,7 @@ repo_depends:
 - libxml2
 - numactl
 - polkit
-- libvirt
 - glusterfs
-- libvirt
 - libiscsi
 repo_makedepends:
 - meson

@@ -13,7 +13,6 @@ repo_depends:
 - python-six
 - python-editorconfig
 - python-six
-- python-jsbeautifier
 repo_makedepends:
 - python-build
 - python-installer

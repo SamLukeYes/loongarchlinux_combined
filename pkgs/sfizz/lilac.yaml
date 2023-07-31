@@ -13,11 +13,6 @@ repo_checkdepends:
 - catch2
 - lv2lint
 repo_depends:
-- sfizz: sfizz-lib
-- sfizz: sfizz-lv2
-- sfizz: sfizz-standalone
-- sfizz: sfizz-vst3
-- sfizz: pd-sfizz
 - abseil-cpp
 - gcc: gcc-libs
 - glibc

@@ -16,9 +16,7 @@ repo_depends:
 - libsecret
 - gtk3
 - graphviz
-- libgda6
 - postgresql: postgresql-libs
-- libgda6
 - sqlcipher
 repo_makedepends:
 - postgresql: postgresql-libs

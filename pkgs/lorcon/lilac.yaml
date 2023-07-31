@@ -15,7 +15,6 @@ repo_depends:
 - libpcap
 - glibc
 - python
-- lorcon
 repo_makedepends:
 - glibc
 - python

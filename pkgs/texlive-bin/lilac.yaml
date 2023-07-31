@@ -17,7 +17,6 @@ repo_depends:
 - mpfr
 - potrace
 - libpaper
-- texlive-bin: libsynctex
 - glibc
 - zlib
 repo_makedepends:

@@ -29,8 +29,6 @@ repo_depends:
 - xcb-util-wm
 - xcb-util-image
 - openssl
-- wezterm: wezterm-terminfo
-- wezterm: wezterm-shell-integration
 - ncurses
 repo_makedepends:
 - cmake

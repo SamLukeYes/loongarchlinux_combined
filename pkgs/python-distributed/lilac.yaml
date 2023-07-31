@@ -17,7 +17,6 @@ repo_checkdepends:
 - python-flaky
 - python-blosc
 - python-cryptography
-- python-distributed
 - python-fsspec
 - python-h5py
 - python-ipykernel

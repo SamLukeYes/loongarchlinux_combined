@@ -19,7 +19,6 @@ repo_depends:
 - zlib
 - gcc: gcc-libs
 - glibc
-- pythia8
 repo_makedepends:
 - fastjet
 - hepmc

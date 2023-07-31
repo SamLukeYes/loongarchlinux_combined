@@ -23,7 +23,6 @@ repo_depends:
 - nss
 - sqlite
 - webkit2gtk-4.1
-- evolution-data-server
 repo_makedepends:
 - boost
 - cmake

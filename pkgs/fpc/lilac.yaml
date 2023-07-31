@@ -16,8 +16,7 @@ repo_depends:
 - expat
 - binutils
 - make
-repo_makedepends:
-- fpc
+repo_makedepends: []
 update_on:
 - alpm: fpc
   source: archpkg

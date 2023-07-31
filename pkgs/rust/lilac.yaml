@@ -8,7 +8,6 @@ repo_depends:
 - gcc: gcc-libs
 - libssh2
 - llvm: llvm-libs
-- rust
 repo_makedepends:
 - cmake
 - libffi
@@ -17,6 +16,5 @@ repo_makedepends:
 - ninja
 - perl
 - python
-- rust
 - wasi-libc
 update_on: []

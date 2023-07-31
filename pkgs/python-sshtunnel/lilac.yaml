@@ -13,7 +13,6 @@ repo_checkdepends:
 - openssh
 repo_depends:
 - python
-- python-sshtunnel
 - python
 - python-paramiko
 repo_makedepends:
