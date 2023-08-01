@@ -19,7 +19,7 @@ repo_depends:
 - python-pkginfo
 - python-platformdirs
 - python-poetry-core
-- python-poetry-plugin-export
+# - python-poetry-plugin-export
 - python-pyproject-hooks
 - python-requests
 - python-requests-toolbelt
