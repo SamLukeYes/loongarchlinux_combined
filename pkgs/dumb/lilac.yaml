@@ -18,3 +18,4 @@ repo_makedepends:
 update_on:
 - alpm: dumb
   source: archpkg
+managed: false

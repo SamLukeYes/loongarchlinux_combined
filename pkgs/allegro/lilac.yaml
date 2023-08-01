@@ -29,3 +29,4 @@ repo_makedepends:
 update_on:
 - alpm: allegro
   source: archpkg
+managed: false

@@ -442,6 +442,8 @@ yaml-language-server
 zip
 zram-generator
 
+allegro
+dumb
 python-keras
 python-tensorboard_plugin_wit
 tensorboard
