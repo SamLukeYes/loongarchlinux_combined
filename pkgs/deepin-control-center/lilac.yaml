@@ -24,7 +24,7 @@ repo_depends:
 - deepin-qt-dbus-factory
 - deepin-qt5integration
 - deepin-pw-check
-- deepin-network-core
+# - deepin-network-core
 - qt5-multimedia
 repo_makedepends:
 - cmake
