@@ -18,7 +18,7 @@ repo_depends:
 - deepin-qt5integration
 - deepin-qt-dbus-factory
 - libdbusmenu-qt: libdbusmenu-qt5
-- deepin-network-core
+# - deepin-network-core
 repo_makedepends:
 - cmake
 - gtest
