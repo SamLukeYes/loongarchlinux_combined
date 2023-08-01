@@ -443,4 +443,6 @@ zip
 zram-generator
 
 python-keras
+python-tensorboard_plugin_wit
+tensorboard
 tensorflow
