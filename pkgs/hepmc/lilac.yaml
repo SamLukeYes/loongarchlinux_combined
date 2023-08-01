@@ -27,3 +27,4 @@ repo_makedepends:
 update_on:
 - alpm: hepmc
   source: archpkg
+managed: false

@@ -32,3 +32,4 @@ update_on:
 - alias: python
 - alpm: pythia8
   source: archpkg
+managed: false
