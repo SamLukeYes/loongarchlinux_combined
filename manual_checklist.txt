@@ -37,6 +37,7 @@ systemd
 thin-provisioning-tools
 vi
 xfsprogs
+
 0ad
 389-ds-base
 a2ps
@@ -440,3 +441,6 @@ yaegi
 yaml-language-server
 zip
 zram-generator
+
+python-keras
+tensorflow

@@ -174,11 +174,6 @@ repo_makedepends:
 - python-requests
 update_on:
 - alias: icu
-- alias: icu
-- alias: icu
-- alias: icu
-- alias: icu
-- alias: icu
-- alias: icu
 - alpm: tensorflow
   source: archpkg
+managed: false
