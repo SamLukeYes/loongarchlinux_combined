@@ -2,7 +2,7 @@ destsubdir: extra
 repo_checkdepends:
 - weston
 repo_depends:
-- adwaita-icon-theme
+# - adwaita-icon-theme
 - cairo
 - cantarell-fonts
 - dconf

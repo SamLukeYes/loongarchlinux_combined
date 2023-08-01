@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''adwaita-icon-theme'')
 repo_checkdepends: []
 repo_depends:
 - hicolor-icon-theme
-- gtk4: gtk-update-icon-cache
-- librsvg
-- hicolor-icon-theme
-- gtk4: gtk-update-icon-cache
+# - gtk4: gtk-update-icon-cache
 - librsvg
 repo_makedepends:
 - git
