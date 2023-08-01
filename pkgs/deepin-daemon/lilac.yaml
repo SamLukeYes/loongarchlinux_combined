@@ -26,7 +26,7 @@ repo_depends:
 - pkgconf
 - libxfixes
 - bamf
-- deepin-session-ui
+# - deepin-session-ui
 - sudo
 - imwheel
 - libxkbfile

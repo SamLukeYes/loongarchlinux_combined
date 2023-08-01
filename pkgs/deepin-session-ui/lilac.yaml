@@ -16,7 +16,7 @@ repo_depends:
 - lightdm: liblightdm-qt5
 - qt5-svg
 - deepin-daemon
-- deepin-control-center
+# - deepin-control-center
 - deepin-wallpapers
 repo_makedepends:
 - cmake

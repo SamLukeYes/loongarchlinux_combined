@@ -19,7 +19,7 @@ repo_depends:
 - libpwquality
 - geoip-database
 - geoip-database: geoip-database-extra
-- deepin-daemon
+# - deepin-daemon
 # - startdde
 - deepin-qt-dbus-factory
 - deepin-qt5integration
