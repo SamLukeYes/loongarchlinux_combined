@@ -9,7 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aarch64-linux-gnu-gli
   '
 repo_checkdepends: []
 repo_depends:
-- aarch64-linux-gnu-gcc
+# - aarch64-linux-gnu-gcc
 - aarch64-linux-gnu-linux-api-headers
 repo_makedepends:
 - python
