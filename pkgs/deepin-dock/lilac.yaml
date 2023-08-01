@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-dock'')
 repo_checkdepends: []
 repo_depends:
 - qt5-svg
-- deepin-menu
+# - deepin-menu
 - deepin-daemon
 # - deepin-launcher
 # - deepin-qt5integration
