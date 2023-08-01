@@ -33,7 +33,7 @@ repo_depends:
 - python
 - systemd
 - xdg-dbus-proxy
-- xdg-desktop-portal
+# - xdg-desktop-portal
 repo_makedepends:
 - docbook-xsl
 - git
