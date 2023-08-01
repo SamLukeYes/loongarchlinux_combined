@@ -16,7 +16,7 @@ repo_depends:
 - opencc
 - yaml-cpp
 - leveldb
-- rime-prelude: librime-data
+# - rime-prelude: librime-data
 - lua
 - google-glog
 - marisa

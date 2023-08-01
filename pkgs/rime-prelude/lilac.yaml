@@ -11,7 +11,7 @@ repo_checkdepends: []
 repo_depends:
 - rime-essay
 - rime-luna-pinyin
-- rime-bopomofo
+# - rime-bopomofo
 - rime-cangjie
 - rime-stroke
 - rime-terra-pinyin
