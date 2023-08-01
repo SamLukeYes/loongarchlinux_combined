@@ -15,7 +15,7 @@ repo_depends:
 - ksystemstats
 - ktexteditor
 - libqalculate
-- kde-cli-tools
+# - kde-cli-tools
 - appstream: appstream-qt
 - xorg-xrdb
 - xorg-xsetroot
