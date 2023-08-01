@@ -13,7 +13,7 @@ repo_checkdepends:
 - check
 repo_depends:
 - gnome-session
-- gnome-shell
+# - gnome-shell
 - libcanberra
 - libxdmcp
 - systemd
@@ -22,7 +22,6 @@ repo_depends:
 - xorg-xhost
 - xorg-xrdb
 - gnome-session
-- gnome-shell
 - libcanberra
 - libxdmcp
 - systemd
