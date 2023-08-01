@@ -35,3 +35,4 @@ update_on:
 - alias: python
 - alpm: tensorboard
   source: archpkg
+managed: false

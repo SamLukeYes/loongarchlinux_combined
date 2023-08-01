@@ -26,3 +26,4 @@ repo_makedepends:
 update_on:
 - alpm: python-tensorboard_plugin_wit
   source: archpkg
+managed: false
