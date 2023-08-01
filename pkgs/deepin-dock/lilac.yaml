@@ -15,7 +15,7 @@ repo_depends:
 - deepin-menu
 - deepin-daemon
 - deepin-launcher
-- deepin-qt5integration
+# - deepin-qt5integration
 - deepin-qt-dbus-factory
 - libdbusmenu-qt: libdbusmenu-qt5
 # - deepin-network-core
