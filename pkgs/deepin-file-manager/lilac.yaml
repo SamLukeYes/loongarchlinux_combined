@@ -25,7 +25,7 @@ repo_depends:
 - ffmpegthumbnailer
 - jemalloc
 - kcodecs
-- startdde
+# - startdde
 - htmlcxx
 - libgsf
 - mimetic
