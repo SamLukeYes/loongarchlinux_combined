@@ -4,16 +4,7 @@ repo_depends:
 - accountsservice
 - appstream
 - dbus
-- flatpak
-- glib2
-- gtk4
-- libadwaita
-- polkit
-- pygobject: python-gobject
-- accountsservice
-- appstream
-- dbus
-- flatpak
+# - flatpak
 - glib2
 - gtk4
 - libadwaita
