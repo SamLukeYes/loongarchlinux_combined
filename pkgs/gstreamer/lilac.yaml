@@ -82,7 +82,7 @@ repo_depends:
 - mjpegtools
 - musepack: libmpcdec
 - neon
-- openal
+# - openal
 - openexr
 - openjpeg2
 - opus
@@ -213,7 +213,7 @@ repo_makedepends:
 - mjpegtools
 - musepack: libmpcdec
 - neon
-- openal
+# - openal
 - libdvdnav
 - rtmpdump
 - sbc
