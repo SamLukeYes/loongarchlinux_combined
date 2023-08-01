@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-session-shell'
 repo_checkdepends: []
 repo_depends:
 - deepin-daemon
-- deepin-network-core
+# - deepin-network-core
 - deepin-qt5integration
 - deepin-wallpapers
 - gsettings-qt

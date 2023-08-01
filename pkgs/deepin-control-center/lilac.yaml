@@ -20,7 +20,7 @@ repo_depends:
 - geoip-database
 - geoip-database: geoip-database-extra
 - deepin-daemon
-- startdde
+# - startdde
 - deepin-qt-dbus-factory
 - deepin-qt5integration
 - deepin-pw-check

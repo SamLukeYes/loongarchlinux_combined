@@ -15,7 +15,7 @@ repo_depends:
 - deepin-dock
 - deepin-polkit-agent
 - deepin-file-manager
-- deepin-session-shell
+# - deepin-session-shell
 - deepin-session-ui
 - libgnome-keyring
 repo_makedepends:
