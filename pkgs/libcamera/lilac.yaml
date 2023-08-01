@@ -41,7 +41,7 @@ repo_makedepends:
 - git
 - glib2
 - graphviz
-- gstreamer: gst-plugins-base
+# - gstreamer: gst-plugins-base
 - gtest
 - libdrm
 - libjpeg-turbo
@@ -58,18 +58,6 @@ repo_makedepends:
 update_on:
 - alpm: systemd-libs
   provides: libudev.so
-  source: alpm
-- alpm: darktable
-  provides: libcamera.so
-  source: alpm
-- alpm: libcamera
-  provides: libcamera-base.so
-  source: alpm
-- alpm: darktable
-  provides: libcamera.so
-  source: alpm
-- alpm: libcamera
-  provides: libcamera-base.so
   source: alpm
 - alpm: libevent
   provides: libevent-2.1.so
@@ -91,12 +79,6 @@ update_on:
   source: alpm
 - alpm: glib2
   provides: libgobject-2.0.so
-  source: alpm
-- alpm: darktable
-  provides: libcamera.so
-  source: alpm
-- alpm: libcamera
-  provides: libcamera-base.so
   source: alpm
 - alpm: libcamera
   source: archpkg
