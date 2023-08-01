@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-kde-integra
   '
 repo_checkdepends: []
 repo_depends:
-- telepathy-kde-common-internals
+# - telepathy-kde-common-internals
 - kidletime
 - kactivities
 repo_makedepends:
