@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-movie'')
   '
 repo_checkdepends: []
 repo_depends:
-- deepin-qt5integration
+# - deepin-qt5integration
 - ffmpegthumbnailer
 - libxtst
 - mpv
