@@ -24,7 +24,7 @@ repo_depends:
 - gnome-desktop: gnome-desktop-4
 - gnome-online-accounts
 - gnome-settings-daemon
-- gnome-shell
+# - gnome-shell
 - gsettings-desktop-schemas
 - gsound
 - gtk4
