@@ -21,10 +21,10 @@ repo_depends:
 - grep
 - shadow
 - zlib
-repo_makedepends:
-- python
-- xmlto
-- asciidoc
+# repo_makedepends:
+# - python
+# - xmlto
+# - asciidoc
 update_on:
 - alias: perl
 - alpm: git
