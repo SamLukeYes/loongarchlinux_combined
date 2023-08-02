@@ -242,7 +242,7 @@ repo_makedepends:
 - libdvdread
 - libmpeg2
 - x264
-- ffmpeg
+# - ffmpeg
 - libxrandr
 - pygobject: python-gobject
 - xorg-server: xorg-server-xvfb
