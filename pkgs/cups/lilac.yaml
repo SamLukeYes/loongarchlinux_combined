@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cups'')
 repo_checkdepends: []
 repo_depends:
 - gnutls
-- avahi
+# - avahi
 - acl
 - pam
 - cups-filters
@@ -27,7 +27,7 @@ repo_makedepends:
 - cups-filters
 # - colord
 - libusb
-- avahi
+# - avahi
 - systemd
 - libpaper
 update_on:
