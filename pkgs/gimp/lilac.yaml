@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gimp'')
   '
 repo_checkdepends: []
 repo_depends:
-- babl
+# - babl
 # - cairo
 - fontconfig
 - freetype2
@@ -54,12 +54,12 @@ repo_depends:
 - poppler-data
 - poppler: poppler-glib
 - xz
-repo_makedepends:
-- alsa-lib
-- ghostscript
-- gtk-doc
+# repo_makedepends:
+# - alsa-lib
+# - ghostscript
+# - gtk-doc
 # - gvfs
-- intltool
+# - intltool
 update_on:
 - alpm: gimp
   source: archpkg
