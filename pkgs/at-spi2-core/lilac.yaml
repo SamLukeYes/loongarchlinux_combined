@@ -23,7 +23,7 @@ repo_makedepends:
 - gi-docgen
 - git
 - gobject-introspection
-- meson
+# - meson
 - python-sphinx
 update_on:
 - alpm: at-spi2-core
