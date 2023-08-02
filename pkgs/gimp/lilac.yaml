@@ -36,7 +36,7 @@ repo_depends:
 - libgudev
 - libheif
 - libjpeg-turbo
-- libjxl
+# - libjxl
 - libmng
 - libpng
 - librsvg
