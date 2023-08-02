@@ -14,7 +14,7 @@ repo_depends:
 - libdrm
 - libiec61883
 - libmodplug
-- pulseaudio: libpulse
+# - pulseaudio: libpulse
 - libraw1394
 - libsoxr
 - libssh
