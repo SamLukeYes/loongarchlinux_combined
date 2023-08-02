@@ -14,7 +14,7 @@ repo_depends:
 - qt5-base
 - gstreamer: gst-plugins-base
 - pulseaudio: libpulse
-- openal
+# - openal
 repo_makedepends:
 - qt5-declarative
 - gstreamer: gst-plugins-bad
