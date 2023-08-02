@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcitx5'')
 repo_checkdepends: []
 repo_depends:
 - cairo
-- enchant
+# - enchant
 - iso-codes
 - libxkbcommon: libxkbcommon-x11
 - pango
