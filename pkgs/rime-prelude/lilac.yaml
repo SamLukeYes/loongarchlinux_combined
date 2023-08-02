@@ -12,7 +12,7 @@ repo_depends:
 - rime-essay
 - rime-luna-pinyin
 # - rime-bopomofo
-- rime-cangjie
+# - rime-cangjie
 - rime-stroke
 - rime-terra-pinyin
 repo_makedepends: []
