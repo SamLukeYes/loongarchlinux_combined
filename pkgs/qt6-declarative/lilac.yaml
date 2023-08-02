@@ -6,7 +6,7 @@ repo_makedepends:
 - cmake
 - ninja
 - python
-- at-spi2-core
+# - at-spi2-core
 - qt6-shadertools
 - qt6-languageserver
 - qt6-tools
