@@ -66,7 +66,7 @@ repo_depends:
 - libxml2
 - libdc1394
 - openexr
-- libde265
+# - libde265
 - openssl
 - libdca
 - faac
@@ -206,7 +206,7 @@ repo_makedepends:
 - libkate
 - liblrdf
 - ladspa
-- libde265
+# - libde265
 - lilv
 - lv2
 - libmicrodns
