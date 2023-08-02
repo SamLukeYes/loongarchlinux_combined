@@ -17,7 +17,7 @@ repo_depends:
 - freetype2
 - gcc: gcc-libs
 - gdk-pixbuf2
-- gegl
+# - gegl
 - glib2
 - glibc
 - gtk2
