@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gimp'')
 repo_checkdepends: []
 repo_depends:
 - babl
-- cairo
+# - cairo
 - fontconfig
 - freetype2
 - gcc: gcc-libs
