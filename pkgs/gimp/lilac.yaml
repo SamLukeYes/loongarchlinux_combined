@@ -27,7 +27,7 @@ repo_depends:
 - json-glib
 - lcms2
 - libgexiv2
-- libmypaint
+# - libmypaint
 - libunwind
 - mypaint-brushes1
 - pango
