@@ -10,14 +10,14 @@ repo_depends:
 - libxaw
 - libnsl
 - libpng
-repo_makedepends:
-- swig
-- guile
-- lua
-- perl
-- python
-- r
-- tk
-- qt6-base
-- gtk2
+# repo_makedepends:
+# - swig
+# - guile
+# - lua
+# - perl
+# - python
+# - r
+# - tk
+# - qt6-base
+# - gtk2
 update_on: []
