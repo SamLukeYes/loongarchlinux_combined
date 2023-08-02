@@ -16,10 +16,10 @@ repo_depends:
 - libmpc
 - libisl
 - zstd
-repo_makedepends:
-- gmp
-- mpfr
-- arm-none-eabi-newlib
+# repo_makedepends:
+# - gmp
+# - mpfr
+# - arm-none-eabi-newlib
 update_on:
 - alpm: arm-none-eabi-gcc
   source: archpkg
