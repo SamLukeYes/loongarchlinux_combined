@@ -253,7 +253,4 @@ update_on:
 - alpm: qt6-declarative
   source: alpm
   strip_release: true
-- alpm: qt5-declarative
-  source: alpm
-  strip_release: true
 - alias: python
