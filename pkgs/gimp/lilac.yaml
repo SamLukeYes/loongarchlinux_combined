@@ -58,7 +58,7 @@ repo_makedepends:
 - alsa-lib
 - ghostscript
 - gtk-doc
-- gvfs
+# - gvfs
 - intltool
 update_on:
 - alpm: gimp
