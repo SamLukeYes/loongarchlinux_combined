@@ -14,7 +14,7 @@ repo_depends:
 # - rime-bopomofo
 # - rime-cangjie
 - rime-stroke
-- rime-terra-pinyin
+# - rime-terra-pinyin
 repo_makedepends: []
 update_on:
 - alpm: rime-prelude
