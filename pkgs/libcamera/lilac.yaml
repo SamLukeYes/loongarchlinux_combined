@@ -30,7 +30,7 @@ repo_depends:
 - libtiff
 - libyaml
 - qt5-base
-- sdl2
+# - sdl2
 - gcc: gcc-libs
 - glibc
 - glib2
@@ -53,7 +53,7 @@ repo_makedepends:
 - python-sphinx
 - qt5-base
 - qt5-tools
-- sdl2
+# - sdl2
 - systemd
 update_on:
 - alpm: systemd-libs
