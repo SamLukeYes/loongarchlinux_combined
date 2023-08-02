@@ -30,7 +30,7 @@ repo_depends:
 - opencore-amr
 - openjpeg2
 - opus
-- sdl2
+# - sdl2
 - speex
 - srt
 - svt-av1
