@@ -1,7 +1,7 @@
 destsubdir: extra
 repo_checkdepends: []
 repo_depends:
-- alsa-lib
+# - alsa-lib
 - aom
 - bzip2
 - fontconfig
@@ -39,17 +39,17 @@ repo_depends:
 - vulkan-icd-loader
 - xz
 - zlib
-repo_makedepends:
-- amf-headers
-- avisynthplus
-- clang
-- ffnvcodec-headers
-- git
-- ladspa
-- mesa
-- nasm
-- opencl-headers
-- vulkan-headers
+# repo_makedepends:
+# - amf-headers
+# - avisynthplus
+# - clang
+# - ffnvcodec-headers
+# - git
+# - ladspa
+# - mesa
+# - nasm
+# - opencl-headers
+# - vulkan-headers
 update_on:
 - alpm: libass
   provides: libass.so
