@@ -32,7 +32,7 @@ repo_depends:
 - opus
 - graphene
 - libpng
-- pulseaudio: libpulse
+# - pulseaudio: libpulse
 # - libsoup3
 - wavpack
 # - aalib
@@ -130,122 +130,122 @@ repo_depends:
 - python
 - libxrandr
 - pygobject: python-gobject
-repo_makedepends:
-- git
-- meson
-- valgrind
-- libunwind
-- gobject-introspection
-- bash-completion
-- gtk3
-- libcap
-- python
-- cdparanoia
-- graphene
-- opus
-- libtheora
-- libxv
-# - sdl2
-- qt5-base
-- qt5-tools
-- zlib
-- libglvnd
-- wayland
-- wayland-protocols
-- libx11
-- libgudev
-- libdrm
-- mesa
-- orc
-- libxi
-- nasm
-- v4l-utils
-# - aalib
-- flac
-- jack2
-- lame
-- libcaca
-- libdv
-- mpg123
-- libraw1394
-- libavc1394
-- libiec61883
-- qt5-declarative
-- qt5-x11extras
-- qt5-wayland
-- pulseaudio: libpulse
-- libshout
-- taglib
-- twolame
-- libvpx
-- wavpack
-- cairo
-# - libsoup3
-- qt6-declarative
-- qt6-wayland
-- qt6-tools
-- nettle
-- libdc1394
-- openexr
-- vulkan-icd-loader
-- vulkan-headers
-- vulkan-validation-layers
-- shaderc
-- libltc
-# - bluez: bluez-libs
-- libavtp
-- libbs2b
-- bzip2
-# - chromaprint
-- libdca
-- faac
-- faad2
-- libfdk-aac
-# - fluidsynth
-- libgme
-- libkate
-- liblrdf
-- ladspa
-# - libde265
-- lilv
-- lv2
-- libmicrodns
-- mjpegtools
-- musepack: libmpcdec
-- neon
-# - openal
-- libdvdnav
-- rtmpdump
-- sbc
-- soundtouch
-- spandsp
-- libsrtp
-- zvbi
-# - libnice
-- webrtc-audio-processing
-- wildmidi
-- zxing-cpp
-- zbar
-- libxml2
-- gsm
-- libopenmpt
-# - wpewebkit
-- libldac
-- libfreeaptx
-- qrencode
-- json-glib
-- libva
-- libxkbcommon: libxkbcommon-x11
-# - a52dec
-- opencore-amr
-- libcdio
-- libdvdread
-- libmpeg2
-- x264
-# - ffmpeg
-- libxrandr
-- pygobject: python-gobject
-- xorg-server: xorg-server-xvfb
+# repo_makedepends:
+# - git
+# - meson
+# - valgrind
+# - libunwind
+# - gobject-introspection
+# - bash-completion
+# - gtk3
+# - libcap
+# - python
+# - cdparanoia
+# - graphene
+# - opus
+# - libtheora
+# - libxv
+# # - sdl2
+# - qt5-base
+# - qt5-tools
+# - zlib
+# - libglvnd
+# - wayland
+# - wayland-protocols
+# - libx11
+# - libgudev
+# - libdrm
+# - mesa
+# - orc
+# - libxi
+# - nasm
+# - v4l-utils
+# # - aalib
+# - flac
+# - jack2
+# - lame
+# - libcaca
+# - libdv
+# - mpg123
+# - libraw1394
+# - libavc1394
+# - libiec61883
+# - qt5-declarative
+# - qt5-x11extras
+# - qt5-wayland
+# - pulseaudio: libpulse
+# - libshout
+# - taglib
+# - twolame
+# - libvpx
+# - wavpack
+# - cairo
+# # - libsoup3
+# - qt6-declarative
+# - qt6-wayland
+# - qt6-tools
+# - nettle
+# - libdc1394
+# - openexr
+# - vulkan-icd-loader
+# - vulkan-headers
+# - vulkan-validation-layers
+# - shaderc
+# - libltc
+# # - bluez: bluez-libs
+# - libavtp
+# - libbs2b
+# - bzip2
+# # - chromaprint
+# - libdca
+# - faac
+# - faad2
+# - libfdk-aac
+# # - fluidsynth
+# - libgme
+# - libkate
+# - liblrdf
+# - ladspa
+# # - libde265
+# - lilv
+# - lv2
+# - libmicrodns
+# - mjpegtools
+# - musepack: libmpcdec
+# - neon
+# # - openal
+# - libdvdnav
+# - rtmpdump
+# - sbc
+# - soundtouch
+# - spandsp
+# - libsrtp
+# - zvbi
+# # - libnice
+# - webrtc-audio-processing
+# - wildmidi
+# - zxing-cpp
+# - zbar
+# - libxml2
+# - gsm
+# - libopenmpt
+# # - wpewebkit
+# - libldac
+# - libfreeaptx
+# - qrencode
+# - json-glib
+# - libva
+# - libxkbcommon: libxkbcommon-x11
+# # - a52dec
+# - opencore-amr
+# - libcdio
+# - libdvdread
+# - libmpeg2
+# - x264
+# # - ffmpeg
+# - libxrandr
+# - pygobject: python-gobject
+# - xorg-server: xorg-server-xvfb
 update_on:
 - alpm: jack2
   provides: libjack.so
