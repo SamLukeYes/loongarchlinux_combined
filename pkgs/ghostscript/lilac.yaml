@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ghostscript'')
 repo_checkdepends: []
 repo_depends:
 - libxt
-- cups: libcups
+# - cups: libcups
 - fontconfig
 - zlib
 - libpng

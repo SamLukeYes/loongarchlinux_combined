@@ -8,7 +8,7 @@ repo_depends:
 - systemd
 - libexif
 repo_makedepends:
-# - ghostscript
+- ghostscript
 - python
 - mupdf: mupdf-tools
 - liblouis
