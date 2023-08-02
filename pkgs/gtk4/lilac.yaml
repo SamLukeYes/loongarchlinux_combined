@@ -34,7 +34,7 @@ repo_depends:
 - libxrender
 - pango
 - shared-mime-info
-- tracker3
+# - tracker3
 - wayland
 repo_makedepends:
 - docbook-xsl
