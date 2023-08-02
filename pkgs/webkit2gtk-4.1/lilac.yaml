@@ -4,7 +4,7 @@ repo_depends:
 # - at-spi2-core
 - bubblewrap
 - cairo
-- enchant
+# - enchant
 - fontconfig
 - freetype2
 - glib2
