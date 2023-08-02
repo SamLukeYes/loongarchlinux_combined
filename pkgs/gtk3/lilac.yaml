@@ -3,7 +3,7 @@ repo_checkdepends: []
 repo_depends:
 # - adwaita-icon-theme
 - cairo
-- cantarell-fonts
+# - cantarell-fonts
 - dconf
 - desktop-file-utils
 - fontconfig
