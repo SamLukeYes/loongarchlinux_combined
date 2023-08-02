@@ -15,7 +15,7 @@ repo_depends:
 # - avahi
 - acl
 - pam
-- cups-filters
+# - cups-filters
 - dbus
 - systemd
 - libpaper
@@ -24,7 +24,7 @@ repo_makedepends:
 - acl
 - pam
 - gnutls
-- cups-filters
+# - cups-filters
 # - colord
 - libusb
 # - avahi
