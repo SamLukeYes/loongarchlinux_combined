@@ -17,10 +17,10 @@ repo_depends:
 - jsoncpp
 - libuv
 - rhash
-repo_makedepends:
-- qt6-base
-- python-sphinx
-- emacs
+# repo_makedepends:
+# - qt6-base
+# - python-sphinx
+# - emacs
 update_on:
 - alias: jsoncpp
 - alpm: jsoncpp
