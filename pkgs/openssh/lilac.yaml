@@ -19,9 +19,9 @@ repo_depends:
 - openssl
 - pam
 - zlib
-repo_makedepends:
-- libfido2
-- linux: linux-headers
+# repo_makedepends:
+# - libfido2
+# - linux: linux-headers
 update_on:
 - alpm: krb5
   provides: libkrb5.so
