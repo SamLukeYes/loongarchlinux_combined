@@ -27,16 +27,16 @@ repo_depends:
 - sqlite
 - systemd
 - zlib
-repo_makedepends:
+# repo_makedepends:
 # - apache
-- python
-- python-py3c
-- perl
-- swig
-- libgnome-keyring
-- kwallet
+# - python
+# - python-py3c
+# - perl
+# - swig
+# - libgnome-keyring
+# - kwallet
 # - kdelibs4support
-- ruby
+# - ruby
 update_on:
 - alpm: subversion
   source: archpkg
