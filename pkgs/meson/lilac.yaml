@@ -24,7 +24,7 @@ repo_makedepends:
 - gtest
 - gtk-doc
 - gtk3
-- gtkmm3
+# - gtkmm3
 - hotdoc
 - itstool
 - elfutils: libelf
