@@ -91,7 +91,7 @@ repo_depends:
 - librsvg
 - rtmpdump
 - sbc
-- libsndfile
+# - libsndfile
 - libltc
 - soundtouch
 - spandsp
