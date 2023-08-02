@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gsettings-desktop-sch
 repo_checkdepends: []
 repo_depends:
 - adobe-source-code-pro-fonts
-- cantarell-fonts
+# - cantarell-fonts
 - dconf
 - glib2
 repo_makedepends:
