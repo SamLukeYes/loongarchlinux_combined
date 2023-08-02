@@ -126,7 +126,7 @@ repo_depends:
 - x264
 - opencore-amr
 - bzip2
-- ffmpeg
+# - ffmpeg
 - python
 - libxrandr
 - pygobject: python-gobject
