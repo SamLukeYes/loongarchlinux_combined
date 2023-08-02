@@ -145,7 +145,7 @@ repo_makedepends:
 - opus
 - libtheora
 - libxv
-- sdl2
+# - sdl2
 - qt5-base
 - qt5-tools
 - zlib
