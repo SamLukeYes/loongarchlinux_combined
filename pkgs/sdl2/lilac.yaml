@@ -32,7 +32,7 @@ repo_makedepends:
 - libxss
 - cmake
 - ninja
-- pipewire
+# - pipewire
 - libdecor
 update_on:
 - alpm: sdl2
