@@ -14,20 +14,20 @@ repo_depends:
 - libical
 - dbus
 - glib2
-- alsa-lib
+# - alsa-lib
 - json-c
 - dbus
 # - systemd
 - glibc
 # - cups
-repo_makedepends:
-- dbus
-- libical
+# repo_makedepends:
+# - dbus
+# - libical
 # - systemd
-- alsa-lib
-- json-c
-- ell
-- python-docutils
+# - alsa-lib
+# - json-c
+# - ell
+# - python-docutils
 update_on:
 - alpm: bluez
   source: archpkg
