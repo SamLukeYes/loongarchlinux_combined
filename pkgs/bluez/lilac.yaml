@@ -19,7 +19,7 @@ repo_depends:
 - dbus
 # - systemd
 - glibc
-- cups
+# - cups
 repo_makedepends:
 - dbus
 - libical
