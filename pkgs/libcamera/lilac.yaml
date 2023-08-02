@@ -34,14 +34,14 @@ repo_depends:
 - gcc: gcc-libs
 - glibc
 - glib2
-- gstreamer
-- gstreamer: gst-plugins-base-libs
+# - gstreamer
+# - gstreamer: gst-plugins-base-libs
 repo_makedepends:
 - doxygen
 - git
 - glib2
 - graphviz
-- gstreamer: gst-plugins-base
+# - gstreamer: gst-plugins-base
 - gtest
 - libdrm
 - libjpeg-turbo
