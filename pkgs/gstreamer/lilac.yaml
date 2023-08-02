@@ -52,7 +52,7 @@ repo_depends:
 - flac
 - libraw1394
 - lame
-# - mpg123
+- mpg123
 - twolame
 - nettle
 - aom
@@ -91,7 +91,7 @@ repo_depends:
 - librsvg
 - rtmpdump
 - sbc
-# - libsndfile
+- libsndfile
 - libltc
 - soundtouch
 - spandsp

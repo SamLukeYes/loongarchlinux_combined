@@ -2,7 +2,7 @@ destsubdir: extra
 repo_checkdepends: []
 repo_depends:
 - alsa-lib
-repo_makedepends:
-- sdl2
-- pulseaudio: libpulse
+# repo_makedepends:
+# - sdl2
+# - pulseaudio: libpulse
 update_on: []
