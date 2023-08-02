@@ -17,7 +17,7 @@ repo_depends:
 - libx11
 - libxml2
 - libxtst
-- systemd
+# - systemd
 repo_makedepends:
 - dbus-broker
 - gi-docgen
