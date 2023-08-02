@@ -33,7 +33,7 @@ repo_depends:
 - graphene
 - libpng
 - pulseaudio: libpulse
-- libsoup3
+# - libsoup3
 - wavpack
 # - aalib
 - taglib
@@ -180,7 +180,7 @@ repo_makedepends:
 - libvpx
 - wavpack
 - cairo
-- libsoup3
+# - libsoup3
 - qt6-declarative
 - qt6-wayland
 - qt6-tools
