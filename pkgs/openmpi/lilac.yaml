@@ -27,11 +27,11 @@ repo_depends:
 - openpmix
 - openssh
 - zlib
-repo_makedepends:
-- cuda
-- gcc: gcc-fortran
-- inetutils
-- valgrind
+# repo_makedepends:
+# - cuda
+# - gcc: gcc-fortran
+# - inetutils
+# - valgrind
 update_on:
 - alpm: openpmix
   provides: libpmix.so
