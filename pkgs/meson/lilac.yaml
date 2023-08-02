@@ -40,7 +40,7 @@ repo_makedepends:
 - python-pytest-xdist
 - qt5-base
 - qt5-tools
-- sdl2
+# - sdl2
 - vala
 - valgrind
 - vulkan-validation-layers
