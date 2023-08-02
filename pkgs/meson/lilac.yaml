@@ -18,7 +18,7 @@ repo_makedepends:
 - gcc: gcc-fortran
 - gcc: gcc-objc
 - git
-- gnustep-base
+# - gnustep-base
 - gobject-introspection
 - graphviz
 - gtest
