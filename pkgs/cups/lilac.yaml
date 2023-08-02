@@ -17,7 +17,7 @@ repo_depends:
 - pam
 # - cups-filters
 - dbus
-- systemd
+# - systemd
 - libpaper
 - hicolor-icon-theme
 repo_makedepends:
@@ -28,7 +28,7 @@ repo_makedepends:
 # - colord
 - libusb
 # - avahi
-- systemd
+# - systemd
 - libpaper
 update_on:
 - alpm: cups
