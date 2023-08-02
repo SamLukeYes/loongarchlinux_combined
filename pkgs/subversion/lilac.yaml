@@ -35,7 +35,7 @@ repo_makedepends:
 - swig
 - libgnome-keyring
 - kwallet
-- kdelibs4support
+# - kdelibs4support
 - ruby
 update_on:
 - alpm: subversion
