@@ -30,7 +30,7 @@ repo_depends:
 - libxrender
 - pango
 - shared-mime-info
-- tracker3
+# - tracker3
 - wayland
 - gtk4: gtk-update-icon-cache
 repo_makedepends:
