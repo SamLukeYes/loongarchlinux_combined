@@ -192,7 +192,7 @@ repo_makedepends:
 - vulkan-validation-layers
 - shaderc
 - libltc
-- bluez: bluez-libs
+# - bluez: bluez-libs
 - libavtp
 - libbs2b
 - bzip2
