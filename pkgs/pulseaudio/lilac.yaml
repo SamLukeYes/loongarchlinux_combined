@@ -33,7 +33,7 @@ repo_depends:
 - bluez: bluez-libs
 - gstreamer: gst-plugins-base-libs
 - sbc
-- pyqt5: python-pyqt5
+# - pyqt5: python-pyqt5
 - gstreamer: gst-plugins-base
 - gstreamer: gst-plugins-base-libs
 - gstreamer: gst-plugins-good
