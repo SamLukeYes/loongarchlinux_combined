@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''at-spi2-core'')
   '
 repo_checkdepends: []
 repo_depends:
-- dbus
+# - dbus
 - glib2
 - gsettings-desktop-schemas
 - libx11
