@@ -19,7 +19,7 @@ repo_depends:
 - libxtst
 # - systemd
 repo_makedepends:
-- dbus-broker
+# - dbus-broker
 - gi-docgen
 - git
 # - gobject-introspection
