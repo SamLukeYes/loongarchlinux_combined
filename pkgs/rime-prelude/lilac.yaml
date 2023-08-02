@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rime-prelude'')
 repo_checkdepends: []
 repo_depends:
 - rime-essay
-# - rime-luna-pinyin
+- rime-luna-pinyin
 # - rime-bopomofo
 # - rime-cangjie
 - rime-stroke
