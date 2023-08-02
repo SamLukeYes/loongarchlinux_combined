@@ -18,7 +18,7 @@ repo_depends:
 - libsoxr
 - libxtst
 - orc
-- rtkit
+# - rtkit
 - speexdsp
 - tdb
 - webrtc-audio-processing
