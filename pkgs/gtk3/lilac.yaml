@@ -13,7 +13,7 @@ repo_depends:
 - harfbuzz
 - iso-codes
 - libcloudproviders
-- colord: libcolord
+# - colord: libcolord
 - cups: libcups
 - libepoxy
 - librsvg
