@@ -2,11 +2,11 @@ destsubdir: core
 repo_checkdepends: []
 repo_depends:
 - bash
-- coreutils
+# - coreutils
 - findutils
 - nss: ca-certificates-mozilla
-repo_makedepends:
-- asciidoc
-- xmltoman
-- p11-kit
+# repo_makedepends:
+# - asciidoc
+# - xmltoman
+# - p11-kit
 update_on: []
