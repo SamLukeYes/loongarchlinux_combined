@@ -27,7 +27,7 @@ repo_depends:
 - libsndfile
 - libxcb
 - systemd
-- avahi
+# - avahi
 - lirc
 - bluez
 - bluez: bluez-libs
