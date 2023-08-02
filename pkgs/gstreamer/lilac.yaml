@@ -118,7 +118,7 @@ repo_depends:
 - qt5-declarative
 - qt5-x11extras
 - qt5-wayland
-- wpewebkit
+# - wpewebkit
 - libdvdread
 - libmpeg2
 # - a52dec
@@ -229,7 +229,7 @@ repo_makedepends:
 - libxml2
 - gsm
 - libopenmpt
-- wpewebkit
+# - wpewebkit
 - libldac
 - libfreeaptx
 - qrencode
