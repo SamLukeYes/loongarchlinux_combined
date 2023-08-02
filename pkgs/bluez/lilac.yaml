@@ -17,16 +17,13 @@ repo_depends:
 - alsa-lib
 - json-c
 - dbus
-- systemd
-- glib2
+# - systemd
 - glibc
 - cups
-- systemd
-- systemd
 repo_makedepends:
 - dbus
 - libical
-- systemd
+# - systemd
 - alsa-lib
 - json-c
 - ell
