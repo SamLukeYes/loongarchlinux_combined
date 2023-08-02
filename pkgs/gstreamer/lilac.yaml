@@ -121,7 +121,7 @@ repo_depends:
 - wpewebkit
 - libdvdread
 - libmpeg2
-- a52dec
+# - a52dec
 - libcdio
 - x264
 - opencore-amr
@@ -236,7 +236,7 @@ repo_makedepends:
 - json-glib
 - libva
 - libxkbcommon: libxkbcommon-x11
-- a52dec
+# - a52dec
 - opencore-amr
 - libcdio
 - libdvdread
