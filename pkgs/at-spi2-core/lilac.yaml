@@ -22,7 +22,7 @@ repo_makedepends:
 - dbus-broker
 - gi-docgen
 - git
-- gobject-introspection
+# - gobject-introspection
 # - meson
 - python-sphinx
 update_on:
