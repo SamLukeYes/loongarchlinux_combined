@@ -59,7 +59,7 @@ repo_depends:
 - libass
 - libbs2b
 - bzip2
-- chromaprint
+# - chromaprint
 - pango
 - lcms2
 - curl
@@ -196,7 +196,7 @@ repo_makedepends:
 - libavtp
 - libbs2b
 - bzip2
-- chromaprint
+# - chromaprint
 - libdca
 - faac
 - faad2
