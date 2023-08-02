@@ -35,7 +35,7 @@ repo_depends:
 - srt
 - svt-av1
 - v4l-utils
-- vmaf
+# - vmaf
 - vulkan-icd-loader
 - xz
 - zlib
