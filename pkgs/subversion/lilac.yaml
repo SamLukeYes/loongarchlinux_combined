@@ -28,7 +28,7 @@ repo_depends:
 - systemd
 - zlib
 repo_makedepends:
-- apache
+# - apache
 - python
 - python-py3c
 - perl
