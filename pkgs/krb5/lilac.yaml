@@ -1,7 +1,7 @@
 destsubdir: core
 repo_depends:
 - keyutils
-- e2fsprogs
+#- e2fsprogs
 - glibc
 - openldap: libldap
 update_on:
