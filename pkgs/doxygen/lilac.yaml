@@ -12,16 +12,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''doxygen'')
 repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-repo_makedepends:
-- cmake
-- gcc: gcc-libs
-- flex
-- qt5-base
-- ghostscript
-- texlive-texmf: texlive-latexextra
-- graphviz
-- python
-- git
+# repo_makedepends:
+# - cmake
+# - gcc: gcc-libs
+# - flex
+# - qt5-base
+# - ghostscript
+# - texlive-texmf: texlive-latexextra
+# - graphviz
+# - python
+# - git
 update_on:
 - alpm: doxygen
   source: archpkg
