@@ -22,7 +22,7 @@ repo_depends:
 #- elfutils: libelf
 - libidn2
 - libxcrypt
-- audit
+#- audit
 - python-pefile
 - iptables
 #- binutils
