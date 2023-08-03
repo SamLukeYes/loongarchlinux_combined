@@ -12,15 +12,15 @@ repo_checkdepends:
 - python-tomli
 repo_depends:
 - python-packaging
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
-- python-sphinx
-- python-sphinx-autodoc-typehints
-- python-sphinx-furo
+# repo_makedepends:
+# - git
+# - python-build
+# - python-installer
+# - python-setuptools
+# - python-wheel
+# - python-sphinx
+# - python-sphinx-autodoc-typehints
+# - python-sphinx-furo
 update_on:
 - alpm: python-pep621
   source: archpkg

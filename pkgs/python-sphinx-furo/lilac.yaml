@@ -12,15 +12,15 @@ repo_depends:
 - python-sphinx-basic-ng
 - python-pygments
 - python-beautifulsoup4
-repo_makedepends:
-- python-build
-- python-installer
-- python-sphinx-theme-builder
-- python-flit-core
-- nodejs-lts-hydrogen
-- npm
-- expac
-- git
+# repo_makedepends:
+# - python-build
+# - python-installer
+# - python-sphinx-theme-builder
+# - python-flit-core
+# - nodejs-lts-hydrogen
+# - npm
+# - expac
+# - git
 update_on:
 - alpm: python-sphinx-furo
   source: archpkg

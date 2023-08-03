@@ -20,10 +20,10 @@ repo_depends:
 - python-setuptools
 - python-pep621
 - python-pyproject-metadata
-repo_makedepends:
-- python-build
-- python-installer
-- python-flit-core
+# repo_makedepends:
+# - python-build
+# - python-installer
+# - python-flit-core
 update_on:
 - alias: python
 - alpm: python-sphinx-theme-builder
