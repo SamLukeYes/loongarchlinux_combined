@@ -22,11 +22,11 @@ repo_depends:
 - xcb-util-wm
 - libxkbfile
 - fmt
-- gdk-pixbuf2
-repo_makedepends:
-- extra-cmake-modules
-- ninja
-- wayland-protocols
+# - gdk-pixbuf2
+# repo_makedepends:
+# - extra-cmake-modules
+# - ninja
+# - wayland-protocols
 update_on:
 - alpm: fcitx5
   source: archpkg
