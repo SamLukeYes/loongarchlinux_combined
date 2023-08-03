@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''startdde'')
   '
 repo_depends:
 - deepin-daemon
-- deepin-session-shell
+# - deepin-session-shell
 - deepin-session-ui
 # - deepin-file-manager
 - libgnome-keyring

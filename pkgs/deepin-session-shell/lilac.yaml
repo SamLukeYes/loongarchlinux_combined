@@ -14,7 +14,7 @@ repo_depends:
 - deepin-network-core
 - kwayland
 - deepin-wallpapers
-- startdde
+# - startdde
 - gsettings-qt
 - lightdm: liblightdm-qt5
 - lightdm
