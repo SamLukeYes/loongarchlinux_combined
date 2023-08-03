@@ -8,13 +8,13 @@ repo_depends:
 - librsvg
 - iso-codes
 - glib2
-- hicolor-icon-theme
+#- hicolor-icon-theme
 - cups: libcups
 - libxrandr
 - pango
 - libxinerama
 - libxcursor
-- tracker3
+#- tracker3
 - harfbuzz
 - fribidi
 - cairo
@@ -24,7 +24,7 @@ repo_depends:
 - fontconfig
 - libxkbcommon
 - graphene
-- adwaita-icon-theme
+#- adwaita-icon-theme
 - libepoxy
 - gdk-pixbuf2
 - wayland
