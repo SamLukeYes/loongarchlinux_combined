@@ -13,7 +13,7 @@ repo_checkdepends: []
 repo_depends:
 - libbsd
 - popt
-- cifs-utils
+# - cifs-utils
 - tdb
 - ldb
 - tevent
