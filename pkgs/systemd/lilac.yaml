@@ -10,7 +10,7 @@ repo_depends:
 - acl
 - gcc: gcc-libs
 - xz
-- dbus
+#- dbus
 - hwdata
 - bash
 - cryptsetup
