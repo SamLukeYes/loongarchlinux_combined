@@ -84,7 +84,7 @@ repo_depends:
 - orc
 # - qt6-wayland
 - graphene
-- openal
+#- openal
 - libbs2b
 - python
 #- pulseaudio: libpulse
