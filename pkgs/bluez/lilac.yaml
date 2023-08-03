@@ -16,7 +16,6 @@ repo_depends:
 - glib2
 # - alsa-lib
 - json-c
-- dbus
 # - systemd
 - glibc
 # - cups
