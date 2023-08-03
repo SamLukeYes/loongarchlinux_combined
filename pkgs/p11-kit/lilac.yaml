@@ -13,7 +13,7 @@ repo_depends:
 - libtasn1
 - libffi
 - glibc
-- coreutils
+#- coreutils
 update_on:
 - alpm: libp11-kit
   provides: libp11-kit.so
