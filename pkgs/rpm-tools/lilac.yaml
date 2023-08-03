@@ -1,15 +1,12 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- lua
 - file
-- nss
-- popt
 - elfutils
+- popt
+- nss
 - libarchive
 - libcap
 - lmdb
-repo_makedepends:
-- python
+- lua
 update_on:
 - alias: lua

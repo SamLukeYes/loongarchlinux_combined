@@ -1,28 +1,14 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- libpciaccess
-- yajl
-- fuse3
-- gnutls
-- parted
-- libssh
-- libxml2
+- libiscsi
 - numactl
+- fuse3
+- glusterfs
 - polkit
-- glusterfs
-- libiscsi
-repo_makedepends:
-- meson
-- libxslt
-- python-docutils
-- lvm2
-- open-iscsi
-- libiscsi
-- glusterfs
-- bash-completion
-- rpcsvc-proto
-- dnsmasq
-- iproute2
-- qemu: qemu-base
+- parted
+- libpciaccess
+- libxml2
+- libssh
+- gnutls
+- yajl
 update_on: []

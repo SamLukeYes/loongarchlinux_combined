@@ -9,58 +9,29 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pcp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- python-requests
+- bpftrace
+- perl-xml-libxml
+- which
+- perl-libwww
+- perl-net-snmp
+- perl-file-slurp
+- avahi
+- libvarlink
+- python-psycopg2
+- libvirt-python
+- perl-yaml-libyaml
+- python-lxml
+- bcc: python-bcc
+- procps-ng
+- libuv
 - python
-- perl
-- avahi
-- procps-ng
-- which
-- libuv
 - inetutils
-- qt5-svg
-- perl-libwww
-- bcc: python-bcc
-- perl-libwww
-- perl-xml-libxml
-- perl-file-slurp
-- bpftrace
-- libvirt-python
-- python-lxml
 - perl-dbd-mysql
-- perl-libwww
-- perl-yaml-libyaml
 - perl-json
-- python-requests
-- libvarlink
-- python-psycopg2
-- perl-net-snmp
-repo_makedepends:
-- avahi
-- procps-ng
-- which
-- libuv
-- rsync
-- llvm
-- debugedit
+- perl
 - qt5-svg
-- python-openpyxl
-- python-jsonpointer
-- python-six
-- libvirt-python
-- python-lxml
-- python-requests
-- bpftrace
-- bcc: python-bcc
-- perl-net-snmp
-- perl-libwww
-- perl-xml-libxml
-- perl-file-slurp
-- perl-yaml-libyaml
-- perl-json
-- perl-dbd-mysql
-- python-psycopg2
-- libvarlink
 update_on:
 - alias: python
 - alias: perl

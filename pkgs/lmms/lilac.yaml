@@ -9,61 +9,28 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lmms'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- libx11
-- libxcb
-- qt5-base
-- qt5-x11extras
-- sdl12-compat
-- zlib
-- gcc: gcc-libs
-- glibc
-- libx11
-- libxcb
-- qt5-base
-- qt5-x11extras
-- sdl12-compat
-- zlib
 - alsa-lib
-- fftw
+- qt5-x11extras
+- glibc
+- libogg
+- gcc: gcc-libs
+- stk
+- qt5-base
 - fltk
 - fluidsynth
-- lame
 - libgig
-- libogg
-- pulseaudio: libpulse
-- libsamplerate
-- libvorbis
-- portaudio
-- sndio
-- stk
-repo_makedepends:
-- alsa-lib
-- bash-completion
-- carla
-- cmake
-- doxygen
-- extra-cmake-modules
 - fftw
-- fltk
-- fluidsynth
-- freetype2
-- ladspa
-- lame
-- libgig
-- libogg
-- pulseaudio: libpulse
+- libxcb
 - libsamplerate
-- libsndfile
 - libvorbis
-- portaudio
-- qt5-tools
+- pulseaudio: libpulse
+- zlib
+- sdl12-compat
 - sndio
-- stk
-- wine
+- libx11
+- portaudio
+- lame
 update_on:
 - alpm: qt5-base
   source: alpm

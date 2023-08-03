@@ -9,23 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-panel'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - dbus-glib
-- libwnck3
-- libcanberra
 - libmateweather
 - libsm
-- mate-menus
-- mate-desktop
+- libcanberra
 - gettext
 - gtk-layer-shell
-repo_makedepends:
-- itstool
-- gobject-introspection
-- mate-common
-- yelp-tools
-- autoconf-archive
+- mate-menus
+- mate-desktop
+- libwnck3
 update_on:
 - alpm: mate-panel
   source: archpkg

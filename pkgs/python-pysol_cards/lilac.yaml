@@ -7,13 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pysol_cards'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - python-pbr
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
 update_on:
 - alpm: python-pysol_cards
   source: archpkg

@@ -9,67 +9,28 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mumble'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- qt5-base
-- gcc: gcc-libs
-- glibc
-- qt5-base
 - alsa-lib
-- avahi
-- hicolor-icon-theme
-- protobuf
-- pulseaudio: libpulse
-- libsndfile
-- speech-dispatcher: libspeechd
-- libx11
-- libxi
-- openssl
-- opus
-- poco
-- qt5-svg
-- rnnoise
-- speexdsp
 - xdg-utils
-- gcc: gcc-libs
+- speexdsp
+- libsndfile
+- libcap
+- speech-dispatcher: libspeechd
+- hicolor-icon-theme
 - glibc
+- gcc: gcc-libs
 - qt5-base
 - avahi
-- libcap
-- openssl
-- protobuf
-- zeroc-ice
-repo_makedepends:
-- avahi
-- boost
-- cmake
-- openssl
-- protobuf
-- python
-- qt5-tools
-- alsa-lib
-- hicolor-icon-theme
-- lib32-gcc-libs
-- pulseaudio: libpulse
-- libsndfile
-- speech-dispatcher: libspeechd
-- libx11
-- libxi
-- mesa
-- nlohmann-json
 - opus
+- protobuf
 - poco
-- qt5-svg
+- openssl
+- pulseaudio: libpulse
 - rnnoise
-- speech-dispatcher
-- speexdsp
-- xdg-utils
-- libcap
-- systemd
 - zeroc-ice
+- libxi
+- libx11
+- qt5-svg
 update_on:
 - alpm: qt5-base
   source: alpm

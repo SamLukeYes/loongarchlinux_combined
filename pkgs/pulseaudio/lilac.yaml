@@ -9,67 +9,33 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pulseaudio'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- alsa-lib
-- fftw
-- libcap
-- libsm
 - libsoxr
-- libxtst
-- orc
-# - rtkit
+- alsa-lib
 - speexdsp
-- tdb
-- webrtc-audio-processing
-- dbus
-- libasyncns
 - libsndfile
-- libxcb
-- systemd
-# - avahi
+- sbc
+- libsm
+- gstreamer: gst-plugins-good
+- libcap
 - lirc
+- avahi
+- dbus
+- fftw
+- orc
+- systemd
+- rtkit
+- libxcb
 - bluez
 - bluez: bluez-libs
+- libxtst
 - gstreamer: gst-plugins-base-libs
-- sbc
-# - pyqt5: python-pyqt5
-- gstreamer: gst-plugins-base
-- gstreamer: gst-plugins-base-libs
-- gstreamer: gst-plugins-good
 - openssl
-# repo_makedepends:
-# - alsa-lib
-# - attr
-# - avahi
-# - bluez
-# - bluez: bluez-libs
-# - check
-# - dbus
-# - doxygen
-# - fftw
-# - git
-# - gstreamer: gst-plugins-base-libs
-# - gtk3
-# - jack2
-# - libasyncns
-# - libcap
-# - libsm
-# - libsndfile
-# - libsoxr
-# - libxtst
-# - lirc
-# - meson
-# - openssl
-# - orc
-# - rtkit
-# - sbc
-# - speexdsp
-# - systemd
-# - tdb
-# - valgrind
-# - webrtc-audio-processing
-# - xmltoman
+- gstreamer: gst-plugins-base
+- libasyncns
+- pyqt5: python-pyqt5
+- webrtc-audio-processing
+- tdb
 update_on:
 - alpm: pulseaudio
   source: archpkg

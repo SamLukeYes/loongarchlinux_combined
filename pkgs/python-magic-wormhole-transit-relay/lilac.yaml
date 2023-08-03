@@ -7,13 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-magic-wormhole-transit-relay'')
 
   '
-repo_checkdepends:
-- python-mock
 repo_depends:
 - python-twisted
 - python-autobahn
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-magic-wormhole-transit-relay
   source: archpkg

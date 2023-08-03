@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glava'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libxrender
+- libxcomposite
 - pulseaudio
 - libxext
-- libxcomposite
-- libxrender
-repo_makedepends:
-- git
-- python
 update_on:
 - alpm: glava
   source: archpkg

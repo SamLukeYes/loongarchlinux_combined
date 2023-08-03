@@ -1,19 +1,12 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- libxml2
-- pam
-- zlib
+- llvm: llvm-libs
 - icu
 - systemd: systemd-libs
-- openldap: libldap
+- zlib
 - krb5
-- llvm: llvm-libs
-repo_makedepends:
-- python
-- perl
-- systemd
-- llvm
-- clang
+- libxml2
+- openldap: libldap
+- pam
 update_on:
 - alias: icu

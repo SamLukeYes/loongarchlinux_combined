@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libretro-duckstation'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libretro-core-info
 - gcc: gcc-libs
 - glibc
-- libretro-core-info
-repo_makedepends:
-- cmake
-- git
 update_on:
 - alpm: libretro-duckstation
   source: archpkg

@@ -9,39 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tpm2-pkcs11'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- expect
-- iproute2
-- java-hamcrest
-- junit
-- libp11
-- opensc
-- openssh
-- python-python-pkcs11
-- swtpm
-- tpm2-abrmd
-- tpm2-openssl
-- wget
 repo_depends:
-- glibc
-- libyaml
-- openssl
-- python
-- python-bcrypt
-- python-cryptography
-- python-pyasn1
-- python-pyasn1-modules
 - python-tpm2-pytss
-- python-yaml
 - sqlite
 - tpm2-tools
 - tpm2-tss
-repo_makedepends:
-- cmocka
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-cryptography
+- python-pyasn1-modules
+- libyaml
+- python-yaml
+- python-bcrypt
+- openssl
+- glibc
+- python-pyasn1
+- python
 update_on:
 - alias: python
 - alpm: tpm2-tss

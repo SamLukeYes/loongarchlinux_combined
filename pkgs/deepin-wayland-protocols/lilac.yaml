@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''deepin-wayland-protocols'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- extra-cmake-modules
-- ninja
-- qt5-base
 update_on:
 - alpm: deepin-wayland-protocols
   source: archpkg

@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libtorrent-rasterbar'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
 - openssl
-repo_makedepends:
-- boost
-- cmake
-- ninja
-- python-setuptools
+- boost: boost-libs
 update_on:
 - alpm: libtorrent-rasterbar
   source: archpkg

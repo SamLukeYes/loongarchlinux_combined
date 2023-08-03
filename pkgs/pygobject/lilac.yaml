@@ -1,17 +1,6 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- gobject-introspection: gobject-introspection-runtime
 - python
-repo_makedepends:
-- git
-- gobject-introspection
-- meson
-- python-cairo
-- python-sphinx
-- python-sphinx_rtd_theme
-- gtk3
-- python-pytest
-- xorg-server: xorg-server-xvfb
+- gobject-introspection: gobject-introspection-runtime
 update_on:
 - alias: python

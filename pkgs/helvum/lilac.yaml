@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''helvum'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk4
 - pipewire
-repo_makedepends:
-- appstream-glib
-- clang
-- meson
+- gtk4
 update_on:
 - alpm: helvum
   source: archpkg

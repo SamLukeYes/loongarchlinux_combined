@@ -9,37 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-servant-clien
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-base-compat
-- haskell-http-client
 - haskell-http-media
 - haskell-http-types
+- ghc: ghc-libs
 - haskell-kan-extensions
-- haskell-monad-control
-- haskell-semigroupoids
-- haskell-servant
 - haskell-servant-client-core
-- haskell-transformers-base
+- haskell-semigroupoids
 - haskell-transformers-compat
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hunit
-- haskell-quickcheck
-- haskell-aeson
-- haskell-entropy
-- haskell-hspec
-- haskell-hspec-discover
-- haskell-http-api-data
-- haskell-markdown-unlit
-- haskell-network
-- haskell-servant-server
-- haskell-sop-core
-- haskell-tdigest
-- haskell-wai
-- haskell-warp
+- haskell-http-client
+- haskell-monad-control
+- haskell-transformers-base
+- haskell-servant
 update_on:
 - alpm: haskell-base-compat
   source: alpm

@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''systemd-ui'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
 - libgee
 - libnotify
-repo_makedepends:
-- vala
-- docbook-xsl
-- libxslt
 update_on:
 - alpm: systemd-ui
   source: archpkg

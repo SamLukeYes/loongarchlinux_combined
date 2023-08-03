@@ -7,23 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''radicale'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-runner
-- python-typeguard
-- python-waitress
 repo_depends:
-- python-bcrypt
 - python-dateutil
-- python-defusedxml
-- python-passlib
 - python-pytz
+- python-passlib
 - python-vobject
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-bcrypt
+- python-defusedxml
 update_on:
 - alpm: radicale
   source: archpkg

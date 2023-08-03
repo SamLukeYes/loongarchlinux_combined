@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xplanet'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pango
-- giflib
-- libtiff
 - libxss
-repo_makedepends: []
+- pango
+- libtiff
+- giflib
 update_on:
 - alpm: xplanet
   source: archpkg

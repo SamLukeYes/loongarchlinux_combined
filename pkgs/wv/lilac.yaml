@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wv'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glib2
+- zlib
+- libxml2
 - glibc
 - libgsf
-- libxml2
-- zlib
-repo_makedepends: []
 update_on:
 - alpm: wv
   source: archpkg

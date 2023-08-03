@@ -9,27 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''warzone2100'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- sdl2
-- openal
-- libvorbis
 - libtheora
+- sdl2
 - libsodium
-- physfs
-- sqlite
-- freetype2
+- openal
 - opus
-repo_makedepends:
-- zip
-- unzip
-- libzip
-- asciidoc
-- mesa
-- vulkan-headers
-- shaderc
-- cmake
-- ninja
+- freetype2
+- sqlite
+- libvorbis
+- physfs
 update_on:
 - alpm: warzone2100
   source: archpkg

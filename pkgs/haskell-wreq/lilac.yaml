@@ -9,44 +9,31 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wreq'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-attoparsec
-- haskell-authenticate-oauth
-- haskell-base16-bytestring
-- haskell-case-insensitive
-- haskell-cryptonite
-- haskell-hashable
-- haskell-http-client
-- haskell-http-client-tls
-- haskell-http-types
-- haskell-lens
-- haskell-lens-aeson
-- haskell-memory
-- haskell-mime-types
-- haskell-psqueues
-- haskell-time-locale-compat
 - haskell-unordered-containers
-- haskell-aeson-pretty
+- haskell-cryptonite
 - haskell-base64-bytestring
-- haskell-snap-core
+- haskell-aeson
+- haskell-http-types
+- haskell-case-insensitive
+- haskell-memory
+- haskell-lens
+- haskell-hashable
 - haskell-snap-server
 - haskell-unix-compat
+- haskell-lens-aeson
+- haskell-psqueues
+- ghc: ghc-libs
+- haskell-aeson-pretty
+- haskell-http-client
+- haskell-snap-core
+- haskell-authenticate-oauth
+- haskell-mime-types
 - haskell-uuid
-repo_makedepends:
-- ghc
-- haskell-cabal-doctest
-- haskell-doctest
-- haskell-hunit
-- haskell-quickcheck
-- haskell-network-info
-- haskell-temporary
-- haskell-test-framework
-- haskell-test-framework-hunit
-- haskell-test-framework-quickcheck2
-- haskell-vector
+- haskell-http-client-tls
+- haskell-attoparsec
+- haskell-base16-bytestring
+- haskell-time-locale-compat
 update_on:
 - alpm: haskell-aeson
   source: alpm

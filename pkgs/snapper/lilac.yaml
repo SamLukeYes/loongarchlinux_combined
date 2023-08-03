@@ -9,22 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''snapper'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- btrfs-progs
-- libxml2
-- dbus
-- boost: boost-libs
 - acl
 - json-c
-repo_makedepends:
-- boost
-- lvm2
-- libxslt
-- docbook-xsl
-- pam
-- git
-- systemd
+- btrfs-progs
+- dbus
+- libxml2
+- boost: boost-libs
 update_on:
 - alpm: snapper
   source: archpkg

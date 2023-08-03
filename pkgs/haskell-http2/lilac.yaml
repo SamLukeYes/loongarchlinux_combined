@@ -9,30 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-http2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-async
-- haskell-case-insensitive
-- haskell-http-types
 - haskell-network
+- haskell-async
+- ghc: ghc-libs
+- haskell-http-types
+- haskell-case-insensitive
+- haskell-time-manager
 - haskell-network-byte-order
 - haskell-psqueues
-- haskell-time-manager
 - haskell-unix-time
-repo_makedepends:
-- ghc
-- haskell-aeson
-- haskell-aeson-pretty
-- haskell-base16-bytestring
-- haskell-cryptonite
-- haskell-glob
-- haskell-hspec
-- haskell-hspec-discover
-- haskell-network-run
-- haskell-typed-process
-- haskell-unordered-containers
-- haskell-vector
 update_on:
 - alpm: haskell-async
   source: alpm

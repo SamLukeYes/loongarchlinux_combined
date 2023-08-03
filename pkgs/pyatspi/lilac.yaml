@@ -7,12 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pyatspi'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- pygobject: python-gobject
 - at-spi2-core
-repo_makedepends:
-- git
+- pygobject: python-gobject
 update_on:
 - alpm: pyatspi
   source: archpkg

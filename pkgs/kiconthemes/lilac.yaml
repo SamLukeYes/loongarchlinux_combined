@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kiconthemes'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- karchive
 - qt5-svg
 - kconfigwidgets
-- karchive
-repo_makedepends:
-- extra-cmake-modules
-- doxygen
-- qt5-tools
-- qt5-doc
 update_on:
 - alpm: kiconthemes
   source: archpkg

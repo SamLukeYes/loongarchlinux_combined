@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-podcasts'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gstreamer: gst-plugins-bad
-- gstreamer: gst-plugins-base
-- gstreamer: gst-plugins-good
 - libhandy
-repo_makedepends:
-- meson
-- rust
+- gstreamer: gst-plugins-good
+- gstreamer: gst-plugins-base
+- gstreamer: gst-plugins-bad
 update_on:
 - alpm: gnome-podcasts
   source: archpkg

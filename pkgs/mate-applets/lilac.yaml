@@ -1,16 +1,10 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - gtksourceview3
-- libgtop
-- libnotify
-- mate-panel
-- polkit
-- upower
 - wireless_tools
-repo_makedepends:
-- intltool
-- itstool
-- gucharmap
-- yelp-tools
+- polkit
+- mate-panel
+- libnotify
+- libgtop
+- upower
 update_on: []

@@ -7,23 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-testinfra'')
 
   '
-repo_checkdepends:
-- ansible
-- python-paramiko
-- python-pytest-cov
-- python-pytest-xdist
-- python-pywinrm
-- python-tornado
-- salt
 repo_depends:
 - python
 - python-pytest
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools-scm
-- python-sphinx
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-pytest-testinfra

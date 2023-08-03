@@ -9,31 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kubernetes'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- glibc
-- glibc
-- glibc
+- iptables: iptables-nft
+- cni-plugins
+- ethtool
+- socat
+- conntrack-tools
 - glibc
 - cri-tools: crictl
-- glibc
-- cni-plugins
-- conntrack-tools
-- ethtool
-- glibc
-- iptables: iptables-nft
-- socat
-repo_makedepends:
-- cni-plugins
-- conntrack-tools
-- ethtool
-- git
-- go
-- go-md2man
-- iptables: iptables-nft
-- socat
-- rsync
 update_on:
 - alpm: kubernetes
   source: archpkg

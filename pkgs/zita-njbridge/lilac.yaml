@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zita-njbridge'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
-- gcc: gcc-libs
-- glibc
 - zita-resampler
-repo_makedepends:
-- zita-resampler
+- glibc
 update_on:
 - alpm: jack2
   provides: libjack.so

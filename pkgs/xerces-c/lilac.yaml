@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xerces-c'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - curl
-- libnsl
 - icu
-repo_makedepends: []
+- libnsl
 update_on:
 - alias: icu
 - alpm: xerces-c

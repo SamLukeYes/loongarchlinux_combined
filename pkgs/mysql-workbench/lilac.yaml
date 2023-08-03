@@ -1,35 +1,25 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- cairo
-- antlr4-runtime
-- curl
-- desktop-file-utils
-- freetype2
-- giflib
-- gtkmm3
-- hicolor-icon-theme
 - json-c
-- libsecret
-- libssh
-- libaio
-- libxml2
+- desktop-file-utils
+- vsqlite++
+- antlr4-runtime
+- hicolor-icon-theme
 - libzip
+- libsecret
+- curl
+- libaio
 - pcre
+- libxml2
+- libssh
+- zstd
+- cairo
 - proj
+- freetype2
 - python
 - rapidjson
+- gtkmm3
 - unixodbc
-- vsqlite++
-- zstd
-repo_makedepends:
-- cmake
-- boost
-- mesa
-- swig
-- imagemagick
-- gcc12
-- antlr4
-- antlr4-runtime
+- giflib
 update_on:
 - alias: python

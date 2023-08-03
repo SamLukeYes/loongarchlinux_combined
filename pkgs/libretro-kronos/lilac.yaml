@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libretro-kronos'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - libretro-core-info
-repo_makedepends:
-- git
-- libglvnd
+- glibc
 update_on:
 - alpm: libretro-kronos
   source: archpkg

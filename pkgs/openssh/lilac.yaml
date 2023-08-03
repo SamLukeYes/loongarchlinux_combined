@@ -9,19 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openssh'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- krb5
-- ldns
 - libedit
+- zlib
+- krb5
 - libxcrypt
 - openssl
+- glibc
 - pam
-- zlib
-# repo_makedepends:
-# - libfido2
-# - linux: linux-headers
+- ldns
 update_on:
 - alpm: krb5
   provides: libkrb5.so

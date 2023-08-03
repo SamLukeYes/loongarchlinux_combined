@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libuhd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- orc
 - libusb
-repo_makedepends:
-- cmake
-- boost
-- python-setuptools
-- python-mako
-- python-numpy
+- orc
+- boost: boost-libs
 update_on:
 - alpm: libuhd
   source: archpkg

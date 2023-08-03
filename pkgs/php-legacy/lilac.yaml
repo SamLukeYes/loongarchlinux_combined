@@ -9,58 +9,30 @@ pre_build_script: '_G.files = download_official_pkgbuild(''php-legacy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- procps-ng
 repo_depends:
+- pcre2
+- enchant
+- gd
+- tidy
+- gdbm
+- freetds
+- libzip
+- curl
+- postgresql: postgresql-libs
+- libsodium
+- apache
 - libxml2
-- curl
-- libzip
-- pcre2
-- argon2
-- oniguruma
-- gdbm
-- apache
-- libnsl
-- systemd
+- aspell
 - systemd: systemd-libs
-- libnsl
-- libxcrypt
-- freetds
-- enchant
-- gd
-- libsodium
-- unixodbc
-- postgresql: postgresql-libs
-- aspell
-- net-snmp
-- sqlite
-- tidy
-- libxslt
-repo_makedepends:
-- apache
-- aspell
-- gdbm
-- enchant
-- gd
-- gmp
-- icu
-- libsodium
-- libxslt
-- libzip
-- net-snmp
-- postgresql: postgresql-libs
-- sqlite
 - systemd
-- tidy
-- unixodbc
-- curl
-- libtool
-- postfix
-- freetds
-- pcre2
-- libnsl
+- net-snmp
+- sqlite
 - oniguruma
-- patchelf
+- libnsl
+- libxslt
+- libxcrypt
+- argon2
+- unixodbc
 update_on:
 - alpm: php-legacy
   source: archpkg

@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rime-stroke'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
-# repo_depends:
-# - rime-luna-pinyin
-# repo_makedepends:
-# - git
-# - librime
-# - rime-prelude
-# - rime-essay
+repo_depends:
+- rime-luna-pinyin
 update_on:
 - alpm: rime-stroke
   source: archpkg

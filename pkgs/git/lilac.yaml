@@ -9,22 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''git'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- curl
-- expat
-- perl
-- perl-error
-- perl-mailtools
-- openssl
 - pcre2
+- curl
 - grep
-- shadow
 - zlib
-# repo_makedepends:
-# - python
-# - xmlto
-# - asciidoc
+- perl
+- expat
+- perl-mailtools
+- perl-error
+- openssl
+- shadow
 update_on:
 - alias: perl
 - alpm: git

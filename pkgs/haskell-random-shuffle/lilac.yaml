@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-random-shuffl
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-random
 - ghc: ghc-libs
 - haskell-monadrandom
-- haskell-random
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-monadrandom
   source: alpm

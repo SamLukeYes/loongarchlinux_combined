@@ -7,13 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-transaction'')
 
   '
-repo_checkdepends:
-- python-zope-testrunner
-- python-mock
 repo_depends:
 - python-zope-interface
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-transaction
   source: archpkg

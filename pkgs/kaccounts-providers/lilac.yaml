@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kaccounts-providers''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kaccounts-integration
-repo_makedepends:
-- extra-cmake-modules
-- intltool
 update_on:
 - alpm: kaccounts-providers
   source: archpkg

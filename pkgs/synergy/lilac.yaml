@@ -9,22 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''synergy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- libxtst
-- libxinerama
-- libxkbcommon: libxkbcommon-x11
-- avahi
 - curl
+- avahi
+- libxinerama
+- libxtst
 - openssl
 - hicolor-icon-theme
-repo_makedepends:
-- libxt
-- cmake
-- qt5-base
-- qt5-tools
-- gtest
+- libxkbcommon: libxkbcommon-x11
 update_on:
 - alpm: synergy
   source: archpkg

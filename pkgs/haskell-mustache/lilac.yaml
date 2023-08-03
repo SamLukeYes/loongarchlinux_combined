@@ -9,25 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mustache'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
 - haskell-unordered-containers
-- haskell-vector
-- haskell-scientific
 - haskell-th-lift
+- haskell-aeson
+- ghc: ghc-libs
 - haskell-cmdargs
+- haskell-scientific
+- haskell-vector
 - haskell-yaml
-repo_makedepends:
-- ghc
-- haskell-hspec
-- haskell-base-unicode-symbols
-- haskell-wreq
-- haskell-zlib
-- haskell-tar
-- haskell-lens
-- haskell-temporary
 update_on:
 - alpm: haskell-aeson
   source: alpm

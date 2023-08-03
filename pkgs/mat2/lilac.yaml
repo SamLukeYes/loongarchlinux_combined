@@ -7,20 +7,16 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mat2'')
 
   '
-repo_checkdepends:
-- ffmpeg
 repo_depends:
-- python
 - python-mutagen
-- python-cairo
-- pygobject: python-gobject
 - gdk-pixbuf2
-- poppler: poppler-glib
+- mailcap
 - librsvg
 - perl-image-exiftool
-- mailcap
-repo_makedepends:
-- python-setuptools
+- poppler: poppler-glib
+- pygobject: python-gobject
+- python-cairo
+- python
 update_on:
 - alias: python
 - alpm: mat2

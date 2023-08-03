@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''swell-foop'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- clutter-gtk
-- librsvg
-- libgnome-games-support
 - libgee
-repo_makedepends:
-- yelp-tools
-- appstream-glib
-- vala
-- git
-- meson
+- librsvg
+- clutter-gtk
+- libgnome-games-support
 update_on:
 - alpm: swell-foop
   source: archpkg

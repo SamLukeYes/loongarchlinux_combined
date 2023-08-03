@@ -9,34 +9,30 @@ pre_build_script: '_G.files = download_official_pkgbuild(''emby-theater'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
-- gcc: gcc-libs
+- libxrender
+- libxfixes
+- libxdamage
+- nspr
 - glibc
 - cups: libcups
-- libdrm
-- intel-media-sdk: libmfx
-- libx11
-- libxcb
-- libxcomposite
-- libxcursor
-- libxdamage
-- libxext
-- libxfixes
-- libxi
+- gcc: gcc-libs
 - libxrandr
-- libxrender
-- libxss
-- libxtst
-- mesa
-- nspr
-- nss
+- libxcursor
+- libxext
+- cairo
 - ocl-icd
+- libxcb
+- libdrm
+- libxtst
+- libxcomposite
+- libxi
+- libxss
+- nss
 - zlib
-repo_makedepends:
-- git
-- npm
+- libx11
+- intel-media-sdk: libmfx
+- mesa
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

@@ -1,13 +1,7 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - libarchive
-- curl
-- pcre
 - pacman
-repo_makedepends:
-- git
-- meson
-- clang
-- systemd
+- pcre
+- curl
 update_on: []

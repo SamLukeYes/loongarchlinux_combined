@@ -9,24 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xrootd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cppunit
 repo_depends:
-- curl
-- fuse2
 - json-c
+- python-setuptools
+- davix
+- curl
+- tinyxml
+- perl
+- fuse2
 - libxml2
 - openssl
-- perl
 - python
 - systemd
-- python-setuptools
-- tinyxml
-- davix
-repo_makedepends:
-- cmake
-- git
-- python-pip
 update_on:
 - alias: perl
 - alias: python

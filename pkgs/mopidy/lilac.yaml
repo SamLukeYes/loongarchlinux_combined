@@ -7,25 +7,17 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mopidy'')
 
   '
-repo_checkdepends:
-- pygobject: python-gobject
-- python-pytest
-- python-responses
 repo_depends:
-- python
-- python-pykka
 - python-requests
-- gstreamer
-- python-setuptools
 - gstreamer: gst-python
+- python-setuptools
+- gstreamer
 - gstreamer: gst-plugins-good
-- gstreamer: gst-plugins-ugly
-- python-tornado
+- python-pykka
 - gstreamer: gst-plugins-base
-repo_makedepends:
-- python-sphinx
-- python-sphinx_rtd_theme
-- git
+- python-tornado
+- python
+- gstreamer: gst-plugins-ugly
 update_on:
 - alias: python
 - alpm: mopidy

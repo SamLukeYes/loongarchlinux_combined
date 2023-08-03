@@ -1,21 +1,10 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- python-configobj
 - python-dulwich
-- python-fastbencode
-- python-merge3
-- python-patiencediff
 - python-six
+- python-configobj
+- python-fastbencode
+- python-patiencediff
 - python-yaml
-repo_makedepends:
-- cython
-- git
-- python-fastimport
-- gpgme: python-gpgme
-- python-packaging
-- python-paramiko
-- python-setuptools
-- python-setuptools-gettext
-- python-setuptools-rust
+- python-merge3
 update_on: []

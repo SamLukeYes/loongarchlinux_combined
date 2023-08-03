@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtkwave'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - bzip2
-- xz
-- gtk3
-- desktop-file-utils
 - dconf
-repo_makedepends:
-- gperf
+- xz
+- desktop-file-utils
+- gtk3
 update_on:
 - alpm: gtkwave
   source: archpkg

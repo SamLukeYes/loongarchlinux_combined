@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''usbview'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
 - desktop-file-utils
-repo_makedepends:
-- imagemagick
+- gtk3
 update_on:
 - alpm: usbview
   source: archpkg

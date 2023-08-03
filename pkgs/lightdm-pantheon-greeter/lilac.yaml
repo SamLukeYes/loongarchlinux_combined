@@ -9,21 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lightdm-pantheon-gree
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - accountsservice
-- cairo
 - gdk-pixbuf2
-- glibc
-- libgee
 - lightdm
+- libgee
 - mutter
-repo_makedepends:
-- cmake
-- meson
-- git
-- libglvnd
-- vala
+- cairo
+- glibc
 update_on:
 - alpm: gtk3
   provides: libgdk-3.so

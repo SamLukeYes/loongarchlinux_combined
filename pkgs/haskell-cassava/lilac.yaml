@@ -9,24 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cassava'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-unordered-containers
 - ghc: ghc-libs
-- haskell-attoparsec
 - haskell-hashable
 - haskell-only
 - haskell-scientific
-- haskell-text-short
-- haskell-unordered-containers
 - haskell-vector
-repo_makedepends:
-- ghc
-- haskell-hunit
-- haskell-quickcheck
-- haskell-quickcheck-instances
-- haskell-test-framework
-- haskell-test-framework-hunit
-- haskell-test-framework-quickcheck2
+- haskell-text-short
+- haskell-attoparsec
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

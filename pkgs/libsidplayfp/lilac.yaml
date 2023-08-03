@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libsidplayfp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libgcrypt
-repo_makedepends:
-- vice
-- xa
 update_on:
 - alpm: libsidplayfp
   source: archpkg

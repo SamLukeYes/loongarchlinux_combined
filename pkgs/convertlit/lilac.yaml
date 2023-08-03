@@ -9,10 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''convertlit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libtommath
-repo_makedepends: []
 update_on:
 - alpm: convertlit
   source: archpkg

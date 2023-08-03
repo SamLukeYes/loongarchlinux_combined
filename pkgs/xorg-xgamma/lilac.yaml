@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-xgamma'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libx11
 - libxxf86vm
-repo_makedepends:
-- xorg-util-macros
+- libx11
 update_on:
 - alpm: xorg-xgamma
   source: archpkg

@@ -1,35 +1,27 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- apache-orc
-- boost: boost-libs
-- brotli
 - bzip2
-- double-conversion
-- c-ares
-- gflags
-- grpc
-- google-glog
-- jemalloc
+- apache-orc
 - libutf8proc
-- lz4
-- openssl
-- protobuf
-- rapidjson
-- re2
-- snappy
+- gflags
+- google-glog
+- grpc
 - thrift
-- uriparser
 - xsimd
-- zlib
 - zstd
-repo_makedepends:
-- boost
-- cmake
-- flatbuffers
-- python-numpy
-- git
-- clang
+- protobuf
+- re2
+- uriparser
+- jemalloc
+- c-ares
+- lz4
+- double-conversion
+- openssl
+- rapidjson
+- brotli
+- snappy
+- zlib
+- boost: boost-libs
 update_on:
 - alias: grpc
 - alias: protobuf

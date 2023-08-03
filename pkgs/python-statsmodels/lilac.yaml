@@ -9,20 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-statsmodels'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-xdist
-- python-joblib
-- python-matplotlib
 repo_depends:
-- python-numpy
-- python-scipy
 - python-pandas
+- python-scipy
 - python-patsy
-repo_makedepends:
-- python-setuptools-scm
-- cython
-- git
+- python-numpy
 update_on:
 - alpm: python-statsmodels
   source: archpkg

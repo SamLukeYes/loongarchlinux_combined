@@ -9,19 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''springlobby'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- hicolor-icon-theme
-- wxwidgets: wxwidgets-gtk3
-- curl
 - jsoncpp
+- wxwidgets: wxwidgets-gtk3
 - alure
-- zlib: minizip
+- curl
 - libsm
-repo_makedepends:
-- boost
-- cmake
-- ninja
+- zlib: minizip
+- hicolor-icon-theme
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm

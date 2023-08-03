@@ -9,25 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gerbera'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- taglib
-- curl
-- sqlite
 - file
+- fmt
 - gcc: gcc-libs
+- libebml
 - libupnp
 - duktape
-- libexif
-- fmt
-- pugixml
+- curl
 - spdlog
 - ffmpeg
-- ffmpegthumbnailer
+- libexif
+- pugixml
+- sqlite
 - libmatroska
-- libebml
-repo_makedepends:
-- cmake
+- taglib
+- ffmpegthumbnailer
 update_on:
 - alpm: gerbera
   source: archpkg

@@ -9,26 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aubio'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
 - fftw
 - glibc
-- glibc
 - python-numpy
-repo_makedepends:
-- doxygen
-- ffmpeg
-- fftw
-- libsamplerate
-- libsndfile
-- python-build
-- python-installer
-- python-numpy
-- python-setuptools
-- python-wheel
-- txt2man
-- waf
 update_on:
 - alpm: ffmpeg
   provides: libavcodec.so

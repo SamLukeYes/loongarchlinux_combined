@@ -9,54 +9,36 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-what4'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cvc4
-- yices
-- z3
 repo_depends:
-- ghc: ghc-libs
-- haskell-async
-- haskell-attoparsec
-- haskell-bimap
-- haskell-bifunctors
-- haskell-bv-sized
-- haskell-concurrent-extra
-- haskell-config-value
-- haskell-deriving-compat
-- haskell-data-binary-ieee754
-- haskell-fingertree
-- haskell-hashable
-- haskell-hashtables
-- haskell-io-streams
-- haskell-lens
-- haskell-libbf
-- haskell-panic
-- haskell-parameterized-utils
-- haskell-prettyprinter
-- haskell-scientific
-- haskell-temporary
-- haskell-th-abstraction
-- haskell-th-lift
 - haskell-th-lift-instances
 - haskell-unordered-containers
+- haskell-th-abstraction
+- haskell-zenc
+- haskell-bifunctors
+- haskell-deriving-compat
+- haskell-panic
+- haskell-bimap
+- haskell-lens
+- haskell-fingertree
+- haskell-hashable
+- haskell-io-streams
+- haskell-data-binary-ieee754
 - haskell-utf8-string
+- haskell-th-lift
+- haskell-async
+- ghc: ghc-libs
+- haskell-scientific
+- haskell-libbf
+- haskell-temporary
+- haskell-hashtables
+- haskell-concurrent-extra
+- haskell-bv-sized
 - haskell-vector
 - haskell-versions
-- haskell-zenc
-repo_makedepends:
-- ghc
-- uusi
-- haskell-contravariant
-- haskell-hedgehog
-- haskell-lumberjack
-- haskell-quickcheck
-- haskell-tasty
-- haskell-tasty-checklist
-- haskell-tasty-expected-failure
-- haskell-tasty-hedgehog
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
-- haskell-tasty-sugar
+- haskell-parameterized-utils
+- haskell-config-value
+- haskell-attoparsec
+- haskell-prettyprinter
 update_on:
 - alpm: haskell-async
   source: alpm

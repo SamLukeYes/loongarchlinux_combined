@@ -1,10 +1,6 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - gnome-desktop: gnome-desktop-4
 - gtk4
 - libadwaita
-repo_makedepends:
-- git
-- meson
 update_on: []

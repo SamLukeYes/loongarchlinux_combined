@@ -9,32 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-kivy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-benchmark
-- python-coverage
-- pygobject: python-gobject
-- xorg-server: xorg-server-xvfb
-- opencv
-- python-pyenchant
-- git
-- mtdev
-- xclip
-- xsel
-- gtk3
-- gstreamer: gst-plugins-base
-- gstreamer: gst-plugins-good
-- gstreamer: gst-libav
-- dbus-python
 repo_depends:
-- python-docutils
-- gstreamer
-- sdl2_ttf
 - sdl2_mixer
 - sdl2_image
-repo_makedepends:
-- python-setuptools
-- cython
+- gstreamer
+- python-docutils
+- sdl2_ttf
 update_on:
 - alpm: python-kivy
   source: archpkg

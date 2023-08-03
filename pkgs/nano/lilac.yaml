@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nano'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ncurses
 - file
-repo_makedepends: []
+- ncurses
 update_on:
 - alpm: nano
   source: archpkg

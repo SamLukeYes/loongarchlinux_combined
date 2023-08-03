@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-persistent'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-zope-testrunner
-- python-manuel
 repo_depends:
 - python-cffi
 - python-zope-interface
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-persistent
   source: archpkg

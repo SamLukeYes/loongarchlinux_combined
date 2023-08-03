@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcitx-sayura'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - fcitx
-repo_makedepends:
-- cmake
-- intltool
 update_on:
 - alpm: fcitx-sayura
   source: archpkg

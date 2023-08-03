@@ -1,13 +1,6 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- lapack
 - mpfr
 - lapack: lapack64
-- mpfr
-repo_makedepends:
-- gcc: gcc-fortran
-- cmake
 - lapack
-- lapack: lapack64
 update_on: []

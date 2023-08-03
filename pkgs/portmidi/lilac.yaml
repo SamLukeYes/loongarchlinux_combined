@@ -1,12 +1,7 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- glibc
-- glibc
 - alsa-lib
-repo_makedepends:
-- alsa-lib
-- cmake
+- glibc
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

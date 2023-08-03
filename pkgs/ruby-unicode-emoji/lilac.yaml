@@ -7,14 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-unicode-emoji'')
 
   '
-repo_checkdepends:
-- ruby-rake
-- ruby-minitest
 repo_depends:
-- ruby
 - ruby-unicode-version
-repo_makedepends:
-- git
+- ruby
 update_on:
 - alias: ruby
 - alpm: ruby-unicode-emoji

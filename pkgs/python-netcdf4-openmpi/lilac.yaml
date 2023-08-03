@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-netcdf4-openmp
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- openssh
 repo_depends:
-- python-numpy
 - python-cftime
-- python-mpi4py
 - netcdf-openmpi
-repo_makedepends:
-- cython
-- python-setuptools
+- python-mpi4py
+- python-numpy
 update_on:
 - alpm: python-netcdf4-openmpi
   source: archpkg

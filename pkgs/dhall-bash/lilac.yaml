@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dhall-bash'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- dhall
-- haskell-neat-interpolation
-- haskell-shell-escape
 - haskell-optparse-generic
-repo_makedepends:
-- ghc
+- ghc: ghc-libs
+- haskell-shell-escape
+- haskell-neat-interpolation
+- dhall
 update_on:
 - alpm: haskell-neat-interpolation
   source: alpm

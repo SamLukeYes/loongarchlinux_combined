@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lightsoff'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
 - librsvg
-repo_makedepends:
-- yelp-tools
-- vala
-- git
-- meson
 update_on:
 - alpm: lightsoff
   source: archpkg

@@ -7,13 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-repoze.profile'')
 
   '
-repo_checkdepends:
-- python-nose
 repo_depends:
 - python
-repo_makedepends:
-- python-setuptools
-- pyprof2calltree
 update_on:
 - alias: python
 - alpm: python-repoze.profile

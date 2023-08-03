@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nginx-mod-srcache'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - nginx
-repo_makedepends:
-- nginx: nginx-src
 update_on:
 - alpm: nginx
   source: alpm

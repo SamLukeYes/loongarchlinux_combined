@@ -1,7 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - graphicsmagick
-repo_makedepends:
-- bc
 update_on: []

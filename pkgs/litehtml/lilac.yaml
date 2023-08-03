@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''litehtml'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gumbo-parser
 - gcc: gcc-libs
-repo_makedepends:
-- cmake
 update_on:
 - alpm: litehtml
   source: archpkg

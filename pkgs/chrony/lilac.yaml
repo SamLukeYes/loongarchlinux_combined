@@ -9,16 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''chrony'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- libcap
 - libedit
 - libseccomp
-- nettle
+- libcap
 - gnutls
-repo_makedepends:
-- asciidoctor
+- glibc
+- nettle
 update_on:
 - alpm: libcap
   provides: libcap.so

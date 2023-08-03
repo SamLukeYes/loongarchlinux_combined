@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libzim'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - xapian-core
-- zlib
 - xz
-- icu
+- zlib
 - zstd
-repo_makedepends:
-- meson
-- gtest
-- git
+- icu
 update_on:
 - alias: icu
 - alpm: libzim

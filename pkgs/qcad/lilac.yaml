@@ -9,16 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qcad'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-script
-- qt5-svg
-- gcc: gcc-libs
 - qt5-xmlpatterns
-- qt5-tools
+- gcc: gcc-libs
+- qt5-script
 - qt5-wayland
-repo_makedepends:
-- glu
+- qt5-svg
+- qt5-tools
 update_on:
 - alpm: qcad
   source: archpkg

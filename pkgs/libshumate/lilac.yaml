@@ -9,20 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libshumate'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- glib2
-- cairo
-- sqlite
-- gtk4
 - libsoup3
-repo_makedepends:
-- gobject-introspection
-- gi-docgen
-- vala
-- meson
-- git
+- gtk4
+- sqlite
+- cairo
+- glib2
 update_on:
 - alpm: libshumate
   source: archpkg

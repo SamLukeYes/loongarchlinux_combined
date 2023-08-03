@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''netcf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxslt
 - libxml2
 - libnl
-repo_makedepends:
-- gcc
+- libxslt
 update_on:
 - alpm: netcf
   source: archpkg

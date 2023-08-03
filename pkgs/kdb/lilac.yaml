@@ -9,17 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kcoreaddons
-repo_makedepends:
-- extra-cmake-modules
-- python
-- mariadb: mariadb-libs
-- postgresql
-- qt5-tools
-- doxygen
-- qt5-doc
 update_on:
 - alpm: kdb
   source: archpkg

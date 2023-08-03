@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''musepack'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- libcue
 - libreplaygain
 - glibc
 - libcue
-- libreplaygain
-- glibc
-repo_makedepends: []
 update_on:
 - alpm: musepack
   source: archpkg

@@ -9,30 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dtkwidget'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- dtkcore
-- dtkgui
+- startup-notification
 - gcc: gcc-libs
-- glibc
-- gsettings-qt
-- libx11
 - libxcb
-- libxext
 - libxi
 - qt5-base
 - qt5-imageformats
-- qt5-svg
-- qt5-x11extras
-- startup-notification
 - xcb-util
-repo_makedepends:
-- git
-- cmake
-- ninja
-- qt5-tools
-- gtest
-- doxygen
+- qt5-x11extras
+- dtkgui
+- dtkcore
+- libx11
+- gsettings-qt
+- libxext
+- qt5-svg
+- glibc
 update_on:
 - alpm: qt5-base
   source: alpm

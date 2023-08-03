@@ -9,18 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hw-fingertree
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-hw-prim
-repo_makedepends:
-- ghc
-- haskell-doctest
-- haskell-doctest-discover
-- haskell-hedgehog
-- haskell-hspec
-- haskell-hspec-discover
-- haskell-hw-hspec-hedgehog
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-hw-prim
   source: alpm

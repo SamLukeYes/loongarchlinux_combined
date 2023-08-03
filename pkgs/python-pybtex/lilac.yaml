@@ -7,16 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pybtex'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
-- python-setuptools
-- python-six
-- python-yaml
 - python-latexcodec
-repo_makedepends:
+- python-six
 - python-setuptools
+- python-yaml
+- python
 update_on:
 - alias: python
 - alpm: python-pybtex

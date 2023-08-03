@@ -7,21 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-ufolib2'')
 
   '
-repo_checkdepends:
-- python-msgpack
-- python-pytest
 repo_depends:
-- python
-- python-attrs
-- python-cattrs
-- python-fonttools
-- python-fs
 - python-lxml
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools-scm
+- python-fonttools
+- python-cattrs
+- python-fs
+- python-attrs
+- python
 update_on:
 - alias: python
 - alpm: python-ufolib2

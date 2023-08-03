@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kodi-addon-inputstrea
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kodi
 - kodi-platform
-repo_makedepends:
-- cmake
-- kodi: kodi-dev
-- gtest
 update_on:
 - alpm: kodi-addon-inputstream-adaptive
   source: archpkg

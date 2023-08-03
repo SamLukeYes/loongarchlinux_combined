@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''android-file-transfer
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- file
 - qt5-base
 - fuse2
-- libxkbcommon: libxkbcommon-x11
 - hicolor-icon-theme
-- file
-repo_makedepends:
-- cmake
-- qt5-tools
+- libxkbcommon: libxkbcommon-x11
 update_on:
 - alpm: qt5-base
   source: alpm

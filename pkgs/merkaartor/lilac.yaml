@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''merkaartor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - exiv2
 - gdal
 - gpsd
-- hicolor-icon-theme
 - qt5-svg
-repo_makedepends:
-- qt5-tools
+- hicolor-icon-theme
 update_on:
 - alpm: gpsd
   source: alpm

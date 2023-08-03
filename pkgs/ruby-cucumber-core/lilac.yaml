@@ -7,16 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-cucumber-core'')
 
   '
-repo_checkdepends:
-- ruby-simplecov
 repo_depends:
-- ruby-cucumber-gherkin
 - ruby-cucumber-messages
 - ruby-cucumber-tag-expressions
-repo_makedepends:
-- ruby-rake
-- ruby-rspec
-- ruby-unindent
+- ruby-cucumber-gherkin
 update_on:
 - alpm: ruby-cucumber-core
   source: archpkg

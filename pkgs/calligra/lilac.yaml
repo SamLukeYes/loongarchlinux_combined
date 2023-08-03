@@ -9,41 +9,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''calligra'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kcmutils
-- knotifyconfig
-- kross
+- poppler: poppler-qt5
 - kactivities
-- kdiagram
-- libspnav
-- kdelibs4support
-- gsl
 - imath
+- libodfgen
+- gsl
+- cauchy
+- khtml
+- knotifyconfig
+- kdelibs4support
+- kross
+- kcmutils
 - kcontacts
 - qca: qca-qt5
-- poppler: poppler-qt5
-- libodfgen
-- khtml
 - kinit
-- cauchy
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- kdesignerplugin
-- libwpg
-- okular
-- eigen
-- marble: marble-common
-- boost
-- pstoedit
-- libvisio
-- libetonyek
-- libwps
-- vc
-- libgit2
-- kcalendarcore
-- akonadi
+- kdiagram
+- libspnav
 update_on:
 - alpm: gsl
   source: alpm

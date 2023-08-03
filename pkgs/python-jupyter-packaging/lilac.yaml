@@ -7,19 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-jupyter-packaging'')
 
   '
-repo_checkdepends:
-- python-pytest-mock
-- python-pytest-timeout
 repo_depends:
-- python-deprecation
-- python-wheel
 - python-tomlkit
-- python-packaging
 - python-setuptools
-repo_makedepends:
-- python-build
-- python-installer
-- python-hatchling
+- python-packaging
+- python-wheel
+- python-deprecation
 update_on:
 - alpm: python-jupyter-packaging
   source: archpkg

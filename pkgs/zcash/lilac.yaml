@@ -9,22 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zcash'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
 - libevent
-- libsodium
 - zeromq
-repo_makedepends:
-- boost
-- clang
-- cmake
-- cxxbridge
-- git
-- python
-- rust
-- utf8cpp
-- wget
+- boost: boost-libs
+- libsodium
 update_on:
 - alpm: zcash
   source: archpkg

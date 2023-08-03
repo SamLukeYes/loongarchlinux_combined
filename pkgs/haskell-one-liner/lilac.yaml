@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-one-liner'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-bifunctors
-- haskell-contravariant
+- ghc: ghc-libs
 - haskell-linear-base
-- haskell-profunctors
 - haskell-tagged
-repo_makedepends:
-- ghc
-- haskell-hunit
+- haskell-profunctors
+- haskell-contravariant
 update_on:
 - alpm: haskell-bifunctors
   source: alpm

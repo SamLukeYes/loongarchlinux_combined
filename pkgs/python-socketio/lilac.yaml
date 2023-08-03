@@ -7,21 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-socketio'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
-- python-six
-- python-engineio
 - python-bidict
+- python-six
 - python-msgpack
-repo_makedepends:
-- python-setuptools
-- python-build
-- python-installer
-- python-wheel
-- python-sphinx
-- python-tornado
+- python-engineio
+- python
 update_on:
 - alias: python
 - alpm: python-socketio

@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kphotoalbum'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libkdcraw
 - marble: marble-common
-- exiv2
 - purpose
 - perl
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
+- exiv2
+- libkdcraw
 update_on:
 - alias: perl
 - alpm: kphotoalbum

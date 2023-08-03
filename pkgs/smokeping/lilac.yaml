@@ -7,21 +7,19 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''smokeping'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-config-grammar
-- perl-digest-hmac
-- perl-libwww
-- rrdtool
-- perl-fcgi
-- perl-cgi-fast
-- perl-io-tty
-- perl-net-dns
-- perl-net-snmp
-- perl-net-telnet
-- perl-ldap
 - perl-net-openssh
-repo_makedepends: []
+- perl-io-tty
+- perl-net-snmp
+- perl-cgi-fast
+- perl-net-dns
+- rrdtool
+- perl-net-telnet
+- perl-config-grammar
+- perl-libwww
+- perl-digest-hmac
+- perl-fcgi
+- perl-ldap
 update_on:
 - alpm: smokeping
   source: archpkg

@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pem'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-memory
 - ghc: ghc-libs
 - haskell-basement
-- haskell-memory
-repo_makedepends:
-- ghc
-- haskell-hunit
-- haskell-quickcheck
-- haskell-test-framework
-- haskell-test-framework-hunit
-- haskell-test-framework-quickcheck2
 update_on:
 - alpm: haskell-basement
   source: alpm

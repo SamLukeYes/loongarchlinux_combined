@@ -9,18 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-flashback'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gnome-bluetooth-3.0
+- metacity
 - gnome-panel
 - gnome-session
-- gnome-settings-daemon
-- gnome-themes-extra
 - ibus: libibus
 - libxkbfile
-- metacity
+- gnome-bluetooth-3.0
 - libcanberra
-repo_makedepends: []
+- gnome-themes-extra
+- gnome-settings-daemon
 update_on:
 - alpm: gnome-flashback
   source: archpkg

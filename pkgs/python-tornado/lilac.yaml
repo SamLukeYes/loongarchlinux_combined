@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-tornado'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pycurl
-- python-twisted
 repo_depends:
 - python
-repo_makedepends:
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-tornado

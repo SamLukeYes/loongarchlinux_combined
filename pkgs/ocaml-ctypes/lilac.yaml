@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ocaml-ctypes'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ocaml
-- libffi
-- ocaml-integers
 - ocaml-bigarray-compat
-repo_makedepends:
-- ocaml-findlib
-- ocaml: ocaml-compiler-libs
+- ocaml
+- ocaml-integers
+- libffi
 update_on:
 - alpm: ocaml
   source: alpm

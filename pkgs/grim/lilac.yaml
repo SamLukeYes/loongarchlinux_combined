@@ -9,19 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''grim'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - cairo
-- libjpeg-turbo
 - wayland
-repo_makedepends:
-- fish
-- git
-- meson
-- ninja
-- pango
-- scdoc
-- wayland-protocols
+- libjpeg-turbo
 update_on:
 - alpm: grim
   source: archpkg

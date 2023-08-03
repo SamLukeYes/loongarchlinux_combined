@@ -9,56 +9,37 @@ pre_build_script: '_G.files = download_official_pkgbuild(''darcs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- bc
-- time
 repo_depends:
-- curl
-- ghc: ghc-libs
-- haskell-async
-- haskell-attoparsec
-- haskell-base16-bytestring
-- haskell-conduit
-- haskell-constraints
 - haskell-cryptonite
-- haskell-data-ordlist
+- haskell-regex-applicative
+- haskell-http-types
+- haskell-memory
+- haskell-regex-base
+- haskell-zlib
+- haskell-knob
+- haskell-network-uri
 - haskell-fgl
 - haskell-hashable
-- haskell-html
-- haskell-http-conduit
-- haskell-http-types
-- haskell-knob
-- haskell-memory
 - haskell-mmap
-- haskell-network
-- haskell-network-uri
-- haskell-old-time
-- haskell-regex-applicative
-- haskell-regex-base
-- haskell-regex-tdfa
-- haskell-tar
-- haskell-temporary
+- curl
 - haskell-unix-compat
+- haskell-regex-tdfa
 - haskell-utf8-string
-- haskell-vector
+- haskell-network
+- haskell-async
+- ghc: ghc-libs
+- haskell-constraints
+- haskell-temporary
+- haskell-old-time
 - haskell-zip-archive
-- haskell-zlib
-repo_makedepends:
-- ghc
-- uusi
-- haskell-cmdargs
-- haskell-findbin
-- haskell-hunit
-- haskell-leancheck
-- haskell-quickcheck
-- haskell-test-framework
-- haskell-test-framework-hunit
-- haskell-test-framework-leancheck
-- haskell-test-framework-quickcheck2
-- haskell-monad-control
-- haskell-system-filepath
-- haskell-system-fileio
-- haskell-transformers-base
+- haskell-data-ordlist
+- haskell-tar
+- haskell-html
+- haskell-vector
+- haskell-conduit
+- haskell-http-conduit
+- haskell-attoparsec
+- haskell-base16-bytestring
 update_on:
 - alpm: haskell-async
   source: alpm

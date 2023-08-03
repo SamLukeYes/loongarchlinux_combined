@@ -9,20 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pax-utils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
-- libcap
 - libseccomp
-- python
+- libcap
+- bash
 - python-pyelftools
-repo_makedepends:
-- docbook-xml
-- docbook-xsl
-- git
-- linux: linux-headers
-- meson
-- xmlto
+- python
 update_on:
 - alpm: libcap
   provides: libcap.so

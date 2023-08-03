@@ -1,7 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - musl
-repo_makedepends:
-- rsync
 update_on: []

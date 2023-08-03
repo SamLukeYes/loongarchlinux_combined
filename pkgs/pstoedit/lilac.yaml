@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pstoedit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- plotutils
 - gd
 - imagemagick
-repo_makedepends:
-- ghostscript
+- plotutils
+- gcc: gcc-libs
 update_on:
 - alpm: pstoedit
   source: archpkg

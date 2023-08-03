@@ -7,16 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-securesystemslib'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-cryptography
-- python-pynacl
-- python-colorama
-- python-six
 - python-dateutil
-repo_makedepends:
-- python-setuptools
-- git
+- python-six
+- python-cryptography
+- python-colorama
+- python-pynacl
 update_on:
 - alpm: python-securesystemslib
   source: archpkg

@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sugar-runner'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- sugar
 - xorg-xinit
 - xorg-server: xorg-server-xephyr
 - xorg-xrandr
-repo_makedepends:
-- gobject-introspection
+- sugar
 update_on:
 - alpm: sugar-runner
   source: archpkg

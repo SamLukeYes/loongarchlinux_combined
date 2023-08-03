@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''erofs-utils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- lz4
-- glibc
+- xz
 - lz4
 - util-linux
-- xz
-repo_makedepends:
-- fuse2
-- util-linux
-- xz
+- glibc
 update_on:
 - alpm: util-linux-libs
   provides: libuuid.so

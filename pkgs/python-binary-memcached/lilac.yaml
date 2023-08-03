@@ -7,16 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-binary-memcached'')
 
   '
-repo_checkdepends:
-- memcached
-- python-pytest
-- python-trustme
 repo_depends:
+- python-uhashring
 - python-six
-- python-uhashring
-repo_makedepends:
-- python-setuptools
-- python-uhashring
 update_on:
 - alpm: python-binary-memcached
   source: archpkg

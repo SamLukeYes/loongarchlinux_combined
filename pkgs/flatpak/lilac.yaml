@@ -1,49 +1,22 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- appstream
-- bubblewrap
+- malcontent: libmalcontent
+- xdg-desktop-portal
+- libxau
+- glib2
+- fuse3
 - curl
 - dbus
-- fuse3
-- glib2
-- json-glib
-- libarchive
-- malcontent: libmalcontent
-- libseccomp
-- libxau
-- ostree
-- polkit
-- python
-- systemd
-- xdg-dbus-proxy
-- appstream
 - bubblewrap
-- curl
-- dbus
-- fuse3
-- glib2
-- json-glib
-- libarchive
-- malcontent: libmalcontent
-- libseccomp
-- libxau
-- ostree
-- polkit
-- python
 - systemd
+- libseccomp
 - xdg-dbus-proxy
-# - xdg-desktop-portal
-repo_makedepends:
-- docbook-xsl
-- git
-- gobject-introspection
-- gtk-doc
-- meson
-- python-pyparsing
-- xmlto
-- socat
-- valgrind
+- ostree
+- python
+- appstream
+- polkit
+- libarchive
+- json-glib
 update_on:
 - alias: python
 - alias: python

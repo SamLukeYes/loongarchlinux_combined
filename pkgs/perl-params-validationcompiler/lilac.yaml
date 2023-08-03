@@ -7,13 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-params-validationcompiler'')
 
   '
-repo_checkdepends:
-- perl-test-fatal
 repo_depends:
-- perl-role-tiny
 - perl-eval-closure
+- perl-role-tiny
 - perl-exception-class
-repo_makedepends: []
 update_on:
 - alpm: perl-params-validationcompiler
   source: archpkg

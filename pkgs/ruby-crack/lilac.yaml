@@ -7,14 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-crack'')
 
   '
-repo_checkdepends:
-- ruby-minitest
 repo_depends:
 - ruby
-- ruby-safe_yaml
 - ruby-rexml
-repo_makedepends:
-- ruby-rdoc
+- ruby-safe_yaml
 update_on:
 - alias: ruby
 - alpm: ruby-crack

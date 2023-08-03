@@ -9,120 +9,61 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mpd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
 - libcdio
-- libcdio-paranoia
-- libgme
-- libmad
-- libmms
-- libmodplug
-- musepack: libmpcdec
-- libnfs
-- libshout
-- libsidplayfp
-- libsoxr
-- pcre2
-- wavpack
-- wildmidi
-- zlib
-- zziplib
-- gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
-- libcdio
-- libcdio-paranoia
-- libgme
-- libmad
-- libmms
-- libmodplug
-- musepack: libmpcdec
-- libnfs
-- libshout
-- libsidplayfp
-- libsoxr
-- pcre2
-- wavpack
-- wildmidi
-- zlib
-- zziplib
-- alsa-lib
-- audiofile
-- avahi
 - bzip2
-- chromaprint
+- alsa-lib
+- libid3tag
+- libsidplayfp
+- libupnp
 - curl
 - dbus
-- expat
-- faad2
-- ffmpeg
-- flac
-- fluidsynth
-- fmt
-- icu
-- lame
-- libao
-- libid3tag
-- libmikmod
-- libmpdclient
-- libogg
-- libopenmpt
-- pipewire: libpipewire
-- pulseaudio: libpulse
-- libsamplerate
-- libsndfile
-- libupnp
-- liburing
-- libvorbis
-- mpg123
-- openal
 - opus
-- sqlite
+- libgme
+- zziplib
+- wavpack
+- fmt
+- musepack: libmpcdec
+- lame
+- yajl
+- libsndfile
+- wildmidi
+- glibc
+- hicolor-icon-theme
+- faad2
+- pipewire: libpipewire
+- gcc: gcc-libs
+- libshout
+- avahi
+- libmpdclient
+- icu
 - systemd: systemd-libs
-- twolame
-- yajl
-repo_makedepends:
-- alsa-lib
-- audiofile
-- avahi
-- boost
-- bzip2
-- chromaprint
-- curl
-- dbus
-- expat
-- faad2
-- ffmpeg
-- flac
-- fluidsynth
-- fmt
-- icu
-- lame
-- libao
-- libid3tag
-- libmikmod
-- libmpdclient
-- libogg
-- libopenmpt
-- pulseaudio: libpulse
 - libsamplerate
-- libsndfile
-- libupnp
-- liburing
+- libmms
 - libvorbis
-- meson
-- mpg123
-- openal
-- opus
-- pipewire: libpipewire
-- python-sphinx
-- sqlite
-- systemd
 - twolame
-- yajl
+- pcre2
+- audiofile
+- libogg
+- fluidsynth
+- libao
+- openal
+- expat
+- sqlite
+- pulseaudio: libpulse
+- flac
+- libnfs
+- libmad
+- libsoxr
+- libmodplug
+- libcdio-paranoia
+- liburing
+- ffmpeg
+- mpg123
+- libopenmpt
+- chromaprint
+- zlib
+- libmikmod
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

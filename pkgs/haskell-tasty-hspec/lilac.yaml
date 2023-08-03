@@ -9,17 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-hspec''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-hspec
+- haskell-tasty-quickcheck
 - haskell-hspec-core
+- ghc: ghc-libs
 - haskell-quickcheck
 - haskell-tasty
 - haskell-tasty-smallcheck
-- haskell-tasty-quickcheck
-repo_makedepends:
-- ghc
+- haskell-hspec
 update_on:
 - alpm: haskell-hspec
   source: alpm

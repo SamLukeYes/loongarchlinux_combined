@@ -7,19 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pypugjs'')
 
   '
-repo_checkdepends:
-- python-nose
 repo_depends:
+- python-charset-normalizer
 - python
 - python-six
-- python-charset-normalizer
-repo_makedepends:
-- python-setuptools
-- django: python-django
-- python-jinja
-- python-tornado
-- python-mako
-- python-markdown
 update_on:
 - alias: python
 - alpm: python-pypugjs

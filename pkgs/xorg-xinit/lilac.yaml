@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-xinit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libx11
 - xorg-xauth
-- xorg-xrdb
 - xorg-xmodmap
-repo_makedepends:
-- xorg-util-macros
+- xorg-xrdb
+- libx11
 update_on:
 - alpm: xorg-xinit
   source: archpkg

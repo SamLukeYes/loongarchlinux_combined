@@ -7,20 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ropper'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
+- python-archinfo
 - capstone: python-capstone
 - python-filebytes
 - z3: python-z3-solver
 - python-pyvex
-- python-archinfo
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
+- python
 update_on:
 - alias: python
 - alpm: ropper

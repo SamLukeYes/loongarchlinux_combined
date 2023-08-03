@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''php-imagick'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- ttf-dejavu
 repo_depends:
-- imagemagick
+- php-legacy
 - imagemagick
 - php
-- imagemagick
-- php-legacy
-repo_makedepends:
-- librsvg
-- php
-- php-legacy
 update_on:
 - alpm: php-imagick
   source: archpkg

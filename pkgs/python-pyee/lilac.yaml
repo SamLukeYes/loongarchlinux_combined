@@ -7,16 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pyee'')
 
   '
-repo_checkdepends:
-- python-pytest-asyncio
-- python-pytest-trio
-- python-twisted
 repo_depends: []
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alpm: python-pyee
   source: archpkg

@@ -9,20 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libosinfo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glib2
-- glibc
-- hwdata
 - libsoup3
-- libxml2
-- libxslt
+- glib2
 - osinfo-db
-repo_makedepends:
-- gobject-introspection
-- meson
-- vala
+- libxslt
+- hwdata
+- libxml2
+- glibc
 update_on:
 - alpm: libosinfo
   source: archpkg

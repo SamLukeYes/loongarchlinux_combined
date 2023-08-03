@@ -7,19 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-ailment'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-archinfo
 repo_depends:
-- python
-- python-claripy
 - python-pyvex
 - python-pypcode
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
+- python
+- python-claripy
 update_on:
 - alias: python
 - alpm: python-ailment

@@ -1,8 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - nodejs
-repo_makedepends:
-- jq
-- yarn
 update_on: []

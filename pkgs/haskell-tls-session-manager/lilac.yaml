@@ -9,17 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tls-session-m
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
-- haskell-auto-update
-- haskell-basement
-- haskell-clock
 - haskell-memory
+- haskell-auto-update
 - haskell-psqueues
+- haskell-clock
 - haskell-tls
-repo_makedepends:
-- ghc
+- haskell-basement
 update_on:
 - alpm: haskell-auto-update
   source: alpm

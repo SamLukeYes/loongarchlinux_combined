@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gucharmap'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
-repo_makedepends:
-- git
-- gobject-introspection
-- gtk-doc
-- meson
-- unicode-character-database
-- unzip
-- vala
-- yelp-tools
 update_on:
 - alpm: gucharmap
   source: archpkg

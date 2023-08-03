@@ -9,25 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aircrack-ng'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cmocka
 repo_depends:
-- glibc
-- gcc: gcc-libs
-- openssl
-- sqlite
-- iw
-- net-tools
-- wireless_tools
-- ethtool
-- pcre
-- libpcap
-- python
-- zlib
-- libnl
 - hwloc
+- net-tools
+- gcc: gcc-libs
+- libnl
+- ethtool
+- wireless_tools
+- zlib
+- libpcap
 - usbutils
-repo_makedepends: []
+- iw
+- pcre
+- sqlite
+- openssl
+- glibc
+- python
 update_on:
 - alpm: libpcap
   provides: libpcap.so

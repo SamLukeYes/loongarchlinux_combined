@@ -1,9 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - libseccomp
-repo_makedepends:
-- git
-- go
-- go-md2man
 update_on: []

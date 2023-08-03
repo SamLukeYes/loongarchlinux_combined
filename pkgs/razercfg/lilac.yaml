@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''razercfg'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- hicolor-icon-theme
 - libusb
+- hicolor-icon-theme
 - python
-repo_makedepends:
-- cmake
-- systemd
 update_on:
 - alias: python
 - alpm: razercfg

@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gnuidn'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
 - libidn
-repo_makedepends:
-- c2hs
-- ghc
 update_on:
 - alpm: haskell-gnuidn
   source: archpkg

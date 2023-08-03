@@ -9,21 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dleyna'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- dbus
-- gupnp
-- gupnp-av
 - gupnp-dlna
 - libsoup3
+- dbus
 - libxml2
-repo_makedepends:
-- git
-- meson
-- python-docutils
-- pygobject: python-gobject
-- python-sphinx
-- python-sphinx_rtd_theme
+- gupnp
+- gupnp-av
 update_on:
 - alpm: dleyna
   source: archpkg

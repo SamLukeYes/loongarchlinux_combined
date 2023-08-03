@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''imwheel'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxtst
 - libxmu
-repo_makedepends: []
+- libxtst
 update_on:
 - alpm: imwheel
   source: archpkg

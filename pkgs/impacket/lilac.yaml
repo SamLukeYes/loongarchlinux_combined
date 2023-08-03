@@ -7,21 +7,16 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''impacket'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-runner
-- python-cryptography
 repo_depends:
-- python
-- python-pycryptodome
-- python-pycryptodomex
-- python-pyasn1
-- python-pcapy
-- python-pyopenssl
 - python-six
+- python-pycryptodome
 - python-ldap3
+- python-pycryptodomex
+- python-pyopenssl
+- python-pcapy
+- python-pyasn1
+- python
 - python-flask
-repo_makedepends: []
 update_on:
 - alias: python
 - alpm: impacket

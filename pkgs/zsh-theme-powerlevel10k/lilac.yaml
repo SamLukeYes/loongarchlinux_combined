@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zsh-theme-powerlevel1
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - zsh
-repo_makedepends:
-- git
-- cmake
+- glibc
 update_on:
 - alpm: zsh-theme-powerlevel10k
   source: archpkg

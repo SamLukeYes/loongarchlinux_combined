@@ -9,24 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-sugar''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-filemanip
-- haskell-kvitable
-- haskell-logict
-- haskell-microlens
 - haskell-optparse-applicative
-- haskell-parallel
-- haskell-prettyprinter
+- haskell-filemanip
+- ghc: ghc-libs
+- haskell-logict
 - haskell-tasty
-repo_makedepends:
-- ghc
-- haskell-hedgehog
-- haskell-pretty-show
-- haskell-raw-strings-qq
-- haskell-tasty-hedgehog
-- haskell-tasty-hunit
+- haskell-parallel
+- haskell-kvitable
+- haskell-microlens
+- haskell-prettyprinter
 update_on:
 - alpm: haskell-filemanip
   source: alpm

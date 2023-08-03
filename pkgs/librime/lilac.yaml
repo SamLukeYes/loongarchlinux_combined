@@ -9,23 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''librime'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
+- lua
 - capnproto
 - opencc
-- yaml-cpp
 - leveldb
-# - rime-prelude: librime-data
-- lua
-- google-glog
 - marisa
-repo_makedepends:
-- git
-- cmake
-- boost
-- gtest
-- ninja
+- google-glog
+- rime-prelude: librime-data
+- boost: boost-libs
+- yaml-cpp
 update_on:
 - alias: lua
 - alpm: librime

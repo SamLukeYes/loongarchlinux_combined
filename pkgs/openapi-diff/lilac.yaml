@@ -7,11 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''openapi-diff'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - bash
-repo_makedepends:
-- maven
 update_on:
 - alpm: openapi-diff
   source: archpkg

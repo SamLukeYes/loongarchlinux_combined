@@ -7,21 +7,19 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''amavisd-new'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-convert-tnef
-- perl-mime-tools
-- perl-net-libidn
-- perl-io-socket-inet6
-- perl-io-stringy
-- perl-json
-- perl-http-message
-- perl-libwww
-- perl-lwp-protocol-https
-- perl-net-ssleay
 - bzip2
 - gzip
-repo_makedepends: []
+- perl-net-ssleay
+- perl-http-message
+- perl-libwww
+- perl-io-stringy
+- perl-mime-tools
+- perl-io-socket-inet6
+- perl-lwp-protocol-https
+- perl-net-libidn
+- perl-json
+- perl-convert-tnef
 update_on:
 - alpm: amavisd-new
   source: archpkg

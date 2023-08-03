@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gping'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - iputils
-repo_makedepends:
-- libgit2
 update_on:
 - alpm: gping
   source: archpkg

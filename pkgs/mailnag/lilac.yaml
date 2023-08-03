@@ -7,17 +7,15 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mailnag'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- dbus-python
-- gstreamer: gst-plugins-base
-- gstreamer: gst-python
-- gtk3
-- libnotify
-- libsecret
 - pygobject: python-gobject
 - pyxdg: python-pyxdg
-repo_makedepends: []
+- gstreamer: gst-python
+- libsecret
+- libnotify
+- dbus-python
+- gtk3
+- gstreamer: gst-plugins-base
 update_on:
 - alpm: mailnag
   source: archpkg

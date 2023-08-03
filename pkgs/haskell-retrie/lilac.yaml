@@ -9,29 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-retrie'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- git
-- mercurial
 repo_depends:
-- ghc: ghc-libs
-- haskell-ansi-terminal
-- haskell-async
-- haskell-data-default
-- haskell-ghc-exactprint
-- haskell-src-exts
-- haskell-list-t
 - haskell-optparse-applicative
-- haskell-random-shuffle
-- haskell-syb
 - haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hunit
-- haskell-ghc-paths
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-temporary
+- haskell-syb
+- haskell-list-t
+- haskell-async
+- ghc: ghc-libs
+- haskell-ghc-exactprint
+- haskell-ansi-terminal
+- haskell-data-default
+- haskell-random-shuffle
+- haskell-src-exts
 update_on:
 - alpm: haskell-ansi-terminal
   source: alpm

@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''roctracer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- rocprofiler
 - python-argparse
-repo_makedepends:
-- cmake
-- python-cppheaderparser
-- python-ply
+- rocprofiler
 update_on:
 - alpm: roctracer
   source: archpkg

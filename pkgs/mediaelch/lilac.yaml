@@ -9,19 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mediaelch'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - gcc: gcc-libs
-- libmediainfo
+- quazip: quazip-qt5
 - qt5-declarative
 - qt5-multimedia
+- libmediainfo
 - qt5-svg
-- quazip: quazip-qt5
-repo_makedepends:
-- cmake
-- ninja
-- qt5-tools
+- glibc
 update_on:
 - alpm: qt5-declarative
   source: alpm

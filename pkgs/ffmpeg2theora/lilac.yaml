@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ffmpeg2theora'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ffmpeg4.4
 - libkate
-repo_makedepends:
-- scons
-- git
+- ffmpeg4.4
 update_on:
 - alpm: ffmpeg2theora
   source: archpkg

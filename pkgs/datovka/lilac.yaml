@@ -9,18 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''datovka'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt6-base
-- qt6-svg
-- qt6-5compat
-- quazip: quazip-qt6
-- qt6-websockets
-- libdatovka
 - openssl
+- quazip: quazip-qt6
+- qt6-base
+- libdatovka
 - hicolor-icon-theme
-repo_makedepends:
-- qt6-tools
+- qt6-5compat
+- qt6-svg
+- qt6-websockets
 update_on:
 - alpm: qt6-base
   source: alpm

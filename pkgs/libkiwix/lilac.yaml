@@ -9,18 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libkiwix'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pugixml
 - xapian-core
-- aria2
 - libmicrohttpd
-- python
 - curl
-repo_makedepends:
-- meson
-- gtest
-- mustache
+- pugixml
+- aria2
+- python
 update_on:
 - alias: python
 - alpm: libkiwix

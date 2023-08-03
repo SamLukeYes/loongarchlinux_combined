@@ -9,17 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nmap'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
+- gcc: gcc-libs
+- zlib
+- libssh2
+- libpcap
 - pcre
 - openssl
+- glibc
 - lua
-- libpcap
-- libssh2
-- zlib
-- gcc: gcc-libs
-repo_makedepends: []
 update_on:
 - alias: lua
 - alpm: libssh2

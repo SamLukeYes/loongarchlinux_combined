@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-terminal-prog
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-terminal-size
-repo_makedepends:
-- ghc
-- haskell-hunit
-- haskell-test-framework
-- haskell-test-framework-hunit
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-terminal-size
   source: alpm

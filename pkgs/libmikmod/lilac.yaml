@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libmikmod'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - pulseaudio: libpulse
-repo_makedepends:
-- alsa-lib
-- cmake
-- ninja
+- glibc
 update_on:
 - alpm: libmikmod
   source: archpkg

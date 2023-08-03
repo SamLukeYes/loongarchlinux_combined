@@ -9,37 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''guestfs-tools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- linux
-- rpm-tools
 repo_depends:
 - gcc: gcc-libs
-- glibc
-- jansson
-- openssl
 - perl-libintl-perl
-- gcc: gcc-libs
-- glibc
 - jansson
-- openssl
-- perl-libintl-perl
-- libguestfs
-- libvirt
-- libxml2
 - ncurses
 - pcre2
 - xz
-repo_makedepends:
-- bash-completion
-- cdrtools
 - libguestfs
-- libisoburn
-- libvirt
 - libxml2
-- ncurses
-- ocaml-findlib
-- perl-module-build
-- xz
+- openssl
+- libvirt
+- glibc
 update_on:
 - alpm: libguestfs
   provides: libguestfs.so

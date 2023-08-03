@@ -9,57 +9,25 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-shell'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- appstream-glib
-- python-dbusmock
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- accountsservice
-- gcr-4
-- gjs
-- gnome-autoar
-- gnome-session
-- gnome-settings-daemon
-- gsettings-desktop-schemas
 - gtk4
-- libadwaita
-- gdm: libgdm
 - libgweather-4
-- ibus: libibus
-- libnma: libnma-gtk4
-- libsecret
-- libsoup3
-- mutter
-- unzip
 - upower
-- accountsservice
-- gcr-4
-- gjs
-- gnome-autoar
-- gnome-session
-- gnome-settings-daemon
+- libnma: libnma-gtk4
 - gsettings-desktop-schemas
-- gtk4
-- libadwaita
-- gdm: libgdm
-- libgweather-4
-- ibus: libibus
-- libnma: libnma-gtk4
 - libsecret
-- libsoup3
-- mutter
+- ibus: libibus
+- gcr-4
 - unzip
-- upower
-repo_makedepends:
-- asciidoc
-- bash-completion
-- evolution-data-server
-- git
-- gnome-control-center
-- gobject-introspection
-- gtk-doc
-- meson
-- sassc
+- gnome-settings-daemon
+- gnome-autoar
+- mutter
+- accountsservice
+- gnome-session
+- libsoup3
+- libadwaita
+- gjs
+- gdm: libgdm
 update_on:
 - alpm: mutter
   provides: libmutter-12.so

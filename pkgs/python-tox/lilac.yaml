@@ -7,31 +7,17 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-tox'')
 
   '
-repo_checkdepends:
-- python-diff-cover
-- python-distlib
-- python-flaky
-- python-pytest
-- python-pytest-mock
-- python-psutil
-- python-re-assert
 repo_depends:
-- python
-- python-cachetools
+- python-virtualenv
+- python-pyproject-api
+- python-platformdirs
 - python-chardet
 - python-colorama
 - python-filelock
 - python-packaging
-- python-platformdirs
 - python-pluggy
-- python-pyproject-api
-- python-virtualenv
-repo_makedepends:
-- python-build
-- python-hatch-vcs
-- python-hatchling
-- python-installer
-- python-wheel
+- python-cachetools
+- python
 update_on:
 - alias: python
 - alpm: python-tox

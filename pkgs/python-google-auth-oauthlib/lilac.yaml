@@ -7,15 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-google-auth-oauthlib'')
 
   '
-repo_checkdepends:
-- python-click
-- python-pytest
 repo_depends:
+- python-requests-oauthlib
 - python
 - python-google-auth
-- python-requests-oauthlib
-repo_makedepends:
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-google-auth-oauthlib

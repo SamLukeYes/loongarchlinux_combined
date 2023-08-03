@@ -9,40 +9,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-persistent-po
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- pifpaf
-- postgresql
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-attoparsec
-- haskell-blaze-builder
-- haskell-conduit
 - haskell-monad-logger
+- haskell-aeson
+- ghc: ghc-libs
+- haskell-blaze-builder
 - haskell-persistent
-- haskell-postgresql-libpq
 - haskell-postgresql-simple
-- haskell-resource-pool
-- haskell-resourcet
-- haskell-string-conversions
 - haskell-unliftio-core
 - haskell-vault
-repo_makedepends:
-- ghc
-- haskell-hunit
-- haskell-quickcheck
-- haskell-fast-logger
-- haskell-hspec
-- haskell-hspec-expectations
-- haskell-hspec-expectations-lifted
-- haskell-http-api-data
-- haskell-path-pieces
-- haskell-persistent-qq
-- haskell-persistent-test
-- haskell-quickcheck-instances
-- haskell-unliftio
-- haskell-unordered-containers
-- haskell-vector
+- haskell-conduit
+- haskell-string-conversions
+- haskell-resourcet
+- haskell-resource-pool
+- haskell-attoparsec
+- haskell-postgresql-libpq
 update_on:
 - alpm: haskell-aeson
   source: alpm

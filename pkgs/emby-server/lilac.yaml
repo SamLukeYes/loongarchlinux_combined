@@ -9,36 +9,32 @@ pre_build_script: '_G.files = download_official_pkgbuild(''emby-server'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- alsa-lib
-- aom
-- aribb24
-- dotnet-core-6.0: aspnet-runtime-6.0
 - bzip2
-- dotnet-core-6.0: dotnet-runtime-6.0
-- expat
-- ffmpeg
-- fontconfig
-- fribidi
-- glibc
-- gmp
-- gnutls
-- lame
-- libdrm
-- libjpeg-turbo
+- alsa-lib
 - intel-media-sdk: libmfx
-- libpng
+- aom
+- gnutls
+- glibc
 - libtheora
-- libwebp
-- opus
-- sqlite
-- tesseract
-- zlib
+- dotnet-core-6.0: aspnet-runtime-6.0
 - zvbi
-repo_makedepends:
-- ffnvcodec-headers
-- nasm
+- libjpeg-turbo
+- ffmpeg
+- dotnet-core-6.0: dotnet-runtime-6.0
+- opus
+- fribidi
+- gmp
+- libpng
+- fontconfig
+- libdrm
+- tesseract
+- expat
+- sqlite
+- aribb24
+- zlib
+- libwebp
+- lame
 update_on:
 - alpm: libass
   provides: libass.so

@@ -7,20 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-wsgi-intercept'')
 
   '
-repo_checkdepends:
-- python-httplib2
-- python-pytest
-- python-requests
-- python-urllib3
 repo_depends:
 - python
 - python-six
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-sphinx
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-wsgi-intercept

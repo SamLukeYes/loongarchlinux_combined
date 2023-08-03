@@ -7,20 +7,17 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''aws-cli'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
 - python-botocore
-- python-dateutil
 - python-jmespath
+- python-dateutil
 - python-colorama
-- python-docutils
-- python-pyasn1
 - python-rsa
 - python-s3transfer
 - python-yaml
-repo_makedepends:
-- python-setuptools
+- python-docutils
+- python-pyasn1
+- python
 update_on:
 - alias: python
 - alpm: aws-cli

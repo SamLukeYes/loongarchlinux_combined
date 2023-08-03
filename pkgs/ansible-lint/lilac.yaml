@@ -7,34 +7,21 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ansible-lint'')
 
   '
-repo_checkdepends:
-- mypy
-- python-jmespath
-- python-pylint
-- python-pytest
-- python-pytest-mock
 repo_depends:
-- python
-- ansible-core
-- git
-- yamllint
 - python-ansible-compat
-- python-black
-- python-enrich
-- python-filelock
-- python-jsonschema
-- python-pyaml
-- python-packaging
-- python-rich
-- python-ruamel-yaml
-- python-wcmatch
-repo_makedepends:
 - git
-- python-build
-- python-installer
-- python-setuptools
-- python-setuptools-scm
-- python-wheel
+- python-rich
+- yamllint
+- ansible-core
+- python-enrich
+- python-pyaml
+- python-filelock
+- python-wcmatch
+- python-black
+- python-packaging
+- python-ruamel-yaml
+- python-jsonschema
+- python
 update_on:
 - alias: python
 - alpm: ansible-lint

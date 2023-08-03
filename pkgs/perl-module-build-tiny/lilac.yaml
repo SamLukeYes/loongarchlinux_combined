@@ -7,13 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-module-build-tiny'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- perl-extutils-helpers
 - perl
 - perl-extutils-config
-- perl-extutils-helpers
 - perl-extutils-installpaths
-repo_makedepends: []
 update_on:
 - alias: perl
 - alpm: perl-module-build-tiny

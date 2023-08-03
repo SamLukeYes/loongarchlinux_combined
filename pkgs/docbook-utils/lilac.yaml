@@ -1,9 +1,6 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - openjade
-- docbook-dsssl
 - docbook-sgml31
-repo_makedepends:
-- perl-sgmls
+- docbook-dsssl
 update_on: []

@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wuss'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-network
 - haskell-websockets
-repo_makedepends:
-- ghc
-- uusi
+- haskell-network
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-connection
   source: alpm

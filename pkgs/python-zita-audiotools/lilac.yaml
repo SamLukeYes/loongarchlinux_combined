@@ -9,18 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-zita-audiotool
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
 - libsndfile
-- python-numpy
 - zita-resampler
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- glibc
+- python-numpy
 update_on:
 - alpm: python-zita-audiotools
   source: archpkg

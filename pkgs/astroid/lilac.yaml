@@ -9,26 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''astroid'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- notmuch: notmuch-runtime
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- boost: boost-libs
+- notmuch
 - gmime3
 - gobject-introspection: gobject-introspection-runtime
 - gtkmm3
-- libpeas
-- libsass
-- notmuch
-- protobuf
 - vte3
+- libpeas
 - webkit2gtk
-repo_makedepends:
-- boost
-- cmake
-- cmark
-- gobject-introspection
-- w3m
+- libsass
+- protobuf
+- boost: boost-libs
 update_on:
 - alias: protobuf
 - alpm: astroid

@@ -9,32 +9,26 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-persistent-te
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-persistent
+- haskell-unordered-containers
 - haskell-aeson
-- haskell-blaze-html
-- haskell-conduit
 - haskell-hspec
-- haskell-hspec-expectations
-- haskell-hunit
+- haskell-resourcet
+- haskell-quickcheck
 - haskell-monad-control
 - haskell-monad-logger
 - haskell-path-pieces
-- haskell-quickcheck
-- haskell-quickcheck-instances
-- haskell-random
-- haskell-resourcet
-- haskell-transformers-base
-- haskell-unliftio
+- ghc: ghc-libs
 - haskell-unliftio-core
-- haskell-unordered-containers
-repo_makedepends:
-- ghc
-- haskell-hspec
-- haskell-http-api-data
-- haskell-quickcheck
+- haskell-transformers-base
+- haskell-blaze-html
+- haskell-random
+- haskell-persistent
+- haskell-conduit
+- haskell-hunit
+- haskell-hspec-expectations
+- haskell-quickcheck-instances
+- haskell-unliftio
 update_on:
 - alpm: haskell-persistent
   source: alpm

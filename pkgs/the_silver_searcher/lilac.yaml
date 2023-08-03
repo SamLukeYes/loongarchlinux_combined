@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''the_silver_searcher''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pcre
 - xz
-repo_makedepends:
-- git
+- pcre
 update_on:
 - alpm: the_silver_searcher
   source: archpkg

@@ -7,17 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-resolvelib'')
 
   '
-repo_checkdepends:
-- python-commentjson
-- python-packaging
-- python-pytest
 repo_depends:
 - python
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-resolvelib

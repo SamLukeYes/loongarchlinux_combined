@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''five-or-more'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libgnome-games-support
 - gtk3
 - librsvg
-- libgnome-games-support
-repo_makedepends:
-- gobject-introspection
-- yelp-tools
-- appstream-glib
-- git
-- meson
-- vala
 update_on:
 - alpm: five-or-more
   source: archpkg

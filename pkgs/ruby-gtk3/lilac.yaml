@@ -9,21 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-gtk3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- ruby-gdk_pixbuf2
+- ruby
+- ruby-gobject-introspection
+- ruby-gdk3
+- ruby-cairo
+- ruby-atk
+- ruby-pango
+- ruby-gio2
 - gobject-introspection
 - gtk3
-- ruby
-- ruby-atk
-- ruby-cairo
-- ruby-gdk3
-- ruby-gdk_pixbuf2
-- ruby-gio2
-- ruby-gobject-introspection
-- ruby-pango
-repo_makedepends:
-- ruby-native-package-installer
-- ruby-glib2
 update_on:
 - alias: ruby
 - alpm: ruby-gtk3

@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wtype'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libxkbcommon
 - wayland
-repo_makedepends:
-- meson
 update_on:
 - alpm: wtype
   source: archpkg

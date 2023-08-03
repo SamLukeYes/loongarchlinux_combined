@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ibus-m17n'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- m17n-lib
 - ibus
 - m17n-db
-- m17n-lib
-repo_makedepends: []
 update_on:
 - alpm: ibus-m17n
   source: archpkg

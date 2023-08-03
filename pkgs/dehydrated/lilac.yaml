@@ -7,12 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''dehydrated'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- curl
 - diffutils
 - openssl
-repo_makedepends: []
+- curl
 update_on:
 - alpm: dehydrated
   source: archpkg

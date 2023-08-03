@@ -7,18 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-requests-aws4auth'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-httpx
 repo_depends:
-- python
 - python-requests
+- python
 - python-six
-repo_makedepends:
-- python-setuptools
-- python-build
-- python-installer
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-requests-aws4auth

@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-oset'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-oset
   source: archpkg

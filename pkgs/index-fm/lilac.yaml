@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''index-fm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- mauikit-filebrowsing
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
+- mauikit-filebrowsing
 update_on:
 - alpm: index-fm
   source: archpkg

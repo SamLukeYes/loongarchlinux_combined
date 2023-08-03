@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bbpager'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- libxft
 - libxext
+- gcc: gcc-libs
 - blackbox
-repo_makedepends:
-- patch
+- libxft
 update_on:
 - alpm: bbpager
   source: archpkg

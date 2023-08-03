@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''igsc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - intel-metee
 - systemd: systemd-libs
-repo_makedepends:
-- cmake
-- systemd
 update_on:
 - alpm: igsc
   source: archpkg

@@ -7,16 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-fontpens'')
 
   '
-repo_checkdepends:
-- python-fontparts
-- python-pytest
 repo_depends:
 - python-fonttools
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
 update_on:
 - alpm: python-fontpens
   source: archpkg

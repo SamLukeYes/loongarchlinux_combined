@@ -7,24 +7,17 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''gnome-music'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- grilo
-- grilo-plugins
-- gstreamer: gst-plugins-base
-- gstreamer: gst-plugins-good
+- pygobject: python-gobject
+- libmediaart
+- tracker3-miners
 - gtk4
 - libadwaita
-- libmediaart
+- grilo-plugins
+- gstreamer: gst-plugins-good
+- grilo
+- gstreamer: gst-plugins-base
 - python-cairo
-- pygobject: python-gobject
-- tracker3-miners
-repo_makedepends:
-- appstream-glib
-- git
-- gobject-introspection
-- meson
-- yelp-tools
 update_on:
 - alpm: gnome-music
   source: archpkg

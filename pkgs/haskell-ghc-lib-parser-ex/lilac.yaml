@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ghc-lib-parse
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-uniplate
 - ghc: ghc-libs
-- haskell-uniplate
-repo_makedepends:
-- ghc
-- haskell-extra
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-uniplate
 update_on:
 - alpm: haskell-uniplate
   source: alpm

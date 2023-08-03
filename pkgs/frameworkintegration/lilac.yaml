@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''frameworkintegration'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - knewstuff
-repo_makedepends:
-- extra-cmake-modules
-- appstream: appstream-qt
-- packagekit-qt: packagekit-qt5
 update_on:
 - alpm: frameworkintegration
   source: archpkg

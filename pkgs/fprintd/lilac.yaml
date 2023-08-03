@@ -9,27 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fprintd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
+- dbus-glib
 - libfprint
 - polkit
 - dbus
-- dbus-glib
-- systemd
 - glib2
-- libfprint
-- polkit
-- dbus
-- dbus-glib
 - systemd
-repo_makedepends:
-- gtk-doc
-- git
-- meson
-- pam_wrapper
-- python-cairo
-- python-dbusmock
 update_on:
 - alpm: libfprint
   provides: libfprint-2.so

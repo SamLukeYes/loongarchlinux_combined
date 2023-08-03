@@ -9,29 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ssr'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
 - glu
 - qt5-base
-- gcc: gcc-libs
+- libsndfile
+- fftw
+- libglvnd
 - glibc
-- glu
-- qt5-base
-- fftw
-- libglvnd
-- libsndfile
-repo_makedepends:
-- asio
-- ecasound
-- fftw
-- gendesk
-- help2man
-- libglvnd
-- libsndfile
-- qt5-tools
-- websocketpp
 update_on:
 - alpm: qt5-base
   source: alpm

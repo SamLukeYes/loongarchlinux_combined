@@ -9,20 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pimcommon'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libkdepim
-- kimap
-- kldap
 - akonadi-contacts
+- kpimtextedit
+- kimap
 - akonadi-search
 - purpose
-- kpimtextedit
 - ktextaddons
-repo_makedepends:
-- extra-cmake-modules
-- qt5-tools
-- doxygen
+- kldap
+- libkdepim
 update_on:
 - alpm: pimcommon
   source: archpkg

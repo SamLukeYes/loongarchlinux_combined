@@ -7,14 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''bower'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- nodejs
 - semver
 - uglify-js
-repo_makedepends:
-- npm
-- git
+- nodejs
 update_on:
 - alpm: bower
   source: archpkg

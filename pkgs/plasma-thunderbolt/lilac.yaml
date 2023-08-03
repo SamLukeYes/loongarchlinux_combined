@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plasma-thunderbolt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bolt
 - systemsettings
-repo_makedepends:
-- extra-cmake-modules
+- bolt
 update_on:
 - alpm: plasma-thunderbolt
   source: archpkg

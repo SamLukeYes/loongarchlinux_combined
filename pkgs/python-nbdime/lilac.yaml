@@ -7,33 +7,19 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-nbdime'')
 
   '
-repo_checkdepends:
-- mercurial
-- python-jsonpatch
-- python-pytest
-- python-pytest-timeout
-- python-pytest-tornado
 repo_depends:
-- python
-- jupyter-nbformat
+- python-requests
+- python-traitlets
 - python-colorama
 - python-pygments
-- python-tornado
-- python-requests
-- python-gitpython
-- jupyter-server
+- jupyter-nbformat
 - jupyter-server-mathjax
 - python-jinja
-- python-traitlets
+- jupyter-server
 - python-jupyter-core
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
-- python-tabulate
-- jupyter-notebook
-- python-packaging
+- python-tornado
+- python-gitpython
+- python
 update_on:
 - alias: python
 - alpm: python-nbdime

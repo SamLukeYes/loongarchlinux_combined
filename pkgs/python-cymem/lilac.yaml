@@ -9,16 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-cymem'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
 - python
-repo_makedepends:
-- cython
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-cymem

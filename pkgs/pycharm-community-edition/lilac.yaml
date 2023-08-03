@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pycharm-community-edi
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- giflib
-- glib2
-- python
 - fontconfig
+- glib2
 - libdbusmenu: libdbusmenu-glib
-repo_makedepends:
-- git
-- python-setuptools
+- giflib
+- python
 update_on:
 - alias: python
 - alpm: pycharm-community-edition

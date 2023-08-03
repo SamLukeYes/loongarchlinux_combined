@@ -7,14 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''cgal'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - boost
-- eigen
-- gmp
 - mpfr
-repo_makedepends:
-- cmake
+- gmp
+- eigen
 update_on:
 - alias: boost
 - alpm: cgal

@@ -9,22 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''spice'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- gdk-pixbuf2
-- glib-networking
 repo_depends:
-- pixman
-- opus
 - libjpeg-turbo
-- glib2
+- spice-protocol
 - libsasl
 - lz4
-- spice-protocol
 - libcacard
-repo_makedepends:
-- meson
-- python-six
-- python-pyparsing
+- opus
+- pixman
+- glib2
 update_on:
 - alpm: spice
   source: archpkg

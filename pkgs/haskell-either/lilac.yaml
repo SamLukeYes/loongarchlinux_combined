@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-either'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-bifunctors
 - haskell-profunctors
+- ghc: ghc-libs
 - haskell-semigroupoids
-repo_makedepends:
-- ghc
-- haskell-quickcheck
-- haskell-test-framework
-- haskell-test-framework-quickcheck2
 update_on:
 - alpm: haskell-bifunctors
   source: alpm

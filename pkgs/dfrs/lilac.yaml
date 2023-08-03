@@ -1,8 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- glibc
 - gcc: gcc-libs
-repo_makedepends:
-- scdoc
+- glibc
 update_on: []

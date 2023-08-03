@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nomad-driver-podman''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- nomad
 - podman
-repo_makedepends:
-- git
-- go
+- nomad
 update_on:
 - alpm: nomad-driver-podman
   source: archpkg

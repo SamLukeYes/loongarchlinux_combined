@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aribb25'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - pcsclite
-repo_makedepends: []
+- glibc
 update_on:
 - alpm: aribb25
   source: archpkg

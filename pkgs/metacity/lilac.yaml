@@ -9,21 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''metacity'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- dconf
-- libcanberra
-- libgtop
-- libsm
-- libxpresent
+- startup-notification
 - libxres
 - gsettings-desktop-schemas
-- gtk3
-- startup-notification
+- dconf
+- libxpresent
+- libgtop
+- libsm
+- libcanberra
 - zenity
-repo_makedepends:
-- vulkan-headers
-- python
+- gtk3
 update_on:
 - alpm: metacity
   source: archpkg

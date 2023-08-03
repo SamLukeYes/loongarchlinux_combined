@@ -9,22 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nageru'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- bmusb
+- pciutils
+- cmake
+- movit
+- luajit
 - libmicrohttpd
 - ffmpeg
-- protobuf
-- movit
-- bmusb
-- qcustomplot
-- pciutils
 - zita-resampler
-- luajit
-- cmake
-repo_makedepends:
-- meson
-- eigen
-- qt5-tools
+- protobuf
+- qcustomplot
 update_on:
 - alias: protobuf
 - alpm: nageru

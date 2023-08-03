@@ -9,41 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xine-lib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ffmpeg
 - libjpeg-turbo
+- libxcb
 - libmodplug
+- libxvmc
+- ffmpeg
+- libxv
+- zlib
+- libxinerama
+- libx11
+- libxext
 - libnsl
 - libpng
-- libx11
-- libxcb
-- libxext
-- libxinerama
-- libxv
-- libxvmc
-- zlib
-repo_makedepends:
-- mesa
-- libdvdnav
-- libdvdread
-- vcdimager
-- glu
-- wayland
-- aalib
-- a52dec
-- faad2
-- flac
-- libdca
-- libmad
-- musepack: libmpcdec
-- wavpack
-- gdk-pixbuf2
-- imagemagick
-- libcaca
-- libmng
-- libnfs
-- samba: smbclient
 update_on:
 - alpm: xine-lib
   source: archpkg

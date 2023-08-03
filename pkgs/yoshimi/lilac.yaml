@@ -9,34 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yoshimi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- kxstudio-lv2-extensions
-- lv2lint
 repo_depends:
-- cairo
-- gcc: gcc-libs
+- alsa-lib
 - glibc
 - hicolor-icon-theme
-- zlib
-- cairo
 - gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
+- mxml
+- fltk
+- fftw
+- cairo
+- ncurses
 - zlib
-- alsa-lib
-- fftw
-- fltk
-- mxml
-- ncurses
-- readline
-repo_makedepends:
-- alsa-lib
-- cmake
-- fftw
-- fltk
-- lv2
-- mxml
-- ncurses
 - readline
 update_on:
 - alpm: alsa-lib

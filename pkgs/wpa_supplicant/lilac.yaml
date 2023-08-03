@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wpa_supplicant'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
-- readline
 - libnl
 - pcsclite
-repo_makedepends: []
+- readline
+- openssl
 update_on:
 - alias: readline
 - alpm: wpa_supplicant

@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rest'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
 - libxml2
 - libsoup
 - glib2
-- libxml2
-- libsoup
-repo_makedepends:
-- gobject-introspection
-- gtk-doc
-- git
 update_on:
 - alpm: glib2
   provides: libglib-2.0.so

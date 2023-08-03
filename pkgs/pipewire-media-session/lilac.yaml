@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pipewire-media-sessio
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- alsa-lib
-- dbus
-- git
-- meson
-- systemd
 update_on:
 - alpm: dbus
   provides: libdbus-1.so

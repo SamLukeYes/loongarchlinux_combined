@@ -9,22 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''midi_matrix.lv2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
-- glibc
-- libglvnd
 - libx11
-- glibc
 - libglvnd
-- libx11
 - glew
-repo_makedepends:
-- glew
-- glu
-- lv2
-- meson
-- sord
+- glibc
 update_on:
 - alpm: glew
   provides: libGLEW.so

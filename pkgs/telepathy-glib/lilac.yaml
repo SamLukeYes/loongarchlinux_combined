@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-glib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - dbus-glib
-repo_makedepends:
-- libxslt
-- vala
-- gobject-introspection
-- python
 update_on:
 - alpm: telepathy-glib
   source: archpkg

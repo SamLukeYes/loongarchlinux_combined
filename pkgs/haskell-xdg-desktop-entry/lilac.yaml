@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-xdg-desktop-e
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-configfile
-- haskell-either
 - haskell-multimap
+- ghc: ghc-libs
+- haskell-either
 - haskell-safe
-repo_makedepends:
-- ghc
+- haskell-configfile
 update_on:
 - alpm: haskell-configfile
   source: alpm

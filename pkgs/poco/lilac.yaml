@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''poco'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- mariadb: mariadb-libs
 - openssl
 - unixodbc
-repo_makedepends:
-- cmake
-- ninja
+- mariadb: mariadb-libs
 update_on:
 - alpm: poco
   source: archpkg

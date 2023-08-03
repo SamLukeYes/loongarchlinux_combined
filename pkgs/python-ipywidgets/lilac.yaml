@@ -7,18 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-ipywidgets'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytz
 repo_depends:
-- python-ipykernel
-- python-jsonschema
 - python-ipython-genutils
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-jsonschema
+- python-ipykernel
 update_on:
 - alpm: python-ipywidgets
   source: archpkg

@@ -9,21 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''k3b'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libkcddb
-- kcmutils
-- knotifyconfig
-- libmad
-- kfilemetadata
-- knewstuff
-- musepack: libmpcdec
-- libdvdread
-- libburn
 - libsamplerate
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
+- libdvdread
+- kfilemetadata
+- musepack: libmpcdec
+- knotifyconfig
+- kcmutils
+- libburn
+- knewstuff
+- libmad
 update_on:
 - alpm: k3b
   source: archpkg

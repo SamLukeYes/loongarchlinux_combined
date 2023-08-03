@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-quickcheck'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-erf
 - haskell-random
 - haskell-splitmix
-repo_makedepends:
-- ghc
+- ghc: ghc-libs
+- haskell-erf
 update_on:
 - alpm: haskell-erf
   source: alpm

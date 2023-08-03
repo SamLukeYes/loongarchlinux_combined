@@ -9,27 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-tpm2-pytss'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
-- swtpm
-- tpm2-tools
 repo_depends:
-- glibc
-- python
-- python-asn1crypto
 - python-cffi
+- tpm2-tss
+- python-asn1crypto
 - python-cryptography
 - python-packaging
 - python-yaml
-- tpm2-tss
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-pkgconfig
-- python-setuptools
-- python-setuptools-scm
-- python-wheel
+- glibc
+- python
 update_on:
 - alias: python
 - alpm: tpm2-tss

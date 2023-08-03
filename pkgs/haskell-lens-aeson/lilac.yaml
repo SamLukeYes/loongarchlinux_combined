@@ -9,18 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lens-aeson'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-attoparsec
-- haskell-lens
-- haskell-scientific
-- haskell-text-short
 - haskell-unordered-containers
+- haskell-lens
+- haskell-aeson
+- ghc: ghc-libs
+- haskell-scientific
 - haskell-vector
-repo_makedepends:
-- ghc
+- haskell-text-short
+- haskell-attoparsec
 update_on:
 - alpm: haskell-aeson
   source: alpm

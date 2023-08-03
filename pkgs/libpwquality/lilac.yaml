@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libpwquality'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - cracklib
 - glibc
 - pam
-repo_makedepends:
-- python
 update_on:
 - alpm: libpwquality
   source: archpkg

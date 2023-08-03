@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sdcv'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
 - readline
+- glib2
 - zlib
-repo_makedepends:
-- cmake
 update_on:
 - alias: readline
 - alpm: sdcv

@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''primus_vk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- nvidia-utils
-- bumblebee
 - vulkan-icd-loader
 - primus
-repo_makedepends:
-- git
-- vulkan-validation-layers
+- bumblebee
+- nvidia-utils
 update_on:
 - alpm: primus_vk
   source: archpkg

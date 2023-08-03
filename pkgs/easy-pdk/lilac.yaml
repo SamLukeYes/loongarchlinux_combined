@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''easy-pdk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-repo_makedepends:
-- arm-none-eabi-gcc
-- arm-none-eabi-newlib
-- dfu-util
 update_on:
 - alpm: easy-pdk
   source: archpkg

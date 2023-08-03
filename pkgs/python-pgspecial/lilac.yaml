@@ -7,17 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pgspecial'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-configobj
 repo_depends:
+- python-psycopg
+- python-sqlparse
 - python
 - python-click
-- python-sqlparse
-- python-psycopg
-repo_makedepends:
-- git
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-pgspecial

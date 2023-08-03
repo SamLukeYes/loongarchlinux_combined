@@ -7,20 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''bpython'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python-pygments
+- python-greenlet
+- pyxdg: python-pyxdg
 - python-requests
 - python-curtsies
-- python-greenlet
 - python-typing_extensions
-- pyxdg: python-pyxdg
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-pygments
 update_on:
 - alpm: bpython
   source: archpkg

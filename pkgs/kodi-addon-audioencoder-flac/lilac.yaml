@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kodi-addon-audioencod
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kodi
-repo_makedepends:
-- cmake
-- kodi: kodi-dev
 update_on:
 - alpm: kodi-addon-audioencoder-flac
   source: archpkg

@@ -9,26 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kio-extras'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kio
-- kdnssd
-- libssh
-- samba: smbclient
-- libmtp
-- libkexiv2
 - phonon: phonon-qt5
-- syntax-highlighting
 - kdsoap-ws-discovery-client
+- samba: smbclient
+- libkexiv2
 - libxcursor
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- gperf
-- taglib
-- libappimage
-- openexr
-- kactivities-stats
+- kio
+- syntax-highlighting
+- libssh
+- kdnssd
+- libmtp
 update_on:
 - alpm: kio-extras
   source: archpkg

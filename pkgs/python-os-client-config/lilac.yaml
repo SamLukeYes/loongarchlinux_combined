@@ -7,15 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-os-client-config'')
 
   '
-repo_checkdepends:
-- python-stestr
-- python-oslotest
-- python-jsonschema
-- python-glanceclient
 repo_depends:
 - python-openstacksdk
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-os-client-config
   source: archpkg

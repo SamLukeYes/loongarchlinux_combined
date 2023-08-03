@@ -9,18 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''onboard'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
+- pygobject: python-gobject
 - hunspell
-- iso-codes
 - libcanberra
+- iso-codes
+- gtk3
 - libxkbfile
 - python-cairo
-- pygobject: python-gobject
 - systemd
-repo_makedepends:
-- python-distutils-extra
 update_on:
 - alpm: onboard
   source: archpkg

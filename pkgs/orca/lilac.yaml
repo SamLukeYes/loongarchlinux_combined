@@ -7,25 +7,20 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''orca'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- at-spi2-core
-- brltty
 - gsettings-desktop-schemas
-- gstreamer: gst-plugins-base
-- gstreamer: gst-plugins-good
-- gtk3
 - liblouis
-- libwnck3
 - pyatspi: python-atspi
-- python-setproctitle
 - speech-dispatcher
+- gstreamer: gst-plugins-good
+- python-setproctitle
 - xorg-xkbcomp
 - xorg-xmodmap
-repo_makedepends:
-- git
-- itstool
-- yelp-tools
+- brltty
+- gtk3
+- at-spi2-core
+- gstreamer: gst-plugins-base
+- libwnck3
 update_on:
 - alpm: orca
   source: archpkg

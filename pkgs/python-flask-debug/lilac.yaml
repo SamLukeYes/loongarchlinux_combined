@@ -7,13 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-flask-debug'')
 
   '
-repo_checkdepends:
-- python-pytest-runner
 repo_depends:
-- python-flask
 - python-inflection
-repo_makedepends:
-- python-setuptools
+- python-flask
 update_on:
 - alpm: python-flask-debug
   source: archpkg

@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sparse'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- sqlite
 - perl
 - libxml2
-- sqlite
-repo_makedepends:
-- git
-- llvm14
-- gtk3
 update_on:
 - alias: perl
 - alpm: sparse

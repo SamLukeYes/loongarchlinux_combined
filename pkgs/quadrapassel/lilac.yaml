@@ -9,19 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''quadrapassel'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- clutter-gtk
-- gsound
 - librsvg
+- clutter-gtk
 - libmanette
-repo_makedepends:
-- meson
-- gobject-introspection
-- yelp-tools
-- appstream-glib
-- git
-- vala
+- gsound
 update_on:
 - alpm: quadrapassel
   source: archpkg

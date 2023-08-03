@@ -7,13 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-module-build'')
 
   '
-repo_checkdepends:
-- perl-par-dist
-- perl-archive-zip
 repo_depends:
 - perl
 - perl-inc-latest
-repo_makedepends: []
 update_on:
 - alias: perl
 - alpm: perl-module-build

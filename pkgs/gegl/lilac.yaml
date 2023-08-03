@@ -9,39 +9,29 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gegl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- babl
-- cairo
-- gcc: gcc-libs
-- gdk-pixbuf2
-- glib2
-- glibc
-- jasper
-- json-glib
-- lcms2
-- lensfun
-- libjpeg-turbo
-- libpng
-- libraw
 - librsvg
-- libspiro
-- libtiff
-- libwebp
+- glibc
+- glib2
+- gcc: gcc-libs
+- libjpeg-turbo
 - luajit
 - openexr
 - pango
+- cairo
+- libpng
+- jasper
+- libspiro
 - poppler: poppler-glib
+- libraw
 - suitesparse
-repo_makedepends:
-- ffmpeg
-- git
-- gobject-introspection
-- libgexiv2
-- meson
-- pygobject: python-gobject
-- sdl2
-- vala
+- gdk-pixbuf2
+- libtiff
+- lensfun
+- babl
+- lcms2
+- json-glib
+- libwebp
 update_on:
 - alpm: gegl
   source: archpkg

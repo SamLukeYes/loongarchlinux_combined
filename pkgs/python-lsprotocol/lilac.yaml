@@ -7,17 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-lsprotocol'')
 
   '
-repo_checkdepends:
-- python-jsonschema
-- python-pyhamcrest
-- python-pytest
 repo_depends:
 - python-cattrs
-repo_makedepends:
-- git
-- python-build
-- python-flit-core
-- python-installer
 update_on:
 - alpm: python-lsprotocol
   source: archpkg

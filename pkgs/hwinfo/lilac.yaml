@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hwinfo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- perl-xml-writer
 - libx86emu
 - perl-xml-parser
-- perl-xml-writer
-repo_makedepends:
-- flex
-- git
-- sysfsutils
 update_on:
 - alpm: hwinfo
   source: archpkg

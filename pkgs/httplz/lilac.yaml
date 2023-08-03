@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''httplz'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
 - bzip2
-repo_makedepends:
-- ruby-ronn-ng
+- openssl
 update_on:
 - alpm: httplz
   source: archpkg

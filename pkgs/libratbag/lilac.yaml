@@ -9,26 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libratbag'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- check
-- valgrind
-- pygobject: python-gobject
-- python-lxml
 repo_depends:
-- glib2
-- libevdev
-- libunistring
-- json-glib
-- python
 - python-evdev
+- libunistring
+- libevdev
+- json-glib
 - pygobject: python-gobject
-repo_makedepends:
-- meson
-- swig
-- git
-- python-sphinx
-- python-sphinx_rtd_theme
-- systemd
+- glib2
+- python
 update_on:
 - alpm: systemd-libs
   provides: libudev.so

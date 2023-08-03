@@ -9,20 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pdfpc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
-- poppler: poppler-glib
+- qrencode
 - libgee
+- libsoup
 - gstreamer
-- gstreamer: gst-plugins-base
 - webkit2gtk
 - discount
-- libsoup
-- qrencode
-repo_makedepends:
-- cmake
-- vala
+- gtk3
+- gstreamer: gst-plugins-base
+- poppler: poppler-glib
 update_on:
 - alpm: pdfpc
   source: archpkg

@@ -9,23 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bcc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- netperf
-- iperf
 repo_depends:
-- clang
 - elfutils: libelf
 - libedit
 - ethtool
-- python
-repo_makedepends:
-- cmake
 - clang
-- llvm
-- flex
-- bison
 - python
-- python-setuptools
 update_on:
 - alias: clang
 - alias: python

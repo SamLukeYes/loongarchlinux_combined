@@ -9,17 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-screensaver'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- mate-session-manager
+- libxss
+- libnotify
 - libmatekbd
 - gettext
-- libnotify
-- libxss
-- mate-desktop
 - mate-menus
-- mate-session-manager
-repo_makedepends:
-- systemd
+- mate-desktop
 update_on:
 - alpm: mate-screensaver
   source: archpkg

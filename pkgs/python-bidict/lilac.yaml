@@ -7,24 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-bidict'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-sphinx
-- python-sphinx-autodoc-typehints
-- python-pytest-benchmark
-- python-pytest-cov
-- python-pytest-xdist
-- python-hypothesis
-- python-py-cpuinfo
-- python-sortedcollections
 repo_depends:
-- python
 - python-typing_extensions
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python
 update_on:
 - alias: python
 - alpm: python-bidict

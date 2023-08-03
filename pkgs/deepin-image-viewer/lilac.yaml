@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-image-viewer''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- deepin-qt5integration
+- libraw
 - deepin-image-editor
 - libexif
-- libraw
 - qt5-svg
-repo_makedepends:
-- cmake
-- ninja
-- qt5-tools
+- deepin-qt5integration
 update_on:
 - alpm: deepin-image-viewer
   source: archpkg

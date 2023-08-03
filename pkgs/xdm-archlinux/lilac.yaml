@@ -7,18 +7,16 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''xdm-archlinux'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- xorg-xdm
-- bash
-- xorg-xmessage
-- xorg-xclock
+- terminus-font
 - xorg-xsetroot
 - xorg-xwininfo
 - xorg-xkill
+- xorg-xclock
 - ttf-bitstream-vera
-- terminus-font
-repo_makedepends: []
+- xorg-xdm
+- bash
+- xorg-xmessage
 update_on:
 - alpm: xdm-archlinux
   source: archpkg

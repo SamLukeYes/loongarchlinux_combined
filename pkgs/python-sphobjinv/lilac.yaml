@@ -7,14 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-sphobjinv'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
 - python-attrs
-- python-certifi
 - python-jsonschema
-repo_makedepends:
-- python-setuptools
+- python
+- python-certifi
 update_on:
 - alias: python
 - alpm: python-sphobjinv

@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-biscuits'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest-runner
 repo_depends:
 - python
-repo_makedepends:
-- cython
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-biscuits

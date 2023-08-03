@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libomemo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - sqlite
 - libgcrypt
 - mxml
 - glib2
-repo_makedepends:
-- cmake
-- cmocka
 update_on:
 - alpm: libomemo
   source: archpkg

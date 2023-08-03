@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mono'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- ca-certificates
 - zlib
 - python
-- ca-certificates
-repo_makedepends:
-- cmake
-- git
 update_on:
 - alias: python
 - alpm: mono

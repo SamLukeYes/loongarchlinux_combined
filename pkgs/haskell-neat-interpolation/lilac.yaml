@@ -9,18 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-neat-interpol
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-megaparsec
-repo_makedepends:
-- ghc
-- haskell-quickcheck
-- haskell-quickcheck-instances
-- haskell-rerebase
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-megaparsec
   source: alpm

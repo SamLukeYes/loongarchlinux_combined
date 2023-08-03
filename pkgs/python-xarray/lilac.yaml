@@ -7,35 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-xarray'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-xdist
-- python-aiobotocore
-- python-aiohttp
-- python-bottleneck
-- python-boto3
-- python-cftime
-- python-dask
-- python-distributed
-- python-fsspec
-- python-h5py
-- python-hypothesis
-- python-lxml
-- python-matplotlib
-- python-netcdf4
-- python-numexpr
-- python-numpy
-- python-pint
-- python-requests
-- python-scipy
-- python-seaborn
 repo_depends:
+- python-pandas
 - python-numpy
 - python-packaging
-- python-pandas
-repo_makedepends:
-- python-setuptools
-- python-setuptools-scm
 update_on:
 - alpm: python-xarray
   source: archpkg

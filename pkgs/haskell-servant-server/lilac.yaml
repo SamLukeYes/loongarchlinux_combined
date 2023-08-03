@@ -9,40 +9,28 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-servant-serve
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
+- haskell-warp
 - haskell-base-compat
-- haskell-aeson
 - haskell-base64-bytestring
-- haskell-constraints
-- haskell-http-api-data
-- haskell-http-media
+- haskell-aeson
 - haskell-http-types
-- haskell-network-uri
-- haskell-monad-control
-- haskell-network
-- haskell-servant
-- haskell-sop-core
+- haskell-tagged
 - haskell-string-conversions
 - haskell-resourcet
-- haskell-tagged
-- haskell-transformers-base
-- haskell-wai
-- haskell-wai-app-static
-- haskell-warp
+- haskell-network-uri
+- haskell-http-api-data
 - haskell-word8
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hspec
-- haskell-hspec-wai
-- haskell-should-not-typecheck
-- haskell-quickcheck
-- haskell-safe
-- haskell-wai-extra
-- haskell-temporary
-- haskell-transformers-compat
+- haskell-wai-app-static
+- haskell-monad-control
+- haskell-wai
+- haskell-network
+- ghc: ghc-libs
+- haskell-constraints
+- haskell-transformers-base
+- haskell-http-media
+- haskell-sop-core
+- haskell-servant
 update_on:
 - alpm: haskell-base-compat
   source: alpm

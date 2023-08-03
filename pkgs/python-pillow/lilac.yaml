@@ -9,25 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pillow'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
-- freetype2
-- lcms2
-- libraqm
-- libtiff
-- openjpeg2
 - libimagequant
 - libxcb
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
-- libwebp
-- tk
+- libraqm
+- libtiff
+- freetype2
+- lcms2
+- openjpeg2
+- python
 update_on:
 - alias: python
 - alpm: python-pillow

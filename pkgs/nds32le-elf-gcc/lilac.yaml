@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nds32le-elf-gcc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- nds32le-elf-binutils
 - zlib
-- libmpc
 - libisl
+- libmpc
+- nds32le-elf-binutils
 - zstd
-repo_makedepends:
-- gmp
-- mpfr
-- nds32le-elf-newlib
 update_on:
 - alpm: nds32le-elf-gcc
   source: archpkg

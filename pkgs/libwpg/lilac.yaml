@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libwpg'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libwpd
-- perl
 - librevenge
-repo_makedepends:
-- doxygen
-- boost
+- perl
+- libwpd
 update_on:
 - alias: perl
 - alpm: libwpg

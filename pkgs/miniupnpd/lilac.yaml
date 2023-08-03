@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''miniupnpd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- iptables
 - net-tools
+- libcap-ng
 - util-linux
 - util-linux: util-linux-libs
-- libcap-ng
-repo_makedepends:
-- lsb-release
-- procps-ng
+- iptables
 update_on:
 - alpm: iptables
   source: alpm

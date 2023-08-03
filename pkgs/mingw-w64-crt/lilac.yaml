@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mingw-w64-crt'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- mingw-w64-gcc
-- mingw-w64-binutils
-- mingw-w64-headers
 update_on:
 - alpm: mingw-w64-crt
   source: archpkg

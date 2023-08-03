@@ -7,14 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''golang-golang-x-crypto'')
 
   '
-repo_checkdepends:
-- openssh
 repo_depends:
-- go
 - golang-golang-x-net
-- golang-golang-x-sys
 - golang-golang-x-term
-repo_makedepends: []
+- golang-golang-x-sys
+- go
 update_on:
 - alpm: golang-golang-x-crypto
   source: archpkg

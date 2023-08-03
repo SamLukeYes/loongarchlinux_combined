@@ -9,16 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-faust-cchardet
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - python
-repo_makedepends:
-- cython
-- python-build
-- python-installer
-- python-pkgconfig
-- python-setuptools
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-faust-cchardet

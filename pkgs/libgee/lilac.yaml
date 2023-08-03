@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgee'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glib2
-- glib2
-repo_makedepends:
-- gobject-introspection
-- vala
-- autoconf-archive
-- git
 update_on:
 - alpm: glib2
   provides: libglib-2.0.so

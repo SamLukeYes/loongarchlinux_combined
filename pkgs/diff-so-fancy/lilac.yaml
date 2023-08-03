@@ -7,13 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''diff-so-fancy'')
 
   '
-repo_checkdepends:
-- bash-bats-assert
-- bash-bats-support
 repo_depends:
 - perl
-repo_makedepends:
-- git
 update_on:
 - alias: perl
 - alpm: diff-so-fancy

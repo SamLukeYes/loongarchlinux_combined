@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgepub'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
 - libsoup3
-- libxml2
-- libarchive
 - webkit2gtk-4.1
-repo_makedepends:
-- git
-- gobject-introspection
-- meson
+- libarchive
+- libxml2
+- glib2
 update_on:
 - alpm: libgepub
   source: archpkg

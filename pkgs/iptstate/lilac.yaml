@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''iptstate'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- gcc: gcc-libs
-- ncurses
 - libnetfilter_conntrack
-repo_makedepends: []
+- gcc: gcc-libs
+- glibc
+- ncurses
 update_on:
 - alpm: iptstate
   source: archpkg

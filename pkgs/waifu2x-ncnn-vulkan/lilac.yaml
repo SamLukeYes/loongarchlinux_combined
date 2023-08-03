@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''waifu2x-ncnn-vulkan''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libwebp
 - ncnn
-repo_makedepends:
-- cmake
-- glslang
-- vulkan-headers
 update_on:
 - alpm: ncnn
   source: alpm

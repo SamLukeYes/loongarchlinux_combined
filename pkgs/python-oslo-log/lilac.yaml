@@ -7,21 +7,16 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-oslo-log'')
 
   '
-repo_checkdepends:
-- python-oslotest
 repo_depends:
-- python-pbr
 - python-oslo-config
 - python-oslo-context
-- python-oslo-i18n
-- python-oslo-utils
-- python-oslo-serialization
-- python-debtcollector
 - python-pyinotify
+- python-oslo-serialization
+- python-oslo-i18n
 - python-dateutil
-repo_makedepends:
-- git
-- python-setuptools
+- python-pbr
+- python-debtcollector
+- python-oslo-utils
 update_on:
 - alpm: python-oslo-log
   source: archpkg

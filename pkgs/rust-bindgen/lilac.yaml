@@ -1,8 +1,6 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - clang
-repo_makedepends: []
 update_on:
 - alias: clang

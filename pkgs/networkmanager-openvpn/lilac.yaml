@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''networkmanager-openvp
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- networkmanager: libnm
-- libsecret
 - openvpn
-repo_makedepends:
-- libnma
-- libnma: libnma-gtk4
-- python
-- git
+- libsecret
+- networkmanager: libnm
 update_on:
 - alpm: networkmanager-openvpn
   source: archpkg

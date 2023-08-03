@@ -1,7 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - protobuf
-repo_makedepends: []
 update_on:
 - alias: protobuf

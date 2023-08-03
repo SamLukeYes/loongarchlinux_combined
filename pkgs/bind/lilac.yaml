@@ -9,30 +9,28 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bind'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
-- dnssec-anchors
-- e2fsprogs
-- glibc
-- icu
-- libedit
 - json-c
+- libmaxminddb
+- e2fsprogs
 - krb5
 - libcap
-- libidn2
-- libmaxminddb
-- libnsl
-- libuv
-- libxml2
-- lmdb
-- openssl
-- readline
+- glibc
 - xz
-- zlib
-- jemalloc
+- libxml2
+- bash
 - libnghttp2
-repo_makedepends: []
+- icu
+- jemalloc
+- libedit
+- openssl
+- libuv
+- libnsl
+- dnssec-anchors
+- libidn2
+- zlib
+- readline
+- lmdb
 update_on:
 - alias: icu
 - alias: readline

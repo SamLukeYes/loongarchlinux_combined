@@ -9,24 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xonotic'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libxpm
 - alsa-lib
-- curl
 - libjpeg-turbo
 - libmodplug
-- libvorbis
-- libxpm
+- xonotic-data
 - libxxf86vm
 - sdl2
-- xonotic-data
-- hicolor-icon-theme
-- gtk4: gtk-update-icon-cache
+- curl
 - desktop-file-utils
-repo_makedepends:
-- unzip
-- mesa
-- xorgproto
+- gtk4: gtk-update-icon-cache
+- libvorbis
+- hicolor-icon-theme
 update_on:
 - alpm: xonotic
   source: archpkg

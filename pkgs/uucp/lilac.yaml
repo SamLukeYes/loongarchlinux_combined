@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''uucp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- wget
-- sed
-- grep
 update_on:
 - alpm: uucp
   source: archpkg

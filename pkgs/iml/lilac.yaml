@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''iml'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gmp
 - lapack: cblas
-repo_makedepends: []
+- gmp
 update_on:
 - alpm: iml
   source: archpkg

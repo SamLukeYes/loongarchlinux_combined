@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''povray'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
 - imath
-- libpng
-- libtiff
 - openexr
-repo_makedepends:
-- boost
-- git
-- glu
+- libtiff
+- boost: boost-libs
+- libpng
 update_on:
 - alpm: povray
   source: archpkg

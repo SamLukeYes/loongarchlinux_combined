@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''composable-kernel'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- rocm-cmake
-- rocm-llvm
-- openmp
 update_on:
 - alpm: composable-kernel
   source: archpkg

@@ -9,25 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xiphos'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - biblesync
 - dbus-glib
-- icu
-- zlib: minizip
 - webkit2gtk
-repo_makedepends:
-- appstream-glib
-- cmake
-- docbook-utils
-- gnome-common
-- gtkmm
-- intltool
-- libffi
-- libxml2
-- python
-- zlib
-- zip
+- zlib: minizip
+- icu
 update_on:
 - alias: icu
 - alpm: biblesync

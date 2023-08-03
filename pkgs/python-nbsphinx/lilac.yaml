@@ -7,18 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-nbsphinx'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-docutils
+- python-sphinx
+- jupyter-nbformat
 - python-jinja
 - jupyter-nbconvert
-- jupyter-nbformat
-- python-sphinx
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools-scm
+- python-docutils
 update_on:
 - alpm: python-nbsphinx
   source: archpkg

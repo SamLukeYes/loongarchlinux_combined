@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-x25519'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- ruby-rspec
 repo_depends:
 - ruby
-repo_makedepends:
-- ruby-rake
-- ruby-bundler
-- ruby-rdoc
-- ruby-rake-compiler
 update_on:
 - alias: ruby
 - alpm: ruby-x25519

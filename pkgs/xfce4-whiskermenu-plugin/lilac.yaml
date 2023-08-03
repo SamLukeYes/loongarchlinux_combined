@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xfce4-whiskermenu-plu
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- garcon
 - xfce4-panel
-repo_makedepends:
-- cmake
-- ninja
+- garcon
 update_on:
 - alpm: xfce4-whiskermenu-plugin
   source: archpkg

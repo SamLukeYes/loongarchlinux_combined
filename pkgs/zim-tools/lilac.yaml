@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zim-tools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - file
 - docopt
 - gumbo-parser
-repo_makedepends:
-- meson
-- mustache
 update_on:
 - alpm: zim-tools
   source: archpkg

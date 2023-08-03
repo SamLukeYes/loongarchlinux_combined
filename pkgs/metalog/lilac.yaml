@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''metalog'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - pcre
-repo_makedepends:
-- autoconf-archive
 update_on:
 - alpm: metalog
   source: archpkg

@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-monad-par-ext
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-abstract-par
 - haskell-cereal
 - haskell-random
-repo_makedepends:
-- ghc
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-abstract-par
   source: alpm

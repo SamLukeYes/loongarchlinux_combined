@@ -7,14 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''gnome-info-collect'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-requests
 - pygobject: python-gobject
-- gnome-online-accounts
 - accountsservice
-repo_makedepends:
-- git
+- gnome-online-accounts
+- python-requests
 update_on:
 - alpm: gnome-info-collect
   source: archpkg

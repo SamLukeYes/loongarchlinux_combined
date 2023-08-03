@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libwpe'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
 - libxkbcommon
-repo_makedepends:
-- git
-- mesa
-- meson
+- gcc: gcc-libs
 update_on:
 - alpm: libwpe
   source: archpkg

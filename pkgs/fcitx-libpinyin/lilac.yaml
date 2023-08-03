@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcitx-libpinyin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fcitx
-- libpinyin
-- fcitx-qt5
 - qt5-webengine
-repo_makedepends:
-- cmake
+- fcitx-qt5
+- libpinyin
+- fcitx
 update_on:
 - alpm: fcitx-libpinyin
   source: archpkg

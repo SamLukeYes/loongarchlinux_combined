@@ -9,19 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hslua-core'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-lua
-repo_makedepends:
-- ghc
-- uusi
-- haskell-quickcheck
-- haskell-lua-arbitrary
-- haskell-quickcheck-instances
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-lua
   source: alpm

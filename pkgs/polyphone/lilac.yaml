@@ -9,31 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''polyphone'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
 - glibc
-- hicolor-icon-theme
-- openssl
-- qt5-base
-- qt5-svg
-- zlib
 - gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
-- openssl
 - qt5-base
-- qt5-svg
 - zlib
-repo_makedepends:
-- flac
-- libogg
-- libvorbis
-- portaudio
-- rtmidi
-- qcustomplot
-- qt5-tools
-- stk
+- openssl
+- qt5-svg
+- hicolor-icon-theme
 update_on:
 - alpm: qt5-base
   source: alpm

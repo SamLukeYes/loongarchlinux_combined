@@ -9,35 +9,25 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-snap-core'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-unordered-containers
+- haskell-network
 - ghc: ghc-libs
-- haskell-old-locale
-- haskell-hunit
-- haskell-attoparsec
-- haskell-case-insensitive
-- haskell-lifted-base
-- haskell-io-streams
 - haskell-hashable
-- haskell-monad-control
+- haskell-case-insensitive
+- haskell-io-streams
 - haskell-random
-- haskell-readable
-- haskell-regex-posix
 - haskell-transformers-base
 - haskell-unix-compat
-- haskell-unordered-containers
+- haskell-lifted-base
+- haskell-regex-posix
+- haskell-readable
 - haskell-vector
-- haskell-network
+- haskell-hunit
+- haskell-attoparsec
+- haskell-monad-control
+- haskell-old-locale
 - haskell-network-uri
-repo_makedepends:
-- ghc
-- uusi
-- haskell-quickcheck
-- haskell-parallel
-- haskell-test-framework
-- haskell-test-framework-hunit
-- haskell-test-framework-quickcheck2
-- haskell-zlib
 update_on:
 - alpm: haskell-old-locale
   source: alpm

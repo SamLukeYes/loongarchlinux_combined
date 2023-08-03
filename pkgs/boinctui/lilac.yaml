@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''boinctui'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- expat
-- gcc: gcc-libs
-- ncurses
 - openssl
-repo_makedepends:
-- cmake
+- gcc: gcc-libs
+- expat
+- ncurses
 update_on:
 - alpm: boinctui
   source: archpkg

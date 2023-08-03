@@ -7,31 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-setuptools'')
 
   '
-repo_checkdepends:
-- python-jaraco.envs
-- python-jaraco.path
-- python-pip
-- python-pip-run
-- python-pytest-plugins: python-pytest-fixture-config
-- python-pytest-plugins: python-pytest-virtualenv
-- python-wheel
-- python-pytest-enabler
-- python-pytest-mypy
-- python-pytest-timeout
-- python-sphinx
-- python-build
-- python-ini2toml
-- python-tomli-w
 repo_depends:
+- python-ordered-set
+- python-validate-pyproject
+- python-platformdirs
 - python-jaraco.text
 - python-more-itertools
-- python-ordered-set
-- python-packaging
-- python-platformdirs
 - python-tomli
-- python-validate-pyproject
-repo_makedepends:
-- git
+- python-packaging
 update_on:
 - alpm: python-setuptools
   source: archpkg

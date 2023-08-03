@@ -9,17 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rocksdb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - bzip2
+- liburing
 - jemalloc
 - lz4
 - snappy
 - zlib
 - zstd
-- liburing
-repo_makedepends:
-- python
 update_on:
 - alpm: rocksdb
   source: archpkg

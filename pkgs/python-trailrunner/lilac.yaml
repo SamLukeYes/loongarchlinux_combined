@@ -7,14 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-trailrunner'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - python-pathspec
-repo_makedepends:
-- python-build
-- python-installer
-- python-flit-core
-- python-wheel
 update_on:
 - alpm: python-trailrunner
   source: archpkg

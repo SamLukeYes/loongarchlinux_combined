@@ -9,29 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hackage-secur
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-base16-bytestring
-- haskell-base64-bytestring
-- haskell-cryptohash-sha256
-- haskell-ed25519
-- haskell-lukko
 - haskell-network
-- haskell-network-uri
+- ghc: ghc-libs
+- haskell-ed25519
 - haskell-tar
+- haskell-lukko
 - haskell-zlib
-repo_makedepends:
-- ghc
-- uusi
-- haskell-quickcheck
-- haskell-aeson
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
-- haskell-temporary
-- haskell-unordered-containers
-- haskell-vector
+- haskell-cryptohash-sha256
+- haskell-base64-bytestring
+- haskell-base16-bytestring
+- haskell-network-uri
 update_on:
 - alpm: haskell-base16-bytestring
   source: alpm

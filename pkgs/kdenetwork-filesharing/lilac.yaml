@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdenetwork-filesharin
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- samba
 - kio
-repo_makedepends:
-- extra-cmake-modules
-- qcoro: qcoro-qt5
+- samba
 update_on:
 - alpm: kdenetwork-filesharing
   source: archpkg

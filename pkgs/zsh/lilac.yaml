@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zsh'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- gdbm
 - pcre
 - libcap
-- gdbm
-repo_makedepends:
-- pcre
-- libcap
-- gdbm
-- yodl
 update_on:
 - alpm: zsh
   source: archpkg

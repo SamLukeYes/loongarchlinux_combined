@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-zip-archive''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
 - haskell-digest
-- haskell-old-time
 - haskell-temporary
 - haskell-zlib
-repo_makedepends:
-- ghc
-- haskell-hunit
-- unzip
+- haskell-old-time
 update_on:
 - alpm: haskell-digest
   source: alpm

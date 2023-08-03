@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''scrcpy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - android-tools
-- ffmpeg
 - sdl2
-repo_makedepends:
-- meson
+- ffmpeg
 update_on:
 - alpm: scrcpy
   source: archpkg

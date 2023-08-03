@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''znc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- boost: boost-libs
 - libsasl
 - icu
-- boost: boost-libs
-repo_makedepends:
-- tcl
-- python
-- perl
-- cmake
-- boost
 update_on:
 - alias: icu
 - alpm: znc

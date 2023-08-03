@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-sockaddr'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-byteorder
 - haskell-network
-repo_makedepends:
-- ghc
-- uusi
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-byteorder
   source: alpm

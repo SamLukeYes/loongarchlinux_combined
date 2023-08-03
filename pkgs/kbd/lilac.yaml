@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kbd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
 - pam
-repo_makedepends:
-- check
-- git
 update_on:
 - alpm: kbd
   source: archpkg

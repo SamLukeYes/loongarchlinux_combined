@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-xml-libxslt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- perl-test-pod
 repo_depends:
-- perl-xml-libxml
 - libxslt
-repo_makedepends: []
+- perl-xml-libxml
 update_on:
 - alpm: perl-xml-libxslt
   source: archpkg

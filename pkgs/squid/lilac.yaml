@@ -9,22 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''squid'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
-- pam
+- systemd: systemd-libs
+- tdb
 - perl
 - libcap
-- nettle
-- gnutls
-- libnsl
 - libxml2
-- tdb
-- systemd: systemd-libs
-repo_makedepends:
-- krb5
-- openldap: libldap
-- systemd
+- gnutls
+- openssl
+- libnsl
+- nettle
+- pam
 update_on:
 - alias: perl
 - alpm: squid

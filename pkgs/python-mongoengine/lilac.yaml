@@ -7,20 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-mongoengine'')
 
   '
-repo_checkdepends:
-- python-pytest-cov
-- python-coverage
-- python-blinker
-- python-pillow
-- python-zipp
-- python-mongomock
 repo_depends:
 - python-pymongo
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alpm: python-mongoengine
   source: archpkg

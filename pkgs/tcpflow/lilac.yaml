@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tcpflow'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libpcap
-- cairo
-- openssl
 - sqlite
-repo_makedepends:
-- git
-- boost
+- libpcap
+- openssl
+- cairo
 update_on:
 - alpm: tcpflow
   source: archpkg

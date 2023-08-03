@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libkgapi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kcalendarcore
-- kcontacts
 - kwallet
-repo_makedepends:
-- extra-cmake-modules
-- qt5-tools
+- kcontacts
 update_on:
 - alpm: libkgapi
   source: archpkg

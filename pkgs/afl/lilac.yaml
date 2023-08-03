@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''afl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
 - bash
-repo_makedepends:
-- clang14
-- llvm14
-- gcc
-- wget
-- python
-- lib32-glibc
 update_on:
 - alpm: afl
   source: archpkg

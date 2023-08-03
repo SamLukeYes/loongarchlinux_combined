@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ocaml-cairo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ocaml
 - cairo
-repo_makedepends:
-- ocaml-findlib
-- dune
 update_on:
 - alpm: ocaml
   source: alpm

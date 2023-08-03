@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libmp3splt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- flac
-- libmad
-- libvorbis
 - libid3tag
+- flac
 - pcre
-repo_makedepends:
-- libtool
+- libvorbis
+- libmad
 update_on:
 - alpm: libmp3splt
   source: archpkg

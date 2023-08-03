@@ -9,16 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-regexp_property_
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- ruby-character_set
-- ruby-rake
-- ruby-rake-compiler
-- ruby-range_compressor
-- ruby-rspec
 repo_depends:
 - ruby
-repo_makedepends:
-- git
 update_on:
 - alias: ruby
 - alpm: ruby-regexp_property_values

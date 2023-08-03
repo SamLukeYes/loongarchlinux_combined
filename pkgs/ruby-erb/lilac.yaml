@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-erb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- ruby-rake
-- ruby-rake-compiler
 repo_depends:
-- ruby
 - ruby-cgi
-repo_makedepends:
-- tree
+- ruby
 update_on:
 - alias: ruby
 - alpm: ruby-erb

@@ -9,47 +9,25 @@ pre_build_script: '_G.files = download_official_pkgbuild(''carla'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
+- alsa-lib
+- libsndfile
+- python-pyliblo
 - glibc
 - hicolor-icon-theme
-- libx11
-- pyqt5: python-pyqt5
-- python-pyliblo
-- python-rdflib
-- qt5-base
-- qt5-svg
-- sdl2
+- file
 - gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
-- libx11
-- pyqt5: python-pyqt5
-- python-pyliblo
-- python-rdflib
 - qt5-base
-- qt5-svg
+- liblo
+- fluidsynth
+- libglvnd
+- freetype2
+- pulseaudio: libpulse
+- python-rdflib
 - sdl2
-- alsa-lib
-- file
-- fluidsynth
-- freetype2
-- libglvnd
-- liblo
-- pulseaudio: libpulse
-- libsndfile
-repo_makedepends:
-- alsa-lib
-- file
-- fluidsynth
-- freetype2
-- git
-- libglvnd
-- liblo
-- pulseaudio: libpulse
-- libsndfile
-- qt5-tools
+- pyqt5: python-pyqt5
+- libx11
+- qt5-svg
 update_on:
 - alpm: qt5-base
   source: alpm

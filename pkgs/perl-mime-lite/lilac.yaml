@@ -7,13 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-mime-lite'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-email-date-format
 - perl-mailtools
-- perl-mime-types
+- perl-email-date-format
 - perl
-repo_makedepends: []
+- perl-mime-types
 update_on:
 - alias: perl
 - alpm: perl-mime-lite

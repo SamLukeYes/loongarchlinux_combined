@@ -9,19 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wingpanel'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
-- gtk3
 - libgee
 - mutter
+- gtk3
+- glib2
 - pantheon-notifications
-repo_makedepends:
-- cmake
-- git
-- gala
-- meson
-- vala
 update_on:
 - alpm: gala
   provides: libgala.so

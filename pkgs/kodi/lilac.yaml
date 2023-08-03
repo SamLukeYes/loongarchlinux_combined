@@ -9,105 +9,48 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kodi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bluez: bluez-libs
-- curl
-- dav1d
-- desktop-file-utils
-- hicolor-icon-theme
-- fmt
-- lcms2
-- libass
-- libbluray
 - libcdio
-- libcec
-- libmicrohttpd
-- libnfs
-- libplist
-- pulseaudio: libpulse
-- libva
-- libvdpau
-- libxslt
-- lirc
-- mariadb: mariadb-libs
-- mesa
-- pipewire: libpipewire
-- python-pillow
-- python-pycryptodomex
-- python-simplejson
-- shairplay
-- samba: smbclient
-- sndio
-- spdlog
-- sqlite
-- taglib
-- tinyxml
-- libxrandr
-- libxkbcommon
 - waylandpp
-- libinput
+- python-simplejson
+- python-pycryptodomex
+- libbluray
+- desktop-file-utils
+- libass
+- tinyxml
+- lirc
+- hicolor-icon-theme
+- mariadb: mariadb-libs
+- pipewire: libpipewire
+- dav1d
+- libplist
+- libxrandr
+- libjpeg-turbo
+- python-pillow
+- curl
+- libva
+- libcec
 - pcre
 - libpng
-- giflib
-- libjpeg-turbo
-- lzo
-repo_makedepends:
-- afpfs-ng
-- bluez: bluez-libs
-- cmake
-- curl
-- dav1d
-- doxygen
-- git
-- glew
-- gperf
-- hicolor-icon-theme
-- fmt
-- libaacs
-- libass
-- libbluray
-- libcdio
-- libcec
-- mariadb: mariadb-libs
-- libmicrohttpd
-- libmodplug
-- libmpeg2
-- libnfs
-- libplist
-- pulseaudio: libpulse
-- libva
-- libva-vdpau-driver
-- libxrandr
-- libxslt
-- lirc
-- lzo
-- mesa
-- nasm
-- pipewire
-- python-pycryptodomex
-- python-pillow
-- python-pybluez
-- python-simplejson
-- shairplay
-- samba: smbclient
-- sndio
-- spdlog
-- taglib
-- tinyxml
-- swig
-- upower
-- giflib
-- rapidjson
-- ghostscript
-- meson
-- gtest
-- graphviz
-- pcre
-- wayland-protocols
-- waylandpp
 - libxkbcommon
+- spdlog
+- samba: smbclient
+- bluez: bluez-libs
+- shairplay
+- sqlite
+- pulseaudio: libpulse
+- fmt
 - libinput
+- libvdpau
+- libmicrohttpd
+- libnfs
+- libxslt
+- sndio
+- lcms2
+- giflib
+- taglib
+- mesa
+- lzo
 update_on:
 - alpm: kodi
   source: archpkg

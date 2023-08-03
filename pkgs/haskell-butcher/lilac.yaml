@@ -9,22 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-butcher'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-bifunctors
-- haskell-deque
-- haskell-extra
-- haskell-free
-- haskell-microlens
 - haskell-microlens-th
+- ghc: ghc-libs
+- haskell-free
+- haskell-extra
 - haskell-multistate
-- haskell-unsafe
+- haskell-deque
+- haskell-microlens
 - haskell-void
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hspec
+- haskell-unsafe
 update_on:
 - alpm: haskell-bifunctors
   source: alpm

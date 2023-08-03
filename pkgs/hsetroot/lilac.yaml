@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hsetroot'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- imlib2
 - libxinerama
-repo_makedepends: []
+- imlib2
 update_on:
 - alpm: hsetroot
   source: archpkg

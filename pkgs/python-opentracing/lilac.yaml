@@ -7,15 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-opentracing'')
 
   '
-repo_checkdepends:
-- python-gevent
-- python-mock
-- python-pytest
-- python-tornado
 repo_depends:
 - python
-repo_makedepends:
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-opentracing

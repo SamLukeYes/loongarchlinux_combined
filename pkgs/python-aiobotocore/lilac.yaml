@@ -7,23 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-aiobotocore'')
 
   '
-repo_checkdepends:
-- python-moto
-- python-pytest
-- python-pytest-asyncio
-- python-docker
-- python-openapi-spec-validator
-- python-yaml
-- python-flask
-- python-flask-cors
 repo_depends:
-- python
-- python-aiohttp
 - python-botocore
-- python-wrapt
+- python-aiohttp
 - python-aioitertools
-repo_makedepends:
-- python-setuptools
+- python-wrapt
+- python
 update_on:
 - alias: python
 - alpm: python-aiobotocore

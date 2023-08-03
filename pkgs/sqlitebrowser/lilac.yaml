@@ -9,19 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sqlitebrowser'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt5-base
-- hicolor-icon-theme
-- sqlcipher
-- qcustomplot
-- qhexedit2
 - qscintilla: qscintilla-qt5
-repo_makedepends:
-- git
-- cmake
-- ninja
-- qt5-tools
+- qhexedit2
+- hicolor-icon-theme
+- qcustomplot
+- sqlcipher
 update_on:
 - alpm: qt5-base
   source: alpm

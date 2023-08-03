@@ -1,32 +1,16 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- glibc
-- ncurses
-- gcc: gcc-libs
-- expat
-- xz
-- mpfr
-- source-highlight
-- readline
-- guile
-- python
 - elfutils: libelf
-- python
-- guile
-repo_makedepends:
-- glibc
 - gcc: gcc-libs
-- texinfo
-- python
-- guile
 - ncurses
-- expat
 - xz
+- readline
+- expat
+- guile
 - mpfr
 - source-highlight
-- boost
-- readline
+- glibc
+- python
 update_on:
 - alpm: ncurses
   provides: libncursesw.so

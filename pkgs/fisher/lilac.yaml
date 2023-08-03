@@ -7,12 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''fisher'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- fish
 - curl
-repo_makedepends:
-- git
+- fish
 update_on:
 - alpm: fisher
   source: archpkg

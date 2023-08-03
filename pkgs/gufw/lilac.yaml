@@ -7,19 +7,15 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''gufw'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
 - polkit
-- python
-- pygobject: python-gobject
-- ufw
-- webkit2gtk
 - desktop-file-utils
+- webkit2gtk
 - gtk4: gtk-update-icon-cache
-repo_makedepends:
-- intltool
-- python-distutils-extra
+- gtk3
+- ufw
+- pygobject: python-gobject
+- python
 update_on:
 - alias: python
 - alpm: gufw

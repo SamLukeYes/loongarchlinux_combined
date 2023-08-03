@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-securemem'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-byteable
 - haskell-memory
-repo_makedepends:
-- ghc
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-byteable
   source: alpm

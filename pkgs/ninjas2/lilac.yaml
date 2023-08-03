@@ -9,35 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ninjas2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
-- aubio
 - gcc: gcc-libs
-- glibc
-- libglvnd
 - libsamplerate
 - libsndfile
 - libx11
-- aubio
-- gcc: gcc-libs
-- glibc
 - libglvnd
-- libsamplerate
-- libsndfile
-- libx11
 - aubio
-- gcc: gcc-libs
 - glibc
-- libglvnd
-- libsamplerate
-- libsndfile
-- libx11
-repo_makedepends:
-- aubio
-- gendesk
-- libsamplerate
-- libsndfile
 update_on:
 - alpm: aubio
   provides: libaubio.so

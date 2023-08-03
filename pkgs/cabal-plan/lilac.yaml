@@ -9,27 +9,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cabal-plan'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-ansi-terminal
-- haskell-async
-- haskell-base-compat
-- haskell-base16-bytestring
-- haskell-cabal-install-parsers
-- haskell-optics-core
 - haskell-optparse-applicative
+- haskell-optics-core
+- haskell-base-compat
 - haskell-semialign
-- haskell-singleton-bool
+- haskell-async
+- haskell-aeson
+- ghc: ghc-libs
 - haskell-tar
 - haskell-these
 - haskell-topograph
+- haskell-ansi-terminal
+- haskell-cabal-install-parsers
 - haskell-vector
 - haskell-zlib
-repo_makedepends:
-- ghc
-- uusi
+- haskell-singleton-bool
+- haskell-base16-bytestring
 update_on:
 - alpm: haskell-aeson
   source: alpm

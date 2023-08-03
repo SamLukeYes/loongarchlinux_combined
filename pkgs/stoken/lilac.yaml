@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''stoken'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - nettle
 - libxml2
-repo_makedepends:
-- gtk3
 update_on:
 - alpm: stoken
   source: archpkg

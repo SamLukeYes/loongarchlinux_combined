@@ -9,15 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fbreader'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fribidi
 - bzip2
-- curl
 - qt5-base
+- curl
 - libunibreak
 - sqlite
-repo_makedepends: []
+- fribidi
 update_on:
 - alpm: qt5-base
   source: alpm

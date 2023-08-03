@@ -9,18 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wingpanel-indicator-s
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- wingpanel
 - accountsservice
 - gdk-pixbuf2
-- glib2
 - gtk3
-- wingpanel
-repo_makedepends:
-- git
-- gobject-introspection
-- meson
-- vala
+- glib2
 update_on:
 - alpm: granite
   provides: libgranite.so

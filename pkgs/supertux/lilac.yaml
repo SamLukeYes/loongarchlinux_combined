@@ -9,23 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''supertux'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- boost: boost-libs
 - sdl2_image
 - curl
 - openal
-- libvorbis
-- glew
-- physfs
 - freetype2
-- boost: boost-libs
+- glew
+- libvorbis
 - hicolor-icon-theme
-repo_makedepends:
-- cmake
-- boost
-- mesa
-- optipng
-- glm
+- physfs
 update_on:
 - alpm: supertux
   source: archpkg

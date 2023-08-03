@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kservice'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ki18n
 - kconfig
-- kdbusaddons
 - kcoreaddons
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- doxygen
-- qt5-tools
-- qt5-doc
+- ki18n
+- kdbusaddons
 update_on:
 - alpm: kconfig
   source: alpm

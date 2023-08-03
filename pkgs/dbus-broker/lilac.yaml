@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dbus-broker'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- audit
-- expat
 - systemd: systemd-libs
-repo_makedepends:
-- meson
-- python-docutils
-- systemd
+- expat
+- audit
 update_on:
 - alpm: dbus-broker
   source: archpkg

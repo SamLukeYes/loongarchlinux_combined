@@ -7,13 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-test-more-utf8'')
 
   '
-repo_checkdepends:
-- perl-test-pod
-- perl-test-pod-coverage
 repo_depends:
 - perl
-repo_makedepends:
-- perl-module-install
 update_on:
 - alias: perl
 - alpm: perl-test-more-utf8

@@ -7,34 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-cheroot'')
 
   '
-repo_checkdepends:
-- python-apipkg
-- python-chardet
-- python-colorama
-- python-jaraco.context
-- python-portend
-- python-pyopenssl
-- python-pytest
-- python-pytest-forked
-- python-pytest-rerunfailures
-- python-pytest-sugar
-- python-pytest-xdist
-- python-requests-toolbelt
-- python-requests-unixsocket
-- python-trustme
-- python-urllib3
-- python-watchdog
 repo_depends:
-- python-jaraco.functools
 - python-jaraco.text
 - python-more-itertools
 - python-six
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-setuptools-scm
-- python-wheel
+- python-jaraco.functools
 update_on:
 - alpm: python-cheroot
   source: archpkg

@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdiagram'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt5-svg
-repo_makedepends:
-- extra-cmake-modules
-- qt5-tools
-- qt5-doc
-- doxygen
 update_on:
 - alpm: kdiagram
   source: archpkg

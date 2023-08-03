@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyliblo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- glibc
 - liblo
+- glibc
 - python
-repo_makedepends:
-- cython
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-pyliblo

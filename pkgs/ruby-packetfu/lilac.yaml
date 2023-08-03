@@ -7,14 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-packetfu'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- ruby
 - ruby-network_interface
+- ruby
 - ruby-pcaprub
-repo_makedepends:
-- ruby-rake
-- ruby-rdoc
 update_on:
 - alias: ruby
 - alpm: ruby-packetfu

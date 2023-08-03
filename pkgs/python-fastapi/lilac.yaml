@@ -7,37 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-fastapi'')
 
   '
-repo_checkdepends:
-- python-aiosqlite
-- python-anyio
-- python-databases
-- python-flask
-- python-httpx
-- python-peewee
-- python-pytest
-- python-sqlalchemy
-- python-trio
-- python-email-validator
-- python-itsdangerous
-- python-jinja
-- python-orjson
-- python-python-multipart
-- python-ujson
-- uvicorn
-- python-bcrypt
-- python-cryptography
-- python-jose
-- python-passlib
 repo_depends:
-- python
+- python-starlette
 - python-anyio
 - python-pydantic
-- python-starlette
-repo_makedepends:
-- python-build
-- python-installer
-- python-hatchling
-- python-wheel
+- python
 update_on:
 - alias: python
 - alpm: python-fastapi

@@ -1,20 +1,8 @@
 destsubdir: extra
-repo_checkdepends:
-- gdb
-- procps-ng
 repo_depends:
-- curl
+- llvm: llvm-libs
 - gcc
 - gcc: gcc-libs
+- curl
 - libssh2
-- llvm: llvm-libs
-repo_makedepends:
-- cmake
-- libffi
-- lld
-- llvm
-- ninja
-- perl
-- python
-- wasi-libc
 update_on: []

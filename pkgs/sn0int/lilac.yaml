@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sn0int'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libcap
-- lua52
-- sqlite
 - libsodium
+- libcap
+- sqlite
 - publicsuffix-list
-repo_makedepends:
-- python-sphinx
+- lua52
 update_on:
 - alpm: libseccomp
   provides: libseccomp.so

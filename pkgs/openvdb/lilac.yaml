@@ -9,24 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openvdb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- zlib
 - jemalloc
-- blosc
+- zlib
 - log4cplus
-repo_makedepends:
-- doxygen
-- boost
-- cmake
-- mesa
-- cppunit
-- glfw: glfw-x11
-- glu
-- python
-- python-numpy
-- ninja
+- blosc
+- boost: boost-libs
 update_on:
 - alpm: openvdb
   source: archpkg

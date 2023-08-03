@@ -1,50 +1,38 @@
 destsubdir: extra
-repo_checkdepends:
-- weston
 repo_depends:
-# - adwaita-icon-theme
-- cairo
-# - cantarell-fonts
-- dconf
-- desktop-file-utils
-- fontconfig
-- fribidi
-- gdk-pixbuf2
-- glib2
-- graphene
-# - gstreamer: gst-plugins-bad-libs
-- harfbuzz
-- iso-codes
-- libcloudproviders
-# - colord: libcolord
-- cups: libcups
-- libepoxy
-- libpng
-- librsvg
-- libtiff
-- libx11
-- libxcursor
-- libxdamage
-- libxext
-- libxfixes
-- libxi
-- libxinerama
-- libxkbcommon
-- libxrandr
 - libxrender
+- libxfixes
+- dconf
+- libxdamage
+- desktop-file-utils
+- librsvg
+- iso-codes
+- glib2
+- hicolor-icon-theme
+- cups: libcups
+- libxrandr
 - pango
+- libxinerama
+- libxcursor
+- tracker3
+- harfbuzz
+- fribidi
+- cairo
+- libxext
+- libpng
 - shared-mime-info
-# - tracker3
+- fontconfig
+- libxkbcommon
+- graphene
+- adwaita-icon-theme
+- libepoxy
+- gdk-pixbuf2
 - wayland
-repo_makedepends:
-- docbook-xsl
-- gi-docgen
-- git
-- gobject-introspection
-- meson
-- python-docutils
-- pygobject: python-gobject
-- sassc
-- shaderc
-- wayland-protocols
+- libxi
+- libtiff
+- gstreamer: gst-plugins-bad-libs
+- cantarell-fonts
+- libx11
+- colord: libcolord
+- libcloudproviders
 update_on: []

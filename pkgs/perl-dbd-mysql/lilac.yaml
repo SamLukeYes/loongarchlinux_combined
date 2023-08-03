@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-dbd-mysql'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- mariadb
-- perl-test-deep
 repo_depends:
-- mariadb: mariadb-libs
 - perl-dbi
-repo_makedepends:
-- perl-devel-checklib
+- mariadb: mariadb-libs
 update_on:
 - alpm: perl-dbd-mysql
   source: archpkg

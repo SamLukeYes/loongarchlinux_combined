@@ -7,16 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-sequel'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - ruby
-repo_makedepends:
-- git
-- ruby-minitest
-- ruby-minitest-hooks
-- ruby-minitest-global_expectations
-- ruby-tzinfo
-- ruby-nokogiri
 update_on:
 - alias: ruby
 - alpm: ruby-sequel

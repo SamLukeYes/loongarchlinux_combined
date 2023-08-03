@@ -9,51 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''torchvision'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- numactl
-- python-numpy
-- python-pillow
 - python-requests
-- python-scipy
-- python-sympy
 - numactl
-- python-numpy
 - python-pillow
-- python-requests
-- python-scipy
-- python-sympy
-- python-pytorch: python-pytorch-cuda
-- numactl
-- python-numpy
-- python-pillow
-- python-requests
-- python-scipy
-- python-sympy
-- python-pytorch: python-pytorch-cuda
-- numactl
-- python-numpy
-- python-pillow
-- python-requests
-- python-scipy
-- python-sympy
 - python-pytorch
-- numactl
-- python-numpy
-- python-pillow
-- python-requests
 - python-scipy
 - python-sympy
 - python-pytorch: python-pytorch-cuda
-repo_makedepends:
-- cmake
-- ninja
-- cuda
-- ffmpeg4.4
-- python-pytorch: python-pytorch-opt-cuda
-- python-setuptools
-- qt5-base
-- nvidia-utils
+- python-numpy
 update_on:
 - alpm: torchvision
   source: archpkg

@@ -1,15 +1,7 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
+- qt5-x11extras
 - fcitx5-qt
 - kwidgetsaddons
 - kitemviews
-- qt5-x11extras
-repo_makedepends:
-- extra-cmake-modules
-- kdeclarative
-- kirigami2
-- ninja
-- python
-- plasma-framework
 update_on: []

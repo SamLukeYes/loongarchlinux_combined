@@ -1,38 +1,26 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
+- glu
+- nspr
+- which
+- libogg
+- curl
+- libsodium
+- libxml2
+- miniupnpc
+- gloox
+- libpng
+- icu
+- wxwidgets: wxwidgets-gtk3
+- openal
+- libvorbis
 - 0ad-data
+- enet
+- fmt
+- sdl2
+- zlib
 - binutils
 - boost: boost-libs
-- curl
-- enet
-- libogg
-- libpng
-- libvorbis
-- libxml2
-- openal
-- sdl2
-- wxwidgets: wxwidgets-gtk3
-- zlib
-- glu
-- fmt
-- gloox
-- miniupnpc
-- icu
-- nspr
-- libsodium
-- which
-repo_makedepends:
-- boost
-- cmake
-- mesa
-- zip
-- libsm
-- rust
-- python
-- python-virtualenv
-- git
-- gcc12
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm

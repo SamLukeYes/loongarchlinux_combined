@@ -9,25 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cadence'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- alsa-utils
-- bash
-- gcc: gcc-libs
 - glibc
-- hicolor-icon-theme
-- jack2: jack2-dbus
-- python
-- pyqt5: python-pyqt5
+- gcc: gcc-libs
+- alsa-utils
 - qt5-base
+- jack2: jack2-dbus
+- pyqt5: python-pyqt5
+- bash
 - qt5-svg
-repo_makedepends:
-- a2jmidid
-- jack_capture
-- pulseaudio: libpulse
-- pulseaudio: pulseaudio-jack
-- python-rdflib
-- zita-ajbridge
+- hicolor-icon-theme
+- python
 update_on:
 - alias: python
 - alpm: qt5-base

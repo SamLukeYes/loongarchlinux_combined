@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''disomaster'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libisoburn
 - qt5-base
-repo_makedepends:
-- qt5-tools
+- libisoburn
 update_on:
 - alpm: qt5-base
   source: alpm

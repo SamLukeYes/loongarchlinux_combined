@@ -7,20 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-benchmark'')
 
   '
-repo_checkdepends:
-- python-pygal
-- python-pygaljs
-- python-freezegun
-- mercurial
-- python-aspectlib
-- python-pytest-xdist
-- python-elasticsearch
-- git
 repo_depends:
-- python-pytest
 - python-py-cpuinfo
-repo_makedepends:
-- python-setuptools
+- python-pytest
 update_on:
 - alpm: python-pytest-benchmark
   source: archpkg

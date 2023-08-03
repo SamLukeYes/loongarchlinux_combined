@@ -9,19 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gpaste'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcr-4
 - gtk3
-- gtk4
 - libadwaita
-repo_makedepends:
-- git
-- gnome-control-center
-- gnome-shell
-- gobject-introspection
-- meson
-- vala
+- gtk4
+- gcr-4
 update_on:
 - alpm: gpaste
   source: archpkg

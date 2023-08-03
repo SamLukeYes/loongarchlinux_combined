@@ -9,24 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''graphicsmagick'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libxext
 - bzip2
+- xz
+- libtiff
+- libsm
 - freetype2
 - lcms2
-- libpng
-- libsm
-- libtiff
 - libwebp
-- libxext
-- xz
-repo_makedepends:
-- jasper
-- libheif
-- libjxl
-- libwmf
-- libxml2
-- perl
+- libpng
 update_on:
 - alpm: graphicsmagick
   source: archpkg

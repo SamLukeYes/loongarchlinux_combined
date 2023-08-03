@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgeotiff'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libtiff
 - proj
-- libjpeg-turbo
+- libtiff
 - zlib
-repo_makedepends: []
+- libjpeg-turbo
 update_on:
 - alpm: libgeotiff
   source: archpkg

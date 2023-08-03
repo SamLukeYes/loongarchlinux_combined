@@ -7,15 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-metadata_json_deps'')
 
   '
-repo_checkdepends:
-- ruby-rspec
 repo_depends:
+- ruby-puppet_metadata
 - ruby
 - ruby-puppet_forge
-- ruby-puppet_metadata
-repo_makedepends:
-- ruby-rdoc
-- ruby-rake
 update_on:
 - alias: ruby
 - alpm: ruby-metadata_json_deps

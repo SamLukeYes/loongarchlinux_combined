@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-these'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-assoc
 - haskell-hashable
-repo_makedepends:
-- ghc
-- uusi
+- haskell-assoc
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-assoc
   source: alpm

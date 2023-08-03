@@ -7,29 +7,20 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pyocd'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
-- capstone: python-capstone
-- python-cmsis-pack-manager
-- python-colorama
-- python-importlib-metadata
-- python-intelhex
 - python-intervaltree
-- python-natsort
+- capstone: python-capstone
+- python-six
 - python-prettytable
+- python-cmsis-pack-manager
+- python-importlib-metadata
+- python-colorama
+- python-intelhex
+- python-natsort
 - python-pyelftools
 - python-pylink-square
+- python
 - python-pyusb
-- python-six
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-setuptools-scm
-- python-toml
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-pyocd

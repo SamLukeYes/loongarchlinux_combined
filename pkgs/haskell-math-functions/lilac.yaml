@@ -9,20 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-math-function
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- haskell-erf
-- haskell-quickcheck
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
-- haskell-vector-th-unbox
 repo_depends:
-- ghc: ghc-libs
-- haskell-data-default-class
 - haskell-primitive
 - haskell-vector
-repo_makedepends:
-- ghc
+- ghc: ghc-libs
+- haskell-data-default-class
 update_on:
 - alpm: haskell-data-default-class
   source: alpm

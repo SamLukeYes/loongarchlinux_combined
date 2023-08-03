@@ -7,20 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-dogpile.cache'')
 
   '
-repo_checkdepends:
-- memcached
-- pifpaf
-- redis
-- python-mako
-- python-redis
-- python-pytest
-- python-pytest-cov
-- python-pylibmc
 repo_depends:
-- python-decorator
 - python-stevedore
-repo_makedepends:
-- python-setuptools
+- python-decorator
 update_on:
 - alpm: python-dogpile.cache
   source: archpkg

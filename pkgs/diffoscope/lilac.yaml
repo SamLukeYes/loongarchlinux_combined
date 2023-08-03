@@ -9,64 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''diffoscope'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
-- python-jsbeautifier
-- python-h5py
-- acl
-- binutils
-- bzip2
-- cdrtools
-- cpio
-- diffutils
-- e2fsprogs
-- enjarify
-- hdf5
-- imagemagick
-- fontforge
-- gettext
-- ghc
-- gnupg
-- mono
-- pgpdump
-- poppler
-- sqlite
-- squashfs-tools
-- libxmlb
-- lz4
-- unzip
-- gzip
-- tar
-- tcpdump
-- vim
-- xz
-- llvm
-- colord
-- fpc
-- openssh
-- openssl
-- odt2txt
-- docx2txt
-- r
-- dtc
-- giflib
-- gnumeric
-- python-progressbar
-- binwalk
-- python-argcomplete
-- zstd
-- uboot-tools
 repo_depends:
 - python-magic
-- python-libarchive-c
-- python-distro
 - python-defusedxml
+- python-distro
 - tlsh: python-tlsh
-repo_makedepends:
-- help2man
-- python-docutils
-- git
-- python-setuptools
+- python-libarchive-c
 update_on:
 - alpm: diffoscope
   source: archpkg

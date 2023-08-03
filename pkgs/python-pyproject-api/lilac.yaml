@@ -7,19 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pyproject-api'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-mock
-- python-virtualenv
 repo_depends:
-- python
 - python-packaging
-repo_makedepends:
-- python-build
-- python-hatch-vcs
-- python-hatchling
-- python-installer
-- python-wheel
+- python
 update_on:
 - alias: python
 - alpm: python-pyproject-api

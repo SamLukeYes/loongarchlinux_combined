@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kpty'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kcoreaddons
 - ki18n
 - libutempter
-repo_makedepends:
-- extra-cmake-modules
-- doxygen
-- qt5-tools
-- qt5-doc
 update_on:
 - alpm: kpty
   source: archpkg

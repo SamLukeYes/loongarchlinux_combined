@@ -9,21 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''utox'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - fontconfig
-- libfilteraudio
-- libxext
 - libxrender
+- v4l-utils
+- libfilteraudio
 - openal
 - toxcore
-- v4l-utils
+- libxext
 - hicolor-icon-theme
-repo_makedepends:
-- cmake
-- gtk3
-- check
-- git
 update_on:
 - alpm: utox
   source: archpkg

@@ -7,14 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-awesome_print'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - ruby
-repo_makedepends:
-- ruby-rspec
-- ruby-fakefs
-- ruby-sqlite3
-- ruby-nokogiri
 update_on:
 - alias: ruby
 - alpm: ruby-awesome_print

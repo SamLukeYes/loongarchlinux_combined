@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''consul'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-repo_makedepends:
-- git
-- go
-- gox
-- go-tools
 update_on:
 - alpm: consul
   source: archpkg

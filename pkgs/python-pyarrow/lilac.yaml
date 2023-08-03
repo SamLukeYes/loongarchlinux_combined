@@ -9,29 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyarrow'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- brotli: python-brotli
-- python-hypothesis
-- python-pandas
-- python-pytest
-- python-pytest-lazy-fixture
-- python-pytz
 repo_depends:
-- arrow
 - gcc: gcc-libs
-- glibc
-- python
-- python-numpy
 - python-setuptools-scm
-repo_makedepends:
-- git
-- cmake
-- cython
-- python-build
-- python-installer
-- python-wheel
-- python-cffi
-- python-pandas
+- arrow
+- glibc
+- python-numpy
+- python
 update_on:
 - alias: python
 - alpm: python-pyarrow

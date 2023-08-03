@@ -9,23 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-shake'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-extra
-- haskell-filepattern
-- haskell-hashable
-- haskell-heaps
-- haskell-js-dgtable
-- haskell-js-flot
 - haskell-js-jquery
-- haskell-primitive
-- haskell-random
 - haskell-unordered-containers
+- haskell-heaps
+- ghc: ghc-libs
+- haskell-js-flot
+- haskell-hashable
+- haskell-random
+- haskell-filepattern
+- haskell-extra
+- haskell-primitive
+- haskell-js-dgtable
 - haskell-utf8-string
-repo_makedepends:
-- ghc
-- haskell-quickcheck
 update_on:
 - alpm: haskell-extra
   source: alpm

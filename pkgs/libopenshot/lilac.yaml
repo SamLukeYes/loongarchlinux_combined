@@ -9,41 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libopenshot'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- babl
-- gcc: gcc-libs
-- glibc
-- opencv
-- python
-- qt5-base
-- qt5-multimedia
-- qt5-svg
-- babl
-- gcc: gcc-libs
-- glibc
-- opencv
-- python
-- qt5-base
-- qt5-multimedia
-- qt5-svg
-- ffmpeg
 - jsoncpp
-- libopenshot-audio
+- qt5-multimedia
+- glibc
+- gcc: gcc-libs
+- qt5-base
+- ffmpeg
+- opencv
 - protobuf
 - zeromq
-repo_makedepends:
-- catch2
-- cmake
-- doxygen
-- ffmpeg
-- jsoncpp
+- python
 - libopenshot-audio
-- protobuf
-- swig
-- unittestpp
-- xorg-server: xorg-server-xvfb
-- zeromq
+- babl
+- qt5-svg
 update_on:
 - alpm: opencv
   source: alpm

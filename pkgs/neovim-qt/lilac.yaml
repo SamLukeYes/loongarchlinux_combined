@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''neovim-qt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- ttf-dejavu
-- xorg-server: xorg-server-xvfb
 repo_depends:
 - neovim
 - qt5-svg
 - hicolor-icon-theme
-repo_makedepends:
-- cmake
-- git
-- ninja
 update_on:
 - alpm: neovim-qt
   source: archpkg

@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cutefish-statusbar'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libdbusmenu-qt: libdbusmenu-qt5
 - fishui
 - libcutefish
-- libdbusmenu-qt: libdbusmenu-qt5
 - qt5-svg
-repo_makedepends:
-- extra-cmake-modules
-- ninja
-- qt5-tools
 update_on:
 - alpm: cutefish-statusbar
   source: archpkg

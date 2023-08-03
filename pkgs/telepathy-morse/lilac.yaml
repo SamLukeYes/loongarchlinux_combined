@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-morse'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- telepathy-qt
 - telegram-qt
-repo_makedepends:
-- cmake
+- telepathy-qt
 update_on:
 - alpm: telepathy-morse
   source: archpkg

@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''php-geoip'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- geoip
+- php-legacy
 - geoip
 - php
-- geoip
-- php-legacy
-repo_makedepends:
-- php
-- php-legacy
 update_on:
 - alpm: php-geoip
   source: archpkg

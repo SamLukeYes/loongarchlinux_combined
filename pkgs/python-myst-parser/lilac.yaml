@@ -7,28 +7,16 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-myst-parser'')
 
   '
-repo_checkdepends:
-- python-beautifulsoup4
-- python-linkify-it-py
-- python-pytest
-- python-pytest-param-files
-- python-pytest-regressions
-- python-sphinx-pytest
 repo_depends:
-- python
-- python-docutils
-- python-jinja
-- python-markdown-it-py
-- python-mdit_py_plugins
-- python-pygments
 - python-sphinx
+- python-pygments
 - python-typing_extensions
+- python-jinja
+- python-mdit_py_plugins
 - python-yaml
-repo_makedepends:
-- python-build
-- python-installer
-- python-flit-core
-- python-wheel
+- python-docutils
+- python
+- python-markdown-it-py
 update_on:
 - alias: python
 - alpm: python-myst-parser

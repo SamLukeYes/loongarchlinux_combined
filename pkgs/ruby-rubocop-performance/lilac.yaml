@@ -7,19 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rubocop-performance'')
 
   '
-repo_checkdepends:
-- ruby-bump
-- ruby-parallel
-- ruby-rubocop-rspec
-- ruby-rspec
-- ruby-simplecov
-- ruby-test-queue
-- ruby-yard
 repo_depends:
 - ruby
 - rubocop
 - ruby-rubocop-ast
-repo_makedepends: []
 update_on:
 - alias: ruby
 - alpm: ruby-rubocop-performance

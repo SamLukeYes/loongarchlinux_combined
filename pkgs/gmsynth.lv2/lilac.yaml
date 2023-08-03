@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gmsynth.lv2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
-- glibc
-- glibc
 - fluidsynth
-repo_makedepends:
-- fluidsynth
-- lv2
+- glibc
 update_on:
 - alpm: fluidsynth
   provides: libfluidsynth.so

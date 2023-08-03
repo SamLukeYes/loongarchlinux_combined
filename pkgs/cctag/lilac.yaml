@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cctag'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - boost: boost-libs
-- cuda
 - qt6-base
 - opencv
-repo_makedepends:
-- boost
-- cmake
-- eigen
-- ninja
+- cuda
 update_on:
 - alpm: qt6-base
   source: alpm

@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xfce4-xkb-plugin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - xfce4-panel
-- libxklavier
 - librsvg
-- libwnck3
 - libnotify
-repo_makedepends:
-- intltool
+- libxklavier
+- libwnck3
 update_on:
 - alpm: xfce4-xkb-plugin
   source: archpkg

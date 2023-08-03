@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''contractor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
 - libgee
-repo_makedepends:
-- git
-- meson
-- vala
+- glib2
 update_on:
 - alpm: contractor
   source: archpkg

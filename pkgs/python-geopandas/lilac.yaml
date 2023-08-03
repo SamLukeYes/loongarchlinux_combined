@@ -7,31 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-geopandas'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-fsspec
-- python-pygeos
-- python-pyogrio
-- python-rtree
-- python-matplotlib
-- python-scipy
-- python-geopy
-- python-sqlalchemy
-- python-psycopg2
-- libspatialite
-- python-pyarrow
-- postgis
-- ghostscript
 repo_depends:
-- gdal
 - python-fiona
-- python-numpy
+- gdal
 - python-packaging
 - python-pandas
-- python-pyproj
 - python-shapely
-repo_makedepends:
-- python-setuptools
+- python-pyproj
+- python-numpy
 update_on:
 - alpm: python-geopandas
   source: archpkg

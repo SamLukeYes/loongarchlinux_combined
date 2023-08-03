@@ -7,14 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-typer'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - python-click
-repo_makedepends:
-- python-setuptools
-- python-build
-- python-installer
-- python-flit-core
 update_on:
 - alpm: python-typer
   source: archpkg

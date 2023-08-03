@@ -9,17 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-contourpy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
-- python-matplotlib
 repo_depends:
 - python-numpy
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- pybind11
-- python-wheel
 update_on:
 - alpm: python-contourpy
   source: archpkg

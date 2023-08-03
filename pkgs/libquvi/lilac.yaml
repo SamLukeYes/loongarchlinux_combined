@@ -9,15 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libquvi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libquvi-scripts
 - curl
-- lua52
-- libproxy
 - libgcrypt
+- libproxy
 - glib2
-repo_makedepends: []
+- lua52
 update_on:
 - alpm: libquvi
   source: archpkg

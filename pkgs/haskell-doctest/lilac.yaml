@@ -9,24 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-doctest'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- haskell-hunit
-- haskell-hspec
-- haskell-hspec-core
-- haskell-hspec-discover
-- haskell-quickcheck
-- haskell-stringbuilder
-- haskell-silently
-- haskell-setenv
-- haskell-mockery
 repo_depends:
-- ghc: ghc-libs
-- haskell-base-compat
 - haskell-syb
-- haskell-code-page
+- haskell-base-compat
+- ghc: ghc-libs
 - haskell-ghc-paths
-repo_makedepends:
-- ghc
+- haskell-code-page
 update_on:
 - alpm: haskell-base-compat
   source: alpm

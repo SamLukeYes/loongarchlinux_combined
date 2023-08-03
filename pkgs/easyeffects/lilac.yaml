@@ -9,23 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''easyeffects'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fftw
-- gsl
-- gtk4
-- libebur128
-- pipewire
 - rnnoise
 - speexdsp
+- pipewire
+- gsl
+- gtk4
 - zita-convolver
-repo_makedepends:
-- appstream-glib
-- itstool
-- meson
-- nlohmann-json
-- speex
-- lv2
+- fftw
+- libebur128
 update_on:
 - alpm: fmt
   provides: libfmt.so

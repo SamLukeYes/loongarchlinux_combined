@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''elisa'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - baloo
 - kirigami2
 - vlc
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
 update_on:
 - alpm: elisa
   source: archpkg

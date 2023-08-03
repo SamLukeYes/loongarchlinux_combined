@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''unshield'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- zlib
 - openssl
-repo_makedepends:
-- cmake
+- zlib
 update_on:
 - alpm: unshield
   source: archpkg

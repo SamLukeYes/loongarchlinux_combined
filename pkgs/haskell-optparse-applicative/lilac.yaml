@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-optparse-appl
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- haskell-quickcheck
 repo_depends:
+- haskell-transformers-compat
 - ghc: ghc-libs
 - haskell-ansi-wl-pprint
-- haskell-transformers-compat
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-ansi-wl-pprint
   source: alpm

@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-cairo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
 - cairo
 - python
-repo_makedepends:
-- meson
-- python-sphinx
-- python-sphinx_rtd_theme
 update_on:
 - alias: python
 - alpm: python-cairo

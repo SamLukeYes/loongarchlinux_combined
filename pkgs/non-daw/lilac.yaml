@@ -9,29 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''non-daw'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
 - glibc
-- hicolor-icon-theme
+- gcc: gcc-libs
+- libsndfile
 - liblo
-- liblrdf
 - ntk
+- liblrdf
 - cairo
-- gcc: gcc-libs
-- glibc
 - hicolor-icon-theme
-- liblo
-- libsndfile
-- ntk
-repo_makedepends:
-- ladspa
-- liblo
-- liblrdf
-- libsndfile
-- libxpm
-- ntk
-- waf
 update_on:
 - alpm: jack2
   provides: libjack.so

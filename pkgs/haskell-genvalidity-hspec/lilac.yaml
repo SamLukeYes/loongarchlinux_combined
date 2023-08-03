@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-genvalidity-h
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-hspec-core
 - ghc: ghc-libs
 - haskell-genvalidity
+- haskell-quickcheck
 - haskell-genvalidity-property
 - haskell-hspec
-- haskell-hspec-core
-- haskell-quickcheck
 - haskell-validity
-repo_makedepends:
-- ghc
-- uusi
 update_on:
 - alpm: haskell-genvalidity
   source: alpm

@@ -9,19 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-random-source
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-flexible-defaults
-- haskell-mersenne-random-pure64
+- haskell-syb
 - haskell-mwc-random
-- haskell-primitive
+- ghc: ghc-libs
+- haskell-mersenne-random-pure64
 - haskell-random
 - haskell-stateref
-- haskell-syb
 - haskell-th-extras
-repo_makedepends:
-- ghc
+- haskell-flexible-defaults
+- haskell-primitive
 update_on:
 - alpm: haskell-flexible-defaults
   source: alpm

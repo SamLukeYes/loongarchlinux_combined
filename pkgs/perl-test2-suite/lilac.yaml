@@ -7,11 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-test2-suite'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - perl-module-pluggable
 - perl-term-table
-repo_makedepends: []
 update_on:
 - alpm: perl-test2-suite
   source: archpkg

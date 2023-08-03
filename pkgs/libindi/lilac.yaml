@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libindi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libnova
-- cfitsio
-- gsl
 - libtheora
+- gsl
+- libnova
 - fftw
 - libev
 - rtl-sdr
-repo_makedepends:
-- cmake
-- qt5-base
+- cfitsio
 update_on:
 - alpm: cfitsio
   source: alpm

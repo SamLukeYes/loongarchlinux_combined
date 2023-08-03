@@ -9,22 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rdma-core'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libnl
-- ethtool
 - perl
+- libnl
 - systemd: systemd-libs
-repo_makedepends:
-- git
-- cmake
-- systemd
-- ninja
-- libdrm
-- cython
-- python
-- python-docutils
-- valgrind
+- ethtool
 update_on:
 - alias: perl
 - alpm: rdma-core

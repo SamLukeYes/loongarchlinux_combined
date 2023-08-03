@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ibus-anthy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- gtk4: gtk-update-icon-cache
 - ibus
 - anthy
-- python
-- gtk4: gtk-update-icon-cache
 - pygobject: python-gobject
-repo_makedepends:
-- intltool
-- gobject-introspection
+- python
 update_on:
 - alias: python
 - alpm: ibus-anthy

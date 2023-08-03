@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''udftools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ncurses
 - readline
-repo_makedepends:
-- systemd
+- ncurses
 update_on:
 - alias: readline
 - alpm: udftools

@@ -9,20 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''librepo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- check
-- gpgme: python-gpgme
-- python-pyxattr
-- python-requests
 repo_depends:
 - curl
-- glib2
 - gpgme
 - libxml2
 - openssl
-repo_makedepends:
-- cmake
-- python
+- glib2
 update_on:
 - alpm: librepo
   source: archpkg

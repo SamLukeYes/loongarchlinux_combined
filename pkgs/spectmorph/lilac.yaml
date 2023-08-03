@@ -9,44 +9,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''spectmorph'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
-- python
 repo_depends:
-- cairo
-- gcc: gcc-libs
-- glibc
-- fftw
-- freetype2
-- glib2
-- libglvnd
 - libsndfile
-- libx11
-- qt5-base
-- zlib
-- gcc: gcc-libs
-- glibc
-- gcc: gcc-libs
-- glibc
 - glib2
-- libao
+- glibc
+- gcc: gcc-libs
 - qt5-base
-- python
+- fftw
+- libglvnd
+- cairo
+- libao
 - python-lxml
-- gcc: gcc-libs
-- glibc
-repo_makedepends:
-- cairo
-- fftw
 - freetype2
-- gcc: gcc-libs
-- glib2
-- glibc
-- lv2
-- libao
-- libglvnd
-- libsndfile
-- qt5-base
+- python
+- zlib
+- libx11
 update_on:
 - alpm: fftw
   provides: libfftw3f.so

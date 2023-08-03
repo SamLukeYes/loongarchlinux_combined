@@ -7,19 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pytesseract'')
 
   '
-repo_checkdepends:
-- python-pytest
-- tesseract-data: tesseract-data-eng
-- tesseract-data: tesseract-data-fra
 repo_depends:
-- python-packaging
 - python-pillow
 - tesseract
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-packaging
 update_on:
 - alpm: python-pytesseract
   source: archpkg

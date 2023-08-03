@@ -9,30 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-graph'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-async
-- haskell-extra
-- haskell-focus
-- haskell-hashable
-- haskell-js-dgtable
-- haskell-js-flot
 - haskell-js-jquery
-- haskell-list-t
-- haskell-stm-containers
-- haskell-unliftio
 - haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hspec
-- haskell-hspec-discover
-- haskell-tasty
-- haskell-tasty-hspec
-- haskell-tasty-hunit
-- haskell-tasty-rerun
+- haskell-list-t
+- haskell-async
+- haskell-aeson
+- ghc: ghc-libs
+- haskell-hashable
+- haskell-js-flot
+- haskell-stm-containers
+- haskell-focus
+- haskell-extra
+- haskell-js-dgtable
+- haskell-unliftio
 update_on:
 - alpm: haskell-aeson
   source: alpm

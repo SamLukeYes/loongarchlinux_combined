@@ -9,19 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''river'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libevdev
 - libxkbcommon
-- mesa
-- pixman
+- xorg-xwayland
 - wayland
 - wlroots
-- xorg-xwayland
-repo_makedepends:
-- scdoc
-- wayland-protocols
-- zig
+- pixman
+- libevdev
+- mesa
 update_on:
 - alpm: river
   source: archpkg

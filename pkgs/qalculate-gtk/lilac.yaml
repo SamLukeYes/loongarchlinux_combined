@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qalculate-gtk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libqalculate
 - gtk3
-repo_makedepends:
-- intltool
-- python
+- libqalculate
 update_on:
 - alpm: qalculate-gtk
   source: archpkg

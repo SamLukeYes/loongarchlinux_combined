@@ -9,20 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''forge'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- freetype2
 - fontconfig
 - freeimage
 - glbinding
-repo_makedepends:
-- cmake
-- graphviz
-- git
-- python
-- glm
-- boost
-- ninja
+- freetype2
 update_on:
 - alpm: forge
   source: archpkg

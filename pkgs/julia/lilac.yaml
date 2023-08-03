@@ -9,30 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''julia'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fftw
-- hicolor-icon-theme
-- libgit2
+- openlibm
+- llvm: llvm-libs
+- libblastrampoline
+- pcre2
 - libunwind
+- lapack: cblas64
+- mbedtls
 - libutf8proc
 - openblas: openblas64
-- lapack: cblas64
 - lapack: lapack64
-- mbedtls
-- openlibm
-- pcre2
-- llvm: llvm-libs
 - p7zip
-- libblastrampoline
+- fftw
+- libgit2
+- hicolor-icon-theme
 - lld
-repo_makedepends:
-- cmake
-- gcc: gcc-fortran
-- python
-- llvm
-- patchelf
-- libwhich
 update_on:
 - alpm: julia
   source: archpkg

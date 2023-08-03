@@ -9,32 +9,24 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libretro-dolphin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bluez: bluez-libs
 - bzip2
-- enet
-- gcc: gcc-libs
-- glibc
 - libevdev
+- glibc
+- gcc: gcc-libs
+- libxrandr
+- xz
+- sfml
 - libglvnd
+- zstd
 - libpng
 - libretro-core-info
-- libx11
+- bluez: bluez-libs
+- enet
 - libxi
-- libxrandr
-- lzo
-- sfml
-- xz
 - zlib
-- zstd
-repo_makedepends:
-- clang
-- cmake
-- git
-- mesa
-- ninja
-- python
+- libx11
+- lzo
 update_on:
 - alpm: fmt
   provides: libfmt.so

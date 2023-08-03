@@ -7,23 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-tensorboard_plugin_wit'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-werkzeug
+- python-google-api-python-client
+- python-ipywidgets
 - tensorboard
-- python-google-api-python-client
-- python-ipywidgets
-repo_makedepends:
-- git
-- npm
-- python-virtualenv
-- python-setuptools-scm
-- python-build
-- python-installer
-- python-wheel
-- python-google-api-python-client
-- python-ipywidgets
+- python-werkzeug
 update_on:
 - alpm: python-tensorboard_plugin_wit
   source: archpkg
-managed: false

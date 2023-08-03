@@ -1,23 +1,10 @@
 destsubdir: extra
-repo_checkdepends:
-- ipython
-- python-aiohttp
-- python-parameterized
-- python-pytest
-- python-typed-ast
-- python-tokenize-rt
 repo_depends:
-- python
-- python-click
-- python-mypy_extensions
-- python-packaging
-- python-pathspec
 - python-platformdirs
-repo_makedepends:
-- python-build
-- python-hatch-fancy-pypi-readme
-- python-hatch-vcs
-- python-hatchling
-- python-installer
+- python-mypy_extensions
+- python-pathspec
+- python-click
+- python-packaging
+- python
 update_on:
 - alias: python

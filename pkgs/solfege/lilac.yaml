@@ -9,19 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''solfege'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
-- python-cairo
 - pygobject: python-gobject
-repo_makedepends:
-- docbook-xsl
-- ghostscript
-- itstool
-- lilypond
-- swig
-- texinfo
-- txt2man
+- python-cairo
 update_on:
 - alpm: solfege
   source: archpkg

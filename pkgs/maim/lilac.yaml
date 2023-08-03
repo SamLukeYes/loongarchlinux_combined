@@ -9,21 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''maim'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- freetype2
-- libpng
-- libjpeg-turbo
-- libwebp
-- libx11
-- libxcomposite
 - libxext
+- libxcomposite
 - libxfixes
+- libjpeg-turbo
 - libxrandr
 - slop
-repo_makedepends:
-- cmake
-- glm
+- freetype2
+- libx11
+- libwebp
+- libpng
 update_on:
 - alpm: maim
   source: archpkg

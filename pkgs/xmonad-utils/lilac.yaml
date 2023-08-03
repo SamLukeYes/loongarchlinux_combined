@@ -9,19 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xmonad-utils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - ghc: ghc-libs
-- gmp
-- libffi
 - libxrandr
-- haskell-x11
 - haskell-random
+- haskell-x11
 - libxcrypt
+- libffi
 - libx11
-repo_makedepends:
-- ghc
+- glibc
+- gmp
 update_on:
 - alpm: haskell-x11
   source: alpm

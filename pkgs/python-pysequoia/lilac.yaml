@@ -9,22 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pysequoia'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - bzip2
 - gcc: gcc-libs
-- glibc
-- gmp
-- nettle
-- openssl
 - pcsclite
+- openssl
+- glibc
+- nettle
 - python
-repo_makedepends:
-- clang
-- python-build
-- python-installer
-- maturin: python-maturin
-- python-wheel
+- gmp
 update_on:
 - alias: python
 - alpm: python-pysequoia

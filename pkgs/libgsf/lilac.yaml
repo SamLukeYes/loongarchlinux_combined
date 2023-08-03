@@ -9,19 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgsf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- perl-xml-parser
-- unzip
-- valgrind
 repo_depends:
-- libxml2
-- gdk-pixbuf2
 - bzip2
-repo_makedepends:
-- gobject-introspection
-- git
-- gtk-doc
-- autoconf-archive
+- gdk-pixbuf2
+- libxml2
 update_on:
 - alpm: libgsf
   source: archpkg

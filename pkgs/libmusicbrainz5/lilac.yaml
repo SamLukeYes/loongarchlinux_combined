@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libmusicbrainz5'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - neon
 - libxml2
-repo_makedepends:
-- cmake
-- ninja
 update_on:
 - alpm: libmusicbrainz5
   source: archpkg

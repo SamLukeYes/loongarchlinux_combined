@@ -9,22 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''allure'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-lambdahack
+- haskell-optparse-applicative
+- haskell-th-lift-instances
 - haskell-async
+- ghc: ghc-libs
 - haskell-enummapset
+- haskell-splitmix
+- haskell-primitive
+- haskell-lambdahack
 - haskell-file-embed
 - haskell-hsini
-- haskell-optparse-applicative
-- haskell-primitive
-- haskell-splitmix
-- haskell-th-lift-instances
-repo_makedepends:
-- ghc
-- haskell-tasty
-- haskell-tasty-hunit
 update_on:
 - alpm: haskell-lambdahack
   source: alpm

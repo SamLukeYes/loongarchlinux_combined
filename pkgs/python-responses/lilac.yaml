@@ -7,18 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-responses'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-asyncio
-- python-pytest-httpserver
-- python-tomli
-- python-tomli-w
 repo_depends:
-- python-requests
 - python-urllib3
+- python-requests
 - python-yaml
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-responses
   source: archpkg

@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qt5-multimedia'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt5-base
+- openal
 - gstreamer: gst-plugins-base
 - pulseaudio: libpulse
-# - openal
-repo_makedepends:
-- qt5-declarative
-- gstreamer: gst-plugins-bad
-- git
 update_on:
 - alpm: qt5-base
   source: alpm

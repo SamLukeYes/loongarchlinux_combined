@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cryptsetup'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- lvm2: device-mapper
-- openssl
-- popt
-- util-linux: util-linux-libs
 - json-c
+- lvm2: device-mapper
+- popt
 - argon2
-repo_makedepends:
-- util-linux
-- asciidoctor
+- util-linux: util-linux-libs
+- openssl
 update_on:
 - alpm: device-mapper
   provides: libdevmapper.so

@@ -9,19 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rugged'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- git
-- ruby-minitest
-- ruby-rake
-- ruby-rake-compiler
 repo_depends:
-- glibc
 - ruby
 - glibc
-- ruby
-repo_makedepends:
-- libgit2
-- ruby-rdoc
 update_on:
 - alias: ruby
 - alias: ruby

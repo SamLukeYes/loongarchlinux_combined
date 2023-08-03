@@ -7,12 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-hglib'')
 
   '
-repo_checkdepends:
-- python-nose
 repo_depends:
-- python
 - mercurial
-repo_makedepends: []
+- python
 update_on:
 - alias: python
 - alpm: python-hglib

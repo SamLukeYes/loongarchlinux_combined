@@ -9,20 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''element.io'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - electron22
 - libsecret
-repo_makedepends:
-- npm
-- git
-- yarn
-- python
-- rust
-- tcl
-- electron22
-- nodejs-lts-gallium
-- libxcrypt: libxcrypt-compat
 update_on:
 - alpm: element.io
   source: archpkg

@@ -7,18 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-validate-pyproject'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
 - python-fastjsonschema
-- python-packaging
 - python-trove-classifiers
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools-scm
+- python-packaging
 update_on:
 - alpm: python-validate-pyproject
   source: archpkg

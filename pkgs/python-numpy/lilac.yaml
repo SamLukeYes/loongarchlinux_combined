@@ -1,14 +1,7 @@
 destsubdir: extra
-repo_checkdepends:
-- python-pytest
-- python-hypothesis
 repo_depends:
 - lapack: cblas
-- lapack
 - python
-repo_makedepends:
-- python-setuptools
-- gcc: gcc-fortran
-- cython
+- lapack
 update_on:
 - alias: python

@@ -9,22 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''appstream'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libxmlb
+- qt5-base
 - curl
 - librsvg
 - libyaml
-- libxmlb
-- qt5-base
-repo_makedepends:
-- meson
-- xmlto
-- gobject-introspection
-- gtk-doc
-- qt5-tools
-- itstool
-- vala
-- gperf
 update_on:
 - alpm: qt5-base
   source: alpm

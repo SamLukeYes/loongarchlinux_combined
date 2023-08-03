@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sniproxy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libev
-- pcre
 - udns
-repo_makedepends: []
+- pcre
+- libev
 update_on:
 - alpm: sniproxy
   source: archpkg

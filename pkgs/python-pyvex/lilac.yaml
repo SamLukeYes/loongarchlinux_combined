@@ -9,19 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyvex'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
+- python-cffi
 - python-archinfo
 - python-bitstring
-- python-cffi
 - python-setuptools
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-wheel
+- python
 update_on:
 - alias: python
 - alpm: python-pyvex

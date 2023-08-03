@@ -7,17 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''lua-luarepl'')
 
   '
-repo_checkdepends:
-- perl
-- lua-testmore
 repo_depends:
 - bash
-repo_makedepends:
-- lua
-- lua51
-- lua52
-- lua53
-- luarocks
 update_on:
 - alpm: lua-luarepl
   source: archpkg

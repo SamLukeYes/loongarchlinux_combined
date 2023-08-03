@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cutefish-screenlocker
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - fishui
 - libcutefish
-repo_makedepends:
-- extra-cmake-modules
-- qt5-tools
 update_on:
 - alpm: cutefish-screenlocker
   source: archpkg

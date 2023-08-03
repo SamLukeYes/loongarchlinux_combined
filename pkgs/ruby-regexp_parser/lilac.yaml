@@ -7,16 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-regexp_parser'')
 
   '
-repo_checkdepends:
-- ruby-ice_nine
-- ruby-regexp_property_values
-- ruby-benchmark-ips
 repo_depends:
 - ruby
-repo_makedepends:
-- ragel
-- ruby-rake
-- ruby-rspec
 update_on:
 - alias: ruby
 - alpm: ruby-regexp_parser

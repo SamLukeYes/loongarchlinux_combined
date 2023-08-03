@@ -1,13 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-repo_makedepends:
-- libxml2
-- python
-- chrpath
-- doxygen
-- git
-- cppunit
-- help2man
 update_on: []

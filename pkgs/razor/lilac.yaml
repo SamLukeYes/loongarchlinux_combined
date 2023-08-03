@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''razor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- perl-uri
 - perl-net-dns
 - perl-digest-sha1
-- perl-uri
-- perl-digest-nilsimsa
 - perl
-repo_makedepends: []
+- perl-digest-nilsimsa
 update_on:
 - alias: perl
 - alpm: razor

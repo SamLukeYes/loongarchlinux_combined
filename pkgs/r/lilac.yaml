@@ -9,23 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''r'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- lapack
-- libtiff
 - pcre2
-- perl
-- libxmu
 - pango
-- zip
-- unzip
+- libtiff
 - curl
-- icu
+- lapack
+- perl
 - which
-repo_makedepends:
-- java-openjdk: jdk-openjdk
-- gcc: gcc-fortran
-- tk
+- unzip
+- zip
+- icu
+- libxmu
 update_on:
 - alias: perl
 - alias: icu

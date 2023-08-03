@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''choria-io'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- ruby
 repo_depends:
-- glibc
-- logrotate
 - facter
-repo_makedepends:
-- go
+- logrotate
+- glibc
 update_on:
 - alpm: choria-io
   source: archpkg

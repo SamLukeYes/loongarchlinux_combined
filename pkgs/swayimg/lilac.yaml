@@ -9,18 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''swayimg'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libxkbcommon
+- libpng
+- libheif
 - cairo
 - hicolor-icon-theme
-- libheif
-- libpng
-- libxkbcommon
-repo_makedepends:
-- bash-completion
-- meson
-- ninja
-- wayland-protocols
 update_on:
 - alpm: libexif
   provides: libexif.so

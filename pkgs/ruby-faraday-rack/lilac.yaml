@@ -7,16 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-faraday-rack'')
 
   '
-repo_checkdepends:
-- ruby-faraday
-- ruby-webmock
-- ruby-multipart-parser
-- ruby-rack-test
 repo_depends:
-- ruby
 - ruby-rack
-repo_makedepends:
-- ruby-rspec
+- ruby
 update_on:
 - alias: ruby
 - alpm: ruby-faraday-rack

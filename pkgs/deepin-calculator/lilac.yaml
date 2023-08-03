@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-calculator'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- deepin-qt5integration
 - deepin-qt-dbus-factory
-repo_makedepends:
-- cmake
-- gtest
-- ninja
-- qt5-tools
+- deepin-qt5integration
 update_on:
 - alpm: deepin-calculator
   source: archpkg

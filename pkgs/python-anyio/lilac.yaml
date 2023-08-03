@@ -7,24 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-anyio'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-trustme
-- python-hypothesis
-- python-pytest-mock
-- python-psutil
 repo_depends:
-- python
 - python-idna
+- python
 - python-sniffio
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-setuptools-scm
-- python-wheel
-- python-uvloop
-- python-trio
 update_on:
 - alias: python
 - alpm: python-anyio

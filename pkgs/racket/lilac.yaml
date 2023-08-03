@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''racket'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
 - libffi
-repo_makedepends:
-- gsfonts
-- sqlite
 update_on:
 - alpm: racket
   source: archpkg

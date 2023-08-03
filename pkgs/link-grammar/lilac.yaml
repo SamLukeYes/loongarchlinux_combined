@@ -1,10 +1,6 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- hunspell
 - sqlite
+- hunspell
 - libedit
-repo_makedepends:
-- python
-- swig
 update_on: []

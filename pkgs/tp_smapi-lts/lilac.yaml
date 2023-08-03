@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tp_smapi-lts'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - linux-lts
-repo_makedepends:
-- linux-lts: linux-lts-headers
-- git
 update_on:
 - alpm: tp_smapi-lts
   source: archpkg

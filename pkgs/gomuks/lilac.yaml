@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gomuks'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- glibc
 - libolm
-repo_makedepends:
-- libolm
-- go
+- glibc
 update_on:
 - alpm: libolm
   provides: libolm.so

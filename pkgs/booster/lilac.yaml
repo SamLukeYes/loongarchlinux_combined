@@ -1,8 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - bash
-repo_makedepends:
-- go
-- ruby-ronn-ng
 update_on: []

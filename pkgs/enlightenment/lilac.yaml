@@ -9,26 +9,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''enlightenment'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- alsa-lib
-- bc
-- bluez: bluez-libs
-- efl
-- hicolor-icon-theme
-- libexif
-- librsvg
 - pulseaudio: libpulse
 - libxkbcommon
-- pam
-- pulseaudio
-- udisks2
-- util-linux: util-linux-libs
+- alsa-lib
 - wayland
-repo_makedepends:
-- meson
-- ninja
-- wayland-protocols
+- pulseaudio
+- efl
+- bluez: bluez-libs
+- libexif
+- librsvg
+- util-linux: util-linux-libs
+- udisks2
+- bc
+- hicolor-icon-theme
+- pam
 update_on:
 - alpm: enlightenment
   source: archpkg

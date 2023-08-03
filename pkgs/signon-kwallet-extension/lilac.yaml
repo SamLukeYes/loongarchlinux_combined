@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''signon-kwallet-extens
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- signond
 - kwallet
-repo_makedepends:
-- extra-cmake-modules
+- signond
 update_on:
 - alpm: signon-kwallet-extension
   source: archpkg

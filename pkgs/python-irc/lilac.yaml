@@ -7,24 +7,15 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-irc'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-enabler
-- python-pygments
 repo_depends:
-- python-jaraco.collections
-- python-jaraco.functools
-- python-jaraco.logging
 - python-jaraco.stream
-- python-jaraco.text
-- python-more-itertools
+- python-jaraco.logging
 - python-pytz
+- python-jaraco.text
 - python-tempora
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools-scm
-- python-wheel
+- python-more-itertools
+- python-jaraco.functools
+- python-jaraco.collections
 update_on:
 - alpm: python-irc
   source: archpkg

@@ -1,11 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - glibc
 - lcms2
-repo_makedepends:
-- git
-- meson
-- gobject-introspection
-- vala
 update_on: []

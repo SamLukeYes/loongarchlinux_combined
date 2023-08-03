@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''udisks2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - polkit
+- libblockdev
 - libatasmart
 - libgudev
-- libblockdev
-repo_makedepends:
-- docbook-xsl
-- gobject-introspection
-- parted
-- gtk-doc
 update_on:
 - alpm: udisks2
   source: archpkg

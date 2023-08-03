@@ -1,10 +1,6 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- glibc
-- v2ray-domain-list-community
 - v2ray-geoip
-repo_makedepends:
-- go
-- git
+- v2ray-domain-list-community
+- glibc
 update_on: []

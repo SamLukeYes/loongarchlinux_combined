@@ -7,11 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''plantuml-ascii-math'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- plantuml
 - jlatexmath
-repo_makedepends: []
+- plantuml
 update_on:
 - alpm: plantuml-ascii-math
   source: archpkg

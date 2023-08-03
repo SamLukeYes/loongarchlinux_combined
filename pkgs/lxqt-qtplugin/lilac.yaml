@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxqt-qtplugin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libdbusmenu-qt: libdbusmenu-qt5
 - libqtxdg
+- libdbusmenu-qt: libdbusmenu-qt5
 - qt5-x11extras
 - libfm-qt
-repo_makedepends:
-- lxqt-build-tools
 update_on:
 - alpm: libqtxdg
   provides: libQt5XdgIconLoader.so

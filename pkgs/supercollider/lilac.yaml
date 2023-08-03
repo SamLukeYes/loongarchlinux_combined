@@ -9,44 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''supercollider'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- libx11
-- qt5-base
-- qt5-svg
-- qt5-webengine
-- qt5-websockets
-- gcc: gcc-libs
-- glibc
-- libx11
-- qt5-base
-- qt5-svg
-- qt5-webengine
-- qt5-websockets
 - alsa-lib
+- libsndfile
+- glibc
+- gcc: gcc-libs
+- qt5-base
 - avahi
+- qt5-websockets
+- fftw
+- systemd: systemd-libs
+- yaml-cpp
+- libx11
+- readline
+- qt5-svg
 - boost: boost-libs
-- fftw
-- libsndfile
-- readline
-- systemd: systemd-libs
-- yaml-cpp
-repo_makedepends:
-- abletonlink
-- alsa-lib
-- avahi
-- boost
-- cmake
-- emacs
-- fftw
-- libsndfile
-- qt5-tools
-- readline
-- systemd: systemd-libs
-- yaml-cpp
+- qt5-webengine
 update_on:
 - alpm: qt5-base
   source: alpm

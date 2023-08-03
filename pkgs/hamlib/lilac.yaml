@@ -9,19 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hamlib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libuhd
+- libtool
+- libusb-compat
 - perl
+- libindi
+- libxml2
+- tcl
 - python
 - lua
-- tcl
-- libxml2
-- libusb-compat
-- libtool
-- libuhd
-- libindi
-repo_makedepends:
-- swig
 update_on:
 - alias: perl
 - alias: python

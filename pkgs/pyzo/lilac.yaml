@@ -7,17 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pyzo'')
 
   '
-repo_checkdepends:
-- python-pytest
-- pyside2
-- pyside6
-- pyqt5: python-pyqt5
-- pyqt6: python-pyqt6
-- xorg-server: xorg-server-xvfb
 repo_depends:
 - python-packaging
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: pyzo
   source: archpkg

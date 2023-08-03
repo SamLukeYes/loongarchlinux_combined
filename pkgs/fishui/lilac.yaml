@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fishui'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kwindowsystem
-- qt5-declarative
 - qt5-graphicaleffects
 - qt5-quickcontrols2
-repo_makedepends:
-- extra-cmake-modules
-- ninja
-- qt5-tools
+- qt5-declarative
+- kwindowsystem
 update_on:
 - alpm: qt5-declarative
   source: alpm

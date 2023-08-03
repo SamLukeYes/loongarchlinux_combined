@@ -7,18 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-net-oauth'')
 
   '
-repo_checkdepends:
-- perl-test-warn
 repo_depends:
-- perl-class-accessor
-- perl-class-data-inheritable
-- perl-digest-hmac
-- perl-digest-sha1
 - perl-uri
-- perl-libwww
+- perl-class-accessor
 - perl-file-slurp-tiny
-repo_makedepends:
-- perl-module-build
+- perl-class-data-inheritable
+- perl-digest-sha1
+- perl-libwww
+- perl-digest-hmac
 update_on:
 - alpm: perl-net-oauth
   source: archpkg

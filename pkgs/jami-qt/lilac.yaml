@@ -9,27 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jami-qt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- jami-daemon
-- glib2
-- gdk-pixbuf2
-- networkmanager: libnm
-- libnotify
 - qrencode
-- qt6-declarative
-- qt6-multimedia
-- qt6-svg
-- qt6-5compat
-- qt6-webengine
+- gdk-pixbuf2
+- jami-daemon
 - qt6-webchannel
 - qt6-shadertools
-repo_makedepends:
-- git
-- cmake
-- python
-- qt6-networkauth
-- qt6-tools
+- qt6-declarative
+- libnotify
+- qt6-multimedia
+- qt6-svg
+- qt6-webengine
+- qt6-5compat
+- glib2
+- networkmanager: libnm
 update_on:
 - alpm: qt6-declarative
   source: alpm

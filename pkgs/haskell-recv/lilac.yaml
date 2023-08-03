@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-recv'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-network
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hspec
-- haskell-hspec-discover
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-network
   source: alpm

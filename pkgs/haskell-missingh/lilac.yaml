@@ -9,19 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-missingh'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-hslogger
+- haskell-regex-compat
 - haskell-network
+- ghc: ghc-libs
+- haskell-old-time
 - haskell-network-bsd
 - haskell-old-locale
-- haskell-old-time
-- haskell-regex-compat
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hunit
 update_on:
 - alpm: haskell-hslogger
   source: alpm

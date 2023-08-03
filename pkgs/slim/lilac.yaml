@@ -9,19 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''slim'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- libpng
-- libx11
-- libxext
 - libxft
-- libxmu
 - libxrandr
 - pam
 - xorg-xauth
-repo_makedepends:
-- cmake
+- libx11
+- libxext
+- libpng
+- libxmu
 update_on:
 - alpm: slim
   source: archpkg

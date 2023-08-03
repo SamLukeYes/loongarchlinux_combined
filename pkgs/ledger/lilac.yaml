@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ledger'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- mpfr
 - boost: boost-libs
 - libedit
-- mpfr
-repo_makedepends:
-- boost
-- cmake
-- python
 update_on:
 - alpm: ledger
   source: archpkg

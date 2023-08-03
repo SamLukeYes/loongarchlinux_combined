@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''netcdf-openmpi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- inetutils
-- unzip
 repo_depends:
 - hdf5-openmpi
-- pnetcdf-openmpi
-- curl
-- libxml2
 - libzip
-repo_makedepends:
-- cmake
+- curl
+- pnetcdf-openmpi
+- libxml2
 update_on:
 - alpm: netcdf-openmpi
   source: archpkg

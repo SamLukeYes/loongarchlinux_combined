@@ -7,22 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-poetry-dynamic-versioning'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-cov
 repo_depends:
-- python
-- python-dunamai
 - python-tomlkit
-- python-jinja
 - python-poetry
+- python-jinja
 - python-cleo
-- python-poetry-core
+- python-dunamai
 - python-packaging
-repo_makedepends:
-- git
-- python-build
-- python-installer
+- python
 - python-poetry-core
 update_on:
 - alias: python

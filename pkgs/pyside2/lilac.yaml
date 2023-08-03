@@ -9,36 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pyside2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - clang
-- llvm
+- qt5-xmlpatterns
 - libxslt
-- qt5-xmlpatterns
-- python
 - qt5-declarative
-repo_makedepends:
-- cmake
-- python-setuptools
 - llvm
-- clang
-- qt5-multimedia
-- qt5-tools
-- qt5-sensors
-- qt5-charts
-- qt5-webengine
-- qt5-datavis3d
-- qt5-websockets
-- qt5-speech
-- qt5-3d
-- qt5-svg
-- qt5-script
-- qt5-scxml
-- qt5-x11extras
-- qt5-quickcontrols2
-- qt5-serialport
-- qt5-remoteobjects
-- qt5-xmlpatterns
+- python
 update_on:
 - alias: python
 - alpm: qt5-declarative

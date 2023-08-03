@@ -9,44 +9,27 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gvfs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- avahi
 - dconf
-- fuse3
-- gcr
-- gsettings-desktop-schemas
-- libarchive
 - libbluray
 - libcdio-paranoia
-- libgudev
+- gsettings-desktop-schemas
 - libsecret
-- libsoup3
+- fuse3
 - psmisc
-- udisks2
-- libimobiledevice
+- avahi
 - usbmuxd
-- libgphoto2
 - gnome-online-accounts: libgoa
+- gcr
 - libmtp
-- libnfs
+- udisks2
 - libgdata
-repo_makedepends:
-- dbus
-- docbook-xsl
-- git
-- gtk-doc
-- gtk3
-- libgdata
-- gnome-online-accounts: libgoa
+- libsoup3
 - libgphoto2
+- libnfs
+- libarchive
 - libimobiledevice
-- libmtp
-- libnfs
-- meson
-- openssh
-- python
-- samba: smbclient
+- libgudev
 update_on:
 - alpm: gvfs
   source: archpkg

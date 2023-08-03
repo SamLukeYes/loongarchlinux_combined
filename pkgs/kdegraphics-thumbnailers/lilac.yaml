@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdegraphics-thumbnail
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- kdegraphics-mobipocket
 - libkexiv2
-- libkdcraw
 - kio
 - ghostscript
-- kdegraphics-mobipocket
-repo_makedepends:
-- extra-cmake-modules
+- libkdcraw
 update_on:
 - alpm: kdegraphics-thumbnailers
   source: archpkg

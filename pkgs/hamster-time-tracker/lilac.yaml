@@ -7,14 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''hamster-time-tracker'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
-- python-cairo
 - pygobject: python-gobject
-repo_makedepends:
-- intltool
-- itstool
+- python-cairo
 update_on:
 - alpm: hamster-time-tracker
   source: archpkg

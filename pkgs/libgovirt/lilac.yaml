@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgovirt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - librest
-repo_makedepends:
-- gobject-introspection
-- meson
 update_on:
 - alpm: libgovirt
   source: archpkg

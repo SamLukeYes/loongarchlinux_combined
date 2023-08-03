@@ -7,11 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-maruku'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - ruby
-repo_makedepends:
-- ruby-rdoc
 update_on:
 - alias: ruby
 - alpm: ruby-maruku

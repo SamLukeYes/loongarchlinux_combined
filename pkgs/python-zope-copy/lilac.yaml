@@ -7,14 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-zope-copy'')
 
   '
-repo_checkdepends:
-- python-zope-testrunner
-- python-zope-testing
-- python-zope-location
 repo_depends:
-- python-setuptools
 - python-zope-interface
-repo_makedepends: []
+- python-setuptools
 update_on:
 - alpm: python-zope-copy
   source: archpkg

@@ -9,18 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wiznote'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- desktop-file-utils
-- hicolor-icon-theme
 - xdg-utils
+- desktop-file-utils
 - qt5-websockets
-- qt5-webengine
 - qt5-svg
-repo_makedepends:
-- cmake
-- qt5-tools
-- boost
+- hicolor-icon-theme
+- qt5-webengine
 update_on:
 - alpm: wiznote
   source: archpkg

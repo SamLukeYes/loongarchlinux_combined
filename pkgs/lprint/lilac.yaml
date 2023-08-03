@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lprint'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pappl
 - cups: libcups
-- libpng
-- libusb
 - pam
-repo_makedepends: []
+- pappl
+- libusb
+- libpng
 update_on:
 - alpm: lprint
   source: archpkg

@@ -1,14 +1,6 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
+- librsvg
 - gtk4
 - libadwaita
-- librsvg
-repo_makedepends:
-- appstream-glib
-- git
-- gobject-introspection
-- meson
-- vala
-- yelp-tools
 update_on: []

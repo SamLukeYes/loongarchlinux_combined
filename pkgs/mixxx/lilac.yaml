@@ -9,89 +9,43 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mixxx'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- gcc: gcc-libs
+- libid3tag
+- libmodplug
+- libusb
+- libsndfile
+- portmidi
+- qt5-x11extras
+- upower
 - glibc
 - hicolor-icon-theme
-- hidapi
-- lame
-- libmad
-- libmodplug
-- libx11
-- openssl
-- opus
-- opusfile
-- qt5-base
-- qt5-script
-- qt5-svg
-- qt5-x11extras
-- soundtouch
-- speex
-- sqlite
-- taglib
-- upower
-- wavpack
+- glib2
+- lilv
+- libogg
 - gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
+- soundtouch
+- qt5-base
+- opusfile
+- ffmpeg
+- opus
+- fftw
+- protobuf
+- rubberband
+- speex
+- chromaprint
+- sqlite
+- openssl
+- libvorbis
+- wavpack
 - hidapi
 - lame
-- libmad
-- libmodplug
-- libx11
-- openssl
-- opus
-- opusfile
-- qt5-base
+- portaudio
 - qt5-script
+- libx11
+- flac
 - qt5-svg
-- qt5-x11extras
-- soundtouch
-- speex
-- sqlite
 - taglib
-- upower
-- wavpack
-- chromaprint
-- flac
-- ffmpeg
-- fftw
-- glib2
-- libid3tag
-- libogg
-- libsndfile
-- libusb
-- libvorbis
-- lilv
-- portaudio
-- portmidi
-- protobuf
-- rubberband
-repo_makedepends:
-- chromaprint
-- cmake
-- faad2
-- ffmpeg
-- fftw
-- flac
-- glib2
-- glu
-- gperftools
-- libid3tag
-- libogg
-- libsndfile
-- libusb
-- libvorbis
-- lilv
-- lv2
-- qt5-tools
-- portaudio
-- portmidi
-- protobuf
-- rubberband
-- vamp-plugin-sdk
+- libmad
 update_on:
 - alpm: qt5-base
   source: alpm

@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-sqlite3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ruby
-- ruby-mini_portile2
-- sqlcipher
 - sqlite
-repo_makedepends:
-- ruby-rake
-- ruby-rake-compiler
-- ruby-rake-compiler-dock
+- ruby
+- sqlcipher
+- ruby-mini_portile2
 update_on:
 - alias: ruby
 - alpm: ruby-sqlite3

@@ -7,16 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-markdown'')
 
   '
-repo_checkdepends:
-- python-yaml
 repo_depends:
 - python
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-markdown

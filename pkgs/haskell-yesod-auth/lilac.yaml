@@ -9,42 +9,39 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-yesod-auth'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-authenticate
-- haskell-base16-bytestring
-- haskell-base64-bytestring
-- haskell-blaze-builder
-- haskell-blaze-html
-- haskell-blaze-markup
-- haskell-conduit
-- haskell-conduit-extra
+- haskell-unordered-containers
 - haskell-cryptonite
-- haskell-data-default
-- haskell-email-validate
-- haskell-file-embed
-- haskell-http-client
-- haskell-http-client-tls
-- haskell-http-conduit
+- haskell-aeson
 - haskell-http-types
 - haskell-memory
-- haskell-network-uri
 - haskell-nonce
-- haskell-persistent
-- haskell-random
-- haskell-safe
-- haskell-shakespeare
-- haskell-unliftio
-- haskell-unliftio-core
-- haskell-unordered-containers
-- haskell-wai
-- haskell-yesod-core
-- haskell-yesod-form
 - haskell-yesod-persistent
-repo_makedepends:
-- ghc
+- haskell-file-embed
+- haskell-network-uri
+- haskell-blaze-builder
+- haskell-blaze-markup
+- haskell-yesod-form
+- haskell-wai
+- ghc: ghc-libs
+- haskell-email-validate
+- haskell-yesod-core
+- haskell-authenticate
+- haskell-unliftio-core
+- haskell-http-client
+- haskell-shakespeare
+- haskell-blaze-html
+- haskell-random
+- haskell-persistent
+- haskell-data-default
+- haskell-conduit
+- haskell-conduit-extra
+- haskell-http-client-tls
+- haskell-safe
+- haskell-http-conduit
+- haskell-base64-bytestring
+- haskell-base16-bytestring
+- haskell-unliftio
 update_on:
 - alpm: haskell-aeson
   source: alpm

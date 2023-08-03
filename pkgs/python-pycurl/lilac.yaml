@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pycurl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-bottle
-- python-pytest
-- vsftpd
-- python-flaky
-- python-pyflakes
 repo_depends:
-- python
 - curl
-repo_makedepends:
-- python-setuptools
+- python
 update_on:
 - alias: python
 - alpm: python-pycurl

@@ -9,17 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rofi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxdg-basedir
 - startup-notification
-- libxkbcommon: libxkbcommon-x11
-- xcb-util-wm
-- xcb-util-xrm
-- librsvg
 - xcb-util-cursor
-repo_makedepends:
-- check
+- librsvg
+- xcb-util-wm
+- libxdg-basedir
+- xcb-util-xrm
+- libxkbcommon: libxkbcommon-x11
 update_on:
 - alpm: rofi
   source: archpkg

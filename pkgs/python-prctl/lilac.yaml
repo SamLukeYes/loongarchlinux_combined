@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-prctl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- iputils
-- procps-ng
 repo_depends:
-- python
 - libcap
-repo_makedepends:
-- python-setuptools
+- python
 update_on:
 - alias: python
 - alpm: python-prctl

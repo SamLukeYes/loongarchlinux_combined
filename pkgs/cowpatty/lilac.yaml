@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cowpatty'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
 - libpcap
-repo_makedepends: []
+- openssl
 update_on:
 - alpm: cowpatty
   source: archpkg

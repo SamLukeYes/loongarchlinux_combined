@@ -7,17 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-into-dbus'')
 
   '
-repo_checkdepends:
-- python-nose
-- python-hypothesis
-- python-hs-dbus-signature
 repo_depends:
-- dbus-python
 - python-dbus-signature-pyparsing
-repo_makedepends:
-- git
-- python-pylint
-- python-setuptools
+- dbus-python
 update_on:
 - alpm: python-into-dbus
   source: archpkg

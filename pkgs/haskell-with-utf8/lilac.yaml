@@ -9,21 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-with-utf8'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
 - haskell-safe-exceptions
 - haskell-th-env
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hunit
-- haskell-hedgehog
-- haskell-tasty
-- haskell-tasty-discover
-- haskell-tasty-hedgehog
-- haskell-tasty-hunit
-- haskell-temporary
 update_on:
 - alpm: haskell-safe-exceptions
   source: alpm

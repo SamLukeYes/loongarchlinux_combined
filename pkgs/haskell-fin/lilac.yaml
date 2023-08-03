@@ -9,20 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-fin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-quickcheck
 - haskell-boring
+- ghc: ghc-libs
 - haskell-dec
 - haskell-hashable
-- haskell-some
+- haskell-quickcheck
 - haskell-universe-base
-repo_makedepends:
-- ghc
-- uusi
-- haskell-inspection-testing
-- haskell-tagged
+- haskell-some
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

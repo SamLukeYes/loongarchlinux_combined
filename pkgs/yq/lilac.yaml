@@ -7,18 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''yq'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- jq
-- python-argcomplete
 - python-tomlkit
 - python-xmltodict
 - python-yaml
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools-scm
-- python-wheel
+- jq
+- python-argcomplete
 update_on:
 - alpm: yq
   source: archpkg

@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-net-dbus'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - dbus
 - perl-xml-twig
-repo_makedepends: []
 update_on:
 - alpm: perl-net-dbus
   source: archpkg

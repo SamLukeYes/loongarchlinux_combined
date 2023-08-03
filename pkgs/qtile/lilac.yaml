@@ -9,40 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qtile'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- graphviz
-- gtk3
-- imagemagick
-- lm_sensors
-- procps-ng
-- python-bowler
-- python-dbus-next
-- pygobject: python-gobject
-- python-pytest
-- python-pywlroots
-- xorg-server: xorg-server-xephyr
-- xorg-server: xorg-server-xvfb
-- xorg-xrandr
-- xorg-xwayland
 repo_depends:
+- python-cffi
 - gdk-pixbuf2
-- glibc
+- python-cairocffi
+- pango
+- wlroots0.15
 - libnotify
 - librsvg
-- pango
-- python
-- python-cairocffi
-- python-cffi
 - python-xcffib
 - pygobject: python-gobject
-- wlroots0.15
-repo_makedepends:
-- git
-- pulseaudio: libpulse
-- python-build
-- python-installer
-- python-setuptools-scm
-- python-wheel
+- glibc
+- python
 update_on:
 - alias: python
 - alpm: qtile

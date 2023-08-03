@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wvstreams'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- zlib
-- pam
 - xplc
-- openssl
+- zlib
 - readline
-repo_makedepends: []
+- openssl
+- pam
 update_on:
 - alias: readline
 - alpm: wvstreams

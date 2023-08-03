@@ -9,20 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''osdlyrics'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk2
 - dbus-glib
-- curl
-- libnotify
 - libmpd
-- xmms2
+- curl
 - desktop-file-utils
-- hicolor-icon-theme
+- libnotify
+- xmms2
+- gtk2
 - sqlite
+- hicolor-icon-theme
 - python
-repo_makedepends:
-- intltool
 update_on:
 - alias: python
 - alpm: osdlyrics

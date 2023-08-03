@@ -9,22 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
-- perl
 - libseccomp
-- libcap
-- python
-- rsync
 - wget
-repo_makedepends:
-- docbook2x
-- systemd
-- meson
-- lua
-- python-setuptools
-- apparmor
+- perl
+- libcap
+- rsync
+- bash
+- python
 update_on:
 - alias: perl
 - alias: python

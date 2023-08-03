@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dmd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc
 - gcc: gcc-libs
-repo_makedepends:
-- git
-- ldc
 update_on:
 - alpm: dmd
   source: archpkg

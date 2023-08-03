@@ -7,16 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-readme-renderer'')
 
   '
-repo_checkdepends:
-- python-pytest-runner
 repo_depends:
-- python-bleach
 - python-docutils
+- python-bleach
 - python-pygments
 - python-six
-repo_makedepends:
-- python-setuptools
-- python-cmarkgfm
 update_on:
 - alpm: python-readme-renderer
   source: archpkg

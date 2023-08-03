@@ -9,18 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yabause-qt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - freeglut
-- glew
-- openal
 - qt5-base
-- qt5-multimedia
 - sdl2
-repo_makedepends:
-- cmake
-- glu
-- libxmu
+- openal
+- qt5-multimedia
+- glew
 update_on:
 - alpm: qt5-base
   source: alpm

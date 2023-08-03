@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-caja'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- caja
 - pygobject: python-gobject
-repo_makedepends:
-- intltool
+- caja
 update_on:
 - alpm: python-caja
   source: archpkg

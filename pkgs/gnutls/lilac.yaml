@@ -9,22 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnutls'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- net-tools
-- tpm2-tools
 repo_depends:
 - gcc: gcc-libs
-- libtasn1
-- readline
-- zlib
-- nettle
 - p11-kit
 - libidn2
-- zstd
 - libunistring
 - brotli
-repo_makedepends:
-- tpm2-tss
+- zlib
+- libtasn1
+- readline
+- zstd
+- nettle
 update_on:
 - alias: readline
 - alpm: libidn2

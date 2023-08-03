@@ -7,15 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-serpent'')
 
   '
-repo_checkdepends:
-- python-attrs
-- python-nose
-- python-pytz
-- python-testtools
 repo_depends:
 - python
-repo_makedepends:
-- git
 update_on:
 - alias: python
 - alpm: python-serpent

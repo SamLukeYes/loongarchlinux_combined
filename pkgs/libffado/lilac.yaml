@@ -9,28 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libffado'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
 - glibc
-- glibmm
-- hicolor-icon-theme
-- libavc1394
 - libiec61883
-- libxml++
 - gcc: gcc-libs
-- glibc
-- glibmm
-- hicolor-icon-theme
 - libavc1394
-- libiec61883
+- glibmm
 - libxml++
-repo_makedepends:
-- alsa-lib
-- dbus-c++
-- libconfig
-- pyqt5: python-pyqt5
-- scons
+- hicolor-icon-theme
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

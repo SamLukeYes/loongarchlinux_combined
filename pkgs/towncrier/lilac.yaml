@@ -7,17 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''towncrier'')
 
   '
-repo_checkdepends:
-- git
-- python-twisted
 repo_depends:
-- python-click
-- python-click-default-group
-- python-incremental
-- python-jinja
 - python-setuptools
+- python-incremental
+- python-click-default-group
+- python-click
+- python-jinja
 - python-tomli
-repo_makedepends: []
 update_on:
 - alpm: towncrier
   source: archpkg

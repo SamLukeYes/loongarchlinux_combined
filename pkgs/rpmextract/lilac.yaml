@@ -7,12 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''rpmextract'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
 - libarchive
 - coreutils
-repo_makedepends: []
+- bash
 update_on:
 - alpm: rpmextract
   source: archpkg

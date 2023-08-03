@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-text-latin1''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-case-insensitive
-- haskell-data-checked
 - haskell-hashable
-repo_makedepends:
-- ghc
+- haskell-case-insensitive
+- ghc: ghc-libs
+- haskell-data-checked
 update_on:
 - alpm: haskell-case-insensitive
   source: alpm

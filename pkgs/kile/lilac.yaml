@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kile'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ktexteditor
-- kinit
-- okular
-- khtml
 - qt5-script
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
+- khtml
+- ktexteditor
+- okular
+- kinit
 update_on:
 - alpm: kile
   source: archpkg

@@ -7,20 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''blockdiag'')
 
   '
-repo_checkdepends:
-- python-nose
-- python-pycodestyle
-- python-reportlab
-- python-docutils
-- python-wand
-- ghostscript
-- librsvg
 repo_depends:
-- python-setuptools
-- python-funcparserlib
 - python-pillow
+- python-funcparserlib
 - python-webcolors
-repo_makedepends: []
+- python-setuptools
 update_on:
 - alpm: blockdiag
   source: archpkg

@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcitx-kkc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fcitx
 - libkkc
-- libkkc-data
-- skk-jisyo
+- fcitx
 - fcitx-qt5
-repo_makedepends:
-- cmake
+- skk-jisyo
+- libkkc-data
 update_on:
 - alpm: fcitx-kkc
   source: archpkg

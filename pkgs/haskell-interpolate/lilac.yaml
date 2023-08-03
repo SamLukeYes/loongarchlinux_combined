@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-interpolate''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
 - haskell-src-meta
-repo_makedepends:
-- ghc
-- haskell-base-compat
-- haskell-hspec
-- haskell-quickcheck
-- haskell-quickcheck-instances
 update_on:
 - alpm: haskell-src-meta
   source: alpm

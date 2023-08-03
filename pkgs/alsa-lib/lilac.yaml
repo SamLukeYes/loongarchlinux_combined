@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''alsa-lib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- alsa-topology-conf
 - alsa-ucm-conf
 - glibc
-repo_makedepends: []
+- alsa-topology-conf
 update_on:
 - alpm: alsa-lib
   source: archpkg

@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-fuse'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - perl
 - fuse2
-repo_makedepends: []
 update_on:
 - alias: perl
 - alpm: perl-fuse

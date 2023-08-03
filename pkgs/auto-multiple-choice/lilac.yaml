@@ -9,29 +9,24 @@ pre_build_script: '_G.files = download_official_pkgbuild(''auto-multiple-choice'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl
-- perl-gtk3
-- perl-glib-object-introspection
-- perl-locale-gettext
 - perl-xml-writer
-- perl-xml-simple
-- perl-dbd-sqlite
-- perl-file-mimeinfo
-- perl-text-csv
 - perl-dbi
-- perl-archive-zip
+- poppler
+- perl-file-mimeinfo
+- perl-glib-object-introspection
 - perl-clone
 - perl-locale-codes
-- ttf-linux-libertine
+- perl-gtk3
+- perl-xml-simple
+- perl-archive-zip
+- perl
 - opencv
-- poppler
+- perl-locale-gettext
+- ttf-linux-libertine
 - poppler: poppler-glib
-repo_makedepends:
-- netpbm
-- xorgproto
-- libxslt
+- perl-text-csv
+- perl-dbd-sqlite
 update_on:
 - alias: perl
 - alpm: opencv

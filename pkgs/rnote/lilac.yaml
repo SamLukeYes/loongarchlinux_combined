@@ -9,19 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rnote'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk4
-- glib2
-- libadwaita
-- poppler: poppler-glib
-- gstreamer
 - alsa-lib
-repo_makedepends:
-- meson
-- cmake
-- clang
-- git
+- gtk4
+- libadwaita
+- gstreamer
+- poppler: poppler-glib
+- glib2
 update_on:
 - alpm: rnote
   source: archpkg

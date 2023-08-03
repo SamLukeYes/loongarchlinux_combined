@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtk-vnc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libgcrypt
-- gtk3
-- gnutls
 - pulseaudio: libpulse
-repo_makedepends:
-- vala
-- gobject-introspection
-- git
-- perl-text-csv
-- meson
+- gtk3
+- libgcrypt
+- gnutls
 update_on:
 - alpm: gtk-vnc
   source: archpkg

@@ -7,19 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-sqlalchemy-i18n'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-psycopg2
-- python-flexmock
-- python-jinja
-- python-docutils
 repo_depends:
-- python
 - python-sqlalchemy
-- python-sqlalchemy-utils
 - python-six
-repo_makedepends:
-- python-setuptools
+- python
+- python-sqlalchemy-utils
 update_on:
 - alias: python
 - alpm: python-sqlalchemy-i18n

@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdsoap-ws-discovery-c
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kdsoap
-repo_makedepends:
-- extra-cmake-modules
-- doxygen
-- qt5-tools
-- qt5-doc
 update_on:
 - alpm: kdsoap-ws-discovery-client
   source: archpkg

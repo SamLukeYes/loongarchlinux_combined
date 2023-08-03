@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''espup'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- curl
 - git
 - ldproxy
-- python
+- curl
 - python-pip
-repo_makedepends: []
+- python
 update_on:
 - alpm: bzip2
   provides: libbz2.so

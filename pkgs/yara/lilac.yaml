@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yara'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
 - file
-repo_makedepends: []
+- openssl
 update_on:
 - alpm: file
   provides: libmagic.so

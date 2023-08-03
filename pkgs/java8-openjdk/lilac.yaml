@@ -1,24 +1,10 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- java-common: java-runtime-common
-- ca-certificates: ca-certificates-utils
-- nss
 - xdg-utils
-- hicolor-icon-theme
+- nss
 - giflib
+- ca-certificates: ca-certificates-utils
+- java-common: java-runtime-common
 - java-common: java-environment-common
-repo_makedepends:
-- alsa-lib
-- bash
-- ccache
-- cpio
-- fontconfig
-- giflib
-- git
-- cups: libcups
-- libxrender
-- libxtst
-- unzip
-- zip
+- hicolor-icon-theme
 update_on: []

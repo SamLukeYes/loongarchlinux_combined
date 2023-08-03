@@ -9,24 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-calendar'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- clutter
 - evolution-data-server
-- folks
-- gdk-pixbuf2
-- geoclue
-- geocode-glib
-- glib2
-- gtk3
 - libchamplain
-- libgee
 - libical
-repo_makedepends:
-- git
-- intltool
-- meson
-- vala
+- gdk-pixbuf2
+- glib2
+- libgee
+- geocode-glib
+- geoclue
+- clutter
+- gtk3
+- folks
 update_on:
 - alpm: folks
   provides: libfolks.so

@@ -7,20 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''volatility3'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
-- python-yara
-- capstone: python-capstone
-- python-jsonschema
-- python-pycryptodome
-- python-pefile
 - python-snappy
-repo_makedepends:
-- python-setuptools
-- python-build
-- python-installer
-- python-wheel
+- capstone: python-capstone
+- python-pycryptodome
+- python-yara
+- python-pefile
+- python-jsonschema
+- python
 update_on:
 - alias: python
 - alpm: volatility3

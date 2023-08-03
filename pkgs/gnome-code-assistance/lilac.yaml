@@ -9,26 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-code-assistance
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libgee
-- pygobject: python-gobject
-- python-pylint
-- python-pyflakes
-- python-pycodestyle
 - python-lxml
+- libgee
+- python-pylint
 - python-simplejson
-- ruby-dbus
 - ruby-sass
-repo_makedepends:
-- intltool
-- gobject-introspection
-- llvm
-- clang
-- gjs
-- go
-- gnome-common
-- git
+- ruby-dbus
+- python-pycodestyle
+- pygobject: python-gobject
+- python-pyflakes
 update_on:
 - alpm: gnome-code-assistance
   source: archpkg

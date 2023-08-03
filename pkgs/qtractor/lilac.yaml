@@ -9,51 +9,24 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qtractor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
+- alsa-lib
+- libsndfile
+- aubio
 - glibc
 - hicolor-icon-theme
-- libmad
-- libxcb
-- qt6-base
-- qt6-svg
-- zlib
+- lilv
+- libogg
 - gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
-- libmad
-- libxcb
-- qt6-base
+- liblo
 - qt6-svg
+- rubberband
+- libxcb
+- libsamplerate
+- libvorbis
+- qt6-base
 - zlib
-- alsa-lib
-- aubio
-- liblo
-- libogg
-- libsamplerate
-- libsndfile
-- libvorbis
-- lilv
-- rubberband
-repo_makedepends:
-- alsa-lib
-- aubio
-- clap
-- cmake
-- dssi
-- ladspa
-- liblo
-- libogg
-- libsamplerate
-- libsndfile
-- libvorbis
-- lilv
-- lv2
-- qt6-tools
-- rubberband
-- suil
-- vst3sdk
+- libmad
 update_on:
 - alpm: qt6-base
   source: alpm

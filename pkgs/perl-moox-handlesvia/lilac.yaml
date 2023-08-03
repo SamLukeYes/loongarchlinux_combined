@@ -7,18 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-moox-handlesvia'')
 
   '
-repo_checkdepends:
-- perl-test-exception
-- perl-test-fatal
-- perl-test-simple
 repo_depends:
-- perl-class-method-modifiers
-- perl-data-perl
 - perl-module-runtime
-- perl-moo
+- perl-class-method-modifiers
 - perl-role-tiny
-repo_makedepends:
-- perl-moox-types-mooselike
+- perl-data-perl
+- perl-moo
 update_on:
 - alpm: perl-moox-handlesvia
   source: archpkg

@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pidgin-talkfilters'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - pidgin: libpurple
 - talkfilters
-repo_makedepends:
-- intltool
-- gettext
-- python
-- pidgin
-- mercurial
 update_on:
 - alpm: pidgin-talkfilters
   source: archpkg

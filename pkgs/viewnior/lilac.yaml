@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''viewnior'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk2
 - exiv2
-repo_makedepends:
-- meson
+- gtk2
 update_on:
 - alpm: viewnior
   source: archpkg

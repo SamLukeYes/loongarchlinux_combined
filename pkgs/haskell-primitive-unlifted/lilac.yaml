@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-primitive-unl
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-text-short
 - ghc: ghc-libs
 - haskell-primitive
-- haskell-text-short
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-primitive
   source: alpm

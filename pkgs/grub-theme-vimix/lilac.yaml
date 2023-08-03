@@ -7,11 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''grub-theme-vimix'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - grub
-repo_makedepends:
-- git
 update_on:
 - alpm: grub-theme-vimix
   source: archpkg

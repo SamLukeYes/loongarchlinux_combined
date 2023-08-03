@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''radeontop'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- libdrm
-- libpciaccess
 - libxcb
 - ncurses
-repo_makedepends:
-- xorgproto
+- libdrm
+- libpciaccess
+- glibc
 update_on:
 - alpm: radeontop
   source: archpkg

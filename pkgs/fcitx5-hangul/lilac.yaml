@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcitx5-hangul'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fcitx5
 - libhangul
-repo_makedepends:
-- extra-cmake-modules
+- fcitx5
 update_on:
 - alpm: fcitx5-hangul
   source: archpkg

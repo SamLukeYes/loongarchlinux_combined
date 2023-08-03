@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''spandsp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - libtiff
-repo_makedepends:
-- docbook-xsl
-- doxygen
+- glibc
 update_on:
 - alpm: spandsp
   source: archpkg

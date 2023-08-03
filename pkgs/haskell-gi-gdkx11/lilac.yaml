@@ -9,21 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi-gdkx11'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
-- haskell-gi-cairo
 - haskell-gi-gdk
+- gtk4
+- haskell-gi-cairo
 - haskell-gi-gio
-- haskell-gi-gobject
+- haskell-gi-overloading
+- haskell-gi-base
 - haskell-gi-xlib
 - haskell-gi
-- haskell-gi-base
-- haskell-gi-overloading
-- gtk4
-repo_makedepends:
-- ghc
-- gobject-introspection
+- haskell-gi-gobject
 update_on:
 - alpm: haskell-gi-cairo
   source: alpm

@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kaffeine'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kio
 - libxss
+- kio
 - vlc
-repo_makedepends:
-- extra-cmake-modules
-- kidletime
-- kdoctools
 update_on:
 - alpm: kaffeine
   source: archpkg

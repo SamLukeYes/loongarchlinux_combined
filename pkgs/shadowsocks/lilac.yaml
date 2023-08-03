@@ -7,21 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''shadowsocks'')
 
   '
-repo_checkdepends:
-- bc
-- dante
-- libsodium
-- mbedtls
-- procps-ng
-- python-coverage
-- python-nose
-- python-pycodestyle
-- python-pyflakes
-- python-pysocks
 repo_depends:
 - python-setuptools
-repo_makedepends:
-- git
 update_on:
 - alpm: shadowsocks
   source: archpkg

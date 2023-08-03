@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''helix'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- hicolor-icon-theme
 - gcc: gcc-libs
 - glibc
-- hicolor-icon-theme
-repo_makedepends:
-- git
 update_on:
 - alpm: helix
   source: archpkg

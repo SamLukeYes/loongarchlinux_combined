@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''black-hole-solver'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-repo_makedepends:
-- cmake
-- perl-path-tiny
-- rinutils
-- python
 update_on:
 - alpm: black-hole-solver
   source: archpkg

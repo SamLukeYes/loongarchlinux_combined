@@ -7,17 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-covered'')
 
   '
-repo_checkdepends:
-- ruby-rspec
-- ruby-sus
-- ruby-trenni
-- ruby-bake-test
-- ruby-minitest
 repo_depends:
-- ruby-console
-- ruby-msgpack
 - ruby-parser
-repo_makedepends: []
+- ruby-msgpack
+- ruby-console
 update_on:
 - alpm: ruby-covered
   source: archpkg

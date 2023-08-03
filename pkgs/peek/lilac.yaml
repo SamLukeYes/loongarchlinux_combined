@@ -9,21 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''peek'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
 - gtk3
 - libkeybinder3
 - ffmpeg
 - which
-repo_makedepends:
-- git
-- meson
-- vala
-- appstream-glib
-- txt2man
-- gstreamer: gst-plugin-gtk
-- gstreamer: gst-plugins-ugly
 update_on:
 - alpm: peek
   source: archpkg

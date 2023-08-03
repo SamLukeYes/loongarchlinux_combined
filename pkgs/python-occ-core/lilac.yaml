@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-occ-core'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
-- opencascade
-- libxmu
 - libxi
-repo_makedepends:
-- cmake
-- swig
-- rapidjson
-- git
-- ninja
+- opencascade
+- python
+- libxmu
 update_on:
 - alias: python
 - alpm: python-occ-core

@@ -9,18 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''exiv2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python
 repo_depends:
 - gcc: gcc-libs
-- zlib
-- expat
-- gettext
 - curl
-repo_makedepends:
-- cmake
-- gtest
-- ninja
+- zlib
+- gettext
+- expat
 update_on:
 - alpm: expat
   provides: libexpat.so

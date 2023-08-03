@@ -1,10 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - glibc
-repo_makedepends:
-- cmake
-- ninja
-- nasm
-- java11-openjdk: jdk11-openjdk
 update_on: []

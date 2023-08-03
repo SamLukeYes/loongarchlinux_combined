@@ -9,19 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-dense-linear-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-vector-binary-instances
+- haskell-vector-algorithms
 - ghc: ghc-libs
 - haskell-math-functions
-- haskell-primitive
 - haskell-vector
-- haskell-vector-algorithms
 - haskell-vector-th-unbox
-- haskell-vector-binary-instances
-repo_makedepends:
-- ghc
-- haskell-hspec
-- haskell-quickcheck
+- haskell-primitive
 update_on:
 - alpm: haskell-math-functions
   source: alpm

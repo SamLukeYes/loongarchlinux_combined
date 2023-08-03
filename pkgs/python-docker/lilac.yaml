@@ -7,24 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-docker'')
 
   '
-repo_checkdepends:
-- flake8
-- python-coverage
-- python-paramiko
-- python-pytest
-- python-pytest-cov
-- python-pytest-timeout
 repo_depends:
-- python-packaging
-- python-requests
 - python-urllib3
+- python-requests
 - python-websocket-client
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-setuptools-scm
-- python-wheel
+- python-packaging
 update_on:
 - alpm: python-docker
   source: archpkg

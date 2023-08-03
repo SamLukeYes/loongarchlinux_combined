@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-wai-jso
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-aeson
-- haskell-aeson-qq
-- haskell-case-insensitive
+- ghc: ghc-libs
 - haskell-hspec-wai
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hspec
+- haskell-case-insensitive
+- haskell-aeson-qq
 update_on:
 - alpm: haskell-aeson
   source: alpm

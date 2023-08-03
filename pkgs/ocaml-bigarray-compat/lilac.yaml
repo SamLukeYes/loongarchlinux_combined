@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ocaml-bigarray-compat
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ocaml
-repo_makedepends:
-- ocaml: ocaml-compiler-libs
-- dune
 update_on:
 - alpm: ocaml
   source: alpm

@@ -7,21 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''vcspull'')
 
   '
-repo_checkdepends:
-- git
-- python-pytest
-- python-pytest-rerunfailures
 repo_depends:
-- python
-- python-colorama
 - python-libvcs
-- python-shtab
+- python-colorama
 - python-yaml
-repo_makedepends:
-- python-build
-- python-installer
-- python-poetry-core
-- python-typing_extensions
+- python-shtab
+- python
 update_on:
 - alias: python
 - alpm: vcspull

@@ -7,16 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-alien-libxml2'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - libxml2
 - perl-alien-build
-repo_makedepends:
-- perl-alien-build-plugin-download-gitlab
-- perl-html-parser
-- perl-sort-versions
-- perl-test2-suite
-- perl-uri
 update_on:
 - alpm: perl-alien-libxml2
   source: archpkg

@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bftpd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pam
 - zlib
-- glibc
 - libxcrypt
-repo_makedepends: []
+- glibc
+- pam
 update_on:
 - alpm: libxcrypt
   provides: libcrypt.so

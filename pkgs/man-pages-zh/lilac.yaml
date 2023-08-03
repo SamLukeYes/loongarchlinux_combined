@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''man-pages-zh'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- opencc
-- python
-- git
 update_on:
 - alpm: man-pages-zh
   source: archpkg

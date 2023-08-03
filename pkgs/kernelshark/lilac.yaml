@@ -9,32 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kernelshark'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - freeglut
 - gcc: gcc-libs
-- glibc
+- json-c
 - glu
 - qt5-base
-- freeglut
-- gcc: gcc-libs
+- trace-cmd
+- libtraceevent
+- libglvnd
 - glibc
-- glu
-- qt5-base
-- json-c
-- libglvnd
-- libtraceevent
 - libtracefs
-- trace-cmd
-repo_makedepends:
-- boost
-- cmake
-- json-c
-- libglvnd
-- libtracefs
-- libtraceevent
-- trace-cmd
-- fira-sans: ttf-fira-sans
 update_on:
 - alpm: qt5-base
   source: alpm

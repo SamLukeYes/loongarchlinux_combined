@@ -9,22 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libportal'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
 - qt5-base
 - qt5-x11extras
-repo_makedepends:
-- git
-- meson
-- gi-docgen
-- vala
-- gobject-introspection
-- gtk3
-- gtk4
-- qt5-base
-- qt5-x11extras
-- gjs
 update_on:
 - alpm: glib2
   provides: libglib-2.0.so

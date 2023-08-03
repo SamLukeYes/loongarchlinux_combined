@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''grantlee-editor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - messagelib
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
 update_on:
 - alpm: grantlee-editor
   source: archpkg

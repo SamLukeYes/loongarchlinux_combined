@@ -7,24 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pyvirtualdisplay'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-xdist
-- python-pyscreenshot
-- python-pillow
-- python-easyprocess
-- python-entrypoint2
-- python-psutil
-- xorg-server: xorg-server-xvfb
-- xorg-server: xorg-server-xephyr
-- xorg-xmessage
-- xorg-xdpyinfo
-- scrot
-- vncdotool
 repo_depends:
 - python
-repo_makedepends:
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-pyvirtualdisplay

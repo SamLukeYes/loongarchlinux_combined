@@ -9,19 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tumbler'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libxfce4util
 - gdk-pixbuf2
-repo_makedepends:
-- intltool
-- python
-- ffmpegthumbnailer
-- poppler: poppler-glib
-- libgsf
-- libgepub
-- libopenraw
-- freetype2
 update_on:
 - alpm: tumbler
   source: archpkg

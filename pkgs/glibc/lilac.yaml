@@ -1,10 +1,5 @@
 destsubdir: core
-repo_checkdepends: []
 repo_depends:
-- tzdata
 - filesystem
-# repo_makedepends:
-# - git
-# - gd
-# - python
+- tzdata
 update_on: []

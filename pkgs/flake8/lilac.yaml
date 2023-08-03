@@ -7,15 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''flake8'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python-pyflakes
 - python-mccabe
 - python-pycodestyle
 - python-entrypoints
-repo_makedepends:
-- python-setuptools
+- python-pyflakes
 update_on:
 - alpm: flake8
   source: archpkg

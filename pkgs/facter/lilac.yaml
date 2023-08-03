@@ -9,37 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''facter'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- ruby-rake
-- ruby-diff-lcs
-- ruby-mocha
-- ruby-rspec-support
-- ruby-rspec-core
-- ruby-rspec-expectations
-- ruby-rspec-mocks
-- ruby-rspec
 repo_depends:
-- yaml-cpp
-- boost: boost-libs
-- curl
-- libwhereami
-- cpp-hocon
-- systemd: systemd-libs
-- leatherman
-- openssl
-- gcc: gcc-libs
-- glibc
 - util-linux: util-linux-libs
-- ruby
-- yaml-cpp
-- dmidecode
+- glibc
+- leatherman
+- gcc: gcc-libs
 - pciutils
+- curl
+- systemd: systemd-libs
+- libwhereami
+- openssl
+- cpp-hocon
+- ruby
 - virt-what
-repo_makedepends:
-- boost
-- cmake
-- python
-- rapidjson
+- dmidecode
+- boost: boost-libs
+- yaml-cpp
 update_on:
 - alpm: libwhereami
   provides: libwhereami.so

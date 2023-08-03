@@ -9,20 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rbutil'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
-- qt6-5compat
 - qt6-base
+- zlib
 - qt6-multimedia
 - qt6-svg
-- zlib
-repo_makedepends:
-- cmake
-- git
-- ninja
-- qt6-tools
+- qt6-5compat
+- glibc
 update_on:
 - alpm: bzip2
   provides: libbz2.so

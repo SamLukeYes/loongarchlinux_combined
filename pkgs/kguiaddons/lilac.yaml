@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kguiaddons'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt5-x11extras
 - qt5-wayland
-repo_makedepends:
-- extra-cmake-modules
-- clang
-- doxygen
-- qt5-tools
-- qt5-doc
-- plasma-wayland-protocols
 update_on:
 - alpm: kguiaddons
   source: archpkg

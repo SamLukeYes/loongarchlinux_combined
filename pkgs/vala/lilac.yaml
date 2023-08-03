@@ -9,20 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vala'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- dbus
-- gobject-introspection
-- libx11
 repo_depends:
 - gcc
+- gtk-doc
 - glib2
 - graphviz
-- gtk-doc
-repo_makedepends:
-- autoconf-archive
-- git
-- help2man
-- libxslt
 update_on:
 - alpm: vala
   source: archpkg

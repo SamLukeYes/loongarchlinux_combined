@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kio-fuse'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kio
 - fuse3
-repo_makedepends:
-- extra-cmake-modules
+- kio
 update_on:
 - alpm: kio-fuse
   source: archpkg

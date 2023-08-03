@@ -9,19 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdg-desktop-portal-hy
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libinih
 - pipewire
+- xdg-desktop-portal
 - qt6-base
 - qt6-wayland
-- xdg-desktop-portal
-repo_makedepends:
-- cmake
-- meson
-- scdoc
-- wayland
-- wayland-protocols
+- libinih
 update_on:
 - alpm: util-linux-libs
   provides: libuuid.so

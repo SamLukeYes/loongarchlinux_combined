@@ -9,21 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''light-locker'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
 - dbus-glib
-- glibc
+- libxss
 - libx11
 - libxext
-- libxss
-repo_makedepends:
-- git
-- gnome-common
-- intltool
-- meson
-- upower
-- xorgproto
+- cairo
+- glibc
 update_on:
 - alpm: dbus
   provides: libdbus-1.so

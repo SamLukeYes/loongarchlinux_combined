@@ -9,16 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rng-tools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- curl
-- libxml2
-- sysfsutils
 - jitterentropy
-- libp11
 - jansson
+- curl
+- sysfsutils
 - rtl-sdr
-repo_makedepends: []
+- libxml2
+- libp11
 update_on:
 - alpm: rng-tools
   source: archpkg

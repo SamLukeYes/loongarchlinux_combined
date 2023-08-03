@@ -9,83 +9,33 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-server'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libepoxy
 - libxfont2
-- pixman
-- libunwind
+- libxv
+- xorg-util-macros
+- libtirpc
+- xcb-util-keysyms
+- xorgproto
 - dbus
-- xf86-input-libinput
-- nettle
-- libpciaccess
-- libdrm
-- libxshmfence
-- libxcvt
-- libxfont2
-- libepoxy
-- libunwind
-- systemd: systemd-libs
-- libxv
-- pixman
-- xcb-util-image
-- xcb-util-renderutil
 - xcb-util-wm
-- xcb-util-keysyms
-- nettle
-- libtirpc
-- libxfont2
-- libunwind
-- pixman
-- xorg-xauth
-- nettle
-- libtirpc
-- systemd: systemd-libs
-- libxfont2
-- libunwind
+- xcb-util-image
 - libxext
-- pixman
 - nettle
-- libtirpc
 - systemd: systemd-libs
-- xkeyboard-config
-- xorg-xkbcomp
 - xorg-setxkbmap
-- xorgproto
-- mesa
+- xkeyboard-config
+- libdrm
 - libpciaccess
-- xorg-util-macros
-repo_makedepends:
-- xorgproto
-- pixman
-- libx11
-- mesa
-- xtrans
-- libxkbfile
-- libxfont2
-- libpciaccess
-- libxv
-- libxcvt
-- libxmu
-- libxrender
-- libxi
-- libxaw
-- libxtst
-- libxres
-- xorg-xkbcomp
-- xorg-util-macros
-- xorg-font-util
+- xf86-input-libinput
 - libepoxy
-- xcb-util
-- xcb-util-image
-- xcb-util-renderutil
-- xcb-util-wm
-- xcb-util-keysyms
-- libxshmfence
+- xorg-xauth
 - libunwind
-- systemd
-- meson
-- git
+- libxcvt
+- xcb-util-renderutil
+- pixman
+- xorg-xkbcomp
+- mesa
+- libxshmfence
 update_on:
 - alpm: xorg-server
   source: archpkg

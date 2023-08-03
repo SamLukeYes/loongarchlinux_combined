@@ -9,17 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdesvn'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- knotifications
 - subversion
-- kcoreaddons
+- ktexteditor
 - kdoctools
 - kio
-- knotifications
 - kparts
-- ktexteditor
-repo_makedepends:
-- extra-cmake-modules
+- kcoreaddons
 update_on:
 - alpm: kdesvn
   source: archpkg

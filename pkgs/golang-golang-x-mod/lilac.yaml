@@ -7,13 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''golang-golang-x-mod'')
 
   '
-repo_checkdepends:
-- git
 repo_depends:
-- go
-- golang-golang-x-crypto
 - golang-golang-x-tools
-repo_makedepends: []
+- golang-golang-x-crypto
+- go
 update_on:
 - alpm: golang-golang-x-mod
   source: archpkg

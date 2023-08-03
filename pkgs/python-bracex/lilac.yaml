@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-bracex'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- python-build
-- python-hatchling
-- python-installer
-- python-wheel
 update_on:
 - alpm: python-bracex
   source: archpkg

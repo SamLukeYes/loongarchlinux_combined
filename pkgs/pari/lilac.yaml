@@ -1,13 +1,5 @@
 destsubdir: extra
-repo_checkdepends:
-- pari-elldata
-- pari-galdata
-- pari-seadata
-- pari-galpol
 repo_depends:
 - gmp
 - libx11
-repo_makedepends:
-- perl
-- chrpath
 update_on: []

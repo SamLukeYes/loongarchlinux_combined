@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gifski'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ffmpeg
-repo_makedepends:
-- clang
 update_on:
 - alpm: gifski
   source: archpkg

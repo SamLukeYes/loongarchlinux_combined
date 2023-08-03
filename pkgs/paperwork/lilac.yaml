@@ -7,31 +7,28 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''paperwork'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
-- libhandy
-- libinsane
+- python-pyocr
+- python-pydbus
 - libnotify
+- pygobject: python-gobject
+- python-distro
+- libpillowfight: python-pillowfight
+- python-levenshtein
+- python-whoosh
+- python-dateutil
+- libinsane
+- pyxdg: python-pyxdg
+- python-setuptools
+- python-psutil
+- python-pycountry
 - poppler: poppler-glib
 - python-cairo
-- python-dateutil
-- python-distro
-- python-fabulous
+- libhandy
 - python-getkey
-- pygobject: python-gobject
-- python-levenshtein
-- libpillowfight: python-pillowfight
-- python-pycountry
-- python-pydbus
-- python-pyocr
-- python-setuptools
-- python-whoosh
-- pyxdg: python-pyxdg
-- python-psutil
+- python-fabulous
 - python-scikit-learn
-repo_makedepends:
-- git
+- gtk3
 update_on:
 - alpm: paperwork
   source: archpkg

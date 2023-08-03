@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''liri-files'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - fluid
 - taglib
-repo_makedepends:
-- cmake
-- liri-cmake-shared
-- ninja
-- qt5-tools
 update_on:
 - alpm: liri-files
   source: archpkg

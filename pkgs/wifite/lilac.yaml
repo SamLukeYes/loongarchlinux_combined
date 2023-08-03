@@ -7,18 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''wifite'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
 - python-chardet
 - aircrack-ng
 - iproute2
 - iw
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python
 update_on:
 - alias: python
 - alpm: wifite

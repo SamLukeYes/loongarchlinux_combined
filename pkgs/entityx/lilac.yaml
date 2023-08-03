@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''entityx'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- cmake
-- git
-- ninja
-- catch2
 update_on:
 - alpm: entityx
   source: archpkg

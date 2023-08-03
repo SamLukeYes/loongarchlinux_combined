@@ -7,35 +7,18 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ipython'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-asyncio
-- python-testpath
-- jupyter-nbformat
-- python-ipykernel
-- python-numpy
-- python-trio
-- python-matplotlib
-- python-curio
-- python-pandas
-- tcsh
 repo_depends:
-- python
-- python-traitlets
-- python-pexpect
-- sqlite
-- python-pickleshare
-- python-prompt_toolkit
-- python-jedi
-- python-pygments
 - python-backcall
-- python-matplotlib-inline
+- python-pickleshare
+- python-traitlets
 - python-stack-data
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-pygments
+- python-matplotlib-inline
+- sqlite
+- python-pexpect
+- python-jedi
+- python
+- python-prompt_toolkit
 update_on:
 - alias: python
 - alpm: ipython

@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libaccounts-qt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libaccounts-glib
 - qt5-base
-repo_makedepends:
-- doxygen
+- libaccounts-glib
 update_on:
 - alpm: qt5-base
   source: alpm

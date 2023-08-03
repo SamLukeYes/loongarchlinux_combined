@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''converseen'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- hicolor-icon-theme
-- imagemagick
 - qt5-base
-repo_makedepends:
-- cmake
-- qt5-tools
+- imagemagick
+- hicolor-icon-theme
 update_on:
 - alpm: qt5-base
   source: alpm

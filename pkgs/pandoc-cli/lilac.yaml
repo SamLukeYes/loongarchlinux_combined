@@ -9,19 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pandoc-cli'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- hslua-cli
-- haskell-pandoc
-- haskell-pandoc-lua-engine
-- haskell-pandoc-server
-- haskell-safe
-- haskell-wai-extra
 - haskell-warp
-repo_makedepends:
-- ghc
-- uusi
+- hslua-cli
+- haskell-pandoc-lua-engine
+- ghc: ghc-libs
+- haskell-pandoc-server
+- haskell-pandoc
+- haskell-wai-extra
+- haskell-safe
 update_on:
 - alpm: haskell-pandoc
   source: alpm

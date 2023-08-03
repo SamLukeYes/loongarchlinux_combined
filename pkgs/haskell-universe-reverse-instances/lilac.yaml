@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-universe-reve
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-universe-base
-repo_makedepends:
-- ghc
-- uusi
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-universe-base
   source: alpm

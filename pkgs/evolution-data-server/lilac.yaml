@@ -9,30 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''evolution-data-server
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- db
 repo_depends:
-- gtk3
+- libical
+- webkit2gtk-4.1
+- libsecret
+- libphonenumber
+- nss
 - krb5
+- libgweather-4
 - libcanberra
 - gnome-online-accounts: libgoa
-- libgweather-4
-- libical
-- libphonenumber
-- libsecret
-- nss
 - sqlite
-- webkit2gtk-4.1
-repo_makedepends:
-- boost
-- cmake
-- git
-- gobject-introspection
-- gperf
-- gtk-doc
-- ninja
-- vala
-- webkitgtk-6.0
+- gtk3
 update_on:
 - alpm: gtk4
   provides: libgtk-4.so

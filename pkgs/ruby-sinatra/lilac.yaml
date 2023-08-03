@@ -7,35 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-sinatra'')
 
   '
-repo_checkdepends:
-- asciidoctor
-- ruby-activesupport
-- ruby-builder
-- ruby-erubi
-- ruby-kramdown
-- ruby-maruku
-- ruby-mustermann
-- ruby-nokogiri
-- ruby-rack
-- ruby-rack-test
-- ruby-rake
-- ruby-rdiscount
-- ruby-rspec
-- ruby-sass
-- ruby-tilt
 repo_depends:
 - ruby
 - ruby-mustermann
-- ruby-rack
 - ruby-tilt
-- ruby
 - ruby-multi_json
-- ruby-mustermann
-- ruby-tilt
-- ruby
 - ruby-rack
-repo_makedepends:
-- ruby
 update_on:
 - alias: ruby
 - alias: ruby

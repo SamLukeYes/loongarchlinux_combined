@@ -7,22 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-tempora'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-flake8
-- python-pytest-cov
-- python-pytest-black
-- python-freezegun
-- python-pytest-freezegun
-- python-pytest-mypy
 repo_depends:
-- python
 - python-pytz
+- python
 - python-jaraco.functools
-repo_makedepends:
-- python-setuptools
-- python-setuptools-scm
-- python-attrs
 update_on:
 - alias: python
 - alpm: python-tempora

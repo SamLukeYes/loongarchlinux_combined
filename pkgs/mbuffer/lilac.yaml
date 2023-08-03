@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mbuffer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- openssl
 - gcc: gcc-libs
 - glibc
-- gcc: gcc-libs
-- glibc
-- openssl
-repo_makedepends:
-- openssl
 update_on:
 - alias: libcrypto
 - alpm: mbuffer

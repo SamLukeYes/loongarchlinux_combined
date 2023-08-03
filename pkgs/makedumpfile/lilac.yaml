@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''makedumpfile'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl
 - elfutils: libelf
 - zstd
-repo_makedepends:
-- git
+- perl
 update_on:
 - alias: perl
 - alpm: makedumpfile

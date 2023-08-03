@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-xml-hamlet'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-xml-conduit
 - ghc: ghc-libs
 - haskell-shakespeare
-- haskell-xml-conduit
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-shakespeare
   source: alpm

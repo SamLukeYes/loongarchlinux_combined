@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''k9s'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- git
-- go
 update_on:
 - alpm: k9s
   source: archpkg

@@ -9,15 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''djvulibre'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
-- gcc: gcc-libs
 - glibc
-- hicolor-icon-theme
+- gcc: gcc-libs
 - libjpeg-turbo
 - libtiff
-repo_makedepends: []
+- bash
+- hicolor-icon-theme
 update_on:
 - alpm: djvulibre
   source: archpkg

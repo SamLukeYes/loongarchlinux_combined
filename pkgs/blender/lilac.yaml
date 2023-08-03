@@ -9,63 +9,46 @@ pre_build_script: '_G.files = download_official_pkgbuild(''blender'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libpng
-- libtiff
-- openexr
-- python
-- desktop-file-utils
 - python-requests
-- potrace
-- shared-mime-info
-- hicolor-icon-theme
 - xdg-utils
-- glew
-- openjpeg2
-- python-numpy
-- freetype2
-- openal
-- ffmpeg
-- fftw
-- boost: boost-libs
-- opencollada
-- alembic
-- openxr
-- openimageio
-- libsndfile
-- opencolorio
-- openshadinglanguage
 - openimagedenoise
-- jemalloc
+- libsndfile
+- desktop-file-utils
+- intel-oneapi-compiler-shared-runtime: intel-oneapi-compiler-shared-runtime-libs
+- libharu
+- hicolor-icon-theme
 - libspnav
 - ptex
-- opensubdiv
 - openvdb
-- sdl2
+- openexr
+- ffmpeg
 - embree3
-- libharu
-- draco
-- openpgl
+- fftw
+- libpng
+- openjpeg2
+- shared-mime-info
+- opencollada
+- opensubdiv
+- jemalloc
+- potrace
+- openshadinglanguage
+- openal
+- freetype2
+- glew
+- python-numpy
+- python
+- openxr
 - level-zero: level-zero-loader
-- intel-oneapi-compiler-shared-runtime: intel-oneapi-compiler-shared-runtime-libs
+- opencolorio
+- openimageio
+- draco
+- sdl2
+- libtiff
 - intel-oneapi-compiler-dpcpp-cpp-runtime: intel-oneapi-compiler-dpcpp-cpp-runtime-libs
-repo_makedepends:
-- cmake
-- boost
-- mesa
-- git
-- llvm
-- cuda
-- ninja
-- wayland-protocols
-- libxkbcommon
-- libdecor
-- hip-runtime-amd
-- level-zero: level-zero-headers
-- intel-oneapi-dpcpp-cpp
-- intel-oneapi-compiler-shared-runtime
-- intel-compute-runtime
+- openpgl
+- alembic
+- boost: boost-libs
 update_on:
 - alias: python
 - alpm: blender

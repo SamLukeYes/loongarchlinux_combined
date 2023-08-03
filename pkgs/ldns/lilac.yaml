@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ldns'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - openssl
 - dnssec-anchors
-repo_makedepends:
-- libpcap
 update_on:
 - alpm: ldns
   source: archpkg

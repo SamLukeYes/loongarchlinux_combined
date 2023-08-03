@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-graphviz'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-colour
-- haskell-dlist
 - haskell-fgl
-- haskell-polyparse
-- haskell-temporary
+- haskell-dlist
+- ghc: ghc-libs
 - haskell-wl-pprint-text
-repo_makedepends:
-- ghc
-- uusi
+- haskell-polyparse
+- haskell-colour
+- haskell-temporary
 update_on:
 - alpm: haskell-colour
   source: alpm

@@ -7,14 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''afl-utils'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - afl
-- coreutils
-- python
 - rsync
-repo_makedepends:
-- python-setuptools
+- python
+- coreutils
 update_on:
 - alias: python
 - alpm: afl-utils

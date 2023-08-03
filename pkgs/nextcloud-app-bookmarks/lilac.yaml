@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''nextcloud-app-bookmarks'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- nextcloud
-- yq
 update_on:
 - alpm: nextcloud-app-bookmarks
   source: archpkg

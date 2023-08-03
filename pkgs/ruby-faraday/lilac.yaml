@@ -7,29 +7,18 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-faraday'')
 
   '
-repo_checkdepends:
-- ruby-rack
-- ruby-webmock
-- ruby-rspec-expectations
-- ruby-multipart-parser
-- ruby-rack-test
 repo_depends:
+- ruby-faraday-net_http
 - ruby
-- ruby-multipart-post
-- ruby-ruby2_keywords
-- ruby-faraday-net_http
-- ruby-faraday-em_http
 - ruby-faraday-em_synchrony
+- ruby-multipart-post
 - ruby-faraday-excon
-- ruby-faraday-httpclient
-- ruby-faraday-net_http
-- ruby-faraday-net_http_persistent
 - ruby-faraday-patron
+- ruby-faraday-net_http_persistent
+- ruby-faraday-httpclient
 - ruby-faraday-rack
-repo_makedepends:
-- ruby-rdoc
-- ruby-rake
-- ruby-rspec
+- ruby-ruby2_keywords
+- ruby-faraday-em_http
 update_on:
 - alias: ruby
 - alpm: ruby-faraday

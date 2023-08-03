@@ -9,20 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''moc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libmad
 - libid3tag
-- curl
 - file
-repo_makedepends:
-- speex
-- ffmpeg4.4
-- taglib
-- musepack: libmpcdec
-- wavpack
-- libmodplug
-- faad2
+- curl
+- libmad
 update_on:
 - alpm: moc
   source: archpkg

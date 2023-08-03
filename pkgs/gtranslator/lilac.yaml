@@ -9,21 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtranslator'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtksourceview4
 - gspell
-- gettext
-- libgda6
-- iso-codes
-- hicolor-icon-theme
 - libdazzle
 - libhandy
-repo_makedepends:
-- meson
-- gobject-introspection
-- gtk-doc
-- yelp-tools
+- libgda6
+- gtksourceview4
+- gettext
+- iso-codes
+- hicolor-icon-theme
 update_on:
 - alpm: gtranslator
   source: archpkg

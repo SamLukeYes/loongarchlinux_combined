@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''motion'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- sqlite
-- ffmpeg
 - libmicrohttpd
+- ffmpeg
+- sqlite
 - libwebp
 - mariadb: mariadb-libs
-repo_makedepends: []
 update_on:
 - alpm: motion
   source: archpkg

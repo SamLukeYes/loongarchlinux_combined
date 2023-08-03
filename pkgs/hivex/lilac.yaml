@@ -9,21 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hivex'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxml2
 - perl
-repo_makedepends:
-- python
-- ruby
-- ruby-rake
-- ruby-rdoc
-- perl-io-stringy
-- perl-test-simple
-- ocaml-findlib
-- ocaml
-- ocaml: ocaml-compiler-libs
-- chrpath
+- libxml2
 update_on:
 - alias: perl
 - alpm: hivex

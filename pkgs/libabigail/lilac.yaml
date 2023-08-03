@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libabigail'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- elfutils: libelf
 - glibc
 - gcc: gcc-libs
-- binutils
-- libxml2
-- elfutils: libelf
 - elfutils
+- libxml2
+- binutils
 - python
-repo_makedepends:
-- git
-- python-sphinx
 update_on:
 - alias: python
 - alpm: libabigail

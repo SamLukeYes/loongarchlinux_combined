@@ -1,9 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- git
-- nasm
 update_on:
 - alpm: l-smash
   provides: liblsmash.so

@@ -9,64 +9,52 @@ pre_build_script: '_G.files = download_official_pkgbuild(''efl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libxrender
+- libxfixes
+- libxdamage
+- libsndfile
+- util-linux: util-linux-libs
+- mailcap
+- glib2
+- hicolor-icon-theme
+- libjpeg-turbo
+- libxrandr
 - curl
 - dbus
-- fontconfig
-- freetype2
-- fribidi
-- giflib
-- glib2
 - gstreamer
-- gstreamer: gst-plugins-base-libs
-- harfbuzz
-- hicolor-icon-theme
-- libglvnd
-- libinput
-- libjpeg-turbo
-- libpng
-- pulseaudio: libpulse
-- libsndfile
-- libtiff
-- libunwind
-- libwebp
-- libx11
-- libxcb
-- libxcomposite
 - libxcursor
-- libxdamage
-- libxext
-- libxfixes
-- libxi
 - libxinerama
-- libxkbcommon
+- harfbuzz
+- libglvnd
+- fribidi
+- libxext
+- libpng
 - libxkbcommon: libxkbcommon-x11
-- libxrandr
-- libxrender
-- libxss
-- libxtst
-- lua52
-- mailcap
-- mesa
 - openjpeg2
-- openssl
+- fontconfig
+- libxkbcommon
 - shared-mime-info
 - systemd: systemd-libs
-- util-linux: util-linux-libs
+- libxcb
+- freetype2
+- gstreamer: gst-plugins-base-libs
+- libxtst
+- openssl
+- lua52
+- pulseaudio: libpulse
+- libinput
+- libxcomposite
 - wayland
+- libxi
+- libxss
+- libunwind
+- libtiff
 - zlib
-repo_makedepends:
-- doxygen
-- libraw
-- librsvg
-- libspectre
-- meson
-- ninja
-- poppler
-- python
-- scim
-- wayland-protocols
+- libx11
+- libwebp
+- giflib
+- mesa
 update_on:
 - alpm: efl
   source: archpkg

@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libspecbleach'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-- glibc
 - fftw
-repo_makedepends:
-- fftw
-- meson
 update_on:
 - alpm: fftw
   provides: libfftw3f.so

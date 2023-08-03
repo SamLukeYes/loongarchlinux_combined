@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtksourceviewmm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtkmm3
 - gtksourceview3
-- gtkmm3: gtkmm3-docs
-repo_makedepends:
 - gtkmm3: gtkmm3-docs
 update_on:
 - alpm: gtksourceviewmm

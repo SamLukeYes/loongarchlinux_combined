@@ -1,10 +1,7 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - openssl
-- libsass
-- glibc
 - gcc: gcc-libs
-repo_makedepends:
-- rust
+- glibc
+- libsass
 update_on: []

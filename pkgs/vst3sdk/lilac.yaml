@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''vst3sdk'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- git
-- rsync
 update_on:
 - alpm: vst3sdk
   source: archpkg

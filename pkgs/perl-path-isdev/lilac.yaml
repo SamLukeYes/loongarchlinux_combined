@@ -7,16 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-path-isdev'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-class-tiny
-- perl-file-homedir
 - perl-module-runtime
 - perl-path-tiny
+- perl-file-homedir
 - perl-role-tiny
 - perl-sub-exporter
-repo_makedepends:
-- perl-test-fatal
+- perl-class-tiny
 update_on:
 - alpm: perl-path-isdev
   source: archpkg

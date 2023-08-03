@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''notify-osd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libwnck3
-- dbus-glib
 - gsettings-desktop-schemas
-repo_makedepends:
-- gnome-common
-- libnotify
+- dbus-glib
+- libwnck3
 update_on:
 - alpm: notify-osd
   source: archpkg

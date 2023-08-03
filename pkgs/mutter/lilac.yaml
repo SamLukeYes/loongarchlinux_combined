@@ -1,35 +1,20 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- colord
-- dconf
-- gnome-desktop: gnome-desktop-4
-- gnome-settings-daemon
-- graphene
-- gsettings-desktop-schemas
-- lcms2
-- libcanberra
-- libgudev
-- libinput
-- libsm
-- sysprof: libsysprof-capture
-- libxkbcommon: libxkbcommon-x11
-- libxkbfile
-- pipewire
 - startup-notification
 - xorg-xwayland
-repo_makedepends:
-- egl-wayland
-- gi-docgen
-- git
-- gobject-introspection
-- gtk3
-- meson
-- sysprof
-- wayland-protocols
-- xorg-server
-- xorg-server: xorg-server-xvfb
-- python-dbusmock
-- wireplumber
-- zenity
+- gsettings-desktop-schemas
+- libinput
+- dconf
+- libxkbfile
+- gnome-desktop: gnome-desktop-4
+- sysprof: libsysprof-capture
+- pipewire
+- graphene
+- colord
+- libsm
+- libcanberra
+- lcms2
+- gnome-settings-daemon
+- libxkbcommon: libxkbcommon-x11
+- libgudev
 update_on: []

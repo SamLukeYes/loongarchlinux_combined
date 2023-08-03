@@ -7,15 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''xortool'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
 - python-docopt
 - python-importlib-metadata
-repo_makedepends:
-- python-build
-- python-installer
-- python-poetry-core
+- python
 update_on:
 - alias: python
 - alpm: xortool

@@ -7,20 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-fire'')
 
   '
-repo_checkdepends:
-- python-hypothesis
-- python-levenshtein
-- python-mock
-- python-pytest
 repo_depends:
+- python-termcolor
 - python
 - python-six
-- python-termcolor
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-fire

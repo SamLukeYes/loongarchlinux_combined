@@ -9,35 +9,30 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glirc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-unordered-containers
+- haskell-githash
+- haskell-base64-bytestring
+- haskell-curve25519
+- haskell-kan-extensions
+- haskell-hookup
+- haskell-lens
+- haskell-config-schema
+- haskell-hashable
+- haskell-psqueues
+- haskell-free
+- haskell-irc-core
+- haskell-regex-tdfa
+- haskell-network
+- haskell-async
 - ghc: ghc-libs
 - haskell-hsopenssl
-- haskell-async
-- haskell-attoparsec
-- haskell-base64-bytestring
-- haskell-config-schema
-- haskell-config-value
-- haskell-curve25519
-- haskell-free
-- haskell-githash
-- haskell-hashable
-- haskell-hookup
-- haskell-irc-core
-- haskell-kan-extensions
-- haskell-lens
-- haskell-network
-- haskell-psqueues
-- haskell-random
-- haskell-regex-tdfa
 - haskell-split
-- haskell-unordered-containers
+- haskell-random
 - haskell-vector
 - haskell-vty
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hunit
+- haskell-config-value
+- haskell-attoparsec
 update_on:
 - alpm: haskell-hsopenssl
   source: alpm

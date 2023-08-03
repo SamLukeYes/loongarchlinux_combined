@@ -7,16 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''trash-cli'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-flexmock
-- python-parameterized
 repo_depends:
 - python-psutil
 - python-six
-repo_makedepends:
-- python-setuptools
-- python-shtab
 update_on:
 - alpm: trash-cli
   source: archpkg

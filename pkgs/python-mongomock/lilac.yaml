@@ -7,14 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-mongomock'')
 
   '
-repo_checkdepends:
-- python-nose
 repo_depends:
-- python-sentinels
-- python-six
 - python-packaging
-repo_makedepends:
-- python-pbr
+- python-six
+- python-sentinels
 update_on:
 - alpm: python-mongomock
   source: archpkg

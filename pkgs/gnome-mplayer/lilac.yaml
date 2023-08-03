@@ -1,14 +1,8 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - dbus-glib
-- libgda
 - libgpod
+- libgda
 - libnotify
 - gmtk
-repo_makedepends:
-- caja
-- nautilus
-- nemo
-- python
 update_on: []

@@ -1,16 +1,8 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- glibc
 - openssl
 - glibc
-- openssl
 - util-linux: util-linux-libs
-repo_makedepends:
-- git
-- gnu-efi
-- help2man
-- util-linux
 update_on:
 - alpm: util-linux-libs
   provides: libuuid.so

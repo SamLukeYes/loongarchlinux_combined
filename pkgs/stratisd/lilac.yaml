@@ -9,19 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''stratisd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pyudev
 repo_depends:
 - dbus
-- cryptsetup
 - util-linux: util-linux-libs
 - clevis
+- cryptsetup
 - systemd
-repo_makedepends:
-- asciidoc
-- rust
-- clang
-- dracut
 update_on:
 - alpm: stratisd
   source: archpkg

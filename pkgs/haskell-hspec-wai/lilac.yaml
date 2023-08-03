@@ -9,20 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-wai'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-quickcheck
 - haskell-base-compat
-- haskell-case-insensitive
-- haskell-hspec
-- haskell-hspec-core
-- haskell-hspec-expectations
-- haskell-http-types
 - haskell-wai
+- ghc: ghc-libs
+- haskell-hspec-core
+- haskell-http-types
+- haskell-case-insensitive
+- haskell-quickcheck
 - haskell-wai-extra
-repo_makedepends:
-- ghc
+- haskell-hspec
+- haskell-hspec-expectations
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

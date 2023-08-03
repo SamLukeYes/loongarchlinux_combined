@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''thrift'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
 - openssl
-repo_makedepends:
-- qt5-base
-- boost
-- libevent
-- emacs: emacs-nox
+- gcc: gcc-libs
 update_on:
 - alpm: thrift
   source: archpkg

@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libforensic1394'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- python
-repo_makedepends:
-- cmake
 - glibc
 - python
 update_on:

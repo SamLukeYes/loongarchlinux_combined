@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sowing'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
+- perl
 - gcc: gcc-libs
 - glibc
-- perl
-repo_makedepends: []
+- bash
 update_on:
 - alias: perl
 - alpm: sowing

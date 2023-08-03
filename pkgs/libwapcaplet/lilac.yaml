@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libwapcaplet'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- netsurf-buildsystem
 update_on:
 - alpm: libwapcaplet
   source: archpkg

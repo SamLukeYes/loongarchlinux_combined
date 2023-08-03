@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hslua-module-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-hslua-packaging
 - ghc: ghc-libs
 - haskell-hslua
 - haskell-hslua-marshalling
-- haskell-hslua-packaging
-repo_makedepends:
-- ghc
-- uusi
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-lua
 update_on:
 - alpm: haskell-hslua
   source: alpm

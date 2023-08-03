@@ -7,17 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''certbot-dns-hetzner'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- certbot
 - python-requests
-- python-requests-mock
-- python-tldextract
-- dns-lexicon
+- certbot
 - python-parsedatetime
-repo_makedepends:
-- python-setuptools
+- python-requests-mock
+- dns-lexicon
+- python-tldextract
 update_on:
 - alpm: certbot-dns-hetzner
   source: archpkg

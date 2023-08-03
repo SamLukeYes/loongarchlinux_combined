@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''asunder'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gdk-pixbuf2
 - glib2
-- glibc
-- gtk2
-- libcddb
+- gdk-pixbuf2
 - cdparanoia
-repo_makedepends:
-- intltool
-- gettext
+- libcddb
+- gtk2
+- glibc
 update_on:
 - alpm: asunder
   source: archpkg

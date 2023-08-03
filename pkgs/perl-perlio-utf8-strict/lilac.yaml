@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-perlio-utf8-stri
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - perl
-repo_makedepends:
-- perl-test-exception
 update_on:
 - alias: perl
 - alpm: perl-perlio-utf8-strict

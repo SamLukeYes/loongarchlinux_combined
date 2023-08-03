@@ -7,18 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-sus-fixtures-async-http'')
 
   '
-repo_checkdepends:
-- ruby-covered
-- ruby-bake-modernize
-- ruby-bake-test
-- ruby-bake-test-external
 repo_depends:
 - ruby-async-http
-- ruby-async-io
 - ruby-sus
+- ruby-async-io
 - ruby-sus-fixtures-async
-repo_makedepends:
-- git
 update_on:
 - alpm: ruby-sus-fixtures-async-http
   source: archpkg

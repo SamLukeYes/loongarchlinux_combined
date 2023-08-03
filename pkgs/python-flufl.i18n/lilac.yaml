@@ -7,15 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-flufl.i18n'')
 
   '
-repo_checkdepends:
-- python-sybil
-- python-pytest
 repo_depends:
 - python-atpublic
-repo_makedepends:
-- python-build
-- python-installer
-- python-pdm-pep517
 update_on:
 - alpm: python-flufl.i18n
   source: archpkg

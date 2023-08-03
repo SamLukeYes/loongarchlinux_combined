@@ -7,15 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-js2py'')
 
   '
-repo_checkdepends:
-- npm
-- python-numpy
 repo_depends:
-- python-six
 - python-pyjsparser
-repo_makedepends:
-- python-setuptools
-- python-tzlocal
+- python-six
 update_on:
 - alpm: python-js2py
   source: archpkg

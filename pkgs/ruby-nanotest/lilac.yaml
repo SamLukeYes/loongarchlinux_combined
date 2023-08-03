@@ -7,12 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-nanotest'')
 
   '
-repo_checkdepends:
-- ruby-rake
 repo_depends:
 - ruby
-repo_makedepends:
-- ruby-minitest
 update_on:
 - alias: ruby
 - alpm: ruby-nanotest

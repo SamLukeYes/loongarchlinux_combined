@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ini'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-attoparsec
 - haskell-unordered-containers
-repo_makedepends:
-- ghc
-- haskell-hspec
+- haskell-attoparsec
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

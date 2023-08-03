@@ -7,16 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mate-applet-dock'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- bamf
-- libnotify
-- mate-panel
-- python-cairo
-- pygobject: python-gobject
 - python-pillow
+- bamf
 - python-xlib
-repo_makedepends: []
+- mate-panel
+- libnotify
+- pygobject: python-gobject
+- python-cairo
 update_on:
 - alpm: mate-applet-dock
   source: archpkg

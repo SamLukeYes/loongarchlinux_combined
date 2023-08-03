@@ -1,11 +1,6 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- dtkcore
-- udisks2-qt5
 - dkms
-repo_makedepends:
 - dtkcore
 - udisks2-qt5
-- pcre
 update_on: []

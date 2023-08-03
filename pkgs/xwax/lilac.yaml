@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xwax'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
+- alsa-lib
 - sdl_ttf
 - ttf-dejavu
 - glibc
-- sdl_ttf
-- ttf-dejavu
-- alsa-lib
-repo_makedepends:
-- alsa-lib
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

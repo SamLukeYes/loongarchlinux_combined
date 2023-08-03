@@ -7,13 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-mohawk'')
 
   '
-repo_checkdepends:
-- python-mock
-- python-nose
 repo_depends:
 - python-six
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-mohawk
   source: archpkg

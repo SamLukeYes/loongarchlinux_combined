@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-xeyes'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libx11
-- libxt
-- libxext
-- libxmu
 - libxrender
 - libxi
-repo_makedepends:
-- xorg-util-macros
-- libxfixes
+- libxt
+- libx11
+- libxext
+- libxmu
 update_on:
 - alpm: xorg-xeyes
   source: archpkg

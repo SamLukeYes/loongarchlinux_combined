@@ -9,20 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kooha'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- appstream-glib
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- pipewire: gst-plugin-pipewire
-- gstreamer: gstreamer-vaapi
-- gstreamer: gst-plugins-ugly
+- pulseaudio: libpulse
+- xdg-desktop-portal
 - gtk4
 - libadwaita
+- pipewire: gst-plugin-pipewire
 - x264
-- xdg-desktop-portal
-- pulseaudio: libpulse
-repo_makedepends:
-- meson
+- gstreamer: gstreamer-vaapi
+- gstreamer: gst-plugins-ugly
 update_on:
 - alpm: kooha
   source: archpkg

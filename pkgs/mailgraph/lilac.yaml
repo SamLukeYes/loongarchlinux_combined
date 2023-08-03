@@ -7,11 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mailgraph'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- rrdtool
 - perl-file-tail
-repo_makedepends: []
+- rrdtool
 update_on:
 - alpm: mailgraph
   source: archpkg

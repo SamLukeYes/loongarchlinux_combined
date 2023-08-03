@@ -9,34 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''subversion'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- ruby-test-unit
 repo_depends:
-- apr
-- apr-util
-- bash
-- dbus
-- expat
 - file
+- bash
 - gcc: gcc-libs
-- glibc
 - libsasl
 - libutf8proc
 - lz4
 - serf
-- sqlite
-- systemd
+- dbus
 - zlib
-# repo_makedepends:
-# - apache
-# - python
-# - python-py3c
-# - perl
-# - swig
-# - libgnome-keyring
-# - kwallet
-# - kdelibs4support
-# - ruby
+- expat
+- apr-util
+- sqlite
+- apr
+- glibc
+- systemd
 update_on:
 - alpm: subversion
   source: archpkg

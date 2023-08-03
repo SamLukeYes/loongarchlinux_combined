@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''akregator'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kontactinterface
-- messagelib
 - knotifyconfig
 - kuserfeedback
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
+- kontactinterface
+- messagelib
 update_on:
 - alpm: akregator
   source: archpkg

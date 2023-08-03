@@ -9,38 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mkvtoolnix'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
 - gcc: gcc-libs
-- glibc
-- pugixml
-- qt6-base
-- boost: boost-libs
-- gcc: gcc-libs
-- glibc
-- pugixml
-- qt6-base
-- libdvdread
-- zlib
 - cmark
+- libdvdread
+- qt6-base
+- zlib
 - hicolor-icon-theme
+- pugixml
 - qt6-multimedia
 - qt6-svg
-repo_makedepends:
-- boost
-- cmark
-- docbook-xsl
-- flac
-- git
-- libdvdread
-- libvorbis
-- po4a
-- qt6-multimedia
-- qt6-svg
-- qt6-tools
-- ruby-rake
-- zlib
+- glibc
+- boost: boost-libs
 update_on:
 - alpm: libebml
   provides: libebml.so

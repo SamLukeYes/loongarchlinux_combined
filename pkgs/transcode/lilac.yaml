@@ -9,24 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''transcode'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gawk
-- imagemagick
-- lzo
-- libdvdread
-- mjpegtools
-- libmpeg2
-- libxaw
-- a52dec
-- alsa-lib
 - libtheora
-- lame
+- alsa-lib
+- gawk
+- mjpegtools
+- a52dec
+- libmpeg2
 - libvorbis
-repo_makedepends:
-- nasm
-- x264
-- xvidcore
+- libxaw
+- imagemagick
+- libdvdread
+- lame
+- lzo
 update_on:
 - alpm: transcode
   source: archpkg

@@ -7,17 +7,15 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''checksec'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- file
 - bash
+- openssl
+- grep
+- procps-ng
+- findutils
 - binutils
 - coreutils
-- findutils
-- procps-ng
-- openssl
-- file
-- grep
-repo_makedepends: []
 update_on:
 - alpm: checksec
   source: archpkg

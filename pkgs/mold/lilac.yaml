@@ -9,20 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mold'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- clang
-- libdwarf
 repo_depends:
-- glibc
 - gcc: gcc-libs
-- mimalloc
-- openssl
-- zlib
 - zstd
-repo_makedepends:
-- git
-- python
-- cmake
+- zlib
+- openssl
+- glibc
+- mimalloc
 update_on:
 - alpm: mold
   source: archpkg

@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ocaml-ppx_derivers'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ocaml
-repo_makedepends:
-- dune
 update_on:
 - alpm: ocaml
   source: alpm

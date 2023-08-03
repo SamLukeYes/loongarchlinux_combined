@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libxisf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- zlib
-- lz4
 - pugixml
-repo_makedepends:
-- cmake
+- lz4
+- zlib
 update_on:
 - alpm: libxisf
   source: archpkg

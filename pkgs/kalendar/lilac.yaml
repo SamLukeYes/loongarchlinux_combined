@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kalendar'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kdepim-runtime
-- mailcommon
-- eventviews
-- qqc2-desktop-style
 - kirigami-addons
-repo_makedepends:
-- extra-cmake-modules
+- mailcommon
+- qqc2-desktop-style
+- kdepim-runtime
+- eventviews
 update_on:
 - alpm: kalendar
   source: archpkg

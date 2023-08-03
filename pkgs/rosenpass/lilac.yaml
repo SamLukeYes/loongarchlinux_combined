@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rosenpass'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libsodium
-- gawk
 - wireguard-tools
 - findutils
-repo_makedepends:
-- git
-- cmake
-- rust-bindgen
+- gawk
+- libsodium
 update_on:
 - alpm: rosenpass
   source: archpkg

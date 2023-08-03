@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''memtest86+'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- git
-- dosfstools
-- mtools
 update_on:
 - alpm: memtest86+
   source: archpkg

@@ -7,45 +7,38 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''lua-http'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- lua-cqueues
-- lua-luaossl
-- lua-basexx
-- lua-binaryheap
-- lpeg: lua-lpeg
-- lua-lpeg-patterns
-- lua-fifo
-- lua-cqueues: lua53-cqueues
-- lua-luaossl: lua53-luaossl
-- lua-basexx: lua53-basexx
-- lua-binaryheap: lua53-binaryheap
-- lpeg: lua53-lpeg
-- lua-lpeg-patterns: lua53-lpeg-patterns
-- lua-fifo: lua53-fifo
-- lua-compat53: lua52-compat53
-- lua-cqueues: lua52-cqueues
-- lua-luaossl: lua52-luaossl
-- lua-basexx: lua52-basexx
-- lua-binaryheap: lua52-binaryheap
-- lpeg: lua52-lpeg
-- lua-lpeg-patterns: lua52-lpeg-patterns
-- lua-fifo: lua52-fifo
 - lua-compat53: lua51-compat53
 - lua-bitop: lua51-bitop
+- lua-binaryheap: lua53-binaryheap
 - lua-cqueues: lua51-cqueues
-- lua-luaossl: lua51-luaossl
-- lua-basexx: lua51-basexx
 - lua-binaryheap: lua51-binaryheap
-- lpeg: lua51-lpeg
-- lua-lpeg-patterns: lua51-lpeg-patterns
 - lua-fifo: lua51-fifo
-repo_makedepends:
-- luarocks
-- lua51
-- lua52
-- lua53
-- lua
+- lua-cqueues: lua53-cqueues
+- lua-luaossl
+- lua-basexx: lua51-basexx
+- lua-cqueues
+- lua-basexx: lua53-basexx
+- lua-lpeg-patterns: lua53-lpeg-patterns
+- lua-lpeg-patterns: lua51-lpeg-patterns
+- lpeg: lua53-lpeg
+- lua-fifo: lua53-fifo
+- lua-lpeg-patterns: lua52-lpeg-patterns
+- lua-compat53: lua52-compat53
+- lpeg: lua52-lpeg
+- lpeg: lua51-lpeg
+- lua-luaossl: lua51-luaossl
+- lua-basexx
+- lua-fifo: lua52-fifo
+- lua-cqueues: lua52-cqueues
+- lua-lpeg-patterns
+- lua-binaryheap: lua52-binaryheap
+- lpeg: lua-lpeg
+- lua-fifo
+- lua-basexx: lua52-basexx
+- lua-luaossl: lua52-luaossl
+- lua-luaossl: lua53-luaossl
+- lua-binaryheap
 update_on:
 - alpm: lua-http
   source: archpkg

@@ -7,15 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''shattered-pixel-dungeon'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
-- xorg-xrandr
 - hicolor-icon-theme
-repo_makedepends:
-- git
-- java11-openjdk: jdk11-openjdk
-- gradle
+- xorg-xrandr
+- bash
 update_on:
 - alpm: shattered-pixel-dungeon
   source: archpkg

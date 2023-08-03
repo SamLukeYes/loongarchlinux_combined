@@ -7,13 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-specio'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-role-tiny
 - perl-test-fatal
 - perl-mro-compat
+- perl-role-tiny
 - perl-devel-stacktrace
-repo_makedepends: []
 update_on:
 - alpm: perl-specio
   source: archpkg

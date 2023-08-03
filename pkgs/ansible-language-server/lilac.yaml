@@ -7,26 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ansible-language-server'')
 
   '
-repo_checkdepends:
-- acme-tiny
-- ansible-lint
-- python-argcomplete
-- python-boto3
-- python-dnspython
-- python-keyring
-- python-ldap
-- python-openstacksdk
-- python-ovirt-engine-sdk
-- python-proxmoxer
-- python-pynetbox
-- python-pyopenssl
-- python-github3py
-- yamllint
 repo_depends:
 - ansible
 - nodejs
-repo_makedepends:
-- npm
 update_on:
 - alpm: ansible-language-server
   source: archpkg

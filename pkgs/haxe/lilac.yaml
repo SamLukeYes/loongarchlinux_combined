@@ -9,19 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haxe'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - neko
 - mbedtls2
-repo_makedepends:
-- camlp5
-- git
-- neko
-- ocaml
-- opam
-- zlib
-- perl-string-shellquote
-- perl-ipc-system-simple
 update_on:
 - alpm: haxe
   source: archpkg

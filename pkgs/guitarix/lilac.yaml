@@ -9,54 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''guitarix'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- atkmm
-- bluez: bluez-libs
-- cairo
-- cairomm
-- gcc: gcc-libs
-- glibc
 - glibmm
-- gtkmm3
-- libsigc++
-- libx11
 - pangomm
-- ttf-roboto
-- atkmm
-- bluez: bluez-libs
-- cairo
-- cairomm
-- gcc: gcc-libs
 - glibc
-- glibmm
-- gtkmm3
+- gcc: gcc-libs
+- cairomm
+- cairo
+- bluez: bluez-libs
+- atkmm
 - libsigc++
-- libx11
-- pangomm
 - ttf-roboto
-repo_makedepends:
-- avahi
-- boost
-- curl
-- gdk-pixbuf2
-- eigen
-- faust
-- fftw
-- glib2
-- gperf
-- gtk3
-- intltool
-- ladspa
-- liblo
-- liblrdf
-- lilv
-- lv2
-- pango
-- sassc
-- waf
-- zita-convolver
-- zita-resampler
+- gtkmm3
+- libx11
 update_on:
 - alpm: avahi
   provides: libavahi-common.so

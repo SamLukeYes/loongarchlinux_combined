@@ -9,21 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cinnamon-screensaver'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - accountsservice
-- cinnamon-desktop
 - libgnomekbd
-- python-cairo
-- pygobject: python-gobject
-- python-setproctitle
-- python-xapp
-- xapp
 - xdotool
-repo_makedepends:
-- gobject-introspection
-- meson
-- samurai
+- python-xapp
+- cinnamon-desktop
+- python-setproctitle
+- xapp
+- pygobject: python-gobject
+- python-cairo
 update_on:
 - alpm: cinnamon-screensaver
   source: archpkg

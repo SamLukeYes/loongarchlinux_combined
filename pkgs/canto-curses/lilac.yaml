@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''canto-curses'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - canto-daemon
 - glibc
 - python
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: ncurses
   provides: libncursesw.so

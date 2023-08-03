@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''csfml'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - sfml
-repo_makedepends:
-- cmake
-- doxygen
-- ninja
 update_on:
 - alpm: csfml
   source: archpkg

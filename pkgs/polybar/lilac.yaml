@@ -9,28 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''polybar'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libuv
-- cairo
-- xcb-util-image
-- xcb-util-wm
-- xcb-util-xrm
-- xcb-util-cursor
-- alsa-lib
 - pulseaudio: libpulse
-- libmpdclient
+- alsa-lib
 - libnl
+- cairo
 - jsoncpp
+- xcb-util-cursor
 - curl
-repo_makedepends:
-- cmake
-- python
-- python-sphinx
-- python-packaging
-- i3-wm
-- ninja
-- git
+- xcb-util-wm
+- xcb-util-image
+- libuv
+- xcb-util-xrm
+- libmpdclient
 update_on:
 - alias: jsoncpp
 - alpm: polybar

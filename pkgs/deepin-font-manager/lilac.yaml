@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-font-manager''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - deepin-qt5integration
-repo_makedepends:
-- cmake
-- deepin-file-manager
-- gtest
-- ninja
-- qt5-tools
 update_on:
 - alpm: deepin-font-manager
   source: archpkg

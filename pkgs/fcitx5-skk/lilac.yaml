@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcitx5-skk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fcitx5-qt
 - libskk
+- fcitx5-qt
 - skk-jisyo
-repo_makedepends:
-- extra-cmake-modules
-- ninja
 update_on:
 - alpm: fcitx5-skk
   source: archpkg

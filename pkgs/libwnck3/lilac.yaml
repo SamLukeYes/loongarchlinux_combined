@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libwnck3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
 - startup-notification
+- gtk3
 - libxres
-repo_makedepends:
-- gobject-introspection
-- gtk-doc
-- git
-- meson
 update_on:
 - alpm: libwnck3
   source: archpkg

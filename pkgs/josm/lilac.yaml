@@ -7,13 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''josm'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - desktop-file-utils
-- hicolor-icon-theme
 - libxtst
-repo_makedepends:
-- subversion
+- hicolor-icon-theme
 update_on:
 - alpm: josm
   source: archpkg

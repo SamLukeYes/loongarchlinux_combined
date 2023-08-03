@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ghostwriter'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- hunspell
-- qt5-webengine
 - kxmlgui
+- hunspell
 - sonnet
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- qt5-tools
+- qt5-webengine
 update_on:
 - alpm: ghostwriter
   source: archpkg

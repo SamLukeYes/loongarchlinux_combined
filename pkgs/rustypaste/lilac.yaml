@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rustypaste'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
 - openssl
-repo_makedepends: []
+- gcc: gcc-libs
 update_on:
 - alpm: rustypaste
   source: archpkg

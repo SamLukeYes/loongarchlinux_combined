@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qterminal'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- hicolor-icon-theme
-- qtermwidget
 - qt5-x11extras
-repo_makedepends:
-- cmake
-- lxqt-build-tools
+- qtermwidget
+- hicolor-icon-theme
 update_on:
 - alpm: qterminal
   source: archpkg

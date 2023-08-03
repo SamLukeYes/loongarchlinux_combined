@@ -7,27 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-cherrypy'')
 
   '
-repo_checkdepends:
-- python-objgraph
-- python-path
-- python-pytest
-- python-pytest-forked
-- python-pytest-services
-- python-pytest-sugar
-- python-requests-toolbelt
 repo_depends:
-- python
 - python-cheroot
 - python-portend
-- python-jaraco.collections
 - python-more-itertools
 - python-zc.lockfile
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-setuptools-scm
-- python-wheel
+- python
+- python-jaraco.collections
 update_on:
 - alias: python
 - alpm: python-cherrypy

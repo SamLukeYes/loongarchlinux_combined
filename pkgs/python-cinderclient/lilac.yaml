@@ -7,20 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-cinderclient'')
 
   '
-repo_checkdepends:
-- python-oslotest
-- python-requests-mock
-- python-ddt
 repo_depends:
+- python-requests
+- python-keystoneclient
 - python-six
 - python-pbr
-- python-babel
 - python-prettytable
-- python-keystoneclient
-- python-requests
+- python-babel
 - python-oslo-utils
-repo_makedepends:
-- git
 update_on:
 - alpm: python-cinderclient
   source: archpkg

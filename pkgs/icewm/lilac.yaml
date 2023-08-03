@@ -9,19 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''icewm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libxpm
 - alsa-lib
-- imlib2
-- librsvg
-- libsndfile
 - libxcomposite
 - libxdamage
-- libxinerama
-- libxpm
 - libxrandr
-repo_makedepends:
-- asciidoctor
+- libsndfile
+- imlib2
+- librsvg
+- libxinerama
 update_on:
 - alpm: icewm
   source: archpkg

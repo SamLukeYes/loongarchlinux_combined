@@ -9,19 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''alsa-plugins'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - alsa-lib
-- glibc
 - pulseaudio
-repo_makedepends:
-- alsa-lib
-- dbus
-- ffmpeg
-- libavtp
-- pulseaudio: libpulse
-- libsamplerate
-- speexdsp
+- glibc
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

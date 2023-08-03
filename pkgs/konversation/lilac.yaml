@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''konversation'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- knotifyconfig
-- kparts
 - kidletime
-- knewstuff
-- qca: qca-qt5
-- hicolor-icon-theme
+- knotifyconfig
 - perl
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
+- kparts
+- qca: qca-qt5
+- knewstuff
+- hicolor-icon-theme
 update_on:
 - alias: perl
 - alpm: konversation

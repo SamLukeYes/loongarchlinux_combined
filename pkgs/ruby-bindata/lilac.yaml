@@ -7,14 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-bindata'')
 
   '
-repo_checkdepends:
-- ruby-minitest
 repo_depends:
 - ruby
-repo_makedepends:
-- ruby-rake
-- ruby-rdoc
-- ruby-bundler
 update_on:
 - alias: ruby
 - alpm: ruby-bindata

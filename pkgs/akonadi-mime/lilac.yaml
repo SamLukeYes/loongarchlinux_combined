@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''akonadi-mime'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- akonadi: libakonadi
 - kmime
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- qt5-tools
-- doxygen
+- akonadi: libakonadi
 update_on:
 - alpm: akonadi-mime
   source: archpkg

@@ -9,15 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rdesktop'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libao
 - libsamplerate
-- xorg-xrandr
 - pcsclite
-- libgssglue
+- xorg-xrandr
 - libxcursor
-repo_makedepends: []
+- libgssglue
 update_on:
 - alpm: rdesktop
   source: archpkg

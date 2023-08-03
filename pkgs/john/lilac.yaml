@@ -9,16 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''john'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
-- gmp
-- libpcap
-- openmpi
 - gcc: gcc-libs
 - libxcrypt
-repo_makedepends:
-- opencl-headers
+- libpcap
+- openmpi
+- openssl
+- gmp
 update_on:
 - alpm: libxcrypt
   provides: libcrypt.so

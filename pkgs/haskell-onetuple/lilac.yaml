@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-onetuple'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-base-orphans
-repo_makedepends:
-- ghc
-- haskell-hashable
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-base-orphans
   source: alpm

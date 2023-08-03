@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''docopt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- cmake
-- git
-- ninja
-- setconf
 update_on:
 - alpm: docopt
   source: archpkg

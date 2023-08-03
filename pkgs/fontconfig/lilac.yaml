@@ -9,19 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fontconfig'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- expat
 - freetype2
 - expat
-- freetype2
-repo_makedepends:
-- docbook-sgml
-- docbook-utils
-- git
-- gperf
-- meson
-- perl-sgmls
 update_on:
 - alpm: expat
   provides: libexpat.so

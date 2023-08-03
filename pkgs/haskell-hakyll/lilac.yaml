@@ -9,43 +9,34 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hakyll'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
+- haskell-warp
+- haskell-unordered-containers
 - haskell-aeson
-- haskell-blaze-html
-- haskell-blaze-markup
-- haskell-data-default
-- haskell-file-embed
-- haskell-fsnotify
-- haskell-hashable
-- haskell-http-conduit
 - haskell-http-types
-- haskell-lifted-async
-- haskell-lrucache
+- haskell-resourcet
+- haskell-file-embed
 - haskell-network-uri
 - haskell-optparse-applicative
-- haskell-pandoc
-- haskell-random
-- haskell-regex-tdfa
-- haskell-resourcet
-- haskell-scientific
 - haskell-tagsoup
-- haskell-time-locale-compat
-- haskell-unordered-containers
-- haskell-vector
-- haskell-wai
+- haskell-hashable
+- haskell-blaze-markup
+- haskell-pandoc
 - haskell-wai-app-static
-- haskell-warp
+- haskell-fsnotify
+- haskell-regex-tdfa
+- haskell-wai
+- ghc: ghc-libs
+- haskell-scientific
+- haskell-lifted-async
+- haskell-lrucache
+- haskell-blaze-html
+- haskell-random
+- haskell-data-default
+- haskell-vector
 - haskell-yaml
-repo_makedepends:
-- ghc
-- uusi
-- haskell-quickcheck
-- haskell-tasty
-- haskell-tasty-golden
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
+- haskell-http-conduit
+- haskell-time-locale-compat
 update_on:
 - alpm: haskell-aeson
   source: alpm

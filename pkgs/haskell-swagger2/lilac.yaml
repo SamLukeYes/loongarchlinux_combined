@@ -9,36 +9,25 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-swagger2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
+- haskell-unordered-containers
+- haskell-optics-core
+- haskell-lens
 - haskell-aeson
-- haskell-aeson-pretty
+- ghc: ghc-libs
 - haskell-base-compat-batteries
-- haskell-cookie
 - haskell-hashable
 - haskell-generics-sop
 - haskell-http-media
-- haskell-insert-ordered-containers
-- haskell-lens
 - haskell-network
-- haskell-optics-core
-- haskell-optics-th
 - haskell-quickcheck
-- haskell-scientific
-- haskell-unordered-containers
-- haskell-vector
 - haskell-uuid-types
-repo_makedepends:
-- ghc
-- haskell-hspec
-- haskell-hunit
-- haskell-quickcheck-instances
-- haskell-hspec-discover
-- haskell-doctest
-- haskell-cabal-doctest
-- haskell-glob
-- haskell-utf8-string
+- haskell-scientific
+- haskell-cookie
+- haskell-optics-th
+- haskell-vector
+- haskell-aeson-pretty
+- haskell-insert-ordered-containers
 update_on:
 - alpm: haskell-aeson
   source: alpm

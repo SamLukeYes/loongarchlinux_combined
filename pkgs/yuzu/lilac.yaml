@@ -9,29 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yuzu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- enet
-- gcc: gcc-libs
-- glibc
-- lz4
-- qt5-base
 - qt5-multimedia
-- qt5-webengine
+- glibc
+- gcc: gcc-libs
+- qt5-base
+- lz4
+- enet
 - sdl2
-repo_makedepends:
-- boost
-- clang
-- cmake
-- git
-- glslang
-- llvm
-- ninja
-- nlohmann-json
-- qt5-tools
-- shaderc
-- spirv-headers
-- vulkan-headers
+- qt5-webengine
 update_on:
 - alpm: ffmpeg
   provides: libavcodec.so

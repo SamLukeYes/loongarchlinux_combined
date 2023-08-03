@@ -9,39 +9,36 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sile'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- poppler
 repo_depends:
-- glibc
-- fontconfig
-- freetype2
-- harfbuzz
+- luasec: lua-sec
 - gentium-plus-font
-- git
-- icu
-- libpng
-- lua
-- lua-bit32
-- lua-cassowary
-- lua-cldr
 - lua-cliargs
-- lua-cosmo
+- lua-luaepnf
 - luaexpat: lua-expat
+- glibc
+- harfbuzz
 - lua-filesystem
+- lua-loadkit
+- lua-vstruct
+- luasocket: lua-socket
+- libpng
+- icu
+- lua-cassowary
+- fontconfig
 - lua-fluent
 - lua-linenoise
-- lua-loadkit
-- lpeg: lua-lpeg
-- lua-luaepnf
-- lua-luarepl
-- lua-luautf8
-- penlight: lua-penlight
-- luasec: lua-sec
-- luasocket: lua-socket
-- lua-vstruct
+- git
+- lua-cldr
 - lua-zlib
+- freetype2
+- lua
+- lua-luarepl
+- lpeg: lua-lpeg
 - zlib
-repo_makedepends: []
+- penlight: lua-penlight
+- lua-bit32
+- lua-cosmo
+- lua-luautf8
 update_on:
 - alias: icu
 - alias: lua

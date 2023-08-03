@@ -9,20 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''endless-sky'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libmad
 - gcc: gcc-libs
-- openal
-- libpng
-- glew
-- hicolor-icon-theme
 - libjpeg-turbo
 - sdl2
-- libmad
+- openal
 - util-linux: util-linux-libs
-repo_makedepends:
-- git
-- scons
+- glew
+- hicolor-icon-theme
+- libpng
 update_on:
 - alpm: endless-sky
   source: archpkg

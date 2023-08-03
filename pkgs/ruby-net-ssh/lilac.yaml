@@ -7,18 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-net-ssh'')
 
   '
-repo_checkdepends:
-- ruby-minitest
-- ruby-mocha
 repo_depends:
+- ruby-x25519
 - ruby
 - ruby-ed25519
-- ruby-x25519
 - ruby-bcrypt_pbkdf
-repo_makedepends:
-- ruby-rake
-- ruby-bundler
-- ruby-rdoc
 update_on:
 - alias: ruby
 - alpm: ruby-net-ssh

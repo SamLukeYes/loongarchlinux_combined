@@ -7,15 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''cameractrls'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
 - libjpeg-turbo
-- python
-- pygobject: python-gobject
 - sdl2
+- gtk3
+- pygobject: python-gobject
+- python
 - systemd
-repo_makedepends: []
 update_on:
 - alias: python
 - alpm: cameractrls

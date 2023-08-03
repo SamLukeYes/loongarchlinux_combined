@@ -9,26 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libplacebo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- vulkan-icd-loader
-- glslang
-- lcms2
 - shaderc
-- glibc
 - gcc: gcc-libs
 - libunwind
-repo_makedepends:
-- meson
-- ninja
-- vulkan-headers
-- glad
-- nuklear
-- python
-- python-setuptools
-- python-mako
-- python-markupsafe
-- python-jinja
+- glslang
+- vulkan-icd-loader
+- lcms2
+- glibc
 update_on:
 - alpm: emby-theater
   provides: libvulkan.so

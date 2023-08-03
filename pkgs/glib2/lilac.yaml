@@ -9,29 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glib2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- desktop-file-utils
 repo_depends:
-- libffi
-- sysprof: libsysprof-capture
 - pcre2
-- util-linux: util-linux-libs
-- zlib
-- libffi
 - sysprof: libsysprof-capture
-- pcre2
-- util-linux: util-linux-libs
 - zlib
-repo_makedepends:
-- dbus
-- gettext
-- git
-- gtk-doc
-- elfutils: libelf
-- meson
-- python
-- shared-mime-info
-- util-linux
+- util-linux: util-linux-libs
+- libffi
 update_on:
 - alpm: libffi
   provides: libffi.so

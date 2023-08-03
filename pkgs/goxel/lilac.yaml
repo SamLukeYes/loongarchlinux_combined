@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''goxel'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
-repo_makedepends:
-- git
-- scons
 update_on:
 - alpm: goxel
   source: archpkg

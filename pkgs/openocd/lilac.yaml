@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openocd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libftdi-compat
 - libusb-compat
+- libftdi-compat
 - hidapi
-repo_makedepends: []
 update_on:
 - alpm: systemd-libs
   provides: libudev.so

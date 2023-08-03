@@ -9,20 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lldpd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
+- pciutils
+- net-snmp
+- jansson
 - libevent
 - libbsd
 - zlib
-- openssl
-- pciutils
 - perl
 - libxml2
-- net-snmp
-- jansson
-repo_makedepends:
-- systemd
+- openssl
+- glibc
 update_on:
 - alias: perl
 - alpm: lldpd

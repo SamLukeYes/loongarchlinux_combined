@@ -9,35 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vim'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gpm
 - acl
-- glibc
-- libgcrypt
 - zlib
 - perl
-- gpm
+- libgcrypt
+- libcanberra
 - libxt
 - gtk3
 - glibc
-- libgcrypt
-- zlib
-- libcanberra
-- perl
-repo_makedepends:
-- glibc
-- libgcrypt
 - gpm
-- python
-- ruby
-- libxt
-- gtk3
-- lua
-- gawk
-- tcl
-- zlib
-- libcanberra
 update_on:
 - alias: perl
 - alias: perl

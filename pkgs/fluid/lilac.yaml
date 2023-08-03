@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fluid'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt5-graphicaleffects
-- qt5-quickcontrols2
 - qt5-svg
+- qt5-quickcontrols2
 - qt5-wayland
-repo_makedepends:
-- liri-cmake-shared
-- nodejs-material-design-icons
-- qt5-tools
-- clang
 update_on:
 - alpm: fluid
   source: archpkg

@@ -7,15 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''websocketpp'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- cmake
-- boost
-- boost: boost-libs
-- boost
-- zlib
-- openssl
 update_on:
 - alpm: websocketpp
   source: archpkg

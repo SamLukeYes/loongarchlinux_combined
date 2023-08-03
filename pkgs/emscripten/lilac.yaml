@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''emscripten'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- nodejs
-- python
-- which
 - acorn
-repo_makedepends:
-- cmake
-- libxml2
-- git
-- ninja
-- npm
+- which
+- python
+- nodejs
 update_on:
 - alias: python
 - alpm: emscripten

@@ -9,16 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zziplib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- unzip
 repo_depends:
 - zlib
-repo_makedepends:
-- python
-- xmlto
-- zip
-- cmake
-- ninja
 update_on:
 - alpm: zziplib
   source: archpkg

@@ -1,8 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - libixion
-repo_makedepends:
-- boost
-- mdds
 update_on: []

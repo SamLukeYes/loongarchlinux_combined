@@ -7,12 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-hyperlink'')
 
   '
-repo_checkdepends:
-- python-pytest-runner
 repo_depends:
 - python-idna
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-hyperlink
   source: archpkg

@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ocaml-base'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ocaml
 - ocaml-sexplib0
-repo_makedepends:
-- git
-- dune
-- ocaml: ocaml-compiler-libs
+- ocaml
 update_on:
 - alpm: ocaml
   source: alpm

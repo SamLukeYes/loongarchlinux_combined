@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''n2n'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libcap
 - openssl
-- miniupnpc
+- libcap
 - zstd
-repo_makedepends:
-- libpcap
+- miniupnpc
 update_on:
 - alpm: n2n
   source: archpkg

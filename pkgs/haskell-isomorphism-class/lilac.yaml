@@ -9,22 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-isomorphism-c
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-unordered-containers
 - ghc: ghc-libs
 - haskell-hashable
-- haskell-primitive
-- haskell-unordered-containers
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
-- haskell-quickcheck
-- haskell-quickcheck-instances
-- haskell-rebase
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
+- haskell-primitive
 update_on:
 - alpm: haskell-hashable
   source: alpm

@@ -9,75 +9,51 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libguestfs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- linux
-- ruby-test-unit
 repo_depends:
-- augeas
-- fuse2
-- hivex
-- jansson
-- sleuthkit
-- libconfig
-- libvirt
-- perl-libintl-perl
-- supermin
-- btrfs-progs
-- debootstrap
-- dhcpcd
-- dosfstools
-- exfatprogs
-- f2fs-tools
-- gptfdisk
-- grub
-- iproute2
-- iputils
-- jfsutils
-- libldm
-- lrzip
-- lsof
 - lsscsi
-- lvm2
+- syslinux
+- xfsprogs
 - lzop
-- mdadm
-- mtools
-- multipath-tools
-- nilfs-utils
-- ntfs-3g
+- exfatprogs
+- reiserfsprogs
+- systemd: systemd-sysvcompat
 - openssh
 - pciutils
-- procps-ng
+- gptfdisk
+- jansson
+- supermin
 - psmisc
-- reiserfsprogs
+- iproute2
+- libvirt
+- multipath-tools
 - rsync
-- squashfs-tools
-- strace
-- syslinux
-- systemd: systemd-sysvcompat
-- vim
-- xfsprogs
+- libconfig
+- mdadm
 - yara
-repo_makedepends:
-- bash-completion
-- cdrtools
-- cpio
-- erlang-nox
-- ghc
-- go
-- gobject-introspection
-- gperf
-- ocaml
-- ocaml: ocaml-compiler-libs
-- ocaml-findlib
-- perl-module-build
-- python
-- lua
-- php
-- ruby
-- ruby-rake
-- ruby-rdoc
-- rust
-- vala
+- squashfs-tools
+- debootstrap
+- lvm2
+- nilfs-utils
+- btrfs-progs
+- lrzip
+- jfsutils
+- lsof
+- fuse2
+- procps-ng
+- dhcpcd
+- dosfstools
+- libldm
+- perl-libintl-perl
+- strace
+- iputils
+- augeas
+- sleuthkit
+- hivex
+- mtools
+- grub
+- vim
+- ntfs-3g
+- f2fs-tools
 update_on:
 - alpm: libguestfs
   source: archpkg

@@ -9,20 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''audiotube'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kirigami-addons
 - qt5-imageformats
-- qt5-multimedia
-- qt5-svg
-- ki18n
 - kcrash
-- kwindowsystem
 - yt-dlp
 - python-ytmusicapi
-repo_makedepends:
-- extra-cmake-modules
-- pybind11
+- qt5-multimedia
+- ki18n
+- qt5-svg
+- kwindowsystem
 update_on:
 - alpm: audiotube
   source: archpkg

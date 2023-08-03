@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kpeoplevcard'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kpeople
 - kcontacts
-repo_makedepends:
-- extra-cmake-modules
 update_on:
 - alpm: kpeoplevcard
   source: archpkg

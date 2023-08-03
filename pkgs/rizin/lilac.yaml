@@ -9,23 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rizin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- capstone
-- openssl
-- libzip
-- zlib
-- lz4
-- xz
-- xxhash
 - file
-- tree-sitter
+- libzip
 - libmspack
-repo_makedepends:
-- meson
-- ninja
-- python
-- python-yaml
+- xz
+- lz4
+- zlib
+- capstone
+- xxhash
+- openssl
+- tree-sitter
 update_on:
 - alpm: capstone
   provides: libcapstone.so

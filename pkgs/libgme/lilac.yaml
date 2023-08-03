@@ -1,10 +1,6 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - glibc
 - zlib
-repo_makedepends:
-- cmake
-- ninja
 update_on: []

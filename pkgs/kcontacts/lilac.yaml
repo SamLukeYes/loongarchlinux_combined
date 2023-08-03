@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kcontacts'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kcoreaddons
 - kconfig
+- kcoreaddons
 - ki18n
 - kcodecs
-repo_makedepends:
-- extra-cmake-modules
-- doxygen
-- qt5-tools
-- qt5-doc
 update_on:
 - alpm: kconfig
   source: alpm

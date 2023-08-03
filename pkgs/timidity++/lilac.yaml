@@ -9,24 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''timidity++'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- glibc
-- alsa-lib
-- flac
-- libao
 - libogg
-- libvorbis
-repo_makedepends:
 - alsa-lib
-- flac
 - libao
-- libogg
 - libvorbis
-- libxaw
-- tk
-- xaw3d
+- flac
+- glibc
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

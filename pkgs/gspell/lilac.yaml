@@ -9,22 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gspell'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - enchant
-- glib2
 - gtk3
-- icu
-- enchant
 - glib2
-- gtk3
 - icu
-repo_makedepends:
-- autoconf-archive
-- git
-- gobject-introspection
-- gtk-doc
-- vala
 update_on:
 - alias: icu
 - alias: icu

@@ -7,14 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''fail2ban'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-pyinotify
-- whois
 - sqlite
 - python-systemd
-repo_makedepends:
-- python-setuptools
+- python-pyinotify
+- whois
 update_on:
 - alpm: fail2ban
   source: archpkg

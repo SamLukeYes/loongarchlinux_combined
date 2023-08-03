@@ -9,23 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cantata'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libmtp
+- libcdio-paranoia
 - libmusicbrainz5
+- media-player-info
 - mpg123
+- libcddb
 - qt5-multimedia
+- udisks2
+- libmtp
 - qt5-svg
 - taglib
-- media-player-info
-- libcdio-paranoia
-- udisks2
-- libcddb
-repo_makedepends:
-- cmake
-- qt5-tools
-- ffmpeg
-- libebur128
 update_on:
 - alpm: cantata
   source: archpkg

@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-xinput'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libx11
 - xorg-xrandr
 - libxinerama
-repo_makedepends:
-- xorg-util-macros
-- xorgproto
-- libxfixes
+- libx11
 update_on:
 - alpm: xorg-xinput
   source: archpkg

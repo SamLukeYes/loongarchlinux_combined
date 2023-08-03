@@ -7,25 +7,20 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''magic-wormhole'')
 
   '
-repo_checkdepends:
-- python-mock
-- python-magic-wormhole-transit-relay
-- python-magic-wormhole-mailbox-server
 repo_depends:
-- python-click
 - python-cffi
-- python-autobahn
-- python-tqdm
-- python-hkdf
-- python-pynacl
-- python-spake2
-- python-humanize
-- python-idna
-- python-service-identity
 - python-txtorcon
-- python-pyopenssl
+- python-tqdm
+- python-autobahn
+- python-humanize
+- python-spake2
 - python-setuptools
-repo_makedepends: []
+- python-click
+- python-pyopenssl
+- python-hkdf
+- python-service-identity
+- python-idna
+- python-pynacl
 update_on:
 - alpm: magic-wormhole
   source: archpkg

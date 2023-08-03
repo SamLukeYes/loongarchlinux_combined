@@ -1,33 +1,11 @@
 destsubdir: extra
-repo_checkdepends:
-- gsfonts
-- ttf-dejavu
 repo_depends:
-- lcms2
 - fontconfig
-- libxext
-- liblqr
 - libraqm
-- libpng
+- liblqr
+- lcms2
 - libxml2
 - fftw
-repo_makedepends:
-- ghostscript
-- openexr
-- libwmf
-- librsvg
-- openjpeg2
-- libraw
-- opencl-headers
-- libwebp
-- libzip
-- libjxl
-- chrpath
-- ocl-icd
-- glu
-- ghostscript: ghostpcl
-- ghostscript: ghostxps
-- libheif
-- jbigkit
-- djvulibre
+- libxext
+- libpng
 update_on: []

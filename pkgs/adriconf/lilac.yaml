@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''adriconf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtkmm3
-- pciutils
 - pugixml
-repo_makedepends:
-- cmake
+- pciutils
 update_on:
 - alpm: adriconf
   source: archpkg

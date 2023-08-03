@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-genvalidity-p
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
 - haskell-genvalidity
-- haskell-hspec
-- haskell-pretty-show
 - haskell-quickcheck
+- haskell-pretty-show
+- haskell-hspec
 - haskell-validity
-repo_makedepends:
-- ghc
-- uusi
 update_on:
 - alpm: haskell-genvalidity
   source: alpm

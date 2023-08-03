@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ksudoku'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libkdegames
 - glu
+- libkdegames
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
 update_on:
 - alpm: ksudoku
   source: archpkg

@@ -1,11 +1,7 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- libmpc
 - zlib
 - libisl
+- libmpc
 - zstd
-repo_makedepends:
-- gmp
-- mpfr
 update_on: []

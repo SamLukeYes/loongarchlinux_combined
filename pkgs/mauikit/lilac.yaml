@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mauikit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- mauiman
-- ki18n
 - knotifications
 - kirigami2
+- mauiman
+- ki18n
 - qt5-svg
-repo_makedepends:
-- extra-cmake-modules
 update_on:
 - alpm: mauikit
   source: archpkg

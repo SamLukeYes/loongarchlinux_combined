@@ -9,22 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''font-manager'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
-- json-glib
-- libsoup
-- libxml2
 - sqlite
 - webkit2gtk
-repo_makedepends:
-- gobject-introspection
-- intltool
-- meson
-- nautilus
-- ninja
-- vala
-- yelp-tools
+- libxml2
+- json-glib
+- gtk3
+- libsoup
 update_on:
 - alpm: font-manager
   source: archpkg

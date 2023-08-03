@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-test-framewor
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-hunit
-- haskell-extensible-exceptions
+- ghc: ghc-libs
 - haskell-test-framework
-repo_makedepends:
-- ghc
+- haskell-extensible-exceptions
 update_on:
 - alpm: haskell-hunit
   source: alpm

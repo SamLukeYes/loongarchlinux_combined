@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zanshin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kdepim-runtime
 - kontactinterface
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- boost
 update_on:
 - alpm: zanshin
   source: archpkg

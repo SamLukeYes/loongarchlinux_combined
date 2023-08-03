@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-onboarding''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glib2
-repo_makedepends:
-- git
-- intltool
-- meson
-- vala
 update_on:
 - alpm: libadwaita
   provides: libadwaita-1.so

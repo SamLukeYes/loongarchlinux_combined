@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lv2file'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- argtable
-- glibc
+- libsndfile
 - argtable
 - glibc
 - lilv
-- libsndfile
-repo_makedepends:
-- libsndfile
-- lilv
-- lv2
 update_on:
 - alpm: lilv
   provides: liblilv-0.so

@@ -9,19 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zbar'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- v4l-utils
 - dbus
 - imagemagick
 - libxv
-- v4l-utils
-repo_makedepends:
-- gtk3
-- qt5-x11extras
-- python
-- xmlto
-- docbook-xsl
-- gobject-introspection
 update_on:
 - alpm: zbar
   source: archpkg

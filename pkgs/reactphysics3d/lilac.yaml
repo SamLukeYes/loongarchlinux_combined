@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''reactphysics3d'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-repo_makedepends:
-- cmake
-- ninja
 update_on:
 - alpm: reactphysics3d
   source: archpkg

@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bup'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - python-fuse
 - par2cmdline
-- python-pyxattr
 - git
-repo_makedepends: []
+- python-pyxattr
 update_on:
 - alpm: bup
   source: archpkg

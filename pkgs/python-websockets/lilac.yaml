@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-websockets'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - python
-repo_makedepends:
-- python-setuptools
-- python-sphinx
-- python-sphinx-copybutton
-- python-sphinx-furo
-- python-sphinx-inline-tabs
-- python-sphinxcontrib-spelling
-- python-sphinxcontrib-trio
-- python-sphinxext-opengraph
 update_on:
 - alias: python
 - alpm: python-websockets

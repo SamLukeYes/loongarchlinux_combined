@@ -7,21 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''check-jsonschema'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-xdist
-- python-responses
 repo_depends:
-- python
-- python-click
-- python-jsonschema
 - python-requests
+- python-click
 - python-ruamel-yaml
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-jsonschema
+- python
 update_on:
 - alias: python
 - alpm: check-jsonschema

@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''systray-x'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt5-base
 - thunderbird
-- knotifications
-repo_makedepends:
-- git
-- zip
-- libx11
 - knotifications
 update_on:
 - alpm: qt5-base

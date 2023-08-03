@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''maui-station'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- hicolor-icon-theme
 - mauikit-filebrowsing
 - mauikit-terminal
-- hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
 update_on:
 - alpm: maui-station
   source: archpkg

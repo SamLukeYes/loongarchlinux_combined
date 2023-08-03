@@ -9,19 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-scikit-learn''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-joblib
-- python-numpy
 - python-scipy
+- python-numpy
+- python-joblib
 - python-threadpoolctl
-repo_makedepends:
-- cython
-- openmp
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
 update_on:
 - alpm: python-scikit-learn
   source: archpkg

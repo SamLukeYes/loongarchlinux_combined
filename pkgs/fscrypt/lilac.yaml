@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fscrypt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - pam
-repo_makedepends:
-- go
 update_on:
 - alpm: fscrypt
   source: archpkg

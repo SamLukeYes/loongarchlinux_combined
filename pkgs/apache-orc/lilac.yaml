@@ -1,13 +1,9 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- lz4
-- protobuf
 - snappy
+- lz4
 - zlib
 - zstd
-repo_makedepends:
-- cmake
-- gtest
+- protobuf
 update_on:
 - alias: protobuf

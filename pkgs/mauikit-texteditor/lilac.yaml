@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mauikit-texteditor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- mauikit
 - syntax-highlighting
-repo_makedepends:
-- extra-cmake-modules
-- kio
+- mauikit
 update_on:
 - alpm: mauikit-texteditor
   source: archpkg

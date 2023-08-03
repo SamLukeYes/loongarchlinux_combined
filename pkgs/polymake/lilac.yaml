@@ -9,32 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''polymake'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- normaliz
-- singular
-- ppl
-- lrs
 - perl-xml-writer
-- perl-xml-libxml
-- perl-xml-libxslt
+- singular
 - perl-term-readline-gnu
+- normaliz
 - perl-term-readkey
-- perl-json
 - sympol
+- perl-xml-libxslt
+- ppl
+- perl-json
 - scip
+- perl-xml-libxml
 - perl
-repo_makedepends:
-- ninja
-- cddlib
-- ant
-- boost
-- bliss
-- libnsl
-- java-openjdk: jdk-openjdk
-- permlib
-- nauty
-- soplex
+- lrs
 update_on:
 - alpm: polymake
   source: archpkg

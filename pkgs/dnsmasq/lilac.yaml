@@ -9,15 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dnsmasq'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- gmp
+- libnetfilter_conntrack
 - libidn2
 - nftables
-- libnetfilter_conntrack
 - nettle
-repo_makedepends: []
+- glibc
+- gmp
 update_on:
 - alpm: libidn2
   provides: libidn2.so

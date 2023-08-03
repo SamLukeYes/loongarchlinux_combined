@@ -9,21 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bitwarden'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libnotify
 - libsecret
-- libxtst
 - libxss
+- libnotify
 - libnss_nis
-repo_makedepends:
-- git
-- npm
-- python
-- node-gyp
-- nodejs-lts-gallium
-- jq
-- rust
+- libxtst
 update_on:
 - alpm: bitwarden
   source: archpkg

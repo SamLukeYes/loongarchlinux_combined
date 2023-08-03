@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libstrophe'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- check
 repo_depends:
 - glibc
-- openssl
 - expat
-- glibc
 - openssl
-- expat
-repo_makedepends:
-- doxygen
 update_on:
 - alpm: expat
   provides: libexpat.so

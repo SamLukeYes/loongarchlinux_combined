@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''minuet'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fluidsynth
 - qt5-quickcontrols2
-- qt5-svg
-- ki18n
 - kcrash
+- fluidsynth
+- ki18n
+- qt5-svg
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
 update_on:
 - alpm: minuet
   source: archpkg

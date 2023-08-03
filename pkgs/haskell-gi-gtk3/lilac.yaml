@@ -9,24 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi-gtk3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-gi-atk
-- haskell-gi-cairo
 - haskell-gi-gdk3
-- haskell-gi-gdkpixbuf
-- haskell-gi-gio
+- haskell-gi-atk
+- ghc: ghc-libs
 - haskell-gi-glib
-- haskell-gi-gobject
-- haskell-gi-pango
-- haskell-gi
-- haskell-gi-base
+- haskell-gi-cairo
+- haskell-gi-gio
 - haskell-gi-overloading
+- haskell-gi-base
+- haskell-gi
 - gtk3
-repo_makedepends:
-- ghc
-- gobject-introspection
+- haskell-gi-gobject
+- haskell-gi-gdkpixbuf
+- haskell-gi-pango
 update_on:
 - alpm: haskell-gi-atk
   source: alpm

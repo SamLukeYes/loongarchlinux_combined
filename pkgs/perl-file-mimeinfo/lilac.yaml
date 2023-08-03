@@ -7,15 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-file-mimeinfo'')
 
   '
-repo_checkdepends:
-- perl-test-pod
-- perl-test-pod-coverage
 repo_depends:
+- shared-mime-info
+- perl-file-desktopentry
 - perl-encode-locale
 - perl-file-basedir
-- perl-file-desktopentry
-- shared-mime-info
-repo_makedepends: []
 update_on:
 - alpm: perl-file-mimeinfo
   source: archpkg

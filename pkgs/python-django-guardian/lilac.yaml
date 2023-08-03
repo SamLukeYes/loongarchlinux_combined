@@ -7,14 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-django-guardian'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-django
 repo_depends:
-- django: python-django
 - python-django-environ
-repo_makedepends:
-- python-setuptools
+- django: python-django
 update_on:
 - alpm: python-django-guardian
   source: archpkg

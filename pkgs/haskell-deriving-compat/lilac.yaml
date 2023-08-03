@@ -9,19 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-deriving-comp
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-th-abstraction
 - haskell-transformers-compat
-repo_makedepends:
-- ghc
-- haskell-base-compat
-- haskell-base-orphans
-- haskell-hspec
-- haskell-quickcheck
-- haskell-tagged
-- haskell-void
+- haskell-th-abstraction
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-th-abstraction
   source: alpm

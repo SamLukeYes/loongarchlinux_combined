@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libsemigroups'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - fmt
-repo_makedepends:
-- eigen
 update_on:
 - alpm: libsemigroups
   source: archpkg

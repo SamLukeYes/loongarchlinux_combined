@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ntl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gf2x
 - gmp
-repo_makedepends: []
+- gf2x
 update_on:
 - alpm: ntl
   source: archpkg

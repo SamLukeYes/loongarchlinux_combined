@@ -9,45 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''alice-vision'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- openimageio
-- flann
-- geogram
-- coin-or-clp
-- ceres-solver
-- cctag
-- alembic
+- cuda
 - opengv
-- opencv
+- coin-or-clp
+- cctag
+- openimageio
 - popsift
 - uncertainty-framework
-- boost: boost-libs
-- openimageio
-- flann
 - geogram
-- coin-or-clp
 - ceres-solver
-- cctag
-- alembic
-- opengv
 - opencv
-- popsift
-- uncertainty-framework
-- cuda
-repo_makedepends:
-- boost
-- ninja
-- eigen
-- freetype2
-- coin-or-coinutils
-- coin-or-lemon
-- git
-- cmake
-- doxygen
-- python-sphinx
-- cuda
+- flann
+- alembic
+- boost: boost-libs
 update_on:
 - alpm: opencv
   source: alpm

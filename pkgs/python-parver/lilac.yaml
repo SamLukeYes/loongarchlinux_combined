@@ -7,18 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-parver'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-hypothesis
-- python-pretend
 repo_depends:
-- python-arpeggio
 - python-attrs
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-arpeggio
 update_on:
 - alpm: python-parver
   source: archpkg

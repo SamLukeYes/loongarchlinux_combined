@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyzstd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python: python-tests
 repo_depends:
-- python
 - zstd
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools-scm
+- python
 update_on:
 - alias: python
 - alpm: python-pyzstd

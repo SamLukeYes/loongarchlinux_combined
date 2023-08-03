@@ -9,19 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fs-uae'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
-- libmpeg2
-- libpng
-- libx11
-- openal
 - sdl2
 - zlib
+- openal
 - hicolor-icon-theme
-repo_makedepends:
-- libxi
-- zip
+- libx11
+- libmpeg2
+- glib2
+- libpng
 update_on:
 - alpm: fs-uae
   source: archpkg

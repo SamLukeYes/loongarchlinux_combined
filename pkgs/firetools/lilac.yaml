@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''firetools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- firejail
 - qt5-base
+- firejail
 - qt5-svg
-repo_makedepends: []
 update_on:
 - alpm: qt5-base
   source: alpm

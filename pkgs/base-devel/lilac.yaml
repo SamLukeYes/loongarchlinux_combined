@@ -7,35 +7,33 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''base-devel'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- archlinux-keyring
-- autoconf
-- automake
-- binutils
-- bison
-- debugedit
-- fakeroot
-- file
-- findutils
-- flex
-- gawk
-- gcc
-- gettext
-- grep
-- groff
-- gzip
-- libtool
-- m4
-- make
 - pacman
-- patch
+- gcc
+- gzip
+- debugedit
+- grep
+- sudo
+- which
+- bison
+- file
+- groff
+- gawk
 - pkgconf
 - sed
-- sudo
+- autoconf
+- libtool
 - texinfo
-- which
-repo_makedepends: []
+- archlinux-keyring
+- automake
+- make
+- fakeroot
+- gettext
+- findutils
+- patch
+- m4
+- flex
+- binutils
 update_on:
 - alpm: base-devel
   source: archpkg

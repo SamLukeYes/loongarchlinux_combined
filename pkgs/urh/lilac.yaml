@@ -9,26 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''urh'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest-runner
-- python-pytest-xdist
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- python
-- pyqt5: python-pyqt5
-- python-numpy
 - python-psutil
+- pyqt5: python-pyqt5
 - cython
-repo_makedepends:
-- gcc
-- python-setuptools
-- airspy
-- hackrf
-- libuhd
-- limesuite
-- rtl-sdr
-- bladerf
-- libiio
+- python-numpy
+- python
 update_on:
 - alias: python
 - alpm: urh

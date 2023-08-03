@@ -7,14 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-wcmatch'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - python-bracex
-repo_makedepends:
-- python-build
-- python-hatchling
-- python-installer
-- python-wheel
 update_on:
 - alpm: python-wcmatch
   source: archpkg

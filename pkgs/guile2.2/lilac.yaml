@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''guile2.2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gc
-- gmp
-- libffi
 - libunistring
+- gc
 - libxcrypt
-repo_makedepends:
-- ncurses
-- texinfo
+- libffi
+- gmp
 update_on:
 - alpm: guile2.2
   source: archpkg

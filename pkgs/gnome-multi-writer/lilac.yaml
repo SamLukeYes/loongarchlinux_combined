@@ -9,19 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-multi-writer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
-- libcanberra
-- libgusb
 - udisks2
-repo_makedepends:
-- appstream-glib
-- docbook-sgml
-- docbook-utils
-- intltool
-- meson
-- perl-sgmls
+- gtk3
+- libgusb
+- libcanberra
 update_on:
 - alpm: gnome-multi-writer
   source: archpkg

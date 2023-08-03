@@ -7,16 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-file-sharedir-projectdistdir'')
 
   '
-repo_checkdepends:
-- perl-capture-tiny
 repo_depends:
+- perl-path-tiny
+- perl-path-isdev
+- perl-sub-exporter
 - perl-file-sharedir
 - perl-path-finddev
-- perl-path-isdev
-- perl-path-tiny
-- perl-sub-exporter
-repo_makedepends:
-- perl-class-tiny
 update_on:
 - alpm: perl-file-sharedir-projectdistdir
   source: archpkg

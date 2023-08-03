@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''khangman'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libkeduvocdocument
 - knewstuff
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
+- libkeduvocdocument
 update_on:
 - alpm: khangman
   source: archpkg

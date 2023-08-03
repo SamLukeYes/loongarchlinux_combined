@@ -7,16 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''vim-editorconfig'')
 
   '
-repo_checkdepends:
-- editorconfig-core-c
-- ruby-rake
-- ruby-rspec
-- ruby-vimrunner
-- xorg-server: xorg-server-xvfb
 repo_depends:
 - vim
-repo_makedepends:
-- git
 update_on:
 - alpm: vim-editorconfig
   source: archpkg

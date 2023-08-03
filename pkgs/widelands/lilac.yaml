@@ -9,22 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''widelands'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - sdl2_mixer
 - sdl2_image
-- sdl2_ttf
-- lua
-- glew
-- python
 - dbus
 - zlib: minizip
-repo_makedepends:
-- cmake
-- mesa
-- ninja
-- git
-- asio
+- glew
+- sdl2_ttf
+- python
+- lua
 update_on:
 - alias: lua
 - alias: python

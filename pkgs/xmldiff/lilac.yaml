@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xmldiff'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
-- libxslt
 - python-setuptools
 - python-lxml
 - python-six
-repo_makedepends: []
+- libxslt
+- python
 update_on:
 - alias: python
 - alpm: xmldiff

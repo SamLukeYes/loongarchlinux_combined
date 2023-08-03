@@ -9,47 +9,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''evolution'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cmark
-- enchant
 - evolution-data-server
-- gnome-autoar
-- gnome-desktop
 - gspell
-- libcanberra
+- enchant
 - libgweather-4
 - libnotify
-- libpst
-- libytnef
-- webkit2gtk-4.1
-- cmark
-- enchant
-- evolution-data-server
-- gnome-autoar
-- gnome-desktop
-- gspell
 - libcanberra
-- libgweather-4
-- libnotify
+- gnome-desktop
 - libpst
-- libytnef
+- spamassassin
+- gnome-autoar
+- cmark
 - webkit2gtk-4.1
+- libytnef
 - bogofilter
-- spamassassin
-repo_makedepends:
-- bogofilter
-- cmake
-- docbook-xsl
-- git
-- gtk-doc
-- highlight
-- intltool
-- itstool
-- networkmanager
-- ninja
-- spamassassin
-- yelp-tools
 update_on:
 - alpm: cmark
   source: alpm

@@ -1,16 +1,5 @@
 destsubdir: extra
-repo_checkdepends:
-- python-pytest
-- xorg-server: xorg-server-xvfb
-- libxrandr
-- lsof
-- python-flaky
-- python-wheel
 repo_depends:
 - python
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
 update_on:
 - alias: python

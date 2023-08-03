@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''konqueror'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - dolphin
-- keditbookmarks
 - qt5-webengine
 - kinit
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- kdesu
+- keditbookmarks
 update_on:
 - alpm: konqueror
   source: archpkg

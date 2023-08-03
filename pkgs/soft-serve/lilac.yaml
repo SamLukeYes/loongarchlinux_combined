@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''soft-serve'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
 - git
-repo_makedepends:
-- go
 update_on:
 - alpm: soft-serve
   source: archpkg

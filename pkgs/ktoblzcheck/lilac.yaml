@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ktoblzcheck'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - python
-repo_makedepends:
-- cmake
 update_on:
 - alias: python
 - alpm: ktoblzcheck

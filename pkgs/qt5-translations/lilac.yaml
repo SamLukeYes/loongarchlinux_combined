@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''qt5-translations'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- git
-- qt5-tools
 update_on:
 - alpm: qt5-translations
   source: archpkg

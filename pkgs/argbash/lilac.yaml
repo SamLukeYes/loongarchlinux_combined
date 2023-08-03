@@ -7,12 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''argbash'')
 
   '
-repo_checkdepends:
-- shellcheck
 repo_depends:
 - autoconf
-repo_makedepends:
-- make
 update_on:
 - alpm: argbash
   source: archpkg

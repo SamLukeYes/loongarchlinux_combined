@@ -9,30 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tensorboard'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
-- python-werkzeug
-- python-numpy
 - python-bleach
-- python-wheel
 - python-markdown
+- python-werkzeug
+- grpc: python-grpcio
 - python-html5lib
 - protobuf: python-protobuf
-- grpc: python-grpcio
 - python-google-auth-oauthlib
 - python-tensorboard_plugin_wit
-repo_makedepends:
-- bazel
-- python-setuptools
-- tree
-- rust
-- python-build
-- python-installer
+- python-numpy
 - python-wheel
-- git
+- python
 update_on:
 - alias: python
 - alpm: tensorboard
   source: archpkg
-managed: false

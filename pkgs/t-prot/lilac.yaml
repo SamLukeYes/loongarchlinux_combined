@@ -7,13 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''t-prot'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- gettext
-- perl
 - perl-locale-gettext
-repo_makedepends:
-- git
+- perl
+- gettext
 update_on:
 - alias: perl
 - alpm: t-prot

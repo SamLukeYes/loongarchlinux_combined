@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kactivities'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kcoreaddons
 - kconfig
+- kcoreaddons
 - kwindowsystem
-repo_makedepends:
-- extra-cmake-modules
-- boost
-- doxygen
-- qt5-tools
-- qt5-doc
-- qt5-declarative
 update_on:
 - alpm: kconfig
   source: alpm

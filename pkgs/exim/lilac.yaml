@@ -9,20 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''exim'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gdbm
-- openldap: libldap
-- libidn
-- libidn2
-- libnsl
-- libspf2
-- libxcrypt
-- openssl
 - pam
+- libidn2
 - pcre2
+- libidn
+- libxcrypt
+- gdbm
+- libspf2
 - sqlite
-repo_makedepends: []
+- openssl
+- libnsl
+- openldap: libldap
 update_on:
 - alpm: exim
   source: archpkg

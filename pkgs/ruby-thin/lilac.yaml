@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-thin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- ruby-rake-compiler
-- ruby-rspec
 repo_depends:
-- glibc
 - ruby
-- ruby-rack
 - ruby-eventmachine
 - ruby-daemons
-repo_makedepends:
-- ruby-rake
+- ruby-rack
+- glibc
 update_on:
 - alias: ruby
 - alpm: ruby-thin

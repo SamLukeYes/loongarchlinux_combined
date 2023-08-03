@@ -9,32 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''java-openjfx'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libx11
 - libxtst
-repo_makedepends:
-- alsa-lib
-- ant
-- cairo
-- cmake
-- ffmpeg4.4
-- freetype2
-- gdk-pixbuf2
-- glib2
-- gperf
-- gradle
-- gtk2
-- gtk3
 - libx11
-- libxtst
-- pango
-- python
-- qt5-base
-- ruby
-- unzip
-- webkit2gtk
-- zip
 update_on:
 - alpm: java-openjfx
   source: archpkg

@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libkdepim'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kcompletion
-- kconfigwidgets
-- kitemviews
 - kjobwidgets
-repo_makedepends:
-- extra-cmake-modules
-- qt5-tools
-- doxygen
+- kcompletion
+- kitemviews
+- kconfigwidgets
 update_on:
 - alpm: libkdepim
   source: archpkg

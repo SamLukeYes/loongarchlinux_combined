@@ -9,22 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-insert-ordere
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-hashable
-- haskell-indexed-traversable
-- haskell-lens
-- haskell-optics-core
-- haskell-optics-extra
-- haskell-semigroupoids
 - haskell-unordered-containers
-repo_makedepends:
-- ghc
-- haskell-quickcheck
-- haskell-tasty
-- haskell-tasty-quickcheck
+- haskell-optics-core
+- haskell-lens
+- haskell-aeson
+- ghc: ghc-libs
+- haskell-hashable
+- haskell-semigroupoids
+- haskell-optics-extra
+- haskell-indexed-traversable
 update_on:
 - alpm: haskell-aeson
   source: alpm

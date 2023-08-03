@@ -9,20 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hasql-transac
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- postgresql
-- pifpaf
 repo_depends:
-- ghc: ghc-libs
 - haskell-bytestring-tree-builder
-- haskell-contravariant
+- ghc: ghc-libs
 - haskell-contravariant-extras
 - haskell-hasql
-repo_makedepends:
-- ghc
-- uusi
-- haskell-async
-- haskell-rerebase
+- haskell-contravariant
 update_on:
 - alpm: haskell-bytestring-tree-builder
   source: alpm

@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kontrast'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kirigami2
-- ki18n
 - kcoreaddons
+- ki18n
 - qt5-svg
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
 update_on:
 - alpm: kontrast
   source: archpkg

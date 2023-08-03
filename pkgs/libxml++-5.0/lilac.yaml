@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libxml++-5.0'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - libxml2
-repo_makedepends:
-- git
-- meson
-- mm-common
 update_on:
 - alpm: libxml++-5.0
   source: archpkg

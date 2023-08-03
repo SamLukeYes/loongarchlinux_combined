@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''git-branchless'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- git
 repo_depends:
-- git
 - libgit2
-repo_makedepends: []
+- git
 update_on:
 - alpm: git-branchless
   source: archpkg

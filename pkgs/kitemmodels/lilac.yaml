@@ -9,16 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kitemmodels'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt5-base
-repo_makedepends:
-- extra-cmake-modules
-- clang
-- doxygen
-- qt5-tools
-- qt5-doc
-- qt5-declarative
 update_on:
 - alpm: qt5-base
   source: alpm

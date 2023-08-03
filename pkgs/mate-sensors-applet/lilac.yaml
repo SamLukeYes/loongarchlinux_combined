@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-sensors-applet''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- mate-panel
 - libatasmart
 - libnotify
-- nvidia-settings: libxnvctrl
 - lm_sensors
-- mate-panel
 - gettext
-repo_makedepends:
-- docbook-xsl
-- itstool
+- nvidia-settings: libxnvctrl
 update_on:
 - alpm: mate-sensors-applet
   source: archpkg

@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rocm-device-libs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- rocm-cmake
-- rocm-llvm
 update_on:
 - alpm: rocm-device-libs
   source: archpkg

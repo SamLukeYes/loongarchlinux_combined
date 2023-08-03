@@ -7,11 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-datetime-format-iso8601'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - perl-datetime-format-builder
 - perl-datetime
-repo_makedepends: []
 update_on:
 - alpm: perl-datetime-format-iso8601
   source: archpkg

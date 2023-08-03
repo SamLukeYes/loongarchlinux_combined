@@ -9,19 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tpm2-tools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cmocka
-- expect
-- iproute2
-- python-yaml
-- swtpm
-- tpm2-abrmd
 repo_depends:
-- curl
-- openssl
 - tpm2-tss
+- curl
 - util-linux: util-linux-libs
-repo_makedepends: []
+- openssl
 update_on:
 - alpm: tpm2-tss
   provides: libtss2-esys.so

@@ -9,21 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hw-prim'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-mmap
-- haskell-unliftio-core
 - haskell-vector
-repo_makedepends:
-- ghc
-- haskell-quickcheck
-- haskell-doctest
-- haskell-doctest-discover
-- haskell-hedgehog
-- haskell-hspec
-- haskell-hspec-discover
-- haskell-hw-hspec-hedgehog
+- haskell-unliftio-core
+- haskell-mmap
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-mmap
   source: alpm

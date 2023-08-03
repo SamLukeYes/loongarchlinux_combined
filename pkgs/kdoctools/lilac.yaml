@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdoctools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - karchive
 - docbook-xsl
-repo_makedepends:
-- extra-cmake-modules
-- perl-uri
-- ki18n
-- doxygen
-- qt5-tools
-- qt5-doc
 update_on:
 - alpm: kdoctools
   source: archpkg

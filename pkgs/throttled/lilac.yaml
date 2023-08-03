@@ -7,10 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''throttled'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - pygobject: python-gobject
-repo_makedepends: []
 update_on:
 - alpm: throttled
   source: archpkg

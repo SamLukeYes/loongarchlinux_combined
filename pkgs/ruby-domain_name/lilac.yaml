@@ -7,16 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-domain_name'')
 
   '
-repo_checkdepends:
-- ruby-rake
-- ruby-minitest
-- ruby-test-unit
 repo_depends:
 - ruby
 - ruby-unf
-repo_makedepends:
-- ruby-rdoc
-- ruby-bundler
 update_on:
 - alias: ruby
 - alpm: ruby-domain_name

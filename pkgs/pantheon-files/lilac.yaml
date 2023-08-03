@@ -9,28 +9,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-files'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
-- gdk-pixbuf2
-- glib2
-- gtk3
-- gvfs
-- libcanberra
-- libcloudproviders
-- libgee
 - libgit2-glib
-- libnotify
-- pango
-- plank
 - sqlite
+- gdk-pixbuf2
 - zeitgeist
-repo_makedepends:
-- flatpak-builder
-- git
-- gnome-common
-- meson
-- vala
+- libgee
+- pango
+- libnotify
+- libcanberra
+- plank
+- gtk3
+- cairo
+- glib2
+- libcloudproviders
+- gvfs
 update_on:
 - alpm: granite
   provides: libgranite.so

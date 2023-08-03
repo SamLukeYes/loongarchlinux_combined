@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''emacs-lua-mode'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- emacs
 update_on:
 - alpm: emacs-lua-mode
   source: archpkg

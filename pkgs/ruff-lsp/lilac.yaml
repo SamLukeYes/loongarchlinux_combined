@@ -7,16 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruff-lsp'')
 
   '
-repo_checkdepends:
-- python-lsp-jsonrpc
 repo_depends:
 - python-pygls
-- python-typing_extensions
 - ruff
-repo_makedepends:
-- python-build
-- python-hatchling
-- python-installer
+- python-typing_extensions
 update_on:
 - alpm: ruff-lsp
   source: archpkg

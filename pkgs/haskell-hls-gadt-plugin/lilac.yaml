@@ -9,24 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-gadt-plug
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- git
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-extra
-- haskell-ghc-exactprint
-- haskell-ghcide
-- haskell-hls-plugin-api
-- haskell-hls-refactor-plugin
-- haskell-lens
-- haskell-lsp
 - haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hls-test-utils
-- haskell-lsp-test
+- haskell-lens
+- haskell-aeson
+- ghc: ghc-libs
+- haskell-ghc-exactprint
+- haskell-hls-plugin-api
+- haskell-lsp
+- haskell-hls-refactor-plugin
+- haskell-ghcide
+- haskell-extra
 update_on:
 - alpm: haskell-aeson
   source: alpm

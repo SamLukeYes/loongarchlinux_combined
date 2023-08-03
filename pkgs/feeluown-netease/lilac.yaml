@@ -7,17 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''feeluown-netease'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- feeluown
 - python-beautifulsoup4
-- python-pycryptodome
-- python-marshmallow
-- python-requests
 - python-mutagen
-repo_makedepends:
-- python-setuptools
+- python-requests
+- python-pycryptodome
+- feeluown
+- python-marshmallow
 update_on:
 - alpm: feeluown-netease
   source: archpkg

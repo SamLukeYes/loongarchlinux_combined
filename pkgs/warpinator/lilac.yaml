@@ -7,25 +7,21 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''warpinator'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
-- networkmanager: libnm
-- python-cryptography
-- pygobject: python-gobject
-- grpc: python-grpcio
-- python-packaging
-- protobuf: python-protobuf
-- python-pynacl
-- python-setproctitle
-- python-setuptools
-- python-xapp
 - python-zeroconf
+- python-pynacl
+- python-setuptools
+- python-cryptography
+- grpc: python-grpcio
+- protobuf: python-protobuf
+- python-setproctitle
+- python-xapp
 - xapp
+- python-packaging
+- gtk3
+- pygobject: python-gobject
 - python-cairo
-repo_makedepends:
-- meson
-- polkit
+- networkmanager: libnm
 update_on:
 - alpm: warpinator
   source: archpkg

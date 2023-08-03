@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libvirt-python'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
 - libvirt
-repo_makedepends:
 - python
-- python-setuptools
-- libvirt
 update_on:
 - alias: python
 - alpm: libvirt-python

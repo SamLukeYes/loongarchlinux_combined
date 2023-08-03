@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vnstat'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
 - sqlite
-repo_makedepends:
-- gd
+- bash
 update_on:
 - alpm: vnstat
   source: archpkg

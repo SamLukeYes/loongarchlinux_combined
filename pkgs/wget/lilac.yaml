@@ -9,20 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wget'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- perl-http-daemon
-- perl-io-socket-ssl
-- python
 repo_depends:
-- glibc
-- zlib
-- gnutls
 - libidn2
-- util-linux: util-linux-libs
-- libpsl
 - pcre2
+- zlib
+- libpsl
+- util-linux: util-linux-libs
+- gnutls
+- glibc
 - nettle
-repo_makedepends: []
 update_on:
 - alpm: libidn2
   provides: libidn2.so

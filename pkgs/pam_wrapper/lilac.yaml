@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pam_wrapper'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pam
 - python
-repo_makedepends:
-- git
-- cmake
-- ninja
-- cmocka
-- doxygen
-- graphviz
+- pam
 update_on:
 - alias: python
 - alpm: pam_wrapper

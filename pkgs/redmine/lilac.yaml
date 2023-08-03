@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''redmine'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ruby2.7
 - imagemagick
-- libxml2
 - libxslt
-repo_makedepends:
-- mariadb: mariadb-libs
-- postgresql: postgresql-libs
-- sqlite
-- systemd
+- ruby2.7
+- libxml2
 update_on:
 - alpm: redmine
   source: archpkg

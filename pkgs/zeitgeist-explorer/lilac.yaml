@@ -7,13 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''zeitgeist-explorer'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- zeitgeist
 - gtk3
 - pygobject: python-gobject
-- zeitgeist
-repo_makedepends:
-- python-distutils-extra
 update_on:
 - alpm: zeitgeist-explorer
   source: archpkg

@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-coverage'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-flaky
-- python-hypothesis
-- python-pytest
-- python-pytest-xdist
-- python-tomli
-- python-unittest-mixins
-- python-virtualenv
 repo_depends:
 - python
-repo_makedepends:
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-coverage

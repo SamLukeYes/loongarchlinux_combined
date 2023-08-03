@@ -9,19 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''geany-plugins'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ctpl
-- gpgme
-- gtkspell3
-- libgit2
 - lua51
-- python
+- libgit2
+- gpgme
 - vte3
 - webkit2gtk
-repo_makedepends:
-- cppcheck
-- intltool
+- gtkspell3
+- python
 update_on:
 - alias: python
 - alpm: geany-plugins

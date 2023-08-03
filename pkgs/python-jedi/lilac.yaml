@@ -7,17 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-jedi'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-parso
 repo_depends:
-- python
 - python-parso
-repo_makedepends:
-- git
-- python-setuptools
-- python-sphinx
-- python-sphinx_rtd_theme
+- python
 update_on:
 - alias: python
 - alpm: python-jedi

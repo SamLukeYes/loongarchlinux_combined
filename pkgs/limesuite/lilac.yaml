@@ -9,20 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''limesuite'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- wxwidgets: wxwidgets-gtk3
 - freeglut
-- libusb
-- soapysdr
-- wget
 - gnuplot
-- glew
+- libusb
+- wxwidgets: wxwidgets-gtk3
+- soapysdr
 - fltk
-repo_makedepends:
-- cmake
-- doxygen
-- octave
+- wget
+- glew
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm

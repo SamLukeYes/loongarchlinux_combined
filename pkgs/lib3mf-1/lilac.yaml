@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lib3mf-1'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- gtest
 repo_depends:
-- util-linux: util-linux-libs
 - libzip
+- util-linux: util-linux-libs
 - zlib
-repo_makedepends:
-- cmake
 update_on:
 - alpm: lib3mf-1
   source: archpkg

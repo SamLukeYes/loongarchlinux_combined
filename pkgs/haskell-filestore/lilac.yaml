@@ -9,19 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-filestore'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- git
-- mercurial
 repo_depends:
 - ghc: ghc-libs
-- haskell-diff
-- haskell-old-locale
 - haskell-split
-- haskell-utf8-string
+- haskell-diff
 - haskell-xml
-repo_makedepends:
-- ghc
-- haskell-hunit
+- haskell-utf8-string
+- haskell-old-locale
 update_on:
 - alpm: haskell-diff
   source: alpm

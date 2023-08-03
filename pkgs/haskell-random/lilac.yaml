@@ -9,18 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-random'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- haskell-doctest
-- haskell-smallcheck
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-inspection-testing
-- haskell-tasty-smallcheck
 repo_depends:
-- ghc: ghc-libs
 - haskell-splitmix
-repo_makedepends:
-- ghc
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-splitmix
   source: alpm

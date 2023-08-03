@@ -9,19 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''shadow'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - acl
-- attr
-- audit
-- glibc
-- libxcrypt
 - pam
-repo_makedepends:
-- docbook-xsl
-- itstool
-- libcap
-- libxslt
+- audit
+- libxcrypt
+- attr
+- glibc
 update_on:
 - alpm: acl
   provides: libacl.so

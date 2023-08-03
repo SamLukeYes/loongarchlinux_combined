@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hsopenssl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-network
 - openssl
-repo_makedepends:
-- ghc
+- haskell-network
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-network
   source: alpm

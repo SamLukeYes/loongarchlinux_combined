@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mp3info'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ncurses
-repo_makedepends:
-- gtk2
 update_on:
 - alpm: mp3info
   source: archpkg

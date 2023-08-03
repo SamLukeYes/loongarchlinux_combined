@@ -9,26 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-servant-clien
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
 - haskell-base-compat
-- haskell-base64-bytestring
-- haskell-constraints
-- haskell-free
+- haskell-sop-core
+- haskell-aeson
+- ghc: ghc-libs
 - haskell-http-media
 - haskell-http-types
-- haskell-network-uri
-- haskell-safe
 - haskell-servant
-- haskell-sop-core
-repo_makedepends:
-- ghc
-- uusi
-- haskell-quickcheck
-- haskell-hspec
-- haskell-hspec-discover
+- haskell-constraints
+- haskell-safe
+- haskell-free
+- haskell-base64-bytestring
+- haskell-network-uri
 update_on:
 - alpm: haskell-aeson
   source: alpm

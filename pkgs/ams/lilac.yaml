@@ -9,36 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ams'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cmt
-- gcc: gcc-libs
-- glibc
-- qt5-base
-- mcp-plugins
-- rev-plugins
-- swh-plugins
-- vco-plugins
-- cmt
-- gcc: gcc-libs
-- glibc
-- qt5-base
-- mcp-plugins
-- rev-plugins
-- swh-plugins
-- vco-plugins
 - alsa-lib
-- fftw
+- gcc: gcc-libs
+- rev-plugins
+- qt5-base
+- swh-plugins
+- mcp-plugins
 - liblo
+- vco-plugins
 - zita-alsa-pcmi
-repo_makedepends:
-- alsa-lib
 - fftw
-- gendesk
-- ladspa
-- liblo
-- qt5-tools
-- zita-alsa-pcmi
+- cmt
+- glibc
 update_on:
 - alpm: qt5-base
   source: alpm

@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-reflink'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - python-cffi
-repo_makedepends:
-- git
-- python-pytest-runner
-- python-setuptools
-- python-wheel
 update_on:
 - alpm: python-reflink
   source: archpkg

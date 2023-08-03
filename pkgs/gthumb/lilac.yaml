@@ -9,30 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gthumb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- dconf
-- librsvg
-- clutter-gtk
-- gstreamer: gst-plugins-base-libs
 - gsettings-desktop-schemas
-- libwebp
+- dconf
 - libsecret
-- libsoup
-- webkit2gtk
-- json-glib
 - gstreamer: gst-plugin-gtk
 - libjxl
 - libheif
-repo_makedepends:
-- exiv2
-- brasero
-- libraw
-- liboauth
-- docbook-xsl
-- yelp-tools
-- meson
-- git
+- librsvg
+- clutter-gtk
+- webkit2gtk
+- gstreamer: gst-plugins-base-libs
+- json-glib
+- libwebp
+- libsoup
 update_on:
 - alpm: gthumb
   source: archpkg

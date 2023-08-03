@@ -9,19 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''retro-gtk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libepoxy
-- glib2
-- gtk3
 - pulseaudio: libpulse
+- libepoxy
 - libsamplerate
-repo_makedepends:
-- gobject-introspection
-- meson
-- vala
-- git
-- gtk-doc
+- gtk3
+- glib2
 update_on:
 - alpm: retro-gtk
   source: archpkg

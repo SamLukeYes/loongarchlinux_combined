@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zerotier-one'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
 - libnatpmp
+- gcc: gcc-libs
 - miniupnpc
-repo_makedepends:
-- rust
 update_on:
 - alpm: zerotier-one
   source: archpkg

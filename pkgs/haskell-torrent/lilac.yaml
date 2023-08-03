@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-torrent'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-syb
 - ghc: ghc-libs
 - haskell-bencode
-- haskell-syb
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-bencode
   source: alpm

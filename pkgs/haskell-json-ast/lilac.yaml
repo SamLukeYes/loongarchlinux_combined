@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-json-ast'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-vector
-- haskell-scientific
 - haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
+- ghc: ghc-libs
+- haskell-scientific
 update_on:
 - alpm: haskell-vector
   source: alpm

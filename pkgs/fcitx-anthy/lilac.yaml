@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcitx-anthy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fcitx
 - anthy
-repo_makedepends:
-- cmake
-- intltool
+- fcitx
 update_on:
 - alpm: fcitx-anthy
   source: archpkg

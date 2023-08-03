@@ -9,35 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pragha'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - cairo
 - gdk-pixbuf2
-- glib2
-- gstreamer
-- gstreamer: gst-plugins-base
-- gstreamer: gst-plugins-base-libs
-- gstreamer: gst-plugins-good
-- gtk3
-- hicolor-icon-theme
-- libgudev
-- libpeas
 - pango
+- libpeas
+- gstreamer
+- gstreamer: gst-plugins-good
+- hicolor-icon-theme
+- gstreamer: gst-plugins-base-libs
 - sqlite
+- gtk3
+- gstreamer: gst-plugins-base
+- glib2
 - taglib
 - totem-pl-parser
-repo_makedepends:
-- intltool
-- glyr
-- gobject-introspection
-- grilo
-- libcddb
-- libcdio-paranoia
-- libclastfm
-- libkeybinder3
-- libmtp
-- libnotify
-- libsoup
+- libgudev
 update_on:
 - alpm: pragha
   source: archpkg

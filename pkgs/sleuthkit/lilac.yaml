@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sleuthkit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl
-- libewf
 - sqlite
-repo_makedepends: []
+- libewf
+- perl
 update_on:
 - alias: perl
 - alpm: sleuthkit

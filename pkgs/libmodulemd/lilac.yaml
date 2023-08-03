@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libmodulemd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - file
+- rpm-tools
 - glib2
 - libyaml
-- rpm-tools
-repo_makedepends:
-- gobject-introspection
-- gtk-doc
-- help2man
-- meson
-- pygobject: python-gobject
 update_on:
 - alpm: libmodulemd
   source: archpkg

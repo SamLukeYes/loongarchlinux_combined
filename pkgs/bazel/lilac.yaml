@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bazel'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libarchive
-- zip
 - unzip
-repo_makedepends:
-- git
-- protobuf
-- python
-- gcc12
+- zip
 update_on:
 - alpm: bazel
   source: archpkg

@@ -9,47 +9,24 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sane'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
-- cairo
-- gcc: gcc-libs
-- glibc
-- libpng
-- libieee1284
-- net-snmp
-- v4l-utils
-- bash
-- cairo
-- gcc: gcc-libs
-- glibc
-- libpng
-- libieee1284
-- net-snmp
-- v4l-utils
-- avahi
-- curl
-- glib2
-- libgphoto2
-- libtiff
 - libusb
+- glib2
+- glibc
+- gcc: gcc-libs
+- curl
+- avahi
 - libxml2
-- poppler: poppler-glib
+- bash
+- cairo
+- libpng
 - systemd: systemd-libs
-repo_makedepends:
-- autoconf-archive
-- avahi
-- curl
-- glib2
-- libgphoto2
-- libjpeg-turbo
-- libtiff
-- libusb
-- libxml2
+- net-snmp
+- v4l-utils
+- libieee1284
 - poppler: poppler-glib
-- python
-- systemd
-- texlive-texmf: texlive-latexextra
+- libgphoto2
+- libtiff
 update_on:
 - alpm: avahi
   provides: libavahi-client.so

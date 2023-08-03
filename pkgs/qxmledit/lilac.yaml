@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qxmledit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- qt5-xmlpatterns
 - glu
-- hicolor-icon-theme
 - qt5-scxml
 - qt5-svg
-- qt5-xmlpatterns
-repo_makedepends:
-- qt5-tools
+- hicolor-icon-theme
 update_on:
 - alpm: qxmledit
   source: archpkg

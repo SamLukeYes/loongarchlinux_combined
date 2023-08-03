@@ -9,28 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''alsa-utils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- pciutils
-- psmisc
-- gcc: gcc-libs
-- glibc
-- pciutils
-- psmisc
 - alsa-lib
+- gcc: gcc-libs
+- pciutils
 - ncurses
 - libsamplerate
-repo_makedepends:
-- alsa-lib
-- docbook-xsl
-- fftw
-- libsamplerate
-- ncurses
-- python-docutils
-- systemd
-- xmlto
+- psmisc
+- glibc
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

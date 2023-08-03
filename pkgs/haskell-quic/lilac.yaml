@@ -9,33 +9,25 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-quic'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-base16-bytestring
-- haskell-crypto-token
 - haskell-cryptonite
-- haskell-data-default-class
-- haskell-fast-logger
-- haskell-iproute
 - haskell-memory
-- haskell-network
 - haskell-network-byte-order
-- haskell-network-udp
-- haskell-psqueues
-- haskell-random
 - haskell-tls
+- haskell-iproute
+- haskell-psqueues
+- haskell-fast-logger
 - haskell-unix-time
-- haskell-unliftio
+- haskell-network
+- ghc: ghc-libs
 - haskell-unliftio-core
+- haskell-data-default-class
+- haskell-random
 - haskell-x509
-repo_makedepends:
-- ghc
-- haskell-quickcheck
-- haskell-async
-- haskell-doctest
-- haskell-hspec
-- haskell-hspec-discover
+- haskell-crypto-token
+- haskell-network-udp
+- haskell-base16-bytestring
+- haskell-unliftio
 update_on:
 - alpm: haskell-base16-bytestring
   source: alpm

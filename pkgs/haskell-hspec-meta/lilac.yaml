@@ -9,19 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-meta'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
-- haskell-ansi-terminal
-- haskell-call-stack
-- haskell-clock
-- haskell-quickcheck
-- haskell-quickcheck-io
 - haskell-random
 - haskell-setenv
-repo_makedepends:
-- ghc
-- uusi
+- haskell-quickcheck
+- haskell-quickcheck-io
+- haskell-ansi-terminal
+- haskell-clock
+- haskell-call-stack
 update_on:
 - alpm: haskell-ansi-terminal
   source: alpm

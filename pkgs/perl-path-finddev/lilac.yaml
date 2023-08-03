@@ -7,13 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-path-finddev'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-class-tiny
 - perl-path-isdev
-- perl-path-tiny
+- perl-class-tiny
 - perl-sub-exporter
-repo_makedepends: []
+- perl-path-tiny
 update_on:
 - alpm: perl-path-finddev
   source: archpkg

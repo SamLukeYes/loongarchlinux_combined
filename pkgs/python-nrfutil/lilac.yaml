@@ -7,26 +7,18 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-nrfutil'')
 
   '
-repo_checkdepends:
-- python-behave
-- python-nose
 repo_depends:
-- python-click
-- python-crcmod
-- python-ecdsa
-- python-intelhex
-- python-libusb1
-- python-pc-ble-driver-py
-- python-piccata
-- protobuf: python-protobuf
-- python-pyserial
-- python-pyspinel
 - python-tqdm
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-crcmod
+- python-libusb1
+- python-pyserial
+- python-click
+- python-ecdsa
+- protobuf: python-protobuf
+- python-piccata
+- python-intelhex
+- python-pc-ble-driver-py
+- python-pyspinel
 update_on:
 - alpm: python-nrfutil
   source: archpkg

@@ -9,21 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ral'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-quickcheck
-- haskell-adjunctions
-- haskell-bin
 - haskell-boring
+- ghc: ghc-libs
+- haskell-hashable
+- haskell-quickcheck
+- haskell-bin
+- haskell-semigroupoids
 - haskell-distributive
 - haskell-fin
-- haskell-hashable
+- haskell-adjunctions
 - haskell-indexed-traversable
-- haskell-semigroupoids
-repo_makedepends:
-- ghc
-- uusi
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

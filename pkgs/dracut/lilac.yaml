@@ -9,26 +9,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dracut'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
-- coreutils
-- cpio
-- filesystem
-- findutils
-- grep
-- gzip
 - kmod
+- gzip
+- cpio
 - pkgconf
-- procps-ng
 - sed
-- systemd
-- util-linux
 - xz
-repo_makedepends:
-- asciidoc
-- bash-completion
-- git
+- grep
+- filesystem
+- procps-ng
+- util-linux
+- bash
+- findutils
+- systemd
+- coreutils
 update_on:
 - alpm: dracut
   source: archpkg

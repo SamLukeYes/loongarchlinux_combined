@@ -9,29 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-arithmoi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-chimera
-- haskell-constraints
 - haskell-exact-pi
-- haskell-integer-logarithms
 - haskell-integer-roots
-- haskell-mod
+- ghc: ghc-libs
 - haskell-random
 - haskell-semirings
+- haskell-constraints
+- haskell-chimera
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
-- haskell-quickcheck
-- haskell-quickcheck-classes
-- haskell-smallcheck
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
-- haskell-tasty-rerun
-- haskell-tasty-smallcheck
+- haskell-mod
+- haskell-integer-logarithms
 update_on:
 - alpm: haskell-chimera
   source: alpm

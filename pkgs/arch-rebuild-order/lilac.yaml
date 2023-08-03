@@ -1,11 +1,6 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - glibc
-repo_makedepends:
-- rust
-- mandown
-- git
 update_on:
 - alpm: pacman
   provides: libalpm.so

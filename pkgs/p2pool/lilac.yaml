@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''p2pool'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- curl
 - libuv
+- curl
 - libsodium
 - zeromq
-repo_makedepends:
-- cmake
-- git
 update_on:
 - alpm: p2pool
   source: archpkg

@@ -7,14 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-inline-c'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-inline
 - perl-parse-recdescent
 - perl-pegex
-repo_makedepends:
-- perl-file-copy-recursive
-- perl-test-warn
+- perl-inline
 update_on:
 - alpm: perl-inline-c
   source: archpkg

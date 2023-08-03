@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcitx-rime'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fcitx
 - librime
-repo_makedepends:
-- cmake
+- fcitx
 update_on:
 - alpm: fcitx-rime
   source: archpkg

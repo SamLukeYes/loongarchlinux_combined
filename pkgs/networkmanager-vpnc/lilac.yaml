@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''networkmanager-vpnc''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- networkmanager: libnm
-- libsecret
 - vpnc
-repo_makedepends:
-- git
-- intltool
-- libnma
-- libnma: libnma-gtk4
-- python
+- libsecret
+- networkmanager: libnm
 update_on:
 - alpm: networkmanager-vpnc
   source: archpkg

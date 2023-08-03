@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opendkim'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- db
-- openssl
 - libbsd
 - opendbx
+- db
+- openssl
 - openldap: libldap
-repo_makedepends:
-- libmilter
-- git
 update_on:
 - alpm: opendkim
   source: archpkg

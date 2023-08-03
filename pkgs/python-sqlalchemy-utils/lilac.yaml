@@ -7,31 +7,21 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-sqlalchemy-utils'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-flexmock
-- python-jinja
 repo_depends:
-- python
-- python-sqlalchemy
-- python-anyjson
-- python-babel
-- python-arrow
-- python-intervals
-- python-phonenumbers
-- python-passlib
 - python-colour
 - python-dateutil
-- python-furl
+- python-intervals
+- python-sqlalchemy
 - python-cryptography
-- python-pendulum
 - python-importlib-metadata
-repo_makedepends:
+- python-arrow
+- python-anyjson
+- python-phonenumbers
+- python-passlib
+- python-pendulum
+- python-furl
+- python-babel
 - python
-- python-setuptools
-- python-build
-- python-installer
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-sqlalchemy-utils

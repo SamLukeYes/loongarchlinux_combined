@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aarch64-linux-gnu-gcc
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- aarch64-linux-gnu-binutils
-- aarch64-linux-gnu-glibc
-- libmpc
 - zlib
 - libisl
+- libmpc
+- aarch64-linux-gnu-glibc
 - zstd
-repo_makedepends:
-- gmp
-- mpfr
+- aarch64-linux-gnu-binutils
 update_on:
 - alpm: aarch64-linux-gnu-gcc
   source: archpkg

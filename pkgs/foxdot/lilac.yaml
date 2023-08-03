@@ -7,19 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''foxdot'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
-- supercollider
 - tk
-repo_makedepends:
-- gendesk
-- imagemagick
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- supercollider
+- python
 update_on:
 - alias: python
 - alpm: foxdot

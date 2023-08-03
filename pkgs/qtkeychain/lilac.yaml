@@ -9,19 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qtkeychain'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libsecret
-- libsecret
 - qt5-base
-- libsecret
 - qt6-base
-repo_makedepends:
-- cmake
-- qt5-tools
-- qt6-tools
-- qt6-declarative
-- clang
+- libsecret
 update_on:
 - alpm: qt5-base
   source: alpm

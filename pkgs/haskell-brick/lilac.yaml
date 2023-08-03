@@ -9,23 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-brick'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-bimap
-- haskell-config-ini
-- haskell-contravariant
-- haskell-data-clist
-- haskell-microlens
-- haskell-microlens-mtl
 - haskell-microlens-th
+- haskell-data-clist
 - haskell-text-zipper
+- haskell-word-wrap
+- haskell-bimap
+- ghc: ghc-libs
+- haskell-microlens-mtl
 - haskell-vector
 - haskell-vty
-- haskell-word-wrap
-repo_makedepends:
-- ghc
-- haskell-quickcheck
+- haskell-microlens
+- haskell-contravariant
+- haskell-config-ini
 update_on:
 - alpm: haskell-bimap
   source: alpm

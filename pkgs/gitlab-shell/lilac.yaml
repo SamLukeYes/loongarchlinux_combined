@@ -1,8 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - redis
 - git
-repo_makedepends:
-- go
 update_on: []

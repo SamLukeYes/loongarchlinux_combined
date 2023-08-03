@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sugar-datastore'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- dbus-python
 - pygobject: python-gobject
+- dbus-python
 - python-xapian
-repo_makedepends: []
 update_on:
 - alpm: sugar-datastore
   source: archpkg

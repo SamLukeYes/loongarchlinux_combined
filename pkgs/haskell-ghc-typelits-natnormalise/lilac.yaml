@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ghc-typelits-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-ghc-tcplugins-extra
-repo_makedepends:
-- ghc
-- haskell-tasty
-- haskell-tasty-hunit
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-ghc
   source: alpm

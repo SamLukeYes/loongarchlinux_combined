@@ -1,8 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - bash
-repo_makedepends:
-- cmake
 update_on: []

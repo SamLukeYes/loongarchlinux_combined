@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''avfs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fuse2
+- xz
 - lzlib
 - perl
-- xz
+- fuse2
 - zstd
-repo_makedepends: []
 update_on:
 - alias: perl
 - alpm: avfs

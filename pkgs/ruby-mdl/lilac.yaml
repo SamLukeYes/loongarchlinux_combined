@@ -7,17 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-mdl'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - ruby
-- ruby-kramdown
-- ruby-kramdown-parser-gfm
 - ruby-mixlib-cli
+- ruby-kramdown
 - ruby-mixlib-config
 - ruby-mixlib-shellout
-repo_makedepends:
-- git
-- ruby-rdoc
+- ruby-kramdown-parser-gfm
 update_on:
 - alias: ruby
 - alpm: ruby-mdl

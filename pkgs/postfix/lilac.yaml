@@ -9,44 +9,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''postfix'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- glibc
-- db
-- icu
-- libnsl
-- libsasl
-- openssl
-- zlib
-- glibc
+- pcre2
 - tinycdb
-- glibc
-- openldap: libldap
-- glibc
-- lmdb
-- glibc
 - mariadb: mariadb-libs
 - glibc
-- pcre2
-- glibc
 - postgresql: postgresql-libs
-- glibc
-- sqlite
-repo_makedepends:
 - db
 - icu
-- openldap: libldap
-- libnsl
-- libsasl
-- lmdb
-- mariadb: mariadb-libs
-- openssl
-- pcre2
-- postgresql: postgresql-libs
 - sqlite
-- tinycdb
+- openssl
+- libnsl
+- openldap: libldap
+- libsasl
 - zlib
+- lmdb
 update_on:
 - alias: icu
 - alpm: icu

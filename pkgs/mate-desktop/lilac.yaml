@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-desktop'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
 - startup-notification
+- gtk3
 - iso-codes
-repo_makedepends:
-- gobject-introspection
-- intltool
 update_on:
 - alpm: mate-desktop
   source: archpkg

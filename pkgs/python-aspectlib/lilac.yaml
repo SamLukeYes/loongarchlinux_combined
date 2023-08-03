@@ -7,15 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-aspectlib'')
 
   '
-repo_checkdepends:
-- python-tornado
-- python-process-tests
-- python-profilestats
-- python-pytest-runner
 repo_depends:
 - python-fields
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-aspectlib
   source: archpkg

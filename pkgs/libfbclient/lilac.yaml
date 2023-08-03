@@ -1,11 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - libtommath
-repo_makedepends:
-- editline
-- libtomcrypt
-- re2
-- unzip
 update_on: []

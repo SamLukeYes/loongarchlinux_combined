@@ -9,35 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rubberband'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fftw
 - gcc: gcc-libs
-- glibc
 - libsamplerate
 - libsndfile
 - fftw
-- gcc: gcc-libs
-- glibc
-- libsamplerate
-- fftw
-- gcc: gcc-libs
-- glibc
-- libsamplerate
-- fftw
-- gcc: gcc-libs
-- glibc
-- libsamplerate
 - vamp-plugin-sdk
-repo_makedepends:
-- boost
-- fftw
-- ladspa
-- lv2
-- meson
-- libsamplerate
-- libsndfile
-- vamp-plugin-sdk
+- glibc
 update_on:
 - alpm: fftw
   provides: libfftw3.so

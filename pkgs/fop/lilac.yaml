@@ -7,14 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''fop'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- java-avalon-framework
 - java-batik
-- java-commons-io
 - java-commons-logging
+- java-avalon-framework
 - java-xmlgraphics-commons
-repo_makedepends: []
+- java-commons-io
 update_on:
 - alpm: fop
   source: archpkg

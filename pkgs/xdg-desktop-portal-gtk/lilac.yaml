@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdg-desktop-portal-gt
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
 - gsettings-desktop-schemas
-repo_makedepends:
-- xdg-desktop-portal
-- python
-- git
 update_on:
 - alpm: xdg-desktop-portal-gtk
   source: archpkg

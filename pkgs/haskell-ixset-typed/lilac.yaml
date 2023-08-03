@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ixset-typed''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-syb
 - ghc: ghc-libs
 - haskell-safecopy
-- haskell-syb
-repo_makedepends:
-- ghc
-- haskell-hunit
-- haskell-quickcheck
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
 update_on:
 - alpm: haskell-safecopy
   source: alpm

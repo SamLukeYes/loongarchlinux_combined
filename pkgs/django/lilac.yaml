@@ -7,17 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''django'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-tblib
 repo_depends:
-- python
 - python-pytz
-- python-sqlparse
 - python-asgiref
-repo_makedepends:
 - python
-- python-setuptools
+- python-sqlparse
 update_on:
 - alias: python
 - alpm: django

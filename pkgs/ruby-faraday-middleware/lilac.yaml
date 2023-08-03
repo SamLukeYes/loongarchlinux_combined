@@ -7,18 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-faraday-middleware'')
 
   '
-repo_checkdepends:
-- ruby-rspec
-- ruby-webmock
-- ruby-rack-test
-- ruby-rack
 repo_depends:
 - ruby
 - ruby-faraday
-repo_makedepends:
-- ruby-rdoc
-- ruby-rake
-- ruby-bundler
 update_on:
 - alias: ruby
 - alpm: ruby-faraday-middleware

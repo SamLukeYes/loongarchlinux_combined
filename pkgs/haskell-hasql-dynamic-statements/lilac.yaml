@@ -9,23 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hasql-dynamic
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
+- haskell-ptr
 - haskell-hasql
 - haskell-hasql-implicits
-- haskell-ptr
-repo_makedepends:
-- ghc
-- uusi
-- haskell-quickcheck
-- haskell-quickcheck-instances
-- haskell-rerebase
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
-- pifpaf
-- postgresql
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-hasql
   source: alpm

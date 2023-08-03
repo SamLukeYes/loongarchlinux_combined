@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vde2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
 - glibc
 - bash
-- glibc
-repo_makedepends:
-- libpcap
-- wolfssl
 update_on:
 - alpm: libpcap
   provides: libpcap.so

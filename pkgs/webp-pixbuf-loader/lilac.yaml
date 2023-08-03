@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''webp-pixbuf-loader'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gdk-pixbuf2
 - libwebp
-repo_makedepends:
-- meson
+- gdk-pixbuf2
 update_on:
 - alpm: webp-pixbuf-loader
   source: archpkg

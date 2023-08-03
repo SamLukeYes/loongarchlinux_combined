@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openipmi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- popt
-- ncurses
 - net-snmp
-- glib2
-- gdbm
 - libedit
-repo_makedepends:
-- python
-- swig
+- ncurses
+- popt
+- gdbm
+- glib2
 update_on:
 - alpm: openipmi
   source: archpkg

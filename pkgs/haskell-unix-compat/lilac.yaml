@@ -9,16 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-unix-compat''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
-repo_makedepends:
-- ghc
-- haskell-hunit
-- haskell-extra
-- haskell-hspec
-- haskell-monad-parallel
-- haskell-temporary
 update_on:
 - alpm: haskell-unix-compat
   source: archpkg

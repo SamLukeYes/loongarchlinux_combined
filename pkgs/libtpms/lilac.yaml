@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libtpms'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - openssl
-repo_makedepends:
-- git
 update_on:
 - alpm: libtpms
   source: archpkg

@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''systeroid'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxcb
 - libxkbcommon
 - linux: linux-docs
-repo_makedepends:
-- python
+- libxcb
 update_on:
 - alpm: systeroid
   source: archpkg

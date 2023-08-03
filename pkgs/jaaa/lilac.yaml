@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jaaa'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- clthreads
 - clxclient
-- fftw
 - zita-alsa-pcmi
-repo_makedepends: []
+- clthreads
+- fftw
 update_on:
 - alpm: jaaa
   source: archpkg

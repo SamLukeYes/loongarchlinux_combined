@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cdrdao'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- lame
-- libmad
-- libvorbis
 - libao
-repo_makedepends:
-- gtkmm3
+- lame
+- libvorbis
+- libmad
 update_on:
 - alpm: cdrdao
   source: archpkg

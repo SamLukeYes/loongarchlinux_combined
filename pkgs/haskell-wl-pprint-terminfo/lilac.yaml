@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wl-pprint-ter
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-wl-pprint-extras
-repo_makedepends:
-- ghc
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-wl-pprint-extras
   source: alpm

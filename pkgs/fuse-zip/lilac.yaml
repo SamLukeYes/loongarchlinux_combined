@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fuse-zip'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libzip
-repo_makedepends:
-- setconf
 update_on:
 - alpm: fuse-zip
   source: archpkg

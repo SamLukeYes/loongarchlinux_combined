@@ -1,12 +1,7 @@
 destsubdir: core
-repo_checkdepends:
-- sharutils
 repo_depends:
-- glibc
-- filesystem
 - sed
+- filesystem
 - util-linux
-repo_makedepends:
-- systemd
-- po4a
+- glibc
 update_on: []

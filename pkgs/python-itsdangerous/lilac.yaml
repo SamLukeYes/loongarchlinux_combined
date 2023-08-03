@@ -7,16 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-itsdangerous'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-freezegun
 repo_depends:
 - python
-repo_makedepends:
-- python-setuptools
-- python-build
-- python-installer
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-itsdangerous

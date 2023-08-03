@@ -7,17 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-subtests'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - python-attrs
 - python-pytest
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-setuptools
-- python-setuptools-scm
-- python-wheel
 update_on:
 - alpm: python-pytest-subtests
   source: archpkg

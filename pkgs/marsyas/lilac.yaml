@@ -9,28 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''marsyas'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- lame
-- libmad
-- gcc: gcc-libs
-- glibc
-- lame
-- libmad
 - alsa-lib
+- gcc: gcc-libs
+- lame
 - libvorbis
-repo_makedepends:
-- alsa-lib
-- cmake
-- doxygen
-- extra-cmake-modules
-- libvorbis
-- pd
-- qt5-base
-- qt5-declarative
-- vamp-plugin-sdk
+- glibc
+- libmad
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

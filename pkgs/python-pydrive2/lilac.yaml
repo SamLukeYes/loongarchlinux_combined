@@ -7,20 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pydrive2'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
 - python-google-api-python-client
-- python-oauth2client
 - python-pyaml
 - python-pyopenssl
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
-- python-setuptools-scm
+- python-oauth2client
+- python
 update_on:
 - alias: python
 - alpm: python-pydrive2

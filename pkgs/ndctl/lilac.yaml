@@ -9,23 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ndctl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- iniparser
+- kmod
 - json-c
 - keyutils
-- kmod
 - libtraceevent
-- libtracefs
 - systemd: systemd-libs
+- iniparser
 - util-linux: util-linux-libs
-repo_makedepends:
-- asciidoctor
-- bash-completion
-- cmake
-- meson
-- systemd
-- xmlto
+- libtracefs
 update_on:
 - alpm: ndctl
   source: archpkg

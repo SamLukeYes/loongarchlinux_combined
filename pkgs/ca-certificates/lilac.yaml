@@ -1,12 +1,7 @@
 destsubdir: core
-repo_checkdepends: []
 repo_depends:
 - bash
-# - coreutils
 - findutils
 - nss: ca-certificates-mozilla
-# repo_makedepends:
-# - asciidoc
-# - xmltoman
-# - p11-kit
+- coreutils
 update_on: []

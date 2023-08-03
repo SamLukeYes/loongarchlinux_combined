@@ -7,32 +7,16 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''twine'')
 
   '
-repo_checkdepends:
-- git
-- python-munch
-- python-jaraco.envs
-- python-portend
-- python-pretend
-- python-tox
-- python-pytest-cov
-- python-pytest-services
-- python-pytest-socket
 repo_depends:
-- python-pkginfo
-- python-readme-renderer
+- python-rfc3986
 - python-requests
 - python-requests-toolbelt
-- python-urllib3
 - python-importlib-metadata
+- python-readme-renderer
+- python-urllib3
+- python-pkginfo
 - python-keyring
-- python-rfc3986
 - python-rich
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-setuptools-scm
-- python-wheel
 update_on:
 - alpm: twine
   source: archpkg

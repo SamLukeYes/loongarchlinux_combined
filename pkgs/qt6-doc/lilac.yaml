@@ -1,22 +1,3 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- cmake
-- ninja
-- mariadb: mariadb-libs
-- unixodbc
-- postgresql
-- alsa-lib
-- gstreamer: gst-plugins-base-libs
-- gtk3
-- pulseaudio: libpulse
-- cups
-- freetds
-- vulkan-headers
-- clang
-- python
-- llvm
-- qt6-tools
-- qt6-declarative
 update_on: []

@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rgbds'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
 - libpng
-repo_makedepends:
-- cmake
-- git
-- ninja
 update_on:
 - alpm: rgbds
   source: archpkg

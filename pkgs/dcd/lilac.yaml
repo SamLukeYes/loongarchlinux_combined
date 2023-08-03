@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dcd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ldc: liblphobos
-repo_makedepends:
-- ldc
-- git
 update_on:
 - alpm: dcd
   source: archpkg

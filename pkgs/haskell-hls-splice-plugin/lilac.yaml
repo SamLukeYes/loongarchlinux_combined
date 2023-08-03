@@ -9,28 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-splice-pl
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- git
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-dlist
-- haskell-extra
-- haskell-foldl
-- haskell-ghc-exactprint
-- haskell-ghcide
-- haskell-hls-plugin-api
-- haskell-hls-refactor-plugin
-- haskell-lens
-- haskell-lsp
-- haskell-retrie
-- haskell-syb
-- haskell-unliftio-core
 - haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hls-test-utils
+- haskell-dlist
+- haskell-syb
+- haskell-lens
+- haskell-aeson
+- ghc: ghc-libs
+- haskell-foldl
+- haskell-retrie
+- haskell-ghc-exactprint
+- haskell-hls-plugin-api
+- haskell-lsp
+- haskell-unliftio-core
+- haskell-hls-refactor-plugin
+- haskell-ghcide
+- haskell-extra
 update_on:
 - alpm: haskell-aeson
   source: alpm

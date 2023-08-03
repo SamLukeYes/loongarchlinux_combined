@@ -7,15 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''materia-gtk-theme'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - gnome-themes-extra
-repo_makedepends:
-- meson
-- sassc
-- gtk3
-- gtk4
-- gnome-shell
 update_on:
 - alpm: materia-gtk-theme
   source: archpkg

@@ -9,28 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-code'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- editorconfig-core-c
-- glib2
-- gtk3
-- gtksourceview4
 - libgee
-- libgit2-glib
-- libpeas
 - pango
 - polkit
-repo_makedepends:
-- cmake
-- git
-- gobject-introspection
-- gtkspell3
-- intltool
-- libsoup
-- meson
-- vala
-- vte3
-- webkit2gtk
+- libpeas
+- gtksourceview4
+- gtk3
+- editorconfig-core-c
+- glib2
+- libgit2-glib
 update_on:
 - alpm: granite
   provides: libgranite.so

@@ -7,17 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-xcffib'')
 
   '
-repo_checkdepends:
-- python-pytest
-- xorg-server: xorg-server-xvfb
-- xorg-xeyes
 repo_depends:
 - python-cffi
 - libxcb
-repo_makedepends:
-- git
-- python-setuptools
-- haskell-xcffib
 update_on:
 - alpm: python-xcffib
   source: archpkg

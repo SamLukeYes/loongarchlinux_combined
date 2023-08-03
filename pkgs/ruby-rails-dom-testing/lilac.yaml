@@ -7,14 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rails-dom-testing'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- ruby
 - ruby-activesupport
+- ruby
 - ruby-nokogiri
-repo_makedepends:
-- ruby-bundler
-- ruby-rake
 update_on:
 - alias: ruby
 - alpm: ruby-rails-dom-testing

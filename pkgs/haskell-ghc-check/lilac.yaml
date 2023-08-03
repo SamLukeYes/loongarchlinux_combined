@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ghc-check'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-ghc-paths
-- haskell-safe-exceptions
 - haskell-th-compat
-repo_makedepends:
-- ghc
+- haskell-ghc-paths
+- ghc: ghc-libs
+- haskell-safe-exceptions
 update_on:
 - alpm: haskell-ghc
   source: alpm

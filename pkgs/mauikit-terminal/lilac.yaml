@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mauikit-terminal'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - mauikit
-repo_makedepends:
-- extra-cmake-modules
 update_on:
 - alpm: mauikit-terminal
   source: archpkg

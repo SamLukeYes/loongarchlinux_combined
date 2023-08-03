@@ -1,21 +1,13 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - bzip2
-- libxml2
-- curl
-- systemd: systemd-libs
-- pcre2
 - json-c
 - libmspack
 - ncurses
-repo_makedepends:
-- libmilter
-- systemd
-- cmake
-- ninja
-- python
-- check
+- pcre2
+- curl
+- libxml2
+- systemd: systemd-libs
 update_on:
 - alpm: systemd-libs
   provides: libsystemd.so

@@ -7,15 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-discogs-client'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-dateutil
-- python-six
 - python-requests
+- python-dateutil
 - python-oauthlib
-repo_makedepends:
-- git
-- python-setuptools
+- python-six
 update_on:
 - alpm: python-discogs-client
   source: archpkg

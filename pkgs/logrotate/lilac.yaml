@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''logrotate'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- popt
-- gzip
 - acl
-repo_makedepends: []
+- gzip
+- popt
 update_on:
 - alpm: logrotate
   source: archpkg

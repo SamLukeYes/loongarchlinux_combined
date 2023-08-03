@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lua-language-server''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
 - gcc: gcc-libs
-repo_makedepends:
-- git
-- ninja
+- bash
 update_on:
 - alpm: lua-language-server
   source: archpkg

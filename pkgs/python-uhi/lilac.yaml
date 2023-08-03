@@ -7,20 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-uhi'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-boost-histogram
-- python-importlib-metadata
 repo_depends:
+- root
 - python-numpy
 - python-typing_extensions
-- root
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-hatch-vcs
-- python-hatchling
 update_on:
 - alpm: python-uhi
   source: archpkg

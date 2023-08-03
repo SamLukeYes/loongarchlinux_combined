@@ -1,32 +1,15 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- glew
 - glibc
-- hicolor-icon-theme
 - libzip
 - qt5-base
-- qt5-multimedia
 - sdl2
 - snappy
 - zlib
-- zstd
-repo_makedepends:
-- clang
-- cmake
-- git
+- qt5-multimedia
 - glew
-- glu
-- libglvnd
-- libzip
-- ninja
-- python
-- qt5-base
-- qt5-multimedia
-- qt5-tools
-- sdl2
-- snappy
-- zlib
+- zstd
+- hicolor-icon-theme
 update_on:
 - alpm: qt5-base
   source: alpm

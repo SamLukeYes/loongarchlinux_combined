@@ -7,15 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-aiosqlite'')
 
   '
-repo_checkdepends:
-- python-pytest-runner
 repo_depends:
-- python-typing_extensions
 - python-pydantic
-repo_makedepends:
-- python-build
-- python-installer
-- python-flit-core
+- python-typing_extensions
 update_on:
 - alpm: python-aiosqlite
   source: archpkg

@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bat'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libgit2
 - oniguruma
-repo_makedepends:
-- clang
-- cmake
-- git
-- rust
 update_on:
 - alpm: bat
   source: archpkg

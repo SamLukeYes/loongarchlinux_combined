@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi-atk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
 - haskell-gi-glib
-- haskell-gi-gobject
-- haskell-gi
-- haskell-gi-base
 - haskell-gi-overloading
 - at-spi2-core
-repo_makedepends:
-- ghc
-- gobject-introspection
+- haskell-gi-base
+- haskell-gi
+- haskell-gi-gobject
 update_on:
 - alpm: haskell-gi-glib
   source: alpm

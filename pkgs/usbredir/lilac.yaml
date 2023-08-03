@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''usbredir'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libusb
 - glib2
-repo_makedepends:
-- meson
 update_on:
 - alpm: usbredir
   source: archpkg

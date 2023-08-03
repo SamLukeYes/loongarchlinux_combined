@@ -9,20 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- slang
 - e2fsprogs
+- libssh2
+- which
 - glib2
 - gpm
-- libssh2
-- slang
-- which
-repo_makedepends:
-- aspell
-- git
-- libxt
-- libx11
-- unzip
 update_on:
 - alpm: mc
   source: archpkg

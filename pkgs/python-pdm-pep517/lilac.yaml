@@ -7,20 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pdm-pep517'')
 
   '
-repo_checkdepends:
-- git
-- python-pytest
-- python-setuptools
 repo_depends:
-- python
-- python-cerberus
 - python-license-expression
-- python-packaging
 - python-tomli
+- python-packaging
+- python-cerberus
 - python-tomli-w
-repo_makedepends:
-- python-build
-- python-installer
+- python
 update_on:
 - alias: python
 - alpm: python-pdm-pep517

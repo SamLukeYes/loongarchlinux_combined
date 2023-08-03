@@ -9,20 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hoauth2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-hashable
-- haskell-http-conduit
-- haskell-http-types
-- haskell-microlens
 - haskell-unordered-containers
+- haskell-aeson
+- haskell-http-types
+- ghc: ghc-libs
+- haskell-hashable
 - haskell-uri-bytestring
+- haskell-http-conduit
 - haskell-uri-bytestring-aeson
-repo_makedepends:
-- ghc
-- uusi
+- haskell-microlens
 update_on:
 - alpm: haskell-aeson
   source: alpm

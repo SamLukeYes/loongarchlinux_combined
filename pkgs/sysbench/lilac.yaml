@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sysbench'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - luajit
 - mariadb: mariadb-libs
 - postgresql: postgresql-libs
-repo_makedepends:
-- libxslt
 update_on:
 - alpm: sysbench
   source: archpkg

@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plasma5-applets-activ
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- plasma-workspace
 - qt5-graphicaleffects
-repo_makedepends:
-- extra-cmake-modules
+- plasma-workspace
 update_on:
 - alpm: plasma5-applets-active-window-control
   source: archpkg

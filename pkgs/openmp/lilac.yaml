@@ -1,12 +1,6 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- llvm: llvm-libs
 - elfutils: libelf
+- llvm: llvm-libs
 - libffi
-repo_makedepends:
-- llvm
-- clang
-- cmake
-- ninja
 update_on: []

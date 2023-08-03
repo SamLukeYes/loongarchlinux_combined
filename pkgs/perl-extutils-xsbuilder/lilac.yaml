@@ -7,11 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-extutils-xsbuilder'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-parse-recdescent
 - perl-tie-ixhash
-repo_makedepends: []
+- perl-parse-recdescent
 update_on:
 - alpm: perl-extutils-xsbuilder
   source: archpkg

@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''imvirt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- perl-file-slurp
+- perl-module-find
 - perl
 - dmidecode
-- perl-module-find
-- perl-file-slurp
-repo_makedepends: []
 update_on:
 - alias: perl
 - alpm: imvirt

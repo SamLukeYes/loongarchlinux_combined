@@ -9,43 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zynaddsubfx'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fftw
-- gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
-- libglvnd
-- libuv
-- ttf-roboto
-- zlib
-- fftw
-- gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
-- libglvnd
-- libuv
-- ttf-roboto
-- zlib
 - alsa-lib
+- hicolor-icon-theme
+- glibc
+- gcc: gcc-libs
 - liblo
 - mxml
-- portaudio
+- fftw
+- libglvnd
+- ttf-roboto
+- libuv
+- zlib
 - rtosc
-repo_makedepends:
-- alsa-lib
-- asciidoc
-- asciidoctor
-- cmake
-- cxxtest
-- doxygen
-- git
-- liblo
-- libxpm
-- mxml
 - portaudio
-- rtosc
-- ruby-rake
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

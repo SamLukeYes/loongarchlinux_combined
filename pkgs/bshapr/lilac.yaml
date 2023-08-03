@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bshapr'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
-- cairo
 - gcc: gcc-libs
-- glibc
 - libx11
-repo_makedepends:
-- lv2
+- cairo
+- glibc
 update_on:
 - alpm: bshapr
   source: archpkg

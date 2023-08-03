@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''slirp4netns'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - glib2
-- libcap
-- libseccomp
 - libslirp
-repo_makedepends:
-- git
+- libseccomp
+- libcap
+- glibc
 update_on:
 - alpm: slirp4netns
   source: archpkg

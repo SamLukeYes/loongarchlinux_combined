@@ -9,33 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''prusa-slicer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- catch2
 repo_depends:
-- boost: boost-libs
+- openvdb
+- nlopt
+- libjpeg-turbo
 - curl
+- opencascade
+- gtk3
+- qhull
 - glew
 - mpfr
-- nlopt
-- qhull
-- openvdb
-- gtk3
-- libjpeg-turbo
-- opencascade
-repo_makedepends:
-- cmake
-- boost
-- cereal
-- cgal
-- eigen
-- expat
-- gtest
-- libpng
-- systemd
-- gstreamer: gst-plugins-base
-- glu
-- webkit2gtk
-- libnotify
+- boost: boost-libs
 update_on:
 - alpm: prusa-slicer
   source: archpkg

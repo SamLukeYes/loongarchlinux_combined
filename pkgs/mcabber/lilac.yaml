@@ -9,15 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mcabber'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ncurses
-- glib2
-- loudmouth
-- gpgme
 - libotr
+- gpgme
+- loudmouth
 - aspell
-repo_makedepends: []
+- glib2
 update_on:
 - alpm: mcabber
   source: archpkg

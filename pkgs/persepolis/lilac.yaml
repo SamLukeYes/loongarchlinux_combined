@@ -7,21 +7,18 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''persepolis'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- aria2
+- pulseaudio: libpulse
+- youtube-dl
+- python-requests
+- python-psutil
 - ffmpeg
 - libnotify
-- pulseaudio: libpulse
-- python-psutil
-- pyqt5: python-pyqt5
-- python-requests
 - python-setproctitle
-- qt5-svg
 - sound-theme-freedesktop
-- youtube-dl
-repo_makedepends:
-- python-setuptools
+- pyqt5: python-pyqt5
+- aria2
+- qt5-svg
 update_on:
 - alpm: persepolis
   source: archpkg

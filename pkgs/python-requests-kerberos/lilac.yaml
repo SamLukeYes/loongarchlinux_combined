@@ -7,16 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-requests-kerberos'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pyspnego
-- python-pytest-mock
 repo_depends:
 - python-requests
 - python-pyspnego
 - python-cryptography
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-requests-kerberos
   source: archpkg

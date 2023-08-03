@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ocaml-stdio'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- ocaml
 - ocaml-base
-repo_makedepends:
-- dune
+- ocaml
+- glibc
 update_on:
 - alpm: ocaml
   source: alpm

@@ -9,25 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openconnect'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-flask
 repo_depends:
-- libxml2
+- xdg-utils
+- krb5
 - gnutls
+- pcsclite
+- libxml2
+- stoken
 - libproxy
 - vpnc
-- krb5
-- lz4
-- pcsclite
-- stoken
 - tpm2-tss
+- lz4
 - oath-toolkit
-- libproxy
 - p11-kit: libp11-kit
-- xdg-utils
-repo_makedepends:
-- intltool
-- python
 update_on:
 - alpm: stoken
   provides: libstoken.so

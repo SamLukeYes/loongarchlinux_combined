@@ -7,15 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-terminado'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
 - python-tornado
 - python-ptyprocess
-repo_makedepends:
-- python-build
-- python-installer
-- python-hatchling
 update_on:
 - alpm: python-terminado
   source: archpkg

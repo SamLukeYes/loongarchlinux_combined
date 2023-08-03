@@ -7,15 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-oauth2client'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-httplib2
-- python-pyasn1
-- python-pyasn1-modules
-- python-rsa
 - python-six
-repo_makedepends:
-- python-setuptools
+- python-httplib2
+- python-rsa
+- python-pyasn1-modules
+- python-pyasn1
 update_on:
 - alpm: python-oauth2client
   source: archpkg

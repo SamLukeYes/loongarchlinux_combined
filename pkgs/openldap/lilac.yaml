@@ -9,22 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openldap'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libtool
-- unixodbc
+- libsasl
+- libsodium
 - perl
-- systemd: systemd-libs
-- libsodium
-- libsasl
-repo_makedepends:
-- libtool
-- libsasl
-- util-linux
-- chrpath
 - unixodbc
-- libsodium
-- systemd
+- libtool
+- systemd: systemd-libs
 update_on:
 - alias: perl
 - alpm: openldap

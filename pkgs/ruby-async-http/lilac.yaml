@@ -7,28 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-async-http'')
 
   '
-repo_checkdepends:
-- ruby-bake
-- ruby-bake-modernize
-- ruby-bake-test
-- ruby-bake-test-external
-- ruby-async-container
-- ruby-async-rspec
-- ruby-covered
-- ruby-localhost
-- ruby-rack-test
-- ruby-rspec
-- ruby-sus
-- ruby-thread-local
 repo_depends:
-- ruby-async
+- ruby-traces
 - ruby-async-io
 - ruby-async-pool
-- ruby-protocol-http
 - ruby-protocol-http1
+- ruby-protocol-http
 - ruby-protocol-http2
-- ruby-traces
-repo_makedepends: []
+- ruby-async
 update_on:
 - alpm: ruby-async-http
   source: archpkg

@@ -7,23 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-keyrings-alt'')
 
   '
-repo_checkdepends:
-- libgnome-keyring
-- python-pycryptodome
-- python-pycryptodomex
-- pygobject: python-gobject
-- python-keyring
-- python-pytest-enabler
-- python-pytest-mypy
 repo_depends:
-- python-keyring
 - python-jaraco.text
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-setuptools-scm
-- python-wheel
+- python-keyring
 update_on:
 - alpm: python-keyrings-alt
   source: archpkg

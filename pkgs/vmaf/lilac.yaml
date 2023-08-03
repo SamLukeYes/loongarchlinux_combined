@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vmaf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-repo_makedepends:
-- meson
-- nasm
-- vim
-- doxygen
 update_on:
 - alpm: vmaf
   source: archpkg

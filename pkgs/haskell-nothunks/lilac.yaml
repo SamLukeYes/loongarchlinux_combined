@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-nothunks'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hedgehog
-- haskell-random
-- haskell-tasty
-- haskell-tasty-hedgehog
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-vector
   source: alpm

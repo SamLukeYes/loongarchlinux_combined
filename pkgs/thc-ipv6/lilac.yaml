@@ -9,15 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''thc-ipv6'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- libpcap
-- openssl
-- libnetfilter_queue
-- perl
 - perl-socket6
-repo_makedepends: []
+- libpcap
+- perl
+- openssl
+- glibc
+- libnetfilter_queue
 update_on:
 - alpm: libpcap
   provides: libpcap.so

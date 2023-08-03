@@ -7,17 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''kamene'')
 
   '
-repo_checkdepends:
-- python-cryptography
-- python-pyx
-- python-matplotlib
-- python-netifaces
-- graphviz
-- sox
 repo_depends:
-- tcpdump
 - python
-repo_makedepends: []
+- tcpdump
 update_on:
 - alias: python
 - alpm: kamene

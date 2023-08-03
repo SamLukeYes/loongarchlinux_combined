@@ -9,24 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''texstudio'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- poppler: poppler-qt6
-- qt6-svg
-- libxkbcommon: libxkbcommon-x11
-- hicolor-icon-theme
-- hunspell
 - quazip: quazip-qt6
-- desktop-file-utils
+- hunspell
 - qt6-declarative
+- desktop-file-utils
+- qt6-svg
 - qt6-5compat
-repo_makedepends:
-- qt6-tools
-- mercurial
-- imagemagick
-- librsvg
-- ninja
-- cmake
+- hicolor-icon-theme
+- poppler: poppler-qt6
+- libxkbcommon: libxkbcommon-x11
 update_on:
 - alpm: qt6-declarative
   source: alpm

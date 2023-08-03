@@ -9,20 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-haddock-c
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- git
 repo_depends:
+- haskell-unordered-containers
 - ghc: ghc-libs
+- haskell-lsp-types
 - haskell-ghc-exactprint
-- haskell-ghcide
 - haskell-hls-plugin-api
 - haskell-hls-refactor-plugin
-- haskell-lsp-types
-- haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hls-test-utils
+- haskell-ghcide
 update_on:
 - alpm: haskell-ghc
   source: alpm

@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-msgpack'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ruby
-repo_makedepends:
-- ruby-rdoc
-- ruby-rake
-- ruby-rake-compiler
-- ruby-yard
-- ruby-rspec
-- ruby-bundler
-- ruby-webrick
-- ruby-ruby_memcheck
 update_on:
 - alias: ruby
 - alpm: ruby-msgpack

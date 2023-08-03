@@ -7,13 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-httpx'')
 
   '
-repo_checkdepends:
-- python-pytest-asyncio
 repo_depends:
 - python-httpx
 - python-pytest
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-pytest-httpx
   source: archpkg

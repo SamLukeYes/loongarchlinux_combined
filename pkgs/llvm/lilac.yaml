@@ -1,26 +1,12 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- perl
 - gcc: gcc-libs
-- zlib
-- zstd
-- libffi
 - libedit
 - ncurses
-- libxml2
-repo_makedepends:
-- cmake
-- ninja
 - zlib
-- zstd
+- perl
 - libffi
-- libedit
-- ncurses
 - libxml2
-- python-setuptools
-- python-psutil
-- python-sphinx
-- python-recommonmark
+- zstd
 update_on:
 - alias: perl

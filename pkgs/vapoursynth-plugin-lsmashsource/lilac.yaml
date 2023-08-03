@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vapoursynth-plugin-ls
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - vapoursynth
-repo_makedepends:
-- git
-- meson
+- glibc
 update_on:
 - alpm: ffmpeg
   provides: libavcodec.so

@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgig'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
 - glibc
-- util-linux: util-linux-libs
+- gcc: gcc-libs
 - libsndfile
-repo_makedepends:
-- util-linux
+- util-linux: util-linux-libs
 update_on:
 - alpm: libsndfile
   provides: libsndfile.so

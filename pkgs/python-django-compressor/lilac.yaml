@@ -7,24 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-django-compressor'')
 
   '
-repo_checkdepends:
-- python-beautifulsoup4
-- brotli: python-brotli
-- python-calmjs
-- python-csscompressor
-- python-django-sekizai
-- python-html5lib
-- python-jinja
-- python-lxml
 repo_depends:
-- python-django-appconf
 - python-rcssmin
 - python-rjsmin
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-django-appconf
 update_on:
 - alpm: python-django-compressor
   source: archpkg

@@ -9,39 +9,24 @@ pre_build_script: '_G.files = download_official_pkgbuild(''krita'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libraw
+- opencolorio
 - kitemviews
 - kitemmodels
-- ki18n
 - kcompletion
-- kguiaddons
 - kcrash
-- qt5-svg
-- qt5-multimedia
-- gsl
-- libraw
-- exiv2
+- ki18n
 - openexr
-- fftw
-- openjpeg2
-- opencolorio
+- gsl
 - libwebp
+- exiv2
+- fftw
+- qt5-multimedia
+- kguiaddons
+- qt5-svg
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- boost
-- eigen
-- poppler: poppler-qt5
-- pyqt5: python-pyqt5
-- libheif
-- qt5-tools
-- sip
-- kseexpr
-- libmypaint
-- libjxl
-- xsimd
+- openjpeg2
 update_on:
 - alpm: gsl
   source: alpm

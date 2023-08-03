@@ -9,27 +9,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ghostscript'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxt
-# - cups: libcups
-- fontconfig
-- zlib
-- libpng
-- jbig2dec
-- libtiff
-- lcms2
-- dbus
-- libpaper
-- ijs
-- openjpeg2
-- libidn
 - poppler-data
-repo_makedepends:
-- gtk3
-- gnutls
-- glu
-- freeglut
+- fontconfig
+- cups: libcups
+- libpaper
+- libtiff
+- zlib
+- ijs
+- libidn
+- dbus
+- lcms2
+- libxt
+- jbig2dec
+- openjpeg2
+- libpng
 update_on:
 - alpm: ghostscript
   source: archpkg

@@ -7,18 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-openpyxl'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-py
-- python-lxml
-- python-pandas
-- python-pillow
 repo_depends:
-- python
 - python-et-xmlfile
-repo_makedepends:
-- python-setuptools
-- python-defusedxml
+- python
 update_on:
 - alias: python
 - alpm: python-openpyxl

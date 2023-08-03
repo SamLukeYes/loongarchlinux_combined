@@ -7,11 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ferm'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- iptables
 - perl
-repo_makedepends: []
+- iptables
 update_on:
 - alpm: iptables
   source: alpm

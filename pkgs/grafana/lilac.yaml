@@ -9,20 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''grafana'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- freetype2
 - fontconfig
+- freetype2
+- glibc
 - gsfonts
-repo_makedepends:
-- git
-- go
-- npm
-- grunt-cli
-- python
-- nodejs-lts-gallium
-- yarn
 update_on:
 - alpm: grafana
   source: archpkg

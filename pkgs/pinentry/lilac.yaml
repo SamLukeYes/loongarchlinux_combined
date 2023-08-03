@@ -9,18 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pinentry'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- ncurses
-- libcap
-- libassuan
-- libsecret
 - glib2
-repo_makedepends:
-- gtk2
-- qt5-base
-- gcr
+- libsecret
+- ncurses
+- libassuan
+- libcap
+- glibc
 update_on:
 - alpm: libsecret
   provides: libsecret-1.so

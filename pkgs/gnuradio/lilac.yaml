@@ -9,91 +9,44 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnuradio'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-jsonschema
-- python-setuptools
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- codec2
-- gcc: gcc-libs
-- glibc
-- gmp
-- gsl
-- libad9361
-- libuhd
-- libunwind
-- libvolk
-- python-click
-- python-click-plugins
-- python-mako
-- python-matplotlib
-- python-numpy
-- python-pyzmq
-- python-scipy
-- python-thrift
-- sdl12-compat
-- soapysdr
-- spdlog
-- thrift
-- codec2
-- gcc: gcc-libs
-- glibc
-- gmp
-- gsl
-- libad9361
-- libuhd
-- libunwind
-- libvolk
-- python-click
-- python-click-plugins
-- python-mako
-- python-matplotlib
-- python-numpy
-- python-pyzmq
-- python-scipy
-- python-thrift
-- sdl12-compat
-- soapysdr
-- spdlog
-- thrift
 - alsa-lib
-- boost: boost-libs
-- fftw
-- fmt
-- libiio
 - libsndfile
-- portaudio
-- spdlog
-- zeromq
-- python-cairo
-- pygobject: python-gobject
-- python-lxml
+- soapysdr
+- libiio
+- python-mako
 - pyopengl: python-opengl
-- pyqt5: python-pyqt5
-- python-pyqtgraph
-- qt5-base
-- qwt
-repo_makedepends:
-- alsa-lib
-- boost
-- cmake
-- fftw
-- fmt
-- gtk3
-- libiio
-- libsndfile
-- portaudio
-- pybind11
-- python-cairo
+- libvolk
+- glibc
 - pygobject: python-gobject
-- python-lxml
-- python-packaging
-- pyqt5: python-pyqt5
-- python-pyqtgraph
-- python-pytest
+- gcc: gcc-libs
 - qt5-base
-- qwt
+- thrift
+- gsl
+- python-click
+- codec2
+- fftw
+- gmp
 - zeromq
+- python-lxml
+- python-scipy
+- spdlog
+- python-thrift
+- python-pyqtgraph
+- qwt
+- python-cairo
+- python-numpy
+- libad9361
+- libuhd
+- fmt
+- python-matplotlib
+- python-pyzmq
+- libunwind
+- python-click-plugins
+- sdl12-compat
+- pyqt5: python-pyqt5
+- portaudio
+- boost: boost-libs
 update_on:
 - alpm: gsl
   source: alpm

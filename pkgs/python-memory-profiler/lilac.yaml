@@ -7,15 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-memory-profiler'')
 
   '
-repo_checkdepends:
-- python-numpy
 repo_depends:
 - python-psutil
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alpm: python-memory-profiler
   source: archpkg

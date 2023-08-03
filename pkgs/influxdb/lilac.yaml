@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''influxdb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- go
-- go-tools
-- git
-- protobuf
-- yarn
-- clang
-- llvm
 update_on:
 - alpm: influxdb
   source: archpkg

@@ -7,25 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''stratis-cli'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-dbus-client-gen
-- python-into-dbus
-- python-justbytes
 - python-dateutil
-- python-packaging
 - python-psutil
 - python-wcwidth
-repo_makedepends:
-- dbus-glib
-- git
-- mpfr
-- dbus-python
-- asciidoc
-- python-setuptools
-- python-build
-- python-installer
-- python-wheel
+- python-packaging
+- python-justbytes
+- python-dbus-client-gen
+- python-into-dbus
 update_on:
 - alpm: stratis-cli
   source: archpkg

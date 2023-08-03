@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sword'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- curl
-- clucene
 - xz
-- python
-repo_makedepends:
-- curl
 - clucene
-- swig
-- cmake
+- curl
 - python
 update_on:
 - alias: python

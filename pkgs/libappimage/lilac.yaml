@@ -9,19 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libappimage'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libarchive
-- squashfuse
 - boost: boost-libs
+- squashfuse
 - librsvg
-repo_makedepends:
-- cmake
-- wget
-- vim
-- desktop-file-utils
-- boost
-- xdg-utils-cxx
 update_on:
 - alpm: libappimage
   source: archpkg

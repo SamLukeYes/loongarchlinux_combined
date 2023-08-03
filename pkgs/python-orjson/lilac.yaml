@@ -1,18 +1,7 @@
 destsubdir: extra
-repo_checkdepends:
-- python-arrow
-- python-pendulum
-- python-psutil
-- python-pytest
-- python-pytz
-- python-xxhash
 repo_depends:
 - gcc: gcc-libs
 - glibc
 - python
-repo_makedepends:
-- maturin
-- python-installer
-- rust
 update_on:
 - alias: python

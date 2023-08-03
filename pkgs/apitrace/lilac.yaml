@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''apitrace'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
 - procps-ng
-repo_makedepends:
-- cmake
-- git
-- mesa
-- qt5-base
+- python
 update_on:
 - alias: python
 - alpm: apitrace

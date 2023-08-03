@@ -9,19 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''grilo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - liboauth
 - libsoup3
-- libxml2
 - totem-pl-parser
-repo_makedepends:
-- git
-- gobject-introspection
-- gtk-doc
-- gtk3
-- meson
-- vala
+- libxml2
 update_on:
 - alpm: grilo
   source: archpkg

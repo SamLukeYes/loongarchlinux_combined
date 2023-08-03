@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''freeverb3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - fftw
-repo_makedepends:
-- audacious
-- chrpath
-- gtk3
 update_on:
 - alpm: freeverb3
   source: archpkg

@@ -9,46 +9,37 @@ pre_build_script: '_G.files = download_official_pkgbuild(''geary'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- at-spi2-core
-- cairo
 - dconf
-- enchant
-- folks
-- gcr
-- gdk-pixbuf2
-- glib2
-- glibc
-- gmime3
-- gnome-online-accounts
-- gsound
 - gspell
-- gtk3
-- hicolor-icon-theme
-- icu
-- iso-codes
-- json-glib
-- libgee
-- libhandy
+- enchant
+- gnome-online-accounts
 - libpeas
+- iso-codes
+- glibc
+- glib2
+- hicolor-icon-theme
 - libsecret
-- libsoup3
-- snowball: libstemmer
-- libunwind
-- libxml2
-- libytnef
 - pango
-- sqlite
+- libxml2
+- gcr
+- cairo
+- icu
+- gsound
 - webkit2gtk-4.1
-repo_makedepends:
-- appstream-glib
-- cmake
-- git
-- gobject-introspection
-- meson
-- vala
-- yelp-tools
+- sqlite
+- snowball: libstemmer
+- at-spi2-core
+- libytnef
+- libsoup3
+- gdk-pixbuf2
+- gmime3
+- libgee
+- libunwind
+- libhandy
+- json-glib
+- gtk3
+- folks
 update_on:
 - alias: icu
 - alpm: geary

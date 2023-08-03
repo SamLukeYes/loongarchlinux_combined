@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''uget'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libnotify
+- curl
 - gtk3
 - gstreamer
-- curl
-repo_makedepends:
-- intltool
 update_on:
 - alpm: uget
   source: archpkg

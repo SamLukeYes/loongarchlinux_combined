@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-psycopg2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- postgresql: postgresql-libs
 - python
-- postgresql: postgresql-libs
-repo_makedepends:
-- python-setuptools
-- postgresql: postgresql-libs
 update_on:
 - alias: python
 - alpm: python-psycopg2

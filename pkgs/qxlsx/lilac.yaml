@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qxlsx'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-base
-- qt6-base
-repo_makedepends:
-- cmake
 - qt5-base
 - qt6-base
 update_on:

@@ -9,10 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-crypt-openssl-rs
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - perl-crypt-openssl-random
-repo_makedepends: []
 update_on:
 - alpm: perl-crypt-openssl-rsa
   source: archpkg

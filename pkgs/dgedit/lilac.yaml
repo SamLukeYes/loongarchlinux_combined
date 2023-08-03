@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dgedit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- qt5-base
+- libsndfile
 - hicolor-icon-theme
 - libao
-- libsndfile
-- qt5-base
-repo_makedepends:
-- qt5-tools
 update_on:
 - alpm: qt5-base
   source: alpm

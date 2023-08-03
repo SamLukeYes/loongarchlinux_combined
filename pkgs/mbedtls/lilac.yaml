@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mbedtls'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python
 repo_depends:
 - glibc
-repo_makedepends:
-- cmake
-- git
-- ninja
-- python
 update_on:
 - alpm: mbedtls
   source: archpkg

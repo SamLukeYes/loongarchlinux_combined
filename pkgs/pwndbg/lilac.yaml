@@ -7,19 +7,17 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pwndbg'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- gdb
-- python
-- capstone: python-capstone
 - unicorn: python-unicorn
 - python-pycparser
+- capstone: python-capstone
 - python-psutil
-- python-tabulate
-- python-pyelftools
+- gdb
 - python-pygments
+- python-tabulate
 - which
-repo_makedepends: []
+- python-pyelftools
+- python
 update_on:
 - alias: python
 - alpm: pwndbg

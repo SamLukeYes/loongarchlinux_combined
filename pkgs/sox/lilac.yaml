@@ -9,30 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sox'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- time
 repo_depends:
 - file
-- gcc: gcc-libs
-- gsm
 - libid3tag
-- libpng
+- gcc: gcc-libs
 - zlib
-repo_makedepends:
-- alsa-lib
-- autoconf-archive
-- flac
-- git
-- lame
-- libao
-- libmad
-- pulseaudio: libpulse
-- libsndfile
-- libvorbis
-- opencore-amr
-- opusfile
-- twolame
-- wavpack
+- libpng
+- gsm
 update_on:
 - alpm: sox
   source: archpkg

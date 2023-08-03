@@ -9,22 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-aeson-diff'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
+- haskell-optparse-applicative
 - haskell-edit-distance-vector
+- haskell-aeson
+- ghc: ghc-libs
 - haskell-scientific
 - haskell-vector
-- haskell-optparse-applicative
 - haskell-yaml
-repo_makedepends:
-- ghc
-- haskell-glob
-- haskell-quickcheck
-- haskell-cabal-doctest
-- haskell-doctest
-- hlint
 update_on:
 - alpm: haskell-aeson
   source: alpm

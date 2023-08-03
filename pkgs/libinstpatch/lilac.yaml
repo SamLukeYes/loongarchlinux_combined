@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libinstpatch'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- glibc
 - glib2
 - libsndfile
-repo_makedepends:
-- cmake
-- glib2
-- libsndfile
-- python
+- glibc
 update_on:
 - alpm: glib2
   provides: libglib-2.0.so

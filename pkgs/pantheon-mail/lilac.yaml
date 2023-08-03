@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-mail'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
-- gtk3
 - webkit2gtk
-repo_makedepends:
-- git
-- intltool
-- meson
-- vala
+- gtk3
+- glib2
 update_on:
 - alpm: evolution-data-server
   provides: libcamel-1.2.so

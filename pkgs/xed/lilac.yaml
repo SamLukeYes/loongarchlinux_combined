@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xed'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gspell
-- gtksourceview4
 - libpeas
+- gtksourceview4
 - xapp
-repo_makedepends:
-- meson
-- samurai
-- gobject-introspection
-- intltool
-- itstool
+- gspell
 update_on:
 - alpm: xed
   source: archpkg

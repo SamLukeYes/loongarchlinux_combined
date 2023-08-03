@@ -1,9 +1,5 @@
 destsubdir: extra
-repo_checkdepends:
-- catch2
 repo_depends:
 - icu
-repo_makedepends:
-- cmake
 update_on:
 - alias: icu

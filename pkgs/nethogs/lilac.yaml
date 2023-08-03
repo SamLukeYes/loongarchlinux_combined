@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nethogs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libpcap
-- ncurses
 - gcc: gcc-libs
-repo_makedepends: []
+- ncurses
 update_on:
 - alpm: nethogs
   source: archpkg

@@ -7,20 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''tmuxp'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-mock
-- python-pytest-rerunfailures
 repo_depends:
-- python
-- python-colorama
 - python-libtmux
-repo_makedepends:
-- python-build
-- python-installer
-- python-poetry-core
-- python-shtab
-- python-wheel
+- python-colorama
+- python
 update_on:
 - alias: python
 - alpm: tmuxp

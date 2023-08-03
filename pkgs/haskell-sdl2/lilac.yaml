@@ -9,19 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-sdl2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
 - sdl2
 - haskell-statevar
-- haskell-linear
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
-- pulseaudio
-- xorg-server: xorg-server-xvfb
-- haskell-weigh
+- haskell-linear
 update_on:
 - alpm: haskell-statevar
   source: alpm

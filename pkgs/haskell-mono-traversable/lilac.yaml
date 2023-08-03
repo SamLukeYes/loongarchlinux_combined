@@ -9,20 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mono-traversa
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-hashable
-- haskell-split
 - haskell-unordered-containers
-- haskell-vector
 - haskell-vector-algorithms
-repo_makedepends:
-- ghc
-- haskell-hunit
-- haskell-quickcheck
-- haskell-foldl
-- haskell-hspec
+- ghc: ghc-libs
+- haskell-split
+- haskell-hashable
+- haskell-vector
 update_on:
 - alpm: haskell-hashable
   source: alpm

@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sympol'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- lrs
 - cddlib
+- boost: boost-libs
 - bliss
-repo_makedepends:
-- cmake
-- permlib
-- eigen
+- lrs
 update_on:
 - alpm: sympol
   source: archpkg

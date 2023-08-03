@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-stackprof'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- ruby-mocha
-- ruby-rake-compiler
 repo_depends:
 - ruby
-repo_makedepends: []
 update_on:
 - alias: ruby
 - alpm: ruby-stackprof

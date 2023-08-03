@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rtmpdump'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - gnutls
+- glibc
 - zlib
-repo_makedepends:
-- git
 update_on:
 - alpm: rtmpdump
   source: archpkg

@@ -7,10 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-datetime-event-ical'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - perl-datetime-event-recurrence
-repo_makedepends: []
 update_on:
 - alpm: perl-datetime-event-ical
   source: archpkg

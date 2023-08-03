@@ -9,19 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wingpanel-indicator-d
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
 - evolution-data-server
-- glib2
-- gtk3
-- libgee
 - libical
 - wingpanel
-repo_makedepends:
-- git
-- meson
-- vala
+- libgee
+- gtk3
+- cairo
+- glib2
 update_on:
 - alpm: granite
   provides: libgranite.so

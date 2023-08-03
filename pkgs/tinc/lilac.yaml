@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tinc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- lzo
 - openssl
 - zlib
-repo_makedepends: []
+- lzo
 update_on:
 - alpm: tinc
   source: archpkg

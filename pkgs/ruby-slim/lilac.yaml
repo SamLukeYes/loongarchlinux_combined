@@ -7,17 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-slim'')
 
   '
-repo_checkdepends:
-- ruby-kramdown
-- ruby-pandoc-ruby
-- ruby-rack-test
-- ruby-sassc
-- ruby-sinatra
 repo_depends:
-- ruby
 - ruby-temple
+- ruby
 - ruby-tilt
-repo_makedepends: []
 update_on:
 - alias: ruby
 - alpm: ruby-slim

@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''trace-cmd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-- glibc
-repo_makedepends:
-- asciidoc
-- audit
-- bash-completion
-- cunit
-- libtraceevent
-- libtracefs
-- python
-- swig
-- xmlto
-- zstd
 update_on:
 - alpm: audit
   provides: libaudit.so

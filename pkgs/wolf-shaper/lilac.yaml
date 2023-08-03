@@ -9,50 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wolf-shaper'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
+- alsa-lib
 - glibc
-- libx11
-- libxext
-- libglvnd
 - gcc: gcc-libs
-- glibc
-- libx11
-- libxext
-- libglvnd
 - liblo
-- gcc: gcc-libs
-- glibc
-- libx11
-- libxext
 - libglvnd
-- gcc: gcc-libs
-- glibc
-- libx11
 - libxext
-- alsa-lib
-- libglvnd
-- gcc: gcc-libs
-- glibc
 - libx11
-- libxext
-- libglvnd
-- gcc: gcc-libs
-- glibc
-- libx11
-- libxext
-- libglvnd
-repo_makedepends:
-- alsa-lib
-- dssi
-- gcc: gcc-libs
-- gendesk
-- glibc
-- libglvnd
-- libx11
-- libxext
-- lv2
 update_on:
 - alpm: cuda-tools
   provides: libGL.so

@@ -1,51 +1,24 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- openexr
-- gstreamer: gst-plugins-base
-- libdc1394
-- lapack: cblas
-- lapack
-- libgphoto2
-- openjpeg2
-- ffmpeg
-- protobuf
-- python-numpy
-- vtk
-- glew
-- qt6-base
-- hdf5
 - jsoncpp
-- openmpi
-- pugixml
-- fmt
-- openexr
-- gstreamer: gst-plugins-base
-- libdc1394
-- lapack: cblas
 - lapack
-- libgphoto2
-- openjpeg2
+- lapack: cblas
+- hdf5
+- openexr
 - ffmpeg
 - protobuf
-- cudnn
-repo_makedepends:
-- cmake
-- python-numpy
-- python-setuptools
-- mesa
-- eigen
-- hdf5
-- lapack: lapacke
-- qt6-5compat
-- vtk
-- glew
-- ant
+- openjpeg2
+- libdc1394
 - pugixml
-- openmpi
 - cudnn
+- glew
+- openmpi
+- gstreamer: gst-plugins-base
+- python-numpy
 - fmt
-- nlohmann-json
+- libgphoto2
+- qt6-base
+- vtk
 update_on:
 - alias: protobuf
 - alpm: opencv

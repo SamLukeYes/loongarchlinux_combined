@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ppp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - libpcap
-- libxcrypt
 - openssl
-repo_makedepends: []
+- glibc
+- libxcrypt
 update_on:
 - alpm: ppp
   source: archpkg

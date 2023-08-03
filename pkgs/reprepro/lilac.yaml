@@ -9,16 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''reprepro'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- db5.3
-- gpgme
-- zlib
 - bzip2
-- xz
-- libarchive
 - libgpg-error
-repo_makedepends: []
+- xz
+- zlib
+- gpgme
+- db5.3
+- libarchive
 update_on:
 - alpm: reprepro
   source: archpkg

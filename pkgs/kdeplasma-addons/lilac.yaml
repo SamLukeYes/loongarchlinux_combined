@@ -1,9 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- plasma-workspace
 - kunitconversion
-repo_makedepends:
-- extra-cmake-modules
-- networkmanager-qt
+- plasma-workspace
 update_on: []

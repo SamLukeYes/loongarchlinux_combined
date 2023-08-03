@@ -9,21 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pd-gem'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- assimp
 - ftgl
-- glew
-- libdv
+- assimp
 - libiec61883
 - pd
 - sdl2
 - ttf-dejavu
 - zlib
-repo_makedepends:
-- imagemagick
-- libvncserver
-- vlc
+- libdv
+- glew
 update_on:
 - alpm: pd-gem
   source: archpkg

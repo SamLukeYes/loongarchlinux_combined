@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qrupdate'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - lapack
-repo_makedepends:
-- gcc: gcc-fortran
-- cmake
 update_on:
 - alpm: qrupdate
   source: archpkg

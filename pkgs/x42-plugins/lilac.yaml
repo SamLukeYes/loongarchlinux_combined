@@ -9,50 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''x42-plugins'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- kxstudio-lv2-extensions
-- lv2lint
 repo_depends:
-- cairo
-- ftgl
-- fftw
-- gcc: gcc-libs
-- glib2
-- glibc
-- libglvnd
-- libltc
-- libsamplerate
 - libsndfile
-- libx11
-- pango
-- zita-convolver
-- cairo
-- fftw
-- gcc: gcc-libs
-- glib2
 - glibc
+- glib2
 - hicolor-icon-theme
-- libglvnd
+- gcc: gcc-libs
+- pango
 - liblo
+- zita-convolver
+- fftw
+- libglvnd
+- cairo
+- ftgl
+- libsamplerate
 - libltc
 - libx11
-- pango
-repo_makedepends:
-- cairo
-- fftw
-- ftgl
-- gendesk
-- glib2
-- glu
-- help2man
-- liblo
-- libltc
-- libsamplerate
-- libsndfile
-- lv2
-- pango
-- ttf-dejavu
-- zita-convolver
 update_on:
 - alpm: fftw
   provides: libfftw3f.so

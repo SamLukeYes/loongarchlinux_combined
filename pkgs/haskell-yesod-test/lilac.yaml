@@ -9,35 +9,28 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-yesod-test'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-hunit
 - haskell-aeson
-- haskell-attoparsec
-- haskell-blaze-builder
-- haskell-blaze-html
-- haskell-blaze-markup
-- haskell-case-insensitive
-- haskell-conduit
-- haskell-cookie
-- haskell-hspec-core
 - haskell-html-conduit
 - haskell-http-types
+- haskell-case-insensitive
 - haskell-memory
-- haskell-network
 - haskell-pretty-show
-- haskell-wai
+- haskell-hspec-core
+- haskell-blaze-builder
+- haskell-blaze-markup
+- haskell-cookie
 - haskell-wai-extra
 - haskell-xml-conduit
-- haskell-xml-types
+- haskell-wai
+- haskell-network
+- ghc: ghc-libs
 - haskell-yesod-core
-repo_makedepends:
-- ghc
-- haskell-yesod-form
-- haskell-hspec
-- haskell-unliftio
-- haskell-unliftio-core
+- haskell-blaze-html
+- haskell-xml-types
+- haskell-conduit
+- haskell-hunit
+- haskell-attoparsec
 update_on:
 - alpm: haskell-hunit
   source: alpm

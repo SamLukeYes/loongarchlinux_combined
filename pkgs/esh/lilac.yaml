@@ -7,12 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''esh'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- gawk
 - sed
-repo_makedepends:
-- asciidoctor
+- gawk
 update_on:
 - alpm: esh
   source: archpkg

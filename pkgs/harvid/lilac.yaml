@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''harvid'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libjpeg-turbo
+- ffmpeg
 - glibc
 - libpng
-- glibc
-- libpng
-- ffmpeg
-- libjpeg-turbo
-repo_makedepends:
-- ffmpeg
-- libjpeg-turbo
 update_on:
 - alpm: ffmpeg
   provides: libavcodec.so

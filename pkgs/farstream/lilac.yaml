@@ -1,10 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- gstreamer: gst-plugins-base-libs
 - libnice
-repo_makedepends:
-- gobject-introspection
-- python
-- gtk-doc
+- gstreamer: gst-plugins-base-libs
 update_on: []

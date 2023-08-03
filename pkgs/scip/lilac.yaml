@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''scip'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - mpfr
-repo_makedepends:
-- cmake
-- boost
-- soplex
-- papilo
 update_on:
 - alpm: scip
   source: archpkg

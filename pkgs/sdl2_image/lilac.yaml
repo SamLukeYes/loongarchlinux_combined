@@ -9,16 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sdl2_image'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - sdl2
-- libpng
 - libtiff
-- libwebp
-- libavif
 - libjxl
-repo_makedepends:
-- cmake
+- libavif
+- libwebp
+- libpng
 update_on:
 - alpm: sdl2_image
   source: archpkg

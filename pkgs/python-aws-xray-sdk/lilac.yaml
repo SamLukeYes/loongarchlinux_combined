@@ -7,35 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-aws-xray-sdk'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-asyncio
-- python-testing.postgresql
-- python-webtest
-- python-django-fake-model
-- python-pytest-benchmark
 repo_depends:
-- python
 - python-botocore
 - python-wrapt
-repo_makedepends:
-- git
-- python-setuptools
-- python-aiobotocore
-- python-aiohttp
-- python-bottle
-- django: python-django
-- python-flask
-- python-flask-sqlalchemy
-- python-httpx
-- python-mysql-connector
-- python-pg8000
-- python-psycopg2
-- python-pymongo
-- python-pymysql
-- python-pynamodb
-- python-requests
-- python-sqlalchemy
+- python
 update_on:
 - alias: python
 - alpm: python-aws-xray-sdk

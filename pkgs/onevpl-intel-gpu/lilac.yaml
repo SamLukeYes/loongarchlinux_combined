@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''onevpl-intel-gpu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libva
 - intel-media-driver
 - libdrm
-- libva
-repo_makedepends:
-- cmake
 update_on:
 - alpm: onevpl-intel-gpu
   source: archpkg

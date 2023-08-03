@@ -9,16 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''osmo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libical
+- libgringotts
 - gspell
 - libarchive
-- libgringotts
-- libical
 - libnotify
-- libxml2
 - webkit2gtk
-repo_makedepends: []
+- libxml2
 update_on:
 - alpm: osmo
   source: archpkg

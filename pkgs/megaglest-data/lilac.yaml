@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''megaglest-data'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- cmake
-- xz
-- git
 update_on:
 - alpm: megaglest-data
   source: archpkg

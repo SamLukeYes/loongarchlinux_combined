@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-direct-sqlite
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - sqlite
-repo_makedepends:
-- ghc
-- haskell-hunit
-- haskell-base16-bytestring
-- haskell-temporary
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-direct-sqlite
   source: archpkg

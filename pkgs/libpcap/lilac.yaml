@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libpcap'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - libnl
 - glibc
-- libnl
-repo_makedepends:
-- bluez: bluez-libs
-- dbus
 update_on:
 - alpm: dbus
   provides: libdbus-1.so

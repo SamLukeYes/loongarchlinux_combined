@@ -7,13 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-mime-tools'')
 
   '
-repo_checkdepends:
-- perl-test-deep
 repo_depends:
 - perl-mailtools
-- perl-io-stringy
 - perl-convert-binhex
-repo_makedepends: []
+- perl-io-stringy
 update_on:
 - alpm: perl-mime-tools
   source: archpkg

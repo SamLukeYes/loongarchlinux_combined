@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gpac'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- libnghttp2
-- openssl
 - xz
 - zlib
-repo_makedepends:
-- git
+- openssl
+- glibc
+- libnghttp2
 update_on:
 - alpm: gpac
   source: archpkg

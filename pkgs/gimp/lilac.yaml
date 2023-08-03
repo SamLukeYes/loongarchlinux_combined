@@ -9,57 +9,50 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gimp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-# - babl
-# - cairo
-- fontconfig
-- freetype2
-- gcc: gcc-libs
-- gdk-pixbuf2
-# - gegl
-- glib2
-- glibc
-- gtk2
-- harfbuzz
-- hicolor-icon-theme
-- iso-codes
-- json-glib
-- lcms2
-- libgexiv2
-# - libmypaint
-- libunwind
-- mypaint-brushes1
-- pango
-- zlib
-- bzip2
-- libgudev
-- libheif
-- libjpeg-turbo
-# - libjxl
-- libmng
-- libpng
-- librsvg
-- libtiff
-- libwebp
-- libwmf
-- libx11
-- libxcursor
-- libxext
-- libxfixes
-- libxmu
-- libxpm
-- openexr
-- openjpeg2
 - poppler-data
-- poppler: poppler-glib
+- bzip2
+- libxfixes
+- libjxl
+- librsvg
+- iso-codes
+- glibc
+- hicolor-icon-theme
+- glib2
+- gegl
+- libxpm
+- gcc: gcc-libs
+- mypaint-brushes1
+- libjpeg-turbo
 - xz
-# repo_makedepends:
-# - alsa-lib
-# - ghostscript
-# - gtk-doc
-# - gvfs
-# - intltool
+- pango
+- openexr
+- libxcursor
+- harfbuzz
+- libxext
+- cairo
+- libpng
+- openjpeg2
+- fontconfig
+- libmypaint
+- freetype2
+- gtk2
+- poppler: poppler-glib
+- libgexiv2
+- libxmu
+- gdk-pixbuf2
+- libmng
+- libunwind
+- libtiff
+- zlib
+- libheif
+- libwmf
+- babl
+- lcms2
+- libx11
+- json-glib
+- libwebp
+- libgudev
 update_on:
 - alpm: gimp
   source: archpkg

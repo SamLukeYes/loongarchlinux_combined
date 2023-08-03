@@ -9,29 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openmpi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- glibc
 - hwloc
-- libevent
-- libnl
-- openpmix
-- openssh
-- zlib
 - gcc: gcc-libs
-- glibc
-- hwloc
-- libevent
 - libnl
-- openpmix
 - openssh
+- libevent
 - zlib
-# repo_makedepends:
-# - cuda
-# - gcc: gcc-fortran
-# - inetutils
-# - valgrind
+- openpmix
+- glibc
 update_on:
 - alpm: openpmix
   provides: libpmix.so

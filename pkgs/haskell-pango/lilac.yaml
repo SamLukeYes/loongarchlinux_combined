@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pango'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- pango
 - haskell-glib
+- pango
+- ghc: ghc-libs
 - haskell-cairo
-repo_makedepends:
-- ghc
-- haskell-gtk2hs-buildtools
-- mesa
 update_on:
 - alpm: haskell-glib
   source: alpm

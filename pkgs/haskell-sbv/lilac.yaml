@@ -9,27 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-sbv'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- abc
-- cvc4
-- yices
-- z3
 repo_depends:
-- ghc: ghc-libs
-- haskell-quickcheck
-- haskell-async
-- haskell-libbf
-- haskell-random
 - haskell-syb
 - haskell-uniplate
-repo_makedepends:
-- ghc
-- expac
-- hlint
-- haskell-tasty
-- haskell-tasty-golden
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
+- haskell-async
+- ghc: ghc-libs
+- haskell-random
+- haskell-quickcheck
+- haskell-libbf
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

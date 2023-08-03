@@ -7,11 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''offroad'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- hicolor-icon-theme
 - imagemagick
-repo_makedepends: []
+- hicolor-icon-theme
 update_on:
 - alpm: offroad
   source: archpkg

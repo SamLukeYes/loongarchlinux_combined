@@ -9,30 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''luppp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
 - gcc: gcc-libs
-- glibc
-- liblo
 - libsamplerate
 - libsndfile
-- libx11
+- liblo
 - ntk
+- libx11
 - cairo
-- gcc: gcc-libs
 - glibc
-- liblo
-- libsamplerate
-- libsndfile
-- libx11
-- ntk
-- liblo
-- ntk
-- libsamplerate
-- libsndfile
-repo_makedepends:
-- meson
 update_on:
 - alpm: jack2
   provides: libjack.so

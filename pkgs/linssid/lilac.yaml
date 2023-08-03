@@ -9,19 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''linssid'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-base
-- qt5-svg
-- qwt
-- libxkbcommon: libxkbcommon-x11
-- iw
-- wireless_tools
 - xdg-utils
+- qt5-base
+- wireless_tools
 - desktop-file-utils
+- qwt
+- iw
 - gtk4: gtk-update-icon-cache
-repo_makedepends:
-- boost
+- qt5-svg
+- libxkbcommon: libxkbcommon-x11
 update_on:
 - alpm: qt5-base
   source: alpm

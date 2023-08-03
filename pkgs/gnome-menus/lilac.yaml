@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-menus'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glib2
-repo_makedepends:
-- intltool
-- gobject-introspection
-- git
-- gnome-common
 update_on:
 - alpm: gnome-menus
   source: archpkg

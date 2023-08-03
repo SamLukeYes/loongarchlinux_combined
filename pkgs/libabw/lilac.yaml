@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libabw'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - librevenge
 - libxml2
-repo_makedepends:
-- doxygen
-- gperf
-- boost
 update_on:
 - alpm: libabw
   source: archpkg

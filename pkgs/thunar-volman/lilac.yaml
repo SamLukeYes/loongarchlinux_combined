@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''thunar-volman'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - thunar
-- libxfce4ui
 - hicolor-icon-theme
-repo_makedepends:
-- intltool
+- libxfce4ui
 update_on:
 - alpm: thunar-volman
   source: archpkg

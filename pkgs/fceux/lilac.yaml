@@ -9,20 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fceux'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gd
-- lua
-- zlib: minizip
 - qt5-base
 - sdl2
-repo_makedepends:
-- cmake
-- git
-- glu
-- ninja
-- setconf
-- scons
+- gd
+- zlib: minizip
+- lua
 update_on:
 - alias: lua
 - alpm: qt5-base

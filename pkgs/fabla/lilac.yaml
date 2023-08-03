@@ -9,23 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fabla'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
-- cairo
 - gcc: gcc-libs
-- glibc
+- libsndfile
+- ntk
 - cairo
-- gcc: gcc-libs
 - glibc
-- ntk
-- libsndfile
-repo_makedepends:
-- cmake
-- libglvnd
-- libsndfile
-- lv2
-- ntk
 update_on:
 - alpm: ntk
   provides: libntk.so

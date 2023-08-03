@@ -1,9 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-repo_makedepends:
-- python
-- cmake
 - gcc: gcc-libs
 update_on: []

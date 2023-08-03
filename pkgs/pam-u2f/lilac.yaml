@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pam-u2f'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libfido2
 - openssl
+- libfido2
 - pam
-repo_makedepends:
-- asciidoc
 update_on:
 - alpm: pam-u2f
   source: archpkg

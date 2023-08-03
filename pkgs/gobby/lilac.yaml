@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gobby'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libinfinity
 - gtkmm3
 - gtksourceview3
-- libinfinity
 - libxml++2.6
-repo_makedepends:
-- git
-- intltool
-- yelp-tools
 update_on:
 - alpm: gobby
   source: archpkg

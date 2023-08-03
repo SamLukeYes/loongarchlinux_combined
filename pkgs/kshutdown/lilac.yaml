@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kshutdown'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - knotifyconfig
-- kidletime
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
+- kidletime
 update_on:
 - alpm: kshutdown
   source: archpkg

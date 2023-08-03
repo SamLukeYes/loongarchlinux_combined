@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''keycloak-metrics-spi'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- java11-openjdk: jdk11-openjdk
-- gradle
-- keycloak
 update_on:
 - alpm: keycloak-metrics-spi
   source: archpkg

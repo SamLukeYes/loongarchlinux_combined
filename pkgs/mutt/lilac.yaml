@@ -9,36 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mutt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- libgpg-error
-- sqlite
-- zlib
-- glibc
-- libgpg-error
-- sqlite
-- zlib
-- gdbm
-- gpgme
 - krb5
-- libidn2
-- libsasl
-- ncurses
-- openssl
-repo_makedepends:
-- docbook-xml
-- docbook-xsl
-- elinks
 - gdbm
+- glibc
 - gpgme
-- krb5
-- libidn2
-- libsasl
-- libxslt
-- lynx
-- ncurses
+- sqlite
 - openssl
+- libgpg-error
+- libidn2
+- ncurses
+- libsasl
+- zlib
 update_on:
 - alpm: gdbm
   provides: libgdbm.so

@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-test-framewor
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-smallcheck
 - ghc: ghc-libs
 - haskell-test-framework
-- haskell-smallcheck
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-test-framework
   source: alpm

@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''liblangtag'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxml2
 - glib2
-repo_makedepends:
-- gobject-introspection
+- libxml2
 update_on:
 - alpm: liblangtag
   source: archpkg

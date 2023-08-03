@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mlton'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gmp
-repo_makedepends:
-- git
-- setconf
 update_on:
 - alpm: mlton
   source: archpkg

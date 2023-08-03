@@ -7,11 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-socksio'')
 
   '
-repo_checkdepends:
-- python-pytest-cov
 repo_depends:
 - python
-repo_makedepends: []
 update_on:
 - alias: python
 - alpm: python-socksio

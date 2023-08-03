@@ -1,17 +1,7 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- glib2
 - libsoup3
 - glib2
-- libsoup3
-repo_makedepends:
-- gobject-introspection
-- gi-docgen
-- vala
-- meson
-- git
-- gtk4
 update_on:
 - alpm: glib2
   provides: libglib-2.0.so

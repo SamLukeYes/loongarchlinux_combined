@@ -9,18 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''keepalived'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- libnl
-- openssl
 - file
+- libnl
 - iptables
+- openssl
+- glibc
 - systemd: systemd-libs
-repo_makedepends:
-- libnfnetlink
-- ipset
-- systemd
 update_on:
 - alpm: iptables
   source: alpm

@@ -9,22 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-conduit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
-- haskell-mono-traversable
-- haskell-primitive
 - haskell-resourcet
-- haskell-unliftio-core
 - haskell-vector
-repo_makedepends:
-- ghc
-- haskell-hspec
-- haskell-quickcheck
-- haskell-safe
-- haskell-silently
-- haskell-split
-- haskell-unliftio
+- haskell-unliftio-core
+- haskell-primitive
+- haskell-mono-traversable
 update_on:
 - alpm: haskell-mono-traversable
   source: alpm

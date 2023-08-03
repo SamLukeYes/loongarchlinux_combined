@@ -9,18 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cmake'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- jsoncpp
 - curl
 - libarchive
-- hicolor-icon-theme
-- jsoncpp
-- libuv
 - rhash
-# repo_makedepends:
-# - qt6-base
-# - python-sphinx
-# - emacs
+- libuv
+- hicolor-icon-theme
 update_on:
 - alias: jsoncpp
 - alpm: jsoncpp

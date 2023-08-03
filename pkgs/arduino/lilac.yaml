@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''arduino'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
-- desktop-file-utils
-- shared-mime-info
 - arduino-builder
-repo_makedepends:
-- gtk2-compat
-- ant
-- unzip
-- asciidoc
+- desktop-file-utils
+- gtk3
+- shared-mime-info
 update_on:
 - alpm: arduino
   source: archpkg

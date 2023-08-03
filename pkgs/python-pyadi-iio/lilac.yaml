@@ -7,18 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pyadi-iio'')
 
   '
-repo_checkdepends:
-- python-pytest
-- scapy: python-scapy
 repo_depends:
-- libiio: python-pylibiio
-- python-numpy
 - python-paramiko
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-numpy
+- libiio: python-pylibiio
 update_on:
 - alpm: python-pyadi-iio
   source: archpkg

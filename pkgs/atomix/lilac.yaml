@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''atomix'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
 - libgnome-games-support
-repo_makedepends:
-- meson
-- appstream-glib
-- git
 update_on:
 - alpm: atomix
   source: archpkg

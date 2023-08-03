@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qt-gstreamer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-declarative
 - gstreamer: gst-plugins-good
-repo_makedepends:
-- cmake
-- boost
-- doxygen
-- python
+- qt5-declarative
 update_on:
 - alpm: qt5-declarative
   source: alpm

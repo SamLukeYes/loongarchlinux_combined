@@ -7,15 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-acme-alien-dontpanic'')
 
   '
-repo_checkdepends:
-- perl-test2-suite
-- perl-inline
-- perl-inline-c
-- perl-inline-cpp
 repo_depends:
 - dontpanic
 - perl-alien-build
-repo_makedepends: []
 update_on:
 - alpm: perl-acme-alien-dontpanic
   source: archpkg

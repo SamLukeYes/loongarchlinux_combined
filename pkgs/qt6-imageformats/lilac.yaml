@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qt6-imageformats'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt6-base
-- jasper
-- libwebp
 - libmng
-repo_makedepends:
-- cmake
-- ninja
+- libwebp
+- jasper
+- qt6-base
 update_on:
 - alpm: qt6-base
   source: alpm

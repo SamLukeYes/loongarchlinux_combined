@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pynacl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libsodium
-- python
-- python-six
 - python-cffi
-repo_makedepends:
-- python-setuptools
-- python-pycparser
-- python-wheel
+- python
+- libsodium
+- python-six
 update_on:
 - alias: python
 - alpm: python-pynacl

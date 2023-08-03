@@ -7,17 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-ruby_memcheck'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - valgrind
 - ruby-nokogiri
-repo_makedepends:
-- git
-- ruby-minitest
-- ruby-minitest-parallel_fork
-- ruby-rake
-- ruby-rake-compiler
-- ruby-rspec-core
 update_on:
 - alpm: ruby-ruby_memcheck
   source: archpkg

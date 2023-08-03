@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''neatvnc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- gnutls
-- libdrm
-- mesa
 - zlib
-repo_makedepends:
-- git
-- meson
-- ninja
+- libdrm
+- gnutls
+- glibc
+- mesa
 update_on:
 - alpm: aml
   provides: libaml.so

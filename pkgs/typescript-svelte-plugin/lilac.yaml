@@ -7,11 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''typescript-svelte-plugin'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - nodejs
-repo_makedepends:
-- yarn
 update_on:
 - alpm: typescript-svelte-plugin
   source: archpkg

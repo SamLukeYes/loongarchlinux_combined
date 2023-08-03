@@ -9,25 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ospray'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- ispc
 - embree
 - gcc: gcc-libs
-- glibc
-- ispc
+- openvkl
+- openimagedenoise
+- snappy
+- rkcommon
 - onetbb
 - openmpi
-- openimagedenoise
-- openvkl
-- rkcommon
-- snappy
-repo_makedepends:
-- cmake
-- benchmark
-- glu
-- gtest
-- level-zero: level-zero-headers
-- level-zero: level-zero-loader
+- glibc
 update_on:
 - alpm: ospray
   source: archpkg

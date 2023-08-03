@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-x509-system''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-x509
 - ghc: ghc-libs
 - haskell-pem
-- haskell-x509
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-pem
   source: alpm

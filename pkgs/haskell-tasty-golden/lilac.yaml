@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-golden'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-tasty
 - haskell-optparse-applicative
-- haskell-temporary
-- haskell-tagged
+- ghc: ghc-libs
 - haskell-async
+- haskell-tagged
+- haskell-tasty
+- haskell-temporary
 - haskell-typed-process
-repo_makedepends:
-- ghc
-- haskell-tasty-hunit
 update_on:
 - alpm: haskell-tasty
   source: alpm

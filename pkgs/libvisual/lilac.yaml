@@ -1,7 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- glibc
 - sdl12-compat
-repo_makedepends: []
+- glibc
 update_on: []

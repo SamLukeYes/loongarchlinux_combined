@@ -9,23 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-applications
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- appstream
-- gdk-pixbuf2
-- glib2
-- gnome-menus
-- gtk3
-- json-glib
-- libgee
-- libsoup
 - wingpanel
-- plank
+- gdk-pixbuf2
+- appstream
 - zeitgeist
-repo_makedepends:
-- git
-- meson
-- vala
+- libgee
+- json-glib
+- gtk3
+- libsoup
+- glib2
+- plank
+- gnome-menus
 update_on:
 - alpm: granite
   provides: libgranite.so

@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcitx5-bamboo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - fcitx5
-repo_makedepends:
-- extra-cmake-modules
-- go
 update_on:
 - alpm: fcitx5-bamboo
   source: archpkg

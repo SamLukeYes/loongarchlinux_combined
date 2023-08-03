@@ -7,19 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-solidpython'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - python-euclid3
+- python-setuptools
 - python-prettytable
 - python-ply
 - python-pypng
-- python-setuptools
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-poetry-core
-- python-wheel
 update_on:
 - alpm: python-solidpython
   source: archpkg

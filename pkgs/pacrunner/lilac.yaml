@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pacrunner'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
 - dbus
-- curl
 - duktape
-repo_makedepends:
-- git
+- glib2
+- curl
 update_on:
 - alpm: pacrunner
   source: archpkg

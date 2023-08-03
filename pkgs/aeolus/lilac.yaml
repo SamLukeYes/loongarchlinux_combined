@@ -9,25 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aeolus'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- libx11
-- gcc: gcc-libs
-- glibc
-- libx11
 - alsa-lib
-- clthreads
+- gcc: gcc-libs
 - clxclient
-- readline
 - zita-alsa-pcmi
-repo_makedepends:
-- alsa-lib
 - clthreads
-- clxclient
+- libx11
 - readline
-- zita-alsa-pcmi
+- glibc
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

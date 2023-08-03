@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcitx-sunpinyin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fcitx
 - sunpinyin
-- sunpinyin-data
 - gtk4: gtk-update-icon-cache
-repo_makedepends:
-- cmake
+- sunpinyin-data
+- fcitx
 update_on:
 - alpm: fcitx-sunpinyin
   source: archpkg

@@ -7,19 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-invoke'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-relaxed
-- python-icecream
 repo_depends:
-- python-fluidity
 - python-lexicon
 - python-yaml
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-fluidity
 update_on:
 - alpm: python-invoke
   source: archpkg

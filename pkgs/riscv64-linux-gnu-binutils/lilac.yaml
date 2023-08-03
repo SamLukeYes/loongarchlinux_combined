@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''riscv64-linux-gnu-bin
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - elfutils: libelf
-repo_makedepends:
-- setconf
 update_on:
 - alpm: riscv64-linux-gnu-binutils
   source: archpkg

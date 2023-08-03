@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libepoxy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- glibc
 - libglvnd
+- glibc
 - libx11
-repo_makedepends:
-- git
-- meson
-- systemd
-- doxygen
-- graphviz
 update_on:
 - alpm: libepoxy
   source: archpkg

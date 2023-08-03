@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-list-t'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
 - haskell-foldl
@@ -17,12 +16,6 @@ repo_depends:
 - haskell-mmorph
 - haskell-monad-control
 - haskell-transformers-base
-repo_makedepends:
-- ghc
-- uusi
-- haskell-htf
-- haskell-base-prelude
-- haskell-mtl-prelude
 update_on:
 - alpm: haskell-foldl
   source: alpm

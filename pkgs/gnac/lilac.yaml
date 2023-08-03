@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnac'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libnotify
 - gstreamer: gst-plugins-base
 - gtk3
-repo_makedepends:
-- intltool
-- gnome-common
 update_on:
 - alpm: gnac
   source: archpkg

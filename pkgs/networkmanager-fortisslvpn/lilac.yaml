@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''networkmanager-fortis
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- networkmanager: libnm
-- libsecret
 - ppp
 - openfortivpn
-repo_makedepends:
-- libnma
-- libnma: libnma-gtk4
-- intltool
-- python
-- git
+- libsecret
+- networkmanager: libnm
 update_on:
 - alpm: networkmanager-fortisslvpn
   source: archpkg

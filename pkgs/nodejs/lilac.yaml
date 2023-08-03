@@ -9,19 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nodejs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - brotli
-- openssl
 - zlib
-- icu
+- c-ares
+- openssl
 - libuv
 - libnghttp2
-- c-ares
-repo_makedepends:
-- git
-- python
-- procps-ng
+- icu
 update_on:
 - alias: icu
 - alpm: nodejs

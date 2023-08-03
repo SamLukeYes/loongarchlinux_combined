@@ -7,17 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-zope-annotation'')
 
   '
-repo_checkdepends:
-- python-zope-configuration
-- python-zope-testing
-- python-zope-testrunner
 repo_depends:
-- python-setuptools
-- python-zope-interface
-- python-zope-component
 - python-zope-location
+- python-zope-component
+- python-setuptools
 - python-zope-proxy
-repo_makedepends: []
+- python-zope-interface
 update_on:
 - alpm: python-zope-annotation
   source: archpkg

@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pyqt5-chart'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-charts
 - pyqt5: python-pyqt5
-repo_makedepends:
-- sip
-- pyqt-builder
+- qt5-charts
 update_on:
 - alpm: pyqt5-chart
   source: archpkg

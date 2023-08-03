@@ -9,16 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mingw-w64-gcc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- zlib
-- libisl
-- libmpc
-- mingw-w64-crt
-- mingw-w64-binutils
 - mingw-w64-winpthreads
 - mingw-w64-headers
-repo_makedepends: []
+- zlib
+- libisl
+- mingw-w64-binutils
+- libmpc
+- mingw-w64-crt
 update_on:
 - alpm: mingw-w64-gcc
   source: archpkg

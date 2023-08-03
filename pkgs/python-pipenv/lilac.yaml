@@ -7,20 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pipenv'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytz
 repo_depends:
 - python
 - python-pip
-- python-certifi
 - python-virtualenv-clone
 - python-virtualenv
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-certifi
 update_on:
 - alias: python
 - alpm: python-pipenv

@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''serd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-repo_makedepends:
-- doxygen
-- meson
-- python-sphinx
 update_on:
 - alpm: serd
   source: archpkg

@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openexr'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- zlib
 - imath
-repo_makedepends:
-- cmake
+- zlib
 update_on:
 - alpm: openexr
   source: archpkg

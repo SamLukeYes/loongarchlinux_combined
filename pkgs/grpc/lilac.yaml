@@ -9,37 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''grpc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-six
 repo_depends:
-- c-ares
-- protobuf
-- openssl
 - re2
-- abseil-cpp
-- c-ares
-- python
+- php
 - python-six
-- re2
-- abseil-cpp
-- protobuf: python-protobuf
-- php
-- php-legacy
-repo_makedepends:
-- re2
-- re2c
-- protobuf
-- php
 - php-legacy
 - c-ares
-- openssl
-- chrpath
-- cython
-- cmake
-- benchmark
-- python-setuptools
+- protobuf: python-protobuf
 - abseil-cpp
-- ninja
+- openssl
+- protobuf
+- python
 update_on:
 - alias: protobuf
 - alias: python

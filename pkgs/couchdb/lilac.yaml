@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''couchdb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- icu
-- js91
 - zlib
-repo_makedepends:
-- erlang-nox
+- js91
+- icu
 update_on:
 - alias: icu
 - alpm: couchdb

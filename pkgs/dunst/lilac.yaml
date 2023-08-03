@@ -9,19 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dunst'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxinerama
-- dbus
-- systemd
+- gdk-pixbuf2
 - wayland
+- libxrandr
 - libxss
 - pango
-- gdk-pixbuf2
-- libxrandr
+- dbus
+- libxinerama
 - glib2
-repo_makedepends:
-- libnotify
+- systemd
 update_on:
 - alpm: dunst
   source: archpkg

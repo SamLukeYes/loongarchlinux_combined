@@ -9,30 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''avahi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- expat
-- libdaemon
-- glib2
-- libcap
-- gdbm
 - dbus
-- expat
-- libdaemon
-- glib2
-- libcap
 - gdbm
-- dbus
-repo_makedepends:
-- git
-- gobject-introspection
-- gtk3
-- qt5-base
-- xmltoman
-- pygobject: python-gobject
-- doxygen
-- graphviz
-- libevent
+- libcap
+- libdaemon
+- expat
+- glib2
 update_on:
 - alpm: dbus
   provides: libdbus-1.so

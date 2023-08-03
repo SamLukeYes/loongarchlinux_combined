@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-unrardll'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - unrar: libunrar
 - python
-repo_makedepends:
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-unrardll

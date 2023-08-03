@@ -9,26 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-yaml'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-attoparsec
-- haskell-conduit
-- haskell-libyaml
 - haskell-optparse-applicative
-- haskell-resourcet
-- haskell-scientific
 - haskell-unordered-containers
+- haskell-aeson
+- ghc: ghc-libs
+- haskell-libyaml
+- haskell-scientific
 - haskell-vector
-repo_makedepends:
-- ghc
-- haskell-hspec
-- haskell-hunit
-- haskell-mockery
-- haskell-base-compat
-- haskell-raw-strings-qq
-- haskell-temporary
+- haskell-conduit
+- haskell-resourcet
+- haskell-attoparsec
 update_on:
 - alpm: haskell-aeson
   source: alpm

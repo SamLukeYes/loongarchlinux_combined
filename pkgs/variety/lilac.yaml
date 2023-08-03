@@ -7,24 +7,21 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''variety'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
-- imagemagick
-- libgexiv2
-- libnotify
 - python-beautifulsoup4
-- python-cairo
-- python-configobj
-- dbus-python
-- pygobject: python-gobject
-- python-httplib2
-- python-pillow
-- python-lxml
-- python-pycurl
 - python-requests
-repo_makedepends:
-- python-distutils-extra
+- python-pycurl
+- python-pillow
+- python-configobj
+- python-lxml
+- imagemagick
+- python-httplib2
+- libnotify
+- dbus-python
+- gtk3
+- pygobject: python-gobject
+- python-cairo
+- libgexiv2
 update_on:
 - alpm: variety
   source: archpkg

@@ -9,22 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libxkbcommon'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- libxml2
-- xkeyboard-config
 - libxcb
-repo_makedepends:
-- doxygen
-- git
-- libxcb
-- libxml2
-- meson
-- wayland
-- wayland-protocols
 - xkeyboard-config
-- xorgproto
+- libxml2
 update_on:
 - alpm: intel-oneapi-basekit
   provides: libxkbcommon.so

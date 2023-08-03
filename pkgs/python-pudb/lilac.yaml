@@ -7,16 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pudb'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-mock
 repo_depends:
 - python-urwid
-- python-pygments
-- python-jedi
 - python-packaging
-repo_makedepends:
-- python-setuptools
+- python-jedi
+- python-pygments
 update_on:
 - alpm: python-pudb
   source: archpkg

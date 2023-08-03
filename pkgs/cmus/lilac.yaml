@@ -9,24 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cmus'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libdiscid
 - ncurses
-repo_makedepends:
-- faad2
-- ffmpeg
-- flac
-- libao
-- libcdio-paranoia
-- libmad
-- libmodplug
-- libmp4v2
-- musepack: libmpcdec
-- pulseaudio: libpulse
-- libsamplerate
-- libvorbis
-- wavpack
+- libdiscid
 update_on:
 - alpm: cmus
   source: archpkg

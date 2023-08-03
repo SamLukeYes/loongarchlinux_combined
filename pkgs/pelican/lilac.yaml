@@ -7,27 +7,17 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pelican'')
 
   '
-repo_checkdepends:
-- python-setuptools
-- python-lxml
-- git
-- python-nose
-- python-feedparser
-- python-markdown
-- python-typogrify
 repo_depends:
-- python-jinja
-- python-pygments
-- python-feedgenerator
-- python-pytz
-- python-docutils
-- python-blinker
-- python-unidecode
-- python-six
 - python-dateutil
+- python-pytz
+- python-six
+- python-feedgenerator
+- python-unidecode
+- python-pygments
+- python-blinker
+- python-jinja
 - python-rich
-repo_makedepends:
-- python-sphinx
+- python-docutils
 update_on:
 - alpm: pelican
   source: archpkg

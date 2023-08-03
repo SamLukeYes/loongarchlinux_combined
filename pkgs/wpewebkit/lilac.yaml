@@ -1,82 +1,37 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
+- libtasn1
+- libavif
+- libgcrypt
+- libwpe
+- glib2
+- gstreamer
+- harfbuzz: harfbuzz-icu
+- harfbuzz
+- libxml2
 - bubblewrap
 - cairo
-- fontconfig
-- freetype2
-- glib2
-- gstreamer: gst-plugins-bad-libs
-- gstreamer: gst-plugins-base-libs
-- gstreamer
-- harfbuzz
-- harfbuzz: harfbuzz-icu
-- icu
-- libavif
-- libdrm
-- libepoxy
-- libgcrypt
 - libpng
-- libseccomp
-- libsoup3
-- libtasn1
-- libwebp
-- libwpe
-- libxkbcommon
-- libxml2
-- libxslt
-- mesa
-- openjpeg2
-- sqlite
-- wayland
-- woff2
-- wpebackend-fdo
-- xdg-dbus-proxy
-- zlib
-- bubblewrap
-- cairo
-- fontconfig
-- freetype2
-- glib2
-- gstreamer: gst-plugins-bad-libs
-- gstreamer: gst-plugins-base-libs
-- gstreamer
-- harfbuzz
-- harfbuzz: harfbuzz-icu
 - icu
-- libavif
-- libdrm
-- libepoxy
-- libgcrypt
-- libpng
-- libseccomp
-- libsoup3
-- libtasn1
-- libwebp
-- libwpe
-- libxkbcommon
-- libxml2
-- libxslt
-- mesa
 - openjpeg2
-- sqlite
-- wayland
+- fontconfig
+- libxkbcommon
+- libseccomp
 - woff2
-- wpebackend-fdo
 - xdg-dbus-proxy
+- libdrm
+- freetype2
+- gstreamer: gst-plugins-base-libs
+- sqlite
+- libepoxy
+- libsoup3
+- wayland
+- gstreamer: gst-plugins-bad-libs
+- libxslt
 - zlib
-repo_makedepends:
-- cmake
-- gi-docgen
-- gobject-introspection
-- gperf
-- gstreamer: gst-plugins-bad
-- ninja
-- python
-- ruby
-- systemd
-- unifdef
-- wayland-protocols
+- wpebackend-fdo
+- libwebp
+- mesa
 update_on:
 - alias: icu
 - alias: icu

@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-boot-maker'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- deepin-qt5integration
+- syslinux
 - p7zip
 - mtools
-- syslinux
-repo_makedepends:
-- qt5-tools
-- python
-- gtest
+- deepin-qt5integration
 update_on:
 - alpm: deepin-boot-maker
   source: archpkg

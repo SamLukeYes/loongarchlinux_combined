@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-should-not-ty
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-hunit
-repo_makedepends:
-- ghc
-- haskell-hspec
-- haskell-hspec-expectations
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-hunit
   source: alpm

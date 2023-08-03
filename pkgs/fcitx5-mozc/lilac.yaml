@@ -9,20 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcitx5-mozc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt5-base
 - fcitx5
-repo_makedepends:
-- python
-- curl
-- gtk2
-- mesa
-- subversion
-- bazel
-- git
-- clang
-- python-six
 update_on:
 - alpm: qt5-base
   source: alpm

@@ -9,22 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''linux-rt-lts'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- kmod
+- pahole
 - coreutils
-- kmod
-- pahole
-repo_makedepends:
-- bc
-- git
-- graphviz
-- imagemagick
-- kmod
-- elfutils: libelf
-- pahole
-- python-sphinx
-- texlive-texmf: texlive-latexextra
-- xmlto
 update_on:
 - alpm: linux-rt-lts
   source: archpkg

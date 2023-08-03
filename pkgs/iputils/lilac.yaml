@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''iputils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libcap
 - libidn2
-repo_makedepends:
-- perl-sgmls
-- git
-- docbook-xsl
-- meson
-- systemd
 update_on:
 - alpm: iputils
   source: archpkg

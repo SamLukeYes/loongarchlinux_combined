@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xf86-video-ati'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- systemd: systemd-libs
 - mesa
-repo_makedepends:
-- xorg-server: xorg-server-devel
-- systemd
+- systemd: systemd-libs
 update_on:
 - alpm: xf86-video-ati
   source: archpkg

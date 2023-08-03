@@ -9,19 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''folks'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - evolution-data-server
 - libgee
 - libxml2
-repo_makedepends:
-- git
-- gobject-introspection
-- gtk-doc
-- sysprof: libsysprof-capture
-- meson
-- python-dbusmock
-- vala
 update_on:
 - alpm: folks
   source: archpkg

@@ -9,19 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi-harfbuzz''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
-- haskell-gi-freetype2
 - haskell-gi-glib
-- haskell-gi-gobject
-- haskell-gi
-- haskell-gi-base
 - haskell-gi-overloading
+- haskell-gi-base
+- haskell-gi
 - harfbuzz
-repo_makedepends:
-- ghc
-- gobject-introspection
+- haskell-gi-gobject
+- haskell-gi-freetype2
 update_on:
 - alpm: haskell-gi-freetype2
   source: alpm

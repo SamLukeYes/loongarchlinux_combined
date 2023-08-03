@@ -9,22 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-compressor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- deepin-qt5integration
-- disomaster
-- karchive
-- kcodecs
-- libarchive
 - libzip
-- zlib: minizip
+- disomaster
 - udisks2-qt5
-repo_makedepends:
-- git
-- cmake
-- gtest
-- ninja
-- qt5-tools
+- libarchive
+- kcodecs
+- karchive
+- zlib: minizip
+- deepin-qt5integration
 update_on:
 - alpm: deepin-compressor
   source: archpkg

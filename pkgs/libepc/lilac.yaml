@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libepc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
-- avahi
 - libsoup
-repo_makedepends:
-- intltool
-- python
+- avahi
 update_on:
 - alpm: libepc
   source: archpkg

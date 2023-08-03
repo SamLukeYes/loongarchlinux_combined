@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''rapidfuzz-cpp'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- cmake
 update_on:
 - alpm: rapidfuzz-cpp
   source: archpkg

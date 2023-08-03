@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdbg'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gdb
 - kxmlgui
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
+- gdb
 update_on:
 - alpm: kdbg
   source: archpkg

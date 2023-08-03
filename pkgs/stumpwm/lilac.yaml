@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''stumpwm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- sbcl
-- cl-ppcre
 - cl-clx
+- sbcl
 - cl-alexandria
-repo_makedepends:
-- git
+- cl-ppcre
 update_on:
 - alpm: stumpwm
   source: archpkg

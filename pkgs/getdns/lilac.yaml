@@ -9,18 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''getdns'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libbsd
-- libev
-- libevent
 - libidn2
-- libuv
-- libyaml
 - unbound
+- libbsd
+- libevent
 - check
-repo_makedepends:
-- cmake
+- libev
+- libyaml
+- libuv
 update_on:
 - alpm: getdns
   source: archpkg

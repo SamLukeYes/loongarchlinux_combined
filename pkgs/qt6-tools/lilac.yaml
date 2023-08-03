@@ -1,13 +1,6 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - qt6-base
-repo_makedepends:
-- cmake
-- ninja
-- qt6-declarative
-- clang
-- llvm
 update_on:
 - alpm: qt6-base
   source: alpm

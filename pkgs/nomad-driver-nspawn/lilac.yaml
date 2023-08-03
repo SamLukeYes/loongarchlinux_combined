@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nomad-driver-nspawn''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - nomad
+- glibc
 - systemd
-repo_makedepends:
-- git
-- go
 update_on:
 - alpm: nomad-driver-nspawn
   source: archpkg

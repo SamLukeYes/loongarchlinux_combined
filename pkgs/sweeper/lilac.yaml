@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sweeper'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kactivities-stats
 - kio
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
+- kactivities-stats
 update_on:
 - alpm: sweeper
   source: archpkg

@@ -9,19 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-onli
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glib2
-- glibc
-- gtk3
-- json-glib
-- libgee
 - rest
+- libgee
 - webkit2gtk
-repo_makedepends:
-- git
-- meson
-- vala
+- json-glib
+- gtk3
+- glibc
 update_on:
 - alpm: evolution-data-server
   provides: libcamel-1.2.so

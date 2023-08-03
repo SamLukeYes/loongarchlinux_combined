@@ -9,20 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mysql-simple'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- mariadb
 repo_depends:
 - ghc: ghc-libs
-- haskell-attoparsec
-- haskell-base16-bytestring
+- haskell-mysql
 - haskell-blaze-builder
 - haskell-blaze-textual
-- haskell-mysql
-- haskell-old-locale
 - haskell-pcre-light
-repo_makedepends:
-- ghc
-- haskell-hspec
+- haskell-attoparsec
+- haskell-base16-bytestring
+- haskell-old-locale
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''highlight'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- lua
-- qt5-base
-repo_makedepends:
 - qt5-base
 - lua
-- boost
 update_on:
 - alias: lua
 - alpm: qt5-base

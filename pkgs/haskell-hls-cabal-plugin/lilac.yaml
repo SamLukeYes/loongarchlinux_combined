@@ -9,24 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-cabal-plu
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-unordered-containers
 - ghc: ghc-libs
-- haskell-extra
-- haskell-ghcide
 - haskell-hashable
-- haskell-hls-graph
+- haskell-lsp-types
 - haskell-hls-plugin-api
 - haskell-lsp
-- haskell-lsp-types
+- haskell-ghcide
+- haskell-extra
 - haskell-regex-tdfa
-- haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hls-test-utils
-- haskell-lens
-- haskell-tasty-hunit
+- haskell-hls-graph
 update_on:
 - alpm: haskell-extra
   source: alpm

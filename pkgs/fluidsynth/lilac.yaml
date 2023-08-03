@@ -9,38 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fluidsynth'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- sdl2
-- gcc: gcc-libs
-- glibc
-- sdl2
 - alsa-lib
-- dbus
+- libsndfile
 - glib2
 - libinstpatch
+- glibc
 - pipewire: libpipewire
-- pulseaudio: libpulse
-- libsndfile
-- portaudio
-- readline
-- systemd: systemd-libs
-repo_makedepends:
-- alsa-lib
-- cmake
+- gcc: gcc-libs
 - dbus
-- doxygen
-- glib2
-- ladspa
-- libinstpatch
-- pipewire: libpipewire
-- pulseaudio: libpulse
-- libsndfile
-- portaudio
-- readline
 - systemd: systemd-libs
+- pulseaudio: libpulse
+- sdl2
+- readline
+- portaudio
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

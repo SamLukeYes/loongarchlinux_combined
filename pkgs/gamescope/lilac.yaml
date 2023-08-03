@@ -9,30 +9,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gamescope'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- libdrm
-- libx11
-- libxcomposite
-- libxdamage
-- libxext
-- libxfixes
 - libxrender
 - libxres
-- libxtst
-- libxxf86vm
-- sdl2
+- libxfixes
+- libxdamage
+- glibc
+- gcc: gcc-libs
 - vulkan-icd-loader
-- wayland
+- libxext
+- libxxf86vm
 - wayland-protocols
-repo_makedepends:
-- git
-- glslang
-- meson
-- ninja
-- vulkan-headers
+- libdrm
+- libxtst
+- libxcomposite
+- wayland
+- sdl2
+- libx11
 update_on:
 - alpm: libcap
   provides: libcap.so

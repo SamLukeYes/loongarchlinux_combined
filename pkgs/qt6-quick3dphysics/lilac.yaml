@@ -1,9 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - qt6-quick3d
-repo_makedepends:
-- cmake
-- ninja
-- qt6-shadertools
 update_on: []

@@ -9,19 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-system-monitor'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtkmm3
-- libgtop
+- polkit
 - libhandy
 - librsvg
-- polkit
+- libgtop
 - systemd
-repo_makedepends:
-- appstream-glib
-- git
-- meson
-- yelp-tools
 update_on:
 - alpm: gnome-system-monitor
   source: archpkg

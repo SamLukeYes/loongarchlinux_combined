@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-crypto-api'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-cereal
+- ghc: ghc-libs
 - haskell-entropy
 - haskell-tagged
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-cereal
   source: alpm

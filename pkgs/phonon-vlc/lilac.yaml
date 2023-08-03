@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''phonon-vlc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- vlc
 - phonon: phonon-qt5
-repo_makedepends:
-- extra-cmake-modules
-- qt5-tools
+- vlc
 update_on:
 - alpm: phonon-vlc
   source: archpkg

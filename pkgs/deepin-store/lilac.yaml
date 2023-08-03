@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-store'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- packagekit-qt: packagekit-qt5
 - appstream: appstream-qt
 - archlinux-appstream-data
 - dtkwidget
-- packagekit-qt: packagekit-qt5
-repo_makedepends:
-- cmake
-- ninja
-- qt5-tools
 update_on:
 - alpm: deepin-store
   source: archpkg

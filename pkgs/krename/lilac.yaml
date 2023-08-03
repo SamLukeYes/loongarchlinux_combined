@@ -9,16 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''krename'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- podofo
 - kio
 - kjs
 - exiv2
-- podofo
-- taglib
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
+- taglib
 update_on:
 - alpm: krename
   source: archpkg

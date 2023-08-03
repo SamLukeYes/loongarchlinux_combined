@@ -7,15 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-stomp'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - ruby
-repo_makedepends:
-- ruby-rake
-- ruby-rspec
-- ruby-bundler
-- ruby-rdoc
-- ruby-test-unit
 update_on:
 - alias: ruby
 - alpm: ruby-stomp

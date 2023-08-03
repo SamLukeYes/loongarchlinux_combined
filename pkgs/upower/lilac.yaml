@@ -9,27 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''upower'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-dbusmock
-- pygobject: python-gobject
-- python-packaging
-- umockdev
 repo_depends:
-- libgudev
-- libimobiledevice
-- systemd
 - usbmuxd
-- libgudev
 - libimobiledevice
+- libgudev
 - systemd
-- usbmuxd
-repo_makedepends:
-- docbook-xsl
-- git
-- gobject-introspection
-- gtk-doc
-- meson
-- python
 update_on:
 - alpm: glib2
   provides: libglib-2.0.so

@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''poke'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- dejagnu
 repo_depends:
-- gc
 - readline
 - gettext
+- gc
 - json-c
-repo_makedepends:
-- help2man
 update_on:
 - alias: readline
 - alpm: poke

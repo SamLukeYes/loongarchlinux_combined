@@ -1,7 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - gtk2
-repo_makedepends:
-- intltool
 update_on: []

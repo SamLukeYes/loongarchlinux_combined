@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libxv'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libxext
-repo_makedepends:
-- xorgproto
 update_on:
 - alpm: libxv
   source: archpkg

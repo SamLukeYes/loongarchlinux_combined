@@ -9,36 +9,29 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-yesod-static'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-async
-- haskell-attoparsec
-- haskell-base64-bytestring
-- haskell-blaze-builder
-- haskell-conduit
-- haskell-cryptonite
-- haskell-cryptonite-conduit
-- haskell-css-text
-- haskell-data-default
-- haskell-file-embed
-- haskell-hashable
-- haskell-hjsmin
-- haskell-http-types
-- haskell-memory
-- haskell-mime-types
-- haskell-rio
-- haskell-unix-compat
 - haskell-unordered-containers
-- haskell-wai
+- haskell-cryptonite
+- haskell-base64-bytestring
+- haskell-http-types
+- haskell-rio
+- haskell-memory
+- haskell-css-text
+- haskell-file-embed
+- haskell-cryptonite-conduit
+- haskell-hashable
+- haskell-blaze-builder
+- haskell-unix-compat
 - haskell-wai-app-static
+- haskell-hjsmin
+- haskell-wai
+- haskell-async
+- ghc: ghc-libs
 - haskell-yesod-core
-repo_makedepends:
-- ghc
-- haskell-hspec
-- haskell-hunit
-- haskell-wai-extra
-- haskell-yesod-test
+- haskell-mime-types
+- haskell-data-default
+- haskell-conduit
+- haskell-attoparsec
 update_on:
 - alpm: haskell-async
   source: alpm

@@ -9,40 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''distrho-ports'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- kxstudio-lv2-extensions
-- lv2lint
-- xorg-server: xorg-server-xvfb
 repo_depends:
 - alsa-lib
-- freetype2
 - gcc: gcc-libs
-- glibc
-- libglvnd
-- libx11
-- libxext
-- alsa-lib
 - freetype2
-- gcc: gcc-libs
-- glibc
 - libglvnd
-- libx11
 - libxext
-- freetype2
-- gcc: gcc-libs
-- glibc
-- libglvnd
-repo_makedepends:
-- alsa-lib
-- fftw
-- freetype2
-- git
-- libglvnd
 - libx11
-- libxcursor
-- libxext
-- lv2
-- meson
+- glibc
 update_on:
 - alpm: distrho-ports
   source: archpkg

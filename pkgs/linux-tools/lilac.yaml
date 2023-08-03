@@ -1,76 +1,32 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- glibc
-- glibc
-- readline
-- zlib
-- elfutils: libelf
-- libcap
-- zstd
-- llvm: llvm-libs
-- binutils
-- glibc
-- glibc
-- bash
-- pciutils
-- glibc
-- turbostat
-- x86_energy_perf_policy
-- glibc
-- perl
-- python
-- slang
-- elfutils
-- libunwind
-- binutils
 - numactl
-- audit
+- libtraceevent
+- libcap
+- glibc
+- glib2
 - coreutils
-- glib2
+- llvm: llvm-libs
+- pciutils
 - xz
-- zlib
-- elfutils: libelf
+- turbostat
 - bash
 - zstd
-- libcap
-- libtraceevent
-- openssl
-- glibc
-- ncurses
-- glibc
-- glib2
-- sysfsutils
-- systemd: systemd-libs
-repo_makedepends:
-- git
-- asciidoc
-- xmlto
-- perl
-- python
-- python-setuptools
 - slang
+- systemd: systemd-libs
 - elfutils
-- libunwind
-- numactl
-- audit
-- zstd
-- libcap
-- libtraceevent
-- openssl
-- clang
-- pciutils
-- glib2
 - sysfsutils
-- ncurses
-- readline
-- zlib
+- x86_energy_perf_policy
+- openssl
+- python
 - elfutils: libelf
-- libcap
-- python-docutils
-- libcap
-- llvm
-- clang
+- ncurses
+- libunwind
+- zlib
+- audit
+- perl
+- readline
+- binutils
 update_on:
 - alias: readline
 - alias: perl

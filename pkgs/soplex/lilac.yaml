@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''soplex'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- zlib
 - mpfr
-repo_makedepends:
-- cmake
-- boost
+- zlib
 update_on:
 - alpm: soplex
   source: archpkg

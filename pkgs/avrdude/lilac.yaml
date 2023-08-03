@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''avrdude'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- elfutils
 - hidapi
-- libftdi
+- elfutils
 - libusb-compat
 - readline
-repo_makedepends:
-- cmake
-- ninja
+- libftdi
 update_on:
 - alias: readline
 - alpm: avrdude

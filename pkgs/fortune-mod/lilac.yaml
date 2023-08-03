@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fortune-mod'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
 - recode
-repo_makedepends:
-- cmake
-- rinutils
 update_on:
 - alpm: fortune-mod
   source: archpkg

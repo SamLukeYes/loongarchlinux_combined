@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''usbutils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- hwdata
-- glibc
-- hwdata
 - libusb
+- hwdata
+- glibc
 - systemd: systemd-libs
-repo_makedepends:
-- libusb
-- systemd
 update_on:
 - alpm: libusb
   provides: libusb-1.0.so

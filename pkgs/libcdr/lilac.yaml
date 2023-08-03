@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libcdr'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- librevenge
 - libwpd
 - lcms2
 - icu
-- librevenge
-repo_makedepends:
-- libwpg
-- boost
-- doxygen
-- cppunit
 update_on:
 - alias: icu
 - alpm: libcdr

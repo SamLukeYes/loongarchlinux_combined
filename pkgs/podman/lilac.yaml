@@ -9,30 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''podman'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - catatonit
-- conmon
-- containers-common
-- crun
 - gcc: gcc-libs
-- glibc
-- iptables
 - lvm2: device-mapper
-- gpgme
 - libseccomp
+- crun
+- gpgme
 - slirp4netns
-repo_makedepends:
-- apparmor
-- btrfs-progs
-- catatonit
-- lvm2: device-mapper
-- git
-- go
-- go-md2man
-- gpgme
-- libseccomp
-- systemd
+- iptables
+- conmon
+- glibc
+- containers-common
 update_on:
 - alpm: iptables
   source: alpm

@@ -9,18 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''psensor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- curl
-- gtk3
 - json-c
-- libgtop
 - libmicrohttpd
+- curl
 - libnotify
-- nvidia-settings: libxnvctrl
+- libgtop
 - lm_sensors
+- nvidia-settings: libxnvctrl
 - udisks2
-repo_makedepends: []
+- gtk3
 update_on:
 - alpm: psensor
   source: archpkg

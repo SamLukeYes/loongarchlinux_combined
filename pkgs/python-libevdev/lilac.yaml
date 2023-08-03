@@ -7,17 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-libevdev'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-py
-- python-pluggy
 repo_depends:
-- python
 - libevdev
-repo_makedepends:
-- python-setuptools
-- python-sphinx
-- python-sphinx_rtd_theme
+- python
 update_on:
 - alias: python
 - alpm: python-libevdev

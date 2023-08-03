@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kvirc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - enchant
-- hicolor-icon-theme
+- qt5-x11extras
 - qt5-multimedia
 - qt5-svg
-- qt5-x11extras
-repo_makedepends:
-- cmake
-- ninja
-- python
+- hicolor-icon-theme
 update_on:
 - alpm: kvirc
   source: archpkg

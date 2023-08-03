@@ -9,19 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''csound-plugins'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- python
+- stk
 - csound
 - hdf5
 - lame
-- python
-- stk
-repo_makedepends:
-- cmake
-- eigen
-- git
-- gmm
-- libpng
 update_on:
 - alpm: faust
   provides: libfaust.so

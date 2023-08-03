@@ -9,41 +9,35 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cryptol'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- z3
-- haskell-arithmoi
-- haskell-async
+- haskell-strict
 - haskell-base-compat
-- haskell-bv-sized
-- haskell-cryptohash-sha1
-- haskell-extra
+- haskell-ansi-terminal
 - haskell-gitrev
-- haskell-graphscc
 - haskell-heredoc
-- haskell-libbf
+- haskell-optparse-applicative
 - haskell-memotrie
+- haskell-panic
+- z3
 - haskell-monad-control
 - haskell-monadlib
-- haskell-optparse-applicative
-- haskell-parameterized-utils
-- haskell-panic
-- haskell-prettyprinter
 - haskell-sbv
-- haskell-simple-smt
-- haskell-strict
+- haskell-async
+- ghc: ghc-libs
+- haskell-arithmoi
+- haskell-extra
+- haskell-libbf
 - haskell-temporary
-- haskell-tf-random
 - haskell-transformers-base
-- haskell-what4
-- haskell-ansi-terminal
+- haskell-tf-random
+- haskell-bv-sized
 - haskell-blaze-html
-repo_makedepends:
-- ghc
-- uusi
-- alex
-- happy
+- haskell-what4
+- haskell-graphscc
+- haskell-cryptohash-sha1
+- haskell-simple-smt
+- haskell-parameterized-utils
+- haskell-prettyprinter
 update_on:
 - alpm: haskell-arithmoi
   source: alpm

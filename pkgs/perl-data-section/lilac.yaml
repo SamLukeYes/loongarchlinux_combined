@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-data-section'')
 
   '
-repo_checkdepends:
-- perl-test-failwarnings
 repo_depends: []
-repo_makedepends: []
 update_on:
 - alpm: perl-data-section
   source: archpkg

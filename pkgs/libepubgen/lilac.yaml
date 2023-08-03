@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libepubgen'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - librevenge
-repo_makedepends:
-- boost
-- cppunit
-- doxygen
-- libxml2
 update_on:
 - alpm: libepubgen
   source: archpkg

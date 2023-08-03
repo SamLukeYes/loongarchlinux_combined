@@ -9,20 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sigil'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- hicolor-icon-theme
-- hunspell
-- mathjax
-- zlib: minizip
-- python-css-parser
 - python-dulwich
 - python-lxml
+- hunspell
+- python-css-parser
+- mathjax
+- zlib: minizip
 - qt5-svg
+- hicolor-icon-theme
 - qt5-webengine
-repo_makedepends:
-- cmake
-- qt5-tools
 update_on:
 - alpm: sigil
   source: archpkg

@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mupen64plus'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- freetype2
 - glu
-- libpng
 - libsamplerate
 - zlib
+- freetype2
 - hicolor-icon-theme
-repo_makedepends:
-- boost
-- mesa
+- boost: boost-libs
+- libpng
 update_on:
 - alpm: mupen64plus
   source: archpkg

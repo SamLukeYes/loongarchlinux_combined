@@ -9,19 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xmonad-extras'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-x11
-- haskell-alsa-mixer
-- haskell-hint
 - haskell-libmpd
 - haskell-network
+- ghc: ghc-libs
+- xmonad-contrib
+- haskell-x11
+- haskell-alsa-mixer
 - haskell-regex-posix
 - xmonad
-- xmonad-contrib
-repo_makedepends:
-- ghc
+- haskell-hint
 update_on:
 - alpm: haskell-x11
   source: alpm

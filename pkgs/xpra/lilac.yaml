@@ -9,29 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xpra'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
-- python
-- libxtst
-- python-cairo
-- pygobject: python-gobject
+- libxres
+- python-rencode
 - python-pillow
-- python-lz4
+- libxkbfile
+- python-netifaces
+- pyopengl: python-opengl
 - ffmpeg
 - libvpx
-- xf86-video-dummy
-- libxkbfile
-- libxres
-- python-netifaces
-- python-rencode
-- pyopengl: python-opengl
 - python-lz4
-repo_makedepends:
-- pkgconf
-- python-setuptools
-- cython
-- uglify-js
+- xf86-video-dummy
+- libxtst
+- gtk3
+- pygobject: python-gobject
+- python-cairo
+- python
 update_on:
 - alias: python
 - alpm: xpra

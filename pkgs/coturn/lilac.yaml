@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''coturn'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libevent
 - postgresql: postgresql-libs
-- hiredis
 - sqlite
-repo_makedepends: []
+- hiredis
 update_on:
 - alpm: coturn
   source: archpkg

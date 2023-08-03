@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-urwid'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
 - python
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-urwid

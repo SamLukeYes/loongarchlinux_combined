@@ -7,28 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-keystoneauth1'')
 
   '
-repo_checkdepends:
-- python-hacking
-- python-oslo-config
-- python-oslo-utils
-- python-oslotest
-- python-betamax
-- python-requests-mock
-- python-stestr
-- python-testresources
-- python-testtools
-- python-yaml
-- python-requests-kerberos
-- python-lxml
-- python-oauthlib
 repo_depends:
+- python-requests
 - python-pbr
 - python-iso8601
-- python-stevedore
 - python-os-service-types
-- python-requests
-repo_makedepends:
-- git
+- python-stevedore
 update_on:
 - alpm: python-keystoneauth1
   source: archpkg

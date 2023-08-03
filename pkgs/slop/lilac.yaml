@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''slop'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxext
-- libx11
-- mesa
-- glew
 - libxrender
-repo_makedepends:
-- cmake
-- glm
+- libx11
+- glew
+- libxext
+- mesa
 update_on:
 - alpm: slop
   source: archpkg

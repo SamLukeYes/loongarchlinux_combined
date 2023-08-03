@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opensearch-dashboards
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - opensearch-dashboards
 - coffeescript
-repo_makedepends:
-- yarn
-- python
-- git
 update_on:
 - alpm: opensearch-dashboards-reports-plugin
   source: archpkg

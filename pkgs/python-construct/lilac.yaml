@@ -7,18 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-construct'')
 
   '
-repo_checkdepends:
-- python-arrow
-- python-cloudpickle
-- python-lz4
-- python-numpy
-- python-pytest-runner
-- python-pytest-benchmark
-- python-ruamel-yaml
 repo_depends:
 - python
-repo_makedepends:
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-construct

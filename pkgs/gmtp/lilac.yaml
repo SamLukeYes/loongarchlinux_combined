@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gmtp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- flac
-- gtk3
-- libmtp
 - libid3tag
 - libvorbis
-repo_makedepends: []
+- gtk3
+- flac
+- libmtp
 update_on:
 - alpm: gmtp
   source: archpkg

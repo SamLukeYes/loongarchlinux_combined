@@ -7,23 +7,20 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pysaml2'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - python
+- python-xmlschema
+- python-requests
 - python-dateutil
-- python-defusedxml
-- python-future
-- python-importlib_resources
+- python-pytz
+- python-six
 - python-pycryptodomex
 - python-pyopenssl
-- python-pytz
-- python-requests
-- python-six
-- python-zope-interface
-- python-xmlschema
+- python-future
+- python-importlib_resources
 - xmlsec
-repo_makedepends:
-- python-setuptools
+- python-defusedxml
+- python-zope-interface
 update_on:
 - alias: python
 - alpm: python-pysaml2

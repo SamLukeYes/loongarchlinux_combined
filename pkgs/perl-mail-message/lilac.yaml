@@ -7,15 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-mail-message'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl
-- perl-user-identity
-- perl-mailtools
 - perl-mime-types
-- perl-io-stringy
 - perl-uri
-repo_makedepends: []
+- perl-user-identity
+- perl
+- perl-mailtools
+- perl-io-stringy
 update_on:
 - alias: perl
 - alpm: perl-mail-message

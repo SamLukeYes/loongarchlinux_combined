@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''xorg-fonts-alias'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- xorg-util-macros
 update_on:
 - alpm: xorg-fonts-alias
   source: archpkg

@@ -9,17 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''alure'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openal
-- libsndfile
-- libvorbis
 - flac
-- mpg123
+- libsndfile
 - dumb
+- openal
+- mpg123
 - fluidsynth
-repo_makedepends:
-- cmake
+- libvorbis
 update_on:
 - alpm: alure
   source: archpkg

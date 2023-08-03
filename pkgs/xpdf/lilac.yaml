@@ -9,23 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xpdf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gsfonts
-- xdg-utils
-- qt5-base
-- libxt
-- libpaper
-- freetype2
 - cups: libcups
+- xdg-utils
 - libjpeg-turbo
+- qt5-base
+- libpaper
 - libtiff
-- libpng
 - zlib
+- gsfonts
+- freetype2
+- libxt
 - qt5-svg
-repo_makedepends:
-- cmake
-- qt5-tools
+- libpng
 update_on:
 - alpm: qt5-base
   source: alpm

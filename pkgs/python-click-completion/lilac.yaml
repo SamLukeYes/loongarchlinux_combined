@@ -7,14 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-click-completion'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-click
+- python-shellingham
 - python-jinja
 - python-six
-- python-shellingham
-repo_makedepends:
-- python-setuptools
+- python-click
 update_on:
 - alpm: python-click-completion
   source: archpkg

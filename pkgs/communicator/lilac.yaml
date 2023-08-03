@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''communicator'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - mauikit-filebrowsing
 - mauikit-texteditor
-- hicolor-icon-theme
 - kpeople
 - kcontacts
-repo_makedepends:
-- extra-cmake-modules
-- qt5-location
+- hicolor-icon-theme
 update_on:
 - alpm: communicator
   source: archpkg

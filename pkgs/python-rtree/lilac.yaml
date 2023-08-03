@@ -7,16 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-rtree'')
 
   '
-repo_checkdepends:
-- python-pytest-runner
-- python-pytest-cov
-- python-numpy
 repo_depends:
-- python
 - spatialindex
-repo_makedepends:
-- python-setuptools
-- python-wheel
+- python
 update_on:
 - alias: python
 - alpm: python-rtree

@@ -9,45 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nheko'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-svg
-- qt5-quickcontrols2
-- qt5-graphicaleffects
-- qt5-multimedia
-- qtkeychain: qtkeychain-qt5
-- coeurl
-- mtxclient
-- lmdb
 - cmark
-- libolm
-- hicolor-icon-theme
-- gstreamer: gst-plugins-bad-libs
-- qt5-svg
 - qt5-quickcontrols2
-- qt5-graphicaleffects
-- qt5-multimedia
-- qtkeychain: qtkeychain-qt5
-- coeurl
-- mtxclient
-- lmdb
-- cmark
 - libolm
-- hicolor-icon-theme
+- spdlog
 - gstreamer: gst-plugins-bad-libs
+- qtkeychain: qtkeychain-qt5
 - mtxclient
-- spdlog
-- libolm
-repo_makedepends:
-- cmake
-- ninja
-- boost
-- qt5-tools
-- fontconfig
-- nlohmann-json
-- asciidoc
-- lmdbxx
-- spdlog
+- coeurl
+- hicolor-icon-theme
+- qt5-multimedia
+- qt5-graphicaleffects
+- qt5-svg
+- lmdb
 update_on:
 - alpm: cmark
   source: alpm

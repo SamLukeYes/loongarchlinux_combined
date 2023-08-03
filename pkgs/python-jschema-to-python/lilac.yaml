@@ -7,13 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-jschema-to-python'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
+- python-pbr
 - python-attrs
 - python-jsonpickle
-- python-pbr
-repo_makedepends: []
 update_on:
 - alpm: python-jschema-to-python
   source: archpkg

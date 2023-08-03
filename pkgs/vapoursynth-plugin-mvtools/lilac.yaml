@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vapoursynth-plugin-mv
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fftw
 - vapoursynth
-repo_makedepends:
-- git
-- meson
-- nasm
+- fftw
 update_on:
 - alpm: vapoursynth-plugin-mvtools
   source: archpkg

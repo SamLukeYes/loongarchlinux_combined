@@ -7,30 +7,17 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-flask-security'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- python-flask-mail
+- python-flask-login
+- python-flask-babelex
+- python-flask-wtf
+- python-itsdangerous
+- python-passlib
+- python-flask-principal
+- python-email-validator
 - python
 - python-flask
-- python-flask-login
-- python-flask-mail
-- python-flask-principal
-- python-flask-wtf
-- python-flask-babelex
-- python-itsdangerous
-- python-passlib
-- python-email-validator
-repo_makedepends:
-- python-flask
-- python-flask-login
-- python-flask-mail
-- python-flask-principal
-- python-flask-wtf
-- python-flask-babelex
-- python-itsdangerous
-- python-passlib
-- python-sphinx
-- python-setuptools
-- python-pytest-runner
 update_on:
 - alias: python
 - alpm: python-flask-security

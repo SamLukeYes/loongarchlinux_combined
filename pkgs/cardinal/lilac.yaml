@@ -9,104 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cardinal'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- kxstudio-lv2-extensions
-- lv2
-- lv2lint
-- mod-lv2-extensions
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- dbus
-- file
-- gcc: gcc-libs
-- glibc
-- jansson
-- libarchive
-- libglvnd
-- liblo
-- libsamplerate
-- libsndfile
-- libx11
-- libxext
-- libxrandr
 - speexdsp
-- dbus
-- file
-- gcc: gcc-libs
-- glibc
-- jansson
-- libarchive
-- libglvnd
-- liblo
-- libsamplerate
 - libsndfile
-- libx11
-- libxext
-- libxrandr
-- speexdsp
+- glibc
 - hicolor-icon-theme
-- dbus
 - file
 - gcc: gcc-libs
-- glibc
-- jansson
-- libarchive
-- libglvnd
-- liblo
-- libsamplerate
-- libsndfile
-- libx11
-- libxext
 - libxrandr
-- speexdsp
+- jansson
+- liblo
 - dbus
-- file
-- gcc: gcc-libs
-- glibc
-- jansson
-- libarchive
 - libglvnd
-- liblo
-- libsamplerate
-- libsndfile
-- libx11
 - libxext
-- libxrandr
-- speexdsp
-- dbus
-- file
-- gcc: gcc-libs
-- glibc
-- jansson
+- libsamplerate
 - libarchive
-- libglvnd
-- liblo
-- libsamplerate
-- libsndfile
 - libx11
-- libxext
-- libxrandr
-- speexdsp
-repo_makedepends:
-- cmake
-- dbus
-- file
-- gcc: gcc-libs
-- gendesk
-- git
-- glibc
-- jansson
-- libarchive
-- libglvnd
-- liblo
-- libsndfile
-- libsamplerate
-- libx11
-- libxext
-- libxrandr
-- mold
-- python
-- speexdsp
 update_on:
 - alpm: dbus
   provides: libdbus-1.so

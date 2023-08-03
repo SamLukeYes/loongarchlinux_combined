@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''keybase'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gnupg
-repo_makedepends:
-- git
-- go
-- jq
-- moreutils
-- yarn
 update_on:
 - alpm: keybase
   source: archpkg

@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cypari2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - cysignals: python-cysignals
-repo_makedepends:
-- cython
-- python-setuptools
 update_on:
 - alpm: cypari2
   source: archpkg

@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''radcli'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- nettle
 - gnutls
-repo_makedepends: []
+- nettle
 update_on:
 - alpm: radcli
   source: archpkg

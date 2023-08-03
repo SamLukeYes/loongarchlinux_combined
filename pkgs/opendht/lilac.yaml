@@ -9,26 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opendht'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cppunit
 repo_depends:
-- glibc
-- gnutls
-- nettle
-- readline
-- argon2
-- jsoncpp
 - fmt
+- jsoncpp
 - http-parser
+- argon2
+- readline
+- gnutls
 - openssl
-repo_makedepends:
-- git
-- cmake
-- msgpack-cxx
-- asio
-- restinio
-- cython
-- python-setuptools
+- glibc
+- nettle
 update_on:
 - alias: readline
 - alias: jsoncpp

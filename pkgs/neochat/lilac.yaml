@@ -9,22 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''neochat'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qqc2-desktop-style
 - kirigami-addons
 - libquotient
-- kquickimageeditor
+- cmark
 - kitemmodels
+- qqc2-desktop-style
+- qtkeychain: qtkeychain-qt5
+- hicolor-icon-theme
 - kio
 - syntax-highlighting
-- qtkeychain: qtkeychain-qt5
-- cmark
-- hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
-- qcoro: qcoro-qt5
-- kdoctools
+- kquickimageeditor
 update_on:
 - alpm: cmark
   source: alpm

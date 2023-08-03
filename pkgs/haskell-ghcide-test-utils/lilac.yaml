@@ -9,21 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ghcide-test-u
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-data-default
-- haskell-extra
-- haskell-ghcide
-- haskell-hls-plugin-api
 - haskell-lens
-- haskell-lsp-test
+- haskell-aeson
+- ghc: ghc-libs
 - haskell-lsp-types
+- haskell-hls-plugin-api
+- haskell-lsp-test
+- haskell-data-default
+- haskell-ghcide
+- haskell-extra
 - haskell-tasty-hunit
-repo_makedepends:
-- ghc
-- uusi
 update_on:
 - alpm: haskell-aeson
   source: alpm

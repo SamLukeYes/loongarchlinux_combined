@@ -9,20 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''neovim'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libtermkey
-- libuv
 - msgpack-c
-- unibilium
 - luajit
-- libluv
+- unibilium
+- libtermkey
 - tree-sitter
-repo_makedepends:
-- cmake
-- ninja
-- lua-mpack: lua51-mpack
-- lpeg: lua51-lpeg
+- libuv
+- libluv
 update_on:
 - alpm: neovim
   source: archpkg

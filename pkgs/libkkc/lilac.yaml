@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libkkc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - marisa
-- json-glib
 - libgee
-repo_makedepends:
-- vala
-- gobject-introspection
-- intltool
-- marisa: python-marisa
+- json-glib
 update_on:
 - alpm: libkkc
   source: archpkg

@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libiodbc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - bash
-repo_makedepends:
-- chrpath
 update_on:
 - alpm: libiodbc
   source: archpkg

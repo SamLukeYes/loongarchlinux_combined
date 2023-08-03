@@ -9,31 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''amsynth'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
-- cairo
 - gcc: gcc-libs
-- glibc
-- cairo
-- gcc: gcc-libs
-- glibc
-- gdk-pixbuf2
-- gtk2
-- glib2
-repo_makedepends:
-- autoconf-archive
-- dssi
-- fontconfig
-- freetype2
 - gdk-pixbuf2
 - glib2
 - gtk2
-- harfbuzz
-- intltool
-- ladspa
-- liblo
-- lv2
+- cairo
+- glibc
 update_on:
 - alpm: at-spi2-core
   provides: libatk-1.0.so

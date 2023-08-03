@@ -1,15 +1,12 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- cairo
-- expat
-- fluidsynth
+- glibc
 - gcc: gcc-libs
 - gdk-pixbuf2
-- glib2
-- glibc
-- gtk2
 - hicolor-icon-theme
-repo_makedepends:
-- lv2
+- fluidsynth
+- expat
+- gtk2
+- cairo
+- glib2
 update_on: []

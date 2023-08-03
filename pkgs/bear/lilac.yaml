@@ -9,25 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bear'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- gcc: gcc-libs
-- grpc
-- fmt
-- spdlog
 - nlohmann-json
-- abseil-cpp
-- protobuf
 - openssl
-- c-ares
+- fmt
+- gcc: gcc-libs
 - re2
-repo_makedepends:
-- git
-- cmake
-- gtest
-- python
-- llvm
+- spdlog
+- c-ares
+- abseil-cpp
+- grpc
+- protobuf
+- glibc
 update_on:
 - alias: grpc
 - alpm: grpc

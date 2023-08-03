@@ -9,18 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dosemu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- alsa-lib
 - gpm
-- slang
 - libxxf86vm
 - libsndfile
-- alsa-lib
-repo_makedepends:
-- git
-- xorg-bdftopcf
-- gendesk
-- imagemagick
+- slang
 update_on:
 - alpm: dosemu
   source: archpkg

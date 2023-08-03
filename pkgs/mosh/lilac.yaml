@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mosh'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libutempter
+- perl-io-tty
 - openssh
 - openssl
-- perl-io-tty
 - protobuf
-repo_makedepends:
-- git
+- libutempter
 update_on:
 - alias: protobuf
 - alpm: mosh

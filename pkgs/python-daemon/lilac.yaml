@@ -7,18 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-daemon'')
 
   '
-repo_checkdepends:
-- python-testscenarios
-- python-testtools
 repo_depends:
-- python
 - python-lockfile
+- python
 - python-setuptools
-repo_makedepends:
-- python-build
-- python-docutils
-- python-installer
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-daemon

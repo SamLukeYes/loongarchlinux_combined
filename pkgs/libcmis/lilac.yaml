@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libcmis'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
 - curl
+- boost: boost-libs
 - libxml2
-repo_makedepends:
-- docbook2x
-- cppunit
-- boost
 update_on:
 - alpm: libcmis
   source: archpkg

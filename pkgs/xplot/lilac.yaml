@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xplot'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libx11
 - perl
-repo_makedepends: []
+- libx11
 update_on:
 - alias: perl
 - alpm: xplot

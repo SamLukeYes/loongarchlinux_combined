@@ -7,21 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-alembic'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
-- python-mako
-- python-sqlalchemy
-- python-editor
 - python-dateutil
+- python-editor
+- python-sqlalchemy
 - python-importlib-metadata
-repo_makedepends:
-- python-setuptools
 - python-mako
-- python-sqlalchemy
-- python-editor
-- python-dateutil
+- python
 update_on:
 - alias: python
 - alpm: python-alembic

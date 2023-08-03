@@ -7,14 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-inline-cpp'')
 
   '
-repo_checkdepends:
-- perl-inline-filters
 repo_depends:
-- perl-inline
-- perl-inline-c
 - perl-parse-recdescent
-repo_makedepends:
-- perl-extutils-cppguess
+- perl-inline-c
+- perl-inline
 update_on:
 - alpm: perl-inline-cpp
   source: archpkg

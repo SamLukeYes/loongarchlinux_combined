@@ -7,16 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pykeepass'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-argon2_cffi
-- python-construct
 - python-dateutil
-- python-future
 - python-lxml
 - python-pycryptodomex
-repo_makedepends:
-- python-setuptools
+- python-argon2_cffi
+- python-future
+- python-construct
 update_on:
 - alpm: python-pykeepass
   source: archpkg

@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cipher-aes'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-byteable
-- haskell-crypto-cipher-types
+- ghc: ghc-libs
 - haskell-securemem
-repo_makedepends:
-- ghc
+- haskell-crypto-cipher-types
 update_on:
 - alpm: haskell-byteable
   source: alpm

@@ -7,13 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-net-http-persistent'')
 
   '
-repo_checkdepends:
-- ruby-minitest
 repo_depends:
 - ruby-connection_pool
-repo_makedepends:
-- ruby-hoe
-- ruby-rake
 update_on:
 - alpm: ruby-net-http-persistent
   source: archpkg

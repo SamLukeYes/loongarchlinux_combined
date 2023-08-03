@@ -7,12 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-freezegun'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-pytest
 - python-freezegun
-repo_makedepends:
-- python-setuptools-scm
+- python-pytest
 update_on:
 - alpm: python-pytest-freezegun
   source: archpkg

@@ -7,14 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-zope-exceptions'')
 
   '
-repo_checkdepends:
-- python-zope-testrunner
 repo_depends:
-- python-setuptools
 - python-zope-interface
-repo_makedepends:
 - python-setuptools
-- python-zope-interface
 update_on:
 - alpm: python-zope-exceptions
   source: archpkg

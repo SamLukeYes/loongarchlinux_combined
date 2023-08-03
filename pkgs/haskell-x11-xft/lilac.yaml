@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-x11-xft'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
+- libxft
 - haskell-x11
 - haskell-utf8-string
-- libxft
-repo_makedepends:
-- ghc
-- uusi
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-x11
   source: alpm

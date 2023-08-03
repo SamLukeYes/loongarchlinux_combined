@@ -9,23 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dbus'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - audit
 - expat
 - systemd: systemd-libs
-- audit
-- expat
-- systemd: systemd-libs
-repo_makedepends:
-- autoconf-archive
-- docbook-xsl
-- doxygen
-- git
-- python
-- systemd
-- xmlto
-- yelp-tools
 update_on:
 - alpm: audit
   provides: libaudit.so

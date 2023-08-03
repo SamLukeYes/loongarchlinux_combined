@@ -9,20 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ulogd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libmnl
-- libnetfilter_acct
 - libnetfilter_conntrack
 - libnetfilter_log
+- libnetfilter_acct
 - libnfnetlink
-repo_makedepends:
-- mariadb: mariadb-libs
-- libpcap
-- libdbi
-- postgresql: postgresql-libs
-- sqlite
-- jansson
 update_on:
 - alpm: ulogd
   source: archpkg

@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''grafx2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - fontconfig
-- hicolor-icon-theme
-- lua
 - sdl2_image
 - sdl2_ttf
-repo_makedepends:
-- git
+- hicolor-icon-theme
+- lua
 update_on:
 - alias: lua
 - alpm: grafx2

@@ -9,34 +9,24 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tigervnc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fltk
-- pam
-- gnutls
-- libjpeg-turbo
-- libxtst
-- pixman
-- xorg-xauth
 - xorg-xsetroot
+- libjpeg-turbo
+- xorg-xauth
 - xkeyboard-config
+- libxdamage
+- libxfont2
+- libxcvt
+- libdrm
+- fltk
+- xorg-xinit
+- pixman
 - xorg-xkbcomp
 - libgcrypt
 - perl
-- libxdamage
-- libxfont2
-- libdrm
-- xorg-xinit
-- libxcvt
-repo_makedepends:
-- cmake
-- nasm
-- xorg-font-util
-- xorg-util-macros
-- xtrans
-- xorgproto
-- mesa
-- imagemagick
+- libxtst
+- gnutls
+- pam
 update_on:
 - alias: perl
 - alpm: tigervnc

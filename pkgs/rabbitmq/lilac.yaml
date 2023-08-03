@@ -7,27 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''rabbitmq'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- util-linux
 - inetutils
-- erlang-nox
 - socat
-- python
-repo_makedepends:
-- zip
-- unzip
-- libxslt
-- xmlto
-- systemd
-- elixir
-- python
-- python-simplejson
-- rsync
+- erlang-nox
 - util-linux
-- inetutils
-- erlang-nox
-- socat
+- python
 update_on:
 - alias: python
 - alpm: rabbitmq

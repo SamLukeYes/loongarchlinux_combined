@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''editorconfig-core-c''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - pcre2
-repo_makedepends:
-- cmake
-- doxygen
 update_on:
 - alpm: editorconfig-core-c
   source: archpkg

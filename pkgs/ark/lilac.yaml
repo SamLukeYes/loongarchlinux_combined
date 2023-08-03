@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ark'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kparts
-- kpty
-- libarchive
 - libzip
 - kitemmodels
+- libarchive
+- kpty
+- kparts
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
 update_on:
 - alpm: ark
   source: archpkg

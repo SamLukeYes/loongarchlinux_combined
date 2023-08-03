@@ -7,17 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-flask-babelex'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
+- python-jinja
+- python-speaklater
+- python-babel
 - python
 - python-flask
-- python-babel
-- python-speaklater
-- python-jinja
-repo_makedepends:
-- python-sphinx
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-flask-babelex

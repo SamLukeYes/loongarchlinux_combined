@@ -9,16 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-handler-l
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-wai
 - haskell-warp
+- haskell-wai
+- ghc: ghc-libs
 - haskell-http-types
-- haskell-streaming-commons
 - haskell-async
-repo_makedepends:
-- ghc
+- haskell-streaming-commons
 update_on:
 - alpm: haskell-wai
   source: alpm

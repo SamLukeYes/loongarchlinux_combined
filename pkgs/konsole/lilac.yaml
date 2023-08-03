@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''konsole'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - knotifyconfig
+- knewstuff
 - kpty
 - kparts
-- knewstuff
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
 update_on:
 - alpm: konsole
   source: archpkg

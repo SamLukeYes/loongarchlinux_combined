@@ -9,19 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''reaper'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- alsa-lib
 - fontconfig
+- alsa-lib
 - gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
-- libglvnd
-- libx11
 - libxi
-repo_makedepends:
-- kservice
-- xdg-utils
+- hicolor-icon-theme
+- libx11
+- libglvnd
+- glibc
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

@@ -7,29 +7,25 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-etesync'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python-appdirs
-- python-asn1crypto
 - python-cffi
-- python-cryptography
-- python-dateutil
-- python-furl
-- python-idna
-- python-orderedmultidict
-- python-packaging
-- python-peewee
-- python-py
-- python-pyasn1
-- python-pycparser
-- python-pyparsing
-- python-pytz
 - python-requests
+- python-dateutil
+- python-pycparser
+- python-pytz
 - python-six
+- python-py
+- python-asn1crypto
+- python-cryptography
+- python-orderedmultidict
 - python-vobject
-repo_makedepends:
-- python-setuptools
+- python-peewee
+- python-appdirs
+- python-furl
+- python-packaging
+- python-pyparsing
+- python-pyasn1
+- python-idna
 update_on:
 - alpm: python-etesync
   source: archpkg

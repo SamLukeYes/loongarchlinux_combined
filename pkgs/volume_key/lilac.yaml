@@ -9,29 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''volume_key'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cryptsetup
 - glib2
-- glibc
 - gpgme
+- nss
 - nspr
-- nss
 - util-linux: util-linux-libs
-- glib2
-- glibc
-- nss
-- python
-repo_makedepends:
 - cryptsetup
-- glib2
 - glibc
-- gpgme
-- nspr
-- nss
 - python
-- swig
-- util-linux: util-linux-libs
 update_on:
 - alias: python
 - alpm: volume_key

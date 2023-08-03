@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dice'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-random
 - haskell-random-fu
-repo_makedepends:
-- ghc
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-random
   source: alpm

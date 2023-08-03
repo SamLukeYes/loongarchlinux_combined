@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kemoticons'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- karchive
 - kservice
-repo_makedepends:
-- extra-cmake-modules
-- doxygen
-- qt5-tools
-- qt5-doc
+- karchive
 update_on:
 - alpm: kemoticons
   source: archpkg

@@ -9,29 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gammastep'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- geoclue
 - glibc
-- hicolor-icon-theme
-- libdrm
-- libx11
 - libxcb
-- libxxf86vm
 - wayland
+- libxxf86vm
+- libdrm
 - geoclue
-- glibc
-- hicolor-icon-theme
-- libdrm
 - libx11
-- libxcb
-- libxxf86vm
-- wayland
-repo_makedepends:
-- glib2
-- intltool
-- python
-- systemd
+- hicolor-icon-theme
 update_on:
 - alpm: glib2
   provides: libgio-2.0.so

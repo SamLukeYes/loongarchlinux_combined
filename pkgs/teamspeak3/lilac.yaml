@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''teamspeak3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxslt
 - libxss
-- nss
 - libc++
-repo_makedepends: []
+- nss
+- libxslt
 update_on:
 - alpm: teamspeak3
   source: archpkg

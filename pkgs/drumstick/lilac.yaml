@@ -9,28 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''drumstick'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
 - glibc
-- hicolor-icon-theme
+- gcc: gcc-libs
 - qt6-base
 - qt6-5compat
-- gcc: gcc-libs
-- glibc
 - hicolor-icon-theme
-- qt6-base
-- qt6-5compat
-repo_makedepends:
-- alsa-lib
-- cmake
-- doxygen
-- docbook-xsl
-- fluidsynth
-- graphviz
-- pulseaudio: libpulse
-- qt6-tools
-- sonivox
 update_on:
 - alpm: qt6-base
   source: alpm

@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''openfire'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- maven
-- java11-openjdk: jre11-openjdk-headless
-- java11-openjdk: jdk11-openjdk
 update_on:
 - alpm: openfire
   source: archpkg

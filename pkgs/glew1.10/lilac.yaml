@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glew1.10'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
+- libxi
 - libx11
 - libxext
-- libxi
+- glibc
 - libxmu
-repo_makedepends: []
 update_on:
 - alpm: glew1.10
   source: archpkg

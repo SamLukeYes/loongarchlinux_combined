@@ -9,29 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-doctest-paral
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
+- haskell-unordered-containers
 - haskell-glob
 - haskell-base-compat
-- haskell-code-page
-- haskell-extra
+- ghc: ghc-libs
 - haskell-ghc-paths
-- haskell-random
 - haskell-syb
-- haskell-unordered-containers
-repo_makedepends:
-- ghc
-- expac
-- haskell-hunit
-- haskell-quickcheck
-- haskell-hspec
-- haskell-hspec-core
-- haskell-hspec-discover
-- haskell-mockery
-- haskell-setenv
-- haskell-silently
-- haskell-stringbuilder
+- haskell-code-page
+- haskell-random
+- haskell-extra
 update_on:
 - alpm: haskell-glob
   source: alpm

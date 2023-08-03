@@ -7,18 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-debian'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
 - python-chardet
+- python
 - python-six
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-debian

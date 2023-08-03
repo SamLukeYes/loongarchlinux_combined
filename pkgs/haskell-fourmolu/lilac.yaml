@@ -9,27 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-fourmolu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-diff
-- haskell-hsyaml
-- haskell-hsyaml-aeson
-- haskell-aeson
-- haskell-ansi-terminal
+- haskell-optparse-applicative
 - haskell-dlist
+- haskell-syb
+- haskell-aeson
+- ghc: ghc-libs
+- haskell-hsyaml
+- haskell-diff
+- haskell-ansi-terminal
 - haskell-ghc-lib-parser
 - haskell-gitrev
-- haskell-optparse-applicative
-- haskell-syb
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hspec
-- haskell-hspec-discover
-- haskell-path
-- haskell-path-io
-- haskell-temporary
+- haskell-hsyaml-aeson
 update_on:
 - alpm: haskell-diff
   source: alpm

@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxqt-runner'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - lxqt-globalkeys
 - muparser
-repo_makedepends:
-- lxqt-build-tools
 update_on:
 - alpm: libqtxdg
   provides: libQt5Xdg.so

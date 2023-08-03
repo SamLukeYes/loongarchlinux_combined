@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-ecos'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-nose
-- python-pytest
 repo_depends:
 - python-scipy
 - ecos
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
 update_on:
 - alpm: python-ecos
   source: archpkg

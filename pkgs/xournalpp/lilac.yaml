@@ -9,21 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xournalpp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libzip
+- libsndfile
+- portaudio
+- texlive-bin
+- libxml2
 - gtk3
 - poppler: poppler-glib
-- libxml2
-- portaudio
-- libsndfile
 - lua
-- libzip
-- texlive-bin
-repo_makedepends:
-- git
-- cmake
-- doxygen
-- graphviz
 update_on:
 - alias: lua
 - alpm: xournalpp

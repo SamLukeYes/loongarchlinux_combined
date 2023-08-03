@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-session-manager'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - dbus-glib
+- libsm
 - gettext
 - gtk3
-- libsm
 - mate-desktop
-repo_makedepends:
-- xtrans
-- systemd
-- python
 update_on:
 - alpm: mate-session-manager
   source: archpkg

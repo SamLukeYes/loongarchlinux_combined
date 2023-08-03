@@ -7,15 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-sybil'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-seedir
-- python-testfixtures
 repo_depends:
 - python
-repo_makedepends:
-- git
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-sybil

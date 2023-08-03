@@ -9,23 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-brick0.71'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-vty
+- haskell-microlens-th
 - haskell-data-clist
 - haskell-dlist
-- haskell-microlens
-- haskell-microlens-th
-- haskell-microlens-mtl
-- haskell-config-ini
-- haskell-vector
-- haskell-contravariant
 - haskell-text-zipper
 - haskell-word-wrap
-repo_makedepends:
-- ghc
-- haskell-quickcheck
+- ghc: ghc-libs
+- haskell-contravariant
+- haskell-microlens-mtl
+- haskell-vector
+- haskell-vty
+- haskell-microlens
+- haskell-config-ini
 update_on:
 - alpm: haskell-vty
   source: alpm

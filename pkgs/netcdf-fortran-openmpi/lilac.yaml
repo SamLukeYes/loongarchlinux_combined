@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''netcdf-fortran-openmp
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- valgrind
-- inetutils
 repo_depends:
-- gcc: gcc-libs
 - netcdf-openmpi
+- gcc: gcc-libs
 - curl
-repo_makedepends:
-- cmake
-- gcc: gcc-fortran
-- doxygen
 update_on:
 - alpm: netcdf-fortran-openmpi
   source: archpkg

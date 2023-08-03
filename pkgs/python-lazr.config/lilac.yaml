@@ -7,17 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-lazr.config'')
 
   '
-repo_checkdepends:
-- python-zope-testrunner
 repo_depends:
-- python
 - python-lazr.delegates
-- python-setuptools
 - python-zope-interface
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
+- python
+- python-setuptools
 update_on:
 - alias: python
 - alpm: python-lazr.config

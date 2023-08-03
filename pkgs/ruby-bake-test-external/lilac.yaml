@@ -7,14 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-bake-test-external'')
 
   '
-repo_checkdepends:
-- ruby-bake-test
-- ruby-sus
-- git
 repo_depends:
 - ruby-bake
-repo_makedepends:
-- ruby-rspec
 update_on:
 - alpm: ruby-bake-test-external
   source: archpkg

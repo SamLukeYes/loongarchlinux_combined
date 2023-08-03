@@ -1,10 +1,4 @@
 destsubdir: extra
-repo_checkdepends:
-- openssh
 repo_depends:
 - git
-repo_makedepends:
-- go
-- nodejs
-- npm
 update_on: []

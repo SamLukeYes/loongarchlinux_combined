@@ -9,20 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''drkonqi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kidletime
-- syntax-highlighting
 - kirigami2
+- kidletime
 - kitemmodels
-- kuserfeedback
-- kio
-- gdb
-- python-distro
 - python-psutil
+- gdb
+- syntax-highlighting
+- kio
+- kuserfeedback
+- python-distro
 - qt5-tools
-repo_makedepends:
-- extra-cmake-modules
 update_on:
 - alpm: drkonqi
   source: archpkg

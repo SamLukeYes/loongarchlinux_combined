@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libtracefs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-repo_makedepends:
-- asciidoc
-- libtraceevent
-- xmlto
 update_on:
 - alpm: libtraceevent
   provides: libtraceevent.so

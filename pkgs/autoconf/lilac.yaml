@@ -7,13 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''autoconf'')
 
   '
-repo_checkdepends:
-- gcc: gcc-fortran
 repo_depends:
-- m4
 - diffutils
+- m4
 - perl
-repo_makedepends: []
 update_on:
 - alias: perl
 - alpm: autoconf

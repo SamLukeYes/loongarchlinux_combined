@@ -9,44 +9,36 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hopenpgp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-asn1-encoding
-- haskell-attoparsec
-- haskell-base16-bytestring
-- haskell-bifunctors
-- haskell-bz2
-- haskell-binary-conduit
-- haskell-conduit
-- haskell-conduit-extra
+- haskell-unordered-containers
 - haskell-cryptonite
-- haskell-crypto-cipher-types
-- haskell-errors
-- haskell-hashable
+- haskell-aeson
+- haskell-memory
 - haskell-incremental-parser
 - haskell-ixset-typed
-- haskell-lens
-- haskell-memory
-- haskell-monad-loops
-- haskell-nettle
-- haskell-network-uri
-- haskell-openpgp-asciiarmor
-- haskell-prettyprinter
-- haskell-resourcet
-- haskell-split
-- haskell-time-locale-compat
-- haskell-unliftio-core
-- haskell-unordered-containers
 - haskell-zlib
-repo_makedepends:
-- ghc
-- haskell-quickcheck
-- haskell-quickcheck-instances
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
+- haskell-resourcet
+- haskell-errors
+- haskell-bifunctors
+- haskell-network-uri
+- haskell-lens
+- haskell-hashable
+- haskell-bz2
+- haskell-asn1-encoding
+- ghc: ghc-libs
+- haskell-crypto-cipher-types
+- haskell-binary-conduit
+- haskell-monad-loops
+- haskell-unliftio-core
+- haskell-nettle
+- haskell-openpgp-asciiarmor
+- haskell-split
+- haskell-conduit
+- haskell-conduit-extra
+- haskell-attoparsec
+- haskell-base16-bytestring
+- haskell-time-locale-compat
+- haskell-prettyprinter
 update_on:
 - alpm: haskell-aeson
   source: alpm

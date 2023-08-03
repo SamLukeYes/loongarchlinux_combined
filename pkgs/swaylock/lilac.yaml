@@ -9,18 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''swaylock'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
 - libxkbcommon
-- pam
-- wayland
 - gdk-pixbuf2
-repo_makedepends:
-- meson
-- scdoc
-- wayland-protocols
-- git
+- wayland
+- cairo
+- pam
 update_on:
 - alpm: swaylock
   source: archpkg

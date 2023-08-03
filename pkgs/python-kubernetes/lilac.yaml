@@ -7,26 +7,18 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-kubernetes'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pluggy
-- python-py
-- python-isort
-- python-nose
 repo_depends:
-- python
-- python-certifi
-- python-six
+- python-requests
 - python-dateutil
+- python-requests-oauthlib
+- python-six
 - python-urllib3
+- python-websocket-client
 - python-yaml
 - python-google-auth
-- python-websocket-client
-- python-requests
-- python-requests-oauthlib
 - python-adal
-repo_makedepends:
-- python-setuptools
+- python
+- python-certifi
 update_on:
 - alias: python
 - alpm: python-kubernetes

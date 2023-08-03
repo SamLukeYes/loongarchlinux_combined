@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-http-common''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-unordered-containers
+- haskell-network
 - ghc: ghc-libs
-- haskell-base64-bytestring
+- haskell-random
 - haskell-blaze-builder
 - haskell-case-insensitive
-- haskell-network
-- haskell-random
-- haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
+- haskell-base64-bytestring
 update_on:
 - alpm: haskell-base64-bytestring
   source: alpm

@@ -9,25 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libolm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-aspectlib
-- python-pytest
-- python-pytest-benchmark
 repo_depends:
+- python-cffi
 - gcc: gcc-libs
-- python
-- python-cffi
 - python-future
-repo_makedepends:
-- git
-- cmake
 - python
-- python-build
-- python-cffi
-- python-future
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alias: python
 - alpm: libolm

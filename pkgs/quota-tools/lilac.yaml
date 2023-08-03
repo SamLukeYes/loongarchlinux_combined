@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''quota-tools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libnl
-- dbus
 - libtirpc
-repo_makedepends:
-- rpcsvc-proto
+- dbus
+- libnl
 update_on:
 - alpm: quota-tools
   source: archpkg

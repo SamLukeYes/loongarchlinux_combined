@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''traefik'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-repo_makedepends:
-- go
-- go-bindata-hashicorp
-- patch
 update_on:
 - alpm: traefik
   source: archpkg

@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''baka-mplayer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- qt5-x11extras
+- qt5-svg
 - mpv
 - qt5-declarative
-- qt5-svg
-- qt5-x11extras
-repo_makedepends:
-- git
-- qt5-tools
 update_on:
 - alpm: qt5-declarative
   source: alpm

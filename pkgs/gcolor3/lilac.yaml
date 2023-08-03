@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gcolor3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- gdk-pixbuf2
+- hicolor-icon-theme
+- gtk3
 - at-spi2-core
 - cairo
-- gdk-pixbuf2
 - glib2
-- gtk3
-- hicolor-icon-theme
-repo_makedepends:
-- appstream-glib
-- meson
 update_on:
 - alpm: gcolor3
   source: archpkg

@@ -7,22 +7,16 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''frescobaldi'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
-- pyqt5: python-pyqt5
 - pyqt5-webengine: python-pyqt5-webengine
-- python-ly
-- poppler
-- python-poppler-qt5
-- python-qpageview
 - qt5-base
+- python-poppler-qt5
+- python-ly
+- pyqt5: python-pyqt5
+- python-qpageview
 - qt5-svg
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
+- python
+- poppler
 update_on:
 - alias: python
 - alpm: qt5-base

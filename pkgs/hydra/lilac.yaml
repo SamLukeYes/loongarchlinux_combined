@@ -9,22 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hydra'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- postgresql: postgresql-libs
-- subversion
-- libssh
-- mariadb: mariadb-libs
-- libidn
-- libfbclient
-- afpfs-ng
-- zlib
-- openssl
-- ncurses
 - pcre2
+- mariadb: mariadb-libs
+- subversion
+- postgresql: postgresql-libs
 - freerdp
+- libssh
+- afpfs-ng
+- openssl
 - mongo-c-driver
-repo_makedepends: []
+- ncurses
+- libidn
+- zlib
+- libfbclient
 update_on:
 - alpm: ncurses
   provides: libncursesw.so

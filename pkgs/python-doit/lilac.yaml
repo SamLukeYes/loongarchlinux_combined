@@ -7,21 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-doit'')
 
   '
-repo_checkdepends:
-- python-doit-py
-- python-pyflakes
-- python-pytest
-- python-toml
 repo_depends:
 - ipython
-- python
-- python-cloudpickle
 - python-pyinotify
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-cloudpickle
+- python
 update_on:
 - alias: python
 - alpm: python-doit

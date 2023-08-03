@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''barrage'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- hicolor-icon-theme
 - sdl_mixer
-repo_makedepends: []
+- hicolor-icon-theme
 update_on:
 - alpm: barrage
   source: archpkg

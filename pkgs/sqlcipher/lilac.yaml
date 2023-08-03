@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sqlcipher'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
-- sqlite
-- tcl
-- readline
 - zlib
-repo_makedepends: []
+- tcl
+- sqlite
+- openssl
+- readline
 update_on:
 - alias: readline
 - alpm: sqlcipher

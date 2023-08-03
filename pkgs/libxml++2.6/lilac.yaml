@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libxml++2.6'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxml2
 - glibmm
-repo_makedepends:
-- git
-- meson
-- mm-common
-- glibmm: glibmm-docs
+- libxml2
 update_on:
 - alpm: libxml++2.6
   source: archpkg

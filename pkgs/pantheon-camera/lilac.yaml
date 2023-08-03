@@ -9,19 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-camera'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- clutter-gst
-- clutter-gtk
-- glibc
 - gstreamer
+- clutter-gtk
+- clutter-gst
 - gstreamer: gst-plugins-good
-repo_makedepends:
-- appstream
-- git
-- intltool
-- meson
-- vala
+- glibc
 update_on:
 - alpm: libcanberra
   provides: libcanberra.so

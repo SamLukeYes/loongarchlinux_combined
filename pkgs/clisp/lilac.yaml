@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''clisp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- readline
 - libsigsegv
+- libunistring
 - ffcall
 - libxcrypt
-- libunistring
-repo_makedepends:
-- mercurial
+- readline
 update_on:
 - alias: readline
 - alpm: clisp

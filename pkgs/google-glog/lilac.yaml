@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''google-glog'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gflags
-repo_makedepends:
-- cmake
 update_on:
 - alpm: google-glog
   source: archpkg

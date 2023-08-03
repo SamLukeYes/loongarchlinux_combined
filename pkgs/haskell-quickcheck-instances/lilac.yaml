@@ -9,31 +9,28 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-quickcheck-in
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-strict
+- haskell-unordered-containers
+- haskell-tagged
+- haskell-case-insensitive
+- haskell-uuid-types
+- haskell-splitmix
+- haskell-primitive
+- haskell-transformers-compat
+- haskell-hashable
+- haskell-data-fix
+- haskell-quickcheck
+- haskell-data-array-byte
+- haskell-integer-logarithms
+- haskell-these
 - ghc: ghc-libs
 - haskell-onetuple
-- haskell-quickcheck
-- haskell-case-insensitive
-- haskell-data-array-byte
-- haskell-data-fix
-- haskell-hashable
-- haskell-integer-logarithms
-- haskell-old-time
-- haskell-primitive
 - haskell-scientific
-- haskell-splitmix
-- haskell-strict
-- haskell-tagged
 - haskell-text-short
-- haskell-these
+- haskell-old-time
 - haskell-time-compat
-- haskell-transformers-compat
-- haskell-unordered-containers
-- haskell-uuid-types
 - haskell-vector
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-onetuple
   source: alpm

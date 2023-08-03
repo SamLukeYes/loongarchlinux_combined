@@ -7,14 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''qtqr'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-pillow
-- pyqt5: python-pyqt5
 - qrencode
+- python-pillow
 - qt5-translations
 - zbar
-repo_makedepends: []
+- pyqt5: python-pyqt5
 update_on:
 - alpm: qtqr
   source: archpkg

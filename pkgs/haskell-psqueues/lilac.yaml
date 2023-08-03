@@ -9,18 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-psqueues'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-hashable
-repo_makedepends:
-- ghc
-- haskell-hunit
-- haskell-quickcheck
-- haskell-tagged
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-hashable
   source: alpm

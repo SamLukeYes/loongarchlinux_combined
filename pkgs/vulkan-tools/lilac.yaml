@@ -9,18 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vulkan-tools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libx11
 - wayland
-repo_makedepends:
-- cmake
-- python
-- vulkan-headers
-- vulkan-icd-loader
-- wayland-protocols
-- glslang
-- spirv-tools
+- libx11
 update_on:
 - alpm: emby-theater
   provides: libvulkan.so

@@ -9,24 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''caja-extensions'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- dbus-glib
+- samba
 - caja
 - gettext
-- dbus-glib
 - imagemagick
-- samba
-- caja
-- imagemagick
-- caja
-- caja
-- dbus-glib
-- caja
-- samba
-- caja
-- caja
-repo_makedepends:
-- python
 update_on:
 - alpm: caja-extensions
   source: archpkg

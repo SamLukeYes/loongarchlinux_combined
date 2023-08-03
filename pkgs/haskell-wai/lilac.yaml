@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-vault
+- haskell-network
 - ghc: ghc-libs
 - haskell-http-types
-- haskell-network
-- haskell-vault
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-http-types
   source: alpm

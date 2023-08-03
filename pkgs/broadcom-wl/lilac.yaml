@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''broadcom-wl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - linux
-repo_makedepends:
-- linux: linux-headers
-- broadcom-wl-dkms
 update_on:
 - alpm: broadcom-wl
   source: archpkg

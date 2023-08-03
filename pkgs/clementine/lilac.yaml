@@ -9,28 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''clementine'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libcdio
+- pulseaudio: libpulse
+- alsa-lib
+- libgpod
+- projectm
+- libmygpo-qt: libmygpo-qt5
+- qt5-x11extras
+- crypto++
 - chromaprint
 - gstreamer: gst-plugins-base-libs
-- libcdio
-- libgpod
-- liblastfm: liblastfm-qt5
-- libmtp
-- libmygpo-qt: libmygpo-qt5
-- taglib
 - protobuf
-- qt5-x11extras
-- projectm
-- alsa-lib
-- pulseaudio: libpulse
-- crypto++
+- libmtp
 - hicolor-icon-theme
-repo_makedepends:
-- boost
-- cmake
-- qt5-tools
-- sparsehash
+- taglib
+- liblastfm: liblastfm-qt5
 update_on:
 - alias: protobuf
 - alpm: crypto++

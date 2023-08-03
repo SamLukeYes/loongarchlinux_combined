@@ -7,12 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-data-compare'')
 
   '
-repo_checkdepends:
-- perl-test-pod
-- perl-json
 repo_depends:
 - perl-clone
-repo_makedepends: []
 update_on:
 - alpm: perl-data-compare
   source: archpkg

@@ -9,32 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''superslicer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- cgal
-- glew
-- gtk3
 - imath
-- libjpeg-turbo
-- libspnav
-- nlopt
-- openvdb
-- qhull
 - prusa-slicer: slicer-udev
-repo_makedepends:
-- boost
-- cereal
-- cmake
-- eigen
-- git
-- glu
-- gstreamer: gst-plugins-base
-- libigl
-- libnotify
-- ninja
-- systemd
-- webkit2gtk
+- openvdb
+- nlopt
+- libjpeg-turbo
+- gtk3
+- qhull
+- glew
+- cgal
+- boost: boost-libs
+- libspnav
 update_on:
 - alpm: superslicer
   source: archpkg

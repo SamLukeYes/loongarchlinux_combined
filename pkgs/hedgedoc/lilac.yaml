@@ -7,17 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''hedgedoc'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - nodejs-lts-hydrogen
-repo_makedepends:
-- nodejs-lts-hydrogen
-- sqlite
-- python
-- node-gyp
-- git
-- yarn
-- npm
 update_on:
 - alpm: hedgedoc
   source: archpkg

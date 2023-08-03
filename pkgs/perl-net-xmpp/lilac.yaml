@@ -7,15 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-net-xmpp'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-digest-sha1
 - perl-xml-stream
+- perl-digest-sha1
 - perl-digest-hmac
-repo_makedepends:
-- perl-digest-sha1
-- perl-xml-stream
-- perl-module-build
 update_on:
 - alpm: perl-net-xmpp
   source: archpkg

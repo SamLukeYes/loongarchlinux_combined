@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-xrdb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libx11
 - libxmu
-repo_makedepends:
-- xorg-util-macros
+- libx11
 update_on:
 - alpm: xorg-xrdb
   source: archpkg

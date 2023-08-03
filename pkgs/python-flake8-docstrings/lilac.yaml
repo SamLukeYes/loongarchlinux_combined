@@ -7,17 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-flake8-docstrings'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
-- flake8
 - python-pydocstyle
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- flake8
+- python
 update_on:
 - alias: python
 - alpm: python-flake8-docstrings

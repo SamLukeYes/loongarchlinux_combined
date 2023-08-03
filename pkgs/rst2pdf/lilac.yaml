@@ -7,31 +7,17 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''rst2pdf'')
 
   '
-repo_checkdepends:
-- graphviz
-- plantuml
-- python-aafigure
-- python-matplotlib
-- python-pytest
-- python-pymupdf
-- python-sphinx
-- python-svglib
 repo_depends:
-- python
-- python-docutils
-- python-importlib-metadata
-- python-jinja
-- python-packaging
+- python-smartypants
 - python-pillow
+- python-importlib-metadata
 - python-pygments
 - python-reportlab
-- python-smartypants
+- python-jinja
+- python-packaging
 - python-yaml
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools-scm
-- python-wheel
+- python-docutils
+- python
 update_on:
 - alias: python
 - alpm: rst2pdf

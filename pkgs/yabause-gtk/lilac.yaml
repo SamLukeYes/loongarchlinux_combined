@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yabause-gtk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - freeglut
-- glew
-- gtkglext
-- openal
 - sdl2
-repo_makedepends:
-- cmake
+- openal
+- gtkglext
+- glew
 update_on:
 - alpm: yabause-gtk
   source: archpkg

@@ -9,28 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opl-synth'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - alsa-lib
-- hicolor-icon-theme
 - libjpeg-turbo
-- libvorbis
-- flac
+- curl
 - freetype2
 - libglvnd
-- curl
-repo_makedepends:
-- git
-- juce
-- zlib
-- libpng
-- libogg
-- libx11
-- libxext
-- libxrandr
-- libxinerama
-- libxcursor
-- gendesk
+- libvorbis
+- flac
+- hicolor-icon-theme
 update_on:
 - alpm: opl-synth
   source: archpkg

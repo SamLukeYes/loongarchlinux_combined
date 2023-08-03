@@ -9,31 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''samplv1'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
-- libsndfile
-- qt6-base
-- qt6-svg
 - alsa-lib
-- gcc: gcc-libs
+- libsndfile
+- liblo
+- qt6-base
+- hicolor-icon-theme
+- qt6-svg
 - glibc
-- hicolor-icon-theme
-- liblo
-- libsndfile
-- qt6-base
-- qt6-svg
-repo_makedepends:
-- alsa-lib
-- cmake
-- hicolor-icon-theme
-- liblo
-- libsndfile
-- lv2
-- qt6-base
-- qt6-svg
-- qt6-tools
 update_on:
 - alpm: libsndfile
   provides: libsndfile.so

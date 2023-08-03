@@ -9,28 +9,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''skrooge'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-base
-- qca: qca-qt5
-- qt5-script
-- qt5-webengine
 - qt5-xmlpatterns
-- libofx
-- grantlee
-- knewstuff
-- krunner
-- knotifyconfig
-- kparts
-- sqlcipher
 - python
+- grantlee
+- libofx
+- qt5-base
+- qt5-script
+- knotifyconfig
+- krunner
+- kparts
+- qca: qca-qt5
+- knewstuff
 - hicolor-icon-theme
-repo_makedepends:
-- cmake
-- kdoctools
-- extra-cmake-modules
-- qt5-tools
-- kdesignerplugin
+- sqlcipher
+- qt5-webengine
 update_on:
 - alpm: qt5-base
   source: alpm

@@ -9,28 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-htf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-regex-compat
+- haskell-aeson
 - ghc: ghc-libs
 - haskell-diff
-- haskell-hunit
-- haskell-quickcheck
-- haskell-aeson
-- haskell-base64-bytestring
-- haskell-cpphs
-- haskell-src
-- haskell-lifted-base
-- haskell-monad-control
-- haskell-old-time
 - haskell-random
-- haskell-regex-compat
+- haskell-quickcheck
+- haskell-src
+- haskell-old-time
+- haskell-lifted-base
 - haskell-vector
+- haskell-hunit
 - haskell-xmlgen
-repo_makedepends:
-- ghc
-- haskell-aeson-pretty
-- haskell-temporary
-- haskell-unordered-containers
+- haskell-base64-bytestring
+- haskell-monad-control
+- haskell-cpphs
 update_on:
 - alpm: haskell-diff
   source: alpm

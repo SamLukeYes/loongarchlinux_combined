@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openredir'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- lua
 - python
-repo_makedepends: []
+- lua
 update_on:
 - alias: lua
 - alias: python

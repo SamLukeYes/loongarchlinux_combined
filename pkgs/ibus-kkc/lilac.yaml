@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ibus-kkc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ibus
-- libkkc
 - libkkc-data
+- libkkc
 - skk-jisyo
-repo_makedepends:
-- vala
-- intltool
+- ibus
 update_on:
 - alpm: ibus-kkc
   source: archpkg

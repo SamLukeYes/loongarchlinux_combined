@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''arm-none-eabi-gcc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - arm-none-eabi-binutils
 - zlib
-- libmpc
 - libisl
+- libmpc
 - zstd
-# repo_makedepends:
-# - gmp
-# - mpfr
-# - arm-none-eabi-newlib
 update_on:
 - alpm: arm-none-eabi-gcc
   source: archpkg

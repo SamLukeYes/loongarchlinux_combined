@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''redland'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- mariadb: mariadb-libs
 - postgresql: postgresql-libs
 - unixodbc
-repo_makedepends:
-- rasqal
-- raptor
-- postgresql: postgresql-libs
 - mariadb: mariadb-libs
-- unixodbc
-- sqlite
 update_on:
 - alpm: redland
   source: archpkg

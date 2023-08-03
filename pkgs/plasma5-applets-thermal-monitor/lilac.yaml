@@ -7,13 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''plasma5-applets-thermal-monitor'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- plasma-workspace
-- ksysguard
 - qt5-graphicaleffects
-repo_makedepends:
-- extra-cmake-modules
+- ksysguard
+- plasma-workspace
 update_on:
 - alpm: plasma5-applets-thermal-monitor
   source: archpkg

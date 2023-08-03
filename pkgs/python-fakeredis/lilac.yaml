@@ -7,23 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-fakeredis'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-asyncio
-- python-pytest-mock
-- python-hypothesis
 repo_depends:
-- python-importlib-metadata
-- python-redis
-- python-six
 - python-sortedcontainers
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
-- python-packaging
-- python-lupa
-- python-poetry-core
+- python-redis
+- python-importlib-metadata
+- python-six
 update_on:
 - alpm: python-fakeredis
   source: archpkg

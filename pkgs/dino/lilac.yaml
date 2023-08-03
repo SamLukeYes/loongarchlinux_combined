@@ -9,32 +9,26 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dino'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
-- glib-networking
-- gtk4
-- libadwaita
-- gpgme
-- libgee
-- libgcrypt
-- libsignal-protocol-c
-- libsoup
-- sqlite
-- qrencode
 - gspell
-- libnice
-- gstreamer
-- gstreamer: gst-plugin-gtk
-- gstreamer: gst-plugins-base
-- gstreamer: gst-plugins-good
+- gtk4
 - libsrtp
+- gstreamer: gst-plugins-good
+- libgcrypt
+- glib-networking
+- glib2
+- gstreamer
+- libnice
+- libsignal-protocol-c
+- gpgme
+- sqlite
+- gstreamer: gst-plugins-base
+- qrencode
+- gstreamer: gst-plugin-gtk
+- libgee
+- libadwaita
 - webrtc-audio-processing
-repo_makedepends:
-- git
-- cmake
-- vala
-- ninja
+- libsoup
 update_on:
 - alpm: dino
   source: archpkg

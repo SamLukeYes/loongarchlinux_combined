@@ -1,10 +1,5 @@
 destsubdir: extra
-repo_checkdepends:
-- python-pytest-runner
-- python-pytest-cov
 repo_depends:
 - python
-repo_makedepends:
-- python-setuptools
 update_on:
 - alias: python

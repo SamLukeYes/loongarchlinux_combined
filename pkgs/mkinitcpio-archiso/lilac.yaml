@@ -1,11 +1,6 @@
 destsubdir: extra
-repo_checkdepends:
-- shellcheck
-- shfmt
 repo_depends:
-- bash
-- lvm2: device-mapper
 - mkinitcpio
-repo_makedepends:
-- git
+- lvm2: device-mapper
+- bash
 update_on: []

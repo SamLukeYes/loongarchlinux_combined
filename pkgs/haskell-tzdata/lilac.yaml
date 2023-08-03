@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tzdata'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-vector
-repo_makedepends:
-- ghc
-- haskell-hunit
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-th
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-vector
   source: alpm

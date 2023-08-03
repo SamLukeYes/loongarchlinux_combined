@@ -9,20 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-network-ip'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-data-default-class
-- haskell-data-dword
-- haskell-data-endian
-- haskell-data-serializer
-- haskell-data-textual
-- haskell-hashable
 - haskell-parsers
+- ghc: ghc-libs
+- haskell-data-textual
+- haskell-data-endian
+- haskell-hashable
 - haskell-text-printer
 - haskell-type-hint
-repo_makedepends:
-- ghc
+- haskell-data-serializer
+- haskell-data-dword
+- haskell-data-default-class
 update_on:
 - alpm: haskell-data-default-class
   source: alpm

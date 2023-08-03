@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fpc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ncurses
 - zlib
+- make
 - expat
 - binutils
-- make
-repo_makedepends: []
 update_on:
 - alpm: fpc
   source: archpkg

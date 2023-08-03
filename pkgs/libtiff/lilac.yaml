@@ -9,18 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libtiff'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - libjpeg-turbo
-- zlib
 - xz
+- zlib
 - zstd
-repo_makedepends:
-- freeglut
-- glu
-- mesa
-- jbigkit
+- glibc
 update_on:
 - alpm: darktable
   provides: libjpeg.so

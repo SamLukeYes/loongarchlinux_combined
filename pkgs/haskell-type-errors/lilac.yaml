@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-type-errors''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-first-class-families
 - haskell-syb
 - haskell-th-abstraction
-repo_makedepends:
-- ghc
-- haskell-doctest
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-first-class-families
   source: alpm

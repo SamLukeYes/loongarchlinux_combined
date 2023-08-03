@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libtool'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- gcc: gcc-fortran
 repo_depends:
 - tar
 - glibc
-repo_makedepends:
-- git
-- help2man
 update_on:
 - alpm: libtool
   source: archpkg

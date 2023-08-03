@@ -7,15 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-aiohttp-oauthlib'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-aiohttp
 - python-oauthlib
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools-scm
-- python-wheel
+- python-aiohttp
 update_on:
 - alpm: python-aiohttp-oauthlib
   source: archpkg

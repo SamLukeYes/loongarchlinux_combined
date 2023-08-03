@@ -7,13 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-daiquiri'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
 - python-json-logger
-repo_makedepends:
-- git
-- python-setuptools-scm
 update_on:
 - alpm: python-daiquiri
   source: archpkg

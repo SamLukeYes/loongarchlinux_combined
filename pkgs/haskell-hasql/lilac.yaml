@@ -9,32 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hasql'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- postgresql
-- pifpaf
 repo_depends:
-- ghc: ghc-libs
-- haskell-attoparsec
-- haskell-bytestring-strict-builder
-- haskell-contravariant
 - haskell-dlist
-- haskell-hashable
 - haskell-hashtables
-- haskell-postgresql-binary
-- haskell-postgresql-libpq
+- ghc: ghc-libs
+- haskell-hashable
 - haskell-profunctors
-- haskell-text-builder
+- haskell-bytestring-strict-builder
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
-- haskell-contravariant-extras
-- haskell-tasty
-- haskell-tasty-quickcheck
-- haskell-tasty-hunit
-- haskell-quickcheck-instances
-- haskell-quickcheck
-- haskell-rerebase
+- haskell-postgresql-libpq
+- haskell-postgresql-binary
+- haskell-text-builder
+- haskell-attoparsec
+- haskell-contravariant
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

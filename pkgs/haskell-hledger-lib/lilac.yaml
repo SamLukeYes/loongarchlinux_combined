@@ -9,40 +9,37 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hledger-lib''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-aeson-pretty
-- haskell-ansi-terminal
-- haskell-blaze-markup
-- haskell-call-stack
-- haskell-cassava
-- haskell-cassava-megaparsec
-- haskell-cmdargs
-- haskell-data-default
-- haskell-decimal
-- haskell-doclayout
-- haskell-extra
-- haskell-file-embed
-- haskell-glob
-- haskell-hashtables
-- haskell-megaparsec
-- haskell-microlens
 - haskell-microlens-th
-- haskell-parser-combinators
 - haskell-pretty-simple
-- haskell-regex-tdfa
-- haskell-safe
+- haskell-unordered-containers
+- haskell-glob
+- haskell-aeson
+- haskell-ansi-terminal
 - haskell-tabular
-- haskell-tasty
 - haskell-tasty-hunit
 - haskell-timeit
-- haskell-uglymemo
-- haskell-unordered-containers
+- haskell-file-embed
+- haskell-cassava
+- haskell-decimal
+- haskell-tasty
+- haskell-blaze-markup
+- haskell-cassava-megaparsec
+- haskell-regex-tdfa
+- haskell-microlens
 - haskell-utf8-string
-repo_makedepends:
-- ghc
+- ghc: ghc-libs
+- haskell-parser-combinators
+- haskell-cmdargs
+- haskell-extra
+- haskell-aeson-pretty
+- haskell-call-stack
+- haskell-hashtables
+- haskell-uglymemo
+- haskell-doclayout
+- haskell-data-default
+- haskell-safe
+- haskell-megaparsec
 update_on:
 - alpm: haskell-aeson
   source: alpm

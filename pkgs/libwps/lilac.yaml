@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libwps'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libwpd
 - librevenge
-repo_makedepends:
-- doxygen
+- libwpd
 update_on:
 - alpm: libwps
   source: archpkg

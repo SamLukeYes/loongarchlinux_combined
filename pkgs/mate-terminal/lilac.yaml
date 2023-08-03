@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-terminal'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- vte3
 - libsm
+- perl
 - gettext
 - mate-desktop
-- vte3
-- perl
-repo_makedepends:
-- itstool
-- python
 update_on:
 - alias: perl
 - alpm: mate-terminal

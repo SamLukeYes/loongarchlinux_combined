@@ -9,53 +9,27 @@ pre_build_script: '_G.files = download_official_pkgbuild(''muse'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
-- python
-- pyqt5: python-pyqt5
-- python-pyro
-- python-six
-- qt5-base
-- qt5-svg
-- gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
-- python
-- pyqt5: python-pyqt5
-- python-pyro
-- python-six
-- qt5-base
-- qt5-svg
 - alsa-lib
-- fluidsynth
+- libsndfile
+- liblrdf
+- rtaudio
+- glibc
 - glib2
 - libinstpatch
+- hicolor-icon-theme
 - lilv
+- gcc: gcc-libs
+- qt5-base
 - liblo
-- liblrdf
-- rtaudio
-- rubberband
-- libsamplerate
-- libsndfile
-repo_makedepends:
-- alsa-lib
-- cmake
-- dssi
 - fluidsynth
-- glib2
-- ladspa
-- liblo
-- liblrdf
-- libsamplerate
-- libsndfile
-- lilv
-- lv2
-- qt5-tools
-- rtaudio
 - rubberband
+- libsamplerate
+- python-pyro
+- python
+- python-six
+- pyqt5: python-pyqt5
+- qt5-svg
 update_on:
 - alias: python
 - alpm: qt5-base

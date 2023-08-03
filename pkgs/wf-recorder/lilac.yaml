@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wf-recorder'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- meson
-- wayland-protocols
 update_on:
 - alpm: ffmpeg
   provides: libavcodec.so

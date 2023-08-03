@@ -9,20 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vkmark'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - vulkan-icd-loader
 - assimp
-repo_makedepends:
-- git
-- vulkan-headers
-- meson
-- ninja
-- wayland-protocols
-- glm
-- xcb-util-wm
-- xorgproto
-- wayland
 update_on:
 - alpm: vkmark
   source: archpkg

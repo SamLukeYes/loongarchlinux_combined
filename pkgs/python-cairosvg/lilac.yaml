@@ -7,17 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-cairosvg'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
 - python-cairocffi
-- python-cssselect2
-- python-defusedxml
 - python-pillow
+- python-defusedxml
 - python-tinycss2
-repo_makedepends:
-- python-setuptools
-- python-pytest-runner
+- python-cssselect2
 update_on:
 - alpm: python-cairosvg
   source: archpkg

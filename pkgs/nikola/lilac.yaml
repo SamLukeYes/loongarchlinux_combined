@@ -7,49 +7,26 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''nikola'')
 
   '
-repo_checkdepends:
-- libwebp
-- python-freezegun
-- python-pytest
 repo_depends:
-- python
-- python-babel
-- python-blinker
-- python-doit
-- python-dateutil
-- python-docutils
-- python-logbook
-- python-lxml
-- python-mako
-- python-markdown
-- python-natsort
-- python-piexif
-- python-pillow
-- python-pygments
-- python-pyrss2gen
 - python-requests
-- python-setuptools
+- python-logbook
+- python-pygments
+- python-blinker
+- python-mako
+- python-piexif
+- python-dateutil
+- python-pillow
 - python-unidecode
+- python-markdown
+- python-setuptools
+- python-lxml
+- python-pyrss2gen
 - python-yapsy
-repo_makedepends:
-- jupyter-notebook
-- python-aiohttp
-- python-build
-- python-ghp-import
-- python-husl
-- python-installer
-- python-ipykernel
-- python-jinja
-- python-micawber
-- python-phpserialize
-- python-pygal
-- python-pyphen
-- python-ruamel-yaml
-- python-toml
-- python-typogrify
-- python-watchdog
-- python-wheel
-- zeromq
+- python-docutils
+- python-natsort
+- python
+- python-doit
+- python-babel
 update_on:
 - alias: python
 - alpm: nikola

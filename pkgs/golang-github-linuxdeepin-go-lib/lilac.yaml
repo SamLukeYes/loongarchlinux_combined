@@ -7,29 +7,20 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''golang-github-linuxdeepin-go-lib'')
 
   '
-repo_checkdepends:
-- iso-codes
-- golang-gopkg-check.v1
-- golang-gopkg-yaml.v3
-- golang-github-fsnotify-fsnotify
-- golang-github-stretchr-testify
-- git
-- dash
 repo_depends:
-- dbus
-- go
 - pulseaudio: libpulse
 - alsa-lib
-- libcanberra
+- golang-gopkg-alecthomas-kingpin.v2
 - gdk-pixbuf2
 - gdk-pixbuf-xlib
+- dbus
+- golang-golang-x-net
+- libcanberra
+- golang-golang-x-image
+- go
+- golang-github-linuxdeepin-go-x11-client
 - mobile-broadband-provider-info
 - libx11
-- golang-gopkg-alecthomas-kingpin.v2
-- golang-github-linuxdeepin-go-x11-client
-- golang-golang-x-net
-- golang-golang-x-image
-repo_makedepends: []
 update_on:
 - alpm: golang-github-linuxdeepin-go-lib
   source: archpkg

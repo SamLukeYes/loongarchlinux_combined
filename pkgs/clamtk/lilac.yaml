@@ -7,21 +7,19 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''clamtk'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- clamav
-- perl
-- perl-gtk3
-- perl-locale-gettext
-- perl-libwww
-- perl-http-message
 - perl-lwp-protocol-https
-- perl-text-csv
 - perl-json
-- python
+- perl-gtk3
+- clamav
+- perl-http-message
 - zenity
+- perl
 - desktop-file-utils
-repo_makedepends: []
+- perl-libwww
+- perl-locale-gettext
+- perl-text-csv
+- python
 update_on:
 - alias: perl
 - alias: python

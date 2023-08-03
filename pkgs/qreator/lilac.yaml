@@ -7,21 +7,17 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''qreator'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- geoclue
 - libchamplain
-- networkmanager: libnm
-- python-pillow
-- python-cairo
-- pygobject: python-gobject
-- python-qrencode
-- python-requests
-- python-vobject
 - pyxdg: python-pyxdg
-repo_makedepends:
-- python-distutils-extra
-- git
+- python-requests
+- python-pillow
+- python-qrencode
+- python-vobject
+- geoclue
+- pygobject: python-gobject
+- python-cairo
+- networkmanager: libnm
 update_on:
 - alpm: qreator
   source: archpkg

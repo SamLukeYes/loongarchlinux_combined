@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zint'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libpng
+- qt6-tools
 - hicolor-icon-theme
-- qt6-tools
-repo_makedepends:
-- cmake
-- ninja
-- qt6-tools
-- qt6-svg
+- libpng
 update_on:
 - alpm: zint
   source: archpkg

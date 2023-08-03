@@ -7,17 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-dunamai'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-setuptools
 repo_depends:
-- python
 - python-packaging
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-poetry-core
+- python
 update_on:
 - alias: python
 - alpm: python-dunamai

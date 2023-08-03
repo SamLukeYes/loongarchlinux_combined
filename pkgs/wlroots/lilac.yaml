@@ -9,22 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wlroots'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libglvnd
 - libinput
 - libxcb
-- xcb-util-errors
 - xcb-util-renderutil
 - xcb-util-wm
-repo_makedepends:
-- glslang
-- meson
-- ninja
-- systemd
-- vulkan-headers
-- wayland-protocols
-- xorg-xwayland
+- libglvnd
+- xcb-util-errors
 update_on:
 - alpm: pixman
   provides: libpixman-1.so

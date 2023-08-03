@@ -9,18 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pekwm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libpng
-- libxft
-- libxinerama
 - libxpm
+- libxft
 - libxrandr
-repo_makedepends:
-- cmake
-- gendesk
-- git
-- ninja
+- libxinerama
+- libpng
 update_on:
 - alpm: pekwm
   source: archpkg

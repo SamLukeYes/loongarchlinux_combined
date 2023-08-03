@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''allegro4'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxcursor
 - libxpm
 - libxxf86vm
-repo_makedepends:
-- cmake
-- glu
-- libpng
-- mesa
-- ninja
+- libxcursor
 update_on:
 - alpm: allegro4
   source: archpkg

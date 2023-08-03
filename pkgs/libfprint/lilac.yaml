@@ -9,19 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libfprint'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cairo
 repo_depends:
-- libgusb
-- pixman
 - nss
+- pixman
+- libgusb
 - systemd
 - libgudev
-repo_makedepends:
-- git
-- meson
-- gtk-doc
-- gobject-introspection
 update_on:
 - alpm: libfprint
   source: archpkg

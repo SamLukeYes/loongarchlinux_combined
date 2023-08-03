@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cuda'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - nvidia-utils: opencl-nvidia
 - nvidia-utils
-- python
 - gcc12
 - nss
-repo_makedepends: []
+- python
 update_on:
 - alias: python
 - alpm: cuda

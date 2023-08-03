@@ -7,12 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-jekyll-sass-converter'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- ruby-sassc
 - ruby
 - ruby-rdoc
-- ruby-sassc
-repo_makedepends: []
 update_on:
 - alias: ruby
 - alpm: ruby-jekyll-sass-converter

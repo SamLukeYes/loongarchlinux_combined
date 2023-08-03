@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-2048'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libgnome-games-support
 - clutter-gtk
 - libgee
-- libgnome-games-support
-repo_makedepends:
-- appstream-glib
-- git
-- meson
-- vala
-- yelp-tools
 update_on:
 - alpm: gnome-2048
   source: archpkg

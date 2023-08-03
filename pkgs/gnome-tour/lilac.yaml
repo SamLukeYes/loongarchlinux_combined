@@ -1,10 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - gtk4
 - libadwaita
-repo_makedepends:
-- appstream-glib
-- meson
-- rust
 update_on: []

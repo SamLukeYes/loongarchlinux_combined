@@ -9,23 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''milkytracker'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - alsa-lib
-- lhasa
-- rtmidi
-- sdl2
-- zlib
 - zziplib
-- alsa-lib
-- lhasa
-- rtmidi
 - sdl2
+- rtmidi
 - zlib
-- zziplib
-repo_makedepends:
-- cmake
-- ninja
+- lhasa
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

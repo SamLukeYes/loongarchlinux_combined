@@ -9,18 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-shapely'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
 - geos
 - python
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
-- python-numpy
-- cython
 update_on:
 - alias: python
 - alpm: python-shapely

@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libxcursor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxfixes
-- libxrender
 - default-cursors
-repo_makedepends:
-- xorg-util-macros
+- libxrender
+- libxfixes
 update_on:
 - alpm: libxcursor
   source: archpkg

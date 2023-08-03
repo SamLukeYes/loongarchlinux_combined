@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''networkmanager-pptp''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- networkmanager: libnm
-- libsecret
 - ppp
 - pptpclient
-repo_makedepends:
-- git
-- intltool
-- libnma
-- libnma: libnma-gtk4
-- python
+- libsecret
+- networkmanager: libnm
 update_on:
 - alpm: networkmanager-pptp
   source: archpkg

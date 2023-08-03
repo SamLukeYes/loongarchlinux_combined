@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdg-user-dirs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - systemd
-repo_makedepends:
-- docbook-xsl
-- git
 update_on:
 - alpm: xdg-user-dirs
   source: archpkg

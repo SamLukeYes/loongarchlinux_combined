@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opensmtpd-filter-dkim
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libopensmtpd
 - openssl
-repo_makedepends:
-- gzip
-- mandoc
+- libopensmtpd
 update_on:
 - alpm: opensmtpd-filter-dkimsign
   source: archpkg

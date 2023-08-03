@@ -9,20 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-cx-freeze'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest-mock
-- python-bcrypt
-- python-cryptography
-- python-openpyxl
-- python-pandas
-- python-pillow
-- python-pydantic
-- python-pytz
 repo_depends:
 - patchelf
 - python-packaging
 - python-setuptools
-repo_makedepends: []
 update_on:
 - alpm: python-cx-freeze
   source: archpkg

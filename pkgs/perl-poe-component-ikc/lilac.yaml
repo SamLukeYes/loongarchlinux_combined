@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-poe-component-ikc'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-poe
-repo_makedepends:
 - perl-poe
 update_on:
 - alpm: perl-poe-component-ikc

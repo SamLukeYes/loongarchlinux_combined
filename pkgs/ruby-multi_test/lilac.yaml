@@ -7,13 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-multi_test'')
 
   '
-repo_checkdepends:
-- ruby-activesupport
-- ruby-rspec
 repo_depends:
 - ruby
-repo_makedepends:
-- git
 update_on:
 - alias: ruby
 - alpm: ruby-multi_test

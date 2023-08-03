@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-netcdf4'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-numpy
 - python-cftime
 - netcdf
-repo_makedepends:
-- cython
-- python-setuptools
+- python-numpy
 update_on:
 - alpm: python-netcdf4
   source: archpkg

@@ -7,15 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-itemloaders'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
 - python-w3lib
-- python-parsel
 - python-jmespath
+- python-parsel
 - python-itemadapter
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-itemloaders
   source: archpkg

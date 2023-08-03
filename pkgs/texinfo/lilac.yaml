@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''texinfo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ncurses
-- gzip
 - perl
-repo_makedepends: []
+- gzip
+- ncurses
 update_on:
 - alias: perl
 - alpm: texinfo

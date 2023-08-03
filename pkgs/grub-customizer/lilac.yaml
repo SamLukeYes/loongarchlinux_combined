@@ -9,36 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''grub-customizer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- grub
-- openssl
-- gcc: gcc-libs
-- glibc
-- grub
-- openssl
-- atkmm
-- cairomm
-- gtk3
-- glib2
 - glibmm
+- pangomm
+- glib2
+- glibc
+- gcc: gcc-libs
+- cairomm
+- atkmm
+- libsigc++
+- openssl
 - gtkmm3
 - libarchive
-- libsigc++
-- pangomm
-repo_makedepends:
-- atkmm
-- cairomm
-- cmake
-- glib2
-- glibmm
 - gtk3
-- gtkmm3
-- libarchive
-- libsigc++
-- pangomm
+- grub
 update_on:
 - alpm: atkmm
   provides: libatkmm-1.6.so

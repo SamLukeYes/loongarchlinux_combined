@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wasmer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- zlib
-- ncurses
-- libffi
 - libxkbcommon
-repo_makedepends:
-- rustup
-- cmake
+- gcc: gcc-libs
+- ncurses
+- zlib
+- libffi
 update_on:
 - alpm: wasmer
   source: archpkg

@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-glib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - glib2
+- ghc: ghc-libs
 - haskell-utf8-string
-repo_makedepends:
-- ghc
-- haskell-gtk2hs-buildtools
 update_on:
 - alpm: haskell-utf8-string
   source: alpm

@@ -9,26 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pitivi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gsound
-- gstreamer: gst-editing-services
-- gstreamer: gst-plugin-gtk
-- gstreamer: gst-plugins-bad
-- gstreamer: gst-plugins-good
-- gstreamer: gst-python
-- gtk3
-- libnotify
-- libpeas
-- python-cairo
-- pygobject: python-gobject
 - python-matplotlib
+- gstreamer: gst-plugin-gtk
+- gstreamer: gst-python
 - python-scipy
-repo_makedepends:
-- appstream-glib
-- intltool
-- itstool
-- meson
+- libpeas
+- libnotify
+- gstreamer: gst-plugins-good
+- gstreamer: gst-editing-services
+- gtk3
+- pygobject: python-gobject
+- python-cairo
+- gstreamer: gst-plugins-bad
+- gsound
 update_on:
 - alpm: pitivi
   source: archpkg

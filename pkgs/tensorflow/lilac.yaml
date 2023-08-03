@@ -9,171 +9,43 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tensorflow'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- c-ares
-- pybind11
-- openssl
-- lmdb
-- libpng
-- curl
-- giflib
-- icu
-- libjpeg-turbo
-- openmp
-- c-ares
-- pybind11
-- openssl
-- lmdb
-- libpng
-- curl
-- giflib
-- icu
-- libjpeg-turbo
-- openmp
-- cuda
-- cudnn
 - nccl
-- c-ares
-- pybind11
-- openssl
-- lmdb
-- libpng
-- curl
-- giflib
-- icu
-- libjpeg-turbo
-- openmp
-- cuda
-- cudnn
-- nccl
-- c-ares
-- pybind11
-- openssl
-- lmdb
-- libpng
-- curl
-- giflib
-- icu
-- libjpeg-turbo
-- openmp
-- python-termcolor
 - python-astor
-- python-gast03
-- python-numpy
-- protobuf: python-protobuf
-- python-h5py
-- python-keras
-- python-keras-applications
+- lmdb
+- openmp
 - python-keras-preprocessing
 - python-tensorflow-estimator
-- python-opt_einsum
-- python-astunparse
-- python-pasta
-- flatbuffers: python-flatbuffers
-- python-typing_extensions
-- c-ares
-- pybind11
-- openssl
-- lmdb
-- libpng
-- curl
-- giflib
-- icu
 - libjpeg-turbo
-- openmp
+- python-pasta
 - python-termcolor
-- python-astor
-- python-gast03
-- python-numpy
-- protobuf: python-protobuf
-- python-h5py
-- python-keras
-- python-keras-applications
-- python-keras-preprocessing
-- python-tensorflow-estimator
 - python-opt_einsum
-- python-astunparse
-- python-pasta
-- flatbuffers: python-flatbuffers
-- python-typing_extensions
-- c-ares
-- pybind11
-- openssl
-- lmdb
-- libpng
 - curl
-- giflib
+- protobuf: python-protobuf
+- python-gast03
 - icu
-- libjpeg-turbo
-- openmp
-- cuda
-- cudnn
-- nccl
+- libpng
+- python-h5py
 - python-pycuda
-- python-termcolor
-- python-astor
-- python-gast03
-- python-numpy
-- protobuf: python-protobuf
-- python-h5py
-- python-keras
-- python-keras-applications
-- python-keras-preprocessing
-- python-tensorflow-estimator
-- python-opt_einsum
-- python-astunparse
-- python-pasta
-- flatbuffers: python-flatbuffers
-- python-typing_extensions
 - c-ares
-- pybind11
-- openssl
-- lmdb
-- libpng
-- curl
-- giflib
-- icu
-- libjpeg-turbo
-- openmp
-- cuda
-- cudnn
-- nccl
-- python-pycuda
-- python-termcolor
-- python-astor
-- python-gast03
-- python-numpy
-- protobuf: python-protobuf
-- python-h5py
-- python-keras
-- python-keras-applications
-- python-keras-preprocessing
-- python-tensorflow-estimator
-- python-opt_einsum
-- python-astunparse
-- python-pasta
-- flatbuffers: python-flatbuffers
 - python-typing_extensions
-repo_makedepends:
-- bazel
+- python-astunparse
+- cudnn
+- flatbuffers: python-flatbuffers
+- openssl
 - python-numpy
 - cuda
-- nvidia-utils
-- nccl
-- git
-- cudnn
-- python-wheel
-- python-installer
-- python-setuptools
-- python-h5py
+- pybind11
 - python-keras-applications
-- python-keras-preprocessing
-- cython
-- patchelf
-- python-requests
+- giflib
+- python-keras
 update_on:
+- alias: icu
+- alias: icu
+- alias: icu
+- alias: icu
+- alias: icu
+- alias: icu
 - alias: icu
 - alpm: tensorflow
   source: archpkg
-managed: false

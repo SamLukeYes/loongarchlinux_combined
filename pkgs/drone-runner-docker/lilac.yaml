@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''drone-runner-docker''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - docker
-repo_makedepends:
-- git
-- go
+- glibc
 update_on:
 - alpm: drone-runner-docker
   source: archpkg

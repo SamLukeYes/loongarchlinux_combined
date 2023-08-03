@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-clone'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- perl-b-cow
 repo_depends:
 - perl
-repo_makedepends: []
 update_on:
 - alias: perl
 - alpm: perl-clone

@@ -7,16 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-www-mechanize'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-libwww
 - perl-html-parser
 - perl-uri
-- perl-http-response-encoding
 - perl-http-server-simple
 - perl-test-warn
+- perl-libwww
+- perl-http-response-encoding
 - perl-html-form
-repo_makedepends: []
 update_on:
 - alpm: perl-www-mechanize
   source: archpkg

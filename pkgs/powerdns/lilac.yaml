@@ -9,28 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''powerdns'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- gnutls
-- libsodium
-- lmdb
 - luajit
-- openssl
+- libsodium
 - sqlite
+- gnutls
+- openssl
+- lmdb
+- boost: boost-libs
 - systemd: systemd-libs
-repo_makedepends:
-- boost
-- geoip
-- openldap: libldap
-- mariadb: mariadb-libs
-- curl
-- libmaxminddb
-- postgresql: postgresql-libs
-- systemd
-- tinycdb
-- unixodbc
-- yaml-cpp
 update_on:
 - alpm: curl
   provides: libcurl.so

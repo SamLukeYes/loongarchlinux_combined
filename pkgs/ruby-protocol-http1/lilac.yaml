@@ -7,17 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-protocol-http1'')
 
   '
-repo_checkdepends:
-- ruby-bake-test
-- ruby-bake-test-external
-- ruby-async-io
-- ruby-covered
-- ruby-rspec
-- ruby-rspec-files
-- ruby-rspec-memory
 repo_depends:
 - ruby-protocol-http
-repo_makedepends: []
 update_on:
 - alpm: ruby-protocol-http1
   source: archpkg

@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pdftricks'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghostscript
 - granite
 - imagemagick
-repo_makedepends:
-- meson
-- vala
+- ghostscript
 update_on:
 - alpm: pdftricks
   source: archpkg

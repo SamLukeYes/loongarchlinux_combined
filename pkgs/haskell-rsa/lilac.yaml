@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-rsa'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-crypto-api
 - haskell-crypto-pubkey-types
+- haskell-crypto-api
 - haskell-sha
-repo_makedepends:
-- ghc
-- haskell-quickcheck
-- haskell-tagged
-- haskell-test-framework
-- haskell-test-framework-quickcheck2
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-crypto-api
   source: alpm

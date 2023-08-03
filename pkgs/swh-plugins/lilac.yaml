@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''swh-plugins'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - fftw
 - gsm
-repo_makedepends:
-- ladspa
-- libxml2
-- perl-xml-parser
 update_on:
 - alpm: swh-plugins
   source: archpkg

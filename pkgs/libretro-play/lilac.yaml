@@ -9,19 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libretro-play'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - bzip2
+- glu
+- zlib
+- libretro-core-info
 - glew
 - glibc
-- glu
 - icu
-- libretro-core-info
-- zlib
-repo_makedepends:
-- cmake
-- git
-- libglvnd
 update_on:
 - alias: icu
 - alpm: libretro-play

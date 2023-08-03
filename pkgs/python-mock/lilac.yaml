@@ -7,12 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-mock'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- python-pbr
 - python
 - python-six
-- python-pbr
-repo_makedepends: []
 update_on:
 - alias: python
 - alpm: python-mock

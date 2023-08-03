@@ -9,43 +9,34 @@ pre_build_script: '_G.files = download_official_pkgbuild(''spice-gtk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- acl
-- cairo
-- gdk-pixbuf2
-- glib2
-- gstreamer: gst-plugins-base
-- gstreamer: gst-plugins-good
-- gstreamer
-- gtk3
-- json-glib
+- libusb
 - libcacard
 - libcap-ng
-- libepoxy
+- gstreamer: gst-plugins-good
+- glib2
+- acl
 - libjpeg-turbo
-- libsasl
-- libsoup3
-- libusb
-- libx11
-- lz4
-- openssl
+- gstreamer
 - opus
+- cairo
+- lz4
 - phodav
-- pixman
-- polkit
+- openssl
+- gstreamer: gst-plugins-base
+- libepoxy
+- libsoup3
+- gdk-pixbuf2
 - spice-protocol
-- usbredir
 - wayland
+- polkit
+- usbredir
+- libsasl
 - zlib
-repo_makedepends:
-- gobject-introspection
-- meson
-- python-six
-- python-pyparsing
-- usbutils
-- vala
-- wayland-protocols
+- pixman
+- libx11
+- json-glib
+- gtk3
 update_on:
 - alpm: spice-gtk
   source: archpkg

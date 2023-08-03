@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-axolotl-curve2
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
 - zlib
 - glibc
-repo_makedepends:
-- python-setuptools
+- python
 update_on:
 - alias: python
 - alpm: python-axolotl-curve25519

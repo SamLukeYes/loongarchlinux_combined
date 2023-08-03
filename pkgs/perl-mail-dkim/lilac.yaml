@@ -7,17 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-mail-dkim'')
 
   '
-repo_checkdepends:
-- perl-net-dns
-- perl-net-dns-resolver-mock
-- perl-test-requiresinternet
-- perl-yaml-libyaml
 repo_depends:
-- perl-crypt-openssl-rsa
 - perl-mail-authenticationresults
 - perl-mailtools
 - perl-net-dns
-repo_makedepends: []
+- perl-crypt-openssl-rsa
 update_on:
 - alpm: perl-mail-dkim
   source: archpkg

@@ -7,12 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-memcached'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - python-six
-repo_makedepends:
-- git
-- python-setuptools
 update_on:
 - alpm: python-memcached
   source: archpkg

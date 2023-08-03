@@ -7,14 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-file-basedir'')
 
   '
-repo_checkdepends:
-- perl-test-pod
-- perl-test-pod-coverage
-- perl-file-which
-- xdg-user-dirs
 repo_depends:
 - perl-ipc-system-simple
-repo_makedepends: []
 update_on:
 - alpm: perl-file-basedir
   source: archpkg

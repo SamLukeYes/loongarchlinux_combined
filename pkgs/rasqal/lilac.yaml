@@ -9,22 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rasqal'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- libgcrypt
-- mpfr
-- pcre
-- glibc
-- libgcrypt
-- mpfr
-- pcre
 - raptor
+- pcre
+- libgcrypt
 - util-linux: util-linux-libs
-repo_makedepends:
-- gtk-doc
-- raptor
-- util-linux
+- mpfr
+- glibc
 update_on:
 - alpm: raptor
   provides: libraptor2.so

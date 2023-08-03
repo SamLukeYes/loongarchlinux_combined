@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''librevenge'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- zlib
 - gcc: gcc-libs
-repo_makedepends:
-- boost
-- doxygen
-- cppunit
+- zlib
 update_on:
 - alpm: librevenge
   source: archpkg

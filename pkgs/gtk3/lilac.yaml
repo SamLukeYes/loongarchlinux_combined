@@ -1,44 +1,35 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-# - adwaita-icon-theme
-- cairo
-# - cantarell-fonts
-- dconf
-- desktop-file-utils
-- fontconfig
-- fribidi
-- gdk-pixbuf2
-- glib2
-- harfbuzz
-- iso-codes
-- libcloudproviders
-# - colord: libcolord
-- cups: libcups
-- libepoxy
-- librsvg
-- libxcomposite
-- libx11
-- libxcursor
-- libxdamage
-- libxext
-- libxfixes
-- libxi
-- libxinerama
-- libxkbcommon
-- libxrandr
 - libxrender
-- pango
-- shared-mime-info
-# - tracker3
-- wayland
+- libxfixes
+- dconf
+- libxdamage
+- desktop-file-utils
+- librsvg
 - gtk4: gtk-update-icon-cache
-repo_makedepends:
-- git
-- glib2: glib2-docs
-- gobject-introspection
-- gtk-doc
-- meson
-- sassc
-- wayland-protocols
+- iso-codes
+- glib2
+- cups: libcups
+- libxrandr
+- pango
+- libxinerama
+- libxcursor
+- tracker3
+- harfbuzz
+- fribidi
+- cairo
+- libxext
+- shared-mime-info
+- fontconfig
+- libxkbcommon
+- adwaita-icon-theme
+- libepoxy
+- libxcomposite
+- gdk-pixbuf2
+- wayland
+- libxi
+- cantarell-fonts
+- libx11
+- colord: libcolord
+- libcloudproviders
 update_on: []

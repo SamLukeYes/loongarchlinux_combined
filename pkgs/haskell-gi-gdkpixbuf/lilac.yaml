@@ -9,20 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi-gdkpixbuf'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
-- haskell-gi-gio
+- gdk-pixbuf2
 - haskell-gi-glib
+- haskell-gi-gio
+- haskell-gi-overloading
+- haskell-gi-base
+- haskell-gi
 - haskell-gi-gmodule
 - haskell-gi-gobject
-- haskell-gi
-- haskell-gi-base
-- haskell-gi-overloading
-- gdk-pixbuf2
-repo_makedepends:
-- ghc
-- gobject-introspection
 update_on:
 - alpm: haskell-gi-gio
   source: alpm

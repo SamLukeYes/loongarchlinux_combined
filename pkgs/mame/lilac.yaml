@@ -9,37 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mame'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- sdl2_ttf
-- qt5-base
-- lua
-- libutf8proc
-- pugixml
-- portmidi
-- portaudio
-- flac
 - pulseaudio: libpulse
-- hicolor-icon-theme
+- qt5-base
+- portmidi
 - sdl2
 - libutf8proc
-- flac
-repo_makedepends:
-- nasm
-- python
-- asio
-- rapidjson
-- glm
-- libxinerama
-- sdl2_ttf
-- qt5-base
-- lua
-- libutf8proc
 - pugixml
-- portmidi
-- portaudio
+- sdl2_ttf
 - flac
-- pulseaudio: libpulse
+- portaudio
+- hicolor-icon-theme
+- lua
 update_on:
 - alpm: qt5-base
   source: alpm

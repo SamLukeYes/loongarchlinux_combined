@@ -9,49 +9,24 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nemo-extensions'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- nemo
-- nemo
+- pygobject: python-gobject
 - python-mutagen
-- nemo
-- nemo
+- cjs
+- webkit2gtk-4.1
+- libmusicbrainz5
+- python-setuptools
+- xreader
+- libcryptui
+- samba
+- imagemagick
+- vte3
+- clutter-gtk
+- clutter-gst
+- gtksourceview4
 - file-roller
 - nemo
-- imagemagick
-- nemo
 - pastebinit
-- nemo
-- cjs
-- clutter-gtk
-- clutter-gst
-- libmusicbrainz5
-- gtksourceview4
-- xreader
-- webkit2gtk-4.1
-- nemo
-- pygobject: python-gobject
-- python-setuptools
-- nemo
-- libcryptui
-- nemo
-- samba
-- vte3
-repo_makedepends:
-- intltool
-- gobject-introspection
-- meson
-- samurai
-- cjs
-- clutter-gtk
-- clutter-gst
-- libmusicbrainz5
-- gtksourceview4
-- xreader
-- webkit2gtk-4.1
-- pygobject: python-gobject
-- python-setuptools
-- libcryptui
 update_on:
 - alpm: nemo-extensions
   source: archpkg

@@ -9,22 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openbabel'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- coordgen
 - libxml2
 - cairo
-- coordgen
 - python
-repo_makedepends:
-- cmake
-- eigen
-- wxwidgets: wxwidgets-gtk3
-- boost
-- python
-- swig
-- maeparser
-- rapidjson
-- coordgen
 update_on:
 - alias: python
 - alpm: openbabel

@@ -9,44 +9,39 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kmymoney'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- aqbanking
-- gwenhywfar
-- libalkimia
-- sqlcipher
-- qt5-base
-- qt5-webengine
-- karchive
-- kcoreaddons
-- kconfig
-- kwidgetsaddons
-- ki18n
-- kcompletion
-- kcmutils
-- kitemmodels
-- kitemviews
-- kservice
-- kwallet
-- kiconthemes
-- kxmlgui
-- kidentitymanagement
-- ktextwidgets
-- knotifications
-- kio
-- kholidays
-- kactivities
-- kqtquickcharts
-- kdiagram
-- kcontacts
-- libical
 - akonadi: libakonadi
+- karchive
+- kcontacts
+- ki18n
+- kdiagram
+- sqlcipher
+- kconfig
+- kitemviews
+- qt5-base
+- kwidgetsaddons
+- libalkimia
+- ktextwidgets
 - shared-mime-info
+- knotifications
+- kxmlgui
+- kiconthemes
+- kidentitymanagement
 - libofx
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- doxygen
+- kitemmodels
+- kservice
+- kcmutils
+- aqbanking
+- kactivities
+- libical
+- kholidays
+- kqtquickcharts
+- kcompletion
+- gwenhywfar
+- kio
+- kcoreaddons
+- kwallet
+- qt5-webengine
 update_on:
 - alpm: qt5-base
   source: alpm

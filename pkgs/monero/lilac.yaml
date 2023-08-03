@@ -9,22 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''monero'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- libunwind
-- openssl
-- readline
-- zeromq
-- pcsclite
 - hidapi
-- protobuf
 - libusb
-repo_makedepends:
-- boost
-- cmake
-- git
-- python
+- libunwind
+- pcsclite
+- readline
+- protobuf
+- openssl
+- zeromq
+- boost: boost-libs
 update_on:
 - alias: readline
 - alias: protobuf

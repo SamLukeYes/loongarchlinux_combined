@@ -9,21 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mwc-random'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- haskell-doctest
-- haskell-quickcheck
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
 repo_depends:
 - ghc: ghc-libs
-- haskell-math-functions
-- haskell-primitive
 - haskell-random
+- haskell-math-functions
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
+- haskell-primitive
 update_on:
 - alpm: haskell-math-functions
   source: alpm

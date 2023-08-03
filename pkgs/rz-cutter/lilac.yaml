@@ -9,26 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rz-cutter'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- rizin
-- capstone
-- qt5-base
-- qt5-svg
-- qt5-webengine
-- icu
 - python
-- pyside2
-- pyside2: python-shiboken2
 - graphviz
 - gcc: gcc-libs
+- pyside2
+- qt5-base
+- rizin
+- capstone
 - syntax-highlighting
-repo_makedepends:
-- git
-- cmake
-- ninja
-- pyside2: shiboken2
-- qt5-tools
+- pyside2: python-shiboken2
+- qt5-svg
+- icu
+- qt5-webengine
 update_on:
 - alpm: qt5-base
   source: alpm

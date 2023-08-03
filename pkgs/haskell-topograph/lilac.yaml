@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-topograph'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
+- haskell-vector
 - haskell-base-compat
 - haskell-base-orphans
-- haskell-vector
-repo_makedepends:
-- ghc
-- uusi
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-base-compat
   source: alpm

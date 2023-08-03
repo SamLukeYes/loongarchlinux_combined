@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libnice'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
 - gnutls
+- glib2
 - gupnp-igd
-repo_makedepends:
-- git
-- gobject-introspection
-- graphviz
-- gstreamer
-- gtk-doc
-- meson
 update_on:
 - alpm: libnice
   source: archpkg

@@ -9,10 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hsa-amd-aqlprofile-bi
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - hsa-rocr
-repo_makedepends: []
 update_on:
 - alpm: hsa-amd-aqlprofile-bin
   source: archpkg

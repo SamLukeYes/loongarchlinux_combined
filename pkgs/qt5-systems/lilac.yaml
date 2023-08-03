@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qt5-systems'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - bluez: bluez-libs
 - qt5-declarative
-repo_makedepends: []
 update_on:
 - alpm: qt5-declarative
   source: alpm

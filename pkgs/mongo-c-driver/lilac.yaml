@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mongo-c-driver'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libsasl
-- icu
 - snappy
 - zlib
+- libsasl
 - zstd
-repo_makedepends:
-- cmake
+- icu
 update_on:
 - alias: icu
 - alpm: mongo-c-driver

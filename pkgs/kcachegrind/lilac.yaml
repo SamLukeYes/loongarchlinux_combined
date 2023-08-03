@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kcachegrind'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kio
-- hicolor-icon-theme
 - qt5-base
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- qt5-tools
+- hicolor-icon-theme
 - kio
 update_on:
 - alpm: qt5-base

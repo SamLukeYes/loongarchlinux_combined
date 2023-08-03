@@ -9,20 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libical'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- pygobject: python-gobject
 repo_depends:
+- libxml2
 - glibc
 - glib2
 - icu
-- libxml2
-repo_makedepends:
-- cmake
-- ninja
-- gtk-doc
-- doxygen
-- vala
-- gobject-introspection
 update_on:
 - alias: icu
 - alpm: libical

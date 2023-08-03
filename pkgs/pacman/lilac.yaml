@@ -1,21 +1,14 @@
 destsubdir: core
-repo_checkdepends:
-- python
-- fakechroot
 repo_depends:
-- bash
-- glibc
-- libarchive
-- curl
-- gpgme
-- pacman-mirrorlist
-- gettext
 - gawk
-- coreutils
-- gnupg
+- curl
 - grep
-repo_makedepends:
-- meson
-- asciidoc
-- doxygen
+- gpgme
+- libarchive
+- gettext
+- bash
+- gnupg
+- glibc
+- pacman-mirrorlist
+- coreutils
 update_on: []

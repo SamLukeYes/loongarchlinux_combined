@@ -9,27 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pythia8'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- gcc: gcc-libs
+- zlib
+- openmp
 - bash
-- gcc: gcc-libs
 - glibc
-- openmp
 - python
-- zlib
-- gcc: gcc-libs
-- glibc
-repo_makedepends:
-- fastjet
-- hepmc
-- hepmc2
-- lhapdf
-- openmp
-- python
-- root
-- zlib
 update_on:
 - alias: python
 - alpm: pythia8
   source: archpkg
-managed: false

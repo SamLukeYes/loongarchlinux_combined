@@ -9,25 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-- hicolor-icon-theme
-- tk
-- glibc
-- hicolor-icon-theme
-- tk
 - alsa-lib
-- fftw
-- portaudio
 - portmidi
-repo_makedepends:
-- alsa-lib
 - fftw
-- gendesk
-- inkscape
+- tk
 - portaudio
-- portmidi
+- hicolor-icon-theme
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

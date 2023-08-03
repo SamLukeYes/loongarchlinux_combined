@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zig'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lib32-glibc
 repo_depends:
+- llvm: llvm-libs
 - clang
 - lld
-- llvm: llvm-libs
-repo_makedepends:
-- cmake
-- llvm
 update_on:
 - alias: clang
 - alpm: zig

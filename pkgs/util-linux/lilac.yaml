@@ -9,26 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''util-linux'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - pam
-- shadow
-- coreutils
-- systemd: systemd-libs
+- libxcrypt
 - libcap-ng
 - libutempter
-- libxcrypt
 - glibc
-repo_makedepends:
-- git
-- meson
-- asciidoctor
-- bash-completion
-- libcap-ng
-- libutempter
-- libxcrypt
-- python
-- systemd
+- shadow
+- systemd: systemd-libs
+- coreutils
 update_on:
 - alpm: systemd-libs
   provides: libsystemd.so

@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''duperemove'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
 - sqlite
-repo_makedepends: []
+- glib2
 update_on:
 - alpm: duperemove
   source: archpkg

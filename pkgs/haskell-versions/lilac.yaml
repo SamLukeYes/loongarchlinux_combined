@@ -9,20 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-versions'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-megaparsec
-- haskell-hashable
 - haskell-parser-combinators
-repo_makedepends:
-- ghc
-- uusi
-- haskell-microlens
-- haskell-quickcheck
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
+- ghc: ghc-libs
+- haskell-hashable
 update_on:
 - alpm: haskell-megaparsec
   source: alpm

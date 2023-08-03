@@ -9,19 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glibmm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- glib-networking
 repo_depends:
 - glib2
 - libsigc++
-- glib2
-- libsigc++
-repo_makedepends:
-- git
-- meson
-- mm-common
-- perl-xml-parser
-- clang
 update_on:
 - alpm: libsigc++
   provides: libsigc-2.0.so

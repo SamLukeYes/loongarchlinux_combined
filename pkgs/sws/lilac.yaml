@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sws'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- taglib
 - gcc: gcc-libs
 - reaper
-- taglib
-repo_makedepends:
-- git
-- cmake
-- php
-- perl
-- gtk3
 update_on:
 - alpm: sws
   source: archpkg

@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-monoid-subcla
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-commutative-semigroups
 - haskell-primes
+- haskell-commutative-semigroups
 - haskell-vector
-repo_makedepends:
-- ghc
-- haskell-quickcheck
-- haskell-quickcheck-instances
-- haskell-tasty
-- haskell-tasty-quickcheck
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-commutative-semigroups
   source: alpm

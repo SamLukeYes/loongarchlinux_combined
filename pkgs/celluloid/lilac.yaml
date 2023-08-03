@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''celluloid'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk4
 - mpv
+- gtk4
 - libadwaita
-repo_makedepends:
-- appstream-glib
-- meson
 update_on:
 - alpm: celluloid
   source: archpkg

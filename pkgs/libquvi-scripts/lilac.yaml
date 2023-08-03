@@ -7,13 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''libquvi-scripts'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - luasocket: lua52-socket
+- luajson: lua52-luajson
 - lua-bitop: lua52-bitop
 - luaexpat: lua52-expat
-- luajson: lua52-luajson
-repo_makedepends: []
 update_on:
 - alpm: libquvi-scripts
   source: archpkg

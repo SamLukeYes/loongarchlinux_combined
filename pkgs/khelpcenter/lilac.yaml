@@ -1,13 +1,9 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- khtml
-- kdoctools
 - xapian-core
 - grantlee
+- khtml
+- kdoctools
 - perl
-repo_makedepends:
-- extra-cmake-modules
-- pcre
 update_on:
 - alias: perl

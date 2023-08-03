@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qt6-connectivity'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt6-base
 - bluez: bluez-libs
 - pcsclite
-repo_makedepends:
-- cmake
-- ninja
-- qt6-declarative
+- qt6-base
 update_on:
 - alpm: qt6-base
   source: alpm

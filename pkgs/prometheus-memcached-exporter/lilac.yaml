@@ -1,8 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- glibc
 - memcached
-repo_makedepends:
-- go
+- glibc
 update_on: []

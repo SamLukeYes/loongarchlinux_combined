@@ -9,31 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''juce'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- freetype2
 - gcc: gcc-libs
-- glibc
+- libjpeg-turbo
+- libpng
+- zlib
 - hicolor-icon-theme
-- libpng
-- libjpeg-turbo
-- zlib
-repo_makedepends:
-- alsa-lib
-- cmake
 - freetype2
-- doxygen
-- flac
-- gendesk
-- graphviz
-- gtk3
-- ladspa
-- libjpeg-turbo
-- libpng
-- libvorbis
-- python
-- webkit2gtk
-- zlib
+- glibc
 update_on:
 - alpm: freetype2
   provides: libfreetype.so

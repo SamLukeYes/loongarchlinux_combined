@@ -9,19 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-scipy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python-numpy
 - python-pooch
-repo_makedepends:
-- gcc: gcc-fortran
-- cython
-- python-pythran
-- pybind11
-- meson-python
-- python-build
-- python-installer
+- python-numpy
 update_on:
 - alpm: python-scipy
   source: archpkg

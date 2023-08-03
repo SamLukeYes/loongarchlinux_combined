@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xfce4-wavelan-plugin'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - xfce4-panel
-repo_makedepends:
-- intltool
 update_on:
 - alpm: xfce4-wavelan-plugin
   source: archpkg

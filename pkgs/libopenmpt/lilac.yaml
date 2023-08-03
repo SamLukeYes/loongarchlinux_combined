@@ -9,22 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libopenmpt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- flac
-- gcc: gcc-libs
-- glibc
 - libogg
 - pulseaudio: libpulse
+- gcc: gcc-libs
 - libsndfile
-- libvorbis
-- mpg123
-- portaudio
 - zlib
-repo_makedepends:
-- autoconf-archive
-- doxygen
-- help2man
+- mpg123
+- libvorbis
+- flac
+- portaudio
+- glibc
 update_on:
 - alpm: libopenmpt
   source: archpkg

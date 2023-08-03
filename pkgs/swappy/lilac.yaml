@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''swappy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
 - gtk3
 - pango
-repo_makedepends:
-- meson
-- scdoc
+- cairo
 update_on:
 - alpm: swappy
   source: archpkg

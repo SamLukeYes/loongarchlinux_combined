@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''umockdev'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- systemd
 - libgudev
-repo_makedepends:
-- meson
-- gobject-introspection
-- gtk-doc
-- vala
+- systemd
 update_on:
 - alpm: umockdev
   source: archpkg

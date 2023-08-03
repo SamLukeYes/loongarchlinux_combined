@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''timescaledb-old-upgra
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - timescaledb
 - postgresql-old-upgrade
-repo_makedepends:
-- git
-- gcc
-- cmake
-- postgresql
-- postgresql: postgresql-libs
 update_on:
 - alpm: timescaledb-old-upgrade
   source: archpkg

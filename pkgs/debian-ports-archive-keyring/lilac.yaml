@@ -7,10 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''debian-ports-archive-keyring'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - gnupg
-repo_makedepends: []
 update_on:
 - alpm: debian-ports-archive-keyring
   source: archpkg

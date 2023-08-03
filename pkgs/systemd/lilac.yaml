@@ -1,78 +1,31 @@
 destsubdir: core
-repo_checkdepends: []
 repo_depends:
+- kmod
+- pcre2
+- kbd
+- libcap
+- libgcrypt
+- util-linux
+- glibc
 - acl
+- gcc: gcc-libs
+- xz
+- dbus
+- hwdata
 - bash
 - cryptsetup
-- dbus
-- iptables
-- kbd
-- kmod
-- hwdata
-- libcap
-- libgcrypt
-- libxcrypt
-- libidn2
-- lz4
-- pam
-- elfutils: libelf
-- libseccomp
-- util-linux
-- xz
-- pcre2
-- audit
-- openssl
-- glibc
-- gcc: gcc-libs
-- libcap
-- libgcrypt
-- lz4
-- xz
 - zstd
-- binutils
-- python-pefile
-repo_makedepends:
-- acl
-- cryptsetup
-- docbook-xsl
-- gperf
+- libseccomp
 - lz4
-- xz
+- openssl
 - pam
 - elfutils: libelf
-- intltool
-- iptables
-- kmod
-- libcap
 - libidn2
-- libgcrypt
-- libmicrohttpd
 - libxcrypt
-- libxslt
-- util-linux
-- linux-api-headers
-- python-jinja
-- python-lxml
-- quota-tools
-- shadow
-- git
-- meson
-- libseccomp
-- pcre2
 - audit
-- kexec-tools
-- libxkbcommon
-- bash-completion
-- p11-kit
-- libfido2
-- tpm2-tss
-- rsync
-- linux-tools: bpf
-- libbpf
-- clang
-- llvm
-- curl
-- gnutls
+- python-pefile
+- iptables
+- binutils
 update_on:
 - alpm: acl
   provides: libacl.so

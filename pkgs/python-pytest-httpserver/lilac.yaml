@@ -7,19 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-httpserver'')
 
   '
-repo_checkdepends:
-- python-ipdb
-- python-pytest
-- python-requests
 repo_depends:
+- python-werkzeug
 - python
 - python-pytest
-- python-werkzeug
-repo_makedepends:
-- python-build
-- python-installer
-- python-poetry-core
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-pytest-httpserver

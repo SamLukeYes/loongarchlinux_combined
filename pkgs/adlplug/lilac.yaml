@@ -1,52 +1,11 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - fmt
-- freetype2
 - gcc: gcc-libs
-- glibc
-- libx11
-- libxext
-- fmt
-- freetype2
-- gcc: gcc-libs
-- glibc
+- liblo
 - hicolor-icon-theme
-- liblo
+- freetype2
 - libx11
 - libxext
-- fmt
-- freetype2
-- gcc: gcc-libs
 - glibc
-- libx11
-- libxext
-- fmt
-- freetype2
-- gcc: gcc-libs
-- glibc
-- libx11
-- libxext
-- fmt
-- freetype2
-- gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
-- liblo
-- libx11
-- libxext
-- fmt
-- freetype2
-- gcc: gcc-libs
-- glibc
-- libx11
-- libxext
-repo_makedepends:
-- cmake
-- fmt
-- freetype2
-- liblo
-- libxrandr
-- libxinerama
-- libxcursor
 update_on: []

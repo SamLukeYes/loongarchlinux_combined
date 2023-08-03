@@ -7,17 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-httpclient'')
 
   '
-repo_checkdepends:
-- ruby-rake
-- ruby-http-cookie
-- ruby-test-unit
-- ruby-rack
-- ruby-webrick
 repo_depends:
 - ruby
-repo_makedepends:
-- ruby-rdoc
-- ruby-bundler
 update_on:
 - alias: ruby
 - alpm: ruby-httpclient

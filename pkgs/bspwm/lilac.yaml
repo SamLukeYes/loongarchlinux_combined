@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bspwm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- xcb-util
-- xcb-util-wm
 - xcb-util-keysyms
-repo_makedepends:
-- git
+- xcb-util-wm
+- xcb-util
 update_on:
 - alpm: bspwm
   source: archpkg

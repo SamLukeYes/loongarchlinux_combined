@@ -1,15 +1,9 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- perl
-- python
-- ruby
-repo_makedepends:
-- python
 - ruby
 - perl
-- swig
+- python
 update_on:
 - alias: perl
 - alias: python

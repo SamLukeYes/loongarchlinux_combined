@@ -7,21 +7,17 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''torbrowser-launcher'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
-- pyqt5: python-pyqt5
-- python-requests
 - python-pysocks
-- gpgme: python-gpgme
+- tor
+- python-requests
+- dbus-glib
+- pyqt5: python-pyqt5
 - python-packaging
 - gnupg
-- tor
 - hicolor-icon-theme
-- dbus-glib
-repo_makedepends:
-- python-setuptools
-- python-distro
+- gpgme: python-gpgme
+- python
 update_on:
 - alias: python
 - alpm: torbrowser-launcher

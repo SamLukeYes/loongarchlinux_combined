@@ -1,12 +1,6 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- bash
 - dosfstools
 - efibootmgr
-repo_makedepends:
 - bash
-- dosfstools
-- efibootmgr
-- gnu-efi
 update_on: []

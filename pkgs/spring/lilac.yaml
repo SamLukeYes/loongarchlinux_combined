@@ -9,30 +9,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''spring'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openal
-- glew
-- zlib: minizip
-- freetype2
-- devil
-- libvorbis
+- jsoncpp
 - sdl2
 - libunwind
-- libxcursor
 - curl
-- shared-mime-info
 - desktop-file-utils
+- openal
+- libxcursor
+- freetype2
+- devil
+- zlib: minizip
+- glew
+- libvorbis
 - libx11
-- jsoncpp
-repo_makedepends:
-- cmake
-- zip
-- xz
-- p7zip
-- python
-- java8-openjdk: jdk8-openjdk
-- mesa
+- shared-mime-info
 update_on:
 - alias: jsoncpp
 - alpm: spring

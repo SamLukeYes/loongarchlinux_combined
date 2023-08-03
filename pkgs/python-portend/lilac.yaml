@@ -7,15 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-portend'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
 - python
-- python-tempora
-repo_makedepends:
-- python-setuptools
-- python-setuptools-scm
-- python-tox
 - python-tempora
 update_on:
 - alias: python

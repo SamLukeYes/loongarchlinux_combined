@@ -9,24 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-quickcheck-cl
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-quickcheck
 - haskell-aeson
-- haskell-primitive
-- haskell-primitive-addr
+- ghc: ghc-libs
 - haskell-quickcheck-classes-base
-- haskell-semigroupoids
+- haskell-quickcheck
 - haskell-semirings
+- haskell-semigroupoids
+- haskell-primitive-addr
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
-- haskell-base-orphans
-- haskell-tagged
-- haskell-tasty
-- haskell-tasty-quickcheck
+- haskell-primitive
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

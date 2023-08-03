@@ -9,26 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ogre'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- freeimage
+- libxrandr
+- glu
+- sdl2
+- zlib
+- pugixml
 - freetype2
 - libxaw
-- libxrandr
-- sdl2
-- glu
-- pugixml
-- zlib
-repo_makedepends:
-- cmake
-- doxygen
-- graphviz
-- ttf-dejavu
-- mesa
-- python
-- ninja
-- cppunit
-- swig
+- freeimage
 update_on:
 - alpm: ogre
   source: archpkg

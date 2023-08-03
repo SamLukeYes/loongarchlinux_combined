@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rime-double-pinyin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - rime-luna-pinyin
 - rime-stroke
-repo_makedepends:
-- librime
-- rime-prelude
-- rime-essay
 update_on:
 - alpm: rime-double-pinyin
   source: archpkg

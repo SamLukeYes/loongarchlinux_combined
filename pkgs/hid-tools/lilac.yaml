@@ -7,19 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''hid-tools'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - python-parse
-- python-pyudev
 - python-libevdev
+- python-pyudev
 - python-click
 - python-yaml
-repo_makedepends:
-- python-setuptools
-- python-pypandoc
-- python-sphinx
-- python-sphinx_rtd_theme
-- python-sphinxcontrib-apidoc
 update_on:
 - alpm: hid-tools
   source: archpkg

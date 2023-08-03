@@ -7,27 +7,21 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-heatclient'')
 
   '
-repo_checkdepends:
-- python-stestr
-- python-testscenarios
-- python-requests-mock
 repo_depends:
-- python-babel
-- python-pbr
-- python-cliff
-- python-iso8601
-- python-osc-lib
-- python-prettytable
-- python-oslo-i18n
+- python-requests
 - python-oslo-serialization
-- python-oslo-utils
+- python-oslo-i18n
 - python-keystoneauth1
+- python-pbr
+- python-prettytable
+- python-six
+- python-osc-lib
+- python-iso8601
+- python-cliff
 - python-swiftclient
 - python-yaml
-- python-requests
-- python-six
-repo_makedepends:
-- git
+- python-babel
+- python-oslo-utils
 update_on:
 - alpm: python-heatclient
   source: archpkg

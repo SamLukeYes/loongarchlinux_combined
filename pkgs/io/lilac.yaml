@@ -9,29 +9,25 @@ pre_build_script: '_G.files = download_official_pkgbuild(''io'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - freeglut
-- freetype2
-- libedit
-- libevent
-- libjpeg-turbo
-- libpng
-- libsndfile
 - libtheora
-- libtiff
-- libxml2
-- libxmu
-- lzo
-- mariadb: mariadb-libs
-- pcre
 - python
-- sqlite
+- lzo
+- libedit
+- libjpeg-turbo
+- libevent
+- libsndfile
+- libtiff
+- pcre
+- freetype2
 - util-linux
+- libxml2
+- sqlite
 - yajl
-repo_makedepends:
-- cmake
-- git
+- mariadb: mariadb-libs
+- libpng
+- libxmu
 update_on:
 - alias: python
 - alpm: io

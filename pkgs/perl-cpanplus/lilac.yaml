@@ -7,17 +7,15 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-cpanplus'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl
-- perl-log-message
-- perl-archive-extract
-- perl-term-ui
 - perl-log-message-simple
+- perl-log-message
 - perl-module-pluggable
+- perl-term-ui
+- perl-archive-extract
+- perl
 - perl-object-accessor
 - perl-package-constants
-repo_makedepends: []
 update_on:
 - alias: perl
 - alpm: perl-cpanplus

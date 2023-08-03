@@ -9,56 +9,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''uwsgi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- jansson
-- libxml2
-- openssl
-- pcre
-- zlib
-- glibc
-- ruby
-- glibc
-- perl
-- glibc
-- glibc
-- python
 - python-gevent
-- python-greenlet
-- glibc
-- pypy
-- glibc
-- php: php-embed
-- glibc
-- php-legacy: php-legacy-embed
-- glibc
-- lua51
-- glibc
 - mono
 - glibc
-- libxml2
-- glibc
-repo_makedepends:
-- jansson
-- libxcrypt
-- libxml2
 - lua51
-- mono
-- openssl
-- pam
+- jansson
 - pcre
-- perl
 - php: php-embed
-- php-legacy: php-legacy-embed
-- pypy
+- libxml2
+- openssl
 - python
-- python-gevent
+- php-legacy: php-legacy-embed
 - python-greenlet
 - ruby
-- systemd
-- util-linux
 - zlib
+- perl
+- pypy
 update_on:
 - alpm: libcap
   provides: libcap.so

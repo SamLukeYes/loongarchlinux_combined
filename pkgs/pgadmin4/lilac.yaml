@@ -9,61 +9,48 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pgadmin4'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-base
-- postgresql: postgresql-libs
-- hicolor-icon-theme
-- python
-- libxcrypt
-- glibc
-- gcc: gcc-libs
-- python-blinker
-- python-flask
-- python-flask-login
-- python-flask-migrate
-- python-flask-sqlalchemy
-- python-flask-wtf
-- python-passlib
-- python-pytz
-- python-simplejson
-- python-six
-- python-speaklater
-- python-sqlparse
-- python-wtforms
-- python-psutil
-- python-jinja
-- python-paramiko
-- python-psycopg2
-- python-bcrypt
-- python-cryptography
-- python-sqlalchemy1.3
-- python-testtools
-- python-webencodings
-- python-werkzeug
-- python-dateutil
-- python-flask-gravatar
-- python-flask-mail
-- python-flask-principal
-- python-flask-paranoid
 - python-sshtunnel
+- python-webencodings
+- python-testtools
+- python-simplejson
+- python-flask-sqlalchemy
+- python-blinker
+- python-flask-principal
+- python-speaklater
+- python-bcrypt
+- glibc
+- hicolor-icon-theme
 - python-flask-security-too
+- python-gssapi
+- python-flask-mail
+- gcc: gcc-libs
+- python-dateutil
+- qt5-base
+- python-paramiko
+- python-ldap3
+- postgresql: postgresql-libs
+- python-sqlalchemy1.3
+- python-passlib
+- python-sqlparse
+- python-psycopg2
 - python-werkzeug
 - python-flask-compress
-- python-ldap3
+- python-wtforms
+- python-flask
+- python-flask-gravatar
+- python-flask-login
+- python-pytz
+- python-flask-wtf
+- python-psutil
 - python-cryptography
+- python-flask-paranoid
+- python
+- python-six
 - python-flask-babelex
-- python-gssapi
-repo_makedepends:
-- python-setuptools
-- python-sphinx
-- python-extras
-- python-fixtures
-- python-html5lib
-- python-pbr
-- python-mimeparse
-- python-pyrsistent
-- imagemagick
+- libxcrypt
+- python-jinja
+- python-flask-migrate
 update_on:
 - alpm: qt5-base
   source: alpm

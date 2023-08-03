@@ -9,56 +9,34 @@ pre_build_script: '_G.files = download_official_pkgbuild(''freecad'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- coin
-- fmt
-- glew
 - jsoncpp
+- pyside2
+- coin
+- python-ply
+- qt5-x11extras
 - libspnav
+- boost: boost-libs
+- qt5-xmlpatterns
 - med-openmpi
+- verdict
+- python-markdown
+- python-pivy
+- pugixml
+- python-yaml
+- glew
+- openmpi
+- qt5-tools
+- xerces-c
+- fmt
+- python-matplotlib
 - netcdf
 - opencascade
-- openmpi
-- pugixml
-- pyside2
+- python-pip
+- qt5-svg
 - pyside2: pyside2-tools
 - python-gitpython
-- python-markdown
-- python-matplotlib
-- python-pip
-- python-pivy
-- python-ply
-- python-yaml
-- qt5-svg
-- qt5-tools
 - qt5-webengine
-- qt5-x11extras
-- qt5-xmlpatterns
-- xerces-c
-- verdict
-repo_makedepends:
-- boost
-- cgns
-- cmake
-- eigen
-- git
-- libharu
-- liblas
-- ninja
-- openvdb
-- openvr
-- ospray
-- pdal
-- postgresql: postgresql-libs
-- python-mpi4py
-- pyside2: python-shiboken2
-- qt5-webengine
-- pyside2: shiboken2
-- swig
-- utf8cpp
-- nlohmann-json
 update_on:
 - alias: jsoncpp
 - alpm: freecad

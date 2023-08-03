@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mypaint'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
 - libmypaint
 - mypaint-brushes
-- python-cairo
+- gtk3
 - pygobject: python-gobject
+- python-cairo
 - python-numpy
-repo_makedepends:
-- python-setuptools
-- swig
 update_on:
 - alpm: mypaint
   source: archpkg

@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-user-share'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
-- mod_dnssd
 - gettext
-repo_makedepends:
-- caja
-- dbus-glib
-- itstool
-- libcanberra
-- libnotify
+- mod_dnssd
 update_on:
 - alpm: mate-user-share
   source: archpkg

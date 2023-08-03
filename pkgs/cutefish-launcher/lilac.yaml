@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cutefish-launcher'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - fishui
-- kwindowsystem
 - libcutefish
-repo_makedepends:
-- extra-cmake-modules
-- ninja
-- qt5-tools
+- kwindowsystem
 update_on:
 - alpm: cutefish-launcher
   source: archpkg

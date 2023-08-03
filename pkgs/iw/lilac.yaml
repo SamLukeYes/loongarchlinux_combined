@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''iw'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libnl
-repo_makedepends:
-- linux-api-headers
 update_on:
 - alpm: iw
   source: archpkg

@@ -7,36 +7,22 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-sphinx'')
 
   '
-repo_checkdepends:
-- cython
-- imagemagick
-- librsvg
-- python-filelock
-- python-html5lib
-- python-pytest
-- python-setuptools
-- texlive-texmf: texlive-fontsextra
-- texlive-texmf: texlive-latexextra
 repo_depends:
-- python-babel
-- python-docutils
-- python-imagesize
-- python-jinja
-- python-packaging
-- python-pygments
-- python-requests
-- python-snowballstemmer
-- python-sphinx-alabaster-theme
-- python-sphinxcontrib-applehelp
 - python-sphinxcontrib-devhelp
-- python-sphinxcontrib-htmlhelp
 - python-sphinxcontrib-jsmath
 - python-sphinxcontrib-qthelp
+- python-requests
+- python-imagesize
+- python-sphinx-alabaster-theme
+- python-snowballstemmer
+- python-pygments
+- python-jinja
+- python-sphinxcontrib-htmlhelp
+- python-packaging
+- python-docutils
 - python-sphinxcontrib-serializinghtml
-repo_makedepends:
-- python-build
-- python-flit-core
-- python-installer
+- python-babel
+- python-sphinxcontrib-applehelp
 update_on:
 - alpm: python-sphinx
   source: archpkg

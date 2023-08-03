@@ -9,23 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''infamousplugins'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
 - gcc: gcc-libs
-- glibc
-- cairo
-- gcc: gcc-libs
-- glibc
-- fftw
 - ntk
 - zita-resampler
-repo_makedepends:
-- cmake
 - fftw
-- lv2
-- ntk
-- zita-resampler
+- cairo
+- glibc
 update_on:
 - alpm: fftw
   provides: libfftw3f.so

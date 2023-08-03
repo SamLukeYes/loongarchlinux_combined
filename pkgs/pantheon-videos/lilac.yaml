@@ -9,23 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-videos'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- clutter
-- clutter-gst
-- clutter-gtk
 - gdk-pixbuf2
-- glib2
-- gstreamer: gst-plugins-base-libs
-- gstreamer
-- gtk3
 - libgee
+- gstreamer
+- clutter-gtk
+- clutter-gst
+- gstreamer: gst-plugins-base-libs
+- clutter
+- gtk3
 - libx11
-repo_makedepends:
-- git
-- intltool
-- meson
-- vala
+- glib2
 update_on:
 - alpm: granite
   provides: libgranite.so

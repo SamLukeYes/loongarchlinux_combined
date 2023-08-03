@@ -9,30 +9,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''naev'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glu
-- openal
-- libvorbis
-- sdl2
-- sdl2_image
 - sdl2_mixer
-- libxml2
-- freetype2
-- libpng
-- libzip
-- luajit
-- glpk
-- physfs
-- libunibreak
 - suitesparse
+- libzip
+- sdl2_image
+- glu
+- luajit
+- sdl2
+- physfs
+- openal
+- libunibreak
 - lapack: cblas
-repo_makedepends:
-- freeglut
-- zip
-- meson
-- git
-- python-yaml
+- freetype2
+- libxml2
+- libvorbis
+- glpk
+- libpng
 update_on:
 - alpm: naev
   source: archpkg

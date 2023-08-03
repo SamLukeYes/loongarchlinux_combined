@@ -9,23 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qt6-multimedia'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libxrandr
 - qt6-base
-- gstreamer: gst-plugins-base
 - ffmpeg
 - libva
-- libxrandr
-repo_makedepends:
-- cmake
-- ninja
-- qt6-declarative
-- qt6-shadertools
 - gstreamer: gst-plugins-base
-- pulseaudio: libpulse
-- ffmpeg
-- qt6-quick3d
-- libxrandr
 update_on:
 - alpm: qt6-base
   source: alpm

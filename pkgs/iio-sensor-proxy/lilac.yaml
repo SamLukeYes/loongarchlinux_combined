@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''iio-sensor-proxy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- pygobject: python-gobject
-- python-dbusmock
-- python-psutil
-- umockdev
 repo_depends:
-- systemd
-- libgudev
 - gtk3
 - polkit
-repo_makedepends:
-- meson
+- libgudev
+- systemd
 update_on:
 - alpm: iio-sensor-proxy
   source: archpkg

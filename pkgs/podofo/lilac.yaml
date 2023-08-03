@@ -9,16 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''podofo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- lua
-- openssl
 - fontconfig
+- libjpeg-turbo
 - libtiff
 - libidn
-- libjpeg-turbo
-repo_makedepends:
-- cmake
+- openssl
+- lua
 update_on:
 - alias: lua
 - alpm: podofo

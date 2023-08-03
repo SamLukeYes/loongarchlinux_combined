@@ -9,37 +9,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''retroarch'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- alsa-lib
-- ffmpeg
-- flac
-- libdrm
 - pulseaudio: libpulse
+- alsa-lib
+- spirv-tools
 - libusb
-- mbedtls
-- mesa
-- openal
 - qt5-base
 - sdl2
-- spirv-tools
 - v4l-utils
+- mbedtls
+- ffmpeg
+- libdrm
+- mesa
+- openal
 - zlib
-repo_makedepends:
-- gamemode
-- git
-- libdecor
-- libx11
-- libxcb
-- libxext
-- libxinerama
-- libxkbcommon
-- libxrandr
-- libxv
-- libxxf86vm
-- vulkan-icd-loader
-- wayland
-- wayland-protocols
+- flac
 update_on:
 - alpm: libass
   provides: libass.so

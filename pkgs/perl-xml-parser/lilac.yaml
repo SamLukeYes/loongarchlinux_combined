@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-xml-parser'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-libwww
 - expat
-repo_makedepends: []
+- perl-libwww
 update_on:
 - alpm: perl-xml-parser
   source: archpkg

@@ -9,17 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''japa'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- gcc: gcc-libs
 - clxclient
+- zita-alsa-pcmi
 - clthreads
 - fftw
-- gcc: gcc-libs
-- glibc
 - libx11
-- zita-alsa-pcmi
-repo_makedepends:
-- gendesk
+- glibc
 update_on:
 - alpm: japa
   source: archpkg

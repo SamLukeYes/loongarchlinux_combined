@@ -9,53 +9,41 @@ pre_build_script: '_G.files = download_official_pkgbuild(''chromium'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
-- nss
 - alsa-lib
 - xdg-utils
-- libxss
-- cups: libcups
-- libgcrypt
-- ttf-liberation
-- systemd
-- dbus
-- pulseaudio: libpulse
-- pciutils
-- libva
-- libffi
-- desktop-file-utils
-- hicolor-icon-theme
-- fontconfig
-- woff2
-- brotli
-- icu
-- dav1d
-- flac
-- snappy
-- libxml2
-- ffmpeg
-- libwebp
-- zlib: minizip
-- opus
-- harfbuzz
-- re2
 - jsoncpp
-- libxslt
+- desktop-file-utils
+- libgcrypt
+- hicolor-icon-theme
+- dav1d
+- cups: libcups
+- pciutils
+- ffmpeg
+- dbus
+- opus
+- libva
+- harfbuzz
+- libxml2
+- zlib: minizip
+- ttf-liberation
+- icu
+- systemd
+- re2
+- fontconfig
 - libpng
+- woff2
+- libwebp
 - freetype2
-repo_makedepends:
-- python
-- gn
-- ninja
-- clang
-- lld
-- gperf
-- nodejs
-- pipewire
-- qt5-base
-- git
+- libffi
+- pulseaudio: libpulse
+- libxss
+- brotli
+- nss
+- snappy
+- libxslt
+- gtk3
+- flac
 update_on:
 - alias: icu
 - alias: jsoncpp

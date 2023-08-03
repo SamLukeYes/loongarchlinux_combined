@@ -7,15 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-listen'')
 
   '
-repo_checkdepends:
-- ruby-rake
-- ruby-rspec
-- ruby-thor
 repo_depends:
 - ruby-rb-fsevent
 - ruby-rb-inotify
-repo_makedepends:
-- git
 update_on:
 - alpm: ruby-listen
   source: archpkg

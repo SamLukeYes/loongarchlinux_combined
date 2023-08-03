@@ -9,40 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bespokesynth'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
 - glibc
-- hicolor-icon-theme
-- libglvnd
-- libpng
 - python
-- zlib
 - gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
-- libglvnd
-- libpng
-- python
-- zlib
 - alsa-lib
-- freetype2
 - jsoncpp
 - libusb
-repo_makedepends:
-- abletonlink
-- alsa-lib
-- cmake
+- zlib
 - freetype2
-- git
-- jsoncpp
-- libusb
-- libx11
-- libxcursor
-- libxinerama
-- pybind11
-- tuning-library
-- xorg-xrandr
+- libglvnd
+- hicolor-icon-theme
+- libpng
 update_on:
 - alias: python
 - alias: python

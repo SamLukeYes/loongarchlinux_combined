@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''net-snmp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libnsl
+- pciutils
 - libpcap
 - lm_sensors
-- pciutils
 - pcre
-repo_makedepends:
-- python-setuptools
+- libnsl
 update_on:
 - alpm: net-snmp
   source: archpkg

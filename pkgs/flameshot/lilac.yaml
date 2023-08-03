@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''flameshot'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- kguiaddons
 - qt5-svg
 - hicolor-icon-theme
-- kguiaddons
-repo_makedepends:
-- make
-- qt5-tools
-- cmake
 update_on:
 - alpm: flameshot
   source: archpkg

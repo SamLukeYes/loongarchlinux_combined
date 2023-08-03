@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hslogger'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-network
 - haskell-network-bsd
+- haskell-network
+- ghc: ghc-libs
 - haskell-old-locale
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-network
   source: alpm

@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''botan2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - xz
 - sqlite
-repo_makedepends:
-- python
-- boost
 update_on:
 - alpm: botan2
   source: archpkg

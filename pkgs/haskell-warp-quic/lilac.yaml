@@ -9,16 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-warp-quic'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-warp
+- haskell-quic
+- haskell-wai
 - ghc: ghc-libs
 - haskell-http3
-- haskell-quic
 - haskell-tls
-- haskell-wai
-- haskell-warp
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-http3
   source: alpm

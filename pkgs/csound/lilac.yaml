@@ -9,37 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''csound'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cunit
 repo_depends:
-- curl
 - gcc: gcc-libs
+- libsamplerate
+- libsndfile
+- curl
 - glibc
-- libsamplerate
-- libsndfile
-repo_makedepends:
-- alsa-lib
-- cmake
-- doxygen
-- dssi
-- fluidsynth
-- hdf5
-- ladspa
-- libmusicxml
-- libsamplerate
-- libsndfile
-- libwebsockets
-- llvm
-- lua
-- openssl
-- portaudio
-- portmidi
-- portsmf
-- python
-- stk
-- strip-nondeterminism
-- swig
-- wiiuse
 update_on:
 - alpm: curl
   provides: libcurl.so

@@ -9,28 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-xwayland'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- nettle
 - libepoxy
-- systemd: systemd-libs
-- libxfont2
-- pixman
 - xorg-server: xorg-server-common
+- libxfont2
 - libxcvt
 - mesa
-repo_makedepends:
-- meson
-- xorgproto
-- xtrans
-- libxkbfile
-- dbus
-- xorg-font-util
-- wayland
-- wayland-protocols
-- libdrm
-- systemd
-- egl-wayland
+- pixman
+- nettle
+- systemd: systemd-libs
 update_on:
 - alpm: xorg-xwayland
   source: archpkg

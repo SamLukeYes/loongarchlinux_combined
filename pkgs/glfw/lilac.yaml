@@ -9,27 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glfw'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxi
+- libxkbcommon
 - libxrandr
-- libxinerama
-- libxcursor
+- libxi
 - wayland
-- libxkbcommon
-repo_makedepends:
-- mesa
-- cmake
-- doxygen
-- vulkan-headers
-- vulkan-icd-loader
-- extra-cmake-modules
-- wayland-protocols
-- libxi
-- libxrandr
-- libxcursor
-- libxkbcommon
 - libxinerama
+- libxcursor
 update_on:
 - alpm: glfw
   source: archpkg

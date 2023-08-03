@@ -7,27 +7,23 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''sugar'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- gnome-keyring
-- gst-plugins-espeak
-- gtksourceview3
-- gvfs
-- libwnck3
-- libxklavier
 - metacity
-- mobile-broadband-provider-info
+- gtksourceview3
 - openssh
 - python-gwebsockets
-- sugar-toolkit-gtk3
-- telepathy-gabble
 - telepathy-salut
-- upower
-- webkit2gtk
 - xdg-user-dirs
-repo_makedepends:
-- intltool
-- python-empy
+- sugar-toolkit-gtk3
+- gvfs
+- gst-plugins-espeak
+- webkit2gtk
+- upower
+- gnome-keyring
+- mobile-broadband-provider-info
+- libxklavier
+- telepathy-gabble
+- libwnck3
 update_on:
 - alpm: sugar
   source: archpkg

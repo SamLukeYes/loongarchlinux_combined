@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''stellarsolver'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt5-base
-- gsl
-- wcslib
 - hicolor-icon-theme
-repo_makedepends:
-- cmake
+- wcslib
+- gsl
 update_on:
 - alpm: qt5-base
   source: alpm

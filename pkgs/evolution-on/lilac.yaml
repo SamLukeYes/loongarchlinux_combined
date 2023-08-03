@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''evolution-on'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- evolution
 - libnotify
-repo_makedepends:
-- git
-- gnome-common
+- evolution
 update_on:
 - alpm: evolution-on
   source: archpkg

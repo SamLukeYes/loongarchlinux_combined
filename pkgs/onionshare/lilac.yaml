@@ -7,27 +7,23 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''onionshare'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
-- hicolor-icon-theme
 - tor
-- python-requests
 - python-pysocks
-- python-flask
-- python-flask-httpauth
-- python-flask-socketio
-- python-gevent-websocket
-- python-psutil
+- python-requests
+- pyside2
 - python-pycryptodome
-- pyqt5: python-pyqt5
+- python-psutil
 - python-qrcode
+- python-gevent-websocket
 - python-unidecode
 - python-colorama
-- pyside2
-repo_makedepends:
-- python-setuptools
+- python-flask-httpauth
+- pyqt5: python-pyqt5
+- hicolor-icon-theme
+- python-flask-socketio
+- python
+- python-flask
 update_on:
 - alias: python
 - alpm: onionshare

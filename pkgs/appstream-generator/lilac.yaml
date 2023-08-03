@@ -9,23 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''appstream-generator''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- glibd
 - appstream
+- optipng
 - libarchive
 - librsvg
-- optipng
-- glibd
 - lmdb
-repo_makedepends:
-- ldc
-- meson
-- ninja
-- mustache-d
-- curl
-- gir-to-d
-- gobject-introspection
-- docbook-xsl
 update_on:
 - alpm: appstream-generator
   source: archpkg

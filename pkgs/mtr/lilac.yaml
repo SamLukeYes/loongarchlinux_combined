@@ -9,19 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mtr'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ncurses
-- libcap
+- gdk-pixbuf2
 - ncurses
 - libcap
 - gtk3
-- gdk-pixbuf2
-repo_makedepends:
-- ncurses
-- gtk3
-- libcap
-- gdk-pixbuf2
 update_on:
 - alpm: ncurses
   provides: libncursesw.so

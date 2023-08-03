@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xfce4-screenshooter''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - xfce4-panel
-- libsoup3
 - hicolor-icon-theme
-repo_makedepends:
-- intltool
-- python
+- libsoup3
 update_on:
 - alpm: xfce4-screenshooter
   source: archpkg

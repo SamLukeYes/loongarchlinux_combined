@@ -9,19 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fillets-ng'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fillets-ng-data
 - lua51
-- fribidi
+- sdl_image
 - gcc: gcc-libs
+- sdl_ttf
+- desktop-file-utils
 - libx11
 - sdl_mixer
-- sdl_ttf
-- sdl_image
-- desktop-file-utils
-repo_makedepends:
-- gendesk
+- fribidi
+- fillets-ng-data
 update_on:
 - alpm: fillets-ng
   source: archpkg

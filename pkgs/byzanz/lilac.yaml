@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''byzanz'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
-- gstreamer: gst-plugins-base
 - gstreamer: gst-plugins-good
-repo_makedepends:
-- gnome-common
-- intltool
-- git
+- gstreamer: gst-plugins-base
 update_on:
 - alpm: byzanz
   source: archpkg

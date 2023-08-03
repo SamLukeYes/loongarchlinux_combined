@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tcplay'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - lvm2: device-mapper
-- util-linux: util-linux-libs
 - libgcrypt
-repo_makedepends:
-- cmake
+- util-linux: util-linux-libs
+- glibc
 update_on:
 - alpm: util-linux-libs
   provides: libuuid.so

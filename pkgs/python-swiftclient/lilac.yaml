@@ -7,17 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-swiftclient'')
 
   '
-repo_checkdepends:
-- python-stestr
-- python-keystoneauth1
-- python-keystoneclient
 repo_depends:
-- python-six
 - python-requests
-repo_makedepends:
-- git
-- python-setuptools
-- python-pbr
+- python-six
 update_on:
 - alpm: python-swiftclient
   source: archpkg

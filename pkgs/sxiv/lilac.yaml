@@ -9,15 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sxiv'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- xdg-utils
+- libxft
 - imlib2
 - desktop-file-utils
-- xdg-utils
-- hicolor-icon-theme
 - libexif
-- libxft
-repo_makedepends: []
+- hicolor-icon-theme
 update_on:
 - alpm: sxiv
   source: archpkg

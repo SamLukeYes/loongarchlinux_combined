@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pim-sieve-editor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libksieve
 - kuserfeedback
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
+- libksieve
 update_on:
 - alpm: pim-sieve-editor
   source: archpkg

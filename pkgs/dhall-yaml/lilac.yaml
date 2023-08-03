@@ -9,25 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dhall-yaml'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-optparse-applicative
+- haskell-aeson
 - ghc: ghc-libs
 - haskell-hsyaml
-- haskell-hsyaml-aeson
-- haskell-aeson
 - haskell-ansi-terminal
 - dhall
-- dhall-json
-- haskell-optparse-applicative
-- haskell-prettyprinter
 - haskell-prettyprinter-ansi-terminal
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
-- haskell-tasty
-- haskell-tasty-expected-failure
-- haskell-tasty-hunit
+- haskell-hsyaml-aeson
+- dhall-json
+- haskell-prettyprinter
 update_on:
 - alpm: haskell-hsyaml
   source: alpm

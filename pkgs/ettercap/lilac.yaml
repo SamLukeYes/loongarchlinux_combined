@@ -9,36 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ettercap'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- openssl
+- libnet
+- ethtool
+- ncurses
+- curl
 - zlib
 - libpcap
 - pcre
-- libnet
-- ethtool
-- curl
 - geoip
-- ncurses
-- glibc
+- harfbuzz
+- gtk3
 - openssl
-- zlib
-- libpcap
-- pcre
-- libnet
-- ethtool
-- curl
-- geoip
-- ncurses
-- gtk3
-- harfbuzz
-repo_makedepends:
-- ghostscript
-- cmake
-- gtk3
-- harfbuzz
-- check
+- glibc
 update_on:
 - alpm: ncurses
   provides: libncursesw.so

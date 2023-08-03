@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''socat'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- bash
-- net-tools
-- procps-ng
 repo_depends:
-- glibc
 - readline
 - openssl
-repo_makedepends: []
+- glibc
 update_on:
 - alias: readline
 - alpm: readline

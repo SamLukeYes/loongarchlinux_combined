@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ocaml-stdlib-shims'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ocaml
 - ocaml: ocaml-compiler-libs
-repo_makedepends:
-- dune
 update_on:
 - alpm: ocaml
   source: alpm

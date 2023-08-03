@@ -9,27 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''clevis'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- jq
-- tang
 repo_depends:
-- bash
 - jose
-repo_makedepends:
-- git
-- meson
-- asciidoc
-- audit
-- bash-completion
-- cryptsetup
-- dracut
-- glib2
-- jansson
-- libpwquality
-- luksmeta
-- openssl
-- tpm2-tools
-- udisks2
+- bash
 update_on:
 - alpm: clevis
   source: archpkg

@@ -9,18 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kscreenlocker'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - layer-shell-qt
+- libkscreen
 - kidletime
 - kdeclarative
-- libkscreen
 - perl
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- kcmutils
-- libxcursor
 update_on:
 - alias: perl
 - alpm: kscreenlocker

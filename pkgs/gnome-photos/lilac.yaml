@@ -9,27 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-photos'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- babl
-- dleyna
-- gegl
-- geocode-glib: geocode-glib-2
-- gnome-online-accounts
-- gsettings-desktop-schemas
-- gtk3
-- libdazzle
 - libgexiv2
-- libhandy
-- libportal: libportal-gtk3
-- librsvg
+- gsettings-desktop-schemas
+- gnome-online-accounts
+- libdazzle
 - tracker3-miners
-repo_makedepends:
-- docbook-xsl
-- git
-- meson
-- python
-- yelp-tools
+- libhandy
+- dleyna
+- librsvg
+- babl
+- libportal: libportal-gtk3
+- gtk3
+- geocode-glib: geocode-glib-2
+- gegl
 update_on:
 - alpm: gnome-photos
   source: archpkg

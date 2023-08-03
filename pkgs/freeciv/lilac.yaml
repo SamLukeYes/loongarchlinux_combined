@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''freeciv'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- curl
 - gtk3
+- sqlite
 - sdl_mixer
 - lua53
-- sqlite
-- curl
-repo_makedepends:
-- python
 update_on:
 - alpm: freeciv
   source: archpkg

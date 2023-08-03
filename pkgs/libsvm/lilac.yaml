@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libsvm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gnuplot
 - python
-repo_makedepends:
-- qt5-base
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- gnuplot
 update_on:
 - alias: python
 - alpm: libsvm

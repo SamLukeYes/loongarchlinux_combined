@@ -7,12 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-curtsies'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-blessed
 - python-cwcwidth
-repo_makedepends:
-- python-setuptools
+- python-blessed
 update_on:
 - alpm: python-curtsies
   source: archpkg

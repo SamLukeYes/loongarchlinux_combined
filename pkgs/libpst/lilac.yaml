@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libpst'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - libgsf
-repo_makedepends:
-- autoconf-archive
-- docbook-xsl
-- doxygen
-- git
-- graphviz
-- xmlto
 update_on:
 - alpm: libpst
   source: archpkg

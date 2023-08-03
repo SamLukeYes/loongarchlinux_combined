@@ -9,23 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''picom'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- hicolor-icon-theme
-- libconfig
-- libev
-- pcre
-- pixman
-- xcb-util-image
 - xcb-util-renderutil
-repo_makedepends:
-- asciidoc
-- git
-- mesa
-- meson
-- ninja
-- setconf
-- uthash
+- pcre
+- libev
+- pixman
+- libconfig
+- xcb-util-image
+- hicolor-icon-theme
 update_on:
 - alpm: picom
   source: archpkg

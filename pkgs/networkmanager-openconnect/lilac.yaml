@@ -9,22 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''networkmanager-openco
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- networkmanager: libnm
-- libsecret
 - openconnect
-- networkmanager: libnm
 - libsecret
-- openconnect
-repo_makedepends:
-- gcr
-- git
-- intltool
-- libnma
-- libnma: libnma-gtk4
-- python
-- webkit2gtk-4.1
+- networkmanager: libnm
 update_on:
 - alpm: openconnect
   provides: libopenconnect.so

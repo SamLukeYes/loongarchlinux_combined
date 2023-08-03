@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''movit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fftw
 - libepoxy
-repo_makedepends:
-- eigen
-- gtest
-- sdl2
+- fftw
 update_on:
 - alpm: movit
   source: archpkg

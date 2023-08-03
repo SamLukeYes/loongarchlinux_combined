@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-yara'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
-- yara
 - glibc
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
+- yara
+- python
 update_on:
 - alias: python
 - alpm: yara

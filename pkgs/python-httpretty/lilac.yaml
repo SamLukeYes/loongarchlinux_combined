@@ -7,22 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-httpretty'')
 
   '
-repo_checkdepends:
-- python-nose
-- python-coverage
-- python-eventlet
-- python-freezegun
-- python-httplib2
-- python-redis
-- python-requests
-- python-sure
-- python-tornado
-- python-httpx
-- python-boto3
 repo_depends:
 - python-urllib3
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-httpretty
   source: archpkg

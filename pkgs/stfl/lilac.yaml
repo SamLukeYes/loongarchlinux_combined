@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''stfl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ncurses
-repo_makedepends:
-- patch
-- swig
 update_on:
 - alpm: stfl
   source: archpkg

@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxappearance'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk2
 - gtk3
 - gtk2
-- gtk3
-repo_makedepends:
-- intltool
-- dbus-glib
 update_on:
 - alpm: lxappearance
   source: archpkg

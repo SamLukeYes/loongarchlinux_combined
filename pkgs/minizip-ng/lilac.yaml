@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''minizip-ng'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
 - bzip2
+- openssl
 - zstd
-repo_makedepends:
-- cmake
 update_on:
 - alpm: minizip-ng
   source: archpkg

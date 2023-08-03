@@ -7,12 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-django-modeltranslation'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - django: python-django
-repo_makedepends:
-- git
-- python-setuptools
 update_on:
 - alpm: python-django-modeltranslation
   source: archpkg

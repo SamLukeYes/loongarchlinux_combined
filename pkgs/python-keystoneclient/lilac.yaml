@@ -7,28 +7,19 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-keystoneclient'')
 
   '
-repo_checkdepends:
-- python-oslotest
-- python-requests-mock
-- python-pycodestyle
-- python-lxml
-- python-testresources
 repo_depends:
-- python-six
-- python-pbr
-- python-iso8601
-- python-prettytable
-- python-debtcollector
-- python-keystoneauth1
-- python-oslo-utils
-- python-oslo-i18n
-- python-oslo-serialization
 - python-oslo-config
 - python-requests
+- python-keystoneauth1
+- python-oslo-i18n
+- python-six
+- python-pbr
+- python-prettytable
+- python-oslo-serialization
+- python-iso8601
+- python-debtcollector
 - python-stevedore
-repo_makedepends:
-- git
-- python-setuptools
+- python-oslo-utils
 update_on:
 - alpm: python-keystoneclient
   source: archpkg

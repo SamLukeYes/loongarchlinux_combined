@@ -9,18 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wesnoth'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - sdl2_mixer
 - sdl2_image
-- boost: boost-libs
 - pango
 - dbus
-repo_makedepends:
-- boost
-- cmake
-- git
-- ninja
+- boost: boost-libs
 update_on:
 - alpm: wesnoth
   source: archpkg

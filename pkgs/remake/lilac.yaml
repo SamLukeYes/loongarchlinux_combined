@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''remake'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
 - guile
-repo_makedepends: []
 update_on:
 - alpm: guile
   source: alpm

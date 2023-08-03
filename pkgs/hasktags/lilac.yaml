@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hasktags'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-optparse-applicative
 - ghc: ghc-libs
 - haskell-json
 - haskell-microlens-platform
-- haskell-optparse-applicative
 - haskell-utf8-string
-repo_makedepends:
-- ghc
-- haskell-hunit
 update_on:
 - alpm: haskell-json
   source: alpm

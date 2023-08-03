@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qt6-websockets'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt6-base
-repo_makedepends:
-- cmake
-- ninja
-- qt6-declarative
 update_on:
 - alpm: qt6-base
   source: alpm

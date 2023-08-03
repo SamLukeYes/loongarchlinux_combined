@@ -9,21 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sherlock.lv2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
+- sratom
+- libx11
+- libglvnd
 - glew
 - glibc
-- libglvnd
-- libx11
-- sratom
-repo_makedepends:
-- flex
-- glu
-- lv2
-- meson
-- serd
-- sord
 update_on:
 - alpm: sherlock.lv2
   source: archpkg

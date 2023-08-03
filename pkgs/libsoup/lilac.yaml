@@ -9,33 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libsoup'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- apache
-- php: php-apache
 repo_depends:
+- sqlite
+- sysprof: libsysprof-capture
 - brotli
+- libpsl
+- krb5
+- libxml2
 - glib-networking
 - glib2
-- krb5
-- libpsl
-- sysprof: libsysprof-capture
-- libxml2
-- sqlite
-- brotli
-- glib-networking
-- glib2
-- krb5
-- libpsl
-- sysprof: libsysprof-capture
-- libxml2
-- sqlite
-repo_makedepends:
-- git
-- gobject-introspection
-- gtk-doc
-- meson
-- samba
-- vala
 update_on:
 - alpm: brotli
   provides: libbrotlidec.so

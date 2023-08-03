@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openvpn'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
-- lzo
-- lz4
-- systemd: systemd-libs
 - pkcs11-helper
-repo_makedepends:
-- git
-- systemd
-- python-docutils
+- lz4
+- openssl
+- systemd: systemd-libs
+- lzo
 update_on:
 - alpm: systemd-libs
   provides: libsystemd.so

@@ -9,21 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pahole'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
 - elfutils: libelf
-- zlib
-- python
-- python-matplotlib
-repo_makedepends:
-- bash
-- cmake
-- elfutils: libelf
-- ninja
-- python
 - python-matplotlib
 - zlib
+- bash
+- python
 update_on:
 - alias: python
 - alpm: pahole

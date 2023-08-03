@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libdecor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- wayland
-- pango
 - dbus
-repo_makedepends:
-- cmake
-- ninja
-- meson
-- wayland-protocols
+- pango
+- wayland
 update_on:
 - alpm: libdecor
   source: archpkg

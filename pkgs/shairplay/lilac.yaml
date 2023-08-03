@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''shairplay'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libao
 - avahi
-repo_makedepends:
-- git
+- libao
 update_on:
 - alpm: shairplay
   source: archpkg

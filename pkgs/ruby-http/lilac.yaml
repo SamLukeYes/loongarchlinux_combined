@@ -7,20 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-http'')
 
   '
-repo_checkdepends:
-- ruby-certificate_authority
-- ruby-rspec-its
-- ruby-simplecov
-- ruby-webrick
 repo_depends:
 - ruby-addressable
-- ruby-http-cookie
 - ruby-http-form_data
+- ruby-http-cookie
 - ruby-llhttp-ffi
-repo_makedepends:
-- git
-- ruby-rake
-- ruby-rspec
 update_on:
 - alpm: ruby-http
   source: archpkg

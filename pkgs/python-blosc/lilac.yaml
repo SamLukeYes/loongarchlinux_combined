@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-blosc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-numpy
-- python-psutil
 repo_depends:
-- python
 - blosc
-repo_makedepends:
-- python-scikit-build
-- ninja
+- python
 update_on:
 - alias: python
 - alpm: python-blosc

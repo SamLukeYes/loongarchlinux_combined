@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-snowboy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-pyaudio
 - lapack: cblas
-repo_makedepends:
-- python-setuptools
-- swig
+- python-pyaudio
 update_on:
 - alpm: python-snowboy
   source: archpkg

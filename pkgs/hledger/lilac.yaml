@@ -9,37 +9,32 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hledger'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-ansi-terminal
-- haskell-cmdargs
-- haskell-data-default
-- haskell-decimal
-- haskell-diff
-- haskell-githash
-- haskell-hashable
-- haskell-hledger-lib
-- haskell-lucid
-- haskell-math-functions
-- haskell-megaparsec
-- haskell-microlens
-- haskell-regex-tdfa
-- haskell-safe
-- haskell-shakespeare
-- haskell-split
-- haskell-tabular
-- haskell-tasty
-- haskell-temporary
 - haskell-unordered-containers
-- haskell-utf8-string
+- haskell-githash
+- haskell-aeson
+- haskell-diff
 - haskell-utility-ht
+- haskell-math-functions
+- haskell-ansi-terminal
+- haskell-tabular
+- haskell-decimal
+- haskell-hashable
+- haskell-tasty
+- haskell-hledger-lib
+- haskell-regex-tdfa
+- haskell-microlens
+- haskell-utf8-string
+- ghc: ghc-libs
+- haskell-cmdargs
+- haskell-temporary
+- haskell-lucid
+- haskell-shakespeare
 - haskell-wizards
-repo_makedepends:
-- ghc
-- haskell-extra
-- haskell-timeit
+- haskell-split
+- haskell-data-default
+- haskell-safe
+- haskell-megaparsec
 update_on:
 - alpm: haskell-aeson
   source: alpm

@@ -1,13 +1,4 @@
 destsubdir: core
-repo_checkdepends: []
 repo_depends:
 - pacman
-repo_makedepends:
-- git
-- python
-- sequoia-sq
-- pkgconf
-- systemd
-- python-coverage
-- python-pytest
 update_on: []

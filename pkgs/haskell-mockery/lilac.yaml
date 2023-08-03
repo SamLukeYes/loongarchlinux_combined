@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mockery'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- haskell-hspec
 repo_depends:
-- ghc: ghc-libs
-- haskell-base-compat
-- haskell-temporary
 - haskell-logging-facade
-repo_makedepends:
-- ghc
+- haskell-base-compat
+- ghc: ghc-libs
+- haskell-temporary
 update_on:
 - alpm: haskell-base-compat
   source: alpm

@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''faudio'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- sdl2
 - gstreamer: gst-libav
-repo_makedepends:
-- git
-- cmake
-- ninja
+- sdl2
 update_on:
 - alpm: faudio
   source: archpkg

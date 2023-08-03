@@ -1,11 +1,5 @@
 destsubdir: extra
-repo_checkdepends:
-- ruby-minitest
 repo_depends:
 - ruby
-repo_makedepends:
-- ruby-bundler
-- ruby-rake
-- ruby-rake-compiler
 update_on:
 - alias: ruby

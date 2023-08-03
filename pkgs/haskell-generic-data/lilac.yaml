@@ -9,21 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-generic-data'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-ap-normalize
-- haskell-base-orphans
+- haskell-show-combinators
+- ghc: ghc-libs
 - haskell-contravariant
-- haskell-show-combinators
-repo_makedepends:
-- ghc
-- haskell-generic-lens
-- haskell-glob
-- haskell-one-liner
-- haskell-show-combinators
-- haskell-tasty
-- haskell-tasty-hunit
+- haskell-base-orphans
 update_on:
 - alpm: haskell-ap-normalize
   source: alpm

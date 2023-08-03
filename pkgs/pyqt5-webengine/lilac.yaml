@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pyqt5-webengine'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - pyqt5: python-pyqt5
 - qt5-webengine
-repo_makedepends:
-- sip
-- pyqt-builder
 update_on:
 - alpm: pyqt5-webengine
   source: archpkg

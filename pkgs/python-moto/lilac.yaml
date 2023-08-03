@@ -7,41 +7,18 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-moto'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-ordering
-- python-sure
-- python-freezegun
-- python-yaml
-- python-jose
-- python-openapi-spec-validator
-- python-docker
-- python-graphql-core
-- python-jsondiff
-- python-aws-xray-sdk
-- python-cfn-lint
-- python-sshpubkeys
-- python-pyparsing
-- python-py-partiql-parser
-- python-flask
-- python-flask-cors
 repo_depends:
-- python
-- python-boto3
 - python-botocore
-- python-cryptography
-- python-requests
 - python-xmltodict
-- python-werkzeug
+- python-requests
 - python-dateutil
+- python-cryptography
+- python-boto3
+- python-werkzeug
 - python-responses
 - python-jinja
 - python-urllib3
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python
 update_on:
 - alias: python
 - alpm: python-moto

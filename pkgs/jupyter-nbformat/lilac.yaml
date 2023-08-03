@@ -7,19 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''jupyter-nbformat'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-testpath
-- python-pep440
 repo_depends:
 - python-traitlets
 - python-jupyter-core
-- python-jsonschema
 - python-fastjsonschema
-repo_makedepends:
-- python-build
-- python-installer
-- python-hatch-nodejs-version
+- python-jsonschema
 update_on:
 - alpm: jupyter-nbformat
   source: archpkg

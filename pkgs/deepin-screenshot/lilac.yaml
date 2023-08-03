@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-screenshot'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- deepin-qt5integration
-- dtkwm
 - deepin-turbo
-repo_makedepends:
-- cmake
-- ninja
-- qt5-tools
+- dtkwm
+- deepin-qt5integration
 update_on:
 - alpm: deepin-screenshot
   source: archpkg

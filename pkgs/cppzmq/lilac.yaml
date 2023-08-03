@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''cppzmq'')
 
   '
-repo_checkdepends:
-- catch2
 repo_depends: []
-repo_makedepends:
-- git
-- zeromq
-- cmake
 update_on:
 - alpm: cppzmq
   source: archpkg

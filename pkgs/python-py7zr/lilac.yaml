@@ -7,29 +7,18 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-py7zr'')
 
   '
-repo_checkdepends:
-- p7zip
-- pyannotate
-- python-py-cpuinfo
-- python-pytest-benchmark
-- python-pytest-timeout
 repo_depends:
-- python
-- brotli: python-brotli
-- python-brotlicffi
-- python-psutil
-- python-multivolumefile
 - python-pybcj
-- python-pycryptodomex
-- python-pyppmd
-- python-pyzstd
+- python
+- python-psutil
 - python-texttable
+- python-multivolumefile
+- python-pycryptodomex
+- python-pyzstd
 - python-inflate64
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools-scm
+- python-brotlicffi
+- python-pyppmd
+- brotli: python-brotli
 update_on:
 - alias: python
 - alpm: python-py7zr

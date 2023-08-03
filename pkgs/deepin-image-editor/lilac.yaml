@@ -1,15 +1,10 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - dtkwidget
-- ffmpegthumbnailer
-- freeimage
 - libmediainfo
 - opencv
-repo_makedepends:
-- cmake
-- ninja
-- qt5-tools
+- freeimage
+- ffmpegthumbnailer
 update_on:
 - alpm: opencv
   source: alpm

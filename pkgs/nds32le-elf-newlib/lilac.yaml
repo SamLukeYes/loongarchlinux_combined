@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''nds32le-elf-newlib'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- nds32le-elf-gcc
 update_on:
 - alpm: nds32le-elf-newlib
   source: archpkg

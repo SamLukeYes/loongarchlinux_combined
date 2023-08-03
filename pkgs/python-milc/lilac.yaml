@@ -7,16 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-milc'')
 
   '
-repo_checkdepends:
-- python-semver
-- python-nose2
 repo_depends:
 - python-appdirs
 - python-argcomplete
 - python-colorama
 - python-halo
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-milc
   source: archpkg

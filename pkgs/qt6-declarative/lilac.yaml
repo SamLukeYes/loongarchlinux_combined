@@ -1,15 +1,6 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - qt6-base
-repo_makedepends:
-- cmake
-- ninja
-- python
-# - at-spi2-core
-- qt6-shadertools
-- qt6-languageserver
-- qt6-tools
 update_on:
 - alpm: qt6-base
   source: alpm

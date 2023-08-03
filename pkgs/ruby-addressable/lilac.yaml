@@ -7,12 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-addressable'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - ruby
 - ruby-public_suffix
-repo_makedepends:
-- ruby-rdoc
 update_on:
 - alias: ruby
 - alpm: ruby-addressable

@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qcoro'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-websockets
-- qt5-declarative
 - qt6-websockets
-- qt6-declarative
-repo_makedepends:
-- cmake
 - qt5-websockets
-- qt6-websockets
 - qt5-declarative
 - qt6-declarative
 update_on:

@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dmg2img'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
 - bzip2
-repo_makedepends: []
+- openssl
 update_on:
 - alpm: dmg2img
   source: archpkg

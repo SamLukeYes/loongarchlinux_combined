@@ -9,19 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libretro-pcsx2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
+- zlib
 - libaio
 - libglvnd
-- zlib
-repo_makedepends:
-- cmake
-- git
-- ninja
-- png++
-- systemd
+- glibc
 update_on:
 - alpm: glib2
   provides: libgio-2.0.so

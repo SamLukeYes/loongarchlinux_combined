@@ -7,14 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''certbot-dns-inwx'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - certbot
 - python
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
 update_on:
 - alias: python
 - alpm: certbot-dns-inwx

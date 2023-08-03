@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''appmenu-gtk-module'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- meson
-- gtk3
-- gtk2
 update_on:
 - alpm: appmenu-gtk-module
   source: archpkg

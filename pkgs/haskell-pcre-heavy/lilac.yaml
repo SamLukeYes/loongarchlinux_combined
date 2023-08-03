@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pcre-heavy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-base-compat
-- haskell-pcre-light
 - haskell-string-conversions
-repo_makedepends:
-- ghc
-- uusi
-- haskell-glob
-- haskell-doctest
+- haskell-base-compat
+- ghc: ghc-libs
+- haskell-pcre-light
 update_on:
 - alpm: haskell-base-compat
   source: alpm

@@ -7,11 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''gpsprune'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - hicolor-icon-theme
-repo_makedepends:
-- imagemagick
 update_on:
 - alpm: gpsprune
   source: archpkg

@@ -1,13 +1,8 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- glibc
-- ruby2.7
-- libxml2
 - libxslt
 - libssh2
-repo_makedepends:
-- go
-- cmake
-- git
+- libxml2
+- ruby2.7
+- glibc
 update_on: []

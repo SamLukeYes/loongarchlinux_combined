@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdialog'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kio
-repo_makedepends:
-- extra-cmake-modules
 update_on:
 - alpm: kdialog
   source: archpkg

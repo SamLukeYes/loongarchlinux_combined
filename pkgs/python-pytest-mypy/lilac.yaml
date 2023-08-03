@@ -7,17 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-mypy'')
 
   '
-repo_checkdepends:
-- python-pytest-xdist
-- python-pexpect
 repo_depends:
 - python-attrs
 - python-filelock
-- python-pytest
 - mypy
-repo_makedepends:
-- git
-- python-setuptools-scm
+- python-pytest
 update_on:
 - alpm: python-pytest-mypy
   source: archpkg

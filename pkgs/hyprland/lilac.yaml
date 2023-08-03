@@ -9,48 +9,39 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hyprland'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
-- gcc: gcc-libs
-- glibc
-- glslang
-- libdisplay-info
-- libdrm
-- libglvnd
-- libinput
-- libliftoff
-- libx11
-- libxcb
-- libxcomposite
-- libxfixes
-- libxkbcommon
 - libxrender
-- pango
-- pixman
-- pixman
-- polkit
-- seatd
-- systemd: systemd-libs
-- vulkan-icd-loader
-- vulkan-validation-layers
-- wayland
-- wayland-protocols
-- xcb-proto
-- xcb-util
-- xcb-util-errors
+- libxfixes
 - xcb-util-keysyms
-- xcb-util-renderutil
-- xcb-util-wm
+- xcb-util-errors
+- glibc
+- gcc: gcc-libs
+- pango
+- seatd
+- vulkan-icd-loader
 - xorg-xinput
+- xcb-util-wm
+- libglvnd
+- cairo
+- systemd: systemd-libs
+- libxkbcommon
+- libxcb
+- libdisplay-info
+- xcb-proto
+- glslang
+- wayland-protocols
+- libdrm
+- vulkan-validation-layers
 - xorg-xwayland
-repo_makedepends:
-- cmake
-- gdb
-- meson
-- ninja
-- vulkan-headers
-- xorgproto
+- libinput
+- libxcomposite
+- wayland
+- xcb-util
+- polkit
+- xcb-util-renderutil
+- pixman
+- libx11
+- libliftoff
 update_on:
 - alpm: glslang
   source: alpm

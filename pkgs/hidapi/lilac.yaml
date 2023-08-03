@@ -1,8 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - libusb
 - systemd: systemd-libs
-repo_makedepends:
-- cmake
 update_on: []

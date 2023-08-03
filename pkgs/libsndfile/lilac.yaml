@@ -9,27 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libsndfile'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- glibc
-- flac
-- lame
 - libogg
-- libvorbis
 - mpg123
 - opus
-repo_makedepends:
-- alsa-lib
-- cmake
-- flac
-- lame
-- libogg
 - libvorbis
-- mpg123
-- opus
-- python
-- sqlite
+- flac
+- glibc
+- lame
 update_on:
 - alpm: flac
   provides: libFLAC.so

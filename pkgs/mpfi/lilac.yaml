@@ -9,10 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mpfi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - mpfr
-repo_makedepends: []
 update_on:
 - alpm: mpfi
   source: archpkg

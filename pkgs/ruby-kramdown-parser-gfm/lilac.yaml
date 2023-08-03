@@ -7,14 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-kramdown-parser-gfm'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - ruby
 - ruby-kramdown
-repo_makedepends:
-- git
-- ruby-rdoc
-- ruby-rake
 update_on:
 - alias: ruby
 - alpm: ruby-kramdown-parser-gfm

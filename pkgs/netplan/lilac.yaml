@@ -1,12 +1,8 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- glib2
-- python-yaml
 - python-netifaces
 - iproute2
+- python-yaml
+- glib2
 - systemd
-repo_makedepends:
-- python
-- pkgconf
 update_on: []

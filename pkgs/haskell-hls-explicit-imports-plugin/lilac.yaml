@@ -9,20 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-explicit-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- git
 repo_depends:
-- ghc: ghc-libs
+- haskell-unordered-containers
 - haskell-aeson
-- haskell-ghcide
-- haskell-hls-graph
+- ghc: ghc-libs
 - haskell-hls-plugin-api
 - haskell-lsp
-- haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hls-test-utils
+- haskell-ghcide
+- haskell-hls-graph
 update_on:
 - alpm: haskell-aeson
   source: alpm

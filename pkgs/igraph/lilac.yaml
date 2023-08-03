@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''igraph'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glpk
 - arpack
+- glpk
 - libxml2
 - plfit
-repo_makedepends:
-- cmake
 update_on:
 - alpm: igraph
   source: archpkg

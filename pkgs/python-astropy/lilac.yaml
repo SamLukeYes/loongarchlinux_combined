@@ -9,23 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-astropy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
-- cfitsio
-- expat
-- wcslib
-- python-numpy
 - python-pyerfa
+- wcslib
+- expat
 - python-yaml
 - python-packaging
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools-scm
-- python-extension-helpers
-- cython
+- cfitsio
+- python-numpy
+- python
 update_on:
 - alias: python
 - alpm: cfitsio

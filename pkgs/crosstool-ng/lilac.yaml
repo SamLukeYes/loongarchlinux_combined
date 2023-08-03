@@ -9,18 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''crosstool-ng'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - git
-- gperf
-- help2man
-- lzip
-- meson
 - ncurses
-- python
+- meson
+- lzip
+- help2man
 - rsync
+- gperf
 - unzip
-repo_makedepends: []
+- python
 update_on:
 - alias: python
 - alpm: crosstool-ng

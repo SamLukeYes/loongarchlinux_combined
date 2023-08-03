@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-smproxy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libsm
 - libxt
 - libxmu
-repo_makedepends:
-- xorg-util-macros
 update_on:
 - alpm: xorg-smproxy
   source: archpkg

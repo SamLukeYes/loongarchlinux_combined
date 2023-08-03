@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''algol68g'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gsl
 - mpfr
 - plotutils
-repo_makedepends: []
+- gsl
 update_on:
 - alpm: gsl
   source: alpm

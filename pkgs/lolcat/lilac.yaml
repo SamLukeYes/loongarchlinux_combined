@@ -7,13 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''lolcat'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- ruby-manpages
 - ruby
 - ruby-paint
 - ruby-optimist
-- ruby-manpages
-repo_makedepends: []
 update_on:
 - alias: ruby
 - alpm: lolcat

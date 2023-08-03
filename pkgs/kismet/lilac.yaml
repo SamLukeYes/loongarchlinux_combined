@@ -9,33 +9,30 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kismet'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libpcap
-- pcre
-- bluez: bluez-libs
-- libcap
-- protobuf-c
-- sqlite
-- networkmanager: libnm
-- gcc: gcc-libs
 - libusb
-- libnl
-- glibc
-- zlib
-- elfutils: libelf
-- lm_sensors
-- systemd
-- python
-- python-setuptools
-- protobuf: python-protobuf
-- python-pyserial
-- python-numpy
-- python-websockets
-- libwebsockets
 - libcap-ng
-repo_makedepends:
+- libcap
+- glibc
+- gcc: gcc-libs
+- protobuf-c
+- protobuf: python-protobuf
+- pcre
+- systemd
+- networkmanager: libnm
 - python-setuptools
+- bluez: bluez-libs
+- libpcap
+- lm_sensors
+- sqlite
+- libwebsockets
+- python-numpy
+- python
+- elfutils: libelf
+- libnl
+- python-pyserial
+- zlib
+- python-websockets
 update_on:
 - alpm: protobuf-c
   provides: libprotobuf-c.so

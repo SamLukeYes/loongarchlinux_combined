@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''duplicity'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gnupg
 - librsync
-- python-paramiko
 - python-fasteners
+- python-paramiko
 - python-future
-repo_makedepends:
-- python-setuptools-scm
+- gnupg
 update_on:
 - alpm: duplicity
   source: archpkg

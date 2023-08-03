@@ -9,18 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-xlogo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libsm
-- libxaw
-- libxmu
-- libxt
-- libxext
-- libx11
 - libxrender
 - libxft
-repo_makedepends:
-- xorg-util-macros
+- libsm
+- libxt
+- libxaw
+- libxext
+- libx11
+- libxmu
 update_on:
 - alpm: xorg-xlogo
   source: archpkg

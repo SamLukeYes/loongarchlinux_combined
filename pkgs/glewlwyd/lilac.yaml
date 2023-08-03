@@ -9,20 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glewlwyd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- gnutls
 - jansson
+- gnutls
+- glibc
 - openldap: libldap
-repo_makedepends:
-- cmake
-- git
-- mariadb: mariadb-libs
-- ninja
-- postgresql: postgresql-libs
-- sqlite
-- systemd
 update_on:
 - alpm: libcbor
   provides: libcbor.so

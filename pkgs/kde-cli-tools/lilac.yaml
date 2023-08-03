@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kde-cli-tools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kdesu
-- kcmutils
 - kactivities
 - kparts
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- plasma-workspace
+- kcmutils
+- kdesu
 update_on:
 - alpm: kde-cli-tools
   source: archpkg

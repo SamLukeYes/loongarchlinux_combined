@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxqt-admin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt5-base
+- polkit-qt: polkit-qt5
 - liblxqt
 - kwindowsystem
-- polkit-qt: polkit-qt5
-repo_makedepends:
-- cmake
-- qt5-tools
-- lxqt-build-tools
 update_on:
 - alpm: qt5-base
   source: alpm

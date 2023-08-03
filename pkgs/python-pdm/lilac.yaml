@@ -7,35 +7,27 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pdm'')
 
   '
-repo_checkdepends:
-- python-setuptools
-- python-pytest
-- python-pytest-httpserver
-- python-pytest-mock
 repo_depends:
-- python
-- python-blinker
-- python-cachecontrol
-- python-certifi
-- python-dotenv
-- python-findpython
-- python-installer
-- python-lockfile
-- python-packaging
-- python-pdm-backend
-- python-platformdirs
-- python-pyproject-hooks
 - python-requests
-- python-requests-toolbelt
-- python-resolvelib
-- python-rich
+- python-lockfile
+- python-cachecontrol
+- python-blinker
 - python-shellingham
-- python-tomlkit
+- python-pdm-backend
+- python-certifi
+- python-requests-toolbelt
 - python-unearth
+- python-packaging
 - python-virtualenv
-repo_makedepends:
-- python-build
-- python-wheel
+- python-platformdirs
+- python
+- python-tomlkit
+- python-installer
+- python-findpython
+- python-dotenv
+- python-pyproject-hooks
+- python-rich
+- python-resolvelib
 update_on:
 - alias: python
 - alpm: python-pdm

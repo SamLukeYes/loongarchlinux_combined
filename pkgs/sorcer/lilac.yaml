@@ -9,21 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sorcer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
-- cairo
 - gcc: gcc-libs
-- glibc
+- ntk
 - cairo
-- gcc: gcc-libs
 - glibc
-- ntk
-repo_makedepends:
-- boost
-- cmake
-- lv2
-- ntk
 update_on:
 - alpm: ntk
   provides: libntk.so

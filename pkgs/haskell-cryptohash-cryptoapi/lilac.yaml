@@ -9,16 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cryptohash-cr
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-memory
-- haskell-cryptonite
-- haskell-crypto-api
-- haskell-tagged
 - haskell-cereal
-repo_makedepends:
-- ghc
+- haskell-cryptonite
+- ghc: ghc-libs
+- haskell-tagged
+- haskell-memory
+- haskell-crypto-api
 update_on:
 - alpm: haskell-memory
   source: alpm

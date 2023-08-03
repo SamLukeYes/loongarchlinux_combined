@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nitroshare'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- hicolor-icon-theme
 - python
-- qhttpengine
-- qmdnsengine
 - qt5-svg
-repo_makedepends:
-- cmake
-- ninja
-- qt5-tools
+- hicolor-icon-theme
+- qmdnsengine
+- qhttpengine
 update_on:
 - alias: python
 - alpm: nitroshare

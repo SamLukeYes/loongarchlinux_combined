@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-monad-dijkstr
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-free
+- ghc: ghc-libs
 - haskell-psqueues
-repo_makedepends:
-- ghc
-- uusi
-- hlint
-- haskell-tasty
-- haskell-tasty-hspec
 update_on:
 - alpm: haskell-free
   source: alpm

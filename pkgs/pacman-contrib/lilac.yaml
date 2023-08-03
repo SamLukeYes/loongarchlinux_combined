@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pacman-contrib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fakeroot
 - pacman
+- fakeroot
 - perl
-repo_makedepends:
-- asciidoc
-- git
 update_on:
 - alias: perl
 - alpm: pacman-contrib

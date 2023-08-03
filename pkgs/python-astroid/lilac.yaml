@@ -7,22 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-astroid'')
 
   '
-repo_checkdepends:
-- python-numpy
-- python-pip
-- python-pytest
-- python-regex
-- python-typed-ast
-- python-urllib3
 repo_depends:
-- python
-- python-lazy-object-proxy
 - python-wrapt
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
+- python-lazy-object-proxy
+- python
 update_on:
 - alias: python
 - alpm: python-astroid

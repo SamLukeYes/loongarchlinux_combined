@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''freeglut'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxi
 - libxrandr
-repo_makedepends:
-- mesa
-- glu
-- libxxf86vm
-- cmake
-- ninja
-- git
+- libxi
 update_on:
 - alpm: freeglut
   source: archpkg

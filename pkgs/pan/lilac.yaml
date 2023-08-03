@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pan'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtkspell3
 - gmime3
-repo_makedepends:
-- itstool
 update_on:
 - alpm: pan
   source: archpkg

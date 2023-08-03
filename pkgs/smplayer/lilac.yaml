@@ -9,17 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''smplayer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
+- gcc: gcc-libs
 - qt5-base
 - mpv
-- libx11
 - zlib
-- gcc: gcc-libs
 - hicolor-icon-theme
-repo_makedepends:
-- qt5-tools
+- libx11
+- glibc
 update_on:
 - alpm: qt5-base
   source: alpm

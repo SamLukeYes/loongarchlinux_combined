@@ -1,14 +1,8 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- bash
+- python
 - glibc
 - libyaml
-- python
-repo_makedepends:
-- meson
-- swig
-- python-setuptools-scm
-- valgrind
+- bash
 update_on:
 - alias: python

@@ -7,13 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pytrie'')
 
   '
-repo_checkdepends:
-- python: python-tests
 repo_depends:
-- python
 - python-sortedcontainers
-repo_makedepends:
-- python-setuptools
+- python
 update_on:
 - alias: python
 - alpm: python-pytrie

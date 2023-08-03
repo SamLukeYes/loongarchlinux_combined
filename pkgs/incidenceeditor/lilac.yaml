@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''incidenceeditor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- eventviews
 - pimcommon
-repo_makedepends:
-- extra-cmake-modules
-- qt5-tools
-- doxygen
+- eventviews
 update_on:
 - alpm: incidenceeditor
   source: archpkg

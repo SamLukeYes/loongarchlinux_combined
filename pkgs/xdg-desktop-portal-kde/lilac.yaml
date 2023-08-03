@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdg-desktop-portal-kd
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kirigami2
-- plasma-framework
 - kio-fuse
-repo_makedepends:
-- extra-cmake-modules
-- plasma-wayland-protocols
-- wayland-protocols
+- plasma-framework
 update_on:
 - alpm: xdg-desktop-portal-kde
   source: archpkg

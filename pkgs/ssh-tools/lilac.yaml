@@ -7,12 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ssh-tools'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - openssh
-repo_makedepends:
-- git
-- help2man
 update_on:
 - alpm: ssh-tools
   source: archpkg

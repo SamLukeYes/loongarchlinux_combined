@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-kde-integra
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-# - telepathy-kde-common-internals
-- kidletime
+- telepathy-kde-common-internals
 - kactivities
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
+- kidletime
 update_on:
 - alpm: telepathy-kde-integration-module
   source: archpkg

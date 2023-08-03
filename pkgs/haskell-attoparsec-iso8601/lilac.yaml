@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-attoparsec-is
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-attoparsec
-- haskell-base-compat-batteries
 - haskell-time-compat
-repo_makedepends:
-- ghc
-- uusi
+- haskell-attoparsec
+- ghc: ghc-libs
+- haskell-base-compat-batteries
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

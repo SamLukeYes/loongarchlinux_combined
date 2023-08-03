@@ -1,24 +1,17 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- gmp
-- gnutls
-- jansson
-- lcms2
-- libice
-- libotf
-- libpng
-- libsm
 - libxfixes
-- m17n-lib
-- zlib
-- gmp
+- libsm
 - gnutls
 - hicolor-icon-theme
+- libotf
+- m17n-lib
 - jansson
-- lcms2
+- libice
+- gmp
+- libpng
 - zlib
-repo_makedepends: []
+- lcms2
 update_on:
 - alpm: acl
   provides: libacl.so

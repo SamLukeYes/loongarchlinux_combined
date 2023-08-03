@@ -9,24 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aegisub'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- alsa-lib
-- boost: boost-libs
-- fftw
-- fontconfig
-- hunspell
-- icu
 - pulseaudio: libpulse
+- fontconfig
+- alsa-lib
 - uchardet
 - wxwidgets: wxwidgets-gtk3
+- hunspell
 - zlib
-repo_makedepends:
-- boost
-- cmake
-- git
-- mesa
-- ninja
+- fftw
+- boost: boost-libs
+- icu
 update_on:
 - alias: icu
 - alpm: libass

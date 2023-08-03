@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-bytestring-st
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
-repo_makedepends:
-- ghc
-- uusi
-- haskell-quickcheck
-- haskell-tasty
-- haskell-tasty-quickcheck
-- haskell-tasty-hunit
-- haskell-quickcheck-instances
-- haskell-rerebase
 update_on:
 - alpm: haskell-bytestring-strict-builder
   source: archpkg

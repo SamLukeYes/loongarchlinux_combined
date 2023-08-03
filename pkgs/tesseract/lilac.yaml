@@ -9,21 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tesseract'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - curl
-- libarchive
 - leptonica
-- gcc: gcc-libs
-- curl
 - libarchive
-- leptonica
 - tesseract-data: tesseract-data-osd
-repo_makedepends:
-- icu
-- pango
-- asciidoc
 update_on:
 - alpm: tesseract
   source: archpkg

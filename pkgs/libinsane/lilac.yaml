@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libinsane'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cunit
 repo_depends:
 - sane
-repo_makedepends:
-- gobject-introspection
-- meson
-- vala
 update_on:
 - alpm: libinsane
   source: archpkg

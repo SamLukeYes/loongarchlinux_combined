@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-polkit-agent-e
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - deepin-polkit-agent
-- deepin-qt5integration
 - libgnome-keyring
-repo_makedepends:
-- qt5-tools
+- deepin-qt5integration
 update_on:
 - alpm: deepin-polkit-agent-ext-gnomekeyring
   source: archpkg

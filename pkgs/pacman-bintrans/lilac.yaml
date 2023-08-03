@@ -9,19 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pacman-bintrans'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- rekor
 - bzip2
-- openssl
-- shared-mime-info
 - zstd
-- shared-mime-info
 - rekor
-- openssl
 - sqlite
-- zstd
-repo_makedepends: []
+- openssl
+- shared-mime-info
 update_on:
 - alpm: pacman-bintrans
   source: archpkg

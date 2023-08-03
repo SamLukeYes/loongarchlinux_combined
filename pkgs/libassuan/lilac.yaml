@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libassuan'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - libgpg-error
-repo_makedepends: []
+- glibc
 update_on:
 - alpm: libassuan
   source: archpkg

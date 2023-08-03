@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''megatools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - curl
 - glib2
-repo_makedepends:
-- asciidoc
-- docbook2x
-- meson
 update_on:
 - alpm: megatools
   source: archpkg

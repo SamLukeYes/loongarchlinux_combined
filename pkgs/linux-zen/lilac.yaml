@@ -9,25 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''linux-zen'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- coreutils
 - kmod
 - pahole
-repo_makedepends:
-- bc
-- cpio
-- gettext
-- git
-- elfutils: libelf
-- pahole
-- perl
-- tar
-- xz
-- graphviz
-- imagemagick
-- python-sphinx
-- texlive-texmf: texlive-latexextra
+- coreutils
 update_on:
 - alpm: linux-zen
   source: archpkg

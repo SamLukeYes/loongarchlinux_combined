@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''librabbitmq-c'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- popt
 - openssl
-repo_makedepends:
-- cmake
-- docbook-xsl
-- doxygen
-- xmlto
-- ninja
+- popt
 update_on:
 - alpm: librabbitmq-c
   source: archpkg

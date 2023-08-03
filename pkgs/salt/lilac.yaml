@@ -7,21 +7,18 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''salt'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-jinja
-- python-msgpack
-- python-yaml
-- python-markupsafe
 - python-requests
+- python-markupsafe
 - python-pyzmq
-- python-m2crypto
-- python-systemd
-- python-distro
 - python-importlib-metadata
+- python-m2crypto
 - python-pycryptodomex
-repo_makedepends:
-- python-setuptools
+- python-systemd
+- python-jinja
+- python-yaml
+- python-msgpack
+- python-distro
 update_on:
 - alpm: salt
   source: archpkg

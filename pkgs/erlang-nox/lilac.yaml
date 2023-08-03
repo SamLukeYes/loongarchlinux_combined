@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''erlang-nox'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ncurses
 - openssl
-repo_makedepends:
-- fop
-- git
-- libxslt
-- lksctp-tools
-- unixodbc
+- ncurses
 update_on:
 - alpm: erlang-nox
   source: archpkg

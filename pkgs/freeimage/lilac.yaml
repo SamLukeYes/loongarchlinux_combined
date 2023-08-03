@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''freeimage'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libraw
 - libjpeg-turbo
 - openexr
-- openjpeg2
-- libwebp
-- libraw
 - libtiff
 - jxrlib
-repo_makedepends:
-- mesa
-- glu
+- libwebp
+- openjpeg2
 update_on:
 - alpm: freeimage
   source: archpkg

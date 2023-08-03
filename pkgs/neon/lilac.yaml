@@ -9,15 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''neon'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ca-certificates
-- expat
-- glibc
-- krb5
-- openssl
 - zlib
-repo_makedepends: []
+- krb5
+- expat
+- openssl
+- glibc
 update_on:
 - alpm: neon
   source: archpkg

@@ -9,22 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''at-spi2-core'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-# - dbus
-- glib2
 - gsettings-desktop-schemas
-- libx11
-- libxml2
 - libxtst
-# - systemd
-repo_makedepends:
-# - dbus-broker
-- gi-docgen
-- git
-# - gobject-introspection
-# - meson
-- python-sphinx
+- dbus
+- libxml2
+- libx11
+- glib2
+- systemd
 update_on:
 - alpm: at-spi2-core
   source: archpkg

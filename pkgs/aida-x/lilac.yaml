@@ -9,48 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aida-x'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
-- dbus
-- gcc: gcc-libs
 - glibc
-- libglvnd
-- libx11
-- libxext
-- dbus
-- gcc: gcc-libs
-- glibc
-- libglvnd
-- libx11
-- libxext
 - alsa-lib
-- dbus
 - gcc: gcc-libs
-- glibc
-- libglvnd
-- libx11
-- libxext
 - dbus
-- gcc: gcc-libs
-- glibc
-- libglvnd
 - libx11
-- libxext
-- dbus
-- gcc: gcc-libs
-- glibc
 - libglvnd
-- libx11
 - libxext
-repo_makedepends:
-- alsa-lib
-- cmake
-- dbus
-- libglvnd
-- libx11
-- libxext
-- python
 update_on:
 - alpm: aida-x
   source: archpkg

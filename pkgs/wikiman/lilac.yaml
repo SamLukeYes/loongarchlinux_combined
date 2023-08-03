@@ -7,18 +7,15 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''wikiman'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- fzf
-- ripgrep
 - w3m
+- fzf
+- sed
+- parallel
+- grep
+- ripgrep
 - findutils
 - coreutils
-- sed
-- grep
-- parallel
-repo_makedepends:
-- make
 update_on:
 - alpm: wikiman
   source: archpkg

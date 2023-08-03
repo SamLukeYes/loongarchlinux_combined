@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libjcat'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - json-glib
 - gnutls
 - gpgme
-repo_makedepends:
-- meson
-- gobject-introspection
-- gtk-doc
-- vala
-- help2man
 update_on:
 - alpm: libjcat
   source: archpkg

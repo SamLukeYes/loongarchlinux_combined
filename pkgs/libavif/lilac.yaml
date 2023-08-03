@@ -1,17 +1,11 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- glibc
-- aom
 - dav1d
+- zlib
 - rav1e
 - svt-av1
-- zlib
-- libpng
+- aom
 - libyuv
-repo_makedepends:
-- cmake
-- nasm
-- pkgconf
-- gdk-pixbuf2
+- glibc
+- libpng
 update_on: []

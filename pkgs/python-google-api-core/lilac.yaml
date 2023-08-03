@@ -7,14 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-google-api-core'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-pytz
 - python-requests
 - python-googleapis-common-protos
+- python-pytz
 - python-google-auth
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-google-api-core
   source: archpkg

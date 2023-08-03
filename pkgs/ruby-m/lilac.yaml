@@ -7,14 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-m'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - ruby-method_source
 - ruby-rake
-repo_makedepends:
-- git
-- ruby-activesupport
-- ruby-rdiscount
 update_on:
 - alpm: ruby-m
   source: archpkg

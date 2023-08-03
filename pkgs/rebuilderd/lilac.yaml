@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rebuilderd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
-- shared-mime-info
+- archlinux-repro
 - xz
 - sqlite
-- archlinux-repro
-repo_makedepends:
-- sqlite
-- scdoc
+- openssl
+- shared-mime-info
 update_on:
 - alpm: zstd
   provides: libzstd.so

@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libvpx1.3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-repo_makedepends:
-- yasm
-- git
 update_on:
 - alpm: libvpx1.3
   source: archpkg

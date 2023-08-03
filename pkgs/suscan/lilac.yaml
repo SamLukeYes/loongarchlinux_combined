@@ -9,16 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''suscan'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- sigutils
 - libsndfile
-- fftw
 - soapysdr
+- sigutils
+- fftw
 - libxml2
 - libvolk
-repo_makedepends:
-- cmake
 update_on:
 - alpm: suscan
   source: archpkg

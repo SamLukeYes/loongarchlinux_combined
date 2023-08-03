@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libe-book'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- liblangtag
 - librevenge
 - libxml2
-- liblangtag
-repo_makedepends:
-- gperf
-- boost
-- cppunit
-- doxygen
 update_on:
 - alpm: libe-book
   source: archpkg

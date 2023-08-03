@@ -9,22 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''thunar'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- exo
+- pcre2
 - desktop-file-utils
 - libexif
-- hicolor-icon-theme
 - libnotify
-- pcre2
-- libgudev
-- exo
 - libxfce4util
 - libxfce4ui
+- hicolor-icon-theme
 - libpng
-repo_makedepends:
-- intltool
-- gobject-introspection
-- xfce4-panel
+- libgudev
 update_on:
 - alpm: thunar
   source: archpkg

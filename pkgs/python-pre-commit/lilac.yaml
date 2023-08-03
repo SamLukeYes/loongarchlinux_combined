@@ -7,29 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pre-commit'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-env
-- python-re-assert
-- dotnet-core: dotnet-sdk
-- git
-- go
-- nodejs
-- npm
-- rubygems
-- rust
-- r
-- dart
-- luarocks
 repo_depends:
-- python-cfgv
-- python-identify
-- python-nodeenv
-- python-yaml
 - python-toml
 - python-virtualenv
-repo_makedepends:
-- python-setuptools
+- python-cfgv
+- python-yaml
+- python-identify
+- python-nodeenv
 update_on:
 - alpm: python-pre-commit
   source: archpkg

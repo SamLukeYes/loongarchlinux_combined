@@ -9,21 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cage'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - wayland
 - wlroots0.15
 - glibc
-- wayland
-- wlroots0.15
-repo_makedepends:
-- git
-- libxkbcommon
-- meson
-- pixman
-- scdoc
-- wayland-protocols
 update_on:
 - alpm: intel-oneapi-basekit
   provides: libxkbcommon.so

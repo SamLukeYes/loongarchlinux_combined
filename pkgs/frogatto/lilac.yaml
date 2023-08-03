@@ -9,19 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''frogatto'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glew
 - sdl_image
-- sdl_ttf
 - sdl_mixer
-- libpng
-- boost: boost-libs
+- sdl_ttf
 - frogatto-data
+- glew
 - ttf-ubuntu-font-family
-repo_makedepends:
-- mesa
-- boost
+- boost: boost-libs
+- libpng
 update_on:
 - alpm: frogatto
   source: archpkg

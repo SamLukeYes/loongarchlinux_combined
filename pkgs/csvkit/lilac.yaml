@@ -7,21 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''csvkit'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
-- python-agate
 - python-agate-dbf
+- python-sphinx_rtd_theme
+- python-setuptools
+- python-agate
 - python-agate-excel
 - python-agate-sql
-- python-setuptools
-- python-sphinx_rtd_theme
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
-- python-sphinx
+- python
 update_on:
 - alias: python
 - alpm: csvkit

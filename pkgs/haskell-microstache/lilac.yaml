@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-microstache''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
 - haskell-unordered-containers
+- haskell-aeson
 - haskell-vector
-repo_makedepends:
-- ghc
-- haskell-base-orphans
-- haskell-tasty
-- haskell-tasty-hunit
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-aeson
   source: alpm

@@ -7,23 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-oslo-config'')
 
   '
-repo_checkdepends:
-- python-oslotest
-- python-sphinx
-- python-requests-mock
-- python-oslo-log
 repo_depends:
+- python-rfc3986
+- python-requests
+- python-oslo-i18n
+- python-yaml
 - python-debtcollector
 - python-netaddr
 - python-stevedore
-- python-oslo-i18n
-- python-rfc3986
-- python-yaml
-- python-requests
-repo_makedepends:
-- git
-- python-pbr
-- python-setuptools
 update_on:
 - alpm: python-oslo-config
   source: archpkg

@@ -9,26 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gap'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gmp
 - zlib
-repo_makedepends:
-- libxaw
-- givaro
-- mpfi
-- cddlib
-- boost
-- libsemigroups
-- c-xsc
-- zeromq
-- fplll
-- wget
-- chrpath
-- fmt
-- eigen
-- normaliz
-- jq
 update_on:
 - alpm: gap
   source: archpkg

@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''go-licenses'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- go
 update_on:
 - alpm: go-licenses
   source: archpkg

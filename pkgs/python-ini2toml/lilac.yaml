@@ -7,17 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-ini2toml'')
 
   '
-repo_checkdepends:
-- python-pytest-randomly
-- python-tomli-w
-- python-validate-pyproject
 repo_depends:
+- python-tomlkit
 - python-configupdater
 - python-packaging
-- python-tomlkit
-repo_makedepends:
-- git
-- python-setuptools-scm
 update_on:
 - alpm: python-ini2toml
   source: archpkg

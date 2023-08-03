@@ -9,25 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnuradio-iqbal'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
+- gnuradio
+- fftw
 - glibc
 - python
-- gcc: gcc-libs
-- glibc
-- python
-- fftw
-- gnuradio
-repo_makedepends:
-- boost
-- cmake
-- fftw
-- gnuradio
-- git
-- gmp
-- libvolk
-- pybind11
 update_on:
 - alias: python
 - alias: python

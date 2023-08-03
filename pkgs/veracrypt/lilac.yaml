@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''veracrypt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libsm
 - lvm2: device-mapper
-repo_makedepends:
-- yasm
 update_on:
 - alpm: veracrypt
   source: archpkg

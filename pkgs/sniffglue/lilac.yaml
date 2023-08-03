@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sniffglue'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libpcap
 - libseccomp
-repo_makedepends:
-- scdoc
+- libpcap
 update_on:
 - alpm: sniffglue
   source: archpkg

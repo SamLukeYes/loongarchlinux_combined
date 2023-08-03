@@ -9,29 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''eq10q'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
-- gtkmm
-- gcc: gcc-libs
-- glibc
-- gtkmm
-- atkmm
 - cairomm
+- atkmm
+- gtkmm
 - fftw
 - glibmm
 - libsigc++
 - pangomm
-repo_makedepends:
-- atkmm
-- cairomm
-- cmake
-- fftw
-- glibmm
-- lv2
-- libsigc++
-- pangomm
+- glibc
 update_on:
 - alpm: atkmm
   provides: libatkmm-1.6.so

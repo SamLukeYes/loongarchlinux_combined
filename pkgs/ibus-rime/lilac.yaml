@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ibus-rime'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ibus
 - libnotify
 - librime
-repo_makedepends:
-- cmake
+- ibus
 update_on:
 - alpm: ibus-rime
   source: archpkg

@@ -9,16 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opera-ffmpeg-codecs''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-repo_makedepends:
-- gn
-- ninja
-- python
-- gtk3
-- nss
-- libva
 update_on:
 - alpm: opera-ffmpeg-codecs
   source: archpkg

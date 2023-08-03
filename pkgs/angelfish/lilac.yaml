@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''angelfish'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kirigami-addons
-- purpose
-- qqc2-desktop-style
-- qt5-webengine
-- qt5-svg
 - qt5-feedback
-repo_makedepends:
-- extra-cmake-modules
-- corrosion
+- qqc2-desktop-style
+- purpose
+- qt5-svg
+- qt5-webengine
 update_on:
 - alpm: angelfish
   source: archpkg

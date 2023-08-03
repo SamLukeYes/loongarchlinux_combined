@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''iptux'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
 - google-glog
-- gtk3
 - jsoncpp
 - libsigc++
-repo_makedepends:
-- appstream
-- gflags
-- meson
+- gtk3
 update_on:
 - alias: jsoncpp
 - alpm: iptux

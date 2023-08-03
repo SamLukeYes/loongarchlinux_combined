@@ -7,16 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-certifi'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- ca-certificates
 - python
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- ca-certificates
 update_on:
 - alias: python
 - alpm: python-certifi

@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zutty'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- freetype2
 - libglvnd
-- libxmu
+- freetype2
 - xorg-fonts-misc
-repo_makedepends:
-- git
-- python
+- libxmu
 update_on:
 - alpm: zutty
   source: archpkg

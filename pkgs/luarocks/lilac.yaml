@@ -1,11 +1,9 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- coreutils
 - curl
-- lua
+- coreutils
 - unzip
 - zip
-repo_makedepends: []
+- lua
 update_on:
 - alias: lua

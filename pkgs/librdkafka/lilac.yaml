@@ -9,19 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''librdkafka'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- curl
 - gcc: gcc-libs
-- glibc
-- libsasl
-- lz4
-- openssl
-- zlib
 - zstd
-repo_makedepends:
-- python
-- rapidjson
+- curl
+- lz4
+- libsasl
+- zlib
+- openssl
+- glibc
 update_on:
 - alpm: librdkafka
   source: archpkg

@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kcalutils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kcalendarcore
-- kidentitymanagement
 - grantlee
-repo_makedepends:
-- extra-cmake-modules
-- doxygen
-- qt5-tools
+- kidentitymanagement
 update_on:
 - alpm: kcalutils
   source: archpkg

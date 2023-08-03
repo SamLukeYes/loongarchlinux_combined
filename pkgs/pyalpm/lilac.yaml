@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pyalpm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
 - pacman
-repo_makedepends:
-- git
-- python-setuptools
-- python-pytest
-- python-pkgconfig
-- python-pytest-pacman
+- python
 update_on:
 - alias: python
 - alpm: pyalpm

@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sdl_sound'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libmikmod
-- libvorbis
 - flac
+- libmikmod
 - speex
-repo_makedepends: []
+- libvorbis
 update_on:
 - alpm: sdl_sound
   source: archpkg

@@ -9,22 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''desmume'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - alsa-lib
-- desktop-file-utils
-- glu
-- gtk3
-- libpcap
-- sdl2
 - soundtouch
-- zlib
 - zziplib
-repo_makedepends:
-- git
-- intltool
-- mesa
-- meson
+- glu
+- sdl2
+- zlib
+- desktop-file-utils
+- libpcap
+- gtk3
 update_on:
 - alpm: openal
   provides: libopenal.so

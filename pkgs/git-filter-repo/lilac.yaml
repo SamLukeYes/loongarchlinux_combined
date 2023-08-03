@@ -7,16 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''git-filter-repo'')
 
   '
-repo_checkdepends:
-- rsync
 repo_depends:
-- git
 - python
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools-scm
-- python-wheel
+- git
 update_on:
 - alias: python
 - alpm: git-filter-repo

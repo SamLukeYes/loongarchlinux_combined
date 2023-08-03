@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''i2pd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- openssl
 - zlib
-repo_makedepends:
-- cmake
-- boost
-- check
+- openssl
+- boost: boost-libs
 update_on:
 - alpm: miniupnpc
   provides: libminiupnpc.so

@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''skaffold'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - docker
 - kompose
-repo_makedepends:
-- go
-- go-licenses
 update_on:
 - alpm: skaffold
   source: archpkg

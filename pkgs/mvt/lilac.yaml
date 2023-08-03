@@ -7,28 +7,22 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mvt'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- python-requests
+- python-tqdm
 - libusb
-- python
+- python-libusb1
+- python-cryptography
+- python-simplejson
+- python-tld
+- python-click
 - python-adb-shell
 - python-appdirs
-- python-click
-- python-cryptography
-- python-iosbackup
-- python-libusb1
 - python-packaging
 - python-rich
-- python-tld
-- python-tqdm
-- python-requests
-- python-simplejson
 - python-yaml
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-iosbackup
+- python
 update_on:
 - alias: python
 - alpm: mvt

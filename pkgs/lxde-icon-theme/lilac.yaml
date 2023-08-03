@@ -7,10 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''lxde-icon-theme'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk4: gtk-update-icon-cache
-repo_makedepends: []
 update_on:
 - alpm: lxde-icon-theme
   source: archpkg

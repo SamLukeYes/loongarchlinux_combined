@@ -1,19 +1,10 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
+- bash
+- perl-dbi
+- perl-clone
 - perl
 - libxml2
-- bash
 - perl-xml-libxml
-- perl-clone
-- perl-dbi
-repo_makedepends:
-- cups
-- ghostscript
-- a2ps
-- wget
-- perl-xml-libxml
-- foomatic-db
-- git
 update_on:
 - alias: perl

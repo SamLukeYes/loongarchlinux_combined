@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dovecot-fts-xapian'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - dovecot
-- icu
 - xapian-core
-repo_makedepends: []
+- icu
 update_on:
 - alias: icu
 - alpm: dovecot-fts-xapian

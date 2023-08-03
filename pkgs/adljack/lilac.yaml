@@ -9,24 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''adljack'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
 - gcc: gcc-libs
-- glibc
+- ncurses
+- liblo
+- rtmidi
+- rtaudio
 - bash
-- gcc: gcc-libs
 - glibc
-- liblo
-- ncurses
-- rtaudio
-- rtmidi
-repo_makedepends:
-- cmake
-- liblo
-- ncurses
-- rtaudio
-- rtmidi
 update_on:
 - alpm: jack2
   provides: libjack.so

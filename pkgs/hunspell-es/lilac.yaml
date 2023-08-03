@@ -7,13 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''hunspell-es'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - hunspell
 - hyphen
 - libmythes
-repo_makedepends:
-- qt6-webengine
 update_on:
 - alpm: hunspell-es
   source: archpkg

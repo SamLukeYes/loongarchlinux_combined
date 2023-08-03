@@ -9,21 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wpebackend-fdo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
 - libepoxy
-- libwpe
 - wayland
+- libwpe
 - glib2
-- libepoxy
-- libwpe
-- wayland
-repo_makedepends:
-- git
-- mesa
-- meson
-- wayland-protocols
 update_on:
 - alpm: libwpe
   provides: libwpe-1.0.so

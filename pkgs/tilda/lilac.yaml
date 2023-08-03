@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tilda'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- vte3
 - confuse
-repo_makedepends:
-- python
+- vte3
 update_on:
 - alpm: tilda
   source: archpkg

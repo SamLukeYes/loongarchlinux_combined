@@ -1,15 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- gedit
 - python-cairo
-repo_makedepends:
-- appstream-glib
-- git
-- gobject-introspection
-- gucharmap
-- libgit2-glib
-- meson
-- vte3
-- yelp-tools
+- gedit
 update_on: []

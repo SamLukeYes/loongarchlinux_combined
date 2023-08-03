@@ -9,20 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-vector-sized'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-adjunctions
-- haskell-comonad
-- haskell-distributive
 - haskell-finite-typelits
+- ghc: ghc-libs
 - haskell-hashable
-- haskell-indexed-list-literals
-- haskell-primitive
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
+- haskell-distributive
+- haskell-primitive
+- haskell-comonad
+- haskell-adjunctions
+- haskell-indexed-list-literals
 update_on:
 - alpm: haskell-adjunctions
   source: alpm

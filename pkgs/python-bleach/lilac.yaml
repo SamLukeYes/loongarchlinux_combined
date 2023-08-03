@@ -7,15 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-bleach'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
+- python-webencodings
 - python-packaging
 - python-six
-- python-webencodings
-repo_makedepends:
-- python
-- python-setuptools
 update_on:
 - alpm: python-bleach
   source: archpkg

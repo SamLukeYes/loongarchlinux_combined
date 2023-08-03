@@ -9,16 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''i3lock'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- xcb-util-image
-- xcb-util-xrm
 - libev
+- xcb-util-image
 - cairo
-- libxkbcommon: libxkbcommon-x11
+- xcb-util-xrm
 - pam
-repo_makedepends:
-- meson
+- libxkbcommon: libxkbcommon-x11
 update_on:
 - alpm: i3lock
   source: archpkg

@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cozy-stack'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- couchdb
 - imagemagick
 - git
-repo_makedepends:
-- go
+- couchdb
 update_on:
 - alpm: cozy-stack
   source: archpkg

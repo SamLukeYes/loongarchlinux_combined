@@ -1,11 +1,6 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- zlib
 - libaec
+- zlib
 - bash
-repo_makedepends:
-- cmake
-- time
-- gcc: gcc-fortran
 update_on: []

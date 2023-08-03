@@ -1,7 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- bash
 - procps-ng
-repo_makedepends: []
+- bash
 update_on: []

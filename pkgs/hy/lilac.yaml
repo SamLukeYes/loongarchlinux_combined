@@ -7,18 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''hy'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-runner
 repo_depends:
-- python-astor
-- python-funcparserlib
 - python-colorama
-repo_makedepends:
-- python-setuptools
-- python-build
-- python-wheel
-- python-installer
+- python-funcparserlib
+- python-astor
 update_on:
 - alpm: hy
   source: archpkg

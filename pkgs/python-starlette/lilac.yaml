@@ -7,24 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-starlette'')
 
   '
-repo_checkdepends:
-- python-aiosqlite
-- python-databases
-- python-pytest
-- python-trio
-- python-itsdangerous
-- python-jinja
-- python-python-multipart
-- python-httpx
-- python-sqlalchemy
 repo_depends:
-- python
 - python-anyio
-repo_makedepends:
-- python-build
-- python-installer
-- python-hatchling
-- python-wheel
+- python
 update_on:
 - alias: python
 - alpm: python-starlette

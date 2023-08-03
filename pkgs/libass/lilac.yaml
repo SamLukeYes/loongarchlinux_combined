@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libass'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - fontconfig
-- fribidi
-- glib2
 - glibc
 - harfbuzz
-repo_makedepends:
-- git
-- nasm
+- fribidi
+- glib2
 update_on:
 - alpm: freetype2
   provides: libfreetype.so

@@ -1,7 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - glib2
-repo_makedepends:
-- check
 update_on: []

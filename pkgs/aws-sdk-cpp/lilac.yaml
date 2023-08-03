@@ -9,19 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aws-sdk-cpp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
-- curl
-- zlib
-- util-linux: util-linux-libs
-- aws-c-common
-- aws-c-event-stream
 - pulseaudio: libpulse
+- aws-c-event-stream
+- curl
 - aws-crt-cpp
-repo_makedepends:
-- cmake
-- ninja
+- zlib
+- aws-c-common
+- util-linux: util-linux-libs
+- openssl
 update_on:
 - alpm: aws-sdk-cpp
   source: archpkg

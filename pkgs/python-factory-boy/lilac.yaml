@@ -7,18 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-factory-boy'')
 
   '
-repo_checkdepends:
-- python-pytest-runner
-- python-flask
-- django: python-django
-- python-sqlalchemy
-- python-flask-sqlalchemy
-- python-mongoengine
-- python-mongomock
 repo_depends:
 - python-faker
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-factory-boy
   source: archpkg

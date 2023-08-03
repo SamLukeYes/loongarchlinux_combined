@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sc3-plugins'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
 - supercollider
-- gcc: gcc-libs
 - glibc
-- supercollider
-repo_makedepends:
-- cmake
-- fftw
-- stk
 update_on:
 - alpm: fftw
   provides: libfftw3f.so

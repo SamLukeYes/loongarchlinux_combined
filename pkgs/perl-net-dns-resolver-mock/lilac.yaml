@@ -7,11 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-net-dns-resolver-mock'')
 
   '
-repo_checkdepends:
-- perl-test-exception
 repo_depends:
 - perl-net-dns
-repo_makedepends: []
 update_on:
 - alpm: perl-net-dns-resolver-mock
   source: archpkg

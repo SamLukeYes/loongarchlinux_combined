@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''breeze'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- frameworkintegration
+- kirigami2
+- kwayland
 - kdecoration
 - breeze-icons
-- kwayland
-- kirigami2
+- frameworkintegration
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
-- kcmutils
 update_on:
 - alpm: breeze
   source: archpkg

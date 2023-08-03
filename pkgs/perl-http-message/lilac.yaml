@@ -7,19 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-http-message'')
 
   '
-repo_checkdepends:
-- perl-io-compress-brotli
-- perl-test-needs
-- perl-try-tiny
 repo_depends:
-- perl
-- perl-clone
+- perl-uri
 - perl-encode-locale
-- perl-http-date
+- perl-clone
 - perl-io-html
 - perl-lwp-mediatypes
-- perl-uri
-repo_makedepends: []
+- perl
+- perl-http-date
 update_on:
 - alias: perl
 - alpm: perl-http-message

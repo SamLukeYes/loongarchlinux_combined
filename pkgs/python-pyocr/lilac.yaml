@@ -7,13 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pyocr'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - python-pillow
 - python-six
-repo_makedepends:
-- git
-- python-setuptools-scm
 update_on:
 - alpm: python-pyocr
   source: archpkg

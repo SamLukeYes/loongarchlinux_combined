@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pocl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- clang
 - hwloc
-repo_makedepends:
-- llvm
-- cmake
-- opencl-headers
-- ocl-icd
-- ninja
-- python
+- clang
 update_on:
 - alias: clang
 - alpm: pocl

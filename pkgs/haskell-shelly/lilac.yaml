@@ -9,22 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-shelly'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
-- haskell-unix-compat
-- haskell-monad-control
-- haskell-lifted-base
-- haskell-lifted-async
 - haskell-enclosed-exceptions
 - haskell-async
+- haskell-unix-compat
+- haskell-lifted-base
+- haskell-lifted-async
+- haskell-monad-control
 - haskell-transformers-base
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hunit
-- haskell-hspec
-- haskell-hspec-contrib
 update_on:
 - alpm: haskell-unix-compat
   source: alpm

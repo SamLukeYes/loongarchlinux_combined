@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opencc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - marisa
-repo_makedepends:
-- chrpath
-- cmake
-- darts
-- doxygen
-- marisa
-- pybind11
-- python-setuptools
-- python-wheel
-- rapidjson
-- tclap
-- gtest
 update_on:
 - alpm: opencc
   source: archpkg

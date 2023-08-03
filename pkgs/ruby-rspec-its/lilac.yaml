@@ -7,15 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rspec-its'')
 
   '
-repo_checkdepends:
-- ruby-rake
-- ruby-minitest
-- ruby-test-unit
 repo_depends:
-- ruby
 - ruby-rspec
-repo_makedepends:
-- ruby-rdoc
+- ruby
 update_on:
 - alias: ruby
 - alpm: ruby-rspec-its

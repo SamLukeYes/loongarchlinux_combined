@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libewf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- bzip2
 - util-linux
 - zlib
-- bzip2
-repo_makedepends:
-- fuse2
 update_on:
 - alpm: libewf
   source: archpkg

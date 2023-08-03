@@ -9,19 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''krfb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kdnssd
 - kxmlgui
-- kwallet
-- libvncserver
 - kwayland
 - xdg-desktop-portal
 - kpipewire
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- plasma-wayland-protocols
+- kdnssd
+- kwallet
+- libvncserver
 update_on:
 - alpm: krfb
   source: archpkg

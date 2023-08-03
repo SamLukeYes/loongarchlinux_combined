@@ -1,62 +1,9 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- double-conversion
 - gcc: gcc-libs
-- glibc
 - libtiff
-- onetbb
+- double-conversion
 - pugixml
-repo_makedepends:
-- adios2
-- boost
-- cgns
-- cli11
-- cmake
-- doxygen
-- eigen
-- expat
-- ffmpeg
-- fmt
-- freetype2
-- gdal
-- git
-- gl2ps
-- glew
-- gnuplot
-- hdf5
-- jsoncpp
-- libharu
-- liblas
-- libogg
-- libpng
-- libtheora
-- libxml2
-- libxt
-- lz4
-- mariadb: mariadb-libs
-- netcdf
-- openmp
-- openmpi
-- openvdb
-- openvr
-- openxr
-- pdal
-- postgresql: postgresql-libs
-- proj
-- python-matplotlib
-- python-mpi4py
-- qt5-base
-- qt5-tools
-- qt5-declarative
-- rapidjson
-- sqlite
-- tk
-- unixodbc
-- utf8cpp
-- verdict
-- wget
-- xz
-- zfp
-- zlib
+- onetbb
+- glibc
 update_on: []

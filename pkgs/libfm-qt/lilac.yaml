@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libfm-qt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- menu-cache
 - libexif
 - qt5-x11extras
-repo_makedepends:
-- lxqt-build-tools
+- menu-cache
 update_on:
 - alpm: libfm-qt
   source: archpkg

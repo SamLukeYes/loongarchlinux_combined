@@ -7,17 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-bdd'')
 
   '
-repo_checkdepends:
-- python-setuptools
 repo_depends:
-- python-mako
 - python-parse
 - python-parse-type
 - python-pytest
-repo_makedepends:
-- python-build
-- python-installer
-- python-poetry-core
+- python-mako
 update_on:
 - alpm: python-pytest-bdd
   source: archpkg

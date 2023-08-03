@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kodi-addon-visualizat
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kodi
 - glu
 - glm
-repo_makedepends:
-- cmake
-- glu
-- glm
-- kodi: kodi-dev
 update_on:
 - alpm: kodi-addon-visualization-waveform
   source: archpkg

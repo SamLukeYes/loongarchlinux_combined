@@ -1,8 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - gdk-pixbuf2
-repo_makedepends:
-- boost
-- libxml2
 update_on: []

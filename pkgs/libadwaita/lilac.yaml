@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libadwaita'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- weston
 repo_depends:
 - gtk4
-- gtk4
-repo_makedepends:
-- gi-docgen
-- git
-- gobject-introspection
-- meson
-- sassc
-- vala
 update_on:
 - alpm: gtk4
   provides: libgtk-4.so

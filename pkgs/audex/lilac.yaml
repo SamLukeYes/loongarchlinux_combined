@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''audex'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libkcddb
 - hicolor-icon-theme
+- libkcddb
 - kcmutils
 - qt5-script
-repo_makedepends:
-- extra-cmake-modules
-- git
 update_on:
 - alpm: audex
   source: archpkg

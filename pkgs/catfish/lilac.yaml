@@ -7,18 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''catfish'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- dbus-python
-- gtk3
-- python-cairo
-- pygobject: python-gobject
-- python-pexpect
 - xdg-utils
 - xfconf
-repo_makedepends:
-- intltool
-- python-distutils-extra
+- dbus-python
+- gtk3
+- python-pexpect
+- pygobject: python-gobject
+- python-cairo
 update_on:
 - alpm: catfish
   source: archpkg

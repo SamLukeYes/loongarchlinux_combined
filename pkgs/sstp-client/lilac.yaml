@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sstp-client'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libevent
 - openssl
-repo_makedepends:
-- ppp
 update_on:
 - alpm: sstp-client
   source: archpkg

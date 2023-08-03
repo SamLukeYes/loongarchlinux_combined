@@ -1,12 +1,4 @@
 destsubdir: extra
-repo_checkdepends:
-- unittestpp
 repo_depends:
 - glib2
-repo_makedepends:
-- aspell
-- hunspell
-- hspell
-- nuspell
-- libvoikko
 update_on: []

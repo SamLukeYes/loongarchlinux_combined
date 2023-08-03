@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libodfgen'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- zlib
-- librevenge
 - libxml2
-repo_makedepends:
-- boost
-- libwpg
-- libetonyek
-- doxygen
+- librevenge
+- zlib
 update_on:
 - alpm: libodfgen
   source: archpkg

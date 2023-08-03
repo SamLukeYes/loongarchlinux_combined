@@ -1,29 +1,19 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- glibc
-- glib2
-- lua
-- wireless_tools
 - libxdamage
-- libxinerama
-- libxft
 - imlib2
-- libxml2
-- pulseaudio: libpulse
-- nvidia-settings: libxnvctrl
-- systemd: systemd-libs
-- ncurses
+- glib2
+- glibc
 - curl
-repo_makedepends:
-- cmake
-- docbook2x
-- docbook-xsl
-- man-db
-- git
-- catch2
-- python-yaml
-- python-jinja
+- libxinerama
+- libxml2
+- systemd: systemd-libs
+- libxft
+- wireless_tools
+- lua
+- pulseaudio: libpulse
+- ncurses
+- nvidia-settings: libxnvctrl
 update_on:
 - alias: lua
 - alpm: ncurses

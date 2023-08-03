@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ccze'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ncurses
 - pcre
-repo_makedepends:
-- patch
+- ncurses
 update_on:
 - alpm: ccze
   source: archpkg

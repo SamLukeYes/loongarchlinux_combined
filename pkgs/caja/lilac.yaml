@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''caja'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- exempi
-- gvfs
 - libexif
 - libsm
-- mate-desktop
 - libnotify
-repo_makedepends:
-- gobject-introspection
-- intltool
+- exempi
+- mate-desktop
+- gvfs
 update_on:
 - alpm: caja
   source: archpkg

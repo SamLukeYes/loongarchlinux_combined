@@ -7,13 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''jupyter-server-mathjax'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- jupyter-server
 - mathjax2
-repo_makedepends:
-- python-build
-- python-installer
+- jupyter-server
 update_on:
 - alpm: jupyter-server-mathjax
   source: archpkg

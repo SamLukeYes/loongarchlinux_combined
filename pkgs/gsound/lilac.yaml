@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gsound'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
 - glibc
+- glib2
 - libcanberra
-repo_makedepends:
-- gobject-introspection
-- meson
-- vala
 update_on:
 - alpm: gsound
   source: archpkg

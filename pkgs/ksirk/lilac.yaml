@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ksirk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libkdegames
-- qca: qca-qt5
 - phonon: phonon-qt5
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
+- qca: qca-qt5
 update_on:
 - alpm: ksirk
   source: archpkg

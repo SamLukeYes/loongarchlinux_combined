@@ -9,21 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-bv-sized'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-bitwise
-- haskell-panic
-- haskell-parameterized-utils
-- haskell-random
 - haskell-th-lift
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hedgehog
-- haskell-monadrandom
-- haskell-tasty
-- haskell-tasty-hedgehog
+- haskell-panic
+- ghc: ghc-libs
+- haskell-random
+- haskell-bitwise
+- haskell-parameterized-utils
 update_on:
 - alpm: haskell-bitwise
   source: alpm

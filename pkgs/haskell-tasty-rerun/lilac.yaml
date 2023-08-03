@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-rerun''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-optparse-applicative
+- ghc: ghc-libs
 - haskell-split
 - haskell-tagged
 - haskell-tasty
-repo_makedepends:
-- ghc
-- uusi
 update_on:
 - alpm: haskell-optparse-applicative
   source: alpm

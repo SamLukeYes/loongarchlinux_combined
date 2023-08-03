@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-graphics-colornames-www'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-graphics-colornames
-repo_makedepends:
 - perl-graphics-colornames
 update_on:
 - alpm: perl-graphics-colornames-www

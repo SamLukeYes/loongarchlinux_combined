@@ -7,13 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''cloc'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl
 - perl-algorithm-diff
-- perl-regexp-common
+- perl
 - perl-parallel-forkmanager
-repo_makedepends: []
+- perl-regexp-common
 update_on:
 - alias: perl
 - alpm: cloc

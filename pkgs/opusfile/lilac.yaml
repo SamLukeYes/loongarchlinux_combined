@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opusfile'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libogg
-- openssl
 - opus
-repo_makedepends: []
+- openssl
 update_on:
 - alpm: opusfile
   source: archpkg

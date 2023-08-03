@@ -7,24 +7,16 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''retext'')
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
-- python-chardet
-- python-docutils
 repo_depends:
-- pyqt6: python-pyqt6
-- shared-mime-info
-- xdg-utils
-- python-docutils
-- desktop-file-utils
-- hicolor-icon-theme
 - python-markdown
-- python-pygments
+- xdg-utils
 - python-chardet
-repo_makedepends:
-- imagemagick
-- qt5-tools
-- python-setuptools
+- python-pygments
+- desktop-file-utils
+- pyqt6: python-pyqt6
+- python-docutils
+- hicolor-icon-theme
+- shared-mime-info
 update_on:
 - alpm: retext
   source: archpkg

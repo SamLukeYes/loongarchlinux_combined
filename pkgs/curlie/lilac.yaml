@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''curlie'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
 - curl
-repo_makedepends:
-- go
 update_on:
 - alpm: curlie
   source: archpkg

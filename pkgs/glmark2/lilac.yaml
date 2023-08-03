@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glmark2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libjpeg-turbo
 - libpng
 - systemd: systemd-libs
-repo_makedepends:
-- meson
-- systemd
-- wayland-protocols
+- libjpeg-turbo
 update_on:
 - alpm: glmark2
   source: archpkg

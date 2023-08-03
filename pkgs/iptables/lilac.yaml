@@ -9,21 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''iptables'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libnftnl
-- libpcap
-- libnfnetlink
 - libnetfilter_conntrack
-- bash
-- libnftnl
-- libpcap
-- libnfnetlink
-- libnetfilter_conntrack
-- bash
 - nftables
-repo_makedepends:
-- linux-api-headers
+- libnftnl
+- libpcap
+- bash
+- libnfnetlink
 update_on:
 - alpm: iptables
   source: archpkg

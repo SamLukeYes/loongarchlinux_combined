@@ -9,20 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''crystal'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- libyaml
-- libxml2
-- gmp
-- inetutils
-- git
 repo_depends:
-- gc
 - pcre2
 - libevent
 - llvm: llvm-libs
-repo_makedepends:
-- libxml2
-- llvm
+- gc
 update_on:
 - alpm: crystal
   source: archpkg

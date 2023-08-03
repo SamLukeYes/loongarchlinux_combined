@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vifm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ncurses
 - desktop-file-utils
-repo_makedepends:
-- perl
+- ncurses
 update_on:
 - alpm: vifm
   source: archpkg

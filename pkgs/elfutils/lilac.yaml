@@ -1,30 +1,15 @@
 destsubdir: core
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- libarchive
-- libmicrohttpd
-- sqlite
-- gcc: gcc-libs
-- glibc
 - bzip2
-- curl
 - gcc: gcc-libs
-- glibc
 - xz
-- zlib
-- zstd
-repo_makedepends:
-- bzip2
-- curl
-- gcc: gcc-libs
-- libarchive
 - libmicrohttpd
-- sqlite
-- xz
+- curl
 - zlib
+- libarchive
+- sqlite
 - zstd
+- glibc
 update_on:
 - alpm: libarchive
   provides: libarchive.so

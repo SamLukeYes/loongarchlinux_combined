@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-microlens-th'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-microlens
 - haskell-th-abstraction
-repo_makedepends:
-- ghc
-- haskell-tagged
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-microlens
   source: alpm

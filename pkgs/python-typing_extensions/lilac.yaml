@@ -7,15 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-typing_extensions'')
 
   '
-repo_checkdepends:
-- python: python-tests
 repo_depends:
 - python
-repo_makedepends:
-- git
-- python-build
-- python-flit-core
-- python-installer
 update_on:
 - alias: python
 - alpm: python-typing_extensions

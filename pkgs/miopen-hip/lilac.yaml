@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''miopen-hip'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- composable-kernel
 - rocblas
 - rocm-clang-ocl
-- composable-kernel
 - sqlite
-repo_makedepends:
-- rocm-cmake
-- boost
-- nlohmann-json
-- half
-- ninja
 update_on:
 - alpm: miopen-hip
   source: archpkg

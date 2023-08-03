@@ -7,14 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''profile-cleaner'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
-- bc
-- findutils
-- parallel
 - sqlite
-repo_makedepends: []
+- findutils
+- bash
+- parallel
+- bc
 update_on:
 - alpm: profile-cleaner
   source: archpkg

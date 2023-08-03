@@ -7,16 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''dblatex'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - docbook-xsl
 - docbook-xml
+- texlive-texmf: texlive-pictures
 - libxslt
-- python
 - texlive-texmf: texlive-formatsextra
 - texlive-texmf: texlive-latexextra
-- texlive-texmf: texlive-pictures
-repo_makedepends: []
+- python
 update_on:
 - alias: python
 - alpm: dblatex

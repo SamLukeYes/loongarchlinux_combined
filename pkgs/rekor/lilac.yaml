@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rekor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- openssh
 repo_depends: []
-repo_makedepends:
-- go
-- git
 update_on:
 - alpm: rekor
   source: archpkg

@@ -7,17 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''qspectrumanalyzer'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- soapy_power
 - python-qt.py
 - pyqt5: python-pyqt5
 - python-pyqtgraph
-- soapy_power
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alpm: qspectrumanalyzer
   source: archpkg

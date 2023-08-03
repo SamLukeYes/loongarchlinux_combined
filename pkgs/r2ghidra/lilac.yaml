@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''r2ghidra'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- radare2
 - glibc
-repo_makedepends:
-- git
+- radare2
 update_on:
 - alpm: r2ghidra
   source: archpkg

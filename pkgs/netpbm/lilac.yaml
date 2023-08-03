@@ -1,12 +1,8 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
+- libxml2
 - perl
 - libpng
 - libtiff
-- libxml2
-repo_makedepends:
-- jbigkit
-- subversion
 update_on:
 - alias: perl

@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xsettingsd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libx11
 - gcc: gcc-libs
-repo_makedepends:
-- cmake
+- libx11
 update_on:
 - alpm: xsettingsd
   source: archpkg

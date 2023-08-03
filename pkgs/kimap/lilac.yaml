@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kimap'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kmime
 - kio
-repo_makedepends:
-- extra-cmake-modules
-- doxygen
-- qt5-tools
 update_on:
 - alpm: kimap
   source: archpkg

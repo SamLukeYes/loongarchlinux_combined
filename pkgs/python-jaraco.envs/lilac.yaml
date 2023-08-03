@@ -7,19 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-jaraco.envs'')
 
   '
-repo_checkdepends:
-- python-pytest-enabler
-- python-pytest-mypy
 repo_depends:
+- python-tox
 - python-path
 - python-virtualenv
-- python-tox
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-setuptools-scm
-- python-wheel
 update_on:
 - alpm: python-jaraco.envs
   source: archpkg

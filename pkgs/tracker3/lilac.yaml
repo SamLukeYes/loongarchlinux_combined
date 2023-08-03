@@ -9,28 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tracker3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- sqlite
+- libsoup3
+- libxml2
+- json-glib
+- snowball: libstemmer
 - glib2
 - icu
-- json-glib
-- libsoup3
-- snowball: libstemmer
-- libxml2
-- sqlite
-repo_makedepends:
-- asciidoc
-- bash-completion
-- dbus
-- gi-docgen
-- git
-- gobject-introspection
-- libsoup
-- meson
-- pygobject: python-gobject
-- python-tappy
-- systemd
-- vala
 update_on:
 - alias: icu
 - alpm: tracker3

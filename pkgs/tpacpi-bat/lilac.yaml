@@ -7,11 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''tpacpi-bat'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl
 - acpi_call
-repo_makedepends: []
+- perl
 update_on:
 - alias: perl
 - alpm: tpacpi-bat

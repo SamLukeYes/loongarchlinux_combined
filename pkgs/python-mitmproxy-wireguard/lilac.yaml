@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-mitmproxy-wire
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - python
-repo_makedepends:
-- maturin
-- python-installer
 update_on:
 - alias: python
 - alpm: python-mitmproxy-wireguard

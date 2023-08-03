@@ -9,25 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''criu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- libaio
-- python-yaml
 repo_depends:
-- libbsd
-- libnet
 - libnl
 - protobuf-c
+- libnet
+- nftables
+- libbsd
 - protobuf: python-protobuf
 - gnutls
-- nftables
-repo_makedepends:
-- git
-- xmlto
-- asciidoc
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alpm: criu
   source: archpkg

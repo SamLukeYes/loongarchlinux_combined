@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mokutil'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- efivar
-- openssl
 - keyutils
+- openssl
+- efivar
 - libxcrypt
-repo_makedepends:
-- git
 update_on:
 - alpm: mokutil
   source: archpkg

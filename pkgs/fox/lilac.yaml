@@ -9,20 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fox'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - bzip2
-- libxcursor
 - libxft
 - libxrandr
 - libxi
-- libpng
-- libtiff
 - glu
-repo_makedepends:
-- mesa
-- gendesk
-- imagemagick
+- libtiff
+- libxcursor
+- libpng
 update_on:
 - alpm: fox
   source: archpkg

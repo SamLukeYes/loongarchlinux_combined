@@ -9,16 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vulkan-icd-loader'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-repo_makedepends:
-- cmake
-- python-lxml
-- libx11
-- libxrandr
-- wayland
-- vulkan-headers
 update_on:
 - alpm: vulkan-icd-loader
   source: archpkg

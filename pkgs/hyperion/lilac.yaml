@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hyperion'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libusb
+- qt5-base
 - protobuf
 - python
-- qt5-base
-repo_makedepends:
-- cmake
 update_on:
 - alias: protobuf
 - alias: python

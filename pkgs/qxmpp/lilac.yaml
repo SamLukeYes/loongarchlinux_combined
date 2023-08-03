@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qxmpp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gstreamer
-- gstreamer
-- qca: qca-qt5
-- gstreamer
 - qca: qca-qt6
-repo_makedepends:
-- cmake
 - qca: qca-qt5
-- qca: qca-qt6
-- libomemo-c
 update_on:
 - alpm: qxmpp
   source: archpkg

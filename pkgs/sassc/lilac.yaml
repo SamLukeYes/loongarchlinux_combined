@@ -9,10 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sassc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libsass
-repo_makedepends: []
 update_on:
 - alpm: sassc
   source: archpkg

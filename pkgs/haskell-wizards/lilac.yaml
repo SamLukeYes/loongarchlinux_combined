@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wizards'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-control-monad-free
-repo_makedepends:
-- ghc
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-control-monad-free
   source: alpm

@@ -9,25 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''btrfs-progs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- util-linux: util-linux-libs
-- lzo
 - zlib
-- zstd
 - libgcrypt
+- util-linux: util-linux-libs
+- zstd
+- glibc
 - systemd: systemd-libs
-repo_makedepends:
-- git
-- asciidoc
-- xmlto
-- systemd
-- python
-- python-setuptools
-- e2fsprogs
-- reiserfsprogs
-- python-sphinx
+- lzo
 update_on:
 - alpm: btrfs-progs
   source: archpkg

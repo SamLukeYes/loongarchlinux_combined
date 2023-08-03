@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yubikey-personalizati
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libusb
 - json-c
 - yubico-c-client
-repo_makedepends:
-- systemd
 update_on:
 - alpm: yubikey-personalization
   source: archpkg

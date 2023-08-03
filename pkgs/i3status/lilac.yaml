@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''i3status'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- alsa-lib
-- confuse
-- libnl
 - pulseaudio: libpulse
+- alsa-lib
+- libnl
+- confuse
 - yajl
-repo_makedepends:
-- asciidoc
-- xmlto
-- meson
 update_on:
 - alpm: i3status
   source: archpkg

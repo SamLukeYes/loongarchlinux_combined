@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tuntox'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - toxcore
 - libevent
-repo_makedepends:
-- cscope
-- git
 update_on:
 - alpm: tuntox
   source: archpkg

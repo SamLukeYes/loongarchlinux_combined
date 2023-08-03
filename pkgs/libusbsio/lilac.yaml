@@ -9,19 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libusbsio'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - systemd: systemd-libs
+- glibc
 - python
-repo_makedepends:
-- hidapi
-- libusb
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
-- systemd
 update_on:
 - alpm: systemd-libs
   provides: libudev.so

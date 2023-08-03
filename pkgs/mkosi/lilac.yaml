@@ -7,19 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mkosi'')
 
   '
-repo_checkdepends:
-- python-pexpect
-- python-pytest
 repo_depends:
 - arch-install-scripts
-- python
 - python-pexpect
+- python
 - qemu: qemu-img
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alias: python
 - alpm: mkosi

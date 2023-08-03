@@ -9,21 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xf86-input-wacom'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxi
 - libxinerama
-- libxrandr
 - systemd: systemd-libs
-repo_makedepends:
-- xorg-server: xorg-server-devel
-- meson
-- gobject-introspection
-- python-libevdev
-- python-pytest
-- python-yaml
-- pygobject: python-gobject
-- attr
+- libxrandr
+- libxi
 update_on:
 - alpm: xf86-input-wacom
   source: archpkg

@@ -9,62 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zam-plugins'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- dbus
-- gcc: gcc-libs
-- glibc
-- libglvnd
-- libsamplerate
-- libx11
-- libxext
-- zita-convolver
-- gcc: gcc-libs
-- glibc
-- dbus
-- gcc: gcc-libs
-- glibc
-- libglvnd
-- libsamplerate
-- libx11
-- libxext
-- zita-convolver
 - alsa-lib
-- dbus
-- gcc: gcc-libs
 - glibc
-- libglvnd
-- libsamplerate
-- libx11
-- libxext
+- gcc: gcc-libs
 - zita-convolver
 - dbus
-- gcc: gcc-libs
-- glibc
 - libglvnd
-- libsamplerate
-- libx11
 - libxext
-- zita-convolver
-- dbus
-- gcc: gcc-libs
-- glibc
-- libglvnd
 - libsamplerate
 - libx11
-- libxext
-- zita-convolver
-repo_makedepends:
-- gcc: gcc-libs
-- glibc
-- gendesk
-- git
-- ladspa
-- libglvnd
-- libsamplerate
-- libx11
-- lv2
-- zita-convolver
 update_on:
 - alpm: dbus
   provides: libdbus-1.so

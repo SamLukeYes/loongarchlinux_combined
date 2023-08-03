@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xf86-video-vmware'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- mesa
 - systemd: systemd-libs
-repo_makedepends:
-- xorg-server: xorg-server-devel
+- mesa
 update_on:
 - alpm: xf86-video-vmware
   source: archpkg

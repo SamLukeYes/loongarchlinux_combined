@@ -9,21 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-silver'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-ansi-terminal
-- haskell-async
 - haskell-optparse-applicative
 - haskell-process-extras
-- haskell-regex-tdfa
 - haskell-silently
+- haskell-async
+- ghc: ghc-libs
 - haskell-tagged
 - haskell-tasty
+- haskell-ansi-terminal
 - haskell-temporary
-repo_makedepends:
-- ghc
-- haskell-tasty-hunit
+- haskell-regex-tdfa
 update_on:
 - alpm: haskell-ansi-terminal
   source: alpm

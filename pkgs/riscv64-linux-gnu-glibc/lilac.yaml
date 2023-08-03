@@ -1,8 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - riscv64-linux-gnu-gcc
 - riscv64-linux-gnu-linux-api-headers
-repo_makedepends:
-- python
 update_on: []

@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ibus-hangul'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ibus
 - libhangul
-- iso-codes
 - gtk4: gtk-update-icon-cache
+- ibus
+- iso-codes
 - pygobject: python-gobject
-repo_makedepends:
-- intltool
-- gnome-common
 update_on:
 - alpm: ibus-hangul
   source: archpkg

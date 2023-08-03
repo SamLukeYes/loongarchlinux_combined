@@ -1,7 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- libidn
 - gnutls
-repo_makedepends: []
+- libidn
 update_on: []

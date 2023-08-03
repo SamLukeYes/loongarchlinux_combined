@@ -9,22 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''strawberry'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt6-base
-- chromaprint
-- protobuf
-- gstreamer: gst-plugins-base
-- gstreamer: gst-plugins-good
-- udisks2
 - libcdio
 - libgpod
-- libmtp
+- qt6-base
+- gstreamer: gst-plugins-good
 - fftw
-repo_makedepends:
-- cmake
-- boost
-- qt6-tools
+- chromaprint
+- udisks2
+- protobuf
+- gstreamer: gst-plugins-base
+- libmtp
 update_on:
 - alpm: qt6-base
   source: alpm

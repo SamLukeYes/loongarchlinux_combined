@@ -9,51 +9,27 @@ pre_build_script: '_G.files = download_official_pkgbuild(''php'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- procps-ng
 repo_depends:
+- pcre2
+- enchant
+- gd
+- tidy
+- freetds
+- libzip
+- curl
+- postgresql: postgresql-libs
+- libsodium
+- apache
 - libxml2
-- curl
-- libzip
-- pcre2
-- argon2
-- oniguruma
-- apache
-- systemd
+- aspell
 - systemd: systemd-libs
-- freetds
-- enchant
-- gd
-- libsodium
-- unixodbc
-- postgresql: postgresql-libs
-- aspell
-- net-snmp
-- sqlite
-- tidy
-- libxslt
-repo_makedepends:
-- apache
-- aspell
-- enchant
-- gd
-- gmp
-- icu
-- libsodium
-- libxslt
-- libzip
-- net-snmp
-- postgresql: postgresql-libs
-- sqlite
 - systemd
-- tidy
-- unixodbc
-- curl
-- libtool
-- postfix
-- freetds
-- pcre2
+- net-snmp
+- sqlite
 - oniguruma
+- libxslt
+- argon2
+- unixodbc
 update_on:
 - alpm: php
   source: archpkg

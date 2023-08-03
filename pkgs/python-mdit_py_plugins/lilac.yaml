@@ -7,15 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-mdit_py_plugins'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-regressions
 repo_depends:
 - python-markdown-it-py
-repo_makedepends:
-- python-build
-- python-installer
-- python-flit-core
 update_on:
 - alpm: python-mdit_py_plugins
   source: archpkg

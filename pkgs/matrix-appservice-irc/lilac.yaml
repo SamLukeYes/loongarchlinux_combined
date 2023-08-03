@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''matrix-appservice-irc
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - glibc
 - nodejs
-repo_makedepends:
-- git
-- npm
 update_on:
 - alpm: matrix-appservice-irc
   source: archpkg

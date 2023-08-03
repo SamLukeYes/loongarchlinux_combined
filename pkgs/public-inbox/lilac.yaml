@@ -7,15 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''public-inbox'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl
-- perl-inline-c
-- perl-dbd-sqlite
 - perl-uri
 - perl-search-xapian
-repo_makedepends:
-- git
+- perl-inline-c
+- perl
+- perl-dbd-sqlite
 update_on:
 - alias: perl
 - alpm: public-inbox

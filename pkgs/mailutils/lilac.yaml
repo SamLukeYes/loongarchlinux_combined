@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mailutils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openldap: libldap
-- pam
 - gnutls
+- pam
+- openldap: libldap
 - gsasl
-repo_makedepends:
-- emacs
 update_on:
 - alpm: mailutils
   source: archpkg

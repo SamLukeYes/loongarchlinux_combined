@@ -9,18 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''php-redis'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lsof
-- redis
 repo_depends:
-- glibc
-- glibc
 - php-igbinary
 - glibc
-- php-igbinary: php-legacy-igbinary
-repo_makedepends:
-- liblzf
-- php-igbinary
 - php-igbinary: php-legacy-igbinary
 update_on:
 - alpm: liblzf

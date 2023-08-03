@@ -7,12 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''phpldapadmin'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- openldap: libldap
 - php
-repo_makedepends:
-- optipng
+- openldap: libldap
 update_on:
 - alpm: phpldapadmin
   source: archpkg

@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rocsparse'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - rocprim
-repo_makedepends:
-- rocm-cmake
-- gcc: gcc-fortran
 update_on:
 - alpm: rocsparse
   source: archpkg

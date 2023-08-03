@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wl-clipboard'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - wayland
-repo_makedepends:
-- meson
-- wayland-protocols
 update_on:
 - alpm: wl-clipboard
   source: archpkg

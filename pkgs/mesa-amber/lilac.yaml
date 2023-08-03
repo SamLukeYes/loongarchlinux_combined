@@ -9,34 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mesa-amber'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libglvnd
-- libdrm
-- zstd
-- wayland
-- libxshmfence
-- libxxf86vm
 - libxfixes
-repo_makedepends:
-- python-mako
-- libxml2
-- libx11
-- xorgproto
-- libdrm
-- libxshmfence
-- libxxf86vm
-- libxdamage
 - wayland
-- wayland-protocols
-- zstd
-- elfutils
+- libxxf86vm
+- libdrm
 - libglvnd
-- libunwind
-- libxrandr
-- valgrind
-- cmake
-- meson
+- zstd
+- libxshmfence
 update_on:
 - alpm: mesa-amber
   source: archpkg

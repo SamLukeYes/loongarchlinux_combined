@@ -9,20 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dsp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libmad
-- libtool
-- ffmpeg
 - alsa-lib
+- libsndfile
+- ffmpeg
+- zita-convolver
 - fftw
+- libtool
 - libao
 - pulseaudio: libpulse
-- libsndfile
-- zita-convolver
-repo_makedepends:
-- git
-- ladspa
+- libmad
 update_on:
 - alpm: ffmpeg
   provides: libavcodec.so

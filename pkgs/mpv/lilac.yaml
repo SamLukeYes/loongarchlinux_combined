@@ -9,53 +9,44 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mpv'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- alsa-lib
-- desktop-file-utils
-- ffmpeg
-- glibc
-- hicolor-icon-theme
-- lcms2
-- libarchive
-- libass
-- libbluray
 - libcdio
-- libcdio-paranoia
-- libdrm
-- libdvdnav
-- libdvdread
-- libglvnd
-- libplacebo
-- pulseaudio: libpulse
-- libva
-- libvdpau
-- libx11
-- libxext
-- libxinerama
-- libxkbcommon
-- libxpresent
-- libxrandr
-- libxss
-- libxv
-- luajit
-- mesa
-- mujs
-- pipewire: libpipewire
-- rubberband
+- alsa-lib
 - shaderc
-- uchardet
+- libbluray
+- desktop-file-utils
+- libass
+- libplacebo
+- libxv
+- hicolor-icon-theme
+- glibc
+- libdvdnav
+- pipewire: libpipewire
+- libcdio-paranoia
+- libxrandr
+- luajit
+- libxpresent
+- ffmpeg
 - vulkan-icd-loader
+- libxinerama
+- libva
+- libglvnd
+- libdvdread
+- libxext
+- rubberband
+- libxkbcommon
+- uchardet
+- libdrm
+- pulseaudio: libpulse
 - wayland
+- libxss
+- libvdpau
 - zlib
-repo_makedepends:
-- git
-- meson
-- python-docutils
-- ladspa
-- wayland-protocols
-- ffnvcodec-headers
-- vulkan-headers
+- libarchive
+- mujs
+- lcms2
+- libx11
+- mesa
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

@@ -9,19 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xsane'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk2
-- lcms2
-- sane
 - zlib
-- gimp
-repo_makedepends:
-- gtk2
 - lcms2
-- sane
-- zlib
+- gtk2
 - gimp
+- sane
 update_on:
 - alpm: xsane
   source: archpkg

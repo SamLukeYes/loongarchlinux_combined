@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ebumeter'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- clxclient
-- clthreads
-- gcc: gcc-libs
 - glibc
-- zita-resampler
-repo_makedepends:
+- gcc: gcc-libs
 - clxclient
 - clthreads
-- gendesk
-- libsndfile
 - zita-resampler
 update_on:
 - alpm: clxclient

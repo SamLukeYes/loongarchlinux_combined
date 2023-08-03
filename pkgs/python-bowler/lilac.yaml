@@ -7,20 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-bowler'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- ipython
-- python
-- python-attrs
-- python-click
-- python-fissix
-- python-moreorless
 - python-volatile
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-fissix
+- ipython
+- python-click
+- python-moreorless
+- python-attrs
+- python
 update_on:
 - alias: python
 - alpm: python-bowler

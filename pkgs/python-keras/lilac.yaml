@@ -7,26 +7,20 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-keras'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - python
-- python-h5py
-- python-keras-preprocessing
-- python-numpy
-- python-pandas
-- python-pillow
-- python-pydot
-- python-scipy
 - python-six
+- python-pillow
+- python-scipy
 - tensorflow: python-tensorflow
-- python-yaml
+- python-keras-preprocessing
 - tensorboard
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
+- python-pydot
+- python-yaml
+- python-pandas
+- python-numpy
+- python-h5py
 update_on:
 - alias: python
 - alpm: python-keras
   source: archpkg
-managed: false

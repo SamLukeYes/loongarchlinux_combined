@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-data-dword'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-hashable
 - ghc: ghc-libs
 - haskell-data-bword
-- haskell-hashable
-repo_makedepends:
-- ghc
-- haskell-tasty
-- haskell-tasty-quickcheck
 update_on:
 - alpm: haskell-data-bword
   source: alpm

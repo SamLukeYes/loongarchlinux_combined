@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''audiocd-kio'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kcmutils
 - libkcddb
-- libkcompactdisc
+- kcmutils
 - lame
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
+- libkcompactdisc
 update_on:
 - alpm: audiocd-kio
   source: archpkg

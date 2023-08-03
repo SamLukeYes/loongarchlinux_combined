@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kpipewire'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kwayland
-- ki18n
-- kcoreaddons
-- pipewire
 - libepoxy
+- kwayland
+- pipewire
 - ffmpeg
-repo_makedepends:
-- extra-cmake-modules
-- plasma-wayland-protocols
+- kcoreaddons
+- ki18n
 update_on:
 - alpm: kpipewire
   source: archpkg

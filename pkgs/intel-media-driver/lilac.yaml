@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''intel-media-driver'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- intel-gmmlib
 - libva
+- gcc: gcc-libs
 - libpciaccess
-repo_makedepends:
-- cmake
-- ninja
+- intel-gmmlib
 update_on:
 - alpm: intel-media-driver
   source: archpkg

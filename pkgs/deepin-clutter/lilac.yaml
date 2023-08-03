@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-clutter'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
-- deepin-cogl
 - libinput
-repo_makedepends:
-- gobject-introspection
-- gtk-doc
+- deepin-cogl
 update_on:
 - alpm: deepin-clutter
   source: archpkg

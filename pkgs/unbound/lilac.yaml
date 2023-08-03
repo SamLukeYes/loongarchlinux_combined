@@ -9,32 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''unbound'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - dnssec-anchors
-- fstrm
-- hiredis
-- ldns
-- libnghttp2
-- libsodium
-- dnssec-anchors
-- fstrm
-- hiredis
-- ldns
-- libnghttp2
-- libsodium
-- libevent
-- openssl
 - protobuf-c
+- fstrm
+- libevent
 - systemd: systemd-libs
-repo_makedepends:
-- expat
-- libevent
+- libsodium
 - openssl
-- protobuf-c
-- python
-- swig
-- systemd
+- libnghttp2
+- hiredis
+- ldns
 update_on:
 - alpm: libevent
   provides: libevent-2.1.so

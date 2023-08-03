@@ -7,34 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ansible-core'')
 
   '
-repo_checkdepends:
-- git
-- openssh
-- python-bcrypt
-- python-botocore
-- python-passlib
-- python-pexpect
-- python-py
-- python-pytest
-- python-pytest-mock
-- python-pytest-xdist
-- python-pytest-forked
-- python-pywinrm
-- python-voluptuous
 repo_depends:
-- python
+- python-paramiko
 - python-cryptography
 - python-jinja
 - python-packaging
 - python-resolvelib
-- python-paramiko
-repo_makedepends:
-- python-build
-- python-docutils
-- python-installer
-- python-setuptools
-- python-straight.plugin
-- python-wheel
+- python
 update_on:
 - alias: python
 - alpm: ansible-core

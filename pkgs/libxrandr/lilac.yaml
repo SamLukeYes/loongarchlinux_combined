@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libxrandr'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libxext
 - libxrender
-repo_makedepends:
-- xorg-util-macros
-- xorgproto
 update_on:
 - alpm: libxrandr
   source: archpkg

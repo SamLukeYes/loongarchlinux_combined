@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-commonmark-ex
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-network-uri
+- haskell-emojis
 - ghc: ghc-libs
 - haskell-commonmark
-- haskell-emojis
-- haskell-network-uri
-repo_makedepends:
-- ghc
-- uusi
-- haskell-tasty
-- haskell-tasty-hunit
 update_on:
 - alpm: haskell-commonmark
   source: alpm

@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''irssi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - glib2
-- openssl
+- ncurses
 - libotr
 - perl
-- ncurses
-repo_makedepends:
-- meson
-- ninja
+- openssl
+- glibc
 update_on:
 - alias: perl
 - alpm: ncurses

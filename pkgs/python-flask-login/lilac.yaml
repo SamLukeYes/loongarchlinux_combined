@@ -7,19 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-flask-login'')
 
   '
-repo_checkdepends:
-- python-nose
-- python-blinker
-- python-semantic-version
-- python-asgiref
 repo_depends:
+- python-werkzeug
 - python
 - python-flask
-- python-werkzeug
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-flask-login

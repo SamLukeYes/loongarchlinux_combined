@@ -7,16 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-qstylizer'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-runner
-- python-pytest-mock
 repo_depends:
-- python-inflection
 - python-tinycss2
-repo_makedepends:
-- python-pbr
-- python-setuptools
+- python-inflection
 update_on:
 - alpm: python-qstylizer
   source: archpkg

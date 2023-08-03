@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''arc-gtk-theme'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- sassc
-- glib2
-- gdk-pixbuf2
 update_on:
 - alpm: arc-gtk-theme
   source: archpkg

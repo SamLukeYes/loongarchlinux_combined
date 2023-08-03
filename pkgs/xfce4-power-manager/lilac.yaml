@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xfce4-power-manager''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libnotify
 - libxfce4ui
 - upower
-- libnotify
 - xfce4-notifyd
 - hicolor-icon-theme
-repo_makedepends:
-- intltool
-- xfce4-panel
 update_on:
 - alpm: xfce4-power-manager
   source: archpkg

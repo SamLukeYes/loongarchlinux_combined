@@ -1,12 +1,9 @@
 destsubdir: core
-repo_checkdepends: []
 repo_depends:
-- glibc
-- e2fsprogs
-- openldap: libldap
 - keyutils
-repo_makedepends:
-- perl
+- e2fsprogs
+- glibc
+- openldap: libldap
 update_on:
 - alpm: keyutils
   provides: libkeyutils.so

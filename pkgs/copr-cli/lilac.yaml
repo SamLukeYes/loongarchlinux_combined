@@ -7,16 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''copr-cli'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-responses
 repo_depends:
-- python-copr
 - python-humanize
-- python-jinja
 - python-setuptools
 - python-simplejson
-repo_makedepends: []
+- python-jinja
+- python-copr
 update_on:
 - alpm: copr-cli
   source: archpkg

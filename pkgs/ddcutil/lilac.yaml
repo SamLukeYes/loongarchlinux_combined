@@ -1,12 +1,9 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- glib2
-- i2c-tools
-- libusb
-- libdrm
-- libxrandr
 - kmod
-repo_makedepends:
-- systemd
+- libxrandr
+- libusb
+- i2c-tools
+- libdrm
+- glib2
 update_on: []

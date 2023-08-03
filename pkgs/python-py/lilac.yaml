@@ -7,21 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-py'')
 
   '
-repo_checkdepends:
-- python-attrs
-- python-pytest
-- subversion
 repo_depends:
-- python
-- python-apipkg
 - python-iniconfig
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-setuptools
-- python-setuptools-scm
-- python-wheel
+- python-apipkg
+- python
 update_on:
 - alias: python
 - alpm: python-py

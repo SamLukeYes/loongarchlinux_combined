@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opam'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - bubblewrap
-- ocaml: ocaml-compiler-libs
 - unzip
-repo_makedepends:
-- git
+- ocaml: ocaml-compiler-libs
 update_on:
 - alpm: opam
   source: archpkg

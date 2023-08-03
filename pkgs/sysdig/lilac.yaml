@@ -9,28 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sysdig'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- jsoncpp
-- luajit
-- curl
-- jq
-- libb64
-- grpc
-- yaml-cpp
 - zstd
-- dkms
-repo_makedepends:
-- cmake
-- gtest
 - jsoncpp
 - luajit
-- curl
-- jq
 - libb64
+- curl
+- dkms
 - grpc
+- jq
 - yaml-cpp
-- re2
 update_on:
 - alias: jsoncpp
 - alpm: jsoncpp

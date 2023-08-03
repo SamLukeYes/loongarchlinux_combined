@@ -7,11 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-statistics-descriptive'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - perl-list-moreutils
-repo_makedepends:
-- perl-module-build
 update_on:
 - alpm: perl-statistics-descriptive
   source: archpkg

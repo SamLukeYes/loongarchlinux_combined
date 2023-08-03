@@ -9,43 +9,29 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telegram-desktop'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- hunspell
-- ffmpeg
-- hicolor-icon-theme
-- lz4
-- zlib: minizip
-- openal
-- ttf-opensans
-- qt6-imageformats
-- qt6-svg
-- qt6-wayland
-- qt6-5compat
-- xxhash
-- glibmm-2.68
-- rnnoise
 - pipewire
-- libxtst
+- hicolor-icon-theme
 - libxrandr
-- jemalloc
-- abseil-cpp
-- libdispatch
-- openssl
+- ffmpeg
+- ttf-opensans
+- zlib: minizip
+- qt6-5compat
 - protobuf
-repo_makedepends:
-- cmake
-- git
-- ninja
-- python
-- range-v3
-- tl-expected
-- microsoft-gsl
-- meson
-- extra-cmake-modules
-- wayland-protocols
-- plasma-wayland-protocols
-- libtg_owt
+- qt6-svg
+- libdispatch
+- jemalloc
+- glibmm-2.68
+- hunspell
+- lz4
+- qt6-wayland
+- openal
+- libxtst
+- abseil-cpp
+- openssl
+- rnnoise
+- xxhash
+- qt6-imageformats
 update_on:
 - alias: protobuf
 - alpm: telegram-desktop

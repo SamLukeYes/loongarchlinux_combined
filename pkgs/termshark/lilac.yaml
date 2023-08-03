@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''termshark'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
 - wireshark: wireshark-cli
-repo_makedepends:
-- go
 update_on:
 - alpm: termshark
   source: archpkg

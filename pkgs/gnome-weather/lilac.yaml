@@ -7,18 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''gnome-weather'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- geoclue
-- gjs
 - gtk4
 - libadwaita
+- gjs
 - libgweather-4
-repo_makedepends:
-- appstream-glib
-- git
-- gobject-introspection
-- meson
+- geoclue
 update_on:
 - alpm: gnome-weather
   source: archpkg

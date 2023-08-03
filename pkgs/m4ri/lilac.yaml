@@ -9,10 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''m4ri'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libpng
-repo_makedepends: []
 update_on:
 - alpm: m4ri
   source: archpkg

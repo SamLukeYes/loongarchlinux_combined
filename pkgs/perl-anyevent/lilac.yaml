@@ -7,14 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-anyevent'')
 
   '
-repo_checkdepends:
-- glib-perl
-- perl-async-interrupt
-- perl-ev
-- perl-net-ssleay
 repo_depends:
 - perl
-repo_makedepends: []
 update_on:
 - alias: perl
 - alpm: perl-anyevent

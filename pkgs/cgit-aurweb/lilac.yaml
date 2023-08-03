@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cgit-aurweb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
 - luajit
-repo_makedepends:
-- git
-- zlib
-- curl
-- asciidoc
+- openssl
 update_on:
 - alpm: cgit-aurweb
   source: archpkg

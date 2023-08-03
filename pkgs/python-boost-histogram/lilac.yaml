@@ -9,17 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-boost-histogra
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-benchmark
 repo_depends:
 - python-numpy
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools-scm
 update_on:
 - alpm: python-boost-histogram
   source: archpkg

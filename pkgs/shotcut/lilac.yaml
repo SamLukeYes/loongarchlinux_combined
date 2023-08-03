@@ -9,25 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''shotcut'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt6-base
-- qt6-declarative
-- qt6-multimedia
-- qt6-websockets
-- qt6-translations
-- mlt
-- movit
-- ffmpeg
-- libvpx
-- lame
-- frei0r-plugins
 - ladspa
-repo_makedepends:
-- qt6-tools
-- cmake
-- ninja
-- clang
+- qt6-translations
+- lame
+- qt6-base
+- ffmpeg
+- qt6-declarative
+- libvpx
+- qt6-multimedia
+- mlt
+- frei0r-plugins
+- movit
+- qt6-websockets
 update_on:
 - alpm: qt6-base
   source: alpm

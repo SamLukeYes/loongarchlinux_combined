@@ -7,15 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-open-uri'')
 
   '
-repo_checkdepends:
-- ruby-rake
-- ruby-webrick
 repo_depends:
+- ruby-uri
+- ruby-time
 - ruby
 - ruby-stringio
-- ruby-time
-- ruby-uri
-repo_makedepends: []
 update_on:
 - alias: ruby
 - alpm: ruby-open-uri

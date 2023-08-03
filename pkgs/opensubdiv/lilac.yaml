@@ -9,23 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opensubdiv'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ptex
-- libxcursor
+- libxi
 - xorg-xrandr
 - libxinerama
-- libxi
-repo_makedepends:
-- cmake
-- doxygen
-- glew
-- python
-- python-pygments
-- python-docutils
-- opencl-headers
-- cuda
-- libglvnd
+- libxcursor
 update_on:
 - alpm: opensubdiv
   source: archpkg

@@ -9,43 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''helm-synth'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - alsa-lib
-- freetype2
 - gcc: gcc-libs
-- glibc
-- libglvnd
-- libx11
-- libxext
-- libxinerama
-- alsa-lib
-- freetype2
-- gcc: gcc-libs
-- glibc
 - hicolor-icon-theme
-- libglvnd
-- libx11
-- libxext
 - libxinerama
-- alsa-lib
 - freetype2
-- gcc: gcc-libs
+- libglvnd
+- libxext
+- libx11
 - glibc
-- libglvnd
-- libx11
-- libxext
-- libxinerama
-repo_makedepends:
-- alsa-lib
-- freetype2
-- hicolor-icon-theme
-- libxcursor
-- libglvnd
-- libx11
-- libxext
-- libxinerama
-- lv2
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

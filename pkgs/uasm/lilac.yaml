@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''uasm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- git
 update_on:
 - alpm: uasm
   source: archpkg

@@ -7,11 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''nvidia-prime'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
 - nvidia-utils
-repo_makedepends: []
+- bash
 update_on:
 - alpm: nvidia-prime
   source: archpkg

@@ -9,24 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnucash'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- aqbanking
-- gwenhywfar
-- boost: boost-libs
-- guile
-- libdbi
-- webkit2gtk
 - libofx
-repo_makedepends:
-- boost
-- cmake
-- gtest
-- libdbi-drivers
-- mariadb: mariadb-libs
-- postgresql: postgresql-libs
-- swig
-- python
+- gwenhywfar
+- webkit2gtk
+- libdbi
+- guile
+- aqbanking
+- boost: boost-libs
 update_on:
 - alpm: guile
   source: alpm

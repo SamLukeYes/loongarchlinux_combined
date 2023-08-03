@@ -7,14 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-publicsuffix2'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
 - publicsuffix-list
 - python
-repo_makedepends:
-- python-setuptools
-- python-requests
 update_on:
 - alias: python
 - alpm: python-publicsuffix2

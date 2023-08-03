@@ -7,29 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-mocket'')
 
   '
-repo_checkdepends:
-- pifpaf
-- python-pytest
-- python-pytest-asyncio
-- python-aiohttp
-- python-fastapi
-- python-gevent
-- python-httpx
-- python-pook
-- python-redis
-- python-asgiref
-- python-requests
-- python-sure
-- python-xxhash
-- redis
 repo_depends:
-- python-decorator
-- python-httptools
 - python-magic
+- python-httptools
 - python-urllib3
-repo_makedepends:
-- python-pipenv-to-requirements
-- python-setuptools
+- python-decorator
 update_on:
 - alpm: python-mocket
   source: archpkg

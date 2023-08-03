@@ -7,46 +7,31 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''imapsync'')
 
   '
-repo_checkdepends:
-- inetutils
-- lsb-release
-- time
-- procps-ng
-- perl-test-deep
-- perl-test-fatal
-- perl-test-mock-guard
-- perl-test-mockobject
-- perl-test-pod
-- perl-test-requires
-- perl-test-warn
 repo_depends:
-- perl-cgi
-- perl-crypt-openssl-rsa
-- perl-data-uniqid
-- perl-date-manip
-- perl-encode-imaputf7
-- perl-file-copy-recursive
-- perl-file-tail
 - perl-html-parser
-- perl-io-socket-inet6
-- perl-io-socket-ssl
-- perl-io-tee
-- perl-json-webtoken
-- perl-libwww
-- perl-module-scandeps
-- perl-mail-imapclient
-- perl-module-runtime
-- perl-ntlm
-- perl-package-stash
-- perl-proc-processtable
-- perl-readonly
-- perl-regexp-common
-- perl-sys-meminfo
-- perl-term-readkey
 - perl-unicode-string
-repo_makedepends:
-- cpanminus
-- perl-par-packer
+- perl-term-readkey
+- perl-data-uniqid
+- perl-libwww
+- perl-json-webtoken
+- perl-file-tail
+- perl-module-runtime
+- perl-io-socket-inet6
+- perl-regexp-common
+- perl-cgi
+- perl-mail-imapclient
+- perl-io-socket-ssl
+- perl-proc-processtable
+- perl-module-scandeps
+- perl-date-manip
+- perl-package-stash
+- perl-crypt-openssl-rsa
+- perl-io-tee
+- perl-readonly
+- perl-file-copy-recursive
+- perl-ntlm
+- perl-encode-imaputf7
+- perl-sys-meminfo
 update_on:
 - alpm: imapsync
   source: archpkg

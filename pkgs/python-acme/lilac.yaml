@@ -7,23 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-acme'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
+- python-requests
+- python-pytz
 - python-cryptography
-- python-josepy
 - python-pyopenssl
 - python-pyrfc3339
-- python-pytz
-- python-requests
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
-- python-sphinx
-- python-sphinx_rtd_theme
+- python-josepy
 update_on:
 - alpm: python-acme
   source: archpkg

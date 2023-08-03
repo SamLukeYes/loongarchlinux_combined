@@ -7,18 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-calmjs'')
 
   '
-repo_checkdepends:
-- npm
-- yarn
 repo_depends:
-- python
-- python-calmjs.parse
 - python-calmjs.types
+- python-calmjs.parse
+- python
 - python-setuptools
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-calmjs

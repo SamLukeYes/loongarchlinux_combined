@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-chell-quickch
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-chell
-- haskell-quickcheck
 - haskell-random
-repo_makedepends:
-- ghc
+- haskell-quickcheck
+- haskell-chell
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-chell
   source: alpm

@@ -7,13 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''vcsh'')
 
   '
-repo_checkdepends:
-- perl
-- perl-shell-command
-- perl-test-most
 repo_depends:
 - git
-repo_makedepends: []
 update_on:
 - alpm: vcsh
   source: archpkg

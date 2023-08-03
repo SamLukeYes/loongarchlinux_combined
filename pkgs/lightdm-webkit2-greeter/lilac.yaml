@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lightdm-webkit2-greet
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- lightdm
-- webkit2gtk
 - accountsservice
+- webkit2gtk
+- lightdm
 - gnome-backgrounds
-repo_makedepends:
-- gobject-introspection
-- meson
-- gettext
-- dbus-glib
 update_on:
 - alpm: lightdm-webkit2-greeter
   source: archpkg

@@ -1,15 +1,9 @@
 destsubdir: core
-repo_checkdepends: []
 repo_depends:
-- rpcbind
 - gssproxy
-- libevent
+- rpcbind
 - lvm2: device-mapper
-- openldap: libldap
+- libevent
 - krb5
-repo_makedepends:
-- libevent
-- sqlite
-- rpcsvc-proto
-- lvm2: device-mapper
+- openldap: libldap
 update_on: []

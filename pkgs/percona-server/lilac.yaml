@@ -9,46 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''percona-server'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- zlib
 - zstd
-- openssl
 - libfido2
-- zlib
-- zstd
-- lz4
-- openssl
-- jemalloc
-- readline
-- libaio
-- pam
 - jemalloc
 - numactl
-- lz4
-- zstd
-- openssl
-- libtirpc
+- libevent
 - curl
-- libevent
-- protobuf
-- icu
-repo_makedepends:
-- cmake
-- zlib
 - lz4
-- zstd
+- zlib
+- libtirpc
+- icu
 - libaio
-- pam
-- numactl
-- jemalloc
+- readline
 - openssl
-- rpcsvc-proto
-- doxygen
-- graphviz
-- libevent
 - protobuf
-- libfido2
+- pam
 update_on:
 - alias: readline
 - alias: protobuf

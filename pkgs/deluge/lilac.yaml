@@ -7,37 +7,22 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''deluge'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- xdg-utils
+- python-mako
+- librsvg
+- python-distro
+- pygobject: python-gobject
+- python-pillow
+- python-chardet
 - python-service-identity
 - python-idna
-- python-pyopenssl
-- python-chardet
-- python-setproctitle
-- python-pillow
+- python-cairo
 - python-ifaddr
-- python-distro
+- python-pyopenssl
+- python-setproctitle
 - python-geoip
-- python-mako
 - gtk3
-- librsvg
-- python-cairo
-- pygobject: python-gobject
-- xdg-utils
-repo_makedepends:
-- git
-- python-setuptools
-- python-wheel
-- intltool
-- python-rjsmin
-- gtk3
-- pygobject: python-gobject
-- python-cairo
-- librsvg
-- xdg-utils
-- libappindicator: libappindicator-gtk3
-- python-pygame
-- libnotify
 update_on:
 - alpm: deluge
   source: archpkg

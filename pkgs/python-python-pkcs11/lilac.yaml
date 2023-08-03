@@ -9,22 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-python-pkcs11'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-cryptography
-- python-oscrypto
-- python-pytest
-- softhsm
 repo_depends:
-- python
 - python-asn1crypto
 - python-cached-property
-repo_makedepends:
-- cython
-- python-build
-- python-installer
-- python-setuptools
-- python-setuptools-scm
-- python-wheel
+- python
 update_on:
 - alias: python
 - alpm: python-python-pkcs11

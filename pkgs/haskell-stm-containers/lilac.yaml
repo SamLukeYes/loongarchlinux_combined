@@ -9,23 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-stm-container
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-deferred-folds
-- haskell-focus
-- haskell-hashable
 - haskell-list-t
+- ghc: ghc-libs
+- haskell-hashable
+- haskell-focus
 - haskell-stm-hamt
-repo_makedepends:
-- ghc
-- uusi
-- haskell-htf
-- haskell-quickcheck
-- haskell-foldl
-- haskell-free
-- haskell-quickcheck-text
-- haskell-rerebase
 update_on:
 - alpm: haskell-deferred-folds
   source: alpm

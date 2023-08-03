@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wxsvg'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ffmpeg
 - libexif
 - wxwidgets: wxwidgets-gtk3
-repo_makedepends:
-- webkit2gtk
+- ffmpeg
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm

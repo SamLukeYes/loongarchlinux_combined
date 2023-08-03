@@ -7,15 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''adapta-gtk-theme'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- git
-- gnome-shell
-- inkscape
-- libxml2
-- parallel
-- sassc
 update_on:
 - alpm: adapta-gtk-theme
   source: archpkg

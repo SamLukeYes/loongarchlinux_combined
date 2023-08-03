@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''serf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - apr-util
-repo_makedepends:
-- scons
 update_on:
 - alpm: serf
   source: archpkg

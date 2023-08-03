@@ -7,16 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pgpy'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-order
 repo_depends:
-- python
 - python-cryptography
 - python-pyasn1
-repo_makedepends:
-- git
-- python-setuptools
+- python
 update_on:
 - alias: python
 - alpm: python-pgpy

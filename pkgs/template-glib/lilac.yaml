@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''template-glib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glib2
 - gobject-introspection: gobject-introspection-runtime
-repo_makedepends:
-- git
-- meson
-- vala
-- gobject-introspection
-- gtk-doc
 update_on:
 - alpm: template-glib
   source: archpkg

@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qvkbd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-declarative
 - qt5-x11extras
-- libxtst
 - hicolor-icon-theme
-repo_makedepends: []
+- qt5-declarative
+- libxtst
 update_on:
 - alpm: qt5-declarative
   source: alpm

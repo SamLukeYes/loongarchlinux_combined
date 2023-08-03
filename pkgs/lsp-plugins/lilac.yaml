@@ -9,58 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lsp-plugins'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- jq
-- lv2lint
 repo_depends:
-- cairo
-- freetype2
-- gcc: gcc-libs
-- glibc
 - libsndfile
-- libx11
-- libxrandr
-- gcc: gcc-libs
-- glibc
-- libsndfile
-- cairo
-- freetype2
-- gcc: gcc-libs
-- glibc
-- libsndfile
-- libx11
-- libxrandr
-- cairo
-- freetype2
-- gcc: gcc-libs
-- glibc
 - hicolor-icon-theme
-- libsndfile
-- libx11
+- glibc
+- gcc: gcc-libs
 - libxrandr
+- libglvnd
 - cairo
 - freetype2
-- gcc: gcc-libs
-- glibc
-- libsndfile
 - libx11
-- libxrandr
-- gcc: gcc-libs
-- glibc
-- libglvnd
-- libx11
-repo_makedepends:
-- cairo
-- gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
-- libglvnd
-- libx11
-- libxrandr
-- ladspa
-- libsndfile
-- lv2
-- php
 update_on:
 - alpm: libsndfile
   provides: libsndfile.so

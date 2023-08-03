@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qgit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- git
-- hicolor-icon-theme
 - qt5-base
 - qt5-svg
-repo_makedepends:
-- cmake
+- hicolor-icon-theme
+- git
 update_on:
 - alpm: qt5-base
   source: alpm

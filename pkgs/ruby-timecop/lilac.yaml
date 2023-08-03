@@ -7,15 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-timecop'')
 
   '
-repo_checkdepends:
-- ruby-rake
-- ruby-activesupport
-- ruby-minitest-rg
-- ruby-mocha
-- ruby-pry
 repo_depends:
 - ruby
-repo_makedepends: []
 update_on:
 - alias: ruby
 - alpm: ruby-timecop

@@ -9,20 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgweather-4'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pylint
 repo_depends:
 - libsoup3
-- geocode-glib: geocode-glib-2
 - dconf
 - libxml2
-repo_makedepends:
-- gobject-introspection
-- vala
-- git
-- gi-docgen
-- meson
-- pygobject: python-gobject
+- geocode-glib: geocode-glib-2
 update_on:
 - alpm: libgweather-4
   source: archpkg

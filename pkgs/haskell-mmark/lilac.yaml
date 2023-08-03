@@ -9,30 +9,24 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mmark'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-case-insensitive
+- haskell-microlens-th
+- haskell-unordered-containers
 - haskell-dlist
-- haskell-email-validate
+- haskell-text-metrics
+- haskell-aeson
+- ghc: ghc-libs
 - haskell-foldl
+- haskell-case-insensitive
+- haskell-email-validate
 - haskell-hashable
 - haskell-html-entity-map
-- haskell-lucid
-- haskell-megaparsec
-- haskell-microlens
-- haskell-microlens-th
-- haskell-modern-uri
 - haskell-parser-combinators
-- haskell-text-metrics
-- haskell-unordered-containers
+- haskell-modern-uri
 - haskell-yaml
-repo_makedepends:
-- ghc
-- haskell-quickcheck
-- haskell-hspec
-- haskell-hspec-megaparsec
+- haskell-megaparsec
+- haskell-lucid
+- haskell-microlens
 update_on:
 - alpm: haskell-aeson
   source: alpm

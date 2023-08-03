@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyogrio'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
 - gdal
-- python-certifi
 - python-numpy
-repo_makedepends:
-- cython
-- python-setuptools
-- python-versioneer
+- python-certifi
 update_on:
 - alpm: python-pyogrio
   source: archpkg

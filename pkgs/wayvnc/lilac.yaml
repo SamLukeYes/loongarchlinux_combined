@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wayvnc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- libdrm
 - wayland
-repo_makedepends:
-- git
-- meson
-- ninja
-- pam
-- scdoc
+- libdrm
+- glibc
 update_on:
 - alpm: aml
   provides: libaml.so

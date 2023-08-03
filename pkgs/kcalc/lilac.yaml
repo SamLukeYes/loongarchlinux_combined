@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kcalc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- mpfr
-- kxmlgui
 - knotifications
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
+- kxmlgui
+- mpfr
 update_on:
 - alpm: kcalc
   source: archpkg

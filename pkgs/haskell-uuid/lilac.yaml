@@ -9,21 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-uuid'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-cryptohash-md5
-- haskell-cryptohash-sha1
-- haskell-entropy
+- ghc: ghc-libs
 - haskell-network-info
 - haskell-random
 - haskell-uuid-types
-repo_makedepends:
-- ghc
-- haskell-quickcheck
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
+- haskell-entropy
+- haskell-cryptohash-sha1
 update_on:
 - alpm: haskell-cryptohash-md5
   source: alpm

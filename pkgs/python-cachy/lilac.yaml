@@ -1,17 +1,5 @@
 destsubdir: extra
-repo_checkdepends:
-- python-flexmock
-- python-pytest-mock
-- python-memcached
-- python-fakeredis
-- pifpaf
-- memcached
 repo_depends:
 - python
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
-- python-poetry-core
 update_on:
 - alias: python

@@ -7,12 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-discid'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- libdiscid
 - python
-repo_makedepends: []
+- libdiscid
 update_on:
 - alias: python
 - alpm: python-discid

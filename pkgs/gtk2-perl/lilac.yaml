@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtk2-perl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- ttf-dejavu
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- gtk2
 - pango-perl
-repo_makedepends:
-- perl-extutils-pkgconfig
-- perl-extutils-depends
+- gtk2
 update_on:
 - alpm: gtk2-perl
   source: archpkg

@@ -9,19 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hoel'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
 - jansson
-repo_makedepends:
-- cmake
-- doxygen
-- git
-- graphviz
-- mariadb: mariadb-libs
-- ninja
-- postgresql: postgresql-libs
-- sqlite
 update_on:
 - alpm: orcania
   provides: liborcania.so

@@ -7,14 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-slip'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- polkit
 - python-decorator
-- pygobject: python-gobject
 - python-six
-repo_makedepends:
-- python-setuptools
+- polkit
+- pygobject: python-gobject
 update_on:
 - alpm: python-slip
   source: archpkg

@@ -9,28 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libnma'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - dconf
+- gtk4
 - gcr-4
 - iso-codes
-- networkmanager: libnm
-- mobile-broadband-provider-info
 - gtk3
-- gtk4
-repo_makedepends:
-- dconf
-- gcr-4
-- git
-- gobject-introspection
-- gtk-doc
-- gtk3
-- gtk4
-- iso-codes
-- networkmanager: libnm
-- meson
 - mobile-broadband-provider-info
-- vala
+- networkmanager: libnm
 update_on:
 - alpm: libnma
   source: archpkg

@@ -9,30 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dhall-docs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-base16-bytestring
-- haskell-cryptohash-sha256
-- dhall
-- haskell-file-embed
-- haskell-lens-family-core
-- haskell-lucid
-- haskell-megaparsec
-- haskell-mmark
 - haskell-optparse-applicative
+- ghc: ghc-libs
+- haskell-file-embed
+- haskell-mmark
+- haskell-lens-family-core
+- dhall
+- haskell-megaparsec
 - haskell-path
 - haskell-path-io
+- haskell-cryptohash-sha256
+- haskell-lucid
+- haskell-base16-bytestring
 - haskell-prettyprinter
-repo_makedepends:
-- ghc
-- uusi
-- haskell-doctest
-- haskell-foldl
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-silver
-- haskell-turtle
 update_on:
 - alpm: haskell-base16-bytestring
   source: alpm

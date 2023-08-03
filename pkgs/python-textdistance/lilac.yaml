@@ -7,21 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-textdistance'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-hypothesis
-- python-isort
-- python-pylev
-- python-py_stringmatching
-- python-tabulate
 repo_depends:
-- python-abydos
-- python-jellyfish
-- python-numpy
 - python-levenshtein
 - python-pyxdameraulevenshtein
-repo_makedepends:
-- python-setuptools
+- python-jellyfish
+- python-abydos
+- python-numpy
 update_on:
 - alpm: python-textdistance
   source: archpkg

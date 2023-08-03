@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''chewing-editor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- valgrind
 repo_depends:
-- glibc
-- libchewing
 - qt5-base
-repo_makedepends:
-- cmake
-- qt5-tools
-- help2man
-- gtest
+- libchewing
+- glibc
 update_on:
 - alpm: qt5-base
   source: alpm

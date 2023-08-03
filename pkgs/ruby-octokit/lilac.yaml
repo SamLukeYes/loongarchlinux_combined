@@ -7,28 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-octokit'')
 
   '
-repo_checkdepends:
-- ruby-awesome_print
-- ruby-yard
-- ruby-rexml
-- ruby-jwt
-- ruby-mime-types
-- ruby-multi_json
-- ruby-netrc
-- ruby-rb-fsevent
-- ruby-rbnacl
-- ruby-rspec
-- ruby-simplecov
-- ruby-vcr
-- ruby-webmock
-- ruby-pry-byebug
-- ruby-redcarpet
-- ruby-rss
 repo_depends:
-- ruby-faraday
 - ruby-sawyer
-repo_makedepends:
-- ruby-rake
+- ruby-faraday
 update_on:
 - alpm: ruby-octokit
   source: archpkg

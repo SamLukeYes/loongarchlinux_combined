@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''irssi-xmpp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
 - loudmouth
+- glib2
 - irssi
-repo_makedepends: []
 update_on:
 - alpm: irssi-xmpp
   source: archpkg

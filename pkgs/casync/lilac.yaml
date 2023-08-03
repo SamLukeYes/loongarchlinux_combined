@@ -9,35 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''casync'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- gzip
-- nbd
-- python
-- rsync
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- openssl
-- zlib
-- gcc: gcc-libs
-- glibc
-- openssl
-- zlib
-- curl
 - acl
+- gcc: gcc-libs
+- zstd
+- xz
+- curl
 - systemd: systemd-libs
-- xz
-- zstd
-repo_makedepends:
-- acl
-- curl
-- fuse2
-- git
-- meson
-- python-sphinx
-- systemd
-- xz
-- zstd
+- zlib
+- openssl
+- glibc
 update_on:
 - alpm: curl
   provides: libcurl.so

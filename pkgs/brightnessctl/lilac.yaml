@@ -9,10 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''brightnessctl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - systemd: systemd-libs
-repo_makedepends: []
 update_on:
 - alpm: brightnessctl
   source: archpkg

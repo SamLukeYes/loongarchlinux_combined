@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libkmahjongg'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kconfigwidgets
 - kcompletion
 - qt5-svg
-repo_makedepends:
-- extra-cmake-modules
+- kconfigwidgets
 update_on:
 - alpm: libkmahjongg
   source: archpkg

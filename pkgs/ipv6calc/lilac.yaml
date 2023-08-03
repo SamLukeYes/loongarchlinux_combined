@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ipv6calc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- perl-digest-sha1
-- perl-uri
-- perl-html-parser
-- perl-proc-processtable
 repo_depends: []
-repo_makedepends:
-- geoip
 update_on:
 - alpm: ipv6calc
   source: archpkg

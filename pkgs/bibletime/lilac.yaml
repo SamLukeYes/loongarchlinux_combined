@@ -9,21 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bibletime'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- sword
+- qt5-svg
 - clucene
 - qt5-webengine
-- qt5-svg
-repo_makedepends:
-- cmake
-- docbook-xsl
-- expac
-- fop
-- git
-- ninja
-- po4a
-- qt5-tools
+- sword
 update_on:
 - alpm: bibletime
   source: archpkg

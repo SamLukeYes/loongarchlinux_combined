@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''clipgrab'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-webengine
 - yt-dlp
-repo_makedepends: []
+- qt5-webengine
 update_on:
 - alpm: clipgrab
   source: archpkg

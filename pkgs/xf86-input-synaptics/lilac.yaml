@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xf86-input-synaptics'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxtst
 - libevdev
-repo_makedepends:
-- xorg-server: xorg-server-devel
-- libxi
-- libx11
-- xorgproto
+- libxtst
 update_on:
 - alpm: xf86-input-synaptics
   source: archpkg

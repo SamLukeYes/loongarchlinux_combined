@@ -9,20 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vigra'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-nose
 repo_depends:
-- libpng
-- libtiff
-- openexr
 - gcc: gcc-libs
-- hdf5
+- openexr
+- libtiff
 - fftw
-repo_makedepends:
-- git
-- cmake
-- boost
-- python-numpy
+- hdf5
+- libpng
 update_on:
 - alpm: vigra
   source: archpkg

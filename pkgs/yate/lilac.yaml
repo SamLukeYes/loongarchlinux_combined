@@ -9,16 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yate'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- speex
-- gsm
-- postgresql: postgresql-libs
-- mariadb: mariadb-libs
 - alsa-lib
-- openssl
+- speex
+- postgresql: postgresql-libs
 - sqlite
-repo_makedepends: []
+- openssl
+- mariadb: mariadb-libs
+- gsm
 update_on:
 - alpm: yate
   source: archpkg

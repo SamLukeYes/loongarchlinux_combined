@@ -9,26 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''magma'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- lapack: blas
-- lapack
-- lapack: blas
-- lapack
 - cuda
 - lapack: blas
 - lapack
 - hip-runtime-amd
-- hipblas
 - hipsparse
-repo_makedepends:
-- gcc: gcc-fortran
-- cmake
-- ninja
-- cuda
-- hip-runtime-amd
 - hipblas
-- hipsparse
 update_on:
 - alpm: magma
   source: archpkg

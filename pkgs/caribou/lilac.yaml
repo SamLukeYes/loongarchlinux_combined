@@ -9,22 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''caribou'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - pyatspi: python-atspi
-- pygobject: python-gobject
-- gtk3
-- libxklavier
+- dconf
 - libgee
 - clutter
-- dconf
-repo_makedepends:
-- intltool
-- docbook-xsl
-- gobject-introspection
-- vala
-- git
-- gnome-common
+- gtk3
+- pygobject: python-gobject
+- libxklavier
 update_on:
 - alpm: caribou
   source: archpkg

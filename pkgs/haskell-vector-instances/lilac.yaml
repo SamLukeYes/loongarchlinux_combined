@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-vector-instan
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-comonad
-- haskell-hashable
-- haskell-keys
 - haskell-pointed
+- ghc: ghc-libs
+- haskell-hashable
 - haskell-semigroupoids
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
+- haskell-keys
+- haskell-comonad
 update_on:
 - alpm: haskell-comonad
   source: alpm

@@ -7,21 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''routersploit'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-forked
-- python-pytest-xdist
-- flake8
-- python-threat9-test-bed
 repo_depends:
-- python
-- python-future
+- python-pysnmp
 - python-requests
 - python-paramiko
-- python-pysnmp
 - python-pycryptodome
-repo_makedepends:
-- python-setuptools
+- python-future
+- python
 update_on:
 - alias: python
 - alpm: routersploit

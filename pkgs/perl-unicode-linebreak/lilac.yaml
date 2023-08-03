@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-unicode-linebrea
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- perl-test-pod
 repo_depends:
-- perl
 - perl-mime-charset
 - libthai
-repo_makedepends: []
+- perl
 update_on:
 - alias: perl
 - alpm: perl-unicode-linebreak

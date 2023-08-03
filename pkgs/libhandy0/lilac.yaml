@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libhandy0'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- glib2
 - gtk3
-repo_makedepends:
-- git
-- gobject-introspection
-- meson
-- vala
+- glib2
 update_on:
 - alpm: libhandy0
   source: archpkg

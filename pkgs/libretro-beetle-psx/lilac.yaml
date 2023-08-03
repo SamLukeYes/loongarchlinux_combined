@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libretro-beetle-psx''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libretro-core-info
 - zlib
-- libretro-core-info
-- zlib
-repo_makedepends:
-- git
-- libglvnd
-- mesa
-- vulkan-icd-loader
 update_on:
 - alpm: libretro-beetle-psx
   source: archpkg

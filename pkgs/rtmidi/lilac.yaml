@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rtmidi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - alsa-lib
-- gcc: gcc-libs
-- glibc
-repo_makedepends:
-- alsa-lib
-- doxygen
 - gcc: gcc-libs
 - glibc
 update_on:

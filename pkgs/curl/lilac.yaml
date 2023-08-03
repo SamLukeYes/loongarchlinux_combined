@@ -9,23 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''curl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- zstd
 - ca-certificates
+- libidn2
 - brotli
 - krb5
-- libidn2
-- libnghttp2
 - libpsl
 - libssh2
-- openssl
 - zlib
-- zstd
-- openssl
 - gnutls
-repo_makedepends:
-- git
-- patchelf
+- openssl
+- libnghttp2
 update_on:
 - alpm: brotli
   provides: libbrotlidec.so

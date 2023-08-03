@@ -7,14 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-uncertainties'')
 
   '
-repo_checkdepends:
-- python-nose
-- python-numpy
-- python: python-tests
 repo_depends:
 - python-future
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-uncertainties
   source: archpkg

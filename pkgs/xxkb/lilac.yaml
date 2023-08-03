@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xxkb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libxpm
-repo_makedepends:
-- imake
 update_on:
 - alpm: xxkb
   source: archpkg

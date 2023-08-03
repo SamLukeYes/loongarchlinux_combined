@@ -7,17 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-sub-handlesvia'')
 
   '
-repo_checkdepends:
-- perl-test-requires
-- perl-test-fatal
 repo_depends:
-- perl
-- perl-moo
-- perl-mouse
 - perl-exporter-tiny
+- perl-mouse
+- perl
 - perl-type-tiny
+- perl-moo
 - perl-class-tiny
-repo_makedepends: []
 update_on:
 - alias: perl
 - alpm: perl-sub-handlesvia

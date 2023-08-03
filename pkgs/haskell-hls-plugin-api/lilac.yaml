@@ -9,35 +9,26 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-plugin-ap
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-diff
+- haskell-unordered-containers
 - haskell-aeson
-- haskell-data-default
-- haskell-dependent-map
-- haskell-dependent-sum
-- haskell-dlist
-- haskell-extra
-- haskell-hashable
-- haskell-hls-graph
-- haskell-hw-fingertree
-- haskell-lens
-- haskell-lens-aeson
-- haskell-lsp
-- haskell-megaparsec
+- haskell-diff
 - haskell-optparse-applicative
+- haskell-lens
+- haskell-hashable
+- haskell-lsp
+- haskell-lens-aeson
 - haskell-opentelemetry
 - haskell-regex-tdfa
-- haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
-- haskell-lsp-types
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
-- haskell-tasty-rerun
+- ghc: ghc-libs
+- haskell-dependent-map
+- haskell-extra
+- haskell-dependent-sum
+- haskell-hls-graph
+- haskell-dlist
+- haskell-data-default
+- haskell-megaparsec
+- haskell-hw-fingertree
 update_on:
 - alpm: haskell-diff
   source: alpm

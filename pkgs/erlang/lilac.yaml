@@ -9,25 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''erlang'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glu
 - ncurses
-- openssl
-- webkit2gtk
+- glu
 - wxwidgets: wxwidgets-gtk3
 - erlang-nox
+- webkit2gtk
 - unixodbc
-repo_makedepends:
-- fop
-- git
-- glu
-- libxslt
-- lksctp-tools
-- mesa
-- perl
-- unixodbc
-- wxwidgets: wxwidgets-gtk3
+- openssl
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm

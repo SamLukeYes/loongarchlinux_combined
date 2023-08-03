@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kauth'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kcoreaddons
 - polkit-qt: polkit-qt5
-repo_makedepends:
-- extra-cmake-modules
-- qt5-tools
-- qt5-doc
-- clang
-- doxygen
 update_on:
 - alpm: kauth
   source: archpkg

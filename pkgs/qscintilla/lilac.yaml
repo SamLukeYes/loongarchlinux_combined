@@ -9,19 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qscintilla'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt5-base
-- pyqt5: python-pyqt5
 - qt6-base
 - pyqt6: python-pyqt6
-repo_makedepends:
 - pyqt5: python-pyqt5
-- qt5-tools
-- pyqt6: python-pyqt6
-- qt6-tools
-- sip
-- pyqt-builder
 update_on:
 - alpm: qt5-base
   source: alpm

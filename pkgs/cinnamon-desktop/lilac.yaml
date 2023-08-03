@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cinnamon-desktop'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- accountsservice
-- gtk3
-- libxkbfile
 - pulseaudio: libpulse
-repo_makedepends:
-- meson
-- samurai
-- gobject-introspection
-- intltool
+- accountsservice
+- libxkbfile
+- gtk3
 update_on:
 - alpm: cinnamon-desktop
   source: archpkg

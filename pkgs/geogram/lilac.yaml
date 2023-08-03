@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''geogram'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glu
 - glfw: glfw-x11
-repo_makedepends:
-- cmake
-- ninja
 update_on:
 - alpm: glfw-x11
   source: alpm

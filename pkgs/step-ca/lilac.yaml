@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''step-ca'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - pcsclite
-repo_makedepends:
-- go
+- glibc
 update_on:
 - alpm: step-ca
   source: archpkg

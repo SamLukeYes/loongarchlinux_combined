@@ -9,41 +9,29 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-tactics-p
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-extra
-- haskell-fingertree
-- haskell-generic-lens
-- haskell-ghc-exactprint
-- haskell-ghc-source-gen
-- haskell-ghcide
-- haskell-hls-graph
-- haskell-hls-plugin-api
-- haskell-hls-refactor-plugin
-- haskell-hyphenation
-- haskell-lens
-- haskell-lsp
-- haskell-megaparsec
-- haskell-parser-combinators
-- haskell-prettyprinter
-- haskell-refinery
-- haskell-retrie
-- haskell-syb
-- haskell-unagi-chan
 - haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
-- haskell-quickcheck
-- haskell-hls-test-utils
-- haskell-hspec
-- haskell-hspec-discover
-- haskell-hspec-expectations
-- haskell-lsp-types
-- haskell-tasty-hunit
-- haskell-tasty-hspec
+- haskell-hyphenation
+- haskell-aeson
+- haskell-generic-lens
+- haskell-hls-plugin-api
+- haskell-syb
+- haskell-lens
+- haskell-fingertree
+- haskell-ghc-exactprint
+- haskell-lsp
+- haskell-hls-refactor-plugin
+- haskell-ghcide
+- ghc: ghc-libs
+- haskell-retrie
+- haskell-parser-combinators
+- haskell-refinery
+- haskell-extra
+- haskell-hls-graph
+- haskell-ghc-source-gen
+- haskell-unagi-chan
+- haskell-megaparsec
+- haskell-prettyprinter
 update_on:
 - alpm: haskell-aeson
   source: alpm

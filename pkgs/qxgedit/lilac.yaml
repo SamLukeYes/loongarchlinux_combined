@@ -9,23 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qxgedit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
 - glibc
-- hicolor-icon-theme
+- alsa-lib
+- gcc: gcc-libs
 - qt6-base
 - qt6-svg
-- gcc: gcc-libs
-- glibc
 - hicolor-icon-theme
-- qt6-base
-- qt6-svg
-- alsa-lib
-repo_makedepends:
-- alsa-lib
-- cmake
-- qt6-tools
 update_on:
 - alpm: qt6-base
   source: alpm

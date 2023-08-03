@@ -1,37 +1,18 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- ruby2.7
-- git
-- perl-image-exiftool
-- gitlab-gitaly
-- openssh
 - redis
-- libxslt
-- icu
 - re2
-- http-parser
-- nodejs
-- openssl
-- ruby2.7
-- git
-- perl-image-exiftool
-- gitlab-gitaly
 - openssh
-- redis
-- libxslt
-- icu
-- re2
-- http-parser
+- git
 - nodejs
-- openssl
 - gitlab-shell
-repo_makedepends:
-- cmake
-- postgresql
-- yarn
-- go
-- nodejs
+- libxslt
+- perl-image-exiftool
+- gitlab-gitaly
+- openssl
+- ruby2.7
+- http-parser
+- icu
 update_on:
 - alias: icu
 - alias: icu

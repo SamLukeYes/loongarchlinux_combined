@@ -9,31 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''stochas'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
 - glibc
+- gcc: gcc-libs
+- zlib
 - hicolor-icon-theme
 - libpng
-- zlib
-- gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
-- libpng
-- zlib
-repo_makedepends:
-- alsa-lib
-- cmake
-- flac
-- freetype2
-- gendesk
-- libogg
-- libvorbis
-- libx11
-- libxcursor
-- libxinerama
-- libxrandr
-- juce
 update_on:
 - alpm: flac
   provides: libFLAC.so

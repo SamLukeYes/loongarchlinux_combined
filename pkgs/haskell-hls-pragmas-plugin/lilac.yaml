@@ -9,22 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-pragmas-p
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- git
 repo_depends:
-- ghc: ghc-libs
-- haskell-extra
-- haskell-fuzzy
-- haskell-ghcide
-- haskell-hls-plugin-api
-- haskell-lens
-- haskell-lsp
 - haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hls-test-utils
-- haskell-lsp-types
+- haskell-lens
+- ghc: ghc-libs
+- haskell-hls-plugin-api
+- haskell-lsp
+- haskell-fuzzy
+- haskell-extra
+- haskell-ghcide
 update_on:
 - alpm: haskell-extra
   source: alpm

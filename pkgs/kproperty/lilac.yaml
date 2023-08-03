@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kproperty'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kwidgetsaddons
-- kguiaddons
-- kcoreaddons
 - kconfig
-repo_makedepends:
-- extra-cmake-modules
-- python
-- qt5-tools
-- doxygen
-- qt5-doc
+- kcoreaddons
+- kguiaddons
+- kwidgetsaddons
 update_on:
 - alpm: kconfig
   source: alpm

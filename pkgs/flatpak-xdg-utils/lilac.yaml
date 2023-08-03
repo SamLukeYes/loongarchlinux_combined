@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''flatpak-xdg-utils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- ninja
-- meson
 update_on:
 - alpm: flatpak-xdg-utils
   source: archpkg

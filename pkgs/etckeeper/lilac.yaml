@@ -7,15 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''etckeeper'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- git
 - diffutils
 - sed
-repo_makedepends:
 - git
-- mercurial
-- breezy
 update_on:
 - alpm: etckeeper
   source: archpkg

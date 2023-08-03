@@ -9,23 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''alacritty'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- ttf-dejavu
 repo_depends:
-- freetype2
+- libxkbcommon
 - fontconfig
+- libxrandr
 - libxi
 - libxcursor
-- libxkbcommon
-- libxrandr
-repo_makedepends:
-- git
-- rust
-- cmake
-- ncurses
-- desktop-file-utils
-- gdb
-- libxcb
+- freetype2
 update_on:
 - alpm: alacritty
   source: archpkg

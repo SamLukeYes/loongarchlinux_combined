@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-psutil'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- net-tools
-- procps-ng
-- python-pytest
 repo_depends:
 - python
-repo_makedepends:
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-psutil

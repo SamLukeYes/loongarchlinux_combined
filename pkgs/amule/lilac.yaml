@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''amule'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libupnp
 - wxwidgets: wxwidgets-gtk3
 - gd
-- geoip
-- libupnp
 - crypto++
-repo_makedepends:
-- boost
-- cmake
+- geoip
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm

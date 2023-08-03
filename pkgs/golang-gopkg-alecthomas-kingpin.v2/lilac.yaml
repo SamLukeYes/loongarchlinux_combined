@@ -7,13 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''golang-gopkg-alecthomas-kingpin.v2'')
 
   '
-repo_checkdepends:
-- golang-github-stretchr-testify
 repo_depends:
-- go
 - golang-github-alecthomas-template
 - golang-github-alecthomas-units
-repo_makedepends: []
+- go
 update_on:
 - alpm: golang-gopkg-alecthomas-kingpin.v2
   source: archpkg

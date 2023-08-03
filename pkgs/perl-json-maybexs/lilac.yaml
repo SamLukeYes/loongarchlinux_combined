@@ -7,12 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-json-maybexs'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - perl
-repo_makedepends:
-- perl-test-needs
-- perl-cpanel-json-xs
 update_on:
 - alias: perl
 - alpm: perl-json-maybexs

@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcron'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pam
 - run-parts
-repo_makedepends:
-- vim
-- systemd
+- pam
 update_on:
 - alpm: fcron
   source: archpkg

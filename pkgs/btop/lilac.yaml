@@ -9,10 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''btop'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-repo_makedepends: []
 update_on:
 - alpm: btop
   source: archpkg

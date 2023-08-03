@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-shar
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
+- libgee
 - gnome-user-share
 - gtk3
-- libgee
-repo_makedepends:
-- git
-- meson
-- switchboard
-- vala
+- glib2
 update_on:
 - alpm: granite
   provides: libgranite.so

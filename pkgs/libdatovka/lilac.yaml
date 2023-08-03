@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libdatovka'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxml2
 - openssl
 - curl
-repo_makedepends:
-- docbook-xsl
+- libxml2
 update_on:
 - alpm: libdatovka
   source: archpkg

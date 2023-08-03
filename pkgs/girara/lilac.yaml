@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''girara'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
-- glib2
 - json-glib
+- gtk3
 - pango
-repo_makedepends:
-- meson
-- ninja
-- doxygen
-- check
+- glib2
 update_on:
 - alpm: girara
   source: archpkg

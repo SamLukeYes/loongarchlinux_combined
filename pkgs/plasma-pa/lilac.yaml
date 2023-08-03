@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plasma-pa'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- plasma-workspace
-- pulseaudio
 - perl
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
+- pulseaudio
+- plasma-workspace
 update_on:
 - alias: perl
 - alpm: plasma-pa

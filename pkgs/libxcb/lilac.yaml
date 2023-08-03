@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libxcb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - xcb-proto
-- libxdmcp
 - libxau
-repo_makedepends:
-- libxslt
-- python
-- xorg-util-macros
-- xorgproto
+- libxdmcp
 update_on:
 - alpm: libxcb
   source: archpkg

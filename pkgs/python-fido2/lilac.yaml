@@ -7,15 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-fido2'')
 
   '
-repo_checkdepends:
-- python-cryptography
 repo_depends:
 - python
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-poetry-core
 update_on:
 - alias: python
 - alpm: python-fido2

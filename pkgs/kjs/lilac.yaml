@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kjs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt5-base
 - pcre
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
 update_on:
 - alpm: qt5-base
   source: alpm

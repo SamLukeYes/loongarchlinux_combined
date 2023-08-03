@@ -9,16 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''unrealircd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
-- curl
-- c-ares
 - tre
 - pcre2
-- libnsl
+- curl
+- c-ares
 - argon2
-repo_makedepends: []
+- openssl
+- libnsl
 update_on:
 - alpm: unrealircd
   source: archpkg

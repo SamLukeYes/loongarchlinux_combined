@@ -1,27 +1,17 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- cfitsio
-- fftw
-- libexif
-- libgsf
 - libimagequant
-- librsvg
-- libwebp
-- libxml2
-- openexr
-- orc
-- pango
 - libcgif
-repo_makedepends:
-- gobject-introspection
-- libheif
-- libjxl
-- imagemagick
-- openslide
-- poppler: poppler-glib
-- meson
-- gtk-doc
+- openexr
+- pango
+- libexif
+- librsvg
+- orc
+- fftw
+- libxml2
+- libwebp
+- cfitsio
+- libgsf
 update_on:
 - alpm: cfitsio
   source: alpm

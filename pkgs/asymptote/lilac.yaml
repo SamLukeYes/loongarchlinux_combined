@@ -9,21 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''asymptote'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gc
 - freeglut
-- gsl
-- fftw
 - libsigsegv
-repo_makedepends:
-- ghostscript
-- imagemagick
-- mesa
-- texlive-texmf: texlive-latexextra
-- pyqt5: python-pyqt5
-- glm
-- glu
+- gsl
+- gc
+- fftw
 update_on:
 - alpm: gsl
   source: alpm

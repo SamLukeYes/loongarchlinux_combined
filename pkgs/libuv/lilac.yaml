@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libuv'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
 - libnsl
-repo_makedepends:
-- python-sphinx
 update_on:
 - alpm: libuv
   source: archpkg

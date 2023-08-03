@@ -7,16 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''npm'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- nodejs
 - node-gyp
-- nodejs-nopt
 - semver
-repo_makedepends:
-- libxi
-- procps-ng
-- python
+- nodejs-nopt
+- nodejs
 update_on:
 - alpm: npm
   source: archpkg

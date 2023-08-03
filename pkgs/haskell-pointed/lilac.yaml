@@ -9,20 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pointed'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-comonad
-- haskell-data-default-class
-- haskell-hashable
-- haskell-kan-extensions
-- haskell-semigroupoids
-- haskell-tagged
-- haskell-transformers-compat
 - haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
+- ghc: ghc-libs
+- haskell-hashable
+- haskell-tagged
+- haskell-semigroupoids
+- haskell-comonad
+- haskell-transformers-compat
+- haskell-kan-extensions
+- haskell-data-default-class
 update_on:
 - alpm: haskell-comonad
   source: alpm

@@ -9,19 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-utils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- mate-desktop
-- gettext
-- libcanberra
 - libgtop
 - libsm
+- gettext
+- libcanberra
 - udisks2
-repo_makedepends:
-- inkscape
-- itstool
-- mate-panel
-- python
+- mate-desktop
 update_on:
 - alpm: mate-utils
   source: archpkg

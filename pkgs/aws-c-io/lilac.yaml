@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aws-c-io'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - aws-c-common
-- aws-c-cal
 - s2n-tls
-repo_makedepends:
-- cmake
+- aws-c-cal
 update_on:
 - alpm: aws-c-io
   source: archpkg

@@ -7,14 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''gpgit'')
 
   '
-repo_checkdepends:
-- shellcheck
 repo_depends:
-- bash
+- xz
 - gnupg
 - git
-- xz
-repo_makedepends: []
+- bash
 update_on:
 - alpm: gpgit
   source: archpkg

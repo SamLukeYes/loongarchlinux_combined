@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-kde-filetra
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - telepathy-kde-common-internals
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
 update_on:
 - alpm: telepathy-kde-filetransfer-handler
   source: archpkg

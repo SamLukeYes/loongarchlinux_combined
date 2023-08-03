@@ -1,28 +1,13 @@
 destsubdir: extra
-repo_checkdepends:
-- mpdecimal
-- python-gitpython
-- python-py
-- python-pytest
-- python-pytest-timeout
-- python-pytest-benchmark
 repo_depends:
-- python
 - python-astroid
+- python-mccabe
+- python-tomlkit
+- python-isort
+- python-platformdirs
 - python-colorama
 - python-dill
-- python-isort
-- python-mccabe
-- python-platformdirs
 - python-tomli
-- python-tomlkit
-repo_makedepends:
-- python-build
-- python-installer
-- python-myst-parser
-- python-setuptools
-- python-sphinx
-- python-sphinx-reredirects
-- python-wheel
+- python
 update_on:
 - alias: python

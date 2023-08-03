@@ -9,19 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kmail-account-wizard'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libkleo
 - kidentitymanagement
-- pimcommon
 - kmailtransport
 - kross
-- libkleo
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- qt5-tools
-- knotifyconfig
-- ktexteditor
+- pimcommon
 update_on:
 - alpm: kmail-account-wizard
   source: archpkg

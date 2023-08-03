@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ell'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- dbus
 repo_depends:
 - gcc: gcc-libs
-repo_makedepends: []
 update_on:
 - alpm: ell
   source: archpkg

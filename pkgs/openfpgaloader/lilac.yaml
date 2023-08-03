@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openfpgaloader'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libftdi
 - libftdi-compat
-repo_makedepends:
-- cmake
-- libusb
-- systemd
+- libftdi
 update_on:
 - alpm: hidapi
   provides: libhidapi-hidraw.so

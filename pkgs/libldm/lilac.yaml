@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libldm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - lvm2: device-mapper
-- glib2
-- json-glib
 - zlib
-repo_makedepends:
-- git
-- systemd
-- gtk-doc
+- json-glib
+- glib2
 update_on:
 - alpm: readline
   provides: libreadline.so

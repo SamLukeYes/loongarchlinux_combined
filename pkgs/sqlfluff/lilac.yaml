@@ -7,31 +7,23 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''sqlfluff'')
 
   '
-repo_checkdepends:
-- python-hypothesis
 repo_depends:
-- python
-- python-appdirs
-- python-cached-property
-- python-chardet
-- python-click
-- python-colorama
-- python-diff-cover
-- python-jinja
-- python-oyaml
-- python-pathspec
-- python-pytest
-- python-regex
-- python-tblib
 - python-toml
 - python-tqdm
+- python-tblib
+- python-chardet
+- python-cached-property
+- python-colorama
+- python-click
+- python-pathspec
+- python-pytest
+- python-jinja
+- python-regex
+- python-appdirs
+- python-diff-cover
 - python-typing_extensions
-repo_makedepends:
-- git
-- python-build
-- python-wheel
-- python-installer
-- python-setuptools
+- python-oyaml
+- python
 update_on:
 - alias: python
 - alpm: sqlfluff

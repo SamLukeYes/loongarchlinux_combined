@@ -9,22 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''scanmem'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- readline
+- polkit
 - readline
 - gtk3
+- pygobject: python-gobject
+- glibc
 - python
-- pygobject: python-gobject
-- polkit
-repo_makedepends:
-- intltool
-- gtk3
-- pygobject: python-gobject
-- polkit
-- glibc
-- readline
 update_on:
 - alias: readline
 - alias: readline

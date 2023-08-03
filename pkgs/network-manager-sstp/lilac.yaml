@@ -9,18 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''network-manager-sstp'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libsecret
 - sstp-client
-repo_makedepends:
-- gtk3
-- gtk4
-- libnma
-- libnma: libnma-gtk4
-- intltool
-- ppp
-- python
+- libsecret
 update_on:
 - alpm: network-manager-sstp
   source: archpkg

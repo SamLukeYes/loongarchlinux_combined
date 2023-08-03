@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libftdi-compat'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libusb-compat
 - gcc: gcc-libs
-repo_makedepends:
-- boost
 update_on:
 - alpm: libftdi-compat
   source: archpkg

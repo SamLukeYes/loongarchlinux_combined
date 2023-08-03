@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dnsperf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ldns
-- libck
 - libnghttp2
-repo_makedepends: []
+- libck
+- ldns
 update_on:
 - alpm: dnsperf
   source: archpkg

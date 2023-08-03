@@ -1,10 +1,7 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- psutils
 - imagemagick
 - perl
-repo_makedepends:
-- gperf
+- psutils
 update_on:
 - alias: perl

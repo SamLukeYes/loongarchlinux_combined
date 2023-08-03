@@ -9,19 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wingpanel-indicator-n
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
-- gtk3
-- libgee
-- networkmanager: libnm
-- networkmanager
-- network-manager-applet: nm-connection-editor
 - wingpanel
-repo_makedepends:
-- git
-- meson
-- vala
+- networkmanager
+- libgee
+- network-manager-applet: nm-connection-editor
+- gtk3
+- glib2
+- networkmanager: libnm
 update_on:
 - alpm: granite
   provides: libgranite.so

@@ -9,17 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''direnv'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- zsh
-- fish
-- bash
-- tcsh
-- elvish
 repo_depends:
 - glibc
-repo_makedepends:
-- git
-- go
 update_on:
 - alpm: direnv
   source: archpkg

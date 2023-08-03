@@ -9,25 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hexter'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- alsa-lib
+- glib2
+- pango
+- liblo
+- gtk2
 - cairo
 - glibc
-- cairo
-- glibc
-- alsa-lib
-- gtk2
-- glib2
-- liblo
-- pango
-repo_makedepends:
-- alsa-lib
-- dssi
-- glib2
-- gtk2
-- ladspa
-- liblo
-- pango
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

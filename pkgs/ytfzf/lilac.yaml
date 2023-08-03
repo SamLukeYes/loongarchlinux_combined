@@ -7,12 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ytfzf'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - jq
 - curl
-repo_makedepends:
-- gzip
 update_on:
 - alpm: ytfzf
   source: archpkg

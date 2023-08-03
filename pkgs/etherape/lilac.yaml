@@ -9,16 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''etherape'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - glib2
-- libpcap
-- popt
 - goocanvas
+- popt
+- libpcap
 - gtk3
-repo_makedepends:
-- yelp-tools
+- glibc
 update_on:
 - alpm: libpcap
   provides: libpcap.so

@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''atkmm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibmm
-- glibmm
-repo_makedepends:
-- git
-- meson
-- mm-common
-- glibmm: glibmm-docs
 update_on:
 - alpm: libsigc++
   provides: libsigc-2.0.so

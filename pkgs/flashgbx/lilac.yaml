@@ -7,16 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''flashgbx'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- pyside6
+- python-requests
 - python-dateutil
+- python-setuptools
 - python-pillow
 - python-pyserial
-- python-requests
-- python-setuptools
-repo_makedepends:
-- git
+- pyside6
 update_on:
 - alpm: flashgbx
   source: archpkg

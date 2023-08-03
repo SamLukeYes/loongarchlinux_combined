@@ -9,47 +9,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''corectrl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- catch2
-- trompeloeil
 repo_depends:
-- procps-ng
-- hwdata
-- quazip: quazip-qt5
-- qt5-charts
-- qt5-quickcontrols2
-- qt5-base
-- botan2
-- qt5-svg
 - qt5-xmlpatterns
-- qt5-base
-- dbus
-- polkit
 - fmt
-- pugixml
-- hicolor-icon-theme
-- procps-ng
-- hwdata
-- quazip: quazip-qt5
-- qt5-charts
 - qt5-quickcontrols2
+- qt5-charts
 - qt5-base
-- botan2
 - qt5-svg
-- qt5-xmlpatterns
-- qt5-base
-- dbus
 - polkit
-- fmt
+- dbus
 - pugixml
+- hwdata
+- botan2
+- procps-ng
+- quazip: quazip-qt5
 - hicolor-icon-theme
-- fmt
-repo_makedepends:
-- cmake
-- qt5-tools
-- extra-cmake-modules
-- ninja
-- easyloggingpp
 update_on:
 - alpm: qt5-base
   source: alpm

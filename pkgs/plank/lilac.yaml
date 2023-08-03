@@ -9,26 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plank'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bamf
-- cairo
-- gdk-pixbuf2
-- glib2
 - glibc
-- gnome-menus
-- gtk3
-- libgee
-- libwnck3
-- libx11
 - libxfixes
+- gdk-pixbuf2
 - libxi
+- bamf
+- libgee
 - pango
-repo_makedepends:
-- git
-- gnome-common
-- intltool
-- vala
+- libx11
+- gtk3
+- cairo
+- glib2
+- libwnck3
+- gnome-menus
 update_on:
 - alpm: plank
   source: archpkg

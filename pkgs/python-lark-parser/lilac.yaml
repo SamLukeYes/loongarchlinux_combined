@@ -7,17 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-lark-parser'')
 
   '
-repo_checkdepends:
-- python-js2py
 repo_depends:
-- python
 - python-typing_extensions
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python
 update_on:
 - alias: python
 - alpm: python-lark-parser

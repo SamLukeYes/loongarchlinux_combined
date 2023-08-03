@@ -7,14 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-junit-xml'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
 - python
 - python-six
-repo_makedepends:
-- python-setuptools
-- git
 update_on:
 - alias: python
 - alpm: python-junit-xml

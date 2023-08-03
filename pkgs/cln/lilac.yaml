@@ -1,6 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - gmp
-repo_makedepends: []
 update_on: []

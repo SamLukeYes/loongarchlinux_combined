@@ -9,107 +9,55 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gambas3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
 - bzip2
-- zlib
-- zstd
-- libxcrypt
-- dbus
-- mariadb: mariadb-libs
-- unixodbc
-- postgresql: postgresql-libs
-- sqlite
-- gcc: gcc-libs
-- libgnome-keyring
-- libsm
-- libxtst
-- perl
-- perl
-- gmp
-- gsl
-- gtk3
-- webkit2gtk
-- libxcrypt
-- gcc: gcc-libs
+- xdg-utils
 - imlib2
-- gdk-pixbuf2
-- libxml2
-- gstreamer: gst-plugins-base-libs
-- gmime3
-- ncurses
-- curl
-- glib2
-- alure
-- glew
-- pcre2
-- poppler: poppler-glib
+- sdl2_image
 - qt5-base
-- qt5-svg
-- qt5-webengine
-- qt5-x11extras
-- openssl
-- sane
-- sdl2_mixer
-- sdl2_ttf
-- sdl2_image
-- glew
-- sdl_mixer
-- sdl_ttf
-- libxcursor
-- glew
-- v4l-utils
-- libpng
-- libxslt
-- gcc: gcc-libs
-- libffi
-- xdg-utils
-repo_makedepends:
-- intltool
-- postgresql
-- libffi
-- bzip2
-- glib2
-- v4l-utils
-- zlib
-- mesa
-- glew
-- xdg-utils
-- imlib2
-- gdk-pixbuf2
-- gtk3
-- webkit2gtk
 - postgresql: postgresql-libs
-- mariadb: mariadb-libs
-- unixodbc
-- sqlite
-- librsvg
 - curl
-- poppler: poppler-glib
-- sdl_mixer
-- sdl_ttf
-- sdl2
-- sdl2_mixer
-- sdl2_image
-- sdl2_ttf
-- libxtst
-- pcre2
-- qt5-webengine
-- qt5-x11extras
-- qt5-svg
-- libxcursor
-- libsm
 - dbus
-- libxml2
-- libxslt
-- libgnome-keyring
-- gsl
+- zstd
+- libpng
 - gstreamer: gst-plugins-base-libs
-- alure
+- poppler: poppler-glib
 - ncurses
-- gmime3
+- libxslt
 - libxcrypt
+- perl
+- sdl_mixer
+- qt5-x11extras
+- libsm
+- libgnome-keyring
+- mariadb: mariadb-libs
+- gcc: gcc-libs
+- webkit2gtk
+- libffi
+- libxtst
+- sane
+- gtk3
+- sdl2_mixer
+- pcre2
+- glib2
+- gsl
+- libxml2
+- sqlite
+- glew
+- gmime3
+- qt5-webengine
+- sdl_ttf
+- alure
+- sdl2_ttf
+- libxcursor
+- cairo
+- gmp
+- v4l-utils
+- openssl
+- gdk-pixbuf2
+- zlib
+- unixodbc
+- qt5-svg
 update_on:
 - alias: perl
 - alias: perl

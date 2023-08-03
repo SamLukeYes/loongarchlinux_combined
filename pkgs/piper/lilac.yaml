@@ -7,19 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''piper'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
-- pygobject: python-gobject
-- libratbag
 - python-evdev
 - python-lxml
+- pygobject: python-gobject
 - python-cairo
-repo_makedepends:
-- git
-- meson
-- flake8
-- appstream
+- python
+- libratbag
 update_on:
 - alias: python
 - alpm: piper

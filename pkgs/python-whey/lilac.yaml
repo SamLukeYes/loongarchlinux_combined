@@ -7,25 +7,18 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-whey'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
-- python-click
-- python-consolekit
-- python-dist-meta
-- python-dom-toml
-- python-domdf-python-tools
-- python-handy-archives
-- python-natsort
-- python-packaging
 - python-pyproject-parser
+- python-domdf-python-tools
+- python-dist-meta
+- python-click
+- python-dom-toml
+- python-natsort
+- python-handy-archives
+- python-packaging
+- python-consolekit
 - python-shippinglabel
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
+- python
 update_on:
 - alias: python
 - alpm: python-whey

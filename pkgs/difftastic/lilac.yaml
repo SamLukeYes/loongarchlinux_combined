@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''difftastic'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - shared-mime-info
-repo_makedepends:
-- git
-- mdbook
-- jq
 update_on:
 - alpm: difftastic
   source: archpkg

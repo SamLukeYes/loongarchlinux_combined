@@ -9,52 +9,31 @@ pre_build_script: '_G.files = download_official_pkgbuild(''electron21'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- c-ares
-- gtk3
-- libevent
-- nss
-- fontconfig
-- woff2
+- jsoncpp
 - aom
-- brotli
-- icu
+- libavif
 - dav1d
-- flac
-- snappy
-- libxml2
+- libevent
 - ffmpeg
-- libwebp
-- zlib: minizip
 - opus
 - harfbuzz
-- re2
-- libavif
-- jsoncpp
-- libxslt
+- libxml2
+- zlib: minizip
+- icu
 - libpng
+- re2
+- fontconfig
+- woff2
+- c-ares
 - freetype2
-repo_makedepends:
-- clang
-- git
-- gn
-- gperf
-- harfbuzz: harfbuzz-icu
-- http-parser
-- libnotify
-- lld
-- llvm
-- ninja
-- npm
-- pciutils
-- pipewire
-- python
-- python-httplib2
-- python-pyparsing
-- python-six
-- wget
-- yarn
+- flac
+- brotli
+- nss
+- snappy
+- libxslt
+- gtk3
+- libwebp
 update_on:
 - alias: icu
 - alias: jsoncpp

@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''simh'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libpcap
-repo_makedepends:
-- unzip
-- linux-api-headers
 update_on:
 - alpm: simh
   source: archpkg

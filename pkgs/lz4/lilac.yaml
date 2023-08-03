@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lz4'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- diffutils
 repo_depends:
 - glibc
-repo_makedepends:
-- git
 update_on:
 - alpm: lz4
   source: archpkg

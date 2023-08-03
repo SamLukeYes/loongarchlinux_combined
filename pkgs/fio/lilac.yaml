@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fio'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
-- libaio
-- python
+- gperftools
 - numactl
 - glusterfs
-- gperftools
-repo_makedepends:
-- gtk2
-- curl
+- libaio
+- bash
+- python
 update_on:
 - alias: python
 - alpm: fio

@@ -9,42 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rosegarden'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lilypond
-- python
-- tex-gyre-fonts
-- ttf-dejavu
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- lirc
-- hicolor-icon-theme
-- qt5-base
-- zlib
-- gcc: gcc-libs
-- glibc
-- lirc
-- hicolor-icon-theme
-- qt5-base
-- zlib
 - alsa-lib
-- fftw
-- liblrdf
-- liblo
-- libsamplerate
 - libsndfile
-repo_makedepends:
-- alsa-lib
-- cmake
-- dssi
-- fftw
-- ladspa
 - liblrdf
+- lirc
+- glibc
+- hicolor-icon-theme
+- gcc: gcc-libs
+- qt5-base
 - liblo
+- fftw
 - libsamplerate
-- libsndfile
-- qt5-tools
+- zlib
 update_on:
 - alpm: qt5-base
   source: alpm

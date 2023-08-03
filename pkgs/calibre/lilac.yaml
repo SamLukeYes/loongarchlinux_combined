@@ -9,60 +9,53 @@ pre_build_script: '_G.files = download_official_pkgbuild(''calibre'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- hunspell
-- hyphen
-- icu
-- jxrlib
-- libmtp
-- snowball: libstemmer
-- libusb
-- libwmf
-- mathjax
-- mtdev
-- optipng
-- podofo
-- python-apsw
 - python-beautifulsoup4
-- python-cchardet
-- python-css-parser
-- python-cssselect
-- python-dateutil
-- python-dnspython
-- python-feedparser
-- python-html2text
-- python-html5-parser
-- python-jeepney
-- python-lxml
-- python-markdown
-- python-mechanize
-- python-msgpack
-- python-netifaces
-- python-pdftotext
-- python-pillow
-- python-psutil
-- python-py7zr
-- python-pychm
+- python-apsw
+- libusb
+- optipng
 - python-pycryptodome
 - python-pygments
+- python-pdftotext
+- python-html5-parser
 - pyqt6: python-pyqt6
-- pyqt6-webengine: python-pyqt6-webengine
+- python-dnspython
+- python-dateutil
+- python-pillow
 - python-regex
-- python-unrardll
-- python-zeroconf
-- qt6-imageformats
+- mathjax
+- podofo
+- python-mechanize
+- pyqt6-webengine: python-pyqt6-webengine
+- python-msgpack
+- python-feedparser
+- libmtp
 - qt6-svg
-- qt6-webengine
 - ttf-liberation
+- icu
+- python-markdown
+- python-zeroconf
 - uchardet
+- python-lxml
+- python-psutil
+- jxrlib
+- hunspell
+- hyphen
+- python-css-parser
+- python-unrardll
+- python-jeepney
+- snowball: libstemmer
 - udisks2
-repo_makedepends:
-- cmake
-- pyqt-builder
-- rapydscript-ng
-- sip
-- xdg-utils
+- python-netifaces
+- python-cssselect
+- libwmf
+- python-pychm
+- python-py7zr
+- mtdev
+- qt6-webengine
+- python-cchardet
+- python-html2text
+- qt6-imageformats
 update_on:
 - alias: icu
 - alpm: calibre

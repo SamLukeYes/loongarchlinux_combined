@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-haml'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ruby
 - ruby-temple
-- ruby-thor
+- ruby
 - ruby-tilt
-repo_makedepends: []
+- ruby-thor
 update_on:
 - alias: ruby
 - alpm: ruby-haml

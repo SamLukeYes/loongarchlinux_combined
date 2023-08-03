@@ -9,50 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''transmission'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- curl
-- libevent
-- systemd
-- libb64
-- miniupnpc
-- libnatpmp
 - libdeflate
-- curl
 - libevent
+- libb64
+- curl
+- qt6-base
 - gtk4
+- gtkmm-4.0
+- libnatpmp
+- qt6-svg
+- miniupnpc
 - hicolor-icon-theme
-- libb64
-- miniupnpc
-- libnatpmp
-- libdeflate
-- gtkmm-4.0
-- curl
-- qt6-base
-- qt6-svg
-- libevent
-- libb64
-- miniupnpc
-- libnatpmp
-- libdeflate
-repo_makedepends:
-- cmake
-- curl
-- dht
-- glibmm-2.68
-- gtk4
-- gtkmm-4.0
-- intltool
-- libb64
-- libdeflate
-- libevent
-- libnatpmp
-- miniupnpc
-- ninja
-- npm
-- qt6-base
-- qt6-svg
-- qt6-tools
 - systemd
 update_on:
 - alpm: qt6-base

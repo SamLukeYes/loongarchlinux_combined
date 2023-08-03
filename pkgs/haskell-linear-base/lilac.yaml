@@ -9,23 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-linear-base''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
 - haskell-hashable
-- haskell-linear-generics
-- haskell-primitive
 - haskell-storable-tuple
 - haskell-vector
-repo_makedepends:
-- ghc
-- haskell-cabal-doctest
-- haskell-hedgehog
-- haskell-inspection-testing
-- haskell-mmorph
-- haskell-tasty
-- haskell-tasty-hedgehog
-- haskell-tasty-inspection-testing
+- haskell-linear-generics
+- haskell-primitive
 update_on:
 - alpm: haskell-hashable
   source: alpm

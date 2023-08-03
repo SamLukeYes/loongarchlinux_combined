@@ -9,39 +9,31 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gala'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bamf
-- cairo
-- gdk-pixbuf2
-- glib2
-- gnome-desktop
-- gtk3
-- json-glib
-- libcanberra
-- libdrm
-- libgee
-- libgexiv2
-- libx11
-- libxcomposite
-- libxdamage
-- libxext
 - libxfixes
-- libxi
-- libxrandr
-- libxtst
-- mesa
-- mutter
-- pango
+- libxdamage
+- libcanberra
 - plank
+- gnome-desktop
+- glib2
+- libxrandr
+- bamf
+- pango
+- libxext
+- cairo
+- mutter
+- libdrm
+- libxtst
+- libgexiv2
+- libxcomposite
+- gdk-pixbuf2
 - wayland
-repo_makedepends:
-- cmake
-- git
-- gnome-common
-- intltool
-- meson
-- vala
+- libxi
+- libgee
+- libx11
+- json-glib
+- gtk3
+- mesa
 update_on:
 - alpm: granite
   provides: libgranite.so

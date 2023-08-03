@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libcap'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - glibc
 - pam
-repo_makedepends:
-- go
-- linux-api-headers
 update_on:
 - alpm: libcap
   source: archpkg

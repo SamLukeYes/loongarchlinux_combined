@@ -1,10 +1,8 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- git
-- gcc: gcc-libs
 - zlib
-repo_makedepends: []
+- gcc: gcc-libs
+- git
 update_on:
 - alpm: julia
   provides: libgit2.so

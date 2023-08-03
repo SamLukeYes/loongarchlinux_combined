@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ccid'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pcsclite
 - libusb
 - flex
-repo_makedepends: []
+- pcsclite
 update_on:
 - alpm: ccid
   source: archpkg

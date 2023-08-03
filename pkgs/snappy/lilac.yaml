@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''snappy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- zlib
 repo_depends:
-- glibc
 - gcc: gcc-libs
-repo_makedepends:
-- cmake
-- clang
-- gtest
-- benchmark
+- glibc
 update_on:
 - alpm: snappy
   source: archpkg

@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rime-wugniu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - rime-luna-pinyin
-repo_makedepends:
-- librime
-- rime-prelude
-- rime-essay
 update_on:
 - alpm: rime-wugniu
   source: archpkg

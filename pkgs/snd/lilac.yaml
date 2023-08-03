@@ -9,45 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''snd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- glu
-- gmp
-- gsl
-- libglvnd
-- libmpc
-- libx11
-- libxext
 - libxpm
-- libxt
 - mpfr
-- openmotif
-- glibc
 - glu
-- gmp
 - gsl
-- libglvnd
-- libmpc
-- libx11
-- libxext
-- libxpm
 - libxt
-- mpfr
+- libmpc
+- libglvnd
 - openmotif
-repo_makedepends:
-- alsa-lib
-- fftw
-- flac
-- gendesk
-- ladspa
-- libsamplerate
-- mpg123
-- ruby
-- speex
-- timidity++
-- vorbis-tools
-- wavpack
+- libxext
+- libx11
+- glibc
+- gmp
 update_on:
 - alpm: gsl
   source: alpm

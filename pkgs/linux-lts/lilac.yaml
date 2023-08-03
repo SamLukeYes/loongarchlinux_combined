@@ -1,21 +1,6 @@
 destsubdir: core
-repo_checkdepends: []
 repo_depends:
-- coreutils
 - kmod
 - pahole
-repo_makedepends:
-- bc
-- elfutils: libelf
-- pahole
-- cpio
-- perl
-- tar
-- xz
-- gettext
-- xmlto
-- python-sphinx
-- graphviz
-- imagemagick
-- texlive-texmf: texlive-latexextra
+- coreutils
 update_on: []

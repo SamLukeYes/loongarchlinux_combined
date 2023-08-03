@@ -9,27 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hledger-iadd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-brick0.71
-- haskell-free
-- haskell-hledger-lib
-- haskell-megaparsec
-- haskell-microlens
 - haskell-microlens-th
 - haskell-optparse-applicative
 - haskell-text-zipper
 - haskell-unordered-containers
+- ghc: ghc-libs
+- haskell-brick0.71
+- haskell-xdg-basedir
 - haskell-vector
 - haskell-vty
-- haskell-xdg-basedir
-repo_makedepends:
-- ghc
-- uusi
-- haskell-quickcheck
-- haskell-hspec
-- haskell-hspec-discover
+- haskell-hledger-lib
+- haskell-megaparsec
+- haskell-free
+- haskell-microlens
 update_on:
 - alpm: haskell-brick0.71
   source: alpm

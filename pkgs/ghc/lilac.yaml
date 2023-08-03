@@ -9,28 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ghc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gmp
-- libffi
-- numactl
-- perl
 - gcc
-- llvm14
-repo_makedepends:
-- perl
-- libxslt
-- docbook-xsl
-- python-sphinx
-- haskell-hscolour
-- texlive-bin
-- texlive-texmf: texlive-latexextra
-- ttf-dejavu
-- alex
-- happy
-- time
 - numactl
+- perl
 - llvm14
+- libffi
+- gmp
 update_on:
 - alias: perl
 - alpm: ghc

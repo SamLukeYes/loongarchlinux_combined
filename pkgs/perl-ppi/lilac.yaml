@@ -7,19 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-ppi'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-clone
-- perl-io-string
-- perl-list-moreutils
-- perl-params-util
 - perl-task-weaken
-repo_makedepends:
-- perl-class-inspector
-- perl-file-remove
-- perl-test-deep
-- perl-test-object
-- perl-test-subcalls
+- perl-clone
+- perl-params-util
+- perl-list-moreutils
+- perl-io-string
 update_on:
 - alpm: perl-ppi
   source: archpkg

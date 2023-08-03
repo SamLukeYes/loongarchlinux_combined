@@ -7,15 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-file-copy-recursive'')
 
   '
-repo_checkdepends:
-- perl-path-tiny
-- perl-test-deep
-- perl-test-fatal
-- perl-test-file
-- perl-test-warnings
 repo_depends:
 - perl
-repo_makedepends: []
 update_on:
 - alias: perl
 - alpm: perl-file-copy-recursive

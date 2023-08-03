@@ -1,14 +1,11 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - python
-- libxml2
-- libaio
-- liburcu
-- attr
-- rpcbind
 - liburing
-repo_makedepends:
-- rpcsvc-proto
+- rpcbind
+- libaio
+- libxml2
+- attr
+- liburcu
 update_on:
 - alias: python

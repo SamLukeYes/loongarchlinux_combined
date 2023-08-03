@@ -9,25 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kicad'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- curl
-- glew
-- glm
-- ngspice
-- opencascade
-- python
-- python-wxpython
 - wxwidgets: wxwidgets-gtk3
+- curl
+- opencascade
+- glm
 - unixodbc
-repo_makedepends:
-- git
-- cmake
-- ninja
-- mesa
-- boost
-- swig
+- python-wxpython
+- glew
+- ngspice
+- boost: boost-libs
+- python
 update_on:
 - alias: python
 - alpm: wxwidgets-gtk3

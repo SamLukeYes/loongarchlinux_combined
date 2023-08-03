@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libqrtr-glib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glib2
-repo_makedepends:
-- gtk-doc
-- meson
-- git
-- gobject-introspection
 update_on:
 - alpm: libqrtr-glib
   source: archpkg

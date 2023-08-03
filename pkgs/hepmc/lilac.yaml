@@ -9,22 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hepmc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
 - gcc: gcc-libs
 - glibc
-repo_makedepends:
-- cmake
-- doxygen
-- gcc: gcc-fortran
-- graphviz
-- hepmc2
-- pythia8
-- python
-- root
-- protobuf
+- bash
 update_on:
 - alpm: hepmc
   source: archpkg
-managed: false

@@ -9,16 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cryptohash-md
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
-repo_makedepends:
-- ghc
-- haskell-base16-bytestring
-- haskell-puremd5
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
 update_on:
 - alpm: haskell-cryptohash-md5
   source: archpkg

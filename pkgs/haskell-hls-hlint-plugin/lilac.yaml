@@ -9,32 +9,26 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-hlint-plu
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-diff
-- haskell-aeson
 - haskell-apply-refact
-- haskell-data-default
-- haskell-extra
-- haskell-ghc-exactprint
-- haskell-ghc-lib-parser-ex
-- haskell-ghcide
-- haskell-hashable
-- hlint
+- haskell-unordered-containers
+- haskell-aeson
+- haskell-diff
 - haskell-hls-plugin-api
 - haskell-hslogger
 - haskell-lens
+- haskell-hashable
+- haskell-ghc-exactprint
 - haskell-lsp
 - haskell-refact
+- haskell-ghcide
 - haskell-regex-tdfa
+- haskell-ghc-lib-parser-ex
+- ghc: ghc-libs
+- haskell-extra
 - haskell-temporary
-- haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hls-test-utils
-- haskell-lsp-types
+- haskell-data-default
+- hlint
 update_on:
 - alpm: haskell-diff
   source: alpm

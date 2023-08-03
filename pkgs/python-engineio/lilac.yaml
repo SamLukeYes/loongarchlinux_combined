@@ -7,29 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-engineio'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-runner
 repo_depends:
-- python
-- python-websocket-client
-- python-websockets
 - python-requests
-repo_makedepends:
-- python-setuptools
-- python-sphinx
-- python-six
-- python-eventlet
-- python-aiohttp
-- python-tornado
-- python-urllib3
-- python-websocket-client
-- python-gevent
-- python-gevent-websocket
 - python-websockets
-- python-build
-- python-installer
-- python-wheel
+- python-websocket-client
+- python
 update_on:
 - alias: python
 - alpm: python-engineio

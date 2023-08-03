@@ -9,27 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rspamd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - file
 - glib2
+- jemalloc
+- openblas
+- pcre2
+- luajit
+- icu
+- libsodium
+- zlib
+- sqlite
+- openssl
 - glibc
 - hyperscan
-- icu
-- jemalloc
-- libsodium
-- luajit
-- openblas
-- openssl
-- pcre2
-- sqlite
-- zlib
-repo_makedepends:
-- cmake
-- git
-- ninja
-- perl
-- ragel
 update_on:
 - alias: icu
 - alpm: rspamd

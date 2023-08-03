@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openjpeg2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- zlib
 - libpng
 - libtiff
 - lcms2
-repo_makedepends:
-- cmake
-- doxygen
-- jbigkit
+- zlib
 update_on:
 - alpm: openjpeg2
   source: archpkg

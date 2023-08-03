@@ -7,55 +7,47 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''busted'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- lua
-- lua
 - lua-cliargs
-- lua-dkjson
-- lua-filesystem
+- lua-mediator: lua53-mediator
+- lua-say: lua51-say
+- lua-dkjson: lua52-dkjson
+- lua-cliargs: lua51-cliargs
+- lua-filesystem: lua52-filesystem
+- lua-system: lua51-system
+- lua-dkjson: lua53-dkjson
+- lua-system: lua52-system
+- lua53
+- lua51
+- lua-term: lua52-term
+- lua-say: lua52-say
+- lua-luassert: lua51-luassert
 - lua-luassert
 - lua-mediator
-- penlight: lua-penlight
-- lua-say
-- lua-system
-- lua-term
-- lua53
-- lua-cliargs: lua53-cliargs
-- lua-dkjson: lua53-dkjson
-- lua-filesystem: lua53-filesystem
-- lua-luassert: lua53-luassert
-- lua-mediator: lua53-mediator
-- penlight: lua53-penlight
-- lua-say: lua53-say
 - lua-system: lua53-system
-- lua-term: lua53-term
-- lua52
-- lua-cliargs: lua52-cliargs
-- lua-dkjson: lua52-dkjson
-- lua-filesystem: lua52-filesystem
-- lua-luassert: lua52-luassert
+- penlight: lua-penlight
+- lua-filesystem
+- lua-say
+- penlight: lua53-penlight
+- lua-term
 - lua-mediator: lua52-mediator
-- penlight: lua52-penlight
-- lua-say: lua52-say
-- lua-system: lua52-system
-- lua-term: lua52-term
-- lua51
-- lua-cliargs: lua51-cliargs
-- lua-dkjson: lua51-dkjson
-- lua-filesystem: lua51-filesystem
-- lua-luassert: lua51-luassert
+- lua-term: lua51-term
+- lua-term: lua53-term
+- lua-luassert: lua52-luassert
 - lua-mediator: lua51-mediator
 - penlight: lua51-penlight
-- lua-say: lua51-say
-- lua-system: lua51-system
-- lua-term: lua51-term
-repo_makedepends:
-- lua
-- lua51
+- lua-filesystem: lua53-filesystem
 - lua52
-- lua53
-- luarocks
+- lua
+- lua-filesystem: lua51-filesystem
+- lua-system
+- lua-say: lua53-say
+- lua-dkjson: lua51-dkjson
+- penlight: lua52-penlight
+- lua-dkjson
+- lua-cliargs: lua53-cliargs
+- lua-cliargs: lua52-cliargs
+- lua-luassert: lua53-luassert
 update_on:
 - alias: lua
 - alias: lua

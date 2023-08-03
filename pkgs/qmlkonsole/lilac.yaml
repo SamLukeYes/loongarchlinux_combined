@@ -9,17 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qmlkonsole'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- kconfig
 - kirigami-addons
 - qmltermwidget
-- qt5-svg
-- ki18n
-- kconfig
 - kcoreaddons
+- ki18n
+- qt5-svg
 - kwindowsystem
-repo_makedepends:
-- extra-cmake-modules
 update_on:
 - alpm: kconfig
   source: alpm

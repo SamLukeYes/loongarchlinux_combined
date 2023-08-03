@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-llfuse'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
 - fuse2
-repo_makedepends:
-- python-setuptools
-- cython
+- python
 update_on:
 - alias: python
 - alpm: python-llfuse

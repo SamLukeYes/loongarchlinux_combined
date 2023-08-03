@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ciano'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ffmpeg
 - granite
 - imagemagick
-repo_makedepends:
-- meson
-- vala
+- ffmpeg
 update_on:
 - alpm: ciano
   source: archpkg

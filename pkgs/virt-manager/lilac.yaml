@@ -7,30 +7,19 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''virt-manager'')
 
   '
-repo_checkdepends:
-- python-pytest
-- libosinfo
-- libvirt-python
-- pygobject: python-gobject
-- python-requests
-- cpio
-- cdrtools
 repo_depends:
-- libosinfo
 - libvirt-python
-- pygobject: python-gobject
 - python-requests
+- python-cairo
 - cpio
-- libisoburn
-- gtk-vnc
 - libvirt-glib
 - spice-gtk
 - vte3
-- python-cairo
+- libosinfo
 - gtksourceview4
-repo_makedepends:
-- python-docutils
-- python-setuptools
+- gtk-vnc
+- pygobject: python-gobject
+- libisoburn
 update_on:
 - alpm: virt-manager
   source: archpkg

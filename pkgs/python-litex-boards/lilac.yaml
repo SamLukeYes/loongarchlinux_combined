@@ -7,21 +7,18 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-litex-boards'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-migen
 - python-litex
-- python-litedram
-- python-liteeth
-- python-liteiclink
-- python-litejesd204b
-- python-litepcie
+- python-migen
 - python-litesata
-- python-litescope
 - python-litesdcard
+- python-liteiclink
+- python-litedram
+- python-litescope
+- python-litepcie
 - python-litevideo
-repo_makedepends:
-- python-setuptools
+- python-litejesd204b
+- python-liteeth
 update_on:
 - alpm: python-litex-boards
   source: archpkg

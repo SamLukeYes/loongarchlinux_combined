@@ -7,16 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-agate-dbf'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
 - python-agate
-- python-dbfread
 - python-sphinx_rtd_theme
-repo_makedepends:
-- python-setuptools
-- python-sphinx
+- python-dbfread
+- python
 update_on:
 - alias: python
 - alpm: python-agate-dbf

@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dumb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- allegro
-- cmake
-- ninja
 update_on:
 - alpm: dumb
   source: archpkg
-managed: false

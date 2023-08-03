@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xcb-util'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- gperf
-- xorg-util-macros
-- xorgproto
 update_on:
 - alpm: xcb-util
   source: archpkg

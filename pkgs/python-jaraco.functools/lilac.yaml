@@ -7,17 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-jaraco.functools'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-jaraco.classes
 repo_depends:
-- python
 - python-more-itertools
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools-scm
-- python-wheel
+- python
 update_on:
 - alias: python
 - alpm: python-jaraco.functools

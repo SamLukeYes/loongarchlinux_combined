@@ -7,19 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-meilisearch'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-ordering
 repo_depends:
-- python
+- python-pydantic
 - python-requests
 - python-camel-converter
-- python-pydantic
-repo_makedepends:
-- python-setuptools
-- python-build
-- python-installer
-- python-wheel
+- python
 update_on:
 - alias: python
 - alpm: python-meilisearch

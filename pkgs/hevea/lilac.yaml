@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hevea'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - texlive-bin
-repo_makedepends:
-- ocaml
-- ocamlbuild
 update_on:
 - alpm: hevea
   source: archpkg

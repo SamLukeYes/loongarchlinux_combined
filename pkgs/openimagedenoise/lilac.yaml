@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openimagedenoise'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- cmake
-- ninja
-- ispc
-- python
 update_on:
 - alpm: openimagedenoise
   source: archpkg

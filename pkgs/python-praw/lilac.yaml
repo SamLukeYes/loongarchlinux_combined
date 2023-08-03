@@ -7,17 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-praw'')
 
   '
-repo_checkdepends:
-- python-mock
-- python-betamax-serializers
-- python-betamax-matchers
 repo_depends:
 - python-prawcore
-- python-update-checker
 - python-websocket-client
-repo_makedepends:
-- python-setuptools
-- python-pytest-runner
+- python-update-checker
 update_on:
 - alpm: python-praw
   source: archpkg

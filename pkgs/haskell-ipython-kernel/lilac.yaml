@@ -9,18 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ipython-kerne
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-cryptonite
-- haskell-memory
-- haskell-temporary
 - haskell-unordered-containers
-- haskell-uuid
+- haskell-cryptonite
+- haskell-aeson
+- ghc: ghc-libs
 - haskell-zeromq4-haskell
-repo_makedepends:
-- ghc
+- haskell-memory
+- haskell-uuid
+- haskell-temporary
 update_on:
 - alpm: haskell-aeson
   source: alpm

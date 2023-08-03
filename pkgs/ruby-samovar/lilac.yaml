@@ -7,15 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-samovar'')
 
   '
-repo_checkdepends:
-- ruby-covered
-- ruby-rake
-- ruby-rspec
 repo_depends:
 - ruby-console
 - ruby-mapping
-repo_makedepends:
-- git
 update_on:
 - alpm: ruby-samovar
   source: archpkg

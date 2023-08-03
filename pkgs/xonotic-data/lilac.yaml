@@ -7,12 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''xonotic-data'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
 - perl
-repo_makedepends:
-- unzip
+- bash
 update_on:
 - alias: perl
 - alpm: xonotic-data

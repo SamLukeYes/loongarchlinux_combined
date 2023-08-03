@@ -9,20 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zathura'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- sqlite
+- file
 - desktop-file-utils
-- file
+- sqlite
 - texlive-bin: libsynctex
-- file
-repo_makedepends:
-- python-sphinx
-- texlive-bin
-- meson
-- ninja
-- appstream-glib
-- check
 update_on:
 - alpm: zathura
   source: archpkg

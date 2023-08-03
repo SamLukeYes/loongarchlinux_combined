@@ -9,25 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cabal-install
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cabal-install
 repo_depends:
-- ghc: ghc-libs
 - haskell-aeson
-- haskell-base16-bytestring
-- haskell-binary-instances
-- haskell-cryptohash-sha256
-- haskell-lukko
-- haskell-network-uri
+- ghc: ghc-libs
 - haskell-tar
-repo_makedepends:
-- ghc
-- uusi
-- haskell-ansi-terminal
-- haskell-tasty
-- haskell-tasty-golden
-- haskell-tasty-hunit
-- haskell-tree-diff
+- haskell-binary-instances
+- haskell-lukko
+- haskell-cryptohash-sha256
+- haskell-base16-bytestring
+- haskell-network-uri
 update_on:
 - alpm: haskell-aeson
   source: alpm

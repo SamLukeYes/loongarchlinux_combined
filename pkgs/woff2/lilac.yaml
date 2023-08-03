@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''woff2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - brotli
-repo_makedepends:
-- git
-- cmake
-- ninja
 update_on:
 - alpm: woff2
   source: archpkg

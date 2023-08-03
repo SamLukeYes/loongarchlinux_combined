@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fdm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
 - pcre2
-- tdb
+- openssl
 - zlib
-repo_makedepends: []
+- tdb
 update_on:
 - alpm: fdm
   source: archpkg

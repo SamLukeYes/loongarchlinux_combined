@@ -9,23 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''texworks'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- gsfonts
-- poppler-data
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- hunspell
-- texlive-bin: libsynctex
 - poppler: poppler-qt5
 - qt5-base
-- qt5-declarative
+- hunspell
 - qt5-script
-repo_makedepends:
-- git
-- cmake
-- lua
-- python
-- qt5-tools
+- qt5-declarative
+- texlive-bin: libsynctex
 update_on:
 - alpm: qt5-base
   source: alpm

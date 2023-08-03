@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kmod'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- linux: linux-headers
-- elfutils: libelf
 repo_depends:
-- glibc
+- zstd
+- xz
 - zlib
 - openssl
-- xz
-- zstd
-repo_makedepends: []
+- glibc
 update_on:
 - alpm: kmod
   source: archpkg

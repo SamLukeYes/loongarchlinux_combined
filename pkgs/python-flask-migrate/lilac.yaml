@@ -7,19 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-flask-migrate'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
 - python-alembic
-- python-flask
 - python-flask-sqlalchemy
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
-- python-sphinx
+- python
+- python-flask
 update_on:
 - alias: python
 - alpm: python-flask-migrate

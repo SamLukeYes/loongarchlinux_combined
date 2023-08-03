@@ -9,22 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''srslte'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fftw
-- mbedtls
-- boost: boost-libs
-- lksctp-tools
-- libconfig
 - libuhd
+- srsgui
 - soapysdr
 - bladerf
-- zeromq
+- mbedtls
 - pcsclite
-- srsgui
-repo_makedepends:
-- cmake
-- boost
+- lksctp-tools
+- fftw
+- libconfig
+- zeromq
+- boost: boost-libs
 update_on:
 - alpm: srslte
   source: archpkg

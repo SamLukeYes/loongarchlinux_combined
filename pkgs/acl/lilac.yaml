@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''acl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- attr
 update_on:
 - alpm: acl
   source: archpkg

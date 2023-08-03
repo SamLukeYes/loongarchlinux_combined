@@ -7,18 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-trio'')
 
   '
-repo_checkdepends:
-- python-pytest-cov
-- python-trio-asyncio
 repo_depends:
-- python
 - python-async_generator
 - python-hypothesis
-- python-pytest
 - python-trio
-repo_makedepends:
-- git
-- python-setuptools
+- python-pytest
+- python
 update_on:
 - alias: python
 - alpm: python-pytest-trio

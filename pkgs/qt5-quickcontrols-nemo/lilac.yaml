@@ -9,17 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qt5-quickcontrols-nem
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libglacierapp
-- nemo-qml-plugin-configuration
-- nemo-qml-plugin-notifications
-- nemo-theme-glacier
-- qt5-graphicaleffects
-- qt5-quickcontrols
 - qt5-virtualkeyboard
-repo_makedepends:
-- cmake
+- libglacierapp
+- qt5-quickcontrols
+- nemo-theme-glacier
+- nemo-qml-plugin-configuration
+- qt5-graphicaleffects
+- nemo-qml-plugin-notifications
 update_on:
 - alpm: qt5-quickcontrols-nemo
   source: archpkg

@@ -1,9 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - hicolor-icon-theme
-repo_makedepends:
-- cmake
-- devil
 update_on: []

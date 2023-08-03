@@ -7,12 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-dist-checkconflicts'')
 
   '
-repo_checkdepends:
-- perl-test-fatal
-- perl-module-runtime
 repo_depends:
 - perl-list-moreutils
-repo_makedepends: []
 update_on:
 - alpm: perl-dist-checkconflicts
   source: archpkg

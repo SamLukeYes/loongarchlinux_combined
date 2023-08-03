@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libmbim'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glib2
-- bash
 - systemd
-repo_makedepends:
-- gtk-doc
-- meson
-- git
-- help2man
-- gobject-introspection
-- bash-completion
+- bash
 update_on:
 - alpm: libmbim
   source: archpkg

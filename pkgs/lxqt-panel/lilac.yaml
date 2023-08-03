@@ -9,24 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxqt-panel'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libdbusmenu-qt: libdbusmenu-qt5
 - libxcomposite
-- lxmenu-data
-- libxtst
-- lxqt-globalkeys
-- solid
 - libxcb
-repo_makedepends:
-- lxqt-build-tools
-- liblxqt
-- pulseaudio: libpulse
-- libstatgrab
-- libsysstat
-- lm_sensors
-- libxdamage
-- alsa-lib
+- lxqt-globalkeys
+- lxmenu-data
+- libdbusmenu-qt: libdbusmenu-qt5
+- solid
+- libxtst
 update_on:
 - alpm: libqtxdg
   provides: libQt5Xdg.so

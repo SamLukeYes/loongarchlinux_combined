@@ -1,15 +1,11 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- glibc
-- openssl
-- libcbor
 - hidapi
-- systemd: systemd-libs
+- libcbor
 - zlib
-repo_makedepends:
-- cmake
-- systemd
+- openssl
+- glibc
+- systemd: systemd-libs
 update_on:
 - alpm: libcbor
   provides: libcbor.so

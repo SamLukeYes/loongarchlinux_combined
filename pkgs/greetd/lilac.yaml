@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''greetd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - glibc
-- systemd
-- gcc: gcc-libs
-- glibc
-- systemd
 - pam
-- gcc: gcc-libs
-repo_makedepends:
-- scdoc
+- systemd
 update_on:
 - alpm: greetd
   source: archpkg

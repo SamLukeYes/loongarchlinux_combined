@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''nextcloud-app-tasks'')
 
   '
-repo_checkdepends:
-- yq
 repo_depends: []
-repo_makedepends:
-- nextcloud
 update_on:
 - alpm: nextcloud-app-tasks
   source: archpkg

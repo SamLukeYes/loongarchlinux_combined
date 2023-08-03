@@ -7,17 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''dnf'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- libdnf
-- libcomps
-- python
-- gpgme: python-gpgme
 - rpm-tools
-repo_makedepends:
-- bash-completion
-- cmake
-- python-sphinx
+- libcomps
+- libdnf
+- gpgme: python-gpgme
+- python
 update_on:
 - alias: python
 - alpm: dnf

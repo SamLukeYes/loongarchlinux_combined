@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''intellij-idea-communi
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- giflib
-- python
-- libdbusmenu: libdbusmenu-glib
 - fontconfig
 - hicolor-icon-theme
-repo_makedepends:
-- ant
-- git
-- maven
+- libdbusmenu: libdbusmenu-glib
+- giflib
+- python
 update_on:
 - alias: python
 - alpm: intellij-idea-community-edition

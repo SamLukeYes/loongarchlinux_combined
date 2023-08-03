@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qsopt-ex'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- bzip2
 - gmp
 - zlib
-- bzip2
-repo_makedepends: []
 update_on:
 - alpm: qsopt-ex
   source: archpkg

@@ -7,28 +7,20 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''puppet'')
 
   '
-repo_checkdepends:
-- ruby-rspec
-- ruby-yard
-- ruby-rspec-its
-- ruby-webmock
 repo_depends:
-- ruby
-- facter
-- ruby-semantic_puppet
-- ruby-augeas
-- ruby-shadow
-- ruby-concurrent
-- ruby-multi_json
 - ruby-puppet-resource_api
-- ruby-deep_merge
-- ruby-fast_gettext
+- ruby
 - hiera
-- ruby-locale
+- ruby-deep_merge
+- ruby-augeas
+- ruby-concurrent
+- ruby-shadow
+- ruby-multi_json
+- facter
 - ruby-scanf
-repo_makedepends:
-- git
-- ruby-rdoc
+- ruby-semantic_puppet
+- ruby-fast_gettext
+- ruby-locale
 update_on:
 - alias: ruby
 - alpm: puppet

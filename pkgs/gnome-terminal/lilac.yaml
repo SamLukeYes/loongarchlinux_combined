@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-terminal'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gsettings-desktop-schemas
 - vte3
-repo_makedepends:
-- docbook-xsl
-- git
-- gnome-shell
-- nautilus: libnautilus-extension
-- meson
-- yelp-tools
 update_on:
 - alpm: gnome-terminal
   source: archpkg

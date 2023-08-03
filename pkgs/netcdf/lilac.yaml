@@ -9,19 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''netcdf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- unzip
 repo_depends:
-- hdf5
-- curl
-- libxml2
-- libaec
-- blosc
 - bzip2
 - libzip
 - zstd
-repo_makedepends:
-- cmake
+- curl
+- libaec
+- libxml2
+- hdf5
+- blosc
 update_on:
 - alpm: netcdf
   source: archpkg

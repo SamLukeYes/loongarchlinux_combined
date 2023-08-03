@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fpylll'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fplll
-- python-numpy
 - cysignals: python-cysignals
-repo_makedepends:
-- cython
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-numpy
+- fplll
 update_on:
 - alpm: fpylll
   source: archpkg

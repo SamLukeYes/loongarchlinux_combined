@@ -7,12 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pass-otp'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - pass
-- oath-toolkit
 - qrencode
-repo_makedepends: []
+- oath-toolkit
 update_on:
 - alpm: pass-otp
   source: archpkg

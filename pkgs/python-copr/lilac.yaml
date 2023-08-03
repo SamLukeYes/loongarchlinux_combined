@@ -7,19 +7,15 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-copr'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python-marshmallow
 - python-requests
-- python-requests-toolbelt
 - python-six
-- python-munch
+- python-requests-gssapi
+- python-requests-toolbelt
 - python-future
 - python-filelock
-- python-requests-gssapi
-repo_makedepends:
-- python-setuptools
+- python-marshmallow
+- python-munch
 update_on:
 - alpm: python-copr
   source: archpkg

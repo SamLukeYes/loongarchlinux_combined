@@ -9,21 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''projectm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glm
 - ftgl
-- glew
-- sdl2
-- qt5-base
 - pulseaudio: libpulse
-repo_makedepends:
+- qt5-base
+- sdl2
 - glm
-- qt5-base
-- ftgl
 - glew
-- sdl2
-- pulseaudio: libpulse
 update_on:
 - alpm: qt5-base
   source: alpm

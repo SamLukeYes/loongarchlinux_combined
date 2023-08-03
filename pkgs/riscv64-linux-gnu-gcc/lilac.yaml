@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''riscv64-linux-gnu-gcc
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - riscv64-linux-gnu-binutils
-- riscv64-linux-gnu-glibc
-- libmpc
 - libisl
+- libmpc
 - zstd
-repo_makedepends: []
+- riscv64-linux-gnu-glibc
 update_on:
 - alpm: riscv64-linux-gnu-gcc
   source: archpkg

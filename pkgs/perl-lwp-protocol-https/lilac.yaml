@@ -7,15 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-lwp-protocol-https'')
 
   '
-repo_checkdepends:
-- perl-test-requiresinternet
 repo_depends:
 - ca-certificates
-- perl-io-socket-ssl
 - perl-mozilla-ca
 - perl-net-http
 - perl-libwww
-repo_makedepends: []
+- perl-io-socket-ssl
 update_on:
 - alpm: perl-lwp-protocol-https
   source: archpkg

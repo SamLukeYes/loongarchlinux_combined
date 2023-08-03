@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cjs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
 - gtk3
-- gobject-introspection: gobject-introspection-runtime
 - js102
-repo_makedepends:
-- meson
-- samurai
-- gobject-introspection
+- gobject-introspection: gobject-introspection-runtime
 update_on:
 - alpm: cjs
   source: archpkg

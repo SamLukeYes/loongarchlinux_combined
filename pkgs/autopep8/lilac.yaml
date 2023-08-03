@@ -7,18 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''autopep8'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
 - python-pycodestyle
 - python-tomli
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
+- python
 update_on:
 - alias: python
 - alpm: autopep8

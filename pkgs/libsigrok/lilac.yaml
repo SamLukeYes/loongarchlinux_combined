@@ -9,25 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libsigrok'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libftdi
-- libserialport
-- glibmm
 - libzip
+- hidapi
 - libieee1284
 - bluez: bluez-libs
-- hidapi
-repo_makedepends:
-- cmake
-- doxygen
-- ruby
-- java8-openjdk: jdk8-openjdk
-- swig
-- python
-- python-numpy
-- python-setuptools
-- autoconf-archive
+- glibmm
+- libserialport
+- libftdi
 update_on:
 - alpm: systemd-libs
   provides: libudev.so

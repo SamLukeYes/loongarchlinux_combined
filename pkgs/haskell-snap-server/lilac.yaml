@@ -9,36 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-snap-server''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- haskell-base16-bytestring
-- haskell-monad-control
-- haskell-random
-- haskell-threads
-- haskell-hunit
-- haskell-quickcheck
-- haskell-http-streams
-- haskell-http-common
-- haskell-parallel
-- haskell-test-framework
-- haskell-test-framework-hunit
-- haskell-test-framework-quickcheck2
 repo_depends:
+- haskell-snap-core
+- haskell-network
 - ghc: ghc-libs
-- haskell-attoparsec
 - haskell-blaze-builder
 - haskell-case-insensitive
-- haskell-clock
 - haskell-io-streams
+- haskell-unix-compat
 - haskell-io-streams-haproxy
 - haskell-lifted-base
-- haskell-network
-- haskell-old-locale
-- haskell-snap-core
-- haskell-unix-compat
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
+- haskell-clock
+- haskell-attoparsec
+- haskell-old-locale
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

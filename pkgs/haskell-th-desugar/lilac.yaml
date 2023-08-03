@@ -9,19 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-th-desugar'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
+- haskell-th-lift
 - haskell-ordered-containers
 - haskell-syb
-- haskell-th-abstraction
-- haskell-th-lift
+- ghc: ghc-libs
 - haskell-th-orphans
+- haskell-th-abstraction
 - haskell-transformers-compat
-repo_makedepends:
-- ghc
-- haskell-hunit
-- haskell-hspec
 update_on:
 - alpm: haskell-ordered-containers
   source: alpm

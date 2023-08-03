@@ -1,27 +1,15 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
+- libxkbcommon
+- libxfixes
 - pango
+- desktop-file-utils
+- dbus
 - libxinerama
 - gtk4: gtk-update-icon-cache
-- shared-mime-info
-- hicolor-icon-theme
-- desktop-file-utils
 - libxkbfile
-- libxfixes
-- dbus
+- hicolor-icon-theme
 - icu
-- libxkbcommon
-repo_makedepends:
-- extra-cmake-modules
-- doxygen
-- gtk2
-- gtk3
-- mesa
-- opencc
-- iso-codes
-- gobject-introspection
-- enchant
-- python
+- shared-mime-info
 update_on:
 - alias: icu

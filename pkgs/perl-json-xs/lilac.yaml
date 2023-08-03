@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-json-xs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl
 - perl-common-sense
+- perl
 - perl-types-serialiser
-repo_makedepends:
-- perl-canary-stability
 update_on:
 - alias: perl
 - alpm: perl-json-xs

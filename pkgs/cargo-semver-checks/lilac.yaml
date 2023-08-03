@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cargo-semver-checks''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
+- zlib
 - libgit2
 - openssl
-- zlib
-repo_makedepends:
-- git
+- glibc
 update_on:
 - alpm: cargo-semver-checks
   source: archpkg

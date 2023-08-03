@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-crypt-openssl-bi
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl
 - openssl
-repo_makedepends: []
+- perl
 update_on:
 - alias: perl
 - alpm: perl-crypt-openssl-bignum

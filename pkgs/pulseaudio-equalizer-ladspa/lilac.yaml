@@ -7,15 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pulseaudio-equalizer-ladspa'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- pygobject: python-gobject
-- gtk3
-- swh-plugins
 - pulseaudio
+- swh-plugins
+- gtk3
 - bc
-repo_makedepends:
-- meson
+- pygobject: python-gobject
 update_on:
 - alpm: pulseaudio-equalizer-ladspa
   source: archpkg

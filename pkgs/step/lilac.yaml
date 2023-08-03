@@ -9,19 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''step'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libqalculate
 - gsl
+- libqalculate
 - knewstuff
-- kplotting
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- eigen
-- qt5-tools
-- python
+- kplotting
 update_on:
 - alpm: gsl
   source: alpm

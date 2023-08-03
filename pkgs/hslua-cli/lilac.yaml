@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hslua-cli'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-hslua-core
-- haskell-hslua-marshalling
 - haskell-lua
-repo_makedepends:
-- ghc
-- uusi
+- haskell-hslua-core
+- ghc: ghc-libs
+- haskell-hslua-marshalling
 update_on:
 - alpm: haskell-hslua-core
   source: alpm

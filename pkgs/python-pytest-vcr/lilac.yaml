@@ -7,14 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-vcr'')
 
   '
-repo_checkdepends:
-- python-coverage
-- python-pytest
 repo_depends:
-- python-pytest
 - python-vcrpy
-repo_makedepends:
-- python-setuptools
+- python-pytest
 update_on:
 - alpm: python-pytest-vcr
   source: archpkg

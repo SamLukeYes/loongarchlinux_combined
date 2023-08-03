@@ -9,18 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lua-sdl2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- lua53
+- sdl2_mixer
 - sdl2_gfx
 - sdl2_image
-- sdl2_mixer
 - sdl2_net
 - sdl2_ttf
-repo_makedepends:
-- cmake
-- git
-- ninja
+- lua53
 update_on:
 - alpm: lua-sdl2
   source: archpkg

@@ -1,15 +1,11 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - dconf
-- gsettings-qt
-- libxtst
-- opencv
-- qt5-svg
 - qt5-x11extras
-repo_makedepends:
-- cmake
-- qt5-tools
+- opencv
+- libxtst
+- gsettings-qt
+- qt5-svg
 update_on:
 - alpm: opencv
   source: alpm

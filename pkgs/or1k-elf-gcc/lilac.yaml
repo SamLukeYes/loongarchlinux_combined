@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''or1k-elf-gcc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- or1k-elf-binutils
 - zlib
-- libmpc
 - libisl
+- or1k-elf-binutils
+- libmpc
 - zstd
-repo_makedepends:
-- gmp
-- mpfr
-- or1k-elf-newlib
 update_on:
 - alpm: or1k-elf-gcc
   source: archpkg

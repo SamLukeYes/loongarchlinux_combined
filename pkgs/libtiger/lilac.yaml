@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libtiger'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pango
 - libkate
-repo_makedepends: []
+- pango
 update_on:
 - alpm: libtiger
   source: archpkg

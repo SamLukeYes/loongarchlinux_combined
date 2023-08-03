@@ -9,10 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''4ti2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glpk
-repo_makedepends: []
 update_on:
 - alpm: 4ti2
   source: archpkg

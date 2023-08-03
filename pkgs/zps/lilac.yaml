@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zps'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-repo_makedepends:
-- cmake
 update_on:
 - alpm: zps
   source: archpkg

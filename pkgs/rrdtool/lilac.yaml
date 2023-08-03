@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rrdtool'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxml2
 - pango
 - ttf-dejavu
-repo_makedepends:
-- intltool
-- ruby
-- python-setuptools
-- tcl
-- lua51
-- systemd
+- libxml2
 update_on:
 - alpm: rrdtool
   source: archpkg

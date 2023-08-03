@@ -9,34 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''patchage'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- glibc
+- alsa-lib
 - gtkmm
+- glibmm
+- glibc
+- glib2
 - hicolor-icon-theme
 - gcc: gcc-libs
-- glibc
-- gtkmm
-- hicolor-icon-theme
-- alsa-lib
 - atkmm
-- ganv
-- glibmm
-- glib2
-- gtk2
 - libsigc++
-repo_makedepends:
-- alsa-lib
-- atkmm
-- boost
-- dbus-glib
-- ganv
-- glib2
-- glibmm
 - gtk2
-- libsigc++
-- meson
+- ganv
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

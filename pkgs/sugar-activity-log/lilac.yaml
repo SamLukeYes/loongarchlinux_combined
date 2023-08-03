@@ -7,10 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''sugar-activity-log'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - sugar-toolkit-gtk3
-repo_makedepends: []
 update_on:
 - alpm: sugar-activity-log
   source: archpkg

@@ -9,23 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''strongswan'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- curl
-- gmp
-- iproute2
-- openssl
-- sqlite
-- libcap
-- systemd: systemd-libs
 - pam
-repo_makedepends:
-- networkmanager: libnm
-- systemd
-- python
-- ruby
-- mariadb
-- python-setuptools
+- curl
+- iproute2
+- libcap
+- sqlite
+- openssl
+- gmp
+- systemd: systemd-libs
 update_on:
 - alpm: strongswan
   source: archpkg

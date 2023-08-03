@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-scs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
 - python-scipy
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alpm: python-scs
   source: archpkg

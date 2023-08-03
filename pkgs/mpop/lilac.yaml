@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mpop'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gnutls
-- libidn
 - libsecret
-repo_makedepends: []
+- libidn
 update_on:
 - alpm: mpop
   source: archpkg

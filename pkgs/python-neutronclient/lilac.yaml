@@ -7,34 +7,23 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-neutronclient'')
 
   '
-repo_checkdepends:
-- python-oslotest
-- python-osprofiler
-- python-openstackclient
-- python-subunit
-- python-requests-mock
-- python-stestr
-- python-testtools
-- python-testscenarios
 repo_depends:
-- python-pbr
-- python-cliff
-- python-debtcollector
-- python-iso8601
-- python-netaddr
-- python-openstacksdk
-- python-osc-lib
-- python-oslo-i18n
-- python-oslo-log
-- python-oslo-serialization
-- python-oslo-utils
-- python-os-client-config
-- python-keystoneauth1
-- python-keystoneclient
 - python-requests
+- python-keystoneclient
+- python-oslo-serialization
+- python-oslo-i18n
+- python-keystoneauth1
+- python-pbr
 - python-simplejson
-repo_makedepends:
-- git
+- python-iso8601
+- python-osc-lib
+- python-cliff
+- python-os-client-config
+- python-openstacksdk
+- python-oslo-log
+- python-debtcollector
+- python-netaddr
+- python-oslo-utils
 update_on:
 - alpm: python-neutronclient
   source: archpkg

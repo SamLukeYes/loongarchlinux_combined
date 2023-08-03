@@ -1,7 +1,5 @@
 destsubdir: core
-repo_checkdepends: []
 repo_depends:
 - glibc
 - libxcrypt
-repo_makedepends: []
 update_on: []

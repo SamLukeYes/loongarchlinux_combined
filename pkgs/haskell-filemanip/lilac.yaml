@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-filemanip'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-unix-compat
-repo_makedepends:
-- ghc
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-unix-compat
   source: alpm

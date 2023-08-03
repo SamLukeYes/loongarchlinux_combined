@@ -7,34 +7,17 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''munin'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl
-- rrdtool
-- perl-html-template
-- perl-date-manip
-- perl-log-log4perl
+- perl-uri
 - perl-io-socket-inet6
+- perl-net-server
+- perl-log-log4perl
+- rrdtool
+- perl-date-manip
+- perl
+- perl-html-template
 - perl-file-copy-recursive
 - perl-fcgi
-- perl-uri
-- perl
-- perl-net-server
-- perl-io-socket-inet6
-repo_makedepends:
-- perl
-- rrdtool
-- perl-log-log4perl
-- perl-html-template
-- perl-date-manip
-- perl-io-socket-inet6
-- perl-net-snmp
-- perl-net-ssleay
-- perl-net-server
-- perl-file-copy-recursive
-- perl-fcgi
-- perl-uri
-- perl-module-build
 update_on:
 - alias: perl
 - alias: perl

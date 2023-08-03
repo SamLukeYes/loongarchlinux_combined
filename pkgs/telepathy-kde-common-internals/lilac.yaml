@@ -9,20 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-kde-common-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- telepathy-kde-integration-module
+- kaccounts-integration
+- libotr
+- telepathy-accounts-signon
 - knotifyconfig
 - ktexteditor
 - kpeople
 - telepathy-logger-qt
-- kaccounts-integration
-- libotr
-- telepathy-accounts-signon
-- telepathy-kde-integration-module
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- doxygen
 update_on:
 - alpm: telepathy-kde-common-internals
   source: archpkg

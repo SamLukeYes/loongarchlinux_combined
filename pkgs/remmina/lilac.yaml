@@ -9,28 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''remmina'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libsoup3
 - avahi
+- libsodium
+- vte3
+- libayatana-appindicator
 - libgcrypt
 - libssh
-- vte3
-- libsodium
-- libayatana-appindicator
-- libsoup3
-repo_makedepends:
-- cmake
-- freerdp
-- libvncserver
-- spice-gtk
-- spice-protocol
-- harfbuzz
-- xorgproto
-- gobject-introspection
-- kwallet
-- webkit2gtk-4.1
-- gtk-vnc
-- ninja
 update_on:
 - alpm: remmina
   source: archpkg

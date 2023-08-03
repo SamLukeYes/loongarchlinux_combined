@@ -9,20 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ukwm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gnome-desktop
-- gobject-introspection: gobject-introspection-runtime
 - libinput
-- libxkbcommon: libxkbcommon-x11
-- ukui-settings-daemon
-- upower
+- gobject-introspection: gobject-introspection-runtime
 - libcanberra
-repo_makedepends:
-- gobject-introspection
-- mate-common
-- intltool
-- wayland-protocols
+- upower
+- ukui-settings-daemon
+- gnome-desktop
+- libxkbcommon: libxkbcommon-x11
 update_on:
 - alpm: ukwm
   source: archpkg

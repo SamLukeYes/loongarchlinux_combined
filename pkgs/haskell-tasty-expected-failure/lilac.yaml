@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-expecte
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- haskell-hedgehog
-- haskell-tasty-golden
-- haskell-tasty-hedgehog
-- haskell-tasty-hunit
 repo_depends:
-- ghc: ghc-libs
 - haskell-tagged
-- haskell-tasty
 - haskell-unbounded-delays
-repo_makedepends:
-- ghc
+- haskell-tasty
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-tagged
   source: alpm

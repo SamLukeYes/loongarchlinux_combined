@@ -1,8 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - polkit
 - cups: libcups
-repo_makedepends:
-- meson
 update_on: []

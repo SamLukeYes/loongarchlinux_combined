@@ -9,20 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pangomm-2.48'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pango
 - glibmm-2.68
-- cairomm-1.16
 - pango
-- glibmm-2.68
 - cairomm-1.16
-repo_makedepends:
-- git
-- meson
-- mm-common
-- glibmm-2.68: glibmm-2.68-docs
-- cairomm-1.16: cairomm-1.16-docs
 update_on:
 - alpm: libsigc++-3.0
   provides: libsigc-3.0.so

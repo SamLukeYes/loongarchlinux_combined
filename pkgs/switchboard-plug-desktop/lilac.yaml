@@ -9,21 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-desk
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gdk-pixbuf2
-- glib2
-- gnome-desktop
-- gtk3
+- tumbler
 - libgee
-- libgexiv2
 - libhandy
 - plank
-- tumbler
-repo_makedepends:
-- git
-- meson
-- vala
+- gtk3
+- gnome-desktop
+- glib2
+- libgexiv2
 update_on:
 - alpm: granite
   provides: libgranite.so

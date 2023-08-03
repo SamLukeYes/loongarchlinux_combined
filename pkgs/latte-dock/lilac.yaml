@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''latte-dock'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- plasma-framework
 - knewstuff
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
+- plasma-framework
 update_on:
 - alpm: latte-dock
   source: archpkg

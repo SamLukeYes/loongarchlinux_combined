@@ -9,18 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-checkli
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
 - haskell-parameterized-utils
-repo_makedepends:
-- ghc
-- uusi
-- haskell-doctest
-- haskell-hunit
-- haskell-tasty
-- haskell-tasty-expected-failure
-- haskell-tasty-hunit
 update_on:
 - alpm: haskell-parameterized-utils
   source: alpm

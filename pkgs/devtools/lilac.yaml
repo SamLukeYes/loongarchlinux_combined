@@ -1,22 +1,19 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
+- openssh
+- subversion
+- git
+- diffutils
+- sed
+- mercurial
+- parallel
+- grep
 - arch-install-scripts
+- util-linux
+- rsync
 - bash
+- findutils
+- jq
 - binutils
 - coreutils
-- diffutils
-- findutils
-- grep
-- jq
-- openssh
-- parallel
-- rsync
-- sed
-- util-linux
-- git
-- mercurial
-- subversion
-repo_makedepends:
-- asciidoc
 update_on: []

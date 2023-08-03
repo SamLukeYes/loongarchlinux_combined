@@ -7,13 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-pry-byebug'')
 
   '
-repo_checkdepends:
-- ruby-rake
-- ruby-minitest
 repo_depends:
-- ruby-byebug
 - ruby-pry
-repo_makedepends: []
+- ruby-byebug
 update_on:
 - alpm: ruby-pry-byebug
   source: archpkg

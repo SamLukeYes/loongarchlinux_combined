@@ -9,21 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-vector'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- haskell-base-orphans
-- haskell-hunit
-- haskell-quickcheck
-- haskell-random
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-inspection-testing
-- haskell-tasty-quickcheck
 repo_depends:
+- haskell-vector-stream
 - ghc: ghc-libs
 - haskell-primitive
-- haskell-vector-stream
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-primitive
   source: alpm

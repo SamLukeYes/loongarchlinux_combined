@@ -9,25 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kstars'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- stellarsolver
 - libraw
-- kplotting
-- knewstuff
-- knotifyconfig
-- qt5-datavis3d
 - qt5-quickcontrols
+- libxisf
+- stellarsolver
+- knotifyconfig
 - qt5-websockets
 - qtkeychain: qtkeychain-qt5
-- libxisf
 - libindi
+- qt5-datavis3d
 - breeze-icons
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- eigen
+- knewstuff
+- kplotting
 update_on:
 - alpm: libindi
   source: alpm

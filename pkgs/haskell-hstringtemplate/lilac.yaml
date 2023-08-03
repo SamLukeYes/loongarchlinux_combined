@@ -9,19 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hstringtempla
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-blaze-builder
-- haskell-old-locale
 - haskell-syb
+- ghc: ghc-libs
+- haskell-old-locale
+- haskell-blaze-builder
 - haskell-void
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hunit
-- haskell-quickcheck
-- haskell-random
 update_on:
 - alpm: haskell-blaze-builder
   source: alpm

@@ -9,31 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''epiphany'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- aspell
-- hspell
-- hunspell
-- libvoikko
-- nuspell
-- xorg-server: xorg-server-xvfb
 repo_depends:
+- libsoup3
+- gtk4
+- libadwaita
 - gcr-4
 - gstreamer
-- gtk4
-- icu
-- libadwaita
 - libarchive
 - libportal: libportal-gtk4
-- libsoup3
 - webkitgtk-6.0
-repo_makedepends:
-- docbook-xml
-- git
-- gobject-introspection
-- lsb-release
-- meson
-- startup-notification
-- yelp-tools
+- icu
 update_on:
 - alias: icu
 - alpm: epiphany

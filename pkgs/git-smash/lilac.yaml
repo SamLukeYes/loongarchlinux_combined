@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''git-smash'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - gcc: gcc-libs
+- glibc
 - git
-repo_makedepends:
-- scdoc
 update_on:
 - alpm: git-smash
   source: archpkg

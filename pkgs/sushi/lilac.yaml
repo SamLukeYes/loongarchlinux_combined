@@ -9,20 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sushi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - evince
-- gjs
-- gstreamer: gst-plugin-gtk
-- gstreamer: gst-plugins-base-libs
-- gtk3
-- gtksourceview4
 - libsoup3
 - webkit2gtk-4.1
-repo_makedepends:
-- git
-- gobject-introspection
-- meson
+- gstreamer: gst-plugin-gtk
+- gjs
+- gtksourceview4
+- gstreamer: gst-plugins-base-libs
+- gtk3
 update_on:
 - alpm: sushi
   source: archpkg

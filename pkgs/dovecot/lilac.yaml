@@ -9,27 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dovecot'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- krb5
-- openssl
-- sqlite
-- mariadb: mariadb-libs
-- libsodium
-- postgresql: postgresql-libs
 - bzip2
+- postgresql: postgresql-libs
 - lz4
-- expat
+- libsodium
+- krb5
 - curl
-- pam
 - systemd: systemd-libs
-repo_makedepends:
-- libcap
-- openldap: libldap
-- lua53
-- xz
-- clucene
-- systemd
+- expat
+- sqlite
+- openssl
+- mariadb: mariadb-libs
+- pam
 update_on:
 - alpm: dovecot
   source: archpkg

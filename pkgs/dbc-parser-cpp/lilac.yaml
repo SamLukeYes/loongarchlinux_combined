@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dbc-parser-cpp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- git
-- cmake
-- catch2
 update_on:
 - alpm: dbc-parser-cpp
   source: archpkg

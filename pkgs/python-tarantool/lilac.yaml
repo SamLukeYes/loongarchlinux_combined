@@ -7,14 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-tarantool'')
 
   '
-repo_checkdepends:
-- tarantool
-- python-dbapi-compliance
-- python-yaml
 repo_depends:
 - python-msgpack
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-tarantool
   source: archpkg

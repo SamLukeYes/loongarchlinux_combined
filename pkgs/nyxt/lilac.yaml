@@ -9,20 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nyxt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-- hicolor-icon-theme
-- enchant
-- glib-networking
-- gobject-introspection: gobject-introspection-runtime
 - gsettings-desktop-schemas
-- libfixposix
 - webkit2gtk-4.1
+- gobject-introspection: gobject-introspection-runtime
+- enchant
+- libfixposix
+- glib-networking
 - zstd
-repo_makedepends:
-- git
-- sbcl
+- hicolor-icon-theme
 update_on:
 - alpm: nyxt
   source: archpkg

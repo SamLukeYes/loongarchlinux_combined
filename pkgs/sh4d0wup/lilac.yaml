@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sh4d0wup'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- sequoia-sq
 repo_depends:
 - gcc
+- xz
 - pcsclite
 - podman
 - openssl
 - shared-mime-info
-- xz
-repo_makedepends:
-- clang
 update_on:
 - alpm: zstd
   provides: libzstd.so

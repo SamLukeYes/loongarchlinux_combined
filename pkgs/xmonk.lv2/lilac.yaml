@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xmonk.lv2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
 - cairo
-- gcc: gcc-libs
 - glibc
+- gcc: gcc-libs
 - libx11
-repo_makedepends:
-- lv2
 update_on:
 - alpm: xmonk.lv2
   source: archpkg

@@ -9,21 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''colorhug-client'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - colord-gtk
 - libcanberra
-repo_makedepends:
-- intltool
-- itstool
-- gobject-introspection
-- libgusb
-- gtk3
-- docbook-utils
-- docbook-sgml
-- perl-sgmls
-- bash-completion
-- appstream-glib
 update_on:
 - alpm: colorhug-client
   source: archpkg

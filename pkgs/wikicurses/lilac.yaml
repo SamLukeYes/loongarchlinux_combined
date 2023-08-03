@@ -7,14 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''wikicurses'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
-- python-urwid
-- python-beautifulsoup4
 - python-lxml
-repo_makedepends:
-- python-setuptools
+- python-beautifulsoup4
+- python-urwid
+- python
 update_on:
 - alias: python
 - alpm: wikicurses

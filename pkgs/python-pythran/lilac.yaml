@@ -1,13 +1,9 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- python-ply
-- python-numpy
-- python-beniget
-- xsimd
 - boost
-repo_makedepends:
-- python-setuptools
-- python-pytest-runner
+- python-beniget
+- python-ply
+- xsimd
+- python-numpy
 update_on:
 - alias: boost

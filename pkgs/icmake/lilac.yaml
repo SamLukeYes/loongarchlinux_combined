@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''icmake'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libbobcat
 - libunwind
-repo_makedepends:
-- yodl
 update_on:
 - alpm: icmake
   source: archpkg

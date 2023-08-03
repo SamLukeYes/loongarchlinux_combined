@@ -9,23 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gmic'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- qt5-base
 - graphicsmagick
 - opencv
 - fftw
 - gimp
-- qt5-base
-repo_makedepends:
-- cmake
-- gimp
-- qt5-base
-- fftw
-- openexr
-- opencv
-- eigen
-- graphicsmagick
-- qt5-tools
 update_on:
 - alpm: opencv
   source: alpm

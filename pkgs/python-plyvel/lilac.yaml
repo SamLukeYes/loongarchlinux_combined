@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-plyvel'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest-runner
 repo_depends:
 - leveldb
 - python
-repo_makedepends:
-- cython
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-plyvel

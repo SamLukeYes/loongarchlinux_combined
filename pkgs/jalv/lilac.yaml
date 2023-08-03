@@ -9,28 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jalv'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
-- gcc: gcc-libs
-- glibc
+- serd
 - glib2
-- lilv
-- serd
 - sratom
 - suil
-repo_makedepends:
-- gtk2
-- gtk3
+- glibc
 - lilv
-- lv2
-- meson
-- qt5-tools
-- serd
-- sord
-- sratom
-- suil
 update_on:
 - alpm: glib2
   provides: libglib-2.0.so

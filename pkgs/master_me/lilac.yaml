@@ -9,50 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''master_me'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
-- libglvnd
-- libx11
-- libxext
 - libxrandr
-- gcc: gcc-libs
-- glibc
-- gcc: gcc-libs
-- glibc
 - libglvnd
-- libx11
-- libxext
-- libxrandr
-- gcc: gcc-libs
-- glibc
 - hicolor-icon-theme
-- libglvnd
 - libx11
 - libxext
-- libxrandr
-- gcc: gcc-libs
 - glibc
-- libglvnd
-- libx11
-- libxext
-- libxrandr
-- gcc: gcc-libs
-- glibc
-- libglvnd
-- libx11
-- libxext
-- libxrandr
-repo_makedepends:
-- faustpp
-- gcc: gcc-libs
-- gendesk
-- glibc
-- libglvnd
-- libx11
-- libxext
-- libxrandr
 update_on:
 - alpm: master_me
   source: archpkg

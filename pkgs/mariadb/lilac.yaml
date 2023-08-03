@@ -1,40 +1,19 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
+- bzip2
 - liburing
-- libxcrypt
-- openssl
-- zlib
 - zstd
 - jemalloc
 - ncurses
-- bzip2
-- libxml2
-- lz4
-- systemd: systemd-libs
-- libxml2
-- zstd
-- perl
 - perl-dbd-mariadb
 - perl-term-readkey
-repo_makedepends:
-- boost
-- bzip2
-- cmake
-- cracklib
-- curl
-- jemalloc
-- judy
-- krb5
-- liburing
-- libxcrypt
-- libxml2
 - lz4
-- openssl
-- systemd
 - zlib
-- zstd
-- xz
+- libxcrypt
+- perl
+- libxml2
+- openssl
+- systemd: systemd-libs
 update_on:
 - alpm: libxcrypt
   provides: libcrypt.so

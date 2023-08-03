@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yubico-pam'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- perl-net-ldap-server
 repo_depends:
-- pam
-- yubico-c-client
-- yubikey-personalization
 - json-c
-repo_makedepends: []
+- yubikey-personalization
+- yubico-c-client
+- pam
 update_on:
 - alpm: yubico-pam
   source: archpkg

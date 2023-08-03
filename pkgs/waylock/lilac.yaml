@@ -9,22 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''waylock'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libxkbcommon
 - gcc: gcc-libs
-- glibc
-- gcc: gcc-libs
+- wayland
 - glibc
 - pam
-- wayland
-- libxkbcommon
-repo_makedepends:
-- libxkbcommon
-- pam
-- scdoc
-- wayland
-- wayland-protocols
-- zig
 update_on:
 - alpm: pam
   provides: libpam.so

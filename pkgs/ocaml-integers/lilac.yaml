@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ocaml-integers'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- dune
-- ocaml-topkg
-- ocaml-findlib
-- ocaml: ocaml-compiler-libs
-- ocamlbuild
-- opam
-- ocaml-stdlib-shims
 update_on:
 - alpm: ocaml-integers
   source: archpkg

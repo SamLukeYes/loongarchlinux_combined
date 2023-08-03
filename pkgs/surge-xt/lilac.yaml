@@ -9,102 +9,24 @@ pre_build_script: '_G.files = download_official_pkgbuild(''surge-xt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- xdg-utils
+- xcb-util-keysyms
+- glibc
 - hicolor-icon-theme
-- glibc
 - gcc: gcc-libs
-- cairo
-- fontconfig
-- freetype2
-- libx11
-- libxcb
-- libxkbcommon: libxkbcommon-x11
-- xcb-util
 - xcb-util-cursor
 - xcb-util-image
-- xcb-util-keysyms
-- xcb-util-renderutil
-- xdg-utils
-- fmt
-- libsamplerate
-- glibc
-- gcc: gcc-libs
 - cairo
-- fontconfig
-- freetype2
-- libx11
-- libxcb
 - libxkbcommon: libxkbcommon-x11
-- xcb-util
-- xcb-util-cursor
-- xcb-util-image
-- xcb-util-keysyms
-- xcb-util-renderutil
-- xdg-utils
-- fmt
-- libsamplerate
-- glibc
-- gcc: gcc-libs
-- cairo
 - fontconfig
-- freetype2
-- libx11
 - libxcb
-- libxkbcommon: libxkbcommon-x11
-- xcb-util
-- xcb-util-cursor
-- xcb-util-image
-- xcb-util-keysyms
-- xcb-util-renderutil
-- xdg-utils
-- fmt
 - libsamplerate
-- glibc
-- gcc: gcc-libs
-- cairo
-- fontconfig
 - freetype2
-- libx11
-- libxcb
-- libxkbcommon: libxkbcommon-x11
-- xcb-util
-- xcb-util-cursor
-- xcb-util-image
-- xcb-util-keysyms
-- xcb-util-renderutil
-- xdg-utils
 - fmt
-- libsamplerate
-repo_makedepends:
-- glibc
-- gcc: gcc-libs
-- cairo
-- fontconfig
-- freetype2
-- libx11
-- libxcb
-- libxkbcommon: libxkbcommon-x11
 - xcb-util
-- xcb-util-cursor
-- xcb-util-image
-- xcb-util-keysyms
 - xcb-util-renderutil
-- xdg-utils
-- fmt
-- libsamplerate
-- git
-- cmake
-- libsndfile
-- python
-- libxrandr
-- libxinerama
-- libxcursor
-- alsa-lib
-- webkit2gtk
-- ripgrep
-- lv2
-- juce
+- libx11
 update_on:
 - alpm: surge-xt
   source: archpkg

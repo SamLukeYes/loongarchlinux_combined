@@ -9,19 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libalkimia'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-webengine
 - knewstuff
-- hicolor-icon-theme
 - perl
-repo_makedepends:
-- cmake
-- doxygen
-- extra-cmake-modules
-- plasma-framework
-- kpackage
-- kdoctools
+- hicolor-icon-theme
+- qt5-webengine
 update_on:
 - alias: perl
 - alpm: libalkimia

@@ -7,25 +7,18 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-alien-base-modulebuild'')
 
   '
-repo_checkdepends:
-- perl-acme-alien-dontpanic
-- perl-inline
-- perl-inline-c
-- perl-inline-cpp
 repo_depends:
-- perl-alien-build
-- perl-archive-extract
-- perl-capture-tiny
-- perl-file-chdir
 - perl-html-parser
-- perl-module-build
-- perl-path-tiny
-- perl-shell-config-generate
 - perl-shell-guess
-- perl-sort-versions
 - perl-uri
-repo_makedepends:
-- perl-test2-suite
+- perl-path-tiny
+- perl-sort-versions
+- perl-archive-extract
+- perl-file-chdir
+- perl-capture-tiny
+- perl-alien-build
+- perl-module-build
+- perl-shell-config-generate
 update_on:
 - alpm: perl-alien-base-modulebuild
   source: archpkg

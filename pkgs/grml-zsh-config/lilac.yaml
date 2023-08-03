@@ -7,14 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''grml-zsh-config'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- sed
+- grep
 - zsh
 - coreutils
-- grep
-- sed
-repo_makedepends:
-- txt2tags
 update_on:
 - alpm: grml-zsh-config
   source: archpkg

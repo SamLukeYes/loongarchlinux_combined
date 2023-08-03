@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-gio2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ruby
 - ruby-glib2
+- ruby
 - ruby-gobject-introspection
-repo_makedepends:
-- gobject-introspection
-- ruby-native-package-installer
 update_on:
 - alias: ruby
 - alpm: ruby-gio2

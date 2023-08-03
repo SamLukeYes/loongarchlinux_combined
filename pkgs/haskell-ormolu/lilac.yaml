@@ -9,21 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ormolu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-ansi-terminal
-- haskell-diff
-- haskell-dlist
-- haskell-gitrev
 - haskell-optparse-applicative
+- haskell-dlist
 - haskell-syb
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hspec
-- haskell-path
-- haskell-path-io
+- ghc: ghc-libs
+- haskell-diff
+- haskell-ansi-terminal
+- haskell-gitrev
 update_on:
 - alpm: haskell-ansi-terminal
   source: alpm

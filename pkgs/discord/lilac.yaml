@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''discord'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libnotify
 - libxss
-- nspr
 - nss
+- libnotify
+- nspr
 - gtk3
-repo_makedepends: []
 update_on:
 - alpm: discord
   source: archpkg

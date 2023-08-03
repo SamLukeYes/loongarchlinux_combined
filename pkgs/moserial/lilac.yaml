@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''moserial'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gsettings-desktop-schemas
 - gtk3
-repo_makedepends:
-- intltool
-- itstool
+- gsettings-desktop-schemas
 update_on:
 - alpm: moserial
   source: archpkg

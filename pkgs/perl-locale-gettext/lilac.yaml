@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-locale-gettext''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gettext
 - perl
-repo_makedepends: []
+- gettext
 update_on:
 - alias: perl
 - alpm: perl-locale-gettext

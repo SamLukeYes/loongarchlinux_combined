@@ -9,21 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mosquitto'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cjson
 - openssl
-- util-linux: util-linux-libs
 - cjson
-- openssl
 - util-linux: util-linux-libs
-repo_makedepends:
-- c-ares
-- cmake
-- docbook-xsl
-- libwebsockets
-- systemd
-- uthash
 update_on:
 - alpm: c-ares
   provides: libcares.so

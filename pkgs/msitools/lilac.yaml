@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''msitools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libgsf
 - gcab
 - libxml2
-repo_makedepends:
-- git
-- intltool
-- vala
-- meson
-- gobject-introspection
-- bash-bats
+- libgsf
 update_on:
 - alpm: msitools
   source: archpkg

@@ -7,23 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pdm-backend'')
 
   '
-repo_checkdepends:
-- git
-- python-editables
-- python-pytest
-- python-pytest-cov
-- python-pytest-xdist
-- python-setuptools
 repo_depends:
-- python
-- python-packaging
 - python-pyproject-metadata
-- python-tomli-w
 - python-validate-pyproject
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
+- python-packaging
+- python-tomli-w
+- python
 update_on:
 - alias: python
 - alpm: python-pdm-backend

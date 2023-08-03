@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''goaccess'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ncurses
-- libmaxminddb
 - openssl
-repo_makedepends: []
+- libmaxminddb
+- ncurses
 update_on:
 - alpm: goaccess
   source: archpkg

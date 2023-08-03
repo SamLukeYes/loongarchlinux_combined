@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-vte3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- vte3
 - ruby
 - ruby-gtk3
-repo_makedepends: []
+- vte3
 update_on:
 - alias: ruby
 - alpm: ruby-vte3

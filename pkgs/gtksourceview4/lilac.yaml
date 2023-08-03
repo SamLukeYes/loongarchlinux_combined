@@ -9,19 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtksourceview4'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
 - gtk3
 - libxml2
-repo_makedepends:
-- gobject-introspection
-- vala
-- gtk-doc
-- glade
-- yelp-tools
-- git
-- meson
 update_on:
 - alpm: gtksourceview4
   source: archpkg

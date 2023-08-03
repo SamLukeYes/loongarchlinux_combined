@@ -9,34 +9,28 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-eval-plug
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- git
 repo_depends:
-- ghc: ghc-libs
-- haskell-diff
-- haskell-quickcheck
+- haskell-pretty-simple
+- haskell-unordered-containers
 - haskell-aeson
-- haskell-data-default
-- haskell-dlist
-- haskell-extra
-- haskell-ghc-paths
-- haskell-ghcide
-- haskell-hashable
-- haskell-hls-graph
+- haskell-diff
 - haskell-hls-plugin-api
 - haskell-lens
-- haskell-lsp
+- haskell-ghc-paths
+- haskell-hashable
+- haskell-quickcheck
 - haskell-lsp-types
-- haskell-megaparsec
-- haskell-parser-combinators
-- haskell-pretty-simple
+- haskell-lsp
+- haskell-ghcide
 - haskell-safe-exceptions
+- ghc: ghc-libs
+- haskell-parser-combinators
+- haskell-extra
+- haskell-hls-graph
+- haskell-dlist
+- haskell-data-default
+- haskell-megaparsec
 - haskell-unliftio
-- haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hls-test-utils
 update_on:
 - alpm: haskell-diff
   source: alpm

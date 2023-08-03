@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tar-conduit''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-conduit
+- ghc: ghc-libs
 - haskell-safe-exceptions
-repo_makedepends:
-- ghc
-- haskell-conduit-extra
-- haskell-hspec
-- haskell-quickcheck
-- haskell-weigh
 update_on:
 - alpm: haskell-conduit
   source: alpm

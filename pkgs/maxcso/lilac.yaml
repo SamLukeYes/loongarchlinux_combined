@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''maxcso'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
-- libuv
 - lz4
 - zlib
-repo_makedepends:
-- git
+- libuv
+- glibc
 update_on:
 - alpm: libdeflate
   provides: libdeflate.so

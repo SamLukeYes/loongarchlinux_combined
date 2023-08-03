@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libsvgtiny'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- netsurf-buildsystem
-- git
-- libwapcaplet
-- libdom
-- gperf
 update_on:
 - alpm: libsvgtiny
   source: archpkg

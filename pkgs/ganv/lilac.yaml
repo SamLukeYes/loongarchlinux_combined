@@ -9,25 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ganv'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
 - gcc: gcc-libs
+- cairo
 - glibc
 - graphviz
-- cairo
-- gcc: gcc-libs
-- glibc
-- graphviz
-repo_makedepends:
-- glib2
-- gobject-introspection
-- gtk2
-- gtkmm
-- harfbuzz
-- libsigc++
-- meson
-- pango
 update_on:
 - alpm: gtk2
   provides: libgdk-x11-2.0.so

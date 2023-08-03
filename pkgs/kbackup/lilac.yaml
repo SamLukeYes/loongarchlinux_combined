@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kbackup'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kio
 - libarchive
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
+- kio
 update_on:
 - alpm: kbackup
   source: archpkg

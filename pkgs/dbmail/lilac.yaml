@@ -9,22 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dbmail'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libevent
+- mhash
 - gmime3
 - libzdb
-- mhash
-- libevent
-repo_makedepends:
-- asciidoc
-- xmlto
-- docbook-xsl
-- docbook-xml
-- sqlite
-- mariadb: mariadb-libs
-- libsieve
-- git
-- systemd
 update_on:
 - alpm: dbmail
   source: archpkg

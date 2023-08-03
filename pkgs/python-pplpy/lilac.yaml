@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pplpy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - cysignals: python-cysignals
-- python-gmpy2
 - ppl
-repo_makedepends:
-- cython
-- python-setuptools
-- python-sphinx
+- python-gmpy2
 update_on:
 - alpm: python-pplpy
   source: archpkg

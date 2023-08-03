@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dillo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fltk
-- libpng
-- openssl
-- perl
 - zlib
-repo_makedepends: []
+- fltk
+- perl
+- openssl
+- libpng
 update_on:
 - alias: perl
 - alpm: dillo

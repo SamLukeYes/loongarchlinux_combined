@@ -9,34 +9,27 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-file-manager''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-# - deepin-qt5integration
-- deepin-anything
+- mimetic
+- startdde
+- libmediainfo
+- ffmpegthumbnailer
+- lucene++
+- file
+- avfs
+- libgsf
+- jemalloc
+- polkit-qt: polkit-qt5
+- kcodecs
+- poppler
+- gio-qt
+- taglib
 - disomaster
 - docparser
-- file
-- gio-qt
-- libmediainfo
-- lucene++
-- avfs
-- polkit-qt: polkit-qt5
-- poppler
-- ffmpegthumbnailer
-- jemalloc
-- kcodecs
-# - startdde
+- deepin-anything
 - htmlcxx
-- libgsf
-- mimetic
 - boost: boost-libs
-- taglib
-repo_makedepends:
-- boost
-- qt5-tools
-- deepin-dock
-- deepin-movie
-- deepin-gettext-tools
+- deepin-qt5integration
 update_on:
 - alpm: deepin-file-manager
   source: archpkg

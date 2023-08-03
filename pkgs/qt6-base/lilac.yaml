@@ -1,61 +1,25 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- libjpeg-turbo
-- xcb-util-keysyms
-- xcb-util-cursor
-- fontconfig
-- xdg-utils
-- shared-mime-info
-- xcb-util-wm
 - libxrender
-- libxi
-- sqlite
-- mesa
-- vulkan-headers
 - tslib
-- libinput
-- libxkbcommon: libxkbcommon-x11
-- libproxy
-- cups: libcups
-- double-conversion
-- brotli
-- libb2
-- md4c
-- libjpeg-turbo
-- xcb-util-keysyms
-- xcb-util-cursor
-- fontconfig
 - xdg-utils
-- shared-mime-info
-- xcb-util-wm
-- libxrender
-- libxi
-- sqlite
-- mesa
-- vulkan-headers
-- tslib
-- libinput
-- libxkbcommon: libxkbcommon-x11
-- libproxy
+- xcb-util-keysyms
 - cups: libcups
-- double-conversion
-- brotli
 - libb2
+- libjpeg-turbo
+- xcb-util-cursor
+- xcb-util-wm
+- libproxy
+- libxkbcommon: libxkbcommon-x11
+- shared-mime-info
+- fontconfig
+- double-conversion
 - md4c
+- sqlite
 - qt6-translations
-# repo_makedepends:
-# - cmake
-# - ninja
-# - libfbclient
-# - mariadb: mariadb-libs
-# - unixodbc
-# - postgresql
-# - alsa-lib
-# - gstreamer: gst-plugins-base-libs
-# - gtk3
-# - pulseaudio: libpulse
-# - cups
-# - freetds
-# - xmlstarlet
+- libinput
+- libxi
+- brotli
+- vulkan-headers
+- mesa
 update_on: []

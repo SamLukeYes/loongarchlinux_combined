@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtksourceview5'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- gtk4
 - libxml2
 - pcre2
-repo_makedepends:
-- gi-docgen
-- git
-- gobject-introspection
-- meson
-- vala
+- gtk4
 update_on:
 - alpm: gtksourceview5
   source: archpkg

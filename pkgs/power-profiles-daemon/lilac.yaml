@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''power-profiles-daemon
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-dbusmock
-- python-isort
-- python-mccabe
-- umockdev
 repo_depends:
-- upower
 - polkit
-repo_makedepends:
-- meson
+- upower
 update_on:
 - alpm: power-profiles-daemon
   source: archpkg

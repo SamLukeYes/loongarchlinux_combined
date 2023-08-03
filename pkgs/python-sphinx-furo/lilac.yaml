@@ -7,20 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-sphinx-furo'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- python-beautifulsoup4
 - python-sphinx-basic-ng
 - python-pygments
-- python-beautifulsoup4
-# repo_makedepends:
-# - python-build
-# - python-installer
-# - python-sphinx-theme-builder
-# - python-flit-core
-# - nodejs-lts-hydrogen
-# - npm
-# - expac
-# - git
 update_on:
 - alpm: python-sphinx-furo
   source: archpkg

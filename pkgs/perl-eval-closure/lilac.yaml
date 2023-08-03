@@ -7,14 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-eval-closure'')
 
   '
-repo_checkdepends:
-- perl-test-requires
-- perl-test-fatal
-- perl-test-output
 repo_depends:
 - perl-try-tiny
 - perl-sub-exporter
-repo_makedepends: []
 update_on:
 - alpm: perl-eval-closure
   source: archpkg

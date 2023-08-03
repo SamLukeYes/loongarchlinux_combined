@@ -9,33 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ecasound'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- gcc: gcc-libs
-- glibc
 - alsa-lib
+- libsndfile
 - audiofile
-- liblo
+- glibc
 - lilv
+- gcc: gcc-libs
+- liblo
+- libsamplerate
 - ncurses
 - readline
-- libsamplerate
-- libsndfile
-repo_makedepends:
-- alsa-lib
-- audiofile
-- liblo
-- libmikmod
-- libsamplerate
-- libsndfile
-- lilv
-- lv2
-- ncurses
-- python
-- readline
-- ruby
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

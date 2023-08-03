@@ -7,16 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-zope-configuration'')
 
   '
-repo_checkdepends:
-- python-manuel
-- python-zope-testing
-- python-zope-testrunner
 repo_depends:
-- python-setuptools
-- python-zope-interface
-- python-zope-schema
 - python-zope-i18nmessageid
-repo_makedepends: []
+- python-zope-schema
+- python-zope-interface
+- python-setuptools
 update_on:
 - alpm: python-zope-configuration
   source: archpkg

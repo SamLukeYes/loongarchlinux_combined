@@ -9,20 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sway'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
-- gdk-pixbuf2
 - libinput
+- gdk-pixbuf2
 - libxcb
-- pango
 - pcre2
-repo_makedepends:
-- meson
-- ninja
-- scdoc
-- setconf
-- wayland-protocols
+- pango
+- cairo
 update_on:
 - alpm: libevdev
   provides: libevdev.so

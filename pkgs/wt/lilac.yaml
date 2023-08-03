@@ -9,27 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- libharu
-- graphicsmagick
+- qt5-base
 - pango
 - zlib
+- graphicsmagick
+- libharu
 - harfbuzz
-- qt5-base
-repo_makedepends:
-- boost
-- cmake
-- postgresql: postgresql-libs
-- fcgi
-- sqlite
-- mysql++
-- doxygen
-- graphviz
-- mesa
-- glu
-- ninja
+- boost: boost-libs
 update_on:
 - alpm: qt5-base
   source: alpm

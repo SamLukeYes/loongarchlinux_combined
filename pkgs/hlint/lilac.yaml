@@ -9,28 +9,25 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hlint'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
+- haskell-unordered-containers
 - haskell-aeson
 - haskell-ansi-terminal
-- haskell-cmdargs
-- haskell-cpphs
-- haskell-data-default
-- haskell-extra
 - haskell-file-embed
-- haskell-filepattern
-- haskell-ghc-lib-parser-ex
-- haskell-hscolour
-- haskell-refact
 - haskell-syb
 - haskell-uniplate
-- haskell-unordered-containers
+- haskell-refact
 - haskell-utf8-string
+- haskell-cpphs
+- haskell-ghc-lib-parser-ex
+- ghc: ghc-libs
+- haskell-cmdargs
+- haskell-extra
+- haskell-hscolour
+- haskell-filepattern
+- haskell-data-default
 - haskell-vector
 - haskell-yaml
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-aeson
   source: alpm

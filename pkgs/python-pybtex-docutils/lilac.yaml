@@ -7,14 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pybtex-docutils'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python-six
 - python-docutils
 - python-pybtex
-repo_makedepends:
-- python-setuptools
+- python-six
 update_on:
 - alpm: python-pybtex-docutils
   source: archpkg

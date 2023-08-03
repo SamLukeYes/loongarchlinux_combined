@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''akonadi-contacts'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- akonadi: libakonadi
-- kcontacts
-- kmime
-- prison
 - grantleetheme
-repo_makedepends:
-- extra-cmake-modules
-- qt5-tools
-- doxygen
+- akonadi: libakonadi
+- kmime
+- kcontacts
+- prison
 update_on:
 - alpm: akonadi-contacts
   source: archpkg

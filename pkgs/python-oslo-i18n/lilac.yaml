@@ -7,15 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-oslo-i18n'')
 
   '
-repo_checkdepends:
-- python-oslotest
-- python-oslo-config
-- python-stestr
-- python-testscenarios
 repo_depends:
 - python-pbr
-repo_makedepends:
-- git
 update_on:
 - alpm: python-oslo-i18n
   source: archpkg

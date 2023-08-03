@@ -7,20 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-cliff'')
 
   '
-repo_checkdepends:
-- python-stestr
-- python-sphinx
-- python-testscenarios
 repo_depends:
 - python-six
-- python-cmd2
 - python-prettytable
 - python-importlib-metadata
-- python-stevedore
-- python-yaml
+- python-cmd2
 - python-autopage
-repo_makedepends:
-- git
+- python-yaml
+- python-stevedore
 update_on:
 - alpm: python-cliff
   source: archpkg

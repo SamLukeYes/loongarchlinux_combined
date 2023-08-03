@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''obconf-qt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- hicolor-icon-theme
 - openbox
 - qt5-x11extras
-repo_makedepends:
-- lxqt-build-tools
+- hicolor-icon-theme
 update_on:
 - alpm: obconf-qt
   source: archpkg

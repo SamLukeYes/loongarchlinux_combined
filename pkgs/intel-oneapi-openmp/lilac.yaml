@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''intel-oneapi-openmp''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- intel-oneapi-common
-- elfutils: libelf
 - level-zero: level-zero-loader
+- elfutils: libelf
 - libffi
-repo_makedepends: []
+- intel-oneapi-common
 update_on:
 - alpm: intel-oneapi-openmp
   source: archpkg

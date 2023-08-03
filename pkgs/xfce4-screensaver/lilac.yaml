@@ -9,17 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xfce4-screensaver'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxss
-- libxklavier
-- libwnck3
-- garcon
-- dbus-glib
-- python
 - pygobject: python-gobject
-repo_makedepends:
-- intltool
+- dbus-glib
+- libxss
+- garcon
+- libxklavier
+- python
+- libwnck3
 update_on:
 - alias: python
 - alpm: xfce4-screensaver

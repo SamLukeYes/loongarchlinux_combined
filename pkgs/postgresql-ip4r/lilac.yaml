@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''postgresql-ip4r'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - postgresql
-repo_makedepends:
-- clang
-- llvm
 update_on:
 - alpm: postgresql-ip4r
   source: archpkg

@@ -9,16 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''keysmith'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kirigami2
-- ki18n
 - kdbusaddons
-- kwindowsystem
 - libsodium
+- ki18n
 - qt5-svg
-repo_makedepends:
-- extra-cmake-modules
+- kwindowsystem
 update_on:
 - alpm: keysmith
   source: archpkg

@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ceres-solver'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - google-glog
-- eigen
 - suitesparse
-repo_makedepends:
-- cmake
-- ninja
+- eigen
 update_on:
 - alpm: ceres-solver
   source: archpkg

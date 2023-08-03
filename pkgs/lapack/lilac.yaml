@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lapack'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- gcc: gcc-libs
-repo_makedepends:
-- gcc: gcc-fortran
-- cmake
-- python
-- doxygen
 update_on:
 - alpm: lapack
   source: archpkg

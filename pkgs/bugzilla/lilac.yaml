@@ -7,43 +7,41 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''bugzilla'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl
-- perl-timedate
-- perl-datetime
-- perl-cgi
 - perl-dbi
+- perl-return-value
+- perl-html-scrubber
+- perl-gdtextutil
 - perl-chart
-- perl-email-abstract
-- perl-email-address
-- perl-email-date-format
-- perl-email-messageid
-- perl-email-mime
-- perl-email-mime-attachment-stripper
 - perl-email-mime-contenttype
-- perl-email-mime-encodings
+- perl-email-simple
+- perl-file-slurp
+- perl-patchreader
+- perl-email-abstract
+- perl-cgi
+- perl-email-address
+- perl-math-random-isaac
+- perl-email-messageid
+- perl-template-gd
+- perl-xml-twig
+- perl-gdgraph
+- perl-template-toolkit
+- perl-json-xs
+- perl-gd
 - perl-email-reply
 - perl-email-send
-- perl-email-simple
-- perl-gd
-- perl-gdgraph
-- perl-gdtextutil
-- perl-patchreader
-- perl-return-value
-- perl-template-gd
-- perl-ldap
-- perl-soap-lite
-- perl-authen-sasl
-- perl-xml-twig
-- perl-html-scrubber
+- perl-email-mime-attachment-stripper
+- perl-email-mime-encodings
+- perl-timedate
 - perl-authen-radius
-- perl-template-toolkit
-- perl-math-random-isaac
+- perl-email-mime
+- perl-datetime
+- perl-soap-lite
+- perl
+- perl-email-date-format
 - perl-email-sender
-- perl-json-xs
-- perl-file-slurp
-repo_makedepends: []
+- perl-authen-sasl
+- perl-ldap
 update_on:
 - alias: perl
 - alpm: bugzilla

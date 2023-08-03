@@ -9,17 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-connection'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-network
 - ghc: ghc-libs
 - haskell-basement
-- haskell-data-default-class
-- haskell-network
-- haskell-socks
-- haskell-tls
 - haskell-x509
-repo_makedepends:
-- ghc
+- haskell-tls
+- haskell-socks
+- haskell-data-default-class
 update_on:
 - alpm: haskell-basement
   source: alpm

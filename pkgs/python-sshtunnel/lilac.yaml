@@ -7,22 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-sshtunnel'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-mock
-- openssh
 repo_depends:
-- python
-- python
 - python-paramiko
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-paramiko
-- python-setuptools
-- python-sphinx
-- python-wheel
+- python
 update_on:
 - alias: python
 - alias: python

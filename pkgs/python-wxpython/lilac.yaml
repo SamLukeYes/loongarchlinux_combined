@@ -9,23 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-wxpython'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
-- python-pytest-forked
-- python-numpy
 repo_depends:
 - wxwidgets: wxwidgets-gtk3
 - python-six
-repo_makedepends:
-- mesa
-- glu
-- webkit2gtk
-- python-requests
-- python-setuptools
-- python-attrdict
-- sip
-- doxygen
-- waf
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm

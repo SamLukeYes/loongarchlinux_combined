@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kget'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qca: qca-qt5
-- gpgme: qgpgme-qt5
 - plasma-workspace
-repo_makedepends:
-- extra-cmake-modules
-- boost
-- libktorrent
-- libmms
-- kdoctools
+- gpgme: qgpgme-qt5
+- qca: qca-qt5
 update_on:
 - alpm: kget
   source: archpkg

@@ -9,26 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hotdoc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- python-networkx
+- python-toposort
+- python-lxml
+- python-wheezy-template
+- python-schema
+- python-feedgen
 - python-appdirs
 - python-dbus-deviation
-- python-faust-cchardet
-- python-lxml
-- python-networkx
-- python-pkgconfig
-- python-schema
-- python-toposort
-- python-wheezy-template
 - python-yaml
-- python-feedgen
 - json-glib
-repo_makedepends:
-- python-setuptools
-- python-build
-- python-installer
-- python-wheel
-- cmake
+- python-pkgconfig
+- python-faust-cchardet
 update_on:
 - alpm: hotdoc
   source: archpkg

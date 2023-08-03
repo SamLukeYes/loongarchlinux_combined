@@ -9,20 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-mouse'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- perl-path-class
 repo_depends:
 - perl
-repo_makedepends:
-- perl-test-exception
-- perl-test-fatal
-- perl-module-build
-- perl-module-build-xsutil
-- perl-test-requires
-- perl-test-leaktrace
-- perl-test-output
-- perl-test-deep
-- perl-io-string
 update_on:
 - alias: perl
 - alpm: perl-mouse

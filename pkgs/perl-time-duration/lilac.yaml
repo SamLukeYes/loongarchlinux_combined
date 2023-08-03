@@ -7,12 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-time-duration'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - perl
-repo_makedepends:
-- perl-test-pod-coverage
-- perl-test-pod
 update_on:
 - alias: perl
 - alpm: perl-time-duration

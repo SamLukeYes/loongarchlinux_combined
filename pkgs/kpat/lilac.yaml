@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kpat'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libkdegames
-- freecell-solver
 - black-hole-solver
+- libkdegames
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
+- freecell-solver
 update_on:
 - alpm: kpat
   source: archpkg

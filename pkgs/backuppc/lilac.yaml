@@ -9,21 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''backuppc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- popt
-- perl
-- par2cmdline
-- perl-archive-zip
-- perl-io-dirent
-- perl-file-listing
 - perl-time-modules
-- perl-cgi
 - perl-xml-rss
+- par2cmdline
+- popt
 - perl-json-xs
-repo_makedepends:
-- git
+- perl-io-dirent
+- perl-cgi
+- perl
+- perl-file-listing
+- glibc
+- perl-archive-zip
 update_on:
 - alias: perl
 - alpm: backuppc

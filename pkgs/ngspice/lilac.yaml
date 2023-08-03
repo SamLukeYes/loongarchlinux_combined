@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ngspice'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libxaw
-- libedit
 - gcc: gcc-libs
-repo_makedepends: []
+- libedit
+- libxaw
 update_on:
 - alpm: ngspice
   source: archpkg

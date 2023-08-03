@@ -1,17 +1,9 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- dbus
-- duktape
 - gcc: gcc-libs
-- glib2
+- duktape
 - zlib
+- dbus
 - webkit2gtk
-repo_makedepends:
-- cmake
-- git
-- ninja
-- perl
-- python
-- webkit2gtk
+- glib2
 update_on: []

@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''deepin-wallpapers'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- deepin-api
 update_on:
 - alpm: deepin-wallpapers
   source: archpkg

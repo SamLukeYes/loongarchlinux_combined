@@ -9,20 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''passenger'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ruby
-- ruby-rack
 - curl
+- apache
+- ruby-rack
 - libnsl
-- apache
 - nginx
-repo_makedepends:
-- ruby-rake
-- ruby-rack
-- curl
-- apache
-- nginx: nginx-src
 update_on:
 - alias: ruby
 - alpm: nginx

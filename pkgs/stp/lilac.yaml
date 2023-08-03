@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''stp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- cryptominisat5
 - minisat
-repo_makedepends:
-- boost
-- cmake
-- help2man
-- ninja
-- python
+- cryptominisat5
+- boost: boost-libs
 update_on:
 - alpm: stp
   source: archpkg

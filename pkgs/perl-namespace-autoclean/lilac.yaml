@@ -7,17 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-namespace-autoclean'')
 
   '
-repo_checkdepends:
-- perl-test-requires
-- perl-moo
-- perl-sub-name
-- perl-mouse
-- perl-test-needs
 repo_depends:
-- perl-b-hooks-endofscope
-- perl-sub-identify
 - perl-namespace-clean
-repo_makedepends: []
+- perl-sub-identify
+- perl-b-hooks-endofscope
 update_on:
 - alpm: perl-namespace-autoclean
   source: archpkg

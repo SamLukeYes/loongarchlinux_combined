@@ -9,27 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ir.lv2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
-- cairo
 - gcc: gcc-libs
-- glibc
-- cairo
-- gcc: gcc-libs
-- glibc
-- gtk2
 - glib2
 - libsamplerate
 - libsndfile
 - zita-convolver
-repo_makedepends:
-- glib2
 - gtk2
-- libsamplerate
-- libsndfile
-- lv2
-- zita-convolver
+- cairo
+- glibc
 update_on:
 - alpm: gtk2
   provides: libgdk-x11-2.0.so

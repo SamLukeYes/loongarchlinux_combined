@@ -7,17 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-openapi-schema-validator'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
-- python-jsonschema
 - python-rfc3339-validator
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-poetry-core
+- python-jsonschema
+- python
 update_on:
 - alias: python
 - alpm: python-openapi-schema-validator

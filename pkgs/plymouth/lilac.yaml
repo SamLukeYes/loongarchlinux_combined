@@ -9,21 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plymouth'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
-- cairo
-- cantarell-fonts
-- filesystem
-- glib2
 - glibc
-- libdrm
-- libpng
 - pango
 - systemd: systemd-libs
-repo_makedepends:
-- gtk3
-- docbook-xsl
+- filesystem
+- libdrm
+- bash
+- cairo
+- glib2
+- cantarell-fonts
+- libpng
 update_on:
 - alpm: plymouth
   source: archpkg

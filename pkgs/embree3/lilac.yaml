@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''embree3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- cmake
-- ispc
-- freeglut
-- libxmu
-- ninja
 update_on:
 - alpm: embree3
   source: archpkg

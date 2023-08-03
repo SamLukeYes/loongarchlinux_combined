@@ -1,23 +1,15 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - accountsservice
+- flatpak
+- gcc: gcc-libs
 - appstream
-- dbus
-# - flatpak
-- glib2
+- polkit
 - gtk4
 - libadwaita
-- polkit
+- dbus
 - pygobject: python-gobject
-- gcc: gcc-libs
-repo_makedepends:
-- git
-- gobject-introspection
-- gtk-doc
-- libglib-testing
-- meson
-- yelp-tools
+- glib2
 update_on:
 - alpm: glib2
   provides: libglib-2.0.so

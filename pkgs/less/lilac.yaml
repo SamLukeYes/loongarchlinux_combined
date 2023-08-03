@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''less'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- pcre2
 - glibc
 - ncurses
-- pcre2
-repo_makedepends: []
 update_on:
 - alpm: less
   source: archpkg

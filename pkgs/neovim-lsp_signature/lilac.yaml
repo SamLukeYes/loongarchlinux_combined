@@ -7,11 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''neovim-lsp_signature'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - luajit
 - neovim
-repo_makedepends: []
 update_on:
 - alpm: neovim-lsp_signature
   source: archpkg

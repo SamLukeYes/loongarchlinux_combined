@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''waylandpp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- wayland
 - pugixml
-repo_makedepends:
-- cmake
-- egl-wayland
+- wayland
 update_on:
 - alpm: waylandpp
   source: archpkg

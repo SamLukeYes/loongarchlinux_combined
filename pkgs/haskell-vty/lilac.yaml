@@ -9,18 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-vty'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-ansi-terminal
-- haskell-blaze-builder
-- haskell-microlens
-- haskell-microlens-mtl
 - haskell-microlens-th
-- haskell-utf8-string
+- ghc: ghc-libs
+- haskell-microlens-mtl
+- haskell-blaze-builder
+- haskell-ansi-terminal
 - haskell-vector
-repo_makedepends:
-- ghc
+- haskell-utf8-string
+- haskell-microlens
 update_on:
 - alpm: haskell-ansi-terminal
   source: alpm

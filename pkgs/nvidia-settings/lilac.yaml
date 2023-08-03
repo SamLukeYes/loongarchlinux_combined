@@ -9,21 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nvidia-settings'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- jansson
-- gtk3
-- libxv
-- libvdpau
 - nvidia-utils
-- libxext
-repo_makedepends:
-- inetutils
 - jansson
-- gtk3
-- libxv
 - libvdpau
-- nvidia-utils
+- libxv
+- gtk3
 - libxext
 update_on:
 - alpm: nvidia-settings

@@ -7,22 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-authlib'')
 
   '
-repo_checkdepends:
-- python-pytest-asyncio
-- python-pytest-django
-- python-requests
-- django: python-django
-- python-flask-sqlalchemy
-- python-httpx
-- python-starlette
-- python-cachelib
 repo_depends:
 - python-cryptography
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alpm: python-authlib
   source: archpkg

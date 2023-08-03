@@ -1,34 +1,20 @@
 destsubdir: extra
-repo_checkdepends:
-- umockdev
 repo_depends:
 - libxmlb
-- efivar
-- python
+- gnutls
+- hicolor-icon-theme
+- flashrom
 - libsmbios
+- fwupd-efi
 - libgusb
-- polkit
+- efivar
 - shared-mime-info
 - tpm2-tss
-- flashrom
-- libjcat
-- fwupd-efi
-- gcab
-- hicolor-icon-theme
 - bluez
-- gnutls
-repo_makedepends:
-- meson
-- valgrind
-- gobject-introspection
-- gi-docgen
-- python-cairo
-- noto-fonts
-- noto-fonts-cjk
-- pygobject: python-gobject
-- vala
-- bash-completion
-- python-pillow
+- libjcat
+- gcab
+- python
+- polkit
 update_on:
 - alias: python
 - alpm: libarchive

@@ -9,44 +9,34 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-control-center'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-dbusmock
-- pygobject: python-gobject
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- accountsservice
-- bolt
-- colord-gtk: colord-gtk4
-- cups-pk-helper
-- gcr
-- gnome-bluetooth-3.0
+- libgnomekbd
 - gnome-color-manager
 - gnome-desktop: gnome-desktop-4
 - gnome-online-accounts
-- gnome-settings-daemon
-# - gnome-shell
-- gsettings-desktop-schemas
-- gsound
 - gtk4
-- libadwaita
-- libgnomekbd
-- libgtop
-- libgudev
-- ibus: libibus
-- malcontent: libmalcontent
-- modemmanager: libmm-glib
-- libnma: libnma-gtk4
 - libpwquality
-- samba: smbclient
-- sound-theme-freedesktop
-- udisks2
+- malcontent: libmalcontent
 - upower
-repo_makedepends:
-- docbook-xsl
-- git
-- meson
-- modemmanager
-- python
+- libnma: libnma-gtk4
+- gsettings-desktop-schemas
+- ibus: libibus
+- libgtop
+- sound-theme-freedesktop
+- modemmanager: libmm-glib
+- gcr
+- gnome-settings-daemon
+- gsound
+- gnome-shell
+- samba: smbclient
+- gnome-bluetooth-3.0
+- colord-gtk: colord-gtk4
+- udisks2
+- accountsservice
+- bolt
+- libadwaita
+- cups-pk-helper
+- libgudev
 update_on:
 - alpm: gnome-control-center
   source: archpkg

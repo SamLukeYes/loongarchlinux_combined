@@ -9,16 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haproxy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
 - pcre2
 - zlib
 - libxcrypt
-- lua
+- openssl
 - systemd: systemd-libs
-repo_makedepends:
-- systemd
+- lua
 update_on:
 - alpm: libxcrypt
   provides: libcrypt.so

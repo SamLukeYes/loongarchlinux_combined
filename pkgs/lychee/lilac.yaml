@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lychee'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cargo-nextest
 repo_depends:
-- gcc: gcc-libs
 - openssl
-repo_makedepends:
-- rust
+- gcc: gcc-libs
 update_on:
 - alpm: lychee
   source: archpkg

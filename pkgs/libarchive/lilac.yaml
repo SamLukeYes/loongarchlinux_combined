@@ -9,17 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libarchive'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- acl
 - bzip2
-- expat
-- lz4
-- openssl
-- xz
-- zlib
+- acl
 - zstd
-repo_makedepends: []
+- xz
+- lz4
+- zlib
+- expat
+- openssl
 update_on:
 - alpm: acl
   provides: libacl.so

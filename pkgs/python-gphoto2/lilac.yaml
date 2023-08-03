@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-gphoto2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libgphoto2
 - python
-repo_makedepends:
-- swig
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-gphoto2

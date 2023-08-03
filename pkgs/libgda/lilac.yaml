@@ -1,30 +1,16 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- gtksourceview3
-- libxslt
-- python
-- libsecret
 - graphviz
-- goocanvas
-- iso-codes
+- gtksourceview3
+- libsecret
 - libgee
+- goocanvas
+- postgresql: postgresql-libs
+- libxslt
+- libfbclient
+- iso-codes
 - openssl
-- libfbclient
 - mariadb: mariadb-libs
-- postgresql: postgresql-libs
-repo_makedepends:
-- glade
-- mariadb: mariadb-libs
-- postgresql: postgresql-libs
-- libfbclient
-- java11-openjdk: jdk11-openjdk
-- intltool
-- gobject-introspection
-- gtk-doc
-- vala
-- itstool
-- gnome-common
-- git
+- python
 update_on:
 - alias: python

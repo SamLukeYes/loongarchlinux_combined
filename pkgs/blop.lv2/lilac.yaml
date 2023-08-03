@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''blop.lv2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
 - gcc: gcc-libs
 - glibc
-repo_makedepends:
-- lv2
-- meson
 update_on:
 - alpm: blop.lv2
   source: archpkg

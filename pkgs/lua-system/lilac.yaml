@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lua-system'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- busted
 repo_depends: []
-repo_makedepends:
-- lua
-- lua51
-- lua52
-- lua53
-- luarocks
 update_on:
 - alpm: lua-system
   source: archpkg

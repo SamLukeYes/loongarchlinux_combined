@@ -9,21 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-yesod-persist
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
 - haskell-blaze-builder
-- haskell-conduit
 - haskell-persistent
-- haskell-resource-pool
-- haskell-resourcet
 - haskell-yesod-core
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hspec
-- haskell-wai-extra
-- haskell-persistent-sqlite
+- haskell-conduit
+- haskell-resourcet
+- haskell-resource-pool
 update_on:
 - alpm: haskell-blaze-builder
   source: alpm

@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ly'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - pam
-repo_makedepends:
-- git
-- libxcb
 update_on:
 - alpm: ly
   source: archpkg

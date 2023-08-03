@@ -7,30 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-httpx'')
 
   '
-repo_checkdepends:
-- python-pytest-asyncio
-- python-pytest-trio
-- python-typing_extensions
-- brotli: python-brotli
-- python-brotlicffi
-- python-h2
-- python-trustme
-- uvicorn
-- python-socksio
-- python-rich
-- python-chardet
 repo_depends:
 - python
-- python-certifi
-- python-httpcore
-- python-idna
 - python-sniffio
-repo_makedepends:
-- python-build
-- python-installer
-- python-hatchling
-- python-hatch-fancy-pypi-readme
-- python-pygments
+- python-certifi
+- python-idna
+- python-httpcore
 update_on:
 - alias: python
 - alpm: python-httpx

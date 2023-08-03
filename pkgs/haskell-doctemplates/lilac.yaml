@@ -9,22 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-doctemplates'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-aeson
+- ghc: ghc-libs
 - haskell-doclayout
-- haskell-safe
 - haskell-scientific
-- haskell-text-conversions
 - haskell-vector
-repo_makedepends:
-- ghc
-- haskell-glob
-- haskell-tasty
-- haskell-tasty-golden
-- haskell-tasty-hunit
-- haskell-temporary
+- haskell-text-conversions
+- haskell-safe
 update_on:
 - alpm: haskell-aeson
   source: alpm

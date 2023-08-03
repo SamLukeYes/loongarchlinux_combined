@@ -9,20 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''system-config-printer
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pycups: python-pycups
 - python-pycurl
-- libnotify
-- pygobject: python-gobject
-- gtk3
-- python-cairo
+- pycups: python-pycups
 - libusb
-repo_makedepends:
-- xmlto
-- docbook-xsl
-- desktop-file-utils
-- libsecret
+- libnotify
+- gtk3
+- pygobject: python-gobject
+- python-cairo
 update_on:
 - alpm: system-config-printer
   source: archpkg

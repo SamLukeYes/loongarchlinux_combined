@@ -7,14 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''b4'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - python-requests
 - git-filter-repo
 - patatt
-repo_makedepends:
-- git
-- python-setuptools
 update_on:
 - alpm: b4
   source: archpkg

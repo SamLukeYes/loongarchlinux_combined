@@ -9,23 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glob2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- sdl_net
 - sdl_image
-- sdl_ttf
-- libvorbis
-- speex
-- glu
-- fribidi
 - xdg-utils
+- glu
+- speex
+- sdl_ttf
+- sdl_net
+- fribidi
+- libvorbis
 - hicolor-icon-theme
-repo_makedepends:
-- scons
-- boost
-- mesa
-- patch
+- boost: boost-libs
 update_on:
 - alpm: glob2
   source: archpkg

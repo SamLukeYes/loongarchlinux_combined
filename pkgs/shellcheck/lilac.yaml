@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''shellcheck'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-diff
 - haskell-fgl
+- haskell-aeson
+- ghc: ghc-libs
+- haskell-diff
 - haskell-quickcheck
 - haskell-regex-tdfa
-repo_makedepends:
-- ghc
-- uusi
 update_on:
 - alpm: haskell-aeson
   source: alpm

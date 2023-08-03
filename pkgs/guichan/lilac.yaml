@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''guichan'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-repo_makedepends:
-- sdl_image
-- allegro4
 update_on:
 - alpm: guichan
   source: archpkg

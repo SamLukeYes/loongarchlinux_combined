@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''felix-rs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- zoxide
 repo_depends:
-- gcc: gcc-libs
 - bzip2
-repo_makedepends: []
+- gcc: gcc-libs
 update_on:
 - alpm: felix-rs
   source: archpkg

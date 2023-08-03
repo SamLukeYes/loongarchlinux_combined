@@ -7,14 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''cdemu-client'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - pygobject: python-gobject
 - cdemu-daemon
-repo_makedepends:
-- intltool
-- cmake
-- bash-completion
 update_on:
 - alpm: cdemu-client
   source: archpkg

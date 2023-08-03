@@ -9,34 +9,26 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pandoc-lua-en
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-sha
-- haskell-citeproc
-- haskell-data-default
-- haskell-doclayout
-- haskell-doctemplates
-- haskell-hslua
-- haskell-hslua-aeson
-- haskell-hslua-core
-- haskell-hslua-module-doclayout
-- haskell-hslua-module-path
-- haskell-hslua-module-system
-- haskell-hslua-module-text
-- haskell-hslua-module-version
-- haskell-hslua-module-zip
-- haskell-lpeg
-- haskell-pandoc
-- haskell-pandoc-lua-marshal
 - haskell-pandoc-types
-repo_makedepends:
-- ghc
-- uusi
-- haskell-tasty
-- haskell-tasty-golden
-- haskell-tasty-hunit
-- haskell-tasty-lua
+- haskell-citeproc
+- haskell-hslua-aeson
+- haskell-hslua-module-doclayout
+- haskell-hslua-module-text
+- haskell-pandoc
+- haskell-hslua-module-version
+- haskell-sha
+- haskell-hslua-module-path
+- haskell-lpeg
+- ghc: ghc-libs
+- haskell-doctemplates
+- haskell-pandoc-lua-marshal
+- haskell-hslua-core
+- haskell-doclayout
+- haskell-data-default
+- haskell-hslua-module-system
+- haskell-hslua-module-zip
+- haskell-hslua
 update_on:
 - alpm: haskell-sha
   source: alpm

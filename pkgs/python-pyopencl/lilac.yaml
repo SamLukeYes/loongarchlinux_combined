@@ -9,31 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyopencl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-six
-- python-appdirs
-- python-pytest
-- python-pytools
 repo_depends:
+- python-cffi
 - opencl-headers
+- python-setuptools
+- python-pytools
 - mesa
-- boost: boost-libs
-- opencl-headers
-- mesa
+- python-mako
+- python-numpy
 - boost: boost-libs
 - python
-- python-numpy
-- python-mako
-- python-pytools
-- python-setuptools
-- python-cffi
-repo_makedepends:
-- ctags
-- python-setuptools
-- python-mako
-- python-numpy
-- git
-- pybind11
 update_on:
 - alias: python
 - alpm: python-pyopencl

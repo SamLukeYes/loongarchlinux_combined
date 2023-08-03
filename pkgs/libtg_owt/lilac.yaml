@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libtg_owt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libdrm
-repo_makedepends:
-- git
-- ninja
-- unzip
-- cmake
-- protobuf
-- libxrandr
-- libxcomposite
-- openssl
-- glibc
-- ffmpeg
-- libva
-- opus
-- yasm
-- libjpeg-turbo
-- pipewire
-- libxtst
-- libepoxy
 update_on:
 - alpm: libtg_owt
   source: archpkg

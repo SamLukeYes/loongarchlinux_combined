@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtkd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ldc: liblphobos
 - gtk3
-repo_makedepends:
-- ldc
+- ldc: liblphobos
 update_on:
 - alpm: gtkd
   source: archpkg

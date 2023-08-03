@@ -7,19 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-flake8-isort'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-toml
 repo_depends:
-- python
-- flake8
-- python-isort
 - python-setuptools
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-wheel
+- flake8
+- python
+- python-isort
 update_on:
 - alias: python
 - alpm: python-flake8-isort

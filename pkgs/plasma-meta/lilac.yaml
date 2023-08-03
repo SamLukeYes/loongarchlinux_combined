@@ -7,39 +7,37 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''plasma-meta'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- bluedevil
-- drkonqi
-- kde-gtk-config
-- kdeplasma-addons
-- khotkeys
-- kinfocenter
-- kscreen
-- ksshaskpass
-- kwrited
-- oxygen
-- oxygen-sounds
-- plasma-browser-integration
-- plasma-desktop
-- plasma-disks
-- plasma-firewall
-- plasma-nm
-- plasma-workspace-wallpapers
-- plasma-pa
-- plasma-systemmonitor
-- plasma-thunderbolt
-- plasma-vault
-- plasma-welcome
-- kwayland-integration
-- kwallet-pam
-- kgamma5
 - sddm-kcm
+- plasma-thunderbolt
+- kscreen
+- drkonqi
+- kinfocenter
+- ksshaskpass
+- plasma-firewall
+- plasma-desktop
+- plasma-browser-integration
+- discover
+- oxygen-sounds
+- plasma-nm
+- bluedevil
+- khotkeys
+- plasma-welcome
+- kwallet-pam
+- xdg-desktop-portal-kde
+- plasma-disks
+- plasma-systemmonitor
 - breeze-gtk
 - powerdevil
-- discover
-- xdg-desktop-portal-kde
-repo_makedepends: []
+- oxygen
+- kgamma5
+- kwrited
+- kwayland-integration
+- kde-gtk-config
+- kdeplasma-addons
+- plasma-vault
+- plasma-pa
+- plasma-workspace-wallpapers
 update_on:
 - alpm: plasma-meta
   source: archpkg

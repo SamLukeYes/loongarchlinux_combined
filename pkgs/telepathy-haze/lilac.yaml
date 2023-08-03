@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-haze'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - telepathy-glib
 - pidgin: libpurple
-repo_makedepends:
-- libxslt
-- python
 update_on:
 - alpm: telepathy-haze
   source: archpkg

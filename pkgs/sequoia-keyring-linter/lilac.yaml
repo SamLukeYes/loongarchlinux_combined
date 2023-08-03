@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sequoia-keyring-linte
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-- nettle
 - gcc: gcc-libs
+- nettle
 - gmp
-repo_makedepends:
-- git
-- llvm
-- clang
 update_on:
 - alpm: nettle
   provides: libhogweed.so

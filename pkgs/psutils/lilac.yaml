@@ -7,14 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''psutils'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- ghostscript
-- perl
 - perl-ipc-run3
 - libpaper
-repo_makedepends: []
+- perl
+- ghostscript
+- glibc
 update_on:
 - alias: perl
 - alpm: psutils

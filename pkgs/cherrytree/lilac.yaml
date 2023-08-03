@@ -9,19 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cherrytree'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
 - fmt
+- uchardet
 - gspell
 - gtksourceviewmm
-- libxml++2.6
-- uchardet
 - vte3
-repo_makedepends:
-- cmake
-- python
-- spdlog
+- libxml++2.6
 update_on:
 - alpm: cherrytree
   source: archpkg

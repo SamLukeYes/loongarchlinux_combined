@@ -7,20 +7,16 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''guake'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- python-pbr
 - libkeybinder3
+- vte3
 - libnotify
+- python-yaml
+- pygobject: python-gobject
+- python-cairo
 - libutempter
 - libwnck3
-- python-cairo
-- pygobject: python-gobject
-- python-pbr
-- vte3
-- python-yaml
-repo_makedepends:
-- git
-- python-pip
 update_on:
 - alpm: guake
   source: archpkg

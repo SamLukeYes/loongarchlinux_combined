@@ -1,10 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- qt5-base
-- qt6-5compat
-repo_makedepends:
-- cmake
 - qt5-base
 - qt6-5compat
 update_on:

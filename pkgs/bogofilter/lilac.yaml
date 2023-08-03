@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bogofilter'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- db5.3
 - perl
 - gsl
-repo_makedepends:
-- valgrind
-- xmlto
+- db5.3
 update_on:
 - alias: perl
 - alpm: gsl

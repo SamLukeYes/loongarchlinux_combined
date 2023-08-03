@@ -9,26 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''librest'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
-- libxml2
-- libsoup3
-- json-glib
-- glib2
-- libxml2
-- libsoup3
-- json-glib
-- libadwaita
 - gtksourceview5
-repo_makedepends:
-- gobject-introspection
-- git
-- meson
-- gi-docgen
-- vala
+- libsoup3
+- glib2
 - libadwaita
-- gtksourceview5
+- libxml2
+- json-glib
 update_on:
 - alpm: glib2
   provides: libglib-2.0.so

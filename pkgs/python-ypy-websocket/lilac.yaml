@@ -7,19 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-ypy-websocket'')
 
   '
-repo_checkdepends:
-- python-pytest-asyncio
-- python-websockets
-- nodejs
-- uvicorn
 repo_depends:
-- python-y-py
-- python-anyio
 - python-aiosqlite
-repo_makedepends:
-- python-build
-- python-installer
-- python-hatchling
+- python-anyio
+- python-y-py
 update_on:
 - alpm: python-ypy-websocket
   source: archpkg

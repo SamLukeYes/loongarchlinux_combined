@@ -7,15 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''gottengeography'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - libchamplain
-- libgexiv2
-- python-dateutil
 - pygobject: python-gobject
-repo_makedepends:
-- git
-- python-distutils-extra
+- python-dateutil
+- libgexiv2
 update_on:
 - alpm: gottengeography
   source: archpkg

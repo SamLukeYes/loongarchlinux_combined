@@ -7,17 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-remoto'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-mock
 repo_depends:
-- python
 - python-execnet
-repo_makedepends:
-- git
 - python
-- python-execnet
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-remoto

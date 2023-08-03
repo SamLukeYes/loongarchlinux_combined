@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libtaginfo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- taglib
 - gcc: gcc-libs
-repo_makedepends: []
+- taglib
 update_on:
 - alpm: libtaginfo
   source: archpkg

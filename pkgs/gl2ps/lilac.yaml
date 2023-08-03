@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gl2ps'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libpng
-repo_makedepends:
-- cmake
 update_on:
 - alpm: gl2ps
   source: archpkg

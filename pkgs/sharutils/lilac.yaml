@@ -1,9 +1,7 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - perl
 - gettext
 - texinfo
-repo_makedepends: []
 update_on:
 - alias: perl

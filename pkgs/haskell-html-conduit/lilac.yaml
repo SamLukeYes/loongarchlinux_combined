@@ -9,19 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-html-conduit'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
-- haskell-resourcet
-- haskell-conduit
-- haskell-xml-conduit
-- haskell-attoparsec
-- haskell-conduit-extra
 - haskell-xml-types
-repo_makedepends:
-- ghc
-- haskell-hspec
-- haskell-hunit
+- haskell-xml-conduit
+- haskell-conduit
+- haskell-conduit-extra
+- haskell-resourcet
+- haskell-attoparsec
 update_on:
 - alpm: haskell-resourcet
   source: alpm

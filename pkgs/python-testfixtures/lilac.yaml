@@ -7,18 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-testfixtures'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-zope-component
-- python-sybil
-- python-pytest-django
-- django: python-django
-- python-twisted
 repo_depends:
 - python
-repo_makedepends:
-- git
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-testfixtures

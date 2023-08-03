@@ -7,26 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''automake'')
 
   '
-repo_checkdepends:
-- dejagnu
-- gcc: gcc-fortran
-- vala
-- emacs
-- cscope
-- expect
-- ncompress
-- gettext
-- lzip
-- zip
-- sharutils
-- help2man
-- python
-- python-virtualenv
 repo_depends:
 - perl
 - bash
-repo_makedepends:
-- autoconf
 update_on:
 - alias: perl
 - alpm: automake

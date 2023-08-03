@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-gssapi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-parameterized
-- python-k5test
 repo_depends:
-- python
 - python-decorator
+- python
 - krb5
-repo_makedepends:
-- python-setuptools
-- cython
 update_on:
 - alias: python
 - alpm: python-gssapi

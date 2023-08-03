@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ktouch'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kqtquickcharts
-- libxkbfile
-- kcmutils
-- hicolor-icon-theme
-- qt5-quickcontrols2
-- qt5-graphicaleffects
 - qt5-xmlpatterns
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
+- qt5-quickcontrols2
+- kqtquickcharts
+- kcmutils
+- qt5-graphicaleffects
+- libxkbfile
+- hicolor-icon-theme
 update_on:
 - alpm: ktouch
   source: archpkg

@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yices'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - cudd
-- gmp
 - libpoly
-repo_makedepends:
-- gperf
+- gmp
 update_on:
 - alpm: yices
   source: archpkg

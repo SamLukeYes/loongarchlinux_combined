@@ -9,22 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''liquidsfz'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
 - gcc: gcc-libs
-- glibc
-- gcc: gcc-libs
-- glibc
-- libsndfile
-- gcc: gcc-libs
-- glibc
 - libsndfile
 - readline
-repo_makedepends:
-- libsndfile
-- lv2
-- readline
+- glibc
 update_on:
 - alpm: libsndfile
   provides: libsndfile.so

@@ -7,20 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-guessit'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-mock
 repo_depends:
-- python
-- python-dateutil
-- python-babelfish
 - python-rebulk
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
+- python-dateutil
+- python
+- python-babelfish
 update_on:
 - alias: python
 - alpm: python-guessit

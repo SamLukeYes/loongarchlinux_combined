@@ -9,23 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''giac'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libao
+- libsamplerate
+- curl
+- gsl
+- lapack
+- pari
 - fltk
 - mpfi
-- gsl
-- pari
-- ntl
-- lapack
-- curl
-- glpk
-- libao
 - gmp-ecm
-- libsamplerate
-repo_makedepends:
-- python
-- hevea
-- nauty
+- glpk
+- ntl
 update_on:
 - alpm: gsl
   source: alpm

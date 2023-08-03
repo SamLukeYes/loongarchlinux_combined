@@ -9,24 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openpgp-card-tools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ccid
+- bzip2
 - gcc: gcc-libs
+- pcsclite
+- ccid
+- nettle
 - glibc
 - gmp
-- ccid
-- gcc: gcc-libs
-- glibc
-- gmp
-- bzip2
-- nettle
-- pcsclite
-repo_makedepends:
-- bzip2
-- clang
-- nettle
-- pcsclite
 update_on:
 - alpm: bzip2
   provides: libbz2.so

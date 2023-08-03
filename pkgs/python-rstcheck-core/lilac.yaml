@@ -7,18 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-rstcheck-core'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-mock
-- python-sphinx
 repo_depends:
 - python-docutils
 - python-pydantic
 - python-typing_extensions
-repo_makedepends:
-- python-build
-- python-installer
-- python-poetry-core
 update_on:
 - alpm: python-rstcheck-core
   source: archpkg

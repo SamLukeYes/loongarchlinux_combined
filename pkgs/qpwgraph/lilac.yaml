@@ -9,24 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qpwgraph'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
 - glibc
-- hicolor-icon-theme
+- alsa-lib
+- gcc: gcc-libs
+- pipewire
 - qt6-base
 - qt6-svg
-- gcc: gcc-libs
-- glibc
 - hicolor-icon-theme
-- qt6-base
-- qt6-svg
-- alsa-lib
-- pipewire
-repo_makedepends:
-- alsa-lib
-- cmake
-- pipewire
 update_on:
 - alpm: qt6-base
   source: alpm

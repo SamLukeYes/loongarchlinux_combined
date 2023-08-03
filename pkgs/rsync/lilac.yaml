@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rsync'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - acl
-- lz4
-- openssl
-- popt
-- xxhash
-- zlib
 - zstd
-repo_makedepends:
-- git
-- python-commonmark
+- lz4
+- popt
+- zlib
+- xxhash
+- openssl
 update_on:
 - alpm: acl
   provides: libacl.so

@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-vector-th-unb
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- haskell-data-default
 repo_depends:
-- ghc: ghc-libs
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-vector
   source: alpm

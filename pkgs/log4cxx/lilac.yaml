@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''log4cxx'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- apr-util
 - libxml2
-repo_makedepends:
-- cmake
-- patch
-- zip
-- gzip
-- sed
+- apr-util
 update_on:
 - alpm: log4cxx
   source: archpkg

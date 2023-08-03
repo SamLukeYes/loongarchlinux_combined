@@ -9,25 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgit2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
-- http-parser
-- zlib
-- gcc: gcc-libs
-- glibc
-- http-parser
+- pcre2
 - zlib
 - libssh2
 - openssl
-- pcre2
-repo_makedepends:
-- cmake
-- libssh2
-- openssl
-- pcre2
-- python
+- glibc
+- http-parser
 update_on:
 - alpm: libssh2
   provides: libssh2.so

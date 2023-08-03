@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xmonad'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc
 - haskell-x11
-- haskell-data-default-class
 - haskell-setlocale
-repo_makedepends:
-- gendesk
-- haskell-quickcheck
-- haskell-quickcheck-instances
+- haskell-data-default-class
+- ghc
 update_on:
 - alpm: haskell-x11
   source: alpm

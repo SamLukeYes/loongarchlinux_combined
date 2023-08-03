@@ -9,34 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ibus'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - dconf
-- gtk3
-- hicolor-icon-theme
 - libnotify
-- pygobject: python-gobject
-- iso-codes
 - librsvg
-- dconf
+- iso-codes
 - gtk3
-- hicolor-icon-theme
-- libnotify
 - pygobject: python-gobject
-- iso-codes
-- librsvg
-repo_makedepends:
-- gobject-introspection
-- vala
-- intltool
-- gnome-common
-- gtk-doc
-- gtk4
-- gtk2
-- qt5-base
-- unicode-cldr
-- unicode-character-database
-- unicode-emoji
+- hicolor-icon-theme
 update_on:
 - alpm: glib2
   provides: libglib-2.0.so

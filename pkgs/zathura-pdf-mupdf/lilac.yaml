@@ -9,19 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zathura-pdf-mupdf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
-- gumbo-parser
-- jbig2dec
-- openjpeg2
-- openssl
 - zathura
-repo_makedepends:
-- mupdf: libmupdf
-- meson
-- ninja
-- git
+- jbig2dec
+- gumbo-parser
+- openssl
+- cairo
+- openjpeg2
 update_on:
 - alpm: zathura-pdf-mupdf
   source: archpkg

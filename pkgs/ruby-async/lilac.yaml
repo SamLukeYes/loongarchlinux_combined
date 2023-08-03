@@ -7,14 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-async'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- ruby
-- ruby-console
 - ruby-nio4r
+- ruby
 - ruby-timers
-repo_makedepends:
-- ruby-rdoc
+- ruby-console
 update_on:
 - alias: ruby
 - alpm: ruby-async

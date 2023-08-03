@@ -7,11 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''canto-daemon'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - python-feedparser
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: canto-daemon
   source: archpkg

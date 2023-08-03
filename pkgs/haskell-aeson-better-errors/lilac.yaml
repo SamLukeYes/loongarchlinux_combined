@@ -9,19 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-aeson-better-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-dlist
-- haskell-scientific
-- haskell-transformers-compat
 - haskell-unordered-containers
+- haskell-dlist
+- haskell-aeson
+- ghc: ghc-libs
+- haskell-scientific
 - haskell-vector
+- haskell-transformers-compat
 - haskell-void
-repo_makedepends:
-- ghc
-- uusi
 update_on:
 - alpm: haskell-aeson
   source: alpm

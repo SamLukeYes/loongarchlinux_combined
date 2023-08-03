@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-unicode-trans
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-unicode-data
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hspec
-- haskell-quickcheck
-- haskell-split
-- haskell-text-icu
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-unicode-data
   source: alpm

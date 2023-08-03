@@ -9,19 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-secu
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
-- gtk3
+- zeitgeist
 - libgee
-- light-locker
 - polkit
 - ufw
-- zeitgeist
-repo_makedepends:
-- git
-- meson
-- vala
+- gtk3
+- light-locker
+- glib2
 update_on:
 - alpm: granite
   provides: libgranite.so

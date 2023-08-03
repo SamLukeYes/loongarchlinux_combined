@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-h5py'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-mpi
-- python-pytables
 repo_depends:
-- hdf5
 - liblzf
 - python-numpy
-repo_makedepends:
-- cython
-- python-pkgconfig
-- python-setuptools
+- hdf5
 update_on:
 - alpm: python-h5py
   source: archpkg

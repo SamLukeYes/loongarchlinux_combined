@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aliki'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- clthreads
 - clxclient
-- fftw
 - libsndfile
 - zita-alsa-pcmi
-repo_makedepends:
-- gendesk
+- clthreads
+- fftw
 update_on:
 - alpm: aliki
   source: archpkg

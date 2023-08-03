@@ -9,24 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ejabberd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- expat
-- openssl
+- erlang: erlang-unixodbc
+- gd
 - zlib
 - erlang-nox
-- pam
 - iproute2
-- erlang: erlang-unixodbc
+- expat
 - libyaml
 - sqlite
-- gd
-repo_makedepends:
-- git
-- rebar
-- hevea
-- texlive-bin
-- texlive-texmf: texlive-latexextra
+- openssl
+- pam
 update_on:
 - alpm: ejabberd
   source: archpkg

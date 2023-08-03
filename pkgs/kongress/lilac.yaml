@@ -9,18 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kongress'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kirigami2
-- kcalendarcore
-- qt5-svg
-- ki18n
 - kconfig
-- kcoreaddons
+- kirigami2
 - knotifications
 - kdbusaddons
-repo_makedepends:
-- extra-cmake-modules
+- kcalendarcore
+- kcoreaddons
+- ki18n
+- qt5-svg
 update_on:
 - alpm: kconfig
   source: alpm

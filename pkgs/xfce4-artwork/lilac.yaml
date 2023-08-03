@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''xfce4-artwork'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends: []
 update_on:
 - alpm: xfce4-artwork
   source: archpkg

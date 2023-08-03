@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libimobiledevice'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- libplist
 - libusbmuxd
 - openssl
-repo_makedepends:
-- cython
-- python
+- glibc
+- libplist
 update_on:
 - alpm: libimobiledevice
   source: archpkg

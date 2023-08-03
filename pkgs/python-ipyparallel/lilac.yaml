@@ -7,17 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-ipyparallel'')
 
   '
-repo_checkdepends:
-- python-pytest-tornado
-- python-pytest-asyncio
-- python-tqdm
 repo_depends:
-- jupyterlab
 - python-psutil
-repo_makedepends:
-- python-build
-- python-installer
-- python-hatchling
+- jupyterlab
 update_on:
 - alpm: python-ipyparallel
   source: archpkg

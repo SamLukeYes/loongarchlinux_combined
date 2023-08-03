@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''egl-wayland'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- eglexternalplatform
 - wayland
-repo_makedepends:
-- git
-- meson
-- wayland-protocols
+- eglexternalplatform
 update_on:
 - alpm: egl-wayland
   source: archpkg

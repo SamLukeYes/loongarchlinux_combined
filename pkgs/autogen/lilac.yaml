@@ -1,11 +1,8 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- guile
 - libxml2
 - perl
-repo_makedepends:
-- chrpath
+- guile
 update_on:
 - alpm: guile
   source: alpm

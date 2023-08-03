@@ -7,14 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''firrtl'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - bash
-repo_makedepends:
-- antlr4
-- protobuf
-- mill
-- git
 update_on:
 - alpm: firrtl
   source: archpkg

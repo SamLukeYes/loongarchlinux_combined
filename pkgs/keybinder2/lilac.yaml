@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''keybinder2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk2
-repo_makedepends:
-- gobject-introspection
 update_on:
 - alpm: keybinder2
   source: archpkg

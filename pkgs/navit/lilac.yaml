@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''navit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- sdl_image
 - dbus-glib
+- imlib2
 - gpsd
 - gtk2
-- imlib2
-- sdl_image
-repo_makedepends:
-- cmake
-- libxslt
 update_on:
 - alpm: gpsd
   source: alpm

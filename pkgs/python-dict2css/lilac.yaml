@@ -7,16 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-dict2css'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
 - python-css-parser
+- python
 - python-domdf-python-tools
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-whey
 update_on:
 - alias: python
 - alpm: python-dict2css

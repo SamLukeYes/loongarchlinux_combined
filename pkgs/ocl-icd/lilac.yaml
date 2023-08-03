@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ocl-icd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-repo_makedepends:
-- ruby
-- mesa
-- xmlto
-- asciidoc
 update_on:
 - alpm: ocl-icd
   source: archpkg

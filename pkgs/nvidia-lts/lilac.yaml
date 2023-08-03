@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nvidia-lts'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- linux-lts
-- nvidia-utils
 - libglvnd
-repo_makedepends:
-- linux-lts: linux-lts-headers
-- nvidia-utils: nvidia-dkms
+- nvidia-utils
+- linux-lts
 update_on:
 - alpm: nvidia-lts
   source: archpkg

@@ -9,27 +9,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-recipes'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
-- dconf
-- gcc: gcc-libs
-- gdk-pixbuf2
-- glib2
 - glibc
 - gnome-autoar
-- gnome-online-accounts
+- gcc: gcc-libs
+- gdk-pixbuf2
+- dconf
 - gspell
-- gtk3
-- hicolor-icon-theme
-- json-glib
-- libcanberra
-- libsoup
-- pango
 - rest
-repo_makedepends:
-- itstool
-- meson
+- gnome-online-accounts
+- pango
+- libsoup
+- hicolor-icon-theme
+- libcanberra
+- json-glib
+- gtk3
+- cairo
+- glib2
 update_on:
 - alpm: gnome-recipes
   source: archpkg

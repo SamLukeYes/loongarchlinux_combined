@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''notes-up'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- discount
 - granite
 - gtksourceview4
-- gtkspell3
+- discount
 - webkit2gtk
-repo_makedepends:
-- meson
-- vala
+- gtkspell3
 update_on:
 - alpm: notes-up
   source: archpkg

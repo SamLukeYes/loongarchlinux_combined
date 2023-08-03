@@ -9,25 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''swi-prolog'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- db5.3
 - gperftools
-- libarchive
-- libxcrypt
-- libyaml
 - qt5-base
+- db5.3
+- libxcrypt
+- libarchive
 - util-linux: util-linux-libs
-repo_makedepends:
-- cmake
-- java-openjdk: jdk-openjdk
-- junit
-- libxft
-- libxinerama
-- libxpm
-- ninja
-- protobuf: python-protobuf
-- unixodbc
+- libyaml
 update_on:
 - alpm: qt5-base
   source: alpm

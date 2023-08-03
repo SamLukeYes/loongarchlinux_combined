@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libdca'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
 - glibc
-repo_makedepends: []
+- bash
 update_on:
 - alpm: libdca
   source: archpkg

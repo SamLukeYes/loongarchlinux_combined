@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libidn11'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-repo_makedepends:
-- git
-- gperf
 update_on:
 - alpm: libidn11
   source: archpkg

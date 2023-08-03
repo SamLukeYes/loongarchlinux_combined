@@ -9,18 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libmediainfo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- gcc: gcc-libs
-- curl
-- glib2
-- libmms
-- libzen
-- tinyxml2
 - graphviz
+- gcc: gcc-libs
+- glib2
+- curl
+- libmms
 - zlib
-repo_makedepends: []
+- tinyxml2
+- glibc
+- libzen
 update_on:
 - alpm: libmediainfo
   source: archpkg

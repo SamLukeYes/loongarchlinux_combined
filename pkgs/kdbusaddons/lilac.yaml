@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdbusaddons'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt5-x11extras
-repo_makedepends:
-- extra-cmake-modules
-- qt5-tools
-- qt5-doc
-- clang
-- doxygen
 update_on:
 - alpm: kdbusaddons
   source: archpkg

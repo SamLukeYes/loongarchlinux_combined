@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pdftotext'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- poppler
 - python
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- poppler
 update_on:
 - alias: python
 - alpm: python-pdftotext

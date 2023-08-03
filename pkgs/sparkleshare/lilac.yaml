@@ -7,17 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''sparkleshare'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- webkit2-sharp
-- notify-sharp-3
-- curl
-- git-lfs
 - openssh
+- webkit2-sharp
+- git-lfs
+- curl
+- notify-sharp-3
 - gvfs
-repo_makedepends:
-- git
-- meson
 update_on:
 - alpm: sparkleshare
   source: archpkg

@@ -7,13 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-safe_yaml'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - ruby
-repo_makedepends:
-- ruby-rdoc
-- ruby-rake
-- ruby-rspec
 update_on:
 - alias: ruby
 - alpm: ruby-safe_yaml

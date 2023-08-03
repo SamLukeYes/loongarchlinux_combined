@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vaultwarden'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
 - gcc: gcc-libs
-- mariadb: mariadb-libs
-- openssl
 - postgresql: postgresql-libs
 - sqlite
-repo_makedepends:
-- git
-- rust
+- openssl
+- mariadb: mariadb-libs
 update_on:
 - alpm: vaultwarden
   source: archpkg

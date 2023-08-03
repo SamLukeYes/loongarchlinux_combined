@@ -1,14 +1,6 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - qt5-base
-repo_makedepends:
-- extra-cmake-modules
-- qt5-tools
-- clang
-- qt5-charts
-- qt5-svg
-- qt5-declarative
 update_on:
 - alpm: qt5-base
   source: alpm

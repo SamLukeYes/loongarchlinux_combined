@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-html-template-expr'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-html-template
-- perl-parse-recdescent
-repo_makedepends:
 - perl-html-template
 - perl-parse-recdescent
 update_on:

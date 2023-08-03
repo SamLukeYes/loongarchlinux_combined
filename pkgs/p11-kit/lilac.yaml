@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''p11-kit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- libffi
 - libtasn1
+- libffi
+- glibc
 - coreutils
-repo_makedepends:
-- bash-completion
-- gtk-doc
-- meson
-- systemd
 update_on:
 - alpm: libp11-kit
   provides: libp11-kit.so

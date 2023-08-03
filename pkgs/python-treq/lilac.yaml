@@ -7,19 +7,15 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-treq'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-incremental
 - python-requests
-- python-pyopenssl
-- python-service-identity
-- python-idna
-- python-attrs
+- python-incremental
 - python-twisted
 - python-hyperlink
-repo_makedepends:
-- python-setuptools
-- httpbin
+- python-pyopenssl
+- python-attrs
+- python-service-identity
+- python-idna
 update_on:
 - alpm: python-treq
   source: archpkg

@@ -7,14 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-gtk3'')
 
   '
-repo_checkdepends:
-- ttf-dejavu
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- gtk3
 - perl-cairo-gobject
+- gtk3
 - perl-glib-object-introspection
-repo_makedepends: []
 update_on:
 - alpm: perl-gtk3
   source: archpkg

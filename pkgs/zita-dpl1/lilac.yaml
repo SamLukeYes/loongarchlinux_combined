@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zita-dpl1'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
 - clthreads
+- cairo
 - clxclient
-repo_makedepends:
-- gendesk
 update_on:
 - alpm: zita-dpl1
   source: archpkg

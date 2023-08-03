@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libheif'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libde265
-- x265
-- aom
 - dav1d
-repo_makedepends:
-- cmake
-- libpng
-- gdk-pixbuf2
-- svt-av1
-- rav1e
+- libde265
+- aom
+- x265
 update_on:
 - alpm: libheif
   source: archpkg

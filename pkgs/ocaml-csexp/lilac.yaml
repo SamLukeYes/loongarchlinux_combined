@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ocaml-csexp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - ocaml
-- ocaml-findlib
+- glibc
 - ocaml-result
-repo_makedepends:
-- dune
+- ocaml-findlib
 update_on:
 - alpm: ocaml
   source: alpm

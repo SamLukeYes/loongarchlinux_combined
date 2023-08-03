@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''milou'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - krunner
 - kitemmodels
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
 update_on:
 - alpm: milou
   source: archpkg

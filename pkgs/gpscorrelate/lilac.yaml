@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gpscorrelate'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- exiv2
 - gtk3
-repo_makedepends:
-- libxslt
+- exiv2
 update_on:
 - alpm: gpscorrelate
   source: archpkg

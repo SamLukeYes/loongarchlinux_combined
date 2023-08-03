@@ -7,14 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''freeplane'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- gradle
-- java17-openjdk: jdk17-openjdk
-- gnu-free-fonts
-- fontconfig
-- unzip
 update_on:
 - alpm: freeplane
   source: archpkg

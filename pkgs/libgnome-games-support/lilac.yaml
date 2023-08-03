@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgnome-games-suppor
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libgee
 - gtk3
-repo_makedepends:
-- vala
-- git
-- meson
+- libgee
 update_on:
 - alpm: libgnome-games-support
   source: archpkg

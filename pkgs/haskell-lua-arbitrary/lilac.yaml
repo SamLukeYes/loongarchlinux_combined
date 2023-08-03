@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lua-arbitrary
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-quickcheck
 - haskell-lua
-repo_makedepends:
-- ghc
-- uusi
+- haskell-quickcheck
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

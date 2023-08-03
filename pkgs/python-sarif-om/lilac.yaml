@@ -7,11 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-sarif-om'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-attrs
 - python-pbr
-repo_makedepends: []
+- python-attrs
 update_on:
 - alpm: python-sarif-om
   source: archpkg

@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''espeakup'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- espeak-ng
-- glibc
 - espeak-ng
 - alsa-lib
-repo_makedepends:
-- alsa-lib
-- meson
-- ruby-ronn-ng
+- glibc
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

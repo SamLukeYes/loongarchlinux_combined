@@ -9,23 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-discove
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-glob
 - haskell-tasty
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hedgehog
-- haskell-hspec
-- haskell-hspec-core
-- haskell-tasty-golden
-- haskell-tasty-hedgehog
-- haskell-tasty-hspec
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
-- haskell-tasty-smallcheck
+- haskell-glob
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-glob
   source: alpm

@@ -9,29 +9,25 @@ pre_build_script: '_G.files = download_official_pkgbuild(''clash-ghc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-clash-lib
-- haskell-clash-prelude
-- haskell-concurrent-supply
-- haskell-data-binary-ieee754
-- haskell-extra
-- haskell-ghc-typelits-extra
-- haskell-ghc-typelits-knownnat
-- haskell-ghc-typelits-natnormalise
-- haskell-hashable
-- haskell-lens
-- haskell-primitive
-- haskell-reflection
-- haskell-split
-- haskell-uniplate
 - haskell-unordered-containers
+- haskell-primitive
+- haskell-uniplate
+- haskell-lens
+- haskell-reflection
+- haskell-hashable
+- haskell-clash-prelude
+- haskell-data-binary-ieee754
 - haskell-utf8-string
+- ghc: ghc-libs
+- haskell-ghc-typelits-extra
+- haskell-concurrent-supply
+- haskell-extra
+- haskell-clash-lib
+- haskell-ghc-typelits-natnormalise
+- haskell-ghc-typelits-knownnat
+- haskell-split
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
 update_on:
 - alpm: haskell-clash-lib
   source: alpm

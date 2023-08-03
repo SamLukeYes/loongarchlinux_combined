@@ -9,26 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-software'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- appstream
 - gsettings-desktop-schemas
-- gtk4
-- libadwaita
 - libsoup3
-- sysprof: libsysprof-capture
+- appstream
 - libxmlb
 - polkit
-repo_makedepends:
-- docbook-xsl
-- flatpak
-- fwupd
-- git
-- gobject-introspection
-- gtk-doc
-- libglib-testing
-- malcontent
-- meson
+- sysprof: libsysprof-capture
+- gtk4
+- libadwaita
 update_on:
 - alpm: gnome-software
   source: archpkg

@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-pg'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - ruby
-- ruby-rspec-core
+- glibc
 - postgresql: postgresql-libs
-repo_makedepends:
-- git
-- ruby-rdoc
+- ruby-rspec-core
 update_on:
 - alias: ruby
 - alpm: ruby-pg

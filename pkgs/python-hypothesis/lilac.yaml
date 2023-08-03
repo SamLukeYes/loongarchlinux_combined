@@ -7,33 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-hypothesis'')
 
   '
-repo_checkdepends:
-- python-pytest
-- flake8
-- python-pytz
-- python-numpy
-- python-faker
-- python-flaky
-- django: python-django
-- python-pandas
-- python-dpcontracts
-- python-pytest-xdist
-- python-lark-parser
-- python-pexpect
-- python-coverage
-- python-typing_extensions
-- python-black
-- python-fakeredis
-- python-libcst
 repo_depends:
 - python-attrs
 - python-sortedcontainers
 - python-exceptiongroup
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alpm: python-hypothesis
   source: archpkg

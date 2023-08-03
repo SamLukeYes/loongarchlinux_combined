@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libliftoff'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
 - libdrm
-repo_makedepends:
-- git
-- meson
 update_on:
 - alpm: libliftoff
   source: archpkg

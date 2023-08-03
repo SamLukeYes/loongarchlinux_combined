@@ -7,17 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''jupyter-server-ydoc'')
 
   '
-repo_checkdepends:
-- python-pytest-timeout
-- python-pytest-jupyter
 repo_depends:
-- jupyter-server
-- python-jupyter-ydoc
 - jupyter-server-fileid
-repo_makedepends:
-- python-build
-- python-installer
-- python-hatchling
+- python-jupyter-ydoc
+- jupyter-server
 update_on:
 - alpm: jupyter-server-ydoc
   source: archpkg

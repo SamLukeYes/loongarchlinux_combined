@@ -1,21 +1,12 @@
 destsubdir: core
-repo_checkdepends: []
 repo_depends:
 - bzip2
-- expat
+- zlib
+- libxcrypt
 - gdbm
 - libffi
-- libnsl
-- libxcrypt
+- expat
 - openssl
-- zlib
-repo_makedepends:
-- tk
-- sqlite
-- bluez: bluez-libs
-- mpdecimal
-- llvm
-- gdb
-- xorg-server: xorg-server-xvfb
+- libnsl
 update_on:
 - alias: python

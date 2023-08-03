@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ibus-chewing'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ibus
 - libchewing
-- libxtst
 - gtk3
-repo_makedepends:
-- gob2
-- cmake-fedora
-- git
+- ibus
+- libxtst
 update_on:
 - alpm: ibus-chewing
   source: archpkg

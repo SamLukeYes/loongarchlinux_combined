@@ -9,43 +9,30 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-clash-prelude
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-arrows
-- haskell-constraints
-- haskell-data-binary-ieee754
-- haskell-data-default-class
-- haskell-extra
-- haskell-ghc-typelits-extra
-- haskell-ghc-typelits-knownnat
-- haskell-ghc-typelits-natnormalise
-- haskell-half
-- haskell-hashable
-- haskell-interpolate
-- haskell-lens
-- haskell-quickcheck
-- haskell-recursion-schemes
-- haskell-reflection
-- haskell-singletons
-- haskell-th-abstraction
-- haskell-th-lift
 - haskell-th-orphans
-- haskell-type-errors
+- haskell-th-abstraction
+- haskell-half
 - haskell-uniplate
+- haskell-lens
+- haskell-reflection
+- haskell-hashable
+- haskell-quickcheck
+- haskell-data-binary-ieee754
+- haskell-singletons
+- haskell-interpolate
+- haskell-th-lift
+- ghc: ghc-libs
+- haskell-ghc-typelits-extra
+- haskell-constraints
+- haskell-arrows
+- haskell-extra
+- haskell-recursion-schemes
+- haskell-data-default-class
+- haskell-ghc-typelits-natnormalise
+- haskell-ghc-typelits-knownnat
+- haskell-type-errors
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
-- haskell-doctest-parallel
-- haskell-hedgehog
-- haskell-hint
-- haskell-quickcheck-classes-base
-- haskell-tasty
-- haskell-tasty-hedgehog
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
-- haskell-tasty-th
 update_on:
 - alpm: haskell-arrows
   source: alpm

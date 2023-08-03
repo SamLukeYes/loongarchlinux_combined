@@ -7,14 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-faraday-em_synchrony'')
 
   '
-repo_checkdepends:
-- ruby-faraday
-- ruby-webmock
-- ruby-multipart-parser
 repo_depends:
 - ruby
-repo_makedepends:
-- ruby-rspec
 update_on:
 - alias: ruby
 - alpm: ruby-faraday-em_synchrony

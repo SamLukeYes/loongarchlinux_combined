@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nodm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pam
 - xorg-xinit
-repo_makedepends:
-- help2man
+- pam
 update_on:
 - alpm: nodm
   source: archpkg

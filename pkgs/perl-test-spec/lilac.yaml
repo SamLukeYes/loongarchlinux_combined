@@ -7,13 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-test-spec'')
 
   '
-repo_checkdepends:
-- perl-module-implementation
-- perl-try-tiny
 repo_depends:
-- perl-test-trap
 - perl-tie-ixhash
-repo_makedepends: []
+- perl-test-trap
 update_on:
 - alpm: perl-test-spec
   source: archpkg

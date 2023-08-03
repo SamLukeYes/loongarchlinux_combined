@@ -9,37 +9,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fltk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
+- fontconfig
 - glibc
-- hicolor-icon-theme
-- fontconfig
-- libglvnd
+- gcc: gcc-libs
+- libxfixes
+- libxft
 - libjpeg-turbo
-- libpng
-- libx11
+- libxrender
+- libxinerama
 - libxcursor
+- libx11
+- libglvnd
 - libxext
-- libxfixes
-- libxft
-- libxinerama
-- libxrender
-repo_makedepends:
-- alsa-lib
-- cmake
-- doxygen
-- fontconfig
-- libglvnd
-- libjpeg-turbo
+- hicolor-icon-theme
 - libpng
-- libx11
-- libxcursor
-- libxfixes
-- libxft
-- libxinerama
-- libxrender
-- mesa
 update_on:
 - alpm: fontconfig
   provides: libfontconfig.so

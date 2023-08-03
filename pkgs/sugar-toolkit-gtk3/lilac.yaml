@@ -9,22 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sugar-toolkit-gtk3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - alsa-lib
-- gtk3
-- libsm
-- python-cairo
+- telepathy-mission-control
 - python-dateutil
 - python-decorator
-- python-six
 - sugar-artwork
-- sugar-datastore
-- telepathy-mission-control
+- python-six
+- libsm
 - unzip
-repo_makedepends:
-- intltool
-- gobject-introspection
+- sugar-datastore
+- gtk3
+- python-cairo
 update_on:
 - alpm: sugar-toolkit-gtk3
   source: archpkg

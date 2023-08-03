@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rocsolver'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - rocblas
-repo_makedepends:
-- rocm-cmake
-- python-pyaml
-- fmt
 update_on:
 - alpm: rocsolver
   source: archpkg

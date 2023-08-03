@@ -7,13 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''wallabag'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- php: php-tidy
 - php
 - php: php-gd
-- php: php-tidy
-repo_makedepends:
-- systemd
 update_on:
 - alpm: wallabag
   source: archpkg

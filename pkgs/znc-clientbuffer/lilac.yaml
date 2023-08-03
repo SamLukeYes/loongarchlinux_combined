@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''znc-clientbuffer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - znc
-repo_makedepends:
-- cmake
-- python
 update_on:
 - alpm: znc-clientbuffer
   source: archpkg

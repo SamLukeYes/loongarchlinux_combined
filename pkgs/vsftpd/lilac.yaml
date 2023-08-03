@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vsftpd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- openssl
-- libcap
-- pam
 - libnsl
-repo_makedepends: []
+- libcap
+- openssl
+- glibc
+- pam
 update_on:
 - alpm: vsftpd
   source: archpkg

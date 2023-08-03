@@ -7,17 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-flask-mail'')
 
   '
-repo_checkdepends:
-- python-nose
-- python-blinker
-- python-speaklater
 repo_depends:
+- python-blinker
 - python
 - python-flask
-- python-blinker
-repo_makedepends:
-- python-sphinx
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-flask-mail

@@ -7,15 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''openbve'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- hicolor-icon-theme
-- libglvnd
 - mono
 - openal
-repo_makedepends:
-- mono-msbuild
-- nuget
+- libglvnd
+- hicolor-icon-theme
 update_on:
 - alpm: openbve
   source: archpkg

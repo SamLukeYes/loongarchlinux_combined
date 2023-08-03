@@ -9,35 +9,27 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xscreensaver'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
 - glu
-- xorg-appres
-- libglvnd
-- libjpeg-turbo
-- libx11
-- libxcrypt
-- libxext
-- libxft
-- libxi
-- libxinerama
-- libxmu
-- libxrandr
-- libxt
-- libxxf86vm
 - perl-libwww
-- pam
 - glibc
 - glib2
+- libjpeg-turbo
+- libxrandr
+- libxinerama
+- libxt
+- libglvnd
+- libxext
+- xorg-appres
+- libxft
+- libxxf86vm
+- pam
+- libxmu
 - gdk-pixbuf2
-repo_makedepends:
-- bc
-- intltool
-- libxpm
-- gdm
-- systemd
-- systemd: systemd-libs
+- libxi
+- libxcrypt
+- libx11
+- gtk3
 update_on:
 - alpm: darktable
   provides: libjpeg.so

@@ -9,21 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgit2-glib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glib2
+- libgit2
 - glibc
-- libgit2
-repo_makedepends:
-- gi-docgen
-- git
-- glib2
-- gobject-introspection
-- gtk-doc
-- libgit2
-- meson
-- pygobject: python-gobject
-- vala
 update_on:
 - alpm: glib2
   provides: libgio-2.0.so

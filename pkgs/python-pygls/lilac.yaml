@@ -7,18 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pygls'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-asyncio
 repo_depends:
-- python-lsprotocol
 - python-typeguard
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools-scm
-- python-toml
-- python-wheel
+- python-lsprotocol
 update_on:
 - alpm: python-pygls
   source: archpkg

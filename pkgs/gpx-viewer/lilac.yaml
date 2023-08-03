@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gpx-viewer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gdl
 - libchamplain
-repo_makedepends:
-- intltool
+- gdl
 update_on:
 - alpm: gpx-viewer
   source: archpkg

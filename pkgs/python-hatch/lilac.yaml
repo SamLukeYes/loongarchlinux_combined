@@ -7,27 +7,25 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-hatch'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
-- python-appdirs
-- python-atomicwrites
-- python-click
-- python-colorama
-- python-coverage
-- python-pexpect
-- python-pip
-- python-pytest
-- python-semver
-- python-setuptools
-- python-sortedcontainers
 - python-toml
 - twine
-- python-userpath
 - python-virtualenv
-- python-wheel
+- python-userpath
+- python-setuptools
+- python-sortedcontainers
 - python-build
-repo_makedepends: []
+- python-colorama
+- python-click
+- python-pytest
+- python-atomicwrites
+- python-semver
+- python-appdirs
+- python-pip
+- python-coverage
+- python-pexpect
+- python-wheel
+- python
 update_on:
 - alias: python
 - alpm: python-hatch

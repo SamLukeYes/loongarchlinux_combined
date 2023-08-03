@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''supermin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- e2fsprogs
+- cpio
 - pacman
 - pacman-contrib
-- cpio
-repo_makedepends:
-- ocaml
-- ocaml-findlib
+- e2fsprogs
 update_on:
 - alpm: supermin
   source: archpkg

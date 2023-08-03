@@ -9,24 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xtrabackup'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libaio
-- libev
-- libgcrypt
-- curl
 - perl-dbd-mysql
 - numactl
-- protobuf
+- curl
+- libaio
+- libgcrypt
+- libev
 - procps-ng
-repo_makedepends:
-- cmake
-- python-sphinx
-- zlib
-- vim
-- libedit
-- libevent
-- re2
+- protobuf
 update_on:
 - alias: protobuf
 - alpm: xtrabackup

@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libksane'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ktextwidgets
 - kwallet
+- ktextwidgets
 - ksanecore
-repo_makedepends:
-- extra-cmake-modules
 update_on:
 - alpm: libksane
   source: archpkg

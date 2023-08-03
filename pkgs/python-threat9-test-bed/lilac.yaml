@@ -7,24 +7,15 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-threat9-test-bed'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
-- python-click
-- python-faker
-- python-flask
-- python-asgiref
 - gunicorn
-- python-pyopenssl
 - python-requests
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-setuptools-scm
-- python-setuptools
-- python-wheel
+- python-asgiref
+- python-click
+- python-pyopenssl
+- python-faker
+- python
+- python-flask
 update_on:
 - alias: python
 - alpm: python-threat9-test-bed

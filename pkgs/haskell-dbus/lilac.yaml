@@ -9,29 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-dbus'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- dbus
 repo_depends:
-- ghc: ghc-libs
 - haskell-cereal
-- haskell-conduit
-- haskell-lens
-- haskell-network
-- haskell-random
-- haskell-split
 - haskell-th-lift
+- haskell-network
+- ghc: ghc-libs
+- haskell-lens
+- haskell-split
+- haskell-random
 - haskell-vector
 - haskell-xml-conduit
 - haskell-xml-types
-repo_makedepends:
-- ghc
-- uusi
-- haskell-extra
-- haskell-quickcheck
-- haskell-resourcet
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
+- haskell-conduit
 update_on:
 - alpm: haskell-cereal
   source: alpm

@@ -7,22 +7,15 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-flex'')
 
   '
-repo_checkdepends:
-- python-pytest-runner
-- python-factory-boy
-- python-responses
-- python-pytest-httpbin
 repo_depends:
-- python-six
-- python-yaml
-- python-validate-email
-- python-rfc3987
 - python-requests
-- python-strict-rfc3339
+- python-six
+- python-validate-email
 - python-click
+- python-strict-rfc3339
 - python-jsonpointer
-repo_makedepends:
-- python-setuptools
+- python-yaml
+- python-rfc3987
 update_on:
 - alpm: python-flex
   source: archpkg

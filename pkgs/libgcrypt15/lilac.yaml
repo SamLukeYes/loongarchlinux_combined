@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgcrypt15'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - libgpg-error
-repo_makedepends:
-- git
+- glibc
 update_on:
 - alpm: libgcrypt15
   source: archpkg

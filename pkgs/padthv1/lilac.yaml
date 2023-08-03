@@ -9,30 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''padthv1'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fftw
-- gcc: gcc-libs
-- glibc
-- qt6-base
-- qt6-svg
 - alsa-lib
-- fftw
 - gcc: gcc-libs
-- glibc
+- liblo
+- qt6-base
 - hicolor-icon-theme
-- liblo
-- qt6-base
-- qt6-svg
-repo_makedepends:
-- alsa-lib
-- cmake
 - fftw
-- liblo
-- lv2
-- qt6-base
 - qt6-svg
-- qt6-tools
+- glibc
 update_on:
 - alpm: fftw
   provides: libfftw3f.so

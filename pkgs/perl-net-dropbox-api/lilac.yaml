@@ -9,20 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-net-dropbox-api'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- perl-test-pod
-- perl-test-pod-coverage
 repo_depends:
-- perl-common-sense
 - perl-data-random
-- perl-http-message
-- perl-json
-- perl-libwww
-- perl-mouse
-- perl-net-oauth
 - perl-uri
 - perl-lwp-protocol-https
-repo_makedepends: []
+- perl-common-sense
+- perl-json
+- perl-http-message
+- perl-mouse
+- perl-net-oauth
+- perl-libwww
 update_on:
 - alpm: perl-net-dropbox-api
   source: archpkg

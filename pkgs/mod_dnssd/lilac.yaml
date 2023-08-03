@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mod_dnssd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- glibc
 - apache
 - apr
 - avahi
-- glibc
-repo_makedepends: []
 update_on:
 - alpm: mod_dnssd
   source: archpkg

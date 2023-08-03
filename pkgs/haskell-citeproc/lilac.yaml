@@ -9,28 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-citeproc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-aeson-pretty
-- haskell-attoparsec
-- haskell-case-insensitive
-- haskell-data-default
-- haskell-file-embed
-- haskell-pandoc-types
 - haskell-safe
-- haskell-scientific
-- haskell-text-icu
-- haskell-unicode-collation
 - haskell-uniplate
+- haskell-aeson
+- ghc: ghc-libs
+- haskell-pandoc-types
+- haskell-case-insensitive
+- haskell-scientific
+- haskell-data-default
 - haskell-vector
 - haskell-xml-conduit
-repo_makedepends:
-- ghc
-- uusi
-- haskell-diff
-- haskell-timeit
+- haskell-unicode-collation
+- haskell-aeson-pretty
+- haskell-text-icu
+- haskell-attoparsec
+- haskell-file-embed
 update_on:
 - alpm: haskell-aeson
   source: alpm

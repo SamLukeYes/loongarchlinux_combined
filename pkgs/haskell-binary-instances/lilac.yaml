@@ -9,28 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-binary-instan
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-binary-orphans
-- haskell-case-insensitive
-- haskell-hashable
-- haskell-primitive
-- haskell-scientific
-- haskell-tagged
-- haskell-text-binary
-- haskell-time-compat
-- haskell-unordered-containers
-- haskell-vector
 - haskell-vector-binary-instances
-repo_makedepends:
-- ghc
-- uusi
-- haskell-quickcheck
-- haskell-quickcheck-instances
-- haskell-tasty
-- haskell-tasty-quickcheck
+- haskell-unordered-containers
+- haskell-binary-orphans
+- haskell-text-binary
+- haskell-aeson
+- ghc: ghc-libs
+- haskell-hashable
+- haskell-case-insensitive
+- haskell-tagged
+- haskell-time-compat
+- haskell-scientific
+- haskell-vector
+- haskell-primitive
 update_on:
 - alpm: haskell-aeson
   source: alpm

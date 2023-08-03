@@ -9,26 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-feed'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-base-compat
+- ghc: ghc-libs
 - haskell-old-locale
-- haskell-old-time
-- haskell-safe
-- haskell-time-locale-compat
-- haskell-utf8-string
 - haskell-xml-types
 - haskell-xml-conduit
-repo_makedepends:
-- ghc
-- haskell-doctest
-- haskell-doctest-driver-gen
-- haskell-hunit
-- haskell-test-framework
-- haskell-test-framework-hunit
-- haskell-markdown-unlit
-- haskell-syb
+- haskell-time-locale-compat
+- haskell-safe
+- haskell-utf8-string
+- haskell-old-time
 update_on:
 - alpm: haskell-base-compat
   source: alpm

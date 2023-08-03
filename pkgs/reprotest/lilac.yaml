@@ -7,22 +7,15 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''reprotest'')
 
   '
-repo_checkdepends:
-- python-pytest
-- disorderfs
 repo_depends:
+- libfaketime
 - python-setuptools
-- python
-- python-rstr
 - diffoscope
 - fakeroot
+- python-rstr
 - python-distro
 - python-wheel
-- libfaketime
-repo_makedepends:
-- help2man
-- python-docutils
-- git
+- python
 update_on:
 - alias: python
 - alpm: reprotest

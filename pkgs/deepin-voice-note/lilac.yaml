@@ -9,19 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-voice-note'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- deepin-qt5integration
-- deepin-qt-dbus-factory
-- qt5-multimedia
-- qt5-webengine
 - vlc
-repo_makedepends:
-- git
-- cmake
-- gtest
-- ninja
-- qt5-tools
+- qt5-multimedia
+- deepin-qt-dbus-factory
+- deepin-qt5integration
+- qt5-webengine
 update_on:
 - alpm: deepin-voice-note
   source: archpkg

@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pamixer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - pulseaudio: libpulse
-repo_makedepends:
-- meson
-- ninja
-- cxxopts
 update_on:
 - alpm: pamixer
   source: archpkg

@@ -7,11 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-mustermann'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - ruby
 - ruby-ruby2_keywords
-repo_makedepends: []
 update_on:
 - alias: ruby
 - alpm: ruby-mustermann

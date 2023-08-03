@@ -9,18 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tpm2-tss'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- iproute2
-- swtpm
-- uthash
 repo_depends:
+- openssl
 - curl
 - json-c
-- openssl
-repo_makedepends:
-- cmocka
-- doxygen
-- libtpms
 update_on:
 - alpm: json-c
   provides: libjson-c.so

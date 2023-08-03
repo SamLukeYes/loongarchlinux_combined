@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zita-bls1'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
-- clthreads
 - clxclient
 - zita-convolver
-repo_makedepends:
-- gendesk
+- clthreads
+- cairo
 update_on:
 - alpm: zita-bls1
   source: archpkg

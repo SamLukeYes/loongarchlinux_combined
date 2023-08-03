@@ -1,11 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- glibc
 - openssl
-repo_makedepends:
-- git
-- help2man
-- perl-file-slurp
-- sbsigntools
+- glibc
 update_on: []

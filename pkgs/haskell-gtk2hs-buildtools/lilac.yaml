@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gtk2hs-buildt
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-random
 - haskell-hashtables
-repo_makedepends:
-- alex
-- happy
-- ghc
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-random
   source: alpm

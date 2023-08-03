@@ -7,23 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''namcap'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-six
-- systemd
 repo_depends:
-- binutils
-- elfutils
-- licenses
-- pkgconf
 - pyalpm
-- python
+- elfutils
+- pkgconf
+- licenses
 - python-pyelftools
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
+- binutils
+- python
 update_on:
 - alias: python
 - alpm: namcap

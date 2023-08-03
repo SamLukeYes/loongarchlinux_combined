@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nitrokey-app'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt5-base
+- libnitrokey
 - qt5-svg
 - hicolor-icon-theme
-- libnitrokey
-repo_makedepends:
-- cmake
-- qt5-tools
-- bash-completion
-- cppcodec
 update_on:
 - alpm: qt5-base
   source: alpm

@@ -7,15 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''griffith'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtkspell3
-- python-chardet
-- pygobject: python-gobject
 - python-pillow
-- python-reportlab
 - python-sqlalchemy
-repo_makedepends: []
+- python-chardet
+- python-reportlab
+- gtkspell3
+- pygobject: python-gobject
 update_on:
 - alpm: griffith
   source: archpkg

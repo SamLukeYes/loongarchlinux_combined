@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hacksaw'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - libxcb
-repo_makedepends:
-- python
-- rust
 update_on:
 - alpm: hacksaw
   source: archpkg

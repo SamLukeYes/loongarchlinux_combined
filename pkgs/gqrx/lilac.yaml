@@ -9,30 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gqrx'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
+- libvolk
 - glibc
 - hicolor-icon-theme
-- libvolk
-- qt6-base
-- qt6-svg
 - gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
-- libvolk
-- qt6-base
+- gnuradio-osmosdr
 - qt6-svg
 - gnuradio
-- gnuradio-osmosdr
 - pulseaudio: libpulse
-repo_makedepends:
-- boost
-- cmake
-- gnuradio
-- gnuradio-osmosdr
-- pulseaudio: libpulse
-- libvolk
+- qt6-base
 update_on:
 - alpm: qt6-base
   source: alpm

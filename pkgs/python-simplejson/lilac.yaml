@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-simplejson'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-nose
-- python-pytest-runner
 repo_depends:
 - python
-repo_makedepends:
-- git
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-simplejson

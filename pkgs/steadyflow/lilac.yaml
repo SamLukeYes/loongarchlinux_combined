@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''steadyflow'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
-- gvfs
 - libgee
 - libnotify
-repo_makedepends:
-- cmake
-- ninja
-- vala
+- gvfs
 update_on:
 - alpm: steadyflow
   source: archpkg

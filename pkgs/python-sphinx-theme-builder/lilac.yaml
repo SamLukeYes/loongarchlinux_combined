@@ -7,23 +7,15 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-sphinx-theme-builder'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-click
-- python-sphinx-autobuild
 repo_depends:
 - python
-- python-packaging
-- python-rich
-- python-tomli
-- python-nodeenv
+- python-pyproject-metadata
 - python-setuptools
 - python-pep621
-- python-pyproject-metadata
-# repo_makedepends:
-# - python-build
-# - python-installer
-# - python-flit-core
+- python-tomli
+- python-packaging
+- python-rich
+- python-nodeenv
 update_on:
 - alias: python
 - alpm: python-sphinx-theme-builder

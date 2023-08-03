@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gom'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
-- glibc
 - sqlite
-repo_makedepends:
-- gdk-pixbuf2
-- gobject-introspection
-- gtk-doc
-- meson
-- pygobject: python-gobject
+- glibc
+- glib2
 update_on:
 - alpm: gom
   source: archpkg

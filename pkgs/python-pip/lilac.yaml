@@ -7,31 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pip'')
 
   '
-repo_checkdepends:
-- git
-- python-freezegun
-- python-pytest
-- python-pytest-rerunfailures
-- python-pytest-xdist
-- python-scripttest
-- python-tomli-w
-- python-virtualenv
-- python-werkzeug
-- subversion
 repo_depends:
-- python
 - python-attrs
 - python-cryptography
 - python-wheel
-repo_makedepends:
-- python-build
-- python-installer
-- python-myst-parser
-- python-setuptools
-- python-sphinx
-- python-sphinx-copybutton
-- python-sphinx-inline-tabs
-- python-sphinxcontrib-towncrier
+- python
 update_on:
 - alias: python
 - alpm: python-pip

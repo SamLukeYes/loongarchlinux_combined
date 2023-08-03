@@ -1,17 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-repo_makedepends:
-- cmake
-- doxygen
-- git
-- ninja
-- npm
-- python-breathe
-- python-docutils
-- python-jinja
-- python-six
-- python-sphinx
-- python-wheel
 update_on: []

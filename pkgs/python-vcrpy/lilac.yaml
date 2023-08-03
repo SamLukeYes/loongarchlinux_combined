@@ -7,15 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-vcrpy'')
 
   '
-repo_checkdepends:
-- python-pytest-httpbin
 repo_depends:
-- python-yaml
 - python-wrapt
-- python-six
 - python-yarl
-repo_makedepends:
-- python-setuptools
+- python-yaml
+- python-six
 update_on:
 - alpm: python-vcrpy
   source: archpkg

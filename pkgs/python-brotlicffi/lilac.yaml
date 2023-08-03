@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-brotlicffi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- python-cffi
 - brotli
 - python
-- python-cffi
-repo_makedepends:
-- git
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-brotlicffi

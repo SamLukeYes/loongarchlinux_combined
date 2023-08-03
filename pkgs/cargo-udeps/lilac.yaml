@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cargo-udeps'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- curl
 - libgit2
-repo_makedepends:
-- libssh2
+- curl
 update_on:
 - alpm: cargo-udeps
   source: archpkg

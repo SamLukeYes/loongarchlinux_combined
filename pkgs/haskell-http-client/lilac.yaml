@@ -9,27 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-http-client''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
+- haskell-network
 - haskell-async
-- haskell-base64-bytestring
-- haskell-blaze-builder
-- haskell-case-insensitive
-- haskell-cookie
+- ghc: ghc-libs
 - haskell-http-types
 - haskell-iproute
-- haskell-mime-types
-- haskell-network
-- haskell-network-uri
+- haskell-blaze-builder
+- haskell-case-insensitive
 - haskell-random
 - haskell-streaming-commons
-repo_makedepends:
-- ghc
-- haskell-hspec
-- haskell-hspec-discover
-- haskell-monad-control
-- haskell-zlib
+- haskell-mime-types
+- haskell-cookie
+- haskell-base64-bytestring
+- haskell-network-uri
 update_on:
 - alpm: haskell-async
   source: alpm

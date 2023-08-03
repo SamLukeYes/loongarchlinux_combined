@@ -9,35 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''grilo-plugins'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- gstreamer: gst-plugins-base
-- gstreamer: gst-plugins-good
-- pygobject: python-gobject
-- tracker3-miners
 repo_depends:
-- chromaprint
-- gom
-- grilo
-- gstreamer: gst-plugins-bad
-- libdmapsharing
-- gnome-online-accounts: libgoa
-- libmediaart
 - lua
-- tracker3
-- chromaprint
-- gom
-- grilo
-- gstreamer: gst-plugins-bad
-- libdmapsharing
-- gnome-online-accounts: libgoa
 - libmediaart
-- lua
+- gom
 - tracker3
-repo_makedepends:
-- git
-- gperf
-- meson
-- yelp-tools
+- gnome-online-accounts: libgoa
+- chromaprint
+- libdmapsharing
+- gstreamer: gst-plugins-bad
+- grilo
 update_on:
 - alias: lua
 - alias: lua

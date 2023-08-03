@@ -7,19 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-sphinx-click'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-click
 repo_depends:
-- python-click
 - python-docutils
 - python-sphinx
-repo_makedepends:
-- python-build
-- python-installer
-- python-pbr
-- python-setuptools
-- python-wheel
+- python-click
 update_on:
 - alpm: python-sphinx-click
   source: archpkg

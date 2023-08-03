@@ -7,13 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pynvim'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- python-greenlet
 - python
 - python-msgpack
-- python-greenlet
-repo_makedepends:
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-pynvim

@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libdbi-drivers'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libdbi
-repo_makedepends:
-- mariadb: mariadb-libs
-- postgresql: postgresql-libs
-- sqlite
 update_on:
 - alpm: libdbi-drivers
   source: archpkg

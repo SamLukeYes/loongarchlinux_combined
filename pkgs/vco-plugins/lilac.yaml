@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vco-plugins'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-repo_makedepends:
-- ladspa
 update_on:
 - alpm: vco-plugins
   source: archpkg

@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dra'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - xz
-- zlib
 - bzip2
-repo_makedepends: []
+- zlib
 update_on:
 - alpm: dra
   source: archpkg

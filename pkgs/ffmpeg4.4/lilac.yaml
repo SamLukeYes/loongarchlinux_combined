@@ -1,49 +1,40 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- alsa-lib
-- aom
-- bzip2
-- fontconfig
-- fribidi
-- gmp
-- gnutls
-- gsm
-- lame
-- libavc1394
-- libdrm
-- libiec61883
-- libmodplug
-- pulseaudio: libpulse
-- libraw1394
 - libsoxr
-- libssh
-- libtheora
-- libvdpau
-- libwebp
-- libx11
-- libxcb
-- libxext
-- libxml2
+- bzip2
+- alsa-lib
+- libavc1394
+- libmodplug
 - libxv
+- aom
+- gnutls
+- libtheora
+- libiec61883
 - opencore-amr
-- openjpeg2
+- xz
 - opus
-- sdl2
+- libxml2
+- libssh
+- fribidi
+- libxext
+- gmp
+- openjpeg2
+- fontconfig
+- libraw1394
+- libxcb
+- v4l-utils
 - speex
 - srt
-- svt-av1
-- v4l-utils
-- xz
+- libdrm
+- gsm
+- pulseaudio: libpulse
+- libvdpau
+- sdl2
 - zlib
-repo_makedepends:
-- amf-headers
-- avisynthplus
-- clang
-- ffnvcodec-headers
-- git
-- ladspa
-- nasm
+- svt-av1
+- libx11
+- libwebp
+- lame
 update_on:
 - alpm: libass
   provides: libass.so

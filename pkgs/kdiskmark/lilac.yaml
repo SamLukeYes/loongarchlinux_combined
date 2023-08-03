@@ -9,21 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdiskmark'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-base
-- fio
-- libaio
-- hicolor-icon-theme
-- kauth
 - glibc
 - gcc: gcc-libs
 - polkit-qt: polkit-qt5
-repo_makedepends:
-- git
-- cmake
-- extra-cmake-modules
-- qt5-tools
+- qt5-base
+- libaio
+- fio
+- kauth
+- hicolor-icon-theme
 update_on:
 - alpm: qt5-base
   source: alpm

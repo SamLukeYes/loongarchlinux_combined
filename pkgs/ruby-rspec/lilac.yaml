@@ -7,12 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rspec'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- ruby-rspec-core
-- ruby-rspec-expectations
 - ruby-rspec-mocks
-repo_makedepends: []
+- ruby-rspec-expectations
+- ruby-rspec-core
 update_on:
 - alpm: ruby-rspec
   source: archpkg

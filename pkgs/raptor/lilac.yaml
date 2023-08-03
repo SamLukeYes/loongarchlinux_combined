@@ -9,23 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''raptor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- libxml2
-- libxslt
 - xz
-- zlib
-- glibc
-- libxml2
+- curl
 - libxslt
-- xz
 - zlib
-- curl
-- icu
-repo_makedepends:
-- curl
-- gtk-doc
+- libxml2
+- glibc
 - icu
 update_on:
 - alpm: curl

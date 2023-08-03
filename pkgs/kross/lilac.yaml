@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kross'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kparts
 - qt5-script
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- qt5-tools
+- kparts
 update_on:
 - alpm: kross
   source: archpkg

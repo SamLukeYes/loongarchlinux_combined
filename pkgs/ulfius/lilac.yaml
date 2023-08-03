@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ulfius'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- gnutls
 - jansson
 - zlib
-repo_makedepends:
-- cmake
-- doxygen
-- git
-- graphviz
-- ninja
+- gnutls
+- glibc
 update_on:
 - alpm: curl
   provides: libcurl.so

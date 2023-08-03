@@ -7,12 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''bleachbit'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- pygobject: python-gobject
 - gtk3
-repo_makedepends:
-- git
+- pygobject: python-gobject
 update_on:
 - alpm: bleachbit
   source: archpkg

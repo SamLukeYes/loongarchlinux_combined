@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libxmlb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- shared-mime-info
 repo_depends:
-- glib2
-- snowball: libstemmer
 - xz
-repo_makedepends:
-- meson
-- gobject-introspection
-- gtk-doc
+- snowball: libstemmer
+- glib2
 update_on:
 - alpm: libxmlb
   source: archpkg

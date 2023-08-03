@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cronie'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- run-parts
 - pam
 - bash
-- run-parts
-repo_makedepends: []
 update_on:
 - alpm: cronie
   source: archpkg

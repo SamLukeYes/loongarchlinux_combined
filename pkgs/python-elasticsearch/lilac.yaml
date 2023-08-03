@@ -7,21 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-elasticsearch'')
 
   '
-repo_checkdepends:
-- python-requests
-- python-mock
-- python-yaml
-- python-pytest
-- python-numpy
-- python-pandas
-- python-aiohttp
-- python-pytest-asyncio
 repo_depends:
-- python-certifi
 - python-urllib3
-repo_makedepends:
-- python-setuptools
-- git
+- python-certifi
 update_on:
 - alpm: python-elasticsearch
   source: archpkg

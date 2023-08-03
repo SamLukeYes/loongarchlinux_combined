@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tf-random'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-random
+- ghc: ghc-libs
 - haskell-primitive
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-random
   source: alpm

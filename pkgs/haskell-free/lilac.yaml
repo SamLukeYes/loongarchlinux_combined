@@ -9,18 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-free'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
-- haskell-comonad
-- haskell-distributive
-- haskell-indexed-traversable
-- haskell-profunctors
-- haskell-semigroupoids
 - haskell-th-abstraction
+- haskell-semigroupoids
+- haskell-distributive
+- haskell-comonad
+- haskell-profunctors
+- haskell-indexed-traversable
 - haskell-transformers-base
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-comonad
   source: alpm

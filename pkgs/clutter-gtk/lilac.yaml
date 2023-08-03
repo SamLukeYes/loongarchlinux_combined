@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''clutter-gtk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - clutter
-repo_makedepends:
-- gobject-introspection
-- gtk-doc
-- git
-- meson
 update_on:
 - alpm: clutter-gtk
   source: archpkg

@@ -7,19 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-gettext'')
 
   '
-repo_checkdepends:
-- ruby-test-unit
-- ruby-rake
-- ruby-test-unit-rr
 repo_depends:
-- ruby
-- ruby-locale
 - ruby-text
 - ruby-erubi
-repo_makedepends:
-- ruby-rdoc
-- ruby-yard
-- ruby-bundler
+- ruby
+- ruby-locale
 update_on:
 - alias: ruby
 - alpm: ruby-gettext

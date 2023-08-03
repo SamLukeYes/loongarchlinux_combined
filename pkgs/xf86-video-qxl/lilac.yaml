@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xf86-video-qxl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - spice
-- systemd: systemd-libs
 - libxfont2
-repo_makedepends:
-- xorg-server: xorg-server-devel
-- spice-protocol
-- xorgproto
-- git
-- libcacard
+- systemd: systemd-libs
 update_on:
 - alpm: xf86-video-qxl
   source: archpkg

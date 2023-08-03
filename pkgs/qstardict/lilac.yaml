@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qstardict'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- hicolor-icon-theme
 - qt5-base
-repo_makedepends:
-- qt5-tools
+- hicolor-icon-theme
 update_on:
 - alpm: qt5-base
   source: alpm

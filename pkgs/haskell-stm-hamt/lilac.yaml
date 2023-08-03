@@ -9,24 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-stm-hamt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-deferred-folds
-- haskell-focus
-- haskell-hashable
 - haskell-list-t
-- haskell-primitive
+- ghc: ghc-libs
+- haskell-hashable
+- haskell-focus
 - haskell-primitive-extras
-repo_makedepends:
-- ghc
-- uusi
-- haskell-quickcheck
-- haskell-quickcheck-instances
-- haskell-rerebase
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
+- haskell-primitive
 update_on:
 - alpm: haskell-deferred-folds
   source: alpm

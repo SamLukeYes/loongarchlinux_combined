@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''sage-data-elliptic_curves'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- python
-- sqlite
 update_on:
 - alpm: sage-data-elliptic_curves
   source: archpkg

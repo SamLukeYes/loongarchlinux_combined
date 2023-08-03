@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-screensaver'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-declarative
-- qt5-x11extras
 - libxss
+- qt5-x11extras
 - xscreensaver
-repo_makedepends:
-- qt5-tools
-- python
+- qt5-declarative
 update_on:
 - alpm: qt5-declarative
   source: alpm

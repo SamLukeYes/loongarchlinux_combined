@@ -7,13 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''minted'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - fvextra
+- which
 - python-pygments
 - texlive-texmf: texlive-latexextra
-- which
-repo_makedepends: []
 update_on:
 - alpm: minted
   source: archpkg

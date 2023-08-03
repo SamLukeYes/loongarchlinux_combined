@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wabt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - gcc: gcc-libs
-repo_makedepends:
-- cmake
-- git
-- gcc
-- clang
-- python-ply
-- gtest
+- glibc
 update_on:
 - alpm: wabt
   source: archpkg

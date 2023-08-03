@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vbetool'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- zlib
 - libx86
 - libpciaccess
-repo_makedepends:
-- pciutils
-- git
+- zlib
 update_on:
 - alpm: vbetool
   source: archpkg

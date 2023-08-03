@@ -9,19 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ibus-libpinyin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ibus
+- pyxdg: python-pyxdg
+- opencc
 - libpinyin
+- ibus
 - libsoup
 - lua
-- opencc
-- pyxdg: python-pyxdg
-repo_makedepends:
-- boost
-- git
-- gnome-common
-- intltool
 update_on:
 - alias: lua
 - alpm: ibus-libpinyin

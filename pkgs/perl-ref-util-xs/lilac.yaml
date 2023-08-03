@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-ref-util-xs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- perl-readonly
 repo_depends:
 - perl
-repo_makedepends: []
 update_on:
 - alias: perl
 - alpm: perl-ref-util-xs

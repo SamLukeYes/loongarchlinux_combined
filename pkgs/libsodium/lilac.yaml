@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libsodium'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-repo_makedepends:
-- minisign
 update_on:
 - alpm: libsodium
   source: archpkg

@@ -9,20 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyerfa'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- erfa
-- glibc
 - python
+- glibc
 - python-numpy
-repo_makedepends:
-- python-build
-- python-installer
-- python-jinja
-- python-packaging
-- python-setuptools-scm
-- python-wheel
+- erfa
 update_on:
 - alias: python
 - alpm: python-pyerfa

@@ -7,13 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''junit-system-rules'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - junit
-repo_makedepends:
-- git
-- java8-openjdk: jdk8-openjdk
-- maven
 update_on:
 - alpm: junit-system-rules
   source: archpkg

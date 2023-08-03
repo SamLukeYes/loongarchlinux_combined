@@ -9,37 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zabbix'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- net-snmp
-- curl
-- libxml2
-- unixodbc
-- openldap: libldap
-- libevent
-- pcre2
-- curl
-- pcre2
-- net-snmp
-- curl
-- libxml2
-- sqlite
-- unixodbc
-- openldap: libldap
-- pcre2
-- libevent
 - php
-- php: php-gd
-repo_makedepends:
-- postgresql: postgresql-libs
-- libxml2
-- unixodbc
 - net-snmp
-- mariadb: mariadb-libs
-- openldap: libldap
-- libevent
-- go
 - pcre2
+- libevent
+- curl
+- unixodbc
+- libxml2
+- php: php-gd
+- sqlite
+- openldap: libldap
 update_on:
 - alpm: zabbix
   source: archpkg

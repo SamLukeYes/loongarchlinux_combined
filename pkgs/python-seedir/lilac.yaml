@@ -7,16 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-seedir'')
 
   '
-repo_checkdepends:
-- python-emoji
 repo_depends:
 - python-natsort
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alpm: python-seedir
   source: archpkg

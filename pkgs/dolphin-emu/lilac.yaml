@@ -9,30 +9,24 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dolphin-emu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - alsa-lib
-- bluez: bluez-libs
-- enet
-- gcc: gcc-libs
-- glibc
-- hidapi
 - libevdev
-- pulseaudio: libpulse
-- libx11
-- libxi
+- glibc
+- gcc: gcc-libs
 - libxrandr
-- lzo
-- minizip-ng
-- pugixml
-- qt6-base
 - sfml
+- minizip-ng
+- bluez: bluez-libs
+- pugixml
+- pulseaudio: libpulse
+- enet
+- hidapi
+- libxi
+- qt6-base
 - zlib
-repo_makedepends:
-- cmake
-- git
-- ninja
-- python
+- libx11
+- lzo
 update_on:
 - alpm: ffmpeg
   provides: libavcodec.so

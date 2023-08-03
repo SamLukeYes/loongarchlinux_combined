@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kwayland-integration'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kwindowsystem
 - kwayland
-repo_makedepends:
-- extra-cmake-modules
-- wayland-protocols
-- kidletime
+- kwindowsystem
 update_on:
 - alpm: kwayland-integration
   source: archpkg

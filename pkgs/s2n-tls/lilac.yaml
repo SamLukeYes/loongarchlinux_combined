@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''s2n-tls'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - openssl
 - gcc: gcc-libs
-repo_makedepends:
-- cmake
 update_on:
 - alpm: s2n-tls
   source: archpkg

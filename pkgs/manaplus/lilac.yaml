@@ -9,19 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''manaplus'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glu
-- libxml2
-- physfs
 - sdl_image
-- sdl_mixer
-- sdl_net
+- glu
 - sdl_ttf
-- sdl_gfx
 - curl
-repo_makedepends:
-- mesa
+- sdl_net
+- sdl_gfx
+- libxml2
+- sdl_mixer
+- physfs
 update_on:
 - alpm: manaplus
   source: archpkg

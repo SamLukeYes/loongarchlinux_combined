@@ -9,19 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vis'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- vim
 repo_depends:
-- acl
-- bash
-- ncurses
-- libtermkey
-- lua
-- lpeg: lua-lpeg
-- tre
 - file
-repo_makedepends:
-- git
+- acl
+- ncurses
+- tre
+- lpeg: lua-lpeg
+- libtermkey
+- bash
+- lua
 update_on:
 - alpm: acl
   provides: libacl.so

@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cairo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - cairo
 - haskell-utf8-string
-repo_makedepends:
-- haskell-gtk2hs-buildtools
-- mesa
-- ghc
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-utf8-string
   source: alpm

@@ -9,23 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-vec'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-quickcheck
-- haskell-adjunctions
 - haskell-boring
+- ghc: ghc-libs
+- haskell-hashable
+- haskell-quickcheck
+- haskell-semigroupoids
 - haskell-distributive
 - haskell-fin
-- haskell-hashable
+- haskell-adjunctions
 - haskell-indexed-traversable
-- haskell-semigroupoids
-repo_makedepends:
-- ghc
-- uusi
-- haskell-base-compat
-- haskell-inspection-testing
-- haskell-tagged
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

@@ -9,21 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-io-streams'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-attoparsec
 - haskell-network
-- haskell-primitive
-- haskell-vector
+- ghc: ghc-libs
 - haskell-zlib-bindings
-repo_makedepends:
-- ghc
-- haskell-hunit
-- haskell-quickcheck
-- haskell-test-framework
-- haskell-test-framework-hunit
-- haskell-test-framework-quickcheck2
+- haskell-vector
+- haskell-primitive
+- haskell-attoparsec
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

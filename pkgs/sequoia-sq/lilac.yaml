@@ -1,16 +1,12 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - bzip2
 - gcc: gcc-libs
+- nettle
+- sqlite
+- openssl
 - glibc
 - gmp
-- nettle
-- openssl
-- sqlite
-repo_makedepends:
-- git
-- clang
 update_on:
 - alpm: bzip2
   provides: libbz2.so

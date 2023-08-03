@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-uri-encode'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-utf8-string
 - ghc: ghc-libs
 - haskell-network-uri
-- haskell-utf8-string
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-network-uri
   source: alpm

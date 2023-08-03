@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sslh'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
+- pcre2
 - libcap
 - libconfig
-- pcre2
+- glibc
 - systemd: systemd-libs
-repo_makedepends:
-- systemd
 update_on:
 - alpm: sslh
   source: archpkg

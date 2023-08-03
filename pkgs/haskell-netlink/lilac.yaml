@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-netlink'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-cereal
-- haskell-monad-loops
 - haskell-pretty-hex
-repo_makedepends:
-- ghc
+- haskell-monad-loops
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-cereal
   source: alpm

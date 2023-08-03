@@ -9,24 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pymol'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- netcdf
+- glm
 - freetype2
 - glew
-- glm
-- netcdf
+- tcsh
 - netcdf-cxx
 - python-numpy
-- tcsh
-repo_makedepends:
-- desktop-file-utils
-- gendesk
-- mmtf-cpp
-- msgpack-c
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
 update_on:
 - alpm: pymol
   source: archpkg

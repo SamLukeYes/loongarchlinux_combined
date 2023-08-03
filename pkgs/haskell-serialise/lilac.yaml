@@ -9,25 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-serialise'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-cborg
-- haskell-half
-- haskell-hashable
-- haskell-primitive
 - haskell-strict
-- haskell-these
 - haskell-unordered-containers
+- haskell-these
+- ghc: ghc-libs
+- haskell-hashable
+- haskell-half
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
-- haskell-quickcheck
-- haskell-quickcheck-instances
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
+- haskell-primitive
+- haskell-cborg
 update_on:
 - alpm: haskell-cborg
   source: alpm

@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xloadimage'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libxext
 - libtiff
 - libpng
 - libx11
-- libxext
-repo_makedepends:
-- patch
-- imake
 update_on:
 - alpm: xloadimage
   source: archpkg

@@ -9,18 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cassava-megap
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-cassava
-- haskell-megaparsec
 - haskell-unordered-containers
+- ghc: ghc-libs
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hspec
-- haskell-hspec-megaparsec
+- haskell-megaparsec
+- haskell-cassava
 update_on:
 - alpm: haskell-cassava
   source: alpm

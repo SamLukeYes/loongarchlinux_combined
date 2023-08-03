@@ -9,19 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rocblas'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - openmp
-repo_makedepends:
-- rocm-cmake
-- python
-- python-virtualenv
-- python-pyaml
-- python-wheel
-- perl-file-which
-- python-msgpack
-- msgpack-cxx
-- gcc: gcc-fortran
 update_on:
 - alpm: rocblas
   source: archpkg

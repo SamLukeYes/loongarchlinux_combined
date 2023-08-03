@@ -9,28 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-online-accounts
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcr
-- json-glib
+- webkit2gtk-4.1
+- libsecret
 - krb5
 - libnotify
 - librest
-- libsecret
-- webkit2gtk-4.1
-- gcr
 - json-glib
-- krb5
-- libnotify
-- librest
-- libsecret
-- webkit2gtk-4.1
-repo_makedepends:
-- git
-- gobject-introspection
-- gtk-doc
-- meson
-- vala
+- gcr
 update_on:
 - alpm: glib2
   provides: libglib-2.0.so

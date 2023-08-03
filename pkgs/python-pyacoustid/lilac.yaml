@@ -7,13 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pyacoustid'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- chromaprint
 - python
-repo_makedepends:
-- git
-- python-setuptools
+- chromaprint
 update_on:
 - alias: python
 - alpm: python-pyacoustid

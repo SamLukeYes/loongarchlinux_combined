@@ -9,23 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''swtpm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- softhsm
 repo_depends:
-- fuse2
-- glib2
-- gnutls
-- json-glib
 - libseccomp
+- fuse2
 - libtpms
+- json-glib
+- gnutls
 - openssl
-repo_makedepends:
-- git
-- expect
-- iproute2
-- libtasn1
-- python
-- socat
+- glib2
 update_on:
 - alpm: libseccomp
   provides: libseccomp.so

@@ -9,19 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-clone'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- deepin-file-manager
-- deepin-qt5integration
 - partclone
 - e2fsprogs
 - jfsutils
+- deepin-file-manager
 - xfsprogs
-repo_makedepends:
-- cmake
-- ninja
-- qt5-tools
-- deepin-gettext-tools
+- deepin-qt5integration
 update_on:
 - alpm: deepin-clone
   source: archpkg

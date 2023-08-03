@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-cairo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ruby
-- cairo
-- ruby-pkg-config
 - ruby-native-package-installer
+- ruby-pkg-config
 - ruby-red-colors
-repo_makedepends:
-- ruby-rdoc
+- cairo
 update_on:
 - alias: ruby
 - alpm: ruby-cairo

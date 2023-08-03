@@ -9,35 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''notcurses'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
-- gcc: gcc-libs
-- glibc
-- ffmpeg
-- gpm
 - libdeflate
-- libunistring
 - ncurses
 - python-cffi
-repo_makedepends:
-- cmake
-- doctest
-- ffmpeg
-- gpm
-- libdeflate
 - libunistring
-- ncurses
-- ninja
-- python-build
-- python-cffi
-- python-installer
-- python-pypandoc
-- python-setuptools
-- python-wheel
-- readline
-- zlib
+- ffmpeg
+- glibc
+- gpm
 update_on:
 - alpm: ffmpeg
   provides: libavcodec.so

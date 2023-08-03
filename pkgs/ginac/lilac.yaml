@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ginac'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - cln
-repo_makedepends:
-- fig2dev
-- doxygen
-- texlive-bin
-- python
 update_on:
 - alpm: ginac
   source: archpkg

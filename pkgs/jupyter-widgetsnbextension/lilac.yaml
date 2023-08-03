@@ -7,15 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''jupyter-widgetsnbextension'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- jupyter-notebook
 - python-ipywidgets
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- jupyter-notebook
 update_on:
 - alpm: jupyter-widgetsnbextension
   source: archpkg

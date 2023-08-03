@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sundials'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openmpi
 - suitesparse
-repo_makedepends:
-- cmake
-- gcc: gcc-fortran
-- python
+- openmpi
 update_on:
 - alpm: sundials
   source: archpkg

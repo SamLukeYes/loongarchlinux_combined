@@ -9,27 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opensnitch'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- hicolor-icon-theme
-- libnetfilter_queue
+- python-pyinotify
 - grpc: python-grpcio
 - protobuf: python-protobuf
 - python-slugify
-- pyqt5: python-pyqt5
-- python-pyinotify
 - python-notify2
-repo_makedepends:
-- git
-- go
-- grpc: python-grpcio-tools
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
-- python-nspektr
-- python-jaraco.text
-- qt5-tools
+- pyqt5: python-pyqt5
+- hicolor-icon-theme
+- libnetfilter_queue
 update_on:
 - alpm: opensnitch
   source: archpkg

@@ -9,69 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ob-xd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- gcc: gcc-libs
-- libogg
-- libpng
-- zlib
 - alsa-lib
-- libjpeg-turbo
-- libvorbis
-- flac
-- freetype2
-- libglvnd
-- curl
 - hicolor-icon-theme
 - glibc
+- libogg
 - gcc: gcc-libs
-- libogg
-- libpng
-- zlib
-- alsa-lib
 - libjpeg-turbo
-- libvorbis
-- flac
-- freetype2
-- libglvnd
 - curl
-- glibc
-- gcc: gcc-libs
-- libogg
-- libpng
-- zlib
-- alsa-lib
-- libjpeg-turbo
-- libvorbis
-- flac
-- freetype2
 - libglvnd
-- curl
-repo_makedepends:
-- glibc
-- gcc: gcc-libs
-- libogg
 - libpng
-- zlib
-- alsa-lib
-- libjpeg-turbo
-- libvorbis
-- flac
 - freetype2
-- libglvnd
-- curl
-- git
-- juce
+- libvorbis
 - zlib
-- libpng
-- libogg
-- libx11
-- libxext
-- libxrandr
-- libxinerama
-- libxcursor
-- gendesk
+- flac
 update_on:
 - alpm: ob-xd
   source: archpkg

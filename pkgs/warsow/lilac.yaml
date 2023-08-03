@@ -9,21 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''warsow'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- sdl2
-- libpng
-- curl
-- libvorbis
-- freetype2
-- libxinerama
-- libxxf86vm
-- libxrandr
 - libtheora
+- libxrandr
 - libxi
-repo_makedepends:
-- imagemagick
-- gendesk
+- sdl2
+- libxxf86vm
+- curl
+- libxinerama
+- freetype2
+- libvorbis
+- libpng
 update_on:
 - alpm: warsow
   source: archpkg

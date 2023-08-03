@@ -9,17 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dwayland'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt5-wayland
-repo_makedepends:
-- extra-cmake-modules
-- doxygen
-- qt5-tools
-- qt5-doc
-- wayland-protocols
-- deepin-wayland-protocols
-- ninja
 update_on:
 - alpm: dwayland
   source: archpkg

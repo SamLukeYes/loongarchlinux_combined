@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kyotocabinet'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- zlib
 - gcc: gcc-libs
-repo_makedepends: []
+- zlib
 update_on:
 - alpm: kyotocabinet
   source: archpkg

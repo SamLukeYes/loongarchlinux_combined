@@ -9,58 +9,31 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sonic-visualiser'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
-- libmad
-- opusfile
-- qt5-base
-- qt5-svg
-- vamp-plugin-sdk
-- gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
-- libmad
-- opusfile
-- qt5-base
-- qt5-svg
-- vamp-plugin-sdk
-- alsa-lib
-- bzip2
-- capnproto
-- fftw
-- libfishsound
 - libid3tag
-- liblo
+- bzip2
+- alsa-lib
+- capnproto
+- libsndfile
 - liblrdf
 - liboggz
-- pulseaudio: libpulse
-- libsamplerate
-- libsndfile
-- portaudio
-- rubberband
+- glibc
+- hicolor-icon-theme
+- gcc: gcc-libs
 - serd
-- sord
-repo_makedepends:
-- alsa-lib
-- bzip2
-- capnproto
-- fftw
-- libfishsound
-- libid3tag
+- qt5-base
 - liblo
-- liblrdf
-- liboggz
-- pulseaudio: libpulse
-- libsamplerate
-- libsndfile
-- meson
-- portaudio
+- opusfile
+- libfishsound
+- fftw
 - rubberband
-- serd
+- libsamplerate
+- pulseaudio: libpulse
+- portaudio
 - sord
+- vamp-plugin-sdk
+- qt5-svg
+- libmad
 update_on:
 - alpm: qt5-base
   source: alpm

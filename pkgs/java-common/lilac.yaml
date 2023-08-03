@@ -7,16 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''java-common'')
 
   '
-repo_checkdepends:
-- wget
 repo_depends:
-- bash
-- findutils
 - coreutils
-repo_makedepends:
-- bash
 - findutils
-- coreutils
+- bash
 update_on:
 - alpm: java-common
   source: archpkg

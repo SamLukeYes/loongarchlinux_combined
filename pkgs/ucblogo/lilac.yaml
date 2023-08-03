@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ucblogo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- ncurses
 - libice
+- wxwidgets: wxwidgets-gtk3
 - libsm
 - libx11
-- ncurses
-- wxwidgets: wxwidgets-gtk3
-repo_makedepends:
-- git
-- texinfo
-- texlive-bin
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm

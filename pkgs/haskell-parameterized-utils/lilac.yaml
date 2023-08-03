@@ -9,27 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-parameterized
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-base-orphans
-- haskell-constraints
-- haskell-hashable
 - haskell-hashtables
-- haskell-indexed-traversable
 - haskell-lens
-- haskell-profunctors
+- ghc: ghc-libs
+- haskell-hashable
 - haskell-th-abstraction
+- haskell-constraints
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hedgehog
-- haskell-hedgehog-classes
-- haskell-tasty
-- haskell-tasty-ant-xml
-- haskell-tasty-hunit
-- haskell-tasty-hedgehog
+- haskell-profunctors
+- haskell-base-orphans
+- haskell-indexed-traversable
 update_on:
 - alpm: haskell-base-orphans
   source: alpm

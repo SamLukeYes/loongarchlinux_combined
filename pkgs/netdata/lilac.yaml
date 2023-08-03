@@ -9,25 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''netdata'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libmnl
-- libnetfilter_acct
-- zlib
-- judy
-- libuv
-- json-c
-- libcap
-- lz4
-- openssl
-- which
-- snappy
 - protobuf
-- libwebsockets
+- json-c
 - mongo-c-driver
+- lz4
+- zlib
+- snappy
+- libnetfilter_acct
+- libcap
+- libwebsockets
+- which
 - libyaml
-repo_makedepends:
-- cups
+- judy
+- openssl
+- libuv
 update_on:
 - alias: protobuf
 - alpm: netdata

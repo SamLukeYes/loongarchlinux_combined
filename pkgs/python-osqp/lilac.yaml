@@ -9,18 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-osqp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
-- intel-oneapi-mkl
 repo_depends:
 - python-scipy
 - python-qdldl
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
-- cmake
 update_on:
 - alpm: python-osqp
   source: archpkg

@@ -9,31 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''boinc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- curl
-- libnotify
-- libnsl
-- libxss
-- webkit2gtk
-- wxwidgets: wxwidgets-gtk3
-- curl
 - libjpeg-turbo
-repo_makedepends:
-- git
-- curl
-- freeglut
-- glu
-- inetutils
-- libnotify
-- libnsl
-- libxmu
-- libxslt
 - libxss
-- mesa
-- perl-xml-sax
-- webkit2gtk
 - wxwidgets: wxwidgets-gtk3
+- curl
+- libnotify
+- webkit2gtk
+- libnsl
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm

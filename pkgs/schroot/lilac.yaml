@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''schroot'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pam
-- boost: boost-libs
 - e2fsprogs
-repo_makedepends:
-- boost
-- cppunit
-- cmake
-- po4a
+- boost: boost-libs
+- pam
 update_on:
 - alpm: schroot
   source: archpkg

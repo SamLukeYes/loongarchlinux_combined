@@ -9,18 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dvdstyler'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cdrtools
-- dvdauthor
-- dvd+rw-tools
-- ffmpeg4.4
 - wxsvg
-repo_makedepends:
-- docbook-xsl
-- xmlto
-- zip
-- ffmpeg
+- dvd+rw-tools
+- dvdauthor
+- cdrtools
+- ffmpeg4.4
 update_on:
 - alpm: dvdstyler
   source: archpkg

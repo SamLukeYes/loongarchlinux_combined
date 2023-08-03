@@ -7,22 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pypiserver'')
 
   '
-repo_checkdepends:
-- python-httpx
-- python-passlib
-- python-pip
-- python-pytest
-- python-watchdog
-- python-webtest
 repo_depends:
 - python
 - python-pip
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-setuptools-git
-- python-wheel
 update_on:
 - alias: python
 - alpm: pypiserver

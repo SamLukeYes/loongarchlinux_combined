@@ -9,17 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''spectacle'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- knewstuff
 - xcb-util-cursor
 - purpose
-- knewstuff
-- qt5-tools
 - kpipewire
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- plasma-wayland-protocols
+- qt5-tools
 update_on:
 - alpm: spectacle
   source: archpkg

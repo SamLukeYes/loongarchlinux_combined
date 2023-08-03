@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kmime'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ki18n
 - kcodecs
-repo_makedepends:
-- extra-cmake-modules
-- doxygen
-- qt5-tools
 update_on:
 - alpm: kmime
   source: archpkg

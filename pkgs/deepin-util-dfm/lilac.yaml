@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-util-dfm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libisoburn
-- libmediainfo
 - qt5-base
+- libmediainfo
+- libisoburn
 - udisks2
-repo_makedepends:
-- cmake
-- ninja
 update_on:
 - alpm: qt5-base
   source: alpm

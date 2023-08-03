@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kirigami-gallery'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kirigami2
-- kitemmodels
 - qt5-svg
-repo_makedepends:
-- extra-cmake-modules
-- qt5-tools
+- kitemmodels
 update_on:
 - alpm: kirigami-gallery
   source: archpkg

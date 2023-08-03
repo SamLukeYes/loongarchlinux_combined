@@ -9,19 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''peony'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gsettings-qt
-- kwayland
-- kwindowsystem
-- libcanberra
-- libnotify
 - poppler: poppler-qt5
+- kwayland
 - qt5-ukui-platformtheme
+- libnotify
 - qt5-x11extras
+- libcanberra
 - udisks2
-repo_makedepends:
-- qt5-tools
+- gsettings-qt
+- kwindowsystem
 update_on:
 - alpm: peony
   source: archpkg

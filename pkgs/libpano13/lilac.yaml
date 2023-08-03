@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libpano13'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libpng
-- libtiff
 - suitesparse
-repo_makedepends:
-- cmake
+- libtiff
+- libpng
 update_on:
 - alpm: libpano13
   source: archpkg

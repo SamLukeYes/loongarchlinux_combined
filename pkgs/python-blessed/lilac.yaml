@@ -7,14 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-blessed'')
 
   '
-repo_checkdepends:
-- python-tox
 repo_depends:
-- python-six
 - python-wcwidth
-repo_makedepends:
-- git
-- python-setuptools
+- python-six
 update_on:
 - alpm: python-blessed
   source: archpkg

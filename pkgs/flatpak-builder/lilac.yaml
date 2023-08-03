@@ -9,25 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''flatpak-builder'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- valgrind
 repo_depends:
 - flatpak
-- binutils
-- elfutils
-- unzip
-- tar
-- git
-- patch
 - rpmextract
-- cpio
-- appstream-glib
-- fuse3
-repo_makedepends:
-- gobject-introspection
 - git
-- docbook-xsl
-- xmlto
+- cpio
+- elfutils
+- patch
+- fuse3
+- tar
+- appstream-glib
+- unzip
+- binutils
 update_on:
 - alpm: flatpak-builder
   source: archpkg

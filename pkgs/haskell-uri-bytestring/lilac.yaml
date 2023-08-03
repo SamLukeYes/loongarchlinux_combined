@@ -9,21 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-uri-bytestrin
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-attoparsec
-- haskell-blaze-builder
 - haskell-th-lift-instances
-repo_makedepends:
-- ghc
-- haskell-base-compat
-- haskell-hunit
-- haskell-hedgehog
-- haskell-tasty
-- haskell-tasty-hedgehog
-- haskell-tasty-hunit
-- haskell-safe
+- haskell-blaze-builder
+- haskell-attoparsec
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

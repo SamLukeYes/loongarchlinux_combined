@@ -1,13 +1,7 @@
 destsubdir: core
-repo_checkdepends:
-- valgrind
 repo_depends:
 - glibc
 - python
-repo_makedepends:
-- gperf
-- cython
-- python-setuptools
 update_on:
 - alias: python
 - alpm: libseccomp

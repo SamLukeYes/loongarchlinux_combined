@@ -9,38 +9,32 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lambdahack'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-quickcheck
-- haskell-ansi-terminal
-- haskell-assert-failure
-- haskell-async
-- haskell-base-compat
-- haskell-enummapset
-- haskell-file-embed
-- haskell-hashable
-- haskell-hsini
-- haskell-keys
-- haskell-miniutter
-- haskell-open-browser
-- haskell-optparse-applicative
-- haskell-pretty-show
-- haskell-primitive
-- haskell-sdl2
-- haskell-sdl2-ttf
-- haskell-splitmix
 - haskell-th-lift-instances
 - haskell-unordered-containers
-- haskell-vector
-- haskell-vector-binary-instances
-- haskell-witch
+- haskell-sdl2-ttf
+- haskell-base-compat
+- haskell-ansi-terminal
+- haskell-pretty-show
+- haskell-splitmix
+- haskell-primitive
 - haskell-zlib
-repo_makedepends:
-- ghc
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
+- haskell-sdl2
+- haskell-file-embed
+- haskell-optparse-applicative
+- haskell-hashable
+- haskell-open-browser
+- haskell-quickcheck
+- haskell-enummapset
+- haskell-miniutter
+- haskell-vector-binary-instances
+- haskell-async
+- ghc: ghc-libs
+- haskell-keys
+- haskell-assert-failure
+- haskell-vector
+- haskell-witch
+- haskell-hsini
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

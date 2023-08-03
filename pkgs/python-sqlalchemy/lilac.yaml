@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-sqlalchemy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest-runner
-- python-pytest-xdist
 repo_depends:
-- python
 - python-greenlet
-repo_makedepends:
-- python-setuptools
-- python-build
-- python-installer
-- python-wheel
+- python
 update_on:
 - alias: python
 - alpm: python-sqlalchemy

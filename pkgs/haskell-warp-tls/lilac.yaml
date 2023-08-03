@@ -9,21 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-warp-tls'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-cryptonite
-- haskell-data-default-class
-- haskell-network
-- haskell-recv
-- haskell-streaming-commons
-- haskell-tls
-- haskell-tls-session-manager
-- haskell-unliftio
-- haskell-wai
 - haskell-warp
-repo_makedepends:
-- ghc
+- haskell-cryptonite
+- haskell-wai
+- haskell-network
+- ghc: ghc-libs
+- haskell-unliftio
+- haskell-recv
+- haskell-tls-session-manager
+- haskell-tls
+- haskell-streaming-commons
+- haskell-data-default-class
 update_on:
 - alpm: haskell-cryptonite
   source: alpm

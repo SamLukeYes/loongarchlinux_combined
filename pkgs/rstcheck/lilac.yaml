@@ -7,17 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''rstcheck'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-sphinx
 repo_depends:
-- python-rstcheck-core
 - python-typer
+- python-rstcheck-core
 - python-typing_extensions
-repo_makedepends:
-- python-build
-- python-installer
-- python-poetry-core
 update_on:
 - alpm: rstcheck
   source: archpkg

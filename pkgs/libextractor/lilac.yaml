@@ -9,19 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libextractor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- exiv2
-- ffmpeg
-- file
-- flac
-- gstreamer: gst-plugins-base-libs
-- libgsf
-- libmpeg2
-- libvorbis
-- poppler
-- libsmf
 update_on:
 - alpm: libextractor
   source: archpkg

@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''softhsm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cppunit
 repo_depends:
 - botan
 - openssl
 - p11-kit
-repo_makedepends: []
 update_on:
 - alpm: botan
   source: alpm

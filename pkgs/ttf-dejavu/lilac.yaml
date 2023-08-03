@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ttf-dejavu'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- git
-- fontforge
-- perl-font-ttf
 update_on:
 - alpm: ttf-dejavu
   source: archpkg

@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''iwd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - readline
+- glibc
 - ell
-repo_makedepends:
-- python-docutils
-- dbus
-- systemd
 update_on:
 - alias: readline
 - alpm: readline

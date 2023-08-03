@@ -9,18 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-gpgme'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ruby
-- ruby-mini_portile2
-- gpgme
 - libgpg-error
 - libassuan
-repo_makedepends:
-- ruby-rdoc
-- ruby-rake
-- ruby-bundler
-- ruby-yard
+- gpgme
+- ruby-mini_portile2
 update_on:
 - alias: ruby
 - alpm: ruby-gpgme

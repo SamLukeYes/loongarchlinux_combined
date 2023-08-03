@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gpg-crypter'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
 - gpgme
-repo_makedepends:
-- intltool
 update_on:
 - alpm: gpg-crypter
   source: archpkg

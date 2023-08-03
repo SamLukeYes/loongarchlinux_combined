@@ -9,31 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mephisto.lv2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
-- glibc
-- libglvnd
-- libvterm
-- libx11
-- fira-code: ttf-fira-code
-- fira-sans: ttf-fira-sans
-- glibc
-- libglvnd
-- libvterm
-- libx11
-- fira-code: ttf-fira-code
-- fira-sans: ttf-fira-sans
-- glew
-- faust
 - fontconfig
-repo_makedepends:
+- fira-sans: ttf-fira-sans
+- libvterm
 - faust
-- fontconfig
+- libx11
+- libglvnd
 - glew
-- glu
-- lv2
-- meson
+- glibc
+- fira-code: ttf-fira-code
 update_on:
 - alpm: glew
   provides: libGLEW.so

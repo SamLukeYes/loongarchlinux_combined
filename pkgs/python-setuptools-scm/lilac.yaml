@@ -7,20 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-setuptools-scm'')
 
   '
-repo_checkdepends:
-- git
-- mercurial
-- python-pip
-- python-pytest
-- python-virtualenv
 repo_depends:
+- python-typing_extensions
 - python-packaging
 - python-setuptools
-- python-typing_extensions
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
 update_on:
 - alpm: python-setuptools-scm
   source: archpkg

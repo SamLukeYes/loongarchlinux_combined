@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ghex'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libadwaita
-repo_makedepends:
-- gi-docgen
-- git
-- gobject-introspection
-- meson
-- yelp-tools
 update_on:
 - alpm: ghex
   source: archpkg

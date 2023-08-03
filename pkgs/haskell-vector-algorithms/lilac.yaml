@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-vector-algori
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-bitvec
-- haskell-primitive
 - haskell-vector
-repo_makedepends:
-- ghc
-- haskell-quickcheck
+- haskell-bitvec
+- ghc: ghc-libs
+- haskell-primitive
 update_on:
 - alpm: haskell-bitvec
   source: alpm

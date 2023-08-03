@@ -1,25 +1,9 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
+- pulseaudio: libpulse
 - dbus-glib
 - ffmpeg
-- gtk3
-- pulseaudio: libpulse
-- libxt
 - nss
-repo_makedepends:
-- cbindgen
-- clang
-- diffutils
-- imake
-- inetutils
-- llvm
-- mesa
-- nasm
-- nodejs
-- python
-- unzip
-- xorg-server: xorg-server-xvfb
-- yasm
-- zip
+- libxt
+- gtk3
 update_on: []

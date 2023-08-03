@@ -9,55 +9,39 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libcamera'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- gcc: gcc-libs
-- glibc
 - gnutls
-- elfutils: libelf
-- libunwind
+- glibc
+- glib2
+- gcc: gcc-libs
+- gtest
+- libjpeg-turbo
+- qt5-base
+- libevent
+- gstreamer
 - libyaml
 - systemd: systemd-libs
-- gcc: gcc-libs
-- glibc
-- gcc: gcc-libs
-- glibc
-- gtest
 - libdrm
-- libevent
-- libjpeg-turbo
+- gstreamer: gst-plugins-base-libs
+- elfutils: libelf
+- libunwind
 - libtiff
-- libyaml
-- qt5-base
-# - sdl2
-- gcc: gcc-libs
-- glibc
-- glib2
-# - gstreamer
-# - gstreamer: gst-plugins-base-libs
-repo_makedepends:
-- doxygen
-- git
-- glib2
-- graphviz
-# - gstreamer: gst-plugins-base
-- gtest
-- libdrm
-- libjpeg-turbo
-- libtiff
-- libyaml
-- meson
-- python-jinja
-- python-ply
-- python-sphinx
-- qt5-base
-- qt5-tools
-# - sdl2
-- systemd
+- sdl2
 update_on:
 - alpm: systemd-libs
   provides: libudev.so
+  source: alpm
+- alpm: darktable
+  provides: libcamera.so
+  source: alpm
+- alpm: libcamera
+  provides: libcamera-base.so
+  source: alpm
+- alpm: darktable
+  provides: libcamera.so
+  source: alpm
+- alpm: libcamera
+  provides: libcamera-base.so
   source: alpm
 - alpm: libevent
   provides: libevent-2.1.so
@@ -79,6 +63,12 @@ update_on:
   source: alpm
 - alpm: glib2
   provides: libgobject-2.0.so
+  source: alpm
+- alpm: darktable
+  provides: libcamera.so
+  source: alpm
+- alpm: libcamera
+  provides: libcamera-base.so
   source: alpm
 - alpm: libcamera
   source: archpkg

@@ -7,20 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mypy'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-six
-- python-attrs
 repo_depends:
 - python-psutil
+- python-tomli
 - python-mypy_extensions
 - python-typing_extensions
-- python-tomli
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
 update_on:
 - alpm: mypy
   source: archpkg

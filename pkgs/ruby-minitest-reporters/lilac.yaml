@@ -7,19 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-minitest-reporters'')
 
   '
-repo_checkdepends:
-- ruby-bundler
-- ruby-maruku
-- ruby-rake
 repo_depends:
+- ruby-builder
 - ruby
 - ruby-ansi
-- ruby-builder
-- ruby-minitest
 - ruby-ruby-progressbar
-repo_makedepends:
-- rubygems
-- ruby-rdoc
+- ruby-minitest
 update_on:
 - alias: ruby
 - alpm: ruby-minitest-reporters

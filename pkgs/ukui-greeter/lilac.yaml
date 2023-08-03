@@ -9,24 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ukui-greeter'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- imlib2
-- lightdm: liblightdm-qt5
 - libxrandr
-- libxtst
-- opencv
-- qt5-svg
+- imlib2
 - qt5-x11extras
-repo_makedepends:
-- qt5-tools
-- openmpi
-- pugixml
-- jsoncpp
-- fmt
-- vtk
-- glew
-- hdf5
+- opencv
+- libxtst
+- lightdm: liblightdm-qt5
+- qt5-svg
 update_on:
 - alpm: opencv
   source: alpm

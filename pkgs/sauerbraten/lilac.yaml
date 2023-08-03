@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sauerbraten'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - sdl2_mixer
 - sdl2_image
-repo_makedepends:
-- sdl2_mixer
-- sdl2_image
-- glu
 update_on:
 - alpm: sauerbraten
   source: archpkg

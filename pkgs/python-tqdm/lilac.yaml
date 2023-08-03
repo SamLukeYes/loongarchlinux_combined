@@ -7,21 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-tqdm'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-asyncio
-- python-pytest-timeout
-- python-numpy
-- python-pandas
-- python-rich
-- python-dask
-- tk
 repo_depends:
 - python
-repo_makedepends:
-- git
-- python-setuptools-scm
-- python-toml
 update_on:
 - alias: python
 - alpm: python-tqdm

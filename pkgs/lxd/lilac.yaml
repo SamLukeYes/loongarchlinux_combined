@@ -9,26 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- ebtables
+- acl
 - lxc
 - lxcfs
-- squashfs-tools
-- dnsmasq
 - dqlite
-- libuv
-- ebtables
 - raft
-- sqlite
 - libcap
-- acl
-repo_makedepends:
-- go
-- git
-- tcl
-- apparmor
-- libseccomp
-- systemd
+- dnsmasq
+- sqlite
+- libuv
+- squashfs-tools
 update_on:
 - alpm: lxd
   source: archpkg

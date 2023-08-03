@@ -7,13 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-file-desktopentry'')
 
   '
-repo_checkdepends:
-- perl-test-pod
-- perl-test-pod-coverage
 repo_depends:
-- perl-file-basedir
 - perl-uri
-repo_makedepends: []
+- perl-file-basedir
 update_on:
 - alpm: perl-file-desktopentry
   source: archpkg

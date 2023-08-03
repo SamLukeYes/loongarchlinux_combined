@@ -9,20 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-rpy2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
 - python-cffi
-- python-numpy
-- python-pytz
-- python-tzlocal
-- python-jinja
 - r
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-pytz
+- python-jinja
+- python-tzlocal
+- python-numpy
 update_on:
 - alias: r
 - alpm: python-rpy2

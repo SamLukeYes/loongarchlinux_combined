@@ -9,24 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pandoc-lua-ma
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-hslua
-- haskell-hslua-list
-- haskell-hslua-marshalling
 - haskell-lua
+- haskell-aeson
+- ghc: ghc-libs
+- haskell-hslua-marshalling
 - haskell-pandoc-types
+- haskell-hslua-list
 - haskell-safe
-repo_makedepends:
-- ghc
-- uusi
-- haskell-quickcheck
-- haskell-tasty
-- haskell-tasty-hunit
-- haskell-tasty-lua
-- haskell-tasty-quickcheck
+- haskell-hslua
 update_on:
 - alpm: haskell-aeson
   source: alpm

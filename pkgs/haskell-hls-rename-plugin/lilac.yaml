@@ -9,27 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-rename-pl
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- git
 repo_depends:
-- ghc: ghc-libs
-- haskell-extra
-- haskell-ghc-exactprint
-- haskell-ghcide
-- haskell-hashable
-- haskell-hiedb
-- haskell-hls-plugin-api
-- haskell-hls-refactor-plugin
-- haskell-lsp
-- haskell-lsp-types
-- haskell-mod
-- haskell-syb
 - haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
-- haskell-aeson
-- haskell-hls-test-utils
+- haskell-syb
+- ghc: ghc-libs
+- haskell-hashable
+- haskell-lsp-types
+- haskell-ghc-exactprint
+- haskell-hls-plugin-api
+- haskell-lsp
+- haskell-hls-refactor-plugin
+- haskell-ghcide
+- haskell-extra
+- haskell-mod
+- haskell-hiedb
 update_on:
 - alpm: haskell-extra
   source: alpm

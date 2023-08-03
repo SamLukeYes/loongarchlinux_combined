@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-dependent-map
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-constraints-extras
 - haskell-dependent-sum
-repo_makedepends:
-- ghc
-- uusi
+- haskell-constraints-extras
+- ghc: ghc-libs
 update_on:
 - alpm: haskell-constraints-extras
   source: alpm

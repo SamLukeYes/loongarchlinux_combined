@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tig'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - git
 - ncurses
-repo_makedepends:
-- asciidoc
-- xmlto
 update_on:
 - alpm: tig
   source: archpkg

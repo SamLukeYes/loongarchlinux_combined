@@ -9,21 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''audit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- krb5
 - libcap-ng
+- krb5
 - glibc
 - python
-repo_makedepends:
-- glibc
-- krb5
-- libcap-ng
-- openldap: libldap
-- linux-api-headers
-- python
-- swig
 update_on:
 - alpm: krb5
   provides: libkrb5.so

@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-hedgeho
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- haskell-tasty-expected-failure
 repo_depends:
-- ghc: ghc-libs
 - haskell-hedgehog
-- haskell-tagged
 - haskell-tasty
-repo_makedepends:
-- ghc
+- ghc: ghc-libs
+- haskell-tagged
 update_on:
 - alpm: haskell-hedgehog
   source: alpm

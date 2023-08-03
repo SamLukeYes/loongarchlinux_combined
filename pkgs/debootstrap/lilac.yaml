@@ -7,12 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''debootstrap'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl
 - wget
+- perl
 - binutils
-repo_makedepends: []
 update_on:
 - alias: perl
 - alpm: debootstrap

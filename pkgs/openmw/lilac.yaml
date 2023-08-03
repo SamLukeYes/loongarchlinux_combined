@@ -9,23 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openmw'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openal
-- openscenegraph
 - mygui
 - qt5-base
-- ffmpeg
 - sdl2
+- ffmpeg
 - unshield
+- openal
+- openscenegraph
 - libxt
 - boost: boost-libs
-repo_makedepends:
-- cmake
-- boost
-- doxygen
-- ninja
-- gcc12
 update_on:
 - alpm: qt5-base
   source: alpm

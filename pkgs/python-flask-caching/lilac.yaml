@@ -7,19 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-flask-caching'')
 
   '
-repo_checkdepends:
-- python-pytest-runner
-- python-pytest-cov
-- python-pytest-xprocess
-- python-pylibmc
-- python-redis
-- memcached
-- python-asgiref
 repo_depends:
-- python-flask
 - python-cachelib
-repo_makedepends:
-- python-setuptools
+- python-flask
 update_on:
 - alpm: python-flask-caching
   source: archpkg

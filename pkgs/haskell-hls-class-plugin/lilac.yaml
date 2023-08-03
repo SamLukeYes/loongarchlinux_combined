@@ -9,23 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-class-plu
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- git
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-extra
-- haskell-ghc-exactprint
-- haskell-ghcide
-- haskell-hls-graph
-- haskell-hls-plugin-api
 - haskell-lens
+- haskell-aeson
+- ghc: ghc-libs
+- haskell-ghc-exactprint
+- haskell-hls-plugin-api
 - haskell-lsp
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hls-test-utils
-- haskell-lsp-types
+- haskell-ghcide
+- haskell-extra
+- haskell-hls-graph
 update_on:
 - alpm: haskell-aeson
   source: alpm

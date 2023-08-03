@@ -9,23 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nginx'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- perl
-- perl-gd
-- perl-io-socket-ssl
-- perl-fcgi
-- perl-cache-memcached
-- memcached
-- ffmpeg
 repo_depends:
 - pcre2
 - zlib
-- openssl
-- geoip
 - mailcap
 - libxcrypt
-repo_makedepends:
-- mercurial
+- geoip
+- openssl
 update_on:
 - alpm: nginx
   source: archpkg

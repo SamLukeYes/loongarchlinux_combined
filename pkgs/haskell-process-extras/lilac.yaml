@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-process-extra
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-data-default
 - haskell-generic-deriving
+- haskell-data-default
+- ghc: ghc-libs
 - haskell-listlike
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-data-default
   source: alpm

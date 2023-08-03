@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ctags'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- libxml2
 - jansson
-- libyaml
 - libseccomp
 - pcre2
-repo_makedepends:
-- git
-- python-docutils
+- libyaml
+- libxml2
+- glibc
 update_on:
 - alpm: libseccomp
   provides: libseccomp.so

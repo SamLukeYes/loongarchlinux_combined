@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libatasmart'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
 - systemd: systemd-libs
-repo_makedepends: []
 update_on:
 - alpm: libatasmart
   source: archpkg

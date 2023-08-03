@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''proj'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- curl
-- libtiff
 - sqlite
-repo_makedepends:
-- cmake
-- gtest
+- libtiff
+- curl
 update_on:
 - alpm: proj
   source: archpkg

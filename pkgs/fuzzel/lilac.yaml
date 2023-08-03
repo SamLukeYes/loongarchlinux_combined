@@ -9,20 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fuzzel'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
-- fcft
 - fontconfig
-- libpng
 - libxkbcommon
-- pixman
 - wayland
-repo_makedepends:
-- meson
-- scdoc
-- tllist
-- wayland-protocols
+- fcft
+- pixman
+- cairo
+- libpng
 update_on:
 - alpm: fcft
   provides: libfcft.so

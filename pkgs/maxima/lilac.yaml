@@ -9,21 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''maxima'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- sbcl
+- ecl
 - texinfo
-- shared-mime-info
-- texinfo
-- shared-mime-info
 - gmp
-- sbcl
-- ecl
-- ecl
-repo_makedepends:
-- python
-- emacs
-- ecl
-- sbcl
+- shared-mime-info
 update_on:
 - alpm: maxima
   source: archpkg

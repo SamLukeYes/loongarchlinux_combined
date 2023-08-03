@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''timescaledb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - openssl
-repo_makedepends:
-- gcc
-- cmake
-- git
 update_on:
 - alpm: timescaledb
   source: archpkg

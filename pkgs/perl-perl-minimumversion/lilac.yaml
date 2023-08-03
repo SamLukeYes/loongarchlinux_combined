@@ -7,16 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-perl-minimumversion'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-file-find-rule
-- perl-file-find-rule-perl
-- perl-ppi
-- perl-ppix-regexp
-- perl-params-util
 - perl-ppix-utils
-repo_makedepends:
-- perl-test-script
+- perl-file-find-rule
+- perl-ppi
+- perl-params-util
+- perl-ppix-regexp
+- perl-file-find-rule-perl
 update_on:
 - alpm: perl-perl-minimumversion
   source: archpkg

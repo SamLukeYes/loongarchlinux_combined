@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qmidictl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
 - glibc
-- hicolor-icon-theme
+- gcc: gcc-libs
 - qt6-base
 - qt6-svg
-repo_makedepends:
-- cmake
-- qt6-tools
+- hicolor-icon-theme
 update_on:
 - alpm: qt6-base
   source: alpm

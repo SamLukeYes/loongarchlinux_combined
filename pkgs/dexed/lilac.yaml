@@ -9,34 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dexed'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- gcc: gcc-libs
 - alsa-lib
-- freetype2
-- glibc
 - gcc: gcc-libs
-- alsa-lib
-- freetype2
-- glibc
-- gcc: gcc-libs
-- alsa-lib
-- freetype2
 - hicolor-icon-theme
-repo_makedepends:
-- alsa-lib
-- cmake
-- curl
 - freetype2
-- gendesk
-- git
-- libpng
-- libx11
-- libxrandr
-- libxinerama
-- libxcursor
-- webkit2gtk
+- glibc
 update_on:
 - alpm: dexed
   source: archpkg

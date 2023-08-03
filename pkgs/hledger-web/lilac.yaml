@@ -9,46 +9,43 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hledger-web'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- hledger
-- haskell-hledger-lib
+- haskell-warp
+- haskell-unordered-containers
 - haskell-aeson
-- haskell-base64
-- haskell-blaze-html
-- haskell-blaze-markup
+- haskell-http-types
 - haskell-case-insensitive
+- hledger
+- haskell-hspec
+- haskell-wai-handler-launch
+- haskell-decimal
+- haskell-yesod
+- haskell-wai-cors
+- haskell-unix-compat
+- haskell-blaze-markup
+- haskell-wai-extra
+- haskell-yesod-form
+- haskell-utf8-string
+- haskell-hjsmin
+- haskell-yesod-static
+- haskell-wai
+- haskell-network
+- ghc: ghc-libs
 - haskell-clientsession
 - haskell-cmdargs
+- haskell-yesod-core
+- haskell-extra
+- haskell-yesod-test
+- haskell-http-client
+- haskell-shakespeare
+- haskell-blaze-html
+- haskell-megaparsec
+- haskell-data-default
+- haskell-base64
 - haskell-conduit
 - haskell-conduit-extra
-- haskell-data-default
-- haskell-decimal
-- haskell-extra
-- haskell-hjsmin
-- haskell-hspec
+- haskell-hledger-lib
 - haskell-http-conduit
-- haskell-http-client
-- haskell-http-types
-- haskell-megaparsec
-- haskell-network
-- haskell-shakespeare
-- haskell-unix-compat
-- haskell-unordered-containers
-- haskell-utf8-string
-- haskell-wai
-- haskell-wai-cors
-- haskell-wai-extra
-- haskell-wai-handler-launch
-- haskell-warp
-- haskell-yesod
-- haskell-yesod-core
-- haskell-yesod-form
-- haskell-yesod-static
-- haskell-yesod-test
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-hledger-lib
   source: alpm

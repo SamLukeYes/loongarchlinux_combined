@@ -7,22 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-socket'')
 
   '
-repo_checkdepends:
-- python-asynctest
-- python-httpx
-- python-pytest-cov
-- python-pytest-flake8
-- python-pytest-httpbin
-- python-requests
-- python-starlette
 repo_depends:
 - python
 - python-pytest
-repo_makedepends:
-- python-build
-- python-installer
-- python-poetry-core
-- python-wheel
 update_on:
 - alias: python
 - alpm: python-pytest-socket

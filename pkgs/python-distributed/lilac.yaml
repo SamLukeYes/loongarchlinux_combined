@@ -9,50 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-distributed'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- ipython
-- python-pytest
-- python-pytest-repeat
-- python-pytest-timeout
-- python-flaky
-- python-blosc
-- python-cryptography
-- python-fsspec
-- python-h5py
-- python-ipykernel
-- python-ipywidgets
-- python-jsonschema
-- python-locket
-- python-lz4
-- python-netcdf4
-- python-numpy
-- python-pandas
-- python-paramiko
-- python-prometheus_client
-- python-pyarrow
-- python-pytorch
-- python-requests
-- python-scipy
-- python-snappy
-- python-zstandard
 repo_depends:
-- python
-- python-click
+- python-zict
+- python-toolz
 - python-cloudpickle
-- python-dask
-- python-jinja
-- python-msgpack
-- python-packaging
 - python-psutil
 - python-sortedcontainers
 - python-tblib
-- python-toolz
-- python-tornado
+- python-click
+- python-jinja
 - python-urllib3
+- python-packaging
+- python-msgpack
 - python-yaml
-- python-zict
-repo_makedepends:
-- python-setuptools
+- python-dask
+- python-tornado
+- python
 update_on:
 - alias: python
 - alpm: python-distributed

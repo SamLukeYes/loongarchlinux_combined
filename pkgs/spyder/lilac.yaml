@@ -7,76 +7,54 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''spyder'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-qt
-- python-pytest-mock
-- python-pytest-cov
-- python-pytest-order
-- python-pytest-lazy-fixture
-- python-pytest-timeout
-- python-flaky
-- python-pandas
-- python-scipy
-- python-sympy
-- python-pillow
-- python-matplotlib
-- cython
-- git
-- tk
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- python-atomicwrites
-- python-chardet
-- python-cloudpickle
-- python-cookiecutter
-- python-diff-match-patch
-- python-intervaltree
-- ipython
-- python-jedi
-- python-jellyfish
-- python-jsonschema
-- python-keyring
-- jupyter-nbconvert
-- python-numpydoc
-- python-parso
-- python-pexpect
-- python-pickleshare
-- python-psutil
-- python-pygments
-- python-pylint
-- python-pylint-venv
-- pyqt5: python-pyqt5
-- pyqt5-webengine: python-pyqt5-webengine
-- python-lsp-server
-- python-lsp-black
-- python-pyls-spyder
-- pyxdg: python-pyxdg
-- python-pyzmq
-- python-qdarkstyle
-- python-qstylizer
-- python-qtawesome
-- python-qtconsole
-- python-qtpy
-- python-rtree
-- python-setuptools
-- python-sphinx
-- python-spyder-kernels
-- python-textdistance
-- python-three-merge
-- python-watchdog
-- autopep8
-- flake8
-- python-pycodestyle
-- python-pydocstyle
-- python-pyflakes
-- python-rope
 - yapf
 - python-whatthepatch
-repo_makedepends:
+- python-watchdog
+- python-rtree
+- python-pygments
+- python-atomicwrites
+- python-parso
+- python-pylint-venv
+- python-qdarkstyle
+- jupyter-nbconvert
+- python-jellyfish
+- python-diff-match-patch
+- python-textdistance
+- python-lsp-server
+- python-cloudpickle
+- python-numpydoc
+- python-pylint
+- python-chardet
+- python-three-merge
+- python-rope
+- autopep8
+- python-qtpy
+- python-keyring
+- python-jsonschema
+- python-pycodestyle
+- python-pyflakes
+- python-intervaltree
+- pyxdg: python-pyxdg
+- pyqt5-webengine: python-pyqt5-webengine
+- python-setuptools
+- python-psutil
+- flake8
+- python-cookiecutter
+- python-qstylizer
+- python-spyder-kernels
+- python-pexpect
+- python-jedi
+- python-qtawesome
 - python-sphinx
-- python-setuptools-scm
-- python-wheel
+- python-pydocstyle
+- python-pyzmq
+- ipython
+- python-lsp-black
+- pyqt5: python-pyqt5
+- python-pickleshare
+- python-qtconsole
+- python-pyls-spyder
 update_on:
 - alpm: spyder
   source: archpkg

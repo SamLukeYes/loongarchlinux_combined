@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mtd-utils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- lzo
-- util-linux
 - zstd
+- util-linux
 - zlib
-repo_makedepends:
-- cmocka
+- lzo
 update_on:
 - alpm: mtd-utils
   source: archpkg

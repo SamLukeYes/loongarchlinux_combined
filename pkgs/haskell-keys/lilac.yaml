@@ -9,19 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-keys'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-unordered-containers
 - ghc: ghc-libs
+- haskell-hashable
+- haskell-tagged
+- haskell-semigroupoids
+- haskell-transformers-compat
 - haskell-comonad
 - haskell-free
-- haskell-hashable
-- haskell-semigroupoids
-- haskell-tagged
-- haskell-transformers-compat
-- haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
 update_on:
 - alpm: haskell-comonad
   source: alpm

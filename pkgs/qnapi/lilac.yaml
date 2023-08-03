@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qnapi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- hicolor-icon-theme
-- libmediainfo
-- p7zip
 - qt5-base
-repo_makedepends: []
+- p7zip
+- libmediainfo
+- hicolor-icon-theme
 update_on:
 - alpm: qt5-base
   source: alpm

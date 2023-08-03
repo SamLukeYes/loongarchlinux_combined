@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gpick'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
 - lua
-repo_makedepends:
-- boost
-- cmake
-- ragel
 update_on:
 - alias: lua
 - alpm: gpick

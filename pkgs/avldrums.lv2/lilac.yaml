@@ -9,27 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''avldrums.lv2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
+- glib2
+- pango
+- fluidsynth
+- libx11
+- libglvnd
 - cairo
 - glibc
-- libx11
-- cairo
-- glibc
-- libx11
-- fluidsynth
-- glib2
-- libglvnd
-- pango
-repo_makedepends:
-- fluidsynth
-- git
-- glib2
-- glu
-- libglvnd
-- lv2
-- pango
 update_on:
 - alpm: fluidsynth
   provides: libfluidsynth.so

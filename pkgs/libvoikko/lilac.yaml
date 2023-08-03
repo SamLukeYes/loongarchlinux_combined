@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libvoikko'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-repo_makedepends:
-- python
 update_on:
 - alpm: libvoikko
   source: archpkg

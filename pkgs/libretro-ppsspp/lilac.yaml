@@ -9,25 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libretro-ppsspp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glew
-- glibc
-- libpng
-- libretro-core-info
 - libzip
-- ppsspp: ppsspp-assets
 - sdl2
 - snappy
 - zlib
+- libretro-core-info
+- ppsspp: ppsspp-assets
+- glew
 - zstd
-repo_makedepends:
-- cmake
-- git
-- libglvnd
-- ninja
-- python
+- glibc
+- libpng
 update_on:
 - alpm: libretro-ppsspp
   source: archpkg

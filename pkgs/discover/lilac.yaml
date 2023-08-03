@@ -1,19 +1,12 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- knewstuff
-- kidletime
-- qt5-graphicaleffects
-- appstream: appstream-qt
-- archlinux-appstream-data
 - kirigami2
-- discount
-- kuserfeedback
+- appstream: appstream-qt
+- kidletime
+- knewstuff
 - purpose
-repo_makedepends:
-- extra-cmake-modules
-- plasma-framework
-- packagekit-qt: packagekit-qt5
-- flatpak
-- fwupd
+- discount
+- archlinux-appstream-data
+- kuserfeedback
+- qt5-graphicaleffects
 update_on: []

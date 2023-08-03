@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyasn'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
 - python-ujson
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
+- python
 update_on:
 - alias: python
 - alpm: python-pyasn

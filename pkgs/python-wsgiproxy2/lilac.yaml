@@ -7,16 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-wsgiproxy2'')
 
   '
-repo_checkdepends:
-- python-nose
-- python-requests
-- python-webtest
-- python-waitress
 repo_depends:
 - python-webob
 - python-six
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-wsgiproxy2
   source: archpkg

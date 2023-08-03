@@ -1,8 +1,5 @@
 destsubdir: extra
-repo_checkdepends:
-- ruby-rake
 repo_depends:
 - ruby
-repo_makedepends: []
 update_on:
 - alias: ruby

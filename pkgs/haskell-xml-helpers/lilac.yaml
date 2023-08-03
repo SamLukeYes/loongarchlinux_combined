@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-xml-helpers''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
 - haskell-xml
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-xml
   source: alpm

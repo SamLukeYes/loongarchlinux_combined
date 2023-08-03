@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-glib-object-intr
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glib-perl
 - gobject-introspection: gobject-introspection-runtime
-repo_makedepends:
-- gobject-introspection
-- perl-extutils-depends
-- perl-extutils-pkgconfig
-- perl-cairo-gobject
 update_on:
 - alpm: perl-glib-object-introspection
   source: archpkg

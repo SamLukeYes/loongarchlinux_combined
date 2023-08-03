@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-githash'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-th-compat
+- ghc: ghc-libs
 - git
-repo_makedepends:
-- ghc
-- haskell-hpack
-- haskell-hspec
-- haskell-temporary
-- haskell-unliftio
 update_on:
 - alpm: haskell-th-compat
   source: alpm

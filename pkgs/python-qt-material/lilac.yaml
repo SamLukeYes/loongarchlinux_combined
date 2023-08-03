@@ -7,15 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-qt-material'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - python-jinja
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
 update_on:
 - alpm: python-qt-material
   source: archpkg

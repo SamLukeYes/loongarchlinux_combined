@@ -7,20 +7,17 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''quilt'')
 
   '
-repo_checkdepends:
-- ed
 repo_depends:
-- bash
 - bzip2
-- diffstat
-- diffutils
-- findutils
 - gawk
-- gettext
 - gzip
+- diffutils
 - patch
 - perl
-repo_makedepends: []
+- gettext
+- findutils
+- bash
+- diffstat
 update_on:
 - alias: perl
 - alpm: quilt

@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-mpi4py'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- inetutils
 repo_depends:
-- python
 - openmpi
-repo_makedepends:
-- python-setuptools
-- cython
+- python
 update_on:
 - alias: python
 - alpm: python-mpi4py

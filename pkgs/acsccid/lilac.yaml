@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''acsccid'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pcsclite
 - libusb
-repo_makedepends: []
+- pcsclite
 update_on:
 - alpm: acsccid
   source: archpkg

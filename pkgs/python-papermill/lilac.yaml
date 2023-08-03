@@ -7,25 +7,16 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-papermill'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-boto3
-- python-moto
 repo_depends:
-- python
-- python-ansiwrap
-- python-click
-- jupyter-nbformat
-- jupyter-nbclient
-- python-tqdm
 - python-requests
-- python-entrypoints
+- python-ansiwrap
+- python-tqdm
 - python-tenacity
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools-scm
+- jupyter-nbformat
+- python-click
+- jupyter-nbclient
+- python-entrypoints
+- python
 update_on:
 - alias: python
 - alpm: python-papermill

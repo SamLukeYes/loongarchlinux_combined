@@ -9,22 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgxps'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
-- freetype2
-- glib2
-- lcms2
-- libarchive
 - libjpeg-turbo
-- libpng
 - libtiff
-repo_makedepends:
-- git
-- gobject-introspection
-- gtk-doc
-- gtk3
-- meson
+- libarchive
+- freetype2
+- lcms2
+- cairo
+- glib2
+- libpng
 update_on:
 - alpm: libgxps
   source: archpkg

@@ -9,36 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''easytag'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
-- gcc: gcc-libs
-- gdk-pixbuf2
 - glibc
+- gcc: gcc-libs
+- cairo
+- wavpack
+- gdk-pixbuf2
+- zlib
 - id3lib
 - taglib
-- wavpack
-- zlib
-- cairo
-- gcc: gcc-libs
-- gdk-pixbuf2
-- glibc
-- id3lib
-- taglib
-- wavpack
-- zlib
-repo_makedepends:
-- appstream-glib
-- flac
-- glib2
-- gtk3
-- harfbuzz
-- intltool
-- itstool
-- libid3tag
-- pango
-- python
-- yelp-tools
 update_on:
 - alpm: flac
   provides: libFLAC.so

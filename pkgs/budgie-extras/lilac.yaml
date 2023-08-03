@@ -9,44 +9,36 @@ pre_build_script: '_G.files = download_official_pkgbuild(''budgie-extras'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- budgie-desktop
-- wmctrl
-- xdotool
-- xprintidle
-- python
-- pygobject: python-gobject
-- python-cairo
-- libgee
-- zenity
-- vorbis-tools
-- python-psutil
-- sound-theme-freedesktop
-- imagemagick
-- python-pillow
-- python-svgwrite
+- python-requests
+- libhandy0
 - python-cairosvg
 - python-pyudev
-- python-requests
-- libpeas
-- json-glib
-- libkeybinder3
-- python-pyperclip
-- python-xlib
-- xorg-xinput
 - granite
+- xdotool
+- wmctrl
+- libpeas
+- xprintidle
+- vorbis-tools
+- pygobject: python-gobject
+- python-xlib
+- python-svgwrite
+- python-pillow
+- libkeybinder3
+- sound-theme-freedesktop
+- xorg-xinput
+- imagemagick
+- python-psutil
+- python-pyperclip
+- python-cairo
+- budgie-desktop
+- python
 - appstream
-- libnma
-- libhandy0
+- libgee
+- zenity
 - xorg-xprop
-repo_makedepends:
-- gobject-introspection
-- meson
-- ninja
-- vala
-- intltool
-- git
+- json-glib
+- libnma
 update_on:
 - alias: python
 - alpm: budgie-extras

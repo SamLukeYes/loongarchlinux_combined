@@ -9,25 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pycapnp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- gcc: gcc-libs
 - glibc
-- python
 - gcc: gcc-libs
-- glibc
+- capnproto
 - python
-- capnproto
-repo_makedepends:
-- git
-- capnproto
-- cython
-- python-build
-- python-installer
-- python-pkgconfig
-- python-setuptools
-- python-wheel
 update_on:
 - alias: python
 - alias: python

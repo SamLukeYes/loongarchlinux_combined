@@ -1,7 +1,4 @@
 destsubdir: core
-repo_checkdepends:
-- dejagnu
 repo_depends:
 - glibc
-repo_makedepends: []
 update_on: []

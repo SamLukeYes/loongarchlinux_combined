@@ -9,42 +9,38 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mighttpd2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-async
-- haskell-auto-update
-- haskell-base16-bytestring
-- haskell-byteorder
+- haskell-warp
+- haskell-unordered-containers
+- haskell-http-types
 - haskell-case-insensitive
+- haskell-resourcet
+- haskell-tls
+- haskell-http-date
+- dhall
+- haskell-wai-http2-extra
+- haskell-warp-quic
+- haskell-unix-time
+- haskell-wai-app-file-cgi
+- haskell-warp-tls
+- haskell-quic
+- haskell-wai
+- haskell-network
+- haskell-async
+- ghc: ghc-libs
+- haskell-tls-session-manager
+- haskell-wai-logger
+- haskell-http-client
+- haskell-streaming-commons
+- haskell-byteorder
+- haskell-split
+- haskell-auto-update
+- haskell-time-manager
 - haskell-conduit
 - haskell-conduit-extra
-- dhall
-- haskell-http-client
-- haskell-http-date
-- haskell-http-types
-- haskell-network
+- haskell-base16-bytestring
 - haskell-old-locale
-- haskell-quic
-- haskell-resourcet
-- haskell-split
-- haskell-streaming-commons
-- haskell-time-manager
-- haskell-tls
-- haskell-tls-session-manager
-- haskell-unix-time
 - haskell-unliftio
-- haskell-unordered-containers
-- haskell-wai
-- haskell-wai-app-file-cgi
-- haskell-wai-http2-extra
-- haskell-wai-logger
-- haskell-warp
-- haskell-warp-quic
-- haskell-warp-tls
-repo_makedepends:
-- ghc
-- haskell-hspec
 update_on:
 - alpm: haskell-async
   source: alpm

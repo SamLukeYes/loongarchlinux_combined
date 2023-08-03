@@ -9,37 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kid3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- chromaprint
-- flac
-- id3lib
-- kxmlgui
-- libmp4v2
-- qt5-declarative
 - qt5-multimedia
-- taglib
-- kio
-- chromaprint
-- flac
-- id3lib
-- libmp4v2
-- libvorbis
+- kxmlgui
 - qt5-base
-- taglib
-- qt5-declarative
-- qt5-multimedia
-- kxmlgui
-- qt5-declarative
-- qt5-multimedia
+- id3lib
 - kio
-repo_makedepends:
-- cmake
-- docbook-xsl
-- extra-cmake-modules
-- kdoctools
-- python
-- qt5-tools
+- chromaprint
+- libmp4v2
+- qt5-declarative
+- libvorbis
+- flac
+- taglib
 update_on:
 - alpm: qt5-declarative
   source: alpm

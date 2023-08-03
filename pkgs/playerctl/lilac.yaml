@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''playerctl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glib2
-repo_makedepends:
-- gobject-introspection
-- gtk-doc
-- meson
 update_on:
 - alpm: playerctl
   source: archpkg

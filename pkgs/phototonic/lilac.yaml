@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''phototonic'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- qt5-imageformats
 - exiv2
 - hicolor-icon-theme
-- qt5-imageformats
 - qt5-svg
-repo_makedepends: []
 update_on:
 - alpm: phototonic
   source: archpkg

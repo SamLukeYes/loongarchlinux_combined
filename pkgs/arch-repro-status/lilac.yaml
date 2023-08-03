@@ -9,10 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''arch-repro-status'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - pacman
-repo_makedepends: []
 update_on:
 - alpm: arch-repro-status
   source: archpkg

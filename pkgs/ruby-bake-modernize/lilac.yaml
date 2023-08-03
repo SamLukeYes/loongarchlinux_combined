@@ -7,18 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-bake-modernize'')
 
   '
-repo_checkdepends:
-- ruby-sus
-- ruby-bake-test
-- git
 repo_depends:
-- ruby-async-http
-- ruby-bake
 - ruby-build-files
-- ruby-markly
+- ruby-async-http
 - ruby-rugged
-repo_makedepends:
-- git
+- ruby-markly
+- ruby-bake
 update_on:
 - alpm: ruby-bake-modernize
   source: archpkg

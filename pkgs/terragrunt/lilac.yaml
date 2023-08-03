@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''terragrunt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - terraform
-repo_makedepends:
-- git
-- go
+- glibc
 update_on:
 - alpm: terragrunt
   source: archpkg

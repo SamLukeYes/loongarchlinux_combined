@@ -7,14 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''hwdetect'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- grep
-- coreutils
-- sed
-- e2fsprogs
 - gzip
-repo_makedepends: []
+- sed
+- grep
+- e2fsprogs
+- coreutils
 update_on:
 - alpm: hwdetect
   source: archpkg

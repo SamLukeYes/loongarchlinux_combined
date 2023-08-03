@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''singular'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- flint
 - cddlib
-repo_makedepends:
-- doxygen
-- texlive-texmf: texlive-pictures
-- sharutils
+- flint
 update_on:
 - alpm: singular
   source: archpkg

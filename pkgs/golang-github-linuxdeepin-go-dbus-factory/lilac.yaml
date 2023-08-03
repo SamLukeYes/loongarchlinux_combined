@@ -7,14 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''golang-github-linuxdeepin-go-dbus-factory'')
 
   '
-repo_checkdepends:
-- golang-github-stretchr-testify
 repo_depends:
-- golang-github-fsnotify-fsnotify
 - golang-gopkg-yaml.v3
-repo_makedepends:
-- go
-- git
+- golang-github-fsnotify-fsnotify
 update_on:
 - alpm: golang-github-linuxdeepin-go-dbus-factory
   source: archpkg

@@ -7,20 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pook'')
 
   '
-repo_checkdepends:
-- python-nose
-- python-pytest
-- python-aiohttp
-- python-requests
 repo_depends:
-- python-furl
-- python-jsonschema
 - python-xmltodict
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-jsonschema
+- python-furl
 update_on:
 - alpm: python-pook
   source: archpkg

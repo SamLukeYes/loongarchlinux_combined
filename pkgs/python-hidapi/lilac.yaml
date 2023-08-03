@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-hidapi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
 - hidapi
-repo_makedepends:
-- cython
-- python-setuptools
+- python
 update_on:
 - alias: python
 - alpm: python-hidapi

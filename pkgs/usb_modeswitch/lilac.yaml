@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''usb_modeswitch'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libusb
 - tcl
-repo_makedepends:
-- gcc
-- make
-- systemd
 update_on:
 - alpm: usb_modeswitch
   source: archpkg

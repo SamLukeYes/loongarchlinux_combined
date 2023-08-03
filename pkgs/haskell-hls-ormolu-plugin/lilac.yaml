@@ -9,20 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-ormolu-pl
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- git
 repo_depends:
-- ghc: ghc-libs
-- haskell-ghcide
-- haskell-hls-plugin-api
 - haskell-lens
-- haskell-lsp
+- ghc: ghc-libs
 - haskell-ormolu
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hls-test-utils
-- haskell-lsp-types
+- haskell-hls-plugin-api
+- haskell-lsp
+- haskell-ghcide
 update_on:
 - alpm: haskell-ghc
   source: alpm

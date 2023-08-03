@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''purple-skypeweb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pidgin: libpurple
 - json-glib
-repo_makedepends: []
+- pidgin: libpurple
 update_on:
 - alpm: purple-skypeweb
   source: archpkg

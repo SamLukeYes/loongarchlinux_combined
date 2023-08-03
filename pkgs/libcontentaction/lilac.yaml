@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libcontentaction'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-systems
 - mlite
-repo_makedepends:
-- python
-- qt5-tools
+- qt5-systems
 update_on:
 - alpm: libcontentaction
   source: archpkg

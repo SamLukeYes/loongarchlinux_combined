@@ -9,24 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''whipper'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-twisted
 repo_depends:
-- cdrdao
-- flac
 - libcdio-paranoia
-- libsndfile
-- python-discid
-- pygobject: python-gobject
-- python-musicbrainzngs
 - python-mutagen
-- pycdio: python-pycdio
-- python-ruamel-yaml
+- cdrdao
+- python-discid
 - python-setuptools
+- libsndfile
 - sox
-repo_makedepends:
-- python-setuptools-scm
-- python-docutils
+- python-ruamel-yaml
+- flac
+- pygobject: python-gobject
+- pycdio: python-pycdio
+- python-musicbrainzngs
 update_on:
 - alpm: whipper
   source: archpkg

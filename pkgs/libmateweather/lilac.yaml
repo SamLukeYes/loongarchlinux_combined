@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libmateweather'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
 - libsoup
 - gettext
-repo_makedepends: []
 update_on:
 - alpm: libmateweather
   source: archpkg

@@ -7,13 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''zim'')
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- python
-- pygobject: python-gobject
 - gtk3
-repo_makedepends: []
+- pygobject: python-gobject
+- python
 update_on:
 - alias: python
 - alpm: zim

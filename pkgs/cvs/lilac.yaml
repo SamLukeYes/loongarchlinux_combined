@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cvs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- krb5
 - zlib
-repo_makedepends:
-- vim
+- krb5
 update_on:
 - alpm: cvs
   source: archpkg

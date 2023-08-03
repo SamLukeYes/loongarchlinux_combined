@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''blackmagic'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libusb
 - libftdi
-repo_makedepends:
-- git
-- hidapi
-- python
 update_on:
 - alpm: hidapi
   provides: libhidapi-libusb.so

@@ -7,14 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-axolotl'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
 - protobuf: python-protobuf
 - python-cryptography
 - python-axolotl-curve25519
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-axolotl
   source: archpkg

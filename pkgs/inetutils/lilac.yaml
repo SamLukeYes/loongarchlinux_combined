@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''inetutils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pam
-- libcap
-- readline
 - ncurses
 - libxcrypt
-repo_makedepends:
-- help2man
+- libcap
+- readline
+- pam
 update_on:
 - alias: readline
 - alpm: pam

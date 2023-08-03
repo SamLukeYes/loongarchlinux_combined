@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bmon'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ncurses
-- libnl
 - confuse
-repo_makedepends:
-- autoconf
+- libnl
+- ncurses
 update_on:
 - alpm: bmon
   source: archpkg

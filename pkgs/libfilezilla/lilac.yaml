@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libfilezilla'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cppunit
 repo_depends:
 - glibc
 - gcc: gcc-libs
-- nettle
 - gnutls
-repo_makedepends:
-- clang
+- nettle
 update_on:
 - alpm: nettle
   provides: libnettle.so

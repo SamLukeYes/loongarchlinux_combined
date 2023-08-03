@@ -9,19 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tepl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
 - amtk
 - gtksourceview4
-- amtk
-- gtksourceview4
-repo_makedepends:
-- gobject-introspection
-- git
-- gtk-doc
-- meson
-- vala
 update_on:
 - alpm: amtk
   provides: libamtk-5.so

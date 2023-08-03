@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libfreehand'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - librevenge
 - lcms2
-repo_makedepends:
-- boost
-- cppunit
-- gperf
-- doxygen
 update_on:
 - alpm: libfreehand
   source: archpkg

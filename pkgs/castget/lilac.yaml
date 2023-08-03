@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''castget'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- id3lib
 - glib2
 - libxml2
 - curl
-- id3lib
-repo_makedepends: []
 update_on:
 - alpm: castget
   source: archpkg

@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kup'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kidletime
-- kinit
 - libgit2
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
-- plasma-framework
+- kidletime
+- kinit
 update_on:
 - alpm: kup
   source: archpkg

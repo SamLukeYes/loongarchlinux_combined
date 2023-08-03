@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gparted'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- parted
 - gtkmm3
-repo_makedepends:
-- intltool
-- itstool
-- yelp-tools
-- polkit
+- parted
 update_on:
 - alpm: gparted
   source: archpkg

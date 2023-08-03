@@ -7,20 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-wand'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-forked
-- python-pytest-xdist
-- python-memory-profiler
-- python-psutil
-- ghostscript
-- librsvg
 repo_depends:
 - imagemagick
-- libxml2
 - python
-repo_makedepends:
-- python-setuptools
+- libxml2
 update_on:
 - alias: python
 - alpm: python-wand

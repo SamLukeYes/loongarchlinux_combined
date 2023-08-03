@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pyqt6-datavisualizati
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt6-datavis3d
 - pyqt6: python-pyqt6
-repo_makedepends:
-- qt6-declarative
-- sip
-- pyqt-builder
+- qt6-datavis3d
 update_on:
 - alpm: pyqt6-datavisualization
   source: archpkg

@@ -1,11 +1,6 @@
 destsubdir: extra
-repo_checkdepends:
-- texlive-texmf: texlive-latexextra
 repo_depends:
-- glibc
 - imagemagick
+- glibc
 - ghostscript
-repo_makedepends:
-- texinfo
-- texlive-bin
 update_on: []

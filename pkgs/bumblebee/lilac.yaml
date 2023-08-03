@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bumblebee'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- virtualgl
 - glib2
-repo_makedepends:
-- help2man
+- virtualgl
 update_on:
 - alpm: bumblebee
   source: archpkg

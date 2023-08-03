@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rustup'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- curl
 - xz
 - zstd
-repo_makedepends: []
+- curl
 update_on:
 - alpm: rustup
   source: archpkg

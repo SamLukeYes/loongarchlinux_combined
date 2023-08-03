@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''soapyplutosdr'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - soapysdr
 - libad9361
-repo_makedepends:
-- cmake
 update_on:
 - alpm: libiio
   provides: libiio.so

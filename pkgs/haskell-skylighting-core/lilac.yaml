@@ -9,26 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-skylighting-c
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-aeson
-- haskell-attoparsec
-- haskell-base64-bytestring
+- ghc: ghc-libs
 - haskell-case-insensitive
 - haskell-colour
-- haskell-safe
 - haskell-utf8-string
+- haskell-attoparsec
 - haskell-xml-conduit
-repo_makedepends:
-- ghc
-- haskell-diff
-- haskell-pretty-show
-- haskell-quickcheck
-- haskell-tasty
-- haskell-tasty-golden
-- haskell-tasty-hunit
-- haskell-tasty-quickcheck
+- haskell-safe
+- haskell-base64-bytestring
 update_on:
 - alpm: haskell-aeson
   source: alpm

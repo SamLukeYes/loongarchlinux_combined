@@ -7,22 +7,17 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''osbuild'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- bubblewrap
-- curl
-- e2fsprogs
-- qemu: qemu-img
-- python
-- util-linux
-- python-yaml
-- python-jsonschema
 - python-toml
 - skopeo
-repo_makedepends:
-- make
-- python-docutils
-- python-setuptools
+- curl
+- e2fsprogs
+- util-linux
+- python-yaml
+- qemu: qemu-img
+- bubblewrap
+- python-jsonschema
+- python
 update_on:
 - alias: python
 - alpm: osbuild

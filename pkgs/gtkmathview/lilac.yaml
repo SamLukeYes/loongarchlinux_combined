@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtkmathview'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- popt
-- t1lib
 - libxml2
+- t1lib
 - glib2
-repo_makedepends: []
+- popt
 update_on:
 - alpm: gtkmathview
   source: archpkg

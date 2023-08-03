@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdg-dbus-proxy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
 - dbus
-repo_makedepends:
-- git
-- meson
-- docbook-xsl
+- glib2
 update_on:
 - alpm: xdg-dbus-proxy
   source: archpkg

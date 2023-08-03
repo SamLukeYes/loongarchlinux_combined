@@ -7,18 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mailman-web'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- hyperkitty
 - postorius
-- django: python-django
+- hyperkitty
 - python-whoosh
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-setuptools-scm
-- python-wheel
+- django: python-django
 update_on:
 - alpm: mailman-web
   source: archpkg

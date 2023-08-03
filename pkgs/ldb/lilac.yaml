@@ -9,17 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ldb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- lmdb
+- popt
 - talloc
 - tdb
-- popt
-- lmdb
-repo_makedepends:
-- python
-- cmocka
-- docbook-xsl
-- tevent
 update_on:
 - alpm: tevent
   provides: libtevent.so

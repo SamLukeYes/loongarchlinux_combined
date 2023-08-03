@@ -9,24 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mympd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- lua
-- glibc
-- lua
-- flac
 - libid3tag
 - openssl
 - pcre2
-repo_makedepends:
-- cmake
 - flac
-- jq
-- libid3tag
-- openssl
-- pcre2
-- perl
+- glibc
+- lua
 update_on:
 - alias: lua
 - alias: lua

@@ -9,33 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''claws-mail'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
-- gnutls
 - startup-notification
+- dbus-glib
 - enchant
 - gpgme
 - libetpan
-- compface
 - libsm
-- dbus-glib
-repo_makedepends:
-- spamassassin
-- bogofilter
-- networkmanager
-- valgrind
-- libgdata
-- libnotify
-- libcanberra
-- poppler: poppler-glib
-- libytnef
-- libical
-- dillo
-- python
-- gumbo-parser
-- docbook-utils
-- texlive-texmf: texlive-formatsextra
+- compface
+- gtk3
+- gnutls
 update_on:
 - alpm: claws-mail
   source: archpkg

@@ -9,18 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''radare2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- capstone
-- openssl
-- libzip
-- zlib
-- lz4
-- xxhash
 - file
+- libzip
+- lz4
+- zlib
+- capstone
+- xxhash
+- openssl
 - libuv
-repo_makedepends:
-- meson
 update_on:
 - alpm: capstone
   provides: libcapstone.so

@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libmatemixer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
-- gettext
 - pulseaudio: libpulse
 - alsa-lib
-repo_makedepends: []
+- glib2
+- gettext
 update_on:
 - alpm: libmatemixer
   source: archpkg

@@ -1,20 +1,9 @@
 destsubdir: extra
-repo_checkdepends:
-- intel-compute-runtime
 repo_depends:
-- clang
-- gcc: gcc-libs
-- glibc
 - llvm: llvm-libs
+- gcc: gcc-libs
 - spirv-llvm-translator
-repo_makedepends:
-- cmake
-- git
-- level-zero: level-zero-headers
-- level-zero: level-zero-loader
-- llvm
-- openmp
-- python
-- vc-intrinsics
+- clang
+- glibc
 update_on:
 - alias: clang

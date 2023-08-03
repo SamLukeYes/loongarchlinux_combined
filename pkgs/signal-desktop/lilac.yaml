@@ -9,22 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''signal-desktop'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
 - libvips
-- libxss
-- hicolor-icon-theme
 - alsa-lib
+- libxss
+- gtk3
+- hicolor-icon-theme
 - openjpeg2
-repo_makedepends:
-- yarn
-- git
-- git-lfs
-- nodejs
-- npm
-- python
-- libxcrypt: libxcrypt-compat
 update_on:
 - alpm: signal-desktop
   source: archpkg

@@ -9,21 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kconfigwidgets'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kauth
-- kcodecs
 - kconfig
 - kguiaddons
-- ki18n
 - kwidgetsaddons
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- clang
-- doxygen
-- qt5-tools
-- qt5-doc
+- kcodecs
+- kauth
+- ki18n
 update_on:
 - alpm: kconfig
   source: alpm

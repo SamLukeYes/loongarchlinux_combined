@@ -9,21 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tiled'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt6-base
-- gtk4: gtk-update-icon-cache
-- shared-mime-info
-- desktop-file-utils
-- libxkbcommon: libxkbcommon-x11
 - qt6-declarative
-- qt6-svg
+- desktop-file-utils
+- gtk4: gtk-update-icon-cache
 - zstd
-repo_makedepends:
-- mesa
-- qt6-tools
-- python
-- qbs
+- qt6-svg
+- libxkbcommon: libxkbcommon-x11
+- shared-mime-info
 update_on:
 - alpm: qt6-base
   source: alpm

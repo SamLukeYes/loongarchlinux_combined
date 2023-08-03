@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''eog-plugins'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- eog
-- libchamplain
 - libgdata
+- libchamplain
 - pygobject: python-gobject
-repo_makedepends:
-- git
-- gobject-introspection
-- meson
+- eog
 update_on:
 - alpm: eog-plugins
   source: archpkg

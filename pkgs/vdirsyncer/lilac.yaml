@@ -7,29 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''vdirsyncer'')
 
   '
-repo_checkdepends:
-- python-aioresponses
-- python-hypothesis
-- python-pytest
-- python-pytest-asyncio
-- python-pytest-httpserver
-- python-pytest-subtesthack
-- python-trustme
 repo_depends:
-- python-aiohttp
-- python-aiostream
-- python-atomicwrites
-- python-click
-- python-click-log
 - python-requests
+- python-click-log
+- python-aiohttp
 - python-requests-toolbelt
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-setuptools-scm
-- python-sphinx
-- python-wheel
+- python-click
+- python-atomicwrites
+- python-aiostream
 update_on:
 - alpm: vdirsyncer
   source: archpkg

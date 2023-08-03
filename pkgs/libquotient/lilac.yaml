@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libquotient'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-multimedia
 - qtkeychain: qtkeychain-qt5
-repo_makedepends:
-- cmake
+- qt5-multimedia
 update_on:
 - alpm: libquotient
   source: archpkg

@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-break-timer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gsound
-- gtk3
 - libnotify
-repo_makedepends:
-- meson
-- git
-- vala
+- gtk3
+- gsound
 update_on:
 - alpm: gnome-break-timer
   source: archpkg

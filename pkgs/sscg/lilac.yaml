@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sscg'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - openssl
+- ding-libs
 - popt
 - talloc
-- ding-libs
-repo_makedepends:
-- git
-- help2man
-- meson
 update_on:
 - alpm: sscg
   source: archpkg

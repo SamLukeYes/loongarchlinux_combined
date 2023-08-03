@@ -9,26 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-middlewar
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-base16-bytestring
-- haskell-cryptohash-sha1
 - haskell-expiring-cache-map
+- haskell-wai
+- ghc: ghc-libs
 - haskell-http-types
 - haskell-mime-types
+- haskell-cryptohash-sha1
+- haskell-base16-bytestring
 - haskell-old-locale
-- haskell-wai
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hspec
-- haskell-hspec-discover
-- haskell-hspec-expectations-lifted
-- haskell-hspec-wai
-- haskell-mockery
-- haskell-scotty
-- haskell-wai-extra
 update_on:
 - alpm: haskell-base16-bytestring
   source: alpm

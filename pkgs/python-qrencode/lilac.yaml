@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-qrencode'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
 - python-pillow
 - qrencode
 - glibc
-repo_makedepends: []
+- python
 update_on:
 - alias: python
 - alpm: python-qrencode

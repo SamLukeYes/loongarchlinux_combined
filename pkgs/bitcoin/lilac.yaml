@@ -9,34 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bitcoin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- db5.3
+- qrencode
+- qt5-base
 - libevent
+- db5.3
 - miniupnpc
 - sqlite
-- zeromq
-- boost: boost-libs
-- libevent
-- qt5-base
-- miniupnpc
-- qrencode
 - protobuf
 - zeromq
 - hicolor-icon-theme
-- db5.3
 - boost: boost-libs
-repo_makedepends:
-- boost
-- libevent
-- qt5-base
-- qt5-tools
-- qrencode
-- miniupnpc
-- protobuf
-- zeromq
-- db5.3
 update_on:
 - alpm: miniupnpc
   provides: libminiupnpc.so

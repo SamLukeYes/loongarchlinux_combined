@@ -9,23 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-text-show'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-bifunctors
+- haskell-th-lift
 - ghc: ghc-libs
 - haskell-base-compat-batteries
-- haskell-bifunctors
-- haskell-generic-deriving
 - haskell-th-abstraction
-- haskell-th-lift
+- haskell-generic-deriving
 - haskell-transformers-compat
-repo_makedepends:
-- ghc
-- uusi
-- haskell-base-orphans
-- haskell-deriving-compat
-- haskell-hspec
-- haskell-quickcheck
-- haskell-quickcheck-instances
 update_on:
 - alpm: haskell-base-compat-batteries
   source: alpm

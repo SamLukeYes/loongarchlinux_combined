@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''flint'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - mpfr
-- ntl
 - lapack: cblas
-repo_makedepends:
-- cmake
-- python
+- ntl
 update_on:
 - alpm: flint
   source: archpkg

@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lua'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
 - lua
-repo_makedepends:
-- ghc
-- uusi
-- haskell-tasty
-- haskell-tasty-hunit
 update_on:
 - alias: lua
 - alpm: haskell-lua

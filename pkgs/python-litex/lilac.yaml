@@ -7,26 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-litex'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-litedram
-- python-liteeth
-- python-liteiclink
-- python-litesdcard
-- yosys
-- python-pythondata-cpu-vexriscv
-- python-pythondata-cpu-picorv32
-- python-pythondata-cpu-lm32
-- python-pythondata-cpu-mor1kx
-- python-litex-boards
-- python-litepcie
 repo_depends:
 - python-migen
 - python-pyserial
 - python-requests
 - python-pythondata-software-compiler_rt
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-litex
   source: archpkg

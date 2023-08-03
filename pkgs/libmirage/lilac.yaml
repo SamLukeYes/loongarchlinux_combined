@@ -9,20 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libmirage'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
-- libsndfile
-- libsamplerate
-- zlib
 - bzip2
+- libsamplerate
 - xz
+- libsndfile
+- zlib
+- glib2
 - shared-mime-info
-repo_makedepends:
-- gtk-doc
-- gobject-introspection
-- cmake
-- intltool
 update_on:
 - alpm: libmirage
   source: archpkg

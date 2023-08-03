@@ -7,20 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''arch-signoff'')
 
   '
-repo_checkdepends:
-- python-pytest-pacman
-- python-pytest
-- python-pytest-cov
 repo_depends:
-- python
+- python-requests
+- python-dateutil
 - pyalpm
 - python-click
-- python-dateutil
-- python-requests
-repo_makedepends:
-- python-setuptools-scm
-- asciidoc
-- git
+- python
 update_on:
 - alias: python
 - alpm: arch-signoff

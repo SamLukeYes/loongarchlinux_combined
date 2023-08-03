@@ -1,30 +1,14 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - alsa-lib
+- gcc: gcc-libs
+- libsamplerate
 - db5.3
 - dbus
-- gcc: gcc-libs
-- glibc
-- libsamplerate
 - opus
+- expat
+- glibc
 - systemd: systemd-libs
-- dbus
-- expat
-- gcc: gcc-libs
-- glibc
-repo_makedepends:
-- alsa-lib
-- db5.3
-- dbus
-- doxygen
-- expat
-- git
-- libffado
-- libsamplerate
-- opus
-- systemd
-- waf
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

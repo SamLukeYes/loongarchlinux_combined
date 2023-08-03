@@ -1,19 +1,9 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- amtk
 - gsettings-desktop-schemas
 - gspell
-- libpeas
-- pygobject: python-gobject
 - tepl
-repo_makedepends:
-- appstream-glib
-- desktop-file-utils
-- git
-- gobject-introspection
-- gtk-doc
-- meson
-- vala
-- yelp-tools
+- libpeas
+- amtk
+- pygobject: python-gobject
 update_on: []

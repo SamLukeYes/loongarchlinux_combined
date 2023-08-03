@@ -7,22 +7,16 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-klein'')
 
   '
-repo_checkdepends:
-- python-hypothesis
-- python-treq
-- python-pytest
 repo_depends:
-- python
+- python-constantly
+- python-incremental
+- python-twisted
+- python-tubes
+- python-werkzeug
 - python-attrs
 - python-hyperlink
-- python-incremental
-- python-tubes
-- python-twisted
-- python-werkzeug
+- python
 - python-zope-interface
-- python-constantly
-repo_makedepends:
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-klein

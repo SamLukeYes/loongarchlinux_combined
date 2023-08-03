@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plan9port'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - fontconfig
+- xorg-server
 - fuse2
 - libxt
-- xorg-server
-repo_makedepends:
-- gendesk
-- git
 update_on:
 - alpm: plan9port
   source: archpkg

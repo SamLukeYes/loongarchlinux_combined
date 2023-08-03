@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-ethtool'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- net-tools
-- python-pytest
 repo_depends:
+- libnl
 - python
-- libnl
-repo_makedepends:
-- asciidoc
-- libnl
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-ethtool

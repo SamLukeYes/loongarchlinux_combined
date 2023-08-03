@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''multimon-ng'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ncurses
 - pulseaudio: libpulse
-repo_makedepends:
-- cmake
+- ncurses
 update_on:
 - alpm: multimon-ng
   source: archpkg

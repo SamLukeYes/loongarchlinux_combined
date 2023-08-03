@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-success'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-monad-control
 - ghc: ghc-libs
 - haskell-transformers-base
-- haskell-monad-control
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-transformers-base
   source: alpm

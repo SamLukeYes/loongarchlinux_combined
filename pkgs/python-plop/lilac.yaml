@@ -7,12 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-plop'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-six
 - python-tornado
-repo_makedepends:
-- python-setuptools
+- python-six
 update_on:
 - alpm: python-plop
   source: archpkg

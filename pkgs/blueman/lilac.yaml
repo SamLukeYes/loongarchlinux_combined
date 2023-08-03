@@ -9,18 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''blueman'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - bluez
 - bluez: bluez-libs
 - gtk3
-- networkmanager: libnm
-- python-cairo
 - pygobject: python-gobject
-repo_makedepends:
-- cython
-- intltool
-- iproute2
+- python-cairo
+- networkmanager: libnm
 update_on:
 - alpm: blueman
   source: archpkg

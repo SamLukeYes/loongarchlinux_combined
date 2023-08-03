@@ -7,44 +7,25 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''scrapy'')
 
   '
-repo_checkdepends:
-- bpython
-- ipython
-- mitmproxy
-- python-attrs
-- python-botocore
-- brotli: python-brotli
-- python-h2
-- python-markupsafe
-- python-pyftpdlib
-- python-pytest
-- python-sybil
-- python-testfixtures
-- python-uvloop
-- python-zstandard
 repo_depends:
-- python
-- python-cryptography
-- python-cssselect
-- python-itemadapter
-- python-itemloaders
-- python-lxml
-- python-packaging
 - python-parsel
 - python-protego
-- python-pydispatcher
-- python-pyopenssl
-- python-queuelib
-- python-service-identity
 - python-setuptools
-- python-tldextract
-- python-twisted
+- python-lxml
+- python-queuelib
 - python-w3lib
+- python-itemloaders
+- python-cryptography
+- python-cssselect
+- python-twisted
+- python-pyopenssl
+- python-tldextract
+- python-packaging
+- python-itemadapter
+- python-pydispatcher
+- python-service-identity
+- python
 - python-zope-interface
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
 update_on:
 - alias: python
 - alpm: scrapy

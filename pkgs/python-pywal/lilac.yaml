@@ -7,12 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pywal'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
 - imagemagick
-repo_makedepends:
-- python-setuptools
+- python
 update_on:
 - alias: python
 - alpm: python-pywal

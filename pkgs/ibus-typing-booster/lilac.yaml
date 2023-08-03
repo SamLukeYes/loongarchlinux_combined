@@ -7,15 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ibus-typing-booster'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- ibus
 - m17n-lib
-- pygobject: python-gobject
 - python-pyenchant
+- ibus
 - sqlite
-repo_makedepends:
-- git
+- pygobject: python-gobject
 update_on:
 - alpm: ibus-typing-booster
   source: archpkg

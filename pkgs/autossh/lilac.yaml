@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''autossh'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libnsl
 - openssh
-repo_makedepends: []
+- libnsl
 update_on:
 - alpm: autossh
   source: archpkg

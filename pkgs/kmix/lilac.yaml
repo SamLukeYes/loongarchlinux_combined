@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kmix'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - knotifications
 - kxmlgui
-- solid
 - kcompletion
+- solid
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
 update_on:
 - alpm: kmix
   source: archpkg

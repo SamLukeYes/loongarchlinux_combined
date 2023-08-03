@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''or1k-elf-newlib'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- or1k-elf-gcc
 update_on:
 - alpm: or1k-elf-newlib
   source: archpkg

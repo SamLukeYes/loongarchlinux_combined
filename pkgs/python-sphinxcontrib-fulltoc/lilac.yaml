@@ -7,17 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-sphinxcontrib-fulltoc'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
 - python-sphinx
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
-- python-pbr
+- python
 update_on:
 - alias: python
 - alpm: python-sphinxcontrib-fulltoc

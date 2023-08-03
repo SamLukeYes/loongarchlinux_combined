@@ -9,19 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kitinerary'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kmime
 - kpkpass
+- libphonenumber
+- zxing-cpp
+- kmime
 - kcalendarcore
 - kcontacts
 - poppler
-- libphonenumber
-- zxing-cpp
-repo_makedepends:
-- extra-cmake-modules
-- qt5-tools
-- doxygen
 update_on:
 - alpm: kitinerary
   source: archpkg

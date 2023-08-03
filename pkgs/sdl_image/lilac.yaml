@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sdl_image'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libpng
 - libjpeg-turbo
 - libtiff
 - zlib
-repo_makedepends: []
+- libpng
 update_on:
 - alpm: sdl_image
   source: archpkg

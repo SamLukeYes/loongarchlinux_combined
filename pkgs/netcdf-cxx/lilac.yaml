@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''netcdf-cxx'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
 - netcdf
+- gcc: gcc-libs
 - curl
-repo_makedepends: []
 update_on:
 - alpm: netcdf-cxx
   source: archpkg

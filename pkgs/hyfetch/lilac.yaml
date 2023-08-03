@@ -7,12 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''hyfetch'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-setuptools
-- python-typing_extensions
 - python-importlib-metadata
-repo_makedepends: []
+- python-typing_extensions
+- python-setuptools
 update_on:
 - alpm: hyfetch
   source: archpkg

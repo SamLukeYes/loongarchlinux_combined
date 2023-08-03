@@ -9,22 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-implicit-hie-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-hslogger
+- haskell-unordered-containers
 - ghc: ghc-libs
-- haskell-base16-bytestring
+- haskell-implicit-hie
+- haskell-unix-compat
+- haskell-vector
 - haskell-extra
 - haskell-hie-bios
-- haskell-hslogger
-- haskell-implicit-hie
 - haskell-temporary
-- haskell-unix-compat
-- haskell-unordered-containers
-- haskell-vector
 - haskell-yaml
-repo_makedepends:
-- ghc
-- uusi
+- haskell-base16-bytestring
 update_on:
 - alpm: haskell-base16-bytestring
   source: alpm

@@ -1,11 +1,9 @@
 destsubdir: core
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
-- readline
-- zlib
 - bzip2
+- gcc: gcc-libs
+- zlib
 - bash
-repo_makedepends: []
+- readline
 update_on:
 - alias: readline

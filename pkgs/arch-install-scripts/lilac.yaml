@@ -7,16 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''arch-install-scripts'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- pacman
+- grep
+- util-linux
 - bash
 - coreutils
-- grep
-- pacman
-- util-linux
-repo_makedepends:
-- asciidoc
-- git
 update_on:
 - alpm: arch-install-scripts
   source: archpkg

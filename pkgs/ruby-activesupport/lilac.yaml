@@ -7,18 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-activesupport'')
 
   '
-repo_checkdepends:
-- ruby-minitest
 repo_depends:
 - ruby
+- ruby-minitest
 - ruby-concurrent
 - ruby-i18n
 - ruby-tzinfo
 - ruby-zeitwerk
-- ruby-minitest
-repo_makedepends:
-- git
-- ruby-rake
 update_on:
 - alias: ruby
 - alpm: ruby-activesupport

@@ -9,26 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''barrier'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- openssl
+- libxrandr
+- libxi
+- libice
+- qt5-base
+- libxtst
 - curl
 - avahi
-- libx11
-- libxrandr
-- libxext
 - libxinerama
-- xorgproto
-- libxtst
-- libxi
 - libsm
-- libice
-- openssl
-- qt5-base
-- hicolor-icon-theme
-repo_makedepends:
-- cmake
-- git
-- qt5-base
+- xorgproto
+- libx11
+- libxext
 - hicolor-icon-theme
 update_on:
 - alpm: qt5-base

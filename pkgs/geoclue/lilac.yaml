@@ -9,20 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''geoclue'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libsoup3
 - json-glib
+- libsoup3
 - modemmanager: libmm-glib
 - avahi
-repo_makedepends:
-- systemd
-- gobject-introspection
-- git
-- vala
-- meson
-- gtk-doc
-- libnotify
 update_on:
 - alpm: geoclue
   source: archpkg

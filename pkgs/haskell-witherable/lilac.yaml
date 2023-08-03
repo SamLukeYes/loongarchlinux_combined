@@ -9,22 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-witherable'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-base-orphans
-- haskell-hashable
-- haskell-indexed-traversable
-- haskell-indexed-traversable-instances
 - haskell-unordered-containers
+- ghc: ghc-libs
+- haskell-indexed-traversable
+- haskell-hashable
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
-- haskell-quickcheck
-- haskell-quickcheck-instances
-- haskell-tasty
-- haskell-tasty-quickcheck
+- haskell-base-orphans
+- haskell-indexed-traversable-instances
 update_on:
 - alpm: haskell-base-orphans
   source: alpm

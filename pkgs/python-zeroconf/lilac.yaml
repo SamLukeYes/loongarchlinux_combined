@@ -7,16 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-zeroconf'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python
-- python-netifaces
-- python-six
 - python-ifaddr
+- python-six
+- python-netifaces
 - python-async-timeout
-repo_makedepends:
-- python-setuptools
+- python
 update_on:
 - alias: python
 - alpm: python-zeroconf

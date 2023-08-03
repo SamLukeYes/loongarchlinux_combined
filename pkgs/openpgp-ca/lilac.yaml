@@ -9,36 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openpgp-ca'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- bzip2
 - gcc: gcc-libs
+- pcsclite
+- nettle
+- sqlite
+- openssl
 - glibc
 - gmp
-- gcc: gcc-libs
-- glibc
-- gmp
-- bzip2
-- openssl
-- nettle
-- pcsclite
-- sqlite
-- gcc: gcc-libs
-- glibc
-- gmp
-- bzip2
-- openssl
-- nettle
-- pcsclite
-- sqlite
-repo_makedepends:
-- bzip2
-- clang
-- nettle
-- openssl
-- pcsclite
-- rust
-- sqlite
-- systemd
 update_on:
 - alpm: bzip2
   provides: libbz2.so

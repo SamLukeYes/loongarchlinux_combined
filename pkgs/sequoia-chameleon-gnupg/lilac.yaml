@@ -9,20 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sequoia-chameleon-gnu
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- bzip2
 - gcc: gcc-libs
+- nettle
 - glibc
 - gmp
-- gcc: gcc-libs
-- glibc
-- gmp
-- bzip2
-- nettle
-repo_makedepends:
-- bzip2
-- clang
-- nettle
 update_on:
 - alpm: bzip2
   provides: libbz2.so

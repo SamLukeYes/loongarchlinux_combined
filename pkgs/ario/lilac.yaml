@@ -9,22 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ario'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- avahi
-- curl
 - dbus-glib
-- gnutls
+- xdg-utils
+- curl
+- avahi
+- libnotify
 - gtk3
 - libmpdclient
-- libnotify
+- gnutls
 - libsoup
 - taglib
-- xdg-utils
-repo_makedepends:
-- intltool
-- perl-xml-parser
-- patch
 update_on:
 - alpm: ario
   source: archpkg

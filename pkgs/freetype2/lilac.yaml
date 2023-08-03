@@ -9,20 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''freetype2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- brotli
 - bzip2
-- harfbuzz
-- libpng
+- brotli
 - zlib
-- libx11
 - librsvg
-repo_makedepends:
-- librsvg
+- harfbuzz
 - libx11
-- meson
-- qt5-base
+- libpng
 update_on:
 - alpm: freetype2
   source: archpkg

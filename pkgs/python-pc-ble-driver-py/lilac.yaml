@@ -9,22 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pc-ble-driver-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
-- pc-ble-driver
 - python-cryptography
+- pc-ble-driver
 - python-wrapt
-repo_makedepends:
-- cmake
-- ninja
-- python-build
-- python-installer
-- python-scikit-build
-- python-setuptools
-- python-wheel
-- swig
+- glibc
 update_on:
 - alpm: python-pc-ble-driver-py
   source: archpkg

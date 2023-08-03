@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtkglext'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk2
 - glu
 - libxmu
-repo_makedepends:
-- python
+- gtk2
 update_on:
 - alpm: gtkglext
   source: archpkg

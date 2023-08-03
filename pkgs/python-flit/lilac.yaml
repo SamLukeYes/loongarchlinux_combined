@@ -7,20 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-flit'')
 
   '
-repo_checkdepends:
-- python-pip
-- python-pytest
-- python-responses
-- python-testpath
 repo_depends:
-- python
-- python-docutils
 - python-flit-core
 - python-requests
+- python-docutils
 - python-tomli-w
-repo_makedepends:
-- python-build
-- python-installer
+- python
 update_on:
 - alias: python
 - alpm: python-flit

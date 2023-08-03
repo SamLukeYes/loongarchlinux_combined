@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-mines'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libgnome-games-support
 - gtk3
 - librsvg
-- libgnome-games-support
-repo_makedepends:
-- yelp-tools
-- appstream-glib
-- vala
-- git
-- meson
 update_on:
 - alpm: gnome-mines
   source: archpkg

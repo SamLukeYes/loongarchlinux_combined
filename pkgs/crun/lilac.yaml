@@ -9,19 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''crun'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- yajl
-- systemd: systemd-libs
-- libcap
 - libseccomp
 - criu
-repo_makedepends:
-- libtool
-- python
-- go-md2man
-- systemd
-- git
+- libcap
+- yajl
+- systemd: systemd-libs
 update_on:
 - alpm: crun
   source: archpkg

@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''netcdf-fortran'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- valgrind
 repo_depends:
-- gcc: gcc-libs
 - netcdf
+- gcc: gcc-libs
 - curl
-repo_makedepends:
-- cmake
-- gcc: gcc-fortran
-- doxygen
 update_on:
 - alpm: netcdf-fortran
   source: archpkg

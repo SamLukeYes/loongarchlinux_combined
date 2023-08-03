@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wasm-pack'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - bzip2
 - curl
-repo_makedepends:
-- openssl
 update_on:
 - alpm: wasm-pack
   source: archpkg

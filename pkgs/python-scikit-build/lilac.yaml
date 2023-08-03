@@ -7,33 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-scikit-build'')
 
   '
-repo_checkdepends:
-- cython
-- gcc
-- gcc: gcc-fortran
-- ninja
-- python-build
-- python-path
-- python-pytest
-- python-pytest-mock
-- python-pytest-runner
-- python-pytest-plugins: python-pytest-virtualenv
-- python-requests
-- python-six
-- python-virtualenv
 repo_depends:
 - cmake
-- python-distro
-- python-packaging
 - python-setuptools
+- python-packaging
+- python-distro
 - python-wheel
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-hatchling
-- python-hatch-vcs
-- python-hatch-fancy-pypi-readme
 update_on:
 - alpm: python-scikit-build
   source: archpkg

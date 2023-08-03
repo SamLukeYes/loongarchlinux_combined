@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''srs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
 - openssl
+- gcc: gcc-libs
 - srs-state-threads
-repo_makedepends:
-- zlib
-- unzip
-- net-tools
-- python
-- git
 update_on:
 - alpm: srs
   source: archpkg

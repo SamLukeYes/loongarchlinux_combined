@@ -9,33 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wezterm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - fontconfig
-- hicolor-icon-theme
 - wayland
-- libx11
-- libxkbcommon: libxkbcommon-x11
-- xcb-util-keysyms
-- xcb-util-wm
-- xcb-util-image
-- openssl
-- fontconfig
-- hicolor-icon-theme
-- wayland
-- libx11
-- libxkbcommon: libxkbcommon-x11
-- xcb-util-keysyms
-- xcb-util-wm
-- xcb-util-image
-- openssl
 - ncurses
-repo_makedepends:
-- cmake
-- git
-- pkgconf
-- python
-- libssh2
+- xcb-util-keysyms
+- xcb-util-wm
+- libx11
+- xcb-util-image
+- openssl
+- hicolor-icon-theme
+- libxkbcommon: libxkbcommon-x11
 update_on:
 - alpm: wezterm
   source: archpkg

@@ -7,13 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-betamax-matchers'')
 
   '
-repo_checkdepends:
-- python-pytest-runner
 repo_depends:
-- python-requests-toolbelt
 - python-betamax
-repo_makedepends:
-- python-setuptools
+- python-requests-toolbelt
 update_on:
 - alpm: python-betamax-matchers
   source: archpkg

@@ -9,22 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''notion'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
-- gettext
-- lua
-- libxext
-- libsm
-- freetype2
 - libxft
-repo_makedepends:
-- git
-- libxinerama
-- libxrandr
-- rubber
-- latex2html
-- texlive-texmf: texlive-latexextra
+- libsm
+- gettext
+- freetype2
+- libxext
+- glib2
+- lua
 update_on:
 - alias: lua
 - alpm: notion

@@ -9,20 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-http-client-t
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-case-insensitive
-- haskell-cryptonite
-- haskell-data-default-class
-- haskell-http-client
-- haskell-http-types
-- haskell-memory
-- haskell-network
 - haskell-network-uri
+- haskell-cryptonite
+- haskell-network
+- ghc: ghc-libs
+- haskell-http-types
+- haskell-case-insensitive
+- haskell-memory
 - haskell-tls
-repo_makedepends:
-- ghc
+- haskell-http-client
+- haskell-data-default-class
 update_on:
 - alpm: haskell-case-insensitive
   source: alpm

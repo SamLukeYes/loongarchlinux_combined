@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kcharselect'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kbookmarks
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
 update_on:
 - alpm: kcharselect
   source: archpkg

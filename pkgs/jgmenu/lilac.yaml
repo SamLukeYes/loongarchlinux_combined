@@ -9,18 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jgmenu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libx11
-- cairo
-- pango
+- python
 - libxrandr
+- pango
 - librsvg
 - libxml2
+- libx11
+- cairo
 - glib2
 - menu-cache
-- python
-repo_makedepends: []
 update_on:
 - alias: python
 - alpm: jgmenu

@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bubblewrap'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - libcap
-repo_makedepends:
-- bash-completion
-- docbook-xsl
-- git
-- libxslt
-- meson
+- glibc
 update_on:
 - alpm: bubblewrap
   source: archpkg

@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''m17n-lib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libthai
+- libotf
 - libxft
+- gd
+- libxml2
 - m17n-db
 - fribidi
-- libthai
-- libxml2
-- gd
-- libotf
-repo_makedepends:
-- anthy
-- ispell
 update_on:
 - alpm: m17n-lib
   source: archpkg

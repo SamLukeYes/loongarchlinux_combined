@@ -9,19 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-control-center''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- mate-menus
-- mate-settings-daemon
-- marco
-- libxss
-- mate-desktop
-- gettext
 - accountsservice
+- libxss
 - mate-panel
+- marco
+- gettext
 - libcanberra
-repo_makedepends:
-- itstool
+- mate-menus
+- mate-desktop
+- mate-settings-daemon
 update_on:
 - alpm: mate-control-center
   source: archpkg

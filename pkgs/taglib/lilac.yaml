@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''taglib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cppunit
 repo_depends:
 - zlib
-repo_makedepends:
-- cmake
 update_on:
 - alpm: taglib
   source: archpkg

@@ -7,26 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-httplib2'')
 
   '
-repo_checkdepends:
-- flake8
-- python-pytest-cov
-- python-pytest-forked
-- python-pytest-timeout
-- python-pytest-xdist
-- python-pytest-randomly
-- python-future
-- python-cryptography
-- python-six
 repo_depends:
-- ca-certificates
 - python
+- ca-certificates
 - python-pyparsing
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-httplib2

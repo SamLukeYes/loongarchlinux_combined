@@ -7,17 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-geocoder'')
 
   '
-repo_checkdepends:
-- python-pytest-runner
-- python-requests-mock
 repo_depends:
-- python-requests
 - python-ratelim
-- python-click
+- python-requests
 - python-six
+- python-click
 - python-future
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-geocoder
   source: archpkg

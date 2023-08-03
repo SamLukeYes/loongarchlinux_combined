@@ -9,64 +9,32 @@ pre_build_script: '_G.files = download_official_pkgbuild(''freerdp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- cups: libcups
-- libx11
-- libxcursor
-- libxext
-- libxdamage
-- libxfixes
-- libxkbcommon
-- libxi
-- libxinerama
-- libxkbfile
-- libxrandr
 - libxrender
-- libxtst
-- pcsclite
-- wayland
-- glibc
-- cups: libcups
-- libx11
-- libxcursor
-- libxext
-- libxdamage
-- libxfixes
-- libxkbcommon
-- libxi
-- libxinerama
-- libxkbfile
-- libxrandr
-- libxrender
-- libxtst
-- pcsclite
-- wayland
 - alsa-lib
-- ffmpeg
-- icu
-- libjpeg-turbo
-- pulseaudio: libpulse
+- libxfixes
+- libxdamage
 - libusb
-- openssl
-- pam
+- glibc
+- cups: libcups
+- libxrandr
+- libjpeg-turbo
+- pcsclite
+- ffmpeg
+- libxinerama
+- libxcursor
+- libxext
+- libxkbfile
+- icu
 - systemd: systemd-libs
-repo_makedepends:
-- alsa-lib
-- cmake
-- docbook-xsl
-- ffmpeg
-- icu
-- krb5
-- libjpeg-turbo
-- pulseaudio: libpulse
-- libusb
+- libxkbcommon
+- libxtst
 - openssl
 - pam
-- systemd
-- xmlto
-- xorgproto
+- pulseaudio: libpulse
+- wayland
+- libxi
+- libx11
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

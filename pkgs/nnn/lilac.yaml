@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nnn'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
 - sed
-repo_makedepends: []
+- bash
 update_on:
 - alpm: nnn
   source: archpkg

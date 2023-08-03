@@ -7,17 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ant'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
 - coreutils
 - which
-repo_makedepends:
 - bash
-- coreutils
-- which
-- junit
-- java-hamcrest
 update_on:
 - alpm: ant
   source: archpkg

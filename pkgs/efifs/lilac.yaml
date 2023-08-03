@@ -7,15 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''efifs'')
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- git
-- mingw-w64-gcc
-- arm-none-eabi-gcc
-- arm-none-eabi-newlib
-- aarch64-linux-gnu-gcc
-- riscv64-linux-gnu-gcc
 update_on:
 - alpm: efifs
   source: archpkg

@@ -9,15 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''coreutils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - acl
-- attr
-- gmp
 - libcap
+- attr
 - openssl
-repo_makedepends: []
+- glibc
+- gmp
 update_on:
 - alpm: coreutils
   source: archpkg

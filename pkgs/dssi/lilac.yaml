@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dssi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - liblo
-repo_makedepends:
-- ladspa
 update_on:
 - alpm: dssi
   source: archpkg

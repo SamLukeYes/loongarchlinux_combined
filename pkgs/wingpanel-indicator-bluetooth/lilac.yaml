@@ -9,16 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wingpanel-indicator-b
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bluez
-- glib2
-- gtk3
 - wingpanel
-repo_makedepends:
-- git
-- meson
-- vala
+- bluez
+- gtk3
+- glib2
 update_on:
 - alpm: granite
   provides: libgranite.so

@@ -7,15 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-pry'')
 
   '
-repo_checkdepends:
-- ruby-rake
-- ruby-rspec
-- ruby-yard
 repo_depends:
-- ruby-coderay
 - ruby-method_source
-repo_makedepends:
-- git
+- ruby-coderay
 update_on:
 - alpm: ruby-pry
   source: archpkg

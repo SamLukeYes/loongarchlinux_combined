@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xfce4-smartbookmark-p
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - xfce4-panel
-repo_makedepends:
-- intltool
-- libxt
 update_on:
 - alpm: xfce4-smartbookmark-plugin
   source: archpkg

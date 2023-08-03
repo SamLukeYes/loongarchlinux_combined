@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gpsmanshp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - shapelib
+- glibc
 - tcl
-repo_makedepends: []
 update_on:
 - alpm: gpsmanshp
   source: archpkg

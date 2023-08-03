@@ -9,19 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''packagekit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - polkit
 - sqlite
 - glib2
-repo_makedepends:
-- polkit
-- sqlite
-- gobject-introspection
-- intltool
-- bash-completion
-- vala
-- meson
 update_on:
 - alpm: packagekit
   source: archpkg

@@ -7,14 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''tomcat9'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - java-commons-daemon: java-jsvc
 - java-commons-daemon
 - eclipse-ecj
-repo_makedepends:
-- ant
-- git
 update_on:
 - alpm: tomcat9
   source: archpkg

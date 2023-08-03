@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''filelight'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kio
-- qqc2-desktop-style
-- kquickcharts
 - kdeclarative
+- kquickcharts
+- qqc2-desktop-style
+- kio
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
 update_on:
 - alpm: filelight
   source: archpkg

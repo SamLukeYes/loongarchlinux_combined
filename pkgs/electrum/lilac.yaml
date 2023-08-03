@@ -7,28 +7,25 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''electrum'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-pyaes
-- python-ecdsa
-- python-pbkdf2
+- python-pysocks
 - python-requests
+- python-bitstring
+- python-aiorpcx
 - python-qrcode
+- python-aiohttp
+- libsecp256k1
+- python-pycryptodomex
+- python-ecdsa
 - protobuf: python-protobuf
+- python-websocket-client
 - python-dnspython
 - python-jsonrpclib-pelix
-- python-pysocks
 - pyqt5: python-pyqt5
-- python-pycryptodomex
-- python-websocket-client
-- python-certifi
-- python-aiorpcx
-- python-aiohttp
 - python-aiohttp-socks
-- libsecp256k1
-- python-bitstring
-repo_makedepends:
-- python-setuptools
+- python-pbkdf2
+- python-pyaes
+- python-certifi
 update_on:
 - alpm: electrum
   source: archpkg

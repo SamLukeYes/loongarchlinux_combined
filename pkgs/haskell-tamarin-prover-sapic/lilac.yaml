@@ -9,22 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tamarin-prove
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-aeson-pretty
+- haskell-tamarin-prover-utils
 - haskell-dlist
-- haskell-fclabels
-- haskell-parallel
 - haskell-safe
 - haskell-uniplate
-- haskell-raw-strings-qq
-- haskell-tamarin-prover-utils
-- haskell-tamarin-prover-term
+- haskell-aeson
+- ghc: ghc-libs
 - haskell-tamarin-prover-theory
-repo_makedepends:
-- ghc
+- haskell-raw-strings-qq
+- haskell-fclabels
+- haskell-parallel
+- haskell-aeson-pretty
+- haskell-tamarin-prover-term
 update_on:
 - alpm: haskell-aeson
   source: alpm

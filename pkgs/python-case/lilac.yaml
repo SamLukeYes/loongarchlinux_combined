@@ -7,12 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-case'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - python-nose
-- python-setuptools
 - python-six
-repo_makedepends: []
+- python-setuptools
 update_on:
 - alpm: python-case
   source: archpkg

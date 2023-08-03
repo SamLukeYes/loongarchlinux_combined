@@ -7,18 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-jaeger-client'')
 
   '
-repo_checkdepends:
-- python-mock
-- python-prometheus_client
-- python-pycurl
-- python-pytest-benchmark
-- python-pytest-localserver
 repo_depends:
-- python-threadloop
 - python-thrift
 - python-tornado
-repo_makedepends:
-- python-setuptools
+- python-threadloop
 update_on:
 - alpm: python-jaeger-client
   source: archpkg

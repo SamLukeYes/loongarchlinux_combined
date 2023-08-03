@@ -9,20 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gupnp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glib2
-- gssdp
 - libxml2
 - glib2
 - gssdp
-- libxml2
-repo_makedepends:
-- gobject-introspection
-- gi-docgen
-- vala
-- meson
-- git
 update_on:
 - alpm: glib2
   provides: libglib-2.0.so

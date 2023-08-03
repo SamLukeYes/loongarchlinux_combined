@@ -1,8 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - glibc
-repo_makedepends:
-- meson
-- libpng
 update_on: []

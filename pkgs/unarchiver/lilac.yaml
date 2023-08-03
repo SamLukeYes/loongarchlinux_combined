@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''unarchiver'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gnustep-base
-- openssl
 - bzip2
-- icu
-- gcc: gcc-libs
-- zlib
 - wavpack
-repo_makedepends:
-- gcc: gcc-objc
-- gnustep-make
+- gcc: gcc-libs
+- gnustep-base
+- zlib
+- openssl
+- icu
 update_on:
 - alias: icu
 - alpm: unarchiver

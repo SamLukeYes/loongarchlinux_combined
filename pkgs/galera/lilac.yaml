@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''galera'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- mariadb
 - openssl
-repo_makedepends:
-- boost
-- check
-- cmake
+- mariadb
 update_on:
 - alpm: galera
   source: archpkg

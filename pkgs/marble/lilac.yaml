@@ -9,28 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''marble'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-svg
-- qt5-webengine
-- phonon: phonon-qt5
-- protobuf
 - kirigami2
-- kparts
-repo_makedepends:
-- extra-cmake-modules
-- gpsd
-- kdoctools
-- kparts
-- krunner
-- libwlocate
 - phonon: phonon-qt5
-- plasma-workspace
-- qt5-serialport
-- qt5-tools
-- qt5-webengine
-- shapelib
+- qt5-svg
+- kparts
 - protobuf
+- qt5-webengine
 update_on:
 - alias: protobuf
 - alpm: marble

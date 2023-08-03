@@ -7,13 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-sub-exporter'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - perl
 - perl-data-optlist
 - perl-params-util
 - perl-sub-install
-repo_makedepends: []
 update_on:
 - alias: perl
 - alpm: perl-sub-exporter

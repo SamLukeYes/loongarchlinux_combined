@@ -9,26 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''luminancehdr'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- exiv2
-- fftw
-- gsl
-- lcms2
 - libraw
-- openexr
-- qt5-webengine
 - qt5-svg
-- ccfits
+- openexr
+- gsl
 - desktop-file-utils
+- fftw
+- lcms2
+- exiv2
 - hicolor-icon-theme
 - boost: boost-libs
-repo_makedepends:
-- cmake
-- boost
-- gtest
-- qt5-tools
-- eigen
+- ccfits
+- qt5-webengine
 update_on:
 - alpm: gsl
   source: alpm

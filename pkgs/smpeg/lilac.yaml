@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''smpeg'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - sdl2
-repo_makedepends:
-- mesa
-- glu
 update_on:
 - alpm: smpeg
   source: archpkg

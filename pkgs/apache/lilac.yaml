@@ -1,18 +1,9 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- zlib
-- apr-util
 - pcre2
-- libnghttp2
-- openssl
+- zlib
 - libxcrypt
-repo_makedepends:
-- libxml2
-- lua
-- curl
-- brotli
-- jansson
-- db
-- systemd
+- apr-util
+- openssl
+- libnghttp2
 update_on: []

@@ -9,23 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-metacity'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- startup-notification
 - dconf
-- libcanberra
+- bamf
 - libgtop
 - libsm
-- deepin-desktop-schemas
-- gtk3
-- startup-notification
+- libcanberra
 - zenity
-- bamf
-repo_makedepends:
-- intltool
-- itstool
-- autoconf-archive
-- yelp-tools
-- python
+- gtk3
+- deepin-desktop-schemas
 update_on:
 - alpm: deepin-metacity
   source: archpkg

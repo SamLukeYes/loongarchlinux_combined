@@ -9,15 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cclive'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- pcre
 - curl
 - libquvi
+- pcre
 - glibmm
-repo_makedepends:
-- boost
+- boost: boost-libs
 update_on:
 - alpm: cclive
   source: archpkg

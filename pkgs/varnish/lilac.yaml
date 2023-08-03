@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''varnish'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- pcre2
 - gcc
 - libnsl
-- pcre2
-repo_makedepends:
-- python-docutils
-- python-sphinx
-- git
 update_on:
 - alpm: varnish
   source: archpkg

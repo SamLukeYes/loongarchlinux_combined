@@ -9,30 +9,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''waybar'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtkmm3
-- libsigc++
-- fmt
-- wayland
-- gtk-layer-shell
-- upower
 - libevdev
-- libinput
-- pulseaudio: libpulse
-- libnl
+- upower
 - libappindicator: libappindicator-gtk3
-- libdbusmenu: libdbusmenu-gtk3
+- wireplumber: libwireplumber
+- gtk-layer-shell
 - libmpdclient
 - libxkbcommon
-- wireplumber: libwireplumber
+- libdbusmenu: libdbusmenu-gtk3
 - playerctl
-repo_makedepends:
-- cmake
-- catch2
-- meson
-- scdoc
-- wayland-protocols
+- libsigc++
+- pulseaudio: libpulse
+- fmt
+- libnl
+- libinput
+- wayland
+- gtkmm3
 update_on:
 - alpm: jsoncpp
   provides: libjsoncpp.so

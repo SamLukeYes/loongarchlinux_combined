@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libnest2d'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - nlopt
 - polyclipping
-repo_makedepends:
-- boost
-- cmake
-- git
 update_on:
 - alpm: libnest2d
   source: archpkg

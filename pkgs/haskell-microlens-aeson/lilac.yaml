@@ -9,20 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-microlens-aes
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-aeson
-- haskell-attoparsec
+- ghc: ghc-libs
 - haskell-hashable
-- haskell-microlens
 - haskell-scientific
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
-- haskell-tasty
-- haskell-tasty-hunit
+- haskell-attoparsec
+- haskell-microlens
 update_on:
 - alpm: haskell-aeson
   source: alpm

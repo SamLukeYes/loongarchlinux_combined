@@ -9,24 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''apparmor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- dejagnu
-- perl-locale-gettext
-- python-notify2
-- python-psutil
 repo_depends:
+- python
+- gcc: gcc-libs
 - audit
 - bash
-- gcc: gcc-libs
 - glibc
 - pam
-- python
-repo_makedepends:
-- apache
-- libxcrypt
-- python-setuptools
-- ruby
-- swig
 update_on:
 - alias: python
 - alpm: apparmor

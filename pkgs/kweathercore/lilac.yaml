@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kweathercore'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- qt5-location
 - ki18n
 - kholidays
-- qt5-location
-repo_makedepends:
-- extra-cmake-modules
-- doxygen
-- qt5-tools
 update_on:
 - alpm: kweathercore
   source: archpkg

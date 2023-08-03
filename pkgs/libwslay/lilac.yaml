@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libwslay'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cunit
 repo_depends: []
-repo_makedepends:
-- python-sphinx
 update_on:
 - alpm: libwslay
   source: archpkg

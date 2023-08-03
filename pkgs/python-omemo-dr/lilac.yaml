@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-omemo-dr'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-cryptography
 - protobuf: python-protobuf
-repo_makedepends:
-- python-setuptools
-- python-build
-- python-installer
-- python-wheel
+- python-cryptography
 update_on:
 - alpm: python-omemo-dr
   source: archpkg

@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openpgl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - onetbb
-repo_makedepends:
-- cmake
-- make
-- gcc
-- ninja
 update_on:
 - alpm: openpgl
   source: archpkg

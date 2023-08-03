@@ -9,20 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pendulum'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-babel
-- python-freezegun
-- python-pytest
-- python-pytz
 repo_depends:
-- python
-- python-dateutil
 - python-pytzdata
-repo_makedepends:
-- python-build
-- python-installer
-- python-poetry-core
-- python-wheel
+- python-dateutil
+- python
 update_on:
 - alias: python
 - alpm: python-pendulum

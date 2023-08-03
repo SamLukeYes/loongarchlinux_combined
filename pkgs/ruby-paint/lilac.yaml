@@ -7,14 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-paint'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- ruby
 - ruby-rspec
 - ruby-rainbow
+- ruby
 - ruby-term-ansicolor
-repo_makedepends:
-- ruby-rake
 update_on:
 - alias: ruby
 - alpm: ruby-paint

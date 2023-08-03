@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-patron'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ruby
 - curl
-repo_makedepends:
-- git
-- ruby-rake-compiler
-- ruby-rack
-- ruby-rspec
-- ruby-puma
-- ruby-yard
 update_on:
 - alias: ruby
 - alpm: ruby-patron

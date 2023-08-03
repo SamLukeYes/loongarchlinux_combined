@@ -7,25 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-b2sdk'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-mock
-- python-pytest-lazy-fixture
-- python-pyfakefs
 repo_depends:
-- python
-- python-logfury
 - python-requests
 - python-tqdm
-- python-urllib3
 - python-setuptools
+- python-logfury
 - python-importlib-metadata
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-setuptools-scm
-- python-wheel
+- python-urllib3
+- python
 update_on:
 - alias: python
 - alpm: python-b2sdk

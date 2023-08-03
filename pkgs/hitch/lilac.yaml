@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hitch'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lsof
 repo_depends:
-- libev
 - openssl
-repo_makedepends:
-- python-docutils
+- libev
 update_on:
 - alpm: hitch
   source: archpkg

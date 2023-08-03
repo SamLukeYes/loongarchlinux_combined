@@ -9,21 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vmpk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
 - libxcb
 - qt6-base
-- gcc: gcc-libs
 - glibc
-- libxcb
-- qt6-base
-repo_makedepends:
-- cmake
-- docbook-xsl
-- drumstick
-- qt6-tools
 update_on:
 - alpm: qt6-base
   source: alpm

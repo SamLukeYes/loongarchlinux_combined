@@ -9,21 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-basemap'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-matplotlib
 - geos
-- shapelib
-- python-numpy
-- python-pyproj
-repo_makedepends:
-- cython
-- python-setuptools
 - python-matplotlib
-- geos
 - shapelib
-- python-numpy
 - python-pyproj
+- python-numpy
 update_on:
 - alpm: python-basemap
   source: archpkg

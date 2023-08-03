@@ -9,19 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- clutter-gtk
 - gdk-pixbuf2
-- glib2
-- gtk3
-- libgee
 - wayland
-repo_makedepends:
-- git
-- meson
-- intltool
-- vala
+- libgee
+- clutter-gtk
+- gtk3
+- glib2
 update_on:
 - alpm: granite
   provides: libgranite.so

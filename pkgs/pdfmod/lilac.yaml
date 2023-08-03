@@ -7,16 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pdfmod'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk-sharp-2
 - poppler: poppler-glib
-repo_makedepends:
-- hyena
-- poppler-sharp
-- intltool
-- yelp-tools
-- dos2unix
 update_on:
 - alpm: pdfmod
   source: archpkg

@@ -7,16 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-ical-parser'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- perl-text-vfile-asdata
+- perl-datetime-format-ical
+- perl-io-string
 - perl-freezethaw
-- perl-io-string
-- perl-datetime-format-ical
-- perl-text-vfile-asdata
-repo_makedepends:
-- perl-io-string
-- perl-datetime-format-ical
-- perl-text-vfile-asdata
 update_on:
 - alpm: perl-ical-parser
   source: archpkg

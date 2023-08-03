@@ -9,14 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-zope-proxy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-zope-security
-- python-zope-testrunner
 repo_depends:
-- python-setuptools
 - python-zope-interface
-repo_makedepends:
-- git
+- python-setuptools
 update_on:
 - alpm: python-zope-proxy
   source: archpkg

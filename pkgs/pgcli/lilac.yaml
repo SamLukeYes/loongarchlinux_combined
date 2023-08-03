@@ -7,23 +7,20 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pgcli'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
-- python-sqlparse
-- python-psycopg
-- python-click
-- python-prompt_toolkit
+- python-setuptools
 - python-configobj
+- python-cli_helpers
+- python-pygments
+- python-click
+- python-sqlparse
 - python-pgspecial
 - python-setproctitle
-- python-cli_helpers
-- python-keyring
-- python-pygments
 - python-pendulum
-- python-setuptools
-repo_makedepends:
-- git
+- python-keyring
+- python-psycopg
+- python
+- python-prompt_toolkit
 update_on:
 - alias: python
 - alpm: pgcli

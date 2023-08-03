@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libaxc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libsignal-protocol-c
 - sqlite
+- libsignal-protocol-c
 - libgcrypt
 - glib2
-repo_makedepends: []
 update_on:
 - alpm: libaxc
   source: archpkg

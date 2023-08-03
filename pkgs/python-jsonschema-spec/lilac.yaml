@@ -7,17 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-jsonschema-spec'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- python-jsonschema
 - python-pathable
-- python-yaml
+- python-jsonschema
 - python-typing_extensions
-repo_makedepends:
-- python-build
-- python-installer
-- python-poetry-core
+- python-yaml
 update_on:
 - alpm: python-jsonschema-spec
   source: archpkg

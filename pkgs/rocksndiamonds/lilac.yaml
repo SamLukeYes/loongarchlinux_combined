@@ -9,21 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rocksndiamonds'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- sdl2
-- sdl2_image
 - sdl2_mixer
-- sdl2_net
-- sdl2
 - sdl2_image
-- sdl2_mixer
+- sdl2
 - sdl2_net
 - rocksndiamonds-data
 - rocksndiamonds-contrib
-repo_makedepends:
-- unzip
-- p7zip
 update_on:
 - alpm: rocksndiamonds
   source: archpkg

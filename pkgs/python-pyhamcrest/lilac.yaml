@@ -7,16 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pyhamcrest'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
 - python
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-hatchling
-- python-hatch-vcs
 update_on:
 - alias: python
 - alpm: python-pyhamcrest

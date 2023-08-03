@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lablgtk2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk2
 - librsvg
-repo_makedepends:
-- ocaml
-- ocaml: ocaml-compiler-libs
-- camlp5
-- camlp-streams
-- ocaml-findlib
+- gtk2
 update_on:
 - alpm: lablgtk2
   source: archpkg

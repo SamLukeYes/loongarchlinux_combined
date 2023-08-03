@@ -9,22 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rapidyaml'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - glibc
-- gcc: gcc-libs
-- glibc
 - python
-repo_makedepends:
-- cmake
-- git
-- ninja
-- python-setuptools
-- python-setuptools-git
-- python-setuptools-scm
-- python-cmake-build-extension
-- swig
 update_on:
 - alias: python
 - alpm: rapidyaml

@@ -9,26 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mapnik'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- cairo
-- freetype2
-- gdal
-- harfbuzz
-- icu
 - libjpeg-turbo
 - libpng
 - libtiff
-- libwebp
-- libxml2
 - postgresql: postgresql-libs
-- proj
-- sqlite
 - zlib
-repo_makedepends:
-- boost
-- scons
+- proj
+- gdal
+- freetype2
+- harfbuzz
+- libxml2
+- sqlite
+- libwebp
+- cairo
+- boost: boost-libs
+- icu
 update_on:
 - alias: icu
 - alpm: mapnik

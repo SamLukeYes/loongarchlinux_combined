@@ -9,45 +9,35 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plasma-workspace'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- knotifyconfig
-- ksystemstats
-- ktexteditor
-- libqalculate
-# - kde-cli-tools
 - appstream: appstream-qt
-- xorg-xrdb
-- xorg-xsetroot
-- kactivitymanagerd
-- kholidays
-- xorg-xmessage
-- milou
-- prison
 - kwin
-- plasma-integration
-- kpeople
-- kactivities-stats
-- kquickcharts
-- kuserfeedback
 - kpipewire
-- accountsservice
-- kio-extras
-- kio-fuse
-- qt5-tools
+- kactivities-stats
+- kde-cli-tools
+- kactivitymanagerd
+- kquickcharts
 - oxygen-sounds
+- ktexteditor
+- kpeople
+- prison
+- kio-extras
+- xorg-xsetroot
 - qt5-wayland
-- kwayland-integration
+- knotifyconfig
+- libqalculate
+- milou
+- ksystemstats
+- plasma-integration
+- xorg-xmessage
+- qt5-tools
+- accountsservice
 - xorg-xwayland
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- gpsd
-- baloo
-- networkmanager-qt
-- plasma-wayland-protocols
-- wayland-protocols
-- kunitconversion
+- kholidays
+- xorg-xrdb
+- kwayland-integration
+- kuserfeedback
+- kio-fuse
 update_on:
 - alpm: plasma-workspace
   source: archpkg

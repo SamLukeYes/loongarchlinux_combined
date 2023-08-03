@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
-- libevent
-- bash
-- libseccomp
 - zstd
+- libseccomp
+- libevent
 - libcap
+- bash
+- openssl
 - systemd: systemd-libs
-repo_makedepends:
-- ca-certificates
-- systemd
 update_on:
 - alpm: systemd-libs
   provides: libsystemd.so

@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''biblesync'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - util-linux: util-linux-libs
-repo_makedepends:
-- cmake
 update_on:
 - alpm: biblesync
   source: archpkg

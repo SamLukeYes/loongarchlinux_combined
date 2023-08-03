@@ -9,19 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libopenshot-audio'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - alsa-lib
 - gcc: gcc-libs
 - glibc
-- zlib
-repo_makedepends:
-- alsa-lib
-- cmake
-- doxygen
-- freetype2
-- libx11
-- python
 - zlib
 update_on:
 - alpm: libopenshot-audio

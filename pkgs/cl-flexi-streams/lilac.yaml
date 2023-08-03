@@ -7,12 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''cl-flexi-streams'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - cl-trivial-gray-streams
-repo_makedepends:
-- git
-- sbcl
 update_on:
 - alpm: cl-flexi-streams
   source: archpkg

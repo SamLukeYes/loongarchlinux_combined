@@ -7,30 +7,26 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pwntools'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
-- python-mako
-- python-pyelftools
-- capstone: python-capstone
-- ropgadget
-- python-pyserial
 - python-requests
-- python-pip
+- unicorn: python-unicorn
+- capstone: python-capstone
+- python-colored-traceback
 - python-pygments
+- python-mako
 - python-pysocks
 - python-dateutil
-- python-packaging
-- python-psutil
-- python-intervaltree
-- python-sortedcontainers
-- unicorn: python-unicorn
 - python-paramiko
-- python-colored-traceback
+- python-sortedcontainers
+- python-packaging
 - python-rpyc
+- python-intervaltree
+- python-psutil
+- python-pyelftools
+- python
 - ropgadget
-repo_makedepends:
-- python-setuptools
+- python-pyserial
+- python-pip
 update_on:
 - alias: python
 - alpm: python-pwntools

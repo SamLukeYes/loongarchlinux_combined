@@ -9,22 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''livewallpaper'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glew
-- libpeas
-- python-cairo
-- pygobject: python-gobject
-- pyopengl: python-opengl
 - python-pillow
+- pyopengl: python-opengl
+- libpeas
 - upower
-repo_makedepends:
-- cmake
-- gobject-introspection
-- intltool
-- ninja
-- vala
-- xcftools
+- glew
+- pygobject: python-gobject
+- python-cairo
 update_on:
 - alpm: livewallpaper
   source: archpkg

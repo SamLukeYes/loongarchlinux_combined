@@ -7,18 +7,15 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pdfarranger'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
-- pygobject: python-gobject
-- python-cairo
 - python-pikepdf
 - python-dateutil
-- ghostscript
 - python-setuptools
+- ghostscript
+- gtk3
 - poppler: poppler-glib
-repo_makedepends:
-- python-distutils-extra
+- pygobject: python-gobject
+- python-cairo
 update_on:
 - alpm: pdfarranger
   source: archpkg

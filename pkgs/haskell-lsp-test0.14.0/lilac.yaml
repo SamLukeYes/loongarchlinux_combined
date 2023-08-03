@@ -9,29 +9,24 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lsp-test0.14.
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-diff
+- haskell-unordered-containers
 - haskell-glob
+- haskell-lens
 - haskell-aeson
-- haskell-aeson-pretty
-- haskell-ansi-terminal
+- ghc: ghc-libs
 - haskell-async
-- haskell-conduit
+- haskell-diff
+- haskell-unliftio
+- haskell-parser-combinators
+- haskell-ansi-terminal
 - haskell-conduit-parse
 - haskell-data-default
-- haskell-lens
-- haskell-lsp1.4
+- haskell-conduit
+- haskell-aeson-pretty
 - haskell-lsp-types1.4
-- haskell-parser-combinators
+- haskell-lsp1.4
 - haskell-some
-- haskell-unliftio
-- haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hspec
 update_on:
 - alpm: haskell-diff
   source: alpm

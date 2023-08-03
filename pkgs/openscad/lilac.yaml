@@ -9,28 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openscad'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cmake
-- xorgproto
-- libx11
-- python
 repo_depends:
+- opencsg
+- libzip
 - qt5-base
 - qscintilla: qscintilla-qt5
-- opencsg
+- libspnav
+- nettle
+- qt5-multimedia
+- mpfr
+- lib3mf-1
 - boost: boost-libs
 - shared-mime-info
-- libzip
-- qt5-multimedia
-- libspnav
-- lib3mf-1
-- nettle
-- mpfr
-repo_makedepends:
-- cgal
-- eigen
-- boost
-- imagemagick
 update_on:
 - alpm: qt5-base
   source: alpm

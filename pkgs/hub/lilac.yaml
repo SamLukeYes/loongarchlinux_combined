@@ -1,7 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - git
-repo_makedepends:
-- go
 update_on: []

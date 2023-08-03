@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgexiv2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - exiv2
 - glib2
-- exiv2
-- glib2
-repo_makedepends:
-- gobject-introspection
-- meson
-- pygobject: python-gobject
-- vala
 update_on:
 - alpm: glib2
   provides: libglib-2.0.so

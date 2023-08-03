@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libime'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
 - fcitx5
-repo_makedepends:
-- boost
-- extra-cmake-modules
-- ninja
-- python
+- boost: boost-libs
 update_on:
 - alpm: libime
   source: archpkg

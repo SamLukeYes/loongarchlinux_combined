@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dopewars'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends: []
-repo_makedepends:
-- git
-- alsa-lib
-- audiofile
-- gendesk
-- gtk3
-- sdl2
-- sdl2_mixer
 update_on:
 - alpm: dopewars
   source: archpkg

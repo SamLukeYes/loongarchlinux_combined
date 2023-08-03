@@ -9,22 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-change-ty
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- git
 repo_depends:
-- ghc: ghc-libs
-- haskell-ghcide
-- haskell-hls-plugin-api
-- haskell-lsp-types
-- haskell-regex-tdfa
-- haskell-syb
 - haskell-unordered-containers
-repo_makedepends:
-- ghc
-- uusi
-- haskell-quickcheck
-- haskell-hls-test-utils
-- haskell-lsp
+- haskell-syb
+- ghc: ghc-libs
+- haskell-lsp-types
+- haskell-hls-plugin-api
+- haskell-ghcide
+- haskell-regex-tdfa
 update_on:
 - alpm: haskell-ghcide
   source: alpm

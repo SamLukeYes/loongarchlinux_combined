@@ -7,13 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-globalid'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- ruby
 - ruby-activesupport
-repo_makedepends:
-- ruby-bundler
-- ruby-rake
+- ruby
 update_on:
 - alias: ruby
 - alpm: ruby-globalid

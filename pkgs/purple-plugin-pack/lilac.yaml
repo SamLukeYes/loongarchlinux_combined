@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''purple-plugin-pack'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - pidgin: libpurple
-repo_makedepends:
-- meson
-- pidgin
 update_on:
 - alpm: purple-plugin-pack
   source: archpkg

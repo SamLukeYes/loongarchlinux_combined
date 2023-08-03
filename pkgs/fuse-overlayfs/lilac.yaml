@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fuse-overlayfs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - fuse3
-repo_makedepends:
-- git
 update_on:
 - alpm: fuse-overlayfs
   source: archpkg

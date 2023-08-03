@@ -9,56 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ambix'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
-- fftw
-- freetype2
-- gcc: gcc-libs
-- glibc
-- libglvnd
 - libsoxr
-- libx11
-- libxext
-- zita-convolver
 - alsa-lib
-- fftw
-- freetype2
-- gcc: gcc-libs
 - glibc
-- libglvnd
-- libsoxr
-- libx11
-- libxext
+- gcc: gcc-libs
 - zita-convolver
 - fftw
-- freetype2
-- gcc: gcc-libs
-- glibc
 - libglvnd
-- libsoxr
-- libx11
 - libxext
-- zita-convolver
-repo_makedepends:
-- alsa-lib
-- cmake
-- eigen
-- fftw
 - freetype2
-- freeglut
-- gcc: gcc-libs
-- glibc
-- gendesk
-- glu
-- libglvnd
-- libsoxr
 - libx11
-- libxcursor
-- libxext
-- libxinerama
-- liblo
-- zita-convolver
 update_on:
 - alpm: fftw
   provides: libfftw3f.so

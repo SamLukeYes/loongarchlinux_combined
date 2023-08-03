@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jless'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- libxkbcommon
 - gcc: gcc-libs
 - libxcb
-- libxkbcommon
-repo_makedepends:
-- git
-- rust
-- python
 update_on:
 - alpm: jless
   source: archpkg

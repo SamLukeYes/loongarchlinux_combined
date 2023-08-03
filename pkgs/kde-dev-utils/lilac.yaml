@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kde-dev-utils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kparts
 - qt5-tools
-repo_makedepends:
-- extra-cmake-modules
+- kparts
 update_on:
 - alpm: kde-dev-utils
   source: archpkg

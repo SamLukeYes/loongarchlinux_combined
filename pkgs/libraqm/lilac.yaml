@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libraqm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- freetype2
 - fribidi
-repo_makedepends:
-- meson
-- gtk-doc
+- freetype2
 update_on:
 - alpm: libraqm
   source: archpkg

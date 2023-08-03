@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vapoursynth-plugin-de
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
 - glibc
 - vapoursynth
-repo_makedepends:
-- git
-- meson
 update_on:
 - alpm: vapoursynth-plugin-deblock
   source: archpkg

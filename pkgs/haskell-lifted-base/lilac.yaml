@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lifted-base''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-monad-control
+- ghc: ghc-libs
 - haskell-transformers-base
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-monad-control
   source: alpm

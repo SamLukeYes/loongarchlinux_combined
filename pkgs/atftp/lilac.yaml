@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''atftp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - pcre2
 - readline
-repo_makedepends: []
 update_on:
 - alias: readline
 - alpm: atftp

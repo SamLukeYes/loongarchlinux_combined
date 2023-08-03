@@ -9,56 +9,46 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pantry'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- git
-- mercurial
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-ansi-terminal
-- haskell-casa-client
-- haskell-casa-types
-- haskell-conduit
-- haskell-conduit-extra
+- haskell-unordered-containers
 - haskell-cryptonite
-- haskell-cryptonite-conduit
-- haskell-digest
-- haskell-filelock
-- haskell-generic-deriving
+- haskell-aeson
+- haskell-casa-client
 - haskell-hackage-security
-- haskell-hpack
-- haskell-http-client
-- haskell-http-client-tls
-- haskell-http-conduit
-- haskell-http-download
 - haskell-http-types
+- haskell-rio
 - haskell-memory
-- haskell-mono-traversable
-- haskell-network-uri
-- haskell-path
-- haskell-path-io
-- haskell-persistent
+- haskell-ansi-terminal
+- haskell-casa-types
 - haskell-persistent-sqlite
 - haskell-primitive
+- haskell-mono-traversable
 - haskell-resourcet
-- haskell-rio
-- haskell-rio-orphans
+- haskell-cryptonite-conduit
 - haskell-rio-prettyprint
-- haskell-tar-conduit
+- haskell-network-uri
 - haskell-text-metrics
+- haskell-digest
+- haskell-http-download
 - haskell-unix-compat
-- haskell-unliftio
-- haskell-unordered-containers
-- haskell-vector
-- haskell-yaml
+- haskell-filelock
+- haskell-tar-conduit
+- ghc: ghc-libs
+- haskell-path-io
+- haskell-http-client
 - haskell-zip-archive
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hedgehog
-- haskell-hspec
-- haskell-quickcheck
-- haskell-raw-strings-qq
+- haskell-hpack
+- haskell-persistent
+- haskell-rio-orphans
+- haskell-path
+- haskell-vector
+- haskell-conduit
+- haskell-conduit-extra
+- haskell-http-client-tls
+- haskell-yaml
+- haskell-http-conduit
+- haskell-generic-deriving
+- haskell-unliftio
 update_on:
 - alpm: haskell-aeson
   source: alpm

@@ -9,19 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libdbusmenu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- gtk3
 - glib2
 - gtk2
-- gtk3
-repo_makedepends:
-- gnome-common
-- gobject-introspection
-- gtk2
-- gtk3
-- intltool
-- vala
-- valgrind
 update_on:
 - alpm: libdbusmenu
   source: archpkg

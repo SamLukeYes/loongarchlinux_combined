@@ -9,30 +9,26 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-rebase'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-bifunctors
-- haskell-contravariant
-- haskell-comonad
-- haskell-dlist
-- haskell-either
+- haskell-unordered-containers
 - haskell-groups
+- haskell-uuid-types
+- haskell-vector-instances
+- haskell-contravariant
+- haskell-void
+- haskell-bifunctors
 - haskell-hashable
+- haskell-semigroupoids
 - haskell-invariant
 - haskell-profunctors
+- ghc: ghc-libs
 - haskell-scientific
+- haskell-either
+- haskell-comonad
+- haskell-dlist
 - haskell-selective
-- haskell-semigroupoids
 - haskell-time-compat
-- haskell-unordered-containers
-- haskell-uuid-types
 - haskell-vector
-- haskell-vector-instances
-- haskell-void
-repo_makedepends:
-- ghc
-- uusi
 update_on:
 - alpm: haskell-bifunctors
   source: alpm

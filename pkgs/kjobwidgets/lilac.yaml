@@ -9,17 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kjobwidgets'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - kcoreaddons
-- kwidgetsaddons
 - qt5-x11extras
-repo_makedepends:
-- extra-cmake-modules
-- qt5-tools
-- qt5-doc
-- clang
-- doxygen
+- kwidgetsaddons
 update_on:
 - alpm: kjobwidgets
   source: archpkg

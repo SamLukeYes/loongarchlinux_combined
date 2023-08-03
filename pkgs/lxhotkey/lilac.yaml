@@ -9,18 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxhotkey'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk2
 - gtk3
-- libfm
-- gtk2
-- libfm
-- gtk3
-- libfm
 - libunistring
-repo_makedepends:
-- intltool
+- libfm
+- gtk2
 update_on:
 - alpm: lxhotkey
   source: archpkg

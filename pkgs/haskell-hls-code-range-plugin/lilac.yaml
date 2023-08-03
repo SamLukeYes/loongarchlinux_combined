@@ -9,25 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-code-rang
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- git
 repo_depends:
-- ghc: ghc-libs
+- haskell-lens
 - haskell-aeson
-- haskell-extra
-- haskell-ghcide
+- ghc: ghc-libs
 - haskell-hashable
 - haskell-hls-plugin-api
-- haskell-lens
 - haskell-lsp
 - haskell-semigroupoids
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hls-test-utils
-- haskell-lsp-test
-- haskell-tasty-hunit
+- haskell-ghcide
+- haskell-extra
 update_on:
 - alpm: haskell-aeson
   source: alpm

@@ -1,8 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- ffmpeg
 - libpng
-repo_makedepends:
-- cmake
+- ffmpeg
 update_on: []

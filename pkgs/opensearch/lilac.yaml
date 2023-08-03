@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opensearch'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - java11-openjdk: jre11-openjdk-headless
-- systemd
 - libxml2
-repo_makedepends:
-- java11-openjdk: jdk11-openjdk
-- unzip
+- systemd
 update_on:
 - alpm: opensearch
   source: archpkg

@@ -9,19 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gitlab-runner'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- git
 - ca-certificates
 - curl
-- git
-- glibc
 - tar
-repo_makedepends:
-- git
-- go
-- git
-- mercurial
-- gox
+- glibc
 update_on:
 - alpm: gitlab-runner
   source: archpkg

@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-inline-java'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - perl
 - perl-inline
-repo_makedepends:
-- perl-file-which
 update_on:
 - alias: perl
 - alpm: perl-inline-java

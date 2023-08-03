@@ -9,30 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mtxclient'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- gtest
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- gcc: gcc-libs
-- glibc
-- coeurl
-- fmt
-- libolm
-- openssl
 - re2
-- spdlog
-repo_makedepends:
-- cmake
-- coeurl
 - fmt
+- gcc: gcc-libs
 - libolm
-- meson
-- nlohmann-json
-- openssl
-- re2
 - spdlog
-- git
+- coeurl
+- openssl
+- glibc
 update_on:
 - alpm: coeurl
   provides: libcoeurl.so

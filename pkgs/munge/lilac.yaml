@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''munge'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- procps-ng
 repo_depends:
-- openssl
 - bzip2
+- openssl
 - zlib
-repo_makedepends:
-- systemd
 update_on:
 - alpm: munge
   source: archpkg

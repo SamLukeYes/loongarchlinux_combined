@@ -1,10 +1,4 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - gtk3
-repo_makedepends:
-- appstream-glib
-- git
-- meson
-- yelp-tools
 update_on: []

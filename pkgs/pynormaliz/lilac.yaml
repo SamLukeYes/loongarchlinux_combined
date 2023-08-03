@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pynormaliz'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
 - normaliz
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python
 update_on:
 - alias: python
 - alpm: pynormaliz

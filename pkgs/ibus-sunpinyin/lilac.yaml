@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ibus-sunpinyin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - sunpinyin
 - sunpinyin-data
 - ibus
 - gtk3
 - pygobject: python-gobject
-repo_makedepends:
-- git
-- scons
 update_on:
 - alpm: ibus-sunpinyin
   source: archpkg

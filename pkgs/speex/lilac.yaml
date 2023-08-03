@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''speex'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gcc: gcc-libs
 - libogg
-- speexdsp
 - gcc: gcc-libs
-- libogg
 - speexdsp
-repo_makedepends:
-- git
 update_on:
 - alpm: libogg
   provides: libogg.so

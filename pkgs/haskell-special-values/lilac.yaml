@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-special-value
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-ieee754
+- ghc: ghc-libs
 - haskell-scientific
-repo_makedepends:
-- ghc
 update_on:
 - alpm: haskell-ieee754
   source: alpm

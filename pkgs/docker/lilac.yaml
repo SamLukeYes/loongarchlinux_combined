@@ -1,22 +1,13 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - glibc
-- bridge-utils
-- iproute2
 - lvm2: device-mapper
-- sqlite
-- systemd: systemd-libs
 - libseccomp
-- libtool
-- runc
+- iproute2
 - containerd
-repo_makedepends:
-- git
-- go
-- btrfs-progs
-- cmake
-- systemd
-- go-md2man
-- sed
+- libtool
+- sqlite
+- runc
+- bridge-utils
+- systemd: systemd-libs
 update_on: []

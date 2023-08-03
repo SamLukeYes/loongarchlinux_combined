@@ -9,17 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''squashfs-tools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - gcc: gcc-libs
-- lz4
-- lzo
 - xz
+- lz4
 - zlib
 - zstd
-repo_makedepends:
-- help2man
+- glibc
+- lzo
 update_on:
 - alpm: squashfs-tools
   source: archpkg

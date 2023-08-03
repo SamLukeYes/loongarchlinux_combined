@@ -9,19 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''angband'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- sdl2
-- sdl2_ttf
-- sdl2_image
 - sdl2_mixer
-- ncurses
+- sdl2_image
 - xorg-fonts-misc
+- ncurses
+- sdl2
 - xorg-mkfontscale
+- sdl2_ttf
 - hicolor-icon-theme
-repo_makedepends:
-- git
-- python-docutils
 update_on:
 - alpm: angband
   source: archpkg

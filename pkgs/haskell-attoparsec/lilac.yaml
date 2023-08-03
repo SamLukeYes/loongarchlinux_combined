@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-attoparsec'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ghc: ghc-libs
 - haskell-scientific
-repo_makedepends:
-- ghc
-- haskell-quickcheck
-- haskell-quickcheck-unicode
-- haskell-tasty
-- haskell-tasty-quickcheck
-- haskell-vector
 update_on:
 - alpm: haskell-scientific
   source: alpm

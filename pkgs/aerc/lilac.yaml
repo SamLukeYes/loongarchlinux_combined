@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aerc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- notmuch: notmuch-runtime
 - gawk
-repo_makedepends:
-- go
-- scdoc
+- notmuch: notmuch-runtime
 update_on:
 - alpm: aerc
   source: archpkg

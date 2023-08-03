@@ -9,24 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ktorrent'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- phonon: phonon-qt5
 - libktorrent
-- kcmutils
 - knotifyconfig
 - kparts
-- phonon: phonon-qt5
+- kcmutils
 - qt5-webengine
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- boost
-- plasma-workspace
-- kdnssd
-- taglib
-- syndication
-- kplotting
-- geoip
 update_on:
 - alpm: ktorrent
   source: archpkg

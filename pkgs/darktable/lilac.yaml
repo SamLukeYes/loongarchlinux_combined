@@ -9,37 +9,27 @@ pre_build_script: '_G.files = download_official_pkgbuild(''darktable'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pugixml
-- libjpeg-turbo
-- colord-gtk
-- libgphoto2
-- openexr
-- lensfun
+- libjxl
+- gmic
+- osm-gps-map
+- openmp
+- flickcurl
+- libavif
 - iso-codes
+- libjpeg-turbo
+- libsecret
+- openexr
+- graphicsmagick
+- openjpeg2
+- jasper
+- colord-gtk
+- pugixml
+- lua
+- libgphoto2
+- lensfun
 - zlib
 - exiv2
-- flickcurl
-- openjpeg2
-- graphicsmagick
-- lua
-- osm-gps-map
-- libsecret
-- openmp
-- gmic
-- libavif
-- jasper
-- libjxl
-repo_makedepends:
-- cmake
-- intltool
-- desktop-file-utils
-- llvm
-- clang
-- portmidi
-- python-jsonschema
-- libwebp
 update_on:
 - alias: lua
 - alpm: darktable

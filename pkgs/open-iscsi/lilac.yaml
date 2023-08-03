@@ -1,12 +1,8 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- systemd: systemd-libs
-- util-linux: util-linux-libs
 - kmod
-- openssl
 - open-isns
-repo_makedepends:
-- systemd
-- meson
+- util-linux: util-linux-libs
+- openssl
+- systemd: systemd-libs
 update_on: []

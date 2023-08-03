@@ -7,35 +7,27 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pynitrokey'')
 
   '
-repo_checkdepends:
-- python-pytest
 repo_depends:
-- libnitrokey
-- python
-- python-certifi
 - python-cffi
-- python-click
-- python-cryptography
-- python-dateutil
-- python-ecdsa
-- python-fido2
-- python-frozendict
-- python-intelhex
-- python-nkdfu
-- protobuf: python-protobuf
-- python-pyserial
-- python-pyusb
 - python-requests
-- python-spsdk
-- python-tlv8
-- python-tqdm
+- python-frozendict
+- python-nkdfu
+- python-intelhex
 - python-urllib3
-repo_makedepends:
-- git
-- python-build
-- python-flit-core
-- python-installer
-- python-wheel
+- python-certifi
+- python-dateutil
+- python-fido2
+- python-click
+- protobuf: python-protobuf
+- python-tlv8
+- libnitrokey
+- python-spsdk
+- python-cryptography
+- python-ecdsa
+- python
+- python-pyusb
+- python-tqdm
+- python-pyserial
 update_on:
 - alias: python
 - alpm: python-pynitrokey

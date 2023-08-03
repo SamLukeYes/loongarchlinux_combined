@@ -7,15 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-numpydoc'')
 
   '
-repo_checkdepends:
-- python-matplotlib
-- python-numpy
-- python-pytest-cov
 repo_depends:
 - python-sphinx
 - python-jinja
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-numpydoc
   source: archpkg

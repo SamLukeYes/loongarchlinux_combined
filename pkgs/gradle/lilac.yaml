@@ -7,18 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''gradle'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - bash
-- which
-- coreutils
-- findutils
 - sed
-repo_makedepends:
-- git
-- asciidoc
-- xmlto
-- groovy
+- which
+- findutils
+- coreutils
 update_on:
 - alpm: gradle
   source: archpkg

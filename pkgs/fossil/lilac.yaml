@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fossil'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- sqlite
 - openssl
 - zlib
-- sqlite
-repo_makedepends:
-- tcl
 update_on:
 - alpm: fossil
   source: archpkg

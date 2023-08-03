@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vamp-aubio-plugins'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- aubio
 - vamp-plugin-sdk
-repo_makedepends:
-- waf
+- aubio
 update_on:
 - alpm: vamp-aubio-plugins
   source: archpkg

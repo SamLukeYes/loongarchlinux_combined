@@ -9,36 +9,31 @@ pre_build_script: '_G.files = download_official_pkgbuild(''scribus'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
-- fontconfig
-- freetype2
+- libvisio
+- libqxp
+- libmspub
+- libzmf
+- cups: libcups
+- qt5-base
+- podofo
 - harfbuzz: harfbuzz-icu
+- openscenegraph
+- libxml2
+- librevenge
+- cairo
+- libpng
+- fontconfig
+- libfreehand
 - hunspell
+- freetype2
+- openssl
+- poppler
+- libtiff
+- zlib
 - lcms2
 - libcdr
-- cups: libcups
-- libfreehand
-- libmspub
 - libpagemaker
-- libpng
-- libqxp
-- librevenge
-- libtiff
-- libvisio
-- libxml2
-- libzmf
-- openscenegraph
-- openssl
-- podofo
-- poppler
-- qt5-base
-- zlib
-repo_makedepends:
-- cmake
-- mesa
-- qt5-tools
 update_on:
 - alpm: icu
   provides: libicuuc.so

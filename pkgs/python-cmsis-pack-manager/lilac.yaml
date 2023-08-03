@@ -9,22 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-cmsis-pack-man
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- python-hypothesis
-- python-jinja
-- python-pytest
 repo_depends:
+- python-cffi
 - gcc: gcc-libs
+- python-appdirs
 - glibc
 - python
-- python-appdirs
-- python-cffi
-repo_makedepends:
-- python-build
-- python-installer
-- maturin: python-maturin
-- python-wheel
-- rust
 update_on:
 - alias: python
 - alpm: python-cmsis-pack-manager

@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kwordquiz'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - knotifyconfig
-- libkeduvocdocument
 - knewstuff
+- libkeduvocdocument
 - phonon: phonon-qt5
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
 update_on:
 - alpm: kwordquiz
   source: archpkg

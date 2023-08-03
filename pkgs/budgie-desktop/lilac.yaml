@@ -1,22 +1,15 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- budgie-screensaver
-- budgie-control-center
-- gnome-bluetooth
-- gnome-menus
-- gnome-session
-- libgee
-- libpeas
-- libwnck3
 - mutter43
 - accountsservice
-- ibus
+- gnome-session
+- libgee
+- budgie-control-center
+- budgie-screensaver
+- libpeas
 - zenity
-repo_makedepends:
-- gobject-introspection
-- intltool
-- meson
-- sassc
-- vala
+- ibus
+- gnome-bluetooth
+- libwnck3
+- gnome-menus
 update_on: []

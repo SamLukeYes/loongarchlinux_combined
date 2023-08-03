@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-storablevecto
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-non-negative
-- haskell-utility-ht
-- haskell-unsafe
-- haskell-quickcheck
 - haskell-syb
-repo_makedepends:
-- ghc
-- haskell-random
+- ghc: ghc-libs
+- haskell-utility-ht
+- haskell-quickcheck
+- haskell-non-negative
+- haskell-unsafe
 update_on:
 - alpm: haskell-non-negative
   source: alpm

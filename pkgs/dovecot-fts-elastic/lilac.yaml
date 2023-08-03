@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dovecot-fts-elastic''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - dovecot
 - json-c
-repo_makedepends: []
 update_on:
 - alpm: dovecot-fts-elastic
   source: archpkg

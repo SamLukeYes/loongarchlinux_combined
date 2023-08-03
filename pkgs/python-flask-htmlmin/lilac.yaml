@@ -7,17 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-flask-htmlmin'')
 
   '
-repo_checkdepends:
-- python-pytest
-- python-pytest-cov
-- python-pytest-runner
-- python-pip
 repo_depends:
+- python-htmlmin
 - python
 - python-flask
-- python-htmlmin
-repo_makedepends:
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-flask-htmlmin

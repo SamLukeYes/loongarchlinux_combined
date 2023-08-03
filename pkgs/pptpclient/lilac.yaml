@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pptpclient'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ppp
 - iproute2
 - perl
-repo_makedepends: []
+- ppp
 update_on:
 - alias: perl
 - alpm: pptpclient

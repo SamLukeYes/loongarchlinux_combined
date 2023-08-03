@@ -7,19 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-i18n'')
 
   '
-repo_checkdepends:
-- ruby-bundler
-- ruby-activesupport
-- ruby-json
-- ruby-minitest
-- ruby-mocha
-- ruby-rake
-- ruby-test_declarative
 repo_depends:
 - ruby
 - ruby-concurrent
-repo_makedepends:
-- ruby-rdoc
 update_on:
 - alias: ruby
 - alpm: ruby-i18n

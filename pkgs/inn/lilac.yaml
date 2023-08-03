@@ -9,20 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''inn'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- openssl
 - perl-mime-tools
-- perl-gd
-- pam
 - db5.3
-repo_makedepends:
-- make
-- bison
-- python
-- gcc
-- libsasl
-- sqlite
+- perl-gd
+- openssl
+- pam
 update_on:
 - alpm: inn
   source: archpkg

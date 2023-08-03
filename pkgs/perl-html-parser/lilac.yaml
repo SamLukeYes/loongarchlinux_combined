@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-html-parser'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-html-tagset
 - perl-http-message
 - perl-uri
-repo_makedepends: []
+- perl-html-tagset
 update_on:
 - alpm: perl-html-parser
   source: archpkg

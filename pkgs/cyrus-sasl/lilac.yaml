@@ -9,36 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cyrus-sasl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gdbm
-- glibc
-- krb5
-- openldap: libldap
-- libsasl
-- openssl
-- pam
-- glibc
-- krb5
-- libsasl
-- glibc
-- openldap: libldap
-- libsasl
-- libsasl
-- mariadb: mariadb-libs
-- postgresql: postgresql-libs
 - sqlite
-repo_makedepends:
-- gdbm
-- glibc
+- pam
+- postgresql: postgresql-libs
 - krb5
-- openldap: libldap
+- gdbm
 - libsasl
 - mariadb: mariadb-libs
 - openssl
-- pam
-- postgresql: postgresql-libs
-- sqlite
+- glibc
+- openldap: libldap
 update_on:
 - alpm: gdbm
   provides: libgdbm.so

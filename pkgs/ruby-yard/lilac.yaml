@@ -7,14 +7,10 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-yard'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- ruby-webrick
 - ruby
 - ruby-rdoc
-- ruby-webrick
-repo_makedepends:
-- ruby-rake
-- ruby-samus
 update_on:
 - alias: ruby
 - alpm: ruby-yard

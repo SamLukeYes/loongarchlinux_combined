@@ -9,24 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dtkcore'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - deepin-desktop-base
-- dtkcommon
 - gcc: gcc-libs
-- glibc
-- gsettings-qt
-- icu
-- lshw
-- qt5-base
+- dtkcommon
 - uchardet
-repo_makedepends:
-- git
-- cmake
-- ninja
-- qt5-tools
-- gtest
-- doxygen
+- qt5-base
+- lshw
+- gsettings-qt
+- glibc
+- icu
 update_on:
 - alias: icu
 - alpm: qt5-base

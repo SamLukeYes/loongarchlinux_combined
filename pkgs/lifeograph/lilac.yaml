@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lifeograph'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - enchant
 - gtkmm3
 - libchamplain
-repo_makedepends:
-- meson
 update_on:
 - alpm: lifeograph
   source: archpkg

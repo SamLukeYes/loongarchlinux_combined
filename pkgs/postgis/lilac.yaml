@@ -9,19 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''postgis'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- postgresql
-- gdal
 - geos
 - json-c
-- libxml2
-- proj
 - protobuf-c
+- postgresql
 - pcre2
-repo_makedepends:
-- clang
-- llvm
+- proj
+- gdal
+- libxml2
 update_on:
 - alpm: postgis
   source: archpkg

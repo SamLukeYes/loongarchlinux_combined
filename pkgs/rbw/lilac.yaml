@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rbw'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - pinentry
-repo_makedepends:
-- rust
 update_on:
 - alpm: rbw
   source: archpkg

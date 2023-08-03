@@ -9,75 +9,40 @@ pre_build_script: '_G.files = download_official_pkgbuild(''audacity'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- alsa-lib
-- expat
-- flac
-- gcc: gcc-libs
-- glibc
-- gdk-pixbuf2
-- glib2
-- gtk3
-- hicolor-icon-theme
-- lame
 - libid3tag
-- libmad
-- libogg
-- libsbsms
-- libsndfile
 - libsoxr
-- libvorbis
-- libx11
-- lilv
-- mpg123
-- portaudio
+- alsa-lib
 - portmidi
-- portsmf
-- python
-- soundtouch
-- sqlite
-- suil
+- libsndfile
 - twolame
 - util-linux: util-linux-libs
-- wxwidgets: wxwidgets-gtk3
-- vamp-plugin-sdk
-- wavpack
-- wxwidgets: wxwidgets-common
-repo_makedepends:
-- alsa-lib
-- chrpath
-- cmake
-- ffmpeg
-- flac
-- gcc: gcc-libs
-- glibc
-- gdk-pixbuf2
 - glib2
-- gtk3
-- lame
-- libid3tag
-- libmad
+- hicolor-icon-theme
+- glibc
 - libogg
-- libsbsms
-- libsndfile
-- libsoxr
-- libvorbis
 - lilv
-- lv2
-- mpg123
-- portaudio
-- portmidi
-- portsmf
-- python
+- gcc: gcc-libs
 - soundtouch
-- sqlite
-- suil
-- twolame
-- wavpack
-- wxwidgets: wxwidgets-gtk3
+- mpg123
 - vamp-plugin-sdk
-- vst3sdk
+- wxwidgets: wxwidgets-common
+- portsmf
+- wxwidgets: wxwidgets-gtk3
+- expat
+- libsbsms
+- sqlite
+- libvorbis
+- python
+- wavpack
+- libmad
+- gdk-pixbuf2
+- suil
+- libx11
+- gtk3
+- flac
+- portaudio
+- lame
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

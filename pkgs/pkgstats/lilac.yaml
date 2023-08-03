@@ -1,11 +1,5 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
 - pacman
 - systemd
-repo_makedepends:
-- git
-- go
-- just
-- gcc
 update_on: []

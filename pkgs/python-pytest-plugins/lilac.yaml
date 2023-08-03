@@ -7,22 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-plugins'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-pytest
+- python-termcolor
+- python-mock
 - python-pytest
 - python-execnet
-- python-mock
-- python-termcolor
 - python-virtualenv
-repo_makedepends:
-- python-pytest
-- python-setuptools-git
-- python-pypandoc
-- python-execnet
-- python-mock
-- python-virtualenv
-- python-termcolor
 update_on:
 - alpm: python-pytest-plugins
   source: archpkg

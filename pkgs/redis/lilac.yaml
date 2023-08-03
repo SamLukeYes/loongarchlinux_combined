@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''redis'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- jemalloc
 - grep
-- shadow
+- jemalloc
 - systemd: systemd-libs
-repo_makedepends:
-- systemd
-- openssl
+- shadow
 update_on:
 - alpm: redis
   source: archpkg

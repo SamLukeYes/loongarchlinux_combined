@@ -7,23 +7,19 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ocrfeeder'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghostscript
-- goocanvas
-- gtk3
-- gtkspell3
-- iso-codes
-- pygobject: python-gobject
-- python-odfpy
-- python-pillow
-- python-pyenchant
-- python-reportlab
-- python-sane
 - unpaper
-repo_makedepends:
-- git
-- gnome-common
+- python-odfpy
+- python-sane
+- python-pillow
+- goocanvas
+- python-reportlab
+- python-pyenchant
+- ghostscript
+- iso-codes
+- gtkspell3
+- gtk3
+- pygobject: python-gobject
 update_on:
 - alpm: ocrfeeder
   source: archpkg

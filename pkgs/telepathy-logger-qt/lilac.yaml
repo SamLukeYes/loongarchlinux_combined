@@ -9,15 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-logger-qt''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- telepathy-qt
 - telepathy-logger
-repo_makedepends:
-- extra-cmake-modules
-- doxygen
-- python
-- qt5-tools
+- telepathy-qt
 update_on:
 - alpm: telepathy-logger-qt
   source: archpkg

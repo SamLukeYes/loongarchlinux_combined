@@ -9,24 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''stylish-haskell'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-file-embed
-- haskell-ghc-lib-parser
 - haskell-optparse-applicative
 - haskell-strict
 - haskell-syb
+- haskell-aeson
+- ghc: ghc-libs
 - haskell-hsyaml
+- haskell-ghc-lib-parser
 - haskell-hsyaml-aeson
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hunit
-- haskell-random
-- haskell-test-framework
-- haskell-test-framework-hunit
+- haskell-file-embed
 update_on:
 - alpm: haskell-aeson
   source: alpm

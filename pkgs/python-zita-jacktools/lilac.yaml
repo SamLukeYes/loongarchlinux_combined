@@ -9,31 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-zita-jacktools
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
-- python
-- python-zita-audiotools
-- gcc: gcc-libs
-- glibc
-- python
-- python-zita-audiotools
-- fftw
+- zita-jclient
 - libsndfile
 - zita-convolver
-- zita-jclient
 - zita-resampler
-repo_makedepends:
 - fftw
-- libsndfile
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
-- zita-convolver
-- zita-jclient
-- zita-resampler
+- python-zita-audiotools
+- glibc
+- python
 update_on:
 - alias: python
 - alias: python

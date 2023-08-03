@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openfortivpn'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
-- openssl
 - ppp
+- openssl
+- glibc
 - systemd: systemd-libs
-repo_makedepends:
-- git
-- systemd
 update_on:
 - alpm: openfortivpn
   source: archpkg

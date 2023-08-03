@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''adwaita-qt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-x11extras
-- qt6-base
-repo_makedepends:
-- cmake
 - qt5-x11extras
 - qt6-base
 update_on:

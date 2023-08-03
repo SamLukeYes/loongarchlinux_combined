@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zaz'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ftgl
 - sdl_image
-- libvorbis
 - libtheora
-repo_makedepends: []
+- libvorbis
 update_on:
 - alpm: zaz
   source: archpkg

@@ -9,44 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''element'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- gcc: gcc-libs
 - glibc
-- hicolor-icon-theme
+- gcc: gcc-libs
 - libx11
 - libxext
-- gcc: gcc-libs
-- glibc
 - hicolor-icon-theme
-- libx11
-- libxext
-repo_makedepends:
-- alsa-lib
-- boost
-- curl
-- freetype2
-- git
-- gtk3
-- imagemagick
-- juce
-- ladspa
-- ldoc
-- libxcomposite
-- libxcursor
-- libxinerama
-- lilv
-- lua
-- lv2
-- pango
-- readline
-- serd
-- sord
-- sratom
-- suil
-- waf
-- xorg-xrandr
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

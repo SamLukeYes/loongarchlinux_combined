@@ -9,14 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vorbis-tools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- curl
 - flac
 - libao
-- libvorbis
+- curl
 - opusfile
-repo_makedepends: []
+- libvorbis
 update_on:
 - alpm: vorbis-tools
   source: archpkg

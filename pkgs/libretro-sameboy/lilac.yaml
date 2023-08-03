@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libretro-sameboy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - libretro-core-info
-repo_makedepends:
-- clang
-- git
-- libglvnd
-- rgbds
-- sdl2
+- glibc
 update_on:
 - alpm: libretro-sameboy
   source: archpkg

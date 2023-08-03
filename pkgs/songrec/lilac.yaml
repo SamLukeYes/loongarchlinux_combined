@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''songrec'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
 - alsa-lib
 - openssl
 - ffmpeg
-repo_makedepends:
-- pkgconf
-- git
 update_on:
 - alpm: songrec
   source: archpkg

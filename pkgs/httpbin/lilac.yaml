@@ -7,18 +7,15 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''httpbin'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - python
-- python-flask
 - python-decorator
-- python-six
-- brotli: python-brotli
-- python-werkzeug
 - python-markupsafe
+- python-six
 - python-itsdangerous
-repo_makedepends:
-- python-setuptools
+- python-werkzeug
+- brotli: python-brotli
+- python-flask
 update_on:
 - alias: python
 - alpm: httpbin

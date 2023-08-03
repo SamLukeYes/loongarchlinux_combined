@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yosys'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- iverilog
 repo_depends:
-- abc
 - bash
-- boost: boost-libs
-- tcl
 - libffi
-- python
+- tcl
 - protobuf
-repo_makedepends:
-- boost
+- abc
+- boost: boost-libs
+- python
 update_on:
 - alias: python
 - alias: protobuf

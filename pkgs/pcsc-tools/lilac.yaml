@@ -9,12 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pcsc-tools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- pcsclite
 - pcsc-perl
 - glib-perl
-repo_makedepends: []
+- pcsclite
 update_on:
 - alpm: pcsc-tools
   source: archpkg

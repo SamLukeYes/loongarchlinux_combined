@@ -7,17 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pdftk'')
 
   '
-repo_checkdepends:
-- java-hamcrest
-- junit
-- junit-system-rules
-- poppler
 repo_depends:
-- bcprov
 - java-commons-lang
-repo_makedepends:
-- ant
-- strip-nondeterminism
+- bcprov
 update_on:
 - alpm: pdftk
   source: archpkg

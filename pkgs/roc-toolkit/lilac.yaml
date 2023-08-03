@@ -9,28 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''roc-toolkit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - gcc: gcc-libs
+- speexdsp
 - libunwind
+- openfec
 - libuv
 - glibc
-- gcc: gcc-libs
-- libunwind
-- libuv
-- openfec
-- speexdsp
-repo_makedepends:
-- alsa-lib
-- cpputest
-- gengetopt
-- pulseaudio: libpulse
-- openfec
-- ragel
-- scons
-- sox
-- speexdsp
 update_on:
 - alpm: openfec
   provides: libopenfec.so

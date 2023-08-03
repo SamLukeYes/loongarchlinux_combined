@@ -7,11 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-zope-deprecation'')
 
   '
-repo_checkdepends:
-- python-nose
 repo_depends:
 - python-setuptools
-repo_makedepends: []
 update_on:
 - alpm: python-zope-deprecation
   source: archpkg

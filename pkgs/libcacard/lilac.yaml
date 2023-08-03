@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libcacard'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- nss
 - glib2
-repo_makedepends: []
+- nss
 update_on:
 - alpm: libcacard
   source: archpkg

@@ -9,39 +9,27 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jami-daemon'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cppunit
 repo_depends:
-- glibc
-- opendht
-- gnutls
-- nettle
-- libgit2
-- libsecp256k1
-- ffmpeg
-- speexdsp
-- fmt
-- yaml-cpp
-- jsoncpp
-- zlib
 - alsa-lib
-- pulseaudio: libpulse
+- jsoncpp
+- speexdsp
+- gnutls
+- glibc
+- libsecp256k1
 - libupnp
+- ffmpeg
 - libnatpmp
-- openssl
-- webrtc-audio-processing
+- libgit2
+- nettle
 - systemd: systemd-libs
+- openssl
+- pulseaudio: libpulse
+- fmt
+- zlib
 - libarchive
-repo_makedepends:
-- git
-- cmake
-- perl
-- asio
-- msgpack-c
-- msgpack-cxx
-- restinio
-- systemd
-- meson
+- webrtc-audio-processing
+- opendht
+- yaml-cpp
 update_on:
 - alias: jsoncpp
 - alpm: jami-daemon

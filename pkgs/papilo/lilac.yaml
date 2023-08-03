@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''papilo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gmp
 - boost: boost-libs
-repo_makedepends:
-- cmake
-- boost
+- gmp
 update_on:
 - alpm: papilo
   source: archpkg

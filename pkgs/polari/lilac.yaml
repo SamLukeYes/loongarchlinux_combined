@@ -9,22 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''polari'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gjs
+- telepathy-mission-control
+- libsoup3
 - gtk4
 - libadwaita
-- libsoup3
-- telepathy-glib
-- telepathy-idle
+- gjs
 - telepathy-logger
-- telepathy-mission-control
-repo_makedepends:
-- appstream-glib
-- git
-- gobject-introspection
-- meson
-- yelp-tools
+- telepathy-idle
+- telepathy-glib
 update_on:
 - alpm: polari
   source: archpkg

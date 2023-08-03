@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdg-desktop-portal-gn
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gnome-desktop: gnome-desktop-4
 - gnome-keyring
+- gnome-desktop: gnome-desktop-4
 - libadwaita
-repo_makedepends:
-- git
-- meson
-- xdg-desktop-portal
 update_on:
 - alpm: xdg-desktop-portal-gnome
   source: archpkg

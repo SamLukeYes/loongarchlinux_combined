@@ -7,19 +7,16 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pysolfc'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-attrs
 - pysolfc-cardsets
-- python-configobj
-- python-pillow
-- python-pysol_cards
-- python-random2
 - python-six
-- tk
+- python-pillow
+- python-configobj
 - python-pygame
-repo_makedepends:
-- python-setuptools
+- python-random2
+- python-pysol_cards
+- tk
+- python-attrs
 update_on:
 - alpm: pysolfc
   source: archpkg

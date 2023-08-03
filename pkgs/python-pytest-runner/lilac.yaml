@@ -7,16 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-runner'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-pytest
 - python-setuptools
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-setuptools-scm
-- python-wheel
+- python-pytest
 update_on:
 - alpm: python-pytest-runner
   source: archpkg

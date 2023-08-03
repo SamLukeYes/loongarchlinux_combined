@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cairomm-1.16'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - cairo
 - libsigc++-3.0
-- cairo
-- libsigc++-3.0
-repo_makedepends:
-- git
-- meson
-- mm-common
 update_on:
 - alpm: libsigc++-3.0
   provides: libsigc-3.0.so

@@ -9,22 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdenlive'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- qt5-networkauth
-- knewstuff
-- knotifyconfig
 - kfilemetadata
+- breeze-icons
+- qt5-networkauth
+- knotifyconfig
 - purpose
 - mlt
-- breeze-icons
 - frei0r-plugins
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
-- v4l-utils
-- doxygen
-- qt5-tools
+- knewstuff
 update_on:
 - alpm: kdenlive
   source: archpkg

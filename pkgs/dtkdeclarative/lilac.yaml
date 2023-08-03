@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dtkdeclarative'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- qt5-quickcontrols2
 - dtkgui
 - qt5-declarative
-- qt5-quickcontrols2
-repo_makedepends:
-- qt5-tools
-- gtest
 update_on:
 - alpm: qt5-declarative
   source: alpm

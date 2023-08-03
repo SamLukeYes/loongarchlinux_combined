@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lnav'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - ncurses
-- curl
 - pcre2
+- curl
 - libarchive
-repo_makedepends:
-- openssh
 update_on:
 - alpm: lnav
   source: archpkg

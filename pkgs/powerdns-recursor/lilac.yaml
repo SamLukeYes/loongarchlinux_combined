@@ -9,20 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''powerdns-recursor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- boost: boost-libs
-- libsodium
-- systemd: systemd-libs
-- luajit
-- openssl
-- fstrm
 - net-snmp
-repo_makedepends:
-- boost
-- ragel
-- systemd
+- fstrm
+- luajit
+- libsodium
+- openssl
+- boost: boost-libs
+- systemd: systemd-libs
 update_on:
 - alpm: curl
   provides: libcurl.so

@@ -9,19 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gobject-introspection
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-mako
 - python-markdown
-repo_makedepends:
-- cairo
-- git
-- glib2
-- gtk-doc
-- meson
 - python-mako
-- python-markdown
-- python-sphinx
 update_on:
 - alpm: libffi
   provides: libffi.so

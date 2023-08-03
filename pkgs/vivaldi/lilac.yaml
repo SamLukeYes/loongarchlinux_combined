@@ -9,18 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vivaldi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gtk3
 - cups: libcups
-- nss
 - alsa-lib
 - libxss
+- nss
 - desktop-file-utils
-- shared-mime-info
+- gtk3
 - hicolor-icon-theme
-repo_makedepends:
-- w3m
+- shared-mime-info
 update_on:
 - alpm: vivaldi
   source: archpkg

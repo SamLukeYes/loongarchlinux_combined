@@ -9,14 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''goocanvas'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gtk3
-repo_makedepends:
-- git
-- gobject-introspection
-- gtk-doc
-- pygobject: python-gobject
 update_on:
 - alpm: goocanvas
   source: archpkg

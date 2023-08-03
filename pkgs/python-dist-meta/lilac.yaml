@@ -7,18 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-dist-meta'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
-- python-domdf-python-tools
 - python-handy-archives
 - python-packaging
-repo_makedepends:
-- git
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
+- python
+- python-domdf-python-tools
 update_on:
 - alias: python
 - alpm: python-dist-meta

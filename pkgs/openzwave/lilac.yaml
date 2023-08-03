@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openzwave'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
 - gcc: gcc-libs
-- glibc
 - libusb
 - tinyxml
-repo_makedepends:
-- doxygen
-- git
+- bash
+- glibc
 update_on:
 - alpm: hidapi
   provides: libhidapi-libusb.so

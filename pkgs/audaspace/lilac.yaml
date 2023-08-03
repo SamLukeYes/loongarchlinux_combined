@@ -9,24 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''audaspace'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ffmpeg
-- fftw
-- gcc: gcc-libs
-- glibc
 - pulseaudio: libpulse
+- gcc: gcc-libs
 - libsndfile
-- openal
 - sdl2
-repo_makedepends:
-- cmake
-- python
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
-- python-numpy
+- ffmpeg
+- openal
+- fftw
+- glibc
 update_on:
 - alpm: audaspace
   source: archpkg

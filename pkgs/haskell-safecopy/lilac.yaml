@@ -9,23 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-safecopy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
 - haskell-cereal
 - haskell-generic-data
-- haskell-old-time
+- ghc: ghc-libs
 - haskell-vector
-repo_makedepends:
-- ghc
-- uusi
-- haskell-hunit
-- haskell-lens
-- haskell-lens-action
-- haskell-quickcheck
-- haskell-quickcheck-instances
-- haskell-tasty
-- haskell-tasty-quickcheck
+- haskell-old-time
 update_on:
 - alpm: haskell-cereal
   source: alpm

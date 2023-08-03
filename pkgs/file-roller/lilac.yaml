@@ -9,22 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''file-roller'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- dconf
 - file
-- json-glib
-- libarchive
+- dconf
 - libhandy
+- libarchive
 - libportal: libportal-gtk3
+- json-glib
 - unzip
 - zip
-repo_makedepends:
-- appstream-glib
-- git
-- nautilus: libnautilus-extension
-- meson
-- yelp-tools
 update_on:
 - alpm: file-roller
   source: archpkg

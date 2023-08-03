@@ -9,19 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''emptyepsilon'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libglvnd
-- libx11
-- libxrandr
-- glibc
 - gcc: gcc-libs
+- libxrandr
 - sdl2
-repo_makedepends:
-- git
-- cmake
-- mesa
-- python
+- libx11
+- libglvnd
+- glibc
 update_on:
 - alpm: emptyepsilon
   source: archpkg

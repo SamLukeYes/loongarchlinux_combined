@@ -7,11 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''bpytop'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python
 - python-psutil
-repo_makedepends: []
+- python
 update_on:
 - alias: python
 - alpm: bpytop

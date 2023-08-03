@@ -9,18 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''balsa'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- gmime3
-- webkit2gtk
 - libical
-- libnotify
-- gpgme
-- gtksourceview4
+- gmime3
 - gspell
-repo_makedepends:
-- yelp-tools
-- intltool
+- gpgme
+- libnotify
+- webkit2gtk
+- gtksourceview4
 update_on:
 - alpm: balsa
   source: archpkg

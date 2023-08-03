@@ -9,13 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''btfs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- fuse2
 - libtorrent-rasterbar
 - curl
-repo_makedepends:
-- boost
+- fuse2
 update_on:
 - alpm: btfs
   source: archpkg

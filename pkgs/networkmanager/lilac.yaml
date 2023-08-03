@@ -9,59 +9,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''networkmanager'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- libx11
 repo_depends:
-- audit
-- bluez: bluez-libs
-- curl
-- iproute2
 - jansson
-- modemmanager: libmm-glib
-- libndp
 - libnewt
-- libpsl
-- libteam
-- mobile-broadband-provider-info
-- wpa_supplicant
-- glib2
-- nss
+- curl
 - systemd: systemd-libs
-- util-linux: util-linux-libs
-repo_makedepends:
-- audit
-- bluez: bluez-libs
-- curl
-- dhcp: dhclient
-- dhcpcd
-- dnsmasq
-- git
-- glib2: glib2-docs
-- gobject-introspection
-- gtk-doc
-- iproute2
-- iptables: iptables-nft
-- iwd
-- jansson
-- modemmanager: libmm-glib
-- libndp
-- libnewt
 - libpsl
-- libteam
-- meson
-- modemmanager
-- nftables
+- audit
 - nss
-- openresolv
-- pacrunner
-- perl-yaml
-- polkit
-- ppp
-- pygobject: python-gobject
-- systemd
-- vala
-- vala
+- bluez: bluez-libs
+- iproute2
+- libteam
+- modemmanager: libmm-glib
+- util-linux: util-linux-libs
+- mobile-broadband-provider-info
+- glib2
 - wpa_supplicant
+- libndp
 update_on:
 - alpm: networkmanager
   source: archpkg

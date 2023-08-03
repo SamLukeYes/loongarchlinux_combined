@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''apko'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- apk-tools
 - alpine-keyring
-repo_makedepends:
-- go
+- apk-tools
 update_on:
 - alpm: apko
   source: archpkg

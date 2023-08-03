@@ -9,23 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtkmm3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
 repo_depends:
-- gtk3
-- pangomm
 - atkmm
 - gtk3
 - pangomm
-- atkmm
-repo_makedepends:
-- git
-- meson
-- mm-common
-- glibmm: glibmm-docs
-- cairomm: cairomm-docs
-- pangomm: pangomm-docs
-- atkmm: atkmm-docs
 update_on:
 - alpm: libsigc++
   provides: libsigc-2.0.so

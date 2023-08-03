@@ -9,16 +9,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opendbx'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libfbclient
-- mariadb: mariadb-libs
-- postgresql: postgresql-libs
-- sqlite
 - freetds
-repo_makedepends:
-- doxygen
-- docbook2x
+- postgresql: postgresql-libs
+- libfbclient
+- sqlite
+- mariadb: mariadb-libs
 update_on:
 - alpm: opendbx
   source: archpkg

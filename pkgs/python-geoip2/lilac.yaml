@@ -7,20 +7,12 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-geoip2'')
 
   '
-repo_checkdepends:
-- python-mocket
-- python-pytest
 repo_depends:
-- python
-- python-aiohttp
-- python-maxminddb
 - python-requests
+- python-aiohttp
 - python-urllib3
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-maxminddb
+- python
 update_on:
 - alias: python
 - alpm: python-geoip2

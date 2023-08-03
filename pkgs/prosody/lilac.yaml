@@ -9,16 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''prosody'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- lua
 - luasec: lua-sec
-- luasocket: lua-socket
+- libidn
 - luaexpat: lua-expat
 - lua-filesystem
-- libidn
 - openssl
-repo_makedepends: []
+- luasocket: lua-socket
+- lua
 update_on:
 - alias: lua
 - alpm: prosody

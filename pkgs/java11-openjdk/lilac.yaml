@@ -1,48 +1,19 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- ca-certificates: ca-certificates-utils
-- nss
-- libjpeg-turbo
-- lcms2
-- libnet
-- freetype2
-- harfbuzz
 - glibc
-- gcc: gcc-libs
-- giflib
-- glibc
-- gcc: gcc-libs
-- libpng
-- java-common: java-environment-common
 - hicolor-icon-theme
-- elfutils: libelf
-- glibc
 - gcc: gcc-libs
-repo_makedepends:
-- cpio
-- unzip
-- zip
-- elfutils: libelf
-- cups: libcups
-- libx11
-- libxrender
-- libxtst
-- libxt
-- libxext
-- libxrandr
-- alsa-lib
-- graphviz
-- freetype2
 - libjpeg-turbo
-- giflib
-- libpng
-- lcms2
-- libnet
-- bash
 - harfbuzz
-- glibc
-- gcc: gcc-libs
+- libpng
+- freetype2
+- java-common: java-environment-common
+- ca-certificates: ca-certificates-utils
+- elfutils: libelf
+- libnet
+- nss
+- lcms2
+- giflib
 update_on:
 - alpm: darktable
   provides: libjpeg.so

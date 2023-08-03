@@ -9,34 +9,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sssd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- check
-- cmocka
-- libfaketime
-- openssh
-- softhsm
 repo_depends:
-- bind
-- c-ares
-- cyrus-sasl: cyrus-sasl-gssapi
-- ding-libs
 - libnl
-- libunistring
-- samba: smbclient
-- nfs-utils: nfsidmap
-- jansson
 - jose
-- curl
+- cyrus-sasl: cyrus-sasl-gssapi
+- jansson
 - pcre2
-repo_makedepends:
-- docbook-xsl
-- doxygen
-- python
-- samba
-- systemd
-- tevent
-- ldb
-- bc
+- libunistring
+- curl
+- c-ares
+- samba: smbclient
+- ding-libs
+- bind
+- nfs-utils: nfsidmap
 update_on:
 - alpm: tevent
   provides: libtevent.so

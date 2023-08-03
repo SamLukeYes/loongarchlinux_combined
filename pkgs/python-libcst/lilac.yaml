@@ -1,20 +1,9 @@
 destsubdir: extra
-repo_checkdepends:
-- python-hypothesis
-- python-hypothesmith
-- python-pytest
 repo_depends:
-- glibc
-- gcc: gcc-libs
-- python
-- python-typing_extensions
 - python-typing_inspect
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools-rust
-- python-setuptools-scm
-- python-wheel
-- ufmt
+- gcc: gcc-libs
+- python-typing_extensions
+- glibc
+- python
 update_on:
 - alias: python

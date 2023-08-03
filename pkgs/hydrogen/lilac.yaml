@@ -9,42 +9,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hydrogen'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cppunit
 repo_depends:
-- gcc: gcc-libs
+- alsa-lib
+- portmidi
+- libsndfile
+- liblrdf
 - glibc
 - hicolor-icon-theme
-- qt5-base
-- qt5-svg
 - qt5-xmlpatterns
 - gcc: gcc-libs
-- glibc
-- hicolor-icon-theme
 - qt5-base
+- liblo
+- pulseaudio: libpulse
+- portaudio
+- libarchive
 - qt5-svg
-- qt5-xmlpatterns
-- alsa-lib
-- libarchive
-- liblo
-- liblrdf
-- pulseaudio: libpulse
-- libsndfile
-- portaudio
-- portmidi
-repo_makedepends:
-- alsa-lib
-- cmake
-- ladspa
-- libarchive
-- liblo
-- liblrdf
-- pulseaudio: libpulse
-- libsndfile
-- portaudio
-- portmidi
-- python
-- qt5-tools
 update_on:
 - alpm: qt5-base
   source: alpm

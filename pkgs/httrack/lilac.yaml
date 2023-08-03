@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''httrack'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- bash
-- xdg-utils
 - hicolor-icon-theme
 - openssl
-repo_makedepends: []
+- xdg-utils
+- bash
 update_on:
 - alpm: httrack
   source: archpkg

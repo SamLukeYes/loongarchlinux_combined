@@ -9,24 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qtcurve'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libx11
 - gcc: gcc-libs
-- gtk2
-- perl
 - qt5-svg
 - qt5-x11extras
 - kdelibs4support
-- frameworkintegration
-repo_makedepends:
-- extra-cmake-modules
+- perl
 - gtk2
-- kdelibs4support
-- kdoctools
 - frameworkintegration
-- kdesignerplugin
-- kinit
+- libx11
 update_on:
 - alias: perl
 - alpm: qtcurve

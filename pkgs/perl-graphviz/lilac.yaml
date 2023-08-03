@@ -7,17 +7,14 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-graphviz'')
 
   '
-repo_checkdepends:
-- perl-test-pod
 repo_depends:
-- graphviz
+- perl-xml-twig
 - perl-file-which
+- perl-parse-recdescent
+- perl-xml-xpath
 - perl-ipc-run
 - perl-libwww
-- perl-parse-recdescent
-- perl-xml-twig
-- perl-xml-xpath
-repo_makedepends: []
+- graphviz
 update_on:
 - alpm: perl-graphviz
   source: archpkg

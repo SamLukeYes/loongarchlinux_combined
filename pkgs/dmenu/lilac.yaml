@@ -9,16 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dmenu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- fontconfig
+- libxft
+- libxinerama
+- freetype2
+- libx11
 - glibc
 - coreutils
-- libx11
-- libxinerama
-- libxft
-- freetype2
-- fontconfig
-repo_makedepends: []
 update_on:
 - alpm: fontconfig
   provides: libfontconfig.so

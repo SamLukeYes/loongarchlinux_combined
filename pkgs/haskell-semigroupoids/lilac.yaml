@@ -9,22 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-semigroupoids
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-base-orphans
 - haskell-bifunctors
-- haskell-comonad
+- haskell-unordered-containers
+- ghc: ghc-libs
 - haskell-contravariant
-- haskell-distributive
 - haskell-hashable
 - haskell-tagged
+- haskell-distributive
+- haskell-comonad
 - haskell-transformers-compat
-- haskell-unordered-containers
-repo_makedepends:
-- ghc
-- haskell-cabal-doctest
-- haskell-doctest
+- haskell-base-orphans
 update_on:
 - alpm: haskell-base-orphans
   source: alpm

@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''massif-visualizer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- kparts
 - kdiagram
 - hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
-- kgraphviewer
-- qt5-xmlpatterns
+- kparts
 update_on:
 - alpm: massif-visualizer
   source: archpkg

@@ -9,19 +9,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-loca
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - accountsservice
-- glib2
-- gnome-desktop
-- gtk3
-- libgee
 - ibus: libibus
+- libgee
 - polkit
-repo_makedepends:
-- git
-- meson
-- vala
+- gtk3
+- gnome-desktop
+- glib2
 update_on:
 - alpm: granite
   provides: libgranite.so

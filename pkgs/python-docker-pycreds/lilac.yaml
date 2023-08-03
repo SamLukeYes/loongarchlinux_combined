@@ -7,14 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-docker-pycreds'')
 
   '
-repo_checkdepends:
-- python-pytest-runner
-- flake8
-- python-pytest-cov
 repo_depends:
 - python-six
-repo_makedepends:
-- python-setuptools
 update_on:
 - alpm: python-docker-pycreds
   source: archpkg

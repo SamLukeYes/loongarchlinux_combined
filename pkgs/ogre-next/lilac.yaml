@@ -9,27 +9,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ogre-next'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- freeimage
-- freetype2
-- libxaw
-- libxrandr
 - rapidjson
 - zziplib
-- sdl2
+- libxrandr
 - glu
-- tinyxml
+- sdl2
 - zlib
+- tinyxml
 - openvr
-repo_makedepends:
-- cmake
-- doxygen
-- graphviz
-- ttf-dejavu
-- mesa
-- ninja
-- cppunit
+- freetype2
+- libxaw
+- freeimage
 update_on:
 - alpm: ogre-next
   source: archpkg

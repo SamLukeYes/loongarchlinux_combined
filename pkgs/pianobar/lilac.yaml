@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pianobar'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- libao
 - ffmpeg
-- curl
 - json-c
-repo_makedepends: []
+- libao
+- curl
 update_on:
 - alpm: pianobar
   source: archpkg

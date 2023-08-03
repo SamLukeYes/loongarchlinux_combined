@@ -7,26 +7,22 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''gfeeds'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- libhandy
 - python-beautifulsoup4
-- python-cssselect
+- python-requests
 - python-dateutil
-- python-feedparser
-- pygobject: python-gobject
-- python-html5lib
-- python-listparser
+- python-pytz
 - python-lxml
 - python-pillow
+- python-cssselect
+- libhandy
 - python-pygments
-- python-pytz
 - python-readability-lxml
-- python-requests
+- python-html5lib
 - webkit2gtk
-repo_makedepends:
-- meson
-- gobject-introspection
+- python-listparser
+- python-feedparser
+- pygobject: python-gobject
 update_on:
 - alpm: gfeeds
   source: archpkg

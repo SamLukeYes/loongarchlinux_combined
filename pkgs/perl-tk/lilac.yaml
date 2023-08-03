@@ -9,15 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-tk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- xorg-server: xorg-server-xvfb
-- perl-devel-leak
-- perl-test-pod
 repo_depends:
+- perl
 - libpng
 - libx11
-- perl
-repo_makedepends: []
 update_on:
 - alias: perl
 - alpm: perl-tk

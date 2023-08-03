@@ -9,16 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dav1d'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - glibc
-repo_makedepends:
-- meson
-- ninja
-- nasm
-- doxygen
-- graphviz
-- xxhash
 update_on:
 - alpm: dav1d
   source: archpkg

@@ -9,21 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-persistent-qq
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- haskell-persistent
 - ghc: ghc-libs
 - haskell-src-meta
-- haskell-persistent
-repo_makedepends:
-- ghc
-- haskell-aeson
-- haskell-fast-logger
-- haskell-hspec
-- haskell-hunit
-- haskell-monad-logger
-- haskell-persistent-sqlite
-- haskell-resourcet
-- haskell-unliftio
 update_on:
 - alpm: haskell-src-meta
   source: alpm

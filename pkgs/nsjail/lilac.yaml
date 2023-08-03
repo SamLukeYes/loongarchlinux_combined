@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nsjail'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - protobuf
 - libnl
-repo_makedepends:
-- git
 update_on:
 - alias: protobuf
 - alpm: nsjail

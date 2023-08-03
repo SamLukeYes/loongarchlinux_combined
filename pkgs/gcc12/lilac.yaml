@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gcc12'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- dejagnu
-- expect
-- inetutils
-- python-pytest
-- tcl
 repo_depends:
 - libmpc
-- zstd
-repo_makedepends:
-- binutils
-- doxygen
-- gcc-ada
-- gcc-d
-- git
-- libisl
-- libmpc
-- python
 - zstd
 update_on:
 - alpm: libisl

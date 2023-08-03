@@ -9,22 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gammu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- libdbi-drivers
 repo_depends:
 - glib2
-- bluez: bluez-libs
+- libusb
 - curl
+- postgresql: postgresql-libs
+- bluez: bluez-libs
 - libdbi
 - mariadb: mariadb-libs
-- postgresql: postgresql-libs
-- libusb
 - libgudev
-repo_makedepends:
-- cmake
-- doxygen
-- python
-- systemd
 update_on:
 - alpm: gammu
   source: archpkg

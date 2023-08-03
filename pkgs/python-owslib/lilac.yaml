@@ -7,14 +7,11 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-owslib'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-dateutil
 - python-pyproj
-- python-pytz
 - python-requests
-repo_makedepends:
-- python-setuptools
+- python-dateutil
+- python-pytz
 update_on:
 - alpm: python-owslib
   source: archpkg

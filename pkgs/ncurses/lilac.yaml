@@ -9,12 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ncurses'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - gcc: gcc-libs
-repo_makedepends:
-- autoconf-archive
+- glibc
 update_on:
 - alpm: ncurses
   source: archpkg

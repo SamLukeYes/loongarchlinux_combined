@@ -9,22 +9,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-session-shell'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - deepin-daemon
-# - deepin-network-core
-- deepin-qt5integration
+- deepin-network-core
+- kwayland
 - deepin-wallpapers
+- startdde
 - gsettings-qt
 - lightdm: liblightdm-qt5
 - lightdm
 - qt5-tools
-- startdde
-- kwayland
-repo_makedepends:
-- cmake
-- gtest
-- ninja
+- deepin-qt5integration
 update_on:
 - alpm: deepin-session-shell
   source: archpkg

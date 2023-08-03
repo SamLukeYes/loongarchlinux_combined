@@ -9,21 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-gevent'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lsof
-- python-perf
-- python-objgraph
-- python-dnspython
-- python-requests
 repo_depends:
-- c-ares
-- libev
 - python-greenlet
 - python-setuptools
 - python-zope-event
+- c-ares
+- libev
 - python-zope-interface
-repo_makedepends:
-- cython
 update_on:
 - alpm: python-gevent
   source: archpkg

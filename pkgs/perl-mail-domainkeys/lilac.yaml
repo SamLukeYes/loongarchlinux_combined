@@ -7,11 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-mail-domainkeys'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- perl-crypt-openssl-rsa
 - perl-mailtools
-repo_makedepends: []
+- perl-crypt-openssl-rsa
 update_on:
 - alpm: perl-mail-domainkeys
   source: archpkg

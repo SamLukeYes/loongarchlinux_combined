@@ -9,13 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-kde-text-ui
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - telepathy-kde-common-internals
 - kemoticons
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
 update_on:
 - alpm: telepathy-kde-text-ui
   source: archpkg

@@ -9,17 +9,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cargo-tarpaulin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-- glibc
-- openssl
+- zlib
 - libssh2
 - libgit2
-- zlib
-repo_makedepends:
-- git
-- rust
+- openssl
+- glibc
 update_on:
 - alpm: curl
   provides: libcurl.so

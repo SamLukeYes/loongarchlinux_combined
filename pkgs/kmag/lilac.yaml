@@ -9,14 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kmag'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- hicolor-icon-theme
 - kio
 - libqaccessibilityclient
-- hicolor-icon-theme
-repo_makedepends:
-- extra-cmake-modules
-- kdoctools
 update_on:
 - alpm: kmag
   source: archpkg

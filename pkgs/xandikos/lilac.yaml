@@ -7,19 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''xandikos'')
 
   '
-repo_checkdepends: []
 repo_depends:
-- python-aiohttp
-- python-defusedxml
-- python-dulwich
-- python-icalendar
-- python-jinja
 - python-multidict
-repo_makedepends:
-- python-build
-- python-installer
-- python-setuptools
-- python-wheel
+- python-dulwich
+- python-aiohttp
+- python-jinja
+- python-icalendar
+- python-defusedxml
 update_on:
 - alpm: xandikos
   source: archpkg

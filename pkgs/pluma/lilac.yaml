@@ -9,24 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pluma'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- iso-codes
-- mate-desktop
+- python
+- enchant
+- libpeas
 - zenity
 - gtksourceview4
-- libpeas
-- python
 - gettext
-- enchant
+- iso-codes
 - libsm
-repo_makedepends:
-- itstool
-- gobject-introspection
-- python
-- mate-common
-- yelp-tools
-- autoconf-archive
+- mate-desktop
 update_on:
 - alias: python
 - alpm: pluma

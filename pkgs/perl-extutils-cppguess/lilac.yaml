@@ -7,11 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-extutils-cppguess'')
 
   '
-repo_checkdepends: []
 repo_depends:
 - perl-capture-tiny
-repo_makedepends:
-- perl-module-build
 update_on:
 - alpm: perl-extutils-cppguess
   source: archpkg

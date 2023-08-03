@@ -9,13 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pd-lua'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- pd
 - gcc: gcc-libs
 - glibc
 - lua
-- pd
-repo_makedepends: []
 update_on:
 - alias: lua
 - alpm: pd-lua

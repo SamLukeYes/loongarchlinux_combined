@@ -9,16 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kvantum'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - qt5-svg
-- kwindowsystem
 - hicolor-icon-theme
-repo_makedepends:
-- cmake
-- qt5-tools
-- qt6-tools
-- qt6-svg
+- kwindowsystem
 update_on:
 - alpm: kvantum
   source: archpkg

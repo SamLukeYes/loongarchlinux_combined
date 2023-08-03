@@ -9,19 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''conky-manager'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- cairo
-- conky
-- desktop-file-utils
-- gtk3
-- imagemagick
-- json-glib
 - libgee
+- imagemagick
+- desktop-file-utils
 - p7zip
 - rsync
-repo_makedepends:
-- vala
+- json-glib
+- gtk3
+- conky
+- cairo
 update_on:
 - alpm: conky-manager
   source: archpkg

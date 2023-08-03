@@ -9,32 +9,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hie-bios'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cabal-install
 repo_depends:
-- ghc: ghc-libs
-- haskell-aeson
-- haskell-base16-bytestring
-- haskell-co-log-core
-- haskell-conduit
-- haskell-conduit-extra
-- haskell-cryptohash-sha1
-- haskell-extra
-- haskell-file-embed
 - haskell-optparse-applicative
-- haskell-prettyprinter
+- haskell-unordered-containers
+- haskell-aeson
+- ghc: ghc-libs
+- haskell-file-embed
 - haskell-temporary
 - haskell-unix-compat
-- haskell-unordered-containers
+- haskell-cryptohash-sha1
 - haskell-vector
+- haskell-conduit
+- haskell-co-log-core
+- haskell-conduit-extra
+- haskell-extra
 - haskell-yaml
-repo_makedepends:
-- ghc
-- uusi
-- haskell-tagged
-- haskell-tasty
-- haskell-tasty-expected-failure
-- haskell-tasty-hunit
+- haskell-base16-bytestring
+- haskell-prettyprinter
 update_on:
 - alpm: haskell-aeson
   source: alpm

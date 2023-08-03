@@ -9,16 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zfp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- glibc
 - gcc: gcc-libs
-repo_makedepends:
-- cmake
-- gcc: gcc-fortran
-- cython
-- python
-- python-numpy
+- glibc
 update_on:
 - alpm: zfp
   source: archpkg

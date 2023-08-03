@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''modemmanager'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- pygobject: python-gobject
 repo_depends:
-- systemd
-- libgudev
 - polkit
 - ppp
 - libqmi
@@ -21,18 +17,6 @@ repo_depends:
 - mobile-broadband-provider-info
 - systemd
 - libgudev
-- polkit
-- ppp
-- libqmi
-- libmbim
-- mobile-broadband-provider-info
-repo_makedepends:
-- gtk-doc
-- gobject-introspection
-- vala
-- meson
-- git
-- bash-completion
 update_on:
 - alpm: libmm-glib
   provides: libmm-glib.so

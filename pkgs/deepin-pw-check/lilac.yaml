@@ -9,19 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-pw-check'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - cracklib
 - gtk3
 - iniparser
-repo_makedepends:
-- deepin-gettext-tools
-- git
-- go
-- golang-github-fsnotify-fsnotify
-- golang-github-linuxdeepin-go-dbus-factory
-- golang-github-stretchr-testify
-- golang-gopkg-yaml.v3
 update_on:
 - alpm: deepin-pw-check
   source: archpkg

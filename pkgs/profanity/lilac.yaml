@@ -9,46 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''profanity'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- cmocka
 repo_depends:
-- expat
-- glib2
 - libotr
-- python
 - libgcrypt
-- libsignal-protocol-c
 - glibc
-- libassuan
-- libgpg-error
-- expat
 - glib2
-- libotr
-- python
-- libgcrypt
-- libsignal-protocol-c
-- glibc
-- libassuan
-- libgpg-error
-- libxss
-- libx11
-- gdk-pixbuf2
 - cairo
-repo_makedepends:
-- expat
-- glib2
-- libotr
-- python
-- libgcrypt
 - libsignal-protocol-c
-- glibc
-- libassuan
+- expat
+- python
 - libgpg-error
-- libxss
-- libx11
 - gdk-pixbuf2
-- cairo
-- autoconf-archive
+- libxss
+- libassuan
+- libx11
 update_on:
 - alpm: curl
   provides: libcurl.so

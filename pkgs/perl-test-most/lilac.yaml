@@ -7,15 +7,13 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-test-most'')
 
   '
-repo_checkdepends: []
 repo_depends:
+- perl-test-exception
+- perl-test-differences
+- perl-test-warn
+- perl-test-deep
 - perl
 - perl-exception-class
-- perl-test-deep
-- perl-test-differences
-- perl-test-exception
-- perl-test-warn
-repo_makedepends: []
 update_on:
 - alias: perl
 - alpm: perl-test-most

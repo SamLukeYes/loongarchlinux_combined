@@ -9,27 +9,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-http-download
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- ghc: ghc-libs
-- haskell-base64-bytestring
-- haskell-conduit
-- haskell-conduit-extra
 - haskell-cryptonite
-- haskell-cryptonite-conduit
-- haskell-http-client
-- haskell-http-conduit
+- ghc: ghc-libs
 - haskell-http-types
+- haskell-rio
 - haskell-memory
+- haskell-retry
 - haskell-path
 - haskell-path-io
-- haskell-retry
-- haskell-rio
+- haskell-conduit
+- haskell-conduit-extra
+- haskell-http-conduit
+- haskell-http-client
+- haskell-base64-bytestring
+- haskell-cryptonite-conduit
 - haskell-rio-prettyprint
-repo_makedepends:
-- ghc
-- haskell-hspec
-- haskell-hspec-discover
 update_on:
 - alpm: haskell-base64-bytestring
   source: alpm

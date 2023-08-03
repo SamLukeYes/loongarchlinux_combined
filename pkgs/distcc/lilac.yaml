@@ -9,15 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''distcc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- avahi
-- popt
 - python
 - gcc
-repo_makedepends:
-- git
-- gtk3
+- avahi
+- popt
 update_on:
 - alias: python
 - alpm: distcc

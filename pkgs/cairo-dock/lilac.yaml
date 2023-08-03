@@ -9,14 +9,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cairo-dock'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
-- curl
-- dbus-glib
 - glu
 - gtk3
-repo_makedepends:
-- cmake
+- dbus-glib
+- curl
 update_on:
 - alpm: cairo-dock
   source: archpkg

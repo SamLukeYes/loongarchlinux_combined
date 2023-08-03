@@ -7,17 +7,9 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-leather'')
 
   '
-repo_checkdepends:
-- python-cssselect
-- python-lxml
 repo_depends:
 - python
 - python-six
-repo_makedepends:
-- python-build
-- python-installer
-- python-wheel
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-leather

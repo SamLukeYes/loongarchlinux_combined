@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lua-posix'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
 - libxcrypt
-repo_makedepends:
-- lua
-- lua51
-- lua52
-- lua53
-- luarocks
 update_on:
 - alpm: libxcrypt
   provides: libcrypt.so

@@ -1,31 +1,26 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- boost: boost-libs
-- dbus-glib
-- double-conversion
-- gc
-- graphicsmagick
-- gsl
-- gspell
-- gtkmm3
-- lcms2
-- lib2geom
-- libcdr
-- libjpeg-turbo
-- libsoup
 - libvisio
-- libxslt
-- poppler: poppler-glib
+- gspell
+- libjpeg-turbo
+- gc
+- gsl
+- graphicsmagick
 - potrace
-- python
-- python-cssselect
 - python-lxml
+- double-conversion
+- poppler: poppler-glib
 - python-numpy
-repo_makedepends:
-- cmake
-- boost
-- git
+- python
+- dbus-glib
+- gtkmm3
+- python-cssselect
+- libxslt
+- lib2geom
+- lcms2
+- libcdr
+- libsoup
+- boost: boost-libs
 update_on:
 - alpm: gsl
   source: alpm

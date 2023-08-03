@@ -9,20 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''toolbox'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends: []
 repo_depends:
+- flatpak
 - podman
 - bash
-- flatpak
-repo_makedepends:
-- go
-- shellcheck
-- go-md2man
-- bash-completion
-- ninja
-- git
-- meson
-- podman
 update_on:
 - alpm: toolbox
   source: archpkg

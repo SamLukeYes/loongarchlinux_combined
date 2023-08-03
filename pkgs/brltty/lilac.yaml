@@ -1,39 +1,12 @@
 destsubdir: extra
-repo_checkdepends: []
 repo_depends:
-- bluez: bluez-libs
 - gcc: gcc-libs
-- glibc
 - liblouis
-- speech-dispatcher: libspeechd
 - pcre2
 - polkit
-repo_makedepends:
-- alsa-lib
-- at-spi2-core
 - bluez: bluez-libs
-- cython
-- dbus
-- dracut
-- espeak-ng
-- expat
-- festival
-- gcc: gcc-libs
-- glibc
-- glib2
-- gpm
-- icu
-- liblouis
 - speech-dispatcher: libspeechd
-- libxaw
-- ncurses
-- pcre2
-- polkit
-- python-setuptools
-- speech-dispatcher
-- strip-nondeterminism
-- systemd: systemd-libs
-- tcl
+- glibc
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

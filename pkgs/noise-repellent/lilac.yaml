@@ -9,17 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''noise-repellent'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
 - glibc
 - libspecbleach
-- glibc
-- libspecbleach
-- libspecbleach
-repo_makedepends:
-- lv2
-- meson
 update_on:
 - alpm: libspecbleach
   provides: libspecbleach.so

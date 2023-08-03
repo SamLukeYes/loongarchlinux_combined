@@ -9,35 +9,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''setbfree'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_checkdepends:
-- lv2lint
 repo_depends:
-- cairo
 - ftgl
-- glibc
 - glib2
-- libglvnd
-- libx11
 - pango
-- cairo
-- ftgl
-- glib2
-- glibc
-- libglvnd
 - liblo
 - libx11
-- pango
-repo_makedepends:
-- cairo
-- ftgl
-- gendesk
-- glib2
 - libglvnd
-- liblo
-- libx11
-- lv2
-- pango
-- ttf-dejavu
+- cairo
+- glibc
 update_on:
 - alpm: glib2
   provides: libgobject-2.0.so
