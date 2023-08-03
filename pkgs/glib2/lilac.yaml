@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glib2'')
   '
 repo_depends:
 - pcre2
-- sysprof: libsysprof-capture
+# - sysprof: libsysprof-capture
 - zlib
 - util-linux: util-linux-libs
 - libffi
