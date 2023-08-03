@@ -13,7 +13,7 @@ repo_depends:
 #- dbus
 - hwdata
 - bash
-- cryptsetup
+#- cryptsetup
 - zstd
 - libseccomp
 - lz4
