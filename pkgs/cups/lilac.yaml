@@ -14,7 +14,7 @@ repo_depends:
 - libpaper
 - avahi
 - dbus
-- cups-filters
+#- cups-filters
 - gnutls
 - hicolor-icon-theme
 - pam
