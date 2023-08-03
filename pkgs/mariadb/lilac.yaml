@@ -5,7 +5,7 @@ repo_depends:
 - zstd
 - jemalloc
 - ncurses
-- perl-dbd-mariadb
+#- perl-dbd-mariadb
 - perl-term-readkey
 - lz4
 - zlib
