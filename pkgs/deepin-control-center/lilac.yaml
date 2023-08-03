@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-control-center
 
   '
 repo_depends:
-- deepin-daemon
+# - deepin-daemon
 - dtkwidget
 - geoip-database
 - deepin-network-core
