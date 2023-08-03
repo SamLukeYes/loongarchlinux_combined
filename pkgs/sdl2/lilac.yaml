@@ -18,22 +18,22 @@ repo_depends:
 - libxcursor
 - hidapi
 - libusb
-repo_makedepends:
-- alsa-lib
-- mesa
-- pulseaudio: libpulse
-- libxrandr
-- libxinerama
-- wayland
-- libxkbcommon
-- wayland-protocols
-- ibus
-- fcitx5
-- libxss
-- cmake
-- ninja
+# repo_makedepends:
+# - alsa-lib
+# - mesa
+# - pulseaudio: libpulse
+# - libxrandr
+# - libxinerama
+# - wayland
+# - libxkbcommon
+# - wayland-protocols
+# - ibus
+# - fcitx5
+# - libxss
+# - cmake
+# - ninja
 # - pipewire
-- libdecor
+# - libdecor
 update_on:
 - alpm: sdl2
   source: archpkg
