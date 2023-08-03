@@ -25,7 +25,7 @@ repo_depends:
 - audit
 - python-pefile
 - iptables
-- binutils
+#- binutils
 update_on:
 - alpm: acl
   provides: libacl.so
