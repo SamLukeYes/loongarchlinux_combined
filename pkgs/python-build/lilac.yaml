@@ -18,14 +18,14 @@ repo_checkdepends:
 repo_depends:
 - python-packaging
 - python-pyproject-hooks
-repo_makedepends:
-- git
-- python-flit-core
-- python-installer
-- python-sphinx
-- python-sphinx-argparse-cli
-- python-sphinx-autodoc-typehints
-- python-sphinx-furo
+# repo_makedepends:
+# - git
+# - python-flit-core
+# - python-installer
+# - python-sphinx
+# - python-sphinx-argparse-cli
+# - python-sphinx-autodoc-typehints
+# - python-sphinx-furo
 update_on:
 - alpm: python-build
   source: archpkg
