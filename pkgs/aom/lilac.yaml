@@ -12,11 +12,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aom'')
 repo_checkdepends: []
 repo_depends:
 - gcc: gcc-libs
-repo_makedepends:
-- cmake
-- doxygen
-- ninja
-- yasm
+# repo_makedepends:
+# - cmake
+# - doxygen
+# - ninja
+# - yasm
 update_on:
 - alpm: aom
   source: archpkg

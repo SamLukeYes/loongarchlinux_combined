@@ -2,7 +2,7 @@ destsubdir: extra
 repo_checkdepends: []
 repo_depends:
 # - alsa-lib
-# - aom
+- aom
 - bzip2
 - fontconfig
 - fribidi
