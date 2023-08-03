@@ -19,7 +19,7 @@ repo_depends:
 - lz4
 - openssl
 #- pam
-- elfutils: libelf
+#- elfutils: libelf
 - libidn2
 - libxcrypt
 - audit
