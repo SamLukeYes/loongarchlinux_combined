@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-kde-common-
 
   '
 repo_depends:
-- telepathy-kde-integration-module
+# - telepathy-kde-integration-module
 - kaccounts-integration
 - libotr
 - telepathy-accounts-signon
