@@ -17,7 +17,7 @@ repo_depends:
 - libcanberra
 - upower
 - xorg-server
-- gnome-shell
+# - gnome-shell
 - systemd
 update_on:
 - alpm: systemd-libs
