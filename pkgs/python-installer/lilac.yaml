@@ -11,14 +11,14 @@ repo_checkdepends:
 - python-pytest
 repo_depends:
 - python
-repo_makedepends:
-- git
-- python-flit-core
-- python-build
-- python-sphinx
-- python-sphinx-furo
-- python-myst-parser
-- python-sphinx-argparse
+# repo_makedepends:
+# - git
+# - python-flit-core
+# - python-build
+# - python-sphinx
+# - python-sphinx-furo
+# - python-myst-parser
+# - python-sphinx-argparse
 update_on:
 - alias: python
 - alpm: python-installer
