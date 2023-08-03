@@ -20,7 +20,7 @@ repo_depends:
 - libpng
 - libxkbcommon: libxkbcommon-x11
 - srt
-- qt5-wayland
+# - qt5-wayland
 - elfutils: libelf
 - wavpack
 - libxi
@@ -55,7 +55,7 @@ repo_depends:
 - wayland-protocols
 - libdv
 - x265
-- qt5-declarative
+# - qt5-declarative
 - libvorbis
 - aalib
 - libde265
@@ -82,7 +82,7 @@ repo_depends:
 - libva
 - libxml2
 - orc
-- qt6-wayland
+# - qt6-wayland
 - graphene
 - openal
 - libbs2b
@@ -112,7 +112,7 @@ repo_depends:
 - openssl
 - gsm
 - qrencode
-- libsoup3
+# - libsoup3
 - gdk-pixbuf2
 - webrtc-audio-processing
 - spandsp
@@ -122,10 +122,10 @@ update_on:
 - alpm: jack2
   provides: libjack.so
   source: alpm
-- alpm: qt6-declarative
-  source: alpm
-  strip_release: true
-- alpm: qt5-declarative
-  source: alpm
-  strip_release: true
+#- alpm: qt6-declarative
+#  source: alpm
+#  strip_release: true
+#- alpm: qt5-declarative
+#  source: alpm
+#  strip_release: true
 - alias: python
