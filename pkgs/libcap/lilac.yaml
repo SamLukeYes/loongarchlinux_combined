@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libcap'')
 repo_depends:
 - gcc: gcc-libs
 - glibc
-- pam
+#- pam
 update_on:
 - alpm: libcap
   source: archpkg
