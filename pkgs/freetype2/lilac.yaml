@@ -13,7 +13,7 @@ repo_depends:
 - bzip2
 - brotli
 - zlib
-- librsvg
+#- librsvg
 - harfbuzz
 - libx11
 - libpng
