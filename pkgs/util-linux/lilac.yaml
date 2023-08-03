@@ -17,7 +17,7 @@ repo_depends:
 - glibc
 - shadow
 - systemd: systemd-libs
-- coreutils
+#- coreutils
 update_on:
 - alpm: systemd-libs
   provides: libsystemd.so
