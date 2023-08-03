@@ -40,17 +40,17 @@ repo_depends:
 - double-conversion
 - md4c
 - qt5-translations
-repo_makedepends:
-- libfbclient
-- mariadb: mariadb-libs
-- unixodbc
-- postgresql: postgresql-libs
-- alsa-lib
-- gstreamer: gst-plugins-base-libs
-- gtk3
-- pulseaudio: libpulse
-- cups
-- freetds
-- vulkan-headers
-- git
+# repo_makedepends:
+# - libfbclient
+# - mariadb: mariadb-libs
+# - unixodbc
+# - postgresql: postgresql-libs
+# - alsa-lib
+# - gstreamer: gst-plugins-base-libs
+# - gtk3
+# - pulseaudio: libpulse
+# - cups
+# - freetds
+# - vulkan-headers
+# - git
 update_on: []
