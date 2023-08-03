@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''curl'')
   '
 repo_depends:
 - zstd
-- ca-certificates
+#- ca-certificates
 - libidn2
 - brotli
 - krb5
