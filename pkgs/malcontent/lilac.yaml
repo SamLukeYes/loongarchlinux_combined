@@ -1,7 +1,7 @@
 destsubdir: extra
 repo_depends:
 - accountsservice
-- flatpak
+# - flatpak
 - gcc: gcc-libs
 - appstream
 - polkit

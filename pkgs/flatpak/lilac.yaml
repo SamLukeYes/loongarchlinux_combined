@@ -1,6 +1,6 @@
 destsubdir: extra
 repo_depends:
-- malcontent: libmalcontent
+# - malcontent: libmalcontent
 - xdg-desktop-portal
 - libxau
 - glib2
