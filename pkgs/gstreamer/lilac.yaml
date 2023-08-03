@@ -89,7 +89,7 @@ repo_depends:
 - python
 - pulseaudio: libpulse
 - libdca
-- qt6-declarative
+# - qt6-declarative
 - json-glib
 - libmodplug
 - libcap
@@ -98,9 +98,9 @@ repo_depends:
 - zvbi
 - opencore-amr
 - a52dec
-- ffmpeg
+# - ffmpeg
 - mpg123
-- libnice
+# - libnice
 - cairo
 - libopenmpt
 - libdc1394
