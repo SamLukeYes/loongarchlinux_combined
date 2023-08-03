@@ -13,7 +13,7 @@ repo_depends:
 - libical
 - alsa-lib
 - glibc
-- cups
+# - cups
 - json-c
 - dbus
 - glib2
