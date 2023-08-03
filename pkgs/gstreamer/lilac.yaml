@@ -36,9 +36,9 @@ repo_depends:
 - libsndfile
 - libxv
 - wildmidi
-- wpewebkit
+#- wpewebkit
 - liblrdf
-- qt5-x11extras
+#- qt5-x11extras
 - libfreeaptx
 - libcaca
 - x264
