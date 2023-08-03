@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bluez'')
 repo_checkdepends: []
 repo_depends:
 - libical
-- dbus
+# - dbus
 - glib2
 # - alsa-lib
 - json-c
