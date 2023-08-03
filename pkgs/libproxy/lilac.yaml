@@ -4,6 +4,6 @@ repo_depends:
 - duktape
 - zlib
 - dbus
-- webkit2gtk
+# - webkit2gtk
 - glib2
 update_on: []
