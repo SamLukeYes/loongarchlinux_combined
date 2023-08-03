@@ -50,7 +50,7 @@ repo_depends:
 - zbar
 - vulkan-icd-loader
 - libdvdread
-- openjpeg2
+#- openjpeg2
 - libraw1394
 #- wayland-protocols
 - libdv
@@ -76,7 +76,7 @@ repo_depends:
 - pygobject: python-gobject
 - soundtouch
 - pango
-- openexr
+#- openexr
 - zxing-cpp
 #- fluidsynth
 - libva
@@ -96,20 +96,20 @@ repo_depends:
 - iso-codes
 - faac
 - zvbi
-- opencore-amr
+#- opencore-amr
 - a52dec
 # - ffmpeg
 - mpg123
 # - libnice
 - cairo
-- libopenmpt
+#- libopenmpt
 - libdc1394
 - libldac
 - v4l-utils
 - speex
 - libdrm
 - chromaprint
-- openssl
+#- openssl
 - gsm
 - qrencode
 # - libsoup3
