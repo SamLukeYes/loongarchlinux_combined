@@ -22,7 +22,7 @@ repo_depends:
 - shared-mime-info
 - fontconfig
 - libxkbcommon
-- adwaita-icon-theme
+# - adwaita-icon-theme
 - libepoxy
 - libxcomposite
 - gdk-pixbuf2

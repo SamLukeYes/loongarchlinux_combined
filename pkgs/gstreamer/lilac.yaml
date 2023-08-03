@@ -64,7 +64,7 @@ repo_depends:
 - libx11
 - twolame
 - libwebp
-- gtk3
+# - gtk3
 - mesa
 - libavtp
 - libusb
