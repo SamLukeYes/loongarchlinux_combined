@@ -13,7 +13,7 @@ repo_depends:
 - deepin-daemon
 - deepin-session-shell
 - deepin-session-ui
-- deepin-file-manager
+# - deepin-file-manager
 - libgnome-keyring
 - deepin-polkit-agent
 - deepin-dock

@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-file-manager''
   '
 repo_depends:
 - mimetic
-- startdde
+# - startdde
 - libmediainfo
 - ffmpegthumbnailer
 - lucene++
