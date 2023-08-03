@@ -16,7 +16,7 @@ repo_depends:
 # - deepin-file-manager
 - libgnome-keyring
 - deepin-polkit-agent
-- deepin-dock
+# - deepin-dock
 update_on:
 - alpm: startdde
   source: archpkg

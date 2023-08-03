@@ -16,7 +16,7 @@ repo_depends:
 - deepin-menu
 - libdbusmenu-qt: libdbusmenu-qt5
 - deepin-qt-dbus-factory
-- deepin-launcher
+# - deepin-launcher
 - deepin-qt5integration
 update_on:
 - alpm: deepin-dock

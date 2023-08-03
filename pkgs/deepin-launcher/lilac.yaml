@@ -14,7 +14,7 @@ repo_depends:
 - xdg-user-dirs
 - deepin-menu
 - qt5-x11extras
-- startdde
+#- startdde
 - gsettings-qt
 - deepin-qt-dbus-factory
 - qt5-svg
