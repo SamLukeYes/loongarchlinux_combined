@@ -14,7 +14,7 @@ repo_depends:
 - gtk2
 - gtk3
 - glib2
-- menu-cache
+# - menu-cache
 update_on:
 - alpm: libfm
   source: archpkg
