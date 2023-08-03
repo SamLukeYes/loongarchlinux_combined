@@ -14,7 +14,7 @@ repo_depends:
 - curl
 - leptonica
 - libarchive
-- tesseract-data: tesseract-data-osd
+#- tesseract-data: tesseract-data-osd
 update_on:
 - alpm: tesseract
   source: archpkg
