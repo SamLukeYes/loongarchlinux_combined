@@ -15,7 +15,7 @@ repo_depends:
 - cups: libcups
 - liburing
 - jansson
-- cifs-utils
+#- cifs-utils
 - libbsd
 - talloc
 - icu
