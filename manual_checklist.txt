@@ -444,6 +444,8 @@ zram-generator
 
 allegro
 dumb
+netcdf-openmpi
+pnetcdf-openmpi
 python-keras
 python-tensorboard_plugin_wit
 tensorboard

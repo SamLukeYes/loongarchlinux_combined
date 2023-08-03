@@ -18,3 +18,5 @@ repo_depends:
 update_on:
 - alpm: netcdf-openmpi
   source: archpkg
+managed: false
+
