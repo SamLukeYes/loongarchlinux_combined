@@ -18,7 +18,7 @@ repo_depends:
 - libseccomp
 - lz4
 - openssl
-- pam
+#- pam
 - elfutils: libelf
 - libidn2
 - libxcrypt
