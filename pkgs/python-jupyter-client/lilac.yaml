@@ -11,7 +11,7 @@ repo_depends:
 - python-dateutil
 - python-traitlets
 - python-pyzmq
-- python-ipykernel
+#- python-ipykernel
 - python-jupyter-core
 - python-entrypoints
 update_on:
