@@ -52,14 +52,14 @@ repo_depends:
 - libdvdread
 - openjpeg2
 - libraw1394
-- wayland-protocols
+#- wayland-protocols
 - libdv
 - x265
 # - qt5-declarative
 - libvorbis
 - aalib
 - libde265
-- wayland
+#- wayland
 - mjpegtools
 - libx11
 - twolame
@@ -78,7 +78,7 @@ repo_depends:
 - pango
 - openexr
 - zxing-cpp
-- fluidsynth
+#- fluidsynth
 - libva
 - libxml2
 - orc
@@ -87,7 +87,7 @@ repo_depends:
 - openal
 - libbs2b
 - python
-- pulseaudio: libpulse
+#- pulseaudio: libpulse
 - libdca
 # - qt6-declarative
 - json-glib
