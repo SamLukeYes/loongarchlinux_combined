@@ -7,6 +7,6 @@ repo_depends:
 - libffi
 - expat
 - openssl
-- libnsl
+#- libnsl
 update_on:
 - alias: python
