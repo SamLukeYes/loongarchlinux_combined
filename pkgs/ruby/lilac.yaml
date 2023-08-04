@@ -25,7 +25,7 @@ repo_depends:
 - ruby-rdoc
 - ruby-stringio
 - ruby-rexml
-- ruby-base64
+#- ruby-base64
 - ruby-io-wait
 - ruby-reline
 - ruby-irb
