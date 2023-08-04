@@ -16,7 +16,7 @@ repo_depends:
 - libutempter
 - glibc
 - shadow
-- systemd: systemd-libs
+#- systemd: systemd-libs
 #- coreutils
 update_on:
 - alpm: systemd-libs
