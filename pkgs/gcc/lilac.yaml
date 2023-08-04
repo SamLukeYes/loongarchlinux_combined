@@ -1,7 +1,7 @@
 destsubdir: core
-repo_depends:
+#repo_depends:
 #- libmpc
-- zstd
+#- zstd
 update_on:
 - alpm: libisl
   provides: libisl.so
