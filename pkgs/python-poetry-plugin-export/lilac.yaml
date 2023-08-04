@@ -8,7 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-poetry-plugin-
 
   '
 repo_depends:
-- python-poetry
+#- python-poetry
 update_on:
 - alpm: python-poetry-plugin-export
   source: archpkg
