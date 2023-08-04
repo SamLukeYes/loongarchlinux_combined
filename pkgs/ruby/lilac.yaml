@@ -1,7 +1,7 @@
 destsubdir: extra
 repo_depends:
 #- ruby-open-uri
-- rubygems
+#- rubygems
 #- ruby-mutex_m
 #- ruby-fcntl
 #- ruby-bigdecimal
