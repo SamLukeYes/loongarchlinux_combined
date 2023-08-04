@@ -9,7 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-incremental'')
   '
 repo_depends:
 - python-setuptools
-- python-twisted
+#- python-twisted
 - python-click
 update_on:
 - alpm: python-incremental
