@@ -7,7 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-poetry-plugin-export'')
 
   '
-repo_depends:
+#repo_depends:
 #- python-poetry
 update_on:
 - alpm: python-poetry-plugin-export
