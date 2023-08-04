@@ -10,7 +10,7 @@ repo_depends:
 - ruby-io-console
 - ruby-etc
 - ruby-cgi
-- ruby-abbrev
+#- ruby-abbrev
 - ruby-psych
 - ruby-racc
 - ruby-io-nonblock
