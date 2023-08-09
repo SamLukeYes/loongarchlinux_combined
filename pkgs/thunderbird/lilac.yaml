@@ -10,45 +10,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''thunderbird'')
 
   '
 repo_depends:
-- bzip2
-- alsa-lib
-- libxrender
-- libxfixes
-- libxdamage
-- json-c
-- nspr
-- libcanberra
-- botan2
-- libvpx
-- glibc
-- glib2
-- gcc: gcc-libs
-- libjpeg-turbo
-- libevent
-- pango
-- dbus
-- libxext
-- cairo
-- gnupg
-- icu
-- fontconfig
-- hunspell
-- freetype2
-- libffi
-- sqlite
-- dbus-glib
-- libxcomposite
-- gdk-pixbuf2
-- nss
-- zlib
-- pixman
-- libx11
 - gtk3
+- dbus
+- libvpx
+- bzip2
+- darktable
 - libwebp
+- libffi
+- pango
+- icu
+- freetype2
+- fontconfig
+- glib2
+- pixman
 update_on:
-- alpm: gtk3
-  provides: libgdk-3.so
-  source: alpm
 - alpm: gtk3
   provides: libgtk-3.so
   source: alpm
@@ -72,10 +47,6 @@ update_on:
   source: alpm
 - alpm: pango
   provides: libpango-1.0.so
-  source: alpm
-- alias: icu
-- alpm: icu
-  provides: libicui18n.so
   source: alpm
 - alpm: icu
   provides: libicuuc.so

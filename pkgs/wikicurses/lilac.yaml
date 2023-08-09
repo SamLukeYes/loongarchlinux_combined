@@ -8,9 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wikicurses'')
 
   '
 repo_depends:
-- python-lxml
-- python-beautifulsoup4
-- python-urwid
 - python
 update_on:
 - alias: python

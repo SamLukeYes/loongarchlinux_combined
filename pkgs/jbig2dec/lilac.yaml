@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jbig2dec'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libpng
+repo_depends: []
 update_on:
 - alpm: jbig2dec
   source: archpkg

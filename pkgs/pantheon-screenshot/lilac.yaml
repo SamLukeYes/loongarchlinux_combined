@@ -10,10 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-screenshot''
 
   '
 repo_depends:
-- gdk-pixbuf2
-- libcanberra
-- gtk3
-- glib2
+- granite
+- libhandy
 update_on:
 - alpm: granite
   provides: libgranite.so

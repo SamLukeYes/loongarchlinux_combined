@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tcpdump'')
 
   '
 repo_depends:
-- libcap-ng
 - libpcap
+- libcap-ng
 - openssl
-- glibc
 update_on:
 - alpm: libpcap
   provides: libpcap.so

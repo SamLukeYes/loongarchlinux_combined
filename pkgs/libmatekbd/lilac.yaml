@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libmatekbd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtk3
-- gettext
-- libxklavier
+repo_depends: []
 update_on:
 - alpm: libmatekbd
   source: archpkg

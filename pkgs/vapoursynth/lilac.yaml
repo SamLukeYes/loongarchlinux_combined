@@ -10,6 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vapoursynth'')
 
   '
 repo_depends:
+- zimg
 - python
 update_on:
 - alpm: zimg

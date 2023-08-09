@@ -1,15 +1,12 @@
 destsubdir: core
 repo_depends:
-- bzip2
-- gcc: gcc-libs
-- xz
-- libmicrohttpd
-- curl
-- zlib
 - libarchive
+- libmicrohttpd
 - sqlite
+- bzip2
+- curl
+- xz
 - zstd
-- glibc
 update_on:
 - alpm: libarchive
   provides: libarchive.so

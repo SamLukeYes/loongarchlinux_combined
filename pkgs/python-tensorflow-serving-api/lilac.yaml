@@ -8,9 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-tensorflow-ser
 
   '
 repo_depends:
-- grpc: python-grpcio
-- protobuf: python-protobuf
-- tensorflow: python-tensorflow
 - python
 update_on:
 - alias: python

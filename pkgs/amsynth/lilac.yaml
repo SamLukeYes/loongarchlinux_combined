@@ -10,12 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''amsynth'')
 
   '
 repo_depends:
-- gcc: gcc-libs
+- at-spi2-core
 - gdk-pixbuf2
-- glib2
 - gtk2
-- cairo
-- glibc
+- glib2
 update_on:
 - alpm: at-spi2-core
   provides: libatk-1.0.so
@@ -24,16 +22,7 @@ update_on:
   provides: libgdk_pixbuf-2.0.so
   source: alpm
 - alpm: gtk2
-  provides: libgdk-x11-2.0.so
-  source: alpm
-- alpm: gtk2
   provides: libgtk-x11-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
   source: alpm
 - alpm: glib2
   provides: libgobject-2.0.so

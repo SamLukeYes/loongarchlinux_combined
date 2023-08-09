@@ -8,11 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdot'')
 
   '
 repo_depends:
-- graphviz
-- gtk3
-- pygobject: python-gobject
-- python-cairo
-- python-numpy
 - python
 update_on:
 - alias: python

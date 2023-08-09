@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-text-builder'
 
   '
 repo_depends:
-- ghc: ghc-libs
 - haskell-text-builder-dev
 update_on:
 - alpm: haskell-text-builder-dev

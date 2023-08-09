@@ -10,14 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-image-sane'')
 
   '
 repo_depends:
-- perl-extutils-pkgconfig
-- perl-readonly
-- perl-try-tiny
 - perl
-- perl-test-requires
-- perl-exception-class
-- perl-extutils-depends
-- sane
 update_on:
 - alias: perl
 - alpm: perl-image-sane

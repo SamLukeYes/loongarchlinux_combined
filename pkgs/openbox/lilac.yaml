@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openbox'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- startup-notification
-- libxrandr
-- pango
-- imlib2
-- librsvg
-- libxinerama
-- libxcursor
-- libsm
-- libxml2
+repo_depends: []
 update_on:
 - alpm: openbox
   source: archpkg

@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ktextwidgets'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-speech
-- kcompletion
-- sonnet
-- kconfigwidgets
+repo_depends: []
 update_on:
 - alpm: ktextwidgets
   source: archpkg

@@ -7,18 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-cucumber'')
 
   '
-repo_depends:
-- ruby-builder
-- ruby-diff-lcs
-- ruby-sys-uname
-- ruby-mime-types
-- ruby-cucumber-gherkin
-- ruby-cucumber-ci-environment
-- ruby-cucumber-messages
-- ruby-cucumber-html-formatter
-- ruby-cucumber-core
-- ruby-cucumber-cucumber-expressions
-- ruby-multi_test
+repo_depends: []
 update_on:
 - alpm: ruby-cucumber
   source: archpkg

@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-media'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- mate-panel
-- gettext
-- libcanberra
-- mate-desktop
-- libmatemixer
+repo_depends: []
 update_on:
 - alpm: mate-media
   source: archpkg

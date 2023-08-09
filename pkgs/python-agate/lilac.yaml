@@ -8,15 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-agate'')
 
   '
 repo_depends:
-- python-sphinx_rtd_theme
-- isodate: python-isodate
-- python-six
-- python-parsedatetime
-- python-leather
-- python-pyicu
-- python-slugify
-- python-pytimeparse
-- python-babel
 - python
 update_on:
 - alias: python

@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''razor'')
 
   '
 repo_depends:
-- perl-uri
-- perl-net-dns
-- perl-digest-sha1
 - perl
-- perl-digest-nilsimsa
 update_on:
 - alias: perl
 - alpm: razor

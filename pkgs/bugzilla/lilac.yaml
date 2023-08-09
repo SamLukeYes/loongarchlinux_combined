@@ -8,40 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bugzilla'')
 
   '
 repo_depends:
-- perl-dbi
-- perl-return-value
-- perl-html-scrubber
-- perl-gdtextutil
-- perl-chart
-- perl-email-mime-contenttype
-- perl-email-simple
-- perl-file-slurp
-- perl-patchreader
-- perl-email-abstract
-- perl-cgi
-- perl-email-address
-- perl-math-random-isaac
-- perl-email-messageid
-- perl-template-gd
-- perl-xml-twig
-- perl-gdgraph
-- perl-template-toolkit
-- perl-json-xs
-- perl-gd
-- perl-email-reply
-- perl-email-send
-- perl-email-mime-attachment-stripper
-- perl-email-mime-encodings
-- perl-timedate
-- perl-authen-radius
-- perl-email-mime
-- perl-datetime
-- perl-soap-lite
 - perl
-- perl-email-date-format
-- perl-email-sender
-- perl-authen-sasl
-- perl-ldap
 update_on:
 - alias: perl
 - alpm: bugzilla

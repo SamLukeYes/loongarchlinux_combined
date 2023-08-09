@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-i18n'')
   '
 repo_depends:
 - ruby
-- ruby-concurrent
 update_on:
 - alias: ruby
 - alpm: ruby-i18n

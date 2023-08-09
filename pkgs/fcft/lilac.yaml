@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcft'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- fontconfig
-- libutf8proc
-- pixman
-- freetype2
-- harfbuzz
+repo_depends: []
 update_on:
 - alpm: fcft
   source: archpkg

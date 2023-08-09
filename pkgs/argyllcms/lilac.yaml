@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''argyllcms'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxrandr
-- libxss
-- libxxf86vm
-- libtiff
-- zlib
-- libxinerama
-- openssl
-- libpng
+repo_depends: []
 update_on:
 - alpm: argyllcms
   source: archpkg

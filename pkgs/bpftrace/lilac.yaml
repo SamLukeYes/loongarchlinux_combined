@@ -10,13 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bpftrace'')
 
   '
 repo_depends:
-- elfutils: libelf
-- llvm: llvm-libs
 - clang
-- zlib
-- libpcap
-- libbpf
-- bcc
 update_on:
 - alias: clang
 - alpm: bpftrace

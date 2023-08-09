@@ -10,31 +10,33 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hledger'')
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-githash
 - haskell-aeson
-- haskell-diff
-- haskell-utility-ht
-- haskell-math-functions
 - haskell-ansi-terminal
-- haskell-tabular
-- haskell-decimal
-- haskell-hashable
-- haskell-tasty
-- haskell-hledger-lib
-- haskell-regex-tdfa
-- haskell-microlens
-- haskell-utf8-string
-- ghc: ghc-libs
 - haskell-cmdargs
-- haskell-temporary
-- haskell-lucid
-- haskell-shakespeare
-- haskell-wizards
-- haskell-split
 - haskell-data-default
-- haskell-safe
+- haskell-decimal
+- haskell-diff
+- haskell-extra
+- haskell-githash
+- haskell-hashable
+- haskell-hledger-lib
+- haskell-lucid
+- haskell-math-functions
 - haskell-megaparsec
+- haskell-microlens
+- haskell-regex-tdfa
+- haskell-safe
+- haskell-shakespeare
+- haskell-split
+- haskell-tabular
+- haskell-tasty
+- haskell-temporary
+- haskell-text-ansi
+- haskell-timeit
+- haskell-unordered-containers
+- haskell-utf8-string
+- haskell-utility-ht
+- haskell-wizards
 update_on:
 - alpm: haskell-aeson
   source: alpm
@@ -47,6 +49,8 @@ update_on:
 - alpm: haskell-decimal
   source: alpm
 - alpm: haskell-diff
+  source: alpm
+- alpm: haskell-extra
   source: alpm
 - alpm: haskell-githash
   source: alpm
@@ -75,6 +79,10 @@ update_on:
 - alpm: haskell-tasty
   source: alpm
 - alpm: haskell-temporary
+  source: alpm
+- alpm: haskell-text-ansi
+  source: alpm
+- alpm: haskell-timeit
   source: alpm
 - alpm: haskell-unordered-containers
   source: alpm

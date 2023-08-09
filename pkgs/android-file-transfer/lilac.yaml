@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''android-file-transfer
 
   '
 repo_depends:
-- file
 - qt5-base
-- fuse2
-- hicolor-icon-theme
-- libxkbcommon: libxkbcommon-x11
 update_on:
 - alpm: qt5-base
   source: alpm

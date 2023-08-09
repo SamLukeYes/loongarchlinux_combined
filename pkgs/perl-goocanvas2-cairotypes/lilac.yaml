@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-goocanvas2-cairo
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- goocanvas
-- perl-gtk3
+repo_depends: []
 update_on:
 - alpm: perl-goocanvas2-cairotypes
   source: archpkg

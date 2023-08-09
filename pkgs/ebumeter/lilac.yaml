@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ebumeter'')
 
   '
 repo_depends:
-- glibc
-- gcc: gcc-libs
 - clxclient
 - clthreads
+- jack2
 - zita-resampler
 update_on:
 - alpm: clxclient

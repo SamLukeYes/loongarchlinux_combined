@@ -8,14 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-cpanplus'')
 
   '
 repo_depends:
-- perl-log-message-simple
-- perl-log-message
-- perl-module-pluggable
-- perl-term-ui
-- perl-archive-extract
 - perl
-- perl-object-accessor
-- perl-package-constants
 update_on:
 - alias: perl
 - alpm: perl-cpanplus

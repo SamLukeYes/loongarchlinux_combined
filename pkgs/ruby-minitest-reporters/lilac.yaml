@@ -8,11 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-minitest-reporte
 
   '
 repo_depends:
-- ruby-builder
 - ruby
-- ruby-ansi
-- ruby-ruby-progressbar
-- ruby-minitest
 update_on:
 - alias: ruby
 - alpm: ruby-minitest-reporters

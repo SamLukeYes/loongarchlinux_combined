@@ -10,18 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opendht'')
 
   '
 repo_depends:
-- fmt
-- jsoncpp
-- http-parser
-- argon2
 - readline
-- gnutls
-- openssl
-- glibc
-- nettle
+- jsoncpp
 update_on:
 - alias: readline
-- alias: jsoncpp
 - alpm: jsoncpp
   provides: libjsoncpp.so
   source: alpm

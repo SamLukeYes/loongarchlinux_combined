@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wolf-spectrum'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libglvnd
+repo_depends: []
 update_on:
 - alpm: wolf-spectrum
   source: archpkg

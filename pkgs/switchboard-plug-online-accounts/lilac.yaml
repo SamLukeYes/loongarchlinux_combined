@@ -10,20 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-onli
 
   '
 repo_depends:
-- glib2
-- rest
-- libgee
-- webkit2gtk
-- json-glib
-- gtk3
-- glibc
+- evolution-data-server
+- granite
+- libhandy
+- switchboard
 update_on:
-- alpm: evolution-data-server
-  provides: libcamel-1.2.so
-  source: alpm
-- alpm: evolution-data-server
-  provides: libedataserver-1.2.so
-  source: alpm
 - alpm: evolution-data-server
   provides: libedataserverui-1.2.so
   source: alpm

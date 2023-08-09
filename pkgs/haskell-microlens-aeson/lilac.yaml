@@ -11,12 +11,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-microlens-aes
   '
 repo_depends:
 - haskell-aeson
-- ghc: ghc-libs
+- haskell-attoparsec
 - haskell-hashable
+- haskell-microlens
 - haskell-scientific
 - haskell-vector
-- haskell-attoparsec
-- haskell-microlens
 update_on:
 - alpm: haskell-aeson
   source: alpm

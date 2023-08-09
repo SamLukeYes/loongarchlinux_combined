@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-aeson-yaml'')
 
   '
 repo_depends:
-- haskell-unordered-containers
 - haskell-aeson
+- haskell-unordered-containers
 - haskell-vector
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-aeson
   source: alpm

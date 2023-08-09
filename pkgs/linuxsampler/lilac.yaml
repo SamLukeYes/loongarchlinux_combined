@@ -11,11 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''linuxsampler'')
   '
 repo_depends:
 - alsa-lib
-- gcc: gcc-libs
-- libsndfile
 - libgig
-- sqlite
-- glibc
+- jack2
+- libsndfile
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-math-function
 
   '
 repo_depends:
+- haskell-data-default-class
 - haskell-primitive
 - haskell-vector
-- ghc: ghc-libs
-- haskell-data-default-class
 update_on:
 - alpm: haskell-data-default-class
   source: alpm

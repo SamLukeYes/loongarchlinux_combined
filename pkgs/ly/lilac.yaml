@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ly'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pam
+repo_depends: []
 update_on:
 - alpm: ly
   source: archpkg

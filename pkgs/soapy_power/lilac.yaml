@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''soapy_power'')
 
   '
 repo_depends:
-- python-simplesoapy
-- python-numpy
 - python
-- python-simplespectral
 update_on:
 - alias: python
 - alpm: soapy_power

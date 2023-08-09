@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ziproxy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- jasper
-- libsasl
-- zlib
-- giflib
-- libpng
+repo_depends: []
 update_on:
 - alpm: ziproxy
   source: archpkg

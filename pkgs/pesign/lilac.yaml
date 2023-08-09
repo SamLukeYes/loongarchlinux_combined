@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pesign'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
-- nss
-- popt
-- nspr
-- util-linux: util-linux-libs
-- bash
-- glibc
-- efivar
+repo_depends: []
 update_on:
 - alpm: pesign
   source: archpkg

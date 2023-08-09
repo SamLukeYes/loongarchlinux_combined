@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-constraints-e
 
   '
 repo_depends:
-- haskell-constraints
 - haskell-aeson
-- ghc: ghc-libs
+- haskell-constraints
 update_on:
 - alpm: haskell-aeson
   source: alpm

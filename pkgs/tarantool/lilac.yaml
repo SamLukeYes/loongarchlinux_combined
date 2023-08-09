@@ -10,12 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tarantool'')
 
   '
 repo_depends:
-- ncurses
-- libunwind
-- zlib
-- libyaml
 - readline
-- openssl
 - icu
 update_on:
 - alias: readline

@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-dependent-sum
 repo_depends:
 - haskell-dependent-sum
 - haskell-th-abstraction
-- ghc: ghc-libs
 - haskell-th-extras
 update_on:
 - alpm: haskell-dependent-sum

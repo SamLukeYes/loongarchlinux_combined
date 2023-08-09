@@ -10,46 +10,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mixxx'')
 
   '
 repo_depends:
-- libid3tag
-- libmodplug
-- libusb
-- libsndfile
-- portmidi
-- qt5-x11extras
-- upower
-- glibc
-- hicolor-icon-theme
-- glib2
-- lilv
-- libogg
-- gcc: gcc-libs
-- soundtouch
 - qt5-base
-- opusfile
+- chromaprint
+- flac
 - ffmpeg
-- opus
 - fftw
+- glib2
+- libid3tag
+- libogg
+- libsndfile
+- libusb
+- libvorbis
+- lilv
+- portaudio
+- portmidi
 - protobuf
 - rubberband
-- speex
-- chromaprint
-- sqlite
-- openssl
-- libvorbis
-- wavpack
-- hidapi
-- lame
-- portaudio
-- qt5-script
-- libx11
-- flac
-- qt5-svg
-- taglib
-- libmad
 update_on:
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: qt5-base
   source: alpm
   strip_release: true
@@ -58,12 +35,6 @@ update_on:
   source: alpm
 - alpm: flac
   provides: libFLAC.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavcodec.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavformat.so
   source: alpm
 - alpm: ffmpeg
   provides: libavutil.so
@@ -87,12 +58,6 @@ update_on:
   provides: libusb-1.0.so
   source: alpm
 - alpm: libvorbis
-  provides: libvorbis.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbisenc.so
-  source: alpm
-- alpm: libvorbis
   provides: libvorbisfile.so
   source: alpm
 - alpm: lilv
@@ -104,7 +69,6 @@ update_on:
 - alpm: portmidi
   provides: libportmidi.so
   source: alpm
-- alias: protobuf
 - alpm: protobuf
   provides: libprotobuf-lite.so
   source: alpm

@@ -8,13 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-agate-excel'')
 
   '
 repo_depends:
-- python-sphinx_rtd_theme
-- python-six
-- python-xlrd
-- python-agate
-- python-olefile
 - python
-- python-openpyxl
 update_on:
 - alias: python
 - alpm: python-agate-excel

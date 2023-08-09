@@ -10,14 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''widelands'')
 
   '
 repo_depends:
-- sdl2_mixer
-- sdl2_image
-- dbus
-- zlib: minizip
-- glew
-- sdl2_ttf
-- python
 - lua
+- python
 update_on:
 - alias: lua
 - alias: python

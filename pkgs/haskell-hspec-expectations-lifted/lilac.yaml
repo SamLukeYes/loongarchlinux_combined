@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-expecta
   '
 repo_depends:
 - haskell-hspec-expectations
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-hspec-expectations
   source: alpm

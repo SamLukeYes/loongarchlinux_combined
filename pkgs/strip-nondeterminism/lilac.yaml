@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''strip-nondeterminism'
 
   '
 repo_depends:
-- perl-sub-override
-- perl-archive-cpio
 - perl
-- perl-archive-zip
 update_on:
 - alias: perl
 - alpm: strip-nondeterminism

@@ -8,14 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-dask'')
 
   '
 repo_depends:
-- python-toolz
-- python-cloudpickle
-- mpdecimal
-- python-importlib-metadata
-- python-fsspec
-- python-click
-- python-partd
-- python-packaging
 - python
 update_on:
 - alias: python

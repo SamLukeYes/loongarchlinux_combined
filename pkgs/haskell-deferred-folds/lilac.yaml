@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-deferred-fold
 
   '
 repo_depends:
-- haskell-unordered-containers
-- ghc: ghc-libs
 - haskell-foldl
 - haskell-hashable
-- haskell-vector
 - haskell-primitive
+- haskell-unordered-containers
+- haskell-vector
 update_on:
 - alpm: haskell-foldl
   source: alpm

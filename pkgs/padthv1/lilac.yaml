@@ -10,21 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''padthv1'')
 
   '
 repo_depends:
-- alsa-lib
-- gcc: gcc-libs
-- liblo
-- qt6-base
-- hicolor-icon-theme
 - fftw
-- qt6-svg
-- glibc
+- qt6-base
 update_on:
-- alpm: fftw
-  provides: libfftw3f.so
-  source: alpm
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
 - alpm: fftw
   provides: libfftw3f.so
   source: alpm

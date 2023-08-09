@@ -9,19 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''brasero'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- cdrdao
-- dconf
-- gvfs
-- dvd+rw-tools
-- libnotify
-- gstreamer: gst-plugins-good
-- libsm
-- libcanberra
-- tracker3
-- gtk3
-- cdrtools
-- shared-mime-info
+repo_depends: []
 update_on:
 - alpm: brasero
   source: archpkg

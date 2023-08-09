@@ -7,14 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-lsp-server'')
 
   '
-repo_depends:
-- python-setuptools
-- python-ujson
-- python-websockets
-- python-lsp-jsonrpc
-- python-pluggy
-- python-docstring-to-markdown
-- python-jedi
+repo_depends: []
 update_on:
 - alpm: python-lsp-server
   source: archpkg

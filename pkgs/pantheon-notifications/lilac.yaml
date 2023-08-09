@@ -10,12 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-notification
 
   '
 repo_depends:
-- gtk3
-- glib2
+- libcanberra
+- granite
+- libhandy
 update_on:
-- alpm: libcanberra
-  provides: libcanberra.so
-  source: alpm
 - alpm: libcanberra
   provides: libcanberra-gtk3.so
   source: alpm

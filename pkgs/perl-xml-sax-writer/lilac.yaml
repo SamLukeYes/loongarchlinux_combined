@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-xml-sax-writer''
 
   '
 repo_depends:
-- perl-xml-filter-buffertext
-- perl-text-iconv
 - perl
 update_on:
 - alias: perl

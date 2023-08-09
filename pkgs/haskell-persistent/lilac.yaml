@@ -10,27 +10,26 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-persistent'')
 
   '
 repo_depends:
-- haskell-th-lift-instances
-- haskell-unordered-containers
-- haskell-base64-bytestring
 - haskell-aeson
-- haskell-resourcet
+- haskell-attoparsec
+- haskell-base64-bytestring
+- haskell-blaze-html
+- haskell-conduit
+- haskell-fast-logger
 - haskell-http-api-data
 - haskell-lift-type
-- haskell-fast-logger
 - haskell-monad-logger
 - haskell-path-pieces
-- haskell-silently
-- ghc: ghc-libs
-- haskell-scientific
-- haskell-unliftio-core
-- haskell-blaze-html
-- haskell-vector
-- haskell-vault
-- haskell-conduit
 - haskell-resource-pool
-- haskell-attoparsec
+- haskell-resourcet
+- haskell-scientific
+- haskell-silently
+- haskell-th-lift-instances
+- haskell-unordered-containers
 - haskell-unliftio
+- haskell-unliftio-core
+- haskell-vault
+- haskell-vector
 update_on:
 - alpm: haskell-aeson
   source: alpm

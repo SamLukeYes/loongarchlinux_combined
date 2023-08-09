@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gpaste'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtk3
-- libadwaita
-- gtk4
-- gcr-4
+repo_depends: []
 update_on:
 - alpm: gpaste
   source: archpkg

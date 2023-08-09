@@ -7,54 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''spyder'')
 
   '
-repo_depends:
-- yapf
-- python-whatthepatch
-- python-watchdog
-- python-rtree
-- python-pygments
-- python-atomicwrites
-- python-parso
-- python-pylint-venv
-- python-qdarkstyle
-- jupyter-nbconvert
-- python-jellyfish
-- python-diff-match-patch
-- python-textdistance
-- python-lsp-server
-- python-cloudpickle
-- python-numpydoc
-- python-pylint
-- python-chardet
-- python-three-merge
-- python-rope
-- autopep8
-- python-qtpy
-- python-keyring
-- python-jsonschema
-- python-pycodestyle
-- python-pyflakes
-- python-intervaltree
-- pyxdg: python-pyxdg
-- pyqt5-webengine: python-pyqt5-webengine
-- python-setuptools
-- python-psutil
-- flake8
-- python-cookiecutter
-- python-qstylizer
-- python-spyder-kernels
-- python-pexpect
-- python-jedi
-- python-qtawesome
-- python-sphinx
-- python-pydocstyle
-- python-pyzmq
-- ipython
-- python-lsp-black
-- pyqt5: python-pyqt5
-- python-pickleshare
-- python-qtconsole
-- python-pyls-spyder
+repo_depends: []
 update_on:
 - alpm: spyder
   source: archpkg

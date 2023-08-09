@@ -7,15 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ufmt'')
 
   '
-repo_depends:
-- python-tomlkit
-- python-trailrunner
-- python-typing_extensions
-- python-click
-- python-moreorless
-- python-black
-- usort
-- python-libcst
+repo_depends: []
 update_on:
 - alpm: ufmt
   source: archpkg

@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgdamm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libgda
-- glibmm
-- libsigc++
+repo_depends: []
 update_on:
 - alpm: libgdamm
   source: archpkg

@@ -10,33 +10,32 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hakyll'')
 
   '
 repo_depends:
-- haskell-warp
-- haskell-unordered-containers
 - haskell-aeson
-- haskell-http-types
-- haskell-resourcet
-- haskell-file-embed
-- haskell-network-uri
-- haskell-optparse-applicative
-- haskell-tagsoup
-- haskell-hashable
+- haskell-blaze-html
 - haskell-blaze-markup
-- haskell-pandoc
-- haskell-wai-app-static
+- haskell-data-default
+- haskell-file-embed
 - haskell-fsnotify
-- haskell-regex-tdfa
-- haskell-wai
-- ghc: ghc-libs
-- haskell-scientific
+- haskell-hashable
+- haskell-http-conduit
+- haskell-http-types
 - haskell-lifted-async
 - haskell-lrucache
-- haskell-blaze-html
+- haskell-network-uri
+- haskell-optparse-applicative
+- haskell-pandoc
 - haskell-random
-- haskell-data-default
-- haskell-vector
-- haskell-yaml
-- haskell-http-conduit
+- haskell-regex-tdfa
+- haskell-resourcet
+- haskell-scientific
+- haskell-tagsoup
 - haskell-time-locale-compat
+- haskell-unordered-containers
+- haskell-vector
+- haskell-wai
+- haskell-wai-app-static
+- haskell-warp
+- haskell-yaml
 update_on:
 - alpm: haskell-aeson
   source: alpm

@@ -10,43 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gqrx'')
 
   '
 repo_depends:
-- libvolk
-- glibc
-- hicolor-icon-theme
-- gcc: gcc-libs
-- gnuradio-osmosdr
-- qt6-svg
-- gnuradio
-- pulseaudio: libpulse
 - qt6-base
+- gnuradio
+- gnuradio-osmosdr
+- libao
+- libpulse
 update_on:
 - alpm: qt6-base
   source: alpm
   strip_release: true
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
-- alpm: gnuradio
-  provides: libgnuradio-analog.so
-  source: alpm
-- alpm: gnuradio
-  provides: libgnuradio-blocks.so
-  source: alpm
-- alpm: gnuradio
-  provides: libgnuradio-digital.so
-  source: alpm
-- alpm: gnuradio
-  provides: libgnuradio-fft.so
-  source: alpm
-- alpm: gnuradio
-  provides: libgnuradio-filter.so
-  source: alpm
-- alpm: gnuradio
-  provides: libgnuradio-network.so
-  source: alpm
-- alpm: gnuradio
-  provides: libgnuradio-pmt.so
-  source: alpm
 - alpm: gnuradio
   provides: libgnuradio-runtime.so
   source: alpm

@@ -10,18 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dhall-docs'')
 
   '
 repo_depends:
-- haskell-optparse-applicative
-- ghc: ghc-libs
+- haskell-base16-bytestring
+- haskell-cryptohash-sha256
 - haskell-file-embed
-- haskell-mmark
 - haskell-lens-family-core
-- dhall
+- haskell-lucid
 - haskell-megaparsec
+- haskell-mmark
+- haskell-optparse-applicative
 - haskell-path
 - haskell-path-io
-- haskell-cryptohash-sha256
-- haskell-lucid
-- haskell-base16-bytestring
 - haskell-prettyprinter
 update_on:
 - alpm: haskell-base16-bytestring

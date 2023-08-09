@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libnids'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libnsl
-- libpcap
-- glib2
-- libnet
+repo_depends: []
 update_on:
 - alpm: libnids
   source: archpkg

@@ -8,25 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pwntools'')
 
   '
 repo_depends:
-- python-requests
-- unicorn: python-unicorn
-- capstone: python-capstone
-- python-colored-traceback
-- python-pygments
-- python-mako
-- python-pysocks
-- python-dateutil
-- python-paramiko
-- python-sortedcontainers
-- python-packaging
-- python-rpyc
-- python-intervaltree
-- python-psutil
-- python-pyelftools
 - python
-- ropgadget
-- python-pyserial
-- python-pip
 update_on:
 - alias: python
 - alpm: python-pwntools

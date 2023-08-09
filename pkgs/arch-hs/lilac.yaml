@@ -10,28 +10,26 @@ pre_build_script: '_G.files = download_official_pkgbuild(''arch-hs'')
 
   '
 repo_depends:
-- haskell-microlens-th
-- pacman
-- haskell-aeson
 - haskell-diff
-- haskell-arch-web
-- haskell-polysemy
-- haskell-servant-client
-- haskell-hackage-db
-- haskell-prettyprinter-ansi-terminal
-- haskell-tar-conduit
-- haskell-microlens
-- ghc: ghc-libs
+- haskell-aeson
 - haskell-algebraic-graphs
-- haskell-http-client
-- haskell-split
-- haskell-optparse-simple
-- haskell-neat-interpolation
+- haskell-arch-web
 - haskell-conduit
 - haskell-conduit-extra
+- haskell-hackage-db
+- haskell-http-client
 - haskell-http-client-tls
 - haskell-megaparsec
+- haskell-microlens
+- haskell-microlens-th
+- haskell-neat-interpolation
+- haskell-optparse-simple
+- haskell-polysemy
 - haskell-prettyprinter
+- haskell-prettyprinter-ansi-terminal
+- haskell-servant-client
+- haskell-split
+- haskell-tar-conduit
 update_on:
 - alpm: haskell-diff
   source: alpm

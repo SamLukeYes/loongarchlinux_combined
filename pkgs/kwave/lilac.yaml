@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kwave'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libsamplerate
-- audiofile
-- kio
-- id3lib
-- fftw
-- hicolor-icon-theme
-- libmad
+repo_depends: []
 update_on:
 - alpm: kwave
   source: archpkg

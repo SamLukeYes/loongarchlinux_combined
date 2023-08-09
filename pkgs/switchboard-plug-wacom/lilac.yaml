@@ -10,11 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-waco
 
   '
 repo_depends:
-- libxi
-- libwacom
-- libx11
-- gtk3
-- glib2
+- granite
+- libgudev
+- switchboard
 update_on:
 - alpm: granite
   provides: libgranite.so

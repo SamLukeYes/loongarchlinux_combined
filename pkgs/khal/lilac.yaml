@@ -8,16 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''khal'')
 
   '
 repo_depends:
-- pyxdg: python-pyxdg
-- python-dateutil
-- python-click-log
-- python-pytz
-- python-configobj
-- python-urwid
-- python-click
-- python-atomicwrites
-- python-tzlocal
-- python-icalendar
 - python
 update_on:
 - alias: python

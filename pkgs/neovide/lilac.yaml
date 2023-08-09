@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''neovide'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- fontconfig
-- neovim
-- freetype2
-- sndio
-- libglvnd
+repo_depends: []
 update_on:
 - alpm: neovide
   source: archpkg

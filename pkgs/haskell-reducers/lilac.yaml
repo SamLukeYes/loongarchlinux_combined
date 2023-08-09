@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-reducers'')
 
   '
 repo_depends:
-- haskell-unordered-containers
-- ghc: ghc-libs
 - haskell-fingertree
 - haskell-hashable
 - haskell-semigroupoids
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-fingertree
   source: alpm

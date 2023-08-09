@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-change-ty
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-syb
-- ghc: ghc-libs
-- haskell-lsp-types
-- haskell-hls-plugin-api
 - haskell-ghcide
+- haskell-hls-plugin-api
+- haskell-lsp-types
 - haskell-regex-tdfa
+- haskell-syb
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-ghcide
   source: alpm

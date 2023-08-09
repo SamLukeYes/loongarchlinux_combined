@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pygithub'')
 
   '
-repo_depends:
-- python-requests
-- python-deprecated
-- python-pyjwt
-- python-pynacl
+repo_depends: []
 update_on:
 - alpm: python-pygithub
   source: archpkg

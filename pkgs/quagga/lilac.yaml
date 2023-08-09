@@ -10,14 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''quagga'')
 
   '
 repo_depends:
-- libnl
-- net-snmp
-- ncurses
-- c-ares
-- perl
-- libcap
 - readline
-- openssl
+- perl
 update_on:
 - alias: readline
 - alias: perl

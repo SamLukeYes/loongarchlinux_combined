@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-src-meta'')
 
   '
 repo_depends:
-- haskell-th-orphans
 - haskell-src-exts
 - haskell-syb
-- ghc: ghc-libs
+- haskell-th-orphans
 update_on:
 - alpm: haskell-src-exts
   source: alpm

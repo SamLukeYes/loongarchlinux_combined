@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-ruff'')
 
   '
 repo_depends:
-- ruff: python-ruff
 - python
-- python-pytest
 update_on:
 - alias: python
 - alpm: python-pytest-ruff

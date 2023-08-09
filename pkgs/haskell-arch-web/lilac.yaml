@@ -10,16 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-arch-web'')
 
   '
 repo_depends:
-- haskell-lens
 - haskell-aeson
 - haskell-deriving-aeson
-- ghc: ghc-libs
-- haskell-http-types
-- haskell-servant-client
-- haskell-http-client-tls
 - haskell-http-client
-- haskell-servant-client-core
+- haskell-http-client-tls
+- haskell-http-types
+- haskell-lens
 - haskell-servant
+- haskell-servant-client
+- haskell-servant-client-core
 update_on:
 - alpm: haskell-aeson
   source: alpm

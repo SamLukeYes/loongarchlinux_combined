@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''blockdiag'')
 
   '
-repo_depends:
-- python-pillow
-- python-funcparserlib
-- python-webcolors
-- python-setuptools
+repo_depends: []
 update_on:
 - alpm: blockdiag
   source: archpkg

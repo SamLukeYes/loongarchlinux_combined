@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-haml'')
 
   '
 repo_depends:
-- ruby-temple
 - ruby
-- ruby-tilt
-- ruby-thor
 update_on:
 - alias: ruby
 - alpm: ruby-haml

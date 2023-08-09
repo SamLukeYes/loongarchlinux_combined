@@ -1,12 +1,13 @@
 destsubdir: extra
 repo_depends:
-- gcc: gcc-libs
-- liblouis
-- pcre2
-- polkit
-- bluez: bluez-libs
-- speech-dispatcher: libspeechd
-- glibc
+- alsa-lib
+- dbus
+- expat
+- glib2
+- icu
+- gpm
+- ncurses
+- systemd-libs
 update_on:
 - alpm: alsa-lib
   provides: libasound.so
@@ -16,12 +17,6 @@ update_on:
   source: alpm
 - alpm: expat
   provides: libexpat.so
-  source: alpm
-- alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
   source: alpm
 - alpm: glib2
   provides: libgobject-2.0.so

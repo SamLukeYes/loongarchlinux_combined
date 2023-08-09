@@ -10,15 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lightdm-slick-greeter
 
   '
 repo_depends:
-- xorg-server
-- pixman
-- freetype2
-- libcanberra
-- xapp
-- gtk3
-- libxext
-- cairo
-- lightdm
 - python
 update_on:
 - alias: python

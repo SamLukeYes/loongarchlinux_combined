@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-dbus-client-gen'')
 
   '
-repo_depends:
-- dbus-python
-- dbus-client-gen
-- python-into-dbus
+repo_depends: []
 update_on:
 - alpm: python-dbus-client-gen
   source: archpkg

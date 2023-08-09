@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-edisoncore'')
 repo_depends:
 - haskell-edisonapi
 - haskell-quickcheck
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-edisonapi
   source: alpm

@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kpmcore'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kcoreaddons
-- polkit-qt: polkit-qt5
-- kwidgetsaddons
-- qca: qca-qt5
-- smartmontools
-- ki18n
+repo_depends: []
 update_on:
 - alpm: kpmcore
   source: archpkg

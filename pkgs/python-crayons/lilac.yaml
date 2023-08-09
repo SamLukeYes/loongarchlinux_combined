@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-crayons'')
 
   '
-repo_depends:
-- python-colorama
+repo_depends: []
 update_on:
 - alpm: python-crayons
   source: archpkg

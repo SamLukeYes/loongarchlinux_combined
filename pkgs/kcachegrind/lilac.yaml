@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kcachegrind'')
   '
 repo_depends:
 - qt5-base
-- hicolor-icon-theme
-- kio
 update_on:
 - alpm: qt5-base
   source: alpm

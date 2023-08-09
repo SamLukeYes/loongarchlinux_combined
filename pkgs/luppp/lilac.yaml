@@ -10,14 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''luppp'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- libsamplerate
-- libsndfile
+- jack2
 - liblo
 - ntk
-- libx11
-- cairo
-- glibc
+- libsamplerate
+- libsndfile
 update_on:
 - alpm: jack2
   provides: libjack.so

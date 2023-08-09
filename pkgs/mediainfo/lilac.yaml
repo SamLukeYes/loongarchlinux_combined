@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mediainfo'')
 
   '
 repo_depends:
-- wxwidgets: wxwidgets-gtk3
-- libmediainfo
-- hicolor-icon-theme
+- wxwidgets-gtk3
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm

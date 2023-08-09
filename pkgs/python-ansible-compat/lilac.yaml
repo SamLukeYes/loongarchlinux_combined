@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-ansible-compat
 
   '
 repo_depends:
-- ansible-core
-- python-subprocess-tee
-- python-packaging
-- python-jsonschema
 - python
 update_on:
 - alias: python

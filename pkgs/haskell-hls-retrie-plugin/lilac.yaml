@@ -10,17 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-retrie-pl
 
   '
 repo_depends:
-- haskell-unordered-containers
 - haskell-aeson
-- ghc: ghc-libs
+- haskell-extra
+- haskell-ghc
+- haskell-ghcide
 - haskell-hashable
-- haskell-retrie
-- haskell-lsp-types
 - haskell-hls-plugin-api
 - haskell-lsp
-- haskell-ghcide
-- haskell-extra
+- haskell-lsp-types
+- haskell-retrie
 - haskell-safe-exceptions
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-aeson
   source: alpm

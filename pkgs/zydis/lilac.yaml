@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zydis'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
-- zycore-c
+repo_depends: []
 update_on:
 - alpm: zydis
   source: archpkg

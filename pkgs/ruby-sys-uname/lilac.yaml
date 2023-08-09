@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-sys-uname'')
 
   '
-repo_depends:
-- ruby-ffi
+repo_depends: []
 update_on:
 - alpm: ruby-sys-uname
   source: archpkg

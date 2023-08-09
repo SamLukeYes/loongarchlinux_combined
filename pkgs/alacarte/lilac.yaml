@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''alacarte'')
 
   '
-repo_depends:
-- gtk3
-- pygobject: python-gobject
-- python-cairo
-- gnome-menus
+repo_depends: []
 update_on:
 - alpm: alacarte
   source: archpkg

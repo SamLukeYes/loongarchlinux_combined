@@ -7,17 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''certbot'')
 
   '
-repo_depends:
-- python-configargparse
-- ca-certificates
-- python-pytz
-- python-setuptools
-- python-configobj
-- python-cryptography
-- python-parsedatetime
-- python-pyrfc3339
-- python-distro
-- python-acme
+repo_depends: []
 update_on:
 - alpm: certbot
   source: archpkg

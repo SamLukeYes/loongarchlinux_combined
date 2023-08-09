@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gcin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gdk-pixbuf2
-- glib2
-- pango
-- libxtst
-- libappindicator: libappindicator-gtk3
-- libx11
-- gtk3
-- cairo
-- glibc
+repo_depends: []
 update_on:
 - alpm: gcin
   source: archpkg

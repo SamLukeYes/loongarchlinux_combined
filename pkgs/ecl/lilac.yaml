@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ecl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gmp
-- bash
+repo_depends: []
 update_on:
 - alpm: ecl
   source: archpkg

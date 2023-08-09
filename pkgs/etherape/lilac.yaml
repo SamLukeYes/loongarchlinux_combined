@@ -10,12 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''etherape'')
 
   '
 repo_depends:
-- glib2
-- goocanvas
-- popt
 - libpcap
-- gtk3
-- glibc
 update_on:
 - alpm: libpcap
   provides: libpcap.so

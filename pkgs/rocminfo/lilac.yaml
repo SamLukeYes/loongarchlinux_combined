@@ -10,8 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rocminfo'')
 
   '
 repo_depends:
-- hsa-rocr
-- pciutils
 - python
 update_on:
 - alias: python

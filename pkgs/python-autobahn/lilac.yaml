@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-autobahn'')
 
   '
 repo_depends:
-- python-cffi
-- python-wsaccel
-- python-cryptography
-- python-twisted
-- python-txaio
+- python
 update_on:
+- alias: python
 - alpm: python-autobahn
   source: archpkg

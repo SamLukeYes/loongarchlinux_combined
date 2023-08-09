@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-py_stringmatch
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-numpy
-- python-six
+repo_depends: []
 update_on:
 - alpm: python-py_stringmatching
   source: archpkg

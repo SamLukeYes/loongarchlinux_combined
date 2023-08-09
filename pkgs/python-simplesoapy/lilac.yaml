@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-simplesoapy'')
 
   '
 repo_depends:
-- soapysdr
-- python-numpy
 - python
 update_on:
 - alias: python

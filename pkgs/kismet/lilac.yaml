@@ -10,29 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kismet'')
 
   '
 repo_depends:
-- libusb
-- libcap-ng
-- libcap
-- glibc
-- gcc: gcc-libs
 - protobuf-c
-- protobuf: python-protobuf
-- pcre
-- systemd
-- networkmanager: libnm
-- python-setuptools
-- bluez: bluez-libs
-- libpcap
-- lm_sensors
-- sqlite
-- libwebsockets
-- python-numpy
+- libusb
 - python
-- elfutils: libelf
-- libnl
-- python-pyserial
-- zlib
-- python-websockets
+- libpcap
+- protobuf
+- libnm
+- libwebsockets
+- lm_sensors
 update_on:
 - alpm: protobuf-c
   provides: libprotobuf-c.so

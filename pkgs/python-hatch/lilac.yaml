@@ -8,23 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-hatch'')
 
   '
 repo_depends:
-- python-toml
-- twine
-- python-virtualenv
-- python-userpath
-- python-setuptools
-- python-sortedcontainers
-- python-build
-- python-colorama
-- python-click
-- python-pytest
-- python-atomicwrites
-- python-semver
-- python-appdirs
-- python-pip
-- python-coverage
-- python-pexpect
-- python-wheel
 - python
 update_on:
 - alias: python

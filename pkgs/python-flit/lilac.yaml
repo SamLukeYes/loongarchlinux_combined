@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-flit'')
 
   '
 repo_depends:
-- python-flit-core
-- python-requests
-- python-docutils
-- python-tomli-w
 - python
 update_on:
 - alias: python

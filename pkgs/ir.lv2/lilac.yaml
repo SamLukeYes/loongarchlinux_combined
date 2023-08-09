@@ -10,23 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ir.lv2'')
 
   '
 repo_depends:
-- gcc: gcc-libs
+- gtk2
 - glib2
 - libsamplerate
 - libsndfile
 - zita-convolver
-- gtk2
-- cairo
-- glibc
 update_on:
 - alpm: gtk2
-  provides: libgdk-x11-2.0.so
-  source: alpm
-- alpm: gtk2
   provides: libgtk-x11-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
   source: alpm
 - alpm: glib2
   provides: libglib-2.0.so

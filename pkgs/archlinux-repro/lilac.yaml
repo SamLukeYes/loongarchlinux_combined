@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''archlinux-repro'')
 
   '
-repo_depends:
-- zstd
-- git
-- diffutils
-- curl
-- diffoscope
-- gnupg
+repo_depends: []
 update_on:
 - alpm: archlinux-repro
   source: archpkg

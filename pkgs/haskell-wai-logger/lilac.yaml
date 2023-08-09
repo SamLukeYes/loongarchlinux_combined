@@ -11,11 +11,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-logger'')
   '
 repo_depends:
 - haskell-byteorder
-- haskell-wai
-- haskell-network
-- ghc: ghc-libs
-- haskell-http-types
 - haskell-fast-logger
+- haskell-http-types
+- haskell-network
+- haskell-wai
 update_on:
 - alpm: haskell-byteorder
   source: alpm

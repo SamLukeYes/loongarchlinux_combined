@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''iptux'')
 
   '
 repo_depends:
-- google-glog
 - jsoncpp
-- libsigc++
-- gtk3
 update_on:
 - alias: jsoncpp
 - alpm: iptux

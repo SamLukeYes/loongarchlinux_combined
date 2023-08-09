@@ -10,17 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-authenticate-
 
   '
 repo_depends:
-- haskell-crypto-pubkey-types
-- ghc: ghc-libs
-- haskell-http-types
-- haskell-random
-- haskell-blaze-builder
-- haskell-data-default
-- haskell-rsa
-- haskell-sha
-- haskell-transformers-compat
 - haskell-http-client
+- haskell-crypto-pubkey-types
+- haskell-rsa
+- haskell-data-default
 - haskell-base64-bytestring
+- haskell-sha
+- haskell-random
+- haskell-http-types
+- haskell-blaze-builder
+- haskell-transformers-compat
 update_on:
 - alpm: haskell-http-client
   source: alpm

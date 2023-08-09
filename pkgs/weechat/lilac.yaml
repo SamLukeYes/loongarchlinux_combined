@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''weechat'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gnutls
-- curl
-- libgcrypt
+repo_depends: []
 update_on:
 - alpm: weechat
   source: archpkg

@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ocaml-ctypes'')
 
   '
 repo_depends:
-- ocaml-bigarray-compat
 - ocaml
-- ocaml-integers
-- libffi
 update_on:
 - alpm: ocaml
   source: alpm

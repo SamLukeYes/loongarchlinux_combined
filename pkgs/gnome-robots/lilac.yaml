@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-robots'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libgnome-games-support
-- libgee
-- librsvg
-- gtk3
-- gsound
+repo_depends: []
 update_on:
 - alpm: gnome-robots
   source: archpkg

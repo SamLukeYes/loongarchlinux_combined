@@ -11,10 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-unixutils'')
   '
 repo_depends:
 - haskell-process-extras
-- ghc: ghc-libs
-- haskell-zlib
-- haskell-regex-tdfa
 - haskell-puremd5
+- haskell-regex-tdfa
+- haskell-zlib
 update_on:
 - alpm: haskell-process-extras
   source: alpm

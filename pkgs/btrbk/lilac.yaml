@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''btrbk'')
   '
 repo_depends:
 - perl
-- btrfs-progs
 update_on:
 - alias: perl
 - alpm: btrbk

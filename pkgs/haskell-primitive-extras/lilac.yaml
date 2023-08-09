@@ -12,14 +12,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-primitive-ext
 repo_depends:
 - haskell-cereal
 - haskell-deferred-folds
-- haskell-list-t
-- ghc: ghc-libs
-- haskell-primitive-unlifted
-- haskell-foldl
 - haskell-focus
-- haskell-vector
+- haskell-foldl
+- haskell-list-t
 - haskell-primitive
+- haskell-primitive-unlifted
 - haskell-profunctors
+- haskell-vector
 update_on:
 - alpm: haskell-cereal
   source: alpm

@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''patchmatrix'')
 
   '
 repo_depends:
-- glibc
-- libx11
-- libglvnd
 - glew
-- hicolor-icon-theme
+- jack2
 update_on:
 - alpm: glew
   provides: libGLEW.so

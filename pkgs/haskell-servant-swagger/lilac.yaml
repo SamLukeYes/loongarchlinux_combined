@@ -10,18 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-servant-swagg
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-lens
 - haskell-aeson
+- haskell-aeson-pretty
 - haskell-http-media
-- ghc: ghc-libs
+- haskell-insert-ordered-containers
+- haskell-lens
+- haskell-servant
+- haskell-singleton-bool
 - haskell-swagger2
+- haskell-unordered-containers
 - haskell-hspec
 - haskell-quickcheck
-- haskell-servant
-- haskell-aeson-pretty
-- haskell-singleton-bool
-- haskell-insert-ordered-containers
 update_on:
 - alpm: haskell-aeson
   source: alpm

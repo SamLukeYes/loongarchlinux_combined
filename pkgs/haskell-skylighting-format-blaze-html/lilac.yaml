@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-skylighting-f
 repo_depends:
 - haskell-blaze-html
 - haskell-skylighting-core
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-blaze-html
   source: alpm

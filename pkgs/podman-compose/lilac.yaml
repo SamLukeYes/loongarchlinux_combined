@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''podman-compose'')
 
   '
 repo_depends:
-- podman
-- python-dotenv
-- python-yaml
-- podman-dnsname
 - python
 update_on:
 - alias: python

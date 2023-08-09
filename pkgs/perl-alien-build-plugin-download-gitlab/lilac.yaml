@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-alien-build-plugin-download-gitlab'')
 
   '
-repo_depends:
-- perl-uri
-- perl-path-tiny
-- perl-alien-build
+repo_depends: []
 update_on:
 - alpm: perl-alien-build-plugin-download-gitlab
   source: archpkg

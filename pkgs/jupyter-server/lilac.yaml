@@ -7,19 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''jupyter-server'')
 
   '
-repo_depends:
-- python-jupyter-events
-- python-prometheus_client
-- python-traitlets
-- python-overrides
-- jupyter-nbformat
-- python-send2trash
-- python-argon2_cffi
-- python-jinja
-- python-anyio
-- python-websocket-client
-- jupyter-nbconvert
-- python-tornado
+repo_depends: []
 update_on:
 - alpm: jupyter-server
   source: archpkg

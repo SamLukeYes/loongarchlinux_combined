@@ -8,11 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-mail-spf'')
 
   '
 repo_depends:
-- perl-uri
-- perl-netaddr-ip
-- perl-net-dns
 - perl
-- perl-error
 update_on:
 - alias: perl
 - alpm: perl-mail-spf

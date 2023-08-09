@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-yesod-persist
 
   '
 repo_depends:
-- ghc: ghc-libs
 - haskell-blaze-builder
-- haskell-persistent
-- haskell-yesod-core
 - haskell-conduit
-- haskell-resourcet
+- haskell-persistent
 - haskell-resource-pool
+- haskell-resourcet
+- haskell-yesod-core
 update_on:
 - alpm: haskell-blaze-builder
   source: alpm

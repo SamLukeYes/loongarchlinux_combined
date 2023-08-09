@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''endless-sky-high-dpi'')
 
   '
-repo_depends:
-- endless-sky
+repo_depends: []
 update_on:
 - alpm: endless-sky-high-dpi
   source: archpkg

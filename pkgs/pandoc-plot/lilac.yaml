@@ -10,20 +10,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pandoc-plot'')
 
   '
 repo_depends:
-- haskell-optparse-applicative
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-pandoc-types
-- haskell-hashable
-- haskell-tagsoup
-- haskell-gitrev
-- haskell-lifted-base
 - haskell-data-default
-- haskell-pandoc
-- haskell-yaml
+- haskell-gitrev
+- haskell-hashable
 - haskell-lifted-async
-- haskell-typed-process
+- haskell-lifted-base
+- haskell-optparse-applicative
+- haskell-pandoc
+- haskell-pandoc-types
 - haskell-shakespeare
+- haskell-tagsoup
+- haskell-typed-process
+- haskell-yaml
 update_on:
 - alpm: haskell-aeson
   source: alpm

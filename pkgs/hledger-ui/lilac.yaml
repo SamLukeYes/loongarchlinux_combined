@@ -10,25 +10,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hledger-ui'')
 
   '
 repo_depends:
-- haskell-ansi-terminal
-- hledger
-- haskell-text-zipper
-- haskell-brick
-- haskell-fsnotify
 - haskell-hledger-lib
-- haskell-microlens
+- haskell-ansi-terminal
 - haskell-async
-- ghc: ghc-libs
 - haskell-cmdargs
-- haskell-microlens-platform
-- haskell-extra
-- haskell-split
-- haskell-doclayout
 - haskell-data-default
-- haskell-vector
-- haskell-vty
-- haskell-safe
+- haskell-doclayout
+- haskell-extra
+- haskell-fsnotify
+- haskell-microlens
+- haskell-microlens-platform
 - haskell-megaparsec
+- haskell-safe
+- haskell-split
+- haskell-text-zipper
+- haskell-vector
+- haskell-brick
+- haskell-vty
 update_on:
 - alpm: haskell-hledger-lib
   source: alpm

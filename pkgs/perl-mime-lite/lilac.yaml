@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-mime-lite'')
 
   '
 repo_depends:
-- perl-mailtools
-- perl-email-date-format
 - perl
-- perl-mime-types
 update_on:
 - alias: perl
 - alpm: perl-mime-lite

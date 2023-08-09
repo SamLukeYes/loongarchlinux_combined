@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pipes-http'')
 repo_depends:
 - haskell-http-client
 - haskell-http-client-tls
-- ghc: ghc-libs
 - haskell-pipes
 update_on:
 - alpm: haskell-http-client

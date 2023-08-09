@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gst-plugins-espeak'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- espeak-ng
-- gstreamer: gst-plugins-base-libs
+repo_depends: []
 update_on:
 - alpm: gst-plugins-espeak
   source: archpkg

@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''visidata'')
 
   '
 repo_depends:
-- python-importlib-metadata
-- python-dateutil
 - python
-- python-setuptools
 update_on:
 - alias: python
 - alpm: visidata

@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''golang-github-stretchr-testify'')
 
   '
-repo_depends:
-- golang-github-davecgh-go-spew
-- golang-github-pmezard-go-difflib
-- golang-gopkg-yaml.v3
-- go
-- golang-github-stretchr-objx
+repo_depends: []
 update_on:
 - alpm: golang-github-stretchr-testify
   source: archpkg

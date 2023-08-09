@@ -10,18 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-http-streams'
 
   '
 repo_depends:
+- haskell-attoparsec
+- haskell-base64-bytestring
+- haskell-blaze-builder
+- haskell-case-insensitive
+- haskell-io-streams
+- haskell-hsopenssl
 - haskell-openssl-streams
 - haskell-unordered-containers
-- haskell-network
-- ghc: ghc-libs
 - haskell-aeson
-- haskell-hsopenssl
-- haskell-case-insensitive
-- haskell-blaze-builder
-- haskell-io-streams
-- haskell-attoparsec
 - haskell-http-common
-- haskell-base64-bytestring
+- haskell-network
 - haskell-network-uri
 update_on:
 - alpm: haskell-attoparsec

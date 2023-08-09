@@ -11,11 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''avahi'')
   '
 repo_depends:
 - dbus
-- gdbm
-- libcap
-- libdaemon
-- expat
-- glib2
 update_on:
 - alpm: dbus
   provides: libdbus-1.so

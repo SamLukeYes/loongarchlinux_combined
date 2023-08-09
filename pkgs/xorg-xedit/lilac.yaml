@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-xedit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libx11
-- libxt
-- libxaw
-- libxmu
+repo_depends: []
 update_on:
 - alpm: xorg-xedit
   source: archpkg

@@ -1,7 +1,6 @@
 destsubdir: extra
 repo_depends:
 - alsa-lib
-- glibc
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

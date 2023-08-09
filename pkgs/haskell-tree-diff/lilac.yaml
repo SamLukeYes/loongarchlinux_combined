@@ -10,24 +10,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tree-diff'')
 
   '
 repo_depends:
-- haskell-primitive
-- haskell-parsers
-- haskell-semialign
-- haskell-base-compat
-- haskell-strict
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-these
-- haskell-hashable
-- haskell-tagged
-- haskell-unordered-containers
-- haskell-quickcheck
-- haskell-uuid-types
-- haskell-ansi-terminal
-- haskell-scientific
-- haskell-vector
 - haskell-ansi-wl-pprint
+- haskell-ansi-terminal
+- haskell-base-compat
 - haskell-data-array-byte
+- haskell-hashable
+- haskell-parsers
+- haskell-primitive
+- haskell-quickcheck
+- haskell-scientific
+- haskell-semialign
+- haskell-strict
+- haskell-tagged
+- haskell-these
+- haskell-unordered-containers
+- haskell-uuid-types
+- haskell-vector
 update_on:
 - alpm: haskell-aeson
   source: alpm

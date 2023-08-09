@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-skylighting-f
 
   '
 repo_depends:
-- haskell-skylighting-core
-- haskell-colour
-- ghc: ghc-libs
 - haskell-ansi-terminal
+- haskell-colour
+- haskell-skylighting-core
 update_on:
 - alpm: haskell-ansi-terminal
   source: alpm

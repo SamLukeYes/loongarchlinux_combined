@@ -8,7 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-beautifulsoup4
 
   '
 repo_depends:
-- python-soupsieve
 - python
 update_on:
 - alias: python

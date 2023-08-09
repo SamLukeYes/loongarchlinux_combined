@@ -10,12 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-cabal-fmt
 
   '
 repo_depends:
-- haskell-lens
-- ghc: ghc-libs
-- haskell-lsp-types
-- haskell-hls-plugin-api
-- cabal-fmt
 - haskell-ghcide
+- haskell-hls-plugin-api
+- haskell-lens
+- haskell-lsp-types
 update_on:
 - alpm: haskell-ghcide
   source: alpm

@@ -10,15 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xmonad-utils'')
 
   '
 repo_depends:
-- ghc: ghc-libs
-- libxrandr
-- haskell-random
 - haskell-x11
+- haskell-random
 - libxcrypt
-- libffi
-- libx11
-- glibc
-- gmp
 update_on:
 - alpm: haskell-x11
   source: alpm

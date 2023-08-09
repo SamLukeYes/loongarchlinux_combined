@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''packagekit-qt'')
 repo_depends:
 - qt5-base
 - qt6-base
-- packagekit
 update_on:
 - alpm: qt5-base
   source: alpm

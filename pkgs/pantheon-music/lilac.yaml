@@ -10,13 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-music'')
 
   '
 repo_depends:
-- gdk-pixbuf2
-- libgee
-- pango
-- gstreamer
-- gstreamer: gst-plugins-base-libs
-- cairo
-- glib2
+- granite7
 update_on:
 - alpm: granite7
   provides: libgranite-7.so

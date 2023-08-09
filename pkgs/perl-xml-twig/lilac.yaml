@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-xml-twig'')
 
   '
 repo_depends:
-- perl-text-iconv
 - perl
-- perl-xml-parser
 update_on:
 - alias: perl
 - alpm: perl-xml-twig

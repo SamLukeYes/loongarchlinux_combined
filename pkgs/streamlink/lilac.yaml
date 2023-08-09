@@ -7,14 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''streamlink'')
 
   '
-repo_depends:
-- python-pysocks
-- python-requests
-- isodate: python-isodate
-- python-pycryptodome
-- python-websocket-client
-- python-pycountry
-- python-certifi
+repo_depends: []
 update_on:
 - alpm: streamlink
   source: archpkg

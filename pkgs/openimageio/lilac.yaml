@@ -9,21 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openimageio'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libraw
-- opencolorio
-- libpng
-- openexr
-- libtiff
-- libheif
-- pugixml
-- freetype2
-- hdf5
-- pybind11
-- glew
-- libwebp
-- boost: boost-libs
-- openjpeg2
+repo_depends: []
 update_on:
 - alpm: openimageio
   source: archpkg

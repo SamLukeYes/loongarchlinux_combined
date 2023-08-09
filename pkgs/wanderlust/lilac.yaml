@@ -9,8 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wanderlust'')
   '
 repo_depends:
 - emacs
-- semi
-- flim
 update_on:
 - alpm: emacs
   source: alpm

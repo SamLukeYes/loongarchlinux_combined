@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pass'')
 
   '
-repo_depends:
-- gnupg
-- tree
-- bash
+repo_depends: []
 update_on:
 - alpm: pass
   source: archpkg

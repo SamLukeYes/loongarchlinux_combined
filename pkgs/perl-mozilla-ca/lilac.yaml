@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-mozilla-ca'')
   '
 repo_depends:
 - perl
-- ca-certificates
 update_on:
 - alias: perl
 - alpm: perl-mozilla-ca

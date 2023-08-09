@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''critter'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- sdl_image
-- sdl_mixer
+repo_depends: []
 update_on:
 - alpm: critter
   source: archpkg

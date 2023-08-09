@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-x11perf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxrender
-- libxft
-- libx11
-- libxext
-- libxmu
+repo_depends: []
 update_on:
 - alpm: xorg-x11perf
   source: archpkg

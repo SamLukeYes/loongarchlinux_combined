@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rake-compiler'')
 
   '
 repo_depends:
-- rubygems
 - ruby
-- ruby-rake
 update_on:
 - alias: ruby
 - alpm: ruby-rake-compiler

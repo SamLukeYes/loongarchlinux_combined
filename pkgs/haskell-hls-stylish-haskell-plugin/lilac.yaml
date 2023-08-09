@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-stylish-h
 
   '
 repo_depends:
-- ghc: ghc-libs
-- stylish-haskell
-- haskell-lsp-types
-- haskell-hls-plugin-api
+- haskell-ghc
 - haskell-ghcide
+- haskell-hls-plugin-api
+- haskell-lsp-types
 update_on:
 - alpm: haskell-ghc
   source: alpm

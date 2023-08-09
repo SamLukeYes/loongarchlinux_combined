@@ -10,24 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jacktrip'')
 
   '
 repo_depends:
-- glibc
-- gcc: gcc-libs
-- qt5-quickcontrols2
 - qt5-base
-- qt5-networkauth
-- qt5-websockets
-- rtaudio
 - qt5-declarative
-- qt5-graphicaleffects
-- qt5-svg
-- hicolor-icon-theme
+- jack2
+- rtaudio
 update_on:
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: qt5-declarative
-  source: alpm
-  strip_release: true
 - alpm: qt5-base
   source: alpm
   strip_release: true

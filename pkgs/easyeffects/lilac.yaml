@@ -10,14 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''easyeffects'')
 
   '
 repo_depends:
-- rnnoise
-- speexdsp
-- pipewire
+- fmt
 - gsl
-- gtk4
-- zita-convolver
-- fftw
-- libebur128
+- libadwaita
+- libbs2b
+- libsamplerate
+- libsigc++-3.0
+- libsndfile
+- lilv
 update_on:
 - alpm: fmt
   provides: libfmt.so
@@ -42,9 +42,6 @@ update_on:
   source: alpm
 - alpm: lilv
   provides: liblilv-0.so
-  source: alpm
-- alpm: rubberband
-  provides: librubberband.so
   source: alpm
 - alpm: easyeffects
   source: archpkg

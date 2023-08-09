@@ -10,20 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kernelshark'')
 
   '
 repo_depends:
-- freeglut
-- gcc: gcc-libs
-- json-c
-- glu
 - qt5-base
-- trace-cmd
+- json-c
+- cuda-tools
 - libtraceevent
-- libglvnd
-- glibc
 - libtracefs
+- trace-cmd
 update_on:
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: qt5-base
   source: alpm
   strip_release: true

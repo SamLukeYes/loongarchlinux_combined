@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcgiwrap'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- fcgi
-- systemd
+repo_depends: []
 update_on:
 - alpm: fcgiwrap
   source: archpkg

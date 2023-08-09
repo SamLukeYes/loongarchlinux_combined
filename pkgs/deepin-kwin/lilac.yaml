@@ -10,40 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-kwin'')
 
   '
 repo_depends:
-- kidletime
-- kcrash
-- qt5-x11extras
-- ki18n
-- kglobalaccel
-- kpackage
-- pipewire: libpipewire
-- kwindowsystem
-- kconfig
-- kconfigwidgets
-- plasma-framework
-- qt5-quickcontrols
-- xcb-util-cursor
-- kwidgetsaddons
-- krunner
-- breeze
-- ktextwidgets
-- knotifications
-- kxmlgui
-- kiconthemes
-- kservice
-- kdecoration
-- kscreenlocker
-- kcmutils
 - qt5-declarative
-- knewstuff
-- dwayland
+- kconfig
 - python
-- xorg-xwayland
-- libqaccessibilityclient
-- kcompletion
-- kdbusaddons
-- lcms2
-- kcoreaddons
 update_on:
 - alpm: qt5-declarative
   source: alpm

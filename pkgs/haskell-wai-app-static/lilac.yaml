@@ -10,23 +10,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-app-stati
 
   '
 repo_depends:
-- haskell-optparse-applicative
-- haskell-unordered-containers
+- haskell-blaze-html
+- haskell-blaze-markup
 - haskell-cryptonite
-- haskell-wai
-- haskell-warp
-- ghc: ghc-libs
+- haskell-file-embed
 - haskell-http-date
 - haskell-http-types
-- haskell-blaze-html
 - haskell-memory
-- haskell-unix-compat
-- haskell-blaze-markup
 - haskell-mime-types
-- haskell-wai-extra
-- haskell-zlib
-- haskell-file-embed
 - haskell-old-locale
+- haskell-optparse-applicative
+- haskell-unix-compat
+- haskell-unordered-containers
+- haskell-wai
+- haskell-wai-extra
+- haskell-warp
+- haskell-zlib
 update_on:
 - alpm: haskell-blaze-html
   source: alpm

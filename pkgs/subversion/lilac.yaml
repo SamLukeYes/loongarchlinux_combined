@@ -9,22 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''subversion'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- file
-- bash
-- gcc: gcc-libs
-- libsasl
-- libutf8proc
-- lz4
-- serf
-- dbus
-- zlib
-- expat
-- apr-util
-- sqlite
-- apr
-- glibc
-- systemd
+repo_depends: []
 update_on:
 - alpm: subversion
   source: archpkg

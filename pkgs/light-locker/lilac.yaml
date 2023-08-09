@@ -10,33 +10,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''light-locker'')
 
   '
 repo_depends:
-- dbus-glib
-- libxss
-- libx11
-- libxext
-- cairo
-- glibc
+- dbus
+- gtk3
+- glib2
+- pango
+- systemd-libs
 update_on:
 - alpm: dbus
   provides: libdbus-1.so
   source: alpm
 - alpm: gtk3
-  provides: libgdk-3.so
-  source: alpm
-- alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
+  provides: libgtk-3.so
   source: alpm
 - alpm: glib2
   provides: libgobject-2.0.so
-  source: alpm
-- alpm: gtk3
-  provides: libgtk-3.so
-  source: alpm
-- alpm: pango
-  provides: libpango-1.0.so
   source: alpm
 - alpm: pango
   provides: libpangocairo-1.0.so

@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-sqlite3'')
 
   '
 repo_depends:
-- sqlite
 - ruby
-- sqlcipher
-- ruby-mini_portile2
 update_on:
 - alias: ruby
 - alpm: ruby-sqlite3

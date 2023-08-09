@@ -1,11 +1,3 @@
 destsubdir: extra
-repo_depends:
-- gawk
-- xdg-user-dirs
-- powerdevil
-- baloo
-- kmenuedit
-- kdelibs4support
-- systemsettings
-- polkit-kde-agent
+repo_depends: []
 update_on: []

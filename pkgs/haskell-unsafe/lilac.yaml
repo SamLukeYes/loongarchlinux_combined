@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-unsafe'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ghc: ghc-libs
+repo_depends: []
 update_on:
 - alpm: haskell-unsafe
   source: archpkg

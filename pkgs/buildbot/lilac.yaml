@@ -8,28 +8,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''buildbot'')
 
   '
 repo_depends:
-- python-cairosvg
-- python-klein
-- python-dateutil
-- python-cairocffi
-- python-sqlalchemy
-- python-alembic
-- python-msgpack
-- python-txaio
-- python-setuptools
-- python-yaml
 - python
-- python-zope-interface
-- python-autobahn
-- python-twisted
-- python-jinja
-- python-future
-- python-pyjwt
 update_on:
-- alias: python
-- alias: python
-- alias: python
-- alias: python
 - alias: python
 - alpm: buildbot
   source: archpkg

@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hslua-module-
 
   '
 repo_depends:
-- haskell-hslua-packaging
-- ghc: ghc-libs
 - haskell-hslua
 - haskell-hslua-marshalling
+- haskell-hslua-packaging
 update_on:
 - alpm: haskell-hslua
   source: alpm

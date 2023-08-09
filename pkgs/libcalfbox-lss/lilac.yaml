@@ -10,7 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libcalfbox-lss'')
 
   '
 repo_depends:
-- glibc
+- fluidsynth
+- glib2
+- jack2
+- libsndfile
+- util-linux-libs
 update_on:
 - alpm: fluidsynth
   provides: libfluidsynth.so

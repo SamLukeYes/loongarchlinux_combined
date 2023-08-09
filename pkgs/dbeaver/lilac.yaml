@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dbeaver'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtk4: gtk-update-icon-cache
-- gtk3
-- libsecret
+repo_depends: []
 update_on:
 - alpm: dbeaver
   source: archpkg

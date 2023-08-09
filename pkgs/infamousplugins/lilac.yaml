@@ -10,12 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''infamousplugins'')
 
   '
 repo_depends:
-- gcc: gcc-libs
+- fftw
 - ntk
 - zita-resampler
-- fftw
-- cairo
-- glibc
 update_on:
 - alpm: fftw
   provides: libfftw3f.so

@@ -10,8 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vde2'')
 
   '
 repo_depends:
-- glibc
-- bash
+- libpcap
+- wolfssl
 update_on:
 - alpm: libpcap
   provides: libpcap.so

@@ -11,12 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rsync'')
   '
 repo_depends:
 - acl
-- zstd
-- lz4
-- popt
-- zlib
 - xxhash
-- openssl
 update_on:
 - alpm: acl
   provides: libacl.so

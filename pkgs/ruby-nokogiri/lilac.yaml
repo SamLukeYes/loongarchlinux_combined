@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-nokogiri'')
   '
 repo_depends:
 - ruby
-- libxslt
-- ruby-mini_portile2
 update_on:
 - alias: ruby
 - alpm: ruby-nokogiri

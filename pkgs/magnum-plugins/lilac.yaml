@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''magnum-plugins'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- assimp
-- magnum
-- freetype2
-- devil
-- faad2
-- libpng
+repo_depends: []
 update_on:
 - alpm: magnum-plugins
   source: archpkg

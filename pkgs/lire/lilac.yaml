@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''lire'')
 
   '
-repo_depends:
-- perl-dbd-sqlite
-- perl-libintl-perl
-- perl-curses
-- perl-curses-ui
-- perl-xml-parser
+repo_depends: []
 update_on:
 - alpm: lire
   source: archpkg

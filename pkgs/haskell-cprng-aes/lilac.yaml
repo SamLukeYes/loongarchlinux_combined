@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cprng-aes'')
 repo_depends:
 - haskell-byteable
 - haskell-cipher-aes
-- ghc: ghc-libs
 - haskell-crypto-random
 update_on:
 - alpm: haskell-byteable

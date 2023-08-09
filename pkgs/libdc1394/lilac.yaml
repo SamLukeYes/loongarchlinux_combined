@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libdc1394'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libusb
-- libraw1394
-- glibc
+repo_depends: []
 update_on:
 - alpm: libdc1394
   source: archpkg

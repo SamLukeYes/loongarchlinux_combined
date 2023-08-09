@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libsecret'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libgcrypt
-- glib2
-- tpm2-tss
+repo_depends: []
 update_on:
 - alpm: libsecret
   source: archpkg

@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''appstream'')
 
   '
 repo_depends:
-- libxmlb
 - qt5-base
-- curl
-- librsvg
-- libyaml
 update_on:
 - alpm: qt5-base
   source: alpm

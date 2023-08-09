@@ -10,16 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hackage-secur
 
   '
 repo_depends:
-- haskell-network
-- ghc: ghc-libs
-- haskell-ed25519
-- haskell-tar
-- haskell-lukko
-- haskell-zlib
-- haskell-cryptohash-sha256
-- haskell-base64-bytestring
 - haskell-base16-bytestring
+- haskell-base64-bytestring
+- haskell-cryptohash-sha256
+- haskell-ed25519
+- haskell-lukko
+- haskell-network
 - haskell-network-uri
+- haskell-tar
+- haskell-zlib
 update_on:
 - alpm: haskell-base16-bytestring
   source: alpm

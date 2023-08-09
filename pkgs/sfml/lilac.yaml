@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sfml'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxrandr
-- libsndfile
-- openal
-- freetype2
-- libx11
-- glew
+repo_depends: []
 update_on:
 - alpm: sfml
   source: archpkg

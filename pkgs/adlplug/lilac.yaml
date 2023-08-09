@@ -1,11 +1,3 @@
 destsubdir: extra
-repo_depends:
-- fmt
-- gcc: gcc-libs
-- liblo
-- hicolor-icon-theme
-- freetype2
-- libx11
-- libxext
-- glibc
+repo_depends: []
 update_on: []

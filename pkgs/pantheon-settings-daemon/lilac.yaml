@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-settings-daemon'')
 
   '
-repo_depends:
-- accountsservice
-- dconf
-- granite
-- dbus
-- geoclue
-- glib2
+repo_depends: []
 update_on:
 - alpm: pantheon-settings-daemon
   source: archpkg

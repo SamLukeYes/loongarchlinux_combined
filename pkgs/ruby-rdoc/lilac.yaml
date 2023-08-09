@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rdoc'')
   '
 repo_depends:
 - ruby
-- ruby-psych
 update_on:
 - alias: ruby
 - alpm: ruby-rdoc

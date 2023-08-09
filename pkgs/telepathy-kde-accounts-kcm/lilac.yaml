@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-kde-account
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kaccounts-providers
-- telepathy-qt
+repo_depends: []
 update_on:
 - alpm: telepathy-kde-accounts-kcm
   source: archpkg

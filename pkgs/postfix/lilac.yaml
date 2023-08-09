@@ -10,22 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''postfix'')
 
   '
 repo_depends:
-- pcre2
-- tinycdb
-- mariadb: mariadb-libs
-- glibc
-- postgresql: postgresql-libs
-- db
 - icu
-- sqlite
-- openssl
 - libnsl
-- openldap: libldap
 - libsasl
-- zlib
-- lmdb
+- openssl
+- openssl
+- tinycdb
+- mariadb-libs
+- pcre2
+- postgresql-libs
+- sqlite
 update_on:
-- alias: icu
 - alpm: icu
   provides: libicuuc.so
   source: alpm

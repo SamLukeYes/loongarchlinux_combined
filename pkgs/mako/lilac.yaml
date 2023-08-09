@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mako'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pango
-- wayland
-- gdk-pixbuf2
-- systemd: systemd-libs
+repo_depends: []
 update_on:
 - alpm: mako
   source: archpkg

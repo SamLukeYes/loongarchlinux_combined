@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-net-dns-resolver
   '
 repo_depends:
 - perl
-- perl-net-dns
 update_on:
 - alias: perl
 - alpm: perl-net-dns-resolver-programmable

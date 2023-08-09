@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''horst'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libnl
-- ncurses
+repo_depends: []
 update_on:
 - alpm: horst
   source: archpkg

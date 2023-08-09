@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''manuskript'')
 
   '
-repo_depends:
-- python-markdown
-- python-lxml
-- python-pyenchant
-- pyqt5: python-pyqt5
-- qt5-svg
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: manuskript
   source: archpkg

@@ -10,16 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rizin'')
 
   '
 repo_depends:
-- file
-- libzip
-- libmspack
-- xz
-- lz4
-- zlib
 - capstone
+- gephi
 - xxhash
-- openssl
+- file
 - tree-sitter
+- libmspack
 update_on:
 - alpm: capstone
   provides: libcapstone.so

@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-dom-toml'')
 
   '
 repo_depends:
-- python-toml
 - python
-- python-domdf-python-tools
 update_on:
 - alias: python
 - alpm: python-dom-toml

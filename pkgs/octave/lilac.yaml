@@ -9,23 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''octave'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- arpack
-- gl2ps
-- glu
-- pcre2
-- libsndfile
-- curl
-- qt5-tools
-- qhull
-- sundials
-- graphicsmagick
-- qscintilla: qscintilla-qt5
-- fftw
-- ghostscript
-- hdf5
-- qrupdate
-- glpk
+repo_depends: []
 update_on:
 - alpm: octave
   source: archpkg

@@ -10,14 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''limesuite'')
 
   '
 repo_depends:
-- freeglut
-- gnuplot
-- libusb
-- wxwidgets: wxwidgets-gtk3
-- soapysdr
-- fltk
-- wget
-- glew
+- wxwidgets-gtk3
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm

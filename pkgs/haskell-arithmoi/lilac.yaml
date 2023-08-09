@@ -10,16 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-arithmoi'')
 
   '
 repo_depends:
+- haskell-chimera
+- haskell-constraints
 - haskell-exact-pi
+- haskell-integer-logarithms
 - haskell-integer-roots
-- ghc: ghc-libs
+- haskell-mod
 - haskell-random
 - haskell-semirings
-- haskell-constraints
-- haskell-chimera
 - haskell-vector
-- haskell-mod
-- haskell-integer-logarithms
 update_on:
 - alpm: haskell-chimera
   source: alpm

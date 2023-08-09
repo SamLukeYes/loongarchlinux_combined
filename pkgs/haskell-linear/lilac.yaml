@@ -10,23 +10,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-linear'')
 
   '
 repo_depends:
-- haskell-cereal
-- haskell-unordered-containers
-- haskell-lens
-- ghc: ghc-libs
-- haskell-reflection
-- haskell-hashable
-- haskell-random
-- haskell-tagged
-- haskell-semigroupoids
-- haskell-vector
-- haskell-bytes
-- haskell-distributive
 - haskell-adjunctions
-- haskell-transformers-compat
 - haskell-base-orphans
-- haskell-void
+- haskell-bytes
+- haskell-cereal
+- haskell-distributive
+- haskell-hashable
 - haskell-indexed-traversable
+- haskell-lens
+- haskell-random
+- haskell-reflection
+- haskell-semigroupoids
+- haskell-tagged
+- haskell-transformers-compat
+- haskell-unordered-containers
+- haskell-vector
+- haskell-void
 update_on:
 - alpm: haskell-adjunctions
   source: alpm

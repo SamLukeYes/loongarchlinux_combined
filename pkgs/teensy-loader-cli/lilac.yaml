@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''teensy-loader-cli'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libusb-compat
+repo_depends: []
 update_on:
 - alpm: teensy-loader-cli
   source: archpkg

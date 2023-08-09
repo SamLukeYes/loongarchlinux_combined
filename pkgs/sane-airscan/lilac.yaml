@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sane-airscan'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libjpeg-turbo
-- avahi
-- libxml2
-- gnutls
-- libpng
-- sane
+repo_depends: []
 update_on:
 - alpm: sane-airscan
   source: archpkg

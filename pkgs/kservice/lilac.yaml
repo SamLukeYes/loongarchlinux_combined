@@ -11,9 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kservice'')
   '
 repo_depends:
 - kconfig
-- kcoreaddons
-- ki18n
-- kdbusaddons
 update_on:
 - alpm: kconfig
   source: alpm

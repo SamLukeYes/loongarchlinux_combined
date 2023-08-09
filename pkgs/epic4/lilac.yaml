@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''epic4'')
 
   '
 repo_depends:
-- openssl
 - perl
-- tcl
-- ncurses
 update_on:
 - alias: perl
 - alpm: epic4

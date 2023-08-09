@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ovenmediaengine'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- jemalloc
-- pcre2
-- srt
-- ffmpeg
-- libsrtp
-- opus
-- hiredis
+repo_depends: []
 update_on:
 - alpm: ovenmediaengine
   source: archpkg

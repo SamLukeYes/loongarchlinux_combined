@@ -10,19 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hpack'')
 
   '
 repo_depends:
+- haskell-aeson
 - haskell-bifunctors
-- haskell-unordered-containers
 - haskell-cryptonite
 - haskell-glob
-- haskell-aeson
-- ghc: ghc-libs
-- haskell-http-types
-- haskell-scientific
-- haskell-vector
-- haskell-http-client-tls
-- haskell-yaml
 - haskell-http-client
+- haskell-http-client-tls
+- haskell-http-types
 - haskell-infer-license
+- haskell-scientific
+- haskell-unordered-containers
+- haskell-vector
+- haskell-yaml
 update_on:
 - alpm: haskell-aeson
   source: alpm

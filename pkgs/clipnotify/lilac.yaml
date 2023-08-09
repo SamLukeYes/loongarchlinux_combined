@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''clipnotify'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxfixes
-- libx11
+repo_depends: []
 update_on:
 - alpm: clipnotify
   source: archpkg

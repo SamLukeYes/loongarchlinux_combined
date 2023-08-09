@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''arrayfire'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- lapack: lapacke
-- intel-oneapi-mkl
-- forge
-- lapack: cblas
-- fftw
-- glew
-- freeimage
+repo_depends: []
 update_on:
 - alpm: arrayfire
   source: archpkg

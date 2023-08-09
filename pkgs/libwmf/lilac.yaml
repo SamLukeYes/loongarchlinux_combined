@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libwmf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- freetype2
-- gsfonts
-- expat
-- libx11
+repo_depends: []
 update_on:
 - alpm: libwmf
   source: archpkg

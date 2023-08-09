@@ -11,9 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-pg'')
   '
 repo_depends:
 - ruby
-- glibc
-- postgresql: postgresql-libs
-- ruby-rspec-core
 update_on:
 - alias: ruby
 - alpm: ruby-pg

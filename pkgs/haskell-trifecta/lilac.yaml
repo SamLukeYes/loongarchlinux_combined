@@ -10,24 +10,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-trifecta'')
 
   '
 repo_depends:
-- haskell-parsers
-- haskell-unordered-containers
-- haskell-lens
-- ghc: ghc-libs
-- haskell-fingertree
-- haskell-blaze-html
-- haskell-blaze-builder
-- haskell-hashable
 - haskell-ansi-terminal
-- haskell-charset
-- haskell-utf8-string
+- haskell-blaze-builder
+- haskell-blaze-html
 - haskell-blaze-markup
-- haskell-prettyprinter-ansi-terminal
-- haskell-reducers
+- haskell-charset
 - haskell-comonad
-- haskell-profunctors
+- haskell-fingertree
+- haskell-hashable
 - haskell-indexed-traversable
+- haskell-lens
+- haskell-parsers
 - haskell-prettyprinter
+- haskell-prettyprinter-ansi-terminal
+- haskell-profunctors
+- haskell-reducers
+- haskell-unordered-containers
+- haskell-utf8-string
 update_on:
 - alpm: haskell-ansi-terminal
   source: alpm

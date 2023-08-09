@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgcrypt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libgpg-error
+repo_depends: []
 update_on:
 - alpm: libgcrypt
   source: archpkg

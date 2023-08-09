@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''networkmanager-l2tp''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ppp
-- xl2tpd
+repo_depends: []
 update_on:
 - alpm: networkmanager-l2tp
   source: archpkg

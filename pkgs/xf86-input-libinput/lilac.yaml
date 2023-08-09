@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xf86-input-libinput''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libinput
+repo_depends: []
 update_on:
 - alpm: xf86-input-libinput
   source: archpkg

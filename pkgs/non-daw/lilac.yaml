@@ -10,14 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''non-daw'')
 
   '
 repo_depends:
-- glibc
-- gcc: gcc-libs
-- libsndfile
+- jack2
 - liblo
-- ntk
 - liblrdf
-- cairo
-- hicolor-icon-theme
+- ntk
+- libsndfile
 update_on:
 - alpm: jack2
   provides: libjack.so
@@ -29,25 +26,10 @@ update_on:
   provides: liblrdf.so
   source: alpm
 - alpm: ntk
-  provides: libntk.so
-  source: alpm
-- alpm: ntk
   provides: libntk_images.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
   source: alpm
 - alpm: libsndfile
   provides: libsndfile.so
-  source: alpm
-- alpm: ntk
-  provides: libntk.so
-  source: alpm
-- alpm: ntk
-  provides: libntk_images.so
   source: alpm
 - alpm: non-daw
   source: archpkg

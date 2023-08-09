@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-path'')
 
   '
 repo_depends:
-- haskell-hashable
 - haskell-aeson
-- ghc: ghc-libs
+- haskell-hashable
 update_on:
 - alpm: haskell-aeson
   source: alpm

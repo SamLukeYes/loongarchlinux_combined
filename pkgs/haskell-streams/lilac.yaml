@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-streams'')
 
   '
 repo_depends:
-- haskell-boring
-- ghc: ghc-libs
-- haskell-semigroupoids
-- haskell-distributive
-- haskell-comonad
 - haskell-adjunctions
+- haskell-boring
+- haskell-comonad
+- haskell-distributive
+- haskell-semigroupoids
 update_on:
 - alpm: haskell-adjunctions
   source: alpm

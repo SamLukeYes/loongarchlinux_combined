@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-record-dot-pr
 
   '
 repo_depends:
-- haskell-uniplate
 - haskell-extra
-- ghc: ghc-libs
+- haskell-uniplate
 update_on:
 - alpm: haskell-extra
   source: alpm

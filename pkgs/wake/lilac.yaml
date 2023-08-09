@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wake'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- re2
-- libutf8proc
-- fuse2
-- sqlite
-- dash
-- gmp
+repo_depends: []
 update_on:
 - alpm: wake
   source: archpkg

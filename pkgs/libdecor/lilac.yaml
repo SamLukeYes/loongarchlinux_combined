@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libdecor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- dbus
-- pango
-- wayland
+repo_depends: []
 update_on:
 - alpm: libdecor
   source: archpkg

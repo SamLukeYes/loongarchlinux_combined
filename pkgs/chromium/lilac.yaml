@@ -10,40 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''chromium'')
 
   '
 repo_depends:
-- alsa-lib
-- xdg-utils
-- jsoncpp
-- desktop-file-utils
-- libgcrypt
-- hicolor-icon-theme
-- dav1d
-- cups: libcups
-- pciutils
-- ffmpeg
-- dbus
-- opus
-- libva
-- harfbuzz
-- libxml2
-- zlib: minizip
-- ttf-liberation
 - icu
-- systemd
-- re2
-- fontconfig
-- libpng
-- woff2
-- libwebp
-- freetype2
-- libffi
-- pulseaudio: libpulse
-- libxss
-- brotli
-- nss
-- snappy
-- libxslt
-- gtk3
-- flac
+- jsoncpp
 update_on:
 - alias: icu
 - alias: jsoncpp

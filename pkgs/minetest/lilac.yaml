@@ -10,23 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''minetest'')
 
   '
 repo_depends:
-- xdg-utils
 - jsoncpp
-- libxi
-- luajit
-- curl
-- postgresql: postgresql-libs
-- leveldb
-- desktop-file-utils
-- openal
-- freetype2
-- sqlite
-- spatialindex
-- libvorbis
-- hicolor-icon-theme
-- hiredis
 update_on:
-- alias: jsoncpp
 - alias: jsoncpp
 - alpm: minetest
   source: archpkg

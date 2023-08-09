@@ -1,17 +1,3 @@
 destsubdir: core
-post_build_script: 'git_add_files(_G.files)
-
-  git_commit()
-
-  '
-pre_build_script: '_G.files = download_official_pkgbuild(''kbd'')
-
-  add_into_array(''arch'', [''loong64''])
-
-  '
-repo_depends:
-- glibc
-#- pam
-update_on:
-- alpm: kbd
-  source: archpkg
+repo_depends: []
+update_on: []

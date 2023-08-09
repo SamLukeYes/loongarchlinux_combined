@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-net-libidn'')
   '
 repo_depends:
 - perl
-- libidn
 update_on:
 - alias: perl
 - alpm: perl-net-libidn

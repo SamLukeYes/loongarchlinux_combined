@@ -9,20 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nextcloud-client'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- openssl
-- xdg-utils
-- qt5-quickcontrols2
-- qt5-quickcontrols
-- qtkeychain: qtkeychain-qt5
-- qt5-websockets
-- karchive
-- sqlite
-- qt5-graphicaleffects
-- qt5-svg
-- hicolor-icon-theme
-- libcloudproviders
-- qt5-webengine
+repo_depends: []
 update_on:
 - alpm: nextcloud-client
   source: archpkg

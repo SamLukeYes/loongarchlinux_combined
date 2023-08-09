@@ -10,10 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plasma-integration'')
 
   '
 repo_depends:
-- noto-fonts
-- qqc2-desktop-style
-- ttf-hack
-- libxcursor
 - perl
 update_on:
 - alias: perl

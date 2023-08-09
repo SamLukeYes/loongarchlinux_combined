@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fluid'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-graphicaleffects
-- qt5-svg
-- qt5-quickcontrols2
-- qt5-wayland
+repo_depends: []
 update_on:
 - alpm: fluid
   source: archpkg

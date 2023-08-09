@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''retroarch-assets'')
 
   '
-repo_depends:
-- retroarch
+repo_depends: []
 update_on:
 - alpm: retroarch-assets
   source: archpkg

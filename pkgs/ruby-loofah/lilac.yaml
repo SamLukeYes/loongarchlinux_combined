@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-loofah'')
 
   '
 repo_depends:
-- ruby-nokogiri
 - ruby
-- ruby-crass
 update_on:
 - alias: ruby
 - alpm: ruby-loofah

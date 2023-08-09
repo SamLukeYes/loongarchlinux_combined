@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdg-user-dirs-gtk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtk3
-- xdg-user-dirs
+repo_depends: []
 update_on:
 - alpm: xdg-user-dirs-gtk
   source: archpkg

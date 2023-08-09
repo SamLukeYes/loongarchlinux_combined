@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mosh'')
 
   '
 repo_depends:
-- perl-io-tty
-- openssh
-- openssl
 - protobuf
-- libutempter
 update_on:
 - alias: protobuf
 - alpm: mosh

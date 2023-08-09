@@ -9,19 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''spamassassin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- perl-io-socket-inet6
-- perl-mail-spf
-- perl-net-dns
-- zlib
-- perl-http-message
-- perl-net-http
-- re2c
-- perl-mail-dkim
-- perl-crypt-ssleay
-- perl-libwww
-- openssl
-- perl-io-socket-ssl
+repo_depends: []
 update_on:
 - alpm: spamassassin
   source: archpkg

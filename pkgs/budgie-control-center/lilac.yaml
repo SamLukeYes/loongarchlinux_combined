@@ -9,21 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''budgie-control-center
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- accountsservice
-- cheese: libcheese
-- gsound
-- gnome-online-accounts
-- libhandy
-- libpwquality
-- samba: smbclient
-- libgtop
-- colord-gtk
-- ibus
-- udisks2
-- gnome-bluetooth
-- gnome-settings-daemon
-- libnma
+repo_depends: []
 update_on:
 - alpm: budgie-control-center
   source: archpkg

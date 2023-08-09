@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''b3sum'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
+repo_depends: []
 update_on:
 - alpm: b3sum
   source: archpkg

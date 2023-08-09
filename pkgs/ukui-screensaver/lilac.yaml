@@ -1,11 +1,6 @@
 destsubdir: extra
 repo_depends:
-- dconf
-- qt5-x11extras
 - opencv
-- libxtst
-- gsettings-qt
-- qt5-svg
 update_on:
 - alpm: opencv
   source: alpm

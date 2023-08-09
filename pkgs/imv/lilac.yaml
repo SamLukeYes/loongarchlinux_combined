@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''imv'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxkbcommon
-- glu
-- pango
-- libheif
-- librsvg
-- libinih
-- freeimage
-- libxkbcommon: libxkbcommon-x11
-- libnsgif
+repo_depends: []
 update_on:
 - alpm: imv
   source: archpkg

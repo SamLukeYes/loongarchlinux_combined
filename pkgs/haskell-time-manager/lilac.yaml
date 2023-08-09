@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-time-manager'
   '
 repo_depends:
 - haskell-auto-update
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-auto-update
   source: alpm

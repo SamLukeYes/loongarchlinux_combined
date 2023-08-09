@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-keyring'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- openssh
-- gcr-4
-- libcap-ng
-- gcr
-- pam
+repo_depends: []
 update_on:
 - alpm: gnome-keyring
   source: archpkg

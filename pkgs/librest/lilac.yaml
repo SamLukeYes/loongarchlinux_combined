@@ -10,19 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''librest'')
 
   '
 repo_depends:
-- gtksourceview5
-- libsoup3
 - glib2
-- libadwaita
 - libxml2
+- libsoup3
 - json-glib
 update_on:
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
 - alpm: glib2
   provides: libgio-2.0.so
   source: alpm

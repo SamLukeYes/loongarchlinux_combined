@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nginx-mod-geoip2'')
 
   '
 repo_depends:
-- libmaxminddb
 - nginx
 update_on:
 - alpm: nginx

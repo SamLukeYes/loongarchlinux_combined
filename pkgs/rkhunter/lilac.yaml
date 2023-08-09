@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rkhunter'')
 
   '
 repo_depends:
-- wget
 - perl
-- bash
 update_on:
 - alias: perl
 - alpm: rkhunter

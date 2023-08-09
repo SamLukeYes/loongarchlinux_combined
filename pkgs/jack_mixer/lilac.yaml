@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jack_mixer'')
 
   '
 repo_depends:
-- glibc
-- gcc: gcc-libs
-- python-cairo
-- pygobject: python-gobject
-- hicolor-icon-theme
+- glib2
+- jack2
 update_on:
 - alpm: glib2
   provides: libglib-2.0.so

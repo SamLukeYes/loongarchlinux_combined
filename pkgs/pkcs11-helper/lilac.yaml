@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pkcs11-helper'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gnutls
-- openssl
-- nss
+repo_depends: []
 update_on:
 - alpm: pkcs11-helper
   source: archpkg

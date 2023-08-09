@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ktimetracker'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kcalendarcore
-- hicolor-icon-theme
-- kio
-- kidletime
+repo_depends: []
 update_on:
 - alpm: ktimetracker
   source: archpkg

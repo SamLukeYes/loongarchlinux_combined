@@ -8,11 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-hatchling'')
 
   '
 repo_depends:
-- python-editables
-- python-pathspec
-- python-trove-classifiers
-- python-packaging
-- python-pluggy
 - python
 update_on:
 - alias: python

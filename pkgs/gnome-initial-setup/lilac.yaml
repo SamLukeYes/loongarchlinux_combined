@@ -9,19 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-initial-setup''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gdm
-- gnome-online-accounts
-- cheese
-- libpwquality
-- libgweather-4
-- librest
-- malcontent
-- ibus
-- webkitgtk-6.0
-- libnma: libnma-gtk4
-- geocode-glib: geocode-glib-2
-- networkmanager: libnm
+repo_depends: []
 update_on:
 - alpm: gnome-initial-setup
   source: archpkg

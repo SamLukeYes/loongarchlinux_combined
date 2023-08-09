@@ -11,10 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-smallch
   '
 repo_depends:
 - haskell-optparse-applicative
-- ghc: ghc-libs
+- haskell-smallcheck
 - haskell-tagged
 - haskell-tasty
-- haskell-smallcheck
 update_on:
 - alpm: haskell-optparse-applicative
   source: alpm

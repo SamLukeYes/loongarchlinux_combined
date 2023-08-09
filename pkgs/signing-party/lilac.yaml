@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''signing-party'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qprint
-- perl-mime-tools
-- perl-term-readkey
-- perl-gnupg-interface
-- perl-class-methodmaker
-- libmd
-- perl-net-idn-encode
-- perl-text-template
-- perl-mailtools
+repo_depends: []
 update_on:
 - alpm: signing-party
   source: archpkg

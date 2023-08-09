@@ -10,26 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libsoup'')
 
   '
 repo_depends:
-- sqlite
-- sysprof: libsysprof-capture
 - brotli
-- libpsl
 - krb5
-- libxml2
-- glib-networking
 - glib2
+- libpsl
 update_on:
 - alpm: brotli
   provides: libbrotlidec.so
   source: alpm
 - alpm: krb5
   provides: libgssapi_krb5.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
   source: alpm
 - alpm: glib2
   provides: libgio-2.0.so

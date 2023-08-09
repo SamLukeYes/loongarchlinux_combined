@@ -10,13 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-screen-recorde
 
   '
 repo_depends:
-- ffmpeg
-- deepin-image-editor
 - opencv
-- libxtst
-- deepin-turbo
-- portaudio
-- deepin-qt5integration
 update_on:
 - alpm: opencv
   source: alpm

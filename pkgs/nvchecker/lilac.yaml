@@ -8,11 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nvchecker'')
 
   '
 repo_depends:
-- python-pycurl
-- python-platformdirs
-- python-structlog
-- python-tomli
-- python-tornado
 - python
 update_on:
 - alias: python

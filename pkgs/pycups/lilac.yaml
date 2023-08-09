@@ -1,6 +1,5 @@
 destsubdir: extra
 repo_depends:
-- cups: libcups
 - python
 update_on:
 - alias: python

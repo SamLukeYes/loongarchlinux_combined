@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yara'')
   '
 repo_depends:
 - file
-- openssl
 update_on:
 - alpm: file
   provides: libmagic.so

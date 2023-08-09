@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aria2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ca-certificates
-- c-ares
-- libssh2
-- libxml2
-- sqlite
-- gnutls
+repo_depends: []
 update_on:
 - alpm: aria2
   source: archpkg

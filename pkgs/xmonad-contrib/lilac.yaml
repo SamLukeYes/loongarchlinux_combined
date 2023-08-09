@@ -10,12 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xmonad-contrib'')
 
   '
 repo_depends:
-- ghc: ghc-libs
-- haskell-random
 - haskell-x11
-- xmonad
-- haskell-utf8-string
 - haskell-x11-xft
+- haskell-utf8-string
+- haskell-random
 update_on:
 - alpm: haskell-x11
   source: alpm

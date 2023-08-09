@@ -7,16 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''sopel'')
 
   '
-repo_depends:
-- python-xmltodict
-- python-requests
-- python-pytz
-- python-setuptools
-- python-sqlalchemy1.3
-- python-dnspython
-- python-praw
-- sqlite
-- python-geoip2
+repo_depends: []
 update_on:
 - alpm: sopel
   source: archpkg

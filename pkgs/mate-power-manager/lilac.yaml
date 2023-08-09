@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-power-manager'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- dbus-glib
-- libsecret
-- polkit
-- libnotify
-- gettext
-- libcanberra
-- upower
+repo_depends: []
 update_on:
 - alpm: mate-power-manager
   source: archpkg

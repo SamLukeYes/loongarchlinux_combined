@@ -7,27 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''qmk'')
 
   '
-repo_depends:
-- arm-none-eabi-newlib
-- python-milc
-- avr-binutils
-- python-pygments
-- python-hid
-- python-dotty-dict
-- python-argcomplete
-- dfu-programmer
-- avr-libc
-- arm-none-eabi-binutils
-- python-appdirs
-- arm-none-eabi-gcc
-- avrdude
-- git
-- python-hjson
-- dfu-util
-- python-pyusb
-- avr-gcc
-- python-colorama
-- python-jsonschema
+repo_depends: []
 update_on:
 - alpm: qmk
   source: archpkg

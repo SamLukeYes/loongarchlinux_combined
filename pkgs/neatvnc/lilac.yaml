@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''neatvnc'')
 
   '
 repo_depends:
-- zlib
-- libdrm
-- gnutls
-- glibc
-- mesa
+- aml
+- ffmpeg
+- pixman
+- libjpeg-turbo
 update_on:
 - alpm: aml
   provides: libaml.so

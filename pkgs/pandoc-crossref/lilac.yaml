@@ -10,24 +10,26 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pandoc-crossref'')
 
   '
 repo_depends:
-- haskell-microlens-th
-- haskell-optparse-applicative
-- haskell-syb
-- ghc: ghc-libs
-- haskell-pandoc-types
-- haskell-open-browser
-- haskell-microlens-mtl
-- haskell-utility-ht
-- haskell-gitrev
-- haskell-pandoc
 - haskell-data-default
+- haskell-gitrev
 - haskell-microlens
+- haskell-microlens-ghc
+- haskell-microlens-mtl
+- haskell-microlens-th
+- haskell-open-browser
+- haskell-optparse-applicative
+- haskell-pandoc
+- haskell-pandoc-types
+- haskell-syb
+- haskell-utility-ht
 update_on:
 - alpm: haskell-data-default
   source: alpm
 - alpm: haskell-gitrev
   source: alpm
 - alpm: haskell-microlens
+  source: alpm
+- alpm: haskell-microlens-ghc
   source: alpm
 - alpm: haskell-microlens-mtl
   source: alpm

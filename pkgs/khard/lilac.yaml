@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''khard'')
 
   '
-repo_depends:
-- python-configobj
-- python-unidecode
-- python-vobject
-- python-atomicwrites
-- python-ruamel-yaml
+repo_depends: []
 update_on:
 - alpm: khard
   source: archpkg

@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-puremd5'')
 repo_depends:
 - haskell-cereal
 - haskell-crypto-api
-- ghc: ghc-libs
 - haskell-tagged
 update_on:
 - alpm: haskell-cereal

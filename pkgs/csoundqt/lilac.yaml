@@ -10,13 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''csoundqt'')
 
   '
 repo_depends:
-- glibc
-- gcc: gcc-libs
-- csound: csound-doc
 - qt5-base
 - qt5-declarative
-- hicolor-icon-theme
-- qt5-webengine
+- csound
+- rtmidi
 update_on:
 - alpm: qt5-base
   source: alpm
@@ -24,15 +21,6 @@ update_on:
 - alpm: qt5-declarative
   source: alpm
   strip_release: true
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: qt5-declarative
-  source: alpm
-  strip_release: true
-- alpm: csound
-  provides: libcsnd6.so
-  source: alpm
 - alpm: csound
   provides: libcsound64.so
   source: alpm

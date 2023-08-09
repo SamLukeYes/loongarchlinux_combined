@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-html-tableextract'')
 
   '
-repo_depends:
-- perl-html-parser
-- perl-html-element-extended
+repo_depends: []
 update_on:
 - alpm: perl-html-tableextract
   source: archpkg

@@ -10,21 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''megaglest'')
 
   '
 repo_depends:
-- lua51
-- xerces-c
-- ftgl
-- glu
-- sdl2
-- wxwidgets: wxwidgets-gtk3
-- curl
-- libircclient
-- megaglest-data
-- openal
-- miniupnpc
-- glew
-- libvorbis
-- libx11
 - icu
+- wxwidgets-gtk3
+- miniupnpc
 update_on:
 - alias: icu
 - alpm: wxwidgets-gtk3

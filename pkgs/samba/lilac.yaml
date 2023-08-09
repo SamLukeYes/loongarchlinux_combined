@@ -10,6 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''samba'')
 
   '
 repo_depends:
+<<<<<<< HEAD
 - tevent
 - gnutls
 - cups: libcups
@@ -23,28 +24,19 @@ repo_depends:
 - popt
 - gpgme
 - libnsl
+=======
+>>>>>>> 629d87561 (treewide: regen lilac.yaml)
 - python
-- openldap: libldap
-- libarchive
 - readline
+- ldb
 - tdb
+- tevent
+- icu
 update_on:
 - alias: python
-- alias: readline
-- alpm: ldb
-  provides: libldb.so
-  source: alpm
-- alpm: tdb
-  provides: libtdb.so
-  source: alpm
-- alpm: tevent
-  provides: libtevent.so
-  source: alpm
 - alpm: readline
   provides: libreadline.so
   source: alpm
-- alias: icu
-- alias: python
 - alpm: ldb
   provides: libldb.so
   source: alpm
@@ -54,5 +46,6 @@ update_on:
 - alpm: tevent
   provides: libtevent.so
   source: alpm
+- alias: icu
 - alpm: samba
   source: archpkg

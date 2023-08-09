@@ -10,9 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libao'')
 
   '
 repo_depends:
-- pulseaudio: libpulse
 - alsa-lib
-- glibc
+- libao
+- libpulse
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

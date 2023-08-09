@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- sqlite
-- hunspell
-- libedit
+repo_depends: []
 update_on: []

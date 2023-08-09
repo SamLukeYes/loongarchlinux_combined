@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-atomic-write'
 
   '
 repo_depends:
-- haskell-unix-compat
-- ghc: ghc-libs
 - haskell-temporary
+- haskell-unix-compat
 update_on:
 - alpm: haskell-temporary
   source: alpm

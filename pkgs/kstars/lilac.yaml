@@ -10,19 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kstars'')
 
   '
 repo_depends:
-- libraw
-- qt5-quickcontrols
-- libxisf
-- stellarsolver
-- knotifyconfig
-- qt5-websockets
-- qtkeychain: qtkeychain-qt5
 - libindi
-- qt5-datavis3d
-- breeze-icons
-- hicolor-icon-theme
-- knewstuff
-- kplotting
 update_on:
 - alpm: libindi
   source: alpm

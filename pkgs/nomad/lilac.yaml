@@ -10,8 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nomad'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- glibc
 - iptables
 update_on:
 - alpm: iptables

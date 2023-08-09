@@ -1,10 +1,5 @@
 destsubdir: extra
 repo_depends:
-- bzip2
-- xz
-- zlib
-- libmd
 - perl
-- zstd
 update_on:
 - alias: perl

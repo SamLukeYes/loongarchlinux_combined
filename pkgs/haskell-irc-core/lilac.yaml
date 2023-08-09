@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-irc-core'')
 
   '
 repo_depends:
-- ghc: ghc-libs
-- haskell-hashable
 - haskell-attoparsec
-- haskell-vector
-- haskell-primitive
 - haskell-base64-bytestring
+- haskell-hashable
+- haskell-primitive
+- haskell-vector
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

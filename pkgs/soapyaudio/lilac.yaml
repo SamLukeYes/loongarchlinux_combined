@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''soapyaudio'')
   '
 repo_depends:
 - hamlib
-- soapysdr
-- rtaudio
 update_on:
 - alpm: hamlib
   source: alpm

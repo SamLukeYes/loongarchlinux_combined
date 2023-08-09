@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''devil'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libjpeg-turbo
-- jasper
-- lcms2
-- libpng
+repo_depends: []
 update_on:
 - alpm: devil
   source: archpkg

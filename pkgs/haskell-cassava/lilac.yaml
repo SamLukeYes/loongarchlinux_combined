@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cassava'')
 
   '
 repo_depends:
-- haskell-unordered-containers
-- ghc: ghc-libs
+- haskell-attoparsec
 - haskell-hashable
 - haskell-only
 - haskell-scientific
-- haskell-vector
 - haskell-text-short
-- haskell-attoparsec
+- haskell-unordered-containers
+- haskell-vector
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

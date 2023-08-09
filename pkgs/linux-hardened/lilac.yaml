@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- kmod
-- pahole
-- coreutils
+repo_depends: []
 update_on: []

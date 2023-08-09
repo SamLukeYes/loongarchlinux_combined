@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''asymptote'')
 
   '
 repo_depends:
-- freeglut
-- libsigsegv
 - gsl
-- gc
-- fftw
 update_on:
 - alpm: gsl
   source: alpm

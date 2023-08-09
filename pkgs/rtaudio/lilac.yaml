@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rtaudio'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pulseaudio: libpulse
-- alsa-lib
-- gcc: gcc-libs
-- glibc
+repo_depends: []
 update_on:
 - alpm: rtaudio
   source: archpkg

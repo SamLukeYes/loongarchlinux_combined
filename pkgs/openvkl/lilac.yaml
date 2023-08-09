@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openvkl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- embree
-- gcc: gcc-libs
-- openvdb
-- rkcommon
-- onetbb
-- glibc
+repo_depends: []
 update_on:
 - alpm: openvkl
   source: archpkg

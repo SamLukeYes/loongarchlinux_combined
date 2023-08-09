@@ -7,19 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-session'')
 
   '
-repo_depends:
-- wingpanel
-- gnome-session
-- plank
-- dconf
-- pantheon-applications-menu
-- xdg-user-dirs-gtk
-- gala
-- gnome-keyring
-- orca
-- gnome-settings-daemon
-- cerbere
-- onboard
+repo_depends: []
 update_on:
 - alpm: pantheon-session
   source: archpkg

@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-chell'')
 
   '
 repo_depends:
-- ghc: ghc-libs
-- haskell-random
 - haskell-ansi-terminal
-- haskell-patience
 - haskell-options
+- haskell-patience
+- haskell-random
 update_on:
 - alpm: haskell-ansi-terminal
   source: alpm

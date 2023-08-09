@@ -10,12 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ghc'')
 
   '
 repo_depends:
-- gcc
-- numactl
 - perl
-- llvm14
-- libffi
-- gmp
 update_on:
 - alias: perl
 - alpm: ghc

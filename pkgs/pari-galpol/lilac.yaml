@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pari-galpol'')
 
   '
-repo_depends:
-- pari
+repo_depends: []
 update_on:
 - alpm: pari-galpol
   source: archpkg

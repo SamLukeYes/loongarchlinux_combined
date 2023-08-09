@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-wm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- granite
-- bamf
-- libgee
-- deepin-menu
-- clutter-gtk
-- gnome-desktop
-- deepin-mutter
-- deepin-desktop-schemas
+repo_depends: []
 update_on:
 - alpm: deepin-wm
   source: archpkg

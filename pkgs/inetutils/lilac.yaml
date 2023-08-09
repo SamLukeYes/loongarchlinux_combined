@@ -10,21 +10,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''inetutils'')
 
   '
 repo_depends:
-- ncurses
-- libxcrypt
-- libcap
 - readline
 - pam
+- libxcrypt
+- ncurses
 update_on:
-- alias: readline
+- alpm: readline
+  provides: libreadline.so
+  source: alpm
 - alpm: pam
   provides: libpam.so
   source: alpm
 - alpm: libxcrypt
   provides: libcrypt.so
-  source: alpm
-- alpm: readline
-  provides: libreadline.so
   source: alpm
 - alpm: ncurses
   provides: libncursesw.so

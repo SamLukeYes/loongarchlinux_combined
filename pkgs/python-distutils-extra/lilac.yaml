@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-distutils-extr
   '
 repo_depends:
 - python
-- intltool
 update_on:
 - alias: python
 - alpm: python-distutils-extra

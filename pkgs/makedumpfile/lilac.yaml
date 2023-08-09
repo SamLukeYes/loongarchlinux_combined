@@ -10,8 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''makedumpfile'')
 
   '
 repo_depends:
-- elfutils: libelf
-- zstd
 - perl
 update_on:
 - alias: perl

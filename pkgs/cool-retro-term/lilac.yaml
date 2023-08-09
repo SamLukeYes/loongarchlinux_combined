@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cool-retro-term'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-quickcontrols2
-- qt5-quickcontrols
-- qmltermwidget
-- qt5-graphicaleffects
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: cool-retro-term
   source: archpkg

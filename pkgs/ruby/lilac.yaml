@@ -1,4 +1,5 @@
 destsubdir: extra
+<<<<<<< HEAD
 repo_depends:
 #- ruby-open-uri
 #- rubygems
@@ -52,4 +53,7 @@ repo_depends:
 #- ruby-tmpdir
 #- ruby-forwardable
 #- ruby-net-http
+=======
+repo_depends: []
+>>>>>>> 629d87561 (treewide: regen lilac.yaml)
 update_on: []

@@ -10,8 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sord'')
 
   '
 repo_depends:
-- pcre
-- glibc
+- serd
 update_on:
 - alpm: serd
   provides: libserd-0.so

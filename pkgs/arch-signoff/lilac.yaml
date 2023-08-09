@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''arch-signoff'')
 
   '
 repo_depends:
-- python-requests
-- python-dateutil
-- pyalpm
-- python-click
 - python
 update_on:
 - alias: python

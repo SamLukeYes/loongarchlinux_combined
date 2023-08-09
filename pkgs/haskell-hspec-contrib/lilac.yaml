@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-contrib
 
   '
 repo_depends:
-- haskell-hunit
 - haskell-hspec-core
-- ghc: ghc-libs
+- haskell-hunit
 update_on:
 - alpm: haskell-hspec-core
   source: alpm

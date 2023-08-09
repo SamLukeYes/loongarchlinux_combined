@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gettext'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- acl
-- gcc: gcc-libs
-- libunistring
-- libxml2
+repo_depends: []
 update_on:
 - alpm: gettext
   source: archpkg

@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-dbus-hslogger
 
   '
 repo_depends:
+- haskell-dbus
 - haskell-hslogger
 - haskell-optparse-applicative
-- haskell-dbus
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-dbus
   source: alpm

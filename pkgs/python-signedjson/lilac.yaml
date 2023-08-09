@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-signedjson'')
 
   '
 repo_depends:
-- python-pynacl
-- python-unpaddedbase64
 - python
-- python-canonicaljson
 update_on:
 - alias: python
 - alpm: python-signedjson

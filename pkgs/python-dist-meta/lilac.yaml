@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-dist-meta'')
 
   '
 repo_depends:
-- python-handy-archives
-- python-packaging
 - python
-- python-domdf-python-tools
 update_on:
 - alias: python
 - alpm: python-dist-meta

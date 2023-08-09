@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-warlock'')
 
   '
-repo_depends:
-- python-jsonschema
-- python-jsonpatch
+repo_depends: []
 update_on:
 - alpm: python-warlock
   source: archpkg

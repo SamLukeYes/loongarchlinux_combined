@@ -8,14 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-threat9-test-b
 
   '
 repo_depends:
-- gunicorn
-- python-requests
-- python-asgiref
-- python-click
-- python-pyopenssl
-- python-faker
 - python
-- python-flask
 update_on:
 - alias: python
 - alpm: python-threat9-test-bed

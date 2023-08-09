@@ -1,35 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libxrender
-- libxfixes
-- dconf
-- libxdamage
-- desktop-file-utils
-- librsvg
-- gtk4: gtk-update-icon-cache
-- iso-codes
-- glib2
-- cups: libcups
-- libxrandr
-- pango
-- libxinerama
-- libxcursor
-- tracker3
-- harfbuzz
-- fribidi
-- cairo
-- libxext
-- shared-mime-info
-- fontconfig
-- libxkbcommon
-# - adwaita-icon-theme
-- libepoxy
-- libxcomposite
-- gdk-pixbuf2
-- wayland
-- libxi
-- cantarell-fonts
-- libx11
-- colord: libcolord
-- libcloudproviders
+repo_depends: []
 update_on: []

@@ -10,15 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-http-client-r
 
   '
 repo_depends:
-- haskell-network
-- ghc: ghc-libs
+- haskell-crypton-connection
 - haskell-data-default
-- haskell-http-client-tls
-- haskell-network-bsd
 - haskell-http-client
+- haskell-http-client-tls
+- haskell-network
+- haskell-network-bsd
 - haskell-utf8-string
 update_on:
-- alpm: haskell-connection
+- alpm: haskell-crypton-connection
   source: alpm
 - alpm: haskell-data-default
   source: alpm

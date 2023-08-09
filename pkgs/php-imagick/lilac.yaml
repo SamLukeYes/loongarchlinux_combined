@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''php-imagick'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- php-legacy
-- imagemagick
-- php
+repo_depends: []
 update_on:
 - alpm: php-imagick
   source: archpkg

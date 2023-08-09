@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-notification-dae
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- mate-panel
-- libnotify
-- gettext
-- libcanberra
-- libwnck3
+repo_depends: []
 update_on:
 - alpm: mate-notification-daemon
   source: archpkg

@@ -9,23 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-recipes'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glibc
-- gnome-autoar
-- gcc: gcc-libs
-- gdk-pixbuf2
-- dconf
-- gspell
-- rest
-- gnome-online-accounts
-- pango
-- libsoup
-- hicolor-icon-theme
-- libcanberra
-- json-glib
-- gtk3
-- cairo
-- glib2
+repo_depends: []
 update_on:
 - alpm: gnome-recipes
   source: archpkg

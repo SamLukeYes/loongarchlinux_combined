@@ -10,17 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libiio'')
 
   '
 repo_depends:
-- libusb
 - avahi
-- libaio
-- libxml2
-- libserialport
-- glibc
+- libusb
 - python
 update_on:
-- alpm: avahi
-  provides: libavahi-client.so
-  source: alpm
 - alpm: avahi
   provides: libavahi-common.so
   source: alpm

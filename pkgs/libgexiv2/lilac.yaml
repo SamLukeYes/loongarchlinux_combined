@@ -10,15 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgexiv2'')
 
   '
 repo_depends:
-- exiv2
 - glib2
+- exiv2
 update_on:
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
 - alpm: glib2
   provides: libgio-2.0.so
   source: alpm

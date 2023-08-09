@@ -1,8 +1,6 @@
 destsubdir: extra
 repo_depends:
-- openssl
-- glibc
-- util-linux: util-linux-libs
+- util-linux-libs
 update_on:
 - alpm: util-linux-libs
   provides: libuuid.so

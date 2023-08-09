@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-constraints''
 repo_depends:
 - haskell-hashable
 - haskell-transformers-compat
-- ghc: ghc-libs
 - haskell-type-equality
 update_on:
 - alpm: haskell-hashable

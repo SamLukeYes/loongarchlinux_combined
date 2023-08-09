@@ -8,45 +8,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''home-assistant'')
 
   '
 repo_depends:
-- gcc
-- python-requests
-- python-voluptuous
-- python-lru-dict
-- python-slugify
-- python-atomicwrites
-- python-aiohttp-cors
-- python-bcrypt
-- python-certifi
-- python-mutagen
-- python-dateutil
-- python-ulid-transform
-- python-astral
-- python-webrtcvad
-- python-pillow
-- python-sqlalchemy
-- python-voluptuous-serialize
-- python-httpx
-- python-async-timeout
-- python-zeroconf
-- python-pytz
-- python-setuptools
-- python-awesomeversion
-- python-cryptography
-- python-typing_extensions
-- python-ciso8601
-- python-yaml
-- python-fnvhash
-- python-attrs
-- python-aiodiscover
-- python-orjson
-- python-ifaddr
-- python-aiohttp
-- python-yarl
-- python-jinja
-- python-pyjwt
-- python-pip
-- python-ruamel-yaml
-- python-defusedxml
+- python
 update_on:
+- alias: python
 - alpm: home-assistant
   source: archpkg

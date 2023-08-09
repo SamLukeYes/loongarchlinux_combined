@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''luacheck'')
 
   '
 repo_depends:
-- lua-argparse
-- lua-filesystem
 - lua
 update_on:
 - alias: lua

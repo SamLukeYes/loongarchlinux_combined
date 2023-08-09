@@ -10,14 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgdiplus'')
 
   '
 repo_depends:
-- glib2
-- libtiff
-- zlib
-- libexif
-- freetype2
-- cairo
 - giflib
-- libpng
 update_on:
 - alpm: giflib
   provides: libgif.so

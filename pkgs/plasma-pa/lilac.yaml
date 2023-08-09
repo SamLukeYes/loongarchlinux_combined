@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plasma-pa'')
   '
 repo_depends:
 - perl
-- pulseaudio
-- plasma-workspace
 update_on:
 - alias: perl
 - alpm: plasma-pa

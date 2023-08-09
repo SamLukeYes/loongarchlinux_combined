@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hslua-classes
   '
 repo_depends:
 - haskell-hslua-core
-- ghc: ghc-libs
 - haskell-hslua-marshalling
 update_on:
 - alpm: haskell-hslua-core

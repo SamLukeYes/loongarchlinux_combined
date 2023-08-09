@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''doublecmd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- desktop-file-utils
-- qt5pas
-- gtk2
-- hicolor-icon-theme
-- shared-mime-info
+repo_depends: []
 update_on:
 - alpm: doublecmd
   source: archpkg

@@ -7,14 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-setuptools'')
 
   '
-repo_depends:
-- python-ordered-set
-- python-validate-pyproject
-- python-platformdirs
-- python-jaraco.text
-- python-more-itertools
-- python-tomli
-- python-packaging
+repo_depends: []
 update_on:
 - alpm: python-setuptools
   source: archpkg

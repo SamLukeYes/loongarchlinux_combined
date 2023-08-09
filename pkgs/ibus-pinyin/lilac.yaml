@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ibus-pinyin'')
   '
 repo_depends:
 - lua
-- ibus
-- pyzy
 update_on:
 - alias: lua
 - alpm: ibus-pinyin

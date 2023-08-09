@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cantor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- poppler: poppler-qt5
-- qt5-xmlpatterns
-- libspectre
-- ktexteditor
-- kpty
-- libqalculate
-- analitza
-- knewstuff
-- qt5-tools
-- qt5-webengine
+repo_depends: []
 update_on:
 - alpm: cantor
   source: archpkg

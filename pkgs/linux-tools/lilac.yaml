@@ -1,32 +1,8 @@
 destsubdir: extra
 repo_depends:
-- numactl
-- libtraceevent
-- libcap
-- glibc
-- glib2
-- coreutils
-- llvm: llvm-libs
-- pciutils
-- xz
-- turbostat
-- bash
-- zstd
-- slang
-- systemd: systemd-libs
-- elfutils
-- sysfsutils
-- x86_energy_perf_policy
-- openssl
-- python
-- elfutils: libelf
-- ncurses
-- libunwind
-- zlib
-- audit
-- perl
 - readline
-- binutils
+- perl
+- python
 update_on:
 - alias: readline
 - alias: perl

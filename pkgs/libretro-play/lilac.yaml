@@ -10,12 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libretro-play'')
 
   '
 repo_depends:
-- bzip2
-- glu
-- zlib
-- libretro-core-info
-- glew
-- glibc
 - icu
 update_on:
 - alias: icu

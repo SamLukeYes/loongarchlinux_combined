@@ -10,24 +10,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lsp-test'')
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-glob
-- haskell-lens
-- haskell-aeson
-- ghc: ghc-libs
-- haskell-async
 - haskell-diff
+- haskell-glob
+- haskell-aeson
+- haskell-aeson-pretty
+- haskell-ansi-terminal
+- haskell-async
+- haskell-co-log-core
+- haskell-conduit
+- haskell-conduit-parse
+- haskell-data-default
+- haskell-lens
+- haskell-lsp
 - haskell-lsp-types
 - haskell-parser-combinators
-- haskell-ansi-terminal
-- haskell-lsp
-- haskell-conduit-parse
-- haskell-unliftio
-- haskell-data-default
-- haskell-conduit
-- haskell-co-log-core
-- haskell-aeson-pretty
 - haskell-some
+- haskell-unliftio
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-diff
   source: alpm

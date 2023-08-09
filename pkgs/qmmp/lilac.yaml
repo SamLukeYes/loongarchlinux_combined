@@ -10,17 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qmmp'')
 
   '
 repo_depends:
-- libogg
-- alsa-lib
-- xdg-utils
-- curl
 - qt6-base
-- desktop-file-utils
-- libvorbis
-- hicolor-icon-theme
-- taglib
-- libmad
-- libxkbcommon: libxkbcommon-x11
 update_on:
 - alpm: qt6-base
   source: alpm

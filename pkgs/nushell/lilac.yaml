@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nushell'')
 
   '
 repo_depends:
-- glibc
-- gcc: gcc-libs
-- zlib
+- openssl
+- openssl
 update_on:
 - alias: libcrypto
 - alias: libssl

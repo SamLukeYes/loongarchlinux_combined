@@ -1,0 +1,7 @@
+destsubdir: extra
+repo_depends:
+- icu
+- jsoncpp
+update_on:
+- alias: icu
+- alias: jsoncpp

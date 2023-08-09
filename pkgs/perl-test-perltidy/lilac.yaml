@@ -8,11 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-test-perltidy'')
 
   '
 repo_depends:
-- perl-file-slurp
-- perl-file-finder
-- perl-tidy
 - perl
-- perl-text-diff
 update_on:
 - alias: perl
 - alpm: perl-test-perltidy

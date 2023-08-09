@@ -10,23 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''krita'')
 
   '
 repo_depends:
-- libraw
-- opencolorio
-- kitemviews
-- kitemmodels
-- kcompletion
-- kcrash
-- ki18n
-- openexr
 - gsl
-- libwebp
-- exiv2
-- fftw
-- qt5-multimedia
-- kguiaddons
-- qt5-svg
-- hicolor-icon-theme
-- openjpeg2
 update_on:
 - alpm: gsl
   source: alpm

@@ -10,17 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''giac'')
 
   '
 repo_depends:
-- libao
-- libsamplerate
-- curl
 - gsl
-- lapack
-- pari
-- fltk
-- mpfi
-- gmp-ecm
-- glpk
-- ntl
 update_on:
 - alpm: gsl
   source: alpm

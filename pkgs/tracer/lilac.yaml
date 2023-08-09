@@ -8,11 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tracer'')
 
   '
 repo_depends:
-- pyalpm
-- python-six
-- python-psutil
-- dbus-python
-- python-distro
 - python
 update_on:
 - alias: python

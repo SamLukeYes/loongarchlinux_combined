@@ -10,17 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''r'')
 
   '
 repo_depends:
-- pcre2
-- pango
-- libtiff
-- curl
-- lapack
 - perl
-- which
-- unzip
-- zip
 - icu
-- libxmu
 update_on:
 - alias: perl
 - alias: icu

@@ -10,17 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openscad'')
 
   '
 repo_depends:
-- opencsg
-- libzip
 - qt5-base
-- qscintilla: qscintilla-qt5
-- libspnav
-- nettle
-- qt5-multimedia
-- mpfr
-- lib3mf-1
-- boost: boost-libs
-- shared-mime-info
 update_on:
 - alpm: qt5-base
   source: alpm

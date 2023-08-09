@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libbytesize'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pcre2
-- mpfr
+repo_depends: []
 update_on:
 - alpm: libbytesize
   source: archpkg

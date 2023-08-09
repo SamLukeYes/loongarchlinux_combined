@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xcur2png'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxcursor
-- libpng
+repo_depends: []
 update_on:
 - alpm: xcur2png
   source: archpkg

@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-tzinfo'')
   '
 repo_depends:
 - ruby
-- ruby-concurrent
 update_on:
 - alias: ruby
 - alpm: ruby-tzinfo

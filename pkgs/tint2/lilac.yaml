@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tint2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- startup-notification
-- gtk3
-- imlib2
+repo_depends: []
 update_on:
 - alpm: tint2
   source: archpkg

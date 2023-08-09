@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-bin'')
 
   '
 repo_depends:
-- haskell-boring
-- ghc: ghc-libs
-- haskell-dec
-- haskell-hashable
 - haskell-quickcheck
+- haskell-boring
+- haskell-dec
 - haskell-fin
+- haskell-hashable
 - haskell-some
 update_on:
 - alpm: haskell-quickcheck

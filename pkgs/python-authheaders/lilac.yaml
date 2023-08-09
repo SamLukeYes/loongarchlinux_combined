@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-authheaders'')
 
   '
-repo_depends:
-- python-authres
-- python-publicsuffix2
-- python-setuptools
-- python-dnspython
-- python-dkim
-- publicsuffix-list
+repo_depends: []
 update_on:
 - alpm: python-authheaders
   source: archpkg

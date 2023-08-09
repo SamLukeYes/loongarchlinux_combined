@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''linbox'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- fflas-ffpack
+repo_depends: []
 update_on:
 - alpm: linbox
   source: archpkg

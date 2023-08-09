@@ -8,16 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mopidy'')
 
   '
 repo_depends:
-- python-requests
-- gstreamer: gst-python
-- python-setuptools
-- gstreamer
-- gstreamer: gst-plugins-good
-- python-pykka
-- gstreamer: gst-plugins-base
-- python-tornado
 - python
-- gstreamer: gst-plugins-ugly
 update_on:
 - alias: python
 - alpm: mopidy

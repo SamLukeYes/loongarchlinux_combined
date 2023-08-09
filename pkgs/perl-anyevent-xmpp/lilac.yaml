@@ -7,15 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-anyevent-xmpp'')
 
   '
-repo_depends:
-- perl-xml-writer
-- perl-object-event
-- perl-digest-sha1
-- perl-net-libidn
-- perl-net-ssleay
-- perl-anyevent
-- perl-authen-sasl
-- perl-xml-parser
+repo_depends: []
 update_on:
 - alpm: perl-anyevent-xmpp
   source: archpkg

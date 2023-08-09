@@ -7,15 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''devede'')
 
   '
-repo_depends:
-- python-setuptools
-- ffmpeg
-- vcdimager
-- dvdauthor
-- gtk3
-- cdrtools
-- pygobject: python-gobject
-- python-cairo
+repo_depends: []
 update_on:
 - alpm: devede
   source: archpkg

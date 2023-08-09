@@ -1,13 +1,5 @@
 destsubdir: extra
 repo_depends:
-- python-astroid
-- python-mccabe
-- python-tomlkit
-- python-isort
-- python-platformdirs
-- python-colorama
-- python-dill
-- python-tomli
 - python
 update_on:
 - alias: python

@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcitx-googlepinyin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libgooglepinyin
-- fcitx
+repo_depends: []
 update_on:
 - alpm: fcitx-googlepinyin
   source: archpkg

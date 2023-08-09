@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-flit-scm'')
 
   '
 repo_depends:
-- python-flit-core
-- python-setuptools-scm
 - python
 update_on:
 - alias: python

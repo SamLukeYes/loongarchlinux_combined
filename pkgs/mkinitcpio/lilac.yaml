@@ -1,13 +1,3 @@
 destsubdir: core
-repo_depends:
-- kmod
-- zstd
-- diffutils
-- grep
-- libarchive
-- bash
-- findutils
-- binutils
-- systemd
-- coreutils
+repo_depends: []
 update_on: []

@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''globalprotect-opencon
 
   '
 repo_depends:
-- openconnect
 - qt5-base
-- qtkeychain: qtkeychain-qt5
-- qt5-websockets
-- qt5-webengine
 update_on:
 - alpm: qt5-base
   source: alpm

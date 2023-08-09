@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-polysemy'')
 
   '
 repo_depends:
-- haskell-syb
 - haskell-async
-- ghc: ghc-libs
-- haskell-unagi-chan
+- haskell-first-class-families
+- haskell-syb
 - haskell-th-abstraction
 - haskell-type-errors
-- haskell-first-class-families
+- haskell-unagi-chan
 update_on:
 - alpm: haskell-async
   source: alpm

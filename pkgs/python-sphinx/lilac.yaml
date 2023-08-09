@@ -7,22 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-sphinx'')
 
   '
-repo_depends:
-- python-sphinxcontrib-devhelp
-- python-sphinxcontrib-jsmath
-- python-sphinxcontrib-qthelp
-- python-requests
-- python-imagesize
-- python-sphinx-alabaster-theme
-- python-snowballstemmer
-- python-pygments
-- python-jinja
-- python-sphinxcontrib-htmlhelp
-- python-packaging
-- python-docutils
-- python-sphinxcontrib-serializinghtml
-- python-babel
-- python-sphinxcontrib-applehelp
+repo_depends: []
 update_on:
 - alpm: python-sphinx
   source: archpkg

@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-fiona'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-cligj
-- python-six
-- python-click-plugins
-- python-click
-- gdal
-- python-attrs
-- python-munch
-- python-certifi
+repo_depends: []
 update_on:
 - alpm: python-fiona
   source: archpkg

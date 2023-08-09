@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lazarus'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gdb
-- fpc
-- desktop-file-utils
-- qt5pas
-- gtk2
-- fpc-src
+repo_depends: []
 update_on:
 - alpm: lazarus
   source: archpkg

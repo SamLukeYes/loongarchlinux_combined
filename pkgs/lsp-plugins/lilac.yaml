@@ -11,32 +11,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lsp-plugins'')
   '
 repo_depends:
 - libsndfile
-- hicolor-icon-theme
-- glibc
-- gcc: gcc-libs
-- libxrandr
-- libglvnd
-- cairo
-- freetype2
-- libx11
+- jack2
+- cuda-tools
 update_on:
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
 - alpm: libsndfile
   provides: libsndfile.so
   source: alpm
 - alpm: jack2
   provides: libjack.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
   source: alpm
 - alpm: cuda-tools
   provides: libGL.so

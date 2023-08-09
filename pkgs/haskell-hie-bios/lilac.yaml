@@ -10,22 +10,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hie-bios'')
 
   '
 repo_depends:
-- haskell-optparse-applicative
-- haskell-unordered-containers
 - haskell-aeson
-- ghc: ghc-libs
+- haskell-base16-bytestring
+- haskell-co-log-core
+- haskell-conduit
+- haskell-conduit-extra
+- haskell-cryptohash-sha1
+- haskell-exceptions
+- haskell-extra
 - haskell-file-embed
+- haskell-optparse-applicative
+- haskell-prettyprinter
 - haskell-temporary
 - haskell-unix-compat
-- haskell-cryptohash-sha1
+- haskell-unordered-containers
 - haskell-vector
-- haskell-conduit
-- haskell-co-log-core
-- haskell-conduit-extra
-- haskell-extra
 - haskell-yaml
-- haskell-base16-bytestring
-- haskell-prettyprinter
 update_on:
 - alpm: haskell-aeson
   source: alpm

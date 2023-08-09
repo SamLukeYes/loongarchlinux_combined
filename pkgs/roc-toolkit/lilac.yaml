@@ -10,12 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''roc-toolkit'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- speexdsp
-- libunwind
 - openfec
-- libuv
-- glibc
+- speexdsp
 update_on:
 - alpm: openfec
   provides: libopenfec.so

@@ -10,16 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''astroid'')
 
   '
 repo_depends:
-- notmuch
-- gmime3
-- gobject-introspection: gobject-introspection-runtime
-- gtkmm3
-- vte3
-- libpeas
-- webkit2gtk
-- libsass
 - protobuf
-- boost: boost-libs
 update_on:
 - alias: protobuf
 - alpm: astroid

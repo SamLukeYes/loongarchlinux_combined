@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kbibtex'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- poppler: poppler-qt5
-- qt5-xmlpatterns
-- qt5-networkauth
-- ktexteditor
-- qt5-webengine
+repo_depends: []
 update_on:
 - alpm: kbibtex
   source: archpkg

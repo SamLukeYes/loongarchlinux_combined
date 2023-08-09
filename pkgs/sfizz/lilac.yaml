@@ -9,23 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sfizz'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pd
-- glib2
-- glibc
-- gcc: gcc-libs
-- pango
-- xcb-util-cursor
-- cairo
-- libxkbcommon: libxkbcommon-x11
-- fontconfig
-- libxkbcommon
-- libxcb
-- pugixml
-- abseil-cpp
-- ttf-roboto
-- xcb-util
-- zenity
+repo_depends: []
 update_on:
 - alpm: sfizz
   source: archpkg

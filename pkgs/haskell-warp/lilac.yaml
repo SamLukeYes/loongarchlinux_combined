@@ -10,32 +10,32 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-warp'')
 
   '
 repo_depends:
-- haskell-http-types
-- haskell-case-insensitive
-- haskell-bsb-http-chunked
-- haskell-http-date
-- haskell-hashable
-- haskell-iproute
-- haskell-word8
-- haskell-unix-compat
-- haskell-wai
-- haskell-network
-- ghc: ghc-libs
-- haskell-simple-sendfile
-- haskell-recv
-- haskell-streaming-commons
-- haskell-x509
-- haskell-http2
 - haskell-auto-update
-- haskell-vault
+- haskell-bsb-http-chunked
+- haskell-case-insensitive
+- haskell-crypton-x509
+- haskell-hashable
+- haskell-http-date
+- haskell-http-types
+- haskell-http2
+- haskell-iproute
+- haskell-network
+- haskell-recv
+- haskell-simple-sendfile
+- haskell-streaming-commons
 - haskell-time-manager
 - haskell-unliftio
+- haskell-vault
+- haskell-wai
+- haskell-word8
 update_on:
 - alpm: haskell-auto-update
   source: alpm
 - alpm: haskell-bsb-http-chunked
   source: alpm
 - alpm: haskell-case-insensitive
+  source: alpm
+- alpm: haskell-crypton-x509
   source: alpm
 - alpm: haskell-hashable
   source: alpm
@@ -57,8 +57,6 @@ update_on:
   source: alpm
 - alpm: haskell-time-manager
   source: alpm
-- alpm: haskell-unix-compat
-  source: alpm
 - alpm: haskell-unliftio
   source: alpm
 - alpm: haskell-vault
@@ -66,8 +64,6 @@ update_on:
 - alpm: haskell-wai
   source: alpm
 - alpm: haskell-word8
-  source: alpm
-- alpm: haskell-x509
   source: alpm
 - alpm: haskell-warp
   source: archpkg

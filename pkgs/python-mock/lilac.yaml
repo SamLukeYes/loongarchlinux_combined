@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-mock'')
 
   '
 repo_depends:
-- python-pbr
 - python
-- python-six
 update_on:
 - alias: python
 - alpm: python-mock

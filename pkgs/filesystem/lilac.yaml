@@ -1,4 +1,3 @@
 destsubdir: core
-repo_depends:
-- iana-etc
+repo_depends: []
 update_on: []

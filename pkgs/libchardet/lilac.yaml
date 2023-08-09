@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libchardet'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
-- bash
+repo_depends: []
 update_on:
 - alpm: libchardet
   source: archpkg

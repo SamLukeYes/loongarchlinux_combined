@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''texinfo'')
   '
 repo_depends:
 - perl
-- gzip
-- ncurses
 update_on:
 - alias: perl
 - alpm: texinfo

@@ -10,11 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''chrony'')
 
   '
 repo_depends:
+- libcap
 - libedit
 - libseccomp
-- libcap
-- gnutls
-- glibc
 - nettle
 update_on:
 - alpm: libcap

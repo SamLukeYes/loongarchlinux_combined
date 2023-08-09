@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''adrdox'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ldc: liblphobos
-- postgresql: postgresql-libs
+repo_depends: []
 update_on:
 - alpm: adrdox
   source: archpkg

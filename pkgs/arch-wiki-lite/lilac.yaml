@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''arch-wiki-lite'')
 
   '
-repo_depends:
-- gzip
-- bash
+repo_depends: []
 update_on:
 - alpm: arch-wiki-lite
   source: archpkg

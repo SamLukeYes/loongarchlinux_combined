@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yad'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gspell
-- gtk3
-- webkit2gtk
-- gtksourceview3
+repo_depends: []
 update_on:
 - alpm: yad
   source: archpkg

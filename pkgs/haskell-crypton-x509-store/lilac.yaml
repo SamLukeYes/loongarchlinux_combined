@@ -1,0 +1,30 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-crypton-x509-store'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_depends:
+- haskell-asn1-encoding
+- haskell-asn1-types
+- haskell-crypton
+- haskell-crypton-x509
+- haskell-pem
+update_on:
+- alpm: haskell-asn1-encoding
+  source: alpm
+- alpm: haskell-asn1-types
+  source: alpm
+- alpm: haskell-crypton
+  source: alpm
+- alpm: haskell-crypton-x509
+  source: alpm
+- alpm: haskell-pem
+  source: alpm
+- alpm: haskell-crypton-x509-store
+  source: archpkg

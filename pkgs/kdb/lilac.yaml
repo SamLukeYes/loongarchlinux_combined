@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kcoreaddons
+repo_depends: []
 update_on:
 - alpm: kdb
   source: archpkg

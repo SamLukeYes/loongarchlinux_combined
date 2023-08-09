@@ -7,20 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-finance-quote'')
 
   '
-repo_depends:
-- perl-datetime-format-strptime
-- perl-date-calc
-- perl-json
-- perl-html-tableextract
-- perl-datetime
-- perl-cgi
-- perl-json-parse
-- perl-mozilla-ca
-- perl-crypt-ssleay
-- perl-text-template
-- perl-libwww
-- perl-html-tree
-- perl-string-util
+repo_depends: []
 update_on:
 - alpm: perl-finance-quote
   source: archpkg

@@ -10,11 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''memray'')
 
   '
 repo_depends:
-- libunwind
-- lz4
-- ipython
-- python-jinja
-- python-rich
 - python
 update_on:
 - alias: python

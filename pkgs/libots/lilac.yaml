@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libots'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glib2
-- popt
-- libxml2
+repo_depends: []
 update_on:
 - alpm: libots
   source: archpkg

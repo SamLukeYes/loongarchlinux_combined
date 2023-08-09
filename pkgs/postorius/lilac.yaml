@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''postorius'')
 
   '
-repo_depends:
-- python-cmarkgfm
-- python-django-mailman3
-- python-mailmanclient
-- python-readme-renderer
-- django: python-django
+repo_depends: []
 update_on:
 - alpm: postorius
   source: archpkg

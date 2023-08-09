@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''dns-lexicon'')
 
   '
-repo_depends:
-- python-beautifulsoup4
-- python-requests
-- python-cryptography
-- python-importlib-metadata
-- python-tldextract
-- python-yaml
+repo_depends: []
 update_on:
 - alpm: dns-lexicon
   source: archpkg

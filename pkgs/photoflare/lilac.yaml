@@ -11,9 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''photoflare'')
   '
 repo_depends:
 - qt5-base
-- graphicsmagick
-- qt5-imageformats
-- hicolor-icon-theme
 update_on:
 - alpm: qt5-base
   source: alpm

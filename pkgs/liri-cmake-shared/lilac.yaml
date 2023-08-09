@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''liri-cmake-shared'')
 
   '
-repo_depends:
-- extra-cmake-modules
+repo_depends: []
 update_on:
 - alpm: liri-cmake-shared
   source: archpkg

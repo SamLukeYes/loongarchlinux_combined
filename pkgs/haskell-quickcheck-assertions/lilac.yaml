@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-quickcheck-as
 
   '
 repo_depends:
+- haskell-quickcheck
 - haskell-ieee754
 - haskell-pretty-show
-- haskell-quickcheck
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

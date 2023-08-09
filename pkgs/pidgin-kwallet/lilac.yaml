@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pidgin-kwallet'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kwallet
-- pidgin
+repo_depends: []
 update_on:
 - alpm: pidgin-kwallet
   source: archpkg

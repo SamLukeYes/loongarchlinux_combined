@@ -11,9 +11,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-expecte
   '
 repo_depends:
 - haskell-tagged
-- haskell-unbounded-delays
 - haskell-tasty
-- ghc: ghc-libs
+- haskell-unbounded-delays
 update_on:
 - alpm: haskell-tagged
   source: alpm

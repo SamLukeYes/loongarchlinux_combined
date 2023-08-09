@@ -10,8 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-unicode-linebrea
 
   '
 repo_depends:
-- perl-mime-charset
-- libthai
 - perl
 update_on:
 - alias: perl

@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kea'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- postgresql: postgresql-libs
-- log4cplus
-- openssl
-- mariadb: mariadb-libs
+repo_depends: []
 update_on:
 - alpm: kea
   source: archpkg

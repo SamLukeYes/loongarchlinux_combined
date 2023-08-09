@@ -10,20 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''retroarch'')
 
   '
 repo_depends:
-- pulseaudio: libpulse
-- alsa-lib
-- spirv-tools
-- libusb
+- libass
+- freetype2
+- systemd-libs
 - qt5-base
-- sdl2
-- v4l-utils
-- mbedtls
-- ffmpeg
-- libdrm
-- mesa
-- openal
-- zlib
-- flac
 update_on:
 - alpm: libass
   provides: libass.so

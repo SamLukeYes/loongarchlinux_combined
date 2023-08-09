@@ -1,14 +1,12 @@
 destsubdir: extra
 repo_depends:
 - alsa-lib
-- gcc: gcc-libs
-- libsamplerate
-- db5.3
 - dbus
+- libsamplerate
 - opus
+- systemd-libs
 - expat
-- glibc
-- systemd: systemd-libs
+- jack2
 update_on:
 - alpm: alsa-lib
   provides: libasound.so
@@ -24,9 +22,6 @@ update_on:
   source: alpm
 - alpm: systemd-libs
   provides: libsystemd.so
-  source: alpm
-- alpm: dbus
-  provides: libdbus-1.so
   source: alpm
 - alpm: expat
   provides: libexpat.so

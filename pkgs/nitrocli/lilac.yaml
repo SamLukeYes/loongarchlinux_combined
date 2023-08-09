@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nitrocli'')
 
   '
 repo_depends:
-- gnupg
+- libnitrokey
 update_on:
 - alpm: libnitrokey
   provides: libnitrokey.so

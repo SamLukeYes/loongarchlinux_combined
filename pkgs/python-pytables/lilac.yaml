@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pytables'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- hdf5
-- python-numexpr
-- blosc
-- lzo
+repo_depends: []
 update_on:
 - alpm: python-pytables
   source: archpkg

@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-device-gsm'')
 
   '
-repo_depends:
-- perl-device-modem
+repo_depends: []
 update_on:
 - alpm: perl-device-gsm
   source: archpkg

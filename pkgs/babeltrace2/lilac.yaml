@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''babeltrace2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- elfutils
-- util-linux
-- glib2
-- popt
+repo_depends: []
 update_on:
 - alpm: babeltrace2
   source: archpkg

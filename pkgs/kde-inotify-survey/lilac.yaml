@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kde-inotify-survey'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kauth
-- ki18n
-- kdbusaddons
-- knotifications
+repo_depends: []
 update_on:
 - alpm: kde-inotify-survey
   source: archpkg

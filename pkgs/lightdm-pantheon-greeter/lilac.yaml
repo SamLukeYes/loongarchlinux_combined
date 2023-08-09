@@ -10,31 +10,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lightdm-pantheon-gree
 
   '
 repo_depends:
-- accountsservice
-- gdk-pixbuf2
-- lightdm
-- libgee
-- mutter
-- cairo
-- glibc
+- gtk3
+- glib2
+- granite
+- libhandy
 update_on:
 - alpm: gtk3
-  provides: libgdk-3.so
-  source: alpm
-- alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
+  provides: libgtk-3.so
   source: alpm
 - alpm: glib2
   provides: libgobject-2.0.so
   source: alpm
 - alpm: granite
   provides: libgranite.so
-  source: alpm
-- alpm: gtk3
-  provides: libgtk-3.so
   source: alpm
 - alpm: libhandy
   provides: libhandy-1.so

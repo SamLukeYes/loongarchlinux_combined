@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''borgmatic'')
 
   '
-repo_depends:
-- python-requests
-- python-setuptools
-- borg
-- python-colorama
-- python-ruamel-yaml
-- python-jsonschema
+repo_depends: []
 update_on:
 - alpm: borgmatic
   source: archpkg

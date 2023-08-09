@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''soapyrtlsdr'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- soapysdr
-- rtl-sdr
+repo_depends: []
 update_on:
 - alpm: soapyrtlsdr
   source: archpkg

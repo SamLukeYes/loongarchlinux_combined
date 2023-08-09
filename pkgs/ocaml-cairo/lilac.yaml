@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ocaml-cairo'')
   '
 repo_depends:
 - ocaml
-- cairo
 update_on:
 - alpm: ocaml
   source: alpm

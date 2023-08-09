@@ -1,9 +1,3 @@
 destsubdir: extra
-repo_depends:
-- gsettings-desktop-schemas
-- gspell
-- tepl
-- libpeas
-- amtk
-- pygobject: python-gobject
+repo_depends: []
 update_on: []

@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yaz'')
 
   '
 repo_depends:
-- gnutls
 - icu
-- libxslt
 update_on:
 - alias: icu
 - alpm: yaz

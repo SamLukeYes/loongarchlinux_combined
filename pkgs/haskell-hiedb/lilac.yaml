@@ -10,16 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hiedb'')
 
   '
 repo_depends:
-- haskell-optparse-applicative
-- haskell-terminal-size
-- ghc: ghc-libs
-- haskell-ghc-paths
-- haskell-ansi-terminal
 - haskell-algebraic-graphs
+- haskell-ansi-terminal
 - haskell-extra
+- haskell-ghc
+- haskell-ghc-paths
 - haskell-hie-compat
-- haskell-sqlite-simple
 - haskell-lucid
+- haskell-optparse-applicative
+- haskell-sqlite-simple
+- haskell-terminal-size
 update_on:
 - alpm: haskell-algebraic-graphs
   source: alpm

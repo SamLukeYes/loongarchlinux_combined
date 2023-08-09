@@ -10,18 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aubio'')
 
   '
 repo_depends:
-- fftw
-- glibc
-- python-numpy
+- ffmpeg
+- jack2
+- libsamplerate
+- libsndfile
+- aubio
 update_on:
 - alpm: ffmpeg
-  provides: libavcodec.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavformat.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavutil.so
+  provides: libswresample.so
   source: alpm
 - alpm: jack2
   provides: libjack.so
@@ -31,9 +27,6 @@ update_on:
   source: alpm
 - alpm: libsndfile
   provides: libsndfile.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libswresample.so
   source: alpm
 - alpm: aubio
   provides: libaubio.so

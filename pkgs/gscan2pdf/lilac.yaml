@@ -7,29 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''gscan2pdf'')
 
   '
-repo_depends:
-- perl-html-parser
-- unpaper
-- perl-date-calc
-- perl-set-intspan
-- perl-filesys-df
-- perl-locale-gettext
-- perl-log-log4perl
-- perl-graphics-tiff
-- perl-image-sane
-- perl-gtk3-imageview
-- imagemagick
-- perl-proc-processtable
-- perl-pdf-api2
-- perl-goocanvas2
-- perl-try-tiny
-- perl-pdf-builder
-- perl-readonly
-- perl-gtk3-simplelist
-- perl-data-uuid
-- perl-locale-codes
-- perl-list-moreutils
-- perl-config-general
+repo_depends: []
 update_on:
 - alpm: gscan2pdf
   source: archpkg

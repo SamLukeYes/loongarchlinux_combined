@@ -10,19 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnuradio-iqbal'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- gnuradio
-- fftw
-- glibc
 - python
+- fftw
+- gnuradio
 update_on:
-- alias: python
 - alias: python
 - alpm: fftw
   provides: libfftw3f.so
-  source: alpm
-- alpm: gnuradio
-  provides: libgnuradio-pmt.so
   source: alpm
 - alpm: gnuradio
   provides: libgnuradio-runtime.so

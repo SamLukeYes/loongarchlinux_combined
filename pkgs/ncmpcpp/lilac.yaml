@@ -10,16 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ncmpcpp'')
 
   '
 repo_depends:
-- glibc
-- gcc: gcc-libs
 - curl
-- fftw
 - libmpdclient
+- fftw
+- boost
 - icu
-- taglib
 - ncurses
 - readline
-- boost: boost-libs
 update_on:
 - alpm: curl
   provides: libcurl.so
@@ -31,23 +28,7 @@ update_on:
   provides: libfftw3.so
   source: alpm
 - alpm: boost
-  provides: libboost_filesystem.so
-  source: alpm
-- alpm: boost
-  provides: libboost_locale.so
-  source: alpm
-- alpm: boost
-  provides: libboost_program_options.so
-  source: alpm
-- alpm: boost
-  provides: libboost_regex.so
-  source: alpm
-- alpm: boost
   provides: libboost_thread.so
-  source: alpm
-- alias: icu
-- alpm: icu
-  provides: libicui18n.so
   source: alpm
 - alpm: icu
   provides: libicuuc.so
@@ -55,7 +36,6 @@ update_on:
 - alpm: ncurses
   provides: libncursesw.so
   source: alpm
-- alias: readline
 - alpm: readline
   provides: libreadline.so
   source: alpm

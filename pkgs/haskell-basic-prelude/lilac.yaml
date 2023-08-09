@@ -13,7 +13,6 @@ repo_depends:
 - haskell-hashable
 - haskell-unordered-containers
 - haskell-vector
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-hashable
   source: alpm

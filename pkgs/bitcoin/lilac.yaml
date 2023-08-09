@@ -10,16 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bitcoin'')
 
   '
 repo_depends:
-- qrencode
-- qt5-base
-- libevent
-- db5.3
 - miniupnpc
-- sqlite
+- qt5-base
 - protobuf
-- zeromq
-- hicolor-icon-theme
-- boost: boost-libs
 update_on:
 - alpm: miniupnpc
   provides: libminiupnpc.so
@@ -27,9 +20,6 @@ update_on:
 - alpm: qt5-base
   source: alpm
   strip_release: true
-- alpm: miniupnpc
-  provides: libminiupnpc.so
-  source: alpm
 - alias: protobuf
 - alpm: bitcoin
   source: archpkg

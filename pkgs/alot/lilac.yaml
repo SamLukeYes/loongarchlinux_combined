@@ -7,16 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''alot'')
 
   '
-repo_depends:
-- python-cffi
-- notmuch
-- python-magic
-- python-configobj
-- python-urwid
-- python-twisted
-- desktop-file-utils
-- python-urwidtrees
-- gpgme: python-gpgme
+repo_depends: []
 update_on:
 - alpm: alot
   source: archpkg

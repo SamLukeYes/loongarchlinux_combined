@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-iospec'')
 
   '
 repo_depends:
-- haskell-stream
 - haskell-quickcheck
-- ghc: ghc-libs
+- haskell-stream
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

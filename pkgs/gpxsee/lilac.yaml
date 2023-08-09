@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gpxsee'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt6-positioning
-- qt6-serialport
-- qt6-5compat
-- qt6-svg
-- qt6-imageformats
+repo_depends: []
 update_on:
 - alpm: gpxsee
   source: archpkg

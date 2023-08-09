@@ -8,48 +8,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''busted'')
 
   '
 repo_depends:
-- lua-cliargs
-- lua-mediator: lua53-mediator
-- lua-say: lua51-say
-- lua-dkjson: lua52-dkjson
-- lua-cliargs: lua51-cliargs
-- lua-filesystem: lua52-filesystem
-- lua-system: lua51-system
-- lua-dkjson: lua53-dkjson
-- lua-system: lua52-system
-- lua53
-- lua51
-- lua-term: lua52-term
-- lua-say: lua52-say
-- lua-luassert: lua51-luassert
-- lua-luassert
-- lua-mediator
-- lua-system: lua53-system
-- penlight: lua-penlight
-- lua-filesystem
-- lua-say
-- penlight: lua53-penlight
-- lua-term
-- lua-mediator: lua52-mediator
-- lua-term: lua51-term
-- lua-term: lua53-term
-- lua-luassert: lua52-luassert
-- lua-mediator: lua51-mediator
-- penlight: lua51-penlight
-- lua-filesystem: lua53-filesystem
-- lua52
 - lua
-- lua-filesystem: lua51-filesystem
-- lua-system
-- lua-say: lua53-say
-- lua-dkjson: lua51-dkjson
-- penlight: lua52-penlight
-- lua-dkjson
-- lua-cliargs: lua53-cliargs
-- lua-cliargs: lua52-cliargs
-- lua-luassert: lua53-luassert
 update_on:
-- alias: lua
 - alias: lua
 - alpm: busted
   source: archpkg

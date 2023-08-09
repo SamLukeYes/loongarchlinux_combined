@@ -10,22 +10,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-casa-client''
 
   '
 repo_depends:
-- haskell-th-lift
-- haskell-cryptonite
-- haskell-unordered-containers
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-http-types
-- haskell-memory
-- haskell-unliftio-core
-- haskell-conduit
-- haskell-conduit-extra
-- haskell-casa-types
-- haskell-http-conduit
-- haskell-resourcet
 - haskell-attoparsec
 - haskell-base16-bytestring
+- haskell-casa-types
+- haskell-conduit
+- haskell-conduit-extra
+- haskell-cryptonite
+- haskell-http-conduit
+- haskell-http-types
+- haskell-memory
 - haskell-network-uri
+- haskell-resourcet
+- haskell-th-lift
+- haskell-unliftio-core
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-aeson
   source: alpm

@@ -11,11 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openxr'')
   '
 repo_depends:
 - jsoncpp
-- libxrandr
-- libxxf86vm
-- vulkan-icd-loader
-- libx11
-- libglvnd
 update_on:
 - alias: jsoncpp
 - alpm: openxr

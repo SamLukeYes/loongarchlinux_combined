@@ -11,15 +11,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-invariant'')
   '
 repo_depends:
 - haskell-bifunctors
-- haskell-unordered-containers
-- ghc: ghc-libs
+- haskell-comonad
+- haskell-contravariant
+- haskell-profunctors
+- haskell-statevar
 - haskell-tagged
 - haskell-th-abstraction
-- haskell-statevar
-- haskell-comonad
 - haskell-transformers-compat
-- haskell-profunctors
-- haskell-contravariant
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-bifunctors
   source: alpm

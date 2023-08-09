@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hjsmin'')
 
   '
 repo_depends:
-- haskell-optparse-applicative
-- ghc: ghc-libs
 - haskell-language-javascript
+- haskell-optparse-applicative
 update_on:
 - alpm: haskell-language-javascript
   source: alpm

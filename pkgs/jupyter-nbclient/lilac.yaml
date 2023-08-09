@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''jupyter-nbclient'')
 
   '
-repo_depends:
-- python-traitlets
-- python-jupyter-client
-- python-testpath
-- jupyter-nbformat
+repo_depends: []
 update_on:
 - alpm: jupyter-nbclient
   source: archpkg

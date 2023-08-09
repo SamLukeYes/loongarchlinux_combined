@@ -11,9 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sowing'')
   '
 repo_depends:
 - perl
-- gcc: gcc-libs
-- glibc
-- bash
 update_on:
 - alias: perl
 - alpm: sowing

@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gpsd'')
 
   '
 repo_depends:
-- libusb
-- bluez: bluez-libs
 - python
-- pps-tools
 update_on:
 - alias: python
 - alpm: gpsd

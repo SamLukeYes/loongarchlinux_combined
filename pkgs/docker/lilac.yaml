@@ -1,13 +1,3 @@
 destsubdir: extra
-repo_depends:
-- glibc
-- lvm2: device-mapper
-- libseccomp
-- iproute2
-- containerd
-- libtool
-- sqlite
-- runc
-- bridge-utils
-- systemd: systemd-libs
+repo_depends: []
 update_on: []

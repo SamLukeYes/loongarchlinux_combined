@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qtpass'')
   '
 repo_depends:
 - qt5-base
-- pwgen
-- pass
 update_on:
 - alpm: qt5-base
   source: alpm

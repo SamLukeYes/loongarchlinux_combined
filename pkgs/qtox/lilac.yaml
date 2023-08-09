@@ -9,18 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qtox'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qrencode
-- sonnet
-- libxss
-- snorenotify
-- ffmpeg
-- desktop-file-utils
-- openal
-- libexif
-- toxcore
-- qt5-svg
-- sqlcipher
+repo_depends: []
 update_on:
 - alpm: qtox
   source: archpkg

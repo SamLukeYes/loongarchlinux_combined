@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mgba'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libzip
-- libedit
-- sdl2
-- ffmpeg
-- zlib
-- qt5-multimedia
-- sqlite
-- libpng
+repo_depends: []
 update_on:
 - alpm: mgba
   source: archpkg

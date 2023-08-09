@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''indicator-china-weath
   '
 repo_depends:
 - qt5-base
-- geoip
 update_on:
 - alpm: qt5-base
   source: alpm

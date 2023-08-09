@@ -11,14 +11,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-skylighting-c
   '
 repo_depends:
 - haskell-aeson
-- ghc: ghc-libs
+- haskell-attoparsec
+- haskell-base64-bytestring
 - haskell-case-insensitive
 - haskell-colour
-- haskell-utf8-string
-- haskell-attoparsec
-- haskell-xml-conduit
 - haskell-safe
-- haskell-base64-bytestring
+- haskell-utf8-string
+- haskell-xml-conduit
 update_on:
 - alpm: haskell-aeson
   source: alpm

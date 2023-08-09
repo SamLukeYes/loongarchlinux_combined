@@ -10,20 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aircrack-ng'')
 
   '
 repo_depends:
-- hwloc
-- net-tools
-- gcc: gcc-libs
-- libnl
-- ethtool
-- wireless_tools
-- zlib
 - libpcap
-- usbutils
-- iw
-- pcre
-- sqlite
-- openssl
-- glibc
 - python
 update_on:
 - alpm: libpcap

@@ -9,20 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''frotz'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- sdl2_mixer
-- libao
-- libsamplerate
-- libmodplug
-- ncurses
-- libsndfile
-- libjpeg-turbo
-- sdl2
-- zlib
-- freetype2
-- libvorbis
-- glibc
-- libpng
+repo_depends: []
 update_on:
 - alpm: frotz
   source: archpkg

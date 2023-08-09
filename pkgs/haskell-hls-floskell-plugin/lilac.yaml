@@ -11,10 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-floskell-
   '
 repo_depends:
 - haskell-floskell
-- ghc: ghc-libs
-- haskell-lsp-types
-- haskell-hls-plugin-api
 - haskell-ghcide
+- haskell-hls-plugin-api
+- haskell-lsp-types
 update_on:
 - alpm: haskell-floskell
   source: alpm

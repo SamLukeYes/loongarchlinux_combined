@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-k5test'')
   '
 repo_depends:
 - python
-- krb5
 update_on:
 - alias: python
 - alpm: python-k5test

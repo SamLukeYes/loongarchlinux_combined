@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-either'')
 repo_depends:
 - haskell-bifunctors
 - haskell-profunctors
-- ghc: ghc-libs
 - haskell-semigroupoids
 update_on:
 - alpm: haskell-bifunctors

@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''nuitka'')
 
   '
-repo_depends:
-- python-setuptools
-- python-appdirs
-- libxml2
-- scons
-- patchelf
-- python-wheel
+repo_depends: []
 update_on:
 - alpm: nuitka
   source: archpkg

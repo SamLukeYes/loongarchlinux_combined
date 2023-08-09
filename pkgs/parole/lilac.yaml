@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''parole'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- dbus-glib
-- libnotify
-- gstreamer: gst-plugins-good
-- libxfce4ui
-- gstreamer: gst-plugins-base
+repo_depends: []
 update_on:
 - alpm: parole
   source: archpkg

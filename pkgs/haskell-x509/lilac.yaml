@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-x509'')
 
   '
 repo_depends:
-- haskell-cryptonite
-- ghc: ghc-libs
-- haskell-asn1-types
-- haskell-memory
 - haskell-asn1-encoding
-- haskell-hourglass
 - haskell-asn1-parse
+- haskell-asn1-types
+- haskell-cryptonite
+- haskell-hourglass
+- haskell-memory
 - haskell-pem
 update_on:
 - alpm: haskell-asn1-encoding

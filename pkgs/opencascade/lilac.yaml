@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opencascade'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gl2ps
-- tk
-- vtk
-- freeimage
-- ffmpeg4.4
+repo_depends: []
 update_on:
 - alpm: opencascade
   source: archpkg

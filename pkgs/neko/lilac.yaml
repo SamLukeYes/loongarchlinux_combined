@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''neko'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- mbedtls2
-- gc
-- sqlite
-- gtk3
-- mariadb: mariadb-libs
+repo_depends: []
 update_on:
 - alpm: neko
   source: archpkg

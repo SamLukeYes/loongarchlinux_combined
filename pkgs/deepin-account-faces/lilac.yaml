@@ -1,3 +1,13 @@
 destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''deepin-account-faces'')
+
+  '
 repo_depends: []
-update_on: []
+update_on:
+- alpm: deepin-account-faces
+  source: archpkg

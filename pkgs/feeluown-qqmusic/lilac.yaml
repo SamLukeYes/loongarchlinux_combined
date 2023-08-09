@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''feeluown-qqmusic'')
 
   '
-repo_depends:
-- python-requests
-- feeluown
-- python-marshmallow
+repo_depends: []
 update_on:
 - alpm: feeluown-qqmusic
   source: archpkg

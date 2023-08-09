@@ -11,15 +11,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-butcher'')
   '
 repo_depends:
 - haskell-bifunctors
-- haskell-microlens-th
-- ghc: ghc-libs
-- haskell-free
-- haskell-extra
-- haskell-multistate
 - haskell-deque
+- haskell-extra
+- haskell-free
 - haskell-microlens
-- haskell-void
+- haskell-microlens-th
+- haskell-multistate
 - haskell-unsafe
+- haskell-void
 update_on:
 - alpm: haskell-bifunctors
   source: alpm

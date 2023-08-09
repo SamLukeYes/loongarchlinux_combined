@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''autopep8'')
 
   '
 repo_depends:
-- python-pycodestyle
-- python-tomli
 - python
 update_on:
 - alias: python

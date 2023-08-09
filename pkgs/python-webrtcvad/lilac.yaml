@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-webrtcvad'')
 
   '
 repo_depends:
-- glibc
 - python
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-webrtcvad

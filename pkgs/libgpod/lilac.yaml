@@ -1,9 +1,3 @@
 destsubdir: extra
-repo_depends:
-- sg3_utils
-- libplist
-- gdk-pixbuf2
-- usbmuxd
-- libimobiledevice
-- sqlite
+repo_depends: []
 update_on: []

@@ -10,35 +10,34 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-store'')
 
   '
 repo_depends:
-- haskell-th-lift-instances
-- haskell-unordered-containers
-- haskell-th-orphans
-- haskell-cryptohash
-- haskell-smallcheck
-- haskell-primitive
-- haskell-hspec
-- haskell-resourcet
-- haskell-mono-traversable
-- haskell-contravariant
-- haskell-void
-- haskell-bifunctors
-- haskell-syb
-- haskell-hashable
-- haskell-th-utilities
-- haskell-lifted-base
-- haskell-free
-- haskell-monad-control
-- haskell-th-lift
-- haskell-network
 - haskell-async
-- ghc: ghc-libs
 - haskell-base-orphans
-- haskell-store-core
-- haskell-vector
-- haskell-safe
-- haskell-hspec-smallcheck
 - haskell-base64-bytestring
+- haskell-bifunctors
+- haskell-contravariant
+- haskell-cryptohash
+- haskell-free
+- haskell-hashable
+- haskell-hspec
+- haskell-hspec-smallcheck
+- haskell-lifted-base
+- haskell-monad-control
+- haskell-mono-traversable
+- haskell-network
+- haskell-primitive
+- haskell-resourcet
+- haskell-safe
+- haskell-smallcheck
+- haskell-store-core
+- haskell-syb
+- haskell-th-lift
+- haskell-th-lift-instances
+- haskell-th-orphans
 - haskell-th-reify-many
+- haskell-th-utilities
+- haskell-unordered-containers
+- haskell-vector
+- haskell-void
 update_on:
 - alpm: haskell-async
   source: alpm

@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-googleapis-common-protos'')
 
   '
-repo_depends:
-- protobuf: python-protobuf
+repo_depends: []
 update_on:
 - alpm: python-googleapis-common-protos
   source: archpkg

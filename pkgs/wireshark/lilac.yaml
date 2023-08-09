@@ -10,38 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wireshark'')
 
   '
 repo_depends:
-- xdg-utils
-- speexdsp
-- libmaxminddb
-- sbc
-- krb5
-- desktop-file-utils
-- libgcrypt
-- libcap
-- qt5-multimedia
-- gnutls
-- glib2
-- glibc
-- hicolor-icon-theme
-- gcc: gcc-libs
-- opus
-- libxml2
-- libssh
-- zlib: minizip
-- zstd
-- libnghttp2
-- shared-mime-info
-- c-ares
-- lz4
 - libpcap
-- lua52
-- libnl
-- snappy
-- zlib
+- libcap
 - brotli
-- spandsp
-- bcg729
-- qt5-svg
+- c-ares
+- krb5
+- wireshark-cli
 update_on:
 - alpm: libpcap
   provides: libpcap.so
@@ -56,22 +30,10 @@ update_on:
   provides: libcares.so
   source: alpm
 - alpm: krb5
-  provides: libkrb5.so
-  source: alpm
-- alpm: krb5
   provides: libk5crypto.so
   source: alpm
 - alpm: wireshark-cli
-  provides: libwireshark.so
-  source: alpm
-- alpm: wireshark-cli
-  provides: libwiretap.so
-  source: alpm
-- alpm: wireshark-cli
   provides: libwsutil.so
-  source: alpm
-- alpm: libpcap
-  provides: libpcap.so
   source: alpm
 - alpm: wireshark
   source: archpkg

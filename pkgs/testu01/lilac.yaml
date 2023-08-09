@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''testu01'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glibc
+repo_depends: []
 update_on:
 - alpm: testu01
   source: archpkg

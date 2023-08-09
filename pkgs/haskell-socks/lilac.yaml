@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-socks'')
 
   '
 repo_depends:
+- haskell-basement
 - haskell-cereal
 - haskell-network
-- ghc: ghc-libs
-- haskell-basement
 update_on:
 - alpm: haskell-basement
   source: alpm

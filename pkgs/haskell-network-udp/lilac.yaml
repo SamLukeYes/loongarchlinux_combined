@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-network-udp''
 repo_depends:
 - haskell-iproute
 - haskell-network
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-iproute
   source: alpm

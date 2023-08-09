@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-railroad'')
 
   '
-repo_depends:
-- python-toolz
-- python-six
-- python-boltons
+repo_depends: []
 update_on:
 - alpm: python-railroad
   source: archpkg

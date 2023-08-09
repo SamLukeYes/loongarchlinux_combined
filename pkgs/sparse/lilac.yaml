@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sparse'')
 
   '
 repo_depends:
-- sqlite
 - perl
-- libxml2
 update_on:
 - alias: perl
 - alpm: sparse

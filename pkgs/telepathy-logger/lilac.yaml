@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-logger'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- sqlite
-- telepathy-glib
-- libxml2
-- dconf
+repo_depends: []
 update_on:
 - alpm: telepathy-logger
   source: archpkg

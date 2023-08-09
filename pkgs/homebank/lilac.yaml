@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''homebank'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libofx
-- desktop-file-utils
-- librsvg
-- shared-mime-info
-- gtk3
-- libsoup
-- hicolor-icon-theme
-- perl-xml-parser
+repo_depends: []
 update_on:
 - alpm: homebank
   source: archpkg

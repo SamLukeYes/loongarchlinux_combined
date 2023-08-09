@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''peek'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtk3
-- libkeybinder3
-- ffmpeg
-- which
+repo_depends: []
 update_on:
 - alpm: peek
   source: archpkg

@@ -10,18 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''raptor'')
 
   '
 repo_depends:
-- xz
 - curl
-- libxslt
-- zlib
-- libxml2
-- glibc
 - icu
 update_on:
 - alpm: curl
   provides: libcurl.so
   source: alpm
-- alias: icu
 - alpm: icu
   provides: libicuuc.so
   source: alpm

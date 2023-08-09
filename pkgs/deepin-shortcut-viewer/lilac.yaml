@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-shortcut-viewe
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- deepin-qt5integration
+repo_depends: []
 update_on:
 - alpm: deepin-shortcut-viewer
   source: archpkg

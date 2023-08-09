@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opensearch-asynchrono
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- opensearch
+repo_depends: []
 update_on:
 - alpm: opensearch-asynchronous-search-plugin
   source: archpkg

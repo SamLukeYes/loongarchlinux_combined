@@ -10,12 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-keyb
 
   '
 repo_depends:
-- libgnomekbd
-- libgee
-- ibus
-- libxml2
-- gtk3
-- glib2
+- granite
+- libhandy
+- switchboard
 update_on:
 - alpm: granite
   provides: libgranite.so

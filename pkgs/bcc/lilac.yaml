@@ -10,9 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bcc'')
 
   '
 repo_depends:
-- elfutils: libelf
-- libedit
-- ethtool
 - clang
 - python
 update_on:

@@ -10,17 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-summoner'')
 
   '
 repo_depends:
-- haskell-generic-data
-- haskell-optparse-applicative
-- haskell-shellmet
 - haskell-aeson
-- ghc: ghc-libs
+- haskell-colourista
+- haskell-generic-data
+- haskell-gitrev
+- haskell-neat-interpolation
+- haskell-optparse-applicative
+- haskell-relude
+- haskell-shellmet
 - haskell-tomland
 - haskell-validation-selective
-- haskell-gitrev
-- haskell-colourista
-- haskell-neat-interpolation
-- haskell-relude
 update_on:
 - alpm: haskell-aeson
   source: alpm

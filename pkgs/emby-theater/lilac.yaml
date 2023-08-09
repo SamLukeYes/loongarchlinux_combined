@@ -10,29 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''emby-theater'')
 
   '
 repo_depends:
-- libxrender
-- libxfixes
-- libxdamage
-- nspr
-- glibc
-- cups: libcups
-- gcc: gcc-libs
-- libxrandr
-- libxcursor
-- libxext
-- cairo
-- ocl-icd
-- libxcb
-- libdrm
-- libxtst
-- libxcomposite
-- libxi
-- libxss
-- nss
-- zlib
-- libx11
-- intel-media-sdk: libmfx
-- mesa
+- alsa-lib
+- at-spi2-core
+- dbus
+- expat
+- fontconfig
+- gtk3
+- gdk-pixbuf2
+- glib2
+- pango
+- libao
+- libva
 update_on:
 - alpm: alsa-lib
   provides: libasound.so
@@ -50,34 +38,19 @@ update_on:
   provides: libfontconfig.so
   source: alpm
 - alpm: gtk3
-  provides: libgdk-3.so
+  provides: libgtk-3.so
   source: alpm
 - alpm: gdk-pixbuf2
   provides: libgdk_pixbuf-2.0.so
   source: alpm
 - alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: glib2
   provides: libgobject-2.0.so
-  source: alpm
-- alpm: gtk3
-  provides: libgtk-3.so
-  source: alpm
-- alpm: pango
-  provides: libpango-1.0.so
   source: alpm
 - alpm: pango
   provides: libpangocairo-1.0.so
   source: alpm
 - alpm: libao
   provides: libpulse.so
-  source: alpm
-- alpm: libva
-  provides: libva-drm.so
   source: alpm
 - alpm: libva
   provides: libva.so

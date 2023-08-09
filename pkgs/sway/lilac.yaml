@@ -10,12 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sway'')
 
   '
 repo_depends:
-- libinput
-- gdk-pixbuf2
-- libxcb
-- pcre2
-- pango
-- cairo
+- libevdev
+- json-c
+- systemd-libs
+- wayland
+- wlroots
+- intel-oneapi-basekit
 update_on:
 - alpm: libevdev
   provides: libevdev.so

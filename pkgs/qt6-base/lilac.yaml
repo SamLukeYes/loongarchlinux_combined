@@ -1,25 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libxrender
-- tslib
-- xdg-utils
-- xcb-util-keysyms
-- cups: libcups
-- libb2
-- libjpeg-turbo
-- xcb-util-cursor
-- xcb-util-wm
-- libproxy
-- libxkbcommon: libxkbcommon-x11
-- shared-mime-info
-- fontconfig
-- double-conversion
-- md4c
-- sqlite
-- qt6-translations
-- libinput
-- libxi
-- brotli
-- vulkan-headers
-- mesa
+repo_depends: []
 update_on: []

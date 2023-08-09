@@ -10,17 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cutefish-settings'')
 
   '
 repo_depends:
-- fontconfig
-- bluez-qt
-- qt5-quickcontrols
-- fishui
-- bluedevil
-- libxcursor
-- freetype2
-- libcutefish
-- networkmanager-qt
-- kcoreaddons
-- modemmanager-qt
 - icu
 update_on:
 - alias: icu

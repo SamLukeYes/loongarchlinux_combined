@@ -1,12 +1,5 @@
 destsubdir: core
 repo_depends:
-- bzip2
-- zlib
-- libxcrypt
-- gdbm
-- libffi
-- expat
-- openssl
-#- libnsl
+- python
 update_on:
 - alias: python

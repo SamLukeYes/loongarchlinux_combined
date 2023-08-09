@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-datetime'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- perl-eval-closure
-- perl-math-round
-- perl-specio
-- perl-namespace-autoclean
-- perl-params-validationcompiler
+repo_depends: []
 update_on:
 - alpm: perl-datetime
   source: archpkg

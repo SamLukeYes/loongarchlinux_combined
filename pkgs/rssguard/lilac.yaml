@@ -11,10 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rssguard'')
   '
 repo_depends:
 - qt6-declarative
-- qt6-multimedia
-- qt6-webengine
-- qt6-5compat
-- hicolor-icon-theme
 update_on:
 - alpm: qt6-declarative
   source: alpm

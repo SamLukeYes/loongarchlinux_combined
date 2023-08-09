@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''chromium-bsu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- freeglut
-- sdl_image
-- ftgl
-- fontconfig
-- glu
-- freealut
-- openal
+repo_depends: []
 update_on:
 - alpm: chromium-bsu
   source: archpkg

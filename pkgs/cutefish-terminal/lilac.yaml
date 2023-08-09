@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cutefish-terminal'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- fishui
-- qt5-svg
+repo_depends: []
 update_on:
 - alpm: cutefish-terminal
   source: archpkg

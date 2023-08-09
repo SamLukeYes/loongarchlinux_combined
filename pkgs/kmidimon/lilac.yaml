@@ -10,21 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kmidimon'')
 
   '
 repo_depends:
-- drumstick
-- gcc: gcc-libs
 - qt6-base
-- qt6-5compat
-- glibc
+- drumstick
 update_on:
 - alpm: qt6-base
   source: alpm
   strip_release: true
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
-- alpm: drumstick
-  provides: libdrumstick-alsa.so
-  source: alpm
 - alpm: drumstick
   provides: libdrumstick-file.so
   source: alpm

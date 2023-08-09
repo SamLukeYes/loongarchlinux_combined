@@ -11,9 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xwax'')
   '
 repo_depends:
 - alsa-lib
-- sdl_ttf
-- ttf-dejavu
-- glibc
+- jack2
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

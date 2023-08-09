@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''maude'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libsigsegv
-- yices
-- buddy
-- libtecla
-- cvc4
-- gmp
+repo_depends: []
 update_on:
 - alpm: maude
   source: archpkg

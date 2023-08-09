@@ -10,8 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''irqbalance'')
 
   '
 repo_depends:
-- libnl
-- glibc
+- glib2
+- libcap-ng
+- ncurses
+- numactl
+- systemd-libs
 update_on:
 - alpm: glib2
   provides: libglib-2.0.so

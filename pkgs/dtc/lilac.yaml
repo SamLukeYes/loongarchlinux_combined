@@ -1,8 +1,5 @@
 destsubdir: extra
 repo_depends:
 - python
-- glibc
-- libyaml
-- bash
 update_on:
 - alias: python

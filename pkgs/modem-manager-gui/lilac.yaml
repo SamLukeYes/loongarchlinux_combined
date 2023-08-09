@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''modem-manager-gui'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libnotify
-- gdbm
-- modemmanager
-- gtkspell3
-- gtk3
+repo_depends: []
 update_on:
 - alpm: modem-manager-gui
   source: archpkg

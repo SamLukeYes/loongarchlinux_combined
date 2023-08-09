@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-subtitles'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtkspell3
-- gtk-sharp-3
-- gstreamer: gst-plugins-base
-- gstreamer: gst-plugin-gtk
+repo_depends: []
 update_on:
 - alpm: gnome-subtitles
   source: archpkg

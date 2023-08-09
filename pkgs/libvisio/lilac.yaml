@@ -10,10 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libvisio'')
 
   '
 repo_depends:
-- libwpd
-- libwpg
-- libxml2
-- librevenge
 - icu
 update_on:
 - alias: icu

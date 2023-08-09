@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''colord-kde'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kirigami-addons
-- kitemmodels
-- libxrandr
-- kdeclarative
-- colord
+repo_depends: []
 update_on:
 - alpm: colord-kde
   source: archpkg

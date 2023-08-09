@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-shell-config-generate'')
 
   '
-repo_depends:
-- perl-shell-guess
+repo_depends: []
 update_on:
 - alpm: perl-shell-config-generate
   source: archpkg

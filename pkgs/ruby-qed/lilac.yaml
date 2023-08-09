@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-qed'')
 
   '
-repo_depends:
-- ruby-brass
-- ruby-facets
-- ruby-ansi
+repo_depends: []
 update_on:
 - alpm: ruby-qed
   source: archpkg

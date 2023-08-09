@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-flask-wtf'')
 
   '
-repo_depends:
-- python-wtforms
-- python-flask-babel
-- python-werkzeug
-- python-flask
+repo_depends: []
 update_on:
 - alpm: python-flask-wtf
   source: archpkg

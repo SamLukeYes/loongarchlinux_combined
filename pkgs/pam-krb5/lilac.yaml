@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pam-krb5'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pam
-- krb5
+repo_depends: []
 update_on:
 - alpm: pam-krb5
   source: archpkg

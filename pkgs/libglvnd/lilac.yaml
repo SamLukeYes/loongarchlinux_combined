@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libxext
-#- mesa
+repo_depends: []
 update_on: []

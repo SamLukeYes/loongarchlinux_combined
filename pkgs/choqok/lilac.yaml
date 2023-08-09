@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''choqok'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kemoticons
-- qt5-networkauth
-- knotifyconfig
-- purpose
-- qca: qca-qt5
-- attica
+repo_depends: []
 update_on:
 - alpm: choqok
   source: archpkg

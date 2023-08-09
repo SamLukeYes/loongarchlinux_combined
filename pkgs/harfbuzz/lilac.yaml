@@ -1,11 +1,16 @@
 destsubdir: extra
-repo_depends: []
+repo_depends:
+- freetype2
+- glib2
+- graphite
+- cairo
+- harfbuzz
+- icu
+- chafa
+- harfbuzz-cairo
 update_on:
 - alpm: freetype2
   provides: libfreetype.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
   source: alpm
 - alpm: glib2
   provides: libgobject-2.0.so
@@ -19,36 +24,12 @@ update_on:
 - alpm: harfbuzz
   provides: libharfbuzz.so
   source: alpm
-- alpm: harfbuzz
-  provides: libharfbuzz.so
-  source: alpm
 - alpm: icu
   provides: libicuuc.so
-  source: alpm
-- alpm: cairo
-  provides: libcairo.so
   source: alpm
 - alpm: chafa
   provides: libchafa.so
   source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
 - alpm: harfbuzz-cairo
   provides: libharfbuzz-cairo.so
-  source: alpm
-- alpm: harfbuzz
-  provides: libharfbuzz-gobject.so
-  source: alpm
-- alpm: harfbuzz
-  provides: libharfbuzz-subset.so
-  source: alpm
-- alpm: harfbuzz
-  provides: libharfbuzz.so
   source: alpm

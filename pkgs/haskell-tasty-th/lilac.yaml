@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-th'')
 repo_depends:
 - haskell-src-exts
 - haskell-tasty
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-src-exts
   source: alpm

@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-sourcemap'')
 
   '
 repo_depends:
-- haskell-unordered-containers
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-utf8-string
 - haskell-attoparsec
+- haskell-unordered-containers
+- haskell-utf8-string
 update_on:
 - alpm: haskell-aeson
   source: alpm

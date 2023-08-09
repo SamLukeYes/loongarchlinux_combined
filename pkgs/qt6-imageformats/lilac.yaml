@@ -10,9 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qt6-imageformats'')
 
   '
 repo_depends:
-- libmng
-- libwebp
-- jasper
 - qt6-base
 update_on:
 - alpm: qt6-base

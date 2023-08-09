@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-tempora'')
 
   '
 repo_depends:
-- python-pytz
 - python
-- python-jaraco.functools
 update_on:
 - alias: python
 - alpm: python-tempora

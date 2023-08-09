@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-multistate'')
 
   '
 repo_depends:
-- haskell-tagged
 - haskell-monad-control
-- ghc: ghc-libs
+- haskell-tagged
 - haskell-transformers-base
 update_on:
 - alpm: haskell-monad-control

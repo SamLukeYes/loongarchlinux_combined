@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-rank2classes'
 repo_depends:
 - haskell-data-functor-logistic
 - haskell-distributive
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-data-functor-logistic
   source: alpm

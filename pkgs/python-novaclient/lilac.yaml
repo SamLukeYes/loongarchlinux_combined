@@ -7,17 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-novaclient'')
 
   '
-repo_depends:
-- python-requests
-- python-keystoneauth1
-- python-oslo-i18n
-- python-six
-- python-pbr
-- python-prettytable
-- python-oslo-serialization
-- python-iso8601
-- python-babel
-- python-oslo-utils
+repo_depends: []
 update_on:
 - alpm: python-novaclient
   source: archpkg

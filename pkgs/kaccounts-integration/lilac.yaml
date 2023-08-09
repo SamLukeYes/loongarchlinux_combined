@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kaccounts-integration
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- signon-ui
-- signon-kwallet-extension
-- signon-plugin-oauth2
-- kcmutils
+repo_depends: []
 update_on:
 - alpm: kaccounts-integration
   source: archpkg

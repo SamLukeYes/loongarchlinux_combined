@@ -9,18 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''f3d'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- nlohmann-json
-- assimp
-- vtk
-- fmt
-- draco
-- netcdf
-- pugixml
-- opencascade
-- ospray
-- glew
-- alembic
+repo_depends: []
 update_on:
 - alpm: f3d
   source: archpkg

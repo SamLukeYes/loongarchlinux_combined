@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-regex-applica
 
   '
 repo_depends:
-- ghc: ghc-libs
 - haskell-filtrable
 update_on:
 - alpm: haskell-filtrable

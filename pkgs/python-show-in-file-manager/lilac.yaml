@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-show-in-file-manager'')
 
   '
-repo_depends:
-- pyxdg: python-pyxdg
-- python-packaging
+repo_depends: []
 update_on:
 - alpm: python-show-in-file-manager
   source: archpkg

@@ -9,34 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''spice-gtk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libusb
-- libcacard
-- libcap-ng
-- gstreamer: gst-plugins-good
-- glib2
-- acl
-- libjpeg-turbo
-- gstreamer
-- opus
-- cairo
-- lz4
-- phodav
-- openssl
-- gstreamer: gst-plugins-base
-- libepoxy
-- libsoup3
-- gdk-pixbuf2
-- spice-protocol
-- wayland
-- polkit
-- usbredir
-- libsasl
-- zlib
-- pixman
-- libx11
-- json-glib
-- gtk3
+repo_depends: []
 update_on:
 - alpm: spice-gtk
   source: archpkg

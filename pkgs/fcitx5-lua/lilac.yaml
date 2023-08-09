@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcitx5-lua'')
 
   '
 repo_depends:
-- fcitx5
 - lua
 update_on:
 - alias: lua

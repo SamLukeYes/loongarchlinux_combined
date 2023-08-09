@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''auth-tarball-from-git
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- sequoia-sqv
-- git
+repo_depends: []
 update_on:
 - alpm: auth-tarball-from-git
   source: archpkg

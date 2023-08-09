@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''sugar-activity-terminal'')
 
   '
-repo_depends:
-- sugar-toolkit-gtk3
-- vte3
+repo_depends: []
 update_on:
 - alpm: sugar-activity-terminal
   source: archpkg

@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-xml-rss'')
 
   '
-repo_depends:
-- perl-html-parser
-- perl-datetime-format-mail
-- perl-datetime
-- perl-datetime-format-w3cdtf
-- perl-xml-parser
+repo_depends: []
 update_on:
 - alpm: perl-xml-rss
   source: archpkg

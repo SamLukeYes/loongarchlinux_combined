@@ -9,10 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-puppet_forge'')
   '
 repo_depends:
 - ruby
-- ruby-faraday
-- ruby-faraday-middleware
-- ruby-minitar
-- ruby-semantic_puppet
 update_on:
 - alias: ruby
 - alpm: ruby-puppet_forge

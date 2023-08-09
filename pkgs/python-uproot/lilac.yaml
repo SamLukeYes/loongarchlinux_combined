@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-uproot'')
 
   '
-repo_depends:
-- python-zstandard
-- python-lz4
-- python-cachetools
-- python-numpy
+repo_depends: []
 update_on:
 - alpm: python-uproot
   source: archpkg

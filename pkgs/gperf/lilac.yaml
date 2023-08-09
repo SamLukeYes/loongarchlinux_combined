@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gperf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
-- texinfo
+repo_depends: []
 update_on:
 - alpm: gperf
   source: archpkg

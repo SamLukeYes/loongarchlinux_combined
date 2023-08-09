@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xf86-video-vesa'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glibc
+repo_depends: []
 update_on:
 - alpm: xf86-video-vesa
   source: archpkg

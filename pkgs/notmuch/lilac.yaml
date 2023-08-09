@@ -10,16 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''notmuch'')
 
   '
 repo_depends:
-- perl-term-readline-gnu
-- xapian-core
 - ruby
-- gmime3
-- perl-file-which
-- sfsexp
-- perl-mail-box
-- perl-string-shellquote
-- talloc
-- perl-mailtools
 update_on:
 - alias: ruby
 - alpm: notmuch

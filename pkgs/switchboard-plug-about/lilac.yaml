@@ -10,13 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-abou
 
   '
 repo_depends:
-- appstream
-- libgee
-- fwupd
-- libgtop
-- udisks2
-- gtk3
-- glib2
+- granite
+- switchboard
 update_on:
 - alpm: granite
   provides: libgranite.so

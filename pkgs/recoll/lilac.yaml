@@ -11,11 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''recoll'')
   '
 repo_depends:
 - qt5-base
-- aspell
-- openssl
-- chmlib
-- hicolor-icon-theme
-- qt5-webengine
 update_on:
 - alpm: qt5-base
   source: alpm

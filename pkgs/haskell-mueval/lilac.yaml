@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mueval'')
 
   '
 repo_depends:
-- haskell-show
-- ghc: ghc-libs
-- haskell-extensible-exceptions
 - haskell-quickcheck
-- haskell-simple-reflect
+- haskell-extensible-exceptions
 - haskell-hint
+- haskell-show
+- haskell-simple-reflect
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

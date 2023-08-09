@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ft2-clone'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- alsa-lib
-- gcc: gcc-libs
-- sdl2
-- hicolor-icon-theme
-- flac
-- glibc
+repo_depends: []
 update_on:
 - alpm: ft2-clone
   source: archpkg

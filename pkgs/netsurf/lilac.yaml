@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''netsurf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libjpeg-turbo
-- curl
-- libnsutils
-- gtk3
-- libwebp
-- libhubbub
+repo_depends: []
 update_on:
 - alpm: netsurf
   source: archpkg

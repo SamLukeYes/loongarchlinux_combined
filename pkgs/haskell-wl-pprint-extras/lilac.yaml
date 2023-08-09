@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wl-pprint-ext
 repo_depends:
 - haskell-semigroupoids
 - haskell-utf8-string
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-semigroupoids
   source: alpm

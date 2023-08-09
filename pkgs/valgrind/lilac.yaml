@@ -1,7 +1,5 @@
 destsubdir: extra
 repo_depends:
-- elfutils: debuginfod
 - perl
-- glibc
 update_on:
 - alias: perl

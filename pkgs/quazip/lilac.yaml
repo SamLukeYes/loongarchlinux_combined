@@ -1,7 +1,6 @@
 destsubdir: extra
 repo_depends:
 - qt5-base
-- qt6-5compat
 update_on:
 - alpm: qt5-base
   source: alpm

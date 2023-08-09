@@ -1,18 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libepoxy
-- libxkbcommon
-- tpm2-tss
-- dconf
-- libsecret
-- fuse3
-- pipewire
-- libvncserver
-- libfdk-aac
-- libdrm
-- freerdp
-- libnotify
-- cairo
-- glib2
-- systemd
+repo_depends: []
 update_on: []

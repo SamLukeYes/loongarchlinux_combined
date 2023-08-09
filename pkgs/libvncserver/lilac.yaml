@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libvncserver'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libgcrypt
-- gnutls
-- openssl
-- libpng
-- lzo
+repo_depends: []
 update_on:
 - alpm: libvncserver
   source: archpkg

@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-test-framewor
 
   '
 repo_depends:
-- ghc: ghc-libs
+- haskell-test-framework
+- haskell-quickcheck
 - haskell-extensible-exceptions
 - haskell-random
-- haskell-quickcheck
-- haskell-test-framework
 update_on:
 - alpm: haskell-test-framework
   source: alpm

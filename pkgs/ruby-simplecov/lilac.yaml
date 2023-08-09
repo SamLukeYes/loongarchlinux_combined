@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-simplecov'')
 
   '
 repo_depends:
-- ruby-simplecov-html
-- ruby-simplecov_json_formatter
 - ruby
-- ruby-docile
 update_on:
 - alias: ruby
 - alpm: ruby-simplecov

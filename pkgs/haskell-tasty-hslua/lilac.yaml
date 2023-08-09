@@ -13,7 +13,6 @@ repo_depends:
 - haskell-hslua-core
 - haskell-tasty
 - haskell-tasty-hunit
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-hslua-core
   source: alpm

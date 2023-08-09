@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''eom'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- dbus-glib
-- gobject-introspection: gobject-introspection-runtime
-- libjpeg-turbo
-- libpeas
-- libexif
-- gettext
-- lcms2
-- exempi
-- mate-desktop
+repo_depends: []
 update_on:
 - alpm: eom
   source: archpkg

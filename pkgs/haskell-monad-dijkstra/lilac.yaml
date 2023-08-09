@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-monad-dijkstr
   '
 repo_depends:
 - haskell-free
-- ghc: ghc-libs
 - haskell-psqueues
 update_on:
 - alpm: haskell-free

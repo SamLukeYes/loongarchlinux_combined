@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-nkdfu'')
 
   '
-repo_depends:
-- python-fire
-- python-libusb1
-- python-intelhex
-- python-tqdm
+repo_depends: []
 update_on:
 - alpm: python-nkdfu
   source: archpkg

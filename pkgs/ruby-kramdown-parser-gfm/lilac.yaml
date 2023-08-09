@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-kramdown-parser-
   '
 repo_depends:
 - ruby
-- ruby-kramdown
 update_on:
 - alias: ruby
 - alpm: ruby-kramdown-parser-gfm

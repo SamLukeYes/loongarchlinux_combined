@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-mediafire'')
 
   '
 repo_depends:
-- python-requests
-- python-requests-toolbelt
 - python
-- python-six
 update_on:
 - alias: python
 - alpm: python-mediafire

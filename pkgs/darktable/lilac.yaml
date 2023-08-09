@@ -10,26 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''darktable'')
 
   '
 repo_depends:
-- libjxl
-- gmic
-- osm-gps-map
-- openmp
-- flickcurl
-- libavif
-- iso-codes
-- libjpeg-turbo
-- libsecret
-- openexr
-- graphicsmagick
-- openjpeg2
-- jasper
-- colord-gtk
-- pugixml
 - lua
-- libgphoto2
-- lensfun
-- zlib
-- exiv2
 update_on:
 - alias: lua
 - alpm: darktable

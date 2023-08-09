@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qt5-ukui-platformthem
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kwayland
-- dconf
-- libqtxdg
-- gsettings-qt
-- kwindowsystem
+repo_depends: []
 update_on:
 - alpm: qt5-ukui-platformtheme
   source: archpkg

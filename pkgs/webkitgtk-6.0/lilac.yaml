@@ -10,48 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''webkitgtk-6.0'')
 
   '
 repo_depends:
-- enchant
-- gtk4
-- libtasn1
-- libmanette
-- libavif
-- libgcrypt
-- libwpe
-- glib2
-- libsecret
-- gstreamer
-- harfbuzz: harfbuzz-icu
-- harfbuzz
-- libxml2
-- libxt
-- bubblewrap
-- cairo
 - icu
-- libpng
-- openjpeg2
-- fontconfig
-- libseccomp
-- woff2
-- hyphen
-- xdg-dbus-proxy
-- libdrm
-- freetype2
-- gstreamer: gst-plugins-base-libs
-- sqlite
-- at-spi2-core
-- libepoxy
-- libsoup3
-- libxcomposite
-- wayland
-- gstreamer: gst-plugins-bad-libs
-- libxslt
-- zlib
 - wpebackend-fdo
-- libx11
-- libwebp
-- mesa
+- libwpe
 update_on:
-- alias: icu
 - alias: icu
 - alpm: wpebackend-fdo
   provides: libWPEBackend-fdo-1.0.so

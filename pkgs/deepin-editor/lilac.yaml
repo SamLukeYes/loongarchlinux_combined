@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-editor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- uchardet
-- polkit-qt: polkit-qt5
-- syntax-highlighting
-- kcodecs
-- libchardet
-- deepin-qt-dbus-factory
-- deepin-qt5integration
+repo_depends: []
 update_on:
 - alpm: deepin-editor
   source: archpkg

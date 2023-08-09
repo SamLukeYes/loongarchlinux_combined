@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-io-socket-ssl'')
 
   '
 repo_depends:
-- perl-uri
 - perl
-- perl-net-ssleay
 update_on:
 - alias: perl
 - alpm: perl-io-socket-ssl

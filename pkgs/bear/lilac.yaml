@@ -10,19 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bear'')
 
   '
 repo_depends:
-- nlohmann-json
-- openssl
-- fmt
-- gcc: gcc-libs
-- re2
-- spdlog
-- c-ares
-- abseil-cpp
 - grpc
 - protobuf
-- glibc
 update_on:
-- alias: grpc
 - alpm: grpc
   provides: libgrpc++.so
   source: alpm

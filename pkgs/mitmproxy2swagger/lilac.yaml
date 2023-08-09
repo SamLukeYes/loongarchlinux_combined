@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mitmproxy2swagger'')
 
   '
 repo_depends:
-- python-ruamel-yaml
-- python-json-stream
 - python
-- mitmproxy
 update_on:
 - alias: python
 - alpm: mitmproxy2swagger

@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''testssl.sh'')
 
   '
-repo_depends:
-- procps-ng
-- util-linux
-- bash
-- openssl
-- coreutils
+repo_depends: []
 update_on:
 - alpm: testssl.sh
   source: archpkg

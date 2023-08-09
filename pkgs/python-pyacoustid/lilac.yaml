@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyacoustid'')
   '
 repo_depends:
 - python
-- chromaprint
 update_on:
 - alias: python
 - alpm: python-pyacoustid

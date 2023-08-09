@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-netbook'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libfakekey
-- mate-panel
-- gettext
+repo_depends: []
 update_on:
 - alpm: mate-netbook
   source: archpkg

@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mate-common'')
 
   '
-repo_depends:
-- autoconf
-- gettext
-- gtk-doc
-- libtool
-- automake
+repo_depends: []
 update_on:
 - alpm: mate-common
   source: archpkg

@@ -10,12 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sh4d0wup'')
 
   '
 repo_depends:
-- gcc
-- xz
-- pcsclite
-- podman
-- openssl
-- shared-mime-info
+- zstd
 update_on:
 - alpm: zstd
   provides: libzstd.so

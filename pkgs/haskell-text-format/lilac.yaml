@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-text-format''
 
   '
 repo_depends:
-- ghc: ghc-libs
-- haskell-old-locale
 - haskell-double-conversion
+- haskell-old-locale
 update_on:
 - alpm: haskell-double-conversion
   source: alpm

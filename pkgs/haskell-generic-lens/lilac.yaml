@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-generic-lens'
 repo_depends:
 - haskell-generic-lens-core
 - haskell-profunctors
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-generic-lens-core
   source: alpm

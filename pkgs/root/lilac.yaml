@@ -10,35 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''root'')
 
   '
 repo_depends:
-- lapack: blas
-- libafterimage
-- desktop-file-utils
-- librsvg
-- tex-gyre-fonts
-- hicolor-icon-theme
-- nlohmann-json
-- libxpm
-- liburing
 - gsl
-- pcre
-- fftw
-- zstd
-- ftgl
-- fcgi
-- cudnn
-- glew
-- python-numpy
 - python
-- graphviz
-- cuda
-- gl2ps
-- unixodbc
-- giflib
 update_on:
-- alpm: gsl
-  source: alpm
-  strip_release: true
-- alias: python
 - alpm: gsl
   source: alpm
   strip_release: true

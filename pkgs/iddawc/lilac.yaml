@@ -10,7 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''iddawc'')
 
   '
 repo_depends:
-- glibc
+- orcania
+- rhonabwy
+- ulfius
+- yder
 update_on:
 - alpm: orcania
   provides: liborcania.so

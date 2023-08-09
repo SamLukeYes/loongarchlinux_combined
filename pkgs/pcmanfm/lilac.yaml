@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pcmanfm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- lxmenu-data
-- libfm: libfm-gtk2
+repo_depends: []
 update_on:
 - alpm: pcmanfm
   source: archpkg

@@ -10,14 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''filezilla'')
 
   '
 repo_depends:
+- wxwidgets-gtk3
 - libfilezilla
-- xdg-utils
-- wxwidgets: wxwidgets-gtk3
-- libidn
 - dbus
-- sqlite
-- gnutls
-- hicolor-icon-theme
+- gtk3
+- nettle
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm
@@ -27,9 +24,6 @@ update_on:
   source: alpm
 - alpm: dbus
   provides: libdbus-1.so
-  source: alpm
-- alpm: gtk3
-  provides: libgtk-3.so
   source: alpm
 - alpm: gtk3
   provides: libgdk-3.so

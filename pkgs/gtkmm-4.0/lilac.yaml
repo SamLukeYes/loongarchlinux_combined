@@ -10,8 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtkmm-4.0'')
 
   '
 repo_depends:
+- cairomm-1.16
+- glibmm-2.68
 - pangomm-2.48
-- gtk4
+- libsigc++-3.0
 update_on:
 - alpm: cairomm-1.16
   provides: libcairomm-1.16.so

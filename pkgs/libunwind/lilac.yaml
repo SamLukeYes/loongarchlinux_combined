@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- xz
-- zlib
+repo_depends: []
 update_on: []

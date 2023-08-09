@@ -8,13 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''reprotest'')
 
   '
 repo_depends:
-- libfaketime
-- python-setuptools
-- diffoscope
-- fakeroot
-- python-rstr
-- python-distro
-- python-wheel
 - python
 update_on:
 - alias: python

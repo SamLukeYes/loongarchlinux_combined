@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''notepadqq'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- uchardet
-- qt5-websockets
-- qt5-svg
-- hicolor-icon-theme
-- qt5-webengine
+repo_depends: []
 update_on:
 - alpm: notepadqq
   source: archpkg

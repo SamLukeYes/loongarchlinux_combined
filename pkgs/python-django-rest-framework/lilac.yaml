@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-django-rest-framework'')
 
   '
-repo_depends:
-- python-pytz
-- django: python-django
+repo_depends: []
 update_on:
 - alpm: python-django-rest-framework
   source: archpkg

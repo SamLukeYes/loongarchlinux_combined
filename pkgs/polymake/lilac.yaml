@@ -9,20 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''polymake'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- perl-xml-writer
-- singular
-- perl-term-readline-gnu
-- normaliz
-- perl-term-readkey
-- sympol
-- perl-xml-libxslt
-- ppl
-- perl-json
-- scip
-- perl-xml-libxml
-- perl
-- lrs
+repo_depends: []
 update_on:
 - alpm: polymake
   source: archpkg

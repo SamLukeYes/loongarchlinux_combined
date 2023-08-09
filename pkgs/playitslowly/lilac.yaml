@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''playitslowly'')
 
   '
-repo_depends:
-- pygobject: python-gobject
-- gstreamer: gst-python
-- gstreamer: gst-plugins-good
-- gtk3
-- gstreamer: gst-plugins-base
-- gstreamer: gst-plugins-bad
+repo_depends: []
 update_on:
 - alpm: playitslowly
   source: archpkg

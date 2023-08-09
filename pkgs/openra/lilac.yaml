@@ -7,18 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''openra'')
 
   '
-repo_depends:
-- lua51
-- xdg-utils
-- sdl2
-- ttf-dejavu
-- desktop-file-utils
-- openal
-- zenity
-- gtk4: gtk-update-icon-cache
-- freetype2
-- dotnet-core-6.0: dotnet-sdk-6.0
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: openra
   source: archpkg

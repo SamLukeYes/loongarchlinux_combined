@@ -11,9 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi-cairo-rend
   '
 repo_depends:
 - haskell-gi-base
-- cairo
 - haskell-utf8-string
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-gi-base
   source: alpm

@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''easytag'')
 
   '
 repo_depends:
-- glibc
-- gcc: gcc-libs
-- cairo
-- wavpack
-- gdk-pixbuf2
-- zlib
-- id3lib
-- taglib
+- flac
+- at-spi2-core
+- libid3tag
+- gtk3
+- glib2
+- harfbuzz
+- pango
 update_on:
 - alpm: flac
   provides: libFLAC.so
@@ -29,25 +28,13 @@ update_on:
   provides: libid3tag.so
   source: alpm
 - alpm: gtk3
-  provides: libgdk-3.so
-  source: alpm
-- alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
+  provides: libgtk-3.so
   source: alpm
 - alpm: glib2
   provides: libgobject-2.0.so
   source: alpm
-- alpm: gtk3
-  provides: libgtk-3.so
-  source: alpm
 - alpm: harfbuzz
   provides: libharfbuzz.so
-  source: alpm
-- alpm: pango
-  provides: libpango-1.0.so
   source: alpm
 - alpm: pango
   provides: libpangocairo-1.0.so

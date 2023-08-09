@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-minitest-power_a
 
   '
 repo_depends:
-- ruby-minitest
-- ruby-power_assert
 - ruby
 update_on:
 - alias: ruby

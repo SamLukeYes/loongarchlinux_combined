@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-th-env'')
   '
 repo_depends:
 - haskell-th-compat
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-th-compat
   source: alpm

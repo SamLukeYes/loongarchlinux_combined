@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-test2-tools-process'')
 
   '
-repo_depends:
-- perl-test2-suite
-- perl-ref-util
-- perl-capture-tiny
-- perl-return-multilevel
-- perl-class-tiny
+repo_depends: []
 update_on:
 - alpm: perl-test2-tools-process
   source: archpkg

@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-tap'')
 
   '
-repo_depends:
-- python-tappy
-- python-pytest
+repo_depends: []
 update_on:
 - alpm: python-pytest-tap
   source: archpkg

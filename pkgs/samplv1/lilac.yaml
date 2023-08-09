@@ -10,21 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''samplv1'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- alsa-lib
 - libsndfile
-- liblo
 - qt6-base
-- hicolor-icon-theme
-- qt6-svg
-- glibc
 update_on:
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
 - alpm: libsndfile
   provides: libsndfile.so
   source: alpm

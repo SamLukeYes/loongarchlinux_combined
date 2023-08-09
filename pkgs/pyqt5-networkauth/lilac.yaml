@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pyqt5-networkauth'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-networkauth
-- pyqt5: python-pyqt5
+repo_depends: []
 update_on:
 - alpm: pyqt5-networkauth
   source: archpkg

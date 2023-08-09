@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''kupfer'')
 
   '
-repo_depends:
-- libkeybinder3
-- python-setproctitle
-- pygobject: python-gobject
-- python-cairo
-- libwnck3
+repo_depends: []
 update_on:
 - alpm: kupfer
   source: archpkg

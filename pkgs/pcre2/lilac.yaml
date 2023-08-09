@@ -1,8 +1,5 @@
 destsubdir: core
 repo_depends:
 - readline
-- bzip2
-- zlib
-- bash
 update_on:
 - alias: readline

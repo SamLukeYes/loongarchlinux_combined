@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libva-vdpau-driver'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libvdpau
-- libx11
+repo_depends: []
 update_on:
 - alpm: libva-vdpau-driver
   source: archpkg

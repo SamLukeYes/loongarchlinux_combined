@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-uri-bytestrin
 
   '
 repo_depends:
-- haskell-uri-bytestring
 - haskell-aeson
-- ghc: ghc-libs
+- haskell-uri-bytestring
 update_on:
 - alpm: haskell-aeson
   source: alpm

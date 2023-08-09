@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''kapidox'')
 
   '
-repo_depends:
-- python-jinja
-- python-yaml
+repo_depends: []
 update_on:
 - alpm: kapidox
   source: archpkg

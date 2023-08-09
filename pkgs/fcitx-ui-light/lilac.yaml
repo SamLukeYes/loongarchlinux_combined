@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcitx-ui-light'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxpm
-- fcitx
+repo_depends: []
 update_on:
 - alpm: fcitx-ui-light
   source: archpkg

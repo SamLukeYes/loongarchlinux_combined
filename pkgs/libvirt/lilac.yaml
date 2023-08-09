@@ -1,14 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libiscsi
-- numactl
-- fuse3
-- glusterfs
-- polkit
-- parted
-- libpciaccess
-- libxml2
-- libssh
-- gnutls
-- yajl
+repo_depends: []
 update_on: []

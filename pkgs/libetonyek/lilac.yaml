@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libetonyek'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libwpd
-- zlib
-- liblangtag
-- libxml2
-- librevenge
+repo_depends: []
 update_on:
 - alpm: libetonyek
   source: archpkg

@@ -10,28 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pcp'')
 
   '
 repo_depends:
-- python-requests
-- bpftrace
-- perl-xml-libxml
-- which
-- perl-libwww
-- perl-net-snmp
-- perl-file-slurp
-- avahi
-- libvarlink
-- python-psycopg2
-- libvirt-python
-- perl-yaml-libyaml
-- python-lxml
-- bcc: python-bcc
-- procps-ng
-- libuv
 - python
-- inetutils
-- perl-dbd-mysql
-- perl-json
 - perl
-- qt5-svg
 update_on:
 - alias: python
 - alias: perl

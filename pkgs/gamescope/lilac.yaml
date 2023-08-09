@@ -10,22 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gamescope'')
 
   '
 repo_depends:
-- libxrender
-- libxres
-- libxfixes
-- libxdamage
-- glibc
-- gcc: gcc-libs
-- vulkan-icd-loader
-- libxext
-- libxxf86vm
-- wayland-protocols
-- libdrm
-- libxtst
-- libxcomposite
-- wayland
-- sdl2
-- libx11
+- libcap
+- libliftoff
+- libpipewire
+- emby-theater
+- wlroots
+- intel-oneapi-basekit
 update_on:
 - alpm: libcap
   provides: libcap.so

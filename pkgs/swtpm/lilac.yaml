@@ -11,12 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''swtpm'')
   '
 repo_depends:
 - libseccomp
-- fuse2
-- libtpms
-- json-glib
-- gnutls
-- openssl
-- glib2
 update_on:
 - alpm: libseccomp
   provides: libseccomp.so

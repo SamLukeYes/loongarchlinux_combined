@@ -10,15 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-insert-ordere
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-optics-core
-- haskell-lens
 - haskell-aeson
-- ghc: ghc-libs
 - haskell-hashable
-- haskell-semigroupoids
-- haskell-optics-extra
 - haskell-indexed-traversable
+- haskell-lens
+- haskell-optics-core
+- haskell-optics-extra
+- haskell-semigroupoids
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-aeson
   source: alpm

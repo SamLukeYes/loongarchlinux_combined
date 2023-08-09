@@ -8,13 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-http-message'')
 
   '
 repo_depends:
-- perl-uri
-- perl-encode-locale
-- perl-clone
-- perl-io-html
-- perl-lwp-mediatypes
 - perl
-- perl-http-date
 update_on:
 - alias: perl
 - alpm: perl-http-message

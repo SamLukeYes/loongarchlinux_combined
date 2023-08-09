@@ -10,22 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''audit'')
 
   '
 repo_depends:
+- krb5
 - libcap-ng
-#- krb5
-- glibc
+- audit
 - python
 update_on:
-- alpm: krb5
-  provides: libkrb5.so
-  source: alpm
 - alpm: krb5
   provides: libgssapi_krb5.so
   source: alpm
 - alpm: libcap-ng
   provides: libcap-ng.so
-  source: alpm
-- alpm: audit
-  provides: libaudit.so
   source: alpm
 - alpm: audit
   provides: libauparse.so

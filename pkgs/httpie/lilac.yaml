@@ -7,16 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''httpie'')
 
   '
-repo_depends:
-- python-multidict
-- python-pysocks
-- python-requests
-- python-rich
-- python-requests-toolbelt
-- python-pygments
-- python-pip
-- python-charset-normalizer
-- python-defusedxml
+repo_depends: []
 update_on:
 - alpm: httpie
   source: archpkg

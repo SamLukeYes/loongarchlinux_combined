@@ -11,10 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hasql-transac
   '
 repo_depends:
 - haskell-bytestring-tree-builder
-- ghc: ghc-libs
+- haskell-contravariant
 - haskell-contravariant-extras
 - haskell-hasql
-- haskell-contravariant
 update_on:
 - alpm: haskell-bytestring-tree-builder
   source: alpm

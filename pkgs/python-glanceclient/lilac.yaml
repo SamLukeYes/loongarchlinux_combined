@@ -7,16 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-glanceclient'')
 
   '
-repo_depends:
-- python-requests
-- python-keystoneauth1
-- python-oslo-i18n
-- python-pbr
-- python-prettytable
-- python-warlock
-- python-pyopenssl
-- python-wrapt
-- python-oslo-utils
+repo_depends: []
 update_on:
 - alpm: python-glanceclient
   source: archpkg

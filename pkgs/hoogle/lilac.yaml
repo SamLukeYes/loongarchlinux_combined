@@ -10,37 +10,37 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hoogle'')
 
   '
 repo_depends:
-- haskell-warp
-- haskell-process-extras
-- haskell-aeson
-- haskell-http-types
-- haskell-js-flot
-- haskell-foundation
-- haskell-storable-tuple
-- haskell-zlib
-- haskell-resourcet
-- haskell-src-exts
-- haskell-uniplate
-- haskell-hashable
 - haskell-quickcheck
-- haskell-mmap
-- haskell-blaze-markup
-- haskell-utf8-string
-- haskell-warp-tls
-- haskell-wai
-- haskell-network
-- ghc: ghc-libs
-- haskell-cmdargs
-- haskell-extra
-- haskell-wai-logger
-- haskell-js-jquery
+- haskell-aeson
 - haskell-blaze-html
-- haskell-tar
-- haskell-vector
+- haskell-blaze-markup
+- haskell-cmdargs
 - haskell-conduit
 - haskell-conduit-extra
+- haskell-crypton-connection
+- haskell-extra
+- haskell-foundation
+- haskell-hashable
 - haskell-http-conduit
+- haskell-http-types
+- haskell-js-flot
+- haskell-js-jquery
+- haskell-mmap
+- haskell-network
 - haskell-old-locale
+- haskell-process-extras
+- haskell-resourcet
+- haskell-src-exts
+- haskell-storable-tuple
+- haskell-tar
+- haskell-uniplate
+- haskell-utf8-string
+- haskell-vector
+- haskell-wai
+- haskell-wai-logger
+- haskell-warp
+- haskell-warp-tls
+- haskell-zlib
 update_on:
 - alpm: haskell-quickcheck
   source: alpm
@@ -56,7 +56,7 @@ update_on:
   source: alpm
 - alpm: haskell-conduit-extra
   source: alpm
-- alpm: haskell-connection
+- alpm: haskell-crypton-connection
   source: alpm
 - alpm: haskell-extra
   source: alpm

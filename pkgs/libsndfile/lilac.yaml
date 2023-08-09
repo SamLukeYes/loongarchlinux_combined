@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libsndfile'')
 
   '
 repo_depends:
+- flac
+- lame
 - libogg
+- libvorbis
 - mpg123
 - opus
-- libvorbis
-- flac
-- glibc
-- lame
 update_on:
 - alpm: flac
   provides: libFLAC.so
@@ -26,9 +25,6 @@ update_on:
   source: alpm
 - alpm: libogg
   provides: libogg.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbis.so
   source: alpm
 - alpm: libvorbis
   provides: libvorbisenc.so

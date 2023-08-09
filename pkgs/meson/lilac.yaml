@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- ninja
-- python-tqdm
-- python-typing_extensions
+repo_depends: []
 update_on: []

@@ -11,10 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-config-schema
   '
 repo_depends:
 - haskell-config-value
-- ghc: ghc-libs
-- haskell-semigroupoids
 - haskell-free
 - haskell-kan-extensions
+- haskell-semigroupoids
 update_on:
 - alpm: haskell-config-value
   source: alpm

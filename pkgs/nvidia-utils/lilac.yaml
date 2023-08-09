@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nvidia-utils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- egl-wayland
-- dkms
-- zlib
-- libglvnd
-- xorg-server
+repo_depends: []
 update_on:
 - alpm: nvidia-utils
   source: archpkg

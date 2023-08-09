@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tembro'')
 
   '
 repo_depends:
-- libcalfbox-lss
-- ttf-dejavu
-- pyqt5: python-pyqt5
-- hicolor-icon-theme
 - python
 update_on:
 - alias: python

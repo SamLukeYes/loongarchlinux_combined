@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pcaudiolib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pulseaudio: libpulse
-- alsa-lib
+repo_depends: []
 update_on:
 - alpm: pcaudiolib
   source: archpkg

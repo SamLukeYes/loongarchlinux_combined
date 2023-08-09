@@ -10,8 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libbluray'')
 
   '
 repo_depends:
-- libxml2
-- fontconfig
+- freetype2
 update_on:
 - alpm: freetype2
   provides: libfreetype.so

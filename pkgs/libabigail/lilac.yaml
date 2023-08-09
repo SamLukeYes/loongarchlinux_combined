@@ -10,12 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libabigail'')
 
   '
 repo_depends:
-- elfutils: libelf
-- glibc
-- gcc: gcc-libs
-- elfutils
-- libxml2
-- binutils
 - python
 update_on:
 - alias: python

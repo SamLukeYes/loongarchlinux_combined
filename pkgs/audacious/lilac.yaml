@@ -10,17 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''audacious'')
 
   '
 repo_depends:
-- glib2
-- audacious-plugins
 - qt5-base
-- qt5-imageformats
-- desktop-file-utils
-- qt5-svg
-- hicolor-icon-theme
 update_on:
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: qt5-base
   source: alpm
   strip_release: true

@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''sagemath-doc'')
 
   '
-repo_depends:
-- python-pplpy
+repo_depends: []
 update_on:
 - alpm: sagemath-doc
   source: archpkg

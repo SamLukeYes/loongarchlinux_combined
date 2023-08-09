@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-microlens-pla
 
   '
 repo_depends:
-- haskell-microlens-th
-- haskell-unordered-containers
-- ghc: ghc-libs
 - haskell-hashable
-- haskell-microlens-mtl
-- haskell-vector
 - haskell-microlens
 - haskell-microlens-ghc
+- haskell-microlens-mtl
+- haskell-microlens-th
+- haskell-unordered-containers
+- haskell-vector
 update_on:
 - alpm: haskell-hashable
   source: alpm

@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tabular'')
 repo_depends:
 - haskell-csv
 - haskell-html
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-csv
   source: alpm

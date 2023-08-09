@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-epub-thumbnaile
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libarchive
-- librsvg
-- gdk-pixbuf2
-- libxml2
+repo_depends: []
 update_on:
 - alpm: gnome-epub-thumbnailer
   source: archpkg

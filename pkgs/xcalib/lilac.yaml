@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xcalib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxxf86vm
-- libxrandr
+repo_depends: []
 update_on:
 - alpm: xcalib
   source: archpkg

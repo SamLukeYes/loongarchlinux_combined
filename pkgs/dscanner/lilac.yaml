@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dscanner'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ldc: liblphobos
+repo_depends: []
 update_on:
 - alpm: dscanner
   source: archpkg

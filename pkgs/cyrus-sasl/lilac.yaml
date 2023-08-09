@@ -10,28 +10,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cyrus-sasl'')
 
   '
 repo_depends:
-- sqlite
-- pam
-- postgresql: postgresql-libs
-- krb5
 - gdbm
-- libsasl
-- mariadb: mariadb-libs
-- openssl
-- glibc
-- openldap: libldap
+- krb5
+- pam
+- mariadb-libs
+- postgresql-libs
 update_on:
 - alpm: gdbm
   provides: libgdbm.so
   source: alpm
 - alpm: krb5
-  provides: libkrb5.so
+  provides: libgssapi_krb5.so
   source: alpm
 - alpm: pam
   provides: libpam.so
-  source: alpm
-- alpm: krb5
-  provides: libgssapi_krb5.so
   source: alpm
 - alpm: mariadb-libs
   provides: libmariadb.so

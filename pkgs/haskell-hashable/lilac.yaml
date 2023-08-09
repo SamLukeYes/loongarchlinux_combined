@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hashable'')
 
   '
 repo_depends:
-- haskell-data-array-byte
 - haskell-base-orphans
-- ghc: ghc-libs
+- haskell-data-array-byte
 - haskell-ghc-bignum-orphans
 update_on:
 - alpm: haskell-base-orphans

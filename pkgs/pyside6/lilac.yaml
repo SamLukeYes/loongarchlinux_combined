@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pyside6'')
 
   '
 repo_depends:
-- clang
 - qt6-base
-- libxslt
 - qt6-declarative
-- llvm
 update_on:
 - alpm: qt6-base
   source: alpm

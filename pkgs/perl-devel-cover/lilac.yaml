@@ -1,0 +1,17 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''perl-devel-cover'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_depends:
+- perl
+update_on:
+- alias: perl
+- alpm: perl-devel-cover
+  source: archpkg

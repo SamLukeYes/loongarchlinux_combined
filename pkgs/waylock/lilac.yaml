@@ -10,11 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''waylock'')
 
   '
 repo_depends:
-- libxkbcommon
-- gcc: gcc-libs
-- wayland
-- glibc
 - pam
+- wayland
+- intel-oneapi-basekit
 update_on:
 - alpm: pam
   provides: libpam.so

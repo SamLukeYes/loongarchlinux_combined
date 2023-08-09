@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lambdabot-tru
 
   '
 repo_depends:
-- haskell-oeis
 - haskell-quickcheck
-- ghc: ghc-libs
 - haskell-quickcheck-safe
+- haskell-oeis
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

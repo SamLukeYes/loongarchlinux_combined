@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''allegro'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pulseaudio: libpulse
-- libtheora
-- libxpm
-- dumb
-- opusfile
-- gtk3
-- libwebp
-- physfs
+repo_depends: []
 update_on:
 - alpm: allegro
   source: archpkg

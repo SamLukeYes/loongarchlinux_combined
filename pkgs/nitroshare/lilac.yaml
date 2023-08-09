@@ -11,10 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nitroshare'')
   '
 repo_depends:
 - python
-- qt5-svg
-- hicolor-icon-theme
-- qmdnsengine
-- qhttpengine
 update_on:
 - alias: python
 - alpm: nitroshare

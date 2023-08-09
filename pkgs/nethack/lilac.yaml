@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nethack'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gzip
-- filesystem
-- ncurses
+repo_depends: []
 update_on:
 - alpm: nethack
   source: archpkg

@@ -9,7 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''spdlog'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends: []
+repo_depends:
+- fmt
 update_on:
 - alpm: fmt
   provides: libfmt.so

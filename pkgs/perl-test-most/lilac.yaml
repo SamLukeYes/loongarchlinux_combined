@@ -8,12 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-test-most'')
 
   '
 repo_depends:
-- perl-test-exception
-- perl-test-differences
-- perl-test-warn
-- perl-test-deep
 - perl
-- perl-exception-class
 update_on:
 - alias: perl
 - alpm: perl-test-most

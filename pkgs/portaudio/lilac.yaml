@@ -11,8 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''portaudio'')
   '
 repo_depends:
 - alsa-lib
-- gcc: gcc-libs
-- glibc
+- jack2
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

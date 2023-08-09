@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''diffoscope'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-magic
-- python-defusedxml
-- python-distro
-- tlsh: python-tlsh
-- python-libarchive-c
+repo_depends: []
 update_on:
 - alpm: diffoscope
   source: archpkg

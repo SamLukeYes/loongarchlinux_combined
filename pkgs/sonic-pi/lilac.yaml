@@ -10,31 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sonic-pi'')
 
   '
 repo_depends:
-- aubio
-- glibc
-- ruby-sys-proctable
-- ruby-rouge
-- gcc: gcc-libs
-- ruby-polyglot
 - qt5-base
-- ruby-text
-- ruby-minitest
-- ruby-gettext
-- ruby-i18n
-- ruby-mocha
-- ruby-multi_json
-- ruby-activesupport
-- supercollider
-- ruby-ffi
-- ruby-rugged
-- ruby-locale
 - ruby
-- jack-example-tools
-- sc3-plugins
-- osmid
-- ruby-kramdown
-- qscintilla: qscintilla-qt5
-- ruby-treetop
 update_on:
 - alpm: qt5-base
   source: alpm

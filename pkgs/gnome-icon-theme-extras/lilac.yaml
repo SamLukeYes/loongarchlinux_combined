@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''gnome-icon-theme-extras'')
 
   '
-repo_depends:
-- gtk4: gtk-update-icon-cache
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: gnome-icon-theme-extras
   source: archpkg

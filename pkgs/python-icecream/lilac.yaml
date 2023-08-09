@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-icecream'')
 
   '
-repo_depends:
-- python-asttokens
-- python-executing
-- python-colorama
-- python-pygments
+repo_depends: []
 update_on:
 - alpm: python-icecream
   source: archpkg

@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-puma'')
 
   '
 repo_depends:
-- ruby-nio4r
 - ruby
-- ruby-sd_notify
 update_on:
 - alias: ruby
 - alpm: ruby-puma

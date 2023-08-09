@@ -9,12 +9,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tesseract'')
   add_into_array(''arch'', [''loong64''])
 
   '
+<<<<<<< HEAD
 repo_depends:
 - gcc: gcc-libs
 - curl
 - leptonica
 - libarchive
 #- tesseract-data: tesseract-data-osd
+=======
+repo_depends: []
+>>>>>>> 629d87561 (treewide: regen lilac.yaml)
 update_on:
 - alpm: tesseract
   source: archpkg

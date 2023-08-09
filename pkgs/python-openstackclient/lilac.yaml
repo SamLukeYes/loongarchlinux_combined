@@ -7,20 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-openstackclient'')
 
   '
-repo_depends:
-- python-cinderclient
-- python-keystoneclient
-- python-keystoneauth1
-- python-oslo-i18n
-- python-six
-- python-pbr
-- python-osc-lib
-- python-novaclient
-- python-cliff
-- python-glanceclient
-- python-openstacksdk
-- python-babel
-- python-oslo-utils
+repo_depends: []
 update_on:
 - alpm: python-openstackclient
   source: archpkg

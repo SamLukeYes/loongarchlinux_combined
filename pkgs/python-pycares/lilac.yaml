@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- python-cffi
-- c-ares
+repo_depends: []
 update_on: []

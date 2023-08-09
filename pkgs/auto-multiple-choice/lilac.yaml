@@ -10,23 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''auto-multiple-choice'
 
   '
 repo_depends:
-- perl-xml-writer
-- perl-dbi
-- poppler
-- perl-file-mimeinfo
-- perl-glib-object-introspection
-- perl-clone
-- perl-locale-codes
-- perl-gtk3
-- perl-xml-simple
-- perl-archive-zip
 - perl
 - opencv
-- perl-locale-gettext
-- ttf-linux-libertine
-- poppler: poppler-glib
-- perl-text-csv
-- perl-dbd-sqlite
 update_on:
 - alias: perl
 - alpm: opencv

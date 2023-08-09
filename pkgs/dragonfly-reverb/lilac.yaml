@@ -1,9 +1,3 @@
 destsubdir: extra
-repo_depends:
-- gcc: gcc-libs
-- freeverb3
-- libglvnd
-- libxext
-- libx11
-- glibc
+repo_depends: []
 update_on: []

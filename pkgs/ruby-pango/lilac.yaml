@@ -11,11 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-pango'')
   '
 repo_depends:
 - ruby
-- ruby-cairo-gobject
-- ruby-cairo
-- pango
-- ruby-gobject-introspection
-- gobject-introspection
 update_on:
 - alias: ruby
 - alpm: ruby-pango

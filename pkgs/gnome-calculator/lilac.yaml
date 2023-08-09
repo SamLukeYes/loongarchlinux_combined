@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-calculator'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtksourceview5
-- libsoup3
-- dconf
-- libgee
-- libadwaita
-- libmpc
-- mpfr
+repo_depends: []
 update_on:
 - alpm: gnome-calculator
   source: archpkg

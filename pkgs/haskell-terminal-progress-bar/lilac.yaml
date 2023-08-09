@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-terminal-prog
   '
 repo_depends:
 - haskell-terminal-size
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-terminal-size
   source: alpm

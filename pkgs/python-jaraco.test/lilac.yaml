@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-jaraco.test'')
 
   '
-repo_depends:
-- python-jaraco.context
-- python-jaraco.functools
+repo_depends: []
 update_on:
 - alpm: python-jaraco.test
   source: archpkg

@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''eksctl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glibc
-- kubernetes: kubectl
+repo_depends: []
 update_on:
 - alpm: eksctl
   source: archpkg

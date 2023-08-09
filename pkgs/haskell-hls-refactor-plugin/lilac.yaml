@@ -10,22 +10,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-refactor-
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-dlist
-- haskell-syb
-- haskell-lens
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-retrie
-- haskell-text-rope
-- haskell-ghc-exactprint
-- haskell-hls-plugin-api
-- haskell-lsp
 - haskell-data-default
-- haskell-ghcide
+- haskell-dlist
 - haskell-extra
-- haskell-regex-tdfa
+- haskell-ghc
+- haskell-ghc-exactprint
+- haskell-ghcide
 - haskell-hls-graph
+- haskell-hls-plugin-api
+- haskell-lens
+- haskell-lsp
+- haskell-regex-tdfa
+- haskell-retrie
+- haskell-syb
+- haskell-text-rope
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-aeson
   source: alpm

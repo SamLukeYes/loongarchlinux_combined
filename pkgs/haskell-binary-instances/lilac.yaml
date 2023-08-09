@@ -10,19 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-binary-instan
 
   '
 repo_depends:
-- haskell-vector-binary-instances
-- haskell-unordered-containers
-- haskell-binary-orphans
-- haskell-text-binary
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-hashable
+- haskell-binary-orphans
 - haskell-case-insensitive
-- haskell-tagged
-- haskell-time-compat
-- haskell-scientific
-- haskell-vector
+- haskell-hashable
 - haskell-primitive
+- haskell-scientific
+- haskell-tagged
+- haskell-text-binary
+- haskell-time-compat
+- haskell-unordered-containers
+- haskell-vector
+- haskell-vector-binary-instances
 update_on:
 - alpm: haskell-aeson
   source: alpm

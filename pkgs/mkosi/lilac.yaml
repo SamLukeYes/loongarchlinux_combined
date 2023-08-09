@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mkosi'')
 
   '
 repo_depends:
-- arch-install-scripts
-- python-pexpect
 - python
-- qemu: qemu-img
 update_on:
 - alias: python
 - alpm: mkosi

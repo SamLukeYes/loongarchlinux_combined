@@ -8,7 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-xvfbwrapper'')
 
   '
 repo_depends:
-- xorg-server: xorg-server-xvfb
 - python
 update_on:
 - alias: python

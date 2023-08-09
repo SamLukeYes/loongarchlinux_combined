@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''memcached'')
   '
 repo_depends:
 - libseccomp
-- libevent
-- glibc
 update_on:
 - alpm: libseccomp
   provides: libseccomp.so

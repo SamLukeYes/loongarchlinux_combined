@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sshfs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- fuse3
-- openssh
-- glib2
+repo_depends: []
 update_on:
 - alpm: sshfs
   source: archpkg

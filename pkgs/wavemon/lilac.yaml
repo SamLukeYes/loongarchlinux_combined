@@ -10,10 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wavemon'')
 
   '
 repo_depends:
-- libnl
 - ncurses
 - libcap
-- glibc
 update_on:
 - alpm: ncurses
   provides: libncursesw.so

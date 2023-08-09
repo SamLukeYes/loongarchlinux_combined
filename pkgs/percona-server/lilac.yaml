@@ -10,21 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''percona-server'')
 
   '
 repo_depends:
-- zstd
-- libfido2
-- jemalloc
-- numactl
-- libevent
-- curl
-- lz4
-- zlib
-- libtirpc
-- icu
-- libaio
 - readline
-- openssl
 - protobuf
-- pam
+- icu
 update_on:
 - alias: readline
 - alias: protobuf

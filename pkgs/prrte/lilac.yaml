@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''prrte'')
 
   '
 repo_depends:
-- hwloc
-- libevent
 - openpmix
-- glibc
 update_on:
 - alpm: openpmix
   provides: libpmix.so

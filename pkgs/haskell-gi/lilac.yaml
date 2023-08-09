@@ -10,17 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi'')
 
   '
 repo_depends:
-- ghc: ghc-libs
-- gobject-introspection: gobject-introspection-runtime
-- haskell-regex-tdfa
-- haskell-xdg-basedir
+- haskell-gi-base
 - haskell-ansi-terminal
 - haskell-attoparsec
-- haskell-gi-base
 - haskell-pretty-show
-- haskell-xml-conduit
 - haskell-safe
-- glib2
+- haskell-xdg-basedir
+- haskell-xml-conduit
+- haskell-regex-tdfa
 update_on:
 - alpm: haskell-gi-base
   source: alpm

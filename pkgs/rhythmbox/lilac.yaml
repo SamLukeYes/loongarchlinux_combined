@@ -1,15 +1,3 @@
 destsubdir: extra
-repo_depends:
-- pygobject: python-gobject
-- libsoup3
-- dconf
-- media-player-info
-- libpeas
-- libnotify
-- gstreamer: gst-plugins-good
-- grilo
-- json-glib
-- gstreamer: gst-plugins-base
-- tdb
-- libgudev
+repo_depends: []
 update_on: []

@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sslsplit'')
 
   '
 repo_depends:
-- libnet
-- libevent
 - libpcap
-- openssl
-- glibc
 update_on:
 - alpm: libpcap
   provides: libpcap.so

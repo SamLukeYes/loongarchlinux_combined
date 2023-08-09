@@ -10,17 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-dns'')
 
   '
 repo_depends:
-- haskell-cryptonite
-- haskell-base64-bytestring
 - haskell-async
-- ghc: ghc-libs
-- haskell-network
-- haskell-iproute
 - haskell-auto-update
-- haskell-hourglass
-- haskell-psqueues
 - haskell-attoparsec
 - haskell-base16-bytestring
+- haskell-base64-bytestring
+- haskell-cryptonite
+- haskell-hourglass
+- haskell-iproute
+- haskell-network
+- haskell-psqueues
 update_on:
 - alpm: haskell-async
   source: alpm

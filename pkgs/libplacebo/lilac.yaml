@@ -10,13 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libplacebo'')
 
   '
 repo_depends:
-- shaderc
-- gcc: gcc-libs
-- libunwind
+- emby-theater
 - glslang
-- vulkan-icd-loader
 - lcms2
-- glibc
+- shaderc
 update_on:
 - alpm: emby-theater
   provides: libvulkan.so

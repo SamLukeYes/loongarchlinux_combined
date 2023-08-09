@@ -11,11 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kconfigwidgets'')
   '
 repo_depends:
 - kconfig
-- kguiaddons
-- kwidgetsaddons
-- kcodecs
-- kauth
-- ki18n
 update_on:
 - alpm: kconfig
   source: alpm

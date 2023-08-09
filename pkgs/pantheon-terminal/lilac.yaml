@@ -10,10 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-terminal'')
 
   '
 repo_depends:
-- pango
-- vte3
-- gtk3
-- glib2
+- granite
+- libhandy
 update_on:
 - alpm: granite
   provides: libgranite.so

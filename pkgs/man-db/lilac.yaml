@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''man-db'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- groff
-- libseccomp
-- zlib
-- libpipeline
-- gdbm
-- bash
-- less
+repo_depends: []
 update_on:
 - alpm: man-db
   source: archpkg

@@ -10,31 +10,30 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-coinbase-pro'
 
   '
 repo_depends:
-- haskell-http-streams
-- haskell-unordered-containers
-- haskell-cryptonite
-- haskell-aeson
-- haskell-http-types
-- haskell-memory
-- haskell-unagi-streams
-- haskell-wuss
-- haskell-tasty-hunit
-- haskell-servant-client-core
-- haskell-http-api-data
-- haskell-io-streams
-- haskell-tasty
-- haskell-servant-client
-- haskell-aeson-casing
-- haskell-network
-- haskell-async
-- ghc: ghc-libs
 - haskell-hsopenssl
+- haskell-aeson
+- haskell-aeson-casing
+- haskell-async
+- haskell-cryptonite
+- haskell-http-api-data
 - haskell-http-client
+- haskell-http-client-tls
+- haskell-http-streams
+- haskell-http-types
+- haskell-io-streams
+- haskell-memory
+- haskell-network
+- haskell-servant
+- haskell-servant-client
+- haskell-servant-client-core
+- haskell-tasty
+- haskell-tasty-hunit
+- haskell-unagi-streams
+- haskell-unordered-containers
 - haskell-uuid
 - haskell-vector
-- haskell-http-client-tls
 - haskell-websockets
-- haskell-servant
+- haskell-wuss
 update_on:
 - alpm: haskell-hsopenssl
   source: alpm

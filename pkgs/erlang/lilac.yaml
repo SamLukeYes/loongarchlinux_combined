@@ -10,13 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''erlang'')
 
   '
 repo_depends:
-- ncurses
-- glu
-- wxwidgets: wxwidgets-gtk3
-- erlang-nox
-- webkit2gtk
-- unixodbc
-- openssl
+- wxwidgets-gtk3
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm

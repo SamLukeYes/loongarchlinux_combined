@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ghc-lib-parse
   '
 repo_depends:
 - haskell-uniplate
-- ghc: ghc-libs
+- haskell-ghc
 update_on:
 - alpm: haskell-uniplate
   source: alpm

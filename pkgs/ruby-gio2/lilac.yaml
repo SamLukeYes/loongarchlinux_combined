@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-gio2'')
 
   '
 repo_depends:
-- ruby-glib2
 - ruby
-- ruby-gobject-introspection
 update_on:
 - alias: ruby
 - alpm: ruby-gio2

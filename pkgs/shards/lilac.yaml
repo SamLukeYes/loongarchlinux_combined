@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''shards'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- git
-- pcre2
-- libevent
-- gc
-- libyaml
+repo_depends: []
 update_on:
 - alpm: shards
   source: archpkg

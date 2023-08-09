@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-sphinx-tabs'')
 
   '
 repo_depends:
-- python-docutils
-- python-sphinx
 - python
-- python-pygments
 update_on:
 - alias: python
 - alpm: python-sphinx-tabs

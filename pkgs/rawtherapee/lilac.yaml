@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rawtherapee'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libiptcdata
-- gtkmm3
-- lensfun
-- desktop-file-utils
-- fftw
-- lcms2
-- glibmm
-- libcanberra
-- gtk3
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: rawtherapee
   source: archpkg

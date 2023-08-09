@@ -10,11 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''csound-plugins'')
 
   '
 repo_depends:
+- faust
+- fltk
+- fluidsynth
+- jack2
+- libwebsockets
+- wiiuse
 - python
-- stk
-- csound
-- hdf5
-- lame
 update_on:
 - alpm: faust
   provides: libfaust.so

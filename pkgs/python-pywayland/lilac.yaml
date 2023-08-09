@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pywayland'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-cffi
-- wayland
+repo_depends: []
 update_on:
 - alpm: python-pywayland
   source: archpkg

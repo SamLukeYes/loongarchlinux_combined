@@ -10,20 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''labplot'')
 
   '
 repo_depends:
-- libmatio
-- vector-blf
-- qt5-serialport
-- readstat
-- netcdf
-- gsl
-- discount
-- fftw
-- cantor
-- qt5-mqtt
-- qxlsx: qxlsx-qt5
-- kuserfeedback
 - cfitsio
-- libcerf
+- gsl
 update_on:
 - alpm: cfitsio
   source: alpm

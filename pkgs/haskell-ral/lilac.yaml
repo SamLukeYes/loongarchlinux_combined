@@ -10,16 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ral'')
 
   '
 repo_depends:
-- haskell-boring
-- ghc: ghc-libs
-- haskell-hashable
 - haskell-quickcheck
+- haskell-adjunctions
 - haskell-bin
-- haskell-semigroupoids
+- haskell-boring
 - haskell-distributive
 - haskell-fin
-- haskell-adjunctions
+- haskell-hashable
 - haskell-indexed-traversable
+- haskell-semigroupoids
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

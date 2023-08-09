@@ -10,28 +10,28 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-tactics-p
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-hyphenation
 - haskell-aeson
-- haskell-generic-lens
-- haskell-hls-plugin-api
-- haskell-syb
-- haskell-lens
-- haskell-fingertree
-- haskell-ghc-exactprint
-- haskell-lsp
-- haskell-hls-refactor-plugin
-- haskell-ghcide
-- ghc: ghc-libs
-- haskell-retrie
-- haskell-parser-combinators
-- haskell-refinery
 - haskell-extra
-- haskell-hls-graph
+- haskell-fingertree
+- haskell-generic-lens
+- haskell-ghc
+- haskell-ghc-exactprint
 - haskell-ghc-source-gen
-- haskell-unagi-chan
+- haskell-ghcide
+- haskell-hls-graph
+- haskell-hls-plugin-api
+- haskell-hls-refactor-plugin
+- haskell-hyphenation
+- haskell-lens
+- haskell-lsp
 - haskell-megaparsec
+- haskell-parser-combinators
 - haskell-prettyprinter
+- haskell-refinery
+- haskell-retrie
+- haskell-syb
+- haskell-unagi-chan
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-aeson
   source: alpm

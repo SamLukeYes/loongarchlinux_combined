@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wezterm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- fontconfig
-- wayland
-- ncurses
-- xcb-util-keysyms
-- xcb-util-wm
-- libx11
-- xcb-util-image
-- openssl
-- hicolor-icon-theme
-- libxkbcommon: libxkbcommon-x11
+repo_depends: []
 update_on:
 - alpm: wezterm
   source: archpkg

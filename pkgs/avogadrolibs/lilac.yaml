@@ -9,20 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''avogadrolibs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libmsym
-- vtk
-- fmt
-- avogadro-molecules
-- molequeue
-- spglib
-- libarchive
-- libxcursor
-- hdf5
-- glew
-- openmpi
-- qt5-svg
-- avogadro-crystals
+repo_depends: []
 update_on:
 - alpm: avogadrolibs
   source: archpkg

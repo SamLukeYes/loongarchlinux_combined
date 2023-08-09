@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vapoursynth-plugin-fl
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- vapoursynth
+repo_depends: []
 update_on:
 - alpm: vapoursynth-plugin-fluxsmooth
   source: archpkg

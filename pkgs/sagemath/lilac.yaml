@@ -9,52 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sagemath'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libhomfly
-- symmetrica
-- lcalc
-- gd
-- eclib
-- giac
-- pari-galdata
-- sage-data-elliptic_curves
-- palp
-- rankwidth
-- gap
-- python-pplpy
-- threejs-sage
-- sage-data-graphs
-- sympow
-- fpylll: python-fpylll
-- m4rie
-- maxima: maxima-fas
-- python-primecountpy
-- gfan
-- sage-data-conway_polynomials
-- python-ipywidgets
-- nauty
-- tachyon
-- linbox
-- python-scipy
-- python-rpy2
-- iml
-- pari-seadata-small
-- python-cvxopt
-- libbraiding
-- brial
-- sage-data-polytopes_db
-- singular
-- python-sphinx
-- planarity
-- python-networkx
-- python-matplotlib
-- python-sympy
-- arb
-- python-memory-allocator
-- cliquer
-- sage-data-combinatorial_designs
-- lrcalc
-- cypari2: python-cypari2
+repo_depends: []
 update_on:
 - alpm: sagemath
   source: archpkg

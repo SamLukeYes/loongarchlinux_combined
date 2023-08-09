@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-text-conversi
 repo_depends:
 - haskell-base16-bytestring
 - haskell-base64-bytestring
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-base16-bytestring
   source: alpm

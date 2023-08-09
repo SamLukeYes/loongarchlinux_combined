@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-em-proxy'')
   '
 repo_depends:
 - ruby
-- ruby-eventmachine
 update_on:
 - alias: ruby
 - alpm: ruby-em-proxy

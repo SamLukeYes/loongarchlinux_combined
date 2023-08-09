@@ -10,9 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sword'')
 
   '
 repo_depends:
-- xz
-- clucene
-- curl
 - python
 update_on:
 - alias: python

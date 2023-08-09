@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-log-any-adapter-tap'')
 
   '
-repo_depends:
-- perl-try-tiny
-- perl-log-any
+repo_depends: []
 update_on:
 - alpm: perl-log-any-adapter-tap
   source: archpkg

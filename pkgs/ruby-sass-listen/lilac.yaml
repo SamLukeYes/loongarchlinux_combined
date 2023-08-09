@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-sass-listen'')
 
   '
 repo_depends:
-- ruby-rb-fsevent
 - ruby
-- ruby-rb-inotify
 update_on:
 - alias: ruby
 - alpm: ruby-sass-listen

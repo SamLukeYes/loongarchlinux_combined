@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-xapian-haystac
 
   '
 repo_depends:
-- python-django-haystack
-- python-filelock
-- python-xapian
-- django: python-django
 - python
 update_on:
 - alias: python

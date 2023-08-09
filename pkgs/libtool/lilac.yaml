@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libtool'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- tar
-- glibc
+repo_depends: []
 update_on:
 - alpm: libtool
   source: archpkg

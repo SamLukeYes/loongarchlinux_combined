@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cipher-aes128
 
   '
 repo_depends:
+- haskell-crypto-api
 - haskell-tagged
 - haskell-cereal
-- haskell-crypto-api
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-crypto-api
   source: alpm

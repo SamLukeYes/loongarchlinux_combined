@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-configurator'
 
   '
 repo_depends:
-- haskell-unordered-containers
-- ghc: ghc-libs
+- haskell-attoparsec
 - haskell-hashable
 - haskell-unix-compat
-- haskell-attoparsec
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

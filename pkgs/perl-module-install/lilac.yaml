@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-module-install'')
 
   '
-repo_depends:
-- perl-yaml-tiny
-- perl-module-scandeps
-- perl-json
-- perl-par-dist
-- perl-file-remove
-- perl-module-build
+repo_depends: []
 update_on:
 - alpm: perl-module-install
   source: archpkg

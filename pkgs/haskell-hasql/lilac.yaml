@@ -10,18 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hasql'')
 
   '
 repo_depends:
-- haskell-dlist
-- haskell-hashtables
-- ghc: ghc-libs
-- haskell-hashable
-- haskell-profunctors
-- haskell-bytestring-strict-builder
-- haskell-vector
-- haskell-postgresql-libpq
-- haskell-postgresql-binary
-- haskell-text-builder
 - haskell-attoparsec
+- haskell-bytestring-strict-builder
 - haskell-contravariant
+- haskell-dlist
+- haskell-hashable
+- haskell-hashtables
+- haskell-postgresql-binary
+- haskell-postgresql-libpq
+- haskell-profunctors
+- haskell-text-builder
+- haskell-vector
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

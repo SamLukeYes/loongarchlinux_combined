@@ -1,55 +1,12 @@
 destsubdir: extra
 repo_depends:
-- libcdio
-- alsa-lib
-- rtmpdump
-- libxv
-- libbluray
-- desktop-file-utils
-- libass
-- x264
-- libcaca
-- faac
-- xvidcore
-- lirc
-- libvpx
-- faad2
-- glibc
-- libdvdnav
-- libcdio-paranoia
-- libogg
-- libtheora
-- libxvmc
-- a52dec
-- ffmpeg
-- mpg123
-- libxinerama
-- libmpeg2
-- libdvdread
-- fribidi
-- libxext
-- libpng
-- fontconfig
-- libxxf86vm
-- speex
-- samba: smbclient
-- openal
-- enca
-- freetype2
-- libbs2b
-- libvorbis
-- pulseaudio: libpulse
-- aalib
-- ncurses
-- libxss
-- libmng
-- libdca
-- libvdpau
-- lame
-- zlib
-- libx11
 - giflib
-- libmad
+- libass
+- libvorbis
+- libbluray
+- xvidcore
+- ncurses
+- x264
 update_on:
 - alpm: giflib
   provides: libgif.so
@@ -71,22 +28,4 @@ update_on:
   source: alpm
 - alpm: x264
   provides: libx264.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: giflib
-  provides: libgif.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbis.so
-  source: alpm
-- alpm: libass
-  provides: libass.so
-  source: alpm
-- alpm: libbluray
-  provides: libbluray.so
-  source: alpm
-- alpm: xvidcore
-  provides: libxvidcore.so
   source: alpm

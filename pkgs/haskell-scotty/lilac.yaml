@@ -10,21 +10,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-scotty'')
 
   '
 repo_depends:
-- haskell-warp
-- haskell-regex-compat
-- haskell-wai
-- haskell-network
 - haskell-aeson
-- ghc: ghc-libs
 - haskell-base-compat-batteries
-- haskell-http-types
 - haskell-blaze-builder
 - haskell-case-insensitive
-- haskell-wai-extra
-- haskell-transformers-compat
-- haskell-monad-control
-- haskell-transformers-base
 - haskell-data-default-class
+- haskell-http-types
+- haskell-monad-control
+- haskell-network
+- haskell-regex-compat
+- haskell-transformers-base
+- haskell-transformers-compat
+- haskell-wai
+- haskell-wai-extra
+- haskell-warp
 update_on:
 - alpm: haskell-aeson
   source: alpm

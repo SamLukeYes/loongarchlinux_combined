@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-awkward'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-importlib_resources
-- python-numpy
-- python-packaging
+repo_depends: []
 update_on:
 - alpm: python-awkward
   source: archpkg

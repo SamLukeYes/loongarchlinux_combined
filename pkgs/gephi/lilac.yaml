@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gephi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libnet
-- libxxf86vm
-- freetype2
+repo_depends: []
 update_on:
 - alpm: gephi
   source: archpkg

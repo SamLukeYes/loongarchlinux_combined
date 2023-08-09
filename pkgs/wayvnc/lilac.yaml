@@ -10,9 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wayvnc'')
 
   '
 repo_depends:
-- wayland
-- libdrm
-- glibc
+- aml
+- neatvnc
+- pixman
+- intel-oneapi-basekit
 update_on:
 - alpm: aml
   provides: libaml.so

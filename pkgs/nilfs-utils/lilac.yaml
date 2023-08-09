@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nilfs-utils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- util-linux
+repo_depends: []
 update_on:
 - alpm: nilfs-utils
   source: archpkg

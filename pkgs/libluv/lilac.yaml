@@ -10,11 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libluv'')
 
   '
 repo_depends:
-- lua51
-- luajit
-- lua53
-- libuv
-- lua52
 - lua
 update_on:
 - alias: lua

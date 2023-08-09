@@ -10,12 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rubberband'')
 
   '
 repo_depends:
-- gcc: gcc-libs
+- fftw
 - libsamplerate
 - libsndfile
-- fftw
-- vamp-plugin-sdk
-- glibc
 update_on:
 - alpm: fftw
   provides: libfftw3.so
@@ -25,24 +22,6 @@ update_on:
   source: alpm
 - alpm: libsndfile
   provides: libsndfile.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
   source: alpm
 - alpm: rubberband
   source: archpkg

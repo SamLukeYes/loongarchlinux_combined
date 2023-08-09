@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-xml-sax'')
 
   '
 repo_depends:
-- perl-xml-namespacesupport
 - perl
-- perl-xml-sax-base
 update_on:
 - alias: perl
 - alpm: perl-xml-sax

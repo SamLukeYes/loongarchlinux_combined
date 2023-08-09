@@ -7,40 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''posix'')
 
   '
-repo_depends:
-- gcc
-- gzip
-- grep
-- sharutils
-- util-linux
-- glibc
-- ed
-- coreutils
-- file
-- bison
-- cups
-- diffutils
-- sed
-- psmisc
-- time
-- bc
-- flex
-- ncompress
-- uucp
-- cronie
-- vi
-- pax
-- make
-- procps-ng
-- at
-- ctags
-- inetutils
-- ncurses
-- patch
-- m4
-- s-nail
-- findutils
-- binutils
+repo_depends: []
 update_on:
 - alpm: posix
   source: archpkg

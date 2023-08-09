@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''felix-rs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- bzip2
-- gcc: gcc-libs
+repo_depends: []
 update_on:
 - alpm: felix-rs
   source: archpkg

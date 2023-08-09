@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-middlewar
 
   '
 repo_depends:
+- haskell-base16-bytestring
+- haskell-cryptohash-sha1
 - haskell-expiring-cache-map
-- haskell-wai
-- ghc: ghc-libs
 - haskell-http-types
 - haskell-mime-types
-- haskell-cryptohash-sha1
-- haskell-base16-bytestring
 - haskell-old-locale
+- haskell-wai
 update_on:
 - alpm: haskell-base16-bytestring
   source: alpm

@@ -9,20 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pitivi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-matplotlib
-- gstreamer: gst-plugin-gtk
-- gstreamer: gst-python
-- python-scipy
-- libpeas
-- libnotify
-- gstreamer: gst-plugins-good
-- gstreamer: gst-editing-services
-- gtk3
-- pygobject: python-gobject
-- python-cairo
-- gstreamer: gst-plugins-bad
-- gsound
+repo_depends: []
 update_on:
 - alpm: pitivi
   source: archpkg

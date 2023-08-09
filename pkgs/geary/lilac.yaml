@@ -10,36 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''geary'')
 
   '
 repo_depends:
-- dconf
-- gspell
-- enchant
-- gnome-online-accounts
-- libpeas
-- iso-codes
-- glibc
-- glib2
-- hicolor-icon-theme
-- libsecret
-- pango
-- libxml2
-- gcr
-- cairo
 - icu
-- gsound
-- webkit2gtk-4.1
-- sqlite
-- snowball: libstemmer
-- at-spi2-core
-- libytnef
-- libsoup3
-- gdk-pixbuf2
-- gmime3
-- libgee
-- libunwind
-- libhandy
-- json-glib
-- gtk3
-- folks
 update_on:
 - alias: icu
 - alpm: geary

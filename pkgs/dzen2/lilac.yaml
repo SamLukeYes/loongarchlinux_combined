@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dzen2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxpm
-- libxinerama
-- libxft
-- libx11
+repo_depends: []
 update_on:
 - alpm: dzen2
   source: archpkg

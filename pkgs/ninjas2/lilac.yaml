@@ -10,32 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ninjas2'')
 
   '
 repo_depends:
-- gcc: gcc-libs
+- aubio
 - libsamplerate
 - libsndfile
-- libx11
-- libglvnd
-- aubio
-- glibc
 update_on:
-- alpm: aubio
-  provides: libaubio.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: aubio
-  provides: libaubio.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
 - alpm: aubio
   provides: libaubio.so
   source: alpm

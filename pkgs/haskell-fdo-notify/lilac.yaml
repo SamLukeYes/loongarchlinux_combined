@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-fdo-notify'')
   '
 repo_depends:
 - haskell-dbus
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-dbus
   source: alpm

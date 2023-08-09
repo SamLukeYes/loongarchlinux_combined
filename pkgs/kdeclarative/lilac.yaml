@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdeclarative'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kpackage
-- kio
-- libepoxy
+repo_depends: []
 update_on:
 - alpm: kdeclarative
   source: archpkg

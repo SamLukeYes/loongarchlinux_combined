@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-auditwheel'')
 
   '
 repo_depends:
-- patchelf
-- unzip
-- python-pyelftools
-- python-wheel
 - python
 update_on:
 - alias: python

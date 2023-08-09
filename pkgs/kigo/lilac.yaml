@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kigo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libkdegames
-- gnugo
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: kigo
   source: archpkg

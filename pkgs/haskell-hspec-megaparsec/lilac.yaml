@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-megapar
 
   '
 repo_depends:
-- haskell-megaparsec
 - haskell-hspec-expectations
-- ghc: ghc-libs
+- haskell-megaparsec
 update_on:
 - alpm: haskell-hspec-expectations
   source: alpm

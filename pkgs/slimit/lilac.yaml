@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''slimit'')
 
   '
-repo_depends:
-- python-ply
+repo_depends: []
 update_on:
 - alpm: slimit
   source: archpkg

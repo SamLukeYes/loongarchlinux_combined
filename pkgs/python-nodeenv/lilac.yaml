@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- make
-- python-setuptools
+repo_depends: []
 update_on: []

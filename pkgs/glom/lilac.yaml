@@ -9,18 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glom'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- evince
-- libgdamm
-- postgresql
-- gtksourceviewmm
-- libgda: libgda-postgres
-- gettext
-- libxml++
-- libepc
-- pygobject: python-gobject
-- goocanvasmm
-- boost: boost-libs
+repo_depends: []
 update_on:
 - alpm: glom
   source: archpkg

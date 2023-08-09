@@ -8,14 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mat2'')
 
   '
 repo_depends:
-- python-mutagen
-- gdk-pixbuf2
-- mailcap
-- librsvg
-- perl-image-exiftool
-- poppler: poppler-glib
-- pygobject: python-gobject
-- python-cairo
 - python
 update_on:
 - alias: python

@@ -1,8 +1,15 @@
 destsubdir: extra
-repo_depends:
-- libraw
-- libqtxdg
-- librsvg
-- dtkcore
-- freeimage
-update_on: []
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''dtkgui'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_depends: []
+update_on:
+- alpm: dtkgui
+  source: archpkg

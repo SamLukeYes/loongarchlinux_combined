@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pynacl'')
 
   '
 repo_depends:
-- python-cffi
 - python
-- libsodium
-- python-six
 update_on:
 - alias: python
 - alpm: python-pynacl

@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-sdl2-ttf'')
 
   '
 repo_depends:
-- ghc: ghc-libs
-- sdl2
-- haskell-th-abstraction
-- sdl2_ttf
 - haskell-sdl2
+- haskell-th-abstraction
 update_on:
 - alpm: haskell-sdl2
   source: alpm

@@ -10,13 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''springlobby'')
 
   '
 repo_depends:
+- wxwidgets-gtk3
 - jsoncpp
-- wxwidgets: wxwidgets-gtk3
-- alure
-- curl
-- libsm
-- zlib: minizip
-- hicolor-icon-theme
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm

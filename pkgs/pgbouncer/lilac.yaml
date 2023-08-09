@@ -10,12 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pgbouncer'')
 
   '
 repo_depends:
-- openssl
-- libevent
 - c-ares
-- glibc
 - pam
-- systemd
 update_on:
 - alpm: c-ares
   provides: libcares.so

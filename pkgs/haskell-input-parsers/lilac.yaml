@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-input-parsers
 
   '
 repo_depends:
+- haskell-attoparsec
 - haskell-monoid-subclasses
 - haskell-parsers
-- haskell-attoparsec
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

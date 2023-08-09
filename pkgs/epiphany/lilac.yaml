@@ -10,14 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''epiphany'')
 
   '
 repo_depends:
-- libsoup3
-- gtk4
-- libadwaita
-- gcr-4
-- gstreamer
-- libarchive
-- libportal: libportal-gtk4
-- webkitgtk-6.0
 - icu
 update_on:
 - alias: icu

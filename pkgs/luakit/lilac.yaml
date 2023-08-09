@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''luakit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- lua-filesystem: lua51-filesystem
-- webkit2gtk
-- luajit
+repo_depends: []
 update_on:
 - alpm: luakit
   source: archpkg

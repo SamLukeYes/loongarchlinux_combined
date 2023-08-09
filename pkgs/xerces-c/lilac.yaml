@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xerces-c'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- curl
 - icu
-- libnsl
 update_on:
 - alias: icu
 - alpm: xerces-c

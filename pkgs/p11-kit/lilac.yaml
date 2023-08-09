@@ -10,10 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''p11-kit'')
 
   '
 repo_depends:
-- libtasn1
-- libffi
-- glibc
-#- coreutils
+- libp11-kit
+- systemd-libs
 update_on:
 - alpm: libp11-kit
   provides: libp11-kit.so

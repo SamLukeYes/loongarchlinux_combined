@@ -10,16 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-conduit-extra
 
   '
 repo_depends:
-- haskell-network
 - haskell-async
-- ghc: ghc-libs
-- haskell-streaming-commons
-- haskell-unliftio-core
+- haskell-attoparsec
 - haskell-conduit
+- haskell-network
 - haskell-primitive
 - haskell-resourcet
-- haskell-attoparsec
+- haskell-streaming-commons
 - haskell-typed-process
+- haskell-unliftio-core
 update_on:
 - alpm: haskell-async
   source: alpm

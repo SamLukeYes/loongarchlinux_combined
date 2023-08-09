@@ -1,8 +1,3 @@
 destsubdir: extra
-repo_depends:
-- python-netifaces
-- iproute2
-- python-yaml
-- glib2
-- systemd
+repo_depends: []
 update_on: []

@@ -11,23 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''grilo-plugins'')
   '
 repo_depends:
 - lua
-- libmediaart
-- gom
-- tracker3
-- gnome-online-accounts: libgoa
-- chromaprint
-- libdmapsharing
-- gstreamer: gst-plugins-bad
 - grilo
 update_on:
 - alias: lua
-- alias: lua
-- alpm: grilo
-  provides: libgrilo-0.3.so
-  source: alpm
-- alpm: grilo
-  provides: libgrlnet-0.3.so
-  source: alpm
 - alpm: grilo
   provides: libgrlpls-0.3.so
   source: alpm

@@ -10,13 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''icecast'')
 
   '
 repo_depends:
-- libtheora
-- speex
-- libxslt
-- libxml2
-- libkate
-- openssl
-- glibc
+- curl
+- libogg
+- libvorbis
 update_on:
 - alpm: curl
   provides: libcurl.so

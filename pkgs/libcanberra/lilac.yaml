@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libcanberra'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pulseaudio: libpulse
-- alsa-lib
-- sound-theme-freedesktop
-- libvorbis
-- tdb
+repo_depends: []
 update_on:
 - alpm: libcanberra
   source: archpkg

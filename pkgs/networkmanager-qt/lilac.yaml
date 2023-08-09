@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''networkmanager-qt'')
 
   '
 repo_depends:
-- networkmanager
 - qt5-base
 update_on:
 - alpm: qt5-base

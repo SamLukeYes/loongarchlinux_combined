@@ -11,14 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kfilemetadata'')
   '
 repo_depends:
 - kconfig
-- poppler: poppler-qt5
-- ebook-tools
-- ffmpeg
-- karchive
-- kcoreaddons
-- ki18n
-- exiv2
-- taglib
 update_on:
 - alpm: kconfig
   source: alpm

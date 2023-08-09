@@ -8,13 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''accerciser'')
 
   '
 repo_depends:
-- pyatspi: python-atspi
-- ipython
-- gtk3
-- python-xlib
-- python-cairo
 - python
-- libwnck3
 update_on:
 - alias: python
 - alpm: accerciser

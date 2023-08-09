@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''torchvision'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-requests
-- numactl
-- python-pillow
-- python-pytorch
-- python-scipy
-- python-sympy
-- python-pytorch: python-pytorch-cuda
-- python-numpy
+repo_depends: []
 update_on:
 - alpm: torchvision
   source: archpkg

@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''enblend-enfuse'')
 
   '
 repo_depends:
-- vigra
 - gsl
-- lcms2
-- exiv2
 update_on:
 - alpm: gsl
   source: alpm

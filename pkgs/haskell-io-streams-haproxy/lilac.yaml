@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-io-streams-ha
 
   '
 repo_depends:
+- haskell-attoparsec
 - haskell-io-streams
 - haskell-network
-- haskell-attoparsec
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

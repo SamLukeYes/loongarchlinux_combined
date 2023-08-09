@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-xev'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxrandr
-- libx11
+repo_depends: []
 update_on:
 - alpm: xorg-xev
   source: archpkg

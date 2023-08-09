@@ -1,8 +1,3 @@
 destsubdir: extra
-repo_depends:
-- qt5-svg
-- qt5-script
-- desktop-file-utils
-- unzip
-- zip
+repo_depends: []
 update_on: []

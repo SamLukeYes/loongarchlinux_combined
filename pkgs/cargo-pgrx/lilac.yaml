@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cargo-pgrx'')
 
   '
 repo_depends:
-- bzip2
-- gcc: gcc-libs
 - clang
-- openssl
-- llvm
 update_on:
 - alias: clang
 - alpm: cargo-pgrx

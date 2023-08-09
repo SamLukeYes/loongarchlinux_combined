@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''stunnel'')
 
   '
 repo_depends:
-- openssl
 - perl
-- libnsl
-- systemd: systemd-libs
 update_on:
 - alias: perl
 - alpm: stunnel

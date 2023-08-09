@@ -8,11 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''postgrey'')
 
   '
 repo_depends:
-- perl-net-server
-- perl-netaddr-ip
 - perl
-- perl-io-multiplex
-- perl-berkeleydb
 update_on:
 - alias: perl
 - alpm: postgrey

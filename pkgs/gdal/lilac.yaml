@@ -10,34 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gdal'')
 
   '
 repo_depends:
-- json-c
-- pcre2
-- libfreexl
-- libjpeg-turbo
-- xz
-- curl
 - crypto++
-- libgeotiff
-- libxml2
-- blosc
-- zstd
-- libpng
-- geos
-- libdeflate
-- ocl-icd
-- libspatialite
-- lz4
-- proj
-- expat
-- sqlite
-- openssl
-- python-numpy
-- xerces-c
-- libtiff
-- zlib
-- unixodbc
-- qhull
-- giflib
 update_on:
 - alpm: crypto++
   source: alpm

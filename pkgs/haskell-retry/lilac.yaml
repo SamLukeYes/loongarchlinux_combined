@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-retry'')
 repo_depends:
 - haskell-random
 - haskell-unliftio-core
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-random
   source: alpm

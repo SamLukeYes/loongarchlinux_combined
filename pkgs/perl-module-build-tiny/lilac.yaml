@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-module-build-tin
 
   '
 repo_depends:
-- perl-extutils-helpers
 - perl
-- perl-extutils-config
-- perl-extutils-installpaths
 update_on:
 - alias: perl
 - alpm: perl-module-build-tiny

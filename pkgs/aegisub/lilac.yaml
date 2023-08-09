@@ -10,16 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aegisub'')
 
   '
 repo_depends:
-- pulseaudio: libpulse
-- fontconfig
-- alsa-lib
-- uchardet
-- wxwidgets: wxwidgets-gtk3
-- hunspell
-- zlib
-- fftw
-- boost: boost-libs
 - icu
+- libass
+- ffms2
+- wxwidgets-gtk3
 update_on:
 - alias: icu
 - alpm: libass

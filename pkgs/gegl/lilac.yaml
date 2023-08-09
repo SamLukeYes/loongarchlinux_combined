@@ -9,29 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gegl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- librsvg
-- glibc
-- glib2
-- gcc: gcc-libs
-- libjpeg-turbo
-- luajit
-- openexr
-- pango
-- cairo
-- libpng
-- jasper
-- libspiro
-- poppler: poppler-glib
-- libraw
-- suitesparse
-- gdk-pixbuf2
-- libtiff
-- lensfun
-- babl
-- lcms2
-- json-glib
-- libwebp
+repo_depends: []
 update_on:
 - alpm: gegl
   source: archpkg

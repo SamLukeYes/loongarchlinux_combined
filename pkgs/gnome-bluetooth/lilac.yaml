@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-bluetooth'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- bluez
-- libnotify
-- libcanberra
-- pulseaudio: pulseaudio-bluetooth
-- gtk3
-- systemd
+repo_depends: []
 update_on:
 - alpm: gnome-bluetooth
   source: archpkg

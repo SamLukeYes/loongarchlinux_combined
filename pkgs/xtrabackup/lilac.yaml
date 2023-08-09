@@ -10,15 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xtrabackup'')
 
   '
 repo_depends:
-- perl-dbd-mysql
-- numactl
-- curl
-- libaio
-- libgcrypt
-- libev
-- procps-ng
 - protobuf
+- icu
 update_on:
 - alias: protobuf
+- alias: icu
 - alpm: xtrabackup
   source: archpkg

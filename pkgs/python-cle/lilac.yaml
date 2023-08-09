@@ -8,11 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-cle'')
 
   '
 repo_depends:
-- python-cffi
-- python-sortedcontainers
-- python-pefile
-- python-pyelftools
-- python-pyvex
 - python
 update_on:
 - alias: python

@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-shapely'')
 
   '
 repo_depends:
-- geos
 - python
 update_on:
 - alias: python

@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xca'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- desktop-file-utils
-- gtk4: gtk-update-icon-cache
-- qt5-tools
+repo_depends: []
 update_on:
 - alpm: xca
   source: archpkg

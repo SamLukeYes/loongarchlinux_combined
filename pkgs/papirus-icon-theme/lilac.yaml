@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''papirus-icon-theme'')
 
   '
-repo_depends:
-- gtk4: gtk-update-icon-cache
+repo_depends: []
 update_on:
 - alpm: papirus-icon-theme
   source: archpkg

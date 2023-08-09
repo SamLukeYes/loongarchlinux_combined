@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-attopar
 
   '
 repo_depends:
-- haskell-hspec-expectations
 - haskell-attoparsec
-- ghc: ghc-libs
+- haskell-hspec-expectations
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

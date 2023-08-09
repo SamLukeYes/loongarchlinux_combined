@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''vaultwarden-web'')
 
   '
-repo_depends:
-- vaultwarden
+repo_depends: []
 update_on:
 - alpm: vaultwarden-web
   source: archpkg

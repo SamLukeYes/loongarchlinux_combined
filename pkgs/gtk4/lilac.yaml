@@ -1,38 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libxrender
-- libxfixes
-- dconf
-- libxdamage
-- desktop-file-utils
-- librsvg
-- iso-codes
-- glib2
-#- hicolor-icon-theme
-- cups: libcups
-- libxrandr
-- pango
-- libxinerama
-- libxcursor
-#- tracker3
-- harfbuzz
-- fribidi
-- cairo
-- libxext
-- libpng
-- shared-mime-info
-- fontconfig
-- libxkbcommon
-- graphene
-#- adwaita-icon-theme
-- libepoxy
-- gdk-pixbuf2
-- wayland
-- libxi
-- libtiff
-- gstreamer: gst-plugins-bad-libs
-- cantarell-fonts
-- libx11
-- colord: libcolord
-- libcloudproviders
+repo_depends: []
 update_on: []

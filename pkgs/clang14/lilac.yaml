@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- llvm14: llvm14-libs
-- compiler-rt14
-- gcc
+repo_depends: []
 update_on: []

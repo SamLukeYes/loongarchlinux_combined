@@ -1,7 +1,3 @@
 destsubdir: extra
-repo_depends:
-- zlib
-- libisl
-- libmpc
-- zstd
+repo_depends: []
 update_on: []

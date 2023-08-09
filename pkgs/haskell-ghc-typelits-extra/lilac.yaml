@@ -10,10 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ghc-typelits-
 
   '
 repo_depends:
-- haskell-ghc-typelits-natnormalise
-- haskell-ghc-typelits-knownnat
-- ghc: ghc-libs
+- haskell-ghc
 - haskell-ghc-tcplugins-extra
+- haskell-ghc-typelits-knownnat
+- haskell-ghc-typelits-natnormalise
 update_on:
 - alpm: haskell-ghc
   source: alpm

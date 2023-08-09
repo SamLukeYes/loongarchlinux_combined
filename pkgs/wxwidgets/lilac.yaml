@@ -10,17 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wxwidgets'')
 
   '
 repo_depends:
-- libmspack
-- libsecret
 - qt5-base
-- pcre2
-- sdl2
-- libtiff
-- libnotify
-- libsm
-- expat
-- gstreamer: gst-plugins-base-libs
-- gtk3
 update_on:
 - alpm: qt5-base
   source: alpm

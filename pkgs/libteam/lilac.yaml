@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libteam'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libnl
-- jansson
-- libdaemon
-- bash
-- zeromq
+repo_depends: []
 update_on:
 - alpm: libteam
   source: archpkg

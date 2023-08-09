@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''iec16022'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- zlib
-- popt
+repo_depends: []
 update_on:
 - alpm: iec16022
   source: archpkg

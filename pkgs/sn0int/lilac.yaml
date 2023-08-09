@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sn0int'')
 
   '
 repo_depends:
-- libsodium
-- libcap
-- sqlite
-- publicsuffix-list
-- lua52
+- libseccomp
 update_on:
 - alpm: libseccomp
   provides: libseccomp.so

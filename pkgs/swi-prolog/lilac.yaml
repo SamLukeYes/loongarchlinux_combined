@@ -10,13 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''swi-prolog'')
 
   '
 repo_depends:
-- gperftools
 - qt5-base
-- db5.3
-- libxcrypt
-- libarchive
-- util-linux: util-linux-libs
-- libyaml
 update_on:
 - alpm: qt5-base
   source: alpm

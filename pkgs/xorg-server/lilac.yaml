@@ -9,33 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-server'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxfont2
-- libxv
-- xorg-util-macros
-- libtirpc
-- xcb-util-keysyms
-- xorgproto
-- dbus
-- xcb-util-wm
-- xcb-util-image
-- libxext
-- nettle
-- systemd: systemd-libs
-- xorg-setxkbmap
-- xkeyboard-config
-- libdrm
-- libpciaccess
-- xf86-input-libinput
-- libepoxy
-- xorg-xauth
-- libunwind
-- libxcvt
-- xcb-util-renderutil
-- pixman
-- xorg-xkbcomp
-- mesa
-- libxshmfence
+repo_depends: []
 update_on:
 - alpm: xorg-server
   source: archpkg

@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pylama'')
 
   '
-repo_depends:
-- python-pydocstyle
-- python-mccabe
-- python-pycodestyle
-- python-pyflakes
+repo_depends: []
 update_on:
 - alpm: pylama
   source: archpkg

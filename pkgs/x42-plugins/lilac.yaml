@@ -10,21 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''x42-plugins'')
 
   '
 repo_depends:
-- libsndfile
-- glibc
-- glib2
-- hicolor-icon-theme
-- gcc: gcc-libs
-- pango
-- liblo
-- zita-convolver
 - fftw
-- libglvnd
-- cairo
-- ftgl
-- libsamplerate
+- glib2
 - libltc
-- libx11
+- libsamplerate
+- libsndfile
+- pango
+- zita-convolver
+- jack2
+- liblo
 update_on:
 - alpm: fftw
   provides: libfftw3f.so
@@ -42,34 +36,16 @@ update_on:
   provides: libsndfile.so
   source: alpm
 - alpm: pango
-  provides: libpango-1.0.so
-  source: alpm
-- alpm: pango
   provides: libpangocairo-1.0.so
   source: alpm
 - alpm: zita-convolver
   provides: libzita-convolver.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3f.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
   source: alpm
 - alpm: jack2
   provides: libjack.so
   source: alpm
 - alpm: liblo
   provides: liblo.so
-  source: alpm
-- alpm: libltc
-  provides: libltc.so
-  source: alpm
-- alpm: pango
-  provides: libpango-1.0.so
-  source: alpm
-- alpm: pango
-  provides: libpangocairo-1.0.so
   source: alpm
 - alpm: x42-plugins
   source: archpkg

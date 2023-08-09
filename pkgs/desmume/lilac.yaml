@@ -10,15 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''desmume'')
 
   '
 repo_depends:
-- alsa-lib
-- soundtouch
-- zziplib
-- glu
-- sdl2
-- zlib
-- desktop-file-utils
-- libpcap
-- gtk3
+- openal
 update_on:
 - alpm: openal
   provides: libopenal.so

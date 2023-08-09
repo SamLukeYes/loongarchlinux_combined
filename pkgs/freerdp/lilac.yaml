@@ -10,48 +10,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''freerdp'')
 
   '
 repo_depends:
-- libxrender
 - alsa-lib
-- libxfixes
-- libxdamage
-- libusb
-- glibc
-- cups: libcups
-- libxrandr
-- libjpeg-turbo
-- pcsclite
 - ffmpeg
-- libxinerama
-- libxcursor
-- libxext
-- libxkbfile
 - icu
-- systemd: systemd-libs
-- libxkbcommon
-- libxtst
+- darktable
+- libao
+- libusb
+- openssl
 - openssl
 - pam
-- pulseaudio: libpulse
-- wayland
-- libxi
-- libx11
+- systemd-libs
 update_on:
 - alpm: alsa-lib
   provides: libasound.so
   source: alpm
 - alpm: ffmpeg
-  provides: libavcodec.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavutil.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libswresample.so
-  source: alpm
-- alpm: ffmpeg
   provides: libswscale.so
   source: alpm
-- alias: icu
 - alpm: icu
   provides: libicuuc.so
   source: alpm

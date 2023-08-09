@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zathura'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- file
-- desktop-file-utils
-- sqlite
-- texlive-bin: libsynctex
+repo_depends: []
 update_on:
 - alpm: zathura
   source: archpkg

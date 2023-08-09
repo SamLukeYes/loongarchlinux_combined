@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''symengine'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gperftools
-- llvm: llvm-libs
-- arb
-- primesieve
-- libmpc
-- gmp-ecm
+repo_depends: []
 update_on:
 - alpm: symengine
   source: archpkg

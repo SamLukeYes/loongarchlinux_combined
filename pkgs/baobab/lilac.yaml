@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''baobab'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gsettings-desktop-schemas
-- dconf
-- gtk4
-- libadwaita
-- librsvg
+repo_depends: []
 update_on:
 - alpm: baobab
   source: archpkg

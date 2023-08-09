@@ -11,9 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libkscreen'')
   '
 repo_depends:
 - kconfig
-- qt5-x11extras
-- kwayland
-- libxrandr
 update_on:
 - alpm: kconfig
   source: alpm

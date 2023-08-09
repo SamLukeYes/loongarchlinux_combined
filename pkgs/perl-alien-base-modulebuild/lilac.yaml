@@ -7,18 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-alien-base-modulebuild'')
 
   '
-repo_depends:
-- perl-html-parser
-- perl-shell-guess
-- perl-uri
-- perl-path-tiny
-- perl-sort-versions
-- perl-archive-extract
-- perl-file-chdir
-- perl-capture-tiny
-- perl-alien-build
-- perl-module-build
-- perl-shell-config-generate
+repo_depends: []
 update_on:
 - alpm: perl-alien-base-modulebuild
   source: archpkg

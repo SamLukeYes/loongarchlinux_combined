@@ -13,7 +13,6 @@ repo_depends:
 - haskell-abstract-par
 - haskell-cereal
 - haskell-random
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-abstract-par
   source: alpm

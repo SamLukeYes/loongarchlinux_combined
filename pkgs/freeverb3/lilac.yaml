@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''freeverb3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- fftw
+repo_depends: []
 update_on:
 - alpm: freeverb3
   source: archpkg

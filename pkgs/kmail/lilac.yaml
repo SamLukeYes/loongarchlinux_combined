@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kmail'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pim-data-exporter
-- ktnef
-- pim-sieve-editor
-- mbox-importer
-- kontactinterface
-- kdepim-runtime
-- akonadi-import-wizard
-- kmail-account-wizard
+repo_depends: []
 update_on:
 - alpm: kmail
   source: archpkg

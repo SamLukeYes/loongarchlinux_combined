@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hcxtools'')
 
   '
 repo_depends:
-- openssl
 - curl
-- zlib
 update_on:
 - alpm: curl
   provides: libcurl.so

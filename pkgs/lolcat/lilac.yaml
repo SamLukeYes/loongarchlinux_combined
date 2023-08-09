@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lolcat'')
 
   '
 repo_depends:
-- ruby-manpages
 - ruby
-- ruby-paint
-- ruby-optimist
 update_on:
 - alias: ruby
 - alpm: lolcat

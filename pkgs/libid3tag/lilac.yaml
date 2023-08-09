@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libid3tag'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glibc
-- zlib
+repo_depends: []
 update_on:
 - alpm: libid3tag
   source: archpkg

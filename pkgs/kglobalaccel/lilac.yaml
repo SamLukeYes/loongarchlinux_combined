@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kglobalaccel'')
   '
 repo_depends:
 - kconfig
-- kcrash
-- kdbusaddons
 update_on:
 - alpm: kconfig
   source: alpm

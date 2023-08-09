@@ -9,18 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kaidan'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- knotifications
-- kirigami2
-- kirigami-addons
-- qxmpp: qxmpp-qt5
-- zxing-cpp
-- qqc2-desktop-style
-- qt5-location
-- kio
-- qt5-svg
-- kquickimageeditor
-- libomemo-c
+repo_depends: []
 update_on:
 - alpm: kaidan
   source: archpkg

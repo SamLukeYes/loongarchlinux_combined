@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''yelp-tools'')
 
   '
-repo_depends:
-- docbook-xsl
-- python-lxml
-- mallard-ducktype
-- libxml2
-- itstool
-- yelp-xsl
+repo_depends: []
 update_on:
 - alpm: yelp-tools
   source: archpkg

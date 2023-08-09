@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qvkbd'')
 
   '
 repo_depends:
-- qt5-x11extras
-- hicolor-icon-theme
 - qt5-declarative
-- libxtst
 update_on:
 - alpm: qt5-declarative
   source: alpm

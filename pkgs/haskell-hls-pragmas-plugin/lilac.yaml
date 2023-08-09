@@ -10,14 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-pragmas-p
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-lens
-- ghc: ghc-libs
-- haskell-hls-plugin-api
-- haskell-lsp
-- haskell-fuzzy
 - haskell-extra
+- haskell-fuzzy
+- haskell-ghc
 - haskell-ghcide
+- haskell-hls-plugin-api
+- haskell-lens
+- haskell-lsp
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-extra
   source: alpm

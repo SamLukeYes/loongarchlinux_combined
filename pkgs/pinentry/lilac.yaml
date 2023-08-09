@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pinentry'')
 
   '
 repo_depends:
-- glib2
 - libsecret
+- libcap
 - ncurses
 - libassuan
-- libcap
-- glibc
+- glib2
 update_on:
 - alpm: libsecret
   provides: libsecret-1.so

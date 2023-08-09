@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- mesa
-- systemd: systemd-libs
+repo_depends: []
 update_on: []

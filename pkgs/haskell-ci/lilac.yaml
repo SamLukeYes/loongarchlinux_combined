@@ -10,25 +10,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ci'')
 
   '
 repo_depends:
-- haskell-generic-lens-lite
-- haskell-unordered-containers
-- haskell-base-compat
 - haskell-aeson
-- haskell-ini
+- haskell-attoparsec
+- haskell-base-compat
+- haskell-base16-bytestring
 - haskell-cabal-install-parsers
-- shellcheck
-- haskell-network-uri
-- haskell-optparse-applicative
+- haskell-cryptohash-sha256
+- haskell-generic-lens-lite
 - haskell-hsyaml
 - haskell-indexed-traversable
 - haskell-indexed-traversable-instances
-- ghc: ghc-libs
-- haskell-zinza
-- haskell-temporary
-- haskell-cryptohash-sha256
+- haskell-ini
 - haskell-lattices
-- haskell-attoparsec
-- haskell-base16-bytestring
+- haskell-network-uri
+- haskell-optparse-applicative
+- haskell-temporary
+- haskell-unordered-containers
+- haskell-zinza
 update_on:
 - alpm: haskell-aeson
   source: alpm

@@ -10,12 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''marble'')
 
   '
 repo_depends:
-- kirigami2
-- phonon: phonon-qt5
-- qt5-svg
-- kparts
 - protobuf
-- qt5-webengine
 update_on:
 - alias: protobuf
 - alpm: marble

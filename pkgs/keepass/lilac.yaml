@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''keepass'')
 
   '
-repo_depends:
-- xdg-utils
-- mono
-- desktop-file-utils
-- gtk4: gtk-update-icon-cache
-- shared-mime-info
+repo_depends: []
 update_on:
 - alpm: keepass
   source: archpkg

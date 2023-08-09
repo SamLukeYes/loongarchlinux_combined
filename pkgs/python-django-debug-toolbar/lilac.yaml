@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-django-debug-toolbar'')
 
   '
-repo_depends:
-- python-sqlparse
-- django: python-django
+repo_depends: []
 update_on:
 - alpm: python-django-debug-toolbar
   source: archpkg

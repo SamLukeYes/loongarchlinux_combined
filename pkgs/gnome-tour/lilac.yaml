@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- gtk4
-- libadwaita
+repo_depends: []
 update_on: []

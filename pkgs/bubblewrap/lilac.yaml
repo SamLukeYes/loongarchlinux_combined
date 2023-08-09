@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bubblewrap'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libcap
-- glibc
+repo_depends: []
 update_on:
 - alpm: bubblewrap
   source: archpkg

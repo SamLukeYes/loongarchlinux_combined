@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xfce4-notifyd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libnotify
-- libxfce4util
-- libcanberra
-- libxfce4ui
-- sqlite
-- xfconf
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: xfce4-notifyd
   source: archpkg

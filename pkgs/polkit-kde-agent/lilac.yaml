@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''polkit-kde-agent'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kiconthemes
-- kdbusaddons
-- kcrash
+repo_depends: []
 update_on:
 - alpm: polkit-kde-agent
   source: archpkg

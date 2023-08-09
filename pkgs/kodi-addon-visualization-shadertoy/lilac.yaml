@@ -10,9 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kodi-addon-visualizat
 
   '
 repo_depends:
-- kodi
-- p8-platform
-- glm
 - jsoncpp
 update_on:
 - alias: jsoncpp

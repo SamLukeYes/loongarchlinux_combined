@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hstringtempla
 
   '
 repo_depends:
-- haskell-syb
-- ghc: ghc-libs
-- haskell-old-locale
 - haskell-blaze-builder
+- haskell-old-locale
+- haskell-syb
 - haskell-void
 update_on:
 - alpm: haskell-blaze-builder

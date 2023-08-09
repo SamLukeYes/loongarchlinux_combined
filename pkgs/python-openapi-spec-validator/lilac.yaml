@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-openapi-spec-v
 
   '
 repo_depends:
-- python-openapi-schema-validator
-- python-lazy-object-proxy
-- python-jsonschema-spec
-- python-jsonschema
 - python
 update_on:
 - alias: python

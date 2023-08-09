@@ -10,16 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnutls'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- p11-kit
-- libidn2
-- libunistring
-- brotli
-- zlib
-- libtasn1
 - readline
-- zstd
-- nettle
+- libidn2
 update_on:
 - alias: readline
 - alpm: libidn2

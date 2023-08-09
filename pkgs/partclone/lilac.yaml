@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''partclone'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- nilfs-utils
-- ntfs-3g
+repo_depends: []
 update_on:
 - alpm: partclone
   source: archpkg

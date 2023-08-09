@@ -9,8 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-xml-libxml-simpl
   '
 repo_depends:
 - perl
-- perl-file-slurp-tiny
-- perl-xml-libxml
 update_on:
 - alias: perl
 - alpm: perl-xml-libxml-simple

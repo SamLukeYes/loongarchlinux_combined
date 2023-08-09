@@ -10,25 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''supercollider'')
 
   '
 repo_depends:
-- alsa-lib
-- libsndfile
-- glibc
-- gcc: gcc-libs
 - qt5-base
+- alsa-lib
 - avahi
-- qt5-websockets
+- boost
 - fftw
-- systemd: systemd-libs
-- yaml-cpp
-- libx11
+- jack2
+- libsndfile
 - readline
-- qt5-svg
-- boost: boost-libs
-- qt5-webengine
+- systemd-libs
+- yaml-cpp
 update_on:
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: qt5-base
   source: alpm
   strip_release: true
@@ -36,16 +28,7 @@ update_on:
   provides: libasound.so
   source: alpm
 - alpm: avahi
-  provides: libavahi-common.so
-  source: alpm
-- alpm: avahi
   provides: libavahi-client.so
-  source: alpm
-- alpm: boost
-  provides: libboost_filesystem.so
-  source: alpm
-- alpm: boost
-  provides: libboost_program_options.so
   source: alpm
 - alpm: boost
   provides: libboost_thread.so
@@ -59,7 +42,6 @@ update_on:
 - alpm: libsndfile
   provides: libsndfile.so
   source: alpm
-- alias: readline
 - alpm: readline
   provides: libreadline.so
   source: alpm

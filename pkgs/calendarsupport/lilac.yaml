@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''calendarsupport'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- akonadi-calendar
-- akonadi-notes
-- kholidays
+repo_depends: []
 update_on:
 - alpm: calendarsupport
   source: archpkg

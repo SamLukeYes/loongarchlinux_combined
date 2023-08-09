@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''radare2-r2pipe'')
   '
 repo_depends:
 - python
-- radare2
 update_on:
 - alias: python
 - alpm: radare2-r2pipe

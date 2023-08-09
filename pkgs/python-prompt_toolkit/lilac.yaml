@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-prompt_toolkit
 
   '
 repo_depends:
-- python-wcwidth
 - python
-- python-pygments
 update_on:
 - alias: python
 - alpm: python-prompt_toolkit

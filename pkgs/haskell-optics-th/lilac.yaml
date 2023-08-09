@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-optics-th'')
 repo_depends:
 - haskell-optics-core
 - haskell-th-abstraction
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-optics-core
   source: alpm

@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aida-x'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glibc
-- alsa-lib
-- gcc: gcc-libs
-- dbus
-- libx11
-- libglvnd
-- libxext
+repo_depends: []
 update_on:
 - alpm: aida-x
   source: archpkg

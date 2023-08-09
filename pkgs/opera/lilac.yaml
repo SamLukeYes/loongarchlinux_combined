@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opera'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- alsa-lib
-- cups: libcups
-- libxss
-- curl
-- nss
-- desktop-file-utils
-- libnotify
-- gtk3
-- hicolor-icon-theme
-- shared-mime-info
+repo_depends: []
 update_on:
 - alpm: opera
   source: archpkg

@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-gettext-tools'
 
   '
 repo_depends:
-- perl-config-tiny
-- gettext
 - python
-- perl-xml-libxml
 update_on:
 - alias: python
 - alpm: deepin-gettext-tools

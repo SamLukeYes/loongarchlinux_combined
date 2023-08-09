@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-dbd-sybase'')
 
   '
 repo_depends:
-- freetds
 - perl
 update_on:
 - alias: perl

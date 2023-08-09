@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libaec
-- zlib
-- bash
+repo_depends: []
 update_on: []

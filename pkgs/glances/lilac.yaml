@@ -9,10 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glances'')
   '
 repo_depends:
 - python
-- python-psutil
-- python-ujson
-- python-future
-- python-defusedxml
 update_on:
 - alias: python
 - alpm: glances

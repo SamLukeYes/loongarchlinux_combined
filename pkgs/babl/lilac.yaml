@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- glibc
-- lcms2
+repo_depends: []
 update_on: []

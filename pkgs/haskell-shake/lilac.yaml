@@ -10,17 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-shake'')
 
   '
 repo_depends:
-- haskell-js-jquery
-- haskell-unordered-containers
-- haskell-heaps
-- ghc: ghc-libs
-- haskell-js-flot
-- haskell-hashable
-- haskell-random
-- haskell-filepattern
 - haskell-extra
-- haskell-primitive
+- haskell-filepattern
+- haskell-hashable
+- haskell-heaps
 - haskell-js-dgtable
+- haskell-js-flot
+- haskell-js-jquery
+- haskell-primitive
+- haskell-random
+- haskell-unordered-containers
 - haskell-utf8-string
 update_on:
 - alpm: haskell-extra

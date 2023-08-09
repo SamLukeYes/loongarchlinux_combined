@@ -9,7 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''onefetch'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends: []
+repo_depends:
+- julia
 update_on:
 - alpm: julia
   provides: libgit2.so

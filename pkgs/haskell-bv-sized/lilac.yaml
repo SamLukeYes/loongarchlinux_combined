@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-bv-sized'')
 
   '
 repo_depends:
-- haskell-th-lift
-- haskell-panic
-- ghc: ghc-libs
-- haskell-random
 - haskell-bitwise
+- haskell-panic
 - haskell-parameterized-utils
+- haskell-random
+- haskell-th-lift
 update_on:
 - alpm: haskell-bitwise
   source: alpm

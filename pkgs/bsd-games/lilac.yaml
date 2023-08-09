@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bsd-games'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- systemd
-- ncurses
+repo_depends: []
 update_on:
 - alpm: bsd-games
   source: archpkg

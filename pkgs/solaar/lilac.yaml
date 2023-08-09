@@ -7,16 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''solaar'')
 
   '
-repo_depends:
-- python-evdev
-- python-pyudev
-- python-psutil
-- python-xlib
-- libnotify
-- python-yaml
-- gtk3
-- python-hid-parser
-- pygobject: python-gobject
+repo_depends: []
 update_on:
 - alpm: solaar
   source: archpkg

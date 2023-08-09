@@ -1,8 +1,5 @@
 destsubdir: extra
 repo_depends:
-- openssl
 - perl
-- libcap
-- libedit
 update_on:
 - alias: perl

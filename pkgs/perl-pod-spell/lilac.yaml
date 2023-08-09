@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-pod-spell'')
 
   '
-repo_depends:
-- perl-path-tiny
-- perl-pod-parser
-- perl-file-sharedir
-- perl-class-tiny
-- perl-lingua-en-inflect
+repo_depends: []
 update_on:
 - alpm: perl-pod-spell
   source: archpkg

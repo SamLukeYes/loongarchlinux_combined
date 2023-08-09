@@ -7,18 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''repod'')
 
   '
-repo_depends:
-- pyxdg: python-pyxdg
-- pyalpm
-- python-magic
-- python-pyzstd
-- python-subprocess-tee
-- python-jinja
-- python-tomli
-- python-email-validator
-- python-aiofiles
-- python-pydantic
-- python-orjson
+repo_depends: []
 update_on:
 - alpm: repod
   source: archpkg

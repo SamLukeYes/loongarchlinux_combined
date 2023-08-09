@@ -1,11 +1,7 @@
 destsubdir: core
 repo_depends:
-- bzip2
-- xz
 - libseccomp
-- zlib
 - zstd
-- glibc
 update_on:
 - alpm: libseccomp
   provides: libseccomp.so

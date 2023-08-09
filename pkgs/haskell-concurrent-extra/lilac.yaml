@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-concurrent-ex
   '
 repo_depends:
 - haskell-unbounded-delays
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-unbounded-delays
   source: alpm

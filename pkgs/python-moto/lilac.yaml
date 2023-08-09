@@ -8,16 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-moto'')
 
   '
 repo_depends:
-- python-botocore
-- python-xmltodict
-- python-requests
-- python-dateutil
-- python-cryptography
-- python-boto3
-- python-werkzeug
-- python-responses
-- python-jinja
-- python-urllib3
 - python
 update_on:
 - alias: python

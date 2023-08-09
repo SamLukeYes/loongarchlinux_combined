@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lens-action''
 
   '
 repo_depends:
-- haskell-lens
-- ghc: ghc-libs
-- haskell-semigroupoids
 - haskell-comonad
-- haskell-profunctors
 - haskell-contravariant
+- haskell-lens
+- haskell-profunctors
+- haskell-semigroupoids
 update_on:
 - alpm: haskell-comonad
   source: alpm

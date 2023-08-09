@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ophcrack'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-charts
+repo_depends: []
 update_on:
 - alpm: ophcrack
   source: archpkg

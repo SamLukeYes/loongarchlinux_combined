@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-google-auth-oa
 
   '
 repo_depends:
-- python-requests-oauthlib
 - python
-- python-google-auth
 update_on:
 - alias: python
 - alpm: python-google-auth-oauthlib

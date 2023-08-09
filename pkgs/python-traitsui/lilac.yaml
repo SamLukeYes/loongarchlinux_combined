@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-traitsui'')
 
   '
-repo_depends:
-- python-pyface
+repo_depends: []
 update_on:
 - alpm: python-traitsui
   source: archpkg

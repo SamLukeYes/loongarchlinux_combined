@@ -10,10 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kscreenlocker'')
 
   '
 repo_depends:
-- layer-shell-qt
-- libkscreen
-- kidletime
-- kdeclarative
 - perl
 update_on:
 - alias: perl

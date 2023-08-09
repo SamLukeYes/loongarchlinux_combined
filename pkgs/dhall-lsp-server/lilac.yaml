@@ -10,23 +10,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dhall-lsp-server'')
 
   '
 repo_depends:
-- haskell-hslogger
-- haskell-optparse-applicative
-- haskell-unordered-containers
-- haskell-prettyprinter
-- haskell-lens
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-rope-utf16-splay
-- haskell-lens-family-core
-- dhall
-- haskell-data-default
-- dhall-json
 - haskell-aeson-pretty
-- haskell-megaparsec
-- haskell-uri-encode
+- haskell-data-default
 - haskell-lsp1.4
+- haskell-hslogger
+- haskell-lens
+- haskell-lens-family-core
+- haskell-megaparsec
 - haskell-network-uri
+- haskell-optparse-applicative
+- haskell-prettyprinter
+- haskell-rope-utf16-splay
+- haskell-unordered-containers
+- haskell-uri-encode
 update_on:
 - alpm: haskell-aeson
   source: alpm

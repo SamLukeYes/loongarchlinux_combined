@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''oxygen'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- frameworkintegration
-- hicolor-icon-theme
-- kdecoration
-- kwayland
+repo_depends: []
 update_on:
 - alpm: oxygen
   source: archpkg

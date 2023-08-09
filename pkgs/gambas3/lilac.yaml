@@ -10,56 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gambas3'')
 
   '
 repo_depends:
-- bzip2
-- xdg-utils
-- imlib2
-- sdl2_image
-- qt5-base
-- postgresql: postgresql-libs
-- curl
-- dbus
-- zstd
-- libpng
-- gstreamer: gst-plugins-base-libs
-- poppler: poppler-glib
-- ncurses
-- libxslt
-- libxcrypt
 - perl
-- sdl_mixer
-- qt5-x11extras
-- libsm
-- libgnome-keyring
-- mariadb: mariadb-libs
-- gcc: gcc-libs
-- webkit2gtk
-- libffi
-- libxtst
-- sane
-- gtk3
-- sdl2_mixer
-- pcre2
-- glib2
 - gsl
-- libxml2
-- sqlite
-- glew
-- gmime3
-- qt5-webengine
-- sdl_ttf
-- alure
-- sdl2_ttf
-- libxcursor
-- cairo
-- gmp
-- v4l-utils
-- openssl
-- gdk-pixbuf2
-- zlib
-- unixodbc
-- qt5-svg
+- qt5-base
 update_on:
-- alias: perl
 - alias: perl
 - alpm: gsl
   source: alpm

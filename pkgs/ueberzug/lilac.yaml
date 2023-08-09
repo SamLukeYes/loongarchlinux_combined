@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ueberzug'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxres
-- python-pillow
-- python-docopt
-- python-attrs
-- libxext
+repo_depends: []
 update_on:
 - alpm: ueberzug
   source: archpkg

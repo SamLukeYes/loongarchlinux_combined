@@ -7,14 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-twisted'')
 
   '
-repo_depends:
-- python-constantly
-- python-incremental
-- python-typing_extensions
-- python-automat
-- python-attrs
-- python-hyperlink
-- python-zope-interface
+repo_depends: []
 update_on:
 - alpm: python-twisted
   source: archpkg

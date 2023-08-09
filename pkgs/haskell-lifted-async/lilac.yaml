@@ -11,9 +11,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lifted-async'
   '
 repo_depends:
 - haskell-async
-- ghc: ghc-libs
-- haskell-lifted-base
 - haskell-constraints
+- haskell-lifted-base
 - haskell-monad-control
 - haskell-transformers-base
 update_on:

@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''breeze-plymouth'')
 
   '
-repo_depends:
-- plymouth
-- glibc
+repo_depends: []
 update_on:
 - alpm: breeze-plymouth
   source: archpkg

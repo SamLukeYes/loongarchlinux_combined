@@ -10,12 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nodejs'')
 
   '
 repo_depends:
-- brotli
-- zlib
-- c-ares
-- openssl
-- libuv
-- libnghttp2
 - icu
 update_on:
 - alias: icu

@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-errors'')
 
   '
 repo_depends:
-- haskell-transformers-compat
-- ghc: ghc-libs
 - haskell-safe
+- haskell-transformers-compat
 update_on:
 - alpm: haskell-safe
   source: alpm

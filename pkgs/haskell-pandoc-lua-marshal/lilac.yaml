@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pandoc-lua-ma
 
   '
 repo_depends:
-- haskell-lua
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-hslua-marshalling
-- haskell-pandoc-types
-- haskell-hslua-list
-- haskell-safe
 - haskell-hslua
+- haskell-hslua-list
+- haskell-hslua-marshalling
+- haskell-lua
+- haskell-pandoc-types
+- haskell-safe
 update_on:
 - alpm: haskell-aeson
   source: alpm

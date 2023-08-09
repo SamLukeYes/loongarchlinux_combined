@@ -8,14 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sigal'')
 
   '
 repo_depends:
-- python-pilkit
-- python-markdown
-- python-pillow
-- ffmpeg
-- python-click
-- python-blinker
-- python-jinja
-- python-natsort
 - python
 update_on:
 - alias: python

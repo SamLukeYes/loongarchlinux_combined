@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-socket'
   '
 repo_depends:
 - python
-- python-pytest
 update_on:
 - alias: python
 - alpm: python-pytest-socket

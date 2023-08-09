@@ -1,15 +1,6 @@
 destsubdir: extra
 repo_depends:
-- glibc
-- libzip
 - qt5-base
-- sdl2
-- snappy
-- zlib
-- qt5-multimedia
-- glew
-- zstd
-- hicolor-icon-theme
 update_on:
 - alpm: qt5-base
   source: alpm

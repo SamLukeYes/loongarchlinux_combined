@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-optparse-simp
 
   '
 repo_depends:
-- haskell-optparse-applicative
 - haskell-githash
+- haskell-optparse-applicative
 - haskell-th-compat
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-githash
   source: alpm

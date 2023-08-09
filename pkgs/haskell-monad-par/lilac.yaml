@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-monad-par'')
 
   '
 repo_depends:
-- haskell-mwc-random
-- ghc: ghc-libs
-- haskell-monad-par-extras
-- haskell-abstract-par
-- haskell-parallel
 - haskell-abstract-deque
+- haskell-abstract-par
+- haskell-monad-par-extras
+- haskell-mwc-random
+- haskell-parallel
 update_on:
 - alpm: haskell-abstract-deque
   source: alpm

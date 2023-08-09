@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''camlp5'')
 
   '
 repo_depends:
-- camlp-streams
 - ocaml
 update_on:
 - alpm: ocaml

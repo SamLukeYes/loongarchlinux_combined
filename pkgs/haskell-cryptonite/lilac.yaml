@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cryptonite'')
 
   '
 repo_depends:
-- haskell-memory
-- ghc: ghc-libs
 - haskell-basement
+- haskell-memory
 update_on:
 - alpm: haskell-basement
   source: alpm

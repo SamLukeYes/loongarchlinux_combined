@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-th-extras'')
 repo_depends:
 - haskell-syb
 - haskell-th-abstraction
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-syb
   source: alpm

@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''firewalld'')
 
   '
-repo_depends:
-- glib2
-- nftables
-- libcap-ng: python-capng
-- dbus-python
-- pygobject: python-gobject
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: firewalld
   source: archpkg

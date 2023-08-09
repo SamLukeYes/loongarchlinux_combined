@@ -1,5 +1,3 @@
 destsubdir: core
-repo_depends:
-- filesystem
-- tzdata
+repo_depends: []
 update_on: []

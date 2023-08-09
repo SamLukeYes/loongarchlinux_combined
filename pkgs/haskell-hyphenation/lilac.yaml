@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hyphenation''
 
   '
 repo_depends:
-- haskell-zlib
-- haskell-unordered-containers
-- ghc: ghc-libs
 - haskell-file-embed
+- haskell-unordered-containers
+- haskell-zlib
 update_on:
 - alpm: haskell-file-embed
   source: alpm

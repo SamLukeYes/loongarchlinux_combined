@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''startup-notification'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- xcb-util
-- glibc
-- libxcb
-- libx11
+repo_depends: []
 update_on:
 - alpm: startup-notification
   source: archpkg

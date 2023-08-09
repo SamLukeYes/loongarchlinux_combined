@@ -8,13 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gufw'')
 
   '
 repo_depends:
-- polkit
-- desktop-file-utils
-- webkit2gtk
-- gtk4: gtk-update-icon-cache
-- gtk3
-- ufw
-- pygobject: python-gobject
 - python
 update_on:
 - alias: python

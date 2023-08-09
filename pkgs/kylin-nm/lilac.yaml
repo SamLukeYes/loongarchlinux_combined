@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kylin-nm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gsettings-qt
-- qt5-x11extras
-- qt5-svg
-- kwindowsystem
+repo_depends: []
 update_on:
 - alpm: kylin-nm
   source: archpkg

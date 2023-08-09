@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-module-build-xsu
   '
 repo_depends:
 - perl
-- perl-devel-checkcompiler
 update_on:
 - alias: perl
 - alpm: perl-module-build-xsutil

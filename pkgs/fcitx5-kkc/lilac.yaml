@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcitx5-kkc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libkkc-data
-- fcitx5-qt
-- libkkc
+repo_depends: []
 update_on:
 - alpm: fcitx5-kkc
   source: archpkg

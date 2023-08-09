@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mgard'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- lapack: blas
-- zlib
-- lapack
-- zstd
-- glibc
-- yaml-cpp
+repo_depends: []
 update_on:
 - alpm: mgard
   source: archpkg

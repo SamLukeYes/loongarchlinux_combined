@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyaudio'')
 
   '
 repo_depends:
-- portaudio
 - python
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-pyaudio

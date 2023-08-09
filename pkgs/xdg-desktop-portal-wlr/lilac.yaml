@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdg-desktop-portal-wl
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libinih
-- xdg-desktop-portal
-- pipewire
+repo_depends: []
 update_on:
 - alpm: xdg-desktop-portal-wlr
   source: archpkg

@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''po4a'')
 
   '
 repo_depends:
-- perl-yaml-tiny
 - perl
-- gettext
-- perl-unicode-linebreak
 update_on:
 - alias: perl
 - alpm: po4a

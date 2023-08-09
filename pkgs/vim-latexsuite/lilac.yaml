@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vim-latexsuite'')
   '
 repo_depends:
 - perl
-- vim
 update_on:
 - alias: perl
 - alpm: vim-latexsuite

@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-rich'')
 
   '
-repo_depends:
-- python-pygments
-- python-colorama
-- python-markdown-it-py
+repo_depends: []
 update_on:
 - alpm: python-rich
   source: archpkg

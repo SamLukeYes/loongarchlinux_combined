@@ -10,21 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''netdata'')
 
   '
 repo_depends:
-- libmnl
 - protobuf
-- json-c
-- mongo-c-driver
-- lz4
-- zlib
-- snappy
-- libnetfilter_acct
-- libcap
-- libwebsockets
-- which
-- libyaml
-- judy
-- openssl
-- libuv
 update_on:
 - alias: protobuf
 - alpm: netdata

@@ -1,7 +1,3 @@
 destsubdir: core
-repo_depends:
-- sed
-- filesystem
-- util-linux
-- glibc
+repo_depends: []
 update_on: []

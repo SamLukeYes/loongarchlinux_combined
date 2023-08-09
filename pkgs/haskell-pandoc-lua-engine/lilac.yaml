@@ -10,27 +10,28 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pandoc-lua-en
 
   '
 repo_depends:
-- haskell-pandoc-types
-- haskell-citeproc
-- haskell-hslua-aeson
-- haskell-hslua-module-doclayout
-- haskell-hslua-module-text
-- haskell-pandoc
-- haskell-hslua-module-version
 - haskell-sha
-- haskell-hslua-module-path
-- haskell-lpeg
-- ghc: ghc-libs
-- haskell-doctemplates
-- haskell-pandoc-lua-marshal
-- haskell-hslua-core
-- haskell-doclayout
+- haskell-aeson
+- haskell-citeproc
 - haskell-data-default
-- haskell-hslua-module-system
-- haskell-hslua-module-zip
+- haskell-doclayout
+- haskell-doctemplates
 - haskell-hslua
+- haskell-hslua-module-doclayout
+- haskell-hslua-module-path
+- haskell-hslua-module-system
+- haskell-hslua-module-text
+- haskell-hslua-module-version
+- haskell-hslua-module-zip
+- haskell-hslua-repl
+- haskell-lpeg
+- haskell-pandoc
+- haskell-pandoc-lua-marshal
+- haskell-pandoc-types
 update_on:
 - alpm: haskell-sha
+  source: alpm
+- alpm: haskell-aeson
   source: alpm
 - alpm: haskell-citeproc
   source: alpm
@@ -41,10 +42,6 @@ update_on:
 - alpm: haskell-doctemplates
   source: alpm
 - alpm: haskell-hslua
-  source: alpm
-- alpm: haskell-hslua-aeson
-  source: alpm
-- alpm: haskell-hslua-core
   source: alpm
 - alpm: haskell-hslua-module-doclayout
   source: alpm
@@ -57,6 +54,8 @@ update_on:
 - alpm: haskell-hslua-module-version
   source: alpm
 - alpm: haskell-hslua-module-zip
+  source: alpm
+- alpm: haskell-hslua-repl
   source: alpm
 - alpm: haskell-lpeg
   source: alpm

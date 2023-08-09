@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-binary-condui
 
   '
 repo_depends:
-- haskell-vector
 - haskell-conduit
-- ghc: ghc-libs
+- haskell-vector
 update_on:
 - alpm: haskell-conduit
   source: alpm

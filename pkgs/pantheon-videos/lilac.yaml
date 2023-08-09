@@ -10,16 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-videos'')
 
   '
 repo_depends:
-- gdk-pixbuf2
-- libgee
-- gstreamer
-- clutter-gtk
-- clutter-gst
-- gstreamer: gst-plugins-base-libs
-- clutter
-- gtk3
-- libx11
-- glib2
+- granite
+- libhandy
 update_on:
 - alpm: granite
   provides: libgranite.so

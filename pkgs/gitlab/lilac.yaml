@@ -1,18 +1,17 @@
 destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''gitlab'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
 repo_depends:
-- redis
-- re2
-- openssh
-- git
-- nodejs
-- gitlab-shell
-- libxslt
-- perl-image-exiftool
-- gitlab-gitaly
-- openssl
-- ruby2.7
-- http-parser
 - icu
 update_on:
 - alias: icu
-- alias: icu
+- alpm: gitlab
+  source: archpkg

@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libmodsecurity'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pcre2
-- luajit
-- libmaxminddb
-- curl
-- geoip
-- libxml2
-- ssdeep
-- lmdb
-- yajl
+repo_depends: []
 update_on:
 - alpm: libmodsecurity
   source: archpkg

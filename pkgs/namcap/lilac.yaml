@@ -8,12 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''namcap'')
 
   '
 repo_depends:
-- pyalpm
-- elfutils
-- pkgconf
-- licenses
-- python-pyelftools
-- binutils
 - python
 update_on:
 - alias: python

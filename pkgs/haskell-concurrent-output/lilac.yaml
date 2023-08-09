@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-concurrent-ou
 
   '
 repo_depends:
+- haskell-ansi-terminal
 - haskell-async
 - haskell-terminal-size
-- ghc: ghc-libs
-- haskell-ansi-terminal
 update_on:
 - alpm: haskell-ansi-terminal
   source: alpm

@@ -8,15 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rst2pdf'')
 
   '
 repo_depends:
-- python-smartypants
-- python-pillow
-- python-importlib-metadata
-- python-pygments
-- python-reportlab
-- python-jinja
-- python-packaging
-- python-yaml
-- python-docutils
 - python
 update_on:
 - alias: python

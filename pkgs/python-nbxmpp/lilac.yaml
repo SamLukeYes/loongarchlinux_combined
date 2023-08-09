@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-nbxmpp'')
 
   '
-repo_depends:
-- python-precis_i18n
-- pygobject: python-gobject
-- libsoup3
-- python-idna
+repo_depends: []
 update_on:
 - alpm: python-nbxmpp
   source: archpkg

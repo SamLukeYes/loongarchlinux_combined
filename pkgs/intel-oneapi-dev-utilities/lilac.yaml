@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''intel-oneapi-dev-util
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- intel-oneapi-common
+repo_depends: []
 update_on:
 - alpm: intel-oneapi-dev-utilities
   source: archpkg

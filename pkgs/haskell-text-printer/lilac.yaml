@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-text-printer'
   '
 repo_depends:
 - haskell-text-latin1
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-text-latin1
   source: alpm

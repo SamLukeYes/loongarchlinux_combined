@@ -1,4 +1,3 @@
 destsubdir: extra
-repo_depends:
-- git
+repo_depends: []
 update_on: []

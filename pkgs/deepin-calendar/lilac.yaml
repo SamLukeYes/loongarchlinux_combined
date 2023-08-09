@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-calendar'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- hicolor-icon-theme
-- deepin-qt5integration
+repo_depends: []
 update_on:
 - alpm: deepin-calendar
   source: archpkg

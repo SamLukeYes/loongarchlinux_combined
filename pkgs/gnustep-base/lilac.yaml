@@ -10,13 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnustep-base'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- avahi
-- libxslt
-- libffi
-- gnutls
-- openssl
-- gmp
 - icu
 update_on:
 - alias: icu

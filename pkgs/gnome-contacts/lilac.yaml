@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-contacts'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- evolution-data-server
-- qrencode
-- gnome-online-accounts
-- libgee
-- gtk4
-- libadwaita
-- libportal: libportal-gtk4
-- folks
+repo_depends: []
 update_on:
 - alpm: gnome-contacts
   source: archpkg

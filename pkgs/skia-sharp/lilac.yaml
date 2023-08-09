@@ -10,13 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''skia-sharp'')
 
   '
 repo_depends:
-- fontconfig
-- libjpeg-turbo
-- libpng
-- zlib
-- libheif
-- expat
-- libwebp
+- freetype2
 update_on:
 - alpm: freetype2
   provides: libfreetype.so

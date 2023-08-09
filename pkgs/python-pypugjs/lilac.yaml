@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pypugjs'')
 
   '
 repo_depends:
-- python-charset-normalizer
 - python
-- python-six
 update_on:
 - alias: python
 - alpm: python-pypugjs

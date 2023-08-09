@@ -9,51 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libguestfs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- lsscsi
-- syslinux
-- xfsprogs
-- lzop
-- exfatprogs
-- reiserfsprogs
-- systemd: systemd-sysvcompat
-- openssh
-- pciutils
-- gptfdisk
-- jansson
-- supermin
-- psmisc
-- iproute2
-- libvirt
-- multipath-tools
-- rsync
-- libconfig
-- mdadm
-- yara
-- squashfs-tools
-- debootstrap
-- lvm2
-- nilfs-utils
-- btrfs-progs
-- lrzip
-- jfsutils
-- lsof
-- fuse2
-- procps-ng
-- dhcpcd
-- dosfstools
-- libldm
-- perl-libintl-perl
-- strace
-- iputils
-- augeas
-- sleuthkit
-- hivex
-- mtools
-- grub
-- vim
-- ntfs-3g
-- f2fs-tools
+repo_depends: []
 update_on:
 - alpm: libguestfs
   source: archpkg

@@ -10,9 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openbabel'')
 
   '
 repo_depends:
-- coordgen
-- libxml2
-- cairo
 - python
 update_on:
 - alias: python

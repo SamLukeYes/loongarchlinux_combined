@@ -11,11 +11,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-one-liner'')
   '
 repo_depends:
 - haskell-bifunctors
-- ghc: ghc-libs
-- haskell-linear-base
-- haskell-tagged
-- haskell-profunctors
 - haskell-contravariant
+- haskell-linear-base
+- haskell-profunctors
+- haskell-tagged
 update_on:
 - alpm: haskell-bifunctors
   source: alpm

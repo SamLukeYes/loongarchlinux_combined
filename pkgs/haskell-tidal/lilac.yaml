@@ -10,19 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tidal'')
 
   '
 repo_depends:
-- haskell-primitive
-- haskell-network
-- ghc: ghc-libs
-- haskell-mwc-random
-- haskell-random
-- haskell-colour
-- ghc
-- haskell-hosc
-- haskell-vector
-- haskell-tidal-link
 - haskell-clock
-- supercollider
-- glibc
+- haskell-colour
+- haskell-hosc
+- haskell-mwc-random
+- haskell-network
+- haskell-primitive
+- haskell-random
+- haskell-tidal-link
+- haskell-vector
 update_on:
 - alpm: haskell-clock
   source: alpm

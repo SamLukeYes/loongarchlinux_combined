@@ -10,12 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-xapian'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- zlib
-- glibc
 - python
+- util-linux-libs
+- xapian-core
 update_on:
-- alias: python
 - alias: python
 - alpm: util-linux-libs
   provides: libuuid.so

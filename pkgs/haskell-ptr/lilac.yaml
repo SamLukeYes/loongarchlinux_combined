@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ptr'')
 
   '
 repo_depends:
-- ghc: ghc-libs
+- haskell-contravariant
+- haskell-profunctors
 - haskell-strict-list
 - haskell-vector
-- haskell-profunctors
-- haskell-contravariant
 update_on:
 - alpm: haskell-contravariant
   source: alpm

@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gloobus-preview'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtksourceview3
-- poppler: poppler-glib
-- gstreamer: gst-plugins-base
-- pygobject: python-gobject
+repo_depends: []
 update_on:
 - alpm: gloobus-preview
   source: archpkg

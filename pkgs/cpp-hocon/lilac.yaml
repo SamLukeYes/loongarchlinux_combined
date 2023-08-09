@@ -11,13 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cpp-hocon'')
   '
 repo_depends:
 - leatherman
-- gcc: gcc-libs
-- glibc
-- boost: boost-libs
 update_on:
-- alpm: leatherman
-  provides: leatherman_util.so
-  source: alpm
 - alpm: leatherman
   provides: leatherman_locale.so
   source: alpm

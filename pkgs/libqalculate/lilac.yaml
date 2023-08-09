@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libqalculate'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- mpfr
-- curl
-- libxml2
+repo_depends: []
 update_on:
 - alpm: libqalculate
   source: archpkg

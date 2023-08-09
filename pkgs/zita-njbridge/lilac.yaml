@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zita-njbridge'')
 
   '
 repo_depends:
-- gcc: gcc-libs
+- jack2
 - zita-resampler
-- glibc
 update_on:
 - alpm: jack2
   provides: libjack.so

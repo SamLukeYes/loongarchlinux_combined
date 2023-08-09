@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-xbacklight'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- xcb-util
+repo_depends: []
 update_on:
 - alpm: xorg-xbacklight
   source: archpkg

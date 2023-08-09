@@ -8,12 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-mail-message'')
 
   '
 repo_depends:
-- perl-mime-types
-- perl-uri
-- perl-user-identity
 - perl
-- perl-mailtools
-- perl-io-stringy
 update_on:
 - alias: perl
 - alpm: perl-mail-message

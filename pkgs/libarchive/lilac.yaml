@@ -10,13 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libarchive'')
 
   '
 repo_depends:
-- bzip2
 - acl
-- zstd
-- xz
-- lz4
-- zlib
-- expat
 - openssl
 update_on:
 - alpm: acl

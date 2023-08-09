@@ -1,6 +1,5 @@
 destsubdir: extra
 repo_depends:
 - python
-- gobject-introspection: gobject-introspection-runtime
 update_on:
 - alias: python

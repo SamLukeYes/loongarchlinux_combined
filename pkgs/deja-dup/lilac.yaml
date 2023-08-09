@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deja-dup'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libsecret
-- libadwaita
-- python-pydrive2
-- pygobject: python-gobject
-- duplicity
-- gvfs
+repo_depends: []
 update_on:
 - alpm: deja-dup
   source: archpkg

@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''unhide'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- net-tools
-- psmisc
-- iproute2
-- lsof
-- procps-ng
+repo_depends: []
 update_on:
 - alpm: unhide
   source: archpkg

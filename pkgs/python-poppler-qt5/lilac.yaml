@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-poppler-qt5'')
   '
 repo_depends:
 - qt5-base
-- pyqt5: python-pyqt5
-- poppler: poppler-qt5
 update_on:
 - alpm: qt5-base
   source: alpm

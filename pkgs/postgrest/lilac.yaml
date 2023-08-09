@@ -10,47 +10,46 @@ pre_build_script: '_G.files = download_official_pkgbuild(''postgrest'')
 
   '
 repo_depends:
-- haskell-warp
-- haskell-unordered-containers
+- haskell-http
+- haskell-ranged-sets
 - haskell-aeson
-- haskell-configurator-pg
-- haskell-http-types
+- haskell-auto-update
+- haskell-base64-bytestring
 - haskell-case-insensitive
-- haskell-gitrev
-- haskell-hasql-dynamic-statements
-- haskell-protolude
 - haskell-cassava
+- haskell-configurator-pg
+- haskell-contravariant-extras
+- haskell-cookie
+- haskell-either
+- haskell-gitrev
+- haskell-hasql
+- haskell-hasql-dynamic-statements
+- haskell-hasql-notifications
+- haskell-hasql-pool
+- haskell-hasql-transaction
 - haskell-heredoc
+- haskell-http-types
+- haskell-insert-ordered-containers
+- haskell-interpolatedstring-perl6
+- haskell-jose
+- haskell-lens
+- haskell-lens-aeson
+- haskell-network
 - haskell-network-uri
 - haskell-optparse-applicative
-- haskell-lens
-- haskell-swagger2
-- haskell-wai-cors
-- haskell-retry
-- haskell-cookie
-- haskell-wai-extra
-- haskell-lens-aeson
-- haskell-hasql-transaction
+- haskell-protolude
 - haskell-regex-tdfa
-- haskell-jose
-- haskell-network
-- ghc: ghc-libs
-- haskell-hasql-notifications
-- haskell-wai
-- haskell-ranged-sets
+- haskell-retry
 - haskell-scientific
-- haskell-http
-- haskell-either
-- haskell-wai-logger
-- haskell-interpolatedstring-perl6
-- haskell-contravariant-extras
-- haskell-hasql-pool
-- haskell-auto-update
-- haskell-hasql
+- haskell-swagger2
+- haskell-unordered-containers
 - haskell-vault
 - haskell-vector
-- haskell-base64-bytestring
-- haskell-insert-ordered-containers
+- haskell-wai
+- haskell-wai-cors
+- haskell-wai-extra
+- haskell-wai-logger
+- haskell-warp
 update_on:
 - alpm: haskell-http
   source: alpm

@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-topbar'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- deepin-network-utils
-- libdbusmenu-qt: libdbusmenu-qt5
-- procps-ng
-- deepin-qt-dbus-factory
-- deepin-qt5integration
+repo_depends: []
 update_on:
 - alpm: deepin-topbar
   source: archpkg

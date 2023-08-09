@@ -10,23 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rauc'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- libnl
-- glib2
 - curl
-- util-linux: util-linux-libs
+- glib2
 - json-glib
-- openssl
-- glibc
+- util-linux-libs
 update_on:
 - alpm: curl
   provides: libcurl.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgio-2.0.so
   source: alpm
 - alpm: glib2
   provides: libglib-2.0.so

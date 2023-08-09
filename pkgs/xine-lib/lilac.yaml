@@ -9,19 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xine-lib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libjpeg-turbo
-- libxcb
-- libmodplug
-- libxvmc
-- ffmpeg
-- libxv
-- zlib
-- libxinerama
-- libx11
-- libxext
-- libnsl
-- libpng
+repo_depends: []
 update_on:
 - alpm: xine-lib
   source: archpkg

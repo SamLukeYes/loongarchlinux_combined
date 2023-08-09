@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-incremental-p
 
   '
 repo_depends:
-- haskell-parsers
-- haskell-rank2classes
-- ghc: ghc-libs
 - haskell-input-parsers
 - haskell-monoid-subclasses
+- haskell-parsers
+- haskell-rank2classes
 update_on:
 - alpm: haskell-input-parsers
   source: alpm

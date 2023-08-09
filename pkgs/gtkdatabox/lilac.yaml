@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtkdatabox'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtk3
-- pango
-- cairo
-- glade
+repo_depends: []
 update_on:
 - alpm: gtkdatabox
   source: archpkg

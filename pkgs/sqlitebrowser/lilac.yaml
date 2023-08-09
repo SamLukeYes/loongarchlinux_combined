@@ -11,11 +11,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sqlitebrowser'')
   '
 repo_depends:
 - qt5-base
-- qscintilla: qscintilla-qt5
-- qhexedit2
-- hicolor-icon-theme
 - qcustomplot
-- sqlcipher
+- qhexedit2
 update_on:
 - alpm: qt5-base
   source: alpm

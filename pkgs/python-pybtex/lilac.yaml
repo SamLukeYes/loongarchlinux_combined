@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pybtex'')
 
   '
 repo_depends:
-- python-latexcodec
-- python-six
-- python-setuptools
-- python-yaml
 - python
 update_on:
 - alias: python

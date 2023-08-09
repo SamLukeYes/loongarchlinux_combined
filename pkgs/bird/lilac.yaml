@@ -11,9 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bird'')
   '
 repo_depends:
 - readline
-- libssh
-- glibc
-- ncurses
 update_on:
 - alias: readline
 - alpm: bird

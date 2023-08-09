@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-docker'')
 
   '
-repo_depends:
-- python-urllib3
-- python-requests
-- python-websocket-client
-- python-packaging
+repo_depends: []
 update_on:
 - alpm: python-docker
   source: archpkg

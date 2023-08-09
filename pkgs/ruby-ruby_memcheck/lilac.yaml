@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-ruby_memcheck'')
 
   '
-repo_depends:
-- valgrind
-- ruby-nokogiri
+repo_depends: []
 update_on:
 - alpm: ruby-ruby_memcheck
   source: archpkg

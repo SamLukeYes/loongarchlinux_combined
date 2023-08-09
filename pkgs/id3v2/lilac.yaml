@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''id3v2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- id3lib
-- gcc: gcc-libs
-- glibc
-- zlib
+repo_depends: []
 update_on:
 - alpm: id3v2
   source: archpkg

@@ -10,29 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''setbfree'')
 
   '
 repo_depends:
-- ftgl
 - glib2
 - pango
-- liblo
-- libx11
-- libglvnd
-- cairo
-- glibc
 update_on:
 - alpm: glib2
   provides: libgobject-2.0.so
-  source: alpm
-- alpm: pango
-  provides: libpango-1.0.so
-  source: alpm
-- alpm: pango
-  provides: libpangocairo-1.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: pango
-  provides: libpango-1.0.so
   source: alpm
 - alpm: pango
   provides: libpangocairo-1.0.so

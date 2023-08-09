@@ -9,17 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-keras'')
   '
 repo_depends:
 - python
-- python-six
-- python-pillow
-- python-scipy
-- tensorflow: python-tensorflow
-- python-keras-preprocessing
-- tensorboard
-- python-pydot
-- python-yaml
-- python-pandas
-- python-numpy
-- python-h5py
 update_on:
 - alias: python
 - alpm: python-keras

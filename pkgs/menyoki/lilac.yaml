@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''menyoki'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libsixel
-- gcc: gcc-libs
-- libxrandr
+repo_depends: []
 update_on:
 - alpm: menyoki
   source: archpkg

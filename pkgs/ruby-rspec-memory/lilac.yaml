@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rspec-memory'')
 
   '
-repo_depends:
-- ruby-rspec
+repo_depends: []
 update_on:
 - alpm: ruby-rspec-memory
   source: archpkg

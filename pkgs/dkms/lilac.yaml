@@ -7,15 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''dkms'')
 
   '
-repo_depends:
-- kmod
-- gcc
-- gawk
-- sed
-- patch
-- make
-- bash
-- coreutils
+repo_depends: []
 update_on:
 - alpm: dkms
   source: archpkg

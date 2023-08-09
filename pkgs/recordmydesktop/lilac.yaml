@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''recordmydesktop'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libtheora
-- alsa-lib
-- libxdamage
-- zlib
-- popt
-- libsm
-- libvorbis
-- libxext
+repo_depends: []
 update_on:
 - alpm: recordmydesktop
   source: archpkg

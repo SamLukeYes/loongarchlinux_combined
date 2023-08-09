@@ -10,17 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-core'')
 
   '
 repo_depends:
-- haskell-tf-random
-- ghc: ghc-libs
-- haskell-random
-- haskell-setenv
+- haskell-ansi-terminal
+- haskell-call-stack
+- haskell-hspec-expectations
+- haskell-hunit
+- haskell-lexer
 - haskell-quickcheck
 - haskell-quickcheck-io
-- haskell-ansi-terminal
-- haskell-lexer
-- haskell-hunit
-- haskell-hspec-expectations
-- haskell-call-stack
+- haskell-random
+- haskell-setenv
+- haskell-tf-random
 update_on:
 - alpm: haskell-ansi-terminal
   source: alpm

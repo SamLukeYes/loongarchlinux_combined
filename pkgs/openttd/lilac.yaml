@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openttd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- fontconfig
-- fluidsynth
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: openttd
   source: archpkg

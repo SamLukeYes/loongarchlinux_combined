@@ -10,18 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lightdm'')
 
   '
 repo_depends:
-- libxcb
 - qt5-base
-- polkit
-- xorg-xrdb
-- libxdmcp
-- libgcrypt
-- libx11
-- xorg-server
-- glib2
-- libxklavier
-- pam
-- xorg-xmodmap
 update_on:
 - alpm: qt5-base
   source: alpm

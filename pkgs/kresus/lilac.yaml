@@ -10,8 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kresus'')
 
   '
 repo_depends:
-- nodejs-lts-gallium
-- woob
 - python
 update_on:
 - alias: python

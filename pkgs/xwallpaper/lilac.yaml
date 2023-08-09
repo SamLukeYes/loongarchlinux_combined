@@ -10,13 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xwallpaper'')
 
   '
 repo_depends:
-- libxpm
-- xcb-util
-- libjpeg-turbo
 - libseccomp
 - pixman
-- xcb-util-image
-- libpng
+- darktable
 update_on:
 - alpm: libseccomp
   provides: libseccomp.so

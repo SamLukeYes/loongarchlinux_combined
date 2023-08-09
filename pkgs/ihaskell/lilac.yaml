@@ -10,24 +10,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ihaskell'')
 
   '
 repo_depends:
+- haskell-aeson
+- haskell-base64-bytestring
+- haskell-cmdargs
+- haskell-ghc
+- haskell-ghc-parser
+- haskell-ghc-paths
+- haskell-http-client
+- haskell-http-client-tls
+- haskell-ipython-kernel
+- haskell-random
+- haskell-shelly
+- haskell-split
 - haskell-strict
 - haskell-unordered-containers
-- haskell-aeson
-- haskell-ipython-kernel
-- haskell-ghc-paths
 - haskell-utf8-string
-- ghc: ghc-libs
-- haskell-cmdargs
-- haskell-ghc-parser
-- haskell-shelly
-- haskell-http-client
-- haskell-split
-- haskell-random
-- ipython
-- hlint
 - haskell-vector
-- haskell-http-client-tls
-- haskell-base64-bytestring
 update_on:
 - alpm: haskell-aeson
   source: alpm

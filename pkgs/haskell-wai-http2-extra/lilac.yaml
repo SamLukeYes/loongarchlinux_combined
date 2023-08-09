@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-http2-ext
 
   '
 repo_depends:
-- haskell-warp
-- haskell-wai
-- ghc: ghc-libs
 - haskell-http-types
-- haskell-word8
 - haskell-psqueues
+- haskell-wai
+- haskell-warp
+- haskell-word8
 update_on:
 - alpm: haskell-http-types
   source: alpm

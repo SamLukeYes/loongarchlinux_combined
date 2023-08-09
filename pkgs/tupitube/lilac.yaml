@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tupitube'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-svg
-- ffmpeg
-- qt5-multimedia
+repo_depends: []
 update_on:
 - alpm: tupitube
   source: archpkg

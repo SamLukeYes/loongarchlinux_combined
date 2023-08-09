@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-sawyer'')
 
   '
-repo_depends:
-- ruby-addressable
-- ruby-faraday
+repo_depends: []
 update_on:
 - alpm: ruby-sawyer
   source: archpkg

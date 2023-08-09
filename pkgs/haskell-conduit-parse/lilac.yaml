@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-conduit-parse
 
   '
 repo_depends:
-- haskell-parsers
-- haskell-dlist
-- ghc: ghc-libs
 - haskell-conduit
-- haskell-safe-exceptions
+- haskell-dlist
+- haskell-parsers
 - haskell-safe
+- haskell-safe-exceptions
 update_on:
 - alpm: haskell-conduit
   source: alpm

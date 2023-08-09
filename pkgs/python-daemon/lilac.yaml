@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-daemon'')
 
   '
 repo_depends:
-- python-lockfile
 - python
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-daemon

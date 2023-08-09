@@ -11,9 +11,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-versions'')
   '
 repo_depends:
 - haskell-megaparsec
-- haskell-parser-combinators
-- ghc: ghc-libs
 - haskell-hashable
+- haskell-parser-combinators
 update_on:
 - alpm: haskell-megaparsec
   source: alpm

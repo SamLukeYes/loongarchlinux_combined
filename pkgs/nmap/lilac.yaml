@@ -10,14 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nmap'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- zlib
-- libssh2
-- libpcap
-- pcre
-- openssl
-- glibc
 - lua
+- libssh2
 update_on:
 - alias: lua
 - alpm: libssh2

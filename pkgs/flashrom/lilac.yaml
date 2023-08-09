@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libusb
-- libftdi
-- pciutils
+repo_depends: []
 update_on: []

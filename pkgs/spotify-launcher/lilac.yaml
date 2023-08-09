@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''spotify-launcher'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- curl: libcurl-gnutls
-- libxss
-- nss
-- desktop-file-utils
-- zenity
-- libsm
-- gtk3
-- openssl
-- sequoia-sqv
+repo_depends: []
 update_on:
 - alpm: spotify-launcher
   source: archpkg

@@ -8,9 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-agate-dbf'')
 
   '
 repo_depends:
-- python-agate
-- python-sphinx_rtd_theme
-- python-dbfread
 - python
 update_on:
 - alias: python

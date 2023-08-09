@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-berkeleydb'')
   '
 repo_depends:
 - perl
-- db5.3
 update_on:
 - alias: perl
 - alpm: perl-berkeleydb

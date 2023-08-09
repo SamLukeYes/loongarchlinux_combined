@@ -8,15 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''todoman'')
 
   '
 repo_depends:
-- pyxdg: python-pyxdg
-- python-dateutil
-- python-click-log
-- python-humanize
-- python-urwid
-- python-parsedatetime
-- python-click
-- python-atomicwrites
-- python-icalendar
 - python
 update_on:
 - alias: python

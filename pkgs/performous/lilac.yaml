@@ -10,26 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''performous'')
 
   '
 repo_depends:
-- portmidi
-- librsvg
-- glibmm
-- aubio
-- glibc
-- glib2
-- gcc: gcc-libs
-- libjpeg-turbo
-- pango
-- ffmpeg
-- opencv
-- cairo
-- libpng
 - icu
-- fontconfig
-- libepoxy
-- sdl2
-- portaudio
-- libxml++2.6
-- boost: boost-libs
+- opencv
 update_on:
 - alias: icu
 - alpm: opencv

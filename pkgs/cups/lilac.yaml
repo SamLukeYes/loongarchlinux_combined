@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cups'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- acl
-- libpaper
-- avahi
-- dbus
-#- cups-filters
-- gnutls
-- hicolor-icon-theme
-- pam
-- systemd
+repo_depends: []
 update_on:
 - alpm: cups
   source: archpkg

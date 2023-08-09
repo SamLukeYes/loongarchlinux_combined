@@ -12,12 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tiled'')
 repo_depends:
 - qt6-base
 - qt6-declarative
-- desktop-file-utils
-- gtk4: gtk-update-icon-cache
-- zstd
-- qt6-svg
-- libxkbcommon: libxkbcommon-x11
-- shared-mime-info
 update_on:
 - alpm: qt6-base
   source: alpm

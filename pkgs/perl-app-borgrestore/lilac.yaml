@@ -7,23 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-app-borgrestore'')
 
   '
-repo_depends:
-- perl-number-bytes-human
-- perl-dbi
-- perl-timedate
-- perl-log-log4perl
-- perl-log-any
-- perl-file-pushd
-- perl-log-any-adapter-log4perl
-- perl-path-tiny
-- perl-scalar-list-utils
-- perl-strictures
-- perl-json
-- borg
-- perl-ipc-run
-- perl-carp-assert
-- perl-version-compare
-- perl-function-parameters
+repo_depends: []
 update_on:
 - alpm: perl-app-borgrestore
   source: archpkg

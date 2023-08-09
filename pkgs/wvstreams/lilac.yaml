@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wvstreams'')
 
   '
 repo_depends:
-- xplc
-- zlib
 - readline
-- openssl
-- pam
 update_on:
 - alias: readline
 - alpm: wvstreams

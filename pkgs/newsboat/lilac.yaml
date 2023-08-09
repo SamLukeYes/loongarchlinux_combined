@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''newsboat'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- json-c
-- curl
-- stfl
-- libxml2
-- sqlite
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: newsboat
   source: archpkg

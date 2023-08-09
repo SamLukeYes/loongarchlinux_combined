@@ -10,87 +10,84 @@ pre_build_script: '_G.files = download_official_pkgbuild(''git-annex'')
 
   '
 repo_depends:
-- haskell-cryptonite
-- haskell-bloomfilter
-- haskell-memory
-- haskell-persistent-sqlite
-- haskell-resourcet
-- haskell-optparse-applicative
-- haskell-concurrent-output
-- haskell-quickcheck
-- haskell-tasty
-- haskell-mountpoints
-- haskell-utf8-string
-- haskell-monad-control
-- haskell-warp-tls
-- haskell-path-pieces
-- haskell-feed
-- haskell-vector
-- haskell-http-client-restricted
-- haskell-warp
-- haskell-filepath-bytestring
-- haskell-tasty-hunit
-- haskell-network-uri
-- haskell-yesod-form
-- haskell-edit-distance
-- haskell-yesod-static
-- haskell-criterion
-- haskell-network
-- haskell-async
-- haskell-disk-free-space
-- haskell-wai
-- haskell-yesod-core
-- haskell-dlist
-- haskell-random
-- haskell-crypto-api
-- haskell-torrent
-- haskell-http-client-tls
-- haskell-git-lfs
-- haskell-byteable
-- haskell-dbus
-- haskell-hinotify
-- haskell-fdo-notify
 - haskell-aeson
-- haskell-network-multicast
-- haskell-network-info
-- haskell-unix-compat
-- haskell-wai-extra
-- rsync
-- haskell-regex-tdfa
-- haskell-microlens
-- haskell-socks
-- git
-- haskell-unliftio-core
-- haskell-shakespeare
-- haskell-dav
-- haskell-safesemaphore
-- haskell-persistent
-- haskell-data-default
-- haskell-unordered-containers
-- haskell-tasty-rerun
-- haskell-http-types
-- haskell-case-insensitive
 - haskell-ansi-terminal
-- haskell-sandi
-- haskell-yesod
-- haskell-tagsoup
-- haskell-blaze-builder
-- haskell-monad-logger
-- ghc: ghc-libs
-- haskell-clientsession
+- haskell-async
 - haskell-aws
-- lsof
-- haskell-securemem
-- haskell-magic
-- haskell-http-client
-- haskell-ifelse
-- haskell-stm-chans
-- haskell-tasty-quickcheck
-- haskell-split
-- haskell-uuid
+- haskell-blaze-builder
+- haskell-bloomfilter
+- haskell-byteable
+- haskell-case-insensitive
+- haskell-clientsession
+- haskell-concurrent-output
+- haskell-cryptonite
+- haskell-crypton-connection
 - haskell-conduit
+- haskell-criterion
+- haskell-crypto-api
+- haskell-data-default
+- haskell-dav
+- haskell-dbus
+- haskell-disk-free-space
+- haskell-dlist
+- haskell-edit-distance
+- haskell-fdo-notify
+- haskell-feed
+- haskell-filepath-bytestring
+- haskell-git-lfs
+- haskell-hinotify
+- haskell-http-client
+- haskell-http-client-restricted
+- haskell-http-client-tls
 - haskell-http-conduit
+- haskell-http-types
+- haskell-ifelse
+- haskell-magic
+- haskell-memory
+- haskell-microlens
+- haskell-monad-control
+- haskell-monad-logger
+- haskell-mountpoints
+- haskell-network
+- haskell-network-info
+- haskell-network-multicast
+- haskell-network-uri
 - haskell-old-locale
+- haskell-optparse-applicative
+- haskell-path-pieces
+- haskell-persistent
+- haskell-persistent-sqlite
+- haskell-quickcheck
+- haskell-random
+- haskell-regex-tdfa
+- haskell-resourcet
+- haskell-safesemaphore
+- haskell-sandi
+- haskell-securemem
+- haskell-shakespeare
+- haskell-socks
+- haskell-split
+- haskell-stm-chans
+- haskell-tagsoup
+- haskell-tasty
+- haskell-tasty-hunit
+- haskell-tasty-quickcheck
+- haskell-tasty-rerun
+- haskell-torrent
+- haskell-unix-compat
+- haskell-unliftio-core
+- haskell-unordered-containers
+- haskell-utf8-string
+- haskell-uuid
+- haskell-vector
+- haskell-wai
+- haskell-wai-extra
+- haskell-warp
+- haskell-warp-tls
+- haskell-yesod
+- haskell-yesod-core
+- haskell-yesod-form
+- haskell-yesod-static
 update_on:
 - alpm: haskell-aeson
   source: alpm
@@ -112,15 +109,15 @@ update_on:
   source: alpm
 - alpm: haskell-concurrent-output
   source: alpm
-- alpm: haskell-connection
+- alpm: haskell-cryptonite
+  source: alpm
+- alpm: haskell-crypton-connection
   source: alpm
 - alpm: haskell-conduit
   source: alpm
 - alpm: haskell-criterion
   source: alpm
 - alpm: haskell-crypto-api
-  source: alpm
-- alpm: haskell-cryptonite
   source: alpm
 - alpm: haskell-data-default
   source: alpm

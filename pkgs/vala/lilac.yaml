@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vala'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc
-- gtk-doc
-- glib2
-- graphviz
+repo_depends: []
 update_on:
 - alpm: vala
   source: archpkg

@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-litejesd204b'')
 
   '
-repo_depends:
-- python-migen
-- python-litex
+repo_depends: []
 update_on:
 - alpm: python-litejesd204b
   source: archpkg

@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-tornasync'')
 
   '
-repo_depends:
-- python-tornado
-- python-pytest
+repo_depends: []
 update_on:
 - alpm: python-pytest-tornasync
   source: archpkg

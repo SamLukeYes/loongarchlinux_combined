@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-edalize'')
 
   '
 repo_depends:
-- python-jinja
 - python
-- python-pyparsing
 update_on:
 - alias: python
 - alpm: python-edalize

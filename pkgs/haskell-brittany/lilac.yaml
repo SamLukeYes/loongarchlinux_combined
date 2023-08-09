@@ -10,21 +10,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-brittany'')
 
   '
 repo_depends:
+- haskell-aeson
+- haskell-butcher
+- haskell-cmdargs
+- haskell-czipwith
+- haskell-data-tree-print
+- haskell-extra
+- haskell-ghc
+- haskell-ghc-exactprint
+- haskell-monad-memo
+- haskell-multistate
+- haskell-random
+- haskell-safe
 - haskell-strict
 - haskell-syb
-- haskell-czipwith
-- haskell-aeson
-- ghc: ghc-libs
-- haskell-data-tree-print
-- haskell-random
 - haskell-uniplate
-- haskell-butcher
-- haskell-ghc-exactprint
-- haskell-cmdargs
-- haskell-monad-memo
-- haskell-extra
-- haskell-multistate
-- haskell-safe
 - haskell-yaml
 update_on:
 - alpm: haskell-aeson

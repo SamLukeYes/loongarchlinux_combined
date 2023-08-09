@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''systemd-swap'')
 
   '
-repo_depends:
-- python-systemd
-- util-linux
-- python-sysv_ipc
-- systemd
+repo_depends: []
 update_on:
 - alpm: systemd-swap
   source: archpkg

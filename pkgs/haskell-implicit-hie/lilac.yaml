@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-implicit-hie'
 
   '
 repo_depends:
-- haskell-filepattern
 - haskell-attoparsec
-- ghc: ghc-libs
+- haskell-filepattern
 - haskell-yaml
 update_on:
 - alpm: haskell-attoparsec

@@ -9,13 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''httpbin'')
   '
 repo_depends:
 - python
-- python-decorator
-- python-markupsafe
-- python-six
-- python-itsdangerous
-- python-werkzeug
-- brotli: python-brotli
-- python-flask
 update_on:
 - alias: python
 - alpm: httpbin

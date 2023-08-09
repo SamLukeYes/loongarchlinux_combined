@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-vte3'')
   '
 repo_depends:
 - ruby
-- ruby-gtk3
-- vte3
 update_on:
 - alias: ruby
 - alpm: ruby-vte3

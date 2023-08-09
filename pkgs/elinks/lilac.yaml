@@ -10,12 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''elinks'')
 
   '
 repo_depends:
-- bzip2
-- tre
-- gc
-- libidn
-- zlib
-- openssl
 - lua
 update_on:
 - alias: lua

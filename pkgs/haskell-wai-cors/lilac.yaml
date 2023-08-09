@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-cors'')
 
   '
 repo_depends:
-- haskell-wai
-- ghc: ghc-libs
-- haskell-http-types
-- haskell-case-insensitive
-- haskell-base-unicode-symbols
 - haskell-attoparsec
+- haskell-base-unicode-symbols
+- haskell-case-insensitive
+- haskell-http-types
+- haskell-wai
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

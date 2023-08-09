@@ -1,9 +1,5 @@
 destsubdir: extra
 repo_depends:
-- llvm: llvm-libs
-- gcc: gcc-libs
-- spirv-llvm-translator
 - clang
-- glibc
 update_on:
 - alias: clang

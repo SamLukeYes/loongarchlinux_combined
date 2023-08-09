@@ -1,7 +1,3 @@
 destsubdir: extra
-repo_depends:
-- gtk3
-- gstreamer: gst-plugins-good
-- gstreamer: gst-plugins-base
-- gstreamer: gst-plugins-bad
+repo_depends: []
 update_on: []

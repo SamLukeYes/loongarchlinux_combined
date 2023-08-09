@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- mkinitcpio
-- lvm2: device-mapper
-- bash
+repo_depends: []
 update_on: []

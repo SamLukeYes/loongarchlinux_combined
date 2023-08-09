@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kpeople'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kcoreaddons
-- ki18n
-- kitemviews
-- kwidgetsaddons
+repo_depends: []
 update_on:
 - alpm: kpeople
   source: archpkg

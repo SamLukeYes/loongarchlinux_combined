@@ -9,21 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-mutter'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- startup-notification
-- gobject-introspection: gobject-introspection-runtime
-- dconf
-- libxkbfile
-- libgudev
-- deepin-clutter
-- zenity
-- libsm
-- libcanberra
-- gnome-desktop
-- deepin-cogl
-- upower
-- deepin-desktop-schemas
-- libxkbcommon: libxkbcommon-x11
+repo_depends: []
 update_on:
 - alpm: deepin-mutter
   source: archpkg

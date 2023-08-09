@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rygel'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gupnp-dlna
-- libsoup3
-- libmediaart
-- libgee
-- libunistring
-- tracker3
-- gstreamer: gst-editing-services
-- gtk3
-- gupnp
-- gupnp-av
+repo_depends: []
 update_on:
 - alpm: rygel
   source: archpkg

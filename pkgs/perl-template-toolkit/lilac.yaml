@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-template-toolkit
   '
 repo_depends:
 - perl
-- perl-appconfig
 update_on:
 - alias: perl
 - alpm: perl-template-toolkit

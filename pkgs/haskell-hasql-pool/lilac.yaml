@@ -13,7 +13,6 @@ repo_depends:
 - haskell-base-prelude
 - haskell-hasql
 - haskell-resource-pool
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-base-prelude
   source: alpm

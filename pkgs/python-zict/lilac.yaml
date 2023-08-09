@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-zict'')
   '
 repo_depends:
 - python
-- python-heapdict
 update_on:
 - alias: python
 - alpm: python-zict

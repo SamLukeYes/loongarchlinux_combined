@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libmesode'')
 
   '
 repo_depends:
-- glibc
 - expat
-- openssl
 update_on:
 - alpm: expat
   provides: libexpat.so

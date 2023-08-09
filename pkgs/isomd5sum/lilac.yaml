@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''isomd5sum'')
   '
 repo_depends:
 - python
-- popt
 update_on:
 - alias: python
 - alpm: isomd5sum

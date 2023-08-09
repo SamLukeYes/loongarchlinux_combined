@@ -11,18 +11,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zynaddsubfx'')
   '
 repo_depends:
 - alsa-lib
-- hicolor-icon-theme
-- glibc
-- gcc: gcc-libs
+- jack2
 - liblo
 - mxml
-- fftw
-- libglvnd
-- ttf-roboto
-- libuv
-- zlib
-- rtosc
 - portaudio
+- rtosc
 update_on:
 - alpm: alsa-lib
   provides: libasound.so
@@ -38,9 +31,6 @@ update_on:
   source: alpm
 - alpm: portaudio
   provides: libportaudio.so
-  source: alpm
-- alpm: rtosc
-  provides: librtosc.so
   source: alpm
 - alpm: rtosc
   provides: librtosc-cpp.so

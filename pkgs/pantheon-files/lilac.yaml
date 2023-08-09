@@ -10,20 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-files'')
 
   '
 repo_depends:
-- libgit2-glib
-- sqlite
-- gdk-pixbuf2
-- zeitgeist
-- libgee
-- pango
-- libnotify
-- libcanberra
-- plank
-- gtk3
-- cairo
-- glib2
-- libcloudproviders
-- gvfs
+- granite
+- libhandy
 update_on:
 - alpm: granite
   provides: libgranite.so

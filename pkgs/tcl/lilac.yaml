@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tcl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- zlib
+repo_depends: []
 update_on:
 - alpm: tcl
   source: archpkg

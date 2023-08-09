@@ -11,10 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-thin'')
   '
 repo_depends:
 - ruby
-- ruby-eventmachine
-- ruby-daemons
-- ruby-rack
-- glibc
 update_on:
 - alias: ruby
 - alpm: ruby-thin

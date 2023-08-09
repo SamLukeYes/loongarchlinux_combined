@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pptpclient'')
 
   '
 repo_depends:
-- iproute2
 - perl
-- ppp
 update_on:
 - alias: perl
 - alpm: pptpclient

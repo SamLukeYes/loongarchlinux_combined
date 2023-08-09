@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''certbot-dns-route53'')
 
   '
-repo_depends:
-- certbot
-- python-acme
-- python-boto3
+repo_depends: []
 update_on:
 - alpm: certbot-dns-route53
   source: archpkg

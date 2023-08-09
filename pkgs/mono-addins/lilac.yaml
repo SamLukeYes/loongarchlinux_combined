@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mono-addins'')
 
   '
-repo_depends:
-- gtk-sharp-2
-- mono
+repo_depends: []
 update_on:
 - alpm: mono-addins
   source: archpkg

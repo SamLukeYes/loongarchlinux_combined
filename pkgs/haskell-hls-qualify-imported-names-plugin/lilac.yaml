@@ -10,14 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-qualify-i
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-dlist
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-hls-plugin-api
-- haskell-lsp
+- haskell-dlist
+- haskell-ghc
 - haskell-ghcide
 - haskell-hls-graph
+- haskell-hls-plugin-api
+- haskell-lsp
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-aeson
   source: alpm

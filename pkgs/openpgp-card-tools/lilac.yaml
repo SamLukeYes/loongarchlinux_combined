@@ -11,18 +11,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openpgp-card-tools'')
   '
 repo_depends:
 - bzip2
-- gcc: gcc-libs
-- pcsclite
-- ccid
 - nettle
-- glibc
-- gmp
+- pcsclite
 update_on:
 - alpm: bzip2
   provides: libbz2.so
-  source: alpm
-- alpm: nettle
-  provides: libhogweed.so
   source: alpm
 - alpm: nettle
   provides: libnettle.so

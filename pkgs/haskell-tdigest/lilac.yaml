@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tdigest'')
 
   '
 repo_depends:
-- haskell-vector-algorithms
 - haskell-base-compat
-- ghc: ghc-libs
-- haskell-semigroupoids
 - haskell-reducers
+- haskell-semigroupoids
 - haskell-vector
+- haskell-vector-algorithms
 update_on:
 - alpm: haskell-base-compat
   source: alpm

@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gwenhywfar'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gnutls
-- openssl
-- libgcrypt
+repo_depends: []
 update_on:
 - alpm: gwenhywfar
   source: archpkg

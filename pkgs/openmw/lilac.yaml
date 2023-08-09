@@ -10,15 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openmw'')
 
   '
 repo_depends:
-- mygui
 - qt5-base
-- sdl2
-- ffmpeg
-- unshield
-- openal
-- openscenegraph
-- libxt
-- boost: boost-libs
 update_on:
 - alpm: qt5-base
   source: alpm

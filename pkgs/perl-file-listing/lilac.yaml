@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-file-listing'')
   '
 repo_depends:
 - perl
-- perl-http-date
 update_on:
 - alias: perl
 - alpm: perl-file-listing

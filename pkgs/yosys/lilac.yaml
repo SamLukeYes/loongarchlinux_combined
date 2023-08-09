@@ -10,13 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yosys'')
 
   '
 repo_depends:
-- bash
-- libffi
-- tcl
-- protobuf
-- abc
-- boost: boost-libs
 - python
+- protobuf
 update_on:
 - alias: python
 - alias: protobuf

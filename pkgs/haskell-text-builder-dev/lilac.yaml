@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-text-builder-
   '
 repo_depends:
 - haskell-deferred-folds
-- ghc: ghc-libs
 - haskell-isomorphism-class
 - haskell-split
 update_on:

@@ -8,13 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''molecule-plugins'')
 
   '
 repo_depends:
-- python-docker
-- python-requests
-- molecule
-- python-selinux
-- python-cryptography
-- python-boto3
-- python-packaging
 - python
 update_on:
 - alias: python

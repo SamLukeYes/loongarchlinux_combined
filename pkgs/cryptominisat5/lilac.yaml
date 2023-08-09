@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cryptominisat5'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- m4ri
-- gcc: gcc-libs
-- zlib
-- sqlite
-- boost: boost-libs
+repo_depends: []
 update_on:
 - alpm: cryptominisat5
   source: archpkg

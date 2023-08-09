@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kosmindoormap'')
 
   '
 repo_depends:
-- kopeninghours
 - protobuf
-- kpublictransport
 update_on:
 - alias: protobuf
 - alpm: kosmindoormap

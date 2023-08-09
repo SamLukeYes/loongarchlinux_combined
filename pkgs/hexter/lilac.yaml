@@ -11,33 +11,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hexter'')
   '
 repo_depends:
 - alsa-lib
-- glib2
-- pango
-- liblo
 - gtk2
-- cairo
-- glibc
+- glib2
+- liblo
+- pango
 update_on:
 - alpm: alsa-lib
   provides: libasound.so
   source: alpm
 - alpm: gtk2
-  provides: libgdk-x11-2.0.so
-  source: alpm
-- alpm: gtk2
   provides: libgtk-x11-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
   source: alpm
 - alpm: glib2
   provides: libgobject-2.0.so
   source: alpm
 - alpm: liblo
   provides: liblo.so
-  source: alpm
-- alpm: pango
-  provides: libpango-1.0.so
   source: alpm
 - alpm: pango
   provides: libpangocairo-1.0.so

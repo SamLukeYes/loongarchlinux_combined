@@ -10,28 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kid3'')
 
   '
 repo_depends:
-- qt5-multimedia
-- kxmlgui
-- qt5-base
-- id3lib
-- kio
-- chromaprint
-- libmp4v2
 - qt5-declarative
-- libvorbis
-- flac
-- taglib
+- qt5-base
 update_on:
 - alpm: qt5-declarative
   source: alpm
   strip_release: true
 - alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: qt5-declarative
-  source: alpm
-  strip_release: true
-- alpm: qt5-declarative
   source: alpm
   strip_release: true
 - alpm: kid3

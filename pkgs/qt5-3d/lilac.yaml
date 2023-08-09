@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qt5-3d'')
 
   '
 repo_depends:
-- assimp
 - qt5-declarative
 update_on:
 - alpm: qt5-declarative

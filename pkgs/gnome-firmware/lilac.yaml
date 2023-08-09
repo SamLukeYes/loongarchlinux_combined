@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-firmware'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxmlb
-- fwupd
-- gtk4
-- libadwaita
-- glib2
-- systemd
+repo_depends: []
 update_on:
 - alpm: gnome-firmware
   source: archpkg

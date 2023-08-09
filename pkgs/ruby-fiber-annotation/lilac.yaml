@@ -1,0 +1,15 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''ruby-fiber-annotation'')
+
+  '
+repo_depends:
+- ruby
+update_on:
+- alias: ruby
+- alpm: ruby-fiber-annotation
+  source: archpkg

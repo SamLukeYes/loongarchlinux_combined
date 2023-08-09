@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-can'')
 
   '
 repo_depends:
-- python-aenum
-- python-setuptools
-- python-typing_extensions
-- python-wrapt
 - python
 update_on:
 - alias: python

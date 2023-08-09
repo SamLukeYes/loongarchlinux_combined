@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''oidentd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libnetfilter_conntrack
-- glibc
+repo_depends: []
 update_on:
 - alpm: oidentd
   source: archpkg

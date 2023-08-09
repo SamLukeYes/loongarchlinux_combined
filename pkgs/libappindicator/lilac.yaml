@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libappindicator'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libindicator: libindicator-gtk2
-- libdbusmenu: libdbusmenu-gtk3
-- libindicator: libindicator-gtk3
-- libdbusmenu: libdbusmenu-gtk2
+repo_depends: []
 update_on:
 - alpm: libappindicator
   source: archpkg

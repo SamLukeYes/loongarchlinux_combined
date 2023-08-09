@@ -10,33 +10,31 @@ pre_build_script: '_G.files = download_official_pkgbuild(''agda'')
 
   '
 repo_depends:
-- haskell-strict
-- haskell-unordered-containers
-- haskell-aeson
-- haskell-case-insensitive
-- haskell-gitrev
-- haskell-parallel
-- haskell-zlib
-- haskell-data-hash
-- haskell-hashable
-- ghc
-- haskell-regex-tdfa
-- haskell-monad-control
-- haskell-cpphs
-- haskell-edit-distance
-- haskell-async
-- ghc: ghc-libs
-- haskell-uri-encode
 - haskell-stmonadtrans
-- haskell-dlist
-- haskell-split
+- haskell-aeson
+- haskell-async
 - haskell-blaze-html
-- haskell-time-compat
-- haskell-vector-hashtables
-- haskell-vector
-- haskell-murmur-hash
 - haskell-boxes
+- haskell-case-insensitive
+- haskell-cpphs
+- haskell-data-hash
+- haskell-dlist
+- haskell-edit-distance
 - haskell-equivalence
+- haskell-gitrev
+- haskell-hashable
+- haskell-monad-control
+- haskell-murmur-hash
+- haskell-parallel
+- haskell-regex-tdfa
+- haskell-split
+- haskell-strict
+- haskell-time-compat
+- haskell-unordered-containers
+- haskell-uri-encode
+- haskell-vector
+- haskell-vector-hashtables
+- haskell-zlib
 update_on:
 - alpm: haskell-stmonadtrans
   source: alpm

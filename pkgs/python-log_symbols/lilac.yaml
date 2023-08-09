@@ -8,7 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-log_symbols'')
 
   '
 repo_depends:
-- python-colorama
 - python
 update_on:
 - alias: python

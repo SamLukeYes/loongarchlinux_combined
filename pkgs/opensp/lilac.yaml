@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opensp'')
 
   '
 repo_depends:
-- sgml-common
 - perl
 update_on:
 - alias: perl

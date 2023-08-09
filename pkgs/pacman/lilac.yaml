@@ -1,14 +1,3 @@
 destsubdir: core
-repo_depends:
-- gawk
-- curl
-- grep
-- gpgme
-- libarchive
-- gettext
-- bash
-- gnupg
-- glibc
-- pacman-mirrorlist
-- coreutils
+repo_depends: []
 update_on: []

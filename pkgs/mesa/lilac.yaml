@@ -1,26 +1,7 @@
 destsubdir: extra
 repo_depends:
-- spirv-llvm-translator
-- libxdamage
-- libomxil-bellagio
-- clang
-- llvm: llvm-libs
-- vulkan-icd-loader
-- libglvnd
-- zstd
-- systemd
-- libxcb
-- libxxf86vm
-- libclc
-- libdrm
-- lm_sensors
-- expat
 - python
-- elfutils: libelf
-- wayland
-- libunwind
-- libx11
-- libxshmfence
+- clang
 update_on:
 - alias: python
 - alias: clang

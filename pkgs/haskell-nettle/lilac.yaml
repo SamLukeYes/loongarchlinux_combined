@@ -10,12 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-nettle'')
 
   '
 repo_depends:
-- ghc: ghc-libs
+- haskell-byteable
 - haskell-crypto-cipher-types
 - haskell-tagged
 - haskell-securemem
-- haskell-byteable
-- nettle
 update_on:
 - alpm: haskell-byteable
   source: alpm

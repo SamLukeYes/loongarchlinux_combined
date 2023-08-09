@@ -8,9 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-flake8-black''
 
   '
 repo_depends:
-- python-tomli
-- python-black
-- flake8
 - python
 update_on:
 - alias: python

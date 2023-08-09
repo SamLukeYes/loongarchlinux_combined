@@ -11,10 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-wai-jso
   '
 repo_depends:
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-hspec-wai
-- haskell-case-insensitive
 - haskell-aeson-qq
+- haskell-case-insensitive
+- haskell-hspec-wai
 update_on:
 - alpm: haskell-aeson
   source: alpm

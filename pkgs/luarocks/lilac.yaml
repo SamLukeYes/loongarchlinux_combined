@@ -1,9 +1,5 @@
 destsubdir: extra
 repo_depends:
-- curl
-- coreutils
-- unzip
-- zip
 - lua
 update_on:
 - alias: lua

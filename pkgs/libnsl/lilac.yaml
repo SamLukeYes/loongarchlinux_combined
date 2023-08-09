@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libnsl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libtirpc
-- glibc
+repo_depends: []
 update_on:
 - alpm: libnsl
   source: archpkg

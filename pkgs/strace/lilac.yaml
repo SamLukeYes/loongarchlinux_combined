@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''strace'')
 
   '
 repo_depends:
-- libunwind
 - perl
 update_on:
 - alias: perl

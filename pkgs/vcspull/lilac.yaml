@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vcspull'')
 
   '
 repo_depends:
-- python-libvcs
-- python-colorama
-- python-yaml
-- python-shtab
 - python
 update_on:
 - alias: python

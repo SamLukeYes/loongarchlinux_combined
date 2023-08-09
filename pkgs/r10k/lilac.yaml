@@ -8,20 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''r10k'')
 
   '
 repo_depends:
-- ruby-faraday-net_http
 - ruby
-- ruby-log4r
-- ruby-faraday
-- ruby-gettext
-- ruby-puppet_forge
-- ruby-multi_json
-- ruby-rugged
-- ruby-fast_gettext
-- ruby-cri
-- ruby-semantic_puppet
-- ruby-gettext-setup
-- ruby-colored2
-- ruby-jwt
 update_on:
 - alias: ruby
 - alpm: r10k

@@ -11,10 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-gpgme'')
   '
 repo_depends:
 - ruby
-- libgpg-error
-- libassuan
-- gpgme
-- ruby-mini_portile2
 update_on:
 - alias: ruby
 - alpm: ruby-gpgme

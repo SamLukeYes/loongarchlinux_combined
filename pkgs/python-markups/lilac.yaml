@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-markups'')
 
   '
-repo_depends:
-- python-markdown-math
+repo_depends: []
 update_on:
 - alpm: python-markups
   source: archpkg

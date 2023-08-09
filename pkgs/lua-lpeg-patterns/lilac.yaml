@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''lua-lpeg-patterns'')
 
   '
-repo_depends:
-- lpeg: lua52-lpeg
-- lpeg: lua51-lpeg
-- lpeg: lua53-lpeg
-- lpeg: lua-lpeg
+repo_depends: []
 update_on:
 - alpm: lua-lpeg-patterns
   source: archpkg

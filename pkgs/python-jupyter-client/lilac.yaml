@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-jupyter-client'')
 
   '
-repo_depends:
-- python-dateutil
-- python-traitlets
-- python-pyzmq
-#- python-ipykernel
-- python-jupyter-core
-- python-entrypoints
+repo_depends: []
 update_on:
 - alpm: python-jupyter-client
   source: archpkg

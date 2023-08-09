@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-disk-utility'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libsecret
-- libhandy
-- parted
-- libpwquality
-- libnotify
-- libcanberra
-- udisks2
-- gtk3
-- libdvdread
-- systemd
+repo_depends: []
 update_on:
 - alpm: gnome-disk-utility
   source: archpkg

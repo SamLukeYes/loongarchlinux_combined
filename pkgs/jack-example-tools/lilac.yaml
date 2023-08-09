@@ -11,12 +11,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jack-example-tools'')
   '
 repo_depends:
 - alsa-lib
+- jack2
 - libsamplerate
 - libsndfile
+- readline
 - zita-alsa-pcmi
 - zita-resampler
-- readline
-- glibc
 update_on:
 - alpm: alsa-lib
   provides: libasound.so
@@ -30,7 +30,6 @@ update_on:
 - alpm: libsndfile
   provides: libsndfile.so
   source: alpm
-- alias: readline
 - alpm: readline
   provides: libreadline.so
   source: alpm

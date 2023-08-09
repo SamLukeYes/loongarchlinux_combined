@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-helpers
 
   '
 repo_depends:
-- python-pytest
 - python
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-pytest-helpers-namespace

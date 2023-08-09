@@ -8,7 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-business-isbn'')
 
   '
 repo_depends:
-- perl-business-isbn-data
 - perl
 update_on:
 - alias: perl

@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- fontconfig
-- freetype2
-- ncurses
+repo_depends: []
 update_on: []

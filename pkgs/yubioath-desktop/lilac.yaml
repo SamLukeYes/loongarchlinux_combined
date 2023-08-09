@@ -10,16 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yubioath-desktop'')
 
   '
 repo_depends:
-- qt5-quickcontrols2
-- yubikey-manager
 - qt5-base
-- qt5-quickcontrols
-- python-pyotherside
-- pcsclite
-- ccid
 - qt5-declarative
-- qt5-multimedia
-- qt5-graphicaleffects
 update_on:
 - alpm: qt5-base
   source: alpm

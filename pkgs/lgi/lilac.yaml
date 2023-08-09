@@ -10,11 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lgi'')
 
   '
 repo_depends:
-- glib2
-- gobject-introspection: gobject-introspection-runtime
-- libffi
-- lua53
-- glibc
 - lua
 update_on:
 - alias: lua

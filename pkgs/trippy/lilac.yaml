@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''trippy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
-- libcap
+repo_depends: []
 update_on:
 - alpm: trippy
   source: archpkg

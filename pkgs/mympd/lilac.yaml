@@ -10,14 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mympd'')
 
   '
 repo_depends:
+- lua
+- flac
 - libid3tag
 - openssl
 - pcre2
-- flac
-- glibc
-- lua
 update_on:
-- alias: lua
 - alias: lua
 - alpm: flac
   provides: libFLAC.so

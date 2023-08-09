@@ -10,14 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opensnitch'')
 
   '
 repo_depends:
-- python-pyinotify
-- grpc: python-grpcio
-- protobuf: python-protobuf
-- python-slugify
-- python-notify2
-- pyqt5: python-pyqt5
-- hicolor-icon-theme
-- libnetfilter_queue
+- python
 update_on:
+- alias: python
 - alpm: opensnitch
   source: archpkg

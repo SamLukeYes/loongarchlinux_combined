@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mbedtls2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glibc
+repo_depends: []
 update_on:
 - alpm: mbedtls2
   source: archpkg

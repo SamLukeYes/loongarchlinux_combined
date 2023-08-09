@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mjpegtools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
-- libjpeg-turbo
-- libdv
-- bash
-- glibc
-- libpng
+repo_depends: []
 update_on:
 - alpm: mjpegtools
   source: archpkg

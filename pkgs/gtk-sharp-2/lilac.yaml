@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtk-sharp-2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- mono
-- gtk2
+repo_depends: []
 update_on:
 - alpm: gtk-sharp-2
   source: archpkg

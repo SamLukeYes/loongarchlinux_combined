@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''beatslash-lv2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtkmm
+repo_depends: []
 update_on:
 - alpm: beatslash-lv2
   source: archpkg

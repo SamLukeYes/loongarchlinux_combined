@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nginx-mod-auth-pam'')
 
   '
 repo_depends:
-- pam
 - nginx
 update_on:
 - alpm: nginx

@@ -10,15 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''drumstick'')
 
   '
 repo_depends:
-- glibc
-- gcc: gcc-libs
 - qt6-base
-- qt6-5compat
-- hicolor-icon-theme
+- alsa-lib
+- fluidsynth
+- libao
+- libpulse
+- sonivox
 update_on:
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
 - alpm: qt6-base
   source: alpm
   strip_release: true

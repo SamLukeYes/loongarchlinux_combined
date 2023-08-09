@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-commonmark-pa
 
   '
 repo_depends:
-- haskell-commonmark-extensions
-- ghc: ghc-libs
-- haskell-pandoc-types
 - haskell-commonmark
+- haskell-commonmark-extensions
+- haskell-pandoc-types
 update_on:
 - alpm: haskell-commonmark
   source: alpm

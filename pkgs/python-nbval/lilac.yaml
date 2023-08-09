@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-nbval'')
 
   '
-repo_depends:
-- python-ipykernel
-- jupyter-nbformat
-- python-pytest
-- python-coverage
+repo_depends: []
 update_on:
 - alpm: python-nbval
   source: archpkg

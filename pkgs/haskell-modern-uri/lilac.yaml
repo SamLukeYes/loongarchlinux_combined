@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-modern-uri'')
 
   '
 repo_depends:
-- ghc: ghc-libs
-- haskell-reflection
-- haskell-hashable
-- haskell-tagged
 - haskell-quickcheck
+- haskell-contravariant
+- haskell-hashable
 - haskell-megaparsec
 - haskell-profunctors
-- haskell-contravariant
+- haskell-reflection
+- haskell-tagged
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

@@ -11,27 +11,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''alsa-utils'')
   '
 repo_depends:
 - alsa-lib
-- gcc: gcc-libs
-- pciutils
 - ncurses
 - libsamplerate
-- psmisc
-- glibc
 update_on:
 - alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: alsa-lib
   provides: libatopology.so
-  source: alpm
-- alpm: ncurses
-  provides: libformw.so
-  source: alpm
-- alpm: ncurses
-  provides: libmenuw.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
   source: alpm
 - alpm: ncurses
   provides: libpanelw.so

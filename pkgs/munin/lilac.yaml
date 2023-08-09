@@ -8,18 +8,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''munin'')
 
   '
 repo_depends:
-- perl-uri
-- perl-io-socket-inet6
-- perl-net-server
-- perl-log-log4perl
-- rrdtool
-- perl-date-manip
 - perl
-- perl-html-template
-- perl-file-copy-recursive
-- perl-fcgi
 update_on:
-- alias: perl
 - alias: perl
 - alpm: munin
   source: archpkg

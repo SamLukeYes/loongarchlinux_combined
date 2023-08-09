@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-email-mime'')
 
   '
-repo_depends:
-- perl-module-runtime
-- perl-email-address-xs
-- perl-email-messageid
+repo_depends: []
 update_on:
 - alpm: perl-email-mime
   source: archpkg

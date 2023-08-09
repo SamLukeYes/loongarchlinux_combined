@@ -10,15 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''osdlyrics'')
 
   '
 repo_depends:
-- dbus-glib
-- libmpd
-- curl
-- desktop-file-utils
-- libnotify
-- xmms2
-- gtk2
-- sqlite
-- hicolor-icon-theme
 - python
 update_on:
 - alias: python

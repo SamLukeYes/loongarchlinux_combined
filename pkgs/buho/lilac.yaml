@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''buho'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- mauikit-accounts
-- hicolor-icon-theme
-- mauikit-filebrowsing
-- mauikit-texteditor
+repo_depends: []
 update_on:
 - alpm: buho
   source: archpkg

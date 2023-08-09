@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-unagi-streams
 repo_depends:
 - haskell-io-streams
 - haskell-unagi-chan
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-io-streams
   source: alpm

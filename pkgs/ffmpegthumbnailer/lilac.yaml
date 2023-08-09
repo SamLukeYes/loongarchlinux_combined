@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libpng
-- ffmpeg
+repo_depends: []
 update_on: []

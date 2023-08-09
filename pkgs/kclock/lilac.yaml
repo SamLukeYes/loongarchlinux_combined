@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kclock'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kirigami-addons
-- qt5-svg
-- plasma-framework
-- qt5-multimedia
+repo_depends: []
 update_on:
 - alpm: kclock
   source: archpkg

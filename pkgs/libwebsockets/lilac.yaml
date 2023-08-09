@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libwebsockets'')
 
   '
 repo_depends:
-- zlib
-- libev
-- openssl
-- libuv
-- glibc
+- libcap
+- glib2
 update_on:
 - alpm: libcap
   provides: libcap.so

@@ -10,28 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''modemmanager'')
 
   '
 repo_depends:
-- polkit
-- ppp
+- libmm-glib
+- glib2
+- systemd-libs
+- libgudev
 - libqmi
 - libmbim
-- mobile-broadband-provider-info
-- systemd
-- libgudev
 update_on:
 - alpm: libmm-glib
   provides: libmm-glib.so
   source: alpm
 - alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: glib2
   provides: libgio-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgmodule-2.0.so
   source: alpm
 - alpm: systemd-libs
   provides: libsystemd.so
@@ -44,15 +34,6 @@ update_on:
   source: alpm
 - alpm: libmbim
   provides: libmbim-glib.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgio-2.0.so
   source: alpm
 - alpm: modemmanager
   source: archpkg

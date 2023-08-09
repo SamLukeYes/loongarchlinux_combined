@@ -7,18 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''feeluown'')
 
   '
-repo_depends:
-- python-tomlkit
-- python-mutagen
-- python-requests
-- pyopengl: python-opengl
-- mpv
-- python-qasync
-- pyqt5: python-pyqt5
-- python-packaging
-- python-janus
-- qt5-svg
-- python-pydantic
+repo_depends: []
 update_on:
 - alpm: feeluown
   source: archpkg

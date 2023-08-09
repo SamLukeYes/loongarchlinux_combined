@@ -7,16 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''retext'')
 
   '
-repo_depends:
-- python-markdown
-- xdg-utils
-- python-chardet
-- python-pygments
-- desktop-file-utils
-- pyqt6: python-pyqt6
-- python-docutils
-- hicolor-icon-theme
-- shared-mime-info
+repo_depends: []
 update_on:
 - alpm: retext
   source: archpkg

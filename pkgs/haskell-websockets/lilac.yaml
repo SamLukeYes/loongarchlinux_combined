@@ -10,17 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-websockets'')
 
   '
 repo_depends:
-- haskell-network
 - haskell-async
-- ghc: ghc-libs
-- haskell-random
-- haskell-case-insensitive
-- haskell-streaming-commons
-- haskell-entropy
 - haskell-attoparsec
-- haskell-sha
-- haskell-clock
 - haskell-base64-bytestring
+- haskell-case-insensitive
+- haskell-clock
+- haskell-entropy
+- haskell-network
+- haskell-random
+- haskell-sha
+- haskell-streaming-commons
 update_on:
 - alpm: haskell-async
   source: alpm

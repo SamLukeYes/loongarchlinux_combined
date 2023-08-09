@@ -6,18 +6,8 @@ post_build_script: 'git_add_files(_G.files)
   '
 pre_build_script: '_G.files = download_official_pkgbuild(''frogatto'')
 
-  add_into_array(''arch'', [''loong64''])
-
   '
-repo_depends:
-- sdl_image
-- sdl_mixer
-- sdl_ttf
-- frogatto-data
-- glew
-- ttf-ubuntu-font-family
-- boost: boost-libs
-- libpng
+repo_depends: []
 update_on:
 - alpm: frogatto
   source: archpkg

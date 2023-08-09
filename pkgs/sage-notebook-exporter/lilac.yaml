@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''sage-notebook-exporter'')
 
   '
-repo_depends:
-- jupyter-nbconvert
-- ipython
-- python-six
+repo_depends: []
 update_on:
 - alpm: sage-notebook-exporter
   source: archpkg

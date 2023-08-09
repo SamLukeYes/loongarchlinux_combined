@@ -10,16 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''allure'')
 
   '
 repo_depends:
-- haskell-optparse-applicative
-- haskell-th-lift-instances
-- haskell-async
-- ghc: ghc-libs
-- haskell-enummapset
-- haskell-splitmix
-- haskell-primitive
 - haskell-lambdahack
+- haskell-async
+- haskell-enummapset
 - haskell-file-embed
 - haskell-hsini
+- haskell-optparse-applicative
+- haskell-primitive
+- haskell-splitmix
+- haskell-th-lift-instances
 update_on:
 - alpm: haskell-lambdahack
   source: alpm

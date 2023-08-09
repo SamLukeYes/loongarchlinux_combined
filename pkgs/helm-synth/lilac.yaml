@@ -11,27 +11,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''helm-synth'')
   '
 repo_depends:
 - alsa-lib
-- gcc: gcc-libs
-- hicolor-icon-theme
-- libxinerama
 - freetype2
-- libglvnd
-- libxext
-- libx11
-- glibc
 update_on:
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
 - alpm: alsa-lib
   provides: libasound.so
   source: alpm

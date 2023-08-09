@@ -11,14 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vagrant'')
   '
 repo_depends:
 - ruby
-- xz
-- curl
-- libxslt
-- libssh2
-- libarchive
 - perl
-- rsync
-- libxml2
 update_on:
 - alias: ruby
 - alias: perl

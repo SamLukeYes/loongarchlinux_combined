@@ -10,13 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''php-redis'')
 
   '
 repo_depends:
-- php-igbinary
-- glibc
-- php-igbinary: php-legacy-igbinary
+- liblzf
 update_on:
-- alpm: liblzf
-  provides: liblzf.so
-  source: alpm
 - alpm: liblzf
   provides: liblzf.so
   source: alpm

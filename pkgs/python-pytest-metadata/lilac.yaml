@@ -8,7 +8,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-metadat
 
   '
 repo_depends:
-- python-pytest
+- python
 update_on:
+- alias: python
 - alpm: python-pytest-metadata
   source: archpkg

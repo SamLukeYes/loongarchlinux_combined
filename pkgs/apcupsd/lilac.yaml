@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''apcupsd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libusb-compat
-- gcc: gcc-libs
-- systemd: systemd-sysvcompat
+repo_depends: []
 update_on:
 - alpm: apcupsd
   source: archpkg

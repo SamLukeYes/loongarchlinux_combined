@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-blaze-html'')
 
   '
 repo_depends:
-- haskell-blaze-markup
 - haskell-blaze-builder
-- ghc: ghc-libs
+- haskell-blaze-markup
 update_on:
 - alpm: haskell-blaze-builder
   source: alpm

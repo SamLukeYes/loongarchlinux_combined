@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''lightdm-webkit-theme-litarvan'')
 
   '
-repo_depends:
-- lightdm-webkit2-greeter
+repo_depends: []
 update_on:
 - alpm: lightdm-webkit-theme-litarvan
   source: archpkg

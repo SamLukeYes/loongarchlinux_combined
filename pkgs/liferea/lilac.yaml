@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''liferea'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libpeas
-- webkit2gtk
-- pygobject: python-gobject
+repo_depends: []
 update_on:
 - alpm: liferea
   source: archpkg

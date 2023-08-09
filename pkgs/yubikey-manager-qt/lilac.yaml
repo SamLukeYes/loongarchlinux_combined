@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yubikey-manager-qt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-quickcontrols2
-- yubikey-manager
-- qt5-quickcontrols
-- python-pyotherside
-- qt5-graphicaleffects
+repo_depends: []
 update_on:
 - alpm: yubikey-manager-qt
   source: archpkg

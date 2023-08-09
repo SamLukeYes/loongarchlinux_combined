@@ -10,8 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-lmdb'')
 
   '
 repo_depends:
-- python-cffi
-- lmdb
 - python
 update_on:
 - alias: python

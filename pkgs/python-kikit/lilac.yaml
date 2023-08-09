@@ -8,16 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-kikit'')
 
   '
 repo_depends:
-- python-pcbnewtransition
-- python-pybars3
-- python-commentjson
-- python-click
-- kicad
-- python-solidpython
-- python-shapely
-- python-numpy
 - python
-- python-markdown2
 update_on:
 - alias: python
 - alpm: python-kikit

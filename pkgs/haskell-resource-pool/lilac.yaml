@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-resource-pool
 
   '
 repo_depends:
-- ghc: ghc-libs
 - haskell-hashable
-- haskell-vector
 - haskell-monad-control
 - haskell-transformers-base
+- haskell-vector
 update_on:
 - alpm: haskell-hashable
   source: alpm

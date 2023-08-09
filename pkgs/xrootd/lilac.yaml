@@ -10,17 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xrootd'')
 
   '
 repo_depends:
-- json-c
-- python-setuptools
-- davix
-- curl
-- tinyxml
 - perl
-- fuse2
-- libxml2
-- openssl
 - python
-- systemd
 update_on:
 - alias: perl
 - alias: python

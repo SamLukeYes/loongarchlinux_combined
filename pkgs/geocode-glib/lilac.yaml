@@ -10,8 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''geocode-glib'')
 
   '
 repo_depends:
-- glib2
-- json-glib
+- libsoup
+- libsoup3
 update_on:
 - alpm: libsoup
   provides: libsoup-2.4.so

@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''snappy-player'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- clutter-gtk
-- gstreamer: gst-plugins-base
-- clutter-gst
+repo_depends: []
 update_on:
 - alpm: snappy-player
   source: archpkg

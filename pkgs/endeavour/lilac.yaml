@@ -10,10 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''endeavour'')
 
   '
 repo_depends:
-- evolution-data-server
-- gtk4
-- libadwaita
-- libpeas
 - python
 update_on:
 - alias: python

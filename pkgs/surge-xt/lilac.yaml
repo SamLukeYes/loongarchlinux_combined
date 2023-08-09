@@ -9,24 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''surge-xt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- xdg-utils
-- xcb-util-keysyms
-- glibc
-- hicolor-icon-theme
-- gcc: gcc-libs
-- xcb-util-cursor
-- xcb-util-image
-- cairo
-- libxkbcommon: libxkbcommon-x11
-- fontconfig
-- libxcb
-- libsamplerate
-- freetype2
-- fmt
-- xcb-util
-- xcb-util-renderutil
-- libx11
+repo_depends: []
 update_on:
 - alpm: surge-xt
   source: archpkg

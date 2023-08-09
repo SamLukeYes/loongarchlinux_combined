@@ -1,4 +1,3 @@
 destsubdir: extra
-repo_depends:
-- primesieve
+repo_depends: []
 update_on: []

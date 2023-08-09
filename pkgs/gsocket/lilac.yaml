@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gsocket'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- binutils
-- openssh
-- grep
-- rsync
-- bash
-- sshfs
-- openssl
-- glibc
-- coreutils
+repo_depends: []
 update_on:
 - alpm: gsocket
   source: archpkg

@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''calindori'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- knotifications
-- kirigami2
-- kdbusaddons
-- kcalendarcore
-- kpeople
-- qt5-svg
+repo_depends: []
 update_on:
 - alpm: calindori
   source: archpkg

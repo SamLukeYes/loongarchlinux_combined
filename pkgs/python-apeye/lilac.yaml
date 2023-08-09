@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-apeye'')
 
   '
 repo_depends:
-- python-requests
-- python-platformdirs
-- python-domdf-python-tools
-- python-apeye-core
 - python
 update_on:
 - alias: python

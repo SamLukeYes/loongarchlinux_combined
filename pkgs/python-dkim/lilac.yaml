@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-dkim'')
 
   '
-repo_depends:
-- python-dnspython
+repo_depends: []
 update_on:
 - alpm: python-dkim
   source: archpkg

@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''juk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- hicolor-icon-theme
-- phonon: phonon-qt5
-- kio
-- taglib
+repo_depends: []
 update_on:
 - alpm: juk
   source: archpkg

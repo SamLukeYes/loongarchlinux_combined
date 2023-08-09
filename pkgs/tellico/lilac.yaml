@@ -10,25 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tellico'')
 
   '
 repo_depends:
-- libcdio
-- libkcddb
-- hicolor-icon-theme
-- yaz
-- qt5-charts
-- qt5-base
-- solid
-- exempi
-- kxmlgui
-- kitemmodels
-- perl-text-bibtex
-- knewstuff
 - python
-- poppler: poppler-qt5
-- kfilemetadata
-- kio
-- libksane
-- taglib
-- qt5-webengine
+- qt5-base
 update_on:
 - alias: python
 - alpm: qt5-base

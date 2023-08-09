@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-flasgger'')
 
   '
-repo_depends:
-- python-six
-- python-yaml
-- python-jsonschema
-- python-mistune
-- python-flask
+repo_depends: []
 update_on:
 - alpm: python-flasgger
   source: archpkg

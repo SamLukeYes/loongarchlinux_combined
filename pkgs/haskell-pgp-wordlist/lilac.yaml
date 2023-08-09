@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pgp-wordlist'
   '
 repo_depends:
 - haskell-vector
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-vector
   source: alpm

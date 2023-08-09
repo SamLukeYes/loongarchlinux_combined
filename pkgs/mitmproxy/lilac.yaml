@@ -7,33 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mitmproxy'')
 
   '
-repo_depends:
-- python-zstandard
-- python-blinker
-- python-kaitaistruct
-- python-hyperframe
-- python-tornado
-- python-certifi
-- python-publicsuffix2
-- python-asgiref
-- python-ldap3
-- python-sortedcontainers
-- python-mitmproxy-wireguard
-- python-urwid
-- python-passlib
-- protobuf: python-protobuf
-- python-pyparsing
-- python-msgpack
-- brotli: python-brotli
-- python-flask
-- python-setuptools
-- python-pyperclip
-- python-cryptography
-- python-h11
-- python-wsproto
-- python-pyopenssl
-- python-ruamel-yaml
-- python-h2
+repo_depends: []
 update_on:
 - alpm: mitmproxy
   source: archpkg

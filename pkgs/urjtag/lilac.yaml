@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''urjtag'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libusb-compat
-- libftdi-compat
+repo_depends: []
 update_on:
 - alpm: urjtag
   source: archpkg

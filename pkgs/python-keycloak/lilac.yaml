@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-keycloak'')
 
   '
 repo_depends:
-- python-requests
-- python-requests-toolbelt
-- python-urllib3
-- python-jose
 - python
 update_on:
 - alias: python

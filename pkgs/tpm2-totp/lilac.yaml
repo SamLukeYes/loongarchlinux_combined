@@ -10,15 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tpm2-totp'')
 
   '
 repo_depends:
-- qrencode
 - tpm2-tss
 update_on:
-- alpm: tpm2-tss
-  provides: libtss2-esys.so
-  source: alpm
-- alpm: tpm2-tss
-  provides: libtss2-mu.so
-  source: alpm
 - alpm: tpm2-tss
   provides: libtss2-tctildr.so
   source: alpm

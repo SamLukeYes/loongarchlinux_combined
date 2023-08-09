@@ -1,15 +1,3 @@
 destsubdir: extra
-repo_depends:
-- mutter43
-- accountsservice
-- gnome-session
-- libgee
-- budgie-control-center
-- budgie-screensaver
-- libpeas
-- zenity
-- ibus
-- gnome-bluetooth
-- libwnck3
-- gnome-menus
+repo_depends: []
 update_on: []

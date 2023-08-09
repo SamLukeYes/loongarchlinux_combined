@@ -8,15 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pwndbg'')
 
   '
 repo_depends:
-- unicorn: python-unicorn
-- python-pycparser
-- capstone: python-capstone
-- python-psutil
-- gdb
-- python-pygments
-- python-tabulate
-- which
-- python-pyelftools
 - python
 update_on:
 - alias: python

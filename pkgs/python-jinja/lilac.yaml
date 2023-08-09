@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-jinja'')
 
   '
-repo_depends:
-- python-markupsafe
+repo_depends: []
 update_on:
 - alpm: python-jinja
   source: archpkg

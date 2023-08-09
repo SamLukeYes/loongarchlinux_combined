@@ -10,17 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''keepassxc'')
 
   '
 repo_depends:
-- zlib: minizip
-- qrencode
-- libusb
-- curl
-- pcsclite
-- qt5-x11extras
-- argon2
-- libxtst
 - botan
-- qt5-svg
-- hicolor-icon-theme
 update_on:
 - alpm: botan
   source: alpm

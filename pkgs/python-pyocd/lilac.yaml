@@ -8,19 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyocd'')
 
   '
 repo_depends:
-- python-intervaltree
-- capstone: python-capstone
-- python-six
-- python-prettytable
-- python-cmsis-pack-manager
-- python-importlib-metadata
-- python-colorama
-- python-intelhex
-- python-natsort
-- python-pyelftools
-- python-pylink-square
 - python
-- python-pyusb
 update_on:
 - alias: python
 - alpm: python-pyocd

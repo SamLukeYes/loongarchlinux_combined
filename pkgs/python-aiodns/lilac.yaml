@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-aiodns'')
 
   '
-repo_depends:
-- python-pycares
+repo_depends: []
 update_on:
 - alpm: python-aiodns
   source: archpkg

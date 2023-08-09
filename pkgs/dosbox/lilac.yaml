@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dosbox'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- alsa-lib
-- gcc: gcc-libs
-- glu
-- zlib
-- sdl_net
-- sdl_sound
-- libpng
+repo_depends: []
 update_on:
 - alpm: dosbox
   source: archpkg

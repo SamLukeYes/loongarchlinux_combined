@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgig'')
 
   '
 repo_depends:
-- glibc
-- gcc: gcc-libs
 - libsndfile
-- util-linux: util-linux-libs
 update_on:
 - alpm: libsndfile
   provides: libsndfile.so

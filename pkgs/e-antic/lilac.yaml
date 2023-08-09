@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''e-antic'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- antic
-- arb
+repo_depends: []
 update_on:
 - alpm: e-antic
   source: archpkg

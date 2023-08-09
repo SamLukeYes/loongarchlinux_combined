@@ -1,11 +1,3 @@
 destsubdir: extra
-repo_depends:
-- dav1d
-- zlib
-- rav1e
-- svt-av1
-- aom
-- libyuv
-- glibc
-- libpng
+repo_depends: []
 update_on: []

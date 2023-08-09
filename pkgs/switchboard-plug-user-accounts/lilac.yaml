@@ -10,15 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-user
 
   '
 repo_depends:
-- accountsservice
-- gdk-pixbuf2
-- libgee
-- polkit
-- libpwquality
-- gnome-desktop
-- gtk3
-- cairo
-- glib2
+- granite
+- libhandy
+- switchboard
 update_on:
 - alpm: granite
   provides: libgranite.so

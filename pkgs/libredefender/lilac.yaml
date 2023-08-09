@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libredefender'')
 
   '
 repo_depends:
-- hicolor-icon-theme
+- clamav
 update_on:
 - alpm: clamav
   provides: libclamav.so

@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ntfs-3g'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- util-linux
-- fuse2
+repo_depends: []
 update_on:
 - alpm: ntfs-3g
   source: archpkg

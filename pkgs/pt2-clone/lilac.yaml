@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pt2-clone'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- sdl2
-- hicolor-icon-theme
-- alsa-lib
-- glibc
+repo_depends: []
 update_on:
 - alpm: pt2-clone
   source: archpkg

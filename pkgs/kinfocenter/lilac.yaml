@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kinfocenter'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- wayland-utils
-- aha
-- dmidecode
-- glu
-- vulkan-tools
-- fwupd
-- mesa-demos: mesa-utils
-- xorg-xdpyinfo
-- systemsettings
-- clinfo
+repo_depends: []
 update_on:
 - alpm: kinfocenter
   source: archpkg

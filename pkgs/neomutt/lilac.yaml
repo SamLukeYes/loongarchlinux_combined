@@ -9,23 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''neomutt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ncurses
-- libidn2
-- lmdb
-- libsasl
-- gpgme
-- krb5
-- lz4
-- zlib
-- gdbm
-- sqlite
-- gnutls
-- zstd
-- glibc
-- kyotocabinet
-- notmuch: notmuch-runtime
-- lua53
+repo_depends: []
 update_on:
 - alpm: neomutt
   source: archpkg

@@ -10,13 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vis'')
 
   '
 repo_depends:
-- file
 - acl
 - ncurses
-- tre
-- lpeg: lua-lpeg
 - libtermkey
-- bash
 - lua
 update_on:
 - alpm: acl

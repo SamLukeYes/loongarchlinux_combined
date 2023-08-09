@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-fgl-arbitrary
 
   '
 repo_depends:
-- haskell-fgl
 - haskell-quickcheck
-- ghc: ghc-libs
+- haskell-fgl
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-dbus-signature-pyparsing'')
 
   '
-repo_depends:
-- python-pyparsing
+repo_depends: []
 update_on:
 - alpm: python-dbus-signature-pyparsing
   source: archpkg

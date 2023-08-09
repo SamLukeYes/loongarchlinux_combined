@@ -10,16 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qxgedit'')
 
   '
 repo_depends:
-- glibc
-- alsa-lib
-- gcc: gcc-libs
 - qt6-base
-- qt6-svg
-- hicolor-icon-theme
+- alsa-lib
 update_on:
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
 - alpm: qt6-base
   source: alpm
   strip_release: true

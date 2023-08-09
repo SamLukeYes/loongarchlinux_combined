@@ -8,12 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-sub-handlesvia''
 
   '
 repo_depends:
-- perl-exporter-tiny
-- perl-mouse
 - perl
-- perl-type-tiny
-- perl-moo
-- perl-class-tiny
 update_on:
 - alias: perl
 - alpm: perl-sub-handlesvia

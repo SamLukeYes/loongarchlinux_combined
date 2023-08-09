@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''avfs'')
 
   '
 repo_depends:
-- xz
-- lzlib
 - perl
-- fuse2
-- zstd
 update_on:
 - alias: perl
 - alpm: avfs

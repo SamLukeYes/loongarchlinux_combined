@@ -11,14 +11,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-drbg'')
   '
 repo_depends:
 - haskell-cereal
-- haskell-cryptohash-cryptoapi
-- ghc: ghc-libs
+- haskell-prettyclass
 - haskell-tagged
 - haskell-crypto-api
+- haskell-cryptohash-cryptoapi
+- haskell-parallel
 - haskell-cipher-aes128
 - haskell-entropy
-- haskell-parallel
-- haskell-prettyclass
 update_on:
 - alpm: haskell-cereal
   source: alpm

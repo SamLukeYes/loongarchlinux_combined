@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-asn1-encoding
 repo_depends:
 - haskell-asn1-types
 - haskell-hourglass
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-asn1-types
   source: alpm

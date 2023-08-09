@@ -7,18 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-weasyprint'')
 
   '
-repo_depends:
-- python-cffi
-- brotli: python-brotli
-- python-pyphen
-- python-zopfli
-- python-pillow
-- pango
-- python-fonttools
-- python-html5lib
-- python-pydyf
-- python-tinycss2
-- python-cssselect2
+repo_depends: []
 update_on:
 - alpm: python-weasyprint
   source: archpkg

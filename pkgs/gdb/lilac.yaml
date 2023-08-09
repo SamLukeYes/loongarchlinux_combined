@@ -1,21 +1,13 @@
 destsubdir: extra
 repo_depends:
-- elfutils: libelf
-- gcc: gcc-libs
 - ncurses
-- xz
 - readline
-- expat
 - guile
-- mpfr
-- source-highlight
-- glibc
 - python
 update_on:
 - alpm: ncurses
   provides: libncursesw.so
   source: alpm
-- alias: readline
 - alpm: readline
   provides: libreadline.so
   source: alpm
@@ -23,7 +15,3 @@ update_on:
   source: alpm
   strip_release: true
 - alias: python
-- alias: python
-- alpm: guile
-  source: alpm
-  strip_release: true

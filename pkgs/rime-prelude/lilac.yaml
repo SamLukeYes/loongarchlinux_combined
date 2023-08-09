@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''rime-prelude'')
 
   '
-repo_depends:
-- rime-stroke
-- rime-essay
-- rime-luna-pinyin
-- rime-terra-pinyin
-- rime-cangjie
-- rime-bopomofo
+repo_depends: []
 update_on:
 - alpm: rime-prelude
   source: archpkg

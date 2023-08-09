@@ -1,4 +1,3 @@
 destsubdir: extra
-repo_depends:
-- bash
+repo_depends: []
 update_on: []

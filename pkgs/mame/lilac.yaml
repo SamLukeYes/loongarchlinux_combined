@@ -10,16 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mame'')
 
   '
 repo_depends:
-- pulseaudio: libpulse
 - qt5-base
-- portmidi
-- sdl2
-- libutf8proc
-- pugixml
-- sdl2_ttf
-- flac
-- portaudio
-- hicolor-icon-theme
 - lua
 update_on:
 - alpm: qt5-base

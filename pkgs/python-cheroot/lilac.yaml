@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-cheroot'')
 
   '
-repo_depends:
-- python-jaraco.text
-- python-more-itertools
-- python-six
-- python-jaraco.functools
+repo_depends: []
 update_on:
 - alpm: python-cheroot
   source: archpkg

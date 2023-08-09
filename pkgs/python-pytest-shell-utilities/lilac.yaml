@@ -8,11 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-shell-u
 
   '
 repo_depends:
-- python-pytest-skip-markers
-- python-psutil
-- python-pytest
-- python-pytest-helpers-namespace
-- python-attrs
 - python
 update_on:
 - alias: python

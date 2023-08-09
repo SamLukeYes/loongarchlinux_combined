@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''afl-utils'')
 
   '
 repo_depends:
-- afl
-- rsync
 - python
-- coreutils
 update_on:
 - alias: python
 - alpm: afl-utils

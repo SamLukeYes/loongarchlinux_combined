@@ -10,18 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-alternate
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-syb
-- haskell-lens
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-hls-plugin-api
-- haskell-lsp
-- haskell-ghcide
 - haskell-extra
+- haskell-ghcide
 - haskell-hie-compat
-- haskell-regex-tdfa
 - haskell-hls-graph
+- haskell-hls-plugin-api
+- haskell-lens
+- haskell-lsp
+- haskell-regex-tdfa
+- haskell-syb
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-aeson
   source: alpm

@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ktextaddons'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qtkeychain: qtkeychain-qt5
-- kxmlgui
-- qt5-speech
+repo_depends: []
 update_on:
 - alpm: ktextaddons
   source: archpkg

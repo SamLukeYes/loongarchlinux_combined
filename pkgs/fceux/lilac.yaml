@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fceux'')
 
   '
 repo_depends:
-- qt5-base
-- sdl2
-- gd
-- zlib: minizip
 - lua
+- qt5-base
 update_on:
 - alias: lua
 - alpm: qt5-base

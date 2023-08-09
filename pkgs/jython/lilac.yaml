@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jython'')
   '
 repo_depends:
 - python
-- bash
 update_on:
 - alias: python
 - alpm: jython

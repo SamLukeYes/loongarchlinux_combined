@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fig2dev'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxpm
-- ghostscript
-- netpbm
-- bc
-- libpng
+repo_depends: []
 update_on:
 - alpm: fig2dev
   source: archpkg

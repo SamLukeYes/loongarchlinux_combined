@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-aeson-diff'')
 
   '
 repo_depends:
-- haskell-optparse-applicative
-- haskell-edit-distance-vector
 - haskell-aeson
-- ghc: ghc-libs
+- haskell-edit-distance-vector
 - haskell-scientific
 - haskell-vector
+- haskell-optparse-applicative
 - haskell-yaml
 update_on:
 - alpm: haskell-aeson

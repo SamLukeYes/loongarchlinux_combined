@@ -1,8 +1,5 @@
 destsubdir: extra
 repo_depends:
-- bzip2
-- zlib
-- zstd
 - icu
 update_on:
 - alias: icu

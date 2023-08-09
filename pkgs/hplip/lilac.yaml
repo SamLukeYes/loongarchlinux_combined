@@ -10,12 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hplip'')
 
   '
 repo_depends:
-- pygobject: python-gobject
-- foomatic-db-engine
-- net-snmp
-- libxcrypt
-- ghostscript
-- python-distro
+- python
 update_on:
+- alias: python
 - alpm: hplip
   source: archpkg

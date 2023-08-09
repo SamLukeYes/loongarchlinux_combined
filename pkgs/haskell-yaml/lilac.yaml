@@ -10,16 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-yaml'')
 
   '
 repo_depends:
-- haskell-optparse-applicative
-- haskell-unordered-containers
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-libyaml
-- haskell-scientific
-- haskell-vector
-- haskell-conduit
-- haskell-resourcet
 - haskell-attoparsec
+- haskell-conduit
+- haskell-libyaml
+- haskell-optparse-applicative
+- haskell-resourcet
+- haskell-scientific
+- haskell-unordered-containers
+- haskell-vector
 update_on:
 - alpm: haskell-aeson
   source: alpm

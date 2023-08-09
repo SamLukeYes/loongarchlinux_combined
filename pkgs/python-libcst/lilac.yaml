@@ -1,9 +1,5 @@
 destsubdir: extra
 repo_depends:
-- python-typing_inspect
-- gcc: gcc-libs
-- python-typing_extensions
-- glibc
 - python
 update_on:
 - alias: python

@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pinentry-bemenu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libassuan
-- bemenu
-- libgpg-error
-- popt
+repo_depends: []
 update_on:
 - alpm: pinentry-bemenu
   source: archpkg

@@ -1,7 +1,3 @@
 destsubdir: extra
-repo_depends:
-- gcc: gcc-libs
-- sdl2
-- libsndfile
-- ffmpeg
+repo_depends: []
 update_on: []

@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-vty'')
 
   '
 repo_depends:
-- haskell-microlens-th
-- ghc: ghc-libs
-- haskell-microlens-mtl
-- haskell-blaze-builder
 - haskell-ansi-terminal
-- haskell-vector
-- haskell-utf8-string
+- haskell-blaze-builder
 - haskell-microlens
+- haskell-microlens-mtl
+- haskell-microlens-th
+- haskell-utf8-string
+- haskell-vector
 update_on:
 - alpm: haskell-ansi-terminal
   source: alpm

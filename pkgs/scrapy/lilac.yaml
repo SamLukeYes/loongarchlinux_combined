@@ -8,24 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''scrapy'')
 
   '
 repo_depends:
-- python-parsel
-- python-protego
-- python-setuptools
-- python-lxml
-- python-queuelib
-- python-w3lib
-- python-itemloaders
-- python-cryptography
-- python-cssselect
-- python-twisted
-- python-pyopenssl
-- python-tldextract
-- python-packaging
-- python-itemadapter
-- python-pydispatcher
-- python-service-identity
 - python
-- python-zope-interface
 update_on:
 - alias: python
 - alpm: scrapy

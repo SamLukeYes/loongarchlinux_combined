@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lm32-elf-gcc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- lm32-elf-binutils
-- zlib
-- libisl
-- libmpc
-- zstd
+repo_depends: []
 update_on:
 - alpm: lm32-elf-gcc
   source: archpkg

@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''spampd'')
 
   '
 repo_depends:
-- spamassassin
-- perl-net-server
 - perl
 update_on:
 - alias: perl

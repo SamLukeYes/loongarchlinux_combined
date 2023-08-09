@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-btchip'')
 
   '
 repo_depends:
-- python-ecdsa
 - python
-- python-hidapi
 update_on:
 - alias: python
 - alpm: python-btchip

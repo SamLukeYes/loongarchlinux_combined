@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-graphite'')
 
   '
 repo_depends:
-- haskell-unordered-containers
-- ghc: ghc-libs
+- haskell-quickcheck
+- haskell-cassava
+- haskell-graphviz
 - haskell-hashable
 - haskell-random
-- haskell-quickcheck
-- haskell-graphviz
+- haskell-unordered-containers
 - haskell-vector
-- haskell-cassava
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

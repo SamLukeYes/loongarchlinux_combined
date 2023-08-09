@@ -7,16 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''terminator'')
 
   '
-repo_depends:
-- gsettings-desktop-schemas
-- xdg-utils
-- python-configobj
-- python-psutil
-- libkeybinder3
-- vte3
-- libnotify
-- pygobject: python-gobject
-- python-cairo
+repo_depends: []
 update_on:
 - alpm: terminator
   source: archpkg

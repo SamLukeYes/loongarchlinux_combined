@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dillo'')
 
   '
 repo_depends:
-- zlib
-- fltk
 - perl
-- openssl
-- libpng
 update_on:
 - alias: perl
 - alpm: dillo

@@ -10,29 +10,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libretro-dolphin'')
 
   '
 repo_depends:
-- bzip2
-- libevdev
-- glibc
-- gcc: gcc-libs
-- libxrandr
-- xz
+- fmt
+- hidapi
 - sfml
-- libglvnd
-- zstd
-- libpng
-- libretro-core-info
-- bluez: bluez-libs
-- enet
-- libxi
-- zlib
-- libx11
-- lzo
+- systemd-libs
+- libusb
 update_on:
 - alpm: fmt
   provides: libfmt.so
   source: alpm
 - alpm: hidapi
   provides: libhidapi-hidraw.so
+  source: alpm
+- alpm: sfml
+  provides: libsfml-system.so
   source: alpm
 - alpm: systemd-libs
   provides: libudev.so

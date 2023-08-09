@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fishui'')
 
   '
 repo_depends:
-- qt5-graphicaleffects
-- qt5-quickcontrols2
 - qt5-declarative
-- kwindowsystem
 update_on:
 - alpm: qt5-declarative
   source: alpm

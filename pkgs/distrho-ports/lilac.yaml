@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''distrho-ports'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- alsa-lib
-- gcc: gcc-libs
-- freetype2
-- libglvnd
-- libxext
-- libx11
-- glibc
+repo_depends: []
 update_on:
 - alpm: distrho-ports
   source: archpkg

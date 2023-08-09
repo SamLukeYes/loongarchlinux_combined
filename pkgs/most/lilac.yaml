@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''most'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- slang
+repo_depends: []
 update_on:
 - alpm: most
   source: archpkg

@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''marco'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxres
-- libxpresent
-- libgtop
-- zenity
-- libcanberra
-- gettext
-- libsm
-- mate-desktop
+repo_depends: []
 update_on:
 - alpm: marco
   source: archpkg

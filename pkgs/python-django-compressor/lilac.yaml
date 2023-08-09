@@ -8,9 +8,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-django-compres
 
   '
 repo_depends:
-- python-rcssmin
-- python-rjsmin
-- python-django-appconf
+- python
 update_on:
+- alias: python
 - alpm: python-django-compressor
   source: archpkg

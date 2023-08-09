@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-language-pyth
 repo_depends:
 - haskell-monads-tf
 - haskell-utf8-string
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-monads-tf
   source: alpm

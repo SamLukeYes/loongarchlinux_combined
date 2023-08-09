@@ -10,12 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''screengrab'')
 
   '
 repo_depends:
-- libxcb
 - qt5-base
 - libqtxdg
-- qt5-x11extras
-- libx11
-- kwindowsystem
 update_on:
 - alpm: qt5-base
   source: alpm

@@ -10,47 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pgadmin4'')
 
   '
 repo_depends:
-- python-sshtunnel
-- python-webencodings
-- python-testtools
-- python-simplejson
-- python-flask-sqlalchemy
-- python-blinker
-- python-flask-principal
-- python-speaklater
-- python-bcrypt
-- glibc
-- hicolor-icon-theme
-- python-flask-security-too
-- python-gssapi
-- python-flask-mail
-- gcc: gcc-libs
-- python-dateutil
 - qt5-base
-- python-paramiko
-- python-ldap3
-- postgresql: postgresql-libs
-- python-sqlalchemy1.3
-- python-passlib
-- python-sqlparse
-- python-psycopg2
-- python-werkzeug
-- python-flask-compress
-- python-wtforms
-- python-flask
-- python-flask-gravatar
-- python-flask-login
-- python-pytz
-- python-flask-wtf
-- python-psutil
-- python-cryptography
-- python-flask-paranoid
 - python
-- python-six
-- python-flask-babelex
 - libxcrypt
-- python-jinja
-- python-flask-migrate
 update_on:
 - alpm: qt5-base
   source: alpm

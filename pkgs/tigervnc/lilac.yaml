@@ -10,23 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tigervnc'')
 
   '
 repo_depends:
-- xorg-xsetroot
-- libjpeg-turbo
-- xorg-xauth
-- xkeyboard-config
-- libxdamage
-- libxfont2
-- libxcvt
-- libdrm
-- fltk
-- xorg-xinit
-- pixman
-- xorg-xkbcomp
-- libgcrypt
 - perl
-- libxtst
-- gnutls
-- pam
 update_on:
 - alias: perl
 - alpm: tigervnc

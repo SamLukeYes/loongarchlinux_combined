@@ -10,19 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''arbtt'')
 
   '
 repo_depends:
-- haskell-strict
-- haskell-tz
-- haskell-aeson
-- ghc: ghc-libs
 - haskell-x11
-- haskell-utf8-string
-- haskell-terminal-progress-bar
-- haskell-pcre-light
-- haskell-conduit
-- haskell-unliftio-core
-- haskell-bytestring-progress
-- haskell-resourcet
+- haskell-aeson
 - haskell-attoparsec
+- haskell-bytestring-progress
+- haskell-conduit
+- haskell-pcre-light
+- haskell-resourcet
+- haskell-strict
+- haskell-terminal-progress-bar
+- haskell-tz
+- haskell-unliftio-core
+- haskell-utf8-string
 update_on:
 - alpm: haskell-x11
   source: alpm

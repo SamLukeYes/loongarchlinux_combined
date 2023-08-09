@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-parsec-number
 
   '
 repo_depends:
-- ghc: ghc-libs
+- haskell-parsec
 update_on:
 - alpm: haskell-parsec
   source: alpm

@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-oslo-serialization'')
 
   '
-repo_depends:
-- python-pbr
-- python-oslo-utils
-- python-pytz
-- python-msgpack
+repo_depends: []
 update_on:
 - alpm: python-oslo-serialization
   source: archpkg

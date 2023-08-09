@@ -10,16 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kuickshow'')
 
   '
 repo_depends:
-- kxmlgui
-- kiconthemes
 - qt5-base
-- qt5-x11extras
-- imlib
-- kdoctools
-- kio
-- ki18n
-- hicolor-icon-theme
-- kinit
 update_on:
 - alpm: qt5-base
   source: alpm

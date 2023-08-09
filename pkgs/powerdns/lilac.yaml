@@ -10,14 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''powerdns'')
 
   '
 repo_depends:
-- luajit
-- libsodium
-- sqlite
-- gnutls
-- openssl
-- lmdb
-- boost: boost-libs
-- systemd: systemd-libs
+- curl
 update_on:
 - alpm: curl
   provides: libcurl.so

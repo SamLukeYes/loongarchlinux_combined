@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-strict'')
 
   '
 repo_depends:
-- haskell-hashable
 - haskell-assoc
+- haskell-hashable
 - haskell-these
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-assoc
   source: alpm

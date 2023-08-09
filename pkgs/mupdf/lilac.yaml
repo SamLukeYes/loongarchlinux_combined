@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mupdf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxext
-- freeglut
-- glu
-- desktop-file-utils
-- freetype2
-- harfbuzz
-- gumbo-parser
-- jbig2dec
-- openssl
-- openjpeg2
+repo_depends: []
 update_on:
 - alpm: mupdf
   source: archpkg

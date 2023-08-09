@@ -10,16 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-jose'')
 
   '
 repo_depends:
-- haskell-network-uri
-- haskell-cryptonite
-- haskell-lens
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-x509
-- haskell-memory
-- haskell-monad-time
 - haskell-base64-bytestring
 - haskell-concise
+- haskell-cryptonite
+- haskell-lens
+- haskell-memory
+- haskell-monad-time
+- haskell-network-uri
+- haskell-x509
 update_on:
 - alpm: haskell-aeson
   source: alpm

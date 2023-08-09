@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lirc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libusb-compat
-- alsa-lib
-- libftdi
-- libx11
+repo_depends: []
 update_on:
 - alpm: lirc
   source: archpkg

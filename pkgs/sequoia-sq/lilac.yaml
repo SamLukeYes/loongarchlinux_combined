@@ -1,18 +1,10 @@
 destsubdir: extra
 repo_depends:
 - bzip2
-- gcc: gcc-libs
 - nettle
-- sqlite
-- openssl
-- glibc
-- gmp
 update_on:
 - alpm: bzip2
   provides: libbz2.so
-  source: alpm
-- alpm: nettle
-  provides: libnettle.so
   source: alpm
 - alpm: nettle
   provides: libhogweed.so

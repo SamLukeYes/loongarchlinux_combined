@@ -10,10 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kig'')
 
   '
 repo_depends:
-- qt5-xmlpatterns
-- ktexteditor
-- hicolor-icon-theme
-- boost: boost-libs
 - python
 update_on:
 - alias: python

@@ -11,9 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rdma-core'')
   '
 repo_depends:
 - perl
-- libnl
-- systemd: systemd-libs
-- ethtool
 update_on:
 - alias: perl
 - alpm: rdma-core

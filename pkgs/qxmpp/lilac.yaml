@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qxmpp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gstreamer
-- qca: qca-qt6
-- qca: qca-qt5
+repo_depends: []
 update_on:
 - alpm: qxmpp
   source: archpkg

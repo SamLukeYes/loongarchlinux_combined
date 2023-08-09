@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-semirings'')
 
   '
 repo_depends:
+- haskell-base-compat-batteries
 - haskell-hashable
 - haskell-unordered-containers
-- ghc: ghc-libs
-- haskell-base-compat-batteries
 update_on:
 - alpm: haskell-base-compat-batteries
   source: alpm

@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''alltray'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxpm
-- libgtop
-- libwnck
+repo_depends: []
 update_on:
 - alpm: alltray
   source: archpkg

@@ -10,13 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rxvt-unicode'')
 
   '
 repo_depends:
-- startup-notification
-- libxft
 - perl
-- libptytty
-- libxext
-- libnsl
-- libxmu
 update_on:
 - alias: perl
 - alpm: rxvt-unicode

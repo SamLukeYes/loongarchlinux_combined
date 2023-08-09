@@ -9,8 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-cpanplus-dist-ar
   '
 repo_depends:
 - perl
-- perl-cpanplus
-- perl-pod-parser
 update_on:
 - alias: perl
 - alpm: perl-cpanplus-dist-arch

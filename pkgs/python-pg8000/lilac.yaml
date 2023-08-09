@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pg8000'')
 
   '
 repo_depends:
-- python-scramp
-- python-dateutil
 - python
 update_on:
 - alias: python

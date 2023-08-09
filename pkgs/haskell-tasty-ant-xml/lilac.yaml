@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-ant-xml
 
   '
 repo_depends:
-- ghc: ghc-libs
+- haskell-generic-deriving
 - haskell-tagged
 - haskell-tasty
 - haskell-xml
-- haskell-generic-deriving
 update_on:
 - alpm: haskell-generic-deriving
   source: alpm

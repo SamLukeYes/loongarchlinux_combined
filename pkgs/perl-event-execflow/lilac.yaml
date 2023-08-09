@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-event-execflow'')
 
   '
-repo_depends:
-- perl-anyevent
-- perl-libintl-perl
+repo_depends: []
 update_on:
 - alpm: perl-event-execflow
   source: archpkg

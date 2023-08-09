@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''nsz'')
 
   '
-repo_depends:
-- python-pycryptodome
-- python-zstandard
-- python-enlighten
+repo_depends: []
 update_on:
 - alpm: nsz
   source: archpkg

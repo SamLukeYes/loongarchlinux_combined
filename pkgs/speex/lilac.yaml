@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''speex'')
   '
 repo_depends:
 - libogg
-- gcc: gcc-libs
 - speexdsp
 update_on:
 - alpm: libogg

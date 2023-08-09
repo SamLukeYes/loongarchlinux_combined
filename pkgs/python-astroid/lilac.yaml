@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-astroid'')
 
   '
 repo_depends:
-- python-wrapt
-- python-lazy-object-proxy
 - python
 update_on:
 - alias: python

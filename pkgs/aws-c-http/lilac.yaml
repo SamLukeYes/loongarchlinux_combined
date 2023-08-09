@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aws-c-http'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- aws-c-io
-- aws-c-common
-- aws-c-compression
+repo_depends: []
 update_on:
 - alpm: aws-c-http
   source: archpkg

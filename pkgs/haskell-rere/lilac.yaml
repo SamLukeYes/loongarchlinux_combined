@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-rere'')
 repo_depends:
 - haskell-quickcheck
 - haskell-fin
-- ghc: ghc-libs
 - haskell-vec
 update_on:
 - alpm: haskell-quickcheck

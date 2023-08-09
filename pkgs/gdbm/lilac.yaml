@@ -11,9 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gdbm'')
   '
 repo_depends:
 - readline
-- glibc
 update_on:
-- alias: readline
 - alpm: readline
   provides: libreadline.so
   source: alpm

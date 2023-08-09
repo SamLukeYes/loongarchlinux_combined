@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-checkers'')
 repo_depends:
 - haskell-random
 - haskell-quickcheck
-- ghc: ghc-libs
 - haskell-semigroupoids
 update_on:
 - alpm: haskell-random

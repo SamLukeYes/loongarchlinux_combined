@@ -10,13 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-net-dns-sec'')
 
   '
 repo_depends:
-- perl-digest-bubblebabble
-- perl-net-dns
-- perl-crypt-openssl-dsa
 - perl
-- perl-crypt-openssl-rsa
-- perl-mime-base32
-- perl-crypt-openssl-bignum
 update_on:
 - alias: perl
 - alpm: perl-net-dns-sec

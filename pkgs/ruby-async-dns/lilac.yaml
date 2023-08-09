@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-async-dns'')
   '
 repo_depends:
 - ruby
-- ruby-async-io
 update_on:
 - alias: ruby
 - alpm: ruby-async-dns

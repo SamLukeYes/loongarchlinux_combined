@@ -8,26 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pdm'')
 
   '
 repo_depends:
-- python-requests
-- python-lockfile
-- python-cachecontrol
-- python-blinker
-- python-shellingham
-- python-pdm-backend
-- python-certifi
-- python-requests-toolbelt
-- python-unearth
-- python-packaging
-- python-virtualenv
-- python-platformdirs
 - python
-- python-tomlkit
-- python-installer
-- python-findpython
-- python-dotenv
-- python-pyproject-hooks
-- python-rich
-- python-resolvelib
 update_on:
 - alias: python
 - alpm: python-pdm

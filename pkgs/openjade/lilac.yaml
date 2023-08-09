@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- opensp
-- sgml-common
+repo_depends: []
 update_on: []

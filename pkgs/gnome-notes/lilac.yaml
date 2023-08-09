@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-notes'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- evolution-data-server
-- webkit2gtk-4.1
-- gnome-online-accounts
-- curl
-- libhandy
-- tracker3
-- libxml2
-- json-glib
-- gtk3
-- glib2
+repo_depends: []
 update_on:
 - alpm: gnome-notes
   source: archpkg

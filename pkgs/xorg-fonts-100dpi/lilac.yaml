@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''xorg-fonts-100dpi'')
 
   '
-repo_depends:
-- xorg-fonts-alias: xorg-fonts-alias-100dpi
+repo_depends: []
 update_on:
 - alpm: xorg-fonts-100dpi
   source: archpkg

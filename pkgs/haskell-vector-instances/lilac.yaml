@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-vector-instan
 
   '
 repo_depends:
-- haskell-pointed
-- ghc: ghc-libs
+- haskell-comonad
 - haskell-hashable
+- haskell-keys
+- haskell-pointed
 - haskell-semigroupoids
 - haskell-vector
-- haskell-keys
-- haskell-comonad
 update_on:
 - alpm: haskell-comonad
   source: alpm

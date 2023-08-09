@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rocm-smi-lib'')
 
   '
 repo_depends:
-- hsa-rocr
 - python
 update_on:
 - alias: python

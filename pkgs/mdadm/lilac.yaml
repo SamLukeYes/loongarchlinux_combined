@@ -1,5 +1,3 @@
 destsubdir: core
-repo_depends:
-- glibc
-- systemd
+repo_depends: []
 update_on: []

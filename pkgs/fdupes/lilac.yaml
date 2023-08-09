@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fdupes'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pcre2
-- glibc
-- ncurses
+repo_depends: []
 update_on:
 - alpm: fdupes
   source: archpkg

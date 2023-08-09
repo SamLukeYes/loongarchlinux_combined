@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pcg-random'')
 
   '
 repo_depends:
-- haskell-random
-- ghc: ghc-libs
 - haskell-entropy
 - haskell-primitive
+- haskell-random
 update_on:
 - alpm: haskell-entropy
   source: alpm

@@ -10,13 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnucash'')
 
   '
 repo_depends:
-- libofx
-- gwenhywfar
-- webkit2gtk
-- libdbi
 - guile
-- aqbanking
-- boost: boost-libs
 update_on:
 - alpm: guile
   source: alpm

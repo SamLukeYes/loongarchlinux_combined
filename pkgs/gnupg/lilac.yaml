@@ -11,17 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnupg'')
   '
 repo_depends:
 - bzip2
-- sqlite
-- libgpg-error
-- libksba
 - libassuan
-- zlib
-- libgcrypt
 - npth
 - readline
-- gnutls
-- glibc
-- pinentry
 update_on:
 - alpm: bzip2
   provides: libbz2.so
@@ -32,7 +24,6 @@ update_on:
 - alpm: npth
   provides: libnpth.so
   source: alpm
-- alias: readline
 - alpm: readline
   provides: libreadline.so
   source: alpm

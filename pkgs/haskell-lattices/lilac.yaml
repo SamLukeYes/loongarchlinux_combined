@@ -10,16 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lattices'')
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-base-compat
-- ghc: ghc-libs
-- haskell-hashable
-- haskell-tagged
 - haskell-quickcheck
-- haskell-universe-reverse-instances
-- haskell-semigroupoids
-- haskell-universe-base
+- haskell-base-compat
+- haskell-hashable
 - haskell-integer-logarithms
+- haskell-semigroupoids
+- haskell-tagged
+- haskell-universe-base
+- haskell-universe-reverse-instances
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

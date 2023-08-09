@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cockpit-machines'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libvirt-dbus
-- cockpit
+repo_depends: []
 update_on:
 - alpm: cockpit-machines
   source: archpkg

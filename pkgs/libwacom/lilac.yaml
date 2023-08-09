@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libgudev
-- glib2
-- systemd
+repo_depends: []
 update_on: []

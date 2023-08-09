@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kjots'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- akonadi-notes
-- grantlee
-- akonadi
-- kpimtextedit
-- kontactinterface
+repo_depends: []
 update_on:
 - alpm: kjots
   source: archpkg

@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tokodon'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- knotifications
-- kirigami-addons
-- kitemmodels
-- kdbusaddons
-- qqc2-desktop-style
-- qtkeychain: qtkeychain-qt5
-- kio
-- qt5-websockets
+repo_depends: []
 update_on:
 - alpm: tokodon
   source: archpkg

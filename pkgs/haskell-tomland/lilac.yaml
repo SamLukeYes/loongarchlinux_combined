@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tomland'')
 
   '
 repo_depends:
-- haskell-unordered-containers
-- ghc: ghc-libs
-- haskell-validation-selective
 - haskell-hashable
-- haskell-parser-combinators
 - haskell-megaparsec
+- haskell-parser-combinators
+- haskell-unordered-containers
+- haskell-validation-selective
 update_on:
 - alpm: haskell-hashable
   source: alpm

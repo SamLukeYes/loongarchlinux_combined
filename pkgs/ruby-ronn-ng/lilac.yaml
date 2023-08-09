@@ -9,10 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-ronn-ng'')
   '
 repo_depends:
 - ruby
-- ruby-nokogiri
-- ruby-kramdown
-- ruby-rdiscount
-- ruby-mustache
 update_on:
 - alias: ruby
 - alpm: ruby-ronn-ng

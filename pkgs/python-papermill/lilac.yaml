@@ -8,14 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-papermill'')
 
   '
 repo_depends:
-- python-requests
-- python-ansiwrap
-- python-tqdm
-- python-tenacity
-- jupyter-nbformat
-- python-click
-- jupyter-nbclient
-- python-entrypoints
 - python
 update_on:
 - alias: python

@@ -10,39 +10,32 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xmobar'')
 
   '
 repo_depends:
-- haskell-cereal
-- alsa-lib
-- haskell-aeson
-- haskell-http-types
-- haskell-timezone-olson
-- haskell-x11-xft
-- haskell-network-uri
-- haskell-timezone-series
-- libxpm
-- haskell-parsec-numbers
-- libxrandr
-- pango
-- haskell-pango
-- libxinerama
-- haskell-utf8-string
-- haskell-libmpd
-- ghc: ghc-libs
-- libxft
-- haskell-async
-- haskell-alsa-core
-- haskell-http
-- haskell-cairo
-- haskell-netlink
-- haskell-regex-compat
-- haskell-extensible-exceptions
 - haskell-x11
-- haskell-colour
-- haskell-alsa-mixer
-- haskell-http-client-tls
-- haskell-http-conduit
-- haskell-dbus
+- haskell-x11-xft
+- haskell-utf8-string
+- haskell-network-uri
 - haskell-hinotify
+- haskell-parsec-numbers
+- haskell-regex-compat
 - haskell-old-locale
+- haskell-http
+- haskell-dbus
+- haskell-libmpd
+- haskell-cereal
+- haskell-netlink
+- haskell-async
+- haskell-aeson
+- haskell-timezone-olson
+- haskell-timezone-series
+- haskell-extensible-exceptions
+- haskell-http-conduit
+- haskell-http-types
+- haskell-http-client-tls
+- haskell-alsa-core
+- haskell-alsa-mixer
+- haskell-cairo
+- haskell-pango
+- haskell-colour
 update_on:
 - alpm: haskell-x11
   source: alpm

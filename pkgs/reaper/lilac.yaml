@@ -10,14 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''reaper'')
 
   '
 repo_depends:
-- fontconfig
 - alsa-lib
-- gcc: gcc-libs
-- libxi
-- hicolor-icon-theme
-- libx11
-- libglvnd
-- glibc
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

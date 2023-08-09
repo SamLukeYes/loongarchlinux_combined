@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zathura-djvu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- djvulibre
-- desktop-file-utils
-- zathura
+repo_depends: []
 update_on:
 - alpm: zathura-djvu
   source: archpkg

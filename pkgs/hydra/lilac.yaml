@@ -10,19 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hydra'')
 
   '
 repo_depends:
-- pcre2
-- mariadb: mariadb-libs
-- subversion
-- postgresql: postgresql-libs
-- freerdp
-- libssh
-- afpfs-ng
-- openssl
-- mongo-c-driver
 - ncurses
-- libidn
-- zlib
-- libfbclient
+- mariadb-libs
+- postgresql-libs
+- cuda-tools
+- freerdp
 update_on:
 - alpm: ncurses
   provides: libncursesw.so
@@ -35,9 +27,6 @@ update_on:
   source: alpm
 - alpm: cuda-tools
   provides: libssh.so
-  source: alpm
-- alpm: freerdp
-  provides: libfreerdp2.so
   source: alpm
 - alpm: freerdp
   provides: libwinpr2.so

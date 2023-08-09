@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-email-mime-conte
   '
 repo_depends:
 - perl
-- perl-text-unidecode
 update_on:
 - alias: perl
 - alpm: perl-email-mime-contenttype

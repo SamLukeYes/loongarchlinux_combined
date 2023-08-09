@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haruna'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kirigami2
-- kio
-- mpv
-- kfilemetadata
+repo_depends: []
 update_on:
 - alpm: haruna
   source: archpkg

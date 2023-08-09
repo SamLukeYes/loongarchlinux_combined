@@ -10,14 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bustle'')
 
   '
 repo_depends:
-- haskell-glib
-- glib2
-- ghc: ghc-libs
-- haskell-gtk3
-- haskell-pango
-- libpcap
 - haskell-cairo
 - haskell-gio
+- haskell-glib
+- haskell-gtk3
+- haskell-pango
 update_on:
 - alpm: haskell-cairo
   source: alpm

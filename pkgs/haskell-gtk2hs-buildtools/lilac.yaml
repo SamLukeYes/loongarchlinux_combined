@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gtk2hs-buildt
 repo_depends:
 - haskell-random
 - haskell-hashtables
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-random
   source: alpm

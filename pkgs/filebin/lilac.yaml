@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''filebin'')
 
   '
-repo_depends:
-- php
-- python-ansi2html
-- php: php-gd
-- imagemagick
+repo_depends: []
 update_on:
 - alpm: filebin
   source: archpkg

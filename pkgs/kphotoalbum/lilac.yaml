@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kphotoalbum'')
 
   '
 repo_depends:
-- marble: marble-common
-- purpose
 - perl
-- exiv2
-- libkdcraw
 update_on:
 - alias: perl
 - alpm: kphotoalbum

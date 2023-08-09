@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lv2lint'')
 
   '
 repo_depends:
-- elfutils: libelf
 - curl
-- glibc
 - lilv
 update_on:
 - alpm: curl

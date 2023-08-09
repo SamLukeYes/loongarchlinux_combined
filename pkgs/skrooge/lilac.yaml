@@ -10,20 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''skrooge'')
 
   '
 repo_depends:
-- qt5-xmlpatterns
-- python
-- grantlee
-- libofx
 - qt5-base
-- qt5-script
-- knotifyconfig
-- krunner
-- kparts
-- qca: qca-qt5
-- knewstuff
-- hicolor-icon-theme
-- sqlcipher
-- qt5-webengine
+- python
 update_on:
 - alpm: qt5-base
   source: alpm

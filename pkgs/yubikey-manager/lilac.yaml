@@ -8,14 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yubikey-manager'')
 
   '
 repo_depends:
-- python-cryptography
-- python-fido2
-- python-click
-- python-pyopenssl
-- python-pyscard
-- ccid
-- python-keyring
-- yubikey-personalization
 - python
 update_on:
 - alias: python

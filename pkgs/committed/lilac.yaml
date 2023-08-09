@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''committed'')
 
   '
 repo_depends:
-- gcc: gcc-libs
+- julia
 update_on:
 - alpm: julia
   provides: libgit2.so

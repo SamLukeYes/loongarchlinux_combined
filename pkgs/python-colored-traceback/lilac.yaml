@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-colored-traceb
   '
 repo_depends:
 - python
-- python-pygments
 update_on:
 - alias: python
 - alpm: python-colored-traceback

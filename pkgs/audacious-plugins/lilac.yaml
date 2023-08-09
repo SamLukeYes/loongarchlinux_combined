@@ -9,35 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''audacious-plugins'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- alsa-lib
-- libmodplug
-- libnotify
-- qt5-x11extras
-- libcddb
-- lirc
-- faad2
-- pipewire: libpipewire
-- libcdio-paranoia
-- libsidplayfp
-- curl
-- libcue
-- ffmpeg
-- opusfile
-- mpg123
-- fluidsynth
-- neon
-- libmtp
-- libopenmpt
-- libsamplerate
-- libmms
-- libbs2b
-- libvorbis
-- pulseaudio: libpulse
-- wavpack
-- dbus-glib
-- flac
-- lame
+repo_depends: []
 update_on:
 - alpm: audacious-plugins
   source: archpkg

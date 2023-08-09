@@ -1,10 +1,6 @@
 destsubdir: extra
 repo_depends:
-- dtkwidget
-- libmediainfo
 - opencv
-- freeimage
-- ffmpegthumbnailer
 update_on:
 - alpm: opencv
   source: alpm

@@ -11,11 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fluxbox'')
   '
 repo_depends:
 - fontconfig
-- libxpm
-- libxft
-- libxrandr
-- imlib2
-- libxinerama
 - fribidi
 update_on:
 - alpm: fontconfig

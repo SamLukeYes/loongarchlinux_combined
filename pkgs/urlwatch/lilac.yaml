@@ -7,14 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''urlwatch'')
 
   '
-repo_depends:
-- python-minidb
-- python-requests
-- python-lxml
-- python-cssselect
-- python-appdirs
-- python-keyring
-- python-yaml
+repo_depends: []
 update_on:
 - alpm: urlwatch
   source: archpkg

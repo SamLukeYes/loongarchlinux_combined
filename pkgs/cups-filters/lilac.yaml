@@ -1,8 +1,3 @@
 destsubdir: extra
-repo_depends:
-- poppler
-- libexif
-- lcms2
-- qpdf
-- systemd
+repo_depends: []
 update_on: []

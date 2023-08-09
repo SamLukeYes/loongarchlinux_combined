@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-color-calc'')
 
   '
-repo_depends:
-- perl-params-validate
-- perl-graphics-colornames-www
-- perl-graphics-colornames
+repo_depends: []
 update_on:
 - alpm: perl-color-calc
   source: archpkg

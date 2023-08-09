@@ -10,12 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fbreader'')
 
   '
 repo_depends:
-- bzip2
 - qt5-base
-- curl
-- libunibreak
-- sqlite
-- fribidi
 update_on:
 - alpm: qt5-base
   source: alpm

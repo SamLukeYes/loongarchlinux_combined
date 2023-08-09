@@ -1,8 +1,5 @@
 destsubdir: extra
 repo_depends:
-- spirv-tools
-- gcc: gcc-libs
-- glibc
 - glslang
 update_on:
 - alpm: glslang

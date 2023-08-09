@@ -10,8 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qt6-connectivity'')
 
   '
 repo_depends:
-- bluez: bluez-libs
-- pcsclite
 - qt6-base
 update_on:
 - alpm: qt6-base

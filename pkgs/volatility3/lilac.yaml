@@ -8,12 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''volatility3'')
 
   '
 repo_depends:
-- python-snappy
-- capstone: python-capstone
-- python-pycryptodome
-- python-yara
-- python-pefile
-- python-jsonschema
 - python
 update_on:
 - alias: python

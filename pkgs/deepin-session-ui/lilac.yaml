@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-session-ui'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-# - deepin-daemon
-# - deepin-control-center
-- deepin-wallpapers
-- gsettings-qt
-- lightdm: liblightdm-qt5
-- qt5-svg
-- deepin-qt5integration
+repo_depends: []
 update_on:
 - alpm: deepin-session-ui
   source: archpkg

@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdp-tools'')
 
   '
 repo_depends:
-- elfutils: libelf
-- libbpf
-- linux-api-headers
+- libpcap
 update_on:
 - alpm: libpcap
   provides: libpcap.so

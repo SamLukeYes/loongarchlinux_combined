@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mm-common'')
 
   '
-repo_depends:
-- doxygen
-- gtk-doc
-- libsigc++: libsigc++-docs
-- graphviz
-- perl-xml-parser
+repo_depends: []
 update_on:
 - alpm: mm-common
   source: archpkg

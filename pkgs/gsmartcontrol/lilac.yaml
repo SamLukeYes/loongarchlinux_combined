@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gsmartcontrol'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- smartmontools
-- hicolor-icon-theme
-- xorg-xmessage
-- gtkmm3
+repo_depends: []
 update_on:
 - alpm: gsmartcontrol
   source: archpkg

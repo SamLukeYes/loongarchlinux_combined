@@ -10,23 +10,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-yesod-form'')
 
   '
 repo_depends:
-- haskell-wai
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-shakespeare
-- haskell-blaze-html
+- haskell-attoparsec
 - haskell-blaze-builder
-- haskell-email-validate
-- haskell-persistent
+- haskell-blaze-html
 - haskell-blaze-markup
+- haskell-byteable
 - haskell-data-default
+- haskell-email-validate
+- haskell-network-uri
+- haskell-persistent
+- haskell-resourcet
+- haskell-shakespeare
+- haskell-wai
 - haskell-xss-sanitize
 - haskell-yesod-core
 - haskell-yesod-persistent
-- haskell-resourcet
-- haskell-byteable
-- haskell-attoparsec
-- haskell-network-uri
 update_on:
 - alpm: haskell-aeson
   source: alpm

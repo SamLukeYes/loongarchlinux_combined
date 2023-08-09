@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-aeson-qq'')
 
   '
 repo_depends:
-- haskell-base-compat
 - haskell-aeson
-- ghc: ghc-libs
+- haskell-attoparsec
+- haskell-base-compat
+- haskell-src-meta
 - haskell-scientific
 - haskell-vector
-- haskell-attoparsec
-- haskell-src-meta
 update_on:
 - alpm: haskell-aeson
   source: alpm

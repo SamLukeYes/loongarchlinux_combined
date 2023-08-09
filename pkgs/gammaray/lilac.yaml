@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gammaray'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-3d
-- qt5-svg
-- syntax-highlighting
-- qt5-tools
+repo_depends: []
 update_on:
 - alpm: gammaray
   source: archpkg

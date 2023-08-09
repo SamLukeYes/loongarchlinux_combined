@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-old-time'')
 
   '
 repo_depends:
-- ghc: ghc-libs
 - haskell-old-locale
 update_on:
 - alpm: haskell-old-locale

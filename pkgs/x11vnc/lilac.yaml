@@ -1,17 +1,3 @@
 destsubdir: extra
-repo_depends:
-- openssl
-- libxfixes
-- libxcomposite
-- libxrandr
-- libxdamage
-- libx11
-- libxi
-- avahi
-- libxcrypt
-- libxinerama
-- xorg-xdpyinfo
-- libxtst
-- libxext
-- libvncserver
+repo_depends: []
 update_on: []

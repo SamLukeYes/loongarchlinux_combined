@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- pcre2
-- gcc: gcc-libs
+repo_depends: []
 update_on: []

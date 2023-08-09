@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zig'')
 
   '
 repo_depends:
-- llvm: llvm-libs
 - clang
-- lld
 update_on:
 - alias: clang
 - alpm: zig

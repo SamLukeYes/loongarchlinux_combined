@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''certbot-dns-google'')
 
   '
-repo_depends:
-- python-google-api-python-client
-- certbot
-- python-httplib2
-- python-acme
-- python-oauth2client
+repo_depends: []
 update_on:
 - alpm: certbot-dns-google
   source: archpkg

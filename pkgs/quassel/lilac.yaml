@@ -10,26 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''quassel'')
 
   '
 repo_depends:
-- sonnet
-- qt5-base
 - icu
-- knotifyconfig
-- qt5-multimedia
-- qt5-svg
-- hicolor-icon-theme
-- openldap: libldap
-- qt5-webengine
+- qt5-base
 update_on:
 - alias: icu
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: qt5-base
   source: alpm
   strip_release: true

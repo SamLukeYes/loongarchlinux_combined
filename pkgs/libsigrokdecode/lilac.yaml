@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libsigrokdecode'')
 
   '
 repo_depends:
-- glib2
 - python
 update_on:
 - alias: python

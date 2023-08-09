@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''softhsm'')
   '
 repo_depends:
 - botan
-- openssl
-- p11-kit
 update_on:
 - alpm: botan
   source: alpm

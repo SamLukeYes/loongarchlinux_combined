@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ukui-menu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- uchardet
-- bamf
-- qt5-x11extras
-- ukui-interface
-- gsettings-qt
-- qt5-svg
-- kwindowsystem
+repo_depends: []
 update_on:
 - alpm: ukui-menu
   source: archpkg

@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''picard'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glibc
-- python-mutagen
-- python-markdown
-- python-fasteners
-- python-dateutil
-- python-discid
-- pyqt5: python-pyqt5
-- python-pyjwt
-- python-yaml
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: picard
   source: archpkg

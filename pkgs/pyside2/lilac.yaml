@@ -10,12 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pyside2'')
 
   '
 repo_depends:
-- clang
-- qt5-xmlpatterns
-- libxslt
-- qt5-declarative
-- llvm
 - python
+- qt5-declarative
 update_on:
 - alias: python
 - alpm: qt5-declarative

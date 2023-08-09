@@ -10,8 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pacman-contrib'')
 
   '
 repo_depends:
-- pacman
-- fakeroot
 - perl
 update_on:
 - alias: perl

@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mozo'')
 
   '
-repo_depends:
-- mate-panel
-- gettext
-- gtk3
-- pygobject: python-gobject
-- mate-menus
+repo_depends: []
 update_on:
 - alpm: mozo
   source: archpkg

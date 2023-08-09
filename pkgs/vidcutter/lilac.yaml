@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vidcutter'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- mediainfo
-- pyopengl: python-opengl
-- mpv
-- python-simplejson
-- ffmpeg
-- pyqt5: python-pyqt5
+repo_depends: []
 update_on:
 - alpm: vidcutter
   source: archpkg

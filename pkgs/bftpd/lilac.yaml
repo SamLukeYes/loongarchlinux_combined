@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bftpd'')
 
   '
 repo_depends:
-- zlib
 - libxcrypt
-- glibc
-- pam
 update_on:
 - alpm: libxcrypt
   provides: libcrypt.so

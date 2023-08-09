@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-danga-socket'')
 
   '
-repo_depends:
-- perl-sys-syscall
+repo_depends: []
 update_on:
 - alpm: perl-danga-socket
   source: archpkg

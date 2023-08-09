@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wingpanel-indicator-s
 
   '
 repo_depends:
-- wingpanel
-- accountsservice
-- gdk-pixbuf2
-- gtk3
-- glib2
+- granite
+- libhandy
 update_on:
 - alpm: granite
   provides: libgranite.so

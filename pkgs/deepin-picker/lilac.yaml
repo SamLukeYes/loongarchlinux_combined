@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-picker'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-svg
-- deepin-qt5integration
-- libxtst
+repo_depends: []
 update_on:
 - alpm: deepin-picker
   source: archpkg

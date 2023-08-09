@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cryptonite-co
 
   '
 repo_depends:
-- haskell-cryptonite
-- ghc: ghc-libs
-- haskell-memory
 - haskell-conduit
 - haskell-conduit-extra
+- haskell-cryptonite
+- haskell-memory
 - haskell-resourcet
 update_on:
 - alpm: haskell-conduit

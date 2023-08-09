@@ -10,9 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtkmm3'')
 
   '
 repo_depends:
-- atkmm
-- gtk3
+- libsigc++
+- glibmm
+- cairomm
 - pangomm
+- atkmm
 update_on:
 - alpm: libsigc++
   provides: libsigc-2.0.so

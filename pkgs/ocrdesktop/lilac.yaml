@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ocrdesktop'')
 
   '
-repo_depends:
-- python-pillow
-- pyatspi: python-atspi
-- python-pytesseract
-- libwnck3
+repo_depends: []
 update_on:
 - alpm: ocrdesktop
   source: archpkg

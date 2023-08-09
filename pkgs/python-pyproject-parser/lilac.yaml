@@ -8,14 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyproject-pars
 
   '
 repo_depends:
-- python-toml
-- python-domdf-python-tools
-- python-apeye-core
-- python-dom-toml
-- python-natsort
-- python-packaging
-- python-attrs
-- python-shippinglabel
 - python
 update_on:
 - alias: python

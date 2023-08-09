@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cinnamon-control-cent
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libgnomekbd
-- cinnamon-menus
-- colord
-- modemmanager: libmm-glib
-- network-manager-applet: nm-connection-editor
-- cinnamon-settings-daemon
+repo_depends: []
 update_on:
 - alpm: cinnamon-control-center
   source: archpkg

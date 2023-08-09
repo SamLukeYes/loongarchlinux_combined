@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''chafa'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- imagemagick
-- libwebp
-- libxslt
-- librsvg
+repo_depends: []
 update_on:
 - alpm: chafa
   source: archpkg

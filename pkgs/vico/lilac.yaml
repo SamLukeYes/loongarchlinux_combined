@@ -10,16 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vico'')
 
   '
 repo_depends:
-- glibc
-- glib2
-- libsndfile
-- ttf-dejavu
-- pyqt5: python-pyqt5
-- util-linux: util-linux-libs
-- hicolor-icon-theme
 - python
+- glib2
+- jack2
+- libsndfile
+- util-linux-libs
 update_on:
-- alias: python
 - alias: python
 - alpm: glib2
   provides: libglib-2.0.so

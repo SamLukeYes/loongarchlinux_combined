@@ -11,8 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxqt-notificationd'')
   '
 repo_depends:
 - qt5-base
-- liblxqt
-- kwindowsystem
+- libqtxdg
 update_on:
 - alpm: qt5-base
   source: alpm

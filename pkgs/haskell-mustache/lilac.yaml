@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mustache'')
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-th-lift
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-cmdargs
-- haskell-scientific
+- haskell-unordered-containers
 - haskell-vector
+- haskell-scientific
+- haskell-th-lift
+- haskell-cmdargs
 - haskell-yaml
 update_on:
 - alpm: haskell-aeson

@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-defcon'')
 
   '
 repo_depends:
-- python-setuptools-scm
-- python-fonttools
-- python-unicodedata2
-- python-fs
 - python
 update_on:
 - alias: python

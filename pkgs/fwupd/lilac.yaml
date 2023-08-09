@@ -1,20 +1,14 @@
 destsubdir: extra
 repo_depends:
-- libxmlb
-- gnutls
-- hicolor-icon-theme
-- flashrom
-- libsmbios
-- fwupd-efi
-- libgusb
-- efivar
-- shared-mime-info
-- tpm2-tss
-- bluez
-- libjcat
-- gcab
 - python
-- polkit
+- libarchive
+- curl
+- libcbor
+- json-glib
+- libgudev
+- libmm-glib
+- libqmi
+- protobuf-c
 update_on:
 - alias: python
 - alpm: libarchive

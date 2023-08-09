@@ -10,14 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''etherwall'')
 
   '
 repo_depends:
-- qt5-quickcontrols2
-- qt5-quickcontrols
-- libusb
 - qt5-declarative
-- qt5-graphicaleffects
-- qt5-websockets
 - protobuf
-- systemd: systemd-libs
+- hidapi
 update_on:
 - alpm: qt5-declarative
   source: alpm

@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-ppix-utilities'')
 
   '
-repo_depends:
-- perl-readonly
-- perl-task-weaken
-- perl-ppi
-- perl-exception-class
+repo_depends: []
 update_on:
 - alpm: perl-ppix-utilities
   source: archpkg

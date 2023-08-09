@@ -10,13 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-loca
 
   '
 repo_depends:
-- accountsservice
-- ibus: libibus
-- libgee
-- polkit
-- gtk3
-- gnome-desktop
-- glib2
+- granite
+- switchboard
 update_on:
 - alpm: granite
   provides: libgranite.so

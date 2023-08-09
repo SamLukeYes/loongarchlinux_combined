@@ -10,7 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgusb'')
 
   '
 repo_depends:
-- glib2
+- json-glib
+- libusb
 update_on:
 - alpm: json-glib
   provides: libjson-glib-1.0.so

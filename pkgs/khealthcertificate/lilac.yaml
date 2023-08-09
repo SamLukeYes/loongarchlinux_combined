@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''khealthcertificate'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kcodecs
-- ki18n
-- karchive
+repo_depends: []
 update_on:
 - alpm: khealthcertificate
   source: archpkg

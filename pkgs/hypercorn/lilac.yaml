@@ -1,9 +1,3 @@
 destsubdir: extra
-repo_depends:
-- python-toml
-- python-priority
-- python-wsproto
-- python-h11
-- python-typing_extensions
-- python-h2
+repo_depends: []
 update_on: []

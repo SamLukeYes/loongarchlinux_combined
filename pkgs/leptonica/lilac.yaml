@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''leptonica'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libjpeg-turbo
-- libtiff
-- zlib
-- openjpeg2
-- libwebp
-- giflib
-- libpng
+repo_depends: []
 update_on:
 - alpm: leptonica
   source: archpkg

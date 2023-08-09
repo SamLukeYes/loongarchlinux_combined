@@ -1,7 +1,3 @@
 destsubdir: extra
-repo_depends:
-- qt5-x11extras
-- fcitx5-qt
-- kwidgetsaddons
-- kitemviews
+repo_depends: []
 update_on: []

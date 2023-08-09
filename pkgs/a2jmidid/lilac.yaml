@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''a2jmidid'')
 repo_depends:
 - alsa-lib
 - dbus
-- glibc
+- jack2
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

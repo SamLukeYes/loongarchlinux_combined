@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aspell'')
 
   '
 repo_depends:
-- gcc: gcc-libs
 - ncurses
 update_on:
 - alpm: ncurses

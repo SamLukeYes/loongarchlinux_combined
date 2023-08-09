@@ -8,15 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''impacket'')
 
   '
 repo_depends:
-- python-six
-- python-pycryptodome
-- python-ldap3
-- python-pycryptodomex
-- python-pyopenssl
-- python-pcapy
-- python-pyasn1
 - python
-- python-flask
 update_on:
 - alias: python
 - alpm: impacket

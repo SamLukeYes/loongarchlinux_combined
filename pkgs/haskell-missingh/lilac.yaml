@@ -11,12 +11,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-missingh'')
   '
 repo_depends:
 - haskell-hslogger
-- haskell-regex-compat
 - haskell-network
-- ghc: ghc-libs
-- haskell-old-time
 - haskell-network-bsd
 - haskell-old-locale
+- haskell-old-time
+- haskell-regex-compat
 update_on:
 - alpm: haskell-hslogger
   source: alpm

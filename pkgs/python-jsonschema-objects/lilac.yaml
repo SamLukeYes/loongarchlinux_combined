@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-jsonschema-objects'')
 
   '
-repo_depends:
-- python-jsonschema
-- python-markdown
-- python-six
-- python-inflection
+repo_depends: []
 update_on:
 - alpm: python-jsonschema-objects
   source: archpkg

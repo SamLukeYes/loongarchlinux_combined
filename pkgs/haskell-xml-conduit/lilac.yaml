@@ -10,15 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-xml-conduit''
 
   '
 repo_depends:
-- ghc: ghc-libs
-- haskell-blaze-html
+- haskell-attoparsec
 - haskell-blaze-markup
-- haskell-xml-types
 - haskell-conduit
 - haskell-conduit-extra
-- haskell-resourcet
-- haskell-attoparsec
 - haskell-data-default-class
+- haskell-resourcet
+- haskell-blaze-html
+- haskell-xml-types
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

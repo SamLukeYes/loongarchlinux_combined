@@ -1,9 +1,5 @@
 destsubdir: extra
 repo_depends:
-- xapian-core
-- grantlee
-- khtml
-- kdoctools
 - perl
 update_on:
 - alias: perl

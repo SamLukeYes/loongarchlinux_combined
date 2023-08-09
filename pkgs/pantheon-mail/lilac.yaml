@@ -10,16 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-mail'')
 
   '
 repo_depends:
-- webkit2gtk
-- gtk3
-- glib2
+- evolution-data-server
+- folks
+- granite
+- libhandy
 update_on:
-- alpm: evolution-data-server
-  provides: libcamel-1.2.so
-  source: alpm
-- alpm: evolution-data-server
-  provides: libedataserver-1.2.so
-  source: alpm
 - alpm: evolution-data-server
   provides: libedataserverui-1.2.so
   source: alpm

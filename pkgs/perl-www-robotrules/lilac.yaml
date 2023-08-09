@@ -8,7 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-www-robotrules''
 
   '
 repo_depends:
-- perl-uri
 - perl
 update_on:
 - alias: perl

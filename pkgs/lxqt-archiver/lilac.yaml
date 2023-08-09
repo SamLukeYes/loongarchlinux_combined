@@ -11,9 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxqt-archiver'')
   '
 repo_depends:
 - libfm-qt
-- qt5-x11extras
-- json-glib
-- glib2
 update_on:
 - alpm: libfm-qt
   provides: libfm-qt.so

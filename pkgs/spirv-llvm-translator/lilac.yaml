@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- llvm: llvm-libs
-- spirv-tools
+repo_depends: []
 update_on: []

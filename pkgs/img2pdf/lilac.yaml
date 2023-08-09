@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''img2pdf'')
 
   '
-repo_depends:
-- python-pillow
-- python-pikepdf
+repo_depends: []
 update_on:
 - alpm: img2pdf
   source: archpkg

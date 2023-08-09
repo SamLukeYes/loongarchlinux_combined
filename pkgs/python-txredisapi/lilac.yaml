@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-txredisapi'')
 
   '
 repo_depends:
-- python-twisted
 - python
-- python-six
 update_on:
 - alias: python
 - alpm: python-txredisapi

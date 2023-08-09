@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xfce4-panel'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- exo
-- libdbusmenu: libdbusmenu-gtk3
-- desktop-file-utils
-- libxfce4ui
-- xfconf
-- garcon
-- hicolor-icon-theme
-- libwnck3
+repo_depends: []
 update_on:
 - alpm: xfce4-panel
   source: archpkg

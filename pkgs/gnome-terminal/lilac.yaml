@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-terminal'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gsettings-desktop-schemas
-- vte3
+repo_depends: []
 update_on:
 - alpm: gnome-terminal
   source: archpkg

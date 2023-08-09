@@ -10,8 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''procps-ng'')
 
   '
 repo_depends:
-- glibc
-- systemd: systemd-libs
 - ncurses
 update_on:
 - alpm: ncurses

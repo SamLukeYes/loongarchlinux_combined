@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''cl-cffi'')
 
   '
-repo_depends:
-- cl-babel
-- cl-alexandria
-- cl-trivial-features
-- cl-ppcre
-- cl-json
-- libffi
+repo_depends: []
 update_on:
 - alpm: cl-cffi
   source: archpkg

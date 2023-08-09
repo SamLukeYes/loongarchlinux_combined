@@ -8,15 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-klein'')
 
   '
 repo_depends:
-- python-constantly
-- python-incremental
-- python-twisted
-- python-tubes
-- python-werkzeug
-- python-attrs
-- python-hyperlink
 - python
-- python-zope-interface
 update_on:
 - alias: python
 - alpm: python-klein

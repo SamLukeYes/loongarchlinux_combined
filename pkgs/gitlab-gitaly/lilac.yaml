@@ -1,8 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libxslt
-- libssh2
-- libxml2
-- ruby2.7
-- glibc
+repo_depends: []
 update_on: []

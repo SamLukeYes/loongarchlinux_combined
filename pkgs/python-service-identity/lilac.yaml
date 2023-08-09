@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-service-identity'')
 
   '
-repo_depends:
-- python-six
-- python-cryptography
-- python-pyasn1-modules
-- python-attrs
-- python-pyasn1
+repo_depends: []
 update_on:
 - alpm: python-service-identity
   source: archpkg

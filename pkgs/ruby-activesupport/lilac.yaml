@@ -9,11 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-activesupport'')
   '
 repo_depends:
 - ruby
-- ruby-minitest
-- ruby-concurrent
-- ruby-i18n
-- ruby-tzinfo
-- ruby-zeitwerk
 update_on:
 - alias: ruby
 - alpm: ruby-activesupport

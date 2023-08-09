@@ -10,28 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zam-plugins'')
 
   '
 repo_depends:
-- alsa-lib
-- glibc
-- gcc: gcc-libs
-- zita-convolver
 - dbus
-- libglvnd
-- libxext
+- cuda-tools
 - libsamplerate
-- libx11
+- zita-convolver
+- alsa-lib
 update_on:
-- alpm: dbus
-  provides: libdbus-1.so
-  source: alpm
-- alpm: cuda-tools
-  provides: libGL.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: zita-convolver
-  provides: libzita-convolver.so
-  source: alpm
 - alpm: dbus
   provides: libdbus-1.so
   source: alpm
@@ -46,42 +30,6 @@ update_on:
   source: alpm
 - alpm: alsa-lib
   provides: libasound.so
-  source: alpm
-- alpm: dbus
-  provides: libdbus-1.so
-  source: alpm
-- alpm: cuda-tools
-  provides: libGL.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: zita-convolver
-  provides: libzita-convolver.so
-  source: alpm
-- alpm: dbus
-  provides: libdbus-1.so
-  source: alpm
-- alpm: cuda-tools
-  provides: libGL.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: zita-convolver
-  provides: libzita-convolver.so
-  source: alpm
-- alpm: dbus
-  provides: libdbus-1.so
-  source: alpm
-- alpm: cuda-tools
-  provides: libGL.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: zita-convolver
-  provides: libzita-convolver.so
   source: alpm
 - alpm: zam-plugins
   source: archpkg

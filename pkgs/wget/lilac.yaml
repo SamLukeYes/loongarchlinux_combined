@@ -11,12 +11,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wget'')
   '
 repo_depends:
 - libidn2
-- pcre2
-- zlib
+- util-linux-libs
 - libpsl
-- util-linux: util-linux-libs
-- gnutls
-- glibc
 - nettle
 update_on:
 - alpm: libidn2

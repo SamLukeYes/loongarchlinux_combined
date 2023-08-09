@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''htmldoc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxpm
-- libjpeg-turbo
-- zlib
-- fltk
-- gnutls
-- hicolor-icon-theme
-- libpng
+repo_depends: []
 update_on:
 - alpm: htmldoc
   source: archpkg

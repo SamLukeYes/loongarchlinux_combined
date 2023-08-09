@@ -8,11 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ropper'')
 
   '
 repo_depends:
-- python-archinfo
-- capstone: python-capstone
-- python-filebytes
-- z3: python-z3-solver
-- python-pyvex
 - python
 update_on:
 - alias: python

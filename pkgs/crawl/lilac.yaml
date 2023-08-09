@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''crawl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- lua51
-- sdl2_image
-- ncurses
-- glu
-- ttf-dejavu
-- freetype2
-- python-yaml
-- sqlite
-- hicolor-icon-theme
-- libpng
+repo_depends: []
 update_on:
 - alpm: crawl
   source: archpkg

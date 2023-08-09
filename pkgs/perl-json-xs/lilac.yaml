@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-json-xs'')
 
   '
 repo_depends:
-- perl-common-sense
 - perl
-- perl-types-serialiser
 update_on:
 - alias: perl
 - alpm: perl-json-xs

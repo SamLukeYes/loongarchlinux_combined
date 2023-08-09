@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fflas-ffpack'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- lapack: cblas
-- givaro
-- lapack
+repo_depends: []
 update_on:
 - alpm: fflas-ffpack
   source: archpkg

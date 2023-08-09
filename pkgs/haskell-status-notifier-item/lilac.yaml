@@ -10,15 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-status-notifi
 
   '
 repo_depends:
-- haskell-hslogger
-- haskell-optparse-applicative
-- haskell-lens
-- ghc: ghc-libs
-- haskell-dbus-hslogger
 - haskell-byte-order
 - haskell-bytestring-to-vector
-- haskell-vector
 - haskell-dbus
+- haskell-dbus-hslogger
+- haskell-hslogger
+- haskell-lens
+- haskell-optparse-applicative
+- haskell-vector
 update_on:
 - alpm: haskell-byte-order
   source: alpm

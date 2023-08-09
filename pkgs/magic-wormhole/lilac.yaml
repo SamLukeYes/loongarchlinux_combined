@@ -7,20 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''magic-wormhole'')
 
   '
-repo_depends:
-- python-cffi
-- python-txtorcon
-- python-tqdm
-- python-autobahn
-- python-humanize
-- python-spake2
-- python-setuptools
-- python-click
-- python-pyopenssl
-- python-hkdf
-- python-service-identity
-- python-idna
-- python-pynacl
+repo_depends: []
 update_on:
 - alpm: magic-wormhole
   source: archpkg

@@ -10,8 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cargo-edit'')
 
   '
 repo_depends:
-- openssl
-- libssh2
+- julia
 update_on:
 - alpm: julia
   provides: libgit2.so

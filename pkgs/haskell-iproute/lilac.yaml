@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-iproute'')
 
   '
 repo_depends:
+- haskell-appar
 - haskell-byteorder
 - haskell-network
-- haskell-appar
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-appar
   source: alpm

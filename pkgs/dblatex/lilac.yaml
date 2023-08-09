@@ -8,12 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dblatex'')
 
   '
 repo_depends:
-- docbook-xsl
-- docbook-xml
-- texlive-texmf: texlive-pictures
-- libxslt
-- texlive-texmf: texlive-formatsextra
-- texlive-texmf: texlive-latexextra
 - python
 update_on:
 - alias: python

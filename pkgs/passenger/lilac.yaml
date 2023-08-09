@@ -11,10 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''passenger'')
   '
 repo_depends:
 - ruby
-- curl
-- apache
-- ruby-rack
-- libnsl
 - nginx
 update_on:
 - alias: ruby

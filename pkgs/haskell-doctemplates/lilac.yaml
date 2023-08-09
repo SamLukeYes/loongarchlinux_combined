@@ -11,12 +11,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-doctemplates'
   '
 repo_depends:
 - haskell-aeson
-- ghc: ghc-libs
 - haskell-doclayout
-- haskell-scientific
-- haskell-vector
-- haskell-text-conversions
 - haskell-safe
+- haskell-scientific
+- haskell-text-conversions
+- haskell-vector
 update_on:
 - alpm: haskell-aeson
   source: alpm

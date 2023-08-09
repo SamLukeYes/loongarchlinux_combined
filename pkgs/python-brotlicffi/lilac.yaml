@@ -10,8 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-brotlicffi'')
 
   '
 repo_depends:
-- python-cffi
-- brotli
 - python
 update_on:
 - alias: python

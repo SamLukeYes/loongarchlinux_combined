@@ -7,35 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''shutter'')
 
   '
-repo_depends:
-- xdg-utils
-- perl-sort-naturally
-- perl-gtk3
-- librsvg
-- perl-file-basedir
-- perl-locale-gettext
-- xdg-desktop-portal
-- perl-goocanvas2-cairotypes
-- perl-json-maybexs
-- perl-file-which
-- perl-www-mechanize
-- perl-gtk3-imageview
-- perl-moo
-- imagemagick
-- perl-net-dbus
-- libwnck3
-- perl-number-bytes-human
-- perl-proc-processtable
-- perl-proc-simple
-- perl-x11-protocol
-- perl-goocanvas2
-- perl-readonly
-- perl-file-copy-recursive
-- perl-carp-always
-- perl-glib-object-introspection
-- perl-json
-- perl-xml-simple
-- pango-perl
+repo_depends: []
 update_on:
 - alpm: shutter
   source: archpkg

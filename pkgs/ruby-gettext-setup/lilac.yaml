@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-gettext-setup'')
 
   '
 repo_depends:
-- ruby-gettext
 - ruby
-- ruby-fast_gettext
 update_on:
 - alias: ruby
 - alpm: ruby-gettext-setup

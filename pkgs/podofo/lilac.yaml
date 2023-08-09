@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''podofo'')
 
   '
 repo_depends:
-- fontconfig
-- libjpeg-turbo
-- libtiff
-- libidn
-- openssl
 - lua
+- podofo
 update_on:
 - alias: lua
+- alpm: podofo
+  provides: libpodofo.so
+  source: alpm
 - alpm: podofo
   source: archpkg

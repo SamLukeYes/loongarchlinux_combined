@@ -10,16 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-structured'')
 
   '
 repo_depends:
-- haskell-unordered-containers
 - haskell-aeson
-- ghc: ghc-libs
+- haskell-base16-bytestring
 - haskell-hashable
+- haskell-scientific
 - haskell-tagged
 - haskell-time-compat
+- haskell-unordered-containers
 - haskell-uuid-types
-- haskell-scientific
 - haskell-vector
-- haskell-base16-bytestring
 update_on:
 - alpm: haskell-aeson
   source: alpm

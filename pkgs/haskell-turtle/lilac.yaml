@@ -10,18 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-turtle'')
 
   '
 repo_depends:
-- haskell-optparse-applicative
+- haskell-ansi-wl-pprint
 - haskell-async
-- ghc: ghc-libs
+- haskell-clock
 - haskell-foldl
 - haskell-hostname
-- haskell-temporary
-- haskell-unix-compat
-- haskell-ansi-wl-pprint
-- haskell-clock
 - haskell-managed
+- haskell-optparse-applicative
 - haskell-optional-args
 - haskell-streaming-commons
+- haskell-temporary
+- haskell-unix-compat
 update_on:
 - alpm: haskell-ansi-wl-pprint
   source: alpm

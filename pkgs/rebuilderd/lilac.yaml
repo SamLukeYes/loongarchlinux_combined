@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rebuilderd'')
 
   '
 repo_depends:
-- archlinux-repro
-- xz
-- sqlite
-- openssl
-- shared-mime-info
+- zstd
 update_on:
 - alpm: zstd
   provides: libzstd.so

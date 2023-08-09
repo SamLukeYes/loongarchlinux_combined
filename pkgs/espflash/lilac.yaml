@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''espflash'')
 
   '
 repo_depends:
-- libuv
+- systemd-libs
 update_on:
 - alpm: systemd-libs
   provides: libudev.so

@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sweethome3d'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxrender
-- desktop-file-utils
-- libxext
-- libnsl
-- shared-mime-info
+repo_depends: []
 update_on:
 - alpm: sweethome3d
   source: archpkg

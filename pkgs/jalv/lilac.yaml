@@ -10,17 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jalv'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- serd
 - glib2
+- jack2
+- lilv
+- serd
 - sratom
 - suil
-- glibc
-- lilv
 update_on:
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
 - alpm: glib2
   provides: libgobject-2.0.so
   source: alpm

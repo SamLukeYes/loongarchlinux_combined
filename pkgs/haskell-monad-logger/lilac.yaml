@@ -10,18 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-monad-logger'
 
   '
 repo_depends:
-- ghc: ghc-libs
-- haskell-monad-loops
-- haskell-transformers-base
-- haskell-lifted-base
-- haskell-unliftio-core
 - haskell-conduit
 - haskell-conduit-extra
 - haskell-fast-logger
-- haskell-resourcet
-- haskell-transformers-compat
+- haskell-lifted-base
 - haskell-monad-control
+- haskell-monad-loops
+- haskell-resourcet
 - haskell-stm-chans
+- haskell-transformers-base
+- haskell-transformers-compat
+- haskell-unliftio-core
 update_on:
 - alpm: haskell-conduit
   source: alpm

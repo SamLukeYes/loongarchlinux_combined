@@ -1,12 +1,3 @@
 destsubdir: extra
-repo_depends:
-- pango
-- gd
-- librsvg
-- gts
-- gsfonts
-- ghostscript
-- libxaw
-- libnsl
-- libpng
+repo_depends: []
 update_on: []

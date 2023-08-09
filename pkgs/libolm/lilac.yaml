@@ -10,10 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libolm'')
 
   '
 repo_depends:
-- python-cffi
-- gcc: gcc-libs
-- python-future
 - python
+- libolm
 update_on:
 - alias: python
 - alpm: libolm

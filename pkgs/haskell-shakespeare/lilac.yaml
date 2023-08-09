@@ -10,15 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-shakespeare''
 
   '
 repo_depends:
+- haskell-aeson
+- haskell-blaze-html
+- haskell-blaze-markup
+- haskell-file-embed
+- haskell-scientific
 - haskell-th-lift
 - haskell-unordered-containers
-- haskell-aeson
-- ghc: ghc-libs
-- haskell-blaze-html
-- haskell-scientific
-- haskell-blaze-markup
 - haskell-vector
-- haskell-file-embed
 update_on:
 - alpm: haskell-aeson
   source: alpm

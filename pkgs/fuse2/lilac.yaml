@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- glibc
-- fuse3: fuse-common
+repo_depends: []
 update_on: []

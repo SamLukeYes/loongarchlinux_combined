@@ -1,10 +1,5 @@
 destsubdir: extra
 repo_depends:
-- bash
-- perl-dbi
-- perl-clone
 - perl
-- libxml2
-- perl-xml-libxml
 update_on:
 - alias: perl

@@ -11,18 +11,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''freewheeling'')
   '
 repo_depends:
 - alsa-lib
-- libsndfile
-- sdl_ttf
-- glibc
-- libogg
-- gcc: gcc-libs
-- liblo
 - fluidsynth
-- libxml2
-- nettle
+- jack2
+- liblo
+- libsndfile
 - libvorbis
-- sdl_gfx
-- libx11
 update_on:
 - alpm: alsa-lib
   provides: libasound.so
@@ -38,12 +31,6 @@ update_on:
   source: alpm
 - alpm: libsndfile
   provides: libsndfile.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbis.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbisenc.so
   source: alpm
 - alpm: libvorbis
   provides: libvorbisfile.so

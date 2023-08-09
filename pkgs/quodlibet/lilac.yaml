@@ -7,14 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''quodlibet'')
 
   '
-repo_depends:
-- pygobject: python-gobject
-- python-mutagen
-- dbus-python
-- gtk3
-- python-feedparser
-- libsoup
-- python-cairo
+repo_depends: []
 update_on:
 - alpm: quodlibet
   source: archpkg

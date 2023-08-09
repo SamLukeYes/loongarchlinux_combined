@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rkward'')
 
   '
 repo_depends:
-- ktexteditor
 - r
-- qt5-webengine
 update_on:
 - alias: r
 - alpm: rkward

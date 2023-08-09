@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''partitionmanager'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kio
-- kpmcore
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: partitionmanager
   source: archpkg

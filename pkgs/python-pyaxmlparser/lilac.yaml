@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyaxmlparser''
 
   '
 repo_depends:
-- python-lxml
-- python-magic
-- python-asn1crypto
-- python-click
 - python
 update_on:
 - alias: python

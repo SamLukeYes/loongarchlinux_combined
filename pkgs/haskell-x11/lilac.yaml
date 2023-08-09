@@ -10,11 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-x11'')
 
   '
 repo_depends:
-- ghc: ghc-libs
-- libxrandr
-- libxss
-- libxinerama
-- libx11
 - haskell-data-default-class
 update_on:
 - alpm: haskell-data-default-class

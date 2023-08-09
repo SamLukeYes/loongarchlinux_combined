@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-genvalidity-h
 
   '
 repo_depends:
-- haskell-hspec-core
-- ghc: ghc-libs
 - haskell-genvalidity
-- haskell-quickcheck
 - haskell-genvalidity-property
 - haskell-hspec
+- haskell-hspec-core
+- haskell-quickcheck
 - haskell-validity
 update_on:
 - alpm: haskell-genvalidity

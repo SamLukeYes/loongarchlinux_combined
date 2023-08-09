@@ -1,9 +1,3 @@
 destsubdir: core
-repo_depends:
-- gssproxy
-- rpcbind
-- lvm2: device-mapper
-- libevent
-- krb5
-- openldap: libldap
+repo_depends: []
 update_on: []

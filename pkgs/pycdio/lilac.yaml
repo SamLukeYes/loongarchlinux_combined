@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pycdio'')
 
   '
 repo_depends:
-- libcdio
 - python
 update_on:
 - alias: python

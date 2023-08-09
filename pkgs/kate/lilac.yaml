@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kate'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kactivities
-- ktexteditor
-- kuserfeedback
-- knewstuff
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: kate
   source: archpkg

@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tamarin-prove
 
   '
 repo_depends:
-- haskell-tamarin-prover-utils
-- haskell-dlist
-- ghc: ghc-libs
-- haskell-safe
 - haskell-hunit
 - haskell-attoparsec
+- haskell-dlist
+- haskell-safe
+- haskell-tamarin-prover-utils
 update_on:
 - alpm: haskell-hunit
   source: alpm

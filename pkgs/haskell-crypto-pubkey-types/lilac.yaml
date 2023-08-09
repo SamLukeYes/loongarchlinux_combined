@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-crypto-pubkey
 
   '
 repo_depends:
-- haskell-asn1-types
 - haskell-asn1-encoding
-- ghc: ghc-libs
+- haskell-asn1-types
 update_on:
 - alpm: haskell-asn1-encoding
   source: alpm

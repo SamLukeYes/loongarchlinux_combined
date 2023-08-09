@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''koko'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kirigami2
-- kdeclarative
-- kfilemetadata
-- qt5-location
-- kquickimageeditor
+repo_depends: []
 update_on:
 - alpm: koko
   source: archpkg

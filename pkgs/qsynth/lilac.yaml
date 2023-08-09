@@ -10,16 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qsynth'')
 
   '
 repo_depends:
-- glibc
-- gcc: gcc-libs
 - qt6-base
 - fluidsynth
-- qt6-svg
-- hicolor-icon-theme
 update_on:
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
 - alpm: qt6-base
   source: alpm
   strip_release: true

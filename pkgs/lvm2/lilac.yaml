@@ -10,13 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lvm2'')
 
   '
 repo_depends:
-- thin-provisioning-tools
-- libaio
-- util-linux: util-linux-libs
-- bash
+- systemd-libs
+- util-linux-libs
 - readline
-- glibc
-- systemd: systemd-libs
+- libaio
 update_on:
 - alpm: systemd-libs
   provides: libudev.so
@@ -24,15 +21,11 @@ update_on:
 - alpm: util-linux-libs
   provides: libblkid.so
   source: alpm
-- alias: readline
 - alpm: readline
   provides: libreadline.so
   source: alpm
 - alpm: libaio
   provides: libaio.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libudev.so
   source: alpm
 - alpm: lvm2
   source: archpkg

@@ -1,11 +1,3 @@
 destsubdir: extra
-repo_depends:
-- bzip2
-- libjpeg-turbo
-- xz
-- libtiff
-- freetype2
-- libxext
-- giflib
-- libpng
+repo_depends: []
 update_on: []

@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''squashfuse'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- zstd
+repo_depends: []
 update_on:
 - alpm: squashfuse
   source: archpkg

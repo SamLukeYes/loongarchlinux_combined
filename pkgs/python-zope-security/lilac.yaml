@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-zope-security'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-zope-location
-- python-zope-component
-- python-zope-i18nmessageid
-- python-setuptools
-- python-zope-proxy
-- python-zope-schema
-- python-zope-interface
+repo_depends: []
 update_on:
 - alpm: python-zope-security
   source: archpkg

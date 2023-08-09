@@ -10,9 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dbus-python'')
 
   '
 repo_depends:
-- glibc
-- dbus
-- glib2
 - python
 update_on:
 - alias: python

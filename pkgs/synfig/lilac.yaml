@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''synfig'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libjpeg-turbo
-- libmng
-- openexr
-- pango
-- mlt
-- fftw
-- imagemagick
-- libxml++2.6
+repo_depends: []
 update_on:
 - alpm: synfig
   source: archpkg

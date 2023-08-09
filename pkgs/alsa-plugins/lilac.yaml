@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''alsa-plugins'')
   '
 repo_depends:
 - alsa-lib
-- pulseaudio
-- glibc
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

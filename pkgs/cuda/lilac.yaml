@@ -10,10 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cuda'')
 
   '
 repo_depends:
-- nvidia-utils: opencl-nvidia
-- nvidia-utils
-- gcc12
-- nss
 - python
 update_on:
 - alias: python

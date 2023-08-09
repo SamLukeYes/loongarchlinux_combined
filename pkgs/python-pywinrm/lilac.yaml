@@ -8,9 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pywinrm'')
 
   '
 repo_depends:
-- python-xmltodict
-- python-requests
-- python-requests-ntlm
 - python
 update_on:
 - alias: python

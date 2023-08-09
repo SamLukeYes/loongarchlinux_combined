@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sudo'')
 
   '
 repo_depends:
-- pam
-- zlib
 - openssl
-- glibc
-- openldap: libldap
+- openssl
 update_on:
 - alias: libcrypto
 - alias: libssl

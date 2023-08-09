@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-shelly'')
 
   '
 repo_depends:
-- ghc: ghc-libs
-- haskell-enclosed-exceptions
-- haskell-async
 - haskell-unix-compat
+- haskell-monad-control
 - haskell-lifted-base
 - haskell-lifted-async
-- haskell-monad-control
+- haskell-enclosed-exceptions
+- haskell-async
 - haskell-transformers-base
 update_on:
 - alpm: haskell-unix-compat

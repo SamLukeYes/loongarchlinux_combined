@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libmemcached-awesome'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libevent
-- gcc: gcc-libs
-- libsasl
+repo_depends: []
 update_on:
 - alpm: libmemcached-awesome
   source: archpkg

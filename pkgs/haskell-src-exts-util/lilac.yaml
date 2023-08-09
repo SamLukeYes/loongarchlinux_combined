@@ -13,7 +13,6 @@ repo_depends:
 - haskell-data-default
 - haskell-src-exts
 - haskell-uniplate
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-data-default
   source: alpm

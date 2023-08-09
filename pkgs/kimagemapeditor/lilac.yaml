@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kimagemapeditor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kparts
-- qt5-webengine
+repo_depends: []
 update_on:
 - alpm: kimagemapeditor
   source: archpkg

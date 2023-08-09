@@ -1,11 +1,7 @@
 destsubdir: extra
 repo_depends:
-- webkit2gtk-4.1
-- networkmanager
-- gtk3
-- gcr
-- libsoup
-- glib2
+- granite
+- libhandy
 update_on:
 - alpm: granite
   provides: libgranite.so

@@ -9,33 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pulseaudio'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libsoxr
-- alsa-lib
-- speexdsp
-- libsndfile
-- sbc
-- libsm
-- gstreamer: gst-plugins-good
-- libcap
-- lirc
-- avahi
-- dbus
-- fftw
-- orc
-- systemd
-- rtkit
-- libxcb
-- bluez
-- bluez: bluez-libs
-- libxtst
-- gstreamer: gst-plugins-base-libs
-- openssl
-- gstreamer: gst-plugins-base
-- libasyncns
-- pyqt5: python-pyqt5
-- webrtc-audio-processing
-- tdb
+repo_depends: []
 update_on:
 - alpm: pulseaudio
   source: archpkg

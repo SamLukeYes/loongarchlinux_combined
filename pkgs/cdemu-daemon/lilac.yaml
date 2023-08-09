@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cdemu-daemon'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- dbus
-- libao
+repo_depends: []
 update_on:
 - alpm: cdemu-daemon
   source: archpkg

@@ -10,22 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''waybar'')
 
   '
 repo_depends:
-- libevdev
+- jsoncpp
+- jack2
+- chrono-date
+- spdlog
 - upower
-- libappindicator: libappindicator-gtk3
-- wireplumber: libwireplumber
-- gtk-layer-shell
-- libmpdclient
-- libxkbcommon
-- libdbusmenu: libdbusmenu-gtk3
-- playerctl
-- libsigc++
-- pulseaudio: libpulse
-- fmt
-- libnl
-- libinput
-- wayland
-- gtkmm3
+- sndio
 update_on:
 - alpm: jsoncpp
   provides: libjsoncpp.so

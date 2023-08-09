@@ -10,12 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wlroots'')
 
   '
 repo_depends:
-- libinput
-- libxcb
-- xcb-util-renderutil
-- xcb-util-wm
-- libglvnd
-- xcb-util-errors
+- pixman
+- seatd
+- systemd-libs
+- emby-theater
+- wayland
+- intel-oneapi-basekit
 update_on:
 - alpm: pixman
   provides: libpixman-1.so
@@ -28,9 +28,6 @@ update_on:
   source: alpm
 - alpm: emby-theater
   provides: libvulkan.so
-  source: alpm
-- alpm: wayland
-  provides: libwayland-client.so
   source: alpm
 - alpm: wayland
   provides: libwayland-server.so

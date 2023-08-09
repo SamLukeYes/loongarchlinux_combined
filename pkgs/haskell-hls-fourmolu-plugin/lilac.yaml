@@ -10,13 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-fourmolu-
 
   '
 repo_depends:
-- haskell-process-extras
-- haskell-lens
-- ghc: ghc-libs
-- haskell-hls-plugin-api
-- haskell-lsp
-- haskell-ghcide
 - haskell-fourmolu
+- haskell-ghc
+- haskell-ghcide
+- haskell-hls-plugin-api
+- haskell-lens
+- haskell-lsp
+- haskell-process-extras
 update_on:
 - alpm: haskell-fourmolu
   source: alpm

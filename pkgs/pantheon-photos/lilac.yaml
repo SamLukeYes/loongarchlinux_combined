@@ -10,24 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-photos'')
 
   '
 repo_depends:
-- libexif
-- glib2
-- pango
-- geocode-glib
-- gstreamer
-- libxml2
-- cairo
-- rest
-- gstreamer: gst-plugins-base-libs
-- sqlite
-- libgexiv2
-- libraw
-- gdk-pixbuf2
-- libgphoto2
-- libgee
-- json-glib
-- gtk3
-- libsoup
+- granite
+- libgudev
+- libhandy
 update_on:
 - alpm: granite
   provides: libgranite.so

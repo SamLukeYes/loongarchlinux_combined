@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rhvoice'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pulseaudio: libpulse
-- portaudio
-- speech-dispatcher
+repo_depends: []
 update_on:
 - alpm: rhvoice
   source: archpkg

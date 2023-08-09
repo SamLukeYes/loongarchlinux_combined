@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''scrot'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxfixes
-- libxcomposite
-- libbsd
-- imlib2
-- libxinerama
-- libxext
+repo_depends: []
 update_on:
 - alpm: scrot
   source: archpkg

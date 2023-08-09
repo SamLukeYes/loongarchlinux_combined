@@ -1,5 +1,3 @@
 destsubdir: core
-repo_depends:
-- zlib
-- sqlite
+repo_depends: []
 update_on: []

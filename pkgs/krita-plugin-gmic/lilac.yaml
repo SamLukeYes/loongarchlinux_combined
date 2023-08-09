@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''krita-plugin-gmic'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- krita
-- gmic
+repo_depends: []
 update_on:
 - alpm: krita-plugin-gmic
   source: archpkg

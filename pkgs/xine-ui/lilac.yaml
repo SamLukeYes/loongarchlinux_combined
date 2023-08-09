@@ -10,20 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xine-ui'')
 
   '
 repo_depends:
-- xine-lib
-- aalib
-- libxft
-- libjpeg-turbo
-- lirc
-- libxxf86vm
-- curl
-- libxv
-- libxinerama
-- libx11
 - readline
-- libxext
-- hicolor-icon-theme
-- libpng
 update_on:
 - alias: readline
 - alpm: xine-ui

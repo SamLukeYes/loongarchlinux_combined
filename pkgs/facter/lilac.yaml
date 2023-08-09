@@ -10,45 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''facter'')
 
   '
 repo_depends:
-- util-linux: util-linux-libs
-- glibc
-- leatherman
-- gcc: gcc-libs
-- pciutils
-- curl
-- systemd: systemd-libs
 - libwhereami
-- openssl
 - cpp-hocon
+- leatherman
 - ruby
-- virt-what
-- dmidecode
-- boost: boost-libs
-- yaml-cpp
+- util-linux-libs
 update_on:
 - alpm: libwhereami
   provides: libwhereami.so
   source: alpm
 - alpm: cpp-hocon
   provides: libcpp-hocon.so
-  source: alpm
-- alpm: leatherman
-  provides: leatherman_curl.so
-  source: alpm
-- alpm: leatherman
-  provides: leatherman_ruby.so
-  source: alpm
-- alpm: leatherman
-  provides: leatherman_execution.so
-  source: alpm
-- alpm: leatherman
-  provides: leatherman_file_util.so
-  source: alpm
-- alpm: leatherman
-  provides: leatherman_util.so
-  source: alpm
-- alpm: leatherman
-  provides: leatherman_logging.so
   source: alpm
 - alpm: leatherman
   provides: leatherman_locale.so

@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sdl2_mixer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- flac
-- libmodplug
-- sdl2
-- opusfile
-- mpg123
-- libvorbis
+repo_depends: []
 update_on:
 - alpm: sdl2_mixer
   source: archpkg

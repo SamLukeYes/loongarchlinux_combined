@@ -10,11 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''android-tools'')
 
   '
 repo_depends:
-- libusb
-- android-udev
-- pcre2
-- brotli
-- zstd
 - protobuf
 update_on:
 - alias: protobuf

@@ -10,15 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-quickcheck-cl
 
   '
 repo_depends:
-- haskell-aeson
-- ghc: ghc-libs
-- haskell-quickcheck-classes-base
 - haskell-quickcheck
-- haskell-semirings
-- haskell-semigroupoids
-- haskell-primitive-addr
-- haskell-vector
+- haskell-aeson
 - haskell-primitive
+- haskell-primitive-addr
+- haskell-quickcheck-classes-base
+- haskell-semigroupoids
+- haskell-semirings
+- haskell-vector
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

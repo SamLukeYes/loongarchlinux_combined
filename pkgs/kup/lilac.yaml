@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kup'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libgit2
-- hicolor-icon-theme
-- kidletime
-- kinit
+repo_depends: []
 update_on:
 - alpm: kup
   source: archpkg

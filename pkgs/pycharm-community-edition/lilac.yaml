@@ -10,10 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pycharm-community-edi
 
   '
 repo_depends:
-- fontconfig
-- glib2
-- libdbusmenu: libdbusmenu-glib
-- giflib
 - python
 update_on:
 - alias: python

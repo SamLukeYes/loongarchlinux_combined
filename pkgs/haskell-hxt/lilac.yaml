@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hxt'')
 
   '
 repo_depends:
-- ghc: ghc-libs
+- haskell-hxt-charproperties
 - haskell-hxt-regex-xmlschema
 - haskell-hxt-unicode
-- haskell-hxt-charproperties
 - haskell-network-uri
 update_on:
 - alpm: haskell-hxt-charproperties

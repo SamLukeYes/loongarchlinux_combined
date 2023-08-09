@@ -10,32 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dolphin-emu'')
 
   '
 repo_depends:
-- alsa-lib
-- libevdev
-- glibc
-- gcc: gcc-libs
-- libxrandr
+- ffmpeg
+- curl
+- fmt
+- miniupnpc
 - sfml
-- minizip-ng
-- bluez: bluez-libs
-- pugixml
-- pulseaudio: libpulse
-- enet
-- hidapi
-- libxi
+- systemd-libs
+- libusb
 - qt6-base
-- zlib
-- libx11
-- lzo
 update_on:
 - alpm: ffmpeg
-  provides: libavcodec.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavformat.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavutil.so
+  provides: libswscale.so
   source: alpm
 - alpm: curl
   provides: libcurl.so
@@ -46,8 +31,8 @@ update_on:
 - alpm: miniupnpc
   provides: libminiupnpc.so
   source: alpm
-- alpm: ffmpeg
-  provides: libswscale.so
+- alpm: sfml
+  provides: libsfml-system.so
   source: alpm
 - alpm: systemd-libs
   provides: libudev.so

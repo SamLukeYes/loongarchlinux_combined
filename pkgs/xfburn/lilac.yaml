@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xfburn'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- exo
-- libisofs
-- desktop-file-utils
-- gtk3
-- libxfce4ui
-- gstreamer: gst-plugins-base-libs
-- libburn
-- libgudev
+repo_depends: []
 update_on:
 - alpm: xfburn
   source: archpkg

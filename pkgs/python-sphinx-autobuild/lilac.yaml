@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-sphinx-autobui
 
   '
 repo_depends:
-- python-sphinx
-- python-livereload
 - python
 update_on:
 - alias: python

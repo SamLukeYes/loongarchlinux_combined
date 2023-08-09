@@ -8,11 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-dropbox'')
 
   '
 repo_depends:
-- python-requests
-- python-six
-- python-setuptools
-- python-stone
-- python-urllib3
 - python
 update_on:
 - alias: python

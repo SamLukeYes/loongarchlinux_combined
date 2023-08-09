@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-fuubar'')
 
   '
-repo_depends:
-- ruby-ruby-progressbar
-- ruby-rspec-core
+repo_depends: []
 update_on:
 - alpm: ruby-fuubar
   source: archpkg

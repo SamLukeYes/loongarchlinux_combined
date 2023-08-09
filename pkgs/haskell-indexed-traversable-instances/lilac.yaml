@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-indexed-trave
 
   '
 repo_depends:
-- haskell-unordered-containers
-- ghc: ghc-libs
-- haskell-tagged
-- haskell-onetuple
-- haskell-vector
 - haskell-indexed-traversable
+- haskell-onetuple
+- haskell-tagged
+- haskell-unordered-containers
+- haskell-vector
 update_on:
 - alpm: haskell-indexed-traversable
   source: alpm

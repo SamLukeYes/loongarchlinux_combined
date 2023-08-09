@@ -7,14 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pyppeteer'')
 
   '
-repo_depends:
-- python-tqdm
-- python-importlib-metadata
-- python-websockets
-- python-urllib3
-- python-appdirs
-- python-pyee
-- python-certifi
+repo_depends: []
 update_on:
 - alpm: python-pyppeteer
   source: archpkg

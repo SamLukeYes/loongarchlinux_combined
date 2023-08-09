@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''neovim-nvim-treesitter'')
 
   '
-repo_depends:
-- gcc
-- neovim
-- curl
-- tar
+repo_depends: []
 update_on:
 - alpm: neovim-nvim-treesitter
   source: archpkg

@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libxft'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- fontconfig
-- libxrender
+repo_depends: []
 update_on:
 - alpm: libxft
   source: archpkg

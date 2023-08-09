@@ -10,15 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hatari'')
 
   '
 repo_depends:
-- glibc
-- portmidi
-- sdl2
-- systemd: systemd-libs
-- zlib
-- libx11
 - readline
-- hicolor-icon-theme
-- libpng
 update_on:
 - alias: readline
 - alpm: hatari

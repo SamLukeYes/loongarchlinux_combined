@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-rerebase'')
   '
 repo_depends:
 - haskell-rebase
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-rebase
   source: alpm

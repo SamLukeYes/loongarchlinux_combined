@@ -10,7 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-onboarding''
 
   '
 repo_depends:
-- glib2
+- libadwaita
+- granite7
 update_on:
 - alpm: libadwaita
   provides: libadwaita-1.so

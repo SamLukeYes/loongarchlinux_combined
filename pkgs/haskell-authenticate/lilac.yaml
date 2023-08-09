@@ -10,19 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-authenticate'
 
   '
 repo_depends:
-- haskell-unordered-containers
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-html-conduit
-- haskell-http-types
+- haskell-attoparsec
 - haskell-blaze-builder
 - haskell-case-insensitive
-- haskell-xml-conduit
 - haskell-conduit
+- haskell-html-conduit
 - haskell-http-conduit
-- haskell-resourcet
-- haskell-attoparsec
+- haskell-http-types
 - haskell-network-uri
+- haskell-resourcet
+- haskell-unordered-containers
+- haskell-xml-conduit
 update_on:
 - alpm: haskell-aeson
   source: alpm

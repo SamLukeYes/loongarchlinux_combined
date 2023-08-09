@@ -7,16 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-quart'')
 
   '
-repo_depends:
-- hypercorn
-- python-markupsafe
-- python-importlib-metadata
-- python-itsdangerous
-- python-click
-- python-blinker
-- python-werkzeug
-- python-jinja
-- python-aiofiles
+repo_depends: []
 update_on:
 - alpm: python-quart
   source: archpkg

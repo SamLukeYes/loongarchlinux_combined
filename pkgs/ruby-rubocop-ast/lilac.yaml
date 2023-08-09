@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rubocop-ast'')
   '
 repo_depends:
 - ruby
-- ruby-parser
 update_on:
 - alias: ruby
 - alpm: ruby-rubocop-ast

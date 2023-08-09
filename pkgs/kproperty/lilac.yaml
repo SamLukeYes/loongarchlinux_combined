@@ -11,9 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kproperty'')
   '
 repo_depends:
 - kconfig
-- kcoreaddons
-- kguiaddons
-- kwidgetsaddons
 update_on:
 - alpm: kconfig
   source: alpm

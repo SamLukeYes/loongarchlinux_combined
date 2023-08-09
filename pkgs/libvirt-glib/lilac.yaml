@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libvirt-glib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libcap-ng
-- libvirt
+repo_depends: []
 update_on:
 - alpm: libvirt-glib
   source: archpkg

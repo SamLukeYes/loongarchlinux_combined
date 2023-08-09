@@ -10,11 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-doctest'')
 
   '
 repo_depends:
-- haskell-syb
 - haskell-base-compat
-- ghc: ghc-libs
-- haskell-ghc-paths
+- haskell-ghc
+- haskell-syb
 - haskell-code-page
+- haskell-ghc-paths
 update_on:
 - alpm: haskell-base-compat
   source: alpm

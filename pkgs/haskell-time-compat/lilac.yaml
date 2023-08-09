@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-time-compat''
 
   '
 repo_depends:
-- haskell-hashable
 - haskell-base-orphans
-- ghc: ghc-libs
+- haskell-hashable
 update_on:
 - alpm: haskell-base-orphans
   source: alpm

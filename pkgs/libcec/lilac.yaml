@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libcec'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- p8-platform
-- libxrandr
+repo_depends: []
 update_on:
 - alpm: libcec
   source: archpkg

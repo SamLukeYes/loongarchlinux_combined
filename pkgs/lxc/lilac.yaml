@@ -10,12 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxc'')
 
   '
 repo_depends:
-- libseccomp
-- wget
 - perl
-- libcap
-- rsync
-- bash
 - python
 update_on:
 - alias: perl

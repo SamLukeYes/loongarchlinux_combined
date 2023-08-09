@@ -10,21 +10,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''git-repair'')
 
   '
 repo_depends:
-- haskell-hslogger
-- haskell-optparse-applicative
-- haskell-network
 - haskell-async
-- ghc: ghc-libs
-- git
+- haskell-attoparsec
+- haskell-data-default
 - haskell-filepath-bytestring
-- haskell-split
+- haskell-hslogger
+- haskell-ifelse
+- haskell-network
+- haskell-network-uri
+- haskell-optparse-applicative
 - haskell-quickcheck
+- haskell-split
 - haskell-unix-compat
 - haskell-utf8-string
-- haskell-data-default
-- haskell-attoparsec
-- haskell-ifelse
-- haskell-network-uri
 update_on:
 - alpm: haskell-async
   source: alpm

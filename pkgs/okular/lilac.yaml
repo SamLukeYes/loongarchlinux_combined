@@ -9,19 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''okular'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- poppler: poppler-qt5
-- kactivities
-- phonon: phonon-qt5
-- threadweaver
-- libspectre
-- djvulibre
-- libkexiv2
-- purpose
-- kpty
-- discount
-- kparts
-- kjs
+repo_depends: []
 update_on:
 - alpm: okular
   source: archpkg

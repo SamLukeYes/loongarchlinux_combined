@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdg-desktop-portal-hy
 
   '
 repo_depends:
-- pipewire
-- xdg-desktop-portal
+- util-linux-libs
 - qt6-base
-- qt6-wayland
-- libinih
 update_on:
 - alpm: util-linux-libs
   provides: libuuid.so

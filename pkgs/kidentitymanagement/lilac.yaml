@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kidentitymanagement''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kpimtextedit
+repo_depends: []
 update_on:
 - alpm: kidentitymanagement
   source: archpkg

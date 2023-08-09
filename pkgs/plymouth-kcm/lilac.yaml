@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plymouth-kcm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- systemsettings
-- plymouth
+repo_depends: []
 update_on:
 - alpm: plymouth-kcm
   source: archpkg

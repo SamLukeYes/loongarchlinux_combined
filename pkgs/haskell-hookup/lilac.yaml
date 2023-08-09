@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hookup'')
 
   '
 repo_depends:
-- haskell-network
-- haskell-async
-- ghc: ghc-libs
 - haskell-hsopenssl
 - haskell-hsopenssl-x509-system
+- haskell-async
 - haskell-attoparsec
+- haskell-network
 update_on:
 - alpm: haskell-hsopenssl
   source: alpm

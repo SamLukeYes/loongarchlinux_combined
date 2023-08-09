@@ -10,14 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''freeradius'')
 
   '
 repo_depends:
-- net-snmp
-- postgresql: postgresql-libs
-- krb5
 - libxcrypt
-- libpcap
-- samba: smbclient
-- talloc
-- mariadb: mariadb-libs
 update_on:
 - alpm: libxcrypt
   provides: libcrypt.so

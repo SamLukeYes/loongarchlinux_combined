@@ -10,23 +10,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''clash-ghc'')
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-primitive
-- haskell-uniplate
-- haskell-lens
-- haskell-reflection
-- haskell-hashable
-- haskell-clash-prelude
-- haskell-data-binary-ieee754
-- haskell-utf8-string
-- ghc: ghc-libs
-- haskell-ghc-typelits-extra
-- haskell-concurrent-supply
-- haskell-extra
 - haskell-clash-lib
-- haskell-ghc-typelits-natnormalise
+- haskell-clash-prelude
+- haskell-concurrent-supply
+- haskell-data-binary-ieee754
+- haskell-extra
+- haskell-ghc
+- haskell-ghc-typelits-extra
 - haskell-ghc-typelits-knownnat
+- haskell-ghc-typelits-natnormalise
+- haskell-hashable
+- haskell-lens
+- haskell-primitive
+- haskell-reflection
 - haskell-split
+- haskell-uniplate
+- haskell-unordered-containers
+- haskell-utf8-string
 - haskell-vector
 update_on:
 - alpm: haskell-clash-lib

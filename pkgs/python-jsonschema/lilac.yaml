@@ -8,9 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-jsonschema'')
 
   '
 repo_depends:
-- python-attrs
-- python-typing_extensions
-- python-pyrsistent
 - python
 update_on:
 - alias: python

@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sensors-applet'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- lm_sensors
-- gnome-panel
-- libatasmart
-- nvidia-settings: libxnvctrl
+repo_depends: []
 update_on:
 - alpm: sensors-applet
   source: archpkg

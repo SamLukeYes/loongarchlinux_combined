@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''roundcubemail-plugin-twofactor-webauthn'')
 
   '
-repo_depends:
-- roundcubemail
+repo_depends: []
 update_on:
 - alpm: roundcubemail-plugin-twofactor-webauthn
   source: archpkg

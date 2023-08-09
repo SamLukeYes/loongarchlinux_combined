@@ -10,13 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-netw
 
   '
 repo_depends:
-- networkmanager
-- libgee
-- polkit
-- gtk3
-- glib2
-- libnma
-- networkmanager: libnm
+- granite
+- switchboard
 update_on:
 - alpm: granite
   provides: libgranite.so

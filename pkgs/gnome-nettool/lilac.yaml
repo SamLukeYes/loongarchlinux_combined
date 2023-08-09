@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-nettool'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libgtop
-- gtk3
-- iputils
-- whois
+repo_depends: []
 update_on:
 - alpm: gnome-nettool
   source: archpkg

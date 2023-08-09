@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-unicode-show'
 
   '
 repo_depends:
-- ghc: ghc-libs
 - haskell-safe
 update_on:
 - alpm: haskell-safe

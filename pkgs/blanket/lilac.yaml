@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''blanket'')
 
   '
-repo_depends:
-- pygobject: python-gobject
-- gstreamer: gst-python
-- libadwaita
-- gstreamer: gst-plugins-bad-libs
-- gstreamer: gst-plugins-good
-- gstreamer: gst-plugins-base
+repo_depends: []
 update_on:
 - alpm: blanket
   source: archpkg

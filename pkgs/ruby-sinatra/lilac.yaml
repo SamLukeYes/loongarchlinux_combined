@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-sinatra'')
   '
 repo_depends:
 - ruby
-- ruby-mustermann
-- ruby-tilt
-- ruby-multi_json
-- ruby-rack
 update_on:
-- alias: ruby
-- alias: ruby
 - alias: ruby
 - alpm: ruby-sinatra
   source: archpkg

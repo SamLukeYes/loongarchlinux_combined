@@ -1,18 +1,7 @@
 destsubdir: extra
-post_build_script: 'git_add_files(_G.files)
-
-  git_commit()
-
-  '
-pre_build_script: '_G.files = download_official_pkgbuild(''ocaml'')
-
-  add_into_array(''arch'', [''loong64''])
-
-  '
-repo_depends: []
+repo_depends:
+- ocaml
 update_on:
 - alpm: ocaml
   source: alpm
   strip_release: true
-- alpm: ocaml
-  source: archpkg

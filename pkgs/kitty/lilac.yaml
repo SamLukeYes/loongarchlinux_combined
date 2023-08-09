@@ -9,18 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kitty'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- fontconfig
-- wayland
-- libxi
-- ncurses
-- dbus
-- freetype2
-- lcms2
-- libx11
-- librsync
-- hicolor-icon-theme
-- libxkbcommon: libxkbcommon-x11
+repo_depends: []
 update_on:
 - alpm: kitty
   source: archpkg

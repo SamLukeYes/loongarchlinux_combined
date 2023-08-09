@@ -10,17 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-kan-extension
 
   '
 repo_depends:
-- ghc: ghc-libs
-- haskell-tagged
-- haskell-semigroupoids
-- haskell-invariant
-- haskell-distributive
-- haskell-transformers-compat
-- haskell-comonad
 - haskell-adjunctions
-- haskell-free
-- haskell-profunctors
+- haskell-comonad
 - haskell-contravariant
+- haskell-distributive
+- haskell-free
+- haskell-invariant
+- haskell-profunctors
+- haskell-semigroupoids
+- haskell-tagged
+- haskell-transformers-compat
 update_on:
 - alpm: haskell-adjunctions
   source: alpm

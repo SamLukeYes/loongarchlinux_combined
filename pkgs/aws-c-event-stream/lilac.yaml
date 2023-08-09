@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aws-c-event-stream'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- aws-checksums
-- aws-c-common
-- aws-c-io
+repo_depends: []
 update_on:
 - alpm: aws-c-event-stream
   source: archpkg

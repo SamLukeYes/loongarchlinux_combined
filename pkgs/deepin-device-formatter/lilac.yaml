@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-device-formatt
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- deepin-qt5integration
-- udisks2-qt5
+repo_depends: []
 update_on:
 - alpm: deepin-device-formatter
   source: archpkg

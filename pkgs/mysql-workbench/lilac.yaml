@@ -1,25 +1,5 @@
 destsubdir: extra
 repo_depends:
-- json-c
-- desktop-file-utils
-- vsqlite++
-- antlr4-runtime
-- hicolor-icon-theme
-- libzip
-- libsecret
-- curl
-- libaio
-- pcre
-- libxml2
-- libssh
-- zstd
-- cairo
-- proj
-- freetype2
 - python
-- rapidjson
-- gtkmm3
-- unixodbc
-- giflib
 update_on:
 - alias: python

@@ -7,20 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''jupyter-nbconvert'')
 
   '
-repo_depends:
-- python-beautifulsoup4
-- python-bleach
-- python-pandocfilters
-- python-traitlets
-- python-lxml
-- python-pygments
-- jupyter-nbformat
-- python-mistune
-- python-jinja
-- jupyter-nbclient
-- python-tinycss2
-- python-entrypoints
-- python-defusedxml
+repo_depends: []
 update_on:
 - alpm: jupyter-nbconvert
   source: archpkg

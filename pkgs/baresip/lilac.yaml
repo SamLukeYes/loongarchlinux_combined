@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''baresip'')
 
   '
 repo_depends:
-- openssl
+- libre
 update_on:
 - alpm: libre
   provides: libre.so

@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-ntlm-auth'')
 
   '
 repo_depends:
-- python-cryptography
 - python
-- python-six
 update_on:
 - alias: python
 - alpm: python-ntlm-auth

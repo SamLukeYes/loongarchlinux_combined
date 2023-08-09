@@ -8,7 +8,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-arrow'')
 
   '
 repo_depends:
-- python-dateutil
+- python
 update_on:
+- alias: python
 - alpm: python-arrow
   source: archpkg

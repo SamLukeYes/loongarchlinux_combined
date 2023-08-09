@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pyqt6-webengine'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt6-webengine
-- pyqt6: python-pyqt6
+repo_depends: []
 update_on:
 - alpm: pyqt6-webengine
   source: archpkg

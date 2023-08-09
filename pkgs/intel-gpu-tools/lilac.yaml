@@ -10,17 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''intel-gpu-tools'')
 
   '
 repo_depends:
-- kmod
-- libunwind
-- xorg-xrandr
-- libxv
-- libdrm
-- peg
-- libpciaccess
-- procps-ng
-- cairo
 - python
-- systemd
 update_on:
 - alias: python
 - alpm: intel-gpu-tools

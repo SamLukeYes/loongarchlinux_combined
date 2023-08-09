@@ -10,13 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mediaelch'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- quazip: quazip-qt5
 - qt5-declarative
-- qt5-multimedia
-- libmediainfo
-- qt5-svg
-- glibc
 update_on:
 - alpm: qt5-declarative
   source: alpm

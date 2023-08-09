@@ -8,7 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-libnacl'')
 
   '
 repo_depends:
-- libsodium
 - python
 update_on:
 - alias: python

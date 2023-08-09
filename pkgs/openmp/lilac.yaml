@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- elfutils: libelf
-- llvm: llvm-libs
-- libffi
+repo_depends: []
 update_on: []

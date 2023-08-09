@@ -10,25 +10,24 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cgrep'')
 
   '
 repo_depends:
-- haskell-unordered-containers
 - haskell-aeson
 - haskell-ansi-terminal
-- haskell-stringsearch
-- haskell-regex-posix
-- haskell-regex-base
-- haskell-unix-compat
-- haskell-utf8-string
 - haskell-async
-- ghc: ghc-libs
 - haskell-cmdargs
+- haskell-dlist
 - haskell-either
 - haskell-extra
-- haskell-dlist
-- haskell-split
+- haskell-regex-base
 - haskell-regex-pcre
-- haskell-yaml
+- haskell-regex-posix
 - haskell-safe
+- haskell-split
+- haskell-stringsearch
+- haskell-unix-compat
 - haskell-unicode-show
+- haskell-unordered-containers
+- haskell-utf8-string
+- haskell-yaml
 update_on:
 - alpm: haskell-aeson
   source: alpm

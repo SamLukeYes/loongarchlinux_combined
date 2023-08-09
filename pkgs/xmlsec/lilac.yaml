@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xmlsec'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- nss
-- libxslt
-- gnutls
-- openssl
+repo_depends: []
 update_on:
 - alpm: xmlsec
   source: archpkg

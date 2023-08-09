@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-network-utils'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gio-qt
-- gsettings-qt
-- deepin-qt-dbus-factory
+repo_depends: []
 update_on:
 - alpm: deepin-network-utils
   source: archpkg

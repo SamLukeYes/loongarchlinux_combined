@@ -10,17 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ssr'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- glu
 - qt5-base
-- libsndfile
 - fftw
-- libglvnd
-- glibc
+- jack2
+- cuda-tools
+- libsndfile
 update_on:
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: qt5-base
   source: alpm
   strip_release: true

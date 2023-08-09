@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libiscsi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libgcrypt
-- glibc
-- popt
+repo_depends: []
 update_on:
 - alpm: libiscsi
   source: archpkg

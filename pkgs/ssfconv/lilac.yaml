@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ssfconv'')
 
   '
-repo_depends:
-- python-pillow
-- python-pycryptodome
-- python-numpy
+repo_depends: []
 update_on:
 - alpm: ssfconv
   source: archpkg

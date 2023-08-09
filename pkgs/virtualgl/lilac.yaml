@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''virtualgl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ocl-icd
-- libjpeg-turbo
-- glu
-- libxv
-- xcb-util-keysyms
-- xorg-xhost
+repo_depends: []
 update_on:
 - alpm: virtualgl
   source: archpkg

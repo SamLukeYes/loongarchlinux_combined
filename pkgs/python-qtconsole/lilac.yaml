@@ -7,15 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-qtconsole'')
 
   '
-repo_depends:
-- python-traitlets
-- python-pyzmq
-- python-ipykernel
-- python-pygments
-- pyqt5: python-pyqt5
-- python-qtpy
-- python-ipython-genutils
-- qt5-svg
+repo_depends: []
 update_on:
 - alpm: python-qtconsole
   source: archpkg

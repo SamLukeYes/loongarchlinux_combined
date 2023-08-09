@@ -10,9 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''protobuf'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- zlib
-- glibc
 - python
 update_on:
 - alias: python

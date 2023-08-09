@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-net-ldap-server'
 
   '
 repo_depends:
-- perl-convert-asn1
 - perl
-- perl-ldap
 update_on:
 - alias: perl
 - alpm: perl-net-ldap-server

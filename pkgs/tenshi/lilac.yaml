@@ -8,7 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tenshi'')
 
   '
 repo_depends:
-- perl-io-bufferedselect
 - perl
 update_on:
 - alias: perl

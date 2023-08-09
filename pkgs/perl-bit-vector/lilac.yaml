@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-bit-vector'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- perl-carp-clan
+repo_depends: []
 update_on:
 - alpm: perl-bit-vector
   source: archpkg

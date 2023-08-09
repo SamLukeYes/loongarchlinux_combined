@@ -10,8 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vulkan-tools'')
 
   '
 repo_depends:
-- wayland
-- libx11
+- emby-theater
 update_on:
 - alpm: emby-theater
   provides: libvulkan.so

@@ -10,11 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dhall-bash'')
 
   '
 repo_depends:
-- haskell-optparse-generic
-- ghc: ghc-libs
-- haskell-shell-escape
 - haskell-neat-interpolation
-- dhall
+- haskell-shell-escape
+- haskell-optparse-generic
 update_on:
 - alpm: haskell-neat-interpolation
   source: alpm

@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libfprint'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- nss
-- pixman
-- libgusb
-- systemd
-- libgudev
+repo_depends: []
 update_on:
 - alpm: libfprint
   source: archpkg

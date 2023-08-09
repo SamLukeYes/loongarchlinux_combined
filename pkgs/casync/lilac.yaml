@@ -10,15 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''casync'')
 
   '
 repo_depends:
-- acl
-- gcc: gcc-libs
-- zstd
-- xz
 - curl
-- systemd: systemd-libs
-- zlib
-- openssl
-- glibc
+- acl
+- systemd-libs
+- xz
+- zstd
 update_on:
 - alpm: curl
   provides: libcurl.so

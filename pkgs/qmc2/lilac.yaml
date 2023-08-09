@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qmc2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-xmlpatterns
-- minizip-ng
-- sdl2
-- qt5-multimedia
-- qt5-svg
-- qt5-webengine
+repo_depends: []
 update_on:
 - alpm: qmc2
   source: archpkg

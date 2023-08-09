@@ -1,8 +1,3 @@
 destsubdir: core
-repo_depends:
-- elfutils: libelf
-- jansson
-- zlib
-- zstd
-- glibc
+repo_depends: []
 update_on: []

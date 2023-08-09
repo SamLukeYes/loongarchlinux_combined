@@ -8,17 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-faraday'')
 
   '
 repo_depends:
-- ruby-faraday-net_http
 - ruby
-- ruby-faraday-em_synchrony
-- ruby-multipart-post
-- ruby-faraday-excon
-- ruby-faraday-patron
-- ruby-faraday-net_http_persistent
-- ruby-faraday-httpclient
-- ruby-faraday-rack
-- ruby-ruby2_keywords
-- ruby-faraday-em_http
 update_on:
 - alias: ruby
 - alpm: ruby-faraday

@@ -10,8 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''intel-opencl-clang'')
 
   '
 repo_depends:
-- llvm: llvm-libs
-- spirv-llvm-translator
 - clang
 update_on:
 - alias: clang

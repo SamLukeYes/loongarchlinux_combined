@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''osinfo-db-tools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
-- libsoup3
-- glib2
-- libarchive
-- libxml2
-- json-glib
-- glibc
+repo_depends: []
 update_on:
 - alpm: osinfo-db-tools
   source: archpkg

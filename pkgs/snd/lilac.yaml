@@ -10,22 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''snd'')
 
   '
 repo_depends:
-- libxpm
-- mpfr
-- glu
 - gsl
-- libxt
-- libmpc
-- libglvnd
-- openmotif
-- libxext
-- libx11
-- glibc
-- gmp
+- alsa-lib
+- fftw
+- jack2
+- libsamplerate
 update_on:
-- alpm: gsl
-  source: alpm
-  strip_release: true
 - alpm: gsl
   source: alpm
   strip_release: true

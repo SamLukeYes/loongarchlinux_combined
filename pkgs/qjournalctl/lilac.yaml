@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qjournalctl'')
   '
 repo_depends:
 - qt5-base
-- hicolor-icon-theme
-- libssh
 update_on:
 - alpm: qt5-base
   source: alpm

@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mod'')
 
   '
 repo_depends:
-- haskell-vector
-- haskell-semirings
-- ghc: ghc-libs
 - haskell-primitive
+- haskell-semirings
+- haskell-vector
 update_on:
 - alpm: haskell-primitive
   source: alpm

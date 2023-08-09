@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''noise-repellent'')
 
   '
 repo_depends:
-- glibc
 - libspecbleach
 update_on:
 - alpm: libspecbleach

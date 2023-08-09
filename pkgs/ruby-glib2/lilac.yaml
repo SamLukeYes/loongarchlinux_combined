@@ -11,9 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-glib2'')
   '
 repo_depends:
 - ruby
-- glib2
-- ruby-pkg-config
-- ruby-native-package-installer
 update_on:
 - alias: ruby
 - alpm: ruby-glib2

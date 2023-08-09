@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-argon2_cffi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-argon2-cffi-bindings
+repo_depends: []
 update_on:
 - alpm: python-argon2_cffi
   source: archpkg

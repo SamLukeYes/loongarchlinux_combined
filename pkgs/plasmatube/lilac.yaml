@@ -11,12 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plasmatube'')
   '
 repo_depends:
 - kconfig
-- kirigami-addons
-- yt-dlp
-- mpv
-- kcoreaddons
-- ki18n
-- qt5-svg
 update_on:
 - alpm: kconfig
   source: alpm

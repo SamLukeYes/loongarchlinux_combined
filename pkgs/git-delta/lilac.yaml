@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''git-delta'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- glibc
-- zlib
+- julia
 update_on:
 - alpm: julia
   provides: libgit2.so

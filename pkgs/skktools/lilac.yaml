@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''skktools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gdbm
-- glib2
+repo_depends: []
 update_on:
 - alpm: skktools
   source: archpkg

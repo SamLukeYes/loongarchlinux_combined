@@ -10,30 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''corectrl'')
 
   '
 repo_depends:
-- qt5-xmlpatterns
-- fmt
-- qt5-quickcontrols2
-- qt5-charts
 - qt5-base
-- qt5-svg
-- polkit
-- dbus
-- pugixml
-- hwdata
-- botan2
-- procps-ng
-- quazip: quazip-qt5
-- hicolor-icon-theme
+- fmt
 update_on:
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: qt5-base
   source: alpm
   strip_release: true

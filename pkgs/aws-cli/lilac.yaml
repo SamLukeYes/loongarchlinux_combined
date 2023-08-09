@@ -8,15 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aws-cli'')
 
   '
 repo_depends:
-- python-botocore
-- python-jmespath
-- python-dateutil
-- python-colorama
-- python-rsa
-- python-s3transfer
-- python-yaml
-- python-docutils
-- python-pyasn1
 - python
 update_on:
 - alias: python

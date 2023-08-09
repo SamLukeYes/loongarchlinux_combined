@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-minio'')
 
   '
 repo_depends:
-- python-urllib3
 - python
-- python-certifi
 update_on:
 - alias: python
 - alpm: python-minio

@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libktorrent'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kio
-- qca: qca-qt5
+repo_depends: []
 update_on:
 - alpm: libktorrent
   source: archpkg

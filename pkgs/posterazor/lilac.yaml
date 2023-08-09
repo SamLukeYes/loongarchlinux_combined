@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''posterazor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- poppler: poppler-qt5
+repo_depends: []
 update_on:
 - alpm: posterazor
   source: archpkg

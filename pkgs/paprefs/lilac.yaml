@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''paprefs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtkmm3
-- pulseaudio
-- libsigc++
+repo_depends: []
 update_on:
 - alpm: paprefs
   source: archpkg

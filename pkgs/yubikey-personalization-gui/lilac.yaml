@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yubikey-personalizati
   '
 repo_depends:
 - qt5-base
-- yubikey-personalization
-- libxkbcommon: libxkbcommon-x11
 update_on:
 - alpm: qt5-base
   source: alpm

@@ -11,9 +11,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-json-ast'')
   '
 repo_depends:
 - haskell-vector
-- haskell-unordered-containers
-- ghc: ghc-libs
 - haskell-scientific
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-vector
   source: alpm

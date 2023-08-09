@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''soundconverter'')
 
   '
-repo_depends:
-- gstreamer: gst-python
-- python-setuptools
-- desktop-file-utils
-- gstreamer: gst-plugins-good
-- pygobject: python-gobject
-- gstreamer: gst-plugins-ugly
+repo_depends: []
 update_on:
 - alpm: soundconverter
   source: archpkg

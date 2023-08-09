@@ -10,10 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-cmsis-pack-man
 
   '
 repo_depends:
-- python-cffi
-- gcc: gcc-libs
-- python-appdirs
-- glibc
 - python
 update_on:
 - alias: python

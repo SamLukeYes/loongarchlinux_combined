@@ -8,18 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aws-cli-v2'')
 
   '
 repo_depends:
-- python-jmespath
-- python-dateutil
-- python-distro
-- python-cryptography
-- python-colorama
-- python-prompt_toolkit
-- python-urllib3
-- python-ruamel-yaml
-- python-docutils
-- python-awscrt
 - python
-- python-certifi
 update_on:
 - alias: python
 - alpm: aws-cli-v2

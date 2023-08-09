@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-bytes-random-secure'')
 
   '
-repo_depends:
-- perl-math-random-isaac
-- perl-crypt-random-seed
+repo_depends: []
 update_on:
 - alpm: perl-bytes-random-secure
   source: archpkg

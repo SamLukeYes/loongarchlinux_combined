@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''t-prot'')
 
   '
 repo_depends:
-- perl-locale-gettext
 - perl
-- gettext
 update_on:
 - alias: perl
 - alpm: t-prot

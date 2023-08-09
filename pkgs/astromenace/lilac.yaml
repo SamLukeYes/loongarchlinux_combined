@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''astromenace'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glu
-- sdl2
-- freealut
-- libxinerama
-- freetype2
-- libvorbis
+repo_depends: []
 update_on:
 - alpm: astromenace
   source: archpkg

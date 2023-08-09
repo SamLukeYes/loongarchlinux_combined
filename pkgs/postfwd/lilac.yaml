@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''postfwd'')
 
   '
 repo_depends:
-- perl-io-multiplex
-- perl-net-server
 - perl
-- perl-net-dns
 update_on:
 - alias: perl
 - alpm: postfwd

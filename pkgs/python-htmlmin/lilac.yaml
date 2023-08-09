@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-htmlmin'')
   '
 repo_depends:
 - python
-- python-setuptools
 update_on:
-- alias: python
 - alias: python
 - alpm: python-htmlmin
   source: archpkg

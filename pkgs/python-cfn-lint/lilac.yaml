@@ -8,16 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-cfn-lint'')
 
   '
 repo_depends:
-- python-networkx
-- python-jschema-to-python
-- python-sympy
-- python-junit-xml
-- python-jsonpatch
-- python-aws-sam-translator
-- python-sarif-om
-- python-regex
-- python-yaml
-- python-jsonschema
 - python
 update_on:
 - alias: python

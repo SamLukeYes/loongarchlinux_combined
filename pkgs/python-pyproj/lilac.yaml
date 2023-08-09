@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyproj'')
 
   '
 repo_depends:
-- proj
 - python
 update_on:
 - alias: python

@@ -10,37 +10,36 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-yesod-core'')
 
   '
 repo_depends:
-- haskell-cereal
-- haskell-unordered-containers
-- haskell-warp
 - haskell-aeson
-- haskell-http-types
-- haskell-case-insensitive
-- haskell-memory
-- haskell-primitive
-- haskell-resourcet
-- haskell-word8
-- haskell-unix-compat
-- haskell-blaze-markup
-- haskell-cookie
-- haskell-wai-extra
-- haskell-fast-logger
-- haskell-monad-logger
-- haskell-path-pieces
-- haskell-wai
-- ghc: ghc-libs
-- haskell-clientsession
-- haskell-entropy
-- haskell-wai-logger
-- haskell-shakespeare
-- haskell-blaze-html
-- haskell-random
 - haskell-auto-update
-- haskell-vector
+- haskell-blaze-html
+- haskell-blaze-markup
+- haskell-case-insensitive
+- haskell-cereal
+- haskell-clientsession
 - haskell-conduit
 - haskell-conduit-extra
+- haskell-cookie
+- haskell-entropy
+- haskell-fast-logger
+- haskell-http-types
+- haskell-memory
+- haskell-monad-logger
 - haskell-old-locale
+- haskell-path-pieces
+- haskell-primitive
+- haskell-random
+- haskell-resourcet
+- haskell-shakespeare
+- haskell-unix-compat
 - haskell-unliftio
+- haskell-unordered-containers
+- haskell-vector
+- haskell-wai
+- haskell-wai-extra
+- haskell-wai-logger
+- haskell-warp
+- haskell-word8
 update_on:
 - alpm: haskell-aeson
   source: alpm

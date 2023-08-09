@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''gnome-video-effects'')
 
   '
-repo_depends:
-- gstreamer: gst-plugins-good
-- gstreamer: gst-plugins-bad
-- frei0r-plugins
+repo_depends: []
 update_on:
 - alpm: gnome-video-effects
   source: archpkg

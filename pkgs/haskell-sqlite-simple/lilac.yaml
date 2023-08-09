@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-sqlite-simple
 
   '
 repo_depends:
-- haskell-direct-sqlite
-- ghc: ghc-libs
 - haskell-only
+- haskell-attoparsec
 - haskell-blaze-builder
 - haskell-blaze-textual
-- haskell-attoparsec
+- haskell-direct-sqlite
 update_on:
 - alpm: haskell-only
   source: alpm

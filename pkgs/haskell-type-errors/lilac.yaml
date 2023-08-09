@@ -13,7 +13,6 @@ repo_depends:
 - haskell-first-class-families
 - haskell-syb
 - haskell-th-abstraction
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-first-class-families
   source: alpm

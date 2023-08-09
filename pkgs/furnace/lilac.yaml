@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''furnace'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glibc
-- alsa-lib
-- gcc: gcc-libs
-- fmt
-- sdl2
-- libsndfile
-- rtmidi
-- zlib
-- fftw
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: furnace
   source: archpkg

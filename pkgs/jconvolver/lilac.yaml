@@ -10,7 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jconvolver'')
 
   '
 repo_depends:
-- glibc
+- jack2
+- libsndfile
+- zita-convolver
 update_on:
 - alpm: jack2
   provides: libjack.so

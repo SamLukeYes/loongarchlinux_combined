@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mysql-simple'
 
   '
 repo_depends:
-- ghc: ghc-libs
-- haskell-mysql
-- haskell-blaze-builder
-- haskell-blaze-textual
-- haskell-pcre-light
 - haskell-attoparsec
 - haskell-base16-bytestring
+- haskell-blaze-builder
+- haskell-blaze-textual
+- haskell-mysql
 - haskell-old-locale
+- haskell-pcre-light
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

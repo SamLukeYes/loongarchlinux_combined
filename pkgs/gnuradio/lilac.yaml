@@ -10,47 +10,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnuradio'')
 
   '
 repo_depends:
-- alsa-lib
-- libsndfile
-- soapysdr
-- libiio
-- python-mako
-- pyopengl: python-opengl
-- libvolk
-- glibc
-- pygobject: python-gobject
-- gcc: gcc-libs
-- qt5-base
-- thrift
 - gsl
-- python-click
-- codec2
+- alsa-lib
+- boost
 - fftw
-- gmp
-- zeromq
-- python-lxml
-- python-scipy
-- spdlog
-- python-thrift
-- python-pyqtgraph
-- qwt
-- python-cairo
-- python-numpy
-- libad9361
-- libuhd
 - fmt
-- python-matplotlib
-- python-pyzmq
-- libunwind
-- python-click-plugins
-- sdl12-compat
-- pyqt5: python-pyqt5
+- jack2
+- libiio
+- libsndfile
 - portaudio
-- boost: boost-libs
+- spdlog
+- zeromq
+- qt5-base
 update_on:
-- alpm: gsl
-  source: alpm
-  strip_release: true
 - alpm: gsl
   source: alpm
   strip_release: true
@@ -58,13 +30,7 @@ update_on:
   provides: libasound.so
   source: alpm
 - alpm: boost
-  provides: libboost_program_options.so
-  source: alpm
-- alpm: boost
   provides: libboost_thread.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3f.so
   source: alpm
 - alpm: fftw
   provides: libfftw3f_threads.so

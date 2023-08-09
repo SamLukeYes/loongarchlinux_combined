@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sequoia-wot'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
-- sqlite
-- openssl
-- glibc
-- nettle
-- gmp
+repo_depends: []
 update_on:
 - alpm: sequoia-wot
   source: archpkg

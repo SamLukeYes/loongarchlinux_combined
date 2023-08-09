@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- gcc: gcc-libs
-- bash
+repo_depends: []
 update_on: []

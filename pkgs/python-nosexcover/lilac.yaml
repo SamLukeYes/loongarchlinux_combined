@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-nosexcover'')
 
   '
-repo_depends:
-- python-nose
-- python-coverage
+repo_depends: []
 update_on:
 - alpm: python-nosexcover
   source: archpkg

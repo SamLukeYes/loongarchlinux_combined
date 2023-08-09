@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xtrlock'')
 
   '
 repo_depends:
-- libxfixes
-- libxi
 - libxcrypt
-- libx11
-- glibc
 update_on:
 - alpm: libxcrypt
   provides: libcrypt.so

@@ -10,10 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mongo-c-driver'')
 
   '
 repo_depends:
-- snappy
-- zlib
-- libsasl
-- zstd
 - icu
 update_on:
 - alias: icu

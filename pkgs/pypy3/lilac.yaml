@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pypy3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- bzip2
-- ncurses
-- zlib
-- gdbm
-- libffi
-- expat
-- openssl
+repo_depends: []
 update_on:
 - alpm: pypy3
   source: archpkg

@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ksanecore'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ki18n
-- sane
+repo_depends: []
 update_on:
 - alpm: ksanecore
   source: archpkg

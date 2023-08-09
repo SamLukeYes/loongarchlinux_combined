@@ -7,20 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''jupyter-notebook'')
 
   '
-repo_depends:
-- python-terminado
-- python-jupyter-client
-- python-prometheus_client
-- python-traitlets
-- jupyter-nbformat
-- python-send2trash
-- python-argon2_cffi
-- python-jinja
-- jupyter-nbclassic
-- jupyter-nbconvert
-- python-ipython-genutils
-- python-jupyter-core
-- python-tornado
+repo_depends: []
 update_on:
 - alpm: jupyter-notebook
   source: archpkg

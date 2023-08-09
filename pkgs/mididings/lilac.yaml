@@ -10,9 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mididings'')
 
   '
 repo_depends:
-- alsa-lib
-- python-decorator
-- boost: boost-libs
 - python
 update_on:
 - alias: python

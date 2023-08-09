@@ -11,10 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libsixel'')
   '
 repo_depends:
 - python
-- gdk-pixbuf2
-- libjpeg-turbo
-- curl
-- libpng
 update_on:
 - alias: python
 - alpm: libsixel

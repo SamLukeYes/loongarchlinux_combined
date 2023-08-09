@@ -1,15 +1,5 @@
 destsubdir: extra
 repo_depends:
-- libxkbcommon
-- libxfixes
-- pango
-- desktop-file-utils
-- dbus
-- libxinerama
-- gtk4: gtk-update-icon-cache
-- libxkbfile
-- hicolor-icon-theme
 - icu
-- shared-mime-info
 update_on:
 - alias: icu

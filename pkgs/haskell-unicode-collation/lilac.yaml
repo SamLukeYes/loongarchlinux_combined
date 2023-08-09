@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-unicode-colla
   '
 repo_depends:
 - haskell-th-lift-instances
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-th-lift-instances
   source: alpm

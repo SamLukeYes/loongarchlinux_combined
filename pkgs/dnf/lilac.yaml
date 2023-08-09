@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dnf'')
 
   '
 repo_depends:
-- rpm-tools
-- libcomps
-- libdnf
-- gpgme: python-gpgme
 - python
 update_on:
 - alias: python

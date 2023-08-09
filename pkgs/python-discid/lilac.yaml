@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-discid'')
   '
 repo_depends:
 - python
-- libdiscid
 update_on:
 - alias: python
 - alpm: python-discid

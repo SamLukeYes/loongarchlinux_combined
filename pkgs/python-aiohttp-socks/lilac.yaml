@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-aiohttp-socks'
 
   '
 repo_depends:
-- python-python-socks
 - python
-- python-aiohttp
 update_on:
 - alias: python
 - alpm: python-aiohttp-socks

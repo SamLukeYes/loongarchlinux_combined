@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-yg.lockfile'')
 
   '
-repo_depends:
-- python-zc.lockfile
-- python-jaraco.functools
-- python-tempora
+repo_depends: []
 update_on:
 - alpm: python-yg.lockfile
   source: archpkg

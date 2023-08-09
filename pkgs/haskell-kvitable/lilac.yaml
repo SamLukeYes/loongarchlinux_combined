@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-kvitable'')
 
   '
 repo_depends:
-- haskell-microlens
 - haskell-lucid
-- ghc: ghc-libs
+- haskell-microlens
 - haskell-prettyprinter
 update_on:
 - alpm: haskell-lucid

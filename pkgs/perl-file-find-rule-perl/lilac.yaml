@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-file-find-rule-perl'')
 
   '
-repo_depends:
-- perl-params-util
-- perl-file-find-rule
+repo_depends: []
 update_on:
 - alpm: perl-file-find-rule-perl
   source: archpkg

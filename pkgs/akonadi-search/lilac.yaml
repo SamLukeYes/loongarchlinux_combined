@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''akonadi-search'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- xapian-core
-- kcalendarcore
-- krunner
-- kcontacts
-- akonadi-mime
+repo_depends: []
 update_on:
 - alpm: akonadi-search
   source: archpkg

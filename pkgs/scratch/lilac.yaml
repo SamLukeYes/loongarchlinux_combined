@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''scratch'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- squeak-vm
-- pango
-- desktop-file-utils
-- gtk4: gtk-update-icon-cache
-- shared-mime-info
+repo_depends: []
 update_on:
 - alpm: scratch
   source: archpkg

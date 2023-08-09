@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-bleak'')
 
   '
 repo_depends:
-- python-dbus-fast
-- python-typing_extensions
-- python-async-timeout
-- python-service-identity
 - python
 update_on:
 - alias: python

@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgadu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gnutls
-- protobuf-c
+repo_depends: []
 update_on:
 - alpm: libgadu
   source: archpkg

@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libhandy
-- dconf
+repo_depends: []
 update_on: []

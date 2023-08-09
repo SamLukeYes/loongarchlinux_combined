@@ -8,14 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-fontparts'')
 
   '
 repo_depends:
-- python-booleanoperations
-- python-lxml
-- python-fontpens
-- python-fonttools
-- python-unicodedata2
-- python-defcon
-- python-fs
-- python-fontmath
 - python
 update_on:
 - alias: python

@@ -10,26 +10,25 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-test-util
 
   '
 repo_depends:
-- haskell-unordered-containers
 - haskell-aeson
-- haskell-tasty-rerun
+- haskell-async
+- haskell-blaze-markup
+- haskell-data-default
+- haskell-extra
+- haskell-ghcide
+- haskell-hls-graph
 - haskell-hls-plugin-api
-- haskell-tasty-hunit
 - haskell-lens
+- haskell-lsp
+- haskell-lsp-test
 - haskell-lsp-types
 - haskell-tasty
-- haskell-lsp
-- haskell-blaze-markup
-- haskell-lsp-test
-- haskell-ghcide
 - haskell-tasty-expected-failure
-- haskell-async
-- ghc: ghc-libs
-- haskell-extra
-- haskell-temporary
-- haskell-hls-graph
-- haskell-data-default
 - haskell-tasty-golden
+- haskell-tasty-hunit
+- haskell-tasty-rerun
+- haskell-temporary
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-aeson
   source: alpm

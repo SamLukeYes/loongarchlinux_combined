@@ -7,20 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-magnumclient'')
 
   '
-repo_depends:
-- python-requests
-- python-keystoneauth1
-- python-oslo-i18n
-- python-oslo-serialization
-- python-pbr
-- python-prettytable
-- python-cryptography
-- python-osc-lib
-- python-os-client-config
-- python-oslo-log
-- python-debtcollector
-- python-stevedore
-- python-oslo-utils
+repo_depends: []
 update_on:
 - alpm: python-magnumclient
   source: archpkg

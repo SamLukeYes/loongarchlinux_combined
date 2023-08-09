@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''osm-gps-map'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtk3
-- libsoup
+repo_depends: []
 update_on:
 - alpm: osm-gps-map
   source: archpkg

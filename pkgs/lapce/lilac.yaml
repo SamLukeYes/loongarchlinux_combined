@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lapce'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- fontconfig
-- libxkbcommon
-- gcc: gcc-libs
-- libxcb
-- freetype2
-- expat
-- gtk3
+repo_depends: []
 update_on:
 - alpm: lapce
   source: archpkg

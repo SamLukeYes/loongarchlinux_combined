@@ -8,16 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-matrix-nio'')
 
   '
 repo_depends:
-- python-aiohttp
-- python-pycryptodome
-- python-logbook
-- python-h11
-- python-unpaddedbase64
-- python-future
-- python-aiohttp-socks
-- python-aiofiles
-- python-jsonschema
-- python-h2
 - python
 update_on:
 - alias: python

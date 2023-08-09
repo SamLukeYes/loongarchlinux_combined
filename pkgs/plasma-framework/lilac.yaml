@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plasma-framework'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kactivities
-- kirigami2
-- kwayland
-- kdeclarative
+repo_depends: []
 update_on:
 - alpm: plasma-framework
   source: archpkg

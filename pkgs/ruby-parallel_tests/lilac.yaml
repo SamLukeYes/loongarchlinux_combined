@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-parallel_tests''
   '
 repo_depends:
 - ruby
-- ruby-parallel
 update_on:
 - alias: ruby
 - alpm: ruby-parallel_tests

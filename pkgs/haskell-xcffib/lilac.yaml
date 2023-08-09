@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-xcffib'')
 
   '
 repo_depends:
-- haskell-language-python
-- haskell-filemanip
-- haskell-optparse-applicative
-- ghc: ghc-libs
-- haskell-split
-- haskell-either
-- haskell-xcb-types
 - haskell-attoparsec
+- haskell-either
+- haskell-filemanip
+- haskell-language-python
+- haskell-optparse-applicative
+- haskell-split
+- haskell-xcb-types
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

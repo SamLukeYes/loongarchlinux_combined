@@ -10,13 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pd'')
 
   '
 repo_depends:
-- glibc
 - alsa-lib
-- portmidi
 - fftw
-- tk
+- jack2
 - portaudio
-- hicolor-icon-theme
+- portmidi
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

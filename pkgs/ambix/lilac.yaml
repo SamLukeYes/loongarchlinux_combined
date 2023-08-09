@@ -10,20 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ambix'')
 
   '
 repo_depends:
-- libsoxr
-- alsa-lib
-- glibc
-- gcc: gcc-libs
-- zita-convolver
 - fftw
-- libglvnd
-- libxext
 - freetype2
-- libx11
+- zita-convolver
+- alsa-lib
 update_on:
-- alpm: fftw
-  provides: libfftw3f.so
-  source: alpm
 - alpm: fftw
   provides: libfftw3f_threads.so
   source: alpm
@@ -35,30 +26,6 @@ update_on:
   source: alpm
 - alpm: alsa-lib
   provides: libasound.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3f.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3f_threads.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: zita-convolver
-  provides: libzita-convolver.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3f.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3f_threads.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: zita-convolver
-  provides: libzita-convolver.so
   source: alpm
 - alpm: ambix
   source: archpkg

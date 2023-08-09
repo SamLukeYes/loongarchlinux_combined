@@ -1,0 +1,19 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''electron23'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_depends:
+- icu
+- jsoncpp
+update_on:
+- alias: icu
+- alias: jsoncpp
+- alpm: electron23
+  source: archpkg

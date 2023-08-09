@@ -10,18 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xpdf'')
 
   '
 repo_depends:
-- cups: libcups
-- xdg-utils
-- libjpeg-turbo
 - qt5-base
-- libpaper
-- libtiff
-- zlib
-- gsfonts
 - freetype2
-- libxt
-- qt5-svg
-- libpng
+- fontconfig
 update_on:
 - alpm: qt5-base
   source: alpm

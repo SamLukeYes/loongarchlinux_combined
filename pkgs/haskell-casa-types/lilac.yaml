@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-casa-types'')
 
   '
 repo_depends:
-- haskell-path-pieces
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-hashable
-- haskell-persistent
 - haskell-attoparsec
 - haskell-base16-bytestring
+- haskell-hashable
+- haskell-path-pieces
+- haskell-persistent
 update_on:
 - alpm: haskell-aeson
   source: alpm

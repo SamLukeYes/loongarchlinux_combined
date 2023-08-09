@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-aeson-better-
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-dlist
 - haskell-aeson
-- ghc: ghc-libs
+- haskell-dlist
 - haskell-scientific
-- haskell-vector
 - haskell-transformers-compat
+- haskell-unordered-containers
+- haskell-vector
 - haskell-void
 update_on:
 - alpm: haskell-aeson

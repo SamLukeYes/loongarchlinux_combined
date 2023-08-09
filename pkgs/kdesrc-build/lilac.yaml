@@ -7,14 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''kdesrc-build'')
 
   '
-repo_depends:
-- dialog
-- perl-json
-- perl-net-ssleay
-- perl-yaml-syck
-- perl-libwww
-- perl-io-socket-ssl
-- perl-xml-parser
+repo_depends: []
 update_on:
 - alpm: kdesrc-build
   source: archpkg

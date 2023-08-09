@@ -11,10 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-git-lfs'')
   '
 repo_depends:
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-http-types
 - haskell-case-insensitive
 - haskell-http-client
+- haskell-http-types
 - haskell-network-uri
 update_on:
 - alpm: haskell-aeson

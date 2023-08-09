@@ -10,27 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jami-daemon'')
 
   '
 repo_depends:
-- alsa-lib
-- jsoncpp
-- speexdsp
-- gnutls
-- glibc
 - libsecp256k1
-- libupnp
-- ffmpeg
-- libnatpmp
-- libgit2
-- nettle
-- systemd: systemd-libs
-- openssl
-- pulseaudio: libpulse
-- fmt
-- zlib
-- libarchive
-- webrtc-audio-processing
-- opendht
-- yaml-cpp
+- jsoncpp
 update_on:
+- alpm: libsecp256k1
+  provides: libsecp256k1.so
+  source: alpm
 - alias: jsoncpp
 - alpm: jami-daemon
   source: archpkg

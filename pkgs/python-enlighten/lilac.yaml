@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-enlighten'')
 
   '
-repo_depends:
-- python-prefixed
-- python-blessed
+repo_depends: []
 update_on:
 - alpm: python-enlighten
   source: archpkg

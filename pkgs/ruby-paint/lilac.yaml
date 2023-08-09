@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-paint'')
 
   '
 repo_depends:
-- ruby-rspec
-- ruby-rainbow
 - ruby
-- ruby-term-ansicolor
 update_on:
 - alias: ruby
 - alpm: ruby-paint

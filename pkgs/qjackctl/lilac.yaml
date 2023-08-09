@@ -10,17 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qjackctl'')
 
   '
 repo_depends:
-- glibc
-- alsa-lib
-- gcc: gcc-libs
 - qt6-base
-- qt6-svg
+- alsa-lib
+- jack2
 - portaudio
-- hicolor-icon-theme
 update_on:
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
 - alpm: qt6-base
   source: alpm
   strip_release: true

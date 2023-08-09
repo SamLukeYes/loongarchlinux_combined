@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-digest-hmac'')
   '
 repo_depends:
 - perl
-- perl-digest-sha1
 update_on:
 - alias: perl
 - alpm: perl-digest-hmac

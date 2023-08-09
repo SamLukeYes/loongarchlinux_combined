@@ -8,9 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pip'')
 
   '
 repo_depends:
-- python-attrs
-- python-cryptography
-- python-wheel
 - python
 update_on:
 - alias: python

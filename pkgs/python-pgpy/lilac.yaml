@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pgpy'')
 
   '
 repo_depends:
-- python-cryptography
-- python-pyasn1
 - python
 update_on:
 - alias: python

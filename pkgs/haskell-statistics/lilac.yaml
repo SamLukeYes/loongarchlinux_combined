@@ -10,20 +10,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-statistics'')
 
   '
 repo_depends:
-- haskell-vector-binary-instances
-- haskell-vector-algorithms
-- haskell-async
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-mwc-random
-- haskell-dense-linear-algebra
-- haskell-random
-- haskell-math-functions
-- haskell-parallel
-- haskell-vector
-- haskell-vector-th-unbox
-- haskell-primitive
+- haskell-async
 - haskell-data-default-class
+- haskell-dense-linear-algebra
+- haskell-math-functions
+- haskell-mwc-random
+- haskell-parallel
+- haskell-primitive
+- haskell-random
+- haskell-vector
+- haskell-vector-algorithms
+- haskell-vector-binary-instances
+- haskell-vector-th-unbox
 update_on:
 - alpm: haskell-aeson
   source: alpm

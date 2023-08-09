@@ -10,13 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gspell'')
 
   '
 repo_depends:
+- icu
 - enchant
 - gtk3
 - glib2
-- icu
+- pango
 update_on:
-- alias: icu
-- alias: icu
+- alpm: icu
+  provides: libicuuc.so
+  source: alpm
 - alpm: enchant
   provides: libenchant-2.so
   source: alpm
@@ -24,16 +26,7 @@ update_on:
   provides: libgtk-3.so
   source: alpm
 - alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: glib2
   provides: libgio-2.0.so
-  source: alpm
-- alpm: icu
-  provides: libicuuc.so
   source: alpm
 - alpm: pango
   provides: libpango-1.0.so

@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-data-textual'
 
   '
 repo_depends:
-- haskell-text-latin1
 - haskell-parsers
-- ghc: ghc-libs
+- haskell-text-latin1
 - haskell-text-printer
 update_on:
 - alpm: haskell-parsers

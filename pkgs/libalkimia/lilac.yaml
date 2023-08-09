@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libalkimia'')
 
   '
 repo_depends:
-- knewstuff
 - perl
-- hicolor-icon-theme
-- qt5-webengine
 update_on:
 - alias: perl
 - alpm: libalkimia

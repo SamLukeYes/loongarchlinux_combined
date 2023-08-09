@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cuyo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- sdl_image
-- xdg-utils
-- desktop-file-utils
-- sdl_mixer
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: cuyo
   source: archpkg

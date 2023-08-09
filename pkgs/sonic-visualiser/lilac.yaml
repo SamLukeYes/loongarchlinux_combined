@@ -10,34 +10,24 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sonic-visualiser'')
 
   '
 repo_depends:
-- libid3tag
-- bzip2
+- qt5-base
 - alsa-lib
+- bzip2
 - capnproto
-- libsndfile
+- fftw
+- libfishsound
+- libid3tag
+- liblo
 - liblrdf
 - liboggz
-- glibc
-- hicolor-icon-theme
-- gcc: gcc-libs
-- serd
-- qt5-base
-- liblo
-- opusfile
-- libfishsound
-- fftw
-- rubberband
+- libao
 - libsamplerate
-- pulseaudio: libpulse
+- libsndfile
 - portaudio
+- rubberband
+- serd
 - sord
-- vamp-plugin-sdk
-- qt5-svg
-- libmad
 update_on:
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: qt5-base
   source: alpm
   strip_release: true
@@ -46,9 +36,6 @@ update_on:
   source: alpm
 - alpm: bzip2
   provides: libbz2.so
-  source: alpm
-- alpm: capnproto
-  provides: libcapnp.so
   source: alpm
 - alpm: capnproto
   provides: libkj.so

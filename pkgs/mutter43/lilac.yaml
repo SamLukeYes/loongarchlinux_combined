@@ -1,20 +1,3 @@
 destsubdir: extra
-repo_depends:
-- startup-notification
-- xorg-xwayland
-- gsettings-desktop-schemas
-- libinput
-- dconf
-- libxkbfile
-- pipewire
-- sysprof: libsysprof-capture
-- graphene
-- colord
-- libsm
-- libcanberra
-- gnome-settings-daemon
-- lcms2
-- gnome-desktop
-- libxkbcommon: libxkbcommon-x11
-- libgudev
+repo_depends: []
 update_on: []

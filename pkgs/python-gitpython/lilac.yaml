@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-gitpython'')
 
   '
-repo_depends:
-- python-gitdb
-- git
+repo_depends: []
 update_on:
 - alpm: python-gitpython
   source: archpkg

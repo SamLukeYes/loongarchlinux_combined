@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cborg'')
 
   '
 repo_depends:
-- haskell-primitive
-- ghc: ghc-libs
 - haskell-half
+- haskell-primitive
 update_on:
 - alpm: haskell-half
   source: alpm

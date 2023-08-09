@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-requests-ntlm'
 
   '
 repo_depends:
-- python-ntlm-auth
-- python-requests
 - python
 update_on:
 - alias: python

@@ -10,8 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''canto-curses'')
 
   '
 repo_depends:
-- canto-daemon
-- glibc
+- ncurses
+- readline
 - python
 update_on:
 - alpm: ncurses

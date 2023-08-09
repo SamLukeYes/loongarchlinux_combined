@@ -10,20 +10,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''taskell'')
 
   '
 repo_depends:
-- haskell-tz
-- haskell-lens
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-fold-debounce
-- haskell-http-types
-- haskell-brick0.71
-- haskell-classy-prelude
-- haskell-vty
-- haskell-http-conduit
-- haskell-http-client
 - haskell-attoparsec
-- haskell-file-embed
+- haskell-brick0.71
 - haskell-config-ini
+- haskell-file-embed
+- haskell-fold-debounce
+- haskell-http-client
+- haskell-http-conduit
+- haskell-http-types
+- haskell-lens
+- haskell-tz
+- haskell-vty
+- haskell-classy-prelude
 update_on:
 - alpm: haskell-aeson
   source: alpm

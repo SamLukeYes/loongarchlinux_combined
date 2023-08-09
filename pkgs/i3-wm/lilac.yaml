@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''i3-wm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- startup-notification
-- pango
-- xcb-util-cursor
-- xcb-util-keysyms
-- libev
-- xcb-util-wm
-- xcb-util-xrm
-- yajl
-- libxkbcommon: libxkbcommon-x11
+repo_depends: []
 update_on:
 - alpm: i3-wm
   source: archpkg

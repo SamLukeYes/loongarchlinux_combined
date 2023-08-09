@@ -1,9 +1,3 @@
 destsubdir: extra
-repo_depends:
-- pcre2
-- zlib
-- libxcrypt
-- apr-util
-- openssl
-- libnghttp2
+repo_depends: []
 update_on: []

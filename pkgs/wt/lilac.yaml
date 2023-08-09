@@ -11,12 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wt'')
   '
 repo_depends:
 - qt5-base
-- pango
-- zlib
-- graphicsmagick
-- libharu
-- harfbuzz
-- boost: boost-libs
 update_on:
 - alpm: qt5-base
   source: alpm

@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-vector-space'
 repo_depends:
 - haskell-boolean
 - haskell-memotrie
-- ghc: ghc-libs
 - haskell-numinstances
 update_on:
 - alpm: haskell-boolean

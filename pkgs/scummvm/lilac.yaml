@@ -9,27 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''scummvm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glu
-- speech-dispatcher: libspeechd
-- faad2
-- libtheora
-- libjpeg-turbo
-- curl
-- a52dec
-- fluidsynth
-- libmpeg2
-- libpng
-- sdl2_net
-- freetype2
-- glew
-- libvorbis
-- sdl2
-- sndio
-- gtk3
-- flac
-- giflib
-- libmad
+repo_depends: []
 update_on:
 - alpm: scummvm
   source: archpkg

@@ -10,12 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''thc-ipv6'')
 
   '
 repo_depends:
-- perl-socket6
 - libpcap
 - perl
-- openssl
-- glibc
-- libnetfilter_queue
 update_on:
 - alpm: libpcap
   provides: libpcap.so

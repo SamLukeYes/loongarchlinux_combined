@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- util-linux: util-linux-libs
-- bash
+repo_depends: []
 update_on: []

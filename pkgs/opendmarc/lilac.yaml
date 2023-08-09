@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opendmarc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libbsd
-- perl-json
-- libidn
-- libspf2
+repo_depends: []
 update_on:
 - alpm: opendmarc
   source: archpkg

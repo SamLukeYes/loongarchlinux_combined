@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''liblxqt'')
 
   '
 repo_depends:
-- libxss
-- polkit-qt: polkit-qt5
-- kwindowsystem
+- libqtxdg
 update_on:
 - alpm: libqtxdg
   provides: libQt5Xdg.so

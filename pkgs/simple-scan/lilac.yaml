@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''simple-scan'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- dconf
-- libhandy
-- gtk3
-- colord: colord-sane
-- libgusb
-- sane
+repo_depends: []
 update_on:
 - alpm: simple-scan
   source: archpkg

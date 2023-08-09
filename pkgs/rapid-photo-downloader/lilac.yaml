@@ -7,34 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''rapid-photo-downloader'')
 
   '
-repo_depends:
-- python-colour
-- python-show-in-file-manager
-- python-requests
-- desktop-file-utils
-- libnotify
-- pygobject: python-gobject
-- hicolor-icon-theme
-- python-tornado
-- python-dateutil
-- python-sortedcontainers
-- python-easygui
-- python-tenacity
-- gstreamer
-- pyxdg: python-pyxdg
-- python-setuptools
-- python-psutil
-- python-arrow
-- perl-image-exiftool
-- python-pymediainfo
-- udisks2
-- libgexiv2
-- python-pyzmq
-- qt5-imageformats
-- pyqt5: python-pyqt5
-- python-gphoto2
-- qt5-svg
-- python-babel
+repo_depends: []
 update_on:
 - alpm: rapid-photo-downloader
   source: archpkg

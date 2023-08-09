@@ -10,14 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-meta'')
 
   '
 repo_depends:
-- ghc: ghc-libs
-- haskell-random
-- haskell-setenv
+- haskell-ansi-terminal
+- haskell-call-stack
+- haskell-clock
+- haskell-ghc
 - haskell-quickcheck
 - haskell-quickcheck-io
-- haskell-ansi-terminal
-- haskell-clock
-- haskell-call-stack
+- haskell-random
+- haskell-setenv
 update_on:
 - alpm: haskell-ansi-terminal
   source: alpm

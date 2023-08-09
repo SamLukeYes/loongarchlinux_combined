@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-list-allutils'')
 
   '
-repo_depends:
-- perl-list-utilsby
-- perl-list-someutils
+repo_depends: []
 update_on:
 - alpm: perl-list-allutils
   source: archpkg

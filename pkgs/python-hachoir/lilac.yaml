@@ -8,9 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-hachoir'')
 
   '
 repo_depends:
-- python-wxpython
-- python-urwid
-- python-darkdetect
 - python
 update_on:
 - alias: python

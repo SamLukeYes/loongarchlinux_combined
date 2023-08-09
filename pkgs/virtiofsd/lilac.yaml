@@ -1,7 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libcap-ng
-- gcc: gcc-libs
-- glibc
-- libseccomp
+repo_depends: []
 update_on: []

@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-test-framewor
 
   '
 repo_depends:
-- ghc: ghc-libs
-- haskell-random
-- haskell-hostname
-- haskell-xml
 - haskell-ansi-terminal
-- haskell-regex-posix
 - haskell-ansi-wl-pprint
+- haskell-hostname
 - haskell-old-locale
+- haskell-random
+- haskell-regex-posix
+- haskell-xml
 update_on:
 - alpm: haskell-ansi-terminal
   source: alpm

@@ -9,11 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-domdf-python-t
   '
 repo_depends:
 - python
-- python-importlib-metadata
-- python-typing_extensions
-- python-importlib_resources
-- python-pandas
-- python-natsort
 update_on:
 - alias: python
 - alpm: python-domdf-python-tools

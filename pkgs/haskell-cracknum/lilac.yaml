@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cracknum'')
 
   '
 repo_depends:
+- haskell-libbf
 - haskell-sbv
-- ghc: ghc-libs
 - haskell-tasty
 - haskell-tasty-golden
-- haskell-libbf
 update_on:
 - alpm: haskell-libbf
   source: alpm

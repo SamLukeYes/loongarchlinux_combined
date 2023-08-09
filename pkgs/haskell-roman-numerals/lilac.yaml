@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-roman-numeral
   '
 repo_depends:
 - haskell-base-unicode-symbols
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-base-unicode-symbols
   source: alpm

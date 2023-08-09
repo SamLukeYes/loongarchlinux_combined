@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kamoso'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- purpose
-- kirigami2
-- gstreamer: gst-plugins-good
-- gstreamer: gst-plugins-bad
+repo_depends: []
 update_on:
 - alpm: kamoso
   source: archpkg

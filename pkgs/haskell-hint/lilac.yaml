@@ -10,8 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hint'')
 
   '
 repo_depends:
+- haskell-ghc
 - haskell-ghc-paths
-- ghc: ghc-libs
 - haskell-random
 - haskell-temporary
 update_on:

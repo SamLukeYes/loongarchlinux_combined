@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-poetry-plugin-
   '
 repo_depends:
 - python
-- python-poetry
 update_on:
 - alias: python
 - alpm: python-poetry-plugin-up

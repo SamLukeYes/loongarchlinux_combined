@@ -10,20 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gimagereader'')
 
   '
 repo_depends:
-- quazip: quazip-qt6
-- libzip
-- qtspell
-- gtksourceviewmm
-- djvulibre
-- podofo
-- sane
-- qt6-imageformats
 - tesseract
-- hicolor-icon-theme
-- libxml++
-- poppler: poppler-glib
-- poppler: poppler-qt6
-- gtkspellmm
 update_on:
 - alpm: tesseract
   provides: libtesseract.so

@@ -8,17 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-nbdime'')
 
   '
 repo_depends:
-- python-requests
-- python-traitlets
-- python-colorama
-- python-pygments
-- jupyter-nbformat
-- jupyter-server-mathjax
-- python-jinja
-- jupyter-server
-- python-jupyter-core
-- python-tornado
-- python-gitpython
 - python
 update_on:
 - alias: python

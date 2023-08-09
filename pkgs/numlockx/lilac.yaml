@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''numlockx'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxtst
+repo_depends: []
 update_on:
 - alpm: numlockx
   source: archpkg

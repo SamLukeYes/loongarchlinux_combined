@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ukui-interface'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gsettings-qt
-- iniparser
-- dconf
+repo_depends: []
 update_on:
 - alpm: ukui-interface
   source: archpkg

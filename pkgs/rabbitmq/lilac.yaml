@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rabbitmq'')
 
   '
 repo_depends:
-- inetutils
-- socat
-- erlang-nox
-- util-linux
 - python
 update_on:
 - alias: python

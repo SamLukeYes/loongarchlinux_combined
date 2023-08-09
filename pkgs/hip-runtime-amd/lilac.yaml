@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hip-runtime-amd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- rocminfo
-- elfutils: libelf
-- rocm-llvm
-- comgr
-- mesa
+repo_depends: []
 update_on:
 - alpm: hip-runtime-amd
   source: archpkg

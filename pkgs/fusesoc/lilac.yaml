@@ -8,12 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fusesoc'')
 
   '
 repo_depends:
-- git
-- python-simplesat
-- python-edalize
-- python-pyparsing
-- python-ipyxact
-- python-yaml
 - python
 update_on:
 - alias: python

@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''fvextra'')
 
   '
-repo_depends:
-- texlive-texmf: texlive-latexextra
+repo_depends: []
 update_on:
 - alpm: fvextra
   source: archpkg

@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mime-mail'')
 
   '
 repo_depends:
-- haskell-random
-- haskell-blaze-builder
 - haskell-base64-bytestring
-- ghc: ghc-libs
+- haskell-blaze-builder
+- haskell-random
 update_on:
 - alpm: haskell-base64-bytestring
   source: alpm

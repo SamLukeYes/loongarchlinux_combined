@@ -9,20 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libblockdev'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- volume_key
-- libbytesize
-- lvm2
-- kmod
-- gptfdisk
-- dmraid
-- xfsprogs
-- btrfs-progs
-- parted
-- mdadm
-- ndctl
-- libyaml
-- dosfstools
+repo_depends: []
 update_on:
 - alpm: libblockdev
   source: archpkg

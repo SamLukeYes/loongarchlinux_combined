@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- zlib
-- ncurses
+repo_depends: []
 update_on: []

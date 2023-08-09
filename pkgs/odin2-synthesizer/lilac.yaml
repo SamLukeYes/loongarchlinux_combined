@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''odin2-synthesizer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libglvnd
-- hicolor-icon-theme
-- alsa-lib
-- freetype2
+repo_depends: []
 update_on:
 - alpm: odin2-synthesizer
   source: archpkg

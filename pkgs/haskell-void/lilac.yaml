@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-void'')
   '
 repo_depends:
 - haskell-hashable
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-hashable
   source: alpm

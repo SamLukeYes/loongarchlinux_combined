@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- v2ray-geoip
-- v2ray-domain-list-community
-- glibc
+repo_depends: []
 update_on: []

@@ -10,15 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi-pango'')
 
   '
 repo_depends:
-- haskell-gi-harfbuzz
-- ghc: ghc-libs
-- haskell-gi-glib
-- pango
 - haskell-gi-gio
-- haskell-gi-overloading
-- haskell-gi-base
-- haskell-gi
+- haskell-gi-glib
 - haskell-gi-gobject
+- haskell-gi-harfbuzz
+- haskell-gi
+- haskell-gi-base
+- haskell-gi-overloading
 update_on:
 - alpm: haskell-gi-gio
   source: alpm

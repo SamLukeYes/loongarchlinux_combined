@@ -9,19 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''obs-studio'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- rnnoise
-- pciutils
-- libxcomposite
-- jansson
-- pipewire
-- curl
-- mbedtls
-- ffmpeg
-- libxinerama
-- gtk4: gtk-update-icon-cache
-- qt6-svg
-- libxkbcommon: libxkbcommon-x11
+repo_depends: []
 update_on:
 - alpm: obs-studio
   source: archpkg

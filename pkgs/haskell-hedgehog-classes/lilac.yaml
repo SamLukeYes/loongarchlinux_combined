@@ -10,15 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hedgehog-clas
 
   '
 repo_depends:
-- haskell-silently
-- haskell-hedgehog
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-semirings
-- haskell-vector
+- haskell-comonad
+- haskell-hedgehog
 - haskell-pretty-show
 - haskell-primitive
-- haskell-comonad
+- haskell-semirings
+- haskell-silently
+- haskell-vector
 - haskell-wl-pprint-annotated
 update_on:
 - alpm: haskell-aeson

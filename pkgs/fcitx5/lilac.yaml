@@ -9,19 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcitx5'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- fmt
-- gdk-pixbuf2
-- wayland
-- enchant
-- pango
-- libxkbfile
-- xcb-imdkit
-- iso-codes
-- xcb-util-wm
-- cairo
-- systemd
-- libxkbcommon: libxkbcommon-x11
+repo_depends: []
 update_on:
 - alpm: fcitx5
   source: archpkg

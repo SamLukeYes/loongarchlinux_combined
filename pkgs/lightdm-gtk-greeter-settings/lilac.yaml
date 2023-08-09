@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''lightdm-gtk-greeter-settings'')
 
   '
-repo_depends:
-- pygobject: python-gobject
-- gtk4: gtk-update-icon-cache
-- lightdm-gtk-greeter
+repo_depends: []
 update_on:
 - alpm: lightdm-gtk-greeter-settings
   source: archpkg

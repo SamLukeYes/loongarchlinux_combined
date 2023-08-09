@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''krfb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kxmlgui
-- kwayland
-- xdg-desktop-portal
-- kpipewire
-- kdnssd
-- kwallet
-- libvncserver
+repo_depends: []
 update_on:
 - alpm: krfb
   source: archpkg

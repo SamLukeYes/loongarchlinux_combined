@@ -10,24 +10,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lsp'')
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-lens
-- haskell-async
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-hashable
-- haskell-random
-- haskell-text-rope
-- haskell-lsp-types
-- haskell-unliftio
-- haskell-uuid
-- haskell-data-default
-- haskell-unliftio-core
-- haskell-co-log-core
-- haskell-temporary
-- haskell-sorted-list
+- haskell-async
 - haskell-attoparsec
+- haskell-co-log-core
+- haskell-data-default
+- haskell-hashable
+- haskell-lens
+- haskell-lsp-types
 - haskell-prettyprinter
+- haskell-random
+- haskell-sorted-list
+- haskell-temporary
+- haskell-text-rope
+- haskell-unliftio-core
+- haskell-unordered-containers
+- haskell-uuid
+- haskell-unliftio
 update_on:
 - alpm: haskell-aeson
   source: alpm

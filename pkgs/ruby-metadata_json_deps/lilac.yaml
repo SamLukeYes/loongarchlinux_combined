@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-metadata_json_de
 
   '
 repo_depends:
-- ruby-puppet_metadata
 - ruby
-- ruby-puppet_forge
 update_on:
 - alias: ruby
 - alpm: ruby-metadata_json_deps

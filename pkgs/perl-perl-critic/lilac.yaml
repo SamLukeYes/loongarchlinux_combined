@@ -7,23 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-perl-critic'')
 
   '
-repo_depends:
-- perl-config-tiny
-- perl-ppix-quotelike
-- perl-string-format
-- perl-ppi
-- perl-file-homedir
-- perl-file-which
-- perl-module-pluggable
-- perl-pod-spell
-- perl-b-keywords
-- perl-ppix-regexp
-- perl-tidy
-- perl-list-someutils
-- perl-ppix-utilities
-- perl-exception-class
-- perl-readonly
-- perl-module-build
+repo_depends: []
 update_on:
 - alpm: perl-perl-critic
   source: archpkg

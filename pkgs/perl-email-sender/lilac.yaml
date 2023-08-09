@@ -7,14 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-email-sender'')
 
   '
-repo_depends:
-- perl-module-runtime
-- perl-sub-exporter
-- perl-try-tiny
-- perl-throwable
-- perl-mro-compat
-- perl-email-address-xs
-- perl-list-moreutils
+repo_depends: []
 update_on:
 - alpm: perl-email-sender
   source: archpkg

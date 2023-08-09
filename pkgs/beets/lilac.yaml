@@ -7,17 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''beets'')
 
   '
-repo_depends:
-- python-setuptools
-- python-six
-- python-confuse
-- python-unidecode
-- python-mediafile
-- python-reflink
-- python-yaml
-- python-jellyfish
-- python-munkres
-- python-musicbrainzngs
+repo_depends: []
 update_on:
 - alpm: beets
   source: archpkg

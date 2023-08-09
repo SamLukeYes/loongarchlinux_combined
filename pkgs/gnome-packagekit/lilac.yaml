@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-packagekit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- desktop-file-utils
-- gtk3
-- libnotify
-- packagekit
+repo_depends: []
 update_on:
 - alpm: gnome-packagekit
   source: archpkg

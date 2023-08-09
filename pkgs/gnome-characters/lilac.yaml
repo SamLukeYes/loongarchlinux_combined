@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-characters'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gnome-desktop: gnome-desktop-4
-- libunistring
-- gtk4
-- libadwaita
-- gjs
+repo_depends: []
 update_on:
 - alpm: gnome-characters
   source: archpkg

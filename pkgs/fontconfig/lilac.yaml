@@ -10,8 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fontconfig'')
 
   '
 repo_depends:
-- freetype2
 - expat
+- freetype2
 update_on:
 - alpm: expat
   provides: libexpat.so

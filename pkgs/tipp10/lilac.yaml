@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tipp10'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt6-multimedia
+repo_depends: []
 update_on:
 - alpm: tipp10
   source: archpkg

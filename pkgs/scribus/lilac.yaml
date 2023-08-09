@@ -10,30 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''scribus'')
 
   '
 repo_depends:
-- libvisio
-- libqxp
-- libmspub
-- libzmf
-- cups: libcups
+- icu
 - qt5-base
-- podofo
-- harfbuzz: harfbuzz-icu
-- openscenegraph
-- libxml2
-- librevenge
-- cairo
-- libpng
-- fontconfig
-- libfreehand
-- hunspell
-- freetype2
-- openssl
-- poppler
-- libtiff
-- zlib
-- lcms2
-- libcdr
-- libpagemaker
 update_on:
 - alpm: icu
   provides: libicuuc.so

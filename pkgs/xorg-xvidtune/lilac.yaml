@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-xvidtune'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxxf86vm
-- libxaw
-- libx11
-- libxt
-- libxmu
+repo_depends: []
 update_on:
 - alpm: xorg-xvidtune
   source: archpkg

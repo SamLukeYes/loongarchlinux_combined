@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sdcv'')
   '
 repo_depends:
 - readline
-- glib2
-- zlib
 update_on:
 - alias: readline
 - alpm: sdcv

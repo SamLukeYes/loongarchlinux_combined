@@ -10,12 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bookworm'')
 
   '
 repo_depends:
-- unarchiver
-- python-html2text
-- granite
-- webkit2gtk
-- unzip
-- poppler: poppler-glib
 - python
 update_on:
 - alias: python

@@ -9,31 +9,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wf-recorder'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends: []
+repo_depends:
+- ffmpeg
+- libao
+- libpulse
+- wayland
 update_on:
 - alpm: ffmpeg
-  provides: libavcodec.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavdevice.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavfilter.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavformat.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavutil.so
+  provides: libswresample.so
   source: alpm
 - alpm: libao
   provides: libpulse.so
   source: alpm
 - alpm: libpulse
   provides: libpulse-simple.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libswresample.so
   source: alpm
 - alpm: wayland
   provides: libwayland-client.so

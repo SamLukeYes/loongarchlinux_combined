@@ -1,11 +1,5 @@
 destsubdir: extra
 repo_depends:
-- c-ares
-- zlib
-- brotli
-- openssl
-- libuv
-- libnghttp2
 - icu
 update_on:
 - alias: icu

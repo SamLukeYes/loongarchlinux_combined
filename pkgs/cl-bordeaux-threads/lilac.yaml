@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''cl-bordeaux-threads'')
 
   '
-repo_depends:
-- cl-global-vars
-- cl-alexandria
-- cl-trivial-features
-- cl-trivial-garbage
+repo_depends: []
 update_on:
 - alpm: cl-bordeaux-threads
   source: archpkg

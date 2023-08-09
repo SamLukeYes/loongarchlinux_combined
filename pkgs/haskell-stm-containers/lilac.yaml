@@ -11,10 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-stm-container
   '
 repo_depends:
 - haskell-deferred-folds
-- haskell-list-t
-- ghc: ghc-libs
-- haskell-hashable
 - haskell-focus
+- haskell-hashable
+- haskell-list-t
 - haskell-stm-hamt
 update_on:
 - alpm: haskell-deferred-folds

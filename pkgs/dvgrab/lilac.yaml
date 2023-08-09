@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dvgrab'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libraw1394
-- libiec61883
-- gcc: gcc-libs
-- libavc1394
-- libjpeg-turbo
-- libdv
-- glibc
+repo_depends: []
 update_on:
 - alpm: dvgrab
   source: archpkg

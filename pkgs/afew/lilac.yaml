@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''afew'')
 
   '
-repo_depends:
-- python-chardet
-- notmuch
-- python-dkim
-- python-setuptools
+repo_depends: []
 update_on:
 - alpm: afew
   source: archpkg

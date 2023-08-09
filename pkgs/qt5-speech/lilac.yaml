@@ -1,4 +1,15 @@
 destsubdir: extra
-repo_depends:
-- qt5-multimedia
-update_on: []
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''qt5-speech'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_depends: []
+update_on:
+- alpm: qt5-speech
+  source: archpkg

@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ansible-language-server'')
 
   '
-repo_depends:
-- ansible
-- nodejs
+repo_depends: []
 update_on:
 - alpm: ansible-language-server
   source: archpkg

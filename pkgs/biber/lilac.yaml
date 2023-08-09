@@ -7,36 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''biber'')
 
   '
-repo_depends:
-- perl-xml-writer
-- perl-mozilla-ca
-- perl-business-isbn
-- perl-data-uniqid
-- perl-datetime-calendar-julian
-- perl-ipc-run3
-- perl-log-log4perl
-- perl-file-slurper
-- perl-regexp-common
-- perl-xml-libxml-simple
-- perl-data-compare
-- perl-lingua-translit
-- perl-lwp-protocol-https
-- perl-text-bibtex
-- perl-list-allutils
-- perl-data-dump
-- perl-datetime-format-builder
-- perl-autovivification
-- perl-business-issn
-- perl-text-csv
-- perl-io-string
-- perl-class-accessor
-- perl-sort-key
-- perl-perlio-utf8-strict
-- perl-parse-recdescent
-- perl-xml-libxslt
-- perl-text-roman
-- perl-unicode-linebreak
-- perl-business-ismn
+repo_depends: []
 update_on:
 - alpm: biber
   source: archpkg

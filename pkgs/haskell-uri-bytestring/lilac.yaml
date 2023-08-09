@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-uri-bytestrin
 
   '
 repo_depends:
-- haskell-th-lift-instances
-- haskell-blaze-builder
 - haskell-attoparsec
-- ghc: ghc-libs
+- haskell-blaze-builder
+- haskell-th-lift-instances
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

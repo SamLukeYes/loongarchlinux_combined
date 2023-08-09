@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''distrobuilder'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- debootstrap
-- gptfdisk
-- btrfs-progs
-- e2fsprogs
-- rsync
-- qemu: qemu-img
-- gnupg
-- squashfs-tools
-- dosfstools
+repo_depends: []
 update_on:
 - alpm: distrobuilder
   source: archpkg

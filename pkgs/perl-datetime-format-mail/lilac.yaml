@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-datetime-format-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- perl-datetime
+repo_depends: []
 update_on:
 - alpm: perl-datetime-format-mail
   source: archpkg

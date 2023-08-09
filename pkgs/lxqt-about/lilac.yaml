@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxqt-about'')
 
   '
 repo_depends:
-- liblxqt
+- libqtxdg
 update_on:
 - alpm: libqtxdg
   provides: libQt5Xdg.so

@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hadrian'')
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-shake
-- ghc: ghc-libs
 - haskell-quickcheck
 - haskell-extra
+- haskell-shake
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

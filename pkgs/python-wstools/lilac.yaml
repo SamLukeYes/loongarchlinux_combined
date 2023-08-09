@@ -1,4 +1,3 @@
 destsubdir: extra
-repo_depends:
-- python-six
+repo_depends: []
 update_on: []

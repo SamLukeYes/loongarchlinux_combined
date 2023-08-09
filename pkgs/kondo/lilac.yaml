@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kondo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtk3
-- gcc: gcc-libs
-- glib2
-- cairo
+repo_depends: []
 update_on:
 - alpm: kondo
   source: archpkg

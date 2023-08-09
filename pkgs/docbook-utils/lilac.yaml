@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- openjade
-- docbook-sgml31
-- docbook-dsssl
+repo_depends: []
 update_on: []

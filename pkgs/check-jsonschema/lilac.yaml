@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''check-jsonschema'')
 
   '
 repo_depends:
-- python-requests
-- python-click
-- python-ruamel-yaml
-- python-jsonschema
 - python
 update_on:
 - alias: python

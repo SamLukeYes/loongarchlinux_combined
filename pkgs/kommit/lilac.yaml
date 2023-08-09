@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kommit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ktexteditor
-- kio
-- git
+repo_depends: []
 update_on:
 - alpm: kommit
   source: archpkg

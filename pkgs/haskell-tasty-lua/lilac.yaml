@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-lua'')
 
   '
 repo_depends:
-- ghc: ghc-libs
 - haskell-file-embed
-- haskell-hslua-marshalling
 - haskell-hslua-core
+- haskell-hslua-marshalling
+- haskell-lua-arbitrary
 - haskell-quickcheck
 - haskell-tasty
-- haskell-lua-arbitrary
 update_on:
 - alpm: haskell-file-embed
   source: alpm

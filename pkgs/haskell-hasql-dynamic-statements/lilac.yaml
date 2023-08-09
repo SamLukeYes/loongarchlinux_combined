@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hasql-dynamic
 
   '
 repo_depends:
-- haskell-ptr
 - haskell-hasql
 - haskell-hasql-implicits
-- ghc: ghc-libs
+- haskell-ptr
 update_on:
 - alpm: haskell-hasql
   source: alpm

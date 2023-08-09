@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''maxcso'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- lz4
-- zlib
-- libuv
-- glibc
+- libdeflate
+- zopfli
 update_on:
 - alpm: libdeflate
   provides: libdeflate.so

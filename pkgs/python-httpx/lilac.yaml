@@ -9,10 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-httpx'')
   '
 repo_depends:
 - python
-- python-sniffio
-- python-certifi
-- python-idna
-- python-httpcore
 update_on:
 - alias: python
 - alpm: python-httpx

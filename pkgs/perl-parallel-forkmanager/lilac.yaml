@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-parallel-forkman
   '
 repo_depends:
 - perl
-- perl-moo
 update_on:
 - alias: perl
 - alpm: perl-parallel-forkmanager

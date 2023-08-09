@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-cvxpy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-osqp
-- python-scipy
-- python-scs
-- python-ecos
+repo_depends: []
 update_on:
 - alpm: python-cvxpy
   source: archpkg

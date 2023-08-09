@@ -1,7 +1,5 @@
 destsubdir: extra
 repo_depends:
 - perl
-- glibc
-- zlib
 update_on:
 - alias: perl

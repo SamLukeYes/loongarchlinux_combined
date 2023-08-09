@@ -11,9 +11,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-scientific'')
   '
 repo_depends:
 - haskell-hashable
-- haskell-primitive
-- ghc: ghc-libs
 - haskell-integer-logarithms
+- haskell-primitive
 update_on:
 - alpm: haskell-hashable
   source: alpm

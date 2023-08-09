@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-osqp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-scipy
-- python-qdldl
+repo_depends: []
 update_on:
 - alpm: python-osqp
   source: archpkg

@@ -10,13 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''boinc'')
 
   '
 repo_depends:
-- libjpeg-turbo
-- libxss
-- wxwidgets: wxwidgets-gtk3
-- curl
-- libnotify
-- webkit2gtk
-- libnsl
+- wxwidgets-gtk3
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm

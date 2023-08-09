@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zeitgeist'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- xapian-core
-- sqlite
-- json-glib
-- gtk3
-- telepathy-glib
+repo_depends: []
 update_on:
 - alpm: zeitgeist
   source: archpkg

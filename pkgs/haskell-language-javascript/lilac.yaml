@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-language-java
 repo_depends:
 - haskell-blaze-builder
 - haskell-utf8-string
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-blaze-builder
   source: alpm

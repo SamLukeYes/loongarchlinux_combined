@@ -10,20 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gobject-introspection
 
   '
 repo_depends:
-- python-markdown
-- python-mako
+- libffi
+- glib2
 update_on:
 - alpm: libffi
   provides: libffi.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgmodule-2.0.so
   source: alpm
 - alpm: glib2
   provides: libgio-2.0.so

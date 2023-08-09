@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''virt-firmware'')
 
   '
 repo_depends:
-- python-setuptools
-- python-crc32c
-- python-cryptography
-- python-pefile
 - python
 update_on:
 - alias: python

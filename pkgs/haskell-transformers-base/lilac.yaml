@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-transformers-
 
   '
 repo_depends:
-- haskell-transformers-compat
 - haskell-base-orphans
-- ghc: ghc-libs
+- haskell-transformers-compat
 update_on:
 - alpm: haskell-base-orphans
   source: alpm

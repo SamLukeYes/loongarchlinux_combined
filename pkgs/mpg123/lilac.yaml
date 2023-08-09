@@ -1,4 +1,3 @@
 destsubdir: extra
-repo_depends:
-- alsa-lib
+repo_depends: []
 update_on: []

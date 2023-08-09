@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-hs-dbus-signature'')
 
   '
-repo_depends:
-- python-hypothesis
+repo_depends: []
 update_on:
 - alpm: python-hs-dbus-signature
   source: archpkg

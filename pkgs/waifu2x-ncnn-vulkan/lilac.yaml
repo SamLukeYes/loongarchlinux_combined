@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''waifu2x-ncnn-vulkan''
 
   '
 repo_depends:
-- libwebp
 - ncnn
 update_on:
 - alpm: ncnn

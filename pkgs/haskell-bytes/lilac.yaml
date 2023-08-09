@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-bytes'')
 
   '
 repo_depends:
-- haskell-cereal
-- haskell-unordered-containers
 - haskell-binary-orphans
-- ghc: ghc-libs
+- haskell-cereal
 - haskell-hashable
 - haskell-scientific
 - haskell-transformers-compat
+- haskell-unordered-containers
 - haskell-void
 update_on:
 - alpm: haskell-binary-orphans

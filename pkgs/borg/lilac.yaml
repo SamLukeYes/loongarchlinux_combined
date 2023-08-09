@@ -10,13 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''borg'')
 
   '
 repo_depends:
-- acl
-- zstd
-- xz
-- lz4
-- python-packaging
-- python-msgpack
-- openssl
 - python
 update_on:
 - alias: python

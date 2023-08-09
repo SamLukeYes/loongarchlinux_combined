@@ -8,14 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''liquidctl'')
 
   '
 repo_depends:
-- python-colorlog
-- python-pillow
-- python-crcmod
-- python-docopt
-- i2c-tools
-- python-pyusb
 - python
-- python-hidapi
 update_on:
 - alias: python
 - alpm: liquidctl

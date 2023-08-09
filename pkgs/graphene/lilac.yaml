@@ -9,11 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''graphene'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends: []
+repo_depends:
+- glib2
 update_on:
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
 - alpm: glib2
   provides: libgobject-2.0.so
   source: alpm

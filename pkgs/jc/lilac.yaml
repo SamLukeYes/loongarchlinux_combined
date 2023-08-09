@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jc'')
 
   '
 repo_depends:
-- python-ruamel-yaml
-- python-xmltodict
 - python
-- python-pygments
 update_on:
 - alias: python
 - alpm: jc

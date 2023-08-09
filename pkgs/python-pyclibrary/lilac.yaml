@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pyclibrary'')
 
   '
-repo_depends:
-- python-future
-- python-pyparsing
-- python-setuptools
+repo_depends: []
 update_on:
 - alpm: python-pyclibrary
   source: archpkg

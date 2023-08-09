@@ -7,18 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-nrfutil'')
 
   '
-repo_depends:
-- python-tqdm
-- python-crcmod
-- python-libusb1
-- python-pyserial
-- python-click
-- python-ecdsa
-- protobuf: python-protobuf
-- python-piccata
-- python-intelhex
-- python-pc-ble-driver-py
-- python-pyspinel
+repo_depends: []
 update_on:
 - alpm: python-nrfutil
   source: archpkg

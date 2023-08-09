@@ -9,23 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''evince'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gsettings-desktop-schemas
-- libgxps
-- dconf
-- gspell
-- libsecret
-- libspectre
-- libhandy
-- djvulibre
-- libarchive
-- gsfonts
-- gstreamer: gst-plugins-base-libs
-- gtk3
-- poppler: poppler-glib
-- gnome-desktop
-- texlive-bin: libsynctex
-- gvfs
+repo_depends: []
 update_on:
 - alpm: evince
   source: archpkg

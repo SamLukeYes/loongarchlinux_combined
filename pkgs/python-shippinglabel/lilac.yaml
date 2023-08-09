@@ -8,12 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-shippinglabel'
 
   '
 repo_depends:
-- python-domdf-python-tools
-- python-apeye
-- python-platformdirs
-- python-dist-meta
-- python-dom-toml
-- python-packaging
 - python
 update_on:
 - alias: python

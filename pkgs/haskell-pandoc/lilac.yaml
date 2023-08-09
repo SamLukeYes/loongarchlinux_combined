@@ -11,56 +11,56 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pandoc'')
   '
 repo_depends:
 - haskell-glob
-- haskell-aeson
-- haskell-http-types
-- haskell-pandoc-types
-- haskell-case-insensitive
-- haskell-jira-wiki-markup
-- haskell-skylighting
-- haskell-citeproc
-- haskell-texmath
-- haskell-pretty-show
-- haskell-zlib
-- haskell-file-embed
-- haskell-unicode-collation
-- haskell-network-uri
-- haskell-syb
-- haskell-unicode-transforms
-- haskell-tagsoup
-- haskell-skylighting-core
-- haskell-blaze-markup
-- haskell-xml-conduit
-- haskell-sha
-- haskell-gridtables
-- haskell-emojis
-- haskell-network
-- ghc: ghc-libs
-- haskell-doctemplates
 - haskell-juicypixels
-- haskell-scientific
-- haskell-text-conversions
+- haskell-sha
+- haskell-aeson
 - haskell-aeson-pretty
-- haskell-temporary
-- haskell-xml
-- haskell-http-client
-- haskell-zip-archive
-- haskell-commonmark-pandoc
-- haskell-ipynb
-- haskell-split
-- haskell-blaze-html
-- haskell-random
-- haskell-doclayout
-- haskell-commonmark-extensions
-- haskell-data-default
-- haskell-mime-types
+- haskell-attoparsec
 - haskell-base64
+- haskell-blaze-html
+- haskell-blaze-markup
+- haskell-case-insensitive
+- haskell-citeproc
+- haskell-commonmark
+- haskell-commonmark-extensions
+- haskell-commonmark-pandoc
+- haskell-crypton-connection
+- haskell-data-default
+- haskell-doclayout
+- haskell-doctemplates
+- haskell-emojis
+- haskell-file-embed
+- haskell-gridtables
+- haskell-haddock-library
+- haskell-http-client
 - haskell-http-client-tls
+- haskell-http-types
+- haskell-ipynb
+- haskell-jira-wiki-markup
+- haskell-mime-types
+- haskell-network
+- haskell-network-uri
+- haskell-pandoc-types
+- haskell-pretty-show
+- haskell-random
+- haskell-safe
+- haskell-scientific
+- haskell-skylighting
+- haskell-skylighting-core
+- haskell-split
+- haskell-syb
+- haskell-tagsoup
+- haskell-temporary
+- haskell-texmath
+- haskell-text-conversions
+- haskell-unicode-collation
+- haskell-unicode-transforms
+- haskell-xml
+- haskell-xml-conduit
 - haskell-xml-types
 - haskell-yaml
-- haskell-safe
-- haskell-haddock-library
-- haskell-attoparsec
-- haskell-commonmark
+- haskell-zip-archive
+- haskell-zlib
 update_on:
 - alpm: haskell-glob
   source: alpm
@@ -90,7 +90,7 @@ update_on:
   source: alpm
 - alpm: haskell-commonmark-pandoc
   source: alpm
-- alpm: haskell-connection
+- alpm: haskell-crypton-connection
   source: alpm
 - alpm: haskell-data-default
   source: alpm

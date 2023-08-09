@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libretro-beetle-psx''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libretro-core-info
-- zlib
+repo_depends: []
 update_on:
 - alpm: libretro-beetle-psx
   source: archpkg

@@ -9,23 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''networkmanager'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- jansson
-- libnewt
-- curl
-- systemd: systemd-libs
-- libpsl
-- audit
-- nss
-- bluez: bluez-libs
-- iproute2
-- libteam
-- modemmanager: libmm-glib
-- util-linux: util-linux-libs
-- mobile-broadband-provider-info
-- glib2
-- wpa_supplicant
-- libndp
+repo_depends: []
 update_on:
 - alpm: networkmanager
   source: archpkg

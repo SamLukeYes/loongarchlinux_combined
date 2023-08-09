@@ -10,35 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tensorflow'')
 
   '
 repo_depends:
-- nccl
-- python-astor
-- lmdb
-- openmp
-- python-keras-preprocessing
-- python-tensorflow-estimator
-- libjpeg-turbo
-- python-pasta
-- python-termcolor
-- python-opt_einsum
-- curl
-- protobuf: python-protobuf
-- python-gast03
 - icu
-- libpng
-- python-h5py
-- python-pycuda
-- c-ares
-- python-typing_extensions
-- python-astunparse
-- cudnn
-- flatbuffers: python-flatbuffers
-- openssl
-- python-numpy
-- cuda
-- pybind11
-- python-keras-applications
-- giflib
-- python-keras
 update_on:
 - alias: icu
 - alpm: tensorflow

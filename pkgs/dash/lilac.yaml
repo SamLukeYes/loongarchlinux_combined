@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dash'')
 
   '
 repo_depends:
-- glibc
 - libedit
 update_on:
 - alpm: libedit

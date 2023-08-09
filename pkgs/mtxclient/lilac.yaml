@@ -10,14 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mtxclient'')
 
   '
 repo_depends:
-- re2
-- fmt
-- gcc: gcc-libs
-- libolm
-- spdlog
 - coeurl
+- fmt
+- libolm
 - openssl
-- glibc
+- re2
+- spdlog
 update_on:
 - alpm: coeurl
   provides: libcoeurl.so

@@ -10,9 +10,30 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tectonic'')
 
   '
 repo_depends:
-- fontconfig
-- harfbuzz: harfbuzz-icu
-- openssl
+- icu
+- freetype2
+- zlib
+- graphite
+- harfbuzz
+- intel-oneapi-basekit
 update_on:
+- alpm: icu
+  provides: libicuuc.so
+  source: alpm
+- alpm: freetype2
+  provides: libfreetype.so
+  source: alpm
+- alpm: zlib
+  provides: libz.so
+  source: alpm
+- alpm: graphite
+  provides: libgraphite2.so
+  source: alpm
+- alpm: harfbuzz
+  provides: libharfbuzz.so
+  source: alpm
+- alpm: intel-oneapi-basekit
+  provides: libpng16.so
+  source: alpm
 - alpm: tectonic
   source: archpkg

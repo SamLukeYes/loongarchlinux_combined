@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-chimera'')
 
   '
 repo_depends:
-- ghc: ghc-libs
-- haskell-vector
+- haskell-adjunctions
 - haskell-distributive
 - haskell-primitive
-- haskell-adjunctions
+- haskell-vector
 update_on:
 - alpm: haskell-adjunctions
   source: alpm

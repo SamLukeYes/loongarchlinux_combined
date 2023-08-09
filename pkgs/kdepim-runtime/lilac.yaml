@@ -9,18 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdepim-runtime'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- akonadi-notes
-- libkolabxml
-- kholidays
-- akonadi
-- qt5-networkauth
-- knotifyconfig
-- kdav
-- qca: qca-qt5
-- akonadi-calendar
-- pimcommon
-- kmbox
+repo_depends: []
 update_on:
 - alpm: kdepim-runtime
   source: archpkg

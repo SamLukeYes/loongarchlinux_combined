@@ -10,12 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ctags'')
 
   '
 repo_depends:
-- jansson
 - libseccomp
-- pcre2
-- libyaml
-- libxml2
-- glibc
 update_on:
 - alpm: libseccomp
   provides: libseccomp.so

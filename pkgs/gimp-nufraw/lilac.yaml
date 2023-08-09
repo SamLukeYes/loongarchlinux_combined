@@ -10,11 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gimp-nufraw'')
 
   '
 repo_depends:
-- gtkimageview
-- libjpeg-turbo
-- lensfun
-- exiv2
-- lcms2
 - cfitsio
 update_on:
 - alpm: cfitsio

@@ -10,22 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''uwsgi'')
 
   '
 repo_depends:
-- python-gevent
-- mono
-- glibc
-- lua51
-- jansson
-- pcre
-- php: php-embed
-- libxml2
-- openssl
-- python
-- php-legacy: php-legacy-embed
-- python-greenlet
+- libcap
+- libxcrypt
+- pam
+- systemd-libs
+- util-linux-libs
 - ruby
-- zlib
 - perl
-- pypy
+- python
 update_on:
 - alpm: libcap
   provides: libcap.so

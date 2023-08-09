@@ -8,17 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ipython'')
 
   '
 repo_depends:
-- python-backcall
-- python-pickleshare
-- python-traitlets
-- python-stack-data
-- python-pygments
-- python-matplotlib-inline
-- sqlite
-- python-pexpect
-- python-jedi
 - python
-- python-prompt_toolkit
 update_on:
 - alias: python
 - alpm: ipython

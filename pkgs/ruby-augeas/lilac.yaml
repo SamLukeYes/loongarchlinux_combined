@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-augeas'')
   '
 repo_depends:
 - ruby
-- augeas
 update_on:
 - alias: ruby
 - alpm: ruby-augeas

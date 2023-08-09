@@ -1,8 +1,3 @@
 destsubdir: extra
-repo_depends:
-- kmod
-- open-isns
-- util-linux: util-linux-libs
-- openssl
-- systemd: systemd-libs
+repo_depends: []
 update_on: []

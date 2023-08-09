@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''toxic'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qrencode
-- freealut
-- curl
-- libnotify
-- libx11
-- toxcore
+repo_depends: []
 update_on:
 - alpm: toxic
   source: archpkg

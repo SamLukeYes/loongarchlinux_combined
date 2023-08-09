@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''totem-pl-parser'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libarchive
-- libgcrypt
-- glib2
-- libxml2
+repo_depends: []
 update_on:
 - alpm: totem-pl-parser
   source: archpkg

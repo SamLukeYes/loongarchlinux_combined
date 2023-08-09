@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''git-filter-repo'')
   '
 repo_depends:
 - python
-- git
 update_on:
 - alias: python
 - alpm: git-filter-repo

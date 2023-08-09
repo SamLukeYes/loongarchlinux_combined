@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''messagelib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libkleo
-- kidentitymanagement
-- libgravatar
-- kmailtransport
-- qca: qca-qt5
-- kmbox
+repo_depends: []
 update_on:
 - alpm: messagelib
   source: archpkg

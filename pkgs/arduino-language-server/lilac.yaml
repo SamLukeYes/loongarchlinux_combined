@@ -10,7 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''arduino-language-serv
 
   '
 repo_depends:
-- glibc
+- clang
 update_on:
+- alias: clang
 - alpm: arduino-language-server
   source: archpkg

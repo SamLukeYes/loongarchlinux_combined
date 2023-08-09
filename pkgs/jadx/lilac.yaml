@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''jadx'')
 
   '
-repo_depends:
-- bash
+repo_depends: []
 update_on:
 - alpm: jadx
   source: archpkg

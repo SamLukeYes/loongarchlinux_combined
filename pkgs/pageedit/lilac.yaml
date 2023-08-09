@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pageedit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt6-webengine
-- qt6-5compat
-- qt6-svg
+repo_depends: []
 update_on:
 - alpm: pageedit
   source: archpkg

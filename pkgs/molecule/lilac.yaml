@@ -8,16 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''molecule'')
 
   '
 repo_depends:
-- python-ansible-compat
-- python-click-help-colors
-- python-rich
-- python-enrich
-- python-cookiecutter
-- python-click
-- python-jinja
-- python-packaging
-- python-pluggy
-- python-jsonschema
 - python
 update_on:
 - alias: python

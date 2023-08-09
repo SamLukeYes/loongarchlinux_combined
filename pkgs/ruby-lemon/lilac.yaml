@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-lemon'')
 
   '
-repo_depends:
-- ruby-ae
-- ruby-rubytest-cli
-- ruby-ansi
+repo_depends: []
 update_on:
 - alpm: ruby-lemon
   source: archpkg

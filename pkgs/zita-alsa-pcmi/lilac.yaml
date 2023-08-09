@@ -10,8 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zita-alsa-pcmi'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- glibc
+- alsa-lib
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

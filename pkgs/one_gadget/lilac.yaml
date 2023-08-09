@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''one_gadget'')
   '
 repo_depends:
 - ruby
-- ruby-elftools
 update_on:
 - alias: ruby
 - alpm: one_gadget

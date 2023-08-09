@@ -10,15 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-brittany-
 
   '
 repo_depends:
+- haskell-brittany
 - haskell-czipwith
-- ghc: ghc-libs
+- haskell-extra
+- haskell-ghc
+- haskell-ghc-exactprint
+- haskell-ghcide
+- haskell-hls-plugin-api
 - haskell-lens
 - haskell-lsp-types
-- haskell-ghc-exactprint
-- haskell-hls-plugin-api
-- haskell-brittany
-- haskell-ghcide
-- haskell-extra
 update_on:
 - alpm: haskell-brittany
   source: alpm

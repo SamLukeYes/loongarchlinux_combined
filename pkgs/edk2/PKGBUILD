@@ -59,7 +59,6 @@ source=(
 )
 sha512sums=('SKIP'
             'SKIP'
-            'SKIP'
             '628676c9c3bc1cf46083d64f61943079f97f0eefd0264042e40a85dbbd988f271bfe01cd1135d22cc3f67a298f1d078041f8f2e97b0da0d93fe172da573da18c'
             'SKIP'
             'b8e2df955e8796ac1f022eb4ebad29532cb7e3aa6a4b6aee91dbd2c7d637eee84d9a144d3e878895bb5e62800875c2c01c8f737a1261020c54feacf9f676b5f5'
@@ -89,7 +88,6 @@ sha512sums=('SKIP'
             'd074c794796d17d77eed7c34201d93d7ef3f1322fe1ea4a2ddd7137fae884d49f94f465ee39cfd8346b026142668a41f5a8671e521409505dd6d002f71c0eebc'
             '94d889b4bc1dacf6ab4543b5e6ac7f99a5ec71f0362577df9e49f6ed0af4275455d8fb2f1ce8c279b7e4ce8a24cafa2006446f9fe793ab60680dcd328abf0429')
 b2sums=('SKIP'
-        'SKIP'
         'SKIP'
         '66d76ea0c05a4afc3104e22602cffc2373e857728625d31ab3244881cafa91c099a817a09def7746bce4133585bfc90b769f43527e77a81ed13e60a8c2fb4d8d'
         'SKIP'

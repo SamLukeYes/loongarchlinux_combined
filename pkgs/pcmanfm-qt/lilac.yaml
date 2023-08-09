@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pcmanfm-qt'')
 
   '
 repo_depends:
-- desktop-file-utils
 - libfm-qt
-- lxmenu-data
 update_on:
 - alpm: libfm-qt
   provides: libfm-qt.so

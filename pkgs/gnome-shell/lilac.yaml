@@ -10,24 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-shell'')
 
   '
 repo_depends:
-- gtk4
-- libgweather-4
-- upower
-- libnma: libnma-gtk4
-- gsettings-desktop-schemas
-- libsecret
-- ibus: libibus
-- gcr-4
-- unzip
-- gnome-settings-daemon
-- gnome-autoar
 - mutter
-- accountsservice
-- gnome-session
-- libsoup3
-- libadwaita
-- gjs
-- gdm: libgdm
 update_on:
 - alpm: mutter
   provides: libmutter-12.so

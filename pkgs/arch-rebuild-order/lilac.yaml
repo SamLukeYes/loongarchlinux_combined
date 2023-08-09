@@ -1,6 +1,6 @@
 destsubdir: extra
 repo_depends:
-- glibc
+- pacman
 update_on:
 - alpm: pacman
   provides: libalpm.so

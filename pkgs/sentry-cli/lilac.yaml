@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- bzip2
-- gcc: gcc-libs
-- zlib
+repo_depends: []
 update_on: []

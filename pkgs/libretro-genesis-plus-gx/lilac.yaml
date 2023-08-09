@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libretro-genesis-plus
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libretro-core-info
-- libvorbis
-- zlib
+repo_depends: []
 update_on:
 - alpm: libretro-genesis-plus-gx
   source: archpkg

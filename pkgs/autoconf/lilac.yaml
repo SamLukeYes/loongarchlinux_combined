@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''autoconf'')
 
   '
 repo_depends:
-- diffutils
-- m4
 - perl
 update_on:
 - alias: perl

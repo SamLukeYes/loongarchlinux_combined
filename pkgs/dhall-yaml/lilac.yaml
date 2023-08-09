@@ -10,17 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dhall-yaml'')
 
   '
 repo_depends:
-- haskell-optparse-applicative
-- haskell-aeson
-- ghc: ghc-libs
 - haskell-hsyaml
+- haskell-hsyaml-aeson
+- haskell-aeson
 - haskell-ansi-terminal
-- dhall
+- haskell-optparse-applicative
+- haskell-prettyprinter
 - haskell-prettyprinter-ansi-terminal
 - haskell-vector
-- haskell-hsyaml-aeson
-- dhall-json
-- haskell-prettyprinter
 update_on:
 - alpm: haskell-hsyaml
   source: alpm

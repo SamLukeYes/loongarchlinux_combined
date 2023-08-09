@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-mous
 
   '
 repo_depends:
-- libgee
-- gtk3
-- glib2
+- granite
+- switchboard
 update_on:
 - alpm: granite
   provides: libgranite.so

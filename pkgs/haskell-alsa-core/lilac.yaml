@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-alsa-core'')
 
   '
 repo_depends:
-- alsa-lib
-- ghc: ghc-libs
+- haskell-base
 - haskell-extensible-exceptions
-- glibc
-- gmp
 update_on:
 - alpm: haskell-base
   source: alpm

@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''intltool'')
 
   '
-repo_depends:
-- perl-xml-parser
+repo_depends: []
 update_on:
 - alpm: intltool
   source: archpkg

@@ -10,8 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qt6-grpc'')
 
   '
 repo_depends:
-- grpc
 - qt6-base
+- grpc
 update_on:
 - alpm: qt6-base
   source: alpm

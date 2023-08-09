@@ -9,11 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-nox'')
   '
 repo_depends:
 - python
-- python-colorlog
-- python-py
-- python-packaging
-- python-argcomplete
-- python-virtualenv
 update_on:
 - alias: python
 - alpm: python-nox

@@ -10,16 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-gtk3'')
 
   '
 repo_depends:
-- ruby-gdk_pixbuf2
 - ruby
-- ruby-gobject-introspection
-- ruby-gdk3
-- ruby-cairo
-- ruby-atk
-- ruby-pango
-- ruby-gio2
-- gobject-introspection
-- gtk3
 update_on:
 - alias: ruby
 - alpm: ruby-gtk3

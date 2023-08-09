@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''certbot-dns-luadns'')
 
   '
-repo_depends:
-- dns-lexicon
-- certbot
-- python-acme
+repo_depends: []
 update_on:
 - alpm: certbot-dns-luadns
   source: archpkg

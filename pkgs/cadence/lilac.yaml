@@ -10,16 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cadence'')
 
   '
 repo_depends:
-- glibc
-- gcc: gcc-libs
-- alsa-utils
-- qt5-base
-- jack2: jack2-dbus
-- pyqt5: python-pyqt5
-- bash
-- qt5-svg
-- hicolor-icon-theme
 - python
+- qt5-base
 update_on:
 - alias: python
 - alpm: qt5-base

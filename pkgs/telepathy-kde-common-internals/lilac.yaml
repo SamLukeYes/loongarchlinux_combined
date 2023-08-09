@@ -9,6 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-kde-common-
   add_into_array(''arch'', [''loong64''])
 
   '
+<<<<<<< HEAD
 repo_depends:
 # - telepathy-kde-integration-module
 - kaccounts-integration
@@ -18,6 +19,9 @@ repo_depends:
 - ktexteditor
 - kpeople
 - telepathy-logger-qt
+=======
+repo_depends: []
+>>>>>>> 629d87561 (treewide: regen lilac.yaml)
 update_on:
 - alpm: telepathy-kde-common-internals
   source: archpkg

@@ -10,12 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''john'')
 
   '
 repo_depends:
-- gcc: gcc-libs
 - libxcrypt
-- libpcap
-- openmpi
-- openssl
-- gmp
 update_on:
 - alpm: libxcrypt
   provides: libcrypt.so

@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-equivalence''
 repo_depends:
 - haskell-stmonadtrans
 - haskell-transformers-compat
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-stmonadtrans
   source: alpm

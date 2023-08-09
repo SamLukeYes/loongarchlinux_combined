@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pystatgrab'')
 
   '
 repo_depends:
-- libstatgrab
 - python
 update_on:
 - alias: python

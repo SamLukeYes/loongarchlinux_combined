@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-commonmark'')
 repo_depends:
 - haskell-unicode-data
 - haskell-unicode-transforms
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-unicode-data
   source: alpm

@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-hist'')
 
   '
-repo_depends:
-- python-histoprint
-- python-typing_extensions
-- python-boost-histogram
+repo_depends: []
 update_on:
 - alpm: python-hist
   source: archpkg

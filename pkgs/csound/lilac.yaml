@@ -10,11 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''csound'')
 
   '
 repo_depends:
-- gcc: gcc-libs
+- curl
 - libsamplerate
 - libsndfile
-- curl
-- glibc
 update_on:
 - alpm: curl
   provides: libcurl.so

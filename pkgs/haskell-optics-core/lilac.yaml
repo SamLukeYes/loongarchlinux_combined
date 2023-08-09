@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-optics-core''
   '
 repo_depends:
 - haskell-indexed-profunctors
-- ghc: ghc-libs
 - haskell-indexed-traversable
 update_on:
 - alpm: haskell-indexed-profunctors

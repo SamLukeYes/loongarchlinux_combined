@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdevelop'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- clang
-- grantlee
-- kitemmodels
-- threadweaver
-- libksysguard
-- knotifyconfig
-- ktexteditor
-- libkomparediff2
-- kcmutils
+repo_depends: []
 update_on:
 - alpm: kdevelop
   source: archpkg

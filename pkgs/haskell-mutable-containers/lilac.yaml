@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mutable-conta
 repo_depends:
 - haskell-vector
 - haskell-mono-traversable
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-vector
   source: alpm

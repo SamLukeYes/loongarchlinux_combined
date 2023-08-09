@@ -10,17 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wingpanel-indicator-n
 
   '
 repo_depends:
+- granite
+- libhandy
 - wingpanel
-- dbus-glib
-- gtk3
-- glib2
-- libwnck3
 update_on:
 - alpm: granite
   provides: libgranite.so
   source: alpm
 - alpm: libhandy
   provides: libhandy-1.so
+  source: alpm
+- alpm: wingpanel
+  provides: libwingpanel.so
   source: alpm
 - alpm: wingpanel-indicator-notifications
   source: archpkg

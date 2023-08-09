@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-cogl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxcomposite
-- gdk-pixbuf2
-- libxdamage
-- libxrandr
-- pango
-- libdrm
-- libxext
-- mesa
+repo_depends: []
 update_on:
 - alpm: deepin-cogl
   source: archpkg

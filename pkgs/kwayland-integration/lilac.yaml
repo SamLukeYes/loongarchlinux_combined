@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kwayland-integration'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kwayland
-- kwindowsystem
+repo_depends: []
 update_on:
 - alpm: kwayland-integration
   source: archpkg

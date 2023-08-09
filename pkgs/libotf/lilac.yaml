@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libotf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- freetype2
-- libxaw
+repo_depends: []
 update_on:
 - alpm: libotf
   source: archpkg

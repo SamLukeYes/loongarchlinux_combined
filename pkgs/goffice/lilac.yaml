@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''goffice'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libspectre
-- libxslt
-- lasem
-- librsvg
-- gtk3
-- libgsf
+repo_depends: []
 update_on:
 - alpm: goffice
   source: archpkg

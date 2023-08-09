@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ktexteditor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- editorconfig-core-c
-- syntax-highlighting
-- kparts
+repo_depends: []
 update_on:
 - alpm: ktexteditor
   source: archpkg

@@ -10,15 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''metasploit'')
 
   '
 repo_depends:
-- inetutils
 - ruby
-- ruby-bundler
-- git
-- postgresql: postgresql-libs
-- libxslt
-- libpcap
-- libxml2
-- sqlite
 update_on:
 - alias: ruby
 - alpm: metasploit

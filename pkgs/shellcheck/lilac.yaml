@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''shellcheck'')
 
   '
 repo_depends:
-- haskell-fgl
 - haskell-aeson
-- ghc: ghc-libs
 - haskell-diff
+- haskell-fgl
 - haskell-quickcheck
 - haskell-regex-tdfa
 update_on:

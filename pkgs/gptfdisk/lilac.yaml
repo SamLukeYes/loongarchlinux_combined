@@ -1,7 +1,7 @@
 destsubdir: extra
 repo_depends:
-- gcc: gcc-libs
-- popt
+- util-linux-libs
+- ncurses
 update_on:
 - alpm: util-linux-libs
   provides: libuuid.so

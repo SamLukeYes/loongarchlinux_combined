@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-aeson-pretty'
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-base-compat
 - haskell-aeson
-- ghc: ghc-libs
+- haskell-attoparsec
+- haskell-base-compat
 - haskell-cmdargs
 - haskell-scientific
+- haskell-unordered-containers
 - haskell-vector
-- haskell-attoparsec
 update_on:
 - alpm: haskell-aeson
   source: alpm

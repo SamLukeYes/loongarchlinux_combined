@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xplr'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- luajit
-- gcc: gcc-libs
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: xplr
   source: archpkg

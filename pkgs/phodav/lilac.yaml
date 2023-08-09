@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''phodav'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libsoup3
-- avahi
-- libxml2
-- glib2
-- systemd
+repo_depends: []
 update_on:
 - alpm: phodav
   source: archpkg

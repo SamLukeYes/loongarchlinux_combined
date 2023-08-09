@@ -9,21 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''knot'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libmnl
-- protobuf-c
-- libedit
-- libidn2
-- fstrm
-- xdp-tools: libxdp
-- libmaxminddb
-- libcap-ng
-- libbpf
-- gnutls
-- lmdb
-- libnghttp2
-- liburcu
-- systemd
+repo_depends: []
 update_on:
 - alpm: knot
   source: archpkg

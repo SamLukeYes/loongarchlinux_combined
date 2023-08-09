@@ -10,23 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vapoursynth-plugin-ls
 
   '
 repo_depends:
-- vapoursynth
-- glibc
+- ffmpeg
+- l-smash
 update_on:
 - alpm: ffmpeg
-  provides: libavcodec.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavformat.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavutil.so
+  provides: libswscale.so
   source: alpm
 - alpm: l-smash
   provides: liblsmash.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libswscale.so
   source: alpm
 - alpm: vapoursynth-plugin-lsmashsource
   source: archpkg

@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''yubikey-full-disk-encryption'')
 
   '
-repo_depends:
-- yubikey-personalization
-- cryptsetup
+repo_depends: []
 update_on:
 - alpm: yubikey-full-disk-encryption
   source: archpkg

@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-module-na
 
   '
 repo_depends:
-- haskell-unordered-containers
 - haskell-aeson
-- ghc: ghc-libs
+- haskell-ghcide
 - haskell-hls-plugin-api
 - haskell-lsp
-- haskell-ghcide
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-aeson
   source: alpm

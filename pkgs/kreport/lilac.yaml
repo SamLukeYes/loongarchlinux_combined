@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kreport'')
 
   '
 repo_depends:
-- kproperty
 - qt5-declarative
 update_on:
 - alpm: qt5-declarative

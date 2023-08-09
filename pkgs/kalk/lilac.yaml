@@ -11,12 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kalk'')
   '
 repo_depends:
 - kconfig
-- kirigami2
-- qt5-feedback
-- kunitconversion
-- ki18n
-- kcoreaddons
-- mpfr
 update_on:
 - alpm: kconfig
   source: alpm

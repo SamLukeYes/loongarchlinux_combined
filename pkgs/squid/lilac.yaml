@@ -10,16 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''squid'')
 
   '
 repo_depends:
-- systemd: systemd-libs
-- tdb
 - perl
-- libcap
-- libxml2
-- gnutls
-- openssl
-- libnsl
-- nettle
-- pam
 update_on:
 - alias: perl
 - alpm: squid

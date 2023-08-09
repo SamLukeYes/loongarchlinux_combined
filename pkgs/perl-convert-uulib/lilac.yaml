@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-convert-uulib'')
 
   '
 repo_depends:
-- perl-common-sense
 - perl
-- perl-canary-stability
 update_on:
 - alias: perl
 - alpm: perl-convert-uulib

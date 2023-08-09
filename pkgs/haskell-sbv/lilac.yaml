@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-sbv'')
 
   '
 repo_depends:
+- haskell-quickcheck
+- haskell-async
+- haskell-libbf
+- haskell-random
 - haskell-syb
 - haskell-uniplate
-- haskell-async
-- ghc: ghc-libs
-- haskell-random
-- haskell-quickcheck
-- haskell-libbf
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

@@ -8,15 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-tox'')
 
   '
 repo_depends:
-- python-virtualenv
-- python-pyproject-api
-- python-platformdirs
-- python-chardet
-- python-colorama
-- python-filelock
-- python-packaging
-- python-pluggy
-- python-cachetools
 - python
 update_on:
 - alias: python

@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-x11-protocol-other'')
 
   '
-repo_depends:
-- perl-x11-protocol
+repo_depends: []
 update_on:
 - alpm: perl-x11-protocol-other
   source: archpkg

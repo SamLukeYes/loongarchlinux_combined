@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-github3py'')
 
   '
 repo_depends:
-- python-requests
-- python-dateutil
-- python-uritemplate
-- python-jwcrypto
 - python
 update_on:
 - alias: python

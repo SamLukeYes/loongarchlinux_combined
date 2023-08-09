@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bonzomatic'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libglvnd
-- fontconfig
-- alsa-lib
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: bonzomatic
   source: archpkg

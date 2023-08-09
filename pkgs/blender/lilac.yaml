@@ -10,45 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''blender'')
 
   '
 repo_depends:
-- python-requests
-- xdg-utils
-- openimagedenoise
-- libsndfile
-- desktop-file-utils
-- intel-oneapi-compiler-shared-runtime: intel-oneapi-compiler-shared-runtime-libs
-- libharu
-- hicolor-icon-theme
-- libspnav
-- ptex
-- openvdb
-- openexr
-- ffmpeg
-- embree3
-- fftw
-- libpng
-- openjpeg2
-- shared-mime-info
-- opencollada
-- opensubdiv
-- jemalloc
-- potrace
-- openshadinglanguage
-- openal
-- freetype2
-- glew
-- python-numpy
 - python
-- openxr
-- level-zero: level-zero-loader
-- opencolorio
-- openimageio
-- draco
-- sdl2
-- libtiff
-- intel-oneapi-compiler-dpcpp-cpp-runtime: intel-oneapi-compiler-dpcpp-cpp-runtime-libs
-- openpgl
-- alembic
-- boost: boost-libs
 update_on:
 - alias: python
 - alpm: blender

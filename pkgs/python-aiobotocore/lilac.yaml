@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-aiobotocore'')
 
   '
 repo_depends:
-- python-botocore
-- python-aiohttp
-- python-aioitertools
-- python-wrapt
 - python
 update_on:
 - alias: python

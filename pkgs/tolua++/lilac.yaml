@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tolua++'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- lua51
+repo_depends: []
 update_on:
 - alpm: tolua++
   source: archpkg

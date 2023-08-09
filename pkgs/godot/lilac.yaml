@@ -9,26 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''godot'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libsquish
-- pcre2
-- speech-dispatcher: libspeechd
-- libtheora
-- libxrandr
-- graphite
-- mbedtls2
-- embree3
-- harfbuzz: harfbuzz-icu
-- libxcursor
-- libxinerama
-- harfbuzz
-- miniupnpc
-- libglvnd
-- libwslay
-- freetype2
-- libvorbis
-- libxi
-- libwebp
+repo_depends: []
 update_on:
 - alpm: godot
   source: archpkg

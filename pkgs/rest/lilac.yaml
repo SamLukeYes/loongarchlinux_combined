@@ -10,24 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rest'')
 
   '
 repo_depends:
+- glib2
 - libxml2
 - libsoup
-- glib2
 update_on:
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
 - alpm: glib2
   provides: libgio-2.0.so
   source: alpm
 - alpm: libxml2
   provides: libxml2.so
-  source: alpm
-- alpm: libsoup
-  provides: libsoup-2.4.so
   source: alpm
 - alpm: libsoup
   provides: libsoup-gnome-2.4.so

@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nginx-mod-brotli'')
 
   '
 repo_depends:
-- brotli
 - nginx
 update_on:
 - alpm: nginx

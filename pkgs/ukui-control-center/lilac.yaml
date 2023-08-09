@@ -10,27 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ukui-control-center''
 
   '
 repo_depends:
-- kscreen
-- peony
-- libpwquality
-- libcanberra
-- ukui-menus
-- upower
-- ki18n
 - kconfig
-- lsb-release
-- kconfigwidgets
-- qt5-quickcontrols
-- kwidgetsaddons
-- ukui-interface
-- ddcutil
-- ukui-media
-- ukui-panel
-- ukui-settings-daemon
-- bluez-qt
-- ukui-power-manager
-- ukui-screensaver
-- boost: boost-libs
 update_on:
 - alpm: kconfig
   source: alpm

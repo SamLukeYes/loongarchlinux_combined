@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-requests-creds
 
   '
 repo_depends:
-- python-requests
-- python-ntlm-auth
-- python-pyspnego
-- python-pyopenssl
 - python
 update_on:
 - alias: python

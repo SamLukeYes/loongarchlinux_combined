@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-webtest'')
 
   '
-repo_depends:
-- python-beautifulsoup4
-- python-webob
-- python-waitress
+repo_depends: []
 update_on:
 - alpm: python-webtest
   source: archpkg

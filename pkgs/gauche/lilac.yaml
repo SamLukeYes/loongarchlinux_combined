@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gauche'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libatomic_ops
-- slib
-- libxcrypt
+repo_depends: []
 update_on:
 - alpm: gauche
   source: archpkg

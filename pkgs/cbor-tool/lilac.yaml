@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cbor-tool'')
 
   '
 repo_depends:
-- haskell-unordered-containers
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-scientific
-- haskell-cborg-json
-- haskell-vector
 - haskell-aeson-pretty
 - haskell-cborg
+- haskell-cborg-json
+- haskell-scientific
+- haskell-unordered-containers
+- haskell-vector
 update_on:
 - alpm: haskell-aeson
   source: alpm

@@ -10,20 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xpra'')
 
   '
 repo_depends:
-- libxres
-- python-rencode
-- python-pillow
-- libxkbfile
-- python-netifaces
-- pyopengl: python-opengl
-- ffmpeg
-- libvpx
-- python-lz4
-- xf86-video-dummy
-- libxtst
-- gtk3
-- pygobject: python-gobject
-- python-cairo
 - python
 update_on:
 - alias: python

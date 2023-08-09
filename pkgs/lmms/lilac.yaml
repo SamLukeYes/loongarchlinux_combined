@@ -1,40 +1,20 @@
 destsubdir: extra
-post_build_script: 'git_add_files(_G.files)
-
-  git_commit()
-
-  '
-pre_build_script: '_G.files = download_official_pkgbuild(''lmms'')
-
-  add_into_array(''arch'', [''loong64''])
-
-  '
 repo_depends:
-- alsa-lib
-- qt5-x11extras
-- glibc
-- libogg
-- gcc: gcc-libs
-- stk
 - qt5-base
+- alsa-lib
+- fftw
 - fltk
 - fluidsynth
+- lame
 - libgig
-- fftw
-- libxcb
+- libogg
+- libao
 - libsamplerate
 - libvorbis
-- pulseaudio: libpulse
-- zlib
-- sdl12-compat
-- sndio
-- libx11
 - portaudio
-- lame
+- sndio
+- stk
 update_on:
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: qt5-base
   source: alpm
   strip_release: true
@@ -66,12 +46,6 @@ update_on:
   provides: libsamplerate.so
   source: alpm
 - alpm: libvorbis
-  provides: libvorbis.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbisenc.so
-  source: alpm
-- alpm: libvorbis
   provides: libvorbisfile.so
   source: alpm
 - alpm: portaudio
@@ -83,5 +57,3 @@ update_on:
 - alpm: stk
   provides: libstk-4.6.2.so
   source: alpm
-- alpm: lmms
-  source: archpkg

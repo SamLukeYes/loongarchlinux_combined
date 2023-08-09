@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''rednotebook'')
 
   '
-repo_depends:
-- gtksourceview3
-- python-pyenchant
-- webkit2gtk
-- python-yaml
-- pygobject: python-gobject
+repo_depends: []
 update_on:
 - alpm: rednotebook
   source: archpkg

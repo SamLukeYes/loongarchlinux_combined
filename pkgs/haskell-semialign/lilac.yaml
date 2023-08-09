@@ -10,15 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-semialign'')
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-these
-- ghc: ghc-libs
 - haskell-hashable
-- haskell-tagged
-- haskell-semigroupoids
-- haskell-vector
 - haskell-indexed-traversable
 - haskell-indexed-traversable-instances
+- haskell-semigroupoids
+- haskell-tagged
+- haskell-these
+- haskell-unordered-containers
+- haskell-vector
 update_on:
 - alpm: haskell-hashable
   source: alpm

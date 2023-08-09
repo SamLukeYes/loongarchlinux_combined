@@ -8,12 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-shodan'')
 
   '
 repo_depends:
-- python-requests
-- python-setuptools
-- python-colorama
-- python-click-plugins
-- python-click
-- python-xlsxwriter
 - python
 update_on:
 - alias: python

@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-attoparsec-is
 
   '
 repo_depends:
-- haskell-time-compat
 - haskell-attoparsec
-- ghc: ghc-libs
 - haskell-base-compat-batteries
+- haskell-time-compat
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

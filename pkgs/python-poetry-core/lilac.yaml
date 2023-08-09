@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-poetry-core'')
 
   '
-repo_depends:
-- python-jsonschema
-- python-lark-parser
-- python-packaging
+repo_depends: []
 update_on:
 - alpm: python-poetry-core
   source: archpkg

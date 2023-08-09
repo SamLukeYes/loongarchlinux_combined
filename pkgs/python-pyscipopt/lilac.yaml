@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyscipopt'')
   '
 repo_depends:
 - python
-- scip
 update_on:
 - alias: python
 - alpm: python-pyscipopt

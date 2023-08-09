@@ -10,17 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-zita-jacktools
 
   '
 repo_depends:
-- gcc: gcc-libs
-- zita-jclient
+- python
+- fftw
+- jack2
 - libsndfile
 - zita-convolver
+- zita-jclient
 - zita-resampler
-- fftw
-- python-zita-audiotools
-- glibc
-- python
 update_on:
-- alias: python
 - alias: python
 - alpm: fftw
   provides: libfftw3f.so

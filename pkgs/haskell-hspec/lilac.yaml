@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec'')
 
   '
 repo_depends:
-- haskell-hspec-core
-- ghc: ghc-libs
 - haskell-quickcheck
+- haskell-hspec-core
 - haskell-hspec-discover
 - haskell-hspec-expectations
 update_on:

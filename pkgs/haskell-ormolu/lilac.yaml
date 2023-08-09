@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ormolu'')
 
   '
 repo_depends:
-- haskell-optparse-applicative
-- haskell-dlist
-- haskell-syb
-- ghc: ghc-libs
-- haskell-diff
 - haskell-ansi-terminal
+- haskell-diff
+- haskell-dlist
 - haskell-gitrev
+- haskell-optparse-applicative
+- haskell-syb
 update_on:
 - alpm: haskell-ansi-terminal
   source: alpm

@@ -8,21 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sqlfluff'')
 
   '
 repo_depends:
-- python-toml
-- python-tqdm
-- python-tblib
-- python-chardet
-- python-cached-property
-- python-colorama
-- python-click
-- python-pathspec
-- python-pytest
-- python-jinja
-- python-regex
-- python-appdirs
-- python-diff-cover
-- python-typing_extensions
-- python-oyaml
 - python
 update_on:
 - alias: python

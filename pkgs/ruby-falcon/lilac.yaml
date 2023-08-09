@@ -7,17 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-falcon'')
 
   '
-repo_depends:
-- ruby-samovar
-- ruby-build-environment
-- ruby-async-container
-- ruby-async-io
-- ruby-protocol-rack
-- ruby-async-http
-- ruby-async-http-cache
-- ruby-process-metrics
-- ruby-localhost
-- ruby-async
+repo_depends: []
 update_on:
 - alpm: ruby-falcon
   source: archpkg

@@ -10,21 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxqt-config'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- libkscreen
-- libxfixes
-- libxcb
 - qt5-base
-- libxi
-- xf86-input-libinput
-- liblxqt
-- zlib
-- qt5-x11extras
-- libxcursor
-- lxqt-themes
-- libx11
-- qt5-svg
-- glibc
+- libqtxdg
+- systemd-libs
 update_on:
 - alpm: qt5-base
   source: alpm

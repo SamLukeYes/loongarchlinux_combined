@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lib2geom'')
 
   '
 repo_depends:
-- ragel
 - gsl
-- double-conversion
-- cairo
-- glib2
 update_on:
 - alpm: gsl
   source: alpm

@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ukui-system-monitor''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- dconf
-- qt5-x11extras
-- libgtop
-- gsettings-qt
-- qt5-svg
-- hicolor-icon-theme
-- kwindowsystem
+repo_depends: []
 update_on:
 - alpm: ukui-system-monitor
   source: archpkg

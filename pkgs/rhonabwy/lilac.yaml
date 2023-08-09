@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rhonabwy'')
 
   '
 repo_depends:
-- jansson
-- zlib
-- gnutls
-- glibc
+- curl
+- orcania
+- yder
 update_on:
 - alpm: curl
   provides: libcurl.so

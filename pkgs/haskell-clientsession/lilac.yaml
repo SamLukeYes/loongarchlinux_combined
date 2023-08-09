@@ -10,17 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-clientsession
 
   '
 repo_depends:
-- haskell-cereal
-- haskell-skein
-- ghc: ghc-libs
-- haskell-cprng-aes
-- haskell-tagged
-- haskell-setenv
-- haskell-cipher-aes
-- haskell-crypto-api
-- haskell-entropy
-- haskell-crypto-random
 - haskell-base64-bytestring
+- haskell-cereal
+- haskell-cipher-aes
+- haskell-cprng-aes
+- haskell-crypto-api
+- haskell-crypto-random
+- haskell-entropy
+- haskell-setenv
+- haskell-skein
+- haskell-tagged
 update_on:
 - alpm: haskell-base64-bytestring
   source: alpm

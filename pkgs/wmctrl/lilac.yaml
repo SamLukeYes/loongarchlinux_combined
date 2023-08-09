@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wmctrl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glib2
-- libxmu
+repo_depends: []
 update_on:
 - alpm: wmctrl
   source: archpkg

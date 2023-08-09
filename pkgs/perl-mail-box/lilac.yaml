@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-mail-box'')
 
   '
-repo_depends:
-- perl-timedate
-- perl-devel-globaldestruction
-- perl-mail-message
-- perl-mailtools
-- perl-io-stringy
-- perl-digest-hmac
+repo_depends: []
 update_on:
 - alpm: perl-mail-box
   source: archpkg

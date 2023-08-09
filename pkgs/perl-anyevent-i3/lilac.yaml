@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-anyevent-i3'')
 
   '
 repo_depends:
-- perl-anyevent
 - perl
-- perl-json-xs
 update_on:
 - alias: perl
 - alpm: perl-anyevent-i3

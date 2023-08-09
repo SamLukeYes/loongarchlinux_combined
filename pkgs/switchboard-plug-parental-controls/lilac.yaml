@@ -10,13 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-pare
 
   '
 repo_depends:
-- accountsservice
-- flatpak
-- gdk-pixbuf2
-- libgee
-- polkit
-- gtk3
-- glib2
+- granite
+- libmalcontent
+- switchboard
 update_on:
 - alpm: granite
   provides: libgranite.so

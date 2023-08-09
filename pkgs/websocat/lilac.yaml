@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''websocat'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- openssl
-- gcc: gcc-libs
-- glibc
+repo_depends: []
 update_on:
 - alpm: websocat
   source: archpkg

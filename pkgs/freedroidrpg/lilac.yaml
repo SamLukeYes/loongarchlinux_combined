@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''freedroidrpg'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- sdl_image
-- libogg
-- glu
-- glew
-- sdl_gfx
-- sdl_mixer
-- libvorbis
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: freedroidrpg
   source: archpkg

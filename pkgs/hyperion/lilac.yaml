@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hyperion'')
 
   '
 repo_depends:
-- libusb
-- qt5-base
 - protobuf
 - python
+- qt5-base
 update_on:
 - alias: protobuf
 - alias: python

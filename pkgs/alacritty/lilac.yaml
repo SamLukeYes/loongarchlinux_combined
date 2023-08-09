@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''alacritty'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxkbcommon
-- fontconfig
-- libxrandr
-- libxi
-- libxcursor
-- freetype2
+repo_depends: []
 update_on:
 - alpm: alacritty
   source: archpkg

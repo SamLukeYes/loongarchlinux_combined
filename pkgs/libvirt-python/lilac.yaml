@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libvirt-python'')
 
   '
 repo_depends:
-- libvirt
 - python
 update_on:
 - alias: python

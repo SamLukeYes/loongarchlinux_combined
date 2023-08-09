@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''navit'')
 
   '
 repo_depends:
-- sdl_image
-- dbus-glib
-- imlib2
 - gpsd
-- gtk2
 update_on:
 - alpm: gpsd
   source: alpm

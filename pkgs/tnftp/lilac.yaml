@@ -11,9 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tnftp'')
   '
 repo_depends:
 - ncurses
-- dante
-- openssl
-- glibc
 update_on:
 - alpm: ncurses
   provides: libncursesw.so

@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-gobject-introspe
 
   '
 repo_depends:
-- ruby-glib2
 - ruby
-- gobject-introspection: gobject-introspection-runtime
 update_on:
 - alias: ruby
 - alpm: ruby-gobject-introspection

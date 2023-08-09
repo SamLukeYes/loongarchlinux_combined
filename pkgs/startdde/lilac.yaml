@@ -9,6 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''startdde'')
   add_into_array(''arch'', [''loong64''])
 
   '
+<<<<<<< HEAD
 repo_depends:
 - deepin-daemon
 # - deepin-session-shell
@@ -17,6 +18,9 @@ repo_depends:
 - libgnome-keyring
 - deepin-polkit-agent
 # - deepin-dock
+=======
+repo_depends: []
+>>>>>>> 629d87561 (treewide: regen lilac.yaml)
 update_on:
 - alpm: startdde
   source: archpkg

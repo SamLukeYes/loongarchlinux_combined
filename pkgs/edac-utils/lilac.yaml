@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''edac-utils'')
 
   '
 repo_depends:
-- dmidecode
 - perl
-- sysfsutils
 update_on:
 - alias: perl
 - alpm: edac-utils

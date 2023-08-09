@@ -11,32 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''freecad'')
   '
 repo_depends:
 - jsoncpp
-- pyside2
-- coin
-- python-ply
-- qt5-x11extras
-- libspnav
-- boost: boost-libs
-- qt5-xmlpatterns
-- med-openmpi
-- verdict
-- python-markdown
-- python-pivy
-- pugixml
-- python-yaml
-- glew
-- openmpi
-- qt5-tools
-- xerces-c
-- fmt
-- python-matplotlib
-- netcdf
-- opencascade
-- python-pip
-- qt5-svg
-- pyside2: pyside2-tools
-- python-gitpython
-- qt5-webengine
 update_on:
 - alias: jsoncpp
 - alpm: freecad

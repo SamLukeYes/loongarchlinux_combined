@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''asciidoc'')
 
   '
 repo_depends:
-- libxslt
-- docbook-xsl
 - python
 update_on:
 - alias: python

@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ejabberd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- erlang: erlang-unixodbc
-- gd
-- zlib
-- erlang-nox
-- iproute2
-- expat
-- libyaml
-- sqlite
-- openssl
-- pam
+repo_depends: []
 update_on:
 - alpm: ejabberd
   source: archpkg

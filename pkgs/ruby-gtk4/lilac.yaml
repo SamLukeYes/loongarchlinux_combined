@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-gtk4'')
 
   '
 repo_depends:
-- ruby-gdk4
 - ruby
-- gtk4
-- ruby-atk
 update_on:
 - alias: ruby
 - alpm: ruby-gtk4

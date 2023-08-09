@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-poe-component-client-keepalive'')
 
   '
-repo_depends:
-- perl-net-ip-minimal
-- perl-poe
-- perl-poe-component-resolver
-- perl-poe-component-client-dns
+repo_depends: []
 update_on:
 - alpm: perl-poe-component-client-keepalive
   source: archpkg

@@ -1,25 +1,7 @@
 destsubdir: extra
-post_build_script: 'git_add_files(_G.files)
-
-  git_commit()
-
-  '
-pre_build_script: '_G.files = download_official_pkgbuild(''cmake'')
-
-  add_into_array(''arch'', [''loong64''])
-
-  '
 repo_depends:
 - jsoncpp
-- curl
-- libarchive
-- rhash
-- libuv
-- hicolor-icon-theme
 update_on:
-- alias: jsoncpp
 - alpm: jsoncpp
   provides: libjsoncpp.so
   source: alpm
-- alpm: cmake
-  source: archpkg

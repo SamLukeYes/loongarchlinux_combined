@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''grunt-cli'')
 
   '
-repo_depends:
-- nodejs-nopt
-- nodejs
+repo_depends: []
 update_on:
 - alpm: grunt-cli
   source: archpkg

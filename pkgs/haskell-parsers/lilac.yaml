@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-parsers'')
 
   '
 repo_depends:
-- haskell-unordered-containers
-- ghc: ghc-libs
-- haskell-charset
-- haskell-scientific
 - haskell-attoparsec
 - haskell-base-orphans
+- haskell-charset
+- haskell-scientific
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

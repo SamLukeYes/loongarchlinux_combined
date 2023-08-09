@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-isomorphism-c
 
   '
 repo_depends:
-- haskell-unordered-containers
-- ghc: ghc-libs
 - haskell-hashable
-- haskell-vector
 - haskell-primitive
+- haskell-unordered-containers
+- haskell-vector
 update_on:
 - alpm: haskell-hashable
   source: alpm

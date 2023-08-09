@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dpf-plugins'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- alsa-lib
-- glibc
-- gcc: gcc-libs
-- liblo
-- libglvnd
-- libxext
-- libx11
+repo_depends: []
 update_on:
 - alpm: dpf-plugins
   source: archpkg

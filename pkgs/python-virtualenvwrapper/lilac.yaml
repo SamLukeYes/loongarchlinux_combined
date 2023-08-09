@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-virtualenvwrapper'')
 
   '
-repo_depends:
-- python-virtualenv-clone
-- python-stevedore
-- python-virtualenv
-- which
+repo_depends: []
 update_on:
 - alpm: python-virtualenvwrapper
   source: archpkg

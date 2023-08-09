@@ -11,17 +11,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-servant-clien
   '
 repo_depends:
 - haskell-base-compat
+- haskell-http-client
 - haskell-http-media
 - haskell-http-types
-- ghc: ghc-libs
 - haskell-kan-extensions
-- haskell-servant-client-core
-- haskell-semigroupoids
-- haskell-transformers-compat
-- haskell-http-client
 - haskell-monad-control
-- haskell-transformers-base
+- haskell-semigroupoids
 - haskell-servant
+- haskell-servant-client-core
+- haskell-transformers-base
+- haskell-transformers-compat
 update_on:
 - alpm: haskell-base-compat
   source: alpm

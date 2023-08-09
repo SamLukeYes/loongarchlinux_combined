@@ -1,7 +1,5 @@
 destsubdir: extra
 repo_depends:
-- python-ply
 - python
-- python-six
 update_on:
 - alias: python

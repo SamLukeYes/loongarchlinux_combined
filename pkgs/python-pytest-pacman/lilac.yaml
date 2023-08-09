@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-pacman'
 
   '
 repo_depends:
-- python-setuptools
 - python
-- python-pytest
 update_on:
 - alias: python
 - alpm: python-pytest-pacman

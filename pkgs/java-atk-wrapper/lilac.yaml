@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''java-atk-wrapper'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- xorg-xprop
+repo_depends: []
 update_on:
 - alpm: java-atk-wrapper
   source: archpkg

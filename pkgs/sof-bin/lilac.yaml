@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sof-bin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- alsa-lib
+repo_depends: []
 update_on:
 - alpm: sof-bin
   source: archpkg

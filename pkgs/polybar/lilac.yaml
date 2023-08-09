@@ -10,18 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''polybar'')
 
   '
 repo_depends:
-- pulseaudio: libpulse
-- alsa-lib
-- libnl
-- cairo
 - jsoncpp
-- xcb-util-cursor
-- curl
-- xcb-util-wm
-- xcb-util-image
-- libuv
-- xcb-util-xrm
-- libmpdclient
 update_on:
 - alias: jsoncpp
 - alpm: polybar

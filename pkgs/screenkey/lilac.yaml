@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''screenkey'')
 
   '
-repo_depends:
-- dbus-python
-- libx11
-- gtk3
-- pygobject: python-gobject
-- python-cairo
+repo_depends: []
 update_on:
 - alpm: screenkey
   source: archpkg

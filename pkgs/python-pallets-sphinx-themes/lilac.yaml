@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pallets-sphinx
 
   '
 repo_depends:
-- python-sphinx
-- python-importlib-metadata
 - python
 update_on:
 - alias: python

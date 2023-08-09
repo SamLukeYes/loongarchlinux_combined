@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-bz2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- bzip2
-- ghc: ghc-libs
+repo_depends: []
 update_on:
 - alpm: haskell-bz2
   source: archpkg

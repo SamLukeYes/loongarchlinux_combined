@@ -8,19 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-sqlalchemy-uti
 
   '
 repo_depends:
-- python-colour
-- python-dateutil
-- python-intervals
-- python-sqlalchemy
-- python-cryptography
-- python-importlib-metadata
-- python-arrow
-- python-anyjson
-- python-phonenumbers
-- python-passlib
-- python-pendulum
-- python-furl
-- python-babel
 - python
 update_on:
 - alias: python

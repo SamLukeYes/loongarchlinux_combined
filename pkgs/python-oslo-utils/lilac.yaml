@@ -7,15 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-oslo-utils'')
 
   '
-repo_depends:
-- python-pytz
-- python-oslo-i18n
-- python-netifaces
-- python-iso8601
-- python-packaging
-- python-pyparsing
-- python-debtcollector
-- python-netaddr
+repo_depends: []
 update_on:
 - alpm: python-oslo-utils
   source: archpkg

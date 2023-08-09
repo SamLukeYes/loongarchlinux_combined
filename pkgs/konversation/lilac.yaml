@@ -10,13 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''konversation'')
 
   '
 repo_depends:
-- kidletime
-- knotifyconfig
 - perl
-- kparts
-- qca: qca-qt5
-- knewstuff
-- hicolor-icon-theme
 update_on:
 - alias: perl
 - alpm: konversation

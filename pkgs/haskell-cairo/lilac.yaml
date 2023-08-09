@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cairo'')
 
   '
 repo_depends:
-- cairo
 - haskell-utf8-string
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-utf8-string
   source: alpm

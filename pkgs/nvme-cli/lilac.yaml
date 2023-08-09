@@ -1,16 +1,3 @@
 destsubdir: extra
-post_build_script: 'git_add_files(_G.files)
-
-  git_commit()
-
-  '
-pre_build_script: '_G.files = download_official_pkgbuild(''nvme-cli'')
-
-  add_into_array(''arch'', [''loong64''])
-
-  '
-repo_depends:
-- util-linux
-update_on:
-- alpm: nvme-cli
-  source: archpkg
+repo_depends: []
+update_on: []

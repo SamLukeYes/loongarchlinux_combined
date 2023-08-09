@@ -10,12 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-explicit-
 
   '
 repo_depends:
-- ghc: ghc-libs
+- haskell-extra
+- haskell-ghc
+- haskell-ghcide
 - haskell-hashable
 - haskell-hls-plugin-api
 - haskell-lsp
-- haskell-ghcide
-- haskell-extra
 update_on:
 - alpm: haskell-extra
   source: alpm

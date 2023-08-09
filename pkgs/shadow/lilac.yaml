@@ -11,11 +11,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''shadow'')
   '
 repo_depends:
 - acl
+<<<<<<< HEAD
 #- pam
 #- audit
-- libxcrypt
+=======
 - attr
-- glibc
+- audit
+>>>>>>> 629d87561 (treewide: regen lilac.yaml)
+- libxcrypt
+- pam
 update_on:
 - alpm: acl
   provides: libacl.so
@@ -28,9 +32,6 @@ update_on:
   source: alpm
 - alpm: libxcrypt
   provides: libcrypt.so
-  source: alpm
-- alpm: pam
-  provides: libpam.so
   source: alpm
 - alpm: pam
   provides: libpam_misc.so

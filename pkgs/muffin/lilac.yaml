@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''muffin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- startup-notification
-- libinput
-- gobject-introspection: gobject-introspection-runtime
-- pipewire
-- graphene
-- cinnamon-desktop
-- libsm
-- libcanberra
-- zenity
-- libxkbcommon: libxkbcommon-x11
+repo_depends: []
 update_on:
 - alpm: muffin
   source: archpkg

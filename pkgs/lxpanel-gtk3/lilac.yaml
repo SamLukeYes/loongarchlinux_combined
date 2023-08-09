@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxpanel-gtk3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- alsa-lib
-- libfm: libfm-gtk3
-- lxmenu-data
-- curl
-- libkeybinder3
-- menu-cache
+repo_depends: []
 update_on:
 - alpm: lxpanel-gtk3
   source: archpkg

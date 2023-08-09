@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cryptohash'')
 repo_depends:
 - haskell-byteable
 - haskell-cryptonite
-- ghc: ghc-libs
 - haskell-memory
 update_on:
 - alpm: haskell-byteable

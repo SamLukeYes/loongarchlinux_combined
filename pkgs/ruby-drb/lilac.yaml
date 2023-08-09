@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-drb'')
   '
 repo_depends:
 - ruby
-- ruby-ruby2_keywords
 update_on:
 - alias: ruby
 - alpm: ruby-drb

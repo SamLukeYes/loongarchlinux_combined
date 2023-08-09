@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-package-stash'')
 
   '
-repo_depends:
-- perl-package-stash-xs
-- perl-module-implementation
-- perl-dist-checkconflicts
+repo_depends: []
 update_on:
 - alpm: perl-package-stash
   source: archpkg

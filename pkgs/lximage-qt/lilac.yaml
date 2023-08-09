@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lximage-qt'')
 
   '
 repo_depends:
-- libxfixes
 - libfm-qt
-- libexif
-- lxqt-themes
-- qt5-svg
 update_on:
 - alpm: libfm-qt
   provides: libfm-qt.so

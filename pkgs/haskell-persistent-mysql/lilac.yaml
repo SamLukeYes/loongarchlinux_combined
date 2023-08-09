@@ -10,17 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-persistent-my
 
   '
 repo_depends:
-- haskell-monad-logger
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-mysql
 - haskell-blaze-builder
-- haskell-persistent
-- haskell-unliftio-core
 - haskell-conduit
-- haskell-resourcet
-- haskell-resource-pool
+- haskell-monad-logger
+- haskell-mysql
 - haskell-mysql-simple
+- haskell-persistent
+- haskell-resource-pool
+- haskell-resourcet
+- haskell-unliftio-core
 update_on:
 - alpm: haskell-aeson
   source: alpm

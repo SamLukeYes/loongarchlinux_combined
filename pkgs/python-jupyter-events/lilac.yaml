@@ -7,20 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-jupyter-events'')
 
   '
-repo_depends:
-- python-uri-template
-- python-rfc3339-validator
-- python-json-logger
-- python-traitlets
-- python-fqdn
-- python-click
-- python-webcolors
-- python-jsonpointer
-- python-yaml
-- python-rich
-- python-isoduration
-- python-jsonschema
-- python-rfc3986-validator
+repo_depends: []
 update_on:
 - alpm: python-jupyter-events
   source: archpkg

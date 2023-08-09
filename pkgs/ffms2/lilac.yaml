@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ffms2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ffmpeg
+repo_depends: []
 update_on:
 - alpm: ffms2
   source: archpkg

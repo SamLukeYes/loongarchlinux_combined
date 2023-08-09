@@ -10,13 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgit2'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- pcre2
-- zlib
 - libssh2
 - openssl
-- glibc
-- http-parser
+- openssl
+- pcre2
 update_on:
 - alpm: libssh2
   provides: libssh2.so

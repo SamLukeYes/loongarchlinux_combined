@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jose'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- openssl
-- zlib
-- jansson
+repo_depends: []
 update_on:
 - alpm: jose
   source: archpkg

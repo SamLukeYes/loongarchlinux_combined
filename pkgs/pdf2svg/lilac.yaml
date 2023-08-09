@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pdf2svg'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- poppler: poppler-glib
-- glib2
-- cairo
+repo_depends: []
 update_on:
 - alpm: pdf2svg
   source: archpkg

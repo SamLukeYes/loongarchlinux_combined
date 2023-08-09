@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''html-xml-utils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- curl
-- libidn2
+repo_depends: []
 update_on:
 - alpm: html-xml-utils
   source: archpkg

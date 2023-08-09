@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-gssapi'')
 
   '
 repo_depends:
-- python-decorator
 - python
-- krb5
 update_on:
 - alias: python
 - alpm: python-gssapi

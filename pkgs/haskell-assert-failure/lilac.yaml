@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-assert-failur
   '
 repo_depends:
 - haskell-pretty-show
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-pretty-show
   source: alpm

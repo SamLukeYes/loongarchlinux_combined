@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''bettercap-caplets'')
 
   '
-repo_depends:
-- bettercap
+repo_depends: []
 update_on:
 - alpm: bettercap-caplets
   source: archpkg

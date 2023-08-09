@@ -9,19 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''geeqie'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libraw
-- libchamplain
-- gspell
-- libjxl
-- djvulibre
-- libheif
-- libarchive
-- gtk3
-- poppler: poppler-glib
-- exiv2
-- ffmpegthumbnailer
-- lua53
+repo_depends: []
 update_on:
 - alpm: geeqie
   source: archpkg

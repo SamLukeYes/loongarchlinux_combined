@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-libmpd'')
 
   '
 repo_depends:
-- haskell-network
-- ghc: ghc-libs
-- haskell-utf8-string
-- haskell-safe-exceptions
 - haskell-attoparsec
 - haskell-data-default-class
+- haskell-network
+- haskell-safe-exceptions
+- haskell-utf8-string
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

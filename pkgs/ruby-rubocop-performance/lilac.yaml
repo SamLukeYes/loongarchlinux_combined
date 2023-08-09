@@ -9,8 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rubocop-performa
   '
 repo_depends:
 - ruby
-- rubocop
-- ruby-rubocop-ast
 update_on:
 - alias: ruby
 - alpm: ruby-rubocop-performance

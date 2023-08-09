@@ -1,7 +1,7 @@
 destsubdir: core
 repo_depends:
-- glibc
-#- python
+- python
+- libseccomp
 update_on:
 #- alias: python
 - alpm: libseccomp

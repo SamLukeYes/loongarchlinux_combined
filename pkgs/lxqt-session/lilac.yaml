@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxqt-session'')
 
   '
 repo_depends:
-- xdg-user-dirs
-- qtxdg-tools
-- liblxqt
-- libx11
-- kwindowsystem
+- libqtxdg
 update_on:
 - alpm: libqtxdg
   provides: libQt5Xdg.so

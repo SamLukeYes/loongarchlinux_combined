@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-conduit''
 
   '
 repo_depends:
-- haskell-wai
 - haskell-conduit
-- ghc: ghc-libs
 - haskell-http-types
+- haskell-wai
 update_on:
 - alpm: haskell-conduit
   source: alpm

@@ -10,17 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''synthv1'')
 
   '
 repo_depends:
-- alsa-lib
-- gcc: gcc-libs
-- liblo
 - qt6-base
-- hicolor-icon-theme
-- qt6-svg
-- glibc
 update_on:
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
 - alpm: qt6-base
   source: alpm
   strip_release: true

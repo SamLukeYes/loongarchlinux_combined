@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- memcached
-- glibc
+repo_depends: []
 update_on: []

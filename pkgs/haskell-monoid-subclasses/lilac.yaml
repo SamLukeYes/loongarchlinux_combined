@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-monoid-subcla
 
   '
 repo_depends:
-- haskell-primes
 - haskell-commutative-semigroups
+- haskell-primes
 - haskell-vector
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-commutative-semigroups
   source: alpm

@@ -8,11 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''routersploit'')
 
   '
 repo_depends:
-- python-pysnmp
-- python-requests
-- python-paramiko
-- python-pycryptodome
-- python-future
 - python
 update_on:
 - alias: python

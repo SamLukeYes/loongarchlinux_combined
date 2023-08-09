@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi-cairo-conn
 
   '
 repo_depends:
-- haskell-gi-base
-- haskell-gi-cairo-render
-- ghc: ghc-libs
 - haskell-gi-cairo
+- haskell-gi-cairo-render
+- haskell-gi-base
 update_on:
 - alpm: haskell-gi-cairo
   source: alpm

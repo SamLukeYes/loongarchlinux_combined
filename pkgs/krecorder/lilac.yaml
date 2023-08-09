@@ -11,12 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''krecorder'')
   '
 repo_depends:
 - kconfig
-- kirigami-addons
-- qt5-multimedia
-- kcoreaddons
-- ki18n
-- qt5-svg
-- kwindowsystem
 update_on:
 - alpm: kconfig
   source: alpm

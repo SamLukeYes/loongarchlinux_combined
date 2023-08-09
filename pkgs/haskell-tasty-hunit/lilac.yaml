@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-hunit''
   '
 repo_depends:
 - haskell-tasty
-- ghc: ghc-libs
 - haskell-call-stack
 update_on:
 - alpm: haskell-tasty

@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libinfinity'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gobject-introspection: gobject-introspection-runtime
-- gsasl
-- libxml2
-- gnutls
-- glib2
+repo_depends: []
 update_on:
 - alpm: libinfinity
   source: archpkg

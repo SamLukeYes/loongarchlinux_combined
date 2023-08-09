@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-async'')
 
   '
 repo_depends:
-- ruby-nio4r
 - ruby
-- ruby-timers
-- ruby-console
 update_on:
 - alias: ruby
 - alpm: ruby-async

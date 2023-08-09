@@ -8,14 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-poetry-dynamic
 
   '
 repo_depends:
-- python-tomlkit
-- python-poetry
-- python-jinja
-- python-cleo
-- python-dunamai
-- python-packaging
 - python
-- python-poetry-core
 update_on:
 - alias: python
 - alpm: python-poetry-dynamic-versioning

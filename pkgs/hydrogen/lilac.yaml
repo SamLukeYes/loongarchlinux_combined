@@ -10,24 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hydrogen'')
 
   '
 repo_depends:
-- alsa-lib
-- portmidi
-- libsndfile
-- liblrdf
-- glibc
-- hicolor-icon-theme
-- qt5-xmlpatterns
-- gcc: gcc-libs
 - qt5-base
-- liblo
-- pulseaudio: libpulse
-- portaudio
+- alsa-lib
+- jack2
 - libarchive
-- qt5-svg
+- liblo
+- liblrdf
+- libao
+- libsndfile
+- portaudio
+- portmidi
 update_on:
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: qt5-base
   source: alpm
   strip_release: true

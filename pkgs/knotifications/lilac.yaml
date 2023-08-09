@@ -11,12 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''knotifications'')
   '
 repo_depends:
 - kconfig
-- qt5-speech
-- libdbusmenu-qt: libdbusmenu-qt5
-- libcanberra
-- libxtst
-- kcoreaddons
-- kwindowsystem
 update_on:
 - alpm: kconfig
   source: alpm

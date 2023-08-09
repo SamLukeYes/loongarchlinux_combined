@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-rio-prettypri
 
   '
 repo_depends:
-- haskell-annotated-wl-pprint
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-rio
-- haskell-colour
+- haskell-annotated-wl-pprint
 - haskell-ansi-terminal
+- haskell-colour
 - haskell-path
+- haskell-rio
 update_on:
 - alpm: haskell-aeson
   source: alpm

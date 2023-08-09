@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vvave'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- mauikit-accounts
-- taglib
-- hicolor-icon-theme
-- mauikit-filebrowsing
+repo_depends: []
 update_on:
 - alpm: vvave
   source: archpkg

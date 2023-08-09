@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl'')
 
   '
 repo_depends:
-- db5.3
 - libxcrypt
-- db
-- glibc
 update_on:
 - alpm: libxcrypt
   provides: libcrypt.so

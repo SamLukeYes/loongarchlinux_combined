@@ -10,10 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lua-mpack'')
 
   '
 repo_depends:
-- lua51
-- libmpack
-- lua53
-- lua52
 - lua
 update_on:
 - alias: lua

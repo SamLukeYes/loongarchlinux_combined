@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''skopeo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- containers-common
-- gpgme
-- lvm2: device-mapper
+repo_depends: []
 update_on:
 - alpm: skopeo
   source: archpkg

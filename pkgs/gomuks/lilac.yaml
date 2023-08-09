@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gomuks'')
   '
 repo_depends:
 - libolm
-- glibc
 update_on:
 - alpm: libolm
   provides: libolm.so

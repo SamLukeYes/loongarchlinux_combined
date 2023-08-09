@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-xcb-types'')
 
   '
 repo_depends:
-- ghc: ghc-libs
 - haskell-xml
 update_on:
 - alpm: haskell-xml

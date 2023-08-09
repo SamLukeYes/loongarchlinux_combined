@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ddclient'')
 
   '
-repo_depends:
-- net-tools
-- perl-io-socket-inet6
-- perl-digest-sha1
-- perl-io-socket-ssl
+repo_depends: []
 update_on:
 - alpm: ddclient
   source: archpkg

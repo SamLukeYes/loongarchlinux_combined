@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-async-container'')
 
   '
-repo_depends:
-- ruby-async-io
-- ruby-async
+repo_depends: []
 update_on:
 - alpm: ruby-async-container
   source: archpkg

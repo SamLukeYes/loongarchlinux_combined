@@ -10,18 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''avidemux'')
 
   '
 repo_depends:
-- fontconfig
 - qt5-base
-- libvdpau
-- glu
-- libxv
-- desktop-file-utils
-- libva
-- x264
-- libxml2
-- x265
-- sqlite
-- libvpx
 update_on:
 - alpm: qt5-base
   source: alpm

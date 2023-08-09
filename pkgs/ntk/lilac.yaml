@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ntk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- fontconfig
-- gcc: gcc-libs
-- libxft
-- zlib
-- freetype2
-- libx11
-- libglvnd
-- cairo
-- glibc
-- libpng
+repo_depends: []
 update_on:
 - alpm: ntk
   source: archpkg

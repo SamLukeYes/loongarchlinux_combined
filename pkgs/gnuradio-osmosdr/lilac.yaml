@@ -10,33 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnuradio-osmosdr'')
 
   '
 repo_depends:
-- soapysdr
-- airspy
-- libvolk
-- glibc
-- hackrf
-- gcc: gcc-libs
-- bladerf
-- rtl-sdr
-- gnuradio-iqbal
+- boost
 - gnuradio
-- libuhd
-- boost: boost-libs
+- gnuradio-iqbal
 update_on:
 - alpm: boost
-  provides: libboost_chrono.so
-  source: alpm
-- alpm: boost
   provides: libboost_thread.so
-  source: alpm
-- alpm: gnuradio
-  provides: libgnuradio-blocks.so
-  source: alpm
-- alpm: gnuradio
-  provides: libgnuradio-runtime.so
-  source: alpm
-- alpm: gnuradio
-  provides: libgnuradio-pmt.so
   source: alpm
 - alpm: gnuradio
   provides: libgnuradio-uhd.so

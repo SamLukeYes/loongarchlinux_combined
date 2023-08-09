@@ -10,64 +10,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mpv'')
 
   '
 repo_depends:
-- libcdio
 - alsa-lib
-- shaderc
-- libbluray
-- desktop-file-utils
-- libass
-- libplacebo
-- libxv
-- hicolor-icon-theme
-- glibc
-- libdvdnav
-- pipewire: libpipewire
-- libcdio-paranoia
-- libxrandr
-- luajit
-- libxpresent
 - ffmpeg
-- vulkan-icd-loader
-- libxinerama
-- libva
-- libglvnd
-- libdvdread
-- libxext
-- rubberband
-- libxkbcommon
-- uchardet
-- libdrm
-- pulseaudio: libpulse
-- wayland
-- libxss
-- libvdpau
-- zlib
-- libarchive
-- mujs
+- jack2
 - lcms2
-- libx11
-- mesa
+- libarchive
+- libass
+- libbluray
+- darktable
+- libplacebo
+- libao
+- libva
+- intel-oneapi-basekit
+- rubberband
+- shaderc
 update_on:
 - alpm: alsa-lib
   provides: libasound.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavcodec.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavdevice.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavfilter.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavformat.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavutil.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libswresample.so
   source: alpm
 - alpm: ffmpeg
   provides: libswscale.so
@@ -95,15 +54,6 @@ update_on:
   source: alpm
 - alpm: libao
   provides: libpulse.so
-  source: alpm
-- alpm: libva
-  provides: libva.so
-  source: alpm
-- alpm: libva
-  provides: libva-drm.so
-  source: alpm
-- alpm: libva
-  provides: libva-wayland.so
   source: alpm
 - alpm: libva
   provides: libva-x11.so

@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hackage-db'')
 
   '
 repo_depends:
-- haskell-tar
 - haskell-aeson
+- haskell-tar
 - haskell-utf8-string
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-aeson
   source: alpm

@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rsnapshot'')
 
   '
 repo_depends:
-- perl-lchown
 - perl
-- openssh
-- rsync
 update_on:
 - alias: perl
 - alpm: rsnapshot

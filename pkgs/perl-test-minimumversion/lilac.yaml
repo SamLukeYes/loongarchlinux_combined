@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-test-minimumversion'')
 
   '
-repo_depends:
-- perl-file-find-rule-perl
-- perl-perl-minimumversion
-- perl-file-find-rule
+repo_depends: []
 update_on:
 - alpm: perl-test-minimumversion
   source: archpkg

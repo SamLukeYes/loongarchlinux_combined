@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lttng-ust'')
 
   '
 repo_depends:
-- numactl
-- util-linux
 - python
 update_on:
-- alias: python
 - alias: python
 - alpm: lttng-ust
   source: archpkg

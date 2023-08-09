@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libsm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- util-linux: util-linux-libs
-- libice
+repo_depends: []
 update_on:
 - alpm: libsm
   source: archpkg

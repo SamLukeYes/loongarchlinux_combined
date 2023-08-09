@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-kde-approve
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- knotifications
-- kservice
-- telepathy-qt
+repo_depends: []
 update_on:
 - alpm: telepathy-kde-approver
   source: archpkg

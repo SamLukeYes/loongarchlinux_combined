@@ -15,8 +15,5 @@ update_on:
 - alpm: nginx
   source: alpm
   strip_release: true
-- alpm: nginx
-  source: alpm
-  strip_release: true
 - alpm: nginx-mod-ndk-set-misc
   source: archpkg

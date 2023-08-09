@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''intel-graphics-compil
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- llvm: llvm-libs
-- spirv-tools
-- ncurses
-- zlib
-- intel-opencl-clang
-- lld
+repo_depends: []
 update_on:
 - alpm: intel-graphics-compiler
   source: archpkg

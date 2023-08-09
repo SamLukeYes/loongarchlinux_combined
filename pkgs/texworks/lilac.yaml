@@ -10,12 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''texworks'')
 
   '
 repo_depends:
-- poppler: poppler-qt5
 - qt5-base
-- hunspell
-- qt5-script
 - qt5-declarative
-- texlive-bin: libsynctex
+- poppler-qt5
 update_on:
 - alpm: qt5-base
   source: alpm

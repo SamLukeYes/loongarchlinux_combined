@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-jose'')
 
   '
-repo_depends:
-- python-ecdsa
-- python-future
-- python-rsa
-- python-six
+repo_depends: []
 update_on:
 - alpm: python-jose
   source: archpkg

@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ipguard'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libpcap
-- libnet
+repo_depends: []
 update_on:
 - alpm: ipguard
   source: archpkg

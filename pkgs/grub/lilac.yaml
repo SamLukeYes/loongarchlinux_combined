@@ -1,6 +1,3 @@
 destsubdir: core
-repo_depends:
-- xz
-- gettext
-- lvm2: device-mapper
+repo_depends: []
 update_on: []

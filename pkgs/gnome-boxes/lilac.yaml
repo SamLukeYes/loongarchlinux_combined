@@ -9,21 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-boxes'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libsoup3
-- qemu: qemu-desktop
-- libsecret
-- webkit2gtk-4.1
-- libvirt-glib
-- edk2: edk2-ovmf
-- spice-gtk
-- libhandy
-- libarchive
-- libosinfo
-- tracker3
-- mtools
-- cdrtools
-- libgudev
+repo_depends: []
 update_on:
 - alpm: gnome-boxes
   source: archpkg

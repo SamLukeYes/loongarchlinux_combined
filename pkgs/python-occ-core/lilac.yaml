@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-occ-core'')
 
   '
 repo_depends:
-- libxi
-- opencascade
 - python
-- libxmu
 update_on:
 - alias: python
 - alpm: python-occ-core

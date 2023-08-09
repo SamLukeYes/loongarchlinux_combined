@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ipynb'')
 
   '
 repo_depends:
-- haskell-unordered-containers
 - haskell-aeson
 - haskell-base64-bytestring
-- ghc: ghc-libs
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-aeson
   source: alpm

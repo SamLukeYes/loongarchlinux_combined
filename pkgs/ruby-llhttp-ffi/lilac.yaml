@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-llhttp-ffi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ruby-ffi-compiler
-- ruby-rake
+repo_depends: []
 update_on:
 - alpm: ruby-llhttp-ffi
   source: archpkg

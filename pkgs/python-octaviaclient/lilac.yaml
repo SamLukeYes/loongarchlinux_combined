@@ -7,17 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-octaviaclient'')
 
   '
-repo_depends:
-- python-openstackclient
-- python-requests
-- python-keystoneauth1
-- python-oslo-serialization
-- python-neutronclient
-- python-pbr
-- python-osc-lib
-- python-cliff
-- python-munch
-- python-oslo-utils
+repo_depends: []
 update_on:
 - alpm: python-octaviaclient
   source: archpkg

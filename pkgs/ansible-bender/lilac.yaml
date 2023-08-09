@@ -8,13 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ansible-bender'')
 
   '
 repo_depends:
-- ansible
-- python-setuptools
-- ansible-core
-- podman
-- python-tabulate
-- buildah
-- python-jsonschema
 - python
 update_on:
 - alias: python

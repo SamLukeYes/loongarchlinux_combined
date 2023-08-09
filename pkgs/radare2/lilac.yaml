@@ -10,14 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''radare2'')
 
   '
 repo_depends:
-- file
-- libzip
-- lz4
-- zlib
 - capstone
 - xxhash
-- openssl
-- libuv
+- gephi
+- file
 update_on:
 - alpm: capstone
   provides: libcapstone.so

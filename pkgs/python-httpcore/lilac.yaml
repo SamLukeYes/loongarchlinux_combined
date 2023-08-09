@@ -8,11 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-httpcore'')
 
   '
 repo_depends:
-- python-sniffio
-- python-h11
-- python-anyio
 - python
-- python-certifi
 update_on:
 - alias: python
 - alpm: python-httpcore

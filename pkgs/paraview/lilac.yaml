@@ -10,42 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''paraview'')
 
   '
 repo_depends:
-- jsoncpp
-- libharu
-- hdf5
-- libogg
-- libtheora
-- qt5-svg
-- xz
-- ffmpeg
-- pdal
-- verdict
-- libxml2
-- ospray
 - protobuf
-- libpng
-- lz4
-- double-conversion
-- gdal
-- freetype2
-- pugixml
-- expat
-- glew
-- openmpi
-- cgns
-- python-numpy
-- qt5-tools
-- gl2ps
-- netcdf
-- libtiff
-- zlib
-- liblas
-- adios2
-- python-mpi4py
-- boost: boost-libs
+- jsoncpp
 update_on:
 - alias: protobuf
-- alias: jsoncpp
 - alpm: jsoncpp
   provides: libjsoncpp.so
   source: alpm

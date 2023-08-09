@@ -1,11 +1,3 @@
 destsubdir: extra
-repo_depends:
-- fontconfig
-- libraqm
-- liblqr
-- lcms2
-- libxml2
-- fftw
-- libxext
-- libpng
+repo_depends: []
 update_on: []

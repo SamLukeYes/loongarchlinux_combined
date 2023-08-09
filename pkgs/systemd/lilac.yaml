@@ -1,13 +1,7 @@
 destsubdir: core
 repo_depends:
-- kmod
-- pcre2
-- kbd
-- libcap
-- libgcrypt
-- util-linux
-- glibc
 - acl
+<<<<<<< HEAD
 - gcc: gcc-libs
 - xz
 #- dbus
@@ -26,6 +20,18 @@ repo_depends:
 - python-pefile
 - iptables
 #- binutils
+=======
+- cryptsetup
+- iptables
+- kmod
+- libcap
+- libxcrypt
+- libseccomp
+- util-linux-libs
+- audit
+- openssl
+- openssl
+>>>>>>> 629d87561 (treewide: regen lilac.yaml)
 update_on:
 - alpm: acl
   provides: libacl.so
@@ -47,9 +53,6 @@ update_on:
   source: alpm
 - alpm: libseccomp
   provides: libseccomp.so
-  source: alpm
-- alpm: util-linux-libs
-  provides: libblkid.so
   source: alpm
 - alpm: util-linux-libs
   provides: libmount.so

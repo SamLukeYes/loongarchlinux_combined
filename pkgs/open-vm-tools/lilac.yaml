@@ -10,18 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''open-vm-tools'')
 
   '
 repo_depends:
-- lsb-release
-- uriparser
-- libmspack
-- fuse3
-- libxss
-- gdk-pixbuf-xlib
-- libxcrypt
-- iproute2
-- libsigc++
-- procps-ng
 - icu
-- libdnet
+- libxcrypt
 update_on:
 - alias: icu
 - alpm: libxcrypt

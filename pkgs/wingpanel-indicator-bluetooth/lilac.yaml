@@ -10,13 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wingpanel-indicator-b
 
   '
 repo_depends:
+- granite
 - wingpanel
-- bluez
-- gtk3
-- glib2
 update_on:
 - alpm: granite
   provides: libgranite.so
+  source: alpm
+- alpm: wingpanel
+  provides: libwingpanel.so
   source: alpm
 - alpm: wingpanel-indicator-bluetooth
   source: archpkg

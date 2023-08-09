@@ -1,27 +1,7 @@
 destsubdir: extra
 repo_depends:
-- bzip2
-- apache-orc
-- libutf8proc
-- gflags
-- google-glog
 - grpc
-- thrift
-- xsimd
-- zstd
 - protobuf
-- re2
-- uriparser
-- jemalloc
-- c-ares
-- lz4
-- double-conversion
-- openssl
-- rapidjson
-- brotli
-- snappy
-- zlib
-- boost: boost-libs
 update_on:
 - alias: grpc
 - alias: protobuf

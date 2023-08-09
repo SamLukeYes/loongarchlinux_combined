@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''eolie'')
 
   '
-repo_depends:
-- libhandy
-- webkit2gtk
-- gnome-settings-daemon
-- gtkspell3
-- pygobject: python-gobject
-- python-cairo
+repo_depends: []
 update_on:
 - alpm: eolie
   source: archpkg

@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''artyfx'')
 
   '
 repo_depends:
-- gcc: gcc-libs
 - libsndfile
-- libx11
-- cairo
-- glibc
 update_on:
 - alpm: libsndfile
   provides: libsndfile.so

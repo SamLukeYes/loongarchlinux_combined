@@ -10,12 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''crash'')
 
   '
 repo_depends:
-- elfutils: libelf
-- ncurses
-- xz
-- zlib
 - guile
-- mpfr
 update_on:
 - alpm: guile
   source: alpm

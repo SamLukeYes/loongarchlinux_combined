@@ -9,25 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cheese'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- dconf
-- libgudev
-- librsvg
-- gstreamer: gst-plugins-good
-- libcanberra
-- gnome-desktop
-- glib2
-- gnome-video-effects
-- gstreamer
-- clutter-gtk
-- clutter-gst
-- gstreamer: gst-plugins-base-libs
-- clutter
-- gstreamer: gst-plugins-base
-- gdk-pixbuf2
-- gstreamer: gst-plugins-bad-libs
-- gtk3
-- gstreamer: gst-plugins-bad
+repo_depends: []
 update_on:
 - alpm: cheese
   source: archpkg

@@ -10,31 +10,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''muse'')
 
   '
 repo_depends:
+- python
+- qt5-base
 - alsa-lib
-- libsndfile
-- liblrdf
-- rtaudio
-- glibc
+- fluidsynth
 - glib2
 - libinstpatch
-- hicolor-icon-theme
+- jack2
 - lilv
-- gcc: gcc-libs
-- qt5-base
 - liblo
-- fluidsynth
+- liblrdf
+- rtaudio
 - rubberband
 - libsamplerate
-- python-pyro
-- python
-- python-six
-- pyqt5: python-pyqt5
-- qt5-svg
+- libsndfile
 update_on:
-- alias: python
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alias: python
 - alpm: qt5-base
   source: alpm
@@ -44,9 +34,6 @@ update_on:
   source: alpm
 - alpm: fluidsynth
   provides: libfluidsynth.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
   source: alpm
 - alpm: glib2
   provides: libgobject-2.0.so

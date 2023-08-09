@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libwnck'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- startup-notification
-- libxres
-- gtk2
+repo_depends: []
 update_on:
 - alpm: libwnck
   source: archpkg

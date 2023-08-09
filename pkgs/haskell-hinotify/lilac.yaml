@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hinotify'')
   '
 repo_depends:
 - haskell-async
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-async
   source: alpm

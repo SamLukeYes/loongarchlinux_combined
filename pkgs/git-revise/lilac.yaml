@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''git-revise'')
   '
 repo_depends:
 - python
-- git
 update_on:
 - alias: python
 - alpm: git-revise

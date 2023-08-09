@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zeromq'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
-- libpgm
-- libsodium
-- util-linux
-- gnutls
-- glibc
+repo_depends: []
 update_on:
 - alpm: zeromq
   source: archpkg

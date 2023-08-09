@@ -1,4 +1,3 @@
 destsubdir: extra
-repo_depends:
-- qt6-quick3d
+repo_depends: []
 update_on: []

@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''four-in-a-row'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- librsvg
-- gtk3
-- gsound
+repo_depends: []
 update_on:
 - alpm: four-in-a-row
   source: archpkg

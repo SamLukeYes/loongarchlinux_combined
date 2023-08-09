@@ -1,10 +1,5 @@
 destsubdir: extra
 repo_depends:
-- python-platformdirs
-- python-mypy_extensions
-- python-pathspec
-- python-click
-- python-packaging
 - python
 update_on:
 - alias: python

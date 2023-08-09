@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libfabric'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
-- glibc
-- numactl
+repo_depends: []
 update_on:
 - alpm: libfabric
   source: archpkg

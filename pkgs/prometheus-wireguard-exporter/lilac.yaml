@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''prometheus-wireguard-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- wireguard-tools
+repo_depends: []
 update_on:
 - alpm: prometheus-wireguard-exporter
   source: archpkg

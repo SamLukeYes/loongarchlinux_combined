@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''unclutter'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libev
-- libx11
-- libxfixes
-- libxi
+repo_depends: []
 update_on:
 - alpm: unclutter
   source: archpkg

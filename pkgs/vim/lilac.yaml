@@ -10,17 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vim'')
 
   '
 repo_depends:
-- acl
-- zlib
 - perl
-- libgcrypt
-- libcanberra
-- libxt
-- gtk3
-- glibc
-- gpm
 update_on:
-- alias: perl
 - alias: perl
 - alpm: vim
   source: archpkg

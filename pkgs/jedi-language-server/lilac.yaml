@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''jedi-language-server'')
 
   '
-repo_depends:
-- python-pygls
-- python-docstring-to-markdown
-- python-pydantic
-- python-jedi
+repo_depends: []
 update_on:
 - alpm: jedi-language-server
   source: archpkg

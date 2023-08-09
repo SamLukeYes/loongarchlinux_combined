@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rime-pinyin-simp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- rime-stroke
+repo_depends: []
 update_on:
 - alpm: rime-pinyin-simp
   source: archpkg

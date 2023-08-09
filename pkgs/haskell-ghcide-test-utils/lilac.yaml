@@ -10,15 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ghcide-test-u
 
   '
 repo_depends:
-- haskell-lens
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-lsp-types
-- haskell-hls-plugin-api
-- haskell-lsp-test
 - haskell-data-default
-- haskell-ghcide
 - haskell-extra
+- haskell-ghcide
+- haskell-hls-plugin-api
+- haskell-lens
+- haskell-lsp-test
+- haskell-lsp-types
 - haskell-tasty-hunit
 update_on:
 - alpm: haskell-aeson

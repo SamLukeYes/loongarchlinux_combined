@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-powe
 
   '
 repo_depends:
-- libgee
-- polkit
-- gtk3
-- glib2
+- switchboard
 update_on:
 - alpm: switchboard
   provides: libswitchboard-2.0.so

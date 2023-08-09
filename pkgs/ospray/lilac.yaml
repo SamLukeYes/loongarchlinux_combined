@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ospray'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ispc
-- embree
-- gcc: gcc-libs
-- openvkl
-- openimagedenoise
-- snappy
-- rkcommon
-- onetbb
-- openmpi
-- glibc
+repo_depends: []
 update_on:
 - alpm: ospray
   source: archpkg

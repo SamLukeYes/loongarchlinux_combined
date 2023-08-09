@@ -9,9 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxqt-build-tools'')
   '
 repo_depends:
 - perl
-- cmake
-- qt5-tools
-- git
 update_on:
 - alias: perl
 - alpm: lxqt-build-tools

@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ccache'')
 
   '
 repo_depends:
-- gcc: gcc-libs
 - zstd
-- glibc
-- hiredis
 update_on:
 - alpm: zstd
   provides: libzstd.so

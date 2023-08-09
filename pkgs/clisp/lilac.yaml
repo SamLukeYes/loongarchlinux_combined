@@ -10,10 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''clisp'')
 
   '
 repo_depends:
-- libsigsegv
-- libunistring
-- ffcall
-- libxcrypt
 - readline
 update_on:
 - alias: readline

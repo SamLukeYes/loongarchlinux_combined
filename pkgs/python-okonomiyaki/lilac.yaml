@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-okonomiyaki'')
 
   '
 repo_depends:
-- python-attrs
-- python-jsonschema
 - python
-- python-six
 update_on:
 - alias: python
 - alpm: python-okonomiyaki

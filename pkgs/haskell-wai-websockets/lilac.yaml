@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-websocket
 
   '
 repo_depends:
-- haskell-wai
-- haskell-network
-- ghc: ghc-libs
-- haskell-http-types
 - haskell-case-insensitive
+- haskell-http-types
+- haskell-network
+- haskell-wai
 - haskell-websockets
 update_on:
 - alpm: haskell-case-insensitive

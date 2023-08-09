@@ -10,17 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qastools'')
 
   '
 repo_depends:
-- glibc
-- alsa-lib
-- gcc: gcc-libs
 - qt5-base
-- qt5-svg
-- hicolor-icon-theme
-- systemd: systemd-libs
+- alsa-lib
+- systemd-libs
 update_on:
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: qt5-base
   source: alpm
   strip_release: true

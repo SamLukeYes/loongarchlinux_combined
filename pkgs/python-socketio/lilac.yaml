@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-socketio'')
 
   '
 repo_depends:
-- python-bidict
-- python-six
-- python-msgpack
-- python-engineio
 - python
 update_on:
 - alias: python

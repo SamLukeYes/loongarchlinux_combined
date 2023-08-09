@@ -1,8 +1,3 @@
 destsubdir: extra
-repo_depends:
-- duktape
-- expat
-- glib2
-- pam
-- systemd
+repo_depends: []
 update_on: []

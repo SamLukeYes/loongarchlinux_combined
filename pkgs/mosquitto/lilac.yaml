@@ -10,9 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mosquitto'')
 
   '
 repo_depends:
-- openssl
-- cjson
-- util-linux: util-linux-libs
+- c-ares
+- systemd-libs
+- libwebsockets
 update_on:
 - alpm: c-ares
   provides: libcares.so

@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''akonadi-calendar'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kcalutils
-- akonadi-contacts
-- kmailtransport
+repo_depends: []
 update_on:
 - alpm: akonadi-calendar
   source: archpkg

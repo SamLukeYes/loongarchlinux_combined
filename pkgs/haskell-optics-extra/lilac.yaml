@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-optics-extra'
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-optics-core
-- ghc: ghc-libs
 - haskell-hashable
 - haskell-indexed-profunctors
-- haskell-vector
 - haskell-indexed-traversable-instances
+- haskell-optics-core
+- haskell-unordered-containers
+- haskell-vector
 update_on:
 - alpm: haskell-hashable
   source: alpm

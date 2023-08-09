@@ -10,57 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libreoffice-still'')
 
   '
 repo_depends:
-- gcc
-- libvisio
-- box2d
-- xdg-utils
-- libqxp
-- desktop-file-utils
-- nspr
-- liblangtag
-- libzmf
-- liborcus
-- hicolor-icon-theme
-- lpsolve
-- cups: libcups
-- gcc: gcc-libs
-- libxrandr
-- graphite
-- clucene
-- pango
-- libabw
-- zxing-cpp
-- libwps
-- harfbuzz: harfbuzz-icu
-- libxinerama
-- libepubgen
-- icu
-- shared-mime-info
-- hyphen
-- libwebp
-- libtommath
-- gpgme
-- libfreehand
-- make
-- libatomic_ops
-- libstaroffice
-- zip
-- xmlsec
 - python
-- libmwaw
-- libepoxy
-- libodfgen
-- libxslt
-- nss
-- libexttextcat
-- lcms2
-- libetonyek
-- libcdr
-- libpagemaker
-- libe-book
-- libnumbertext
-- redland
-- libmspub
+- icu
 update_on:
 - alias: python
 - alias: icu

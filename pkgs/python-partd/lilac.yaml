@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-partd'')
 
   '
 repo_depends:
-- python-toolz
-- python-locket
 - python
 update_on:
 - alias: python

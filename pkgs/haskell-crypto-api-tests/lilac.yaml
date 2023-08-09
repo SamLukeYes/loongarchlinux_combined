@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-crypto-api-te
 
   '
 repo_depends:
-- haskell-cereal
-- haskell-test-framework-hunit
-- ghc: ghc-libs
-- haskell-crypto-api
-- haskell-quickcheck
-- haskell-test-framework
-- haskell-hunit
 - haskell-test-framework-quickcheck2
+- haskell-crypto-api
+- haskell-cereal
+- haskell-test-framework
+- haskell-test-framework-hunit
+- haskell-hunit
+- haskell-quickcheck
 update_on:
 - alpm: haskell-test-framework-quickcheck2
   source: alpm

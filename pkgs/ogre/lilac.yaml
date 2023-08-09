@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ogre'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxrandr
-- glu
-- sdl2
-- zlib
-- pugixml
-- freetype2
-- libxaw
-- freeimage
+repo_depends: []
 update_on:
 - alpm: ogre
   source: archpkg

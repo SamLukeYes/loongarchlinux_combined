@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aisleriot'')
 
   '
 repo_depends:
-- dconf
-- librsvg
-- libcanberra
 - guile
-- gtk3
 update_on:
 - alpm: guile
   source: alpm

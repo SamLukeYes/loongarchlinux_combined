@@ -8,11 +8,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-module-manifest'
 
   '
 repo_depends:
-- perl-file-slurp
 - perl
-- perl-params-util
 update_on:
-- alias: perl
 - alias: perl
 - alpm: perl-module-manifest
   source: archpkg

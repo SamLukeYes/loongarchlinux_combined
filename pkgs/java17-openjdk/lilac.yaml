@@ -1,18 +1,9 @@
 destsubdir: extra
 repo_depends:
-- glibc
-- hicolor-icon-theme
-- gcc: gcc-libs
-- libjpeg-turbo
-- harfbuzz
-- libpng
-- freetype2
-- java-common: java-environment-common
-- ca-certificates: ca-certificates-utils
-- elfutils: libelf
-- libnet
-- nss
+- darktable
 - lcms2
+- freetype2
+- harfbuzz
 - giflib
 update_on:
 - alpm: darktable

@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cborg-json'')
 
   '
 repo_depends:
-- haskell-unordered-containers
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-scientific
-- haskell-vector
 - haskell-aeson-pretty
 - haskell-cborg
+- haskell-scientific
+- haskell-unordered-containers
+- haskell-vector
 update_on:
 - alpm: haskell-aeson
   source: alpm

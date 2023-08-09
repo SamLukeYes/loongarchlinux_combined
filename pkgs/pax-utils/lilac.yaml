@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pax-utils'')
 
   '
 repo_depends:
-- libseccomp
 - libcap
-- bash
-- python-pyelftools
 - python
 update_on:
 - alpm: libcap

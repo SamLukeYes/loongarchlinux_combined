@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ibus-skk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libskk
-- ibus
+repo_depends: []
 update_on:
 - alpm: ibus-skk
   source: archpkg

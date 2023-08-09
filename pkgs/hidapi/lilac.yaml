@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libusb
-- systemd: systemd-libs
+repo_depends: []
 update_on: []

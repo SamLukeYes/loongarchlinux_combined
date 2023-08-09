@@ -10,39 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''profanity'')
 
   '
 repo_depends:
-- libotr
-- libgcrypt
-- glibc
-- glib2
-- cairo
-- libsignal-protocol-c
-- expat
+- curl
+- ncurses
+- libnotify
+- gpgme
 - python
-- libgpg-error
-- gdk-pixbuf2
-- libxss
-- libassuan
-- libx11
+- readline
+- libstrophe
+- gtk3
 update_on:
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: libnotify
-  provides: libnotify.so
-  source: alpm
-- alpm: gpgme
-  provides: libgpgme.so
-  source: alpm
-- alias: python
-- alpm: readline
-  provides: libreadline.so
-  source: alpm
-- alpm: libstrophe
-  provides: libstrophe.so
-  source: alpm
 - alpm: curl
   provides: libcurl.so
   source: alpm

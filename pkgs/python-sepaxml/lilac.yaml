@@ -8,9 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-sepaxml'')
 
   '
 repo_depends:
-- python-lxml
-- python-xmlschema
-- python-text-unidecode
 - python
 update_on:
 - alias: python

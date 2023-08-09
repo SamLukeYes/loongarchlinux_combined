@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-color-manager''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtk3
-- colord
-- glib2
-- lcms2
+repo_depends: []
 update_on:
 - alpm: gnome-color-manager
   source: archpkg

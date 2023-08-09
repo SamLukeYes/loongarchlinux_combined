@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sox'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- file
-- libid3tag
-- gcc: gcc-libs
-- zlib
-- libpng
-- gsm
+repo_depends: []
 update_on:
 - alpm: sox
   source: archpkg

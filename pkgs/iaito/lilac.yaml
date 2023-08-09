@@ -10,14 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''iaito'')
 
   '
 repo_depends:
-- graphviz
-- gcc: gcc-libs
-- pyside2
 - qt5-base
-- capstone
-- radare2
-- pyside2: python-shiboken2
-- qt5-svg
 - python
 update_on:
 - alpm: qt5-base

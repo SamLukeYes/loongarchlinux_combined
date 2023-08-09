@@ -9,7 +9,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cython'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends: []
+repo_depends:
+- python
 update_on:
+- alias: python
 - alpm: cython
   source: archpkg

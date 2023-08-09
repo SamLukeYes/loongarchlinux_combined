@@ -10,9 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-breakpoint'')
 
   '
 repo_depends:
-- haskell-pretty-simple
-- ghc: ghc-libs
 - haskell-ansi-terminal
+- haskell-ghc
+- haskell-pretty-simple
 update_on:
 - alpm: haskell-ansi-terminal
   source: alpm

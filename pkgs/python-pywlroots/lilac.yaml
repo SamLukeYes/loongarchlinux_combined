@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pywlroots'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-cffi
-- python-pywayland
-- wlroots0.15
-- python-xkbcommon
-- glibc
+repo_depends: []
 update_on:
 - alpm: python-pywlroots
   source: archpkg

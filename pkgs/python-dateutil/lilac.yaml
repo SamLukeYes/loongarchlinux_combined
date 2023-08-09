@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-dateutil'')
 
   '
-repo_depends:
-- python-six
+repo_depends: []
 update_on:
 - alpm: python-dateutil
   source: archpkg

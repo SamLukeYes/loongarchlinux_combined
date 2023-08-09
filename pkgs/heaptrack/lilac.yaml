@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''heaptrack'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kdiagram
-- threadweaver
-- kio
-- hicolor-icon-theme
-- boost: boost-libs
+repo_depends: []
 update_on:
 - alpm: heaptrack
   source: archpkg

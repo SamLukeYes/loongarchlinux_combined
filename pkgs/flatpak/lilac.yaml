@@ -1,24 +1,8 @@
 destsubdir: extra
 repo_depends:
-# - malcontent: libmalcontent
-- xdg-desktop-portal
-- libxau
-- glib2
-- fuse3
-- curl
-- dbus
-- bubblewrap
-- systemd
-- libseccomp
-- xdg-dbus-proxy
-- ostree
 - python
-- appstream
-- polkit
-- libarchive
-- json-glib
+- ostree
 update_on:
-- alias: python
 - alias: python
 - alpm: ostree
   provides: libostree-1.so

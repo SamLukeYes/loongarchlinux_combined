@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-cvxopt'')
 
   '
 repo_depends:
-- suitesparse
 - python
 update_on:
 - alias: python

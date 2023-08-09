@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''flyspray'')
 
   '
-repo_depends:
-- php
-- php: php-gd
+repo_depends: []
 update_on:
 - alpm: flyspray
   source: archpkg

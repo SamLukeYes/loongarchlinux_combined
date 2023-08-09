@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''certbot-nginx'')
 
   '
-repo_depends:
-- python-setuptools
-- certbot
-- python-pyopenssl
-- python-pyparsing
-- python-acme
+repo_depends: []
 update_on:
 - alpm: certbot-nginx
   source: archpkg

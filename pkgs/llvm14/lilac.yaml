@@ -1,11 +1,5 @@
 destsubdir: extra
 repo_depends:
-- gcc: gcc-libs
-- libedit
-- ncurses
-- zlib
 - perl
-- libffi
-- libxml2
 update_on:
 - alias: perl

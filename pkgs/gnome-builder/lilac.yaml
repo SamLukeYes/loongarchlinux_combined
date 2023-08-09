@@ -11,38 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-builder'')
   '
 repo_depends:
 - clang
-- libportal: libportal-gtk4
-- desktop-file-utils
-- libpeas
-- libdex
-- pygobject: python-gobject
-- glib2
-- vala
-- vte3: vte4
-- devhelp
-- template-glib
-- webkitgtk-6.0
-- gtksourceview5
 - cmark
-- python-lxml
-- jsonrpc-glib
-- ctags
-- libpanel
-- python-sphinx
-- meson
-- d-spy
-- sysprof
-- libadwaita
-- gjs
-- editorconfig-core-c
-- autoconf-archive
-- libgit2-glib
-- flatpak-builder
+- julia
 update_on:
-- alias: clang
-- alpm: cmark
-  source: alpm
-  strip_release: true
 - alias: clang
 - alpm: cmark
   source: alpm

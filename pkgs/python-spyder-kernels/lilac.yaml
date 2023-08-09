@@ -7,15 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-spyder-kernels'')
 
   '
-repo_depends:
-- python-cloudpickle
-- python-matplotlib
-- python-pyzmq
-- python-ipykernel
-- ipython
-- python-wurlitzer
-- python-pandas
-- cython
+repo_depends: []
 update_on:
 - alpm: python-spyder-kernels
   source: archpkg

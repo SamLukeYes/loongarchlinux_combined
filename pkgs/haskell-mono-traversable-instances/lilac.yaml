@@ -11,12 +11,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mono-traversa
   '
 repo_depends:
 - haskell-dlist
-- ghc: ghc-libs
-- haskell-semigroupoids
-- haskell-dlist-instances
 - haskell-comonad
 - haskell-mono-traversable
+- haskell-semigroupoids
 - haskell-vector-instances
+- haskell-dlist-instances
 update_on:
 - alpm: haskell-dlist
   source: alpm

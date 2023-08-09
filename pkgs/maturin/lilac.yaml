@@ -1,9 +1,5 @@
 destsubdir: extra
 repo_depends:
-- bzip2
-- gcc: gcc-libs
-- rust
-- glibc
 - python
 update_on:
 - alias: python

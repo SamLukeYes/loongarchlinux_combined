@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdg-desktop-portal'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gdk-pixbuf2
-- rtkit
-- fuse3
-- pipewire
-- geoclue
-- glib2
-- systemd
+repo_depends: []
 update_on:
 - alpm: xdg-desktop-portal
   source: archpkg

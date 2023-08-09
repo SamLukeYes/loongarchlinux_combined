@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libforensic1394'')
 
   '
 repo_depends:
-- glibc
 - python
 update_on:
 - alias: python

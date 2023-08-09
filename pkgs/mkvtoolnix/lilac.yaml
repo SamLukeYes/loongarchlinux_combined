@@ -10,30 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mkvtoolnix'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- cmark
-- libdvdread
+- libebml
+- fmt
+- libmatroska
 - qt6-base
-- zlib
-- hicolor-icon-theme
-- pugixml
-- qt6-multimedia
-- qt6-svg
-- glibc
-- boost: boost-libs
+- flac
+- libogg
+- libvorbis
+- cmark
 update_on:
-- alpm: libebml
-  provides: libebml.so
-  source: alpm
-- alpm: fmt
-  provides: libfmt.so
-  source: alpm
-- alpm: libmatroska
-  provides: libmatroska.so
-  source: alpm
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
 - alpm: libebml
   provides: libebml.so
   source: alpm

@@ -7,22 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-openstacksdk'')
 
   '
-repo_depends:
-- python-jmespath
-- python-keystoneauth1
-- python-decorator
-- python-six
-- python-pbr
-- python-netifaces
-- python-cryptography
-- python-iso8601
-- python-jsonpatch
-- python-dogpile.cache
-- python-os-service-types
-- python-appdirs
-- python-yaml
-- python-requestsexceptions
-- python-deprecation
+repo_depends: []
 update_on:
 - alpm: python-openstacksdk
   source: archpkg

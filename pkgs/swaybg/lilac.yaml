@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''swaybg'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- cairo
-- gdk-pixbuf2
-- wayland
+repo_depends: []
 update_on:
 - alpm: swaybg
   source: archpkg

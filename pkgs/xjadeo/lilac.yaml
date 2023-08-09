@@ -11,30 +11,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xjadeo'')
   '
 repo_depends:
 - alsa-lib
-- portmidi
-- imlib2
-- libxv
-- glibc
-- libxpm
-- liblo
 - ffmpeg
-- libglvnd
-- libxext
 - freetype2
+- jack2
+- cuda-tools
+- liblo
 - libltc
-- libx11
+- portmidi
 update_on:
 - alpm: alsa-lib
   provides: libasound.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavcodec.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavformat.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavutil.so
   source: alpm
 - alpm: ffmpeg
   provides: libswscale.so

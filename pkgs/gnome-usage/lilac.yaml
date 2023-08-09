@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-usage'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- xdg-user-dirs
-- libdazzle
-- libhandy
-- libgtop
-- tracker3
-- gtk3
+repo_depends: []
 update_on:
 - alpm: gnome-usage
   source: archpkg

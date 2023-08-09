@@ -10,38 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hyprland'')
 
   '
 repo_depends:
-- libxrender
-- libxfixes
-- xcb-util-keysyms
-- xcb-util-errors
-- glibc
-- gcc: gcc-libs
-- pango
-- seatd
-- vulkan-icd-loader
-- xorg-xinput
-- xcb-util-wm
-- libglvnd
-- cairo
-- systemd: systemd-libs
-- libxkbcommon
-- libxcb
-- libdisplay-info
-- xcb-proto
 - glslang
-- wayland-protocols
-- libdrm
-- vulkan-validation-layers
-- xorg-xwayland
-- libinput
-- libxcomposite
-- wayland
-- xcb-util
-- polkit
-- xcb-util-renderutil
-- pixman
-- libx11
-- libliftoff
+- libdisplay-info
 update_on:
 - alpm: glslang
   source: alpm

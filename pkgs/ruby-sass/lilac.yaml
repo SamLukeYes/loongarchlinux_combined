@@ -9,10 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-sass'')
   '
 repo_depends:
 - ruby
-- ruby-maruku
-- ruby-yard
-- ruby-sass-listen
-- ruby-rdoc
 update_on:
 - alias: ruby
 - alpm: ruby-sass

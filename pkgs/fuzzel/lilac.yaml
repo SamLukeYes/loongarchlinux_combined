@@ -10,13 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fuzzel'')
 
   '
 repo_depends:
-- fontconfig
-- libxkbcommon
-- wayland
 - fcft
-- pixman
-- cairo
-- libpng
 update_on:
 - alpm: fcft
   provides: libfcft.so

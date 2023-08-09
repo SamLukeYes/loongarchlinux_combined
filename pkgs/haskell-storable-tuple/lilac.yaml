@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-storable-tupl
 
   '
 repo_depends:
+- haskell-storable-record
 - haskell-utility-ht
 - haskell-base-orphans
-- haskell-storable-record
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-storable-record
   source: alpm

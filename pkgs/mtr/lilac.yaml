@@ -10,10 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mtr'')
 
   '
 repo_depends:
-- gdk-pixbuf2
 - ncurses
-- libcap
 - gtk3
+- glib2
+- gdk-pixbuf2
 update_on:
 - alpm: ncurses
   provides: libncursesw.so
@@ -22,19 +22,10 @@ update_on:
   provides: libgtk-3.so
   source: alpm
 - alpm: glib2
-  provides: libgobject-2.0.so
+  provides: libglib-2.0.so
   source: alpm
 - alpm: gdk-pixbuf2
   provides: libgdk_pixbuf-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
   source: alpm
 - alpm: mtr
   source: archpkg

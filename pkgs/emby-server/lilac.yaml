@@ -10,31 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''emby-server'')
 
   '
 repo_depends:
-- bzip2
-- alsa-lib
-- intel-media-sdk: libmfx
-- aom
-- gnutls
-- glibc
-- libtheora
-- dotnet-core-6.0: aspnet-runtime-6.0
-- zvbi
-- libjpeg-turbo
-- ffmpeg
-- dotnet-core-6.0: dotnet-runtime-6.0
-- opus
-- fribidi
-- gmp
-- libpng
-- fontconfig
-- libdrm
-- tesseract
-- expat
-- sqlite
-- aribb24
-- zlib
-- libwebp
-- lame
+- libass
+- chromaprint
+- dav1d
+- freetype2
+- libva
+- libvorbis
+- x264
+- x265
 update_on:
 - alpm: libass
   provides: libass.so
@@ -49,13 +32,7 @@ update_on:
   provides: libfreetype.so
   source: alpm
 - alpm: libva
-  provides: libva-drm.so
-  source: alpm
-- alpm: libva
   provides: libva.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbisenc.so
   source: alpm
 - alpm: libvorbis
   provides: libvorbis.so

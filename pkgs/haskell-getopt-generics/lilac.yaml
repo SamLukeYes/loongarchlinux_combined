@@ -11,10 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-getopt-generi
   '
 repo_depends:
 - haskell-base-compat
-- ghc: ghc-libs
+- haskell-base-orphans
 - haskell-generics-sop
 - haskell-tagged
-- haskell-base-orphans
 update_on:
 - alpm: haskell-base-compat
   source: alpm

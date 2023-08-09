@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxqt-openssh-askpass'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- liblxqt
+repo_depends: []
 update_on:
 - alpm: lxqt-openssh-askpass
   source: archpkg

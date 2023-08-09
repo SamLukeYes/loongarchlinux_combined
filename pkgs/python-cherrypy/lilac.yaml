@@ -8,12 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-cherrypy'')
 
   '
 repo_depends:
-- python-cheroot
-- python-portend
-- python-more-itertools
-- python-zc.lockfile
 - python
-- python-jaraco.collections
 update_on:
 - alias: python
 - alpm: python-cherrypy

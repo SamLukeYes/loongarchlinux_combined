@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''code'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- electron22
-- libsecret
-- ripgrep
-- libx11
-- libxkbfile
+repo_depends: []
 update_on:
 - alpm: code
   source: archpkg

@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-eventmachine'')
 
   '
 repo_depends:
-- openssl
 - ruby
-- ruby-rdoc
 update_on:
 - alias: ruby
 - alpm: ruby-eventmachine

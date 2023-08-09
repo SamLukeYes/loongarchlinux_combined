@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xf86-video-intel'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxvmc
-- mesa
-- pixman
-- systemd: systemd-libs
+repo_depends: []
 update_on:
 - alpm: xf86-video-intel
   source: archpkg

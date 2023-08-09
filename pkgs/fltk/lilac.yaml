@@ -11,19 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fltk'')
   '
 repo_depends:
 - fontconfig
-- glibc
-- gcc: gcc-libs
-- libxfixes
-- libxft
-- libjpeg-turbo
-- libxrender
-- libxinerama
-- libxcursor
-- libx11
-- libglvnd
-- libxext
-- hicolor-icon-theme
-- libpng
 update_on:
 - alpm: fontconfig
   provides: libfontconfig.so

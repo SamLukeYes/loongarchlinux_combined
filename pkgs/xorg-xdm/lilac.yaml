@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-xdm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxft
-- xorg-xrdb
-- libxcrypt
-- xorg-sessreg
-- libxinerama
-- libxaw
-- pam
-- systemd
+repo_depends: []
 update_on:
 - alpm: xorg-xdm
   source: archpkg

@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-sockaddr'')
 repo_depends:
 - haskell-byteorder
 - haskell-network
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-byteorder
   source: alpm

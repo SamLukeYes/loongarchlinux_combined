@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-terminal'')
 
   '
 repo_depends:
-- vte3
-- libsm
 - perl
-- gettext
-- mate-desktop
 update_on:
 - alias: perl
 - alpm: mate-terminal

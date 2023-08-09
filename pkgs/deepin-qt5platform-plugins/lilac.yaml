@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-qt5platform-pl
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-x11extras
-- cairo
+repo_depends: []
 update_on:
 - alpm: deepin-qt5platform-plugins
   source: archpkg

@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mkinitcpio-systemd-tool'')
 
   '
-repo_depends:
-- mkinitcpio
-- systemd
-- bash
+repo_depends: []
 update_on:
 - alpm: mkinitcpio-systemd-tool
   source: archpkg

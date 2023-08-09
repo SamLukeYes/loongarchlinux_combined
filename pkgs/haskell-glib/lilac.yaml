@@ -10,8 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-glib'')
 
   '
 repo_depends:
-- glib2
-- ghc: ghc-libs
 - haskell-utf8-string
 update_on:
 - alpm: haskell-utf8-string

@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hslua-core'')
   '
 repo_depends:
 - haskell-lua
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-lua
   source: alpm

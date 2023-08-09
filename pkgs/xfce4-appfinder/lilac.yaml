@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xfce4-appfinder'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- xfconf
-- garcon
-- hicolor-icon-theme
-- libxfce4ui
+repo_depends: []
 update_on:
 - alpm: xfce4-appfinder
   source: archpkg

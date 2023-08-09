@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''bash-bats-assert'')
 
   '
-repo_depends:
-- bash-bats-support
+repo_depends: []
 update_on:
 - alpm: bash-bats-assert
   source: archpkg

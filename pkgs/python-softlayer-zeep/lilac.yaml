@@ -7,15 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-softlayer-zeep'')
 
   '
-repo_depends:
-- python-requests
-- python-pytz
-- python-platformdirs
-- python-lxml
-- isodate: python-isodate
-- python-requests-toolbelt
-- python-requests-file
-- python-attrs
+repo_depends: []
 update_on:
 - alpm: python-softlayer-zeep
   source: archpkg

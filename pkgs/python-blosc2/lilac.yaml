@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-blosc2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-py-cpuinfo
-- python-msgpack
-- python-rich
-- blosc2
-- python-ndindex
+repo_depends: []
 update_on:
 - alpm: python-blosc2
   source: archpkg

@@ -11,14 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kweather'')
   '
 repo_depends:
 - kconfig
-- kirigami-addons
-- knotifications
-- kweathercore
-- plasma-framework
-- qt5-charts
-- kcoreaddons
-- ki18n
-- qt5-svg
 update_on:
 - alpm: kconfig
   source: alpm

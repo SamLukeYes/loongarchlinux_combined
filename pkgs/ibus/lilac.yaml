@@ -10,20 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ibus'')
 
   '
 repo_depends:
-- dconf
-- libnotify
-- librsvg
-- iso-codes
-- gtk3
-- pygobject: python-gobject
-- hicolor-icon-theme
+- glib2
 update_on:
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
 - alpm: glib2
   provides: libgio-2.0.so
   source: alpm

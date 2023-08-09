@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pocl'')
 
   '
 repo_depends:
-- hwloc
 - clang
 update_on:
 - alias: clang

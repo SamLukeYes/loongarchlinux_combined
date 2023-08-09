@@ -8,17 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''clamtk'')
 
   '
 repo_depends:
-- perl-lwp-protocol-https
-- perl-json
-- perl-gtk3
-- clamav
-- perl-http-message
-- zenity
 - perl
-- desktop-file-utils
-- perl-libwww
-- perl-locale-gettext
-- perl-text-csv
 - python
 update_on:
 - alias: perl

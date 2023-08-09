@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libu2f-server'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- openssl
-- json-c
+repo_depends: []
 update_on:
 - alpm: libu2f-server
   source: archpkg

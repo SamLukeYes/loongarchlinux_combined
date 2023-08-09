@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-mongoengine'')
 
   '
-repo_depends:
-- python-pymongo
+repo_depends: []
 update_on:
 - alpm: python-mongoengine
   source: archpkg

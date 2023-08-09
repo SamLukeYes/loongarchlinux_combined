@@ -1,7 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libarchive
-- pacman
-- pcre
-- curl
+repo_depends: []
 update_on: []

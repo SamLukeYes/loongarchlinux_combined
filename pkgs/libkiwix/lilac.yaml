@@ -10,11 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libkiwix'')
 
   '
 repo_depends:
-- xapian-core
-- libmicrohttpd
-- curl
-- pugixml
-- aria2
 - python
 update_on:
 - alias: python

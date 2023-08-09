@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libcutefish'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- bluez-qt
-- accountsservice
-- kscreen
-- qt5-quickcontrols2
-- networkmanager-qt
-- modemmanager-qt
+repo_depends: []
 update_on:
 - alpm: libcutefish
   source: archpkg

@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''intel-media-sdk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
-- wayland
-- libdrm
-- libva
-- intel-media-driver
+repo_depends: []
 update_on:
 - alpm: intel-media-sdk
   source: archpkg

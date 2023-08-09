@@ -10,22 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rosegarden'')
 
   '
 repo_depends:
-- alsa-lib
-- libsndfile
-- liblrdf
-- lirc
-- glibc
-- hicolor-icon-theme
-- gcc: gcc-libs
 - qt5-base
-- liblo
+- alsa-lib
 - fftw
+- jack2
+- liblrdf
+- liblo
 - libsamplerate
-- zlib
+- libsndfile
 update_on:
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: qt5-base
   source: alpm
   strip_release: true

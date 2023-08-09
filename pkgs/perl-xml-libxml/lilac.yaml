@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-xml-libxml'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- perl-alien-libxml2
-- perl-xml-sax
-- perl-xml-namespacesupport
+repo_depends: []
 update_on:
 - alpm: perl-xml-libxml
   source: archpkg

@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libnitrokey'')
 
   '
 repo_depends:
-- gcc: gcc-libs
 - hidapi
-- libusb
-- glibc
 update_on:
 - alpm: hidapi
   provides: libhidapi-libusb.so

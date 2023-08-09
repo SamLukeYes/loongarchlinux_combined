@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- llvm: llvm-libs
-- compiler-rt
-- gcc
+repo_depends: []
 update_on: []

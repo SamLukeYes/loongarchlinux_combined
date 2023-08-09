@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tvtime'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- alsa-lib
-- libxss
-- libxxf86vm
-- libxv
-- libxinerama
-- freetype2
-- libxml2
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: tvtime
   source: archpkg

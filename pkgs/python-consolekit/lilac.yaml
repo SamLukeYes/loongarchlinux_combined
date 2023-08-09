@@ -8,11 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-consolekit'')
 
   '
 repo_depends:
-- python-domdf-python-tools
-- python-colorama
-- python-click
-- python-mistletoe
-- python-deprecation-alias
 - python
 update_on:
 - alias: python

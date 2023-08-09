@@ -10,15 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-serialise'')
 
   '
 repo_depends:
-- haskell-strict
-- haskell-unordered-containers
-- haskell-these
-- ghc: ghc-libs
-- haskell-hashable
-- haskell-half
-- haskell-vector
-- haskell-primitive
 - haskell-cborg
+- haskell-half
+- haskell-hashable
+- haskell-primitive
+- haskell-strict
+- haskell-these
+- haskell-unordered-containers
+- haskell-vector
 update_on:
 - alpm: haskell-cborg
   source: alpm

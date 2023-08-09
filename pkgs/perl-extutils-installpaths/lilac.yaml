@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-extutils-install
   '
 repo_depends:
 - perl
-- perl-extutils-config
 update_on:
 - alias: perl
 - alpm: perl-extutils-installpaths

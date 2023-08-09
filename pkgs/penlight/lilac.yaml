@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''penlight'')
 
   '
-repo_depends:
-- lua-filesystem: lua51-filesystem
-- lua-filesystem: lua53-filesystem
-- lua-filesystem
-- lua-filesystem: lua52-filesystem
+repo_depends: []
 update_on:
 - alpm: penlight
   source: archpkg

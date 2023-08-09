@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''flobopuyo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glu
-- sdl_mixer
-- sdl_image
+repo_depends: []
 update_on:
 - alpm: flobopuyo
   source: archpkg

@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kirigami-addons'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kirigami2
+repo_depends: []
 update_on:
 - alpm: kirigami-addons
   source: archpkg

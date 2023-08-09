@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''bandit'')
 
   '
-repo_depends:
-- python-six
-- python-pbr
-- python-yaml
-- python-rich
-- python-stevedore
-- python-gitpython
+repo_depends: []
 update_on:
 - alpm: bandit
   source: archpkg

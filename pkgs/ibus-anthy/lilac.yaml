@@ -10,10 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ibus-anthy'')
 
   '
 repo_depends:
-- gtk4: gtk-update-icon-cache
-- ibus
-- anthy
-- pygobject: python-gobject
 - python
 update_on:
 - alias: python

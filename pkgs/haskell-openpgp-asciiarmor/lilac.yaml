@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-openpgp-ascii
 
   '
 repo_depends:
-- haskell-base64-bytestring
 - haskell-attoparsec
-- ghc: ghc-libs
+- haskell-base64-bytestring
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

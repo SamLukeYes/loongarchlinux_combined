@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''shairport-sync'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libsoxr
-- pulseaudio: libpulse
-- alsa-lib
-- mosquitto
-- avahi
-- popt
-- libconfig
-- openssl
+repo_depends: []
 update_on:
 - alpm: shairport-sync
   source: archpkg

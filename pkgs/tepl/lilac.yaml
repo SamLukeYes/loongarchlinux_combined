@@ -10,29 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tepl'')
 
   '
 repo_depends:
-- amtk
-- gtksourceview4
+- icu
 update_on:
-- alpm: amtk
-  provides: libamtk-5.so
-  source: alpm
-- alpm: gtksourceview4
-  provides: libgtksourceview-4.so
-  source: alpm
-- alpm: gtk3
-  provides: libgdk-3.so
-  source: alpm
-- alpm: gtk3
-  provides: libgtk-3.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
+- alias: icu
 - alpm: tepl
   source: archpkg

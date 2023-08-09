@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lumberjack'')
 
   '
 repo_depends:
-- haskell-prettyprinter-ansi-terminal
-- ghc: ghc-libs
 - haskell-contravariant
 - haskell-prettyprinter
+- haskell-prettyprinter-ansi-terminal
 update_on:
 - alpm: haskell-contravariant
   source: alpm

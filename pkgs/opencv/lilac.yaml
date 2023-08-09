@@ -1,29 +1,11 @@
 destsubdir: extra
 repo_depends:
-- jsoncpp
-- lapack
-- lapack: cblas
-- hdf5
-- openexr
-- ffmpeg
 - protobuf
-- openjpeg2
-- libdc1394
-- pugixml
-- cudnn
-- glew
-- openmpi
-- gstreamer: gst-plugins-base
-- python-numpy
-- fmt
-- libgphoto2
+- opencv
 - qt6-base
-- vtk
+- jsoncpp
 update_on:
 - alias: protobuf
-- alpm: opencv
-  source: alpm
-  strip_release: true
 - alpm: opencv
   source: alpm
   strip_release: true
@@ -31,4 +13,3 @@ update_on:
   source: alpm
   strip_release: true
 - alias: jsoncpp
-- alias: protobuf

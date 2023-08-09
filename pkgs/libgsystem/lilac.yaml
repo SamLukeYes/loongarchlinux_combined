@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgsystem'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glib2
-- systemd: systemd-libs
-- attr
+repo_depends: []
 update_on:
 - alpm: libgsystem
   source: archpkg

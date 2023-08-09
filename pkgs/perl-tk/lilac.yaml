@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-tk'')
   '
 repo_depends:
 - perl
-- libpng
-- libx11
 update_on:
 - alias: perl
 - alpm: perl-tk

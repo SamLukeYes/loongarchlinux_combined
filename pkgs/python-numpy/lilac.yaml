@@ -1,7 +1,5 @@
 destsubdir: extra
 repo_depends:
-- lapack: cblas
 - python
-- lapack
 update_on:
 - alias: python

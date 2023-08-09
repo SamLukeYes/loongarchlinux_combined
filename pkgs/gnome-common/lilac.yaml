@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''gnome-common'')
 
   '
-repo_depends:
-- intltool
-- yelp-tools
-- gtk-doc
-- autoconf-archive
+repo_depends: []
 update_on:
 - alpm: gnome-common
   source: archpkg

@@ -1,13 +1,3 @@
 destsubdir: extra
-repo_depends:
-- glib2
-- json-c
-- libnet
-- libnsl
-- curl
-- libcap
-- bash
-- openssl
-- glibc
-- systemd: systemd-libs
+repo_depends: []
 update_on: []

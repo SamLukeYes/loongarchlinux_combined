@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mediathekview'')
 
   '
-repo_depends:
-- hicolor-icon-theme
-- bash
+repo_depends: []
 update_on:
 - alpm: mediathekview
   source: archpkg

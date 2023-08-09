@@ -10,15 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nemo'')
 
   '
 repo_depends:
-- dconf
-- libexif
-- cinnamon-desktop
-- libnotify
-- xapp
-- exempi
-- libxml2
 - python
-- gvfs
 update_on:
 - alias: python
 - alpm: nemo

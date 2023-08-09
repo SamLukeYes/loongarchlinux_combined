@@ -7,17 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''jrnl'')
 
   '
-repo_depends:
-- pyxdg: python-pyxdg
-- python-ansiwrap
-- python-dateutil
-- python-cryptography
-- python-parsedatetime
-- python-colorama
-- python-keyring
-- python-rich
-- python-ruamel-yaml
-- python-tzlocal
+repo_depends: []
 update_on:
 - alpm: jrnl
   source: archpkg

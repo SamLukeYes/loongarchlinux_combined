@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zathura-pdf-poppler''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- desktop-file-utils
-- poppler: poppler-glib
-- zathura
+repo_depends: []
 update_on:
 - alpm: zathura-pdf-poppler
   source: archpkg

@@ -10,16 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''git'')
 
   '
 repo_depends:
-- pcre2
-- curl
-- grep
-- zlib
 - perl
-- expat
-- perl-mailtools
-- perl-error
-- openssl
-- shadow
 update_on:
 - alias: perl
 - alpm: git

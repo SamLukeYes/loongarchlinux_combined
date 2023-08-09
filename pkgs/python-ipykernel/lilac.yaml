@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-ipykernel'')
 
   '
-repo_depends:
-- python-jupyter-client
-- python-psutil
-- ipython
-- python-comm
-- python-nest-asyncio
-- python-tornado
+repo_depends: []
 update_on:
 - alpm: python-ipykernel
   source: archpkg

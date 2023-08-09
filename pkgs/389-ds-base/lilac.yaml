@@ -1,19 +1,5 @@
 destsubdir: extra
 repo_depends:
-- cracklib
-- python-dateutil
-- net-snmp
-- openldap
-- libevent
-- python-cryptography
 - icu
-- nss
-- db5.3
-- python-ldap
-- nspr
-- python-packaging
-- lmdb
-- python-argcomplete
-- pam
 update_on:
 - alias: icu

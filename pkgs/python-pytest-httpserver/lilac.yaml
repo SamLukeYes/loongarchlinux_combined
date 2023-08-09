@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-httpser
 
   '
 repo_depends:
-- python-werkzeug
 - python
-- python-pytest
 update_on:
 - alias: python
 - alpm: python-pytest-httpserver

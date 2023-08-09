@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qgo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libsm
-- qt5-multimedia
+repo_depends: []
 update_on:
 - alpm: qgo
   source: archpkg

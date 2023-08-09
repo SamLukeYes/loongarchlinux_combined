@@ -10,58 +10,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sile'')
 
   '
 repo_depends:
-- luasec: lua-sec
-- gentium-plus-font
-- lua-cliargs
-- lua-luaepnf
-- luaexpat: lua-expat
-- glibc
-- harfbuzz
-- lua-filesystem
-- lua-loadkit
-- lua-vstruct
-- luasocket: lua-socket
-- libpng
 - icu
-- lua-cassowary
-- fontconfig
-- lua-fluent
-- lua-linenoise
-- git
-- lua-cldr
-- lua-zlib
-- freetype2
 - lua
-- lua-luarepl
-- lpeg: lua-lpeg
-- zlib
-- penlight: lua-penlight
-- lua-bit32
-- lua-cosmo
-- lua-luautf8
+- freetype2
+- harfbuzz
 update_on:
-- alias: icu
+- alpm: icu
+  provides: libicuuc.so
+  source: alpm
 - alias: lua
 - alpm: freetype2
   provides: libfreetype.so
   source: alpm
 - alpm: harfbuzz
-  provides: libharfbuzz.so
-  source: alpm
-- alpm: harfbuzz
   provides: libharfbuzz-subset.so
-  source: alpm
-- alpm: icu
-  provides: libicudata.so
-  source: alpm
-- alpm: icu
-  provides: libicui18n.so
-  source: alpm
-- alpm: icu
-  provides: libicuio.so
-  source: alpm
-- alpm: icu
-  provides: libicuuc.so
   source: alpm
 - alpm: sile
   source: archpkg

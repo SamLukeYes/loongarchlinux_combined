@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''korganizer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kdepim-runtime
-- kuserfeedback
-- kontactinterface
-- incidenceeditor
+repo_depends: []
 update_on:
 - alpm: korganizer
   source: archpkg

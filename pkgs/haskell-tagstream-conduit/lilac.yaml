@@ -10,15 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tagstream-con
 
   '
 repo_depends:
-- ghc: ghc-libs
+- haskell-attoparsec
 - haskell-blaze-builder
 - haskell-case-insensitive
-- haskell-data-default
-- haskell-xml-conduit
 - haskell-conduit
 - haskell-conduit-extra
+- haskell-data-default
 - haskell-resourcet
-- haskell-attoparsec
+- haskell-xml-conduit
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

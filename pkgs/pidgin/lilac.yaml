@@ -9,25 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pidgin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libgadu
-- libgnt
-- libsm
-- gstreamer: gst-plugins-good
-- hicolor-icon-theme
-- gtkspell
-- networkmanager: libnm
-- startup-notification
-- gstreamer: gst-plugins-base
-- libnsl
-- farstream
-- dbus-glib
-- libxss
-- libsasl
-- libidn
-- nss
-- libxcrypt
-- libx11
+repo_depends: []
 update_on:
 - alpm: pidgin
   source: archpkg

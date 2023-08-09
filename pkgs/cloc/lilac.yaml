@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cloc'')
 
   '
 repo_depends:
-- perl-algorithm-diff
 - perl
-- perl-parallel-forkmanager
-- perl-regexp-common
 update_on:
 - alias: perl
 - alpm: cloc

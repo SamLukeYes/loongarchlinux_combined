@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-should-not-ty
   '
 repo_depends:
 - haskell-hunit
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-hunit
   source: alpm

@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''knights'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- hicolor-icon-theme
-- libkdegames
-- kplotting
-- plasma-framework
+repo_depends: []
 update_on:
 - alpm: knights
   source: archpkg

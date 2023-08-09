@@ -10,18 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openssh'')
 
   '
 repo_depends:
-- libedit
-- zlib
 - krb5
 - libxcrypt
-- openssl
-- glibc
 - pam
-- ldns
 update_on:
-- alpm: krb5
-  provides: libkrb5.so
-  source: alpm
 - alpm: krb5
   provides: libgssapi_krb5.so
   source: alpm

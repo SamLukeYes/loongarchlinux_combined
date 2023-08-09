@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-claripy'')
 
   '
 repo_depends:
-- python-decorator
-- python-pysmt
-- z3: python-z3-solver
-- python-cachetools
 - python
 update_on:
 - alias: python

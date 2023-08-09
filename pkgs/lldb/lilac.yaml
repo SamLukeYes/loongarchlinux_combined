@@ -1,9 +1,7 @@
 destsubdir: extra
 repo_depends:
-- python
-- llvm: llvm-libs
 - clang
-- python-six
+- python
 update_on:
 - alias: clang
 - alias: python

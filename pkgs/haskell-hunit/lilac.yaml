@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hunit'')
 
   '
 repo_depends:
-- ghc: ghc-libs
 - haskell-call-stack
 update_on:
 - alpm: haskell-call-stack

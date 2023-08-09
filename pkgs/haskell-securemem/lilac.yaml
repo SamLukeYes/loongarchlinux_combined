@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-securemem'')
 repo_depends:
 - haskell-byteable
 - haskell-memory
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-byteable
   source: alpm

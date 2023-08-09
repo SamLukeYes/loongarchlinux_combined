@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libretro-bsnes-hd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libretro-core-info
-- gcc: gcc-libs
+repo_depends: []
 update_on:
 - alpm: libretro-bsnes-hd
   source: archpkg

@@ -11,12 +11,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hslua-objecto
   '
 repo_depends:
 - haskell-hslua-core
-- ghc: ghc-libs
 - haskell-hslua-marshalling
+- haskell-hslua-typing
 update_on:
 - alpm: haskell-hslua-core
   source: alpm
 - alpm: haskell-hslua-marshalling
+  source: alpm
+- alpm: haskell-hslua-typing
   source: alpm
 - alpm: haskell-hslua-objectorientation
   source: archpkg

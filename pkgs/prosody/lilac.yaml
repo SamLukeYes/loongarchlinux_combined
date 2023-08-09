@@ -10,12 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''prosody'')
 
   '
 repo_depends:
-- luasec: lua-sec
-- libidn
-- luaexpat: lua-expat
-- lua-filesystem
-- openssl
-- luasocket: lua-socket
 - lua
 update_on:
 - alias: lua

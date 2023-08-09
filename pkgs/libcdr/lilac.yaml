@@ -10,9 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libcdr'')
 
   '
 repo_depends:
-- librevenge
-- libwpd
-- lcms2
 - icu
 update_on:
 - alias: icu

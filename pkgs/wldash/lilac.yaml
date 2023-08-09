@@ -1,9 +1,3 @@
 destsubdir: extra
-repo_depends:
-- pulseaudio: libpulse
-- fontconfig
-- alsa-lib
-- gcc: gcc-libs
-- dbus
-- glibc
+repo_depends: []
 update_on: []

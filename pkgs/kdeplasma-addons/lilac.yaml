@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- kunitconversion
-- plasma-workspace
+repo_depends: []
 update_on: []

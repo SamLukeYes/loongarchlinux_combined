@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-libintl-perl'')
   '
 repo_depends:
 - perl
-- gettext
-- coreutils
 update_on:
 - alias: perl
 - alpm: perl-libintl-perl

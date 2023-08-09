@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- runc
-- containerd
+repo_depends: []
 update_on: []

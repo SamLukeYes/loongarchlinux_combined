@@ -10,67 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pytorch'')
 
   '
 repo_depends:
-- nccl
-- onednn
-- numactl
-- rocm-hip-sdk
-- openmp
-- gflags
-- google-glog
-- ffmpeg4.4
-- magma: magma-cuda
-- intel-oneapi-mkl
 - opencv
-- protobuf
-- python-typing_extensions
-- roctracer
-- python-yaml
-- cudnn
-- libuv
-- python-numpy
 - python
-- cuda
-- python-networkx
-- python-sympy
+- protobuf
 - qt6-base
-- python-future
-- python-jinja
-- python-filelock
-- magma: magma-hip
-- pybind11
 update_on:
-- alpm: opencv
-  source: alpm
-  strip_release: true
-- alias: python
-- alias: protobuf
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
-- alpm: opencv
-  source: alpm
-  strip_release: true
-- alias: python
-- alias: protobuf
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
-- alpm: opencv
-  source: alpm
-  strip_release: true
-- alias: python
-- alias: protobuf
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
-- alpm: opencv
-  source: alpm
-  strip_release: true
-- alias: python
-- alias: protobuf
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
 - alpm: opencv
   source: alpm
   strip_release: true

@@ -8,12 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-django-allauth
 
   '
 repo_depends:
-- python-requests
-- python-openid
-- python-pyjwt
-- django: python-django
 - python
-- python-requests-oauthlib
 update_on:
 - alias: python
 - alpm: python-django-allauth

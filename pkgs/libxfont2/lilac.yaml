@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libxfont2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libfontenc
-- freetype2
-- xorgproto
+repo_depends: []
 update_on:
 - alpm: libxfont2
   source: archpkg

@@ -10,25 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pycapnp'')
 
   '
 repo_depends:
-- glibc
-- gcc: gcc-libs
-- capnproto
 - python
+- capnproto
 update_on:
 - alias: python
-- alias: python
-- alpm: capnproto
-  provides: libkj.so
-  source: alpm
-- alpm: capnproto
-  provides: libkj-async.so
-  source: alpm
-- alpm: capnproto
-  provides: libcapnpc.so
-  source: alpm
-- alpm: capnproto
-  provides: libcapnp.so
-  source: alpm
 - alpm: capnproto
   provides: libcapnp-rpc.so
   source: alpm

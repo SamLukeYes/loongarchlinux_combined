@@ -10,17 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''backuppc'')
 
   '
 repo_depends:
-- perl-time-modules
-- perl-xml-rss
-- par2cmdline
-- popt
-- perl-json-xs
-- perl-io-dirent
-- perl-cgi
 - perl
-- perl-file-listing
-- glibc
-- perl-archive-zip
 update_on:
 - alias: perl
 - alpm: backuppc

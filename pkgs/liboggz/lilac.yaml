@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''liboggz'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libogg
-- bash
+repo_depends: []
 update_on:
 - alpm: liboggz
   source: archpkg

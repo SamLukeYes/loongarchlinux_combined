@@ -10,13 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pillow'')
 
   '
 repo_depends:
-- libimagequant
-- libxcb
-- libraqm
-- libtiff
-- freetype2
-- lcms2
-- openjpeg2
 - python
 update_on:
 - alias: python

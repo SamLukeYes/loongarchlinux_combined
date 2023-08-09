@@ -10,13 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pycuda'')
 
   '
 repo_depends:
-- boost: boost-libs
-- gcc: gcc-libs
-- nvidia-utils
-- python-pytools
-- python-numpy
-- glibc
-- cuda
 - python
 update_on:
 - alias: python

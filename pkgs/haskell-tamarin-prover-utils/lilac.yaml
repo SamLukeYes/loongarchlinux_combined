@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tamarin-prove
 
   '
 repo_depends:
-- haskell-dlist
-- haskell-syb
-- ghc: ghc-libs
-- haskell-blaze-builder
-- haskell-fclabels
 - haskell-sha
-- haskell-safe
 - haskell-base64-bytestring
+- haskell-blaze-builder
+- haskell-dlist
+- haskell-fclabels
+- haskell-safe
+- haskell-syb
 update_on:
 - alpm: haskell-sha
   source: alpm

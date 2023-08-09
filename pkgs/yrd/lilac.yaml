@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''yrd'')
 
   '
-repo_depends:
-- cjdns
-- python-requests
-- python-argh
+repo_depends: []
 update_on:
 - alpm: yrd
   source: archpkg

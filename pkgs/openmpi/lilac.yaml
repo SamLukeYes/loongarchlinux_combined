@@ -10,14 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openmpi'')
 
   '
 repo_depends:
-- hwloc
-- gcc: gcc-libs
-- libnl
-- openssh
-- libevent
-- zlib
 - openpmix
-- glibc
 update_on:
 - alpm: openpmix
   provides: libpmix.so

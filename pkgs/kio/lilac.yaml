@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kio'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kjobwidgets
-- kbookmarks
-- libxslt
-- solid
-- ktextwidgets
-- kded
-- kwallet
+repo_depends: []
 update_on:
 - alpm: kio
   source: archpkg

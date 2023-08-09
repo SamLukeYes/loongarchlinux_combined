@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opensmtpd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libevent
-- libressl
-- zlib
-- libxcrypt
-- pam
+repo_depends: []
 update_on:
 - alpm: opensmtpd
   source: archpkg

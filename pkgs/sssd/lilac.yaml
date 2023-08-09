@@ -10,18 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sssd'')
 
   '
 repo_depends:
-- libnl
-- jose
-- cyrus-sasl: cyrus-sasl-gssapi
-- jansson
-- pcre2
-- libunistring
-- curl
-- c-ares
-- samba: smbclient
-- ding-libs
-- bind
-- nfs-utils: nfsidmap
+- tevent
+- ldb
 update_on:
 - alpm: tevent
   provides: libtevent.so

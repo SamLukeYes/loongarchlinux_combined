@@ -9,10 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pipenv'')
   '
 repo_depends:
 - python
-- python-pip
-- python-virtualenv-clone
-- python-virtualenv
-- python-certifi
 update_on:
 - alias: python
 - alpm: python-pipenv

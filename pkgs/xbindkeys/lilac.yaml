@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xbindkeys'')
   '
 repo_depends:
 - guile
-- libx11
 update_on:
 - alpm: guile
   source: alpm

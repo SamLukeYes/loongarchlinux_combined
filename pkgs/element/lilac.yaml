@@ -10,11 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''element'')
 
   '
 repo_depends:
-- glibc
-- gcc: gcc-libs
-- libx11
-- libxext
-- hicolor-icon-theme
+- alsa-lib
+- curl
+- freetype2
+- jack2
+- lilv
+- suil
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

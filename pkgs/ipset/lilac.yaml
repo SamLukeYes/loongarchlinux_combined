@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ipset'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libmnl
-- glibc
+repo_depends: []
 update_on:
 - alpm: ipset
   source: archpkg

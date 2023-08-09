@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sshuttle'')
 
   '
 repo_depends:
-- net-tools
-- openssh
 - iptables
 update_on:
 - alpm: iptables

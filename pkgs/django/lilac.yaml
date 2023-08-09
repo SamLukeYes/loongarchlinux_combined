@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''django'')
 
   '
 repo_depends:
-- python-pytz
-- python-asgiref
 - python
-- python-sqlparse
 update_on:
 - alias: python
 - alpm: django

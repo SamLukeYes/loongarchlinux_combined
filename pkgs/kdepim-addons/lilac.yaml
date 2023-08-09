@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdepim-addons'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ktnef
-- kontactinterface
-- incidenceeditor
-- discount
-- kitinerary
-- akonadi-import-wizard
-- libksieve
+repo_depends: []
 update_on:
 - alpm: kdepim-addons
   source: archpkg

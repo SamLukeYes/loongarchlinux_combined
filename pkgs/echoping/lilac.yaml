@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''echoping'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- popt
-- libidn
-- openldap: libldap
+repo_depends: []
 update_on:
 - alpm: echoping
   source: archpkg

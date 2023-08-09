@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hashtables'')
 
   '
 repo_depends:
-- ghc: ghc-libs
 - haskell-hashable
-- haskell-vector
 - haskell-primitive
+- haskell-vector
 update_on:
 - alpm: haskell-hashable
   source: alpm

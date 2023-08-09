@@ -10,15 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-apply-refact'
 
   '
 repo_depends:
-- haskell-optparse-applicative
+- haskell-extra
 - haskell-filemanip
+- haskell-ghc-exactprint
+- haskell-optparse-applicative
+- haskell-refact
 - haskell-syb
 - haskell-uniplate
-- ghc: ghc-libs
-- haskell-ghc-exactprint
 - haskell-unix-compat
-- haskell-refact
-- haskell-extra
 update_on:
 - alpm: haskell-extra
   source: alpm

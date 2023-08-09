@@ -11,9 +11,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xmonad'')
   '
 repo_depends:
 - haskell-x11
-- haskell-setlocale
 - haskell-data-default-class
-- ghc
+- haskell-setlocale
 update_on:
 - alpm: haskell-x11
   source: alpm

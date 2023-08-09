@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libpst'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
-- libgsf
+repo_depends: []
 update_on:
 - alpm: libpst
   source: archpkg

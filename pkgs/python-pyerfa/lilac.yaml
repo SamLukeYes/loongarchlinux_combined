@@ -11,9 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyerfa'')
   '
 repo_depends:
 - python
-- glibc
-- python-numpy
-- erfa
 update_on:
 - alias: python
 - alpm: python-pyerfa

@@ -1,6 +1,5 @@
 destsubdir: extra
 repo_depends:
 - python
-- systemd
 update_on:
 - alias: python

@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mp3splt-gtk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- desktop-file-utils
-- gstreamer: gst-plugins-good
-- gtk3
-- libmp3splt
-- gstreamer: gst-plugins-ugly
+repo_depends: []
 update_on:
 - alpm: mp3splt-gtk
   source: archpkg

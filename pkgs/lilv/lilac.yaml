@@ -10,8 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lilv'')
 
   '
 repo_depends:
-- lv2
-- glibc
+- serd
+- sord
+- sratom
 update_on:
 - alpm: serd
   provides: libserd-0.so

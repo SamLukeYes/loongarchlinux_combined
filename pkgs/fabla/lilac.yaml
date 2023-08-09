@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fabla'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- libsndfile
 - ntk
-- cairo
-- glibc
+- libsndfile
 update_on:
 - alpm: ntk
   provides: libntk.so

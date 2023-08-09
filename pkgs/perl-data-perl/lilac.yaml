@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-data-perl'')
 
   '
-repo_depends:
-- perl-module-runtime
-- perl-class-method-modifiers
-- perl-strictures
-- perl-scalar-list-utils
-- perl-role-tiny
-- perl-list-moreutils
+repo_depends: []
 update_on:
 - alpm: perl-data-perl
   source: archpkg

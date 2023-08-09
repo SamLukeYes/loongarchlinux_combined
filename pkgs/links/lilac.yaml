@@ -10,13 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''links'')
 
   '
 repo_depends:
-- bzip2
-- zstd
-- xz
-- libevent
 - brotli
-- openssl
+- bzip2
 - gpm
+- zstd
 update_on:
 - alpm: brotli
   provides: libbrotlidec.so

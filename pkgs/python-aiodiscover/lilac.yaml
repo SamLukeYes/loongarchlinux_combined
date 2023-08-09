@@ -10,10 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-aiodiscover'')
 
   '
 repo_depends:
-- python-ifaddr
-- python-netifaces
-- python-pyroute2
-- python-dnspython
 - python
 update_on:
 - alias: python

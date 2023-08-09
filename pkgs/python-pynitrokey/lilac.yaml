@@ -8,26 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pynitrokey'')
 
   '
 repo_depends:
-- python-cffi
-- python-requests
-- python-frozendict
-- python-nkdfu
-- python-intelhex
-- python-urllib3
-- python-certifi
-- python-dateutil
-- python-fido2
-- python-click
-- protobuf: python-protobuf
-- python-tlv8
-- libnitrokey
-- python-spsdk
-- python-cryptography
-- python-ecdsa
 - python
-- python-pyusb
-- python-tqdm
-- python-pyserial
 update_on:
 - alias: python
 - alpm: python-pynitrokey

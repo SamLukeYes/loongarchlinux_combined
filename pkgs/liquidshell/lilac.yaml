@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''liquidshell'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- bluez-qt
-- packagekit-qt: packagekit-qt5
-- kcmutils
-- networkmanager-qt
-- knewstuff
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: liquidshell
   source: archpkg

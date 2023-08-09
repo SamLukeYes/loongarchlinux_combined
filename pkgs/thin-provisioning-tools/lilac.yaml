@@ -1,4 +1,3 @@
 destsubdir: core
-repo_depends:
-- gcc: gcc-libs
+repo_depends: []
 update_on: []

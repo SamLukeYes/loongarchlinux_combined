@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bucklespring'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- dumb
-- alure
-- openal
-- mpg123
-- libxtst
+repo_depends: []
 update_on:
 - alpm: bucklespring
   source: archpkg

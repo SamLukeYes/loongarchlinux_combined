@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pnetcdf-openmpi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- netcdf-openmpi
-- openmpi
+repo_depends: []
 update_on:
 - alpm: pnetcdf-openmpi
   source: archpkg

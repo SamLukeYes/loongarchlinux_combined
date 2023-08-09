@@ -10,24 +10,23 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-happstack-ser
 
   '
 repo_depends:
-- haskell-hslogger
-- haskell-sendfile
-- haskell-network
-- ghc: ghc-libs
-- haskell-syb
-- haskell-extensible-exceptions
+- haskell-base64-bytestring
 - haskell-blaze-html
+- haskell-extensible-exceptions
+- haskell-hslogger
 - haskell-html
+- haskell-monad-control
+- haskell-network
+- haskell-network-uri
+- haskell-old-locale
+- haskell-sendfile
+- haskell-syb
+- haskell-system-filepath
 - haskell-threads
 - haskell-transformers-base
+- haskell-transformers-compat
 - haskell-utf8-string
 - haskell-zlib
-- haskell-transformers-compat
-- haskell-system-filepath
-- haskell-base64-bytestring
-- haskell-monad-control
-- haskell-old-locale
-- haskell-network-uri
 update_on:
 - alpm: haskell-base64-bytestring
   source: alpm

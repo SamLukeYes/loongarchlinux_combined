@@ -10,8 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libpcap'')
 
   '
 repo_depends:
-- libnl
-- glibc
+- dbus
 update_on:
 - alpm: dbus
   provides: libdbus-1.so

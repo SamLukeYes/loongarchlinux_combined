@@ -10,15 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-adjunctions''
 
   '
 repo_depends:
-- ghc: ghc-libs
-- haskell-tagged
-- haskell-semigroupoids
-- haskell-transformers-compat
-- haskell-distributive
 - haskell-comonad
+- haskell-contravariant
+- haskell-distributive
 - haskell-free
 - haskell-profunctors
-- haskell-contravariant
+- haskell-semigroupoids
+- haskell-tagged
+- haskell-transformers-compat
 - haskell-void
 update_on:
 - alpm: haskell-comonad

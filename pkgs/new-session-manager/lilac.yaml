@@ -10,8 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''new-session-manager''
 
   '
 repo_depends:
-- gcc: gcc-libs
-- glibc
+- jack2
+- liblo
 update_on:
 - alpm: jack2
   provides: libjack.so

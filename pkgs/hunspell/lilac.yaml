@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hunspell'')
   '
 repo_depends:
 - readline
-- gcc: gcc-libs
 update_on:
 - alias: readline
 - alpm: hunspell

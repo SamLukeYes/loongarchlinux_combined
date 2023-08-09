@@ -10,24 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''spectmorph'')
 
   '
 repo_depends:
-- libsndfile
-- glib2
-- glibc
-- gcc: gcc-libs
-- qt5-base
 - fftw
-- libglvnd
-- cairo
-- libao
-- python-lxml
 - freetype2
+- glib2
+- jack2
+- cuda-tools
+- libsndfile
+- qt5-base
 - python
-- zlib
-- libx11
 update_on:
-- alpm: fftw
-  provides: libfftw3f.so
-  source: alpm
 - alpm: fftw
   provides: libfftw3f_threads.so
   source: alpm
@@ -45,15 +36,6 @@ update_on:
   source: alpm
 - alpm: libsndfile
   provides: libsndfile.so
-  source: alpm
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
   source: alpm
 - alpm: qt5-base
   source: alpm

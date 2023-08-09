@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-criterion-mea
 
   '
 repo_depends:
-- haskell-vector
 - haskell-aeson
 - haskell-base-compat
-- ghc: ghc-libs
+- haskell-vector
 update_on:
 - alpm: haskell-aeson
   source: alpm

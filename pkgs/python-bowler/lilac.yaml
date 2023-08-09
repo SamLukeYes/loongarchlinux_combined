@@ -8,12 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-bowler'')
 
   '
 repo_depends:
-- python-volatile
-- python-fissix
-- ipython
-- python-click
-- python-moreorless
-- python-attrs
 - python
 update_on:
 - alias: python

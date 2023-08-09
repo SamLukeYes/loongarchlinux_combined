@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''chewing-editor'')
   '
 repo_depends:
 - qt5-base
-- libchewing
-- glibc
 update_on:
 - alpm: qt5-base
   source: alpm

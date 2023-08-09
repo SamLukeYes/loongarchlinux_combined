@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dnscrypt-wrapper'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libevent
-- libsodium
+repo_depends: []
 update_on:
 - alpm: dnscrypt-wrapper
   source: archpkg

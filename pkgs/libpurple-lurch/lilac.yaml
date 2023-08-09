@@ -10,7 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libpurple-lurch'')
 
   '
 repo_depends:
-- libsignal-protocol-c
+- libomemo
+- libaxc
 update_on:
 - alpm: libomemo
   provides: libomemo.so

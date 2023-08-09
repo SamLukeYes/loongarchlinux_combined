@@ -1,8 +1,3 @@
 destsubdir: extra
-repo_depends:
-- default-cursors
-- libxml2
-- expat
-- libffi
-- glibc
+repo_depends: []
 update_on: []

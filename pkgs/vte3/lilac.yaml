@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vte3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pcre2
-- gtk4
-- gtk3
-- gnutls
-- fribidi
-- systemd
+repo_depends: []
 update_on:
 - alpm: vte3
   source: archpkg

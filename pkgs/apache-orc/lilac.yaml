@@ -1,9 +1,5 @@
 destsubdir: extra
 repo_depends:
-- snappy
-- lz4
-- zlib
-- zstd
 - protobuf
 update_on:
 - alias: protobuf

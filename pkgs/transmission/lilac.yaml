@@ -10,18 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''transmission'')
 
   '
 repo_depends:
-- libdeflate
-- libevent
-- libb64
-- curl
 - qt6-base
-- gtk4
-- gtkmm-4.0
-- libnatpmp
-- qt6-svg
-- miniupnpc
-- hicolor-icon-theme
-- systemd
 update_on:
 - alpm: qt6-base
   source: alpm

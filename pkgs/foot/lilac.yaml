@@ -10,13 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''foot'')
 
   '
 repo_depends:
-- libxkbcommon
-- fontconfig
-- wayland
-- ncurses
 - fcft
-- libutf8proc
-- pixman
 update_on:
 - alpm: fcft
   provides: libfcft.so

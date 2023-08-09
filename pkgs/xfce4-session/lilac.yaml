@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xfce4-session'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- polkit
-- xorg-xrdb
-- xorg-iceauth
-- polkit-gnome
-- xorg-xinit
-- libsm
-- libxfce4ui
-- xfconf
-- hicolor-icon-theme
-- libwnck3
+repo_depends: []
 update_on:
 - alpm: xfce4-session
   source: archpkg

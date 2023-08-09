@@ -11,13 +11,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cabal-install
   '
 repo_depends:
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-tar
-- haskell-binary-instances
-- haskell-lukko
-- haskell-cryptohash-sha256
 - haskell-base16-bytestring
+- haskell-binary-instances
+- haskell-cryptohash-sha256
+- haskell-lukko
 - haskell-network-uri
+- haskell-tar
 update_on:
 - alpm: haskell-aeson
   source: alpm

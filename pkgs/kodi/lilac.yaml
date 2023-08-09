@@ -9,48 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kodi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libcdio
-- waylandpp
-- python-simplejson
-- python-pycryptodomex
-- libbluray
-- desktop-file-utils
-- libass
-- tinyxml
-- lirc
-- hicolor-icon-theme
-- mariadb: mariadb-libs
-- pipewire: libpipewire
-- dav1d
-- libplist
-- libxrandr
-- libjpeg-turbo
-- python-pillow
-- curl
-- libva
-- libcec
-- pcre
-- libpng
-- libxkbcommon
-- spdlog
-- samba: smbclient
-- bluez: bluez-libs
-- shairplay
-- sqlite
-- pulseaudio: libpulse
-- fmt
-- libinput
-- libvdpau
-- libmicrohttpd
-- libnfs
-- libxslt
-- sndio
-- lcms2
-- giflib
-- taglib
-- mesa
-- lzo
+repo_depends: []
 update_on:
 - alpm: kodi
   source: archpkg

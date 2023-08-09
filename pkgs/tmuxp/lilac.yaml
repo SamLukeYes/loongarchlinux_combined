@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tmuxp'')
 
   '
 repo_depends:
-- python-libtmux
-- python-colorama
 - python
 update_on:
 - alias: python

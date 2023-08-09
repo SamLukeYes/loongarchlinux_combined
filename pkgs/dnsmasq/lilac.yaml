@@ -10,21 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dnsmasq'')
 
   '
 repo_depends:
-- libnetfilter_conntrack
 - libidn2
-- nftables
+- dbus
 - nettle
-- glibc
-- gmp
 update_on:
 - alpm: libidn2
   provides: libidn2.so
   source: alpm
 - alpm: dbus
   provides: libdbus-1.so
-  source: alpm
-- alpm: nettle
-  provides: libnettle.so
   source: alpm
 - alpm: nettle
   provides: libhogweed.so

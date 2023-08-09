@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libusb
-- avahi
+repo_depends: []
 update_on: []

@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-tubes'')
 
   '
 repo_depends:
-- python-twisted
-- python-characteristic
 - python
-- python-six
 update_on:
 - alias: python
 - alpm: python-tubes

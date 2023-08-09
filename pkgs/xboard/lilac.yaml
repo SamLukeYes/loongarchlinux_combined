@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xboard'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- xdg-utils
-- librsvg
-- gtk2
-- cairo
-- texinfo
+repo_depends: []
 update_on:
 - alpm: xboard
   source: archpkg

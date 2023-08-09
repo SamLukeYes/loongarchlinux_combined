@@ -9,28 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''abiword'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- goffice
-- enchant
-- desktop-file-utils
-- librsvg
-- loudmouth
-- gtk4: gtk-update-icon-cache
-- libots
-- libwps
-- wv
-- aiksaurus
-- fribidi
-- link-grammar
-- libgsf
-- libwpg
-- gtkmathview
-- libical
-- psiconv
-- libxslt
-- libwmf
-- libsoup
-- redland
+repo_depends: []
 update_on:
 - alpm: abiword
   source: archpkg

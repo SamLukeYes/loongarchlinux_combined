@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''skanpage'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- purpose
-- kirigami2
-- tesseract
-- ksanecore
+repo_depends: []
 update_on:
 - alpm: skanpage
   source: archpkg

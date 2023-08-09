@@ -8,12 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''csvkit'')
 
   '
 repo_depends:
-- python-agate-dbf
-- python-sphinx_rtd_theme
-- python-setuptools
-- python-agate
-- python-agate-excel
-- python-agate-sql
 - python
 update_on:
 - alias: python

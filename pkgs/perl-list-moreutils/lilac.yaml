@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-list-moreutils'')
 
   '
-repo_depends:
-- perl-exporter-tiny
-- perl-list-moreutils-xs
+repo_depends: []
 update_on:
 - alpm: perl-list-moreutils
   source: archpkg

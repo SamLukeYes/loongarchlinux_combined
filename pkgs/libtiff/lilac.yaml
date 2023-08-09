@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libtiff'')
 
   '
 repo_depends:
-- libjpeg-turbo
-- xz
-- zlib
-- zstd
-- glibc
+- darktable
 update_on:
 - alpm: darktable
   provides: libjpeg.so

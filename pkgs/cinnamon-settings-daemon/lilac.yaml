@@ -9,20 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cinnamon-settings-dae
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- cups: libcups
-- dbus-glib
-- libgnomekbd
-- polkit
-- alsa-plugins: pulseaudio-alsa
-- libwacom
-- nss
-- colord
-- cinnamon-desktop
-- libnotify
-- librsvg
-- upower
-- libgudev
+repo_depends: []
 update_on:
 - alpm: cinnamon-settings-daemon
   source: archpkg

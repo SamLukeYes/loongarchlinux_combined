@@ -10,15 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''viking'')
 
   '
 repo_depends:
-- file
-- liboauth
-- libzip
-- mapnik
-- curl
-- geoclue
 - gpsd
-- gtk3
-- libgexiv2
 update_on:
 - alpm: gpsd
   source: alpm

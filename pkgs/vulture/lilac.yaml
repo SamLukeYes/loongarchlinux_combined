@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''vulture'')
 
   '
-repo_depends:
-- python-coverage
-- python-toml
-- python-pint
-- python-setuptools
+repo_depends: []
 update_on:
 - alpm: vulture
   source: archpkg

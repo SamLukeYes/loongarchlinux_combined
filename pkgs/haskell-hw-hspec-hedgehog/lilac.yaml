@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hw-hspec-hedg
 
   '
 repo_depends:
-- haskell-hedgehog
-- ghc: ghc-libs
-- haskell-hspec
 - haskell-hunit
 - haskell-call-stack
+- haskell-hedgehog
+- haskell-hspec
 update_on:
 - alpm: haskell-hunit
   source: alpm

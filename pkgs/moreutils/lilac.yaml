@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''moreutils'')
 
   '
 repo_depends:
-- perl-ipc-run
 - perl
-- perl-timedate
-- perl-time-duration
 update_on:
 - alias: perl
 - alpm: moreutils

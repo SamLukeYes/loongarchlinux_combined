@@ -9,8 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-crack'')
   '
 repo_depends:
 - ruby
-- ruby-rexml
-- ruby-safe_yaml
 update_on:
 - alias: ruby
 - alpm: ruby-crack

@@ -10,12 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nodejs-lts-hydrogen''
 
   '
 repo_depends:
-- c-ares
-- zlib
-- brotli
-- openssl
-- libuv
-- libnghttp2
 - icu
 update_on:
 - alias: icu

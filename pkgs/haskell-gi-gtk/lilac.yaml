@@ -11,20 +11,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi-gtk'')
   '
 repo_depends:
 - haskell-gi-atk
-- ghc: ghc-libs
-- haskell-gi-glib
-- haskell-gi-gdk
-- gtk4
 - haskell-gi-cairo
-- haskell-gi-gio
-- haskell-gi-graphene
-- haskell-gi-base
-- haskell-gi-overloading
-- haskell-gi
-- haskell-gi-gobject
+- haskell-gi-gdk
 - haskell-gi-gdkpixbuf
+- haskell-gi-gio
+- haskell-gi-glib
+- haskell-gi-gobject
+- haskell-gi-graphene
 - haskell-gi-gsk
 - haskell-gi-pango
+- haskell-gi
+- haskell-gi-base
+- haskell-gi-overloading
 update_on:
 - alpm: haskell-gi-atk
   source: alpm

@@ -10,42 +10,47 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hledger-lib''
 
   '
 repo_depends:
-- haskell-microlens-th
-- haskell-pretty-simple
-- haskell-unordered-containers
-- haskell-glob
 - haskell-aeson
-- haskell-ansi-terminal
-- haskell-tabular
-- haskell-tasty-hunit
-- haskell-timeit
-- haskell-file-embed
-- haskell-cassava
-- haskell-decimal
-- haskell-tasty
-- haskell-blaze-markup
-- haskell-cassava-megaparsec
-- haskell-regex-tdfa
-- haskell-microlens
-- haskell-utf8-string
-- ghc: ghc-libs
-- haskell-parser-combinators
-- haskell-cmdargs
-- haskell-extra
 - haskell-aeson-pretty
+- haskell-ansi-terminal
+- haskell-base-compat
+- haskell-blaze-markup
 - haskell-call-stack
-- haskell-hashtables
-- haskell-uglymemo
-- haskell-doclayout
+- haskell-cassava
+- haskell-cassava-megaparsec
+- haskell-cmdargs
+- haskell-colour
 - haskell-data-default
-- haskell-safe
+- haskell-decimal
+- haskell-doclayout
+- haskell-extra
+- haskell-file-embed
+- haskell-glob
+- haskell-hashtables
 - haskell-megaparsec
+- haskell-microlens
+- haskell-microlens-th
+- haskell-pager
+- haskell-parser-combinators
+- haskell-pretty-simple
+- haskell-regex-tdfa
+- haskell-safe
+- haskell-tabular
+- haskell-tasty
+- haskell-tasty-hunit
+- haskell-text-ansi
+- haskell-timeit
+- haskell-uglymemo
+- haskell-unordered-containers
+- haskell-utf8-string
 update_on:
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-aeson-pretty
   source: alpm
 - alpm: haskell-ansi-terminal
+  source: alpm
+- alpm: haskell-base-compat
   source: alpm
 - alpm: haskell-blaze-markup
   source: alpm
@@ -56,6 +61,8 @@ update_on:
 - alpm: haskell-cassava-megaparsec
   source: alpm
 - alpm: haskell-cmdargs
+  source: alpm
+- alpm: haskell-colour
   source: alpm
 - alpm: haskell-data-default
   source: alpm
@@ -77,6 +84,8 @@ update_on:
   source: alpm
 - alpm: haskell-microlens-th
   source: alpm
+- alpm: haskell-pager
+  source: alpm
 - alpm: haskell-parser-combinators
   source: alpm
 - alpm: haskell-pretty-simple
@@ -90,6 +99,8 @@ update_on:
 - alpm: haskell-tasty
   source: alpm
 - alpm: haskell-tasty-hunit
+  source: alpm
+- alpm: haskell-text-ansi
   source: alpm
 - alpm: haskell-timeit
   source: alpm

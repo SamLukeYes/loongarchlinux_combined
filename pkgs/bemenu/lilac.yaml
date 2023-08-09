@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bemenu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxkbcommon
-- wayland
-- ncurses
-- pango
-- libxinerama
+repo_depends: []
 update_on:
 - alpm: bemenu
   source: archpkg

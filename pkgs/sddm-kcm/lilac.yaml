@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sddm-kcm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- sddm
-- knewstuff
-- systemsettings
+repo_depends: []
 update_on:
 - alpm: sddm-kcm
   source: archpkg

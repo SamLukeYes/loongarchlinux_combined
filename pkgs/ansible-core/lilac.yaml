@@ -8,11 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ansible-core'')
 
   '
 repo_depends:
-- python-paramiko
-- python-cryptography
-- python-jinja
-- python-packaging
-- python-resolvelib
 - python
 update_on:
 - alias: python

@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libretro-beetle-super
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libretro-core-info
-- gcc: gcc-libs
-- glibc
-- zlib
+repo_depends: []
 update_on:
 - alpm: libretro-beetle-supergrafx
   source: archpkg

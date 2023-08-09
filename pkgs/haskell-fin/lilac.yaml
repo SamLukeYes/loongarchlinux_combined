@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-fin'')
 
   '
 repo_depends:
+- haskell-quickcheck
 - haskell-boring
-- ghc: ghc-libs
 - haskell-dec
 - haskell-hashable
-- haskell-quickcheck
-- haskell-universe-base
 - haskell-some
+- haskell-universe-base
 update_on:
 - alpm: haskell-quickcheck
   source: alpm

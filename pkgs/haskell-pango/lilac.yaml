@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pango'')
   '
 repo_depends:
 - haskell-glib
-- pango
-- ghc: ghc-libs
 - haskell-cairo
 update_on:
 - alpm: haskell-glib

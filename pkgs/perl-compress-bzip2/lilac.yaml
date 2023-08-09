@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-compress-bzip2''
 
   '
 repo_depends:
-- bzip2
 - perl
 update_on:
 - alias: perl

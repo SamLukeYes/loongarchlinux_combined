@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qtspell'')
 
   '
 repo_depends:
-- enchant
 - qt6-base
-- iso-codes
 update_on:
 - alpm: qt6-base
   source: alpm

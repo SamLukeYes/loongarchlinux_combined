@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''avrdude'')
 
   '
 repo_depends:
-- hidapi
-- elfutils
-- libusb-compat
 - readline
-- libftdi
 update_on:
 - alias: readline
 - alpm: avrdude

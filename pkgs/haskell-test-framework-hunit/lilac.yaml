@@ -11,9 +11,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-test-framewor
   '
 repo_depends:
 - haskell-hunit
-- ghc: ghc-libs
-- haskell-test-framework
 - haskell-extensible-exceptions
+- haskell-test-framework
 update_on:
 - alpm: haskell-hunit
   source: alpm

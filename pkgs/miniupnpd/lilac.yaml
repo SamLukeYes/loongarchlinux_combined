@@ -10,11 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''miniupnpd'')
 
   '
 repo_depends:
-- net-tools
-- libcap-ng
-- util-linux
-- util-linux: util-linux-libs
 - iptables
+- util-linux-libs
+- libcap-ng
 update_on:
 - alpm: iptables
   source: alpm

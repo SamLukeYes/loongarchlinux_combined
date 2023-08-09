@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pppusage'')
   '
 repo_depends:
 - perl
-- ppp
 update_on:
 - alias: perl
 - alpm: pppusage

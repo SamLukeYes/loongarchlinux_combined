@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''blobwars'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- sdl2_mixer
-- sdl2_image
-- sdl2_net
-- sdl2_ttf
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: blobwars
   source: archpkg

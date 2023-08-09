@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fbida'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libepoxy
-- libexif
-- libwebp
-- poppler: poppler-glib
-- mesa
+repo_depends: []
 update_on:
 - alpm: fbida
   source: archpkg

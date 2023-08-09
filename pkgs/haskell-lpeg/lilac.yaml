@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lpeg'')
   '
 repo_depends:
 - haskell-lua
-- ghc: ghc-libs
-- lpeg: lua-lpeg
 update_on:
 - alpm: haskell-lua
   source: alpm

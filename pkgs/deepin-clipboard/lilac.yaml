@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-clipboard'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gio-qt
-- deepin-qt-dbus-factory
-- kwayland
-- deepin-qt5integration
+repo_depends: []
 update_on:
 - alpm: deepin-clipboard
   source: archpkg

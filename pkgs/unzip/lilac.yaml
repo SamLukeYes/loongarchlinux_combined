@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- bzip2
-- bash
+repo_depends: []
 update_on: []

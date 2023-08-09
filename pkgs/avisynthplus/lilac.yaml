@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- gcc: gcc-libs
-- hicolor-icon-theme
+repo_depends: []
 update_on: []

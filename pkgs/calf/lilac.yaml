@@ -1,12 +1,3 @@
 destsubdir: extra
-repo_depends:
-- glibc
-- gcc: gcc-libs
-- gdk-pixbuf2
-- hicolor-icon-theme
-- fluidsynth
-- expat
-- gtk2
-- cairo
-- glib2
+repo_depends: []
 update_on: []

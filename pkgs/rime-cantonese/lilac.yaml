@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rime-cantonese'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- rime-stroke
-- rime-emoji
-- rime-luna-pinyin
-- rime-cangjie
-- rime-loengfan
+repo_depends: []
 update_on:
 - alpm: rime-cantonese
   source: archpkg

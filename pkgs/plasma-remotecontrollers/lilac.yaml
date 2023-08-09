@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plasma-remotecontroll
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- plasma-workspace
+repo_depends: []
 update_on:
 - alpm: plasma-remotecontrollers
   source: archpkg

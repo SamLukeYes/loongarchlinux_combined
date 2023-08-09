@@ -1,10 +1,3 @@
 destsubdir: extra
-repo_depends:
-- gdk-pixbuf2
-- pango
-- freetype2
-- harfbuzz
-- libxml2
-- cairo
-- glib2
+repo_depends: []
 update_on: []

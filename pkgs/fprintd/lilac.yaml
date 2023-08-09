@@ -10,12 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fprintd'')
 
   '
 repo_depends:
-- dbus-glib
 - libfprint
-- polkit
-- dbus
-- glib2
-- systemd
 update_on:
 - alpm: libfprint
   provides: libfprint-2.so

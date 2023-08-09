@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-conversion-te
 repo_depends:
 - haskell-base-prelude
 - haskell-conversion
-- ghc: ghc-libs
 - haskell-conversion-bytestring
 update_on:
 - alpm: haskell-base-prelude

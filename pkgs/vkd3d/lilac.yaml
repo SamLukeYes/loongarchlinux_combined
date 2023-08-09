@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vkd3d'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- vulkan-icd-loader
-- spirv-tools
+repo_depends: []
 update_on:
 - alpm: vkd3d
   source: archpkg

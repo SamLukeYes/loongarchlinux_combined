@@ -9,29 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gitg'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- dconf
-- gspell
-- libpeas
-- pygobject: python-gobject
-- glib2
-- hicolor-icon-theme
-- glibc
-- gcc: gcc-libs
-- gsettings-desktop-schemas
-- gobject-introspection: gobject-introspection-runtime
-- libsecret
-- pango
-- libdazzle
-- libxml2
-- cairo
-- gobject-introspection: libgirepository
-- gdk-pixbuf2
-- libgee
-- gtksourceview4
-- json-glib
-- gtk3
-- libgit2-glib
+repo_depends: []
 update_on:
 - alpm: gitg
   source: archpkg

@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cross'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
-- rustup
+repo_depends: []
 update_on:
 - alpm: cross
   source: archpkg

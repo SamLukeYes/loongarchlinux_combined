@@ -7,14 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-async-http'')
 
   '
-repo_depends:
-- ruby-traces
-- ruby-async-io
-- ruby-async-pool
-- ruby-protocol-http1
-- ruby-protocol-http
-- ruby-protocol-http2
-- ruby-async
+repo_depends: []
 update_on:
 - alpm: ruby-async-http
   source: archpkg

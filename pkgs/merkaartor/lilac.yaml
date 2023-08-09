@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''merkaartor'')
 
   '
 repo_depends:
-- exiv2
-- gdal
 - gpsd
-- qt5-svg
-- hicolor-icon-theme
 update_on:
 - alpm: gpsd
   source: alpm

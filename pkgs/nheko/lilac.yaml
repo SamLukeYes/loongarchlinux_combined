@@ -11,22 +11,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nheko'')
   '
 repo_depends:
 - cmark
-- qt5-quickcontrols2
-- libolm
-- spdlog
-- gstreamer: gst-plugins-bad-libs
-- qtkeychain: qtkeychain-qt5
 - mtxclient
-- coeurl
-- hicolor-icon-theme
-- qt5-multimedia
-- qt5-graphicaleffects
-- qt5-svg
-- lmdb
+- spdlog
+- libolm
 update_on:
-- alpm: cmark
-  source: alpm
-  strip_release: true
 - alpm: cmark
   source: alpm
   strip_release: true

@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ipython-kerne
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-cryptonite
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-zeromq4-haskell
+- haskell-cryptonite
 - haskell-memory
-- haskell-uuid
 - haskell-temporary
+- haskell-unordered-containers
+- haskell-uuid
+- haskell-zeromq4-haskell
 update_on:
 - alpm: haskell-aeson
   source: alpm

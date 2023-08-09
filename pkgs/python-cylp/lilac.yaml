@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-cylp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-scipy
-- coin-or-cbc
+repo_depends: []
 update_on:
 - alpm: python-cylp
   source: archpkg

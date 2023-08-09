@@ -11,14 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pluma'')
   '
 repo_depends:
 - python
-- enchant
-- libpeas
-- zenity
-- gtksourceview4
-- gettext
-- iso-codes
-- libsm
-- mate-desktop
 update_on:
 - alias: python
 - alpm: pluma

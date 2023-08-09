@@ -1,5 +1,6 @@
 destsubdir: extra
-repo_depends: []
+repo_depends:
+- l-smash
 update_on:
 - alpm: l-smash
   provides: liblsmash.so

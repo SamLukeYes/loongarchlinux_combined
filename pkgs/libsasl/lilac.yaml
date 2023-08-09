@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libsasl'')
 
   '
 repo_depends:
-- openssl
 - gdbm
-- glibc
 update_on:
 - alpm: gdbm
   provides: libgdbm.so

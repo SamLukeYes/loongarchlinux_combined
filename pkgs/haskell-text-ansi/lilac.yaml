@@ -1,0 +1,18 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-text-ansi'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_depends:
+- haskell-text-builder
+update_on:
+- alpm: haskell-text-builder
+  source: alpm
+- alpm: haskell-text-ansi
+  source: archpkg

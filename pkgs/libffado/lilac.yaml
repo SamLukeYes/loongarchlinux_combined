@@ -10,13 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libffado'')
 
   '
 repo_depends:
-- glibc
-- libiec61883
-- gcc: gcc-libs
-- libavc1394
-- glibmm
-- libxml++
-- hicolor-icon-theme
+- alsa-lib
+- libconfig
+- dbus-c++
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

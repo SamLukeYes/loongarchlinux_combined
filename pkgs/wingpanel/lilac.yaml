@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wingpanel'')
 
   '
 repo_depends:
-- libgee
-- mutter
-- gtk3
-- glib2
-- pantheon-notifications
+- gala
+- granite
 update_on:
 - alpm: gala
   provides: libgala.so

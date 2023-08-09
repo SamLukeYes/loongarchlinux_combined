@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''avr-gcc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
-- avr-binutils
-- libisl
-- libmpc
-- zstd
+repo_depends: []
 update_on:
 - alpm: avr-gcc
   source: archpkg

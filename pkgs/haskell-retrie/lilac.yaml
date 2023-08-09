@@ -10,17 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-retrie'')
 
   '
 repo_depends:
-- haskell-optparse-applicative
-- haskell-unordered-containers
-- haskell-syb
-- haskell-list-t
-- haskell-async
-- ghc: ghc-libs
-- haskell-ghc-exactprint
 - haskell-ansi-terminal
+- haskell-async
 - haskell-data-default
-- haskell-random-shuffle
+- haskell-ghc-exactprint
 - haskell-src-exts
+- haskell-list-t
+- haskell-optparse-applicative
+- haskell-random-shuffle
+- haskell-syb
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-ansi-terminal
   source: alpm

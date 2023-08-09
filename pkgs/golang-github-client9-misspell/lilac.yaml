@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''golang-github-client9-misspell'')
 
   '
-repo_depends:
-- golang-github-gobwas-glob
-- go
+repo_depends: []
 update_on:
 - alpm: golang-github-client9-misspell
   source: archpkg

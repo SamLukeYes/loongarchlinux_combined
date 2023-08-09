@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zathura-cb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libarchive
-- desktop-file-utils
-- zathura
+repo_depends: []
 update_on:
 - alpm: zathura-cb
   source: archpkg

@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haxe'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- neko
-- mbedtls2
+repo_depends: []
 update_on:
 - alpm: haxe
   source: archpkg

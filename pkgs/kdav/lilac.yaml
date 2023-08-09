@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdav'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kio
+repo_depends: []
 update_on:
 - alpm: kdav
   source: archpkg

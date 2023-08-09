@@ -10,12 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libratbag'')
 
   '
 repo_depends:
-- python-evdev
-- libunistring
-- libevdev
-- json-glib
-- pygobject: python-gobject
-- glib2
+- systemd-libs
 - python
 update_on:
 - alpm: systemd-libs

@@ -9,13 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-sphinx-theme-b
   '
 repo_depends:
 - python
-- python-pyproject-metadata
-- python-setuptools
-- python-pep621
-- python-tomli
-- python-packaging
-- python-rich
-- python-nodeenv
 update_on:
 - alias: python
 - alpm: python-sphinx-theme-builder

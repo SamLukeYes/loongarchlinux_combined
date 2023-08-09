@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''docbook2x'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- perl-xml-sax
-- perl-sgmls
-- libxslt
-- perl-xml-sax-expat
-- glibc
-- perl-xml-parser
+repo_depends: []
 update_on:
 - alpm: docbook2x
   source: archpkg

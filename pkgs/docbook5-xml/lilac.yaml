@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''docbook5-xml'')
 
   '
-repo_depends:
-- libxml2
+repo_depends: []
 update_on:
 - alpm: docbook5-xml
   source: archpkg

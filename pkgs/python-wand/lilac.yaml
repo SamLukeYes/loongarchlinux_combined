@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-wand'')
 
   '
 repo_depends:
-- imagemagick
 - python
-- libxml2
 update_on:
 - alias: python
 - alpm: python-wand

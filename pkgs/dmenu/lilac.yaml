@@ -11,12 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dmenu'')
   '
 repo_depends:
 - fontconfig
-- libxft
-- libxinerama
-- freetype2
-- libx11
-- glibc
-- coreutils
 update_on:
 - alpm: fontconfig
   provides: libfontconfig.so

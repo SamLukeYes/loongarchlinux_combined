@@ -10,21 +10,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-dav'')
 
   '
 repo_depends:
-- haskell-optparse-applicative
-- haskell-lens
-- ghc: ghc-libs
-- haskell-http-types
-- haskell-network
 - haskell-case-insensitive
-- haskell-xml-hamlet
 - haskell-data-default
-- haskell-xml-conduit
-- haskell-http-client-tls
-- haskell-transformers-compat
 - haskell-http-client
-- haskell-utf8-string
-- haskell-transformers-base
+- haskell-http-client-tls
+- haskell-http-types
+- haskell-lens
+- haskell-network
 - haskell-network-uri
+- haskell-optparse-applicative
+- haskell-transformers-base
+- haskell-transformers-compat
+- haskell-utf8-string
+- haskell-xml-conduit
+- haskell-xml-hamlet
 update_on:
 - alpm: haskell-case-insensitive
   source: alpm

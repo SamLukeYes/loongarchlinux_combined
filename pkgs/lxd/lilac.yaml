@@ -9,18 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ebtables
-- acl
-- lxc
-- lxcfs
-- dqlite
-- raft
-- libcap
-- dnsmasq
-- sqlite
-- libuv
-- squashfs-tools
+repo_depends: []
 update_on:
 - alpm: lxd
   source: archpkg

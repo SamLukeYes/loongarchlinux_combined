@@ -10,21 +10,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-citeproc'')
 
   '
 repo_depends:
-- haskell-safe
-- haskell-uniplate
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-pandoc-types
+- haskell-aeson-pretty
+- haskell-attoparsec
 - haskell-case-insensitive
-- haskell-scientific
 - haskell-data-default
+- haskell-file-embed
+- haskell-pandoc-types
+- haskell-safe
+- haskell-scientific
+- haskell-text-icu
+- haskell-unicode-collation
+- haskell-uniplate
 - haskell-vector
 - haskell-xml-conduit
-- haskell-unicode-collation
-- haskell-aeson-pretty
-- haskell-text-icu
-- haskell-attoparsec
-- haskell-file-embed
 update_on:
 - alpm: haskell-aeson
   source: alpm

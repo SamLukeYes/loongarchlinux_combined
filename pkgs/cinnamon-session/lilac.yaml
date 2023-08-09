@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cinnamon-session'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- cinnamon-desktop
-- libsm
-- libcanberra
-- libxtst
+repo_depends: []
 update_on:
 - alpm: cinnamon-session
   source: archpkg

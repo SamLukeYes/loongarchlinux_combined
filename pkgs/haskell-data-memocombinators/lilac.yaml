@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-data-memocomb
 
   '
 repo_depends:
-- ghc: ghc-libs
 - haskell-data-inttrie
 update_on:
 - alpm: haskell-data-inttrie

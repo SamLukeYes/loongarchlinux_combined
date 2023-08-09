@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''clxclient'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
-- glibc
-- libxft
-- libx11
+repo_depends: []
 update_on:
 - alpm: clxclient
   source: archpkg

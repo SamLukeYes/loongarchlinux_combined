@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dpdk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- elfutils: libelf
-- numactl
-- jansson
-- libbsd
-- dtc
-- libarchive
-- libpcap
-- libbpf
+repo_depends: []
 update_on:
 - alpm: dpdk
   source: archpkg

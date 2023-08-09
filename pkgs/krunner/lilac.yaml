@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''krunner'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- plasma-framework
-- threadweaver
+repo_depends: []
 update_on:
 - alpm: krunner
   source: archpkg

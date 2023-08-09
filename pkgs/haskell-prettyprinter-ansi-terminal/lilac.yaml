@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-prettyprinter
 
   '
 repo_depends:
-- ghc: ghc-libs
 - haskell-ansi-terminal
 - haskell-prettyprinter
 update_on:

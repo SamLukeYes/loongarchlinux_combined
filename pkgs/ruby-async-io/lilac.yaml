@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-async-io'')
   '
 repo_depends:
 - ruby
-- ruby-async
 update_on:
 - alias: ruby
 - alpm: ruby-async-io

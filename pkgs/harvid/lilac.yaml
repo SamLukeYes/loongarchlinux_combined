@@ -10,20 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''harvid'')
 
   '
 repo_depends:
-- libjpeg-turbo
 - ffmpeg
-- glibc
-- libpng
+- darktable
 update_on:
-- alpm: ffmpeg
-  provides: libavcodec.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavformat.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavutil.so
-  source: alpm
 - alpm: ffmpeg
   provides: libswscale.so
   source: alpm

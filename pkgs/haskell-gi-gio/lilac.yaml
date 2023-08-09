@@ -10,13 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi-gio'')
 
   '
 repo_depends:
-- ghc: ghc-libs
 - haskell-gi-glib
-- haskell-gi-overloading
-- haskell-gi-base
-- haskell-gi
 - haskell-gi-gobject
-- glib2
+- haskell-gi
+- haskell-gi-base
+- haskell-gi-overloading
 update_on:
 - alpm: haskell-gi-glib
   source: alpm

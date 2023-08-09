@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxcfs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- fuse3
-- dbus-glib
-- lxc
-- libnih
+repo_depends: []
 update_on:
 - alpm: lxcfs
   source: archpkg

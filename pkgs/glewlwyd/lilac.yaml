@@ -10,10 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glewlwyd'')
 
   '
 repo_depends:
-- jansson
-- gnutls
-- glibc
-- openldap: libldap
+- libcbor
+- libconfig
+- libxcrypt
+- hoel
+- iddawc
+- oath-toolkit
+- orcania
+- rhonabwy
+- ulfius
+- yder
 update_on:
 - alpm: libcbor
   provides: libcbor.so

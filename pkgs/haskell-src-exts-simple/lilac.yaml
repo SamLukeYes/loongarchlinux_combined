@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-src-exts-simp
   '
 repo_depends:
 - haskell-src-exts
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-src-exts
   source: alpm

@@ -10,25 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ganv'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- cairo
-- glibc
-- graphviz
+- gtk2
+- glib2
+- pango
+- libsigc++
 update_on:
-- alpm: gtk2
-  provides: libgdk-x11-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
 - alpm: gtk2
   provides: libgtk-x11-2.0.so
   source: alpm
-- alpm: pango
-  provides: libpangocairo-1.0.so
+- alpm: glib2
+  provides: libgobject-2.0.so
   source: alpm
 - alpm: pango
   provides: libpango-1.0.so

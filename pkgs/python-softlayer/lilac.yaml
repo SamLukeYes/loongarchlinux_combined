@@ -7,15 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-softlayer'')
 
   '
-repo_depends:
-- python-requests
-- python-six
-- python-prettytable
-- python-pygments
-- python-click
-- python-urllib3
-- python-rich
-- python-prompt_toolkit
+repo_depends: []
 update_on:
 - alpm: python-softlayer
   source: archpkg

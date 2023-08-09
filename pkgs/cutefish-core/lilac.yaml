@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cutefish-core'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pulseaudio: libpulse
-- kidletime
-- libxcb
-- polkit-qt: polkit-qt5
-- fishui
-- libcutefish
-- libxcursor
-- libxtst
-- xf86-input-synaptics
-- xf86-input-libinput
+repo_depends: []
 update_on:
 - alpm: cutefish-core
   source: archpkg

@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xfwm4'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libepoxy
-- libxpresent
-- libxfce4ui
-- xfconf
-- hicolor-icon-theme
-- libwnck3
+repo_depends: []
 update_on:
 - alpm: xfwm4
   source: archpkg

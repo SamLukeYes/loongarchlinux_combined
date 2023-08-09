@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''phonon-gstreamer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-x11extras
-- gstreamer: gst-plugins-base
-- phonon: phonon-qt5
+repo_depends: []
 update_on:
 - alpm: phonon-gstreamer
   source: archpkg

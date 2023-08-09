@@ -10,12 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnuplot'')
 
   '
 repo_depends:
+- wxwidgets-gtk3
 - lua
-- wxwidgets: wxwidgets-gtk3
-- gd
-- libcaca
-- qt5-svg
-- libcerf
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm

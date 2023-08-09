@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''herbstluftwm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxrender
-- libxfixes
-- libxft
-- libxrandr
-- libxinerama
-- freetype2
-- libxext
+repo_depends: []
 update_on:
 - alpm: herbstluftwm
   source: archpkg

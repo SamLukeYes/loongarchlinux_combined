@@ -11,9 +11,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-vector-hashta
   '
 repo_depends:
 - haskell-hashable
-- haskell-vector
-- ghc: ghc-libs
 - haskell-primitive
+- haskell-vector
 update_on:
 - alpm: haskell-hashable
   source: alpm

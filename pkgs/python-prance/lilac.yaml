@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-prance'')
 
   '
-repo_depends:
-- python-requests
-- python-six
-- python-chardet
-- python-semver
-- python-packaging
-- python-ruamel-yaml
+repo_depends: []
 update_on:
 - alpm: python-prance
   source: archpkg

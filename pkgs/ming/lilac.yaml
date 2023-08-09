@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ming'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- giflib
-- flex
-- freetype2
-- libpng
+repo_depends: []
 update_on:
 - alpm: ming
   source: archpkg

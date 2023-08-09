@@ -10,20 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''barrier'')
 
   '
 repo_depends:
-- openssl
-- libxrandr
-- libxi
-- libice
 - qt5-base
-- libxtst
-- curl
-- avahi
-- libxinerama
-- libsm
-- xorgproto
-- libx11
-- libxext
-- hicolor-icon-theme
 update_on:
 - alpm: qt5-base
   source: alpm

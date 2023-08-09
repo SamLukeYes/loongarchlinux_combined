@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dsdcc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- mbelib
-- serialdv
+repo_depends: []
 update_on:
 - alpm: dsdcc
   source: archpkg

@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-lazr.delegates
 
   '
 repo_depends:
-- python-zope-interface
 - python
-- python-setuptools
 update_on:
 - alias: python
 - alpm: python-lazr.delegates

@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''golang-golang-x-term'')
 
   '
-repo_depends:
-- golang-golang-x-sys
-- go
+repo_depends: []
 update_on:
 - alpm: golang-golang-x-term
   source: archpkg

@@ -8,11 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-aws-sam-transl
 
   '
 repo_depends:
-- python-botocore
-- python-typing_extensions
-- python-boto3
-- python-jsonschema
-- python-pydantic
 - python
 update_on:
 - alias: python

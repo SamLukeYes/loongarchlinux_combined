@@ -11,10 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-generic-data'
   '
 repo_depends:
 - haskell-ap-normalize
-- haskell-show-combinators
-- ghc: ghc-libs
-- haskell-contravariant
 - haskell-base-orphans
+- haskell-contravariant
+- haskell-show-combinators
 update_on:
 - alpm: haskell-ap-normalize
   source: alpm

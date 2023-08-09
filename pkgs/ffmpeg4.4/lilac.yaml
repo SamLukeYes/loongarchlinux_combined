@@ -1,40 +1,19 @@
 destsubdir: extra
 repo_depends:
-- libsoxr
-- bzip2
-- alsa-lib
-- libavc1394
-- libmodplug
-- libxv
-- aom
-- gnutls
-- libtheora
-- libiec61883
-- opencore-amr
-- xz
-- opus
-- libxml2
-- libssh
-- fribidi
-- libxext
-- gmp
-- openjpeg2
-- fontconfig
-- libraw1394
-- libxcb
-- v4l-utils
-- speex
-- srt
-- libdrm
-- gsm
-- pulseaudio: libpulse
-- libvdpau
-- sdl2
-- zlib
-- svt-av1
-- libx11
-- libwebp
-- lame
+- libass
+- libbluray
+- dav1d
+- freetype2
+- rav1e
+- librsvg
+- libva
+- vid.stab
+- libvorbis
+- libvpx
+- x264
+- x265
+- xvidcore
+- zimg
 update_on:
 - alpm: libass
   provides: libass.so
@@ -55,19 +34,10 @@ update_on:
   provides: librsvg-2.so
   source: alpm
 - alpm: libva
-  provides: libva.so
-  source: alpm
-- alpm: libva
-  provides: libva-drm.so
-  source: alpm
-- alpm: libva
   provides: libva-x11.so
   source: alpm
 - alpm: vid.stab
   provides: libvidstab.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbisenc.so
   source: alpm
 - alpm: libvorbis
   provides: libvorbis.so

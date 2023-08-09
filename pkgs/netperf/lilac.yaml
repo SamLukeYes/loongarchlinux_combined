@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''netperf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- lksctp-tools
-- libsmbios
-- glibc
+repo_depends: []
 update_on:
 - alpm: netperf
   source: archpkg

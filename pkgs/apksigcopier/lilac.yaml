@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''apksigcopier'')
   '
 repo_depends:
 - python
-- python-click
 update_on:
 - alias: python
 - alpm: apksigcopier

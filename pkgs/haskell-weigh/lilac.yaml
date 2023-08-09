@@ -10,10 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-weigh'')
 
   '
 repo_depends:
-- haskell-temporary
+- haskell-criterion-measurement
+- haskell-ghc
 - haskell-split
-- ghc: ghc-libs
+- haskell-temporary
 update_on:
+- alpm: haskell-criterion-measurement
+  source: alpm
 - alpm: haskell-ghc
   source: alpm
 - alpm: haskell-split

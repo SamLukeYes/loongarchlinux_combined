@@ -10,16 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lldpd'')
 
   '
 repo_depends:
-- pciutils
-- net-snmp
-- jansson
-- libevent
-- libbsd
-- zlib
 - perl
-- libxml2
-- openssl
-- glibc
 update_on:
 - alias: perl
 - alpm: lldpd

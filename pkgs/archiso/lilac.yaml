@@ -7,17 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''archiso'')
 
   '
-repo_depends:
-- squashfs-tools
-- e2fsprogs
-- libarchive
-- arch-install-scripts
-- mtools
-- bash
-- grub
-- libisoburn
-- erofs-utils
-- dosfstools
+repo_depends: []
 update_on:
 - alpm: archiso
   source: archpkg

@@ -10,21 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''coeurl'')
 
   '
 repo_depends:
-- fmt
-- gcc: gcc-libs
-- libevent
 - curl
+- fmt
+- libevent
 - spdlog
-- glibc
 update_on:
 - alpm: curl
   provides: libcurl.so
   source: alpm
 - alpm: fmt
   provides: libfmt.so
-  source: alpm
-- alpm: libevent
-  provides: libevent_core-2.1.so
   source: alpm
 - alpm: libevent
   provides: libevent_pthreads-2.1.so

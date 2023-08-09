@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-crypto-token'
 repo_depends:
 - haskell-cryptonite
 - haskell-memory
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-cryptonite
   source: alpm

@@ -8,11 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-flask-babelex'
 
   '
 repo_depends:
-- python-jinja
-- python-speaklater
-- python-babel
 - python
-- python-flask
 update_on:
 - alias: python
 - alpm: python-flask-babelex

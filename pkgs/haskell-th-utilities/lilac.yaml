@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-th-utilities'
 
   '
 repo_depends:
-- haskell-syb
-- haskell-th-orphans
-- ghc: ghc-libs
-- haskell-th-abstraction
 - haskell-primitive
+- haskell-syb
+- haskell-th-abstraction
+- haskell-th-orphans
 update_on:
 - alpm: haskell-primitive
   source: alpm

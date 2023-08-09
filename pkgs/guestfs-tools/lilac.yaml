@@ -10,17 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''guestfs-tools'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- perl-libintl-perl
-- jansson
+- libguestfs
+- libvirt
+- libxml2
 - ncurses
 - pcre2
 - xz
-- libguestfs
-- libxml2
-- openssl
-- libvirt
-- glibc
 update_on:
 - alpm: libguestfs
   provides: libguestfs.so

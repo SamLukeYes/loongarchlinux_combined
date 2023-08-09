@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-text-show'')
 
   '
 repo_depends:
-- haskell-bifunctors
-- haskell-th-lift
-- ghc: ghc-libs
 - haskell-base-compat-batteries
-- haskell-th-abstraction
+- haskell-bifunctors
 - haskell-generic-deriving
+- haskell-th-abstraction
+- haskell-th-lift
 - haskell-transformers-compat
 update_on:
 - alpm: haskell-base-compat-batteries

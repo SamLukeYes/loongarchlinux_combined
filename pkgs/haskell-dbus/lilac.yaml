@@ -11,16 +11,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-dbus'')
   '
 repo_depends:
 - haskell-cereal
-- haskell-th-lift
-- haskell-network
-- ghc: ghc-libs
+- haskell-conduit
 - haskell-lens
-- haskell-split
+- haskell-network
 - haskell-random
+- haskell-split
+- haskell-th-lift
 - haskell-vector
 - haskell-xml-conduit
 - haskell-xml-types
-- haskell-conduit
 update_on:
 - alpm: haskell-cereal
   source: alpm

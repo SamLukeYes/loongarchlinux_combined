@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fsarchiver'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- bzip2
-- xz
-- lz4
-- e2fsprogs
-- zlib
-- libgcrypt
-- zstd
-- lzo
+repo_depends: []
 update_on:
 - alpm: fsarchiver
   source: archpkg

@@ -10,17 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''netsniff-ng'')
 
   '
 repo_depends:
-- libnetfilter_conntrack
-- libnl
 - ncurses
-- libcli
-- libnet
-- zlib
-- libsodium
 - libpcap
-- geoip
-- glibc
-- liburcu
+- libcli
 update_on:
 - alpm: ncurses
   provides: libncursesw.so

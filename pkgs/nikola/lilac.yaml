@@ -8,25 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nikola'')
 
   '
 repo_depends:
-- python-requests
-- python-logbook
-- python-pygments
-- python-blinker
-- python-mako
-- python-piexif
-- python-dateutil
-- python-pillow
-- python-unidecode
-- python-markdown
-- python-setuptools
-- python-lxml
-- python-pyrss2gen
-- python-yapsy
-- python-docutils
-- python-natsort
 - python
-- python-doit
-- python-babel
 update_on:
 - alias: python
 - alpm: nikola

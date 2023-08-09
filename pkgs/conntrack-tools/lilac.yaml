@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''conntrack-tools'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libnetfilter_conntrack
-- libmnl
-- libnetfilter_cthelper
-- libnfnetlink
-- libnetfilter_cttimeout
-- glibc
-- libnetfilter_queue
-- systemd: systemd-libs
+repo_depends: []
 update_on:
 - alpm: conntrack-tools
   source: archpkg

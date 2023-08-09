@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-devel-globaldest
 
   '
 repo_depends:
-- perl-sub-exporter-progressive
 - perl
-- perl-sub-exporter
 update_on:
 - alias: perl
 - alpm: perl-devel-globaldestruction

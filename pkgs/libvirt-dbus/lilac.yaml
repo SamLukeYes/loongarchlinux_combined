@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libvirt-dbus'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libvirt-glib
-- dbus
-- libssh
+repo_depends: []
 update_on:
 - alpm: libvirt-dbus
   source: archpkg

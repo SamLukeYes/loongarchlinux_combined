@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lvtk'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
-- lv2
-- gtkmm
-- libsigc++
-- glibc
+repo_depends: []
 update_on:
 - alpm: lvtk
   source: archpkg

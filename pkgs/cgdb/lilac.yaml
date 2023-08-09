@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cgdb'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gdb
-- ncurses
+repo_depends: []
 update_on:
 - alpm: cgdb
   source: archpkg

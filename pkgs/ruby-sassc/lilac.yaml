@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-sassc'')
   '
 repo_depends:
 - ruby
-- ruby-ffi
 update_on:
 - alias: ruby
 - alpm: ruby-sassc

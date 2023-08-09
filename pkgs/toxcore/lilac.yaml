@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''toxcore'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libsodium
-- opus
-- libconfig
-- libvpx
-- systemd
+repo_depends: []
 update_on:
 - alpm: toxcore
   source: archpkg

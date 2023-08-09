@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-heapsize'')
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-hashtables
-- ghc: ghc-libs
 - haskell-hashable
+- haskell-hashtables
 - haskell-primitive
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-hashable
   source: alpm

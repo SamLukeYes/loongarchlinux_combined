@@ -10,34 +10,32 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cryptol'')
 
   '
 repo_depends:
-- haskell-strict
+- haskell-arithmoi
+- haskell-async
 - haskell-base-compat
-- haskell-ansi-terminal
+- haskell-bv-sized
+- haskell-cryptohash-sha1
+- haskell-extra
 - haskell-gitrev
+- haskell-graphscc
 - haskell-heredoc
-- haskell-optparse-applicative
+- haskell-libbf
 - haskell-memotrie
-- haskell-panic
-- z3
 - haskell-monad-control
 - haskell-monadlib
-- haskell-sbv
-- haskell-async
-- ghc: ghc-libs
-- haskell-arithmoi
-- haskell-extra
-- haskell-libbf
-- haskell-temporary
-- haskell-transformers-base
-- haskell-tf-random
-- haskell-bv-sized
-- haskell-blaze-html
-- haskell-what4
-- haskell-graphscc
-- haskell-cryptohash-sha1
-- haskell-simple-smt
+- haskell-optparse-applicative
 - haskell-parameterized-utils
+- haskell-panic
 - haskell-prettyprinter
+- haskell-sbv
+- haskell-simple-smt
+- haskell-strict
+- haskell-temporary
+- haskell-tf-random
+- haskell-transformers-base
+- haskell-what4
+- haskell-ansi-terminal
+- haskell-blaze-html
 update_on:
 - alpm: haskell-arithmoi
   source: alpm

@@ -1,9 +1,3 @@
 destsubdir: extra
-repo_depends:
-- pyxdg: python-pyxdg
-- pulseaudio: libpulse
-- glib2
-- libao
-- libtool
-- dotconf
+repo_depends: []
 update_on: []

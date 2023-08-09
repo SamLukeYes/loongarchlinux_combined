@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''smb4k'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kdnssd
-- hicolor-icon-theme
-- kparts
-- samba: smbclient
+repo_depends: []
 update_on:
 - alpm: smb4k
   source: archpkg

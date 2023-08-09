@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ranged-sets''
 repo_depends:
 - haskell-hunit
 - haskell-quickcheck
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-hunit
   source: alpm

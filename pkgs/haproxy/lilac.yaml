@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haproxy'')
 
   '
 repo_depends:
-- pcre2
-- zlib
 - libxcrypt
-- openssl
-- systemd: systemd-libs
 - lua
 update_on:
 - alpm: libxcrypt

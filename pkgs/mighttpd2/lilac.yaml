@@ -10,37 +10,34 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mighttpd2'')
 
   '
 repo_depends:
-- haskell-warp
-- haskell-unordered-containers
-- haskell-http-types
-- haskell-case-insensitive
-- haskell-resourcet
-- haskell-tls
-- haskell-http-date
-- dhall
-- haskell-wai-http2-extra
-- haskell-warp-quic
-- haskell-unix-time
-- haskell-wai-app-file-cgi
-- haskell-warp-tls
-- haskell-quic
-- haskell-wai
-- haskell-network
 - haskell-async
-- ghc: ghc-libs
-- haskell-tls-session-manager
-- haskell-wai-logger
-- haskell-http-client
-- haskell-streaming-commons
-- haskell-byteorder
-- haskell-split
 - haskell-auto-update
-- haskell-time-manager
+- haskell-base16-bytestring
+- haskell-byteorder
+- haskell-case-insensitive
 - haskell-conduit
 - haskell-conduit-extra
-- haskell-base16-bytestring
+- haskell-http-client
+- haskell-http-date
+- haskell-http-types
+- haskell-network
 - haskell-old-locale
+- haskell-quic
+- haskell-resourcet
+- haskell-split
+- haskell-streaming-commons
+- haskell-time-manager
+- haskell-tls
+- haskell-tls-session-manager
+- haskell-unix-time
 - haskell-unliftio
+- haskell-unordered-containers
+- haskell-wai
+- haskell-wai-app-file-cgi
+- haskell-wai-logger
+- haskell-warp
+- haskell-warp-quic
+- haskell-warp-tls
 update_on:
 - alpm: haskell-async
   source: alpm
@@ -89,8 +86,6 @@ update_on:
 - alpm: haskell-wai
   source: alpm
 - alpm: haskell-wai-app-file-cgi
-  source: alpm
-- alpm: haskell-wai-http2-extra
   source: alpm
 - alpm: haskell-wai-logger
   source: alpm

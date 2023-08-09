@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libxml2'')
 
   '
 repo_depends:
-- ncurses
-- xz
-- zlib
-- readline
 - icu
+- readline
 update_on:
 - alias: icu
 - alias: readline

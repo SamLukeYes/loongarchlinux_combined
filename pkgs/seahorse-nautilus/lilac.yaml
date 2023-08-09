@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''seahorse-nautilus'')
 
   '
 repo_depends:
-- libcryptui
-- libnotify
-- gtk3
-- nautilus: libnautilus-extension
-- gcr
+- libnautilus-extension
 update_on:
 - alpm: libnautilus-extension
   provides: libnautilus-extension.so

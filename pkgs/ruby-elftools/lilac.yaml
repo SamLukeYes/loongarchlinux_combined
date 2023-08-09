@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-elftools'')
   '
 repo_depends:
 - ruby
-- ruby-bindata
 update_on:
 - alias: ruby
 - alpm: ruby-elftools

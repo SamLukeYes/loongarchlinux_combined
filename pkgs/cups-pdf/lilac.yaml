@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- cups
-- ghostscript
+repo_depends: []
 update_on: []

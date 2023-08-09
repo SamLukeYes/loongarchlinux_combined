@@ -11,10 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bash'')
   '
 repo_depends:
 - readline
-- glibc
-- ncurses
 update_on:
-- alias: readline
 - alpm: readline
   provides: libreadline.so
   source: alpm

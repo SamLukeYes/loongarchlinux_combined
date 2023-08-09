@@ -10,17 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mutt'')
 
   '
 repo_depends:
-- krb5
 - gdbm
-- glibc
 - gpgme
-- sqlite
-- openssl
-- libgpg-error
+- krb5
 - libidn2
-- ncurses
 - libsasl
-- zlib
+- ncurses
+- openssl
 update_on:
 - alpm: gdbm
   provides: libgdbm.so

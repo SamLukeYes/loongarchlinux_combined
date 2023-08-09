@@ -10,12 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fwbuilder'')
 
   '
 repo_depends:
-- net-snmp
 - qt5-base
-- libxslt
-- desktop-file-utils
-- hicolor-icon-theme
-- shared-mime-info
 update_on:
 - alpm: qt5-base
   source: alpm

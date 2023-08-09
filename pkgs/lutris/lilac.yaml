@@ -7,28 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''lutris'')
 
   '
-repo_depends:
-- python-requests
-- mesa-demos: mesa-utils
-- p7zip
-- pygobject: python-gobject
-- python-distro
-- gnome-desktop
-- glib2
-- python-certifi
-- python-pillow
-- psmisc
-- curl
-- unzip
-- cabextract
-- python-evdev
-- python-lxml
-- xorg-xrandr
-- webkit2gtk
-- python-yaml
-- python-moddb
-- python-cairo
-- gtk3
+repo_depends: []
 update_on:
 - alpm: lutris
   source: archpkg

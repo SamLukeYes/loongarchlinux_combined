@@ -10,22 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ams'')
 
   '
 repo_depends:
-- alsa-lib
-- gcc: gcc-libs
-- rev-plugins
 - qt5-base
-- swh-plugins
-- mcp-plugins
-- liblo
-- vco-plugins
-- zita-alsa-pcmi
+- alsa-lib
 - fftw
-- cmt
-- glibc
+- jack2
+- liblo
+- zita-alsa-pcmi
 update_on:
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: qt5-base
   source: alpm
   strip_release: true

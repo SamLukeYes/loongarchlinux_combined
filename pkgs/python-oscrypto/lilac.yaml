@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-oscrypto'')
 
   '
 repo_depends:
-- openssl
-- python-asn1crypto
 - python
 update_on:
 - alias: python

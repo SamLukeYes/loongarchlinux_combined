@@ -10,40 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vbam'')
 
   '
 repo_depends:
-- glu
-- sdl2
-- wxwidgets: wxwidgets-gtk3
-- zlib
-- openal
+- ffmpeg
 - sfml
-- gtk3
-- zip
-- glib2
-- libpng
+- wxwidgets-gtk3
 update_on:
 - alpm: ffmpeg
-  provides: libavcodec.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavformat.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavutil.so
-  source: alpm
-- alpm: ffmpeg
   provides: libswscale.so
   source: alpm
-- alpm: ffmpeg
-  provides: libavcodec.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavformat.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavutil.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libswscale.so
+- alpm: sfml
+  provides: libsfml-system.so
   source: alpm
 - alpm: wxwidgets-gtk3
   source: alpm

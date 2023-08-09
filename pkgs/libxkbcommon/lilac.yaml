@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libxkbcommon'')
 
   '
 repo_depends:
-- libxcb
-- xkeyboard-config
-- libxml2
+- intel-oneapi-basekit
 update_on:
 - alpm: intel-oneapi-basekit
   provides: libxkbcommon.so

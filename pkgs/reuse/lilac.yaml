@@ -8,12 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''reuse'')
 
   '
 repo_depends:
-- python-binaryornot
-- python-setuptools
-- python-boolean.py
-- python-license-expression
-- python-jinja
-- python-debian
 - python
 update_on:
 - alias: python

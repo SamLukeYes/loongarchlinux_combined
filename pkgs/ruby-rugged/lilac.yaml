@@ -11,9 +11,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rugged'')
   '
 repo_depends:
 - ruby
-- glibc
+- julia
 update_on:
-- alias: ruby
 - alias: ruby
 - alpm: julia
   provides: libgit2.so

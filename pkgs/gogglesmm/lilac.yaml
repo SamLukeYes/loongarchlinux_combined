@@ -9,25 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gogglesmm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glu
-- libsm
-- hicolor-icon-theme
-- faad2
-- libxrandr
-- libjpeg-turbo
-- opus
-- dbus
-- libxcursor
-- libxft
-- libwebp
-- sqlite
-- openssl
-- libvorbis
-- libepoxy
-- libxi
-- flac
-- libmad
+repo_depends: []
 update_on:
 - alpm: gogglesmm
   source: archpkg

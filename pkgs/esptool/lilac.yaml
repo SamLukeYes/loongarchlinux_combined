@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''esptool'')
 
   '
-repo_depends:
-- python-reedsolo
-- python-bitstring
-- python-pyserial
-- python-cryptography
-- python-ecdsa
-- python-pyaes
+repo_depends: []
 update_on:
 - alpm: esptool
   source: archpkg

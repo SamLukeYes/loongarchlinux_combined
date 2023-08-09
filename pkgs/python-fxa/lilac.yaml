@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-fxa'')
 
   '
-repo_depends:
-- python-requests
-- python-six
-- python-cryptography
-- python-pyjwt
-- python-browserid
-- python-hawkauthlib
+repo_depends: []
 update_on:
 - alpm: python-fxa
   source: archpkg

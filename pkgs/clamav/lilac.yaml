@@ -1,13 +1,10 @@
 destsubdir: extra
 repo_depends:
-- bzip2
-- json-c
-- libmspack
+- systemd-libs
 - ncurses
-- pcre2
 - curl
-- libxml2
-- systemd: systemd-libs
+- json-c
+- bzip2
 update_on:
 - alpm: systemd-libs
   provides: libsystemd.so

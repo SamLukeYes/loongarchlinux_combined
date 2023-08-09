@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''scapy'')
   '
 repo_depends:
 - python
-- tcpdump
 update_on:
-- alias: python
 - alias: python
 - alpm: scapy
   source: archpkg

@@ -10,24 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''notcurses'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- libdeflate
-- ncurses
-- python-cffi
-- libunistring
 - ffmpeg
-- glibc
 - gpm
+- libdeflate
+- libunistring
+- ncurses
 update_on:
-- alpm: ffmpeg
-  provides: libavcodec.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavformat.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavutil.so
-  source: alpm
 - alpm: ffmpeg
   provides: libswscale.so
   source: alpm

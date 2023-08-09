@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gitui'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- libxcb
-- zlib
-- openssl
+- julia
 update_on:
 - alpm: julia
   provides: libgit2.so

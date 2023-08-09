@@ -10,15 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-doctest-paral
 
   '
 repo_depends:
-- haskell-unordered-containers
 - haskell-glob
 - haskell-base-compat
-- ghc: ghc-libs
-- haskell-ghc-paths
-- haskell-syb
 - haskell-code-page
-- haskell-random
 - haskell-extra
+- haskell-ghc
+- haskell-ghc-paths
+- haskell-random
+- haskell-syb
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-glob
   source: alpm

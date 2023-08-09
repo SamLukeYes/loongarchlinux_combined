@@ -1,17 +1,15 @@
 destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''cloud-init'')
+
+  '
 repo_depends:
-- python-requests
-- python-configobj
-- python-netifaces
-- python-pyserial
-- python-jsonpatch
-- dhcp: dhclient
-- python-jinja
-- python-oauthlib
-- sudo
-- bash
-- python-jsonschema
 - python
-- systemd
 update_on:
 - alias: python
+- alpm: cloud-init
+  source: archpkg

@@ -10,20 +10,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-req'')
 
   '
 repo_depends:
-- haskell-http-api-data
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-http-types
-- haskell-blaze-builder
 - haskell-authenticate-oauth
+- haskell-blaze-builder
 - haskell-case-insensitive
-- haskell-retry
-- haskell-unliftio-core
-- haskell-http-client-tls
-- haskell-modern-uri
+- haskell-crypton-connection
+- haskell-http-api-data
 - haskell-http-client
+- haskell-http-client-tls
+- haskell-http-types
+- haskell-modern-uri
 - haskell-monad-control
+- haskell-retry
 - haskell-transformers-base
+- haskell-unliftio-core
 update_on:
 - alpm: haskell-aeson
   source: alpm
@@ -33,7 +33,7 @@ update_on:
   source: alpm
 - alpm: haskell-case-insensitive
   source: alpm
-- alpm: haskell-connection
+- alpm: haskell-crypton-connection
   source: alpm
 - alpm: haskell-http-api-data
   source: alpm

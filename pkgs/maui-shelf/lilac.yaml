@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''maui-shelf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- poppler: poppler-qt5
-- mauikit-filebrowsing
-- mauikit-documents
-- mauikit-texteditor
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: maui-shelf
   source: archpkg

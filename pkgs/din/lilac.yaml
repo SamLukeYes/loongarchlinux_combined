@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''din'')
 
   '
 repo_depends:
-- glibc
-- gcc: gcc-libs
-- tcl
-- libglvnd
-- hicolor-icon-theme
+- rtaudio
+- rtmidi
 update_on:
 - alpm: rtaudio
   provides: librtaudio.so

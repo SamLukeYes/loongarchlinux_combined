@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''accounts-qml-module''
 
   '
 repo_depends:
-- signond
 - qt5-declarative
-- libaccounts-qt
 update_on:
 - alpm: qt5-declarative
   source: alpm

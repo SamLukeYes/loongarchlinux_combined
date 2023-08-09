@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nut'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- openssl
-- gcc: gcc-libs
-- net-snmp
-- libusb-compat
-- libtool
-- neon
-- glibc
+repo_depends: []
 update_on:
 - alpm: nut
   source: archpkg

@@ -10,13 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rbutil'')
 
   '
 repo_depends:
-- gcc: gcc-libs
+- bzip2
+- libusb
 - qt6-base
-- zlib
-- qt6-multimedia
-- qt6-svg
-- qt6-5compat
-- glibc
 update_on:
 - alpm: bzip2
   provides: libbz2.so

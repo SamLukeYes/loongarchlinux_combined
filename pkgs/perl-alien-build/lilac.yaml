@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-alien-build'')
 
   '
-repo_depends:
-- perl-path-tiny
-- perl-file-which
-- perl-file-chdir
-- perl-capture-tiny
-- perl-ffi-checklib
+repo_depends: []
 update_on:
 - alpm: perl-alien-build
   source: archpkg

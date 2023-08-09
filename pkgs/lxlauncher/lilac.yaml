@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxlauncher'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- startup-notification
-- lxmenu-data
-- gtk2
-- gtk3
-- menu-cache
+repo_depends: []
 update_on:
 - alpm: lxlauncher
   source: archpkg

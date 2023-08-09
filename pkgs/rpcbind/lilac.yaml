@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rpcbind'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libtirpc
-- glibc
-- systemd: systemd-libs
-- bash
+repo_depends: []
 update_on:
 - alpm: rpcbind
   source: archpkg

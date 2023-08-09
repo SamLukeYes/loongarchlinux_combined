@@ -11,9 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ocaml-csexp'')
   '
 repo_depends:
 - ocaml
-- glibc
-- ocaml-result
-- ocaml-findlib
 update_on:
 - alpm: ocaml
   source: alpm

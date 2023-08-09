@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nginx'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pcre2
-- zlib
-- mailcap
-- libxcrypt
-- geoip
-- openssl
+repo_depends: []
 update_on:
 - alpm: nginx
   source: archpkg

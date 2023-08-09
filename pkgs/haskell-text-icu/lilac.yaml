@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-text-icu'')
 
   '
 repo_depends:
-- ghc: ghc-libs
 - icu
 update_on:
 - alias: icu

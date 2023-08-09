@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nomad-driver-lxc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- nomad
-- lxc
+repo_depends: []
 update_on:
 - alpm: nomad-driver-lxc
   source: archpkg

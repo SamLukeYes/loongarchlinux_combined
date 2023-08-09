@@ -10,12 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bettercap'')
 
   '
 repo_depends:
-- libusb
 - libpcap
-- iproute2
-- libnfnetlink
-- glibc
-- libnetfilter_queue
+- libusb
 update_on:
 - alpm: libpcap
   provides: libpcap.so

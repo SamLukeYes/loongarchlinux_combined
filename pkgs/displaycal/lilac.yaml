@@ -9,18 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''displaycal'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-zeroconf
-- python-pillow
-- python-send2trash
-- dbus
-- dbus-python
-- argyllcms
-- python-distro
-- glib2
-- python-numpy
-- python-wxpython
-- python-certifi
+repo_depends: []
 update_on:
 - alpm: displaycal
   source: archpkg

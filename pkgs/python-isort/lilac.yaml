@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-isort'')
 
   '
 repo_depends:
-- python-toml
-- python-tomli
 - python
 update_on:
 - alias: python

@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pyqt6-3d'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pyqt6: python-pyqt6
-- qt6-3d
+repo_depends: []
 update_on:
 - alpm: pyqt6-3d
   source: archpkg

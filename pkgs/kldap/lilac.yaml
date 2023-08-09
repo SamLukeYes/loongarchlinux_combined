@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kldap'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qtkeychain: qtkeychain-qt5
-- kio
+repo_depends: []
 update_on:
 - alpm: kldap
   source: archpkg

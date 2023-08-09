@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-golden'
 
   '
 repo_depends:
-- haskell-optparse-applicative
-- ghc: ghc-libs
-- haskell-async
-- haskell-tagged
 - haskell-tasty
+- haskell-optparse-applicative
 - haskell-temporary
+- haskell-tagged
+- haskell-async
 - haskell-typed-process
 update_on:
 - alpm: haskell-tasty

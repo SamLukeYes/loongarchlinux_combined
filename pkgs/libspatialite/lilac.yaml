@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libspatialite'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- librttopo
-- geos
-- libfreexl
-- proj
-- libxml2
-- zlib: minizip
-- sqlite
+repo_depends: []
 update_on:
 - alpm: libspatialite
   source: archpkg

@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sqlite'')
 
   '
 repo_depends:
-- zlib
-- tcl
 - readline
-- glibc
 update_on:
 - alias: readline
 - alpm: sqlite

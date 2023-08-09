@@ -11,9 +11,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-hedgeho
   '
 repo_depends:
 - haskell-hedgehog
-- haskell-tasty
-- ghc: ghc-libs
 - haskell-tagged
+- haskell-tasty
 update_on:
 - alpm: haskell-hedgehog
   source: alpm

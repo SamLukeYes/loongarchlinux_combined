@@ -10,15 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-postgresql-bi
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-network-ip
 - haskell-aeson
-- ghc: ghc-libs
+- haskell-binary-parser
 - haskell-bytestring-strict-builder
+- haskell-network-ip
 - haskell-scientific
+- haskell-unordered-containers
 - haskell-uuid
 - haskell-vector
-- haskell-binary-parser
 update_on:
 - alpm: haskell-aeson
   source: alpm

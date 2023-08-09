@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gcovr'')
 
   '
 repo_depends:
-- python-lxml
-- python-jinja
 - python
-- gcc
 update_on:
 - alias: python
 - alpm: gcovr

@@ -1,4 +1,3 @@
 destsubdir: extra
-repo_depends:
-- musl
+repo_depends: []
 update_on: []

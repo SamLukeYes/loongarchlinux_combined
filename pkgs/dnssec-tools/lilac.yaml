@@ -10,16 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dnssec-tools'')
 
   '
 repo_depends:
-- perl-html-parser
-- openssl
-- perl-net-dns-sec
-- perl-timedate
-- perl-net-dns
-- perl-cgi
 - perl
-- bind
-- perl-mailtools
-- glibc
 update_on:
 - alias: perl
 - alpm: dnssec-tools

@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''p8-platform'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
+repo_depends: []
 update_on:
 - alpm: p8-platform
   source: archpkg

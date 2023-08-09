@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kwrited'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- knotifications
-- oxygen-sounds
-- kpty
-- kdbusaddons
+repo_depends: []
 update_on:
 - alpm: kwrited
   source: archpkg

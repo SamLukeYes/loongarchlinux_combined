@@ -10,13 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tor'')
 
   '
 repo_depends:
+- systemd-libs
 - zstd
 - libseccomp
-- libevent
 - libcap
-- bash
-- openssl
-- systemd: systemd-libs
 update_on:
 - alpm: systemd-libs
   provides: libsystemd.so

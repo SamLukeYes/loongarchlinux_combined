@@ -1,21 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libsigsegv
-- gd
-- glibc
-- graphite
-- harfbuzz: harfbuzz-icu
-- mpfr
-- cairo
-- libpng
-- zziplib
-- potrace
-- libpaper
-- ffcall
-- freetype2
-- poppler
-- t1lib
-- zlib
-- libxcrypt
-- pixman
+repo_depends: []
 update_on: []

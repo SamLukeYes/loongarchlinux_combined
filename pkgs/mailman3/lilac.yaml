@@ -7,28 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mailman3'')
 
   '
-repo_depends:
-- python-authres
-- python-requests
-- python-atpublic
-- python-dnspython
-- python-importlib_resources
-- python-dateutil
-- python-aiosmtpd
-- python-click
-- python-passlib
-- python-alembic
-- python-falcon
-- python-flufl.i18n
-- python-zope-event
-- gunicorn
-- python-zope-interface
-- python-flufl.bounce
-- python-zope-component
-- python-zope-configuration
-- python-lazr.config
-- python-authheaders
-- python-flufl-lock
+repo_depends: []
 update_on:
 - alpm: mailman3
   source: archpkg

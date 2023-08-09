@@ -10,15 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openshadinglanguage''
 
   '
 repo_depends:
-- imath
-- openimageio
-- ncurses
-- libtiff
-- zlib
 - clang
-- freetype2
-- boost: boost-libs
-- libpng
 update_on:
 - alias: clang
 - alpm: openshadinglanguage

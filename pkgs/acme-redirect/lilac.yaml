@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- openssl
-- gcc: gcc-libs
+repo_depends: []
 update_on: []

@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-params-validate'
   '
 repo_depends:
 - perl
-- perl-module-implementation
 update_on:
 - alias: perl
 - alpm: perl-params-validate

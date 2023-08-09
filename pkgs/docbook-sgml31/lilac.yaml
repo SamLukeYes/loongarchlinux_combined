@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''docbook-sgml31'')
 
   '
-repo_depends:
-- sgml-common
+repo_depends: []
 update_on:
 - alpm: docbook-sgml31
   source: archpkg

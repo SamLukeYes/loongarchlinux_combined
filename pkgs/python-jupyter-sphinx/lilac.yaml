@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-jupyter-sphinx'')
 
   '
-repo_depends:
-- jupyter-nbconvert
-- python-ipywidgets
-- python-sphinx
+repo_depends: []
 update_on:
 - alpm: python-jupyter-sphinx
   source: archpkg

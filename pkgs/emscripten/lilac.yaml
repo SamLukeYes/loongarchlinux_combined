@@ -10,10 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''emscripten'')
 
   '
 repo_depends:
-- acorn
-- which
 - python
-- nodejs
 update_on:
 - alias: python
 - alpm: emscripten

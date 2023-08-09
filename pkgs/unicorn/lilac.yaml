@@ -10,10 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''unicorn'')
 
   '
 repo_depends:
-- ruby
-- python-setuptools
-- glibc
 - python
+- ruby
 update_on:
 - alias: python
 - alias: ruby

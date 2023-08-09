@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lablgtk3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtkspell3
-- gtk3
-- gtksourceview3
-- ocaml-cairo
+repo_depends: []
 update_on:
 - alpm: lablgtk3
   source: archpkg

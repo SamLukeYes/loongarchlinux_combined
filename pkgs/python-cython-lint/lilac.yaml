@@ -8,9 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-cython-lint'')
 
   '
 repo_depends:
-- cython
-- python-pycodestyle
-- python-tokenize-rt
 - python
 update_on:
 - alias: python

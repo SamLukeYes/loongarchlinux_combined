@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plasma-bigscreen'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- plasma-nano
-- plasma-settings
-- qt5-virtualkeyboard
-- plasma-remotecontrollers
-- plasma-nm
-- kdeconnect
-- plasma-pa
+repo_depends: []
 update_on:
 - alpm: plasma-bigscreen
   source: archpkg

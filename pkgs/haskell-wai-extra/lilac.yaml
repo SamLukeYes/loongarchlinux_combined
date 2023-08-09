@@ -10,26 +10,25 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-extra'')
 
   '
 repo_depends:
-- haskell-warp
 - haskell-aeson
-- haskell-http-types
-- haskell-case-insensitive
 - haskell-ansi-terminal
-- haskell-resourcet
-- haskell-iproute
-- haskell-word8
-- haskell-cookie
-- haskell-fast-logger
-- haskell-wai
-- haskell-network
-- ghc: ghc-libs
-- haskell-wai-logger
-- haskell-streaming-commons
-- haskell-data-default-class
-- haskell-call-stack
-- haskell-vault
-- haskell-hunit
 - haskell-base64-bytestring
+- haskell-case-insensitive
+- haskell-cookie
+- haskell-data-default-class
+- haskell-fast-logger
+- haskell-http-types
+- haskell-iproute
+- haskell-network
+- haskell-resourcet
+- haskell-streaming-commons
+- haskell-vault
+- haskell-wai
+- haskell-wai-logger
+- haskell-warp
+- haskell-word8
+- haskell-hunit
+- haskell-call-stack
 update_on:
 - alpm: haskell-aeson
   source: alpm

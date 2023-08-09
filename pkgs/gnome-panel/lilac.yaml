@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-panel'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- evolution-data-server
-- polkit
-- nautilus
-- geocode-glib
-- gnome-menus
-- gdm: libgdm
-- gnome-desktop
-- libwnck3
+repo_depends: []
 update_on:
 - alpm: gnome-panel
   source: archpkg

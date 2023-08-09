@@ -10,17 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-http-api-data
 
   '
 repo_depends:
-- haskell-unordered-containers
+- haskell-attoparsec
+- haskell-attoparsec-iso8601
 - haskell-base-compat
-- ghc: ghc-libs
-- haskell-http-types
+- haskell-cookie
 - haskell-hashable
+- haskell-http-types
 - haskell-tagged
 - haskell-time-compat
+- haskell-unordered-containers
 - haskell-uuid-types
-- haskell-cookie
-- haskell-attoparsec-iso8601
-- haskell-attoparsec
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

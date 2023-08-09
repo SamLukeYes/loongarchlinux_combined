@@ -10,23 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''non-sequencer'')
 
   '
 repo_depends:
-- glibc
-- gcc: gcc-libs
+- jack2
 - liblo
 - ntk
-- libsigc++
-- libx11
-- cairo
-- hicolor-icon-theme
 update_on:
 - alpm: jack2
   provides: libjack.so
   source: alpm
 - alpm: liblo
   provides: liblo.so
-  source: alpm
-- alpm: ntk
-  provides: libntk.so
   source: alpm
 - alpm: ntk
   provides: libntk_images.so

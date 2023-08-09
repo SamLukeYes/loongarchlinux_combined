@@ -10,16 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-parameterized
 
   '
 repo_depends:
-- haskell-hashtables
-- haskell-lens
-- ghc: ghc-libs
-- haskell-hashable
-- haskell-th-abstraction
-- haskell-constraints
-- haskell-vector
-- haskell-profunctors
 - haskell-base-orphans
+- haskell-constraints
+- haskell-hashable
+- haskell-hashtables
 - haskell-indexed-traversable
+- haskell-lens
+- haskell-profunctors
+- haskell-th-abstraction
+- haskell-vector
 update_on:
 - alpm: haskell-base-orphans
   source: alpm

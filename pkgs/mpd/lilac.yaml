@@ -10,69 +10,47 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mpd'')
 
   '
 repo_depends:
-- libcdio
-- bzip2
 - alsa-lib
-- libid3tag
-- libsidplayfp
-- libupnp
+- audiofile
+- avahi
+- bzip2
+- chromaprint
 - curl
 - dbus
-- opus
-- libgme
-- zziplib
-- wavpack
-- fmt
-- musepack: libmpcdec
-- lame
-- yajl
-- libsndfile
-- wildmidi
-- glibc
-- hicolor-icon-theme
-- faad2
-- pipewire: libpipewire
-- gcc: gcc-libs
-- libshout
-- avahi
-- libmpdclient
-- icu
-- systemd: systemd-libs
-- libsamplerate
-- libmms
-- libvorbis
-- twolame
-- pcre2
-- audiofile
-- libogg
-- fluidsynth
-- libao
-- openal
 - expat
-- sqlite
-- pulseaudio: libpulse
-- flac
-- libnfs
-- libmad
-- libsoxr
-- libmodplug
-- libcdio-paranoia
-- liburing
+- faad2
 - ffmpeg
-- mpg123
-- libopenmpt
-- chromaprint
-- zlib
+- flac
+- fluidsynth
+- fmt
+- icu
+- jack2
+- lame
+- libao
+- libid3tag
 - libmikmod
+- libmpdclient
+- libogg
+- libopenmpt
+- libpipewire
+- libsamplerate
+- libsndfile
+- libupnp
+- liburing
+- libvorbis
+- mpg123
+- openal
+- opus
+- sqlite
+- systemd-libs
+- twolame
+- gitlab
 update_on:
 - alpm: alsa-lib
   provides: libasound.so
   source: alpm
 - alpm: audiofile
   provides: libaudiofile.so
-  source: alpm
-- alpm: avahi
-  provides: libavahi-client.so
   source: alpm
 - alpm: avahi
   provides: libavahi-common.so
@@ -96,15 +74,6 @@ update_on:
   provides: libfaad.so
   source: alpm
 - alpm: ffmpeg
-  provides: libavcodec.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavfilter.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavformat.so
-  source: alpm
-- alpm: ffmpeg
   provides: libavutil.so
   source: alpm
 - alpm: flac
@@ -116,10 +85,6 @@ update_on:
 - alpm: fmt
   provides: libfmt.so
   source: alpm
-- alias: icu
-- alpm: icu
-  provides: libicui18n.so
-  source: alpm
 - alpm: icu
   provides: libicuuc.so
   source: alpm
@@ -130,7 +95,7 @@ update_on:
   provides: libmp3lame.so
   source: alpm
 - alpm: libao
-  provides: libao.so
+  provides: libpulse.so
   source: alpm
 - alpm: libid3tag
   provides: libid3tag.so
@@ -150,9 +115,6 @@ update_on:
 - alpm: libpipewire
   provides: libpipewire-0.3.so
   source: alpm
-- alpm: libao
-  provides: libpulse.so
-  source: alpm
 - alpm: libsamplerate
   provides: libsamplerate.so
   source: alpm
@@ -160,16 +122,10 @@ update_on:
   provides: libsndfile.so
   source: alpm
 - alpm: libupnp
-  provides: libixml.so
-  source: alpm
-- alpm: libupnp
   provides: libupnp.so
   source: alpm
 - alpm: liburing
   provides: liburing.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbis.so
   source: alpm
 - alpm: libvorbis
   provides: libvorbisenc.so

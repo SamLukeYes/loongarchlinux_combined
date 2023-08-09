@@ -11,13 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kongress'')
   '
 repo_depends:
 - kconfig
-- kirigami2
-- knotifications
-- kdbusaddons
-- kcalendarcore
-- kcoreaddons
-- ki18n
-- qt5-svg
 update_on:
 - alpm: kconfig
   source: alpm

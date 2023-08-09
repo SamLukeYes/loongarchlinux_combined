@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rocm-clang-ocl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- rocm-llvm
-- rocm-opencl-runtime
+repo_depends: []
 update_on:
 - alpm: rocm-clang-ocl
   source: archpkg

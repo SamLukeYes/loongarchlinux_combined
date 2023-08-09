@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xreader'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- xapp
-- poppler: poppler-glib
-- webkit2gtk-4.1
+repo_depends: []
 update_on:
 - alpm: xreader
   source: archpkg

@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-virtualenv'')
 
   '
 repo_depends:
-- python-distlib
-- python-filelock
 - python
-- python-platformdirs
 update_on:
 - alias: python
 - alpm: python-virtualenv

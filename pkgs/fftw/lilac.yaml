@@ -1,7 +1,3 @@
 destsubdir: extra
-repo_depends:
-- openmpi
-- gcc: gcc-libs
-- glibc
-- bash
+repo_depends: []
 update_on: []

@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''debootstrap'')
 
   '
 repo_depends:
-- wget
 - perl
-- binutils
 update_on:
 - alias: perl
 - alpm: debootstrap

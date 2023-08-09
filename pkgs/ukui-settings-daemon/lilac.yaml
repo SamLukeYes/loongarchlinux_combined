@@ -10,25 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ukui-settings-daemon'
 
   '
 repo_depends:
-- qt5-sensors
-- imlib2
-- libnotify
-- geoclue
-- qt5-x11extras
-- libcanberra
-- kglobalaccel
-- gnome-desktop
-- libxklavier
-- kwindowsystem
 - kconfig
-- libmatekbd
-- ukui-interface
-- gsettings-qt
-- mate-desktop
-- libmatemixer
-- libkscreen
-- gtk3
-- qt5-svg
 update_on:
 - alpm: kconfig
   source: alpm

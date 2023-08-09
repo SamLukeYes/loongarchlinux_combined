@@ -8,19 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-libwww'')
 
   '
 repo_depends:
-- perl-html-parser
-- perl-uri
-- perl-http-negotiate
-- perl-encode-locale
-- perl-lwp-mediatypes
-- perl-try-tiny
-- perl-http-daemon
-- perl-net-http
 - perl
-- perl-file-listing
-- perl-http-date
-- perl-http-cookies
-- perl-www-robotrules
 update_on:
 - alias: perl
 - alpm: perl-libwww

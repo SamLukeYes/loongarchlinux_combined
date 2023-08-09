@@ -7,18 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-designateclient'')
 
   '
-repo_depends:
-- python-requests
-- python-oslo-serialization
-- python-keystoneauth1
-- python-six
-- python-pbr
-- python-osc-lib
-- python-cliff
-- python-debtcollector
-- python-jsonschema
-- python-stevedore
-- python-oslo-utils
+repo_depends: []
 update_on:
 - alpm: python-designateclient
   source: archpkg

@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- python-cairo
-- gedit
+repo_depends: []
 update_on: []

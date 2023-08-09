@@ -10,15 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wingpanel-indicator-s
 
   '
 repo_depends:
-- pulseaudio: libpulse
-- wingpanel
-- gdk-pixbuf2
-- libgee
-- libnotify
-- libcanberra
-- gtk3
-- cairo
-- glib2
+- granite
 update_on:
 - alpm: granite
   provides: libgranite.so

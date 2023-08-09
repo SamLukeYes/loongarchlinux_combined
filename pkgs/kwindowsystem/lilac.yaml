@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kwindowsystem'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-x11extras
+repo_depends: []
 update_on:
 - alpm: kwindowsystem
   source: archpkg

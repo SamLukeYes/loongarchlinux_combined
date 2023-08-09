@@ -8,7 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-mime-types'')
 
   '
 repo_depends:
-- ruby-mime-types-data
 - ruby
 update_on:
 - alias: ruby

@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ini'')
 
   '
 repo_depends:
-- haskell-unordered-containers
 - haskell-attoparsec
-- ghc: ghc-libs
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

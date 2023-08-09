@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libime'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- fcitx5
-- boost: boost-libs
+repo_depends: []
 update_on:
 - alpm: libime
   source: archpkg

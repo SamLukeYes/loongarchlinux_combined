@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-package-deprecationmanager'')
 
   '
-repo_depends:
-- perl-sub-install
-- perl-params-util
-- perl-module-implementation
-- perl-package-stash
-- perl-namespace-autoclean
+repo_depends: []
 update_on:
 - alpm: perl-package-deprecationmanager
   source: archpkg

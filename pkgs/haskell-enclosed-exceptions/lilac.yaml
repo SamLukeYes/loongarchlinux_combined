@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-enclosed-exce
 repo_depends:
 - haskell-lifted-base
 - haskell-monad-control
-- ghc: ghc-libs
 - haskell-transformers-base
 update_on:
 - alpm: haskell-lifted-base

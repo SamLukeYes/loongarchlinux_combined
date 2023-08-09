@@ -9,8 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gitolite'')
   '
 repo_depends:
 - perl
-- openssh
-- git
 update_on:
 - alias: perl
 - alpm: gitolite

@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-vimrunner'')
   '
 repo_depends:
 - ruby
-- vim: gvim
 update_on:
 - alias: ruby
 - alpm: ruby-vimrunner

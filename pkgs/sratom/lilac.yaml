@@ -10,8 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sratom'')
 
   '
 repo_depends:
-- lv2
-- glibc
+- serd
+- sord
 update_on:
 - alpm: serd
   provides: libserd-0.so

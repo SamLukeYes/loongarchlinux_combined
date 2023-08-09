@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''synapse'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- xdg-utils
-- zeitgeist
-- rest
-- libgee
-- libkeybinder3
-- libnotify
-- json-glib
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: synapse
   source: archpkg

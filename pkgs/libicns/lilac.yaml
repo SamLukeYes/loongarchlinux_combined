@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libicns'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- jasper
-- libpng
+repo_depends: []
 update_on:
 - alpm: libicns
   source: archpkg

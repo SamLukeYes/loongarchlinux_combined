@@ -7,16 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''twine'')
 
   '
-repo_depends:
-- python-rfc3986
-- python-requests
-- python-requests-toolbelt
-- python-importlib-metadata
-- python-readme-renderer
-- python-urllib3
-- python-pkginfo
-- python-keyring
-- python-rich
+repo_depends: []
 update_on:
 - alpm: twine
   source: archpkg

@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxappearance-obconf''
   '
 repo_depends:
 - openbox
-- lxappearance
 update_on:
 - alpm: openbox
   provides: libobrender.so

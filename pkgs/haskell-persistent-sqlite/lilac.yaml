@@ -10,17 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-persistent-sq
 
   '
 repo_depends:
-- haskell-microlens-th
-- haskell-unordered-containers
-- haskell-monad-logger
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-persistent
-- haskell-unliftio-core
 - haskell-conduit
-- sqlite
-- haskell-resourcet
+- haskell-microlens-th
+- haskell-monad-logger
+- haskell-persistent
 - haskell-resource-pool
+- haskell-resourcet
+- haskell-unliftio-core
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-aeson
   source: alpm

@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- knewstuff
-- libxres
+repo_depends: []
 update_on: []

@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi-gtk-hs'')
 
   '
 repo_depends:
-- haskell-gi-gdk3
 - haskell-base-compat
-- ghc: ghc-libs
-- haskell-gi-gtk3
-- haskell-gi-glib
-- haskell-gi-base
-- haskell-gi-gobject
+- haskell-gi-gdk3
 - haskell-gi-gdkpixbuf
+- haskell-gi-glib
+- haskell-gi-gobject
+- haskell-gi-gtk3
+- haskell-gi-base
 update_on:
 - alpm: haskell-base-compat
   source: alpm

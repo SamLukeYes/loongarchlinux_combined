@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libde265'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gcc: gcc-libs
+repo_depends: []
 update_on:
 - alpm: libde265
   source: archpkg

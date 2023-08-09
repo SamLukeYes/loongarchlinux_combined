@@ -13,7 +13,6 @@ repo_depends:
 - haskell-vector
 - haskell-data-default
 - haskell-tzdata
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-vector
   source: alpm

@@ -1,26 +1,8 @@
 destsubdir: extra
 repo_depends:
-- glu
-- nspr
-- which
-- libogg
-- curl
-- libsodium
-- libxml2
+- wxwidgets-gtk3
 - miniupnpc
-- gloox
-- libpng
 - icu
-- wxwidgets: wxwidgets-gtk3
-- openal
-- libvorbis
-- 0ad-data
-- enet
-- fmt
-- sdl2
-- zlib
-- binutils
-- boost: boost-libs
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm

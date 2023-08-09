@@ -1,17 +1,22 @@
 destsubdir: extra
 repo_depends:
-- libxfixes
-- libsm
-- gnutls
-- hicolor-icon-theme
-- libotf
-- m17n-lib
-- jansson
-- libice
-- gmp
-- libpng
-- zlib
-- lcms2
+- acl
+- alsa-lib
+- dbus
+- fontconfig
+- freetype2
+- gtk3
+- gdk-pixbuf2
+- giflib
+- glib2
+- gpm
+- harfbuzz
+- darktable
+- ncurses
+- pango
+- librsvg
+- systemd-libs
+- libxml2
 update_on:
 - alpm: acl
   provides: libacl.so
@@ -29,7 +34,7 @@ update_on:
   provides: libfreetype.so
   source: alpm
 - alpm: gtk3
-  provides: libgdk-3.so
+  provides: libgtk-3.so
   source: alpm
 - alpm: gdk-pixbuf2
   provides: libgdk_pixbuf-2.0.so
@@ -38,25 +43,16 @@ update_on:
   provides: libgif.so
   source: alpm
 - alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: glib2
   provides: libgobject-2.0.so
   source: alpm
 - alpm: gpm
   provides: libgpm.so
   source: alpm
-- alpm: gtk3
-  provides: libgtk-3.so
-  source: alpm
 - alpm: harfbuzz
   provides: libharfbuzz.so
   source: alpm
 - alpm: darktable
-  provides: libjpeg.so
+  provides: libtiff.so
   source: alpm
 - alpm: ncurses
   provides: libncursesw.so
@@ -66,27 +62,6 @@ update_on:
   source: alpm
 - alpm: librsvg
   provides: librsvg-2.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
-- alpm: darktable
-  provides: libtiff.so
-  source: alpm
-- alpm: libxml2
-  provides: libxml2.so
-  source: alpm
-- alpm: acl
-  provides: libacl.so
-  source: alpm
-- alpm: dbus
-  provides: libdbus-1.so
-  source: alpm
-- alpm: gpm
-  provides: libgpm.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
   source: alpm
 - alpm: systemd-libs
   provides: libsystemd.so

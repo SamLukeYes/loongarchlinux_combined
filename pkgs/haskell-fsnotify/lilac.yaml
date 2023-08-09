@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-fsnotify'')
 
   '
 repo_depends:
-- haskell-monad-control
 - haskell-async
-- ghc: ghc-libs
-- haskell-unix-compat
-- haskell-safe-exceptions
 - haskell-hinotify
+- haskell-monad-control
+- haskell-safe-exceptions
+- haskell-unix-compat
 update_on:
 - alpm: haskell-async
   source: alpm

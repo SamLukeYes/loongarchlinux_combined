@@ -8,22 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lua-fluent'')
 
   '
 repo_depends:
-- lua-luaepnf: lua52-luaepnf
-- penlight: lua53-penlight
 - lua
-- lua-luaepnf: lua53-luaepnf
-- lua51
-- lua-cldr
-- lua-luaepnf
-- penlight: lua51-penlight
-- penlight: lua52-penlight
-- lua-cldr: lua53-cldr
-- lua-cldr: lua52-cldr
-- lua-cldr: lua51-cldr
-- penlight: lua-penlight
-- lua-luaepnf: lua51-luaepnf
-- lua52
-- lua53
 update_on:
 - alias: lua
 - alpm: lua-fluent

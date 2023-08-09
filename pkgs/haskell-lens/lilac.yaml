@@ -10,30 +10,29 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lens'')
 
   '
 repo_depends:
-- haskell-strict
-- haskell-unordered-containers
-- haskell-tagged
-- haskell-th-abstraction
-- haskell-parallel
 - haskell-assoc
-- haskell-transformers-compat
-- haskell-kan-extensions
-- haskell-contravariant
+- haskell-base-orphans
 - haskell-bifunctors
-- haskell-reflection
-- haskell-hashable
-- haskell-semigroupoids
+- haskell-call-stack
+- haskell-comonad
+- haskell-contravariant
+- haskell-distributive
 - haskell-free
-- haskell-profunctors
+- haskell-hashable
 - haskell-indexed-traversable
 - haskell-indexed-traversable-instances
+- haskell-kan-extensions
+- haskell-parallel
+- haskell-profunctors
+- haskell-reflection
+- haskell-semigroupoids
+- haskell-strict
+- haskell-tagged
+- haskell-th-abstraction
 - haskell-these
-- ghc: ghc-libs
-- haskell-comonad
-- haskell-base-orphans
-- haskell-call-stack
+- haskell-transformers-compat
+- haskell-unordered-containers
 - haskell-vector
-- haskell-distributive
 update_on:
 - alpm: haskell-assoc
   source: alpm

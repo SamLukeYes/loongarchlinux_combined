@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wifite'')
 
   '
 repo_depends:
-- python-chardet
-- aircrack-ng
-- iproute2
-- iw
 - python
 update_on:
 - alias: python

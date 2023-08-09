@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gssproxy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ding-libs
-- systemd: systemd-libs
-- popt
+repo_depends: []
 update_on:
 - alpm: gssproxy
   source: archpkg

@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''luasec'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- luasocket: lua51-socket
-- luasocket: lua53-socket
-- luasocket: lua52-socket
-- openssl
-- luasocket: lua-socket
+repo_depends: []
 update_on:
 - alpm: luasec
   source: archpkg

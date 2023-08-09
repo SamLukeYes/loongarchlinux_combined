@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-mission-con
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- telepathy-glib
-- dconf
-- networkmanager: libnm
+repo_depends: []
 update_on:
 - alpm: telepathy-mission-control
   source: archpkg

@@ -8,9 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pythonfinder''
 
   '
 repo_depends:
-- python-pydantic
-- python-packaging
-- python-cached-property
 - python
 update_on:
 - alias: python

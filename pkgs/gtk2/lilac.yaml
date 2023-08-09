@@ -9,20 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtk2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- cups: libcups
-- libxcomposite
-- libxdamage
-- libxi
-- libxrandr
-- pango
-- desktop-file-utils
-- librsvg
-- libxinerama
-- gtk4: gtk-update-icon-cache
-- libxcursor
-- cairo
-- shared-mime-info
+repo_depends: []
 update_on:
 - alpm: gtk2
   source: archpkg

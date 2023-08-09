@@ -10,11 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''exiv2'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- curl
-- zlib
-- gettext
 - expat
+- curl
 update_on:
 - alpm: expat
   provides: libexpat.so

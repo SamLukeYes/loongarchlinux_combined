@@ -8,9 +8,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''autorandr'')
 
   '
 repo_depends:
-- xorg-xdpyinfo
-- xorg-xrandr
-- python-packaging
+- python
 update_on:
+- alias: python
 - alpm: autorandr
   source: archpkg

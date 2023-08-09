@@ -10,26 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hedgewars'')
 
   '
 repo_depends:
-- sdl2_mixer
-- haskell-sandi
-- sdl2_ttf
-- ffmpeg4.4
-- lua51
-- haskell-hslogger
-- sdl2_image
 - qt5-base
-- haskell-sha
-- haskell-regex-tdfa
-- haskell-utf8-string
-- haskell-network
-- ghc: ghc-libs
-- sdl2_net
 - haskell-entropy
+- haskell-sha
 - haskell-random
-- sdl2
-- haskell-vector
+- haskell-regex-tdfa
+- haskell-sandi
+- haskell-hslogger
+- haskell-network
 - haskell-network-bsd
-- physfs
+- haskell-utf8-string
+- haskell-vector
 update_on:
 - alpm: qt5-base
   source: alpm

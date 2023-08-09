@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-sshpubkeys'')
 
   '
-repo_depends:
-- python-ecdsa
-- python-cryptography
+repo_depends: []
 update_on:
 - alpm: python-sshpubkeys
   source: archpkg

@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zathura-ps'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- desktop-file-utils
-- libspectre
-- zathura
+repo_depends: []
 update_on:
 - alpm: zathura-ps
   source: archpkg

@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libsigc++
-- gtk2
+repo_depends: []
 update_on: []

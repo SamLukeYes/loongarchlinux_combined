@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''eog'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libhandy
-- libpeas
-- libexif
-- librsvg
-- lcms2
-- exempi
-- webp-pixbuf-loader
-- gnome-desktop
+repo_depends: []
 update_on:
 - alpm: eog
   source: archpkg

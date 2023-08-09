@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qt6-multimedia'')
 
   '
 repo_depends:
-- libxrandr
 - qt6-base
-- ffmpeg
-- libva
-- gstreamer: gst-plugins-base
 update_on:
 - alpm: qt6-base
   source: alpm

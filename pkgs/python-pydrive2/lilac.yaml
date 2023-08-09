@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pydrive2'')
 
   '
 repo_depends:
-- python-google-api-python-client
-- python-pyaml
-- python-pyopenssl
-- python-oauth2client
 - python
 update_on:
 - alias: python

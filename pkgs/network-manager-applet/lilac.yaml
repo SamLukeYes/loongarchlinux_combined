@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''network-manager-apple
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libsecret
-- networkmanager
-- libappindicator: libappindicator-gtk3
-- modemmanager: libmm-glib
-- libnma
+repo_depends: []
 update_on:
 - alpm: network-manager-applet
   source: archpkg

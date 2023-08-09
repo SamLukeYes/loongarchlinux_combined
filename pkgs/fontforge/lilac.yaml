@@ -10,16 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fontforge'')
 
   '
 repo_depends:
-- libuninameslist
-- potrace
-- pango
-- libtiff
-- woff2
-- libxml2
-- libtool
-- gtk3
-- libspiro
-- giflib
 - python
 update_on:
 - alias: python

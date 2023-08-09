@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dolphin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kactivities
-- baloo-widgets
-- knewstuff
-- kparts
-- kcmutils
-- kuserfeedback
-- kio-extras
+repo_depends: []
 update_on:
 - alpm: dolphin
   source: archpkg

@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-html-parse'')
   '
 repo_depends:
 - haskell-attoparsec
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

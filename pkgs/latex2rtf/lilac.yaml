@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- imagemagick
-- glibc
-- ghostscript
+repo_depends: []
 update_on: []

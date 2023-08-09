@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-http2'')
 
   '
 repo_depends:
-- haskell-network
 - haskell-async
-- ghc: ghc-libs
-- haskell-http-types
 - haskell-case-insensitive
-- haskell-time-manager
+- haskell-http-types
+- haskell-network
 - haskell-network-byte-order
 - haskell-psqueues
+- haskell-time-manager
 - haskell-unix-time
 update_on:
 - alpm: haskell-async

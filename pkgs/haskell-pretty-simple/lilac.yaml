@@ -11,9 +11,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pretty-simple
   '
 repo_depends:
 - haskell-optparse-applicative
-- haskell-prettyprinter-ansi-terminal
-- ghc: ghc-libs
 - haskell-prettyprinter
+- haskell-prettyprinter-ansi-terminal
 update_on:
 - alpm: haskell-optparse-applicative
   source: alpm

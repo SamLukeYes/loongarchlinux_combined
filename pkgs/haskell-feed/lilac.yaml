@@ -11,14 +11,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-feed'')
   '
 repo_depends:
 - haskell-base-compat
-- ghc: ghc-libs
 - haskell-old-locale
+- haskell-old-time
+- haskell-safe
+- haskell-time-locale-compat
+- haskell-utf8-string
 - haskell-xml-types
 - haskell-xml-conduit
-- haskell-time-locale-compat
-- haskell-safe
-- haskell-utf8-string
-- haskell-old-time
 update_on:
 - alpm: haskell-base-compat
   source: alpm

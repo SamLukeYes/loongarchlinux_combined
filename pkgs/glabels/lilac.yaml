@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glabels'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- evolution-data-server
-- qrencode
-- iec16022
+repo_depends: []
 update_on:
 - alpm: glabels
   source: archpkg

@@ -11,9 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdg-desktop-portal-lx
   '
 repo_depends:
 - qt5-base
-- libfm-qt
-- xdg-desktop-portal
-- kwindowsystem
 update_on:
 - alpm: qt5-base
   source: alpm

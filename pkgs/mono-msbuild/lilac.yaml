@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mono-msbuild'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- dotnet-core: dotnet-host
-- mono
+repo_depends: []
 update_on:
 - alpm: mono-msbuild
   source: archpkg

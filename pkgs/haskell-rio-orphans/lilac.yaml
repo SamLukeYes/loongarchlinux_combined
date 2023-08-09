@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-rio-orphans''
 
   '
 repo_depends:
-- haskell-monad-logger
-- ghc: ghc-libs
-- haskell-rio
-- haskell-unliftio-core
 - haskell-fast-logger
-- haskell-resourcet
 - haskell-monad-control
+- haskell-monad-logger
+- haskell-resourcet
+- haskell-rio
 - haskell-transformers-base
+- haskell-unliftio-core
 update_on:
 - alpm: haskell-fast-logger
   source: alpm

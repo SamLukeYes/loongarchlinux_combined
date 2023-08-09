@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''golang-github-ruudk-golang-pdf417'')
 
   '
-repo_depends:
-- golang-github-boombuler-barcode
-- golang-github-stretchr-testify
-- golang-github-jung-kurt-gofpdf
-- go
+repo_depends: []
 update_on:
 - alpm: golang-github-ruudk-golang-pdf417
   source: archpkg

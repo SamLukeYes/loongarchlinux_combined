@@ -10,17 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libphonenumber'')
 
   '
 repo_depends:
-- abseil-cpp
-- protobuf
 - icu
+- protobuf
 update_on:
-- alias: icu
-- alias: protobuf
-- alias: icu
-- alias: protobuf
-- alpm: icu
-  provides: libicuuc.so
-  source: alpm
 - alpm: icu
   provides: libicui18n.so
   source: alpm

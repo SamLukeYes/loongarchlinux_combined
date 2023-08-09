@@ -8,13 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-cookiecutter''
 
   '
 repo_depends:
-- python-binaryornot
-- python-requests
-- python-click
-- python-slugify
-- python-jinja
 - python
-- python-jinja-time
 update_on:
 - alias: python
 - alpm: python-cookiecutter

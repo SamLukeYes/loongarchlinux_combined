@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-webmock'')
 
   '
 repo_depends:
-- ruby-crack
-- ruby-hashdiff
 - ruby
-- ruby-addressable
 update_on:
 - alias: ruby
 - alpm: ruby-webmock

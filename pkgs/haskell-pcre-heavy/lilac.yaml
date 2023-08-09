@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pcre-heavy'')
 
   '
 repo_depends:
-- haskell-string-conversions
 - haskell-base-compat
-- ghc: ghc-libs
 - haskell-pcre-light
+- haskell-string-conversions
 update_on:
 - alpm: haskell-base-compat
   source: alpm

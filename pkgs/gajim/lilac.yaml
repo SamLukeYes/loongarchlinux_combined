@@ -7,25 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''gajim'')
 
   '
-repo_depends:
-- python-precis_i18n
-- python-distro
-- hicolor-icon-theme
-- pygobject: python-gobject
-- python-gssapi
-- python-pillow
-- python-qrcode
-- pango
-- python-keyring
-- python-packaging
-- python-cryptography
-- python-css-parser
-- sqlite
-- python-cairo
-- python-omemo-dr
-- python-netifaces
-- gtksourceview4
-- gtk3
+repo_depends: []
 update_on:
 - alpm: gajim
   source: archpkg

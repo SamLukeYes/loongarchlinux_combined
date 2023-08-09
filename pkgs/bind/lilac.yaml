@@ -10,27 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bind'')
 
   '
 repo_depends:
-- json-c
-- libmaxminddb
-- e2fsprogs
-- krb5
-- libcap
-- glibc
-- xz
-- libxml2
-- bash
-- libnghttp2
 - icu
-- jemalloc
-- libedit
-- openssl
-- libuv
-- libnsl
-- dnssec-anchors
-- libidn2
-- zlib
 - readline
-- lmdb
 update_on:
 - alias: icu
 - alias: readline

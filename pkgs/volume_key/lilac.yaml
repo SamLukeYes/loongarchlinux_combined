@@ -10,13 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''volume_key'')
 
   '
 repo_depends:
-- glib2
-- gpgme
-- nss
-- nspr
-- util-linux: util-linux-libs
-- cryptsetup
-- glibc
 - python
 update_on:
 - alias: python

@@ -1,7 +1,7 @@
 # Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 
-pkgname=js102 
-pkgver=102.11.0
+pkgname=js102
+pkgver=102.12.0
 pkgrel=1
 pkgdesc="JavaScript interpreter and libraries - Version 102"
 url="https://spidermonkey.dev/"
@@ -33,7 +33,7 @@ source=(
   https://archive.mozilla.org/pub/firefox/releases/$_relver/source/firefox-$_relver.source.tar.xz{,.asc}
   js102-loong64-jit.patch
 )
-b2sums=('b19db1b35e6c652e2cd44ec5219bd5c42aacd55987962dbcaf50b5ec54d2ac5066290264f938ba3d45ef111779b9f27b06736ae7df11fa62478ab2179acfe723'
+b2sums=('ef5dcf7c7e6a46389a94b81f28d6b996bd56bc0a110f1e52dfbe00e5c766dad59a91494c3c2f2552a0cb1fef14c19bef6dcb6629e03f9e48d5163e75c59676b2'
         'SKIP'
         '2740b5d321f585cd60a038c1b1350c9e08c6559cc02a331ce7bc3d228bc785b066f795c8cbd2e43d46fe67687df420e20f4bb4bce40a2a2f962bc812aa170d01')
 validpgpkeys=(

@@ -10,17 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opentoonz'')
 
   '
 repo_depends:
-- freeglut
-- superlu
-- qt5-serialport
-- qt5-script
-- ffmpeg
-- libmypaint
-- lapack: cblas
 - opencv
-- qt5-multimedia
-- glew
-- qt5-svg
 update_on:
 - alpm: opencv
   source: alpm

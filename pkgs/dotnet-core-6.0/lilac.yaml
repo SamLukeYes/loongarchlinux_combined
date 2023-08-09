@@ -10,14 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dotnet-core-6.0'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- libunwind
-- zlib
-- krb5
-- dotnet-core: netstandard-targeting-pack
-- dotnet-core: dotnet-host
-- openssl
-- glibc
 - icu
 update_on:
 - alias: icu

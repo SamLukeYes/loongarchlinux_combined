@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-texmath'')
 
   '
 repo_depends:
-- haskell-syb
-- ghc: ghc-libs
+- haskell-network-uri
 - haskell-pandoc-types
 - haskell-split
+- haskell-syb
 - haskell-xml
-- haskell-network-uri
 update_on:
 - alpm: haskell-network-uri
   source: alpm

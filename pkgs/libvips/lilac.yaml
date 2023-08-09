@@ -1,17 +1,6 @@
 destsubdir: extra
 repo_depends:
-- libimagequant
-- libcgif
-- openexr
-- pango
-- libexif
-- librsvg
-- orc
-- fftw
-- libxml2
-- libwebp
 - cfitsio
-- libgsf
 update_on:
 - alpm: cfitsio
   source: alpm

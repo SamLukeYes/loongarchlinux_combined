@@ -7,31 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''imapsync'')
 
   '
-repo_depends:
-- perl-html-parser
-- perl-unicode-string
-- perl-term-readkey
-- perl-data-uniqid
-- perl-libwww
-- perl-json-webtoken
-- perl-file-tail
-- perl-module-runtime
-- perl-io-socket-inet6
-- perl-regexp-common
-- perl-cgi
-- perl-mail-imapclient
-- perl-io-socket-ssl
-- perl-proc-processtable
-- perl-module-scandeps
-- perl-date-manip
-- perl-package-stash
-- perl-crypt-openssl-rsa
-- perl-io-tee
-- perl-readonly
-- perl-file-copy-recursive
-- perl-ntlm
-- perl-encode-imaputf7
-- perl-sys-meminfo
+repo_depends: []
 update_on:
 - alpm: imapsync
   source: archpkg

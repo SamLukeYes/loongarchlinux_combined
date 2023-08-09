@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''subtitleeditor'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- xdg-utils
-- libxml++2.6
-- enchant
-- gtkmm3
-- desktop-file-utils
-- libsigc++
-- gstreamermm
-- gstreamer: gst-libav
-- gstreamer: gst-plugins-base
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: subtitleeditor
   source: archpkg

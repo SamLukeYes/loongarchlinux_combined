@@ -10,19 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bespokesynth'')
 
   '
 repo_depends:
-- glibc
 - python
-- gcc: gcc-libs
 - alsa-lib
+- freetype2
 - jsoncpp
 - libusb
-- zlib
-- freetype2
-- libglvnd
-- hicolor-icon-theme
-- libpng
 update_on:
-- alias: python
 - alias: python
 - alpm: alsa-lib
   provides: libasound.so
@@ -30,7 +23,6 @@ update_on:
 - alpm: freetype2
   provides: libfreetype.so
   source: alpm
-- alias: jsoncpp
 - alpm: jsoncpp
   provides: libjsoncpp.so
   source: alpm

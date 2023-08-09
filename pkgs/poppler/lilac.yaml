@@ -10,16 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''poppler'')
 
   '
 repo_depends:
-- fontconfig
-- gcc: gcc-libs
 - qt5-base
-- curl
 - qt6-base
-- nss
-- lcms2
-- cairo
-- glib2
-- openjpeg2
 update_on:
 - alpm: qt5-base
   source: alpm

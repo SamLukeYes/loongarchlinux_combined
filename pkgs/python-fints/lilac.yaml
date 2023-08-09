@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-fints'')
 
   '
 repo_depends:
-- python-bleach
-- python-sepaxml
-- python-requests
-- python-mt-940
 - python
 update_on:
 - alias: python

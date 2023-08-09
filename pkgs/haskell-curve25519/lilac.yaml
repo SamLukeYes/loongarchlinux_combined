@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-curve25519'')
   '
 repo_depends:
 - haskell-crypto-api
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-crypto-api
   source: alpm

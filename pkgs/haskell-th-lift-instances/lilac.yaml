@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-th-lift-insta
 repo_depends:
 - haskell-th-lift
 - haskell-vector
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-th-lift
   source: alpm

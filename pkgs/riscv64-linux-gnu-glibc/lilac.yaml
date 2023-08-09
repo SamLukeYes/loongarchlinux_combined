@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-#- riscv64-linux-gnu-gcc
-- riscv64-linux-gnu-linux-api-headers
+repo_depends: []
 update_on: []

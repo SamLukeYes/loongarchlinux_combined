@@ -10,31 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''electron24'')
 
   '
 repo_depends:
-- jsoncpp
-- aom
-- dav1d
-- libevent
-- ffmpeg
-- opus
-- harfbuzz
-- libxml2
-- zlib: minizip
 - icu
-- libpng
-- re2
-- fontconfig
-- woff2
-- c-ares
-- freetype2
-- libffi
-- flac
-- wayland
-- brotli
-- nss
-- snappy
-- libxslt
-- gtk3
-- libwebp
+- jsoncpp
 update_on:
 - alias: icu
 - alias: jsoncpp

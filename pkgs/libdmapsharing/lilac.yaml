@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libdmapsharing'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gdk-pixbuf2
-- libsoup3
-- avahi
-- gstreamer: gst-plugins-base-libs
+repo_depends: []
 update_on:
 - alpm: libdmapsharing
   source: archpkg

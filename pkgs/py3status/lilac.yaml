@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''py3status'')
   '
 repo_depends:
 - python
-- python-setuptools
 update_on:
 - alias: python
 - alpm: py3status

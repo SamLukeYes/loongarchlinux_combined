@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pynvim'')
 
   '
 repo_depends:
-- python-greenlet
 - python
-- python-msgpack
 update_on:
 - alias: python
 - alpm: python-pynvim

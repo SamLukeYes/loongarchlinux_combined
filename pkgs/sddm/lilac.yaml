@@ -1,9 +1,19 @@
 destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''sddm'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
 repo_depends:
-- xorg-server
 - qt5-declarative
-- xorg-xauth
 update_on:
 - alpm: qt5-declarative
   source: alpm
   strip_release: true
+- alpm: sddm
+  source: archpkg

@@ -9,30 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''handbrake'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- bzip2
-- numactl
-- desktop-file-utils
-- libass
-- librsvg
-- x264
-- libvpx
-- hicolor-icon-theme
-- libtheora
-- gcc: gcc-libs
-- libjpeg-turbo
-- jansson
-- xz
-- opus
-- libva
-- libxml2
-- speex
-- libvorbis
-- gstreamer: gst-plugins-base
-- zlib
-- gtk3
-- lame
-- libgudev
+repo_depends: []
 update_on:
 - alpm: handbrake
   source: archpkg

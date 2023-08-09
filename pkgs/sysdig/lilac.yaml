@@ -10,24 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sysdig'')
 
   '
 repo_depends:
-- zstd
 - jsoncpp
-- luajit
-- libb64
 - curl
-- dkms
 - grpc
-- jq
-- yaml-cpp
+- sysdig
 update_on:
-- alias: jsoncpp
 - alpm: jsoncpp
   provides: libjsoncpp.so
   source: alpm
 - alpm: curl
   provides: libcurl.so
   source: alpm
-- alias: grpc
 - alpm: grpc
   provides: libgrpc++.so
   source: alpm

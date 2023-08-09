@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zeroc-ice'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- bzip2
-- libedit
-- libxcrypt
-- expat
-- mcpp
-- openssl
-- lmdb
+repo_depends: []
 update_on:
 - alpm: zeroc-ice
   source: archpkg

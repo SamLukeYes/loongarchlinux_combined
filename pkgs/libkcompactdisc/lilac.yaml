@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libkcompactdisc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ki18n
-- phonon: phonon-qt5
-- solid
+repo_depends: []
 update_on:
 - alpm: libkcompactdisc
   source: archpkg

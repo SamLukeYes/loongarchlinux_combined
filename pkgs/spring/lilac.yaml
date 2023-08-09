@@ -11,19 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''spring'')
   '
 repo_depends:
 - jsoncpp
-- sdl2
-- libunwind
-- curl
-- desktop-file-utils
-- openal
-- libxcursor
-- freetype2
-- devil
-- zlib: minizip
-- glew
-- libvorbis
-- libx11
-- shared-mime-info
 update_on:
 - alias: jsoncpp
 - alpm: spring

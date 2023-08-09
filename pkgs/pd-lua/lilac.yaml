@@ -10,9 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pd-lua'')
 
   '
 repo_depends:
-- pd
-- gcc: gcc-libs
-- glibc
 - lua
 update_on:
 - alias: lua

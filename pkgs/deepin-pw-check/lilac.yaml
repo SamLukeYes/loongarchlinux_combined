@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-pw-check'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- cracklib
-- gtk3
-- iniparser
+repo_depends: []
 update_on:
 - alpm: deepin-pw-check
   source: archpkg

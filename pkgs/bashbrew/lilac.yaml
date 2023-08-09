@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bashbrew'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- docker
-- git
+repo_depends: []
 update_on:
 - alpm: bashbrew
   source: archpkg

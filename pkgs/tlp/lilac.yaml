@@ -8,13 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tlp'')
 
   '
 repo_depends:
-- pciutils
-- networkmanager
-- hdparm
-- usbutils
 - perl
-- iw
-- util-linux
 update_on:
 - alias: perl
 - alpm: tlp

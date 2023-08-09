@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''artikulate'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kirigami2
-- knewstuff
-- hicolor-icon-theme
-- qt5-xmlpatterns
+repo_depends: []
 update_on:
 - alpm: artikulate
   source: archpkg

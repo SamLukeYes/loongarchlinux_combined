@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kshutdown'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- knotifyconfig
-- hicolor-icon-theme
-- kidletime
+repo_depends: []
 update_on:
 - alpm: kshutdown
   source: archpkg

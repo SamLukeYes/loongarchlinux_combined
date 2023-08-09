@@ -9,22 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''shotwell'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libraw
-- libgdata
-- webkit2gtk-4.1
-- dconf
-- rest
-- libgphoto2
-- libgee
-- libgudev
-- desktop-file-utils
-- libportal: libportal-gtk3
-- json-glib
-- gcr
-- gstreamer: gst-plugins-base
-- hicolor-icon-theme
-- libgexiv2
+repo_depends: []
 update_on:
 - alpm: shotwell
   source: archpkg

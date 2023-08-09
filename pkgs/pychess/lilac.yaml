@@ -7,16 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''pychess'')
 
   '
-repo_depends:
-- gtksourceview3
-- python-ptyprocess
-- python-psutil
-- python-sqlalchemy1.3
-- python-websockets
-- python-pexpect
-- gstreamer: gst-plugins-base
-- pygobject: python-gobject
-- python-cairo
+repo_depends: []
 update_on:
 - alpm: pychess
   source: archpkg

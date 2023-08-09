@@ -8,17 +8,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openshot'')
 
   '
 repo_depends:
-- libopenshot-audio
-- pyqt5-webengine: python-pyqt5-webengine
-- python-requests
-- qt5-base
-- python-pyzmq
-- ffmpeg
-- hicolor-icon-theme
-- pyqt5: python-pyqt5
-- qt5-svg
-- libopenshot
 - python
+- qt5-base
 update_on:
 - alias: python
 - alpm: qt5-base

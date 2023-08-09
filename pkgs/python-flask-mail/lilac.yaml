@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-flask-mail'')
 
   '
 repo_depends:
-- python-blinker
 - python
-- python-flask
 update_on:
 - alias: python
 - alpm: python-flask-mail

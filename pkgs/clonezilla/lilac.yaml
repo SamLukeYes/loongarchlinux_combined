@@ -8,27 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''clonezilla'')
 
   '
 repo_depends:
-- bzip2
-- gzip
-- pixz
-- lzop
-- parted
-- lbzip2
-- gptfdisk
-- drbl
-- xz
-- cifs-utils
-- pigz
-- screen
-- lrzip
-- partimage
-- dosfstools
-- partclone
 - perl
-- sshfs
-- ecryptfs-utils
-- pbzip2
-- ntfs-3g
 update_on:
 - alias: perl
 - alpm: clonezilla

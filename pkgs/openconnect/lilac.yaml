@@ -10,27 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openconnect'')
 
   '
 repo_depends:
-- xdg-utils
-- krb5
-- gnutls
-- pcsclite
-- libxml2
 - stoken
-- libproxy
-- vpnc
 - tpm2-tss
-- lz4
+- libxml2
+- libproxy
+- nettle
+- libp11-kit
 - oath-toolkit
-- p11-kit: libp11-kit
+- krb5
+- pcsclite
 update_on:
 - alpm: stoken
   provides: libstoken.so
-  source: alpm
-- alpm: tpm2-tss
-  provides: libtss2-esys.so
-  source: alpm
-- alpm: tpm2-tss
-  provides: libtss2-mu.so
   source: alpm
 - alpm: tpm2-tss
   provides: libtss2-tctildr.so

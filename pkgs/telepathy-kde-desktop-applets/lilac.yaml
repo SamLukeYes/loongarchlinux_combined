@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-kde-desktop
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- telepathy-kde-common-internals
-- telepathy-kde-accounts-kcm
-- plasma-workspace
+repo_depends: []
 update_on:
 - alpm: telepathy-kde-desktop-applets
   source: archpkg

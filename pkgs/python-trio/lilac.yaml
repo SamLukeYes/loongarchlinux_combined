@@ -9,13 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-trio'')
   '
 repo_depends:
 - python
-- python-outcome
-- python-async_generator
-- python-sniffio
-- python-sortedcontainers
-- python-attrs
-- python-exceptiongroup
-- python-idna
 update_on:
 - alias: python
 - alpm: python-trio

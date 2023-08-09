@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dtkwm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-x11extras
-- dtkcore
+repo_depends: []
 update_on:
 - alpm: dtkwm
   source: archpkg

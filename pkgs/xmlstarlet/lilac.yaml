@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xmlstarlet'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxslt
+repo_depends: []
 update_on:
 - alpm: xmlstarlet
   source: archpkg

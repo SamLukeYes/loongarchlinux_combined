@@ -1,26 +1,7 @@
 destsubdir: extra
 repo_depends:
-- libvisio
-- gspell
-- libjpeg-turbo
-- gc
 - gsl
-- graphicsmagick
-- potrace
-- python-lxml
-- double-conversion
-- poppler: poppler-glib
-- python-numpy
 - python
-- dbus-glib
-- gtkmm3
-- python-cssselect
-- libxslt
-- lib2geom
-- lcms2
-- libcdr
-- libsoup
-- boost: boost-libs
 update_on:
 - alpm: gsl
   source: alpm

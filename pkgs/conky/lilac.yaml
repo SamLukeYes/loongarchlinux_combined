@@ -1,19 +1,11 @@
 destsubdir: extra
 repo_depends:
-- libxdamage
-- imlib2
-- glib2
-- glibc
-- curl
-- libxinerama
-- libxml2
-- systemd: systemd-libs
-- libxft
-- wireless_tools
 - lua
-- pulseaudio: libpulse
 - ncurses
-- nvidia-settings: libxnvctrl
+- libxnvctrl
+- systemd-libs
+- libao
+- curl
 update_on:
 - alias: lua
 - alpm: ncurses

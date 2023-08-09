@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''riscv64-elf-gcc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- zlib
-- libisl
-- riscv64-elf-binutils
-- libmpc
-- zstd
+repo_depends: []
 update_on:
 - alpm: riscv64-elf-gcc
   source: archpkg

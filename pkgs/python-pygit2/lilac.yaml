@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pygit2'')
 
   '
 repo_depends:
-- python-cffi
-- python-cached-property
-- python-six
+- julia
 update_on:
 - alpm: julia
   provides: libgit2.so

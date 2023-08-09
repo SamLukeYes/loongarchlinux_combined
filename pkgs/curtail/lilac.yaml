@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''curtail'')
 
   '
-repo_depends:
-- jpegoptim
-- gtk4
-- libadwaita
-- pngquant
-- oxipng
-- pygobject: python-gobject
+repo_depends: []
 update_on:
 - alpm: curtail
   source: archpkg

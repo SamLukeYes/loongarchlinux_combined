@@ -1,12 +1,3 @@
 destsubdir: extra
-repo_depends:
-- kirigami2
-- appstream: appstream-qt
-- kidletime
-- knewstuff
-- purpose
-- discount
-- archlinux-appstream-data
-- kuserfeedback
-- qt5-graphicaleffects
+repo_depends: []
 update_on: []

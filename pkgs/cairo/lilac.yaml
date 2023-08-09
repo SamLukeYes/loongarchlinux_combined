@@ -9,18 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cairo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- fontconfig
-- libxrender
-- libxcb
-- zlib
-- pixman
-- freetype2
-- libx11
-- libxext
-- glib2
-- libpng
-- lzo
+repo_depends: []
 update_on:
 - alpm: cairo
   source: archpkg

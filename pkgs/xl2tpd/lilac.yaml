@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xl2tpd'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ppp
+repo_depends: []
 update_on:
 - alpm: xl2tpd
   source: archpkg

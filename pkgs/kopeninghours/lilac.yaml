@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kopeninghours'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ki18n
-- kholidays
+repo_depends: []
 update_on:
 - alpm: kopeninghours
   source: archpkg

@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''golang-github-google-go-cmdtest'')
 
   '
-repo_depends:
-- golang-github-google-go-cmp
-- golang-github-google-renameio
-- go
+repo_depends: []
 update_on:
 - alpm: golang-github-google-go-cmdtest
   source: archpkg

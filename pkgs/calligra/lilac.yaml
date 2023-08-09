@@ -10,22 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''calligra'')
 
   '
 repo_depends:
-- poppler: poppler-qt5
-- kactivities
-- imath
-- libodfgen
 - gsl
-- cauchy
-- khtml
-- knotifyconfig
-- kdelibs4support
-- kross
-- kcmutils
-- kcontacts
-- qca: qca-qt5
-- kinit
-- kdiagram
-- libspnav
 update_on:
 - alpm: gsl
   source: alpm

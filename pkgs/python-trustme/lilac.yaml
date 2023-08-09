@@ -8,9 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-trustme'')
 
   '
 repo_depends:
-- python-pyopenssl
-- python-cryptography
-- python-idna
 - python
 update_on:
 - alias: python

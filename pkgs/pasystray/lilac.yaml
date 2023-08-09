@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pasystray'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pulseaudio: libpulse
-- avahi
-- libnotify
-- libx11
-- gtk3
+repo_depends: []
 update_on:
 - alpm: pasystray
   source: archpkg

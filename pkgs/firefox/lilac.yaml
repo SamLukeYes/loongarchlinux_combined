@@ -1,9 +1,3 @@
 destsubdir: extra
-repo_depends:
-- pulseaudio: libpulse
-- dbus-glib
-- ffmpeg
-- nss
-- libxt
-- gtk3
+repo_depends: []
 update_on: []

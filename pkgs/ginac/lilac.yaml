@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ginac'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- cln
+repo_depends: []
 update_on:
 - alpm: ginac
   source: archpkg

@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-random-bytest
   '
 repo_depends:
 - haskell-mwc-random
-- ghc: ghc-libs
 - haskell-pcg-random
 update_on:
 - alpm: haskell-mwc-random

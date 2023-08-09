@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''in-toto'')
 
   '
-repo_depends:
-- python-dateutil
-- python-six
-- python-cryptography
-- python-iso8601
-- python-pathspec
-- python-attrs
+repo_depends: []
 update_on:
 - alpm: in-toto
   source: archpkg

@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-djabberd'')
 
   '
-repo_depends:
-- perl-danga-socket
-- perl-log-log4perl
-- perl-net-dns
-- perl-net-ssleay
-- perl-xml-libxml
-- perl-unicode-stringprep
+repo_depends: []
 update_on:
 - alpm: perl-djabberd
   source: archpkg

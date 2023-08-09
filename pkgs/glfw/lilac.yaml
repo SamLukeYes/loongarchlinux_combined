@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glfw'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxkbcommon
-- libxrandr
-- libxi
-- wayland
-- libxinerama
-- libxcursor
+repo_depends: []
 update_on:
 - alpm: glfw
   source: archpkg

@@ -7,31 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-spsdk'')
 
   '
-repo_depends:
-- python-oscrypto
-- python-pycryptodome
-- libusbsio: python-libusbsio
-- python-hexdump
-- python-click-command-tree
-- python-bincopy
-- python-click-option-group
-- python-click
-- python-crcmod
-- python-asn1crypto
-- python-cmsis-pack-manager
-- python-commentjson
-- python-cryptography
-- python-astunparse
-- python-pylink-square
-- python-fastjsonschema
-- python-pyocd
-- python-bitstring
-- python-sly
-- python-pyserial
-- python-colorama
-- python-deepmerge
-- python-jinja
-- python-ruamel-yaml
+repo_depends: []
 update_on:
 - alpm: python-spsdk
   source: archpkg

@@ -7,15 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''anything-sync-daemon'')
 
   '
-repo_depends:
-- bash
-- zstd
-- tar
-- pv
-- rsync
-- procps-ng
-- findutils
-- systemd
+repo_depends: []
 update_on:
 - alpm: anything-sync-daemon
   source: archpkg

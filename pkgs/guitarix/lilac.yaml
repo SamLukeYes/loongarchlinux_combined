@@ -10,22 +10,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''guitarix'')
 
   '
 repo_depends:
-- glibmm
-- pangomm
-- glibc
-- gcc: gcc-libs
-- cairomm
-- cairo
-- bluez: bluez-libs
-- atkmm
-- libsigc++
-- ttf-roboto
-- gtkmm3
-- libx11
+- avahi
+- boost
+- curl
+- fftw
+- gtk3
+- gdk-pixbuf2
+- glib2
+- jack2
+- lilv
+- liblo
+- liblrdf
+- pango
+- libsndfile
+- zita-convolver
+- zita-resampler
 update_on:
-- alpm: avahi
-  provides: libavahi-common.so
-  source: alpm
 - alpm: avahi
   provides: libavahi-gobject.so
   source: alpm
@@ -45,12 +45,6 @@ update_on:
   provides: libgdk_pixbuf-2.0.so
   source: alpm
 - alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: glib2
   provides: libgobject-2.0.so
   source: alpm
 - alpm: jack2
@@ -64,9 +58,6 @@ update_on:
   source: alpm
 - alpm: liblrdf
   provides: liblrdf.so
-  source: alpm
-- alpm: pango
-  provides: libpangocairo-1.0.so
   source: alpm
 - alpm: pango
   provides: libpango-1.0.so

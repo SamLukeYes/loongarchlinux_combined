@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libopusenc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- opus
-- glibc
+repo_depends: []
 update_on:
 - alpm: libopusenc
   source: archpkg

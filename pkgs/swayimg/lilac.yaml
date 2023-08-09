@@ -10,11 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''swayimg'')
 
   '
 repo_depends:
-- libxkbcommon
-- libpng
-- libheif
-- cairo
-- hicolor-icon-theme
+- libexif
+- fontconfig
+- freetype2
+- giflib
+- glib2
+- darktable
+- json-c
+- libjxl
+- librsvg
+- wayland
+- libwebp
 update_on:
 - alpm: libexif
   provides: libexif.so
@@ -32,7 +38,7 @@ update_on:
   provides: libgobject-2.0.so
   source: alpm
 - alpm: darktable
-  provides: libjpeg.so
+  provides: libwebp.so
   source: alpm
 - alpm: json-c
   provides: libjson-c.so
@@ -43,14 +49,8 @@ update_on:
 - alpm: librsvg
   provides: librsvg-2.so
   source: alpm
-- alpm: darktable
-  provides: libtiff.so
-  source: alpm
 - alpm: wayland
   provides: libwayland-client.so
-  source: alpm
-- alpm: darktable
-  provides: libwebp.so
   source: alpm
 - alpm: libwebp
   provides: libwebpdemux.so

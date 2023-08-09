@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- dkms
-- dtkcore
-- udisks2-qt5
+repo_depends: []
 update_on: []

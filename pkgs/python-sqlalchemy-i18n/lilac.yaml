@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-sqlalchemy-i18
 
   '
 repo_depends:
-- python-sqlalchemy
-- python-six
 - python
-- python-sqlalchemy-utils
 update_on:
 - alias: python
 - alpm: python-sqlalchemy-i18n

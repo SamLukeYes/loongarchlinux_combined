@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xterm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- luit
-- xbitmaps
-- libxft
-- ncurses
-- libxaw
-- libxkbfile
-- libutempter
+repo_depends: []
 update_on:
 - alpm: xterm
   source: archpkg

@@ -11,14 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''librime'')
   '
 repo_depends:
 - lua
-- capnproto
-- opencc
-- leveldb
-- marisa
-- google-glog
-- rime-prelude: librime-data
-- boost: boost-libs
-- yaml-cpp
 update_on:
 - alias: lua
 - alpm: librime

@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''eventviews'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libkdepim
-- calendarsupport
-- kdiagram
+repo_depends: []
 update_on:
 - alpm: eventviews
   source: archpkg

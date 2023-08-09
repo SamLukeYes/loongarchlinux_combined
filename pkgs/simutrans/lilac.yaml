@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''simutrans'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- bzip2
-- gcc: gcc-libs
-- simutrans-pak64
-- sdl2
-- zlib
-- hicolor-icon-theme
-- libpng
+repo_depends: []
 update_on:
 - alpm: simutrans
   source: archpkg

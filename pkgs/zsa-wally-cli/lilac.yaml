@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zsa-wally-cli'')
   '
 repo_depends:
 - libusb
-- zsa-udev
-- glibc
 update_on:
 - alpm: libusb
   provides: libusb-1.0.so

@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''translate-shell'')
 
   '
-repo_depends:
-- gawk
-- bash
+repo_depends: []
 update_on:
 - alpm: translate-shell
   source: archpkg

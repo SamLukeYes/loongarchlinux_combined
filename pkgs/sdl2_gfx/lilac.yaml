@@ -1,4 +1,3 @@
 destsubdir: extra
-repo_depends:
-- sdl2
+repo_depends: []
 update_on: []

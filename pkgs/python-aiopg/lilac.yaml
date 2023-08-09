@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-aiopg'')
 
   '
 repo_depends:
-- python-async-timeout
 - python
-- python-psycopg2
 update_on:
 - alias: python
 - alpm: python-aiopg

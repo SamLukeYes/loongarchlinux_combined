@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gtk-strut'')
 
   '
 repo_depends:
-- haskell-hslogger
-- haskell-gi-gdk3
-- ghc: ghc-libs
-- haskell-gi-gtk3
 - haskell-data-default
+- haskell-gi-gdk3
+- haskell-gi-gtk3
+- haskell-hslogger
 update_on:
 - alpm: haskell-data-default
   source: alpm

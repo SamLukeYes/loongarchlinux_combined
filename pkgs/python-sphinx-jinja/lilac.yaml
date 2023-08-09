@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-sphinx-jinja''
 
   '
 repo_depends:
-- python-docutils
-- python-jinja
 - python
-- python-sphinx
 update_on:
 - alias: python
 - alpm: python-sphinx-jinja

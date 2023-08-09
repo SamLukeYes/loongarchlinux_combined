@@ -11,10 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-data-serializ
   '
 repo_depends:
 - haskell-cereal
-- haskell-parsers
-- ghc: ghc-libs
-- haskell-split
 - haskell-data-endian
+- haskell-parsers
+- haskell-split
 update_on:
 - alpm: haskell-cereal
   source: alpm

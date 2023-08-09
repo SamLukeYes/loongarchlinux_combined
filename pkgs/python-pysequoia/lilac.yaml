@@ -10,14 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pysequoia'')
 
   '
 repo_depends:
-- bzip2
-- gcc: gcc-libs
-- pcsclite
-- openssl
-- glibc
-- nettle
 - python
-- gmp
 update_on:
 - alias: python
 - alpm: python-pysequoia

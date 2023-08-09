@@ -10,6 +10,7 @@ gcc
 glibc
 grub
 jfsutils
+kbd
 krb5
 libaio
 libffi
@@ -37,7 +38,6 @@ systemd
 thin-provisioning-tools
 vi
 xfsprogs
-
 0ad
 389-ds-base
 a2ps
@@ -51,6 +51,7 @@ alsa-tools
 apache
 apache-orc
 apr
+apr-util
 arch-rebuild-order
 arch-wiki-docs
 archinstall
@@ -64,6 +65,7 @@ babl
 baidupcs-go
 bcprov
 bees
+bigloo
 blisp
 bonnie++
 boost
@@ -87,8 +89,8 @@ clang
 clang14
 clash
 cln
-cloud-init
 clucene
+cmake
 cni-plugins
 cobalt
 cocogitto
@@ -104,7 +106,6 @@ dark-reader
 dbus-c++
 dconf-editor
 ddcutil
-deepin-account-faces
 deepin-anything
 deepin-desktop-base
 deepin-image-editor
@@ -120,13 +121,12 @@ docker-machine
 dpkg
 dragonfly-reverb
 dtc
-dtkgui
 dua-cli
 dump_syms
 easyloggingpp
 edk2
 efitools
-electron19
+electron25
 emacs
 enchant
 fakechroot
@@ -158,7 +158,6 @@ gedit-plugins
 gendesk
 geos
 gitea
-gitlab
 gitlab-gitaly
 gitlab-shell
 glide
@@ -218,7 +217,6 @@ latex2rtf
 leafpad
 libavif
 libb2
-libburn
 libc++
 libcdio
 libclc
@@ -235,15 +233,12 @@ libgoom2
 libgpod
 libimagequant
 libinput
-libisoburn
-libisofs
 libjpeg-turbo
 libjxl
 libksysguard
 libopenraw
 liborcus
 libotr
-libproxy
 libraw
 libreoffice-fresh
 librsvg
@@ -263,6 +258,7 @@ lldb
 llvm
 llvm14
 lm_sensors
+lmms
 luaexpat
 luajit
 luarocks
@@ -279,6 +275,7 @@ mdbook
 mdbook-linkcheck
 mesa
 meson
+mingw-w64-gcc
 mkinitcpio-archiso
 mpg123
 mplayer
@@ -297,6 +294,8 @@ nodejs-lts-fermium
 nodejs-lts-gallium
 ntp
 nuspell
+nvme-cli
+ocaml
 onetbb
 open-iscsi
 open-isns
@@ -333,6 +332,7 @@ python-charset-normalizer
 python-cryptography
 python-debugpy
 python-et-xmlfile
+python-falcon
 python-greenlet
 python-libcst
 python-mss
@@ -347,7 +347,6 @@ python-pylint
 python-pypandoc
 python-pythran
 python-semver
-python-sphinx_rtd_theme
 python-stone
 python-urllib3
 python-wstools
@@ -355,7 +354,6 @@ qemu
 qt5-base
 qt5-doc
 qt5-script
-qt5-speech
 qt5-webengine
 qt6-base
 qt6-declarative
@@ -364,7 +362,6 @@ qt6-quick3dphysics
 qt6-tools
 qtcreator
 quazip
-rav1e
 refind
 rhythmbox
 ripgrep
@@ -381,7 +378,6 @@ rust-bindgen
 sbsigntools
 scaleway-cli
 sccache
-sddm
 sdl2_gfx
 seabios
 sentry-cli
@@ -441,12 +437,3 @@ yaegi
 yaml-language-server
 zip
 zram-generator
-
-allegro
-dumb
-netcdf-openmpi
-pnetcdf-openmpi
-python-keras
-python-tensorboard_plugin_wit
-tensorboard
-tensorflow

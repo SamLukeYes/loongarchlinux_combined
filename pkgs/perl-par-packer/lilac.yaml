@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-par-packer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- perl-getopt-argvfile
-- perl-module-scandeps
-- perl-ipc-run3
-- perl-par
-- perl-par-dist
-- perl
-- perl-archive-zip
+repo_depends: []
 update_on:
 - alpm: perl-par-packer
   source: archpkg

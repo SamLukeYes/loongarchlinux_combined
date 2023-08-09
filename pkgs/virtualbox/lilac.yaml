@@ -10,43 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''virtualbox'')
 
   '
 repo_depends:
-- gcc
-- libxfixes
-- libxdamage
-- dkms
-- qt5-x11extras
-- libvpx
-- libtpms
-- glibc
-- libvncserver
-- gcc: gcc-libs
-- qt5-base
-- curl
-- xf86-video-vmware
-- libxinerama
-- libxcursor
-- libxml2
-- libxt
-- libxext
-- libpng
-- shared-mime-info
-- xorg-xrandr
-- make
-- procps-ng
-- openssl
-- qt5-tools
 - python
-- libxmu
-- pam
-- libxcomposite
-- zlib
-- liblzf
-- libx11
+- qt5-base
 update_on:
 - alias: python
 - alpm: qt5-base
   source: alpm
   strip_release: true
-- alias: python
 - alpm: virtualbox
   source: archpkg

@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libsolv'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- bzip2
-- rpm-tools
-- xz
-- zlib
-- expat
-- zstd
+repo_depends: []
 update_on:
 - alpm: libsolv
   source: archpkg

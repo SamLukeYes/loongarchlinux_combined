@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-browser-connect
 
   '
 repo_depends:
-- gobject-introspection: gobject-introspection-runtime
-- gnome-shell
-- pygobject: python-gobject
-- hicolor-icon-theme
 - python
 update_on:
 - alias: python

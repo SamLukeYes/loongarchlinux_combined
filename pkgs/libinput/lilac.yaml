@@ -1,7 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libwacom
-- mtdev
-- libevdev
-- systemd
+repo_depends: []
 update_on: []

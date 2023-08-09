@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xfsdump'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- acl
-- gcc: gcc-libs
-- ncurses
-- dmapi
-- xfsprogs
-- util-linux: util-linux-libs
-- attr
-- glibc
+repo_depends: []
 update_on:
 - alpm: xfsdump
   source: archpkg

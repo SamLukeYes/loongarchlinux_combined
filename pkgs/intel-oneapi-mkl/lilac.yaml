@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''intel-oneapi-mkl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- intel-oneapi-tbb
-- intel-oneapi-common
-- intel-oneapi-compiler-dpcpp-cpp-runtime
+repo_depends: []
 update_on:
 - alpm: intel-oneapi-mkl
   source: archpkg

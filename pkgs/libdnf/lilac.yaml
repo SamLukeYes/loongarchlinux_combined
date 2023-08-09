@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libdnf'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- rpm-tools
-- json-c
-- libsolv
-- librepo
-- gpgme
-- zlib
-- sqlite
-- openssl
-- glib2
-- libmodulemd
+repo_depends: []
 update_on:
 - alpm: libdnf
   source: archpkg

@@ -1,16 +1,5 @@
 destsubdir: extra
 repo_depends:
-- graphviz
-- gtksourceview3
-- libsecret
-- libgee
-- goocanvas
-- postgresql: postgresql-libs
-- libxslt
-- libfbclient
-- iso-codes
-- openssl
-- mariadb: mariadb-libs
 - python
 update_on:
 - alias: python

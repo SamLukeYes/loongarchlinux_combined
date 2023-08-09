@@ -10,9 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-binary-orphan
 
   '
 repo_depends:
+- haskell-data-array-byte
 - haskell-onetuple
-- ghc: ghc-libs
 update_on:
+- alpm: haskell-data-array-byte
+  source: alpm
 - alpm: haskell-onetuple
   source: alpm
 - alpm: haskell-binary-orphans

@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-xml-libxml-prett
 
   '
 repo_depends:
-- perl-exporter-tiny
 - perl
-- perl-xml-libxml
 update_on:
 - alias: perl
 - alpm: perl-xml-libxml-prettyprint

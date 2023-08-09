@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-skylighting''
 
   '
 repo_depends:
-- haskell-skylighting-format-blaze-html
-- ghc: ghc-libs
 - haskell-skylighting-core
-- haskell-skylighting-format-context
 - haskell-skylighting-format-ansi
+- haskell-skylighting-format-blaze-html
+- haskell-skylighting-format-context
 - haskell-skylighting-format-latex
 update_on:
 - alpm: haskell-skylighting-core

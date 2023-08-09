@@ -1,4 +1,3 @@
 destsubdir: extra
-repo_depends:
-- gdk-pixbuf2
+repo_depends: []
 update_on: []

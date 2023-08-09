@@ -8,13 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-class-load'')
 
   '
 repo_depends:
-- perl-module-runtime
-- perl-data-optlist
-- perl-test-fatal
-- perl-namespace-clean
-- perl-try-tiny
 - perl
-- perl-module-implementation
 update_on:
 - alias: perl
 - alpm: perl-class-load

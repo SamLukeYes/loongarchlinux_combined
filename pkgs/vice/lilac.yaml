@@ -10,16 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vice'')
 
   '
 repo_depends:
-- pulseaudio: libpulse
 - python
-- alsa-lib
-- sdl2_image
-- libjpeg-turbo
-- sdl2
-- gtk3
-- glew
-- giflib
-- libpng
 update_on:
 - alias: python
 - alpm: vice

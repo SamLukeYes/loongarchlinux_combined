@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''mk-configure'')
 
   '
-repo_depends:
-- gawk
-- bash
+repo_depends: []
 update_on:
 - alpm: mk-configure
   source: archpkg

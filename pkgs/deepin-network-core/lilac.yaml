@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- gsettings-qt
-- deepin-qt-dbus-factory
-- networkmanager-qt
+repo_depends: []
 update_on: []

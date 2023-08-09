@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hasql-implici
 
   '
 repo_depends:
-- haskell-network-ip
 - haskell-aeson
-- ghc: ghc-libs
+- haskell-hasql
+- haskell-network-ip
 - haskell-scientific
 - haskell-uuid
-- haskell-hasql
 - haskell-vector
 update_on:
 - alpm: haskell-aeson

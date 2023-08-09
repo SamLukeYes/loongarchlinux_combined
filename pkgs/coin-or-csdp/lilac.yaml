@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''coin-or-csdp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- lapack
+repo_depends: []
 update_on:
 - alpm: coin-or-csdp
   source: archpkg

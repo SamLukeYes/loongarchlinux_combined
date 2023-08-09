@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''atril'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libgxps
-- mathjax2
-- libspectre
-- djvulibre
-- gettext
-- poppler: poppler-glib
-- texlive-bin: libsynctex
+repo_depends: []
 update_on:
 - alpm: atril
   source: archpkg

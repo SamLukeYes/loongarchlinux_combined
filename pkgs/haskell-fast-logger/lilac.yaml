@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-fast-logger''
 
   '
 repo_depends:
-- ghc: ghc-libs
-- haskell-unix-compat
 - haskell-auto-update
-- haskell-unix-time
 - haskell-easy-file
+- haskell-unix-compat
+- haskell-unix-time
 update_on:
 - alpm: haskell-auto-update
   source: alpm

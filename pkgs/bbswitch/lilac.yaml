@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bbswitch'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- linux
-- dkms
+repo_depends: []
 update_on:
 - alpm: bbswitch
   source: archpkg

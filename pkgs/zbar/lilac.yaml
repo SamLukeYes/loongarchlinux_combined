@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zbar'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- v4l-utils
-- dbus
-- imagemagick
-- libxv
+repo_depends: []
 update_on:
 - alpm: zbar
   source: archpkg

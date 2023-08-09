@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-recaptcha'')
 repo_depends:
 - haskell-http
 - haskell-network
-- ghc: ghc-libs
 - haskell-network-uri
 update_on:
 - alpm: haskell-http

@@ -10,30 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gala'')
 
   '
 repo_depends:
-- libxfixes
-- libxdamage
-- libcanberra
-- plank
-- gnome-desktop
-- glib2
-- libxrandr
-- bamf
-- pango
-- libxext
-- cairo
-- mutter
-- libdrm
-- libxtst
-- libgexiv2
-- libxcomposite
-- gdk-pixbuf2
-- wayland
-- libxi
-- libgee
-- libx11
-- json-glib
-- gtk3
-- mesa
+- granite
 update_on:
 - alpm: granite
   provides: libgranite.so

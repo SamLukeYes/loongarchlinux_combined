@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libxfce4ui'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- startup-notification
-- libepoxy
-- libsm
-- libgtop
-- libxfce4util
-- gtk3
-- xfconf
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: libxfce4ui
   source: archpkg

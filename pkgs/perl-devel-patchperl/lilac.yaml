@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-devel-patchperl'
 
   '
 repo_depends:
-- perl-file-pushd
-- perl-module-pluggable
 - perl
 update_on:
 - alias: perl

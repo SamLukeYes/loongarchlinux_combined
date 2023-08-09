@@ -8,11 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pecan'')
 
   '
 repo_depends:
-- python-six
-- python-webob
-- python-webtest
-- python-mako
-- python-logutils
 - python
 update_on:
 - alias: python

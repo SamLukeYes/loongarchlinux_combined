@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opensearch-dashboards
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- opensearch-dashboards
-- gnuplot
+repo_depends: []
 update_on:
 - alpm: opensearch-dashboards-observability-plugin
   source: archpkg

@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ghc-exactprin
 
   '
 repo_depends:
-- haskell-syb
 - haskell-free
 - haskell-ghc-paths
-- ghc: ghc-libs
+- haskell-syb
 update_on:
 - alpm: haskell-free
   source: alpm

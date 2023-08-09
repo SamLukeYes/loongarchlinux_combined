@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xfce4-mailwatch-plugi
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- xfce4-panel
-- gnutls
+repo_depends: []
 update_on:
 - alpm: xfce4-mailwatch-plugin
   source: archpkg

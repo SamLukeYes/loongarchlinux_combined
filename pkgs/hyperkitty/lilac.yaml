@@ -7,24 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''hyperkitty'')
 
   '
-repo_depends:
-- python-whoosh
-- python-django-extensions
-- python-dateutil
-- python-django-mailman3
-- python-django-gravatar
-- python-django-q
-- python-networkx
-- python-pytz
-- sassc
-- python-mailmanclient
-- python-django-haystack
-- python-mistune
-- python-flufl-lock
-- django: python-django
-- python-robot-detection
-- python-django-rest-framework
-- python-django-compressor
+repo_depends: []
 update_on:
 - alpm: hyperkitty
   source: archpkg

@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fcitx-hangul'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libhangul
-- fcitx
+repo_depends: []
 update_on:
 - alpm: fcitx-hangul
   source: archpkg

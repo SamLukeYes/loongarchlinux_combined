@@ -8,16 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-soap-lite'')
 
   '
 repo_depends:
-- perl-uri
-- perl-mime-lite
-- perl-mime-tools
-- perl-fcgi
 - perl
-- perl-crypt-ssleay
-- perl-libwww
-- perl-class-inspector
-- perl-io-socket-ssl
-- perl-xml-parser
 update_on:
 - alias: perl
 - alpm: perl-soap-lite

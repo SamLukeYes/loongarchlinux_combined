@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fractal'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libhandy0
-- gstreamer: gst-plugin-gtk
-- gspell
-- gtksourceview4
-- gstreamer: gst-plugins-base-libs
-- gstreamer: gst-editing-services
-- gtk3
-- gstreamer: gst-plugins-bad
+repo_depends: []
 update_on:
 - alpm: fractal
   source: archpkg

@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-xxhash'')
 
   '
 repo_depends:
-- xxhash
 - python
 update_on:
 - alias: python

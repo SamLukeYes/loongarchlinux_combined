@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cataclysm-dda'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- sdl2_mixer
-- sdl2_image
-- ncurses
-- gettext
-- freetype2
-- sdl2_ttf
-- hicolor-icon-theme
+repo_depends: []
 update_on:
 - alpm: cataclysm-dda
   source: archpkg

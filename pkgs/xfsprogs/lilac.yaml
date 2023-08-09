@@ -1,7 +1,3 @@
 destsubdir: core
-repo_depends:
-- lvm2: device-mapper
-- util-linux: util-linux-libs
-- libinih
-- liburcu
+repo_depends: []
 update_on: []

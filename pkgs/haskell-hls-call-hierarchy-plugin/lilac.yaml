@@ -10,16 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-call-hier
 
   '
 repo_depends:
-- haskell-unordered-containers
-- haskell-lens
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-hls-plugin-api
-- haskell-lsp
-- haskell-ghcide
 - haskell-extra
-- haskell-sqlite-simple
+- haskell-ghcide
 - haskell-hiedb
+- haskell-hls-plugin-api
+- haskell-lens
+- haskell-lsp
+- haskell-sqlite-simple
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-aeson
   source: alpm

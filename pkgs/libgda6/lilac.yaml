@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgda6'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- sqlcipher
-- libsecret
-- postgresql: postgresql-libs
-- iso-codes
-- json-glib
-- gtk3
-- graphviz
+repo_depends: []
 update_on:
 - alpm: libgda6
   source: archpkg

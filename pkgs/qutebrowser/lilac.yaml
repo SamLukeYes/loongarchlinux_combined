@@ -9,9 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qutebrowser'')
   '
 repo_depends:
 - qt5-base
-- python-jinja
-- pyqt5: python-pyqt5
-- python-yaml
 update_on:
 - alpm: qt5-base
   source: alpm

@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxqt-policykit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- liblxqt
-- polkit-qt: polkit-qt5
+repo_depends: []
 update_on:
 - alpm: lxqt-policykit
   source: archpkg

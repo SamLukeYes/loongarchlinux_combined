@@ -1,14 +1,7 @@
 destsubdir: extra
 repo_depends:
-- elfutils: libelf
-- ncurses
-- xz
-- gdb: gdb-common
-- guile
-- expat
-- mpfr
-- source-highlight
 - python
+- guile
 update_on:
 - alias: python
 - alpm: guile

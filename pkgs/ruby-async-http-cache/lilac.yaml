@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-async-http-cache'')
 
   '
-repo_depends:
-- ruby-async-http
+repo_depends: []
 update_on:
 - alpm: ruby-async-http-cache
   source: archpkg

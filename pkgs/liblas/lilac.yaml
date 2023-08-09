@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''liblas'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- laszip2
-- proj
-- gdal
-- libgeotiff
-- boost: boost-libs
+repo_depends: []
 update_on:
 - alpm: liblas
   source: archpkg

@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lightdm-gtk-greeter''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtk3
-- lightdm
+repo_depends: []
 update_on:
 - alpm: lightdm-gtk-greeter
   source: archpkg

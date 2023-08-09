@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-logs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gsettings-desktop-schemas
-- libadwaita
-- gtk4
-- systemd
+repo_depends: []
 update_on:
 - alpm: gnome-logs
   source: archpkg

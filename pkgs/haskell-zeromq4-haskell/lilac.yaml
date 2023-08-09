@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-zeromq4-haske
   '
 repo_depends:
 - haskell-async
-- ghc: ghc-libs
-- zeromq
 - haskell-monad-control
 - haskell-transformers-base
 update_on:

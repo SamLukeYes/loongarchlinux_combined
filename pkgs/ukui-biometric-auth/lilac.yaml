@@ -1,7 +1,6 @@
 destsubdir: extra
 repo_depends:
 - opencv
-- polkit-qt: polkit-qt5
 update_on:
 - alpm: opencv
   source: alpm

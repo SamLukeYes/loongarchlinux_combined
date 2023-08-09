@@ -9,9 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-mail-gpg'')
   '
 repo_depends:
 - ruby
-- ruby-mail
-- ruby-rdoc
-- ruby-gpgme
 update_on:
 - alias: ruby
 - alpm: ruby-mail-gpg

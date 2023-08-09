@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''extra-cmake-modules'')
 
   '
-repo_depends:
-- cmake
+repo_depends: []
 update_on:
 - alpm: extra-cmake-modules
   source: archpkg

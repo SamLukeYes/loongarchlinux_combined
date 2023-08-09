@@ -10,22 +10,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cabal-plan'')
 
   '
 repo_depends:
-- haskell-optparse-applicative
-- haskell-optics-core
-- haskell-base-compat
-- haskell-semialign
-- haskell-async
 - haskell-aeson
-- ghc: ghc-libs
+- haskell-ansi-terminal
+- haskell-async
+- haskell-base-compat
+- haskell-base16-bytestring
+- haskell-cabal-install-parsers
+- haskell-optics-core
+- haskell-optparse-applicative
+- haskell-semialign
+- haskell-singleton-bool
 - haskell-tar
 - haskell-these
 - haskell-topograph
-- haskell-ansi-terminal
-- haskell-cabal-install-parsers
 - haskell-vector
 - haskell-zlib
-- haskell-singleton-bool
-- haskell-base16-bytestring
 update_on:
 - alpm: haskell-aeson
   source: alpm

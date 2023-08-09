@@ -10,28 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telegram-desktop'')
 
   '
 repo_depends:
-- pipewire
-- hicolor-icon-theme
-- libxrandr
-- ffmpeg
-- ttf-opensans
-- zlib: minizip
-- qt6-5compat
 - protobuf
-- qt6-svg
-- libdispatch
-- jemalloc
-- glibmm-2.68
-- hunspell
-- lz4
-- qt6-wayland
-- openal
-- libxtst
-- abseil-cpp
-- openssl
-- rnnoise
-- xxhash
-- qt6-imageformats
 update_on:
 - alias: protobuf
 - alpm: telegram-desktop

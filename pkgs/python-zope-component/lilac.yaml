@@ -8,11 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-zope-component
 
   '
 repo_depends:
-- python-setuptools
-- python-zope-event
-- python-zope-hookable
 - python
-- python-zope-interface
 update_on:
 - alias: python
 - alpm: python-zope-component

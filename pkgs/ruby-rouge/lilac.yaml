@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-rouge'')
   '
 repo_depends:
 - ruby
-- ruby-rdoc
 update_on:
 - alias: ruby
 - alpm: ruby-rouge

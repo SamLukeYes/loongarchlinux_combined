@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''latte-integrale'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- 4ti2
-- cddlib
-- lidia
-- ntl
+repo_depends: []
 update_on:
 - alpm: latte-integrale
   source: archpkg

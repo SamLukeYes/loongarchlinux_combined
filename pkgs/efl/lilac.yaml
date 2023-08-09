@@ -9,52 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''efl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxrender
-- libxfixes
-- libxdamage
-- libsndfile
-- util-linux: util-linux-libs
-- mailcap
-- glib2
-- hicolor-icon-theme
-- libjpeg-turbo
-- libxrandr
-- curl
-- dbus
-- gstreamer
-- libxcursor
-- libxinerama
-- harfbuzz
-- libglvnd
-- fribidi
-- libxext
-- libpng
-- libxkbcommon: libxkbcommon-x11
-- openjpeg2
-- fontconfig
-- libxkbcommon
-- shared-mime-info
-- systemd: systemd-libs
-- libxcb
-- freetype2
-- gstreamer: gst-plugins-base-libs
-- libxtst
-- openssl
-- lua52
-- pulseaudio: libpulse
-- libinput
-- libxcomposite
-- wayland
-- libxi
-- libxss
-- libunwind
-- libtiff
-- zlib
-- libx11
-- libwebp
-- giflib
-- mesa
+repo_depends: []
 update_on:
 - alpm: efl
   source: archpkg

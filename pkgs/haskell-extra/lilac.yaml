@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-extra'')
 
   '
 repo_depends:
-- ghc: ghc-libs
 - haskell-clock
 update_on:
 - alpm: haskell-clock

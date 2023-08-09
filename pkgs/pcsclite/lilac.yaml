@@ -9,11 +9,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pcsclite'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends: []
+repo_depends:
+- systemd-libs
+- polkit
 update_on:
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
 - alpm: systemd-libs
   provides: libudev.so
   source: alpm

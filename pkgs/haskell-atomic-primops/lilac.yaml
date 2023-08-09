@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-atomic-primop
 
   '
 repo_depends:
-- ghc: ghc-libs
 - haskell-primitive
 update_on:
 - alpm: haskell-primitive

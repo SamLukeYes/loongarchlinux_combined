@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-stem'')
 
   '
 repo_depends:
-- procps-ng
-- python-cryptography
 - python
-- python-pynacl
 update_on:
 - alias: python
 - alpm: python-stem

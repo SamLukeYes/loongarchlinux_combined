@@ -1,21 +1,6 @@
 destsubdir: extra
 repo_depends:
-- libiptcdata
-- upower
-- libgxps
-- libseccomp
-- libgrss
-- libcue
-- libgsf
-- libexif
-- libosinfo
 - tracker3
-- exempi
-- gstreamer: gst-plugins-base-libs
-- networkmanager: libnm
-- poppler: poppler-glib
-- giflib
-- libgexiv2
 update_on:
 - alpm: tracker3
   provides: libtracker-sparql-3.0.so

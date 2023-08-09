@@ -10,17 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-postgresql-si
 
   '
 repo_depends:
-- haskell-aeson
-- ghc: ghc-libs
-- haskell-hashable
 - haskell-only
+- haskell-aeson
+- haskell-attoparsec
 - haskell-case-insensitive
+- haskell-hashable
+- haskell-postgresql-libpq
+- haskell-scientific
 - haskell-time-compat
 - haskell-uuid-types
-- haskell-scientific
 - haskell-vector
-- haskell-attoparsec
-- haskell-postgresql-libpq
 update_on:
 - alpm: haskell-only
   source: alpm

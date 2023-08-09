@@ -7,34 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''base'')
 
   '
-repo_depends:
-- bzip2
-- pacman
-- gzip
-- grep
-- util-linux
-- glibc
-- systemd: systemd-sysvcompat
-- coreutils
-- file
-- gcc: gcc-libs
-- gawk
-- pciutils
-- xz
-- sed
-- psmisc
-- filesystem
-- iproute2
-- bash
-- archlinux-keyring
-- shadow
-- systemd
-- licenses
-- gettext
-- procps-ng
-- tar
-- iputils
-- findutils
+repo_depends: []
 update_on:
 - alpm: base
   source: archpkg

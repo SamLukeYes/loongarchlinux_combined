@@ -10,13 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''geany-plugins'')
 
   '
 repo_depends:
-- ctpl
-- lua51
-- libgit2
-- gpgme
-- vte3
-- webkit2gtk
-- gtkspell3
 - python
 update_on:
 - alias: python

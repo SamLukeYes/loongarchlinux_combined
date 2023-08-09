@@ -9,21 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''meshroom'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- openimageio
-- popsift
-- pyside2
-- qt5-quickcontrols2
-- qt5-quickcontrols
-- python-psutil
-- qt5-3d
-- qt5-imageformats
-- qt5-charts
-- qt5-location
-- alice-vision
-- alembic
-- qt5-graphicaleffects
-- qt5-svg
+repo_depends: []
 update_on:
 - alpm: meshroom
   source: archpkg

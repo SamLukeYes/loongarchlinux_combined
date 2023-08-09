@@ -10,24 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''monero-gui'')
 
   '
 repo_depends:
-- libusb
-- monero
-- hicolor-icon-theme
-- qt5-xmlpatterns
+- readline
+- systemd-libs
 - unbound
 - qt5-base
-- qt5-quickcontrols
-- pcsclite
-- qt5-graphicaleffects
-- zeromq
 - qt5-declarative
-- openssl
-- hidapi
-- qt5-quickcontrols2
-- libunwind
-- readline
-- qt5-svg
-- boost: boost-libs
 update_on:
 - alias: readline
 - alpm: systemd-libs

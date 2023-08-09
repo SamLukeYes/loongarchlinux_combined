@@ -10,13 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deteriorate-lv2'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- cairomm
 - atkmm
-- gtkmm
+- cairomm
 - glibmm
 - libsigc++
-- glibc
 update_on:
 - alpm: atkmm
   provides: libatkmm-1.6.so

@@ -10,27 +10,16 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sane'')
 
   '
 repo_depends:
-- libusb
-- glib2
-- glibc
-- gcc: gcc-libs
-- curl
 - avahi
-- libxml2
-- bash
-- cairo
-- libpng
-- systemd: systemd-libs
-- net-snmp
-- v4l-utils
-- libieee1284
-- poppler: poppler-glib
+- curl
+- glib2
 - libgphoto2
-- libtiff
+- darktable
+- libusb
+- libxml2
+- poppler-glib
+- systemd-libs
 update_on:
-- alpm: avahi
-  provides: libavahi-client.so
-  source: alpm
 - alpm: avahi
   provides: libavahi-common.so
   source: alpm
@@ -39,9 +28,6 @@ update_on:
   source: alpm
 - alpm: glib2
   provides: libgobject-2.0.so
-  source: alpm
-- alpm: libgphoto2
-  provides: libgphoto2.so
   source: alpm
 - alpm: libgphoto2
   provides: libgphoto2_port.so

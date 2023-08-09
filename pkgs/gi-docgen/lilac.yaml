@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''gi-docgen'')
 
   '
-repo_depends:
-- python-toml
-- python-markdown
-- python-markupsafe
-- python-pygments
-- python-jinja
-- python-typogrify
+repo_depends: []
 update_on:
 - alpm: gi-docgen
   source: archpkg

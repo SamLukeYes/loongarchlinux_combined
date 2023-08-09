@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cutefish-qt-plugins''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libdbusmenu-qt: libdbusmenu-qt5
-- libqtxdg
-- qt5-quickcontrols2
-- kwindowsystem
+repo_depends: []
 update_on:
 - alpm: cutefish-qt-plugins
   source: archpkg

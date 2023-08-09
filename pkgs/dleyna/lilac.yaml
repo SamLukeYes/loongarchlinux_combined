@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dleyna'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gupnp-dlna
-- libsoup3
-- dbus
-- libxml2
-- gupnp
-- gupnp-av
+repo_depends: []
 update_on:
 - alpm: dleyna
   source: archpkg

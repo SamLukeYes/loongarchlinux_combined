@@ -10,8 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lttng-ust2.12'')
 
   '
 repo_depends:
-- glibc
-- liburcu
+- numactl
 update_on:
 - alpm: numactl
   provides: libnuma.so

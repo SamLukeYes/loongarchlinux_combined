@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''virt-viewer'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libgovirt
-- spice-gtk
-- libvirt-glib
-- vte3
-- libvirt
-- gtk-vnc
+repo_depends: []
 update_on:
 - alpm: virt-viewer
   source: archpkg

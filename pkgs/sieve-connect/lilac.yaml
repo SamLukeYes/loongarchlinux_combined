@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''sieve-connect'')
 
   '
-repo_depends:
-- perl-io-socket-inet6
-- perl-term-readkey
-- perl-authen-sasl
-- perl-net-dns
-- perl-io-socket-ssl
+repo_depends: []
 update_on:
 - alpm: sieve-connect
   source: archpkg

@@ -9,27 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''snes9x'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- alsa-lib
-- libxv
-- hicolor-icon-theme
-- glib2
-- libxrandr
-- libxinerama
-- libxml2
-- zlib: minizip
-- libxext
-- cairo
-- libpng
-- pulseaudio: libpulse
-- libepoxy
-- gdk-pixbuf2
-- gtkmm3
-- sdl2
-- zlib
-- libx11
-- gtk3
-- portaudio
+repo_depends: []
 update_on:
 - alpm: snes9x
   source: archpkg

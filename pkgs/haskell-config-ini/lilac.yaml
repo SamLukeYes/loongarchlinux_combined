@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-config-ini'')
 
   '
 repo_depends:
-- haskell-megaparsec
 - haskell-unordered-containers
-- ghc: ghc-libs
+- haskell-megaparsec
 update_on:
 - alpm: haskell-unordered-containers
   source: alpm

@@ -9,15 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kwin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- plasma-framework
-- libqaccessibilityclient
-- xcb-util-cursor
-- kscreenlocker
-- libxcvt
-- breeze
-- kcmutils
-- lcms2
+repo_depends: []
 update_on:
 - alpm: kwin
   source: archpkg

@@ -1,7 +1,3 @@
 destsubdir: extra
-repo_depends:
-- libxss
-- gstreamer
-- libsm
-- gtkmm3
+repo_depends: []
 update_on: []

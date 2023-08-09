@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-infer-license
   '
 repo_depends:
 - haskell-text-metrics
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-text-metrics
   source: alpm

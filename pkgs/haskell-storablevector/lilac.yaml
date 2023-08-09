@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-storablevecto
 
   '
 repo_depends:
-- haskell-syb
-- ghc: ghc-libs
-- haskell-utility-ht
-- haskell-quickcheck
 - haskell-non-negative
+- haskell-utility-ht
 - haskell-unsafe
+- haskell-quickcheck
+- haskell-syb
 update_on:
 - alpm: haskell-non-negative
   source: alpm

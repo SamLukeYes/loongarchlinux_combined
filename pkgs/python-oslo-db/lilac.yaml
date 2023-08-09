@@ -7,15 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-oslo-db'')
 
   '
-repo_depends:
-- python-oslo-config
-- python-oslo-i18n
-- python-pbr
-- python-sqlalchemy
-- python-alembic
-- python-debtcollector
-- python-stevedore
-- python-oslo-utils
+repo_depends: []
 update_on:
 - alpm: python-oslo-db
   source: archpkg

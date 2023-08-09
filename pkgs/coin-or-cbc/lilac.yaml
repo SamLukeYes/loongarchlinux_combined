@@ -1,4 +1,3 @@
 destsubdir: extra
-repo_depends:
-- coin-or-cgl
+repo_depends: []
 update_on: []

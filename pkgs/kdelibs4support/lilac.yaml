@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdelibs4support'')
 
   '
 repo_depends:
-- kitemmodels
-- kemoticons
-- kunitconversion
 - perl
-- kparts
 update_on:
 - alias: perl
 - alpm: kdelibs4support

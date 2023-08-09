@@ -10,8 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pangomm-2.48'')
 
   '
 repo_depends:
+- libsigc++-3.0
 - glibmm-2.68
-- pango
 - cairomm-1.16
 update_on:
 - alpm: libsigc++-3.0

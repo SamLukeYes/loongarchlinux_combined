@@ -11,30 +11,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fluidsynth'')
   '
 repo_depends:
 - alsa-lib
-- libsndfile
-- glib2
-- libinstpatch
-- glibc
-- pipewire: libpipewire
-- gcc: gcc-libs
 - dbus
-- systemd: systemd-libs
-- pulseaudio: libpulse
-- sdl2
-- readline
+- glib2
+- jack2
+- libinstpatch
+- libpipewire
+- libpulse
+- libsndfile
 - portaudio
+- readline
+- systemd-libs
 update_on:
 - alpm: alsa-lib
   provides: libasound.so
   source: alpm
 - alpm: dbus
   provides: libdbus-1.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgmodule-2.0.so
   source: alpm
 - alpm: glib2
   provides: libgobject-2.0.so
@@ -57,7 +49,6 @@ update_on:
 - alpm: portaudio
   provides: libportaudio.so
   source: alpm
-- alias: readline
 - alpm: readline
   provides: libreadline.so
   source: alpm

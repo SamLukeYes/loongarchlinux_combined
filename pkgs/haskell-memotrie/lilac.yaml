@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-memotrie'')
 
   '
 repo_depends:
-- ghc: ghc-libs
 - haskell-newtype-generics
 update_on:
 - alpm: haskell-newtype-generics

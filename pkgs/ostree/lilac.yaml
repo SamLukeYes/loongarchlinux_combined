@@ -10,41 +10,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ostree'')
 
   '
 repo_depends:
-- util-linux
-- glib2
-- glibc
-- gcc: gcc-libs
-- fuse3
-- xz
-- curl
 - avahi
-- libsodium
-- bash
-- systemd: systemd-libs
+- curl
+- glib2
 - gpgme
-- openssl
-- libgpg-error
-- zlib
 - libarchive
 - libsoup
+- openssl
+- systemd-libs
+- xz
 update_on:
-- alpm: avahi
-  provides: libavahi-client.so
-  source: alpm
-- alpm: avahi
-  provides: libavahi-common.so
-  source: alpm
 - alpm: avahi
   provides: libavahi-glib.so
   source: alpm
 - alpm: curl
   provides: libcurl.so
-  source: alpm
-- alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
   source: alpm
 - alpm: glib2
   provides: libgobject-2.0.so

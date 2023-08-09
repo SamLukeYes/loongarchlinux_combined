@@ -8,12 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perlbrew'')
 
   '
 repo_depends:
-- perl-capture-tiny
 - perl
-- perl-devel-patchperl
-- perl-local-lib
-- perl-cpan-perl-releases
-- perl-file-path-tiny
 update_on:
 - alias: perl
 - alpm: perlbrew

@@ -11,10 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''step'')
   '
 repo_depends:
 - gsl
-- libqalculate
-- knewstuff
-- hicolor-icon-theme
-- kplotting
 update_on:
 - alpm: gsl
   source: alpm

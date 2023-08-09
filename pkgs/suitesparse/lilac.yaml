@@ -1,6 +1,3 @@
 destsubdir: extra
-repo_depends:
-- mpfr
-- lapack: lapack64
-- lapack
+repo_depends: []
 update_on: []

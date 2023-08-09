@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-openstackdocstheme'')
 
   '
-repo_depends:
-- python-pbr
-- python-sphinx
-- python-dulwich
+repo_depends: []
 update_on:
 - alpm: python-openstackdocstheme
   source: archpkg

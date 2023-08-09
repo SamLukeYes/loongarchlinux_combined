@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-kramdown'')
   '
 repo_depends:
 - ruby
-- ruby-rexml
 update_on:
 - alias: ruby
 - alpm: ruby-kramdown

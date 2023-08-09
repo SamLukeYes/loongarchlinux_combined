@@ -1,15 +1,5 @@
 destsubdir: extra
 repo_depends:
-- llvm: llvm-libs
-- pam
 - icu
-- systemd: systemd-libs
-- zlib
-- krb5
-- libxslt
-- lz4
-- libxml2
-- zstd
-- openldap: libldap
 update_on:
 - alias: icu

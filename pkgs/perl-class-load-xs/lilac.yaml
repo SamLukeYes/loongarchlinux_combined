@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-class-load-xs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- perl-class-load
+repo_depends: []
 update_on:
 - alpm: perl-class-load-xs
   source: archpkg

@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gv'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- ghostscript
-- xaw3d
+repo_depends: []
 update_on:
 - alpm: gv
   source: archpkg

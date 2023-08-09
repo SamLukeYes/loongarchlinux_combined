@@ -8,18 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''weechat-matrix'')
 
   '
 repo_depends:
-- libolm: python-olm
-- python-logbook
-- python-pygments
-- python-pyopenssl
-- python-atomicwrites
-- python-webcolors
-- python-peewee
-- python-attrs
-- python-matrix-nio
-- python-cachetools
 - python
-- weechat
 update_on:
 - alias: python
 - alpm: weechat-matrix

@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tostring'')
 repo_depends:
 - haskell-case-insensitive
 - haskell-utf8-string
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-case-insensitive
   source: alpm

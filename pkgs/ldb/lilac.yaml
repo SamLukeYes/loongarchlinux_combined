@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ldb'')
 
   '
 repo_depends:
-- lmdb
-- popt
-- talloc
+- tevent
 - tdb
 update_on:
 - alpm: tevent

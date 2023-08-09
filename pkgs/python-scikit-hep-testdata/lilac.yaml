@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-scikit-hep-testdata'')
 
   '
-repo_depends:
-- python-importlib_resources
-- python-requests
-- python-pyaml
+repo_depends: []
 update_on:
 - alpm: python-scikit-hep-testdata
   source: archpkg

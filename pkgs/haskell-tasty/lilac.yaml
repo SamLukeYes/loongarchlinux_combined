@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty'')
 
   '
 repo_depends:
-- haskell-optparse-applicative
-- ghc: ghc-libs
 - haskell-ansi-terminal
+- haskell-optparse-applicative
 - haskell-tagged
 update_on:
 - alpm: haskell-ansi-terminal

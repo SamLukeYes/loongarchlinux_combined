@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''clutter-gst'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gdk-pixbuf2
-- libxdamage
-- gstreamer: gst-plugins-base-libs
-- clutter
-- libgudev
+repo_depends: []
 update_on:
 - alpm: clutter-gst
   source: archpkg

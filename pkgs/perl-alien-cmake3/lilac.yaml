@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-alien-cmake3'')
 
   '
-repo_depends:
-- cmake
-- perl-alien-build
+repo_depends: []
 update_on:
 - alpm: perl-alien-cmake3
   source: archpkg

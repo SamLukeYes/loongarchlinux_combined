@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-regex-pcre'')
 
   '
 repo_depends:
-- pcre
 - haskell-regex-base
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-regex-base
   source: alpm

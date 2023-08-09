@@ -10,13 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxqt-powermanagement'
 
   '
 repo_depends:
-- kidletime
-- lxqt-globalkeys
-- qt5-x11extras
-- solid
-- upower
-- qt5-svg
-- hicolor-icon-theme
+- libqtxdg
 update_on:
 - alpm: libqtxdg
   provides: libQt5Xdg.so

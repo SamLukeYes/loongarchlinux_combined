@@ -10,15 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xmonad-extras'')
 
   '
 repo_depends:
-- haskell-libmpd
-- haskell-network
-- ghc: ghc-libs
-- xmonad-contrib
 - haskell-x11
 - haskell-alsa-mixer
-- haskell-regex-posix
-- xmonad
 - haskell-hint
+- haskell-libmpd
+- haskell-network
+- haskell-regex-posix
 update_on:
 - alpm: haskell-x11
   source: alpm

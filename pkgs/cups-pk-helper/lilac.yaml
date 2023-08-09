@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- polkit
-- cups: libcups
+repo_depends: []
 update_on: []

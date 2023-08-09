@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-lsp-black'')
 
   '
-repo_depends:
-- python-toml
-- python-lsp-server
-- python-black
+repo_depends: []
 update_on:
 - alpm: python-lsp-black
   source: archpkg

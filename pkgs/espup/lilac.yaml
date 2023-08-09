@@ -10,10 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''espup'')
 
   '
 repo_depends:
-- git
-- ldproxy
-- curl
-- python-pip
+- bzip2
+- xz
 - python
 update_on:
 - alpm: bzip2

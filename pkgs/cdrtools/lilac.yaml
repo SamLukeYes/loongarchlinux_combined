@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- acl
-- libcap
+repo_depends: []
 update_on: []

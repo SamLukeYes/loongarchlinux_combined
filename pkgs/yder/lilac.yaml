@@ -10,7 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''yder'')
 
   '
 repo_depends:
-- glibc
+- orcania
+- systemd-libs
 update_on:
 - alpm: orcania
   provides: liborcania.so

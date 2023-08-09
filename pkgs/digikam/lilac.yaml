@@ -10,21 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''digikam'')
 
   '
 repo_depends:
-- qt5-xmlpatterns
-- akonadi-contacts
-- marble: marble-common
-- threadweaver
-- glu
-- jasper
-- lensfun
-- kfilemetadata
-- qt5-networkauth
-- knotifyconfig
-- kcalendarcore
 - opencv
-- perl-image-exiftool
-- imagemagick
-- libksane
 update_on:
 - alpm: opencv
   source: alpm

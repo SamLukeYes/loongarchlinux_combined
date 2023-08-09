@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-three-merge'')
 
   '
-repo_depends:
-- python-diff-match-patch
+repo_depends: []
 update_on:
 - alpm: python-three-merge
   source: archpkg

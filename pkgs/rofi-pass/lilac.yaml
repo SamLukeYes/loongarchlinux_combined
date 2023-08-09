@@ -7,14 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''rofi-pass'')
 
   '
-repo_depends:
-- pass
-- pwgen
-- xdg-utils
-- gawk
-- xdotool
-- xclip
-- rofi
+repo_depends: []
 update_on:
 - alpm: rofi-pass
   source: archpkg

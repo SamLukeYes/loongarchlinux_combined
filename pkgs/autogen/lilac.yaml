@@ -1,8 +1,7 @@
 destsubdir: extra
 repo_depends:
-- libxml2
-- perl
 - guile
+- perl
 update_on:
 - alpm: guile
   source: alpm

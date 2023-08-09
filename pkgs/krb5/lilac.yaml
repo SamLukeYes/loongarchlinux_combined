@@ -1,15 +1,11 @@
 destsubdir: core
 repo_depends:
 - keyutils
-#- e2fsprogs
-- glibc
-- openldap: libldap
+- e2fsprogs
+- libverto
 update_on:
 - alpm: keyutils
   provides: libkeyutils.so
-  source: alpm
-- alpm: e2fsprogs
-  provides: libss.so
   source: alpm
 - alpm: e2fsprogs
   provides: libcom_err.so

@@ -10,26 +10,24 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gtk-sni-tray'
 
   '
 repo_depends:
-- haskell-enclosed-exceptions
 - haskell-dbus
+- haskell-dbus-hslogger
+- haskell-enclosed-exceptions
+- haskell-gi-cairo
 - haskell-gi-cairo-connector
+- haskell-gi-cairo-render
+- haskell-gi-dbusmenugtk3
+- haskell-gi-gdk3
+- haskell-gi-gdkpixbuf
+- haskell-gi-glib
+- haskell-gi-gtk3
 - haskell-gtk-strut
+- haskell-gi
+- haskell-gi-base
 - haskell-hslogger
 - haskell-optparse-applicative
-- haskell-gi-gdk3
-- haskell-dbus-hslogger
-- haskell-gi-cairo-render
-- haskell-gi-cairo
-- haskell-gi-dbusmenugtk3
-- ghc: ghc-libs
-- haskell-gi-gtk3
-- haskell-gi-glib
-- haskell-gi-base
-- haskell-gi
 - haskell-status-notifier-item
 - haskell-transformers-base
-- gtk3
-- haskell-gi-gdkpixbuf
 update_on:
 - alpm: haskell-dbus
   source: alpm

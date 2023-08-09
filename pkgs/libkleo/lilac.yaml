@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libkleo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kpimtextedit
-- gpgme: qgpgme-qt5
-- kitemmodels
+repo_depends: []
 update_on:
 - alpm: libkleo
   source: archpkg

@@ -9,17 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libcaca'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- freeglut
-- gcc: gcc-libs
-- ncurses
-- glu
-- imlib2
-- zlib
-- libx11
-- libglvnd
-- glibc
-- slang
+repo_depends: []
 update_on:
 - alpm: libcaca
   source: archpkg

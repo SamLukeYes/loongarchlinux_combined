@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mdf2iso'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glibc
+repo_depends: []
 update_on:
 - alpm: mdf2iso
   source: archpkg

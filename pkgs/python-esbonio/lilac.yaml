@@ -7,13 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-esbonio'')
 
   '
-repo_depends:
-- python-sphinx
-- python-setuptools
-- python-typing_extensions
-- python-appdirs
-- python-pygls
-- python-pyspellchecker
+repo_depends: []
 update_on:
 - alpm: python-esbonio
   source: archpkg

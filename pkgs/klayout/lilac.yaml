@@ -10,13 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''klayout'')
 
   '
 repo_depends:
-- qt5-xmlpatterns
-- ruby
 - qt5-base
-- qt5-multimedia
-- qt5-svg
-- qt5-tools
 - python
+- ruby
 update_on:
 - alpm: qt5-base
   source: alpm

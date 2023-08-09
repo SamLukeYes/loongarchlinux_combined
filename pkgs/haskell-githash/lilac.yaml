@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-githash'')
   '
 repo_depends:
 - haskell-th-compat
-- ghc: ghc-libs
-- git
 update_on:
 - alpm: haskell-th-compat
   source: alpm

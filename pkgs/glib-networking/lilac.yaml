@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glib-networking'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gnutls
-- gsettings-desktop-schemas
-- glib2
-- libproxy
+repo_depends: []
 update_on:
 - alpm: glib-networking
   source: archpkg

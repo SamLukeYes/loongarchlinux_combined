@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xcb-imdkit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- xcb-util-keysyms
-- xcb-util
+repo_depends: []
 update_on:
 - alpm: xcb-imdkit
   source: archpkg

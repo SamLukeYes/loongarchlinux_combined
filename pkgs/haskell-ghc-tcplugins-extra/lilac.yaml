@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ghc-tcplugins
 
   '
 repo_depends:
-- ghc: ghc-libs
+- haskell-ghc
 update_on:
 - alpm: haskell-ghc
   source: alpm

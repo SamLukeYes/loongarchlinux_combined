@@ -8,9 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lua-vstruct'')
 
   '
 repo_depends:
-- lua51
-- lua52
-- lua53
 - lua
 update_on:
 - alias: lua

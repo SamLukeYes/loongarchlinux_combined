@@ -8,15 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-internetarchiv
 
   '
 repo_depends:
-- python-requests
-- python-tqdm
-- python-six
-- python-docopt
-- python-jsonpatch
-- python-schema
-- python-jsonpointer
-- python-yaml
-- python-args
 - python
 update_on:
 - alias: python

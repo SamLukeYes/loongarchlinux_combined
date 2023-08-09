@@ -10,18 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''musescore'')
 
   '
 repo_depends:
-- qt5-xmlpatterns
-- gcc: gcc-libs
-- qt5-quickcontrols2
+- alsa-lib
+- freetype2
+- libsndfile
 - qt5-base
-- qt5-quickcontrols
-- zlib
-- qt5-networkauth
-- qt5-x11extras
 - qt5-declarative
-- qt5-graphicaleffects
-- qt5-svg
-- glibc
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

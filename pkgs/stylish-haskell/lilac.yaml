@@ -10,15 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''stylish-haskell'')
 
   '
 repo_depends:
+- haskell-aeson
+- haskell-file-embed
+- haskell-ghc-lib-parser
 - haskell-optparse-applicative
 - haskell-strict
 - haskell-syb
-- haskell-aeson
-- ghc: ghc-libs
 - haskell-hsyaml
-- haskell-ghc-lib-parser
 - haskell-hsyaml-aeson
-- haskell-file-embed
 update_on:
 - alpm: haskell-aeson
   source: alpm

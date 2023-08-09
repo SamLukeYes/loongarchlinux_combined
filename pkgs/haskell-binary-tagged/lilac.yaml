@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-binary-tagged
 
   '
 repo_depends:
-- haskell-tagged
 - haskell-base16-bytestring
 - haskell-structured
-- ghc: ghc-libs
+- haskell-tagged
 update_on:
 - alpm: haskell-base16-bytestring
   source: alpm

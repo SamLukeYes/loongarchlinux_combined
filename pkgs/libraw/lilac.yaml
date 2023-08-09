@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- jasper
-- lcms2
+repo_depends: []
 update_on: []

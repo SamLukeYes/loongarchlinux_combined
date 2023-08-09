@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''minder'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- granite
-- libhandy
-- libarchive
-- gtksourceview4
-- discount
+repo_depends: []
 update_on:
 - alpm: minder
   source: archpkg

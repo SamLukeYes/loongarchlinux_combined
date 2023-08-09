@@ -10,15 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''monero'')
 
   '
 repo_depends:
-- hidapi
-- libusb
-- libunwind
-- pcsclite
 - readline
 - protobuf
-- openssl
-- zeromq
-- boost: boost-libs
+- systemd-libs
+- unbound
 update_on:
 - alias: readline
 - alias: protobuf

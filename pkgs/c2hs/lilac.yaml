@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''c2hs'')
 repo_depends:
 - haskell-dlist
 - haskell-language-c
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-dlist
   source: alpm

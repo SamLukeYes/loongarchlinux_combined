@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''soundkonverter'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- phonon: phonon-qt5
-- libkcddb
-- cdparanoia
-- kdelibs4support
-- hicolor-icon-theme
-- taglib
+repo_depends: []
 update_on:
 - alpm: soundkonverter
   source: archpkg

@@ -10,13 +10,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-hedgeho
 
   '
 repo_depends:
-- haskell-hedgehog
+- haskell-hspec
 - haskell-hspec-core
-- ghc: ghc-libs
+- haskell-hedgehog
+- haskell-hunit
 - haskell-quickcheck
 - haskell-splitmix
-- haskell-hspec
-- haskell-hunit
 update_on:
 - alpm: haskell-hspec
   source: alpm

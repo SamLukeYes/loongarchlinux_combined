@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-movie'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qtmpris
-- deepin-qt5integration
-- libxtst
-- mpv
-- qt5-multimedia
-- qtdbusextended
-- ffmpegthumbnailer
+repo_depends: []
 update_on:
 - alpm: deepin-movie
   source: archpkg

@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-svg-builder''
 
   '
 repo_depends:
-- haskell-hashable
 - haskell-blaze-builder
+- haskell-hashable
 - haskell-unordered-containers
-- ghc: ghc-libs
 update_on:
 - alpm: haskell-blaze-builder
   source: alpm

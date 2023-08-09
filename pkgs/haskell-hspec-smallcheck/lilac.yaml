@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-smallch
 
   '
 repo_depends:
-- haskell-hspec-core
-- ghc: ghc-libs
-- haskell-smallcheck
-- haskell-hunit
 - haskell-call-stack
+- haskell-hspec-core
+- haskell-hunit
+- haskell-smallcheck
 update_on:
 - alpm: haskell-call-stack
   source: alpm

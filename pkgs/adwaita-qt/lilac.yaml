@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''adwaita-qt'')
 
   '
 repo_depends:
-- qt5-x11extras
 - qt6-base
 update_on:
 - alpm: qt6-base

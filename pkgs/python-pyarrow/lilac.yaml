@@ -10,11 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyarrow'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- python-setuptools-scm
-- arrow
-- glibc
-- python-numpy
 - python
 update_on:
 - alias: python

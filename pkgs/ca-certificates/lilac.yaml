@@ -1,7 +1,3 @@
 destsubdir: core
-repo_depends:
-- bash
-- findutils
-- nss: ca-certificates-mozilla
-- coreutils
+repo_depends: []
 update_on: []

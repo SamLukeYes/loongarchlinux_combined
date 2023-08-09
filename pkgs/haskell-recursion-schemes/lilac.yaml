@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-recursion-sch
 
   '
 repo_depends:
-- ghc: ghc-libs
-- haskell-data-fix
-- haskell-th-abstraction
-- haskell-comonad
-- haskell-free
 - haskell-base-orphans
+- haskell-comonad
+- haskell-data-fix
+- haskell-free
+- haskell-th-abstraction
 update_on:
 - alpm: haskell-base-orphans
   source: alpm

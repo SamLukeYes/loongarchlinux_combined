@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nvtop'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- systemd: systemd-libs
-- ncurses
+repo_depends: []
 update_on:
 - alpm: nvtop
   source: archpkg

@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xcb-util-image'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- xcb-util
-- libxcb
+repo_depends: []
 update_on:
 - alpm: xcb-util-image
   source: archpkg

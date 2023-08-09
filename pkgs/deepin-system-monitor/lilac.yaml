@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-system-monitor
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- dtkwm
-- libcap
-- procps-ng
-- dwayland
-- deepin-dock
-- deepin-qt5integration
+repo_depends: []
 update_on:
 - alpm: deepin-system-monitor
   source: archpkg

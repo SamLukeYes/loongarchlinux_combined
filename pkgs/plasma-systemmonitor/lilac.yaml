@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plasma-systemmonitor'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kitemmodels
-- kdeclarative
-- kquickcharts
-- qqc2-desktop-style
-- ksystemstats
+repo_depends: []
 update_on:
 - alpm: plasma-systemmonitor
   source: archpkg

@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-aioresponses'')
 
   '
-repo_depends:
-- python-aiohttp
+repo_depends: []
 update_on:
 - alpm: python-aioresponses
   source: archpkg

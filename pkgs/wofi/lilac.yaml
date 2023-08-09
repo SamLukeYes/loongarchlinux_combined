@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wofi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtk3
-- wayland
+repo_depends: []
 update_on:
 - alpm: wofi
   source: archpkg

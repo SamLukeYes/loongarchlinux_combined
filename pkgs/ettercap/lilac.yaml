@@ -10,43 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ettercap'')
 
   '
 repo_depends:
-- libnet
-- ethtool
 - ncurses
 - curl
-- zlib
-- libpcap
-- pcre
-- geoip
-- harfbuzz
-- gtk3
-- openssl
-- glibc
 update_on:
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: ncurses
-  provides: libformw.so
-  source: alpm
-- alpm: ncurses
-  provides: libpanelw.so
-  source: alpm
-- alpm: ncurses
-  provides: libmenuw.so
-  source: alpm
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: ncurses
-  provides: libformw.so
-  source: alpm
-- alpm: ncurses
-  provides: libpanelw.so
-  source: alpm
 - alpm: ncurses
   provides: libmenuw.so
   source: alpm

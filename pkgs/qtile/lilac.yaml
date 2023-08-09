@@ -10,16 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qtile'')
 
   '
 repo_depends:
-- python-cffi
-- gdk-pixbuf2
-- python-cairocffi
-- pango
-- wlroots0.15
-- libnotify
-- librsvg
-- python-xcffib
-- pygobject: python-gobject
-- glibc
 - python
 update_on:
 - alias: python

@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-gcp-devrel-py-tools'')
 
   '
-repo_depends:
-- python-requests
-- python-setuptools
-- python-pylint
-- python-packaging
-- python-retrying
+repo_depends: []
 update_on:
 - alpm: python-gcp-devrel-py-tools
   source: archpkg

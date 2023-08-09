@@ -9,8 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qt6-webview'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt6-webengine
+repo_depends: []
 update_on:
 - alpm: qt6-webview
   source: archpkg

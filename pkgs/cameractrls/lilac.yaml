@@ -8,12 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cameractrls'')
 
   '
 repo_depends:
-- libjpeg-turbo
-- sdl2
-- gtk3
-- pygobject: python-gobject
 - python
-- systemd
 update_on:
 - alias: python
 - alpm: cameractrls

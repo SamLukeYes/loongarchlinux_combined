@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opensearch-index-mana
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- opensearch
-- opensearch-notifications-plugin
+repo_depends: []
 update_on:
 - alpm: opensearch-index-management-plugin
   source: archpkg

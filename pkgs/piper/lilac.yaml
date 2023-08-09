@@ -8,12 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''piper'')
 
   '
 repo_depends:
-- python-evdev
-- python-lxml
-- pygobject: python-gobject
-- python-cairo
 - python
-- libratbag
 update_on:
 - alias: python
 - alpm: piper

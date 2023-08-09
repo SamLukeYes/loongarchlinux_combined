@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openzwave'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- libusb
-- tinyxml
-- bash
-- glibc
+- hidapi
 update_on:
 - alpm: hidapi
   provides: libhidapi-libusb.so

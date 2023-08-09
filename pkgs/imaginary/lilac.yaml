@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''imaginary'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libvips
-- openslide
-- libjxl
-- lcms2
-- poppler: poppler-glib
-- glibc
-- openjpeg2
+repo_depends: []
 update_on:
 - alpm: imaginary
   source: archpkg

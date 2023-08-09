@@ -9,38 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cinnamon'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-requests
-- libgnomekbd
-- caribou
-- polkit-gnome
-- librsvg
-- muffin
-- cinnamon-control-center
-- gnome-themes-extra
-- pygobject: python-gobject
-- python-pyinotify
-- cinnamon-menus
-- python-pillow
-- libkeybinder3
-- python-xapp
-- gstreamer
-- cinnamon-session
-- gsound
-- python-pytz
-- gnome-backgrounds
-- libcroco
-- cinnamon-settings-daemon
-- nemo
-- python-cairo
-- network-manager-applet
-- python-pexpect
-- python-tinycss2
-- accountsservice
-- python-pam
-- cinnamon-screensaver
-- timezonemap
-- cjs
+repo_depends: []
 update_on:
 - alpm: cinnamon
   source: archpkg

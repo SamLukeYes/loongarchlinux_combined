@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''exempi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- zlib
-- gcc: gcc-libs
-- glibc
-- expat
+repo_depends: []
 update_on:
 - alpm: exempi
   source: archpkg

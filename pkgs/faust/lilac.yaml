@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''faust'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- llvm: llvm-libs
-- gcc: gcc-libs
-- libmicrohttpd
-- bash
-- glibc
+repo_depends: []
 update_on:
 - alpm: faust
   source: archpkg

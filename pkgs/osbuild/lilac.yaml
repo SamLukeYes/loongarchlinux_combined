@@ -8,15 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''osbuild'')
 
   '
 repo_depends:
-- python-toml
-- skopeo
-- curl
-- e2fsprogs
-- util-linux
-- python-yaml
-- qemu: qemu-img
-- bubblewrap
-- python-jsonschema
 - python
 update_on:
 - alias: python

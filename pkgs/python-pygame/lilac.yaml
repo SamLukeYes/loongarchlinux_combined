@@ -10,13 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pygame'')
 
   '
 repo_depends:
-- sdl2_mixer
-- sdl2_image
-- libpng
-- portmidi
-- sdl2
-- sdl2_ttf
-- glibc
 - python
 update_on:
 - alias: python

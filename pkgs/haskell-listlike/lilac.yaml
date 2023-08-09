@@ -11,10 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-listlike'')
   '
 repo_depends:
 - haskell-dlist
-- ghc: ghc-libs
 - haskell-fmlist
-- haskell-vector
 - haskell-utf8-string
+- haskell-vector
 update_on:
 - alpm: haskell-dlist
   source: alpm

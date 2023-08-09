@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bogofilter'')
 repo_depends:
 - perl
 - gsl
-- db5.3
 update_on:
 - alias: perl
 - alpm: gsl

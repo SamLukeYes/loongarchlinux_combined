@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nvidia-open'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libglvnd
-- dkms
-- nvidia-utils
-- linux
+repo_depends: []
 update_on:
 - alpm: nvidia-open
   source: archpkg

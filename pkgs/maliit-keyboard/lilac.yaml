@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''maliit-keyboard'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- maliit-framework
-- presage
-- qt5-quickcontrols2
-- qt5-feedback
-- hunspell
-- qt5-multimedia
+repo_depends: []
 update_on:
 - alpm: maliit-keyboard
   source: archpkg

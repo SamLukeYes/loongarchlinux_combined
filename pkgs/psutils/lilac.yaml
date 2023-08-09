@@ -8,11 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''psutils'')
 
   '
 repo_depends:
-- perl-ipc-run3
-- libpaper
 - perl
-- ghostscript
-- glibc
 update_on:
 - alias: perl
 - alpm: psutils

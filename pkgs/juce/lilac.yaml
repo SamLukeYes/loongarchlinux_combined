@@ -10,13 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''juce'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- libjpeg-turbo
-- libpng
-- zlib
-- hicolor-icon-theme
 - freetype2
-- glibc
+- darktable
 update_on:
 - alpm: freetype2
   provides: libfreetype.so

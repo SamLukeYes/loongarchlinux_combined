@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''coq'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtksourceview3
-- gtk3
-- ocaml-findlib
+repo_depends: []
 update_on:
 - alpm: coq
   source: archpkg

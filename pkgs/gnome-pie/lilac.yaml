@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-pie'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libarchive
-- libgee
-- gnome-menus
-- libwnck3
+repo_depends: []
 update_on:
 - alpm: gnome-pie
   source: archpkg

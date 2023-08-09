@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-hunter'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-cymem
-- python-manhole
-- python-colorama
+repo_depends: []
 update_on:
 - alpm: python-hunter
   source: archpkg

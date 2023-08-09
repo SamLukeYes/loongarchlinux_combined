@@ -8,9 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''urxvt-perls'')
 
   '
 repo_depends:
-- xsel
 - perl
-- rxvt-unicode
 update_on:
 - alias: perl
 - alpm: urxvt-perls

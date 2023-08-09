@@ -9,10 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''latex2html'')
   '
 repo_depends:
 - perl
-- ghostscript
-- netpbm
-- giflib
-- libpng
 update_on:
 - alias: perl
 - alpm: latex2html

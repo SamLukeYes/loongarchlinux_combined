@@ -8,7 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pythondialog''
 
   '
 repo_depends:
-- dialog
 - python
 update_on:
 - alias: python

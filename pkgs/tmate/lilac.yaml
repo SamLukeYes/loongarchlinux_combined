@@ -9,12 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tmate'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- msgpack-c
-- ncurses
-- libevent
-- libssh
-- libutempter
+repo_depends: []
 update_on:
 - alpm: tmate
   source: archpkg

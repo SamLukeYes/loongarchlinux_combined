@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''txt2man'')
 
   '
-repo_depends:
-- gawk
-- bash
+repo_depends: []
 update_on:
 - alpm: txt2man
   source: archpkg

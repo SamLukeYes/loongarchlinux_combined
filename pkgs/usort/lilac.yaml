@@ -7,14 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''usort'')
 
   '
-repo_depends:
-- python-toml
-- python-stdlibs
-- python-trailrunner
-- python-click
-- python-moreorless
-- python-attrs
-- python-libcst
+repo_depends: []
 update_on:
 - alpm: usort
   source: archpkg

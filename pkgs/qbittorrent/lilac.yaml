@@ -10,14 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qbittorrent'')
 
   '
 repo_depends:
-- libtorrent-rasterbar
-- hicolor-icon-theme
-- qt6-svg
 - qt6-base
 update_on:
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
 - alpm: qt6-base
   source: alpm
   strip_release: true

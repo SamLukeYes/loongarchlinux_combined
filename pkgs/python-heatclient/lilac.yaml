@@ -7,21 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-heatclient'')
 
   '
-repo_depends:
-- python-requests
-- python-oslo-serialization
-- python-oslo-i18n
-- python-keystoneauth1
-- python-pbr
-- python-prettytable
-- python-six
-- python-osc-lib
-- python-iso8601
-- python-cliff
-- python-swiftclient
-- python-yaml
-- python-babel
-- python-oslo-utils
+repo_depends: []
 update_on:
 - alpm: python-heatclient
   source: archpkg

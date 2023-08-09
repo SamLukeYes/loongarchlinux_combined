@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zvbi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libpng
-- libx11
+repo_depends: []
 update_on:
 - alpm: zvbi
   source: archpkg

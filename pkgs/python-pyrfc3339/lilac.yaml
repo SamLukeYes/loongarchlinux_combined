@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-pyrfc3339'')
 
   '
-repo_depends:
-- python-pytz
+repo_depends: []
 update_on:
 - alpm: python-pyrfc3339
   source: archpkg

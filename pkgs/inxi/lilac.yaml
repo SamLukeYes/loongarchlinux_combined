@@ -8,11 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''inxi'')
 
   '
 repo_depends:
-- pciutils
 - perl
-- util-linux
-- procps-ng
-- coreutils
 update_on:
 - alias: perl
 - alpm: inxi

@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pytest-trio'')
 
   '
 repo_depends:
-- python-async_generator
-- python-hypothesis
-- python-trio
-- python-pytest
 - python
 update_on:
 - alias: python

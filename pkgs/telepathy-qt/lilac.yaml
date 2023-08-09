@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''telepathy-qt'')
   '
 repo_depends:
 - qt5-base
-- telepathy-farstream
 update_on:
 - alpm: qt5-base
   source: alpm

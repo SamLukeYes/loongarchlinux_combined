@@ -11,12 +11,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-uuid'')
   '
 repo_depends:
 - haskell-cryptohash-md5
-- ghc: ghc-libs
+- haskell-cryptohash-sha1
+- haskell-entropy
 - haskell-network-info
 - haskell-random
 - haskell-uuid-types
-- haskell-entropy
-- haskell-cryptohash-sha1
 update_on:
 - alpm: haskell-cryptohash-md5
   source: alpm

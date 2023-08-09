@@ -7,11 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''bat-extras'')
 
   '
-repo_depends:
-- git
-- ripgrep
-- bat
-- bash
+repo_depends: []
 update_on:
 - alpm: bat-extras
   source: archpkg

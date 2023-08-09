@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxsession'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtk3
-- polkit
-- gtk2
+repo_depends: []
 update_on:
 - alpm: lxsession
   source: archpkg

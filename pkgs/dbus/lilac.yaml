@@ -11,8 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dbus'')
   '
 repo_depends:
 - audit
-- expat
-- systemd: systemd-libs
+- systemd-libs
 update_on:
 - alpm: audit
   provides: libaudit.so

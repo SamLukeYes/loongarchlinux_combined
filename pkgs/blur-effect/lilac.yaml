@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''blur-effect'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gdk-pixbuf2
-- mesa
+repo_depends: []
 update_on:
 - alpm: blur-effect
   source: archpkg

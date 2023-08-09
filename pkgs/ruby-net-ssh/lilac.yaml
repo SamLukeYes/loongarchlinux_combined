@@ -8,10 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-net-ssh'')
 
   '
 repo_depends:
-- ruby-x25519
 - ruby
-- ruby-ed25519
-- ruby-bcrypt_pbkdf
 update_on:
 - alias: ruby
 - alpm: ruby-net-ssh

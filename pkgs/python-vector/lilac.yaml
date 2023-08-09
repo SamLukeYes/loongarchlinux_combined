@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-vector'')
 
   '
-repo_depends:
-- python-importlib-metadata
-- python-numpy
-- python-packaging
+repo_depends: []
 update_on:
 - alpm: python-vector
   source: archpkg

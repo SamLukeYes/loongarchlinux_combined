@@ -7,10 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-async-rspec'')
 
   '
-repo_depends:
-- ruby-rspec
-- ruby-rspec-memory
-- ruby-rspec-files
+repo_depends: []
 update_on:
 - alpm: ruby-async-rspec
   source: archpkg

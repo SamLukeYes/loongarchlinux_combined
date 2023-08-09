@@ -9,13 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ukui-power-manager'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- dbus-glib
-- libnotify
-- libgnome-keyring
-- libcanberra
-- upower
-- gtk3
+repo_depends: []
 update_on:
 - alpm: ukui-power-manager
   source: archpkg

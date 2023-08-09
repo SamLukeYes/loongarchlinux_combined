@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''psi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qca: qca-qt5
-- hunspell
-- libidn
-- qt5-x11extras
-- zlib: minizip
-- qt5-svg
-- qt5-webengine
+repo_depends: []
 update_on:
 - alpm: psi
   source: archpkg

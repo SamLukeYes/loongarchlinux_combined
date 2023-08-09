@@ -8,7 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-toml'')
 
   '
 repo_depends:
-- ruby-parslet
 - ruby
 update_on:
 - alias: ruby

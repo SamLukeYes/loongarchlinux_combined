@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libmediainfo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- graphviz
-- gcc: gcc-libs
-- glib2
-- curl
-- libmms
-- zlib
-- tinyxml2
-- glibc
-- libzen
+repo_depends: []
 update_on:
 - alpm: libmediainfo
   source: archpkg

@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''profile-sync-daemon'')
 
   '
-repo_depends:
-- bash
-- rsync
-- procps-ng
-- findutils
-- systemd
+repo_depends: []
 update_on:
 - alpm: profile-sync-daemon
   source: archpkg

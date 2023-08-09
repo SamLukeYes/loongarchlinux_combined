@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdotool'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libxkbcommon
-- libxinerama
-- libxtst
+repo_depends: []
 update_on:
 - alpm: xdotool
   source: archpkg

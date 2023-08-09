@@ -7,37 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''plasma-meta'')
 
   '
-repo_depends:
-- sddm-kcm
-- plasma-thunderbolt
-- kscreen
-- drkonqi
-- kinfocenter
-- ksshaskpass
-- plasma-firewall
-- plasma-desktop
-- plasma-browser-integration
-- discover
-- oxygen-sounds
-- plasma-nm
-- bluedevil
-- khotkeys
-- plasma-welcome
-- kwallet-pam
-- xdg-desktop-portal-kde
-- plasma-disks
-- plasma-systemmonitor
-- breeze-gtk
-- powerdevil
-- oxygen
-- kgamma5
-- kwrited
-- kwayland-integration
-- kde-gtk-config
-- kdeplasma-addons
-- plasma-vault
-- plasma-pa
-- plasma-workspace-wallpapers
+repo_depends: []
 update_on:
 - alpm: plasma-meta
   source: archpkg

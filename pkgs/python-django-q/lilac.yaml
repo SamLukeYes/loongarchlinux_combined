@@ -7,20 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-django-q'')
 
   '
-repo_depends:
-- python-redis
-- python-dateutil
-- python-blessed
-- python-asgiref
-- python-pytz
-- python-setuptools
-- python-six
-- python-arrow
-- python-sqlparse
-- python-future
-- python-django-picklefield
-- python-wcwidth
-- django: python-django
+repo_depends: []
 update_on:
 - alpm: python-django-q
   source: archpkg

@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-mplhep'')
 
   '
-repo_depends:
-- python-matplotlib
-- python-packaging
-- python-mplhep_data
-- python-uhi
-- python-numpy
+repo_depends: []
 update_on:
 - alpm: python-mplhep
   source: archpkg

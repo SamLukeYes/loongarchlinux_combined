@@ -9,9 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-sub-exporter'')
   '
 repo_depends:
 - perl
-- perl-data-optlist
-- perl-params-util
-- perl-sub-install
 update_on:
 - alias: perl
 - alpm: perl-sub-exporter

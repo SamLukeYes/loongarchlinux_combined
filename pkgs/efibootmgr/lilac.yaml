@@ -10,12 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''efibootmgr'')
 
   '
 repo_depends:
-- glibc
-- popt
+- efivar
 update_on:
-- alpm: efivar
-  provides: libefiboot.so
-  source: alpm
 - alpm: efivar
   provides: libefivar.so
   source: alpm

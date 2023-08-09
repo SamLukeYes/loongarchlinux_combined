@@ -10,15 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''texstudio'')
 
   '
 repo_depends:
-- quazip: quazip-qt6
-- hunspell
 - qt6-declarative
-- desktop-file-utils
-- qt6-svg
-- qt6-5compat
-- hicolor-icon-theme
-- poppler: poppler-qt6
-- libxkbcommon: libxkbcommon-x11
 update_on:
 - alpm: qt6-declarative
   source: alpm

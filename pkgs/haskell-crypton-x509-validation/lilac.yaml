@@ -1,0 +1,42 @@
+destsubdir: extra
+post_build_script: 'git_add_files(_G.files)
+
+  git_commit()
+
+  '
+pre_build_script: '_G.files = download_official_pkgbuild(''haskell-crypton-x509-validation'')
+
+  add_into_array(''arch'', [''loong64''])
+
+  '
+repo_depends:
+- haskell-asn1-encoding
+- haskell-asn1-types
+- haskell-crypton
+- haskell-crypton-x509
+- haskell-crypton-x509-store
+- haskell-data-default-class
+- haskell-hourglass
+- haskell-memory
+- haskell-pem
+update_on:
+- alpm: haskell-asn1-encoding
+  source: alpm
+- alpm: haskell-asn1-types
+  source: alpm
+- alpm: haskell-crypton
+  source: alpm
+- alpm: haskell-crypton-x509
+  source: alpm
+- alpm: haskell-crypton-x509-store
+  source: alpm
+- alpm: haskell-data-default-class
+  source: alpm
+- alpm: haskell-hourglass
+  source: alpm
+- alpm: haskell-memory
+  source: alpm
+- alpm: haskell-pem
+  source: alpm
+- alpm: haskell-crypton-x509-validation
+  source: archpkg

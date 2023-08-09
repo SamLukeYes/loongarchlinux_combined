@@ -1,11 +1,5 @@
 destsubdir: extra
 repo_depends:
 - python
-- liburing
-- rpcbind
-- libaio
-- libxml2
-- attr
-- liburcu
 update_on:
 - alias: python

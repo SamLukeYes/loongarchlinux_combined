@@ -11,22 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libwhereami'')
   '
 repo_depends:
 - leatherman
-- gcc: gcc-libs
-- glibc
-- boost: boost-libs
 update_on:
-- alpm: leatherman
-  provides: leatherman_execution.so
-  source: alpm
-- alpm: leatherman
-  provides: leatherman_file_util.so
-  source: alpm
-- alpm: leatherman
-  provides: leatherman_util.so
-  source: alpm
-- alpm: leatherman
-  provides: leatherman_logging.so
-  source: alpm
 - alpm: leatherman
   provides: leatherman_locale.so
   source: alpm

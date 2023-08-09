@@ -10,21 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cri-o'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- cni-plugins
-- lvm2: device-mapper
-- libseccomp
-- gpgme
-- conntrack-tools
-- iproute2
 - iptables
-- conmon
-- glibc
-- containers-common
+- device-mapper
+- libseccomp
 update_on:
-- alpm: iptables
-  source: alpm
-  strip_release: true
 - alpm: iptables
   source: alpm
   strip_release: true

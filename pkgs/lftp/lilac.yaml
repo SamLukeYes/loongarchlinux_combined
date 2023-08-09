@@ -10,11 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lftp'')
 
   '
 repo_depends:
-- gcc: gcc-libs
-- expat
 - readline
-- gnutls
-- hicolor-icon-theme
 update_on:
 - alias: readline
 - alpm: lftp

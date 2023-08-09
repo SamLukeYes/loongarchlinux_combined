@@ -7,9 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''ruby-ffi-compiler'')
 
   '
-repo_depends:
-- ruby-rake
-- ruby-ffi
+repo_depends: []
 update_on:
 - alpm: ruby-ffi-compiler
   source: archpkg

@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ktrip'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kirigami-addons
-- kpublictransport
-- kitemmodels
-- qqc2-desktop-style
+repo_depends: []
 update_on:
 - alpm: ktrip
   source: archpkg

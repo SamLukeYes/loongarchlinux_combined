@@ -1,7 +1,5 @@
 destsubdir: extra
 repo_depends:
 - readline
-- gcc: gcc-libs
-- zlib
 update_on:
 - alias: readline

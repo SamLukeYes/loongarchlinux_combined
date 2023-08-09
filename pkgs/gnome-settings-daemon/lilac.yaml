@@ -9,25 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-settings-daemon
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- dconf
-- pulseaudio
-- alsa-plugins: pulseaudio-alsa
-- libgweather-4
-- geoclue
-- libnotify
-- librsvg
-- upower
-- gnome-desktop
-- gsettings-desktop-schemas
-- gcr-4
-- geocode-glib: geocode-glib-2
-- networkmanager: libnm
-- systemd
-- libwacom
-- nss
-- gtk3
-- libgudev
+repo_depends: []
 update_on:
 - alpm: gnome-settings-daemon
   source: archpkg

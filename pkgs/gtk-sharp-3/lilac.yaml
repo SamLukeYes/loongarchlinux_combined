@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtk-sharp-3'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gtk3
-- mono
+repo_depends: []
 update_on:
 - alpm: gtk-sharp-3
   source: archpkg

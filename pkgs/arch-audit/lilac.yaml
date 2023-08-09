@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''arch-audit'')
 
   '
 repo_depends:
-- gcc: gcc-libs
 - curl
-- glibc
+- pacman
 update_on:
 - alpm: curl
   provides: libcurl.so

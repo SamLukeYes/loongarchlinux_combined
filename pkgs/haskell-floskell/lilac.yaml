@@ -10,16 +10,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-floskell'')
 
   '
 repo_depends:
+- haskell-aeson
+- haskell-aeson-pretty
+- haskell-attoparsec
+- haskell-data-default
+- haskell-src-exts
+- haskell-monad-dijkstra
 - haskell-optparse-applicative
 - haskell-unordered-containers
-- haskell-aeson
-- ghc: ghc-libs
 - haskell-utf8-string
-- haskell-data-default
-- haskell-monad-dijkstra
-- haskell-aeson-pretty
-- haskell-src-exts
-- haskell-attoparsec
 update_on:
 - alpm: haskell-aeson
   source: alpm

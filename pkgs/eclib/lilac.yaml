@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''eclib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- pari
-- boost: boost-libs
-- flint
+repo_depends: []
 update_on:
 - alpm: eclib
   source: archpkg

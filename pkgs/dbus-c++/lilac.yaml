@@ -1,7 +1,3 @@
 destsubdir: extra
-repo_depends:
-- dbus
-- gcc: gcc-libs
-- glib2
-- glibc
+repo_depends: []
 update_on: []

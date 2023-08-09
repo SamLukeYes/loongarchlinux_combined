@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libxklavier'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glib2
-- libxi
-- xkeyboard-config
-- xorg-xkbcomp
-- iso-codes
-- libxml2
-- libx11
-- libxkbfile
-- glibc
+repo_depends: []
 update_on:
 - alpm: libxklavier
   source: archpkg

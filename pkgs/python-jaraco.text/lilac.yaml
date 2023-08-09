@@ -8,11 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-jaraco.text'')
 
   '
 repo_depends:
-- python-inflect
-- python-autocommand
-- python-more-itertools
-- python-jaraco.context
-- python-jaraco.functools
 - python
 update_on:
 - alias: python

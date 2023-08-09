@@ -10,22 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cockpit'')
 
   '
 repo_depends:
-- accountsservice
-- perl-locale-po
-- packagekit
-- udisks2
-- kexec-tools
-- polkit
-- which
-- perl-json
-- krb5
-- libpwquality
-- dbus-python
-- glib-networking
-- libssh
-- json-glib
-- openssl
-- pcp
 - python
 update_on:
 - alias: python

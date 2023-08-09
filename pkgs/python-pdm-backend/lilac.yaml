@@ -8,10 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pdm-backend'')
 
   '
 repo_depends:
-- python-pyproject-metadata
-- python-validate-pyproject
-- python-packaging
-- python-tomli-w
 - python
 update_on:
 - alias: python

@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-sys-proctable'')
   '
 repo_depends:
 - ruby
-- ruby-ffi
 update_on:
 - alias: ruby
 - alpm: ruby-sys-proctable

@@ -10,9 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-asn1-types'')
 
   '
 repo_depends:
-- haskell-memory
 - haskell-hourglass
-- ghc: ghc-libs
+- haskell-memory
 update_on:
 - alpm: haskell-hourglass
   source: alpm

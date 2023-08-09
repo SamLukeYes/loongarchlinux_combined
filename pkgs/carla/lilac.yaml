@@ -10,28 +10,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''carla'')
 
   '
 repo_depends:
-- alsa-lib
-- libsndfile
-- python-pyliblo
-- glibc
-- hicolor-icon-theme
-- file
-- gcc: gcc-libs
+- python
 - qt5-base
-- liblo
+- alsa-lib
+- file
 - fluidsynth
-- libglvnd
 - freetype2
-- pulseaudio: libpulse
-- python-rdflib
-- sdl2
-- pyqt5: python-pyqt5
-- libx11
-- qt5-svg
+- cuda-tools
+- liblo
+- libao
+- libpulse
+- libsndfile
 update_on:
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
+- alias: python
 - alpm: qt5-base
   source: alpm
   strip_release: true

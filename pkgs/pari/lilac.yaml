@@ -1,5 +1,3 @@
 destsubdir: extra
-repo_depends:
-- gmp
-- libx11
+repo_depends: []
 update_on: []

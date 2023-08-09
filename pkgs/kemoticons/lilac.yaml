@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kemoticons'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kservice
-- karchive
+repo_depends: []
 update_on:
 - alpm: kemoticons
   source: archpkg

@@ -8,8 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-mysql-connecto
 
   '
 repo_depends:
-- python-dnspython
-- python-typing_extensions
 - python
 update_on:
 - alias: python

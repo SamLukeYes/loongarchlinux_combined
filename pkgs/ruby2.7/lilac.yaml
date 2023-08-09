@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby2.7'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- zlib
-- libxcrypt
-- gdbm
-- libyaml
-- libffi
-- openssl
-- gmp
+repo_depends: []
 update_on:
 - alpm: ruby2.7
   source: archpkg

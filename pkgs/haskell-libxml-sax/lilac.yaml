@@ -11,8 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-libxml-sax'')
   '
 repo_depends:
 - haskell-xml-types
-- ghc: ghc-libs
-- libxml2
 update_on:
 - alpm: haskell-xml-types
   source: alpm

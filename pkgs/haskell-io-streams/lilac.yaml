@@ -10,12 +10,11 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-io-streams'')
 
   '
 repo_depends:
-- haskell-network
-- ghc: ghc-libs
-- haskell-zlib-bindings
-- haskell-vector
-- haskell-primitive
 - haskell-attoparsec
+- haskell-network
+- haskell-primitive
+- haskell-vector
+- haskell-zlib-bindings
 update_on:
 - alpm: haskell-attoparsec
   source: alpm

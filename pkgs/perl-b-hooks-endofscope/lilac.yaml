@@ -7,12 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-b-hooks-endofscope'')
 
   '
-repo_depends:
-- perl-module-runtime
-- perl-sub-exporter-progressive
-- perl-sub-exporter
-- perl-try-tiny
-- perl-module-implementation
+repo_depends: []
 update_on:
 - alpm: perl-b-hooks-endofscope
   source: archpkg

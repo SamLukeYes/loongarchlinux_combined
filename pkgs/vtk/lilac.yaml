@@ -1,9 +1,3 @@
 destsubdir: extra
-repo_depends:
-- gcc: gcc-libs
-- libtiff
-- double-conversion
-- pugixml
-- onetbb
-- glibc
+repo_depends: []
 update_on: []

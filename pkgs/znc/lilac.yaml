@@ -10,8 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''znc'')
 
   '
 repo_depends:
-- boost: boost-libs
-- libsasl
 - icu
 update_on:
 - alias: icu

@@ -7,8 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''fff'')
 
   '
-repo_depends:
-- xdg-utils
+repo_depends: []
 update_on:
 - alpm: fff
   source: archpkg

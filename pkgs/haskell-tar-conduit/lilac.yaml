@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tar-conduit''
   '
 repo_depends:
 - haskell-conduit
-- ghc: ghc-libs
 - haskell-safe-exceptions
 update_on:
 - alpm: haskell-conduit

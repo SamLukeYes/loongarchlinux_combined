@@ -8,19 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''puppet'')
 
   '
 repo_depends:
-- ruby-puppet-resource_api
 - ruby
-- hiera
-- ruby-deep_merge
-- ruby-augeas
-- ruby-concurrent
-- ruby-shadow
-- ruby-multi_json
-- facter
-- ruby-scanf
-- ruby-semantic_puppet
-- ruby-fast_gettext
-- ruby-locale
 update_on:
 - alias: ruby
 - alpm: puppet

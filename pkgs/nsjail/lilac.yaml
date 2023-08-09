@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nsjail'')
   '
 repo_depends:
 - protobuf
-- libnl
 update_on:
 - alias: protobuf
 - alpm: nsjail

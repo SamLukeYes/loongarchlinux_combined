@@ -9,18 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rmlint'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- elfutils: libelf
-- gtksourceview3
-- python-cairo
-- xdg-utils
-- dconf
-- librsvg
-- json-glib
-- util-linux: util-linux-libs
-- sqlite
-- pygobject: python-gobject
-- binutils
+repo_depends: []
 update_on:
 - alpm: rmlint
   source: archpkg

@@ -11,16 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cutefish-kwin-plugins
   '
 repo_depends:
 - kconfig
-- kwin
-- kconfigwidgets
-- kwayland
-- kdeclarative
-- plasma-framework
-- fishui
-- kdecoration
-- kcoreaddons
-- kguiaddons
-- kwindowsystem
 update_on:
 - alpm: kconfig
   source: alpm

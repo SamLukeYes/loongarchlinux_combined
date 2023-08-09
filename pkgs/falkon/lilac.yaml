@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''falkon'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-x11extras
-- qt5-svg
-- karchive
-- qt5-webengine
+repo_depends: []
 update_on:
 - alpm: falkon
   source: archpkg

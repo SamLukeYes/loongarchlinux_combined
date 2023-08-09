@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hashcat'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- xxhash
-- ocl-icd
-- zlib
-- zlib: minizip
+repo_depends: []
 update_on:
 - alpm: hashcat
   source: archpkg

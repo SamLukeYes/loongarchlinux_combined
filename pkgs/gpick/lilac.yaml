@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gpick'')
 
   '
 repo_depends:
-- gtk3
 - lua
 update_on:
 - alias: lua

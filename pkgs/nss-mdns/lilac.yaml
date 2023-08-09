@@ -9,9 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nss-mdns'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glibc
-- avahi
+repo_depends: []
 update_on:
 - alpm: nss-mdns
   source: archpkg

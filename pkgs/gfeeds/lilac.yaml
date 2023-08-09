@@ -7,22 +7,7 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''gfeeds'')
 
   '
-repo_depends:
-- python-beautifulsoup4
-- python-requests
-- python-dateutil
-- python-pytz
-- python-lxml
-- python-pillow
-- python-cssselect
-- libhandy
-- python-pygments
-- python-readability-lxml
-- python-html5lib
-- webkit2gtk
-- python-listparser
-- python-feedparser
-- pygobject: python-gobject
+repo_depends: []
 update_on:
 - alpm: gfeeds
   source: archpkg

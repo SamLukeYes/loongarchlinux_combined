@@ -10,19 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-graph'')
 
   '
 repo_depends:
-- haskell-js-jquery
-- haskell-unordered-containers
-- haskell-list-t
-- haskell-async
 - haskell-aeson
-- ghc: ghc-libs
-- haskell-hashable
-- haskell-js-flot
-- haskell-stm-containers
-- haskell-focus
+- haskell-async
 - haskell-extra
+- haskell-focus
+- haskell-hashable
 - haskell-js-dgtable
+- haskell-js-flot
+- haskell-js-jquery
+- haskell-list-t
+- haskell-stm-containers
 - haskell-unliftio
+- haskell-unordered-containers
 update_on:
 - alpm: haskell-aeson
   source: alpm

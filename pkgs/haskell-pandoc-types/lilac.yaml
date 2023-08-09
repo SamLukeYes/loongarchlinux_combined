@@ -10,10 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pandoc-types'
 
   '
 repo_depends:
-- haskell-syb
 - haskell-aeson
 - haskell-quickcheck
-- ghc: ghc-libs
+- haskell-syb
 update_on:
 - alpm: haskell-aeson
   source: alpm

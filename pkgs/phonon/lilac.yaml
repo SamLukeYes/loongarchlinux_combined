@@ -10,12 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''phonon'')
 
   '
 repo_depends:
-- pulseaudio: libpulse
 - qt5-base
 update_on:
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: qt5-base
   source: alpm
   strip_release: true

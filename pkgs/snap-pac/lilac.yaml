@@ -8,9 +8,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''snap-pac'')
 
   '
 repo_depends:
-- pacman
-- snapper
-- btrfs-progs
 - python
 update_on:
 - alias: python

@@ -10,8 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dovecot-fts-xapian'')
 
   '
 repo_depends:
-- dovecot
-- xapian-core
 - icu
 update_on:
 - alias: icu

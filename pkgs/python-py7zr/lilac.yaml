@@ -8,17 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-py7zr'')
 
   '
 repo_depends:
-- python-pybcj
 - python
-- python-psutil
-- python-texttable
-- python-multivolumefile
-- python-pycryptodomex
-- python-pyzstd
-- python-inflate64
-- python-brotlicffi
-- python-pyppmd
-- brotli: python-brotli
 update_on:
 - alias: python
 - alpm: python-py7zr

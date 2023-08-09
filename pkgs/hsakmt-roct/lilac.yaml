@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hsakmt-roct'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libdrm
-- pciutils
-- numactl
+repo_depends: []
 update_on:
 - alpm: hsakmt-roct
   source: archpkg

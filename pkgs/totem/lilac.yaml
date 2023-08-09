@@ -9,19 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''totem'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gsettings-desktop-schemas
-- gstreamer: gst-plugin-gtk
-- libhandy
-- libpeas
-- gstreamer: gst-plugins-good
-- libportal: libportal-gtk3
-- gnome-desktop
-- iso-codes
-- grilo
-- gstreamer: gst-plugins-base
-- pygobject: python-gobject
-- gstreamer: gst-plugins-bad
+repo_depends: []
 update_on:
 - alpm: totem
   source: archpkg

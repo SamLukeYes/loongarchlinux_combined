@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-websocket-driver
 
   '
 repo_depends:
-- ruby-websocket-extensions
 - ruby
 update_on:
 - alias: ruby

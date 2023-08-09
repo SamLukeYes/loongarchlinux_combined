@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-sideload'')
 
   '
 repo_depends:
-- libxml2
-- flatpak
-- gtk4
+- granite7
 update_on:
 - alpm: granite7
   provides: libgranite-7.so

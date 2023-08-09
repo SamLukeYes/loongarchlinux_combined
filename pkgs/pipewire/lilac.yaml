@@ -1,10 +1,30 @@
 destsubdir: extra
 repo_depends:
-- libxfixes
-- gcc: gcc-libs
-- gstreamer: gst-plugins-base-libs
-- openssl
-- libx11
+- libcamera
+- darktable
+- dbus
+- glib2
+- ncurses
+- libpipewire
+- readline
+- systemd-libs
+- alsa-lib
+- bluez-libs
+- libfdk-aac
+- libfreeaptx
+- liblc3
+- libldac
+- lilv
+- libmysofa
+- opus
+- sbc
+- libsndfile
+- libusb
+- webrtc-audio-processing
+- libffado
+- avahi
+- libao
+- libcanberra
 update_on:
 - alpm: libcamera
   provides: libcamera-base.so
@@ -26,9 +46,6 @@ update_on:
   source: alpm
 - alpm: readline
   provides: libreadline.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
   source: alpm
 - alpm: systemd-libs
   provides: libudev.so
@@ -60,17 +77,11 @@ update_on:
 - alpm: opus
   provides: libopus.so
   source: alpm
-- alpm: libpipewire
-  provides: libpipewire-0.3.so
-  source: alpm
 - alpm: sbc
   provides: libsbc.so
   source: alpm
 - alpm: libsndfile
   provides: libsndfile.so
-  source: alpm
-- alpm: tinycompress
-  provides: libtinycompress.so
   source: alpm
 - alpm: libusb
   provides: libusb-1.0.so
@@ -78,42 +89,15 @@ update_on:
 - alpm: webrtc-audio-processing
   provides: libwebrtc_audio_processing.so
   source: alpm
-- alpm: libpipewire
-  provides: libpipewire-0.3.so
-  source: alpm
-- alpm: avahi
-  provides: libavahi-client.so
+- alpm: libffado
+  provides: libffado.so
   source: alpm
 - alpm: avahi
   provides: libavahi-common.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: libpipewire
-  provides: libpipewire-0.3.so
   source: alpm
 - alpm: libao
   provides: libpulse.so
   source: alpm
-- alpm: libpipewire
-  provides: libpipewire-0.3.so
-  source: alpm
-- alpm: avahi
-  provides: libavahi-client.so
-  source: alpm
-- alpm: avahi
-  provides: libavahi-common.so
-  source: alpm
-- alpm: libpipewire
-  provides: libpipewire-0.3.so
-  source: alpm
-- alpm: libpipewire
-  provides: libpipewire-0.3.so
-  source: alpm
 - alpm: libcanberra
   provides: libcanberra.so
-  source: alpm
-- alpm: libpipewire
-  provides: libpipewire-0.3.so
   source: alpm

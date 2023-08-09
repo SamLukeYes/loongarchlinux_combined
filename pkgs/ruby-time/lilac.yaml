@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-time'')
   '
 repo_depends:
 - ruby
-- ruby-date
 update_on:
 - alias: ruby
 - alpm: ruby-time

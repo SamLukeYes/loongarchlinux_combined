@@ -10,11 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-bifunctors'')
 
   '
 repo_depends:
-- ghc: ghc-libs
+- haskell-base-orphans
+- haskell-comonad
 - haskell-tagged
 - haskell-th-abstraction
-- haskell-comonad
-- haskell-base-orphans
 update_on:
 - alpm: haskell-base-orphans
   source: alpm

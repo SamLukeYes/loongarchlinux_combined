@@ -9,10 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libksba'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- glibc
-- libgpg-error
-- bash
+repo_depends: []
 update_on:
 - alpm: libksba
   source: archpkg

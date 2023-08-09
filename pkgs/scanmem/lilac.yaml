@@ -10,14 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''scanmem'')
 
   '
 repo_depends:
-- polkit
 - readline
-- gtk3
-- pygobject: python-gobject
-- glibc
 - python
 update_on:
-- alias: readline
 - alias: readline
 - alias: python
 - alpm: scanmem

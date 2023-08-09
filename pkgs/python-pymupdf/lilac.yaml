@@ -11,15 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pymupdf'')
   '
 repo_depends:
 - python
-- libjpeg-turbo
-- jbig2dec
 - freetype2
-- gumbo-parser
-- mupdf: libmupdf
-- glibc
-- openjpeg2
+- darktable
 update_on:
-- alias: python
 - alias: python
 - alpm: freetype2
   provides: libfreetype.so

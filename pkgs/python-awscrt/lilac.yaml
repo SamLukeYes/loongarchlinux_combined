@@ -10,17 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-awscrt'')
 
   '
 repo_depends:
-- aws-c-s3
 - python
-- aws-c-event-stream
-- aws-c-http
-- aws-c-io
-- aws-checksums
-- aws-c-mqtt
-- aws-c-auth
-- aws-c-common
-- glibc
-- aws-c-cal
 update_on:
 - alias: python
 - alpm: python-awscrt

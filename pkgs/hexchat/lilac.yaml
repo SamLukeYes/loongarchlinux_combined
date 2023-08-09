@@ -9,16 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hexchat'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- dbus-glib
-- pciutils
-- gdk-pixbuf2
-- pango
-- desktop-file-utils
-- libcanberra
-- gtk2
-- openssl
-- glib2
+repo_depends: []
 update_on:
 - alpm: hexchat
   source: archpkg

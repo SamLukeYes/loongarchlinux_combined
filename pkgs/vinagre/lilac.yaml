@@ -9,14 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vinagre'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libsecret
-- avahi
-- vte3
-- freerdp
-- gnutls
-- telepathy-glib
-- gtk-vnc
+repo_depends: []
 update_on:
 - alpm: vinagre
   source: archpkg

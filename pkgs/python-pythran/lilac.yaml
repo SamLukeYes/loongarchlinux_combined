@@ -1,9 +1,5 @@
 destsubdir: extra
 repo_depends:
-- boost
-- python-beniget
-- python-ply
-- xsimd
-- python-numpy
+- boost-libs
 update_on:
 - alias: boost

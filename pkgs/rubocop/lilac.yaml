@@ -9,14 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rubocop'')
   '
 repo_depends:
 - ruby
-- ruby-parallel
-- ruby-regexp_parser
-- ruby-ruby-progressbar
-- ruby-parser
-- ruby-memory_profiler
-- ruby-rainbow
-- ruby-unicode-display_width
-- ruby-rubocop-ast
 update_on:
 - alias: ruby
 - alpm: rubocop

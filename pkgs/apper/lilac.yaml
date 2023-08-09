@@ -9,11 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''apper'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-xmlpatterns
-- packagekit-qt: packagekit-qt5
-- appstream: appstream-qt
-- kcmutils
+repo_depends: []
 update_on:
 - alpm: apper
   source: archpkg

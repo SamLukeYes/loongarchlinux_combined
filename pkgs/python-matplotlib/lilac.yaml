@@ -9,18 +9,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-matplotlib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- python-contourpy
-- python-dateutil
-- python-pillow
-- python-fonttools
-- qhull
-- python-kiwisolver
-- freetype2
-- python-cycler
-- python-packaging
-- python-pyparsing
-- python-numpy
+repo_depends: []
 update_on:
 - alpm: python-matplotlib
   source: archpkg

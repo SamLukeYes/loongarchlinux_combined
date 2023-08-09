@@ -10,19 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''guvcview'')
 
   '
 repo_depends:
-- qt5-base
-- libusb
 - gsl
-- ffmpeg
-- gtk3
-- portaudio
+- qt5-base
 update_on:
-- alpm: gsl
-  source: alpm
-  strip_release: true
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: gsl
   source: alpm
   strip_release: true

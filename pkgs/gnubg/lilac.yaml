@@ -10,8 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnubg'')
 
   '
 repo_depends:
-- curl
-- gtkglext
 - python
 update_on:
 - alias: python
