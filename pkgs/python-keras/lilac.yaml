@@ -13,4 +13,3 @@ update_on:
 - alias: python
 - alpm: python-keras
   source: archpkg
-managed: false

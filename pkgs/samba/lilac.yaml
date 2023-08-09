@@ -10,22 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''samba'')
 
   '
 repo_depends:
-<<<<<<< HEAD
-- tevent
-- gnutls
-- cups: libcups
-- liburing
-- jansson
-#- cifs-utils
-- libbsd
-- talloc
-- icu
-- ldb
-- popt
-- gpgme
-- libnsl
-=======
->>>>>>> 629d87561 (treewide: regen lilac.yaml)
 - python
 - readline
 - ldb

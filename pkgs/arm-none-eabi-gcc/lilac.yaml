@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''arm-none-eabi-gcc'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends: []
 update_on:
 - alpm: arm-none-eabi-gcc
   source: archpkg

@@ -10,21 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''util-linux'')
 
   '
 repo_depends:
-<<<<<<< HEAD
-#- pam
-- libxcrypt
-- libcap-ng
-- libutempter
-- glibc
-- shadow
-#- systemd: systemd-libs
-#- coreutils
-=======
 - systemd-libs
 - libxcrypt
 - file
 - ncurses
->>>>>>> 629d87561 (treewide: regen lilac.yaml)
 update_on:
 - alpm: systemd-libs
   provides: libudev.so

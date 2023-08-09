@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rmlint'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends: []
 update_on:
 - alpm: rmlint
   source: archpkg

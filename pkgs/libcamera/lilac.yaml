@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libcamera'')
 repo_depends:
 - systemd-libs
 - darktable
-- libcamera
 - libevent
 - qt5-base
 - glib2

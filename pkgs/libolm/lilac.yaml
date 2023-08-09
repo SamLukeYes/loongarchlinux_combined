@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libolm'')
   '
 repo_depends:
 - python
-- libolm
 update_on:
 - alias: python
 - alpm: libolm

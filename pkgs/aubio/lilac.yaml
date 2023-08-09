@@ -14,7 +14,6 @@ repo_depends:
 - jack2
 - libsamplerate
 - libsndfile
-- aubio
 update_on:
 - alpm: ffmpeg
   provides: libswresample.so

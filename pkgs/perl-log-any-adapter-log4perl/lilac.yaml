@@ -7,7 +7,6 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-log-any-adapter-log4perl'')
 
   '
-repo_depends: []
 update_on:
 - alpm: perl-log-any-adapter-log4perl
   source: archpkg

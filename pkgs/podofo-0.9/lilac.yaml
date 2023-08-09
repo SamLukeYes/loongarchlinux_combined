@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''podofo-0.9'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends: []
 update_on:
 - alpm: podofo-0.9
   source: archpkg

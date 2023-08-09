@@ -7,7 +7,6 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''libigl'')
 
   '
-repo_depends: []
 update_on:
 - alpm: libigl
   source: archpkg

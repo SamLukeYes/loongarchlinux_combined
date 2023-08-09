@@ -11,13 +11,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''shadow'')
   '
 repo_depends:
 - acl
-<<<<<<< HEAD
-#- pam
-#- audit
-=======
 - attr
 - audit
->>>>>>> 629d87561 (treewide: regen lilac.yaml)
 - libxcrypt
 - pam
 update_on:

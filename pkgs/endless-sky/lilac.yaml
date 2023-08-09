@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''endless-sky'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends: []
 update_on:
 - alpm: endless-sky
   source: archpkg

@@ -7,7 +7,6 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''libreoffice-extension-writer2latex'')
 
   '
-repo_depends: []
 update_on:
 - alpm: libreoffice-extension-writer2latex
   source: archpkg

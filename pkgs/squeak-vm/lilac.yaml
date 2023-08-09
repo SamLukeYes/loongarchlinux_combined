@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''squeak-vm'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends: []
 update_on:
 - alpm: squeak-vm
   source: archpkg

@@ -7,8 +7,6 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-tensorboard_plugin_wit'')
 
   '
-repo_depends: []
 update_on:
 - alpm: python-tensorboard_plugin_wit
   source: archpkg
-managed: false

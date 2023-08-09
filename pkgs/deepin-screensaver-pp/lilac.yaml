@@ -7,7 +7,6 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''deepin-screensaver-pp'')
 
   '
-repo_depends: []
 update_on:
 - alpm: deepin-screensaver-pp
   source: archpkg

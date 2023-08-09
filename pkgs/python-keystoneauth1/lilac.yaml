@@ -7,7 +7,6 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''python-keystoneauth1'')
 
   '
-repo_depends: []
 update_on:
 - alpm: python-keystoneauth1
   source: archpkg

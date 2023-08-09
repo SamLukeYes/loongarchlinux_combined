@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-monad-time'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends: []
 update_on:
 - alpm: haskell-monad-time
   source: archpkg

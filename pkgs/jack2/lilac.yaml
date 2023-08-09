@@ -6,7 +6,6 @@ repo_depends:
 - opus
 - systemd-libs
 - expat
-- jack2
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

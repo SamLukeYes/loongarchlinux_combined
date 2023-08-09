@@ -7,7 +7,6 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''firefox-tree-style-tab'')
 
   '
-repo_depends: []
 update_on:
 - alpm: firefox-tree-style-tab
   source: archpkg

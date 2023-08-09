@@ -7,7 +7,6 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''nuklear'')
 
   '
-repo_depends: []
 update_on:
 - alpm: nuklear
   source: archpkg

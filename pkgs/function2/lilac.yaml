@@ -7,7 +7,6 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''function2'')
 
   '
-repo_depends: []
 update_on:
 - alpm: function2
   source: archpkg

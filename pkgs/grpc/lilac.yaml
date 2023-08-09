@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''grpc'')
 repo_depends:
 - protobuf
 - python
-- grpc
 update_on:
 - alias: protobuf
 - alias: python

@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''webkit2-sharp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends: []
 update_on:
 - alpm: webkit2-sharp
   source: archpkg

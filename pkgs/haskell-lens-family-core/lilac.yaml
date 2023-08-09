@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lens-family-c
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends: []
 update_on:
 - alpm: haskell-lens-family-core
   source: archpkg

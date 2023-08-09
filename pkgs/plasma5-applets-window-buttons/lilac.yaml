@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plasma5-applets-windo
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends: []
 update_on:
 - alpm: plasma5-applets-window-buttons
   source: archpkg

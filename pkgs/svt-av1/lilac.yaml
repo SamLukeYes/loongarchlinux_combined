@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''svt-av1'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends: []
 update_on:
 - alpm: svt-av1
   source: archpkg

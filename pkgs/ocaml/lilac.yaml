@@ -1,6 +1,4 @@
 destsubdir: extra
-repo_depends:
-- ocaml
 update_on:
 - alpm: ocaml
   source: alpm

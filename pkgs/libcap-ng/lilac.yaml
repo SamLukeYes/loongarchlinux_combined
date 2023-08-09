@@ -9,8 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libcap-ng'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- libcap-ng
 update_on:
 - alpm: libcap-ng
   provides: libcap-ng.so

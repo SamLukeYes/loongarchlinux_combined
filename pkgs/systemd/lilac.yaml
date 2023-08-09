@@ -1,26 +1,6 @@
 destsubdir: core
 repo_depends:
 - acl
-<<<<<<< HEAD
-- gcc: gcc-libs
-- xz
-#- dbus
-- hwdata
-- bash
-#- cryptsetup
-- zstd
-- libseccomp
-- lz4
-- openssl
-#- pam
-#- elfutils: libelf
-- libidn2
-- libxcrypt
-#- audit
-- python-pefile
-- iptables
-#- binutils
-=======
 - cryptsetup
 - iptables
 - kmod
@@ -31,7 +11,6 @@ repo_depends:
 - audit
 - openssl
 - openssl
->>>>>>> 629d87561 (treewide: regen lilac.yaml)
 update_on:
 - alpm: acl
   provides: libacl.so

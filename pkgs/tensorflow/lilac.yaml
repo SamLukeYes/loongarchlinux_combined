@@ -15,4 +15,3 @@ update_on:
 - alias: icu
 - alpm: tensorflow
   source: archpkg
-managed: false

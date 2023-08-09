@@ -7,7 +7,6 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''0ad-data'')
 
   '
-repo_depends: []
 update_on:
 - alpm: 0ad-data
   source: archpkg

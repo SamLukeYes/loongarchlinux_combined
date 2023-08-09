@@ -1,7 +1,6 @@
 destsubdir: extra
 repo_depends:
 - protobuf
-- opencv
 - qt6-base
 - jsoncpp
 update_on:

@@ -1,5 +1,3 @@
 destsubdir: core
-repo_depends:
-- python
 update_on:
 - alias: python

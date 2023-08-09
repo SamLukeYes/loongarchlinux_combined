@@ -7,7 +7,6 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''perl-json-webtoken'')
 
   '
-repo_depends: []
 update_on:
 - alpm: perl-json-webtoken
   source: archpkg

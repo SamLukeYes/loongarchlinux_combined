@@ -4,7 +4,6 @@ repo_depends:
 - glib2
 - graphite
 - cairo
-- harfbuzz
 - icu
 - chafa
 - harfbuzz-cairo

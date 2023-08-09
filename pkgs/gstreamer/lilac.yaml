@@ -8,10 +8,10 @@ update_on:
 - alpm: jack2
   provides: libjack.so
   source: alpm
-#- alpm: qt6-declarative
-#  source: alpm
-#  strip_release: true
-#- alpm: qt5-declarative
-#  source: alpm
-#  strip_release: true
+- alpm: qt6-declarative
+  source: alpm
+  strip_release: true
+- alpm: qt5-declarative
+  source: alpm
+  strip_release: true
 - alias: python

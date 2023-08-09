@@ -7,7 +7,6 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''aarch64-linux-gnu-linux-api-headers'')
 
   '
-repo_depends: []
 update_on:
 - alpm: aarch64-linux-gnu-linux-api-headers
   source: archpkg

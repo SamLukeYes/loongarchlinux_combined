@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''audit'')
 repo_depends:
 - krb5
 - libcap-ng
-- audit
 - python
 update_on:
 - alpm: krb5

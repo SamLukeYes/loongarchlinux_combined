@@ -9,7 +9,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-cairo-gobject'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends: []
 update_on:
 - alpm: perl-cairo-gobject
   source: archpkg

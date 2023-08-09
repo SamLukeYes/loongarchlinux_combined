@@ -13,7 +13,6 @@ repo_depends:
 - jsoncpp
 - curl
 - grpc
-- sysdig
 update_on:
 - alpm: jsoncpp
   provides: libjsoncpp.so
