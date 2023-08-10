@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''p11-kit'')
 
   '
 repo_depends:
-- p11-kit
 - systemd
 update_on:
 - manual: 1

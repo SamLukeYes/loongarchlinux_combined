@@ -6,7 +6,6 @@ repo_depends:
 - cairo
 - icu
 - chafa
-- harfbuzz
 update_on:
 - manual: 1
   source: manual

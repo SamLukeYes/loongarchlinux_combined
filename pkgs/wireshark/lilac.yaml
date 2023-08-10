@@ -15,7 +15,6 @@ repo_depends:
 - brotli
 - c-ares
 - krb5
-- wireshark
 update_on:
 - manual: 1
   source: manual
