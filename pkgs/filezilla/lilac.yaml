@@ -16,6 +16,8 @@ repo_depends:
 - gtk3
 - nettle
 update_on:
+- manual: 1
+  source: manual
 - alpm: wxwidgets-gtk3
   source: alpm
   strip_release: true

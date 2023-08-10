@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nautilus'')
 repo_depends:
 - nautilus
 update_on:
+- manual: 1
+  source: manual
 - alpm: libnautilus-extension
   provides: libnautilus-extension.so
   source: alpm

@@ -17,6 +17,8 @@ repo_depends:
 - portaudio
 - rtosc
 update_on:
+- manual: 1
+  source: manual
 - alpm: alsa-lib
   provides: libasound.so
   source: alpm

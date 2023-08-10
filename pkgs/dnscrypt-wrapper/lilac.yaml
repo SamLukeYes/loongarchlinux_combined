@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dnscrypt-wrapper'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: dnscrypt-wrapper
   source: archpkg

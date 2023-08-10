@@ -10,6 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-red-colors'')
 repo_depends:
 - ruby
 update_on:
+- manual: 1
+  source: manual
 - alias: ruby
 - alpm: ruby-red-colors
   source: archpkg

@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gumbo-parser'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: gumbo-parser
   source: archpkg

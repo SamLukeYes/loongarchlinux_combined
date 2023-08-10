@@ -13,6 +13,8 @@ repo_depends:
 - haskell-case-insensitive
 - haskell-utf8-string
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-case-insensitive
   source: alpm
 - alpm: haskell-utf8-string

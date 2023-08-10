@@ -13,6 +13,8 @@ repo_depends:
 - perl
 - gsl
 update_on:
+- manual: 1
+  source: manual
 - alias: perl
 - alpm: gsl
   source: alpm

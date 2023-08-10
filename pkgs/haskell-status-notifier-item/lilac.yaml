@@ -19,6 +19,8 @@ repo_depends:
 - haskell-optparse-applicative
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-byte-order
   source: alpm
 - alpm: haskell-bytestring-to-vector

@@ -21,6 +21,8 @@ repo_depends:
 - pam
 - systemd
 update_on:
+- manual: 1
+  source: manual
 - alpm: alsa-lib
   provides: libasound.so
   source: alpm

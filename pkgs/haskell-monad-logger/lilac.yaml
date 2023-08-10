@@ -22,6 +22,8 @@ repo_depends:
 - haskell-transformers-compat
 - haskell-unliftio-core
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-conduit
   source: alpm
 - alpm: haskell-conduit-extra

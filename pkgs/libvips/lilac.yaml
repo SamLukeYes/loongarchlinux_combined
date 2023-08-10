@@ -2,6 +2,8 @@ destsubdir: extra
 repo_depends:
 - cfitsio
 update_on:
+- manual: 1
+  source: manual
 - alpm: cfitsio
   source: alpm
   strip_release: true

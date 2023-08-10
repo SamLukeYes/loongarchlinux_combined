@@ -21,6 +21,8 @@ repo_depends:
 - haskell-skein
 - haskell-tagged
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-base64-bytestring
   source: alpm
 - alpm: haskell-cereal

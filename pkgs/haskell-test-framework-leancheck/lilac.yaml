@@ -13,6 +13,8 @@ repo_depends:
 - haskell-leancheck
 - haskell-test-framework
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-leancheck
   source: alpm
 - alpm: haskell-test-framework

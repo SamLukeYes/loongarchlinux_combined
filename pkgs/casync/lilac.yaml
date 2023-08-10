@@ -16,6 +16,8 @@ repo_depends:
 - xz
 - zstd
 update_on:
+- manual: 1
+  source: manual
 - alpm: curl
   provides: libcurl.so
   source: alpm

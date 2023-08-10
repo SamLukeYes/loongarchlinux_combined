@@ -17,6 +17,8 @@ repo_depends:
 - haskell-vector-instances
 - haskell-dlist-instances
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-dlist
   source: alpm
 - alpm: haskell-comonad

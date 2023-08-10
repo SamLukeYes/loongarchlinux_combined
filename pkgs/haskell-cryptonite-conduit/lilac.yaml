@@ -16,6 +16,8 @@ repo_depends:
 - haskell-memory
 - haskell-resourcet
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-conduit
   source: alpm
 - alpm: haskell-conduit-extra

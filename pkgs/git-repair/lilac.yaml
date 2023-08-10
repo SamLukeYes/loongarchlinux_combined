@@ -24,6 +24,8 @@ repo_depends:
 - haskell-unix-compat
 - haskell-utf8-string
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-async
   source: alpm
 - alpm: haskell-attoparsec

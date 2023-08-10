@@ -17,6 +17,8 @@ repo_depends:
 - haskell-temporary
 - haskell-wl-pprint-text
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-colour
   source: alpm
 - alpm: haskell-dlist

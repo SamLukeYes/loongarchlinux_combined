@@ -23,6 +23,8 @@ repo_depends:
 - haskell-syb
 - haskell-utility-ht
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-data-default
   source: alpm
 - alpm: haskell-gitrev

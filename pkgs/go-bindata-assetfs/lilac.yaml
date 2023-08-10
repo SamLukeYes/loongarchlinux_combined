@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''go-bindata-assetfs'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: go-bindata-assetfs
   source: archpkg

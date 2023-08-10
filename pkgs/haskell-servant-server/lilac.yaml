@@ -31,6 +31,8 @@ repo_depends:
 - haskell-warp
 - haskell-word8
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-base-compat
   source: alpm
 - alpm: haskell-aeson

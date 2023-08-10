@@ -2,4 +2,6 @@ destsubdir: extra
 repo_depends:
 - protobuf
 update_on:
+- manual: 1
+  source: manual
 - alias: protobuf

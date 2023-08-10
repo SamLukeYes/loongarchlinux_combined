@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-protocol-http2''
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: ruby-protocol-http2
   source: archpkg

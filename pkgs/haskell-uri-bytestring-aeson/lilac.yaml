@@ -13,6 +13,8 @@ repo_depends:
 - haskell-aeson
 - haskell-uri-bytestring
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-uri-bytestring

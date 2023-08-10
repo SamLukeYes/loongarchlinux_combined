@@ -14,6 +14,8 @@ repo_depends:
 - haskell-src-exts
 - haskell-uniplate
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-data-default
   source: alpm
 - alpm: haskell-src-exts

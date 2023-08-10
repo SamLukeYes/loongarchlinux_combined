@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-attoparsec'')
 repo_depends:
 - haskell-scientific
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-scientific
   source: alpm
 - alpm: haskell-attoparsec

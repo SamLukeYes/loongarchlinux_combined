@@ -14,6 +14,8 @@ repo_depends:
 - haskell-data-array-byte
 - haskell-ghc-bignum-orphans
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-base-orphans
   source: alpm
 - alpm: haskell-data-array-byte

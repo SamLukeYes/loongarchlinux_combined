@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tldp-howtos-txt'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: tldp-howtos-txt
   source: archpkg

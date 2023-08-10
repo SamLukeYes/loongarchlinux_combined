@@ -13,6 +13,8 @@ repo_depends:
 - libdeflate
 - zopfli
 update_on:
+- manual: 1
+  source: manual
 - alpm: libdeflate
   provides: libdeflate.so
   source: alpm

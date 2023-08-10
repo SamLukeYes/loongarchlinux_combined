@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bnfc'')
 repo_depends:
 - haskell-string-qq
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-string-qq
   source: alpm
 - alpm: bnfc

@@ -29,6 +29,8 @@ repo_depends:
 - haskell-utf8-string
 - haskell-yaml
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-ansi-terminal

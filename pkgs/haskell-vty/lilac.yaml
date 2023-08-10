@@ -18,6 +18,8 @@ repo_depends:
 - haskell-utf8-string
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ansi-terminal
   source: alpm
 - alpm: haskell-blaze-builder

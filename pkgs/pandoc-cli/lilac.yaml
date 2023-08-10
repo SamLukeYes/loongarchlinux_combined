@@ -18,6 +18,8 @@ repo_depends:
 - haskell-wai-extra
 - haskell-warp
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-pandoc
   source: alpm
 - alpm: haskell-pandoc-lua-engine

@@ -28,6 +28,8 @@ repo_depends:
 - haskell-warp
 - haskell-word8
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-attoparsec
   source: alpm
 - alpm: haskell-case-insensitive

@@ -29,6 +29,8 @@ repo_depends:
 - haskell-utf8-string
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-clash-lib
   source: alpm
 - alpm: haskell-clash-prelude

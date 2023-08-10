@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-validation-se
 repo_depends:
 - haskell-selective
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-selective
   source: alpm
 - alpm: haskell-validation-selective

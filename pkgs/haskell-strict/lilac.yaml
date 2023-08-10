@@ -14,6 +14,8 @@ repo_depends:
 - haskell-hashable
 - haskell-these
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-assoc
   source: alpm
 - alpm: haskell-hashable

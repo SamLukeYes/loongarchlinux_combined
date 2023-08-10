@@ -20,6 +20,8 @@ repo_depends:
 - haskell-sqlite-simple
 - haskell-unordered-containers
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-extra

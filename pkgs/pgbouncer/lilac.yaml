@@ -13,6 +13,8 @@ repo_depends:
 - c-ares
 - pam
 update_on:
+- manual: 1
+  source: manual
 - alpm: c-ares
   provides: libcares.so
   source: alpm

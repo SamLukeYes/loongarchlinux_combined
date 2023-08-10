@@ -13,6 +13,8 @@ repo_depends:
 - haskell-microlens
 - haskell-th-abstraction
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-microlens
   source: alpm
 - alpm: haskell-th-abstraction

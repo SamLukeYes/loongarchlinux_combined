@@ -13,6 +13,8 @@ repo_depends:
 - haskell-bifunctors
 - haskell-tagged
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-bifunctors
   source: alpm
 - alpm: haskell-tagged

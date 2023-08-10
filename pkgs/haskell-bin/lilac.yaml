@@ -17,6 +17,8 @@ repo_depends:
 - haskell-hashable
 - haskell-some
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-quickcheck
   source: alpm
 - alpm: haskell-boring

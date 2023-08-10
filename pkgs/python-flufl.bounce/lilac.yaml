@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-flufl.bounce''
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: python-flufl.bounce
   source: archpkg

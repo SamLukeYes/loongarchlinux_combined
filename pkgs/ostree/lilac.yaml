@@ -20,6 +20,8 @@ repo_depends:
 - systemd
 - xz
 update_on:
+- manual: 1
+  source: manual
 - alpm: avahi
   provides: libavahi-glib.so
   source: alpm

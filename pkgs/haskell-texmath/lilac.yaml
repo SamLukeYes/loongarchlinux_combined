@@ -16,6 +16,8 @@ repo_depends:
 - haskell-syb
 - haskell-xml
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-network-uri
   source: alpm
 - alpm: haskell-pandoc-types

@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-panel'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: mate-panel
   source: archpkg

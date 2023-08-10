@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dbc-parser-cpp'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: dbc-parser-cpp
   source: archpkg

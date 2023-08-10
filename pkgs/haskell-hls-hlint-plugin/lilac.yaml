@@ -29,6 +29,8 @@ repo_depends:
 - haskell-temporary
 - haskell-unordered-containers
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-diff
   source: alpm
 - alpm: haskell-aeson

@@ -15,6 +15,8 @@ repo_depends:
 - haskell-th-abstraction
 - haskell-th-orphans
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-primitive
   source: alpm
 - alpm: haskell-syb

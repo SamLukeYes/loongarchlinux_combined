@@ -17,6 +17,8 @@ repo_depends:
 - harfbuzz
 - intel-oneapi-basekit
 update_on:
+- manual: 1
+  source: manual
 - alpm: icu
   provides: libicuuc.so
   source: alpm

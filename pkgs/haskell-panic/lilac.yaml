@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-panic'')
 repo_depends:
 - haskell-gitrev
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-gitrev
   source: alpm
 - alpm: haskell-panic

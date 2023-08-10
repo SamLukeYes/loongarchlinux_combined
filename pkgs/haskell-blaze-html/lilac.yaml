@@ -13,6 +13,8 @@ repo_depends:
 - haskell-blaze-builder
 - haskell-blaze-markup
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-blaze-builder
   source: alpm
 - alpm: haskell-blaze-markup

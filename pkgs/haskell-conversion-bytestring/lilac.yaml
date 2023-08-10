@@ -13,6 +13,8 @@ repo_depends:
 - haskell-base-prelude
 - haskell-conversion
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-base-prelude
   source: alpm
 - alpm: haskell-conversion

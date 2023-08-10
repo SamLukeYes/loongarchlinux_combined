@@ -13,6 +13,8 @@ repo_depends:
 - haskell-vector
 - haskell-mono-traversable
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-vector
   source: alpm
 - alpm: haskell-mono-traversable

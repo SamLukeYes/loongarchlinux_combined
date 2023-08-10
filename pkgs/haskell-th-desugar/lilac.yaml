@@ -17,6 +17,8 @@ repo_depends:
 - haskell-th-orphans
 - haskell-transformers-compat
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ordered-containers
   source: alpm
 - alpm: haskell-syb

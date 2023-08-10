@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-foundation'')
 repo_depends:
 - haskell-basement
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-basement
   source: alpm
 - alpm: haskell-foundation

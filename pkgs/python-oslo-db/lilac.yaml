@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-oslo-db'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: python-oslo-db
   source: archpkg

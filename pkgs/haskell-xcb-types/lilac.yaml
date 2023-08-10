@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-xcb-types'')
 repo_depends:
 - haskell-xml
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-xml
   source: alpm
 - alpm: haskell-xcb-types

@@ -13,6 +13,8 @@ repo_depends:
 - haskell-hashable
 - haskell-unordered-containers
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hashable
   source: alpm
 - alpm: haskell-unordered-containers

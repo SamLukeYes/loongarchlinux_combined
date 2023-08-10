@@ -18,6 +18,8 @@ repo_depends:
 - haskell-old-locale
 - haskell-wai
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-base16-bytestring
   source: alpm
 - alpm: haskell-cryptohash-sha1

@@ -14,6 +14,8 @@ repo_depends:
 - haskell-microlens
 - haskell-prettyprinter
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-lucid
   source: alpm
 - alpm: haskell-microlens

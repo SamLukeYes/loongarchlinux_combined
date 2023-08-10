@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sugar-activity-imagev
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: sugar-activity-imageviewer
   source: archpkg

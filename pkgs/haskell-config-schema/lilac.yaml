@@ -15,6 +15,8 @@ repo_depends:
 - haskell-kan-extensions
 - haskell-semigroupoids
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-config-value
   source: alpm
 - alpm: haskell-free

@@ -13,6 +13,8 @@ repo_depends:
 - lilv
 - libsndfile
 update_on:
+- manual: 1
+  source: manual
 - alpm: lilv
   provides: liblilv-0.so
   source: alpm

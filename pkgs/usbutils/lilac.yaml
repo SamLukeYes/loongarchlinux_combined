@@ -13,6 +13,8 @@ repo_depends:
 - libusb
 - systemd
 update_on:
+- manual: 1
+  source: manual
 - alpm: libusb
   provides: libusb-1.0.so
   source: alpm

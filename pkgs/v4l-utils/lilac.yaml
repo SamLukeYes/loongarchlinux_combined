@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''v4l-utils'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: v4l-utils
   source: archpkg

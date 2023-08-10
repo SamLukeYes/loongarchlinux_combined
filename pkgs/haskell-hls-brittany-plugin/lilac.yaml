@@ -20,6 +20,8 @@ repo_depends:
 - haskell-lens
 - haskell-lsp-types
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-brittany
   source: alpm
 - alpm: haskell-czipwith

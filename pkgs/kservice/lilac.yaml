@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kservice'')
 repo_depends:
 - kconfig
 update_on:
+- manual: 1
+  source: manual
 - alpm: kconfig
   source: alpm
   strip_release: true

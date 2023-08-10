@@ -14,6 +14,8 @@ repo_depends:
 - haskell-ieee754
 - haskell-pretty-show
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-quickcheck
   source: alpm
 - alpm: haskell-ieee754

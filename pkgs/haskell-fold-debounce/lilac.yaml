@@ -13,6 +13,8 @@ repo_depends:
 - haskell-stm-delay
 - haskell-data-default-class
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-stm-delay
   source: alpm
 - alpm: haskell-data-default-class

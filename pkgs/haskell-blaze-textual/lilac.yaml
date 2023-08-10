@@ -14,6 +14,8 @@ repo_depends:
 - haskell-old-locale
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-blaze-builder
   source: alpm
 - alpm: haskell-old-locale

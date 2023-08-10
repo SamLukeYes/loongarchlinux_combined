@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-ppix-utils'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: perl-ppix-utils
   source: archpkg

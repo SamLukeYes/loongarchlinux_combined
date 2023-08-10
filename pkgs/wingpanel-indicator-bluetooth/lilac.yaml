@@ -13,6 +13,8 @@ repo_depends:
 - granite
 - wingpanel
 update_on:
+- manual: 1
+  source: manual
 - alpm: granite
   provides: libgranite.so
   source: alpm

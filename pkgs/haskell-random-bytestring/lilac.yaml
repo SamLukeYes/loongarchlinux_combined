@@ -13,6 +13,8 @@ repo_depends:
 - haskell-mwc-random
 - haskell-pcg-random
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-mwc-random
   source: alpm
 - alpm: haskell-pcg-random

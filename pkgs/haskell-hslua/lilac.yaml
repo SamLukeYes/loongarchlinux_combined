@@ -18,6 +18,8 @@ repo_depends:
 - haskell-hslua-packaging
 - haskell-hslua-typing
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hslua-aeson
   source: alpm
 - alpm: haskell-hslua-classes

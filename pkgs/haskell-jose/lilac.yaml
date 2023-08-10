@@ -20,6 +20,8 @@ repo_depends:
 - haskell-network-uri
 - haskell-x509
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-base64-bytestring

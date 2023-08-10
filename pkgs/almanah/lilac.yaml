@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''almanah'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: almanah
   source: archpkg

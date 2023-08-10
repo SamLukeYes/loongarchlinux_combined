@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-system-fileio
 repo_depends:
 - haskell-system-filepath
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-system-filepath
   source: alpm
 - alpm: haskell-system-fileio

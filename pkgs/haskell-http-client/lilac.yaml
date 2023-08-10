@@ -23,6 +23,8 @@ repo_depends:
 - haskell-random
 - haskell-streaming-commons
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-async
   source: alpm
 - alpm: haskell-base64-bytestring

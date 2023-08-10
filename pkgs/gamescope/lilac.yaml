@@ -17,6 +17,8 @@ repo_depends:
 - wlroots
 - intel-oneapi-basekit
 update_on:
+- manual: 1
+  source: manual
 - alpm: libcap
   provides: libcap.so
   source: alpm

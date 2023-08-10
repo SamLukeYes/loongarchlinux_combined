@@ -4,6 +4,8 @@ repo_depends:
 - qt6-base
 - jsoncpp
 update_on:
+- manual: 1
+  source: manual
 - alias: protobuf
 - alpm: opencv
   source: alpm

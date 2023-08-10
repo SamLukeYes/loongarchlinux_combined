@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pari-seadata-small'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: pari-seadata-small
   source: archpkg

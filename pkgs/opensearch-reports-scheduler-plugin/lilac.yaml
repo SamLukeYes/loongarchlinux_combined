@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opensearch-reports-sc
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: opensearch-reports-scheduler-plugin
   source: archpkg

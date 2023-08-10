@@ -13,6 +13,8 @@ repo_depends:
 - openfec
 - speexdsp
 update_on:
+- manual: 1
+  source: manual
 - alpm: openfec
   provides: libopenfec.so
   source: alpm

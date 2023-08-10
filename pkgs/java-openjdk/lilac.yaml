@@ -6,6 +6,8 @@ repo_depends:
 - harfbuzz
 - giflib
 update_on:
+- manual: 1
+  source: manual
 - alpm: darktable
   provides: libjpeg.so
   source: alpm

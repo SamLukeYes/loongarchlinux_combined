@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''iptux'')
 repo_depends:
 - jsoncpp
 update_on:
+- manual: 1
+  source: manual
 - alias: jsoncpp
 - alpm: iptux
   source: archpkg

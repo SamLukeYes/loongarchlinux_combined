@@ -14,6 +14,8 @@ repo_depends:
 - wayland
 - intel-oneapi-basekit
 update_on:
+- manual: 1
+  source: manual
 - alpm: pam
   provides: libpam.so
   source: alpm

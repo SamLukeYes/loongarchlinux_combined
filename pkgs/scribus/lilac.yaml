@@ -13,6 +13,8 @@ repo_depends:
 - icu
 - qt5-base
 update_on:
+- manual: 1
+  source: manual
 - alpm: icu
   provides: libicuuc.so
   source: alpm

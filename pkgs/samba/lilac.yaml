@@ -17,6 +17,8 @@ repo_depends:
 - tevent
 - icu
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: readline
   provides: libreadline.so

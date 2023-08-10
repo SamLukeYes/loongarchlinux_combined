@@ -13,6 +13,8 @@ repo_depends:
 - readline
 - util-linux
 update_on:
+- manual: 1
+  source: manual
 - alpm: readline
   provides: libreadline.so
   source: alpm

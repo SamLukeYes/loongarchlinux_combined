@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-call-stack'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-call-stack
   source: archpkg

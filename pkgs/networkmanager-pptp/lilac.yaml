@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''networkmanager-pptp''
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: networkmanager-pptp
   source: archpkg

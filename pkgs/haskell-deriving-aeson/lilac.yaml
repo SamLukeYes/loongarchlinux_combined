@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-deriving-aeso
 repo_depends:
 - haskell-aeson
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-deriving-aeson

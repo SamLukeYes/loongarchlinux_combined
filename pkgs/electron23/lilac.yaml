@@ -13,6 +13,8 @@ repo_depends:
 - icu
 - jsoncpp
 update_on:
+- manual: 1
+  source: manual
 - alias: icu
 - alias: jsoncpp
 - alpm: electron23

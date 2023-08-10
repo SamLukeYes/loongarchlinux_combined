@@ -13,6 +13,8 @@ repo_depends:
 - haskell-blaze-builder
 - haskell-utf8-string
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-blaze-builder
   source: alpm
 - alpm: haskell-utf8-string

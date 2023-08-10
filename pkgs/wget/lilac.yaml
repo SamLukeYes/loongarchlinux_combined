@@ -15,6 +15,8 @@ repo_depends:
 - libpsl
 - nettle
 update_on:
+- manual: 1
+  source: manual
 - alpm: libidn2
   provides: libidn2.so
   source: alpm

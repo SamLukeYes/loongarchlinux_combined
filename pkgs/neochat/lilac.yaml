@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''neochat'')
 repo_depends:
 - cmark
 update_on:
+- manual: 1
+  source: manual
 - alpm: cmark
   source: alpm
   strip_release: true

@@ -13,6 +13,8 @@ repo_depends:
 - libogg
 - speexdsp
 update_on:
+- manual: 1
+  source: manual
 - alpm: libogg
   provides: libogg.so
   source: alpm

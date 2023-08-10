@@ -19,6 +19,8 @@ repo_depends:
 - haskell-xml-conduit
 - haskell-regex-tdfa
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-gi-base
   source: alpm
 - alpm: haskell-ansi-terminal

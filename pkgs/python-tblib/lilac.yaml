@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-tblib'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: python-tblib
   source: archpkg

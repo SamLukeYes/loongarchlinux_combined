@@ -18,6 +18,8 @@ repo_depends:
 - haskell-pandoc-types
 - haskell-safe
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-hslua

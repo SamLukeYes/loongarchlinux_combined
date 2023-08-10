@@ -15,6 +15,8 @@ repo_depends:
 - gtk2
 - glib2
 update_on:
+- manual: 1
+  source: manual
 - alpm: at-spi2-core
   provides: libatk-1.0.so
   source: alpm

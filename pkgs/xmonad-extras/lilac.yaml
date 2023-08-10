@@ -17,6 +17,8 @@ repo_depends:
 - haskell-network
 - haskell-regex-posix
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-x11
   source: alpm
 - alpm: haskell-alsa-mixer

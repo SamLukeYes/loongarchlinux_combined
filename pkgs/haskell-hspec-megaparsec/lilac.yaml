@@ -13,6 +13,8 @@ repo_depends:
 - haskell-hspec-expectations
 - haskell-megaparsec
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hspec-expectations
   source: alpm
 - alpm: haskell-megaparsec

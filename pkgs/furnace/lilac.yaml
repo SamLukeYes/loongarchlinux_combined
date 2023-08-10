@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''furnace'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: furnace
   source: archpkg

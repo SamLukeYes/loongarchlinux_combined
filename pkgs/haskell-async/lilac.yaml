@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-async'')
 repo_depends:
 - haskell-hashable
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hashable
   source: alpm
 - alpm: haskell-async

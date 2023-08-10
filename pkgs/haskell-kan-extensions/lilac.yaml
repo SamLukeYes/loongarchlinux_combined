@@ -21,6 +21,8 @@ repo_depends:
 - haskell-tagged
 - haskell-transformers-compat
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-adjunctions
   source: alpm
 - alpm: haskell-comonad

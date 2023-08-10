@@ -18,6 +18,8 @@ repo_depends:
 - haskell-memory
 - haskell-pem
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-asn1-encoding
   source: alpm
 - alpm: haskell-asn1-parse

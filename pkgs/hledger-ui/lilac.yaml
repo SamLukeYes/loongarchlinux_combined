@@ -28,6 +28,8 @@ repo_depends:
 - haskell-brick
 - haskell-vty
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hledger-lib
   source: alpm
 - alpm: haskell-ansi-terminal

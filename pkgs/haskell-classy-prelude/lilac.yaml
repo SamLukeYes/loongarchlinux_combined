@@ -25,6 +25,8 @@ repo_depends:
 - haskell-basic-prelude
 - haskell-mono-traversable-instances
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-async
   source: alpm
 - alpm: haskell-chunked-data

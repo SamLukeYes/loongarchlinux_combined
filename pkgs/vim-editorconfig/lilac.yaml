@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vim-editorconfig'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: vim-editorconfig
   source: archpkg

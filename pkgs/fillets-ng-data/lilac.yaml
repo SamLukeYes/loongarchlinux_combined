@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fillets-ng-data'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: fillets-ng-data
   source: archpkg

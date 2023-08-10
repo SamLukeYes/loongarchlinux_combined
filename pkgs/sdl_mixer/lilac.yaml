@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sdl_mixer'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: sdl_mixer
   source: archpkg

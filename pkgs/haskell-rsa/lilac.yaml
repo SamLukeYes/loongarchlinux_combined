@@ -14,6 +14,8 @@ repo_depends:
 - haskell-crypto-pubkey-types
 - haskell-sha
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-crypto-api
   source: alpm
 - alpm: haskell-crypto-pubkey-types

@@ -13,6 +13,8 @@ repo_depends:
 - ffmpeg
 - darktable
 update_on:
+- manual: 1
+  source: manual
 - alpm: ffmpeg
   provides: libswscale.so
   source: alpm

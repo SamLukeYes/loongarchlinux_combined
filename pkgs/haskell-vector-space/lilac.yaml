@@ -14,6 +14,8 @@ repo_depends:
 - haskell-memotrie
 - haskell-numinstances
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-boolean
   source: alpm
 - alpm: haskell-memotrie

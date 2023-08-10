@@ -14,6 +14,8 @@ repo_depends:
 - haskell-network
 - haskell-websockets
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-crypton-connection
   source: alpm
 - alpm: haskell-network

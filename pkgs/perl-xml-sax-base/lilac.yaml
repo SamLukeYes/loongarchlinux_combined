@@ -10,6 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-xml-sax-base'')
 repo_depends:
 - perl
 update_on:
+- manual: 1
+  source: manual
 - alias: perl
 - alpm: perl-xml-sax-base
   source: archpkg

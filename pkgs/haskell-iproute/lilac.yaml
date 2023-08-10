@@ -14,6 +14,8 @@ repo_depends:
 - haskell-byteorder
 - haskell-network
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-appar
   source: alpm
 - alpm: haskell-byteorder

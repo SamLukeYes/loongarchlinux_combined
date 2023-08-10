@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ocaml-topkg'')
 repo_depends:
 - ocaml
 update_on:
+- manual: 1
+  source: manual
 - alpm: ocaml
   source: alpm
   strip_release: true

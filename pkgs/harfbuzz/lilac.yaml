@@ -8,6 +8,8 @@ repo_depends:
 - chafa
 - harfbuzz
 update_on:
+- manual: 1
+  source: manual
 - alpm: freetype2
   provides: libfreetype.so
   source: alpm

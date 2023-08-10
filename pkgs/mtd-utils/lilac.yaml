@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mtd-utils'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: mtd-utils
   source: archpkg

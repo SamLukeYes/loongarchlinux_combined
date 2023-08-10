@@ -13,6 +13,8 @@ repo_depends:
 - haskell-random
 - haskell-primitive
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-random
   source: alpm
 - alpm: haskell-primitive

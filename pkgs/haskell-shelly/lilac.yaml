@@ -18,6 +18,8 @@ repo_depends:
 - haskell-async
 - haskell-transformers-base
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-unix-compat
   source: alpm
 - alpm: haskell-monad-control

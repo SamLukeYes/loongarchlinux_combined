@@ -16,6 +16,8 @@ repo_depends:
 - libsndfile
 - util-linux
 update_on:
+- manual: 1
+  source: manual
 - alpm: fluidsynth
   provides: libfluidsynth.so
   source: alpm

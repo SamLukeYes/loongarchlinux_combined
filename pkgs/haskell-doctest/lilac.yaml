@@ -16,6 +16,8 @@ repo_depends:
 - haskell-code-page
 - haskell-ghc-paths
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-base-compat
   source: alpm
 - alpm: haskell-ghc

@@ -16,6 +16,8 @@ repo_depends:
 - jack2
 - libsamplerate
 update_on:
+- manual: 1
+  source: manual
 - alpm: gsl
   source: alpm
   strip_release: true

@@ -22,6 +22,8 @@ repo_depends:
 - haskell-gi-base
 - haskell-gi-overloading
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-gi-atk
   source: alpm
 - alpm: haskell-gi-cairo

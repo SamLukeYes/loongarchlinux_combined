@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''atkinson-hyperlegible
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: atkinson-hyperlegible-font
   source: archpkg

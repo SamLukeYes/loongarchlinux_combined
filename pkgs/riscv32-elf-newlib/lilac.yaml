@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''riscv32-elf-newlib'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: riscv32-elf-newlib
   source: archpkg

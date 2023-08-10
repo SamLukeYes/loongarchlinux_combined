@@ -35,6 +35,8 @@ repo_depends:
 - haskell-witch
 - haskell-zlib
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-quickcheck
   source: alpm
 - alpm: haskell-ansi-terminal

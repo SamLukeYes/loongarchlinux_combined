@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-colourista'')
 repo_depends:
 - haskell-ansi-terminal
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ansi-terminal
   source: alpm
 - alpm: haskell-colourista

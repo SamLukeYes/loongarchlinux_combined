@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-mediawiki-api'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: perl-mediawiki-api
   source: archpkg

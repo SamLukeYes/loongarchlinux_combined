@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xapian-core'')
 repo_depends:
 - util-linux
 update_on:
+- manual: 1
+  source: manual
 - alpm: util-linux-libs
   provides: libuuid.so
   source: alpm

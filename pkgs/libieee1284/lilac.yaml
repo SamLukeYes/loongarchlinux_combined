@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libieee1284'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: libieee1284
   source: archpkg

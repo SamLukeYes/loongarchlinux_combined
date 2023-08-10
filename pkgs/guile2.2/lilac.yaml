@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''guile2.2'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: guile2.2
   source: archpkg

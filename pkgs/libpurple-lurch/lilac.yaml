@@ -13,6 +13,8 @@ repo_depends:
 - libomemo
 - libaxc
 update_on:
+- manual: 1
+  source: manual
 - alpm: libomemo
   provides: libomemo.so
   source: alpm

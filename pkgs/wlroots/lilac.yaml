@@ -17,6 +17,8 @@ repo_depends:
 - wayland
 - intel-oneapi-basekit
 update_on:
+- manual: 1
+  source: manual
 - alpm: pixman
   provides: libpixman-1.so
   source: alpm

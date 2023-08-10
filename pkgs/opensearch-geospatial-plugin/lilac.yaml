@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opensearch-geospatial
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: opensearch-geospatial-plugin
   source: archpkg

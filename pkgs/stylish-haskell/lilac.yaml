@@ -19,6 +19,8 @@ repo_depends:
 - haskell-hsyaml
 - haskell-hsyaml-aeson
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-file-embed

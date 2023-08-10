@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libadwaita'')
 repo_depends:
 - gtk4
 update_on:
+- manual: 1
+  source: manual
 - alpm: gtk4
   provides: libgtk-4.so
   source: alpm

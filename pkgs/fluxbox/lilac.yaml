@@ -13,6 +13,8 @@ repo_depends:
 - fontconfig
 - fribidi
 update_on:
+- manual: 1
+  source: manual
 - alpm: fontconfig
   provides: libfontconfig.so
   source: alpm

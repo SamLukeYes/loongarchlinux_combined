@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ntfs-3g'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: ntfs-3g
   source: archpkg

@@ -13,6 +13,8 @@ repo_depends:
 - haskell-ieee754
 - haskell-scientific
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ieee754
   source: alpm
 - alpm: haskell-scientific

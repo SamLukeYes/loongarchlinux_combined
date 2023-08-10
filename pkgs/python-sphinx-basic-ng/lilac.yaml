@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-sphinx-basic-n
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: python-sphinx-basic-ng
   source: archpkg

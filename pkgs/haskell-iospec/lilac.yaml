@@ -13,6 +13,8 @@ repo_depends:
 - haskell-quickcheck
 - haskell-stream
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-quickcheck
   source: alpm
 - alpm: haskell-stream

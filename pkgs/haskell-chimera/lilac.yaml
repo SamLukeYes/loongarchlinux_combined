@@ -15,6 +15,8 @@ repo_depends:
 - haskell-primitive
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-adjunctions
   source: alpm
 - alpm: haskell-distributive

@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''drone-runner-exec'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: drone-runner-exec
   source: archpkg

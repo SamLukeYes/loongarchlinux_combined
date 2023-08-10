@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libsasl'')
 repo_depends:
 - gdbm
 update_on:
+- manual: 1
+  source: manual
 - alpm: gdbm
   provides: libgdbm.so
   source: alpm

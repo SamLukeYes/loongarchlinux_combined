@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vc-intrinsics'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: vc-intrinsics
   source: archpkg

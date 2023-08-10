@@ -15,6 +15,8 @@ repo_depends:
 - haskell-old-time
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-cereal
   source: alpm
 - alpm: haskell-generic-data

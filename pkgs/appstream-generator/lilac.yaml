@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''appstream-generator''
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: appstream-generator
   source: archpkg

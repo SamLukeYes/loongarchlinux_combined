@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jasper'')
 repo_depends:
 - darktable
 update_on:
+- manual: 1
+  source: manual
 - alpm: darktable
   provides: libjpeg.so
   source: alpm

@@ -7,6 +7,8 @@ repo_depends:
 - libao
 - curl
 update_on:
+- manual: 1
+  source: manual
 - alias: lua
 - alpm: ncurses
   provides: libncursesw.so

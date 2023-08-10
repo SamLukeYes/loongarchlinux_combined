@@ -20,6 +20,8 @@ repo_depends:
 - haskell-indexed-traversable
 - haskell-semigroupoids
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-quickcheck
   source: alpm
 - alpm: haskell-adjunctions

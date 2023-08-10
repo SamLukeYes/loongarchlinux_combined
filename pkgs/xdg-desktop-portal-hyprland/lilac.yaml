@@ -13,6 +13,8 @@ repo_depends:
 - util-linux
 - qt6-base
 update_on:
+- manual: 1
+  source: manual
 - alpm: util-linux-libs
   provides: libuuid.so
   source: alpm

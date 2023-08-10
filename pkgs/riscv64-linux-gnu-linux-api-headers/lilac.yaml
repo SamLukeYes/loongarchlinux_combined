@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''riscv64-linux-gnu-lin
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: riscv64-linux-gnu-linux-api-headers
   source: archpkg

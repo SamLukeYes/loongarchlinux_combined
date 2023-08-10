@@ -49,6 +49,8 @@ repo_depends:
 - haskell-yaml
 - haskell-zip-archive
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-ansi-terminal

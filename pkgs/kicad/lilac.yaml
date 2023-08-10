@@ -13,6 +13,8 @@ repo_depends:
 - python
 - wxwidgets
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: wxwidgets-gtk3
   source: alpm

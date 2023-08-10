@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''spdlog'')
 repo_depends:
 - fmt
 update_on:
+- manual: 1
+  source: manual
 - alpm: fmt
   provides: libfmt.so
   source: alpm

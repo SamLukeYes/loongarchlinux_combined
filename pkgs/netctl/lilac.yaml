@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''netctl'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: netctl
   source: archpkg

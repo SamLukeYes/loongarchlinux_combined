@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdg-user-dirs-gtk'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: xdg-user-dirs-gtk
   source: archpkg

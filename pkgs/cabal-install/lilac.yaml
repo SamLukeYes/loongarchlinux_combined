@@ -27,6 +27,8 @@ repo_depends:
 - haskell-zlib
 - haskell-lukko
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-async
   source: alpm
 - alpm: haskell-base16-bytestring

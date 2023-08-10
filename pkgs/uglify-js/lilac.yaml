@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''uglify-js'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: uglify-js
   source: archpkg

@@ -13,6 +13,8 @@ repo_depends:
 - haskell-sdl2
 - haskell-th-abstraction
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-sdl2
   source: alpm
 - alpm: haskell-th-abstraction

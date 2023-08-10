@@ -13,6 +13,8 @@ repo_depends:
 - systemd
 - pkcs11-helper
 update_on:
+- manual: 1
+  source: manual
 - alpm: systemd-libs
   provides: libsystemd.so
   source: alpm

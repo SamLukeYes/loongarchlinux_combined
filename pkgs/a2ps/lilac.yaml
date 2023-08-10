@@ -2,4 +2,6 @@ destsubdir: extra
 repo_depends:
 - perl
 update_on:
+- manual: 1
+  source: manual
 - alias: perl

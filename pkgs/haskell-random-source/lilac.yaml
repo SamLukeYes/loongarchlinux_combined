@@ -19,6 +19,8 @@ repo_depends:
 - haskell-syb
 - haskell-th-extras
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-flexible-defaults
   source: alpm
 - alpm: haskell-mersenne-random-pure64

@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zsh-theme-powerlevel1
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: zsh-theme-powerlevel10k
   source: archpkg

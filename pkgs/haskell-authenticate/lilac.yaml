@@ -23,6 +23,8 @@ repo_depends:
 - haskell-unordered-containers
 - haskell-xml-conduit
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-attoparsec

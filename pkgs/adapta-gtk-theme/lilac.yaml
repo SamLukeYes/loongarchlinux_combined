@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''adapta-gtk-theme'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: adapta-gtk-theme
   source: archpkg

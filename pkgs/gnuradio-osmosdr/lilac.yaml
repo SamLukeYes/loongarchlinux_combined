@@ -14,6 +14,8 @@ repo_depends:
 - gnuradio
 - gnuradio-iqbal
 update_on:
+- manual: 1
+  source: manual
 - alpm: boost
   provides: libboost_thread.so
   source: alpm

@@ -16,6 +16,8 @@ repo_depends:
 - haskell-skylighting-format-context
 - haskell-skylighting-format-latex
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-skylighting-core
   source: alpm
 - alpm: haskell-skylighting-format-ansi

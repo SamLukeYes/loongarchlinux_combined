@@ -25,6 +25,8 @@ repo_depends:
 - haskell-xml-conduit
 - haskell-xml-hamlet
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-case-insensitive
   source: alpm
 - alpm: haskell-data-default

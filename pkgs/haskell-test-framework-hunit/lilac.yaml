@@ -14,6 +14,8 @@ repo_depends:
 - haskell-extensible-exceptions
 - haskell-test-framework
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hunit
   source: alpm
 - alpm: haskell-extensible-exceptions

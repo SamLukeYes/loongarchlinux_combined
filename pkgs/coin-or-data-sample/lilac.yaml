@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''coin-or-data-sample''
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: coin-or-data-sample
   source: archpkg

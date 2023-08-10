@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-icon-theme-extr
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: gnome-icon-theme-extras
   source: archpkg

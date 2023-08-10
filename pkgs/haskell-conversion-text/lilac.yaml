@@ -14,6 +14,8 @@ repo_depends:
 - haskell-conversion
 - haskell-conversion-bytestring
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-base-prelude
   source: alpm
 - alpm: haskell-conversion

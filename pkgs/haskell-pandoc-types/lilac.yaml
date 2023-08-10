@@ -14,6 +14,8 @@ repo_depends:
 - haskell-quickcheck
 - haskell-syb
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-quickcheck

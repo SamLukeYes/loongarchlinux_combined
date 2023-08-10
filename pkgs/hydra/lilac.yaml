@@ -16,6 +16,8 @@ repo_depends:
 - cuda
 - freerdp
 update_on:
+- manual: 1
+  source: manual
 - alpm: ncurses
   provides: libncursesw.so
   source: alpm

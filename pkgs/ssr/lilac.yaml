@@ -16,6 +16,8 @@ repo_depends:
 - cuda
 - libsndfile
 update_on:
+- manual: 1
+  source: manual
 - alpm: qt5-base
   source: alpm
   strip_release: true

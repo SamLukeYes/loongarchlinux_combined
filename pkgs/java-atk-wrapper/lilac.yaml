@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''java-atk-wrapper'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: java-atk-wrapper
   source: archpkg

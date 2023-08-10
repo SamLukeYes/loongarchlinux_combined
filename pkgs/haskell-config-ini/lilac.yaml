@@ -13,6 +13,8 @@ repo_depends:
 - haskell-unordered-containers
 - haskell-megaparsec
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-unordered-containers
   source: alpm
 - alpm: haskell-megaparsec

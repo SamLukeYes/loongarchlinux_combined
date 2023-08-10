@@ -2,6 +2,8 @@ destsubdir: extra
 repo_depends:
 - julia
 update_on:
+- manual: 1
+  source: manual
 - alpm: julia
   provides: libgit2.so
   source: alpm

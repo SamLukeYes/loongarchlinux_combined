@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''golang-github-pmezard
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: golang-github-pmezard-go-difflib
   source: archpkg

@@ -31,6 +31,8 @@ repo_depends:
 - haskell-xml-types
 - haskell-yesod-core
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hunit
   source: alpm
 - alpm: haskell-aeson

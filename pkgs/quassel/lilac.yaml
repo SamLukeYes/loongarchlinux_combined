@@ -13,6 +13,8 @@ repo_depends:
 - icu
 - qt5-base
 update_on:
+- manual: 1
+  source: manual
 - alias: icu
 - alpm: qt5-base
   source: alpm

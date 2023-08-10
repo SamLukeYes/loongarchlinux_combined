@@ -13,6 +13,8 @@ repo_depends:
 - json-glib
 - libusb
 update_on:
+- manual: 1
+  source: manual
 - alpm: json-glib
   provides: libjson-glib-1.0.so
   source: alpm

@@ -14,6 +14,8 @@ repo_depends:
 - sfml
 - wxwidgets
 update_on:
+- manual: 1
+  source: manual
 - alpm: ffmpeg
   provides: libswscale.so
   source: alpm

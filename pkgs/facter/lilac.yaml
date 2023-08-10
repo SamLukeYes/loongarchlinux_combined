@@ -16,6 +16,8 @@ repo_depends:
 - ruby
 - util-linux
 update_on:
+- manual: 1
+  source: manual
 - alpm: libwhereami
   provides: libwhereami.so
   source: alpm

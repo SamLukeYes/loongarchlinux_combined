@@ -2,6 +2,8 @@ destsubdir: extra
 repo_depends:
 - pacman
 update_on:
+- manual: 1
+  source: manual
 - alpm: pacman
   provides: libalpm.so
   source: alpm

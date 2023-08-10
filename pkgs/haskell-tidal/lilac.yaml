@@ -20,6 +20,8 @@ repo_depends:
 - haskell-tidal-link
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-clock
   source: alpm
 - alpm: haskell-colour

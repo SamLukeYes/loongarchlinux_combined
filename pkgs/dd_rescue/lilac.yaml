@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dd_rescue'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: dd_rescue
   source: archpkg

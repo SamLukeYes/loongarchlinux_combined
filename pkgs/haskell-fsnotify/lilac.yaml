@@ -16,6 +16,8 @@ repo_depends:
 - haskell-safe-exceptions
 - haskell-unix-compat
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-async
   source: alpm
 - alpm: haskell-hinotify

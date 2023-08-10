@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cairomm-1.16'')
 repo_depends:
 - libsigc++-3.0
 update_on:
+- manual: 1
+  source: manual
 - alpm: libsigc++-3.0
   provides: libsigc-3.0.so
   source: alpm

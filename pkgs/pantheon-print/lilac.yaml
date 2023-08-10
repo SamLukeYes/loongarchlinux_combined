@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pantheon-print'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: pantheon-print
   source: archpkg

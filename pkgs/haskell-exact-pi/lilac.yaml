@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-exact-pi'')
 repo_depends:
 - haskell-numtype-dk
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-numtype-dk
   source: alpm
 - alpm: haskell-exact-pi

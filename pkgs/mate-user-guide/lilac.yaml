@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-user-guide'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: mate-user-guide
   source: archpkg

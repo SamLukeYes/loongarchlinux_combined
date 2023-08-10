@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zathura-cb'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: zathura-cb
   source: archpkg

@@ -13,6 +13,8 @@ repo_depends:
 - haskell-csv
 - haskell-html
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-csv
   source: alpm
 - alpm: haskell-html

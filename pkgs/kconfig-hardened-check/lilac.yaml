@@ -10,6 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kconfig-hardened-chec
 repo_depends:
 - python
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: kconfig-hardened-check
   source: archpkg

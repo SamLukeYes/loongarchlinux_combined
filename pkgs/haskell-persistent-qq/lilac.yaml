@@ -13,6 +13,8 @@ repo_depends:
 - haskell-src-meta
 - haskell-persistent
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-src-meta
   source: alpm
 - alpm: haskell-persistent

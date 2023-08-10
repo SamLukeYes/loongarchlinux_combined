@@ -45,6 +45,8 @@ repo_depends:
 - haskell-yesod-static
 - haskell-yesod-test
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hledger-lib
   source: alpm
 - alpm: haskell-aeson

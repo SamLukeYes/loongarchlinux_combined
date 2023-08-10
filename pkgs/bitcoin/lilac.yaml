@@ -14,6 +14,8 @@ repo_depends:
 - qt5-base
 - protobuf
 update_on:
+- manual: 1
+  source: manual
 - alpm: miniupnpc
   provides: libminiupnpc.so
   source: alpm

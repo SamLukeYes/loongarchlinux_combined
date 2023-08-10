@@ -13,6 +13,8 @@ repo_depends:
 - lua
 - qt5-base
 update_on:
+- manual: 1
+  source: manual
 - alias: lua
 - alpm: qt5-base
   source: alpm

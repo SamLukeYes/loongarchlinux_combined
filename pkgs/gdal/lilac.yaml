@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gdal'')
 repo_depends:
 - crypto++
 update_on:
+- manual: 1
+  source: manual
 - alpm: crypto++
   source: alpm
   strip_release: true

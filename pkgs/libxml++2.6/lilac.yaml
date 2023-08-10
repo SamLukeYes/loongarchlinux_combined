@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libxml++2.6'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: libxml++2.6
   source: archpkg

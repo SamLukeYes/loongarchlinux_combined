@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-encode-imaputf7'
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: perl-encode-imaputf7
   source: archpkg

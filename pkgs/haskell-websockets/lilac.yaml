@@ -21,6 +21,8 @@ repo_depends:
 - haskell-sha
 - haskell-streaming-commons
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-async
   source: alpm
 - alpm: haskell-attoparsec

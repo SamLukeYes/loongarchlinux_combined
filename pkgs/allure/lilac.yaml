@@ -20,6 +20,8 @@ repo_depends:
 - haskell-splitmix
 - haskell-th-lift-instances
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-lambdahack
   source: alpm
 - alpm: haskell-async

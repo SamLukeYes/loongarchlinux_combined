@@ -20,6 +20,8 @@ repo_depends:
 - haskell-socks
 - haskell-tls
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-basement
   source: alpm
 - alpm: haskell-crypton-x509

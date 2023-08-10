@@ -3,6 +3,8 @@ repo_depends:
 - python
 - guile
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: guile
   source: alpm

@@ -21,6 +21,8 @@ repo_depends:
 - ulfius
 - yder
 update_on:
+- manual: 1
+  source: manual
 - alpm: libcbor
   provides: libcbor.so
   source: alpm

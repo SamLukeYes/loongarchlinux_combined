@@ -20,6 +20,8 @@ repo_depends:
 - haskell-typed-process
 - haskell-unliftio-core
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-async
   source: alpm
 - alpm: haskell-attoparsec

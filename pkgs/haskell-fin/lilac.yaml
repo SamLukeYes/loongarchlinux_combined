@@ -17,6 +17,8 @@ repo_depends:
 - haskell-some
 - haskell-universe-base
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-quickcheck
   source: alpm
 - alpm: haskell-boring

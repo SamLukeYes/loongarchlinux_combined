@@ -15,6 +15,8 @@ repo_depends:
 - haskell-ghc-typelits-knownnat
 - haskell-ghc-typelits-natnormalise
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ghc
   source: alpm
 - alpm: haskell-ghc-tcplugins-extra

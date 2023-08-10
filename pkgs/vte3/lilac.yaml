@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vte3'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: vte3
   source: archpkg

@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gdk-pixbuf-xlib'')
 repo_depends:
 - gdk-pixbuf2
 update_on:
+- manual: 1
+  source: manual
 - alpm: gdk-pixbuf2
   provides: libgdk_pixbuf-2.0.so
   source: alpm

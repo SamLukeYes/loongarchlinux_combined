@@ -14,6 +14,8 @@ repo_depends:
 - haskell-tagged
 - haskell-tasty
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hedgehog
   source: alpm
 - alpm: haskell-tagged

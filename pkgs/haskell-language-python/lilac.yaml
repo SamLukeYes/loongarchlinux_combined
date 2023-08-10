@@ -13,6 +13,8 @@ repo_depends:
 - haskell-monads-tf
 - haskell-utf8-string
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-monads-tf
   source: alpm
 - alpm: haskell-utf8-string

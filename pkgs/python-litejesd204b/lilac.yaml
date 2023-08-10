@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-litejesd204b''
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: python-litejesd204b
   source: archpkg

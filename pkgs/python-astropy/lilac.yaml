@@ -14,6 +14,8 @@ repo_depends:
 - cfitsio
 - wcslib
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: cfitsio
   source: alpm

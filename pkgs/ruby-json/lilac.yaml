@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-json'')
 repo_depends:
 - ruby
 update_on:
+- manual: 1
+  source: manual
 - alias: ruby
 - alpm: ruby-json
   source: archpkg

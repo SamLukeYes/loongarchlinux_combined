@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-stm-delay'')
 repo_depends:
 - haskell-stm
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-stm
   source: alpm
 - alpm: haskell-stm-delay

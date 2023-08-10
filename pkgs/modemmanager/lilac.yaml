@@ -17,6 +17,8 @@ repo_depends:
 - libqmi
 - libmbim
 update_on:
+- manual: 1
+  source: manual
 - alpm: libmm-glib
   provides: libmm-glib.so
   source: alpm

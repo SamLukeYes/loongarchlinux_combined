@@ -16,6 +16,8 @@ repo_depends:
 - granite
 - libhandy
 update_on:
+- manual: 1
+  source: manual
 - alpm: libcanberra
   provides: libcanberra.so
   source: alpm

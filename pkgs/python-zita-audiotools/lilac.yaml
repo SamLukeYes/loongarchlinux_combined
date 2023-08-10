@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-zita-audiotool
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: python-zita-audiotools
   source: archpkg

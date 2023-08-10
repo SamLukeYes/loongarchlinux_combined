@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''archlinux-repro'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: archlinux-repro
   source: archpkg

@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ttf-khmer'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: ttf-khmer
   source: archpkg

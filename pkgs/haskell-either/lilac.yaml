@@ -14,6 +14,8 @@ repo_depends:
 - haskell-profunctors
 - haskell-semigroupoids
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-bifunctors
   source: alpm
 - alpm: haskell-profunctors

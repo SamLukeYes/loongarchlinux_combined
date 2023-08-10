@@ -3,6 +3,8 @@ repo_depends:
 - libseccomp
 - zstd
 update_on:
+- manual: 1
+  source: manual
 - alpm: libseccomp
   provides: libseccomp.so
   source: alpm

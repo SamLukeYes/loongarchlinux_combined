@@ -13,6 +13,8 @@ repo_depends:
 - zimg
 - python
 update_on:
+- manual: 1
+  source: manual
 - alpm: zimg
   provides: libzimg.so
   source: alpm

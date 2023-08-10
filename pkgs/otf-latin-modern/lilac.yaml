@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''otf-latin-modern'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: otf-latin-modern
   source: archpkg

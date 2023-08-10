@@ -28,6 +28,8 @@ repo_depends:
 - haskell-network
 - haskell-network-uri
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-old-locale
   source: alpm
 - alpm: haskell-hunit

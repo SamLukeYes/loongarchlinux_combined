@@ -22,6 +22,8 @@ repo_depends:
 - haskell-transformers-base
 - haskell-transformers-compat
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-base-compat
   source: alpm
 - alpm: haskell-http-client

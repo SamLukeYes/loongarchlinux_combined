@@ -10,6 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-native-package-i
 repo_depends:
 - ruby
 update_on:
+- manual: 1
+  source: manual
 - alias: ruby
 - alpm: ruby-native-package-installer
   source: archpkg

@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''imake'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: imake
   source: archpkg

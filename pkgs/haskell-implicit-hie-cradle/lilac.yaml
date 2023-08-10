@@ -21,6 +21,8 @@ repo_depends:
 - haskell-vector
 - haskell-yaml
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-base16-bytestring
   source: alpm
 - alpm: haskell-extra

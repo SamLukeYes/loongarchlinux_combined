@@ -4,6 +4,8 @@ repo_depends:
 - miniupnpc
 - icu
 update_on:
+- manual: 1
+  source: manual
 - alpm: wxwidgets-gtk3
   source: alpm
   strip_release: true

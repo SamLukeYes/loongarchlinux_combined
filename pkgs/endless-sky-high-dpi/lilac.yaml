@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''endless-sky-high-dpi'
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: endless-sky-high-dpi
   source: archpkg

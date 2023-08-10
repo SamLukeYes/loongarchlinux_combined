@@ -13,6 +13,8 @@ repo_depends:
 - expat
 - curl
 update_on:
+- manual: 1
+  source: manual
 - alpm: expat
   provides: libexpat.so
   source: alpm

@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libdatovka'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: libdatovka
   source: archpkg

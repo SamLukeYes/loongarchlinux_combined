@@ -18,6 +18,8 @@ repo_depends:
 - haskell-network-bsd
 - haskell-utf8-string
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-crypton-connection
   source: alpm
 - alpm: haskell-data-default

@@ -14,6 +14,8 @@ repo_depends:
 - haskell-isomorphism-class
 - haskell-split
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-deferred-folds
   source: alpm
 - alpm: haskell-isomorphism-class

@@ -13,6 +13,8 @@ repo_depends:
 - haskell-half
 - haskell-primitive
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-half
   source: alpm
 - alpm: haskell-primitive

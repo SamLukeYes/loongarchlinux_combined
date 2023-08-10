@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''e2fsprogs'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: e2fsprogs
   source: archpkg

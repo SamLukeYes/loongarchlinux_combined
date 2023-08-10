@@ -13,6 +13,8 @@ repo_depends:
 - haskell-network-uri
 - haskell-utf8-string
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-network-uri
   source: alpm
 - alpm: haskell-utf8-string

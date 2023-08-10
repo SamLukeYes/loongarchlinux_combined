@@ -3,5 +3,7 @@ repo_depends:
 - clang
 - python
 update_on:
+- manual: 1
+  source: manual
 - alias: clang
 - alias: python

@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fdkaac'')
 repo_depends:
 - libfdk-aac
 update_on:
+- manual: 1
+  source: manual
 - alpm: libfdk-aac
   provides: libfdk-aac.so
   source: alpm

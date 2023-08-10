@@ -16,6 +16,8 @@ repo_depends:
 - haskell-profunctors
 - haskell-semigroupoids
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-comonad
   source: alpm
 - alpm: haskell-contravariant

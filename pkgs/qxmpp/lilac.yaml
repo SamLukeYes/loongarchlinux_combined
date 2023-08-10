@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qxmpp'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: qxmpp
   source: archpkg

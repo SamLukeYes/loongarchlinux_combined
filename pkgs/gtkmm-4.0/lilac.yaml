@@ -15,6 +15,8 @@ repo_depends:
 - pangomm-2.48
 - libsigc++-3.0
 update_on:
+- manual: 1
+  source: manual
 - alpm: cairomm-1.16
   provides: libcairomm-1.16.so
   source: alpm

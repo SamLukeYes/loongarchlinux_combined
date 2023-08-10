@@ -23,6 +23,8 @@ repo_depends:
 - haskell-unix-compat
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-attoparsec
   source: alpm
 - alpm: haskell-blaze-builder

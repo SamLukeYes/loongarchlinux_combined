@@ -14,6 +14,8 @@ repo_depends:
 - haskell-monad-loops
 - haskell-pretty-hex
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-cereal
   source: alpm
 - alpm: haskell-monad-loops

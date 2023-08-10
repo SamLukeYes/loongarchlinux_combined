@@ -15,6 +15,8 @@ repo_depends:
 - haskell-safe-exceptions
 - haskell-socks
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-network
   source: alpm
 - alpm: haskell-network-bsd

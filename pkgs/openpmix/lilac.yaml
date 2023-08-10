@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openpmix'')
 repo_depends:
 - libevent
 update_on:
+- manual: 1
+  source: manual
 - alpm: libevent
   provides: libevent_pthreads-2.1.so
   source: alpm

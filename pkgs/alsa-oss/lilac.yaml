@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''alsa-oss'')
 repo_depends:
 - alsa-lib
 update_on:
+- manual: 1
+  source: manual
 - alpm: alsa-lib
   provides: libasound.so
   source: alpm

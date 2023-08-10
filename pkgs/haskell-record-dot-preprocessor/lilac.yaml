@@ -13,6 +13,8 @@ repo_depends:
 - haskell-extra
 - haskell-uniplate
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-extra
   source: alpm
 - alpm: haskell-uniplate

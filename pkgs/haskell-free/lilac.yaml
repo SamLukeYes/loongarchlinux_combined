@@ -18,6 +18,8 @@ repo_depends:
 - haskell-th-abstraction
 - haskell-transformers-base
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-comonad
   source: alpm
 - alpm: haskell-distributive

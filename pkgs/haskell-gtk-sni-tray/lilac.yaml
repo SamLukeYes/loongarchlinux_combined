@@ -29,6 +29,8 @@ repo_depends:
 - haskell-status-notifier-item
 - haskell-transformers-base
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-dbus
   source: alpm
 - alpm: haskell-dbus-hslogger

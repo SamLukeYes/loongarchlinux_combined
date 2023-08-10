@@ -13,6 +13,8 @@ repo_depends:
 - haskell-rio
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-rio
   source: alpm
 - alpm: haskell-vector

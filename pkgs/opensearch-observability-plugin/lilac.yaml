@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opensearch-observabil
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: opensearch-observability-plugin
   source: archpkg

@@ -13,6 +13,8 @@ repo_depends:
 - haskell-async
 - haskell-unliftio-core
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-async
   source: alpm
 - alpm: haskell-unliftio-core

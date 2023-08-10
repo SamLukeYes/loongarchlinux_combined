@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ecm-tools'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: ecm-tools
   source: archpkg

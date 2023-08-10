@@ -22,6 +22,8 @@ repo_depends:
 - libao
 - libva
 update_on:
+- manual: 1
+  source: manual
 - alpm: alsa-lib
   provides: libasound.so
   source: alpm

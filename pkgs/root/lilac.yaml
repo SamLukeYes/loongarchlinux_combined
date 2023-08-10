@@ -13,6 +13,8 @@ repo_depends:
 - gsl
 - python
 update_on:
+- manual: 1
+  source: manual
 - alpm: gsl
   source: alpm
   strip_release: true

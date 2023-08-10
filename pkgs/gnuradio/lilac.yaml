@@ -23,6 +23,8 @@ repo_depends:
 - zeromq
 - qt5-base
 update_on:
+- manual: 1
+  source: manual
 - alpm: gsl
   source: alpm
   strip_release: true

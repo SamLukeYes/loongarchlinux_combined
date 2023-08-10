@@ -13,6 +13,8 @@ repo_depends:
 - haskell-data-array-byte
 - haskell-onetuple
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-data-array-byte
   source: alpm
 - alpm: haskell-onetuple

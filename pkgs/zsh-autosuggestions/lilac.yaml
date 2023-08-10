@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zsh-autosuggestions''
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: zsh-autosuggestions
   source: archpkg

@@ -13,6 +13,8 @@ repo_depends:
 - ruby
 - perl
 update_on:
+- manual: 1
+  source: manual
 - alias: ruby
 - alias: perl
 - alpm: vagrant

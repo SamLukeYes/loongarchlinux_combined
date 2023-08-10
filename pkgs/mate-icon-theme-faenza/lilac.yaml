@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-icon-theme-faenz
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: mate-icon-theme-faenza
   source: archpkg

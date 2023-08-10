@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wl-pprint-ter
 repo_depends:
 - haskell-wl-pprint-extras
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-wl-pprint-extras
   source: alpm
 - alpm: haskell-wl-pprint-terminfo

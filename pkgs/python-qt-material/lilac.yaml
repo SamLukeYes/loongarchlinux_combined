@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-qt-material'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: python-qt-material
   source: archpkg

@@ -18,6 +18,8 @@ repo_depends:
 - haskell-hunit
 - haskell-quickcheck
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-test-framework-quickcheck2
   source: alpm
 - alpm: haskell-crypto-api

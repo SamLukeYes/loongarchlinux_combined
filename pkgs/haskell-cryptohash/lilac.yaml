@@ -14,6 +14,8 @@ repo_depends:
 - haskell-cryptonite
 - haskell-memory
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-byteable
   source: alpm
 - alpm: haskell-cryptonite

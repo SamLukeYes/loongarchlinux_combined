@@ -1,3 +1,5 @@
 destsubdir: core
 update_on:
+- manual: 1
+  source: manual
 - alias: python

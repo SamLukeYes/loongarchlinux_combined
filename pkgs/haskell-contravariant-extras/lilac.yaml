@@ -13,6 +13,8 @@ repo_depends:
 - haskell-contravariant
 - haskell-template-haskell-compat-v0208
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-contravariant
   source: alpm
 - alpm: haskell-template-haskell-compat-v0208

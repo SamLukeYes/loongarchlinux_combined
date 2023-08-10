@@ -13,6 +13,8 @@ repo_depends:
 - haskell-safe-exceptions
 - haskell-th-env
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-safe-exceptions
   source: alpm
 - alpm: haskell-th-env

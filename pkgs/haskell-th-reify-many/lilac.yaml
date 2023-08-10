@@ -13,6 +13,8 @@ repo_depends:
 - haskell-safe
 - haskell-th-expand-syns
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-safe
   source: alpm
 - alpm: haskell-th-expand-syns

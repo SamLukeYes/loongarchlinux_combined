@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-exception-class'
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: perl-exception-class
   source: archpkg

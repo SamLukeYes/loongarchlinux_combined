@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zxing-cpp'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: zxing-cpp
   source: archpkg

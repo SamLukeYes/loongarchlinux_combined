@@ -16,6 +16,8 @@ repo_depends:
 - libassuan
 - glib2
 update_on:
+- manual: 1
+  source: manual
 - alpm: libsecret
   provides: libsecret-1.so
   source: alpm

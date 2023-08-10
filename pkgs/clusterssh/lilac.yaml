@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''clusterssh'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: clusterssh
   source: archpkg

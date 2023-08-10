@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''seahorse'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: seahorse
   source: archpkg

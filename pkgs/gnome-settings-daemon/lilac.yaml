@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-settings-daemon
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: gnome-settings-daemon
   source: archpkg

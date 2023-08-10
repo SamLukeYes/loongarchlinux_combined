@@ -13,6 +13,8 @@ repo_depends:
 - gtk4
 - webkitgtk-6.0
 update_on:
+- manual: 1
+  source: manual
 - alpm: gtk4
   provides: libgtk-4.so
   source: alpm

@@ -22,6 +22,8 @@ repo_depends:
 - haskell-text-zipper
 - haskell-word-wrap
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-vty
   source: alpm
 - alpm: haskell-data-clist

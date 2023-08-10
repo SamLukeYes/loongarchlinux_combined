@@ -23,6 +23,8 @@ repo_depends:
 - haskell-unliftio-core
 - haskell-utf8-string
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-x11
   source: alpm
 - alpm: haskell-aeson

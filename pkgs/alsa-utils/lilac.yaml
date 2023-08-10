@@ -14,6 +14,8 @@ repo_depends:
 - ncurses
 - libsamplerate
 update_on:
+- manual: 1
+  source: manual
 - alpm: alsa-lib
   provides: libatopology.so
   source: alpm

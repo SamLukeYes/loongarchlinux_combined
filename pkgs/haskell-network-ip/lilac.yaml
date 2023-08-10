@@ -20,6 +20,8 @@ repo_depends:
 - haskell-text-printer
 - haskell-type-hint
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-data-default-class
   source: alpm
 - alpm: haskell-data-dword

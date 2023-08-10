@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kde-applications-meta
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: kde-applications-meta
   source: archpkg

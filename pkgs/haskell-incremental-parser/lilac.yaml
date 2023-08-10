@@ -15,6 +15,8 @@ repo_depends:
 - haskell-parsers
 - haskell-rank2classes
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-input-parsers
   source: alpm
 - alpm: haskell-monoid-subclasses

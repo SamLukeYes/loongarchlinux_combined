@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''directx-shader-compil
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: directx-shader-compiler
   source: archpkg

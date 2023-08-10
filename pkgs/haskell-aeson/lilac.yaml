@@ -33,6 +33,8 @@ repo_depends:
 - haskell-vector
 - haskell-witherable
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-onetuple
   source: alpm
 - alpm: haskell-quickcheck

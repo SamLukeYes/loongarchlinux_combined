@@ -13,6 +13,8 @@ repo_depends:
 - openssl
 - openssl
 update_on:
+- manual: 1
+  source: manual
 - alias: libcrypto
 - alias: libssl
 - alpm: sudo

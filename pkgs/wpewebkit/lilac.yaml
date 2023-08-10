@@ -4,6 +4,8 @@ repo_depends:
 - wpebackend-fdo
 - libwpe
 update_on:
+- manual: 1
+  source: manual
 - alias: icu
 - alpm: wpebackend-fdo
   provides: libWPEBackend-fdo-1.0.so

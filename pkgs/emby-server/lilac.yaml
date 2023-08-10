@@ -19,6 +19,8 @@ repo_depends:
 - x264
 - x265
 update_on:
+- manual: 1
+  source: manual
 - alpm: libass
   provides: libass.so
   source: alpm

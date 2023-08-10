@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''img2pdf'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: img2pdf
   source: archpkg

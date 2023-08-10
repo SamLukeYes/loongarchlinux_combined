@@ -35,6 +35,8 @@ repo_depends:
 - haskell-tamarin-prover-theory
 - haskell-tamarin-prover-sapic
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hunit
   source: alpm
 - alpm: haskell-binary-orphans

@@ -17,6 +17,8 @@ repo_depends:
 - haskell-quickcheck
 - haskell-validity
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-genvalidity
   source: alpm
 - alpm: haskell-genvalidity-property

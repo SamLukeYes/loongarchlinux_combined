@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''smb4k'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: smb4k
   source: archpkg

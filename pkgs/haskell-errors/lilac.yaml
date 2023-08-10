@@ -13,6 +13,8 @@ repo_depends:
 - haskell-safe
 - haskell-transformers-compat
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-safe
   source: alpm
 - alpm: haskell-transformers-compat

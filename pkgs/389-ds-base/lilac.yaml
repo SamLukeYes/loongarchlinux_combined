@@ -2,4 +2,6 @@ destsubdir: extra
 repo_depends:
 - icu
 update_on:
+- manual: 1
+  source: manual
 - alias: icu

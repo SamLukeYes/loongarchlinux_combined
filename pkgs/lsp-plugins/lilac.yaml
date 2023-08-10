@@ -14,6 +14,8 @@ repo_depends:
 - jack2
 - cuda
 update_on:
+- manual: 1
+  source: manual
 - alpm: libsndfile
   provides: libsndfile.so
   source: alpm

@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-kazoo'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: python-kazoo
   source: archpkg

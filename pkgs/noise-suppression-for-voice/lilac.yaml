@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''noise-suppression-for
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: noise-suppression-for-voice
   source: archpkg

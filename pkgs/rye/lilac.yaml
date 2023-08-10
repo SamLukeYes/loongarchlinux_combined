@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rye'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: rye
   source: archpkg

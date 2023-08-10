@@ -13,6 +13,8 @@ repo_depends:
 - haskell-extensible-exceptions
 - haskell-timezone-series
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-extensible-exceptions
   source: alpm
 - alpm: haskell-timezone-series

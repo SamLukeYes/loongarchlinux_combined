@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sane-gt68xx-firmware'
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: sane-gt68xx-firmware
   source: archpkg

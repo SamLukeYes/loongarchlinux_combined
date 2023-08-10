@@ -19,6 +19,8 @@ repo_depends:
 - haskell-validation-selective
 - haskell-vty
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-brick0.71
   source: alpm
 - alpm: haskell-colourista

@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cargo-pgrx'')
 repo_depends:
 - clang
 update_on:
+- manual: 1
+  source: manual
 - alias: clang
 - alpm: cargo-pgrx
   source: archpkg

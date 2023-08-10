@@ -15,6 +15,8 @@ repo_depends:
 - haskell-hxt-unicode
 - haskell-network-uri
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hxt-charproperties
   source: alpm
 - alpm: haskell-hxt-regex-xmlschema

@@ -14,6 +14,8 @@ repo_depends:
 - haskell-random
 - libxcrypt
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-x11
   source: alpm
 - alpm: haskell-random

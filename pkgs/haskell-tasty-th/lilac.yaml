@@ -13,6 +13,8 @@ repo_depends:
 - haskell-src-exts
 - haskell-tasty
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-src-exts
   source: alpm
 - alpm: haskell-tasty

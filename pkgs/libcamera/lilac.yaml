@@ -16,6 +16,8 @@ repo_depends:
 - qt5-base
 - glib2
 update_on:
+- manual: 1
+  source: manual
 - alpm: systemd-libs
   provides: libudev.so
   source: alpm

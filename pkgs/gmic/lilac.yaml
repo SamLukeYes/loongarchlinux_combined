@@ -13,6 +13,8 @@ repo_depends:
 - opencv
 - qt5-base
 update_on:
+- manual: 1
+  source: manual
 - alpm: opencv
   source: alpm
   strip_release: true

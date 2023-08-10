@@ -14,6 +14,8 @@ repo_depends:
 - haskell-dec
 - haskell-some
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-boring
   source: alpm
 - alpm: haskell-dec

@@ -2,6 +2,8 @@ destsubdir: extra
 repo_depends:
 - util-linux
 update_on:
+- manual: 1
+  source: manual
 - alpm: util-linux-libs
   provides: libuuid.so
   source: alpm

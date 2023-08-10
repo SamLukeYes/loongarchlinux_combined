@@ -17,6 +17,8 @@ repo_depends:
 - haskell-hls-plugin-api
 - haskell-lsp
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-extra
   source: alpm
 - alpm: haskell-ghc

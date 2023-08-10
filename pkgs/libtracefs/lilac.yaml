@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libtracefs'')
 repo_depends:
 - libtraceevent
 update_on:
+- manual: 1
+  source: manual
 - alpm: libtraceevent
   provides: libtraceevent.so
   source: alpm

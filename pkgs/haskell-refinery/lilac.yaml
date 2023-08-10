@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-refinery'')
 repo_depends:
 - haskell-mmorph
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-mmorph
   source: alpm
 - alpm: haskell-refinery

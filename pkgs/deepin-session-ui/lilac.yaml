@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-session-ui'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: deepin-session-ui
   source: archpkg

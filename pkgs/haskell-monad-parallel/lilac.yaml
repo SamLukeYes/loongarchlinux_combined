@@ -13,6 +13,8 @@ repo_depends:
 - haskell-parallel
 - haskell-transformers-compat
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-parallel
   source: alpm
 - alpm: haskell-transformers-compat

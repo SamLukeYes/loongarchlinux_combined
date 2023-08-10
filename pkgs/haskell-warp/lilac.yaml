@@ -29,6 +29,8 @@ repo_depends:
 - haskell-wai
 - haskell-word8
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-auto-update
   source: alpm
 - alpm: haskell-bsb-http-chunked

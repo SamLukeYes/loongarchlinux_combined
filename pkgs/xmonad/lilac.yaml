@@ -14,6 +14,8 @@ repo_depends:
 - haskell-data-default-class
 - haskell-setlocale
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-x11
   source: alpm
 - alpm: haskell-data-default-class

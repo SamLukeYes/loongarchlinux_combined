@@ -14,6 +14,8 @@ repo_depends:
 - qt5-base
 - qt5-declarative
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: qt5-base
   source: alpm

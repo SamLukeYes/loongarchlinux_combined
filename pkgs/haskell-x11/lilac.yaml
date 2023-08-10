@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-x11'')
 repo_depends:
 - haskell-data-default-class
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-data-default-class
   source: alpm
 - alpm: haskell-x11

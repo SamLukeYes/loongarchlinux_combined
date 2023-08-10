@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''java17-openjfx'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: java17-openjfx
   source: archpkg

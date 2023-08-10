@@ -24,6 +24,8 @@ repo_depends:
 - glib2
 - pixman
 update_on:
+- manual: 1
+  source: manual
 - alpm: gtk3
   provides: libgtk-3.so
   source: alpm

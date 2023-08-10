@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-editor'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: deepin-editor
   source: archpkg

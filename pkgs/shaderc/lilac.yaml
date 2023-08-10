@@ -2,6 +2,8 @@ destsubdir: extra
 repo_depends:
 - glslang
 update_on:
+- manual: 1
+  source: manual
 - alpm: glslang
   source: alpm
   strip_release: true

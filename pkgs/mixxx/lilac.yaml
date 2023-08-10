@@ -27,6 +27,8 @@ repo_depends:
 - protobuf
 - rubberband
 update_on:
+- manual: 1
+  source: manual
 - alpm: qt5-base
   source: alpm
   strip_release: true

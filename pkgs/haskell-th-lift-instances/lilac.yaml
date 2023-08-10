@@ -13,6 +13,8 @@ repo_depends:
 - haskell-th-lift
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-th-lift
   source: alpm
 - alpm: haskell-vector

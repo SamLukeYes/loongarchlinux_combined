@@ -14,6 +14,8 @@ repo_depends:
 - haskell-hashable
 - haskell-parser-combinators
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-megaparsec
   source: alpm
 - alpm: haskell-hashable

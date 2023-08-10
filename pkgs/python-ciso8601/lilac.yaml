@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-ciso8601'')
 repo_depends:
 - python
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: python-ciso8601
   source: archpkg

@@ -16,6 +16,8 @@ repo_depends:
 - pangomm
 - atkmm
 update_on:
+- manual: 1
+  source: manual
 - alpm: libsigc++
   provides: libsigc-2.0.so
   source: alpm

@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''m17n-db'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: m17n-db
   source: archpkg

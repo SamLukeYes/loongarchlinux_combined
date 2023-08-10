@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''adobe-source-code-pro
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: adobe-source-code-pro-fonts
   source: archpkg

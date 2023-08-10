@@ -13,6 +13,8 @@ repo_depends:
 - haskell-hslua-core
 - haskell-hslua-marshalling
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hslua-core
   source: alpm
 - alpm: haskell-hslua-marshalling

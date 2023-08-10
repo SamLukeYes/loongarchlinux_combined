@@ -16,6 +16,8 @@ repo_depends:
 - haskell-storable-tuple
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hashable
   source: alpm
 - alpm: haskell-linear-generics

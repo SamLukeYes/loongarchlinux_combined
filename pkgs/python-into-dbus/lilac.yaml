@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-into-dbus'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: python-into-dbus
   source: archpkg

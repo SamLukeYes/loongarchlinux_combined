@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''power-profiles-daemon
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: power-profiles-daemon
   source: archpkg

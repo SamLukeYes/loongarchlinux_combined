@@ -13,6 +13,8 @@ repo_depends:
 - icu
 - biblesync
 update_on:
+- manual: 1
+  source: manual
 - alpm: icu
   provides: libicui18n.so
   source: alpm

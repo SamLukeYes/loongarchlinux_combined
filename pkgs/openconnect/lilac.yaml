@@ -20,6 +20,8 @@ repo_depends:
 - krb5
 - pcsclite
 update_on:
+- manual: 1
+  source: manual
 - alpm: stoken
   provides: libstoken.so
   source: alpm

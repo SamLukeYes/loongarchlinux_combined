@@ -3,6 +3,8 @@ repo_depends:
 - libxcrypt
 - perl
 update_on:
+- manual: 1
+  source: manual
 - alpm: libxcrypt
   provides: libcrypt.so
   source: alpm

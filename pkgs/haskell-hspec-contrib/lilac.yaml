@@ -13,6 +13,8 @@ repo_depends:
 - haskell-hspec-core
 - haskell-hunit
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hspec-core
   source: alpm
 - alpm: haskell-hunit

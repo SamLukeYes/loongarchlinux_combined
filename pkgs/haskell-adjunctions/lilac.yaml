@@ -20,6 +20,8 @@ repo_depends:
 - haskell-transformers-compat
 - haskell-void
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-comonad
   source: alpm
 - alpm: haskell-contravariant

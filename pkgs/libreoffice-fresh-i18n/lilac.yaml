@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libreoffice-fresh-i18
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: libreoffice-fresh-i18n
   source: archpkg

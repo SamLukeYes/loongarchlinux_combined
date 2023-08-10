@@ -16,6 +16,8 @@ repo_depends:
 - haskell-wai
 - haskell-websockets
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-case-insensitive
   source: alpm
 - alpm: haskell-http-types

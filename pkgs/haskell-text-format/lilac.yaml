@@ -13,6 +13,8 @@ repo_depends:
 - haskell-double-conversion
 - haskell-old-locale
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-double-conversion
   source: alpm
 - alpm: haskell-old-locale

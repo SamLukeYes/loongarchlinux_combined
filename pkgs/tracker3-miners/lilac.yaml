@@ -2,6 +2,8 @@ destsubdir: extra
 repo_depends:
 - tracker3
 update_on:
+- manual: 1
+  source: manual
 - alpm: tracker3
   provides: libtracker-sparql-3.0.so
   source: alpm

@@ -14,6 +14,8 @@ repo_depends:
 - haskell-network-bsd
 - haskell-old-locale
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-network
   source: alpm
 - alpm: haskell-network-bsd

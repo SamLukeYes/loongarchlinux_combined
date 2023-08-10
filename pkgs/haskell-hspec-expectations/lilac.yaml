@@ -13,6 +13,8 @@ repo_depends:
 - haskell-call-stack
 - haskell-hunit
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-call-stack
   source: alpm
 - alpm: haskell-hunit

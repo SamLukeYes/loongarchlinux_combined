@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgda6'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: libgda6
   source: archpkg

@@ -20,6 +20,8 @@ repo_depends:
 - haskell-servant-client
 - haskell-servant-client-core
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-deriving-aeson

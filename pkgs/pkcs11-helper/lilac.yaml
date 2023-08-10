@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pkcs11-helper'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: pkcs11-helper
   source: archpkg

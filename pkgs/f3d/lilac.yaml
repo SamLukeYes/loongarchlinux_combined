@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''f3d'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: f3d
   source: archpkg

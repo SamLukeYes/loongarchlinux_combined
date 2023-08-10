@@ -21,6 +21,8 @@ repo_depends:
 - haskell-tomland
 - haskell-validation-selective
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-colourista

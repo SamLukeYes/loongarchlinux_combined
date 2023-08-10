@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdg-desktop-portal-gn
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: xdg-desktop-portal-gnome
   source: archpkg

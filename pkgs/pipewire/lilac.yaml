@@ -26,6 +26,8 @@ repo_depends:
 - libao
 - libcanberra
 update_on:
+- manual: 1
+  source: manual
 - alpm: libcamera
   provides: libcamera-base.so
   source: alpm

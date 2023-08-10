@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-rate-limit'')
 repo_depends:
 - haskell-time-units
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-time-units
   source: alpm
 - alpm: haskell-rate-limit

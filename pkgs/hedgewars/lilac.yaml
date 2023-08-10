@@ -22,6 +22,8 @@ repo_depends:
 - haskell-utf8-string
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: qt5-base
   source: alpm
   strip_release: true

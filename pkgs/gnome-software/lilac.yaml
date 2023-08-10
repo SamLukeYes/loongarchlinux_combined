@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-software'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: gnome-software
   source: archpkg

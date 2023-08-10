@@ -14,6 +14,8 @@ repo_depends:
 - haskell-http-client-tls
 - haskell-pipes
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-http-client
   source: alpm
 - alpm: haskell-http-client-tls

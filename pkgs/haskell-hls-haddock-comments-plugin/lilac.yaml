@@ -18,6 +18,8 @@ repo_depends:
 - haskell-lsp-types
 - haskell-unordered-containers
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ghc
   source: alpm
 - alpm: haskell-ghc-exactprint

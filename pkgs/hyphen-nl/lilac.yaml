@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hyphen-nl'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: hyphen-nl
   source: archpkg

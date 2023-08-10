@@ -18,6 +18,8 @@ repo_depends:
 - systemd
 - libxml2
 update_on:
+- manual: 1
+  source: manual
 - alpm: acl
   provides: libacl.so
   source: alpm

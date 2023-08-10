@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-log-any-adapter-
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: perl-log-any-adapter-log4perl
   source: archpkg

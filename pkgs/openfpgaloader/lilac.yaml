@@ -13,6 +13,8 @@ repo_depends:
 - hidapi
 - systemd
 update_on:
+- manual: 1
+  source: manual
 - alpm: hidapi
   provides: libhidapi-hidraw.so
   source: alpm

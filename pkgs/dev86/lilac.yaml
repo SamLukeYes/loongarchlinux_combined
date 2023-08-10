@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dev86'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: dev86
   source: archpkg

@@ -14,6 +14,8 @@ repo_depends:
 - liblo
 - alsa-lib
 update_on:
+- manual: 1
+  source: manual
 - alpm: cuda-tools
   provides: libGL.so
   source: alpm

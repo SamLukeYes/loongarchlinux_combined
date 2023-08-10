@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''firefox-adblock-plus'
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: firefox-adblock-plus
   source: archpkg

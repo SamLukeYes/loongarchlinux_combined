@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cycfx2prog'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: cycfx2prog
   source: archpkg

@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-patience_diff'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: ruby-patience_diff
   source: archpkg

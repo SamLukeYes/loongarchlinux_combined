@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mbuffer'')
 repo_depends:
 - openssl
 update_on:
+- manual: 1
+  source: manual
 - alias: libcrypto
 - alpm: mbuffer
   source: archpkg

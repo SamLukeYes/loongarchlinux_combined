@@ -16,6 +16,8 @@ repo_depends:
 - haskell-gtk3
 - haskell-pango
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-cairo
   source: alpm
 - alpm: haskell-gio

@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''helix'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: helix
   source: archpkg

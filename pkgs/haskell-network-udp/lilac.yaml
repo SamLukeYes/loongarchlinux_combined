@@ -13,6 +13,8 @@ repo_depends:
 - haskell-iproute
 - haskell-network
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-iproute
   source: alpm
 - alpm: haskell-network

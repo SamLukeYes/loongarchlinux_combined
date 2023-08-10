@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''network-manager-sstp'
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: network-manager-sstp
   source: archpkg

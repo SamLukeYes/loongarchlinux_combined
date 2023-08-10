@@ -13,6 +13,8 @@ repo_depends:
 - libsecp256k1
 - jsoncpp
 update_on:
+- manual: 1
+  source: manual
 - alpm: libsecp256k1
   provides: libsecp256k1.so
   source: alpm

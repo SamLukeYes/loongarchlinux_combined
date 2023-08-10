@@ -15,6 +15,8 @@ repo_depends:
 - gephi
 - file
 update_on:
+- manual: 1
+  source: manual
 - alpm: capstone
   provides: libcapstone.so
   source: alpm

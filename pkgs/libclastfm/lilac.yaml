@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libclastfm'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: libclastfm
   source: archpkg

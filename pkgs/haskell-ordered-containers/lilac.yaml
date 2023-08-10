@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ordered-conta
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ordered-containers
   source: archpkg

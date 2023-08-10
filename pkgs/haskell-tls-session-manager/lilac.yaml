@@ -17,6 +17,8 @@ repo_depends:
 - haskell-psqueues
 - haskell-tls
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-auto-update
   source: alpm
 - alpm: haskell-basement

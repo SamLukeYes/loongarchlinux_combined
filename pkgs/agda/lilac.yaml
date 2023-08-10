@@ -36,6 +36,8 @@ repo_depends:
 - haskell-vector-hashtables
 - haskell-zlib
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-stmonadtrans
   source: alpm
 - alpm: haskell-aeson

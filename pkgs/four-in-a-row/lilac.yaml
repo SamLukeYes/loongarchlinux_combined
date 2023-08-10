@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''four-in-a-row'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: four-in-a-row
   source: archpkg

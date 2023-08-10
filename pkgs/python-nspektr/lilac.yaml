@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-nspektr'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: python-nspektr
   source: archpkg

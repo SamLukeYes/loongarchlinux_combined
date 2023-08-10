@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-sub-exporter-pro
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: perl-sub-exporter-progressive
   source: archpkg

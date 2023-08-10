@@ -19,6 +19,8 @@ repo_depends:
 - libstrophe
 - gtk3
 update_on:
+- manual: 1
+  source: manual
 - alpm: curl
   provides: libcurl.so
   source: alpm

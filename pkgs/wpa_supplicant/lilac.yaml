@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wpa_supplicant'')
 repo_depends:
 - readline
 update_on:
+- manual: 1
+  source: manual
 - alias: readline
 - alpm: wpa_supplicant
   source: archpkg

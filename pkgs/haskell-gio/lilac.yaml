@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gio'')
 repo_depends:
 - haskell-glib
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-glib
   source: alpm
 - alpm: haskell-gio

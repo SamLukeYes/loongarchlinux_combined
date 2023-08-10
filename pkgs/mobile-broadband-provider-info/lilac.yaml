@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mobile-broadband-prov
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: mobile-broadband-provider-info
   source: archpkg

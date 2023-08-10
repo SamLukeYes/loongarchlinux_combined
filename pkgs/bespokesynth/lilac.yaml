@@ -16,6 +16,8 @@ repo_depends:
 - jsoncpp
 - libusb
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: alsa-lib
   provides: libasound.so

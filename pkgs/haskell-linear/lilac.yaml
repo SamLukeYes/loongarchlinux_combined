@@ -27,6 +27,8 @@ repo_depends:
 - haskell-vector
 - haskell-void
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-adjunctions
   source: alpm
 - alpm: haskell-base-orphans

@@ -13,6 +13,8 @@ repo_depends:
 - haskell-ansi-terminal
 - haskell-prettyprinter
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ansi-terminal
   source: alpm
 - alpm: haskell-prettyprinter

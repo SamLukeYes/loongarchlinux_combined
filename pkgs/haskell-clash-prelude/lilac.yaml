@@ -33,6 +33,8 @@ repo_depends:
 - haskell-uniplate
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-arrows
   source: alpm
 - alpm: haskell-constraints

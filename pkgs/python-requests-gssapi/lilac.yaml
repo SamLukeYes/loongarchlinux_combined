@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-requests-gssap
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: python-requests-gssapi
   source: archpkg

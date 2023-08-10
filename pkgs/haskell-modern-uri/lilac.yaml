@@ -18,6 +18,8 @@ repo_depends:
 - haskell-reflection
 - haskell-tagged
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-quickcheck
   source: alpm
 - alpm: haskell-contravariant

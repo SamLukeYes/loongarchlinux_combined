@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wizards'')
 repo_depends:
 - haskell-control-monad-free
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-control-monad-free
   source: alpm
 - alpm: haskell-wizards

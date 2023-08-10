@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-utf8-string''
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-utf8-string
   source: archpkg

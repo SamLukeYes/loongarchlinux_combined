@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''deepin-qt5platform-pl
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: deepin-qt5platform-plugins
   source: archpkg

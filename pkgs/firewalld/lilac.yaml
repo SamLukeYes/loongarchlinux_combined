@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''firewalld'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: firewalld
   source: archpkg

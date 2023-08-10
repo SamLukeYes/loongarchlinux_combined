@@ -13,6 +13,8 @@ repo_depends:
 - haskell-dlist
 - haskell-transformers-compat
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-dlist
   source: alpm
 - alpm: haskell-transformers-compat

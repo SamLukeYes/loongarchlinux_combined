@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''waifu2x-ncnn-vulkan''
 repo_depends:
 - ncnn
 update_on:
+- manual: 1
+  source: manual
 - alpm: ncnn
   source: alpm
 - alpm: waifu2x-ncnn-vulkan

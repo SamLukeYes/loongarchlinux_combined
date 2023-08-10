@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pt2-clone'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: pt2-clone
   source: archpkg

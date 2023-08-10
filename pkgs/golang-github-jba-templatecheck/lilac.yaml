@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''golang-github-jba-tem
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: golang-github-jba-templatecheck
   source: archpkg

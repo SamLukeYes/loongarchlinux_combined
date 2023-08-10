@@ -13,6 +13,8 @@ repo_depends:
 - ruby
 - julia
 update_on:
+- manual: 1
+  source: manual
 - alias: ruby
 - alpm: julia
   provides: libgit2.so

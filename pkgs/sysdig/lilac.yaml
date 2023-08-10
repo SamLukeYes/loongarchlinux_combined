@@ -14,6 +14,8 @@ repo_depends:
 - curl
 - grpc
 update_on:
+- manual: 1
+  source: manual
 - alpm: jsoncpp
   provides: libjsoncpp.so
   source: alpm

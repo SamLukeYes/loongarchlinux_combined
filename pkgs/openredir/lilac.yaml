@@ -13,6 +13,8 @@ repo_depends:
 - lua
 - python
 update_on:
+- manual: 1
+  source: manual
 - alias: lua
 - alias: python
 - alpm: openredir

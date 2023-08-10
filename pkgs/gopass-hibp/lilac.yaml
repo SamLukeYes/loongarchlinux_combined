@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gopass-hibp'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: gopass-hibp
   source: archpkg

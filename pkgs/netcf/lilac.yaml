@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''netcf'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: netcf
   source: archpkg

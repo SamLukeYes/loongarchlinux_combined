@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libebur128'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: libebur128
   source: archpkg

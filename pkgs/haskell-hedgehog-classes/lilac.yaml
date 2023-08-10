@@ -20,6 +20,8 @@ repo_depends:
 - haskell-vector
 - haskell-wl-pprint-annotated
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-comonad

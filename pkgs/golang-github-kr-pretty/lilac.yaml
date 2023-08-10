@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''golang-github-kr-pret
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: golang-github-kr-pretty
   source: archpkg

@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nautilus-image-conver
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: nautilus-image-converter
   source: archpkg

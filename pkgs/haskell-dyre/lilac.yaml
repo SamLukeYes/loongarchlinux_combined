@@ -14,6 +14,8 @@ repo_depends:
 - haskell-xdg-basedir
 - haskell-io-storage
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-executable-path
   source: alpm
 - alpm: haskell-xdg-basedir

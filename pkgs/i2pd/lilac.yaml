@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''i2pd'')
 repo_depends:
 - miniupnpc
 update_on:
+- manual: 1
+  source: manual
 - alpm: miniupnpc
   provides: libminiupnpc.so
   source: alpm

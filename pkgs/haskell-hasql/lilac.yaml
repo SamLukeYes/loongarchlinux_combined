@@ -22,6 +22,8 @@ repo_depends:
 - haskell-text-builder
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-attoparsec
   source: alpm
 - alpm: haskell-bytestring-strict-builder

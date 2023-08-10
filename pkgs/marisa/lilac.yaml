@@ -4,6 +4,8 @@ repo_depends:
 - python
 - ruby
 update_on:
+- manual: 1
+  source: manual
 - alias: perl
 - alias: python
 - alias: ruby

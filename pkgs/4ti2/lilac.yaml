@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''4ti2'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: 4ti2
   source: archpkg

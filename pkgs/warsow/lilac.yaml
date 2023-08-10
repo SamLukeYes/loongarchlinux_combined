@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''warsow'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: warsow
   source: archpkg

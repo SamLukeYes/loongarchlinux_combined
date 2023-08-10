@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libnetfilter_conntrac
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: libnetfilter_conntrack
   source: archpkg

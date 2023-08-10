@@ -18,6 +18,8 @@ repo_depends:
 - haskell-old-locale
 - haskell-pcre-light
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-attoparsec
   source: alpm
 - alpm: haskell-base16-bytestring

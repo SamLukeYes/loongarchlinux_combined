@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''podofo-0.9'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: podofo-0.9
   source: archpkg

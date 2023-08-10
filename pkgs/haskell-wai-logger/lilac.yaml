@@ -16,6 +16,8 @@ repo_depends:
 - haskell-network
 - haskell-wai
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-byteorder
   source: alpm
 - alpm: haskell-fast-logger

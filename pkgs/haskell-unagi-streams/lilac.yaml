@@ -13,6 +13,8 @@ repo_depends:
 - haskell-io-streams
 - haskell-unagi-chan
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-io-streams
   source: alpm
 - alpm: haskell-unagi-chan

@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rebuilderd'')
 repo_depends:
 - zstd
 update_on:
+- manual: 1
+  source: manual
 - alpm: zstd
   provides: libzstd.so
   source: alpm

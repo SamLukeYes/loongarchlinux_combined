@@ -21,6 +21,8 @@ repo_depends:
 - postgresql
 - sqlite
 update_on:
+- manual: 1
+  source: manual
 - alpm: icu
   provides: libicuuc.so
   source: alpm

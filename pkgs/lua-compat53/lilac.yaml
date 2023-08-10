@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lua-compat53'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: lua-compat53
   source: archpkg

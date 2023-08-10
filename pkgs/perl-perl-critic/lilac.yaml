@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-perl-critic'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: perl-perl-critic
   source: archpkg

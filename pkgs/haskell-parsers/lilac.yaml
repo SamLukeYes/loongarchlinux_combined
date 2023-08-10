@@ -16,6 +16,8 @@ repo_depends:
 - haskell-scientific
 - haskell-unordered-containers
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-attoparsec
   source: alpm
 - alpm: haskell-base-orphans

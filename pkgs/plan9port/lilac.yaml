@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plan9port'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: plan9port
   source: archpkg

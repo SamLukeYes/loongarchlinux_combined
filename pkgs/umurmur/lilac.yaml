@@ -13,6 +13,8 @@ repo_depends:
 - libconfig
 - protobuf-c
 update_on:
+- manual: 1
+  source: manual
 - alpm: libconfig
   provides: libconfig.so
   source: alpm

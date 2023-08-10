@@ -16,6 +16,8 @@ repo_depends:
 - haskell-vector
 - haskell-zlib-bindings
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-attoparsec
   source: alpm
 - alpm: haskell-network

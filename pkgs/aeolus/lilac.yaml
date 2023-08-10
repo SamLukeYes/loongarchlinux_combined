@@ -17,6 +17,8 @@ repo_depends:
 - readline
 - zita-alsa-pcmi
 update_on:
+- manual: 1
+  source: manual
 - alpm: alsa-lib
   provides: libasound.so
   source: alpm

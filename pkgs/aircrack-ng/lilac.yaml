@@ -13,6 +13,8 @@ repo_depends:
 - libpcap
 - python
 update_on:
+- manual: 1
+  source: manual
 - alpm: libpcap
   provides: libpcap.so
   source: alpm

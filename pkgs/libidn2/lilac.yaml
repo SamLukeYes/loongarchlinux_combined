@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libidn2'')
 repo_depends:
 - libunistring
 update_on:
+- manual: 1
+  source: manual
 - alpm: libunistring
   provides: libunistring.so
   source: alpm

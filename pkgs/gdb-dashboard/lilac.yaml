@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gdb-dashboard'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: gdb-dashboard
   source: archpkg

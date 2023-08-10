@@ -13,6 +13,8 @@ repo_depends:
 - haskell-monad-control
 - haskell-transformers-base
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-monad-control
   source: alpm
 - alpm: haskell-transformers-base

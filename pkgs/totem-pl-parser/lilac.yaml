@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''totem-pl-parser'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: totem-pl-parser
   source: archpkg

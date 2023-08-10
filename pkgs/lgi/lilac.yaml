@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lgi'')
 repo_depends:
 - lua
 update_on:
+- manual: 1
+  source: manual
 - alias: lua
 - alpm: lgi
   source: archpkg

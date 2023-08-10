@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''shared-mime-info'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: shared-mime-info
   source: archpkg

@@ -6,6 +6,8 @@ repo_depends:
 - json-c
 - bzip2
 update_on:
+- manual: 1
+  source: manual
 - alpm: systemd-libs
   provides: libsystemd.so
   source: alpm

@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xcur2png'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: xcur2png
   source: archpkg

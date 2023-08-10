@@ -10,6 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-markdown2'')
 repo_depends:
 - python
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: python-markdown2
   source: archpkg

@@ -14,6 +14,8 @@ repo_depends:
 - util-linux
 - libcap-ng
 update_on:
+- manual: 1
+  source: manual
 - alpm: iptables
   source: alpm
   strip_release: true

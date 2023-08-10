@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jp2a'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: jp2a
   source: archpkg

@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-shell-config-gen
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: perl-shell-config-generate
   source: archpkg

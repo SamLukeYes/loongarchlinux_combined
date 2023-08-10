@@ -11,6 +11,8 @@ repo_depends:
 - iptables
 - perl
 update_on:
+- manual: 1
+  source: manual
 - alpm: iptables
   source: alpm
   strip_release: true

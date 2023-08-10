@@ -20,6 +20,8 @@ repo_depends:
 - haskell-semirings
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-chimera
   source: alpm
 - alpm: haskell-constraints

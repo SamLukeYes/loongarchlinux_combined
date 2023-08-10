@@ -13,6 +13,8 @@ repo_depends:
 - haskell-base16-bytestring
 - haskell-base64-bytestring
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-base16-bytestring
   source: alpm
 - alpm: haskell-base64-bytestring

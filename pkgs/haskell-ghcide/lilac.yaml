@@ -62,6 +62,8 @@ repo_depends:
 - haskell-unordered-containers
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-diff
   source: alpm
 - alpm: haskell-glob

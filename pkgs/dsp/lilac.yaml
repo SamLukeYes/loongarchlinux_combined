@@ -18,6 +18,8 @@ repo_depends:
 - libsndfile
 - zita-convolver
 update_on:
+- manual: 1
+  source: manual
 - alpm: ffmpeg
   provides: libavutil.so
   source: alpm

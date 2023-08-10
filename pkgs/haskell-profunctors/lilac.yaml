@@ -17,6 +17,8 @@ repo_depends:
 - haskell-distributive
 - haskell-tagged
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-base-orphans
   source: alpm
 - alpm: haskell-bifunctors

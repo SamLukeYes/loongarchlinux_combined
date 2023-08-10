@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''simutrans-pak64'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: simutrans-pak64
   source: archpkg

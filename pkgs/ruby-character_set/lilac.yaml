@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-character_set'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: ruby-character_set
   source: archpkg

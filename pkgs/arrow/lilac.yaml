@@ -3,5 +3,7 @@ repo_depends:
 - grpc
 - protobuf
 update_on:
+- manual: 1
+  source: manual
 - alias: grpc
 - alias: protobuf

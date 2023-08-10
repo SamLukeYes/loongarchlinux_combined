@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''virtualbox-host-modul
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: virtualbox-host-modules-arch
   source: archpkg

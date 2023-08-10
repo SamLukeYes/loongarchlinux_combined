@@ -13,6 +13,8 @@ repo_depends:
 - haskell-shakespeare
 - haskell-xml-conduit
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-shakespeare
   source: alpm
 - alpm: haskell-xml-conduit

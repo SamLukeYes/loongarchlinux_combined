@@ -18,6 +18,8 @@ repo_depends:
 - xvidcore
 - zimg
 update_on:
+- manual: 1
+  source: manual
 - alpm: libass
   provides: libass.so
   source: alpm

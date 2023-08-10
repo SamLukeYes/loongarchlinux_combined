@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gts'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: gts
   source: archpkg

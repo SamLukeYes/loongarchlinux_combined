@@ -13,6 +13,8 @@ repo_depends:
 - haskell-data-default-class
 - haskell-old-locale
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-data-default-class
   source: alpm
 - alpm: haskell-old-locale

@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kmime'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: kmime
   source: archpkg

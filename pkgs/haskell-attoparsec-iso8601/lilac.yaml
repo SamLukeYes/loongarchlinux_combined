@@ -14,6 +14,8 @@ repo_depends:
 - haskell-base-compat-batteries
 - haskell-time-compat
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-attoparsec
   source: alpm
 - alpm: haskell-base-compat-batteries

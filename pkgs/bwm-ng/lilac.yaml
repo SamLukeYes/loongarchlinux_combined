@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bwm-ng'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: bwm-ng
   source: archpkg

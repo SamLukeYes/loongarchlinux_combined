@@ -8,6 +8,8 @@ repo_depends:
 - xz
 - zstd
 update_on:
+- manual: 1
+  source: manual
 - alpm: libarchive
   provides: libarchive.so
   source: alpm

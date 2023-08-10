@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''clutter'')
 repo_depends:
 - cogl
 update_on:
+- manual: 1
+  source: manual
 - alpm: cogl
   provides: libcogl-path.so
   source: alpm

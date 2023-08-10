@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cmark-gfm'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-cmark-gfm
   source: archpkg

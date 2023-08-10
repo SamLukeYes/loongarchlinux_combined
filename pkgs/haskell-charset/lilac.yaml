@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-charset'')
 repo_depends:
 - haskell-unordered-containers
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-unordered-containers
   source: alpm
 - alpm: haskell-charset

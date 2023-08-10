@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mod-lv2-extensions'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: mod-lv2-extensions
   source: archpkg

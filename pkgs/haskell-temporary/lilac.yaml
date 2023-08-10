@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-temporary'')
 repo_depends:
 - haskell-random
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-random
   source: alpm
 - alpm: haskell-temporary

@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sage-data-elliptic_cu
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: sage-data-elliptic_curves
   source: archpkg

@@ -20,6 +20,8 @@ repo_depends:
 - haskell-th-abstraction
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-base-orphans
   source: alpm
 - alpm: haskell-constraints

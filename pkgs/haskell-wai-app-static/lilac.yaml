@@ -27,6 +27,8 @@ repo_depends:
 - haskell-warp
 - haskell-zlib
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-blaze-html
   source: alpm
 - alpm: haskell-blaze-markup

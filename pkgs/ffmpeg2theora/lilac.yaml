@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ffmpeg2theora'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: ffmpeg2theora
   source: archpkg

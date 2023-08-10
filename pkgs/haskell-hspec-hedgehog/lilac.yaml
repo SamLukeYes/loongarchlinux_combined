@@ -17,6 +17,8 @@ repo_depends:
 - haskell-quickcheck
 - haskell-splitmix
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hspec
   source: alpm
 - alpm: haskell-hspec-core

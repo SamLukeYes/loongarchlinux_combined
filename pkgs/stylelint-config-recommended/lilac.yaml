@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''stylelint-config-reco
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: stylelint-config-recommended
   source: archpkg

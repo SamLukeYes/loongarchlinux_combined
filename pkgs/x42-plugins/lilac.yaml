@@ -20,6 +20,8 @@ repo_depends:
 - jack2
 - liblo
 update_on:
+- manual: 1
+  source: manual
 - alpm: fftw
   provides: libfftw3f.so
   source: alpm

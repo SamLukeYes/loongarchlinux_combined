@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libstrophe'')
 repo_depends:
 - expat
 update_on:
+- manual: 1
+  source: manual
 - alpm: expat
   provides: libexpat.so
   source: alpm

@@ -13,6 +13,8 @@ repo_depends:
 - perl
 - icu
 update_on:
+- manual: 1
+  source: manual
 - alias: perl
 - alias: icu
 - alpm: r

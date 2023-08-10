@@ -22,6 +22,8 @@ repo_depends:
 - lilv
 - rubberband
 update_on:
+- manual: 1
+  source: manual
 - alpm: qt6-base
   source: alpm
   strip_release: true

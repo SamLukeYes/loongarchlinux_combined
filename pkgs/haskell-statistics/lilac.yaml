@@ -24,6 +24,8 @@ repo_depends:
 - haskell-vector-binary-instances
 - haskell-vector-th-unbox
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-async

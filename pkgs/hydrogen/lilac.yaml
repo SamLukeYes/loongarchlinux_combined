@@ -21,6 +21,8 @@ repo_depends:
 - portaudio
 - portmidi
 update_on:
+- manual: 1
+  source: manual
 - alpm: qt5-base
   source: alpm
   strip_release: true

@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''flake8'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: flake8
   source: archpkg

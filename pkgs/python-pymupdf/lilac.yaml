@@ -14,6 +14,8 @@ repo_depends:
 - freetype2
 - darktable
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: freetype2
   provides: libfreetype.so

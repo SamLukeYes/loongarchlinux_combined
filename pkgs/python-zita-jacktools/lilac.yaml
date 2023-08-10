@@ -18,6 +18,8 @@ repo_depends:
 - zita-jclient
 - zita-resampler
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: fftw
   provides: libfftw3f.so

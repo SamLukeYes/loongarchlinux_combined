@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vid.stab'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: vid.stab
   source: archpkg

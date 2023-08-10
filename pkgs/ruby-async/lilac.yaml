@@ -10,6 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-async'')
 repo_depends:
 - ruby
 update_on:
+- manual: 1
+  source: manual
 - alias: ruby
 - alpm: ruby-async
   source: archpkg

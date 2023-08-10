@@ -22,6 +22,8 @@ repo_depends:
 - wayland
 - libwebp
 update_on:
+- manual: 1
+  source: manual
 - alpm: libexif
   provides: libexif.so
   source: alpm

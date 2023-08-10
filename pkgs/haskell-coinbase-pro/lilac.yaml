@@ -35,6 +35,8 @@ repo_depends:
 - haskell-websockets
 - haskell-wuss
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hsopenssl
   source: alpm
 - alpm: haskell-aeson

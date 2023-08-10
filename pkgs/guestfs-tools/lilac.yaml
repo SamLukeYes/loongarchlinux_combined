@@ -17,6 +17,8 @@ repo_depends:
 - pcre2
 - xz
 update_on:
+- manual: 1
+  source: manual
 - alpm: libguestfs
   provides: libguestfs.so
   source: alpm

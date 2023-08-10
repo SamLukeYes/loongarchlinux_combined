@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''udisks2'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: udisks2
   source: archpkg

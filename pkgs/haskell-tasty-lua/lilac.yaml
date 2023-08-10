@@ -17,6 +17,8 @@ repo_depends:
 - haskell-quickcheck
 - haskell-tasty
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-file-embed
   source: alpm
 - alpm: haskell-hslua-core

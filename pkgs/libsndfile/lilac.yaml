@@ -17,6 +17,8 @@ repo_depends:
 - mpg123
 - opus
 update_on:
+- manual: 1
+  source: manual
 - alpm: flac
   provides: libFLAC.so
   source: alpm

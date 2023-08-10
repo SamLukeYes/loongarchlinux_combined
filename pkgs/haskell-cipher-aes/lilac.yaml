@@ -14,6 +14,8 @@ repo_depends:
 - haskell-crypto-cipher-types
 - haskell-securemem
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-byteable
   source: alpm
 - alpm: haskell-crypto-cipher-types

@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lua-lpeg-patterns'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: lua-lpeg-patterns
   source: archpkg

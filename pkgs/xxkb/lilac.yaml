@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xxkb'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: xxkb
   source: archpkg

@@ -20,6 +20,8 @@ repo_depends:
 - haskell-wai-extra
 - haskell-xss-sanitize
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-blaze-html

@@ -20,6 +20,8 @@ repo_depends:
 - haskell-tasty
 - haskell-temporary
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ansi-terminal
   source: alpm
 - alpm: haskell-async

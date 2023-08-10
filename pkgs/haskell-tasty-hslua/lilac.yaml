@@ -14,6 +14,8 @@ repo_depends:
 - haskell-tasty
 - haskell-tasty-hunit
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hslua-core
   source: alpm
 - alpm: haskell-tasty

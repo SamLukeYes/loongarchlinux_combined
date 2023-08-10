@@ -13,6 +13,8 @@ repo_depends:
 - protobuf
 - icu
 update_on:
+- manual: 1
+  source: manual
 - alias: protobuf
 - alias: icu
 - alpm: xtrabackup

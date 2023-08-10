@@ -25,6 +25,8 @@ repo_depends:
 - haskell-unordered-containers
 - haskell-uri-encode
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-aeson-pretty

@@ -13,6 +13,8 @@ repo_depends:
 - libsoup
 - libsoup3
 update_on:
+- manual: 1
+  source: manual
 - alpm: libsoup
   provides: libsoup-2.4.so
   source: alpm

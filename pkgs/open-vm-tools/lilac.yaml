@@ -13,6 +13,8 @@ repo_depends:
 - icu
 - libxcrypt
 update_on:
+- manual: 1
+  source: manual
 - alias: icu
 - alpm: libxcrypt
   provides: libcrypt.so

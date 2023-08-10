@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openui5'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: openui5
   source: archpkg

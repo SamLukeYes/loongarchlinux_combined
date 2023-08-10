@@ -13,6 +13,8 @@ repo_depends:
 - haskell-ansi-wl-pprint
 - haskell-transformers-compat
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ansi-wl-pprint
   source: alpm
 - alpm: haskell-transformers-compat

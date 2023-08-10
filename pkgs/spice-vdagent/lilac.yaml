@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''spice-vdagent'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: spice-vdagent
   source: archpkg

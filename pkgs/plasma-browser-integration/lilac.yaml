@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plasma-browser-integr
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: plasma-browser-integration
   source: archpkg

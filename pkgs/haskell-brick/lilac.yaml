@@ -22,6 +22,8 @@ repo_depends:
 - haskell-vty
 - haskell-word-wrap
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-bimap
   source: alpm
 - alpm: haskell-config-ini

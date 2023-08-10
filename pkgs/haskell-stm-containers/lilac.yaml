@@ -16,6 +16,8 @@ repo_depends:
 - haskell-list-t
 - haskell-stm-hamt
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-deferred-folds
   source: alpm
 - alpm: haskell-focus

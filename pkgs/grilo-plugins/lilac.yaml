@@ -13,6 +13,8 @@ repo_depends:
 - lua
 - grilo
 update_on:
+- manual: 1
+  source: manual
 - alias: lua
 - alpm: grilo
   provides: libgrlpls-0.3.so

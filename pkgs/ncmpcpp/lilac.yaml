@@ -18,6 +18,8 @@ repo_depends:
 - ncurses
 - readline
 update_on:
+- manual: 1
+  source: manual
 - alpm: curl
   provides: libcurl.so
   source: alpm

@@ -19,6 +19,8 @@ repo_depends:
 - haskell-syb
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-erf
   source: alpm
 - alpm: haskell-math-functions

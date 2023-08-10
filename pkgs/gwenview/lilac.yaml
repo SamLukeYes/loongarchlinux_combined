@@ -13,6 +13,8 @@ repo_depends:
 - cfitsio
 - perl
 update_on:
+- manual: 1
+  source: manual
 - alpm: cfitsio
   source: alpm
   strip_release: true

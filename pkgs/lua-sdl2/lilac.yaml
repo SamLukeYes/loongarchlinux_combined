@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lua-sdl2'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: lua-sdl2
   source: archpkg

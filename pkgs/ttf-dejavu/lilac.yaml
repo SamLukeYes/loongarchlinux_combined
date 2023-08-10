@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ttf-dejavu'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: ttf-dejavu
   source: archpkg

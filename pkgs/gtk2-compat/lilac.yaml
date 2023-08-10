@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gtk2-compat'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: gtk2-compat
   source: archpkg

@@ -3,6 +3,8 @@ repo_depends:
 - guile
 - perl
 update_on:
+- manual: 1
+  source: manual
 - alpm: guile
   source: alpm
   strip_release: true

@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''j4-dmenu-desktop'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: j4-dmenu-desktop
   source: archpkg

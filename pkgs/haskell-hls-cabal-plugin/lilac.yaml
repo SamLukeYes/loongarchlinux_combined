@@ -20,6 +20,8 @@ repo_depends:
 - haskell-regex-tdfa
 - haskell-unordered-containers
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-extra
   source: alpm
 - alpm: haskell-ghcide

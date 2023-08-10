@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''plotutils'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: plotutils
   source: archpkg

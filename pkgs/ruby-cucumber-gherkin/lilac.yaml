@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ruby-cucumber-gherkin
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: ruby-cucumber-gherkin
   source: archpkg

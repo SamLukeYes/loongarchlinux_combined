@@ -16,6 +16,8 @@ repo_depends:
 - haskell-distributive
 - haskell-semigroupoids
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-adjunctions
   source: alpm
 - alpm: haskell-boring

@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cantor'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: cantor
   source: archpkg

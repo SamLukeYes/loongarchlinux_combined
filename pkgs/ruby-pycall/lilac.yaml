@@ -13,6 +13,8 @@ repo_depends:
 - ruby
 - python
 update_on:
+- manual: 1
+  source: manual
 - alias: ruby
 - alias: python
 - alpm: ruby-pycall

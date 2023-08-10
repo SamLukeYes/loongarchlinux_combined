@@ -13,6 +13,8 @@ repo_depends:
 - haskell-asn1-types
 - haskell-hourglass
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-asn1-types
   source: alpm
 - alpm: haskell-hourglass

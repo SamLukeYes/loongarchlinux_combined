@@ -18,6 +18,8 @@ repo_depends:
 - haskell-split
 - haskell-xcb-types
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-attoparsec
   source: alpm
 - alpm: haskell-either

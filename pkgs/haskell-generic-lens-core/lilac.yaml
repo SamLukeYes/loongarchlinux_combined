@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-generic-lens-
 repo_depends:
 - haskell-indexed-profunctors
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-indexed-profunctors
   source: alpm
 - alpm: haskell-generic-lens-core

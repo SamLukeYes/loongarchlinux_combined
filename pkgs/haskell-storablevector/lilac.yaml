@@ -16,6 +16,8 @@ repo_depends:
 - haskell-quickcheck
 - haskell-syb
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-non-negative
   source: alpm
 - alpm: haskell-utility-ht

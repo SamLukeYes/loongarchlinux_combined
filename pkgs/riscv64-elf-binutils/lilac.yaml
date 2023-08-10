@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''riscv64-elf-binutils'
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: riscv64-elf-binutils
   source: archpkg

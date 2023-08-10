@@ -16,6 +16,8 @@ repo_depends:
 - haskell-safe
 - haskell-safe-exceptions
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-conduit
   source: alpm
 - alpm: haskell-dlist

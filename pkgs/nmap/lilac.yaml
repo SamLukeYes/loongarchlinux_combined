@@ -13,6 +13,8 @@ repo_depends:
 - lua
 - libssh2
 update_on:
+- manual: 1
+  source: manual
 - alias: lua
 - alpm: libssh2
   provides: libssh2.so

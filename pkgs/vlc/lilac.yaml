@@ -3,6 +3,8 @@ repo_depends:
 - libupnp
 - qt5-base
 update_on:
+- manual: 1
+  source: manual
 - alpm: libupnp
   provides: libupnp.so
   source: alpm

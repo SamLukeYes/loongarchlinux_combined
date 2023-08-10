@@ -15,6 +15,8 @@ repo_depends:
 - glib2
 - gdk-pixbuf2
 update_on:
+- manual: 1
+  source: manual
 - alpm: ncurses
   provides: libncursesw.so
   source: alpm

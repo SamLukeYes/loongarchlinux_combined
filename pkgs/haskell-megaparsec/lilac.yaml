@@ -14,6 +14,8 @@ repo_depends:
 - haskell-parser-combinators
 - haskell-scientific
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-case-insensitive
   source: alpm
 - alpm: haskell-parser-combinators

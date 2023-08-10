@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vulkan-validation-lay
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: vulkan-validation-layers
   source: archpkg

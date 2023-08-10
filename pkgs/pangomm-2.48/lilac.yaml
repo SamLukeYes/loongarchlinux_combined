@@ -14,6 +14,8 @@ repo_depends:
 - glibmm-2.68
 - cairomm-1.16
 update_on:
+- manual: 1
+  source: manual
 - alpm: libsigc++-3.0
   provides: libsigc-3.0.so
   source: alpm

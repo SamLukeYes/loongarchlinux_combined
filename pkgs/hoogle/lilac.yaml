@@ -42,6 +42,8 @@ repo_depends:
 - haskell-warp-tls
 - haskell-zlib
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-quickcheck
   source: alpm
 - alpm: haskell-aeson

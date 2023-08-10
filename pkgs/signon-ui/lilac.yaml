@@ -1,2 +1,4 @@
 destsubdir: extra
-update_on: []
+update_on:
+- manual: 1
+  source: manual

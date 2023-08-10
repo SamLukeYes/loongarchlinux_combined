@@ -17,6 +17,8 @@ repo_depends:
 - haskell-vector-th-unbox
 - haskell-vector-binary-instances
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-math-functions
   source: alpm
 - alpm: haskell-primitive

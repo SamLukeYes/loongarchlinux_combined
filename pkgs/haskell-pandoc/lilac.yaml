@@ -62,6 +62,8 @@ repo_depends:
 - haskell-zip-archive
 - haskell-zlib
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-glob
   source: alpm
 - alpm: haskell-juicypixels

@@ -3,6 +3,8 @@ repo_depends:
 - python
 - ostree
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: ostree
   provides: libostree-1.so

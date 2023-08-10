@@ -13,6 +13,8 @@ repo_depends:
 - libwpe
 - glib2
 update_on:
+- manual: 1
+  source: manual
 - alpm: libwpe
   provides: libwpe-1.0.so
   source: alpm

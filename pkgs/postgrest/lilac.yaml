@@ -51,6 +51,8 @@ repo_depends:
 - haskell-wai-logger
 - haskell-warp
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-http
   source: alpm
 - alpm: haskell-ranged-sets

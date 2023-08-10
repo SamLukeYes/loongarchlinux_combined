@@ -8,6 +8,8 @@ repo_depends:
 - ncurses
 - x264
 update_on:
+- manual: 1
+  source: manual
 - alpm: giflib
   provides: libgif.so
   source: alpm

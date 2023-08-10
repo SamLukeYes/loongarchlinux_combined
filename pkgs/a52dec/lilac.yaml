@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''a52dec'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: a52dec
   source: archpkg

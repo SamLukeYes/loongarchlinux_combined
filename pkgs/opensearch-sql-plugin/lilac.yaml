@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opensearch-sql-plugin
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: opensearch-sql-plugin
   source: archpkg

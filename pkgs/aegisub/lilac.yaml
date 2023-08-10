@@ -15,6 +15,8 @@ repo_depends:
 - ffms2
 - wxwidgets
 update_on:
+- manual: 1
+  source: manual
 - alias: icu
 - alpm: libass
   provides: libass.so

@@ -21,6 +21,8 @@ repo_depends:
 - haskell-blaze-builder
 - haskell-transformers-compat
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-http-client
   source: alpm
 - alpm: haskell-crypto-pubkey-types

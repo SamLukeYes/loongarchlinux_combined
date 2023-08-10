@@ -13,6 +13,8 @@ repo_depends:
 - haskell-constraints-extras
 - haskell-dependent-sum
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-constraints-extras
   source: alpm
 - alpm: haskell-dependent-sum

@@ -13,6 +13,8 @@ repo_depends:
 - haskell-hourglass
 - haskell-memory
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hourglass
   source: alpm
 - alpm: haskell-memory

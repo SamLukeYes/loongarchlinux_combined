@@ -18,6 +18,8 @@ repo_depends:
 - haskell-safe
 - haskell-syb
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-sha
   source: alpm
 - alpm: haskell-base64-bytestring

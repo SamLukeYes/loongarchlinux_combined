@@ -14,6 +14,8 @@ repo_depends:
 - yaml-cpp
 - systemd
 update_on:
+- manual: 1
+  source: manual
 - alpm: libevdev
   provides: libevdev.so
   source: alpm

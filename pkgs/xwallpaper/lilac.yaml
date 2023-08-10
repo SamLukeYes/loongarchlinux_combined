@@ -14,6 +14,8 @@ repo_depends:
 - pixman
 - darktable
 update_on:
+- manual: 1
+  source: manual
 - alpm: libseccomp
   provides: libseccomp.so
   source: alpm

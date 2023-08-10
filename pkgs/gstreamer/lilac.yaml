@@ -5,6 +5,8 @@ repo_depends:
 - qt5-declarative
 - python
 update_on:
+- manual: 1
+  source: manual
 - alpm: jack2
   provides: libjack.so
   source: alpm

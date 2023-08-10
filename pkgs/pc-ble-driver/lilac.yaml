@@ -14,6 +14,8 @@ repo_depends:
 - spdlog
 - systemd
 update_on:
+- manual: 1
+  source: manual
 - alpm: fmt
   provides: libfmt.so
   source: alpm

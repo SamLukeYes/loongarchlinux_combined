@@ -17,6 +17,8 @@ repo_depends:
 - haskell-async
 - haskell-typed-process
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-tasty
   source: alpm
 - alpm: haskell-optparse-applicative

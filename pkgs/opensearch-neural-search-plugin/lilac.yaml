@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''opensearch-neural-sea
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: opensearch-neural-search-plugin
   source: archpkg

@@ -13,6 +13,8 @@ repo_depends:
 - haskell-hunit
 - haskell-quickcheck
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hunit
   source: alpm
 - alpm: haskell-quickcheck

@@ -13,6 +13,8 @@ repo_depends:
 - glib2
 - jack2
 update_on:
+- manual: 1
+  source: manual
 - alpm: glib2
   provides: libglib-2.0.so
   source: alpm

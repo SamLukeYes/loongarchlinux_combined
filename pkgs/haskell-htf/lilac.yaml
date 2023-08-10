@@ -25,6 +25,8 @@ repo_depends:
 - haskell-vector
 - haskell-xmlgen
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-diff
   source: alpm
 - alpm: haskell-hunit

@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''networkmanager-openco
 repo_depends:
 - openconnect
 update_on:
+- manual: 1
+  source: manual
 - alpm: openconnect
   provides: libopenconnect.so
   source: alpm

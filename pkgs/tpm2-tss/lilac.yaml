@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tpm2-tss'')
 repo_depends:
 - json-c
 update_on:
+- manual: 1
+  source: manual
 - alpm: json-c
   provides: libjson-c.so
   source: alpm

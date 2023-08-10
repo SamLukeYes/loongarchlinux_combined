@@ -13,6 +13,8 @@ repo_depends:
 - python
 - yara
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: yara
   provides: libyara.so

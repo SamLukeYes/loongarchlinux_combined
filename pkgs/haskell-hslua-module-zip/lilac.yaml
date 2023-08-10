@@ -17,6 +17,8 @@ repo_depends:
 - haskell-hslua-typing
 - haskell-zip-archive
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hslua-core
   source: alpm
 - alpm: haskell-hslua-list

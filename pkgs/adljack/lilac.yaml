@@ -16,6 +16,8 @@ repo_depends:
 - rtaudio
 - rtmidi
 update_on:
+- manual: 1
+  source: manual
 - alpm: jack2
   provides: libjack.so
   source: alpm

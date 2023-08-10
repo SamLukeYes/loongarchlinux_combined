@@ -16,6 +16,8 @@ repo_depends:
 - haskell-unordered-containers
 - haskell-validation-selective
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hashable
   source: alpm
 - alpm: haskell-megaparsec

@@ -2,6 +2,8 @@ destsubdir: extra
 repo_depends:
 - opencv
 update_on:
+- manual: 1
+  source: manual
 - alpm: opencv
   source: alpm
   strip_release: true

@@ -14,6 +14,8 @@ repo_depends:
 - libusb
 - python
 update_on:
+- manual: 1
+  source: manual
 - alpm: avahi
   provides: libavahi-common.so
   source: alpm

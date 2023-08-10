@@ -29,6 +29,8 @@ repo_depends:
 - haskell-vector-instances
 - haskell-void
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-bifunctors
   source: alpm
 - alpm: haskell-contravariant

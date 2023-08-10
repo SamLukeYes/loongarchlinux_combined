@@ -14,6 +14,8 @@ repo_depends:
 - haskell-primitive
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-data-default-class
   source: alpm
 - alpm: haskell-primitive

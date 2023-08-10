@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-json'')
 repo_depends:
 - haskell-syb
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-syb
   source: alpm
 - alpm: haskell-json

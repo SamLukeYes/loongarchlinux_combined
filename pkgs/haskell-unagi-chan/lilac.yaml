@@ -13,6 +13,8 @@ repo_depends:
 - haskell-atomic-primops
 - haskell-primitive
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-atomic-primops
   source: alpm
 - alpm: haskell-primitive

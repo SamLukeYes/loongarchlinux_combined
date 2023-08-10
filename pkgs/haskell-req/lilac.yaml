@@ -25,6 +25,8 @@ repo_depends:
 - haskell-transformers-base
 - haskell-unliftio-core
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-authenticate-oauth

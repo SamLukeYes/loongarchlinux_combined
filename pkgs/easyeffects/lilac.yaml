@@ -19,6 +19,8 @@ repo_depends:
 - libsndfile
 - lilv
 update_on:
+- manual: 1
+  source: manual
 - alpm: fmt
   provides: libfmt.so
   source: alpm

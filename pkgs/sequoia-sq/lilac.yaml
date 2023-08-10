@@ -3,6 +3,8 @@ repo_depends:
 - bzip2
 - nettle
 update_on:
+- manual: 1
+  source: manual
 - alpm: bzip2
   provides: libbz2.so
   source: alpm

@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gsasl'')
 repo_depends:
 - haskell-monad-loops
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-monad-loops
   source: alpm
 - alpm: haskell-gsasl

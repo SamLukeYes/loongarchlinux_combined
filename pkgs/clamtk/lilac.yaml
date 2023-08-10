@@ -11,6 +11,8 @@ repo_depends:
 - perl
 - python
 update_on:
+- manual: 1
+  source: manual
 - alias: perl
 - alias: python
 - alpm: clamtk

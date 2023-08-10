@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''virt-manager'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: virt-manager
   source: archpkg

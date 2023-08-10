@@ -19,6 +19,8 @@ repo_depends:
 - haskell-uniplate
 - haskell-unix-compat
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-extra
   source: alpm
 - alpm: haskell-filemanip

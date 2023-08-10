@@ -14,6 +14,8 @@ repo_depends:
 - gssdp
 - gupnp
 update_on:
+- manual: 1
+  source: manual
 - alpm: glib2
   provides: libgio-2.0.so
   source: alpm

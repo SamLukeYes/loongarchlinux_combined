@@ -14,6 +14,8 @@ repo_depends:
 - haskell-hslua-marshalling
 - haskell-hslua-packaging
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hslua
   source: alpm
 - alpm: haskell-hslua-marshalling

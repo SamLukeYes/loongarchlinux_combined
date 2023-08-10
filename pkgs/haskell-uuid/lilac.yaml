@@ -17,6 +17,8 @@ repo_depends:
 - haskell-random
 - haskell-uuid-types
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-cryptohash-md5
   source: alpm
 - alpm: haskell-cryptohash-sha1

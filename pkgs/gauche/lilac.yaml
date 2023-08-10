@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gauche'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: gauche
   source: archpkg

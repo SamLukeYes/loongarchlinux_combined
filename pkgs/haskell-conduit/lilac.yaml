@@ -16,6 +16,8 @@ repo_depends:
 - haskell-unliftio-core
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-mono-traversable
   source: alpm
 - alpm: haskell-primitive

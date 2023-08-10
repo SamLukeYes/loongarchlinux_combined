@@ -13,6 +13,8 @@ repo_depends:
 - acl
 - xxhash
 update_on:
+- manual: 1
+  source: manual
 - alpm: acl
   provides: libacl.so
   source: alpm

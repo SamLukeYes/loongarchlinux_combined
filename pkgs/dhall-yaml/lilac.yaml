@@ -19,6 +19,8 @@ repo_depends:
 - haskell-prettyprinter-ansi-terminal
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hsyaml
   source: alpm
 - alpm: haskell-hsyaml-aeson

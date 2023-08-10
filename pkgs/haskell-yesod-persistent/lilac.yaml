@@ -17,6 +17,8 @@ repo_depends:
 - haskell-resourcet
 - haskell-yesod-core
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-blaze-builder
   source: alpm
 - alpm: haskell-conduit

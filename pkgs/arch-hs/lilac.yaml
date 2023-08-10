@@ -31,6 +31,8 @@ repo_depends:
 - haskell-split
 - haskell-tar-conduit
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-diff
   source: alpm
 - alpm: haskell-aeson

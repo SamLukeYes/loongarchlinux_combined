@@ -28,6 +28,8 @@ repo_depends:
 - haskell-string-conversions
 - haskell-vault
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-base-compat
   source: alpm
 - alpm: haskell-aeson

@@ -17,6 +17,8 @@ repo_depends:
 - haskell-syb
 - haskell-uniplate
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-quickcheck
   source: alpm
 - alpm: haskell-async

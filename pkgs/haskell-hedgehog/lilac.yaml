@@ -25,6 +25,8 @@ repo_depends:
 - haskell-transformers-base
 - haskell-wl-pprint-annotated
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ansi-terminal
   source: alpm
 - alpm: haskell-async

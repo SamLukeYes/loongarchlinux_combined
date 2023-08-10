@@ -16,6 +16,8 @@ repo_depends:
 - haskell-safe
 - haskell-tamarin-prover-utils
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hunit
   source: alpm
 - alpm: haskell-attoparsec

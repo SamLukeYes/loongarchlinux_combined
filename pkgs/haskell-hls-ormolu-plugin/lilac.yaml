@@ -17,6 +17,8 @@ repo_depends:
 - haskell-lsp
 - haskell-ormolu
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ghc
   source: alpm
 - alpm: haskell-ghcide

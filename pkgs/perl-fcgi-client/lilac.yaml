@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-fcgi-client'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: perl-fcgi-client
   source: archpkg

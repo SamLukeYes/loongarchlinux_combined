@@ -33,6 +33,8 @@ repo_depends:
 - haskell-vector
 - haskell-vty
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hsopenssl
   source: alpm
 - alpm: haskell-async

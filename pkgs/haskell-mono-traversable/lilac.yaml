@@ -16,6 +16,8 @@ repo_depends:
 - haskell-vector
 - haskell-vector-algorithms
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hashable
   source: alpm
 - alpm: haskell-split

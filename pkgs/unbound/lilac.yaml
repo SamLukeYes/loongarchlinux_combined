@@ -16,6 +16,8 @@ repo_depends:
 - protobuf-c
 - systemd
 update_on:
+- manual: 1
+  source: manual
 - alpm: libevent
   provides: libevent-2.1.so
   source: alpm

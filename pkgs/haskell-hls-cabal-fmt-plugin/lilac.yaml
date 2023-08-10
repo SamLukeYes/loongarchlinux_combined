@@ -15,6 +15,8 @@ repo_depends:
 - haskell-lens
 - haskell-lsp-types
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ghcide
   source: alpm
 - alpm: haskell-hls-plugin-api

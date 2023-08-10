@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xf86-video-nouveau'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: xf86-video-nouveau
   source: archpkg

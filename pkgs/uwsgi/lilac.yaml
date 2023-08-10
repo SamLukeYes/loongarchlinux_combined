@@ -19,6 +19,8 @@ repo_depends:
 - perl
 - python
 update_on:
+- manual: 1
+  source: manual
 - alpm: libcap
   provides: libcap.so
   source: alpm

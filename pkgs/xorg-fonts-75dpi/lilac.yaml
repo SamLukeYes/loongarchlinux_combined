@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-fonts-75dpi'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: xorg-fonts-75dpi
   source: archpkg

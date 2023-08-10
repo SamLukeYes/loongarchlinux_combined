@@ -20,6 +20,8 @@ repo_depends:
 - haskell-resourcet
 - haskell-unliftio-core
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-attoparsec

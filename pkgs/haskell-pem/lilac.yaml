@@ -13,6 +13,8 @@ repo_depends:
 - haskell-basement
 - haskell-memory
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-basement
   source: alpm
 - alpm: haskell-memory

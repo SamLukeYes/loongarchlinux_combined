@@ -10,6 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rst2pdf'')
 repo_depends:
 - python
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: rst2pdf
   source: archpkg

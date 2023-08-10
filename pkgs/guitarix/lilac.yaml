@@ -26,6 +26,8 @@ repo_depends:
 - zita-convolver
 - zita-resampler
 update_on:
+- manual: 1
+  source: manual
 - alpm: avahi
   provides: libavahi-gobject.so
   source: alpm

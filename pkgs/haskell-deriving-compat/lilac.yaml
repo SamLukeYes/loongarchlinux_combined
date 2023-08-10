@@ -13,6 +13,8 @@ repo_depends:
 - haskell-th-abstraction
 - haskell-transformers-compat
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-th-abstraction
   source: alpm
 - alpm: haskell-transformers-compat

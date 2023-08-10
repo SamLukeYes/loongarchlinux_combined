@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-shell-extension
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: gnome-shell-extension-dash-to-panel
   source: archpkg

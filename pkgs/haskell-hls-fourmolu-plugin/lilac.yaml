@@ -18,6 +18,8 @@ repo_depends:
 - haskell-lsp
 - haskell-process-extras
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-fourmolu
   source: alpm
 - alpm: haskell-ghc

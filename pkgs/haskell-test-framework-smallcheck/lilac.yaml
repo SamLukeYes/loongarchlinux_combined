@@ -13,6 +13,8 @@ repo_depends:
 - haskell-test-framework
 - haskell-smallcheck
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-test-framework
   source: alpm
 - alpm: haskell-smallcheck

@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''6tunnel'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: 6tunnel
   source: archpkg

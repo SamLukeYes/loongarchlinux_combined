@@ -2,4 +2,6 @@ destsubdir: core
 repo_depends:
 - readline
 update_on:
+- manual: 1
+  source: manual
 - alias: readline

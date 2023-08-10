@@ -13,6 +13,8 @@ repo_depends:
 - perl
 - opencv
 update_on:
+- manual: 1
+  source: manual
 - alias: perl
 - alpm: opencv
   source: alpm

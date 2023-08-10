@@ -17,6 +17,8 @@ repo_depends:
 - haskell-text-conversions
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-doclayout

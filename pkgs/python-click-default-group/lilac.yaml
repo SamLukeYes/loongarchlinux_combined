@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-click-default-
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: python-click-default-group
   source: archpkg

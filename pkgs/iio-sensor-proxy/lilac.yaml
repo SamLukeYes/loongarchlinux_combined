@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''iio-sensor-proxy'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: iio-sensor-proxy
   source: archpkg

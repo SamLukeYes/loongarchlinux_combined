@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''f2fs-tools'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: f2fs-tools
   source: archpkg

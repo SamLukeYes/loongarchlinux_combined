@@ -13,6 +13,8 @@ repo_depends:
 - acl
 - openssl
 update_on:
+- manual: 1
+  source: manual
 - alpm: acl
   provides: libacl.so
   source: alpm

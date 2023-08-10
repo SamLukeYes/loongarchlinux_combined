@@ -13,6 +13,8 @@ repo_depends:
 - intel-oneapi-basekit
 - pixman
 update_on:
+- manual: 1
+  source: manual
 - alpm: intel-oneapi-basekit
   provides: libxkbcommon.so
   source: alpm

@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''or1k-elf-binutils'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: or1k-elf-binutils
   source: archpkg

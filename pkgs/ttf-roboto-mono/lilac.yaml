@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ttf-roboto-mono'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: ttf-roboto-mono
   source: archpkg

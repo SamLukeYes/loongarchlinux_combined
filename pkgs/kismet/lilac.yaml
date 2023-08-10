@@ -19,6 +19,8 @@ repo_depends:
 - libwebsockets
 - lm_sensors
 update_on:
+- manual: 1
+  source: manual
 - alpm: protobuf-c
   provides: libprotobuf-c.so
   source: alpm

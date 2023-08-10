@@ -17,6 +17,8 @@ repo_depends:
 - re2
 - spdlog
 update_on:
+- manual: 1
+  source: manual
 - alpm: coeurl
   provides: libcoeurl.so
   source: alpm

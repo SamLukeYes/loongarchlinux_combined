@@ -19,6 +19,8 @@ repo_depends:
 - libusb
 - qt6-base
 update_on:
+- manual: 1
+  source: manual
 - alpm: ffmpeg
   provides: libswscale.so
   source: alpm

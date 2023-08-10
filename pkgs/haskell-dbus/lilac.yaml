@@ -21,6 +21,8 @@ repo_depends:
 - haskell-xml-conduit
 - haskell-xml-types
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-cereal
   source: alpm
 - alpm: haskell-conduit

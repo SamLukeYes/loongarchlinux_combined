@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-powe
 repo_depends:
 - switchboard
 update_on:
+- manual: 1
+  source: manual
 - alpm: switchboard
   provides: libswitchboard-2.0.so
   source: alpm

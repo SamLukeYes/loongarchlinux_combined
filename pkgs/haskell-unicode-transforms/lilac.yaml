@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-unicode-trans
 repo_depends:
 - haskell-unicode-data
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-unicode-data
   source: alpm
 - alpm: haskell-unicode-transforms

@@ -16,6 +16,8 @@ repo_depends:
 - mariadb
 - postgresql
 update_on:
+- manual: 1
+  source: manual
 - alpm: gdbm
   provides: libgdbm.so
   source: alpm

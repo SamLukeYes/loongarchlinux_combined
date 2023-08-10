@@ -13,6 +13,8 @@ repo_depends:
 - haskell-bencode
 - haskell-syb
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-bencode
   source: alpm
 - alpm: haskell-syb

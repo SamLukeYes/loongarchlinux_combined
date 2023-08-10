@@ -10,6 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-aws-xray-sdk''
 repo_depends:
 - python
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: python-aws-xray-sdk
   source: archpkg

@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xorg-fonts-type1'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: xorg-fonts-type1
   source: archpkg

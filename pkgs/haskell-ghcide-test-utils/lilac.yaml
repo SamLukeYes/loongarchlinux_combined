@@ -20,6 +20,8 @@ repo_depends:
 - haskell-lsp-types
 - haskell-tasty-hunit
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-data-default

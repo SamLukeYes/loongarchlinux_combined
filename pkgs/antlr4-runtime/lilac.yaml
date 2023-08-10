@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''antlr4-runtime'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: antlr4-runtime
   source: archpkg

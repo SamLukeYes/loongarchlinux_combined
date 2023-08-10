@@ -16,6 +16,8 @@ repo_depends:
 - haskell-blaze-textual
 - haskell-direct-sqlite
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-only
   source: alpm
 - alpm: haskell-attoparsec

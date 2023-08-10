@@ -16,6 +16,8 @@ repo_depends:
 - libsndfile
 - zita-convolver
 update_on:
+- manual: 1
+  source: manual
 - alpm: gtk2
   provides: libgtk-x11-2.0.so
   source: alpm

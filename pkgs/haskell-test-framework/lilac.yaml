@@ -18,6 +18,8 @@ repo_depends:
 - haskell-regex-posix
 - haskell-xml
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ansi-terminal
   source: alpm
 - alpm: haskell-ansi-wl-pprint

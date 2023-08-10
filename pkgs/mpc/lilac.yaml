@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mpc'')
 repo_depends:
 - libmpdclient
 update_on:
+- manual: 1
+  source: manual
 - alpm: libmpdclient
   provides: libmpdclient.so
   source: alpm

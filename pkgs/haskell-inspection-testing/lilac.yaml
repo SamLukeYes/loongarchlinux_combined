@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-inspection-te
 repo_depends:
 - haskell-ghc
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ghc
   source: alpm
 - alpm: haskell-inspection-testing

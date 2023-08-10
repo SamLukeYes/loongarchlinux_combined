@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mhash'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: mhash
   source: archpkg

@@ -17,6 +17,8 @@ repo_depends:
 - haskell-conduit-extra
 - haskell-xml-types
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-resourcet
   source: alpm
 - alpm: haskell-conduit

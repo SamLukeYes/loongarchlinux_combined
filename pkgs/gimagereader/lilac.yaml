@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gimagereader'')
 repo_depends:
 - tesseract
 update_on:
+- manual: 1
+  source: manual
 - alpm: tesseract
   provides: libtesseract.so
   source: alpm

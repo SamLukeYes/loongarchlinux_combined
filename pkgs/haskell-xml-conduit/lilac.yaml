@@ -19,6 +19,8 @@ repo_depends:
 - haskell-blaze-html
 - haskell-xml-types
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-attoparsec
   source: alpm
 - alpm: haskell-blaze-markup

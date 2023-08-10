@@ -13,6 +13,8 @@ repo_depends:
 - orcania
 - yder
 update_on:
+- manual: 1
+  source: manual
 - alpm: orcania
   provides: liborcania.so
   source: alpm

@@ -61,6 +61,8 @@ repo_depends:
 - haskell-xml
 - haskell-xml-helpers
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-configfile
   source: alpm
 - alpm: haskell-hstringtemplate

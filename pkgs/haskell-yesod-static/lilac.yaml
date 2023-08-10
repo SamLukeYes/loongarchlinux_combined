@@ -32,6 +32,8 @@ repo_depends:
 - haskell-wai-app-static
 - haskell-yesod-core
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-async
   source: alpm
 - alpm: haskell-attoparsec

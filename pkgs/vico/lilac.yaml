@@ -16,6 +16,8 @@ repo_depends:
 - libsndfile
 - util-linux
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: glib2
   provides: libglib-2.0.so

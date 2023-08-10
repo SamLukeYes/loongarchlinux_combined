@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-liteeth'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: python-liteeth
   source: archpkg

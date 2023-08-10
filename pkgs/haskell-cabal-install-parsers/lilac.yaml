@@ -18,6 +18,8 @@ repo_depends:
 - haskell-network-uri
 - haskell-tar
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-base16-bytestring

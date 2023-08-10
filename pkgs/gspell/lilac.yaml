@@ -16,6 +16,8 @@ repo_depends:
 - glib2
 - pango
 update_on:
+- manual: 1
+  source: manual
 - alpm: icu
   provides: libicuuc.so
   source: alpm

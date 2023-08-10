@@ -13,6 +13,8 @@ repo_depends:
 - gala
 - granite
 update_on:
+- manual: 1
+  source: manual
 - alpm: gala
   provides: libgala.so
   source: alpm

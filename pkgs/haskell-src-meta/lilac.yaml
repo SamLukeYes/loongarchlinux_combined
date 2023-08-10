@@ -14,6 +14,8 @@ repo_depends:
 - haskell-syb
 - haskell-th-orphans
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-src-exts
   source: alpm
 - alpm: haskell-syb

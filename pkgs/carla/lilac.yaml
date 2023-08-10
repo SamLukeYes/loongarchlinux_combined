@@ -22,6 +22,8 @@ repo_depends:
 - pulseaudio
 - libsndfile
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: qt5-base
   source: alpm

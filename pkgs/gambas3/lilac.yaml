@@ -14,6 +14,8 @@ repo_depends:
 - gsl
 - qt5-base
 update_on:
+- manual: 1
+  source: manual
 - alias: perl
 - alpm: gsl
   source: alpm

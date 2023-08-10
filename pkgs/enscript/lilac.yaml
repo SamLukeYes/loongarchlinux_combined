@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''enscript'')
 repo_depends:
 - perl
 update_on:
+- manual: 1
+  source: manual
 - alias: perl
 - alpm: enscript
   source: archpkg

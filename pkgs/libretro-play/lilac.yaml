@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libretro-play'')
 repo_depends:
 - icu
 update_on:
+- manual: 1
+  source: manual
 - alias: icu
 - alpm: libretro-play
   source: archpkg

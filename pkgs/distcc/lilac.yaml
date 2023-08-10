@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''distcc'')
 repo_depends:
 - python
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: distcc
   source: archpkg

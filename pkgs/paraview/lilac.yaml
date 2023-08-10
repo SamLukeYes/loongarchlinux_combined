@@ -13,6 +13,8 @@ repo_depends:
 - protobuf
 - jsoncpp
 update_on:
+- manual: 1
+  source: manual
 - alias: protobuf
 - alpm: jsoncpp
   provides: libjsoncpp.so

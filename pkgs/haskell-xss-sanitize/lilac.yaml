@@ -16,6 +16,8 @@ repo_depends:
 - haskell-tagsoup
 - haskell-utf8-string
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-attoparsec
   source: alpm
 - alpm: haskell-css-text

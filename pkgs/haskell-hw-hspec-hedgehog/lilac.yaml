@@ -15,6 +15,8 @@ repo_depends:
 - haskell-hedgehog
 - haskell-hspec
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hunit
   source: alpm
 - alpm: haskell-call-stack

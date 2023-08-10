@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aws-vault'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: aws-vault
   source: archpkg

@@ -13,6 +13,8 @@ repo_depends:
 - haskell-doclayout
 - haskell-hslua
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-doclayout
   source: alpm
 - alpm: haskell-hslua

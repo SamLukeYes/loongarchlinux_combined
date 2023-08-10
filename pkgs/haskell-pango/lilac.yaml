@@ -13,6 +13,8 @@ repo_depends:
 - haskell-glib
 - haskell-cairo
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-glib
   source: alpm
 - alpm: haskell-cairo

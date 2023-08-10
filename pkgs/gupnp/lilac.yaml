@@ -14,6 +14,8 @@ repo_depends:
 - gssdp
 - libsoup3
 update_on:
+- manual: 1
+  source: manual
 - alpm: glib2
   provides: libgmodule-2.0.so
   source: alpm

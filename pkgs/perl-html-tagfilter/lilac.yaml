@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-html-tagfilter''
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: perl-html-tagfilter
   source: archpkg

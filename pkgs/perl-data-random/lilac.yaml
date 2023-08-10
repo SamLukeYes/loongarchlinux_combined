@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''perl-data-random'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: perl-data-random
   source: archpkg

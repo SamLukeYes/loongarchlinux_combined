@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aws-c-cal'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: aws-c-cal
   source: archpkg

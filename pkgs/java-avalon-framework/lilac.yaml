@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''java-avalon-framework
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: java-avalon-framework
   source: archpkg

@@ -16,6 +16,8 @@ repo_depends:
 - haskell-wai
 - haskell-warp
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-http3
   source: alpm
 - alpm: haskell-quic

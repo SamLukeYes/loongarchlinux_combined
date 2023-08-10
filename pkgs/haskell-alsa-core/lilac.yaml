@@ -13,6 +13,8 @@ repo_depends:
 - haskell-base
 - haskell-extensible-exceptions
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-base
   source: alpm
 - alpm: haskell-extensible-exceptions

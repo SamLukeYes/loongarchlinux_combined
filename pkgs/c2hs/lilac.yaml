@@ -13,6 +13,8 @@ repo_depends:
 - haskell-dlist
 - haskell-language-c
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-dlist
   source: alpm
 - alpm: haskell-language-c

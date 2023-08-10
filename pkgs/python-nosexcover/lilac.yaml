@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-nosexcover'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: python-nosexcover
   source: archpkg

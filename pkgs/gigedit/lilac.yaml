@@ -22,6 +22,8 @@ repo_depends:
 - linuxsampler
 - pangomm
 update_on:
+- manual: 1
+  source: manual
 - alpm: atkmm
   provides: libatkmm-1.6.so
   source: alpm

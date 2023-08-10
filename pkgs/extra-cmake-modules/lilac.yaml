@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''extra-cmake-modules''
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: extra-cmake-modules
   source: archpkg

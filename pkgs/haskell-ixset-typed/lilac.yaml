@@ -13,6 +13,8 @@ repo_depends:
 - haskell-safecopy
 - haskell-syb
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-safecopy
   source: alpm
 - alpm: haskell-syb

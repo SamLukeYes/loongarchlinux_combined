@@ -70,6 +70,8 @@ repo_depends:
 - haskell-unliftio-core
 - haskell-unordered-containers
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-aeson-pretty

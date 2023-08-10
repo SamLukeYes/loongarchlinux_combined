@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-data-memocomb
 repo_depends:
 - haskell-data-inttrie
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-data-inttrie
   source: alpm
 - alpm: haskell-data-memocombinators

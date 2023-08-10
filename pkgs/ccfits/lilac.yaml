@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ccfits'')
 repo_depends:
 - cfitsio
 update_on:
+- manual: 1
+  source: manual
 - alpm: cfitsio
   source: alpm
   strip_release: true

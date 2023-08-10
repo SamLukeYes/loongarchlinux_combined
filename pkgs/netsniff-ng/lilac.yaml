@@ -14,6 +14,8 @@ repo_depends:
 - libpcap
 - libcli
 update_on:
+- manual: 1
+  source: manual
 - alpm: ncurses
   provides: libncursesw.so
   source: alpm

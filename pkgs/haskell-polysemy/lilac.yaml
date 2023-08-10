@@ -17,6 +17,8 @@ repo_depends:
 - haskell-type-errors
 - haskell-unagi-chan
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-async
   source: alpm
 - alpm: haskell-first-class-families

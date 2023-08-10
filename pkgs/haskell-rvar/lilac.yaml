@@ -13,6 +13,8 @@ repo_depends:
 - haskell-monadprompt
 - haskell-random
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-monadprompt
   source: alpm
 - alpm: haskell-random

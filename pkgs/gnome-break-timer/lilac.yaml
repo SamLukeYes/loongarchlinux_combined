@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-break-timer'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: gnome-break-timer
   source: archpkg

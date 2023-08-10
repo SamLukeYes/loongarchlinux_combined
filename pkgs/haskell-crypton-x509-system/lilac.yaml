@@ -14,6 +14,8 @@ repo_depends:
 - haskell-crypton-x509-store
 - haskell-pem
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-crypton-x509
   source: alpm
 - alpm: haskell-crypton-x509-store

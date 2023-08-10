@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgcrypt15'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: libgcrypt15
   source: archpkg

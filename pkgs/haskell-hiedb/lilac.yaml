@@ -21,6 +21,8 @@ repo_depends:
 - haskell-sqlite-simple
 - haskell-terminal-size
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-algebraic-graphs
   source: alpm
 - alpm: haskell-ansi-terminal

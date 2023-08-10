@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''skia-sharp'')
 repo_depends:
 - freetype2
 update_on:
+- manual: 1
+  source: manual
 - alpm: freetype2
   provides: libfreetype.so
   source: alpm

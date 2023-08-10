@@ -16,6 +16,8 @@ repo_depends:
 - haskell-show
 - haskell-simple-reflect
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-quickcheck
   source: alpm
 - alpm: haskell-extensible-exceptions

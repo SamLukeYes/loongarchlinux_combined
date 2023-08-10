@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mate-notification-dae
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: mate-notification-daemon
   source: archpkg

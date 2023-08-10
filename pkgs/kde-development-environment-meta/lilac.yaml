@@ -13,6 +13,8 @@ repo_depends:
 - qt5-base
 - qt5-declarative
 update_on:
+- manual: 1
+  source: manual
 - alias: clang
 - alpm: kconfig
   source: alpm

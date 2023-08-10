@@ -19,6 +19,8 @@ repo_depends:
 - haskell-time-manager
 - haskell-unix-time
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-async
   source: alpm
 - alpm: haskell-case-insensitive

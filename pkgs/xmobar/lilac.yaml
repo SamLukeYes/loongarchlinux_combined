@@ -37,6 +37,8 @@ repo_depends:
 - haskell-pango
 - haskell-colour
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-x11
   source: alpm
 - alpm: haskell-x11-xft

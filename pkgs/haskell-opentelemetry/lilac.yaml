@@ -13,6 +13,8 @@ repo_depends:
 - haskell-ghc-trace-events
 - haskell-hashable
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ghc-trace-events
   source: alpm
 - alpm: haskell-hashable

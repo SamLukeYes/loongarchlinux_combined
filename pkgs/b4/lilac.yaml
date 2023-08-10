@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''b4'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: b4
   source: archpkg

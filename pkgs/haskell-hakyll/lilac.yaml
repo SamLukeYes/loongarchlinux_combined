@@ -37,6 +37,8 @@ repo_depends:
 - haskell-warp
 - haskell-yaml
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-blaze-html

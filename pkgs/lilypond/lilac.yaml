@@ -16,6 +16,8 @@ repo_depends:
 - guile2.2
 - pango
 update_on:
+- manual: 1
+  source: manual
 - alpm: fontconfig
   provides: libfontconfig.so
   source: alpm

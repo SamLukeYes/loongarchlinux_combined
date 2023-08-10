@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rkward'')
 repo_depends:
 - r
 update_on:
+- manual: 1
+  source: manual
 - alias: r
 - alpm: rkward
   source: archpkg

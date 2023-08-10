@@ -13,6 +13,8 @@ repo_depends:
 - serd
 - sord
 update_on:
+- manual: 1
+  source: manual
 - alpm: serd
   provides: libserd-0.so
   source: alpm

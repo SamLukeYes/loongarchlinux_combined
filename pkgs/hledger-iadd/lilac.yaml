@@ -24,6 +24,8 @@ repo_depends:
 - haskell-vty
 - haskell-xdg-basedir
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-brick
   source: alpm
 - alpm: haskell-free

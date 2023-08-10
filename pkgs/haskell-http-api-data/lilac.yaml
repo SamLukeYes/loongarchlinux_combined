@@ -21,6 +21,8 @@ repo_depends:
 - haskell-unordered-containers
 - haskell-uuid-types
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-attoparsec
   source: alpm
 - alpm: haskell-attoparsec-iso8601

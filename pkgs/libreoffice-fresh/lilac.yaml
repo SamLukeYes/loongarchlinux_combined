@@ -3,5 +3,7 @@ repo_depends:
 - python
 - icu
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alias: icu

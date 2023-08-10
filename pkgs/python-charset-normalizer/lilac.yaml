@@ -2,4 +2,6 @@ destsubdir: extra
 repo_depends:
 - python
 update_on:
+- manual: 1
+  source: manual
 - alias: python

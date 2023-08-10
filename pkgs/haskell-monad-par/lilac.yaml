@@ -16,6 +16,8 @@ repo_depends:
 - haskell-mwc-random
 - haskell-parallel
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-abstract-deque
   source: alpm
 - alpm: haskell-abstract-par

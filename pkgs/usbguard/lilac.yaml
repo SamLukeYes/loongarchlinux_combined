@@ -17,6 +17,8 @@ repo_depends:
 - libcap-ng
 - glib2
 update_on:
+- manual: 1
+  source: manual
 - alpm: libqb
   provides: libqb.so
   source: alpm

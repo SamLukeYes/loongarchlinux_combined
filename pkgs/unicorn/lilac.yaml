@@ -13,6 +13,8 @@ repo_depends:
 - python
 - ruby
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alias: ruby
 - alpm: unicorn

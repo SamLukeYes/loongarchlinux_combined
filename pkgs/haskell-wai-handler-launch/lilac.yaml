@@ -16,6 +16,8 @@ repo_depends:
 - haskell-streaming-commons
 - haskell-async
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-wai
   source: alpm
 - alpm: haskell-warp

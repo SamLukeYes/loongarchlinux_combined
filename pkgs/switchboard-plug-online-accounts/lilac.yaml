@@ -15,6 +15,8 @@ repo_depends:
 - libhandy
 - switchboard
 update_on:
+- manual: 1
+  source: manual
 - alpm: evolution-data-server
   provides: libedataserverui-1.2.so
   source: alpm

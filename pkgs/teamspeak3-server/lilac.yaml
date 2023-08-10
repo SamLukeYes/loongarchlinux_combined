@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''teamspeak3-server'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: teamspeak3-server
   source: archpkg

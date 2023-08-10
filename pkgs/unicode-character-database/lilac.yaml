@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''unicode-character-dat
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: unicode-character-database
   source: archpkg

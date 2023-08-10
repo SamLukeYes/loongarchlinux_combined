@@ -20,6 +20,8 @@ repo_depends:
 - haskell-profunctors
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-cereal
   source: alpm
 - alpm: haskell-deferred-folds

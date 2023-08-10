@@ -16,6 +16,8 @@ repo_depends:
 - haskell-tagged
 - haskell-cereal
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-memory
   source: alpm
 - alpm: haskell-cryptonite

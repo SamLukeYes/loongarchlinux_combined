@@ -19,6 +19,8 @@ repo_depends:
 - qt5-base
 - python
 update_on:
+- manual: 1
+  source: manual
 - alpm: fftw
   provides: libfftw3f_threads.so
   source: alpm

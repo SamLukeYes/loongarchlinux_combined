@@ -17,6 +17,8 @@ repo_depends:
 - haskell-primitive
 - haskell-primitive-extras
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-deferred-folds
   source: alpm
 - alpm: haskell-focus

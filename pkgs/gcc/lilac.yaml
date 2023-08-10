@@ -2,6 +2,8 @@ destsubdir: core
 repo_depends:
 - libisl
 update_on:
+- manual: 1
+  source: manual
 - alpm: libisl
   provides: libisl.so
   source: alpm

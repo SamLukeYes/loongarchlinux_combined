@@ -2,4 +2,6 @@ destsubdir: extra
 repo_depends:
 - boost
 update_on:
+- manual: 1
+  source: manual
 - alias: boost

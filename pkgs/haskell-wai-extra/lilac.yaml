@@ -30,6 +30,8 @@ repo_depends:
 - haskell-hunit
 - haskell-call-stack
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-ansi-terminal

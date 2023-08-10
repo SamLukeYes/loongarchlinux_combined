@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libspf2'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: libspf2
   source: archpkg

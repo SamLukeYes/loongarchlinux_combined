@@ -13,6 +13,8 @@ repo_depends:
 - haskell-language-javascript
 - haskell-optparse-applicative
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-language-javascript
   source: alpm
 - alpm: haskell-optparse-applicative

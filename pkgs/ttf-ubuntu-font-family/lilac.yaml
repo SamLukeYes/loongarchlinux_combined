@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ttf-ubuntu-font-famil
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: ttf-ubuntu-font-family
   source: archpkg

@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bt747'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: bt747
   source: archpkg

@@ -13,6 +13,8 @@ repo_depends:
 - haskell-regex-base
 - haskell-regex-posix
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-regex-base
   source: alpm
 - alpm: haskell-regex-posix

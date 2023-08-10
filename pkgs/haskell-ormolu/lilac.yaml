@@ -17,6 +17,8 @@ repo_depends:
 - haskell-optparse-applicative
 - haskell-syb
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ansi-terminal
   source: alpm
 - alpm: haskell-diff

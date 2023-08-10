@@ -29,6 +29,8 @@ repo_depends:
 - haskell-pandoc-lua-marshal
 - haskell-pandoc-types
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-sha
   source: alpm
 - alpm: haskell-aeson

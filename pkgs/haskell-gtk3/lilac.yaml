@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gtk3'')
 repo_depends:
 - haskell-pango
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-pango
   source: alpm
 - alpm: haskell-gtk3

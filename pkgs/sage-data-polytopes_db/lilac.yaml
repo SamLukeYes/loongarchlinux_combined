@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sage-data-polytopes_d
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: sage-data-polytopes_db
   source: archpkg

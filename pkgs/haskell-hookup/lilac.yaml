@@ -16,6 +16,8 @@ repo_depends:
 - haskell-attoparsec
 - haskell-network
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-hsopenssl
   source: alpm
 - alpm: haskell-hsopenssl-x509-system

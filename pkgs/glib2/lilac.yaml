@@ -13,6 +13,8 @@ repo_depends:
 - libffi
 - util-linux
 update_on:
+- manual: 1
+  source: manual
 - alpm: libffi
   provides: libffi.so
   source: alpm

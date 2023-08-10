@@ -13,6 +13,8 @@ repo_depends:
 - libmpdclient
 - ncurses
 update_on:
+- manual: 1
+  source: manual
 - alpm: libmpdclient
   provides: libmpdclient.so
   source: alpm

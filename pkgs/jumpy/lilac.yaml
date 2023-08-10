@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jumpy'')
 repo_depends:
 - systemd
 update_on:
+- manual: 1
+  source: manual
 - alpm: systemd-libs
   provides: libudev.so
   source: alpm

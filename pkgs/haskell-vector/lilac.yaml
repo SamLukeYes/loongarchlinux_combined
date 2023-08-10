@@ -13,6 +13,8 @@ repo_depends:
 - haskell-primitive
 - haskell-vector-stream
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-primitive
   source: alpm
 - alpm: haskell-vector-stream

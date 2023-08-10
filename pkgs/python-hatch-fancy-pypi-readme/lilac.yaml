@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-hatch-fancy-py
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: python-hatch-fancy-pypi-readme
   source: archpkg

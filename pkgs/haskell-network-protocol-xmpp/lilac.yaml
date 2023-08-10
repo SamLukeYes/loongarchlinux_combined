@@ -19,6 +19,8 @@ repo_depends:
 - haskell-network-simple
 - haskell-xml-types
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-gnuidn
   source: alpm
 - alpm: haskell-gnutls

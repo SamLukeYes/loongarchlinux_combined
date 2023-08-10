@@ -13,6 +13,8 @@ repo_depends:
 - haskell-indexed-profunctors
 - haskell-indexed-traversable
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-indexed-profunctors
   source: alpm
 - alpm: haskell-indexed-traversable

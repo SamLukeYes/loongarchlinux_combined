@@ -13,6 +13,8 @@ repo_depends:
 - haskell-ghc
 - haskell-ghc-tcplugins-extra
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-ghc
   source: alpm
 - alpm: haskell-ghc-tcplugins-extra

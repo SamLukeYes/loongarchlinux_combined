@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kodi-addon-inputstrea
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: kodi-addon-inputstream-rtmp
   source: archpkg

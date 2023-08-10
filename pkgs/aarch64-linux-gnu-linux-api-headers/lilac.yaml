@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aarch64-linux-gnu-lin
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: aarch64-linux-gnu-linux-api-headers
   source: archpkg

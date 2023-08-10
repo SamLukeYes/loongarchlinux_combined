@@ -14,6 +14,8 @@ repo_depends:
 - haskell-pcre-light
 - haskell-string-conversions
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-base-compat
   source: alpm
 - alpm: haskell-pcre-light

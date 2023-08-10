@@ -13,6 +13,8 @@ repo_depends:
 - fftw
 - stk
 update_on:
+- manual: 1
+  source: manual
 - alpm: fftw
   provides: libfftw3f.so
   source: alpm

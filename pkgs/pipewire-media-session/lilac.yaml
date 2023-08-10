@@ -14,6 +14,8 @@ repo_depends:
 - pipewire
 - systemd
 update_on:
+- manual: 1
+  source: manual
 - alpm: dbus
   provides: libdbus-1.so
   source: alpm

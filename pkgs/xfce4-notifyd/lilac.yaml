@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xfce4-notifyd'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: xfce4-notifyd
   source: archpkg

@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rocm-smi-lib'')
 repo_depends:
 - python
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: rocm-smi-lib
   source: archpkg

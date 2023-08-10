@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''thunar-archive-plugin
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: thunar-archive-plugin
   source: archpkg

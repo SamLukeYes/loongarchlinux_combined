@@ -20,6 +20,8 @@ repo_depends:
 - haskell-wai
 - haskell-wai-extra
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-quickcheck
   source: alpm
 - alpm: haskell-base-compat

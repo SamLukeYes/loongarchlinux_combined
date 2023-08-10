@@ -15,6 +15,8 @@ repo_depends:
 - haskell-split
 - haskell-temporary
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-criterion-measurement
   source: alpm
 - alpm: haskell-ghc

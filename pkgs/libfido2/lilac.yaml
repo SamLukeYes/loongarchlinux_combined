@@ -3,6 +3,8 @@ repo_depends:
 - libcbor
 - systemd
 update_on:
+- manual: 1
+  source: manual
 - alpm: libcbor
   provides: libcbor.so
   source: alpm

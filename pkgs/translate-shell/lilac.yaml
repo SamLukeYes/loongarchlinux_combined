@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''translate-shell'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: translate-shell
   source: archpkg

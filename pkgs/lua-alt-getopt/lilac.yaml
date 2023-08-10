@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lua-alt-getopt'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: lua-alt-getopt
   source: archpkg

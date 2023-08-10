@@ -37,6 +37,8 @@ repo_depends:
 - haskell-ansi-terminal
 - haskell-blaze-html
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-arithmoi
   source: alpm
 - alpm: haskell-async

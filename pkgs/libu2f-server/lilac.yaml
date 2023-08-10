@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libu2f-server'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: libu2f-server
   source: archpkg

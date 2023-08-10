@@ -28,6 +28,8 @@ repo_depends:
 - haskell-uuid-types
 - haskell-vector
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-ansi-wl-pprint

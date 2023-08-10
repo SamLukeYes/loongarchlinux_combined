@@ -15,6 +15,8 @@ repo_depends:
 - freetype2
 - harfbuzz
 update_on:
+- manual: 1
+  source: manual
 - alpm: icu
   provides: libicuuc.so
   source: alpm

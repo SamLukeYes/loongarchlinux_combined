@@ -13,6 +13,8 @@ repo_depends:
 - ncurses
 - libcap
 update_on:
+- manual: 1
+  source: manual
 - alpm: ncurses
   provides: libncursesw.so
   source: alpm

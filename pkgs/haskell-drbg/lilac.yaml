@@ -19,6 +19,8 @@ repo_depends:
 - haskell-cipher-aes128
 - haskell-entropy
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-cereal
   source: alpm
 - alpm: haskell-prettyclass

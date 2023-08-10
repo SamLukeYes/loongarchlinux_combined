@@ -13,6 +13,8 @@ repo_depends:
 - haskell-uniplate
 - haskell-ghc
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-uniplate
   source: alpm
 - alpm: haskell-ghc

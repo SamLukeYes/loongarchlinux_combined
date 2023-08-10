@@ -77,6 +77,8 @@ repo_depends:
 - haskell-zip-archive
 - haskell-zlib
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-aeson
   source: alpm
 - alpm: haskell-annotated-wl-pprint

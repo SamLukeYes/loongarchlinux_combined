@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jupyter-nbclient'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: jupyter-nbclient
   source: archpkg

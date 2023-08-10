@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dmenu'')
 repo_depends:
 - fontconfig
 update_on:
+- manual: 1
+  source: manual
 - alpm: fontconfig
   provides: libfontconfig.so
   source: alpm

@@ -10,6 +10,8 @@ repo_depends:
 - libqmi
 - protobuf-c
 update_on:
+- manual: 1
+  source: manual
 - alias: python
 - alpm: libarchive
   provides: libarchive.so

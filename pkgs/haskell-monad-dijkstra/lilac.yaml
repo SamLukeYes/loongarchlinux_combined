@@ -13,6 +13,8 @@ repo_depends:
 - haskell-free
 - haskell-psqueues
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-free
   source: alpm
 - alpm: haskell-psqueues

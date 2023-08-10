@@ -4,6 +4,8 @@ repo_depends:
 - e2fsprogs
 - libverto
 update_on:
+- manual: 1
+  source: manual
 - alpm: keyutils
   provides: libkeyutils.so
   source: alpm

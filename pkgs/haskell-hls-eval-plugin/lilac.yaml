@@ -32,6 +32,8 @@ repo_depends:
 - haskell-unliftio
 - haskell-unordered-containers
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-diff
   source: alpm
 - alpm: haskell-quickcheck

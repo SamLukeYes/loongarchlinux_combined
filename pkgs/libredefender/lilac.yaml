@@ -12,6 +12,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libredefender'')
 repo_depends:
 - clamav
 update_on:
+- manual: 1
+  source: manual
 - alpm: clamav
   provides: libclamav.so
   source: alpm

@@ -13,6 +13,8 @@ repo_depends:
 - haskell-semigroupoids
 - haskell-utf8-string
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-semigroupoids
   source: alpm
 - alpm: haskell-utf8-string

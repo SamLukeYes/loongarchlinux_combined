@@ -16,6 +16,8 @@ repo_depends:
 - openssl
 - pcre2
 update_on:
+- manual: 1
+  source: manual
 - alias: lua
 - alpm: flac
   provides: libFLAC.so

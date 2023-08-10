@@ -16,6 +16,8 @@ repo_depends:
 - haskell-free
 - haskell-th-abstraction
 update_on:
+- manual: 1
+  source: manual
 - alpm: haskell-base-orphans
   source: alpm
 - alpm: haskell-comonad

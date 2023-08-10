@@ -13,6 +13,8 @@ repo_depends:
 - p11-kit
 - systemd
 update_on:
+- manual: 1
+  source: manual
 - alpm: libp11-kit
   provides: libp11-kit.so
   source: alpm

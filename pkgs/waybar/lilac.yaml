@@ -17,6 +17,8 @@ repo_depends:
 - upower
 - sndio
 update_on:
+- manual: 1
+  source: manual
 - alpm: jsoncpp
   provides: libjsoncpp.so
   source: alpm

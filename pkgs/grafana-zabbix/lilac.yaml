@@ -8,5 +8,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''grafana-zabbix'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: grafana-zabbix
   source: archpkg

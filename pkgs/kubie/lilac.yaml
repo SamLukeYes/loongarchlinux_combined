@@ -10,5 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kubie'')
 
   '
 update_on:
+- manual: 1
+  source: manual
 - alpm: kubie
   source: archpkg
