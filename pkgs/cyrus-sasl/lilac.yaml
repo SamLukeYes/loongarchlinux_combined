@@ -13,8 +13,8 @@ repo_depends:
 - gdbm
 - krb5
 - pam
-- mariadb-libs
-- postgresql-libs
+- mariadb
+- postgresql
 update_on:
 - alpm: gdbm
   provides: libgdbm.so

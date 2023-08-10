@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wf-recorder'')
 repo_depends:
 - ffmpeg
 - libao
-- libpulse
+- pulseaudio
 - wayland
 update_on:
 - alpm: ffmpeg

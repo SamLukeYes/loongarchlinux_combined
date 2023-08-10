@@ -15,7 +15,7 @@ repo_depends:
 - fmt
 - miniupnpc
 - sfml
-- systemd-libs
+- systemd
 - libusb
 - qt6-base
 update_on:

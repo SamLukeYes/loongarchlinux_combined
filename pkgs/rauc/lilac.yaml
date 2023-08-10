@@ -13,7 +13,7 @@ repo_depends:
 - curl
 - glib2
 - json-glib
-- util-linux-libs
+- util-linux
 update_on:
 - alpm: curl
   provides: libcurl.so

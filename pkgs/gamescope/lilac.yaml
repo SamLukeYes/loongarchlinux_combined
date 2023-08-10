@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gamescope'')
 repo_depends:
 - libcap
 - libliftoff
-- libpipewire
+- pipewire
 - emby-theater
 - wlroots
 - intel-oneapi-basekit

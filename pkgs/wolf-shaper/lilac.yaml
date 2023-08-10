@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wolf-shaper'')
 
   '
 repo_depends:
-- cuda-tools
+- cuda
 - liblo
 - alsa-lib
 update_on:

@@ -15,7 +15,7 @@ repo_depends:
 - python
 - libpcap
 - protobuf
-- libnm
+- networkmanager
 - libwebsockets
 - lm_sensors
 update_on:

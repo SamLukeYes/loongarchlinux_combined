@@ -14,7 +14,7 @@ repo_depends:
 - libcap-ng
 - ncurses
 - numactl
-- systemd-libs
+- systemd
 update_on:
 - alpm: glib2
   provides: libglib-2.0.so

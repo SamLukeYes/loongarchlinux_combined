@@ -13,7 +13,7 @@ repo_depends:
 - dbus
 - file
 - libarchive
-- cuda-tools
+- cuda
 - liblo
 - libsamplerate
 - libsndfile

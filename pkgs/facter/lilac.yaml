@@ -14,7 +14,7 @@ repo_depends:
 - cpp-hocon
 - leatherman
 - ruby
-- util-linux-libs
+- util-linux
 update_on:
 - alpm: libwhereami
   provides: libwhereami.so

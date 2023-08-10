@@ -17,7 +17,7 @@ repo_depends:
 - libarchive
 - libsoup
 - openssl
-- systemd-libs
+- systemd
 - xz
 update_on:
 - alpm: avahi

@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tor'')
 
   '
 repo_depends:
-- systemd-libs
+- systemd
 - zstd
 - libseccomp
 - libcap

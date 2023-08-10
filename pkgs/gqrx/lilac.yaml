@@ -14,7 +14,7 @@ repo_depends:
 - gnuradio
 - gnuradio-osmosdr
 - libao
-- libpulse
+- pulseaudio
 update_on:
 - alpm: qt6-base
   source: alpm

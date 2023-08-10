@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qastools'')
 repo_depends:
 - qt5-base
 - alsa-lib
-- systemd-libs
+- systemd
 update_on:
 - alpm: qt5-base
   source: alpm

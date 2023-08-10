@@ -1,6 +1,6 @@
 destsubdir: extra
 repo_depends:
-- systemd-libs
+- systemd
 - ncurses
 - curl
 - json-c

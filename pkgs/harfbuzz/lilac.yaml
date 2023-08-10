@@ -6,7 +6,7 @@ repo_depends:
 - cairo
 - icu
 - chafa
-- harfbuzz-cairo
+- harfbuzz
 update_on:
 - alpm: freetype2
   provides: libfreetype.so

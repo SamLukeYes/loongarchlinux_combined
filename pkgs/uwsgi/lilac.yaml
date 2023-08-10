@@ -13,8 +13,8 @@ repo_depends:
 - libcap
 - libxcrypt
 - pam
-- systemd-libs
-- util-linux-libs
+- systemd
+- util-linux
 - ruby
 - perl
 - python

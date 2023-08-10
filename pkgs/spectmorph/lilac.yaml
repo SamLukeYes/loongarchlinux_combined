@@ -14,7 +14,7 @@ repo_depends:
 - freetype2
 - glib2
 - jack2
-- cuda-tools
+- cuda
 - libsndfile
 - qt5-base
 - python

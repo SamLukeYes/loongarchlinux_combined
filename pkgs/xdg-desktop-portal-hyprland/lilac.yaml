@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdg-desktop-portal-hy
 
   '
 repo_depends:
-- util-linux-libs
+- util-linux
 - qt6-base
 update_on:
 - alpm: util-linux-libs

@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qpwgraph'')
 repo_depends:
 - qt6-base
 - alsa-lib
-- libpipewire
+- pipewire
 update_on:
 - alpm: qt6-base
   source: alpm

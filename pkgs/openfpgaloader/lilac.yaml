@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openfpgaloader'')
   '
 repo_depends:
 - hidapi
-- systemd-libs
+- systemd
 update_on:
 - alpm: hidapi
   provides: libhidapi-hidraw.so

@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''monero'')
 repo_depends:
 - readline
 - protobuf
-- systemd-libs
+- systemd
 - unbound
 update_on:
 - alias: readline

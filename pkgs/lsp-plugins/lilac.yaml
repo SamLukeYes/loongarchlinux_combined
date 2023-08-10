@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lsp-plugins'')
 repo_depends:
 - libsndfile
 - jack2
-- cuda-tools
+- cuda
 update_on:
 - alpm: libsndfile
   provides: libsndfile.so

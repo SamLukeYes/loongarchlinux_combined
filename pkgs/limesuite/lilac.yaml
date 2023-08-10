@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''limesuite'')
 
   '
 repo_depends:
-- wxwidgets-gtk3
+- wxwidgets
 update_on:
 - alpm: wxwidgets-gtk3
   source: alpm

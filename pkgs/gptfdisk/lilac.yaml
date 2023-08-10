@@ -1,6 +1,6 @@
 destsubdir: extra
 repo_depends:
-- util-linux-libs
+- util-linux
 - ncurses
 update_on:
 - alpm: util-linux-libs

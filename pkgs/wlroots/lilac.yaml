@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wlroots'')
 repo_depends:
 - pixman
 - seatd
-- systemd-libs
+- systemd
 - emby-theater
 - wayland
 - intel-oneapi-basekit

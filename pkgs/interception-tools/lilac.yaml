@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''interception-tools'')
 repo_depends:
 - libevdev
 - yaml-cpp
-- systemd-libs
+- systemd
 update_on:
 - alpm: libevdev
   provides: libevdev.so

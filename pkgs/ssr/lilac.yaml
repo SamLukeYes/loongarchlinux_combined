@@ -13,7 +13,7 @@ repo_depends:
 - qt5-base
 - fftw
 - jack2
-- cuda-tools
+- cuda
 - libsndfile
 update_on:
 - alpm: qt5-base

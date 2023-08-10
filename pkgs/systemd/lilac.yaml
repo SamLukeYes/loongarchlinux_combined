@@ -7,7 +7,7 @@ repo_depends:
 - libcap
 - libxcrypt
 - libseccomp
-- util-linux-libs
+- util-linux
 - audit
 - openssl
 - openssl

@@ -14,7 +14,7 @@ repo_depends:
 - ffmpeg
 - freetype2
 - jack2
-- cuda-tools
+- cuda
 - liblo
 - libltc
 - portmidi

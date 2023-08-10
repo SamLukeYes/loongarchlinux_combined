@@ -13,7 +13,7 @@ repo_depends:
 - icu
 - libass
 - ffms2
-- wxwidgets-gtk3
+- wxwidgets
 update_on:
 - alias: icu
 - alpm: libass

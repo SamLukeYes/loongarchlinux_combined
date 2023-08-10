@@ -1,6 +1,6 @@
 destsubdir: extra
 repo_depends:
-- wxwidgets-gtk3
+- wxwidgets
 - miniupnpc
 - icu
 update_on:

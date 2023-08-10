@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''filezilla'')
 
   '
 repo_depends:
-- wxwidgets-gtk3
+- wxwidgets
 - libfilezilla
 - dbus
 - gtk3

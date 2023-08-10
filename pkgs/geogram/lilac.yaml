@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''geogram'')
 
   '
 repo_depends:
-- glfw-x11
+- glfw
 update_on:
 - alpm: glfw-x11
   source: alpm

@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libldm'')
   '
 repo_depends:
 - readline
-- util-linux-libs
+- util-linux
 update_on:
 - alpm: readline
   provides: libreadline.so

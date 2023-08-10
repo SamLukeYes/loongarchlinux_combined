@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''spicy-launcher'')
 
   '
 repo_depends:
-- systemd-libs
+- systemd
 update_on:
 - alpm: systemd-libs
   provides: libudev.so

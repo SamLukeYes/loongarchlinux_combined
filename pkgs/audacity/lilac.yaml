@@ -29,7 +29,7 @@ repo_depends:
 - sqlite
 - suil
 - twolame
-- wxwidgets-gtk3
+- wxwidgets
 - vamp-plugin-sdk
 update_on:
 - alpm: alsa-lib

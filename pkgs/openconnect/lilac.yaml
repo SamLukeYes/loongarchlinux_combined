@@ -15,7 +15,7 @@ repo_depends:
 - libxml2
 - libproxy
 - nettle
-- libp11-kit
+- p11-kit
 - oath-toolkit
 - krb5
 - pcsclite

@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gamemode'')
   '
 repo_depends:
 - dbus
-- systemd-libs
+- systemd
 update_on:
 - alpm: dbus
   provides: libdbus-1.so

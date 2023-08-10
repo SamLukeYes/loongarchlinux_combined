@@ -16,10 +16,10 @@ repo_depends:
 - file
 - fluidsynth
 - freetype2
-- cuda-tools
+- cuda
 - liblo
 - libao
-- libpulse
+- pulseaudio
 - libsndfile
 update_on:
 - alias: python

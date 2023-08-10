@@ -15,7 +15,7 @@ repo_depends:
 - ncurses
 - pango
 - librsvg
-- systemd-libs
+- systemd
 - libxml2
 update_on:
 - alpm: acl

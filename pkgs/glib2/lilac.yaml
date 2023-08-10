@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glib2'')
   '
 repo_depends:
 - libffi
-- util-linux-libs
+- util-linux
 update_on:
 - alpm: libffi
   provides: libffi.so

@@ -6,7 +6,7 @@ repo_depends:
 - libcbor
 - json-glib
 - libgudev
-- libmm-glib
+- modemmanager
 - libqmi
 - protobuf-c
 update_on:

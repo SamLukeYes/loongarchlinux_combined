@@ -14,7 +14,7 @@ repo_depends:
 - glib2
 - jack2
 - libsndfile
-- util-linux-libs
+- util-linux
 update_on:
 - alias: python
 - alpm: glib2

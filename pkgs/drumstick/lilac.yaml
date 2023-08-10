@@ -14,7 +14,7 @@ repo_depends:
 - alsa-lib
 - fluidsynth
 - libao
-- libpulse
+- pulseaudio
 - sonivox
 update_on:
 - alpm: qt6-base

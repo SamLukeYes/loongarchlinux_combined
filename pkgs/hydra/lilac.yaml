@@ -11,9 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hydra'')
   '
 repo_depends:
 - ncurses
-- mariadb-libs
-- postgresql-libs
-- cuda-tools
+- mariadb
+- postgresql
+- cuda
 - freerdp
 update_on:
 - alpm: ncurses

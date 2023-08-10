@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pc-ble-driver'')
 repo_depends:
 - fmt
 - spdlog
-- systemd-libs
+- systemd
 update_on:
 - alpm: fmt
   provides: libfmt.so

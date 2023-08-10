@@ -11,9 +11,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''higan'')
   '
 repo_depends:
 - alsa-lib
-- libpulse
+- pulseaudio
 - libao
-- systemd-libs
+- systemd
 - qt5-base
 update_on:
 - alpm: alsa-lib

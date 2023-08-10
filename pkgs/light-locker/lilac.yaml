@@ -14,7 +14,7 @@ repo_depends:
 - gtk3
 - glib2
 - pango
-- systemd-libs
+- systemd
 update_on:
 - alpm: dbus
   provides: libdbus-1.so

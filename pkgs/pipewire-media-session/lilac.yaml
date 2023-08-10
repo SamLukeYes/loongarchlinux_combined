@@ -11,8 +11,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pipewire-media-sessio
   '
 repo_depends:
 - dbus
-- libpipewire
-- systemd-libs
+- pipewire
+- systemd
 update_on:
 - alpm: dbus
   provides: libdbus-1.so

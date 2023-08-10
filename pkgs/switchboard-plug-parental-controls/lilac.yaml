@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-pare
   '
 repo_depends:
 - granite
-- libmalcontent
+- malcontent
 - switchboard
 update_on:
 - alpm: granite

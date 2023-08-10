@@ -15,7 +15,7 @@ repo_depends:
 - brotli
 - c-ares
 - krb5
-- wireshark-cli
+- wireshark
 update_on:
 - alpm: libpcap
   provides: libpcap.so

@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kernelshark'')
 repo_depends:
 - qt5-base
 - json-c
-- cuda-tools
+- cuda
 - libtraceevent
 - libtracefs
 - trace-cmd

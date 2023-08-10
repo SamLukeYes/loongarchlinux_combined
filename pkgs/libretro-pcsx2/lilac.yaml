@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libretro-pcsx2'')
   '
 repo_depends:
 - glib2
-- systemd-libs
+- systemd
 update_on:
 - alpm: glib2
   provides: libglib-2.0.so

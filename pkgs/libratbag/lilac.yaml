@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libratbag'')
 
   '
 repo_depends:
-- systemd-libs
+- systemd
 - python
 update_on:
 - alpm: systemd-libs

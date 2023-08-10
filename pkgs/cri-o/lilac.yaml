@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cri-o'')
   '
 repo_depends:
 - iptables
-- device-mapper
+- lvm2
 - libseccomp
 update_on:
 - alpm: iptables

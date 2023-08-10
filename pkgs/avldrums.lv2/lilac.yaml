@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''avldrums.lv2'')
 repo_depends:
 - fluidsynth
 - glib2
-- cuda-tools
+- cuda
 - pango
 update_on:
 - alpm: fluidsynth

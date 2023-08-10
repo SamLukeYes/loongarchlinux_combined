@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''util-linux'')
 
   '
 repo_depends:
-- systemd-libs
+- systemd
 - libxcrypt
 - file
 - ncurses

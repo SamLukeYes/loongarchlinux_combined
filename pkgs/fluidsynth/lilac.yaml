@@ -15,12 +15,12 @@ repo_depends:
 - glib2
 - jack2
 - libinstpatch
-- libpipewire
-- libpulse
+- pipewire
+- pulseaudio
 - libsndfile
 - portaudio
 - readline
-- systemd-libs
+- systemd
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

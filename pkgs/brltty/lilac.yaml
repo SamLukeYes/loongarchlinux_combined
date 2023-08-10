@@ -7,7 +7,7 @@ repo_depends:
 - icu
 - gpm
 - ncurses
-- systemd-libs
+- systemd
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

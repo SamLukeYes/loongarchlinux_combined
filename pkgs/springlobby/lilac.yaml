@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''springlobby'')
 
   '
 repo_depends:
-- wxwidgets-gtk3
+- wxwidgets
 - jsoncpp
 update_on:
 - alpm: wxwidgets-gtk3

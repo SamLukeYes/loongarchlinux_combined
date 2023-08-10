@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wingpanel-indicator-p
   '
 repo_depends:
 - granite
-- systemd-libs
+- systemd
 update_on:
 - alpm: granite
   provides: libgranite.so

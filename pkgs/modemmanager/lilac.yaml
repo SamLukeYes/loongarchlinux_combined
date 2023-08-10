@@ -10,9 +10,9 @@ pre_build_script: '_G.files = download_official_pkgbuild(''modemmanager'')
 
   '
 repo_depends:
-- libmm-glib
+- modemmanager
 - glib2
-- systemd-libs
+- systemd
 - libgudev
 - libqmi
 - libmbim

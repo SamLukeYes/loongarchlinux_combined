@@ -5,11 +5,11 @@ repo_depends:
 - dbus
 - glib2
 - ncurses
-- libpipewire
+- pipewire
 - readline
-- systemd-libs
+- systemd
 - alsa-lib
-- bluez-libs
+- bluez
 - libfdk-aac
 - libfreeaptx
 - liblc3

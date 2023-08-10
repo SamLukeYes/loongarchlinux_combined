@@ -14,7 +14,7 @@ repo_depends:
 - openssl
 - openssl
 - protobuf-c
-- systemd-libs
+- systemd
 update_on:
 - alpm: libevent
   provides: libevent-2.1.so

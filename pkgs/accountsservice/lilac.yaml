@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''accountsservice'')
 repo_depends:
 - libxcrypt
 - glib2
-- systemd-libs
+- systemd
 update_on:
 - alpm: libxcrypt
   provides: libcrypt.so

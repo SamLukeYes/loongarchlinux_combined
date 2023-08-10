@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-xapian'')
   '
 repo_depends:
 - python
-- util-linux-libs
+- util-linux
 - xapian-core
 update_on:
 - alias: python

@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rasqal'')
   '
 repo_depends:
 - raptor
-- util-linux-libs
+- util-linux
 update_on:
 - alpm: raptor
   provides: libraptor2.so

@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''retroarch'')
 repo_depends:
 - libass
 - freetype2
-- systemd-libs
+- systemd
 - qt5-base
 update_on:
 - alpm: libass

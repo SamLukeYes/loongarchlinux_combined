@@ -32,7 +32,7 @@ repo_depends:
 - libmpdclient
 - libogg
 - libopenmpt
-- libpipewire
+- pipewire
 - libsamplerate
 - libsndfile
 - libupnp
@@ -42,7 +42,7 @@ repo_depends:
 - openal
 - opus
 - sqlite
-- systemd-libs
+- systemd
 - twolame
 - gitlab
 update_on:

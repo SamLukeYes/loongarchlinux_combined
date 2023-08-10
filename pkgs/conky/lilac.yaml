@@ -2,8 +2,8 @@ destsubdir: extra
 repo_depends:
 - lua
 - ncurses
-- libxnvctrl
-- systemd-libs
+- nvidia-settings
+- systemd
 - libao
 - curl
 update_on:

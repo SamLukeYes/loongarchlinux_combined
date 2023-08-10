@@ -13,7 +13,7 @@ repo_depends:
 - fmt
 - hidapi
 - sfml
-- systemd-libs
+- systemd
 - libusb
 update_on:
 - alpm: fmt

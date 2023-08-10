@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lxqt-config'')
 repo_depends:
 - qt5-base
 - libqtxdg
-- systemd-libs
+- systemd
 update_on:
 - alpm: qt5-base
   source: alpm

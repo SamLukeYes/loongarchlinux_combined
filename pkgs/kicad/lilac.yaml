@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kicad'')
   '
 repo_depends:
 - python
-- wxwidgets-gtk3
+- wxwidgets
 update_on:
 - alias: python
 - alpm: wxwidgets-gtk3

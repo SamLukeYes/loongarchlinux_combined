@@ -4,7 +4,7 @@ repo_depends:
 - dbus
 - libsamplerate
 - opus
-- systemd-libs
+- systemd
 - expat
 update_on:
 - alpm: alsa-lib

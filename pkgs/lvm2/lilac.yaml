@@ -10,8 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lvm2'')
 
   '
 repo_depends:
-- systemd-libs
-- util-linux-libs
+- systemd
+- util-linux
 - readline
 - libaio
 update_on:

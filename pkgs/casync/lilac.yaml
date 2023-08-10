@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''casync'')
 repo_depends:
 - curl
 - acl
-- systemd-libs
+- systemd
 - xz
 - zstd
 update_on:

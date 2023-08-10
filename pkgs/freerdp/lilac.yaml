@@ -19,7 +19,7 @@ repo_depends:
 - openssl
 - openssl
 - pam
-- systemd-libs
+- systemd
 update_on:
 - alpm: alsa-lib
   provides: libasound.so

@@ -9,10 +9,10 @@ repo_depends:
 - spice
 - curl
 - bzip2
-- cuda-tools
+- cuda
 - brltty
 - liburing
-- systemd-libs
+- systemd
 - pixman
 - libusb
 - pam

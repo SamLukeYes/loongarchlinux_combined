@@ -12,7 +12,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vbam'')
 repo_depends:
 - ffmpeg
 - sfml
-- wxwidgets-gtk3
+- wxwidgets
 update_on:
 - alpm: ffmpeg
   provides: libswscale.so

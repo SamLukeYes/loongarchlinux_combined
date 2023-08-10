@@ -17,8 +17,8 @@ repo_depends:
 - darktable
 - libusb
 - libxml2
-- poppler-glib
-- systemd-libs
+- poppler
+- systemd
 update_on:
 - alpm: avahi
   provides: libavahi-common.so

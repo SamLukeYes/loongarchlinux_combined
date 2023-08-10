@@ -14,7 +14,7 @@ repo_depends:
 - alsa-lib
 - fftw
 - libao
-- libpulse
+- pulseaudio
 - libsndfile
 - zita-convolver
 update_on:

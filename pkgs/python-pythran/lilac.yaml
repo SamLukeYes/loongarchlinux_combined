@@ -1,5 +1,5 @@
 destsubdir: extra
 repo_depends:
-- boost-libs
+- boost
 update_on:
 - alias: boost

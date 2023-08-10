@@ -18,7 +18,7 @@ repo_depends:
 - jack2
 - libsndfile
 - readline
-- systemd-libs
+- systemd
 - yaml-cpp
 update_on:
 - alpm: qt5-base
