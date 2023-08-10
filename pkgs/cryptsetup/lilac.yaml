@@ -10,7 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cryptsetup'')
 
   '
 repo_depends:
-- lvm2
+# - lvm2
 - util-linux
 - json-c
 - argon2
