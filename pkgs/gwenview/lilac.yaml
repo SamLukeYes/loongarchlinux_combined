@@ -10,14 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gwenview'')
 
   '
 repo_depends:
-- cfitsio
 - perl
 update_on:
 - manual: 1
   source: manual
-- alpm: cfitsio
-  source: alpm
-  strip_release: true
-- alias: perl
 - alpm: gwenview
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: perl
+  to_pattern: \1

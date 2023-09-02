@@ -9,36 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-structured'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-base16-bytestring
-- haskell-hashable
-- haskell-scientific
-- haskell-tagged
-- haskell-time-compat
-- haskell-unordered-containers
-- haskell-uuid-types
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-base16-bytestring
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-scientific
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
-- alpm: haskell-time-compat
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-uuid-types
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-structured
   source: archpkg

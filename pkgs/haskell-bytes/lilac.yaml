@@ -9,30 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-bytes'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-binary-orphans
-- haskell-cereal
-- haskell-hashable
-- haskell-scientific
-- haskell-transformers-compat
-- haskell-unordered-containers
-- haskell-void
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-binary-orphans
-  source: alpm
-- alpm: haskell-cereal
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-scientific
-  source: alpm
-- alpm: haskell-transformers-compat
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-void
-  source: alpm
 - alpm: haskell-bytes
   source: archpkg

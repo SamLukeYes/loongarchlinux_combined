@@ -4,6 +4,7 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: tracker3
-  provides: libtracker-sparql-3.0.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libtracker-sparql-3.0.so
+  pkgname: tracker3

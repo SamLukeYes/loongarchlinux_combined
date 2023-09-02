@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-random-fu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-erf
-- haskell-math-functions
-- haskell-monad-loops
-- haskell-random
-- haskell-random-shuffle
-- haskell-rvar
-- haskell-syb
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-erf
-  source: alpm
-- alpm: haskell-math-functions
-  source: alpm
-- alpm: haskell-monad-loops
-  source: alpm
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-random-shuffle
-  source: alpm
-- alpm: haskell-rvar
-  source: alpm
-- alpm: haskell-syb
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-random-fu
   source: archpkg

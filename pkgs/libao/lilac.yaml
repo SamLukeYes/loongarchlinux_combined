@@ -11,18 +11,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libao'')
   '
 repo_depends:
 - alsa-lib
-- pulseaudio
+- libao
+- pulseaudio: libpulse
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: libao
-  provides: libpulse.so
-  source: alpm
-- alpm: libpulse
-  provides: libpulse-simple.so
-  source: alpm
 - alpm: libao
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libpulse.so
+  pkgname: libao
+- libs:
+  - libpulse-simple.so
+  pkgbase: pulseaudio
+  pkgname: libpulse

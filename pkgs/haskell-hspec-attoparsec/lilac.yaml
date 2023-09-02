@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-attopar
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-attoparsec
-- haskell-hspec-expectations
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-hspec-expectations
-  source: alpm
 - alpm: haskell-hspec-attoparsec
   source: archpkg

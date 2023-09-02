@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-monad-par-ext
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-abstract-par
-- haskell-cereal
-- haskell-random
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-abstract-par
-  source: alpm
-- alpm: haskell-cereal
-  source: alpm
-- alpm: haskell-random
-  source: alpm
 - alpm: haskell-monad-par-extras
   source: archpkg

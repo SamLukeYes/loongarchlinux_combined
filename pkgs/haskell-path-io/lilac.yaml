@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-path-io'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-dlist
-- haskell-path
-- haskell-temporary
-- haskell-unix-compat
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-dlist
-  source: alpm
-- alpm: haskell-path
-  source: alpm
-- alpm: haskell-temporary
-  source: alpm
-- alpm: haskell-unix-compat
-  source: alpm
 - alpm: haskell-path-io
   source: archpkg

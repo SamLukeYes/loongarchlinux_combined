@@ -9,39 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-http-client-t
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-case-insensitive
-- haskell-crypton
-- haskell-crypton-connection
-- haskell-data-default-class
-- haskell-http-client
-- haskell-http-types
-- haskell-memory
-- haskell-network
-- haskell-network-uri
-- haskell-tls
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-case-insensitive
-  source: alpm
-- alpm: haskell-crypton
-  source: alpm
-- alpm: haskell-crypton-connection
-  source: alpm
-- alpm: haskell-data-default-class
-  source: alpm
-- alpm: haskell-http-client
-  source: alpm
-- alpm: haskell-http-types
-  source: alpm
-- alpm: haskell-memory
-  source: alpm
-- alpm: haskell-network
-  source: alpm
-- alpm: haskell-network-uri
-  source: alpm
-- alpm: haskell-tls
-  source: alpm
 - alpm: haskell-http-client-tls
   source: archpkg

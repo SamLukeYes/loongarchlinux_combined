@@ -19,23 +19,24 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libguestfs
-  provides: libguestfs.so
-  source: alpm
-- alpm: libvirt
-  provides: libvirt.so
-  source: alpm
-- alpm: libxml2
-  provides: libxml2.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: pcre2
-  provides: libpcre2-8.so
-  source: alpm
-- alpm: xz
-  provides: liblzma.so
-  source: alpm
 - alpm: guestfs-tools
   source: archpkg
+update_on_soname:
+- libs:
+  - libguestfs.so
+  pkgname: libguestfs
+- libs:
+  - libvirt.so
+  pkgname: libvirt
+- libs:
+  - libxml2.so
+  pkgname: libxml2
+- libs:
+  - libncursesw.so
+  pkgname: ncurses
+- libs:
+  - libpcre2-8.so
+  pkgname: pcre2
+- libs:
+  - liblzma.so
+  pkgname: xz

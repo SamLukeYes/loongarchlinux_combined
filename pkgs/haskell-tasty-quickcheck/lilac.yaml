@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-quickch
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-optparse-applicative
-- haskell-quickcheck
-- haskell-random
-- haskell-tagged
-- haskell-tasty
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-quickcheck
-  source: alpm
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
-- alpm: haskell-tasty
-  source: alpm
 - alpm: haskell-tasty-quickcheck
   source: archpkg

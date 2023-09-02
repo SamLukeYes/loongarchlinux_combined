@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-dlist-instanc
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-dlist
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-dlist
-  source: alpm
 - alpm: haskell-dlist-instances
   source: archpkg

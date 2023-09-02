@@ -11,13 +11,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jami-daemon'')
   '
 repo_depends:
 - libsecp256k1
-- jsoncpp
 update_on:
 - manual: 1
   source: manual
-- alpm: libsecp256k1
-  provides: libsecp256k1.so
-  source: alpm
-- alias: jsoncpp
 - alpm: jami-daemon
   source: archpkg
+update_on_soname:
+- libs:
+  - libsecp256k1.so
+  pkgname: libsecp256k1

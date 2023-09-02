@@ -10,12 +10,10 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mumble'')
 
   '
 repo_depends:
-- qt5-base
 - alsa-lib
 - avahi
 - protobuf
 - libsndfile
-- openssl
 - openssl
 - opus
 - speexdsp
@@ -23,31 +21,31 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: avahi
-  provides: libdns_sd.so
-  source: alpm
-- alpm: protobuf
-  provides: libprotobuf.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alias: libcrypto
-- alias: libssl
-- alpm: opus
-  provides: libopus.so
-  source: alpm
-- alpm: speexdsp
-  provides: libspeexdsp.so
-  source: alpm
-- alpm: libcap
-  provides: libcap.so
-  source: alpm
 - alpm: mumble
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libdns_sd.so
+  pkgname: avahi
+- libs:
+  - libprotobuf.so
+  pkgname: protobuf
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libcrypto.so
+  - libssl.so
+  pkgname: openssl
+- libs:
+  - libopus.so
+  pkgname: opus
+- libs:
+  - libspeexdsp.so
+  pkgname: speexdsp
+- libs:
+  - libcap.so
+  pkgname: libcap

@@ -9,39 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-kan-extension
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-adjunctions
-- haskell-comonad
-- haskell-contravariant
-- haskell-distributive
-- haskell-free
-- haskell-invariant
-- haskell-profunctors
-- haskell-semigroupoids
-- haskell-tagged
-- haskell-transformers-compat
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-adjunctions
-  source: alpm
-- alpm: haskell-comonad
-  source: alpm
-- alpm: haskell-contravariant
-  source: alpm
-- alpm: haskell-distributive
-  source: alpm
-- alpm: haskell-free
-  source: alpm
-- alpm: haskell-invariant
-  source: alpm
-- alpm: haskell-profunctors
-  source: alpm
-- alpm: haskell-semigroupoids
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
-- alpm: haskell-transformers-compat
-  source: alpm
 - alpm: haskell-kan-extensions
   source: archpkg

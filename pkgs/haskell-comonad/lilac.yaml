@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-comonad'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-distributive
-- haskell-indexed-traversable
-- haskell-tagged
-- haskell-transformers-compat
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-distributive
-  source: alpm
-- alpm: haskell-indexed-traversable
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
-- alpm: haskell-transformers-compat
-  source: alpm
 - alpm: haskell-comonad
   source: archpkg

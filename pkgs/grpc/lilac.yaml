@@ -10,13 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''grpc'')
 
   '
 repo_depends:
-- protobuf
 - python
 update_on:
 - manual: 1
   source: manual
-- alias: protobuf
-- alias: python
-- alias: grpc
 - alpm: grpc
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1

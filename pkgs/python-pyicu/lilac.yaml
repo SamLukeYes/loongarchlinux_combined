@@ -15,7 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: python
-- alias: icu
 - alpm: python-pyicu
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+- from_pattern: ^(\d+)\..*
+  pkgbase: icu
+  to_pattern: \1

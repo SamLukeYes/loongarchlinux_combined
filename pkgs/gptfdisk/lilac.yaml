@@ -1,13 +1,15 @@
 destsubdir: extra
 repo_depends:
-- util-linux
+- util-linux: util-linux-libs
 - ncurses
 update_on:
 - manual: 1
   source: manual
-- alpm: util-linux-libs
-  provides: libuuid.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libuuid.so
+  pkgbase: util-linux
+  pkgname: util-linux-libs
+- libs:
+  - libncursesw.so
+  pkgname: ncurses

@@ -14,8 +14,10 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libva
-  provides: libva-x11.so
-  source: alpm
 - alpm: libvdpau-va-gl
   source: archpkg
+update_on_soname:
+- libs:
+  - libva.so
+  - libva-x11.so
+  pkgname: libva

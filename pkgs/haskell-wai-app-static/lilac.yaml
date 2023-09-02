@@ -9,57 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-app-stati
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-blaze-html
-- haskell-blaze-markup
-- haskell-cryptonite
-- haskell-file-embed
-- haskell-http-date
-- haskell-http-types
-- haskell-memory
-- haskell-mime-types
-- haskell-old-locale
-- haskell-optparse-applicative
-- haskell-unix-compat
-- haskell-unordered-containers
-- haskell-wai
-- haskell-wai-extra
-- haskell-warp
-- haskell-zlib
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-blaze-html
-  source: alpm
-- alpm: haskell-blaze-markup
-  source: alpm
-- alpm: haskell-cryptonite
-  source: alpm
-- alpm: haskell-file-embed
-  source: alpm
-- alpm: haskell-http-date
-  source: alpm
-- alpm: haskell-http-types
-  source: alpm
-- alpm: haskell-memory
-  source: alpm
-- alpm: haskell-mime-types
-  source: alpm
-- alpm: haskell-old-locale
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-unix-compat
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-wai
-  source: alpm
-- alpm: haskell-wai-extra
-  source: alpm
-- alpm: haskell-warp
-  source: alpm
-- alpm: haskell-zlib
-  source: alpm
 - alpm: haskell-wai-app-static
   source: archpkg

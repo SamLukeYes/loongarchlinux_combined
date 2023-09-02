@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-th-extras'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-syb
-- haskell-th-abstraction
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-syb
-  source: alpm
-- alpm: haskell-th-abstraction
-  source: alpm
 - alpm: haskell-th-extras
   source: archpkg

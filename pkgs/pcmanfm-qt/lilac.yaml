@@ -14,8 +14,9 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libfm-qt
-  provides: libfm-qt.so
-  source: alpm
 - alpm: pcmanfm-qt
   source: archpkg
+update_on_soname:
+- libs:
+  - libfm-qt.so
+  pkgname: libfm-qt

@@ -7,13 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''slib'')
 
   '
-repo_depends:
-- guile
 update_on:
 - manual: 1
   source: manual
-- alpm: guile
-  source: alpm
-  strip_release: true
 - alpm: slib
   source: archpkg

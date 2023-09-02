@@ -11,31 +11,33 @@ pre_build_script: '_G.files = download_official_pkgbuild(''usbguard'')
   '
 repo_depends:
 - libqb
-- protobuf
 - audit
 - libseccomp
 - libcap-ng
 - glib2
+- protobuf
 update_on:
 - manual: 1
   source: manual
-- alpm: libqb
-  provides: libqb.so
-  source: alpm
-- alpm: protobuf
-  provides: libprotobuf.so
-  source: alpm
-- alpm: audit
-  provides: libaudit.so
-  source: alpm
-- alpm: libseccomp
-  provides: libseccomp.so
-  source: alpm
-- alpm: libcap-ng
-  provides: libcap-ng.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
 - alpm: usbguard
   source: archpkg
+update_on_soname:
+- libs:
+  - libqb.so
+  pkgname: libqb
+- libs:
+  - libaudit.so
+  pkgname: audit
+- libs:
+  - libseccomp.so
+  pkgname: libseccomp
+- libs:
+  - libcap-ng.so
+  pkgname: libcap-ng
+- libs:
+  - libgio-2.0.so
+  - libglib-2.0.so
+  pkgname: glib2
+- libs:
+  - libprotobuf.so
+  pkgname: protobuf

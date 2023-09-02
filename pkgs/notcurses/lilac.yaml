@@ -18,20 +18,24 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: ffmpeg
-  provides: libswscale.so
-  source: alpm
-- alpm: gpm
-  provides: libgpm.so
-  source: alpm
-- alpm: libdeflate
-  provides: libdeflate.so
-  source: alpm
-- alpm: libunistring
-  provides: libunistring.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
 - alpm: notcurses
   source: archpkg
+update_on_soname:
+- libs:
+  - libavcodec.so
+  - libavformat.so
+  - libavutil.so
+  - libswscale.so
+  pkgname: ffmpeg
+- libs:
+  - libgpm.so
+  pkgname: gpm
+- libs:
+  - libdeflate.so
+  pkgname: libdeflate
+- libs:
+  - libunistring.so
+  pkgname: libunistring
+- libs:
+  - libncursesw.so
+  pkgname: ncurses

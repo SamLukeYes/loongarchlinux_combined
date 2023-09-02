@@ -10,52 +10,63 @@ pre_build_script: '_G.files = download_official_pkgbuild(''fluidsynth'')
 
   '
 repo_depends:
+- readline
 - alsa-lib
 - dbus
 - glib2
 - jack2
 - libinstpatch
-- pipewire
-- pulseaudio
+- pipewire: libpipewire
+- pulseaudio: libpulse
 - libsndfile
 - portaudio
 - readline
-- systemd
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: dbus
-  provides: libdbus-1.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: libinstpatch
-  provides: libinstpatch-1.0.so
-  source: alpm
-- alpm: libpipewire
-  provides: libpipewire-0.3.so
-  source: alpm
-- alpm: libpulse
-  provides: libpulse-simple.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: portaudio
-  provides: libportaudio.so
-  source: alpm
-- alpm: readline
-  provides: libreadline.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
 - alpm: fluidsynth
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: readline
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libdbus-1.so
+  pkgname: dbus
+- libs:
+  - libglib-2.0.so
+  - libgmodule-2.0.so
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libinstpatch-1.0.so
+  pkgname: libinstpatch
+- libs:
+  - libpipewire-0.3.so
+  pkgbase: pipewire
+  pkgname: libpipewire
+- libs:
+  - libpulse-simple.so
+  pkgbase: pulseaudio
+  pkgname: libpulse
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libportaudio.so
+  pkgname: portaudio
+- libs:
+  - libreadline.so
+  pkgname: readline
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs

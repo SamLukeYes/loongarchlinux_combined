@@ -12,14 +12,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xiphos'')
 repo_depends:
 - icu
 - biblesync
+- icu
 update_on:
 - manual: 1
   source: manual
-- alpm: icu
-  provides: libicui18n.so
-  source: alpm
-- alpm: biblesync
-  provides: libbiblesync.so
-  source: alpm
 - alpm: xiphos
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: icu
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libbiblesync.so
+  pkgname: biblesync
+- libs:
+  - libicui18n.so
+  pkgname: icu

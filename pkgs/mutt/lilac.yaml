@@ -20,24 +20,27 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: gdbm
-  provides: libgdbm.so
-  source: alpm
-- alpm: gpgme
-  provides: libgpgme.so
-  source: alpm
-- alpm: krb5
-  provides: libgssapi_krb5.so
-  source: alpm
-- alpm: libidn2
-  provides: libidn2.so
-  source: alpm
-- alpm: libsasl
-  provides: libsasl2.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alias: libssl
 - alpm: mutt
   source: archpkg
+update_on_soname:
+- libs:
+  - libgdbm.so
+  pkgname: gdbm
+- libs:
+  - libgpgme.so
+  pkgname: gpgme
+- libs:
+  - libgssapi_krb5.so
+  pkgname: krb5
+- libs:
+  - libidn2.so
+  pkgname: libidn2
+- libs:
+  - libsasl2.so
+  pkgname: libsasl
+- libs:
+  - libncursesw.so
+  pkgname: ncurses
+- libs:
+  - libssl.so
+  pkgname: openssl

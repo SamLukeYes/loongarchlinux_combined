@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-deque'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hashable
-- haskell-strict-list
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-strict-list
-  source: alpm
 - alpm: haskell-deque
   source: archpkg

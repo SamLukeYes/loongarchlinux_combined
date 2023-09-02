@@ -14,24 +14,26 @@ repo_depends:
 - glib2
 - jack2
 - libsndfile
-- util-linux
+- util-linux: util-linux-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: fluidsynth
-  provides: libfluidsynth.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: util-linux-libs
-  provides: libuuid.so
-  source: alpm
 - alpm: libcalfbox-lss
   source: archpkg
+update_on_soname:
+- libs:
+  - libfluidsynth.so
+  pkgname: fluidsynth
+- libs:
+  - libglib-2.0.so
+  pkgname: glib2
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libuuid.so
+  pkgbase: util-linux
+  pkgname: util-linux-libs

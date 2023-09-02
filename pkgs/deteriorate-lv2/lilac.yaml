@@ -17,17 +17,18 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: atkmm
-  provides: libatkmm-1.6.so
-  source: alpm
-- alpm: cairomm
-  provides: libcairomm-1.0.so
-  source: alpm
-- alpm: glibmm
-  provides: libglibmm-2.4.so
-  source: alpm
-- alpm: libsigc++
-  provides: libsigc-2.0.so
-  source: alpm
 - alpm: deteriorate-lv2
   source: archpkg
+update_on_soname:
+- libs:
+  - libatkmm-1.6.so
+  pkgname: atkmm
+- libs:
+  - libcairomm-1.0.so
+  pkgname: cairomm
+- libs:
+  - libglibmm-2.4.so
+  pkgname: glibmm
+- libs:
+  - libsigc-2.0.so
+  pkgname: libsigc++

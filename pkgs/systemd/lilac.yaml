@@ -2,44 +2,44 @@ destsubdir: core
 repo_depends:
 - acl
 - cryptsetup
-- iptables
 - kmod
 - libcap
 - libxcrypt
 - libseccomp
-- util-linux
+- util-linux: util-linux-libs
 - audit
-- openssl
 - openssl
 update_on:
 - manual: 1
   source: manual
-- alpm: acl
-  provides: libacl.so
-  source: alpm
-- alpm: cryptsetup
-  provides: libcryptsetup.so
-  source: alpm
-- alpm: iptables
-  source: alpm
-  strip_release: true
-- alpm: kmod
-  provides: libkmod.so
-  source: alpm
-- alpm: libcap
-  provides: libcap.so
-  source: alpm
-- alpm: libxcrypt
-  provides: libcrypt.so
-  source: alpm
-- alpm: libseccomp
-  provides: libseccomp.so
-  source: alpm
-- alpm: util-linux-libs
-  provides: libmount.so
-  source: alpm
-- alpm: audit
-  provides: libaudit.so
-  source: alpm
-- alias: libcrypto
-- alias: libssl
+update_on_soname:
+- libs:
+  - libacl.so
+  pkgname: acl
+- libs:
+  - libcryptsetup.so
+  pkgname: cryptsetup
+- libs:
+  - libkmod.so
+  pkgname: kmod
+- libs:
+  - libcap.so
+  pkgname: libcap
+- libs:
+  - libcrypt.so
+  pkgname: libxcrypt
+- libs:
+  - libseccomp.so
+  pkgname: libseccomp
+- libs:
+  - libblkid.so
+  - libmount.so
+  pkgbase: util-linux
+  pkgname: util-linux-libs
+- libs:
+  - libaudit.so
+  pkgname: audit
+- libs:
+  - libcrypto.so
+  - libssl.so
+  pkgname: openssl

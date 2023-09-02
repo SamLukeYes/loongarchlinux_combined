@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tz'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-vector
-- haskell-data-default
-- haskell-tzdata
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-vector
-  source: alpm
-- alpm: haskell-data-default
-  source: alpm
-- alpm: haskell-tzdata
-  source: alpm
 - alpm: haskell-tz
   source: archpkg

@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libcap
-  provides: libcap.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
 - alpm: libwebsockets
   source: archpkg
+update_on_soname:
+- libs:
+  - libcap.so
+  pkgname: libcap
+- libs:
+  - libglib-2.0.so
+  pkgname: glib2

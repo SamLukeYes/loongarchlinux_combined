@@ -12,30 +12,32 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sway'')
 repo_depends:
 - libevdev
 - json-c
-- systemd
+- systemd: systemd-libs
 - wayland
 - wlroots
 - intel-oneapi-basekit
 update_on:
 - manual: 1
   source: manual
-- alpm: libevdev
-  provides: libevdev.so
-  source: alpm
-- alpm: json-c
-  provides: libjson-c.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
-- alpm: wayland
-  provides: libwayland-server.so
-  source: alpm
-- alpm: wlroots
-  provides: libwlroots.so
-  source: alpm
-- alpm: intel-oneapi-basekit
-  provides: libxkbcommon.so
-  source: alpm
 - alpm: sway
   source: archpkg
+update_on_soname:
+- libs:
+  - libevdev.so
+  pkgname: libevdev
+- libs:
+  - libjson-c.so
+  pkgname: json-c
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libwayland-server.so
+  pkgname: wayland
+- libs:
+  - libwlroots.so
+  pkgname: wlroots
+- libs:
+  - libxkbcommon.so
+  pkgname: intel-oneapi-basekit

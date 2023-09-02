@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-witherable'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base-orphans
-- haskell-hashable
-- haskell-indexed-traversable
-- haskell-indexed-traversable-instances
-- haskell-unordered-containers
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base-orphans
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-indexed-traversable
-  source: alpm
-- alpm: haskell-indexed-traversable-instances
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-witherable
   source: archpkg

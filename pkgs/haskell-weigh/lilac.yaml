@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-weigh'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-criterion-measurement
-- haskell-ghc
-- haskell-split
-- haskell-temporary
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-criterion-measurement
-  source: alpm
-- alpm: haskell-ghc
-  source: alpm
-- alpm: haskell-split
-  source: alpm
-- alpm: haskell-temporary
-  source: alpm
 - alpm: haskell-weigh
   source: archpkg

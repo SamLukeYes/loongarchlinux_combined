@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdiskmark'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-base
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: kdiskmark
   source: archpkg

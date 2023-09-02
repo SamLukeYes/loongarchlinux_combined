@@ -1,9 +1,11 @@
 destsubdir: extra
 repo_depends:
-- util-linux
+- util-linux: util-linux-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: util-linux-libs
-  provides: libuuid.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libuuid.so
+  pkgbase: util-linux
+  pkgname: util-linux-libs

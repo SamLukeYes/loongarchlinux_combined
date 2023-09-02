@@ -10,20 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qastools'')
 
   '
 repo_depends:
-- qt5-base
 - alsa-lib
-- systemd
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
 - alpm: qastools
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs

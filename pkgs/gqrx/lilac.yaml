@@ -10,28 +10,33 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gqrx'')
 
   '
 repo_depends:
-- qt6-base
 - gnuradio
 - gnuradio-osmosdr
 - libao
-- pulseaudio
+- pulseaudio: libpulse
 update_on:
 - manual: 1
   source: manual
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
-- alpm: gnuradio
-  provides: libgnuradio-runtime.so
-  source: alpm
-- alpm: gnuradio-osmosdr
-  provides: libgnuradio-osmosdr.so
-  source: alpm
-- alpm: libao
-  provides: libpulse.so
-  source: alpm
-- alpm: libpulse
-  provides: libpulse-simple.so
-  source: alpm
 - alpm: gqrx
   source: archpkg
+update_on_soname:
+- libs:
+  - libgnuradio-analog.so
+  - libgnuradio-blocks.so
+  - libgnuradio-digital.so
+  - libgnuradio-fft.so
+  - libgnuradio-filter.so
+  - libgnuradio-network.so
+  - libgnuradio-pmt.so
+  - libgnuradio-runtime.so
+  pkgname: gnuradio
+- libs:
+  - libgnuradio-osmosdr.so
+  pkgname: gnuradio-osmosdr
+- libs:
+  - libpulse.so
+  pkgname: libao
+- libs:
+  - libpulse-simple.so
+  pkgbase: pulseaudio
+  pkgname: libpulse

@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-conversion-te
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base-prelude
-- haskell-conversion
-- haskell-conversion-bytestring
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base-prelude
-  source: alpm
-- alpm: haskell-conversion
-  source: alpm
-- alpm: haskell-conversion-bytestring
-  source: alpm
 - alpm: haskell-conversion-text
   source: archpkg

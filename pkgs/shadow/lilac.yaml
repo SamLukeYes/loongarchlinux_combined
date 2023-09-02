@@ -18,20 +18,22 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: acl
-  provides: libacl.so
-  source: alpm
-- alpm: attr
-  provides: libattr.so
-  source: alpm
-- alpm: audit
-  provides: libaudit.so
-  source: alpm
-- alpm: libxcrypt
-  provides: libcrypt.so
-  source: alpm
-- alpm: pam
-  provides: libpam_misc.so
-  source: alpm
 - alpm: shadow
   source: archpkg
+update_on_soname:
+- libs:
+  - libacl.so
+  pkgname: acl
+- libs:
+  - libattr.so
+  pkgname: attr
+- libs:
+  - libaudit.so
+  pkgname: audit
+- libs:
+  - libcrypt.so
+  pkgname: libxcrypt
+- libs:
+  - libpam.so
+  - libpam_misc.so
+  pkgname: pam

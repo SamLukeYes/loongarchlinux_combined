@@ -16,14 +16,15 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: pam
-  provides: libpam.so
-  source: alpm
-- alpm: wayland
-  provides: libwayland-client.so
-  source: alpm
-- alpm: intel-oneapi-basekit
-  provides: libxkbcommon.so
-  source: alpm
 - alpm: waylock
   source: archpkg
+update_on_soname:
+- libs:
+  - libpam.so
+  pkgname: pam
+- libs:
+  - libwayland-client.so
+  pkgname: wayland
+- libs:
+  - libxkbcommon.so
+  pkgname: intel-oneapi-basekit

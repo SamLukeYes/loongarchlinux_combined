@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mwc-random'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-math-functions
-- haskell-primitive
-- haskell-random
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-math-functions
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-mwc-random
   source: archpkg

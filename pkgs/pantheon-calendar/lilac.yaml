@@ -16,14 +16,15 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: folks
-  provides: libfolks.so
-  source: alpm
-- alpm: granite
-  provides: libgranite.so
-  source: alpm
-- alpm: libhandy
-  provides: libhandy-1.so
-  source: alpm
 - alpm: pantheon-calendar
   source: archpkg
+update_on_soname:
+- libs:
+  - libfolks.so
+  pkgname: folks
+- libs:
+  - libgranite.so
+  pkgname: granite
+- libs:
+  - libhandy-1.so
+  pkgname: libhandy

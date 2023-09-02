@@ -10,32 +10,30 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kernelshark'')
 
   '
 repo_depends:
-- qt5-base
 - json-c
-- cuda
+- cuda: cuda-tools
 - libtraceevent
 - libtracefs
 - trace-cmd
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: json-c
-  provides: libjson-c.so
-  source: alpm
-- alpm: cuda-tools
-  provides: libGL.so
-  source: alpm
-- alpm: libtraceevent
-  provides: libtraceevent.so
-  source: alpm
-- alpm: libtracefs
-  provides: libtracefs.so
-  source: alpm
-- alpm: trace-cmd
-  provides: libtracecmd.so
-  source: alpm
 - alpm: kernelshark
   source: archpkg
+update_on_soname:
+- libs:
+  - libjson-c.so
+  pkgname: json-c
+- libs:
+  - libGL.so
+  pkgbase: cuda
+  pkgname: cuda-tools
+- libs:
+  - libtraceevent.so
+  pkgname: libtraceevent
+- libs:
+  - libtracefs.so
+  pkgname: libtracefs
+- libs:
+  - libtracecmd.so
+  pkgname: trace-cmd

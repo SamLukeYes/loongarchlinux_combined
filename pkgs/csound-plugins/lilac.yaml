@@ -10,34 +10,38 @@ pre_build_script: '_G.files = download_official_pkgbuild(''csound-plugins'')
 
   '
 repo_depends:
+- python
 - faust
 - fltk
 - fluidsynth
 - jack2
 - libwebsockets
 - wiiuse
-- python
 update_on:
 - manual: 1
   source: manual
-- alpm: faust
-  provides: libfaust.so
-  source: alpm
-- alpm: fltk
-  provides: libfltk.so
-  source: alpm
-- alpm: fluidsynth
-  provides: libfluidsynth.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: libwebsockets
-  provides: libwebsockets.so
-  source: alpm
-- alpm: wiiuse
-  provides: libwiiuse.so
-  source: alpm
-- alias: python
 - alpm: csound-plugins
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libfaust.so
+  pkgname: faust
+- libs:
+  - libfltk.so
+  pkgname: fltk
+- libs:
+  - libfluidsynth.so
+  pkgname: fluidsynth
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libwebsockets.so
+  pkgname: libwebsockets
+- libs:
+  - libwiiuse.so
+  pkgname: wiiuse

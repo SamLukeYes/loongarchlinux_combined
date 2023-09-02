@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xmonad-contrib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-x11
-- haskell-x11-xft
-- haskell-utf8-string
-- haskell-random
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-x11
-  source: alpm
-- alpm: haskell-x11-xft
-  source: alpm
-- alpm: haskell-utf8-string
-  source: alpm
-- alpm: haskell-random
-  source: alpm
 - alpm: xmonad-contrib
   source: archpkg

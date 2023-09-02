@@ -9,60 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-servant'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base-compat
-- haskell-aeson
-- haskell-attoparsec
-- haskell-bifunctors
-- haskell-case-insensitive
-- haskell-constraints
-- haskell-http-api-data
-- haskell-http-media
-- haskell-http-types
-- haskell-mmorph
-- haskell-network-uri
-- haskell-quickcheck
-- haskell-tagged
-- haskell-sop-core
-- haskell-singleton-bool
-- haskell-string-conversions
-- haskell-vault
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base-compat
-  source: alpm
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-bifunctors
-  source: alpm
-- alpm: haskell-case-insensitive
-  source: alpm
-- alpm: haskell-constraints
-  source: alpm
-- alpm: haskell-http-api-data
-  source: alpm
-- alpm: haskell-http-media
-  source: alpm
-- alpm: haskell-http-types
-  source: alpm
-- alpm: haskell-mmorph
-  source: alpm
-- alpm: haskell-network-uri
-  source: alpm
-- alpm: haskell-quickcheck
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
-- alpm: haskell-sop-core
-  source: alpm
-- alpm: haskell-singleton-bool
-  source: alpm
-- alpm: haskell-string-conversions
-  source: alpm
-- alpm: haskell-vault
-  source: alpm
 - alpm: haskell-servant
   source: archpkg

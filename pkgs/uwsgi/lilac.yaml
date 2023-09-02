@@ -10,34 +10,44 @@ pre_build_script: '_G.files = download_official_pkgbuild(''uwsgi'')
 
   '
 repo_depends:
-- libcap
-- libxcrypt
-- pam
-- systemd
-- util-linux
 - ruby
 - perl
 - python
+- libcap
+- libxcrypt
+- pam
+- systemd: systemd-libs
+- util-linux: util-linux-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: libcap
-  provides: libcap.so
-  source: alpm
-- alpm: libxcrypt
-  provides: libcrypt.so
-  source: alpm
-- alpm: pam
-  provides: libpam.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
-- alpm: util-linux-libs
-  provides: libuuid.so
-  source: alpm
-- alias: ruby
-- alias: perl
-- alias: python
 - alpm: uwsgi
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: ruby
+  to_pattern: \1
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: perl
+  to_pattern: \1
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libcap.so
+  pkgname: libcap
+- libs:
+  - libcrypt.so
+  pkgname: libxcrypt
+- libs:
+  - libpam.so
+  pkgname: pam
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libuuid.so
+  pkgbase: util-linux
+  pkgname: util-linux-libs

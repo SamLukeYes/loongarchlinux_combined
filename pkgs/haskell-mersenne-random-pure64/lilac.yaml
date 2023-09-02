@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mersenne-rand
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-random
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-random
-  source: alpm
 - alpm: haskell-mersenne-random-pure64
   source: archpkg

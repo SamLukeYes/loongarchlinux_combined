@@ -14,8 +14,9 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libqtxdg
-  provides: libQt5Xdg.so
-  source: alpm
 - alpm: lxqt-powermanagement
   source: archpkg
+update_on_soname:
+- libs:
+  - libQt5Xdg.so
+  pkgname: libqtxdg

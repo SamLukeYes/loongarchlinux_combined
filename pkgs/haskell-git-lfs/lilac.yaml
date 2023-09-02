@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-git-lfs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-case-insensitive
-- haskell-http-client
-- haskell-http-types
-- haskell-network-uri
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-case-insensitive
-  source: alpm
-- alpm: haskell-http-client
-  source: alpm
-- alpm: haskell-http-types
-  source: alpm
-- alpm: haskell-network-uri
-  source: alpm
 - alpm: haskell-git-lfs
   source: archpkg

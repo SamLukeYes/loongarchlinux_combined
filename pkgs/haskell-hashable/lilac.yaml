@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hashable'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base-orphans
-- haskell-data-array-byte
-- haskell-ghc-bignum-orphans
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base-orphans
-  source: alpm
-- alpm: haskell-data-array-byte
-  source: alpm
-- alpm: haskell-ghc-bignum-orphans
-  source: alpm
 - alpm: haskell-hashable
   source: archpkg

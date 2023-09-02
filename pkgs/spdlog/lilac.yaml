@@ -14,8 +14,9 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: fmt
-  provides: libfmt.so
-  source: alpm
 - alpm: spdlog
   source: archpkg
+update_on_soname:
+- libs:
+  - libfmt.so
+  pkgname: fmt

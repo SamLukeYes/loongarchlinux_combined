@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-genvalidity-h
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-genvalidity
-- haskell-genvalidity-property
-- haskell-hspec
-- haskell-hspec-core
-- haskell-quickcheck
-- haskell-validity
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-genvalidity
-  source: alpm
-- alpm: haskell-genvalidity-property
-  source: alpm
-- alpm: haskell-hspec
-  source: alpm
-- alpm: haskell-hspec-core
-  source: alpm
-- alpm: haskell-quickcheck
-  source: alpm
-- alpm: haskell-validity
-  source: alpm
 - alpm: haskell-genvalidity-hspec
   source: archpkg

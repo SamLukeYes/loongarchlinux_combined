@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-src-exts-util
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-data-default
-- haskell-src-exts
-- haskell-uniplate
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-data-default
-  source: alpm
-- alpm: haskell-src-exts
-  source: alpm
-- alpm: haskell-uniplate
-  source: alpm
 - alpm: haskell-src-exts-util
   source: archpkg

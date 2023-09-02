@@ -14,8 +14,9 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: openal
-  provides: libopenal.so
-  source: alpm
 - alpm: desmume
   source: archpkg
+update_on_soname:
+- libs:
+  - libopenal.so
+  pkgname: openal

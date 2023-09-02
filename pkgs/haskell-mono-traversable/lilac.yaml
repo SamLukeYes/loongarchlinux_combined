@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mono-traversa
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hashable
-- haskell-split
-- haskell-unordered-containers
-- haskell-vector
-- haskell-vector-algorithms
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-split
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
-- alpm: haskell-vector-algorithms
-  source: alpm
 - alpm: haskell-mono-traversable
   source: archpkg

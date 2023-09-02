@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-quickcheck-io
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hunit
-- haskell-quickcheck
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hunit
-  source: alpm
-- alpm: haskell-quickcheck
-  source: alpm
 - alpm: haskell-quickcheck-io
   source: archpkg

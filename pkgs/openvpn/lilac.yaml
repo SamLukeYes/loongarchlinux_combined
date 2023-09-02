@@ -10,16 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openvpn'')
 
   '
 repo_depends:
-- systemd
+- systemd: systemd-libs
 - pkcs11-helper
 update_on:
 - manual: 1
   source: manual
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
-- alpm: pkcs11-helper
-  provides: libpkcs11-helper.so
-  source: alpm
 - alpm: openvpn
   source: archpkg
+update_on_soname:
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libpkcs11-helper.so
+  pkgname: pkcs11-helper

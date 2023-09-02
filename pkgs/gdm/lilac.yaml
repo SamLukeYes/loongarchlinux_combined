@@ -10,16 +10,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gdm'')
 
   '
 repo_depends:
-- systemd
+- systemd: systemd-libs
 - glib2
 update_on:
 - manual: 1
   source: manual
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
-- alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
 - alpm: gdm
   source: archpkg
+update_on_soname:
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  - libgio-2.0.so
+  pkgname: glib2

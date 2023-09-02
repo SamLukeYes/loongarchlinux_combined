@@ -14,8 +14,10 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: nettle
-  provides: libhogweed.so
-  source: alpm
 - alpm: sequoia-sqv
   source: archpkg
+update_on_soname:
+- libs:
+  - libnettle.so
+  - libhogweed.so
+  pkgname: nettle

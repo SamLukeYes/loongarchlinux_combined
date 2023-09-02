@@ -14,24 +14,32 @@ repo_depends:
 - enchant
 - gtk3
 - glib2
+- icu
 - pango
 update_on:
 - manual: 1
   source: manual
-- alpm: icu
-  provides: libicuuc.so
-  source: alpm
-- alpm: enchant
-  provides: libenchant-2.so
-  source: alpm
-- alpm: gtk3
-  provides: libgtk-3.so
-  source: alpm
-- alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
-- alpm: pango
-  provides: libpango-1.0.so
-  source: alpm
 - alpm: gspell
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: icu
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libenchant-2.so
+  pkgname: enchant
+- libs:
+  - libgtk-3.so
+  pkgname: gtk3
+- libs:
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  - libgio-2.0.so
+  pkgname: glib2
+- libs:
+  - libicuuc.so
+  pkgname: icu
+- libs:
+  - libpango-1.0.so
+  pkgname: pango

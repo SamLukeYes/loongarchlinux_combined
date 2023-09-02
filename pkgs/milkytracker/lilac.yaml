@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: rtmidi
-  provides: librtmidi.so
-  source: alpm
 - alpm: milkytracker
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - librtmidi.so
+  pkgname: rtmidi

@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-safecopy'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-cereal
-- haskell-generic-data
-- haskell-old-time
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-cereal
-  source: alpm
-- alpm: haskell-generic-data
-  source: alpm
-- alpm: haskell-old-time
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-safecopy
   source: archpkg

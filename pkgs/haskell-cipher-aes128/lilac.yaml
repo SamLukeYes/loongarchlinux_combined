@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cipher-aes128
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-crypto-api
-- haskell-tagged
-- haskell-cereal
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-crypto-api
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
-- alpm: haskell-cereal
-  source: alpm
 - alpm: haskell-cipher-aes128
   source: archpkg

@@ -12,26 +12,36 @@ pre_build_script: '_G.files = download_official_pkgbuild(''samba'')
 repo_depends:
 - python
 - readline
+- icu
 - ldb
 - tdb
 - tevent
-- icu
+- readline
 update_on:
 - manual: 1
   source: manual
-- alias: python
-- alpm: readline
-  provides: libreadline.so
-  source: alpm
-- alpm: ldb
-  provides: libldb.so
-  source: alpm
-- alpm: tdb
-  provides: libtdb.so
-  source: alpm
-- alpm: tevent
-  provides: libtevent.so
-  source: alpm
-- alias: icu
 - alpm: samba
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+- from_pattern: ^(\d+)\..*
+  pkgbase: readline
+  to_pattern: \1
+- from_pattern: ^(\d+)\..*
+  pkgbase: icu
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libldb.so
+  pkgname: ldb
+- libs:
+  - libtdb.so
+  pkgname: tdb
+- libs:
+  - libtevent.so
+  pkgname: tevent
+- libs:
+  - libreadline.so
+  pkgname: readline

@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''shellcheck'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-diff
-- haskell-fgl
-- haskell-quickcheck
-- haskell-regex-tdfa
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-diff
-  source: alpm
-- alpm: haskell-fgl
-  source: alpm
-- alpm: haskell-quickcheck
-  source: alpm
-- alpm: haskell-regex-tdfa
-  source: alpm
 - alpm: shellcheck
   source: archpkg

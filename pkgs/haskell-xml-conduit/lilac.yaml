@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-xml-conduit''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-attoparsec
-- haskell-blaze-markup
-- haskell-conduit
-- haskell-conduit-extra
-- haskell-data-default-class
-- haskell-resourcet
-- haskell-blaze-html
-- haskell-xml-types
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-blaze-markup
-  source: alpm
-- alpm: haskell-conduit
-  source: alpm
-- alpm: haskell-conduit-extra
-  source: alpm
-- alpm: haskell-data-default-class
-  source: alpm
-- alpm: haskell-resourcet
-  source: alpm
-- alpm: haskell-blaze-html
-  source: alpm
-- alpm: haskell-xml-types
-  source: alpm
 - alpm: haskell-xml-conduit
   source: archpkg

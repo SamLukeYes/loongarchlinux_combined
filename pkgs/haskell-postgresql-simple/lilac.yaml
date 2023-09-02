@@ -9,39 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-postgresql-si
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-only
-- haskell-aeson
-- haskell-attoparsec
-- haskell-case-insensitive
-- haskell-hashable
-- haskell-postgresql-libpq
-- haskell-scientific
-- haskell-time-compat
-- haskell-uuid-types
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-only
-  source: alpm
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-case-insensitive
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-postgresql-libpq
-  source: alpm
-- alpm: haskell-scientific
-  source: alpm
-- alpm: haskell-time-compat
-  source: alpm
-- alpm: haskell-uuid-types
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-postgresql-simple
   source: archpkg

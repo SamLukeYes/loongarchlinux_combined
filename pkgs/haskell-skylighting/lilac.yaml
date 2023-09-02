@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-skylighting''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-skylighting-core
-- haskell-skylighting-format-ansi
-- haskell-skylighting-format-blaze-html
-- haskell-skylighting-format-context
-- haskell-skylighting-format-latex
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-skylighting-core
-  source: alpm
-- alpm: haskell-skylighting-format-ansi
-  source: alpm
-- alpm: haskell-skylighting-format-blaze-html
-  source: alpm
-- alpm: haskell-skylighting-format-context
-  source: alpm
-- alpm: haskell-skylighting-format-latex
-  source: alpm
 - alpm: haskell-skylighting
   source: archpkg

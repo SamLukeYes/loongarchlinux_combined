@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-flexible-defa
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-th-extras
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-th-extras
-  source: alpm
 - alpm: haskell-flexible-defaults
   source: archpkg

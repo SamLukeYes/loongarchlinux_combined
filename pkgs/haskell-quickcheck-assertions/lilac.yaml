@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-quickcheck-as
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-quickcheck
-- haskell-ieee754
-- haskell-pretty-show
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-quickcheck
-  source: alpm
-- alpm: haskell-ieee754
-  source: alpm
-- alpm: haskell-pretty-show
-  source: alpm
 - alpm: haskell-quickcheck-assertions
   source: archpkg

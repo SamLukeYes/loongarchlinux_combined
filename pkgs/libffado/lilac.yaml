@@ -16,14 +16,15 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: libconfig
-  provides: libconfig++.so
-  source: alpm
-- alpm: dbus-c++
-  provides: libdbus-c++-1.so
-  source: alpm
 - alpm: libffado
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libconfig++.so
+  pkgname: libconfig
+- libs:
+  - libdbus-c++-1.so
+  pkgname: dbus-c++

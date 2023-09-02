@@ -1,13 +1,11 @@
 destsubdir: extra
 repo_depends:
 - libupnp
-- qt5-base
 update_on:
 - manual: 1
   source: manual
-- alpm: libupnp
-  provides: libupnp.so
-  source: alpm
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
+update_on_soname:
+- libs:
+  - libixml.so
+  - libupnp.so
+  pkgname: libupnp

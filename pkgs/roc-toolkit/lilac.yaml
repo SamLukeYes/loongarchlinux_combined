@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: openfec
-  provides: libopenfec.so
-  source: alpm
-- alpm: speexdsp
-  provides: libspeexdsp.so
-  source: alpm
 - alpm: roc-toolkit
   source: archpkg
+update_on_soname:
+- libs:
+  - libopenfec.so
+  pkgname: openfec
+- libs:
+  - libspeexdsp.so
+  pkgname: speexdsp

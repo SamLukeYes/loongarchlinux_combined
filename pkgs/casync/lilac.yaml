@@ -12,26 +12,28 @@ pre_build_script: '_G.files = download_official_pkgbuild(''casync'')
 repo_depends:
 - curl
 - acl
-- systemd
+- systemd: systemd-libs
 - xz
 - zstd
 update_on:
 - manual: 1
   source: manual
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
-- alpm: acl
-  provides: libacl.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
-- alpm: xz
-  provides: liblzma.so
-  source: alpm
-- alpm: zstd
-  provides: libzstd.so
-  source: alpm
 - alpm: casync
   source: archpkg
+update_on_soname:
+- libs:
+  - libcurl.so
+  pkgname: curl
+- libs:
+  - libacl.so
+  pkgname: acl
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - liblzma.so
+  pkgname: xz
+- libs:
+  - libzstd.so
+  pkgname: zstd

@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: granite
-  provides: libgranite.so
-  source: alpm
-- alpm: switchboard
-  provides: libswitchboard-2.0.so
-  source: alpm
 - alpm: switchboard-plug-notifications
   source: archpkg
+update_on_soname:
+- libs:
+  - libgranite.so
+  pkgname: granite
+- libs:
+  - libswitchboard-2.0.so
+  pkgname: switchboard

@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-skylighting-c
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-attoparsec
-- haskell-base64-bytestring
-- haskell-case-insensitive
-- haskell-colour
-- haskell-safe
-- haskell-utf8-string
-- haskell-xml-conduit
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-base64-bytestring
-  source: alpm
-- alpm: haskell-case-insensitive
-  source: alpm
-- alpm: haskell-colour
-  source: alpm
-- alpm: haskell-safe
-  source: alpm
-- alpm: haskell-utf8-string
-  source: alpm
-- alpm: haskell-xml-conduit
-  source: alpm
 - alpm: haskell-skylighting-core
   source: archpkg

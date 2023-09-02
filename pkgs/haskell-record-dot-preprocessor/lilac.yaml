@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-record-dot-pr
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-extra
-- haskell-uniplate
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-extra
-  source: alpm
-- alpm: haskell-uniplate
-  source: alpm
 - alpm: haskell-record-dot-preprocessor
   source: archpkg

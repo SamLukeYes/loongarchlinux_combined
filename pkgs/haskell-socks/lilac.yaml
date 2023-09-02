@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-socks'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-basement
-- haskell-cereal
-- haskell-network
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-basement
-  source: alpm
-- alpm: haskell-cereal
-  source: alpm
-- alpm: haskell-network
-  source: alpm
 - alpm: haskell-socks
   source: archpkg

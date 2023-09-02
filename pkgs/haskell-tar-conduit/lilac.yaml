@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tar-conduit''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-conduit
-- haskell-safe-exceptions
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-conduit
-  source: alpm
-- alpm: haskell-safe-exceptions
-  source: alpm
 - alpm: haskell-tar-conduit
   source: archpkg

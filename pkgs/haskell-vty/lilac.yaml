@@ -9,30 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-vty'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-ansi-terminal
-- haskell-blaze-builder
-- haskell-microlens
-- haskell-microlens-mtl
-- haskell-microlens-th
-- haskell-utf8-string
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-ansi-terminal
-  source: alpm
-- alpm: haskell-blaze-builder
-  source: alpm
-- alpm: haskell-microlens
-  source: alpm
-- alpm: haskell-microlens-mtl
-  source: alpm
-- alpm: haskell-microlens-th
-  source: alpm
-- alpm: haskell-utf8-string
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-vty
   source: archpkg

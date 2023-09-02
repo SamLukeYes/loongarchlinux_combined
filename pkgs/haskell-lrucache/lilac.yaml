@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lrucache'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-contravariant
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-contravariant
-  source: alpm
 - alpm: haskell-lrucache
   source: archpkg

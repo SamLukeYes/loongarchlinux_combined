@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-casa-types'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-attoparsec
-- haskell-base16-bytestring
-- haskell-hashable
-- haskell-path-pieces
-- haskell-persistent
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-base16-bytestring
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-path-pieces
-  source: alpm
-- alpm: haskell-persistent
-  source: alpm
 - alpm: haskell-casa-types
   source: archpkg

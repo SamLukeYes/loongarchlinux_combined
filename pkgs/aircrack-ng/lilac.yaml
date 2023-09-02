@@ -10,14 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aircrack-ng'')
 
   '
 repo_depends:
-- libpcap
 - python
+- libpcap
 update_on:
 - manual: 1
   source: manual
-- alpm: libpcap
-  provides: libpcap.so
-  source: alpm
-- alias: python
 - alpm: aircrack-ng
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libpcap.so
+  pkgname: libpcap

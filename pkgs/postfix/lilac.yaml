@@ -11,43 +11,52 @@ pre_build_script: '_G.files = download_official_pkgbuild(''postfix'')
   '
 repo_depends:
 - icu
+- icu
 - libnsl
 - libsasl
 - openssl
-- openssl
 - tinycdb
-- mariadb
+- mariadb: mariadb-libs
 - pcre2
-- postgresql
+- postgresql: postgresql-libs
 - sqlite
 update_on:
 - manual: 1
   source: manual
-- alpm: icu
-  provides: libicuuc.so
-  source: alpm
-- alpm: libnsl
-  provides: libnsl.so
-  source: alpm
-- alpm: libsasl
-  provides: libsasl2.so
-  source: alpm
-- alias: libcrypto
-- alias: libssl
-- alpm: tinycdb
-  provides: libcdb.so
-  source: alpm
-- alpm: mariadb-libs
-  provides: libmariadb.so
-  source: alpm
-- alpm: pcre2
-  provides: libpcre2-8.so
-  source: alpm
-- alpm: postgresql-libs
-  provides: libpq.so
-  source: alpm
-- alpm: sqlite
-  provides: libsqlite3.so
-  source: alpm
 - alpm: postfix
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: icu
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libicuuc.so
+  pkgname: icu
+- libs:
+  - libnsl.so
+  pkgname: libnsl
+- libs:
+  - libsasl2.so
+  pkgname: libsasl
+- libs:
+  - libcrypto.so
+  - libssl.so
+  pkgname: openssl
+- libs:
+  - libcdb.so
+  pkgname: tinycdb
+- libs:
+  - libmariadb.so
+  pkgbase: mariadb
+  pkgname: mariadb-libs
+- libs:
+  - libpcre2-8.so
+  pkgname: pcre2
+- libs:
+  - libpq.so
+  pkgbase: postgresql
+  pkgname: postgresql-libs
+- libs:
+  - libsqlite3.so
+  pkgname: sqlite

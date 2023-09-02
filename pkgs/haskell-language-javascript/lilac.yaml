@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-language-java
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-blaze-builder
-- haskell-utf8-string
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-blaze-builder
-  source: alpm
-- alpm: haskell-utf8-string
-  source: alpm
 - alpm: haskell-language-javascript
   source: archpkg

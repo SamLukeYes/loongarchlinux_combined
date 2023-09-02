@@ -12,18 +12,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vbam'')
 repo_depends:
 - ffmpeg
 - sfml
-- wxwidgets
 update_on:
 - manual: 1
   source: manual
-- alpm: ffmpeg
-  provides: libswscale.so
-  source: alpm
-- alpm: sfml
-  provides: libsfml-system.so
-  source: alpm
-- alpm: wxwidgets-gtk3
-  source: alpm
-  strip_release: true
 - alpm: vbam
   source: archpkg
+update_on_soname:
+- libs:
+  - libavcodec.so
+  - libavformat.so
+  - libavutil.so
+  - libswscale.so
+  pkgname: ffmpeg
+- libs:
+  - libsfml-network.so
+  - libsfml-system.so
+  pkgname: sfml

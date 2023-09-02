@@ -15,9 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: acl
-  provides: libacl.so
-  source: alpm
-- alias: libcrypto
 - alpm: libarchive
   source: archpkg
+update_on_soname:
+- libs:
+  - libacl.so
+  pkgname: acl
+- libs:
+  - libcrypto.so
+  pkgname: openssl

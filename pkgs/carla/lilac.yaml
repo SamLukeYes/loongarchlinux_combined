@@ -11,49 +11,51 @@ pre_build_script: '_G.files = download_official_pkgbuild(''carla'')
   '
 repo_depends:
 - python
-- qt5-base
 - alsa-lib
 - file
 - fluidsynth
 - freetype2
-- cuda
+- cuda: cuda-tools
 - liblo
 - libao
-- pulseaudio
+- pulseaudio: libpulse
 - libsndfile
 update_on:
 - manual: 1
   source: manual
-- alias: python
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: file
-  provides: libmagic.so
-  source: alpm
-- alpm: fluidsynth
-  provides: libfluidsynth.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: cuda-tools
-  provides: libGL.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
-- alpm: libao
-  provides: libpulse.so
-  source: alpm
-- alpm: libpulse
-  provides: libpulse-simple.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
 - alpm: carla
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libmagic.so
+  pkgname: file
+- libs:
+  - libfluidsynth.so
+  pkgname: fluidsynth
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libGL.so
+  pkgbase: cuda
+  pkgname: cuda-tools
+- libs:
+  - liblo.so
+  pkgname: liblo
+- libs:
+  - libpulse.so
+  pkgname: libao
+- libs:
+  - libpulse-simple.so
+  pkgbase: pulseaudio
+  pkgname: libpulse
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile

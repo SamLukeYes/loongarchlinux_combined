@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-streams'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-adjunctions
-- haskell-boring
-- haskell-comonad
-- haskell-distributive
-- haskell-semigroupoids
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-adjunctions
-  source: alpm
-- alpm: haskell-boring
-  source: alpm
-- alpm: haskell-comonad
-  source: alpm
-- alpm: haskell-distributive
-  source: alpm
-- alpm: haskell-semigroupoids
-  source: alpm
 - alpm: haskell-streams
   source: archpkg

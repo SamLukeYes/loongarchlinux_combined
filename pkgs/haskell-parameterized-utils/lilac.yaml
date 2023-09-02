@@ -9,36 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-parameterized
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base-orphans
-- haskell-constraints
-- haskell-hashable
-- haskell-hashtables
-- haskell-indexed-traversable
-- haskell-lens
-- haskell-profunctors
-- haskell-th-abstraction
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base-orphans
-  source: alpm
-- alpm: haskell-constraints
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-hashtables
-  source: alpm
-- alpm: haskell-indexed-traversable
-  source: alpm
-- alpm: haskell-lens
-  source: alpm
-- alpm: haskell-profunctors
-  source: alpm
-- alpm: haskell-th-abstraction
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-parameterized-utils
   source: archpkg

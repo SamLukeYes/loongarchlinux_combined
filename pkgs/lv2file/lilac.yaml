@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: lilv
-  provides: liblilv-0.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
 - alpm: lv2file
   source: archpkg
+update_on_soname:
+- libs:
+  - liblilv-0.so
+  pkgname: lilv
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile

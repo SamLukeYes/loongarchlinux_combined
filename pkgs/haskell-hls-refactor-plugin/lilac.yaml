@@ -9,57 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-refactor-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-data-default
-- haskell-dlist
-- haskell-extra
-- haskell-ghc
-- haskell-ghc-exactprint
-- haskell-ghcide
-- haskell-hls-graph
-- haskell-hls-plugin-api
-- haskell-lens
-- haskell-lsp
-- haskell-regex-tdfa
-- haskell-retrie
-- haskell-syb
-- haskell-text-rope
-- haskell-unordered-containers
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-data-default
-  source: alpm
-- alpm: haskell-dlist
-  source: alpm
-- alpm: haskell-extra
-  source: alpm
-- alpm: haskell-ghc
-  source: alpm
-- alpm: haskell-ghc-exactprint
-  source: alpm
-- alpm: haskell-ghcide
-  source: alpm
-- alpm: haskell-hls-graph
-  source: alpm
-- alpm: haskell-hls-plugin-api
-  source: alpm
-- alpm: haskell-lens
-  source: alpm
-- alpm: haskell-lsp
-  source: alpm
-- alpm: haskell-regex-tdfa
-  source: alpm
-- alpm: haskell-retrie
-  source: alpm
-- alpm: haskell-syb
-  source: alpm
-- alpm: haskell-text-rope
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
 - alpm: haskell-hls-refactor-plugin
   source: archpkg

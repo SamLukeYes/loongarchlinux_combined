@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ghc-typelits-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-ghc
-- haskell-ghc-tcplugins-extra
-- haskell-ghc-typelits-knownnat
-- haskell-ghc-typelits-natnormalise
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-ghc
-  source: alpm
-- alpm: haskell-ghc-tcplugins-extra
-  source: alpm
-- alpm: haskell-ghc-typelits-knownnat
-  source: alpm
-- alpm: haskell-ghc-typelits-natnormalise
-  source: alpm
 - alpm: haskell-ghc-typelits-extra
   source: archpkg

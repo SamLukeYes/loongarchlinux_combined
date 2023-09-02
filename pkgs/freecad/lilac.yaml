@@ -10,10 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''freecad'')
 
   '
 repo_depends:
-- jsoncpp
+- boost
 update_on:
 - manual: 1
   source: manual
-- alias: jsoncpp
 - alpm: freecad
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: boost
+  to_pattern: \1

@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-dec'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-boring
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-boring
-  source: alpm
 - alpm: haskell-dec
   source: archpkg

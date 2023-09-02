@@ -10,20 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''miniupnpd'')
 
   '
 repo_depends:
-- iptables
-- util-linux
+- util-linux: util-linux-libs
 - libcap-ng
 update_on:
 - manual: 1
   source: manual
-- alpm: iptables
-  source: alpm
-  strip_release: true
-- alpm: util-linux-libs
-  provides: libuuid.so
-  source: alpm
-- alpm: libcap-ng
-  provides: libcap-ng.so
-  source: alpm
 - alpm: miniupnpd
   source: archpkg
+update_on_soname:
+- libs:
+  - libuuid.so
+  pkgbase: util-linux
+  pkgname: util-linux-libs
+- libs:
+  - libcap-ng.so
+  pkgname: libcap-ng

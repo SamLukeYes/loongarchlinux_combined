@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pango'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-glib
-- haskell-cairo
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-glib
-  source: alpm
-- alpm: haskell-cairo
-  source: alpm
 - alpm: haskell-pango
   source: archpkg

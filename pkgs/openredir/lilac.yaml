@@ -15,7 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: lua
-- alias: python
 - alpm: openredir
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: lua
+  to_pattern: \1
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1

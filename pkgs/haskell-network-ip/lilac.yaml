@@ -9,36 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-network-ip'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-data-default-class
-- haskell-data-dword
-- haskell-data-endian
-- haskell-data-serializer
-- haskell-data-textual
-- haskell-hashable
-- haskell-parsers
-- haskell-text-printer
-- haskell-type-hint
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-data-default-class
-  source: alpm
-- alpm: haskell-data-dword
-  source: alpm
-- alpm: haskell-data-endian
-  source: alpm
-- alpm: haskell-data-serializer
-  source: alpm
-- alpm: haskell-data-textual
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-parsers
-  source: alpm
-- alpm: haskell-text-printer
-  source: alpm
-- alpm: haskell-type-hint
-  source: alpm
 - alpm: haskell-network-ip
   source: archpkg

@@ -9,66 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-plugin-ap
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-diff
-- haskell-aeson
-- haskell-data-default
-- haskell-dependent-map
-- haskell-dependent-sum
-- haskell-dlist
-- haskell-extra
-- haskell-ghc
-- haskell-hashable
-- haskell-hls-graph
-- haskell-hw-fingertree
-- haskell-lens
-- haskell-lens-aeson
-- haskell-lsp
-- haskell-megaparsec
-- haskell-optparse-applicative
-- haskell-opentelemetry
-- haskell-regex-tdfa
-- haskell-unordered-containers
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-diff
-  source: alpm
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-data-default
-  source: alpm
-- alpm: haskell-dependent-map
-  source: alpm
-- alpm: haskell-dependent-sum
-  source: alpm
-- alpm: haskell-dlist
-  source: alpm
-- alpm: haskell-extra
-  source: alpm
-- alpm: haskell-ghc
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-hls-graph
-  source: alpm
-- alpm: haskell-hw-fingertree
-  source: alpm
-- alpm: haskell-lens
-  source: alpm
-- alpm: haskell-lens-aeson
-  source: alpm
-- alpm: haskell-lsp
-  source: alpm
-- alpm: haskell-megaparsec
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-opentelemetry
-  source: alpm
-- alpm: haskell-regex-tdfa
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
 - alpm: haskell-hls-plugin-api
   source: archpkg

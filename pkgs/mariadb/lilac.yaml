@@ -1,11 +1,15 @@
 destsubdir: extra
 repo_depends:
-- libxcrypt
 - perl
+- libxcrypt
 update_on:
 - manual: 1
   source: manual
-- alpm: libxcrypt
-  provides: libcrypt.so
-  source: alpm
-- alias: perl
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: perl
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libcrypt.so
+  pkgname: libxcrypt

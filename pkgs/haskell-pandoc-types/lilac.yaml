@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pandoc-types'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-quickcheck
-- haskell-syb
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-quickcheck
-  source: alpm
-- alpm: haskell-syb
-  source: alpm
 - alpm: haskell-pandoc-types
   source: archpkg

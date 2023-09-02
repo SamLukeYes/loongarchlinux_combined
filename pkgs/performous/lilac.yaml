@@ -10,14 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''performous'')
 
   '
 repo_depends:
+- boost
 - icu
-- opencv
 update_on:
 - manual: 1
   source: manual
-- alias: icu
-- alpm: opencv
-  source: alpm
-  strip_release: true
 - alpm: performous
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: boost
+  to_pattern: \1
+- from_pattern: ^(\d+)\..*
+  pkgbase: icu
+  to_pattern: \1

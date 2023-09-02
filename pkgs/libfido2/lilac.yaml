@@ -1,13 +1,15 @@
 destsubdir: extra
 repo_depends:
 - libcbor
-- systemd
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: libcbor
-  provides: libcbor.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libcbor.so
+  pkgname: libcbor
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs

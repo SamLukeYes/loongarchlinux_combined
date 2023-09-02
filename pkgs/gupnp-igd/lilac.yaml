@@ -16,14 +16,17 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
-- alpm: gssdp
-  provides: libgssdp-1.6.so
-  source: alpm
-- alpm: gupnp
-  provides: libgupnp-1.6.so
-  source: alpm
 - alpm: gupnp-igd
   source: archpkg
+update_on_soname:
+- libs:
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  - libgio-2.0.so
+  pkgname: glib2
+- libs:
+  - libgssdp-1.6.so
+  pkgname: gssdp
+- libs:
+  - libgupnp-1.6.so
+  pkgname: gupnp

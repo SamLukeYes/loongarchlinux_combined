@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-commonmark-pa
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-commonmark
-- haskell-commonmark-extensions
-- haskell-pandoc-types
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-commonmark
-  source: alpm
-- alpm: haskell-commonmark-extensions
-  source: alpm
-- alpm: haskell-pandoc-types
-  source: alpm
 - alpm: haskell-commonmark-pandoc
   source: archpkg

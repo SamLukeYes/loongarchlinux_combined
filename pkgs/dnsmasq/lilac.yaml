@@ -16,14 +16,16 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libidn2
-  provides: libidn2.so
-  source: alpm
-- alpm: dbus
-  provides: libdbus-1.so
-  source: alpm
-- alpm: nettle
-  provides: libhogweed.so
-  source: alpm
 - alpm: dnsmasq
   source: archpkg
+update_on_soname:
+- libs:
+  - libidn2.so
+  pkgname: libidn2
+- libs:
+  - libdbus-1.so
+  pkgname: dbus
+- libs:
+  - libnettle.so
+  - libhogweed.so
+  pkgname: nettle

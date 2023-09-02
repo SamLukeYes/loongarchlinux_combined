@@ -4,4 +4,7 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: lua
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: lua
+  to_pattern: \1

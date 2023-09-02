@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hindent'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-monad-loops
-- haskell-optparse-applicative
-- haskell-path
-- haskell-path-io
-- haskell-src-exts
-- haskell-unix-compat
-- haskell-utf8-string
-- haskell-yaml
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-monad-loops
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-path
-  source: alpm
-- alpm: haskell-path-io
-  source: alpm
-- alpm: haskell-src-exts
-  source: alpm
-- alpm: haskell-unix-compat
-  source: alpm
-- alpm: haskell-utf8-string
-  source: alpm
-- alpm: haskell-yaml
-  source: alpm
 - alpm: hindent
   source: archpkg

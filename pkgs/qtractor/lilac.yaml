@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qtractor'')
 
   '
 repo_depends:
-- qt6-base
 - alsa-lib
 - aubio
 - jack2
@@ -24,38 +23,38 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: aubio
-  provides: libaubio.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
-- alpm: libogg
-  provides: libogg.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbis.so
-  source: alpm
-- alpm: lilv
-  provides: liblilv-0.so
-  source: alpm
-- alpm: rubberband
-  provides: librubberband.so
-  source: alpm
 - alpm: qtractor
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libaubio.so
+  pkgname: aubio
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - liblo.so
+  pkgname: liblo
+- libs:
+  - libogg.so
+  pkgname: libogg
+- libs:
+  - libsamplerate.so
+  pkgname: libsamplerate
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libvorbisenc.so
+  - libvorbisfile.so
+  - libvorbis.so
+  pkgname: libvorbis
+- libs:
+  - liblilv-0.so
+  pkgname: lilv
+- libs:
+  - librubberband.so
+  pkgname: rubberband

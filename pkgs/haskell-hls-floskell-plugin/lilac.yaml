@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-floskell-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-floskell
-- haskell-ghcide
-- haskell-hls-plugin-api
-- haskell-lsp-types
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-floskell
-  source: alpm
-- alpm: haskell-ghcide
-  source: alpm
-- alpm: haskell-hls-plugin-api
-  source: alpm
-- alpm: haskell-lsp-types
-  source: alpm
 - alpm: haskell-hls-floskell-plugin
   source: archpkg

@@ -11,11 +11,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''iwd'')
   '
 repo_depends:
 - readline
+- readline
 update_on:
 - manual: 1
   source: manual
-- alpm: readline
-  provides: libreadline.so
-  source: alpm
 - alpm: iwd
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: readline
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libreadline.so
+  pkgname: readline

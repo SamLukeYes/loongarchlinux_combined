@@ -10,20 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xpdf'')
 
   '
 repo_depends:
-- qt5-base
 - freetype2
 - fontconfig
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: fontconfig
-  provides: libfontconfig.so
-  source: alpm
 - alpm: xpdf
   source: archpkg
+update_on_soname:
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libfontconfig.so
+  pkgname: fontconfig

@@ -10,28 +10,26 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ssr'')
 
   '
 repo_depends:
-- qt5-base
 - fftw
 - jack2
-- cuda
+- cuda: cuda-tools
 - libsndfile
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: fftw
-  provides: libfftw3f.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: cuda-tools
-  provides: libGL.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
 - alpm: ssr
   source: archpkg
+update_on_soname:
+- libs:
+  - libfftw3f.so
+  pkgname: fftw
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libGL.so
+  pkgbase: cuda
+  pkgname: cuda-tools
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile

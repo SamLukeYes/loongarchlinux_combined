@@ -22,32 +22,33 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: atkmm
-  provides: libatkmm-1.6.so
-  source: alpm
-- alpm: cairomm
-  provides: libcairomm-1.0.so
-  source: alpm
-- alpm: gtk3
-  provides: libgdk-3.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: glibmm
-  provides: libglibmm-2.4.so
-  source: alpm
-- alpm: gtkmm3
-  provides: libgtkmm-3.0.so
-  source: alpm
-- alpm: libarchive
-  provides: libarchive.so
-  source: alpm
-- alpm: libsigc++
-  provides: libsigc-2.0.so
-  source: alpm
-- alpm: pangomm
-  provides: libpangomm-1.4.so
-  source: alpm
 - alpm: grub-customizer
   source: archpkg
+update_on_soname:
+- libs:
+  - libatkmm-1.6.so
+  pkgname: atkmm
+- libs:
+  - libcairomm-1.0.so
+  pkgname: cairomm
+- libs:
+  - libgdk-3.so
+  pkgname: gtk3
+- libs:
+  - libglib-2.0.so
+  pkgname: glib2
+- libs:
+  - libglibmm-2.4.so
+  pkgname: glibmm
+- libs:
+  - libgtkmm-3.0.so
+  pkgname: gtkmm3
+- libs:
+  - libarchive.so
+  pkgname: libarchive
+- libs:
+  - libsigc-2.0.so
+  pkgname: libsigc++
+- libs:
+  - libpangomm-1.4.so
+  pkgname: pangomm

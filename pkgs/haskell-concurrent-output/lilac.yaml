@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-concurrent-ou
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-ansi-terminal
-- haskell-async
-- haskell-terminal-size
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-ansi-terminal
-  source: alpm
-- alpm: haskell-async
-  source: alpm
-- alpm: haskell-terminal-size
-  source: alpm
 - alpm: haskell-concurrent-output
   source: archpkg

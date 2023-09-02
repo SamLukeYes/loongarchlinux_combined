@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-semialign'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hashable
-- haskell-indexed-traversable
-- haskell-indexed-traversable-instances
-- haskell-semigroupoids
-- haskell-tagged
-- haskell-these
-- haskell-unordered-containers
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-indexed-traversable
-  source: alpm
-- alpm: haskell-indexed-traversable-instances
-  source: alpm
-- alpm: haskell-semigroupoids
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
-- alpm: haskell-these
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-semialign
   source: archpkg

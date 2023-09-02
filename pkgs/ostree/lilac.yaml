@@ -17,35 +17,43 @@ repo_depends:
 - libarchive
 - libsoup
 - openssl
-- systemd
+- systemd: systemd-libs
 - xz
 update_on:
 - manual: 1
   source: manual
-- alpm: avahi
-  provides: libavahi-glib.so
-  source: alpm
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: gpgme
-  provides: libgpgme.so
-  source: alpm
-- alpm: libarchive
-  provides: libarchive.so
-  source: alpm
-- alpm: libsoup
-  provides: libsoup-2.4.so
-  source: alpm
-- alias: libcrypto
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
-- alpm: xz
-  provides: liblzma.so
-  source: alpm
 - alpm: ostree
   source: archpkg
+update_on_soname:
+- libs:
+  - libavahi-client.so
+  - libavahi-common.so
+  - libavahi-glib.so
+  pkgname: avahi
+- libs:
+  - libcurl.so
+  pkgname: curl
+- libs:
+  - libgio-2.0.so
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libgpgme.so
+  pkgname: gpgme
+- libs:
+  - libarchive.so
+  pkgname: libarchive
+- libs:
+  - libsoup-2.4.so
+  pkgname: libsoup
+- libs:
+  - libcrypto.so
+  pkgname: openssl
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - liblzma.so
+  pkgname: xz

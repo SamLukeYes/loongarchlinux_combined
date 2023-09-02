@@ -18,20 +18,21 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
-- alpm: ntk
-  provides: libntk.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
 - alpm: luppp
   source: archpkg
+update_on_soname:
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - liblo.so
+  pkgname: liblo
+- libs:
+  - libntk.so
+  pkgname: ntk
+- libs:
+  - libsamplerate.so
+  pkgname: libsamplerate
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile

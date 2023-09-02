@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-expiring-cach
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hashable
-- haskell-unordered-containers
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
 - alpm: haskell-expiring-cache-map
   source: archpkg

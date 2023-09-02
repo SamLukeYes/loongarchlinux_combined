@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hydrogen'')
 
   '
 repo_depends:
-- qt5-base
 - alsa-lib
 - jack2
 - libarchive
@@ -23,35 +22,33 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: libarchive
-  provides: libarchive.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
-- alpm: liblrdf
-  provides: liblrdf.so
-  source: alpm
-- alpm: libao
-  provides: libpulse.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: portaudio
-  provides: libportaudio.so
-  source: alpm
-- alpm: portmidi
-  provides: libportmidi.so
-  source: alpm
 - alpm: hydrogen
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libarchive.so
+  pkgname: libarchive
+- libs:
+  - liblo.so
+  pkgname: liblo
+- libs:
+  - liblrdf.so
+  pkgname: liblrdf
+- libs:
+  - libpulse.so
+  pkgname: libao
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libportaudio.so
+  pkgname: portaudio
+- libs:
+  - libportmidi.so
+  pkgname: portmidi

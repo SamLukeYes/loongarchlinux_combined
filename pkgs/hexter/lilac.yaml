@@ -18,20 +18,24 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: gtk2
-  provides: libgtk-x11-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
-- alpm: pango
-  provides: libpangocairo-1.0.so
-  source: alpm
 - alpm: hexter
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libgdk-x11-2.0.so
+  - libgtk-x11-2.0.so
+  pkgname: gtk2
+- libs:
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - liblo.so
+  pkgname: liblo
+- libs:
+  - libpango-1.0.so
+  - libpangocairo-1.0.so
+  pkgname: pango

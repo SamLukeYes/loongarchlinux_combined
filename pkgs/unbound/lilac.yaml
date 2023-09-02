@@ -12,22 +12,25 @@ pre_build_script: '_G.files = download_official_pkgbuild(''unbound'')
 repo_depends:
 - libevent
 - openssl
-- openssl
 - protobuf-c
-- systemd
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: libevent
-  provides: libevent-2.1.so
-  source: alpm
-- alias: libcrypto
-- alias: libssl
-- alpm: protobuf-c
-  provides: libprotobuf-c.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
 - alpm: unbound
   source: archpkg
+update_on_soname:
+- libs:
+  - libevent-2.1.so
+  pkgname: libevent
+- libs:
+  - libcrypto.so
+  - libssl.so
+  pkgname: openssl
+- libs:
+  - libprotobuf-c.so
+  pkgname: protobuf-c
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs

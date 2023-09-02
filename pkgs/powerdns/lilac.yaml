@@ -10,12 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''powerdns'')
 
   '
 repo_depends:
+- boost
 - curl
 update_on:
 - manual: 1
   source: manual
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
 - alpm: powerdns
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: boost
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libcurl.so
+  pkgname: curl

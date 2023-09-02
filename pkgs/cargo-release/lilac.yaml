@@ -16,12 +16,15 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: julia
-  provides: libgit2.so
-  source: alpm
-- alpm: libssh2
-  provides: libssh2.so
-  source: alpm
-- alias: libssl
 - alpm: cargo-release
   source: archpkg
+update_on_soname:
+- libs:
+  - libgit2.so
+  pkgname: julia
+- libs:
+  - libssh2.so
+  pkgname: libssh2
+- libs:
+  - libssl.so
+  pkgname: openssl

@@ -10,16 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''evolution'')
 
   '
 repo_depends:
-- cmark
 - evolution-data-server
 update_on:
 - manual: 1
   source: manual
-- alpm: cmark
-  source: alpm
-  strip_release: true
-- alpm: evolution-data-server
-  provides: libedataserverui-1.2.so
-  source: alpm
 - alpm: evolution
   source: archpkg
+update_on_soname:
+- libs:
+  - libcamel-1.2.so
+  - libebook-1.2.so
+  - libebook-contacts-1.2.so
+  - libecal-2.0.so
+  - libedataserver-1.2.so
+  - libedataserverui-1.2.so
+  pkgname: evolution-data-server

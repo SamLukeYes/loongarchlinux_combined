@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ansi-terminal
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-colour
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-colour
-  source: alpm
 - alpm: haskell-ansi-terminal
   source: archpkg

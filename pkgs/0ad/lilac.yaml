@@ -1,15 +1,19 @@
 destsubdir: extra
 repo_depends:
-- wxwidgets
-- miniupnpc
+- boost
 - icu
+- miniupnpc
 update_on:
 - manual: 1
   source: manual
-- alpm: wxwidgets-gtk3
-  source: alpm
-  strip_release: true
-- alpm: miniupnpc
-  provides: libminiupnpc.so
-  source: alpm
-- alias: icu
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: boost
+  to_pattern: \1
+- from_pattern: ^(\d+)\..*
+  pkgbase: icu
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libminiupnpc.so
+  pkgname: miniupnpc

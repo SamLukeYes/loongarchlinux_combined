@@ -9,36 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''allure'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-lambdahack
-- haskell-async
-- haskell-enummapset
-- haskell-file-embed
-- haskell-hsini
-- haskell-optparse-applicative
-- haskell-primitive
-- haskell-splitmix
-- haskell-th-lift-instances
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-lambdahack
-  source: alpm
-- alpm: haskell-async
-  source: alpm
-- alpm: haskell-enummapset
-  source: alpm
-- alpm: haskell-file-embed
-  source: alpm
-- alpm: haskell-hsini
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-splitmix
-  source: alpm
-- alpm: haskell-th-lift-instances
-  source: alpm
 - alpm: allure
   source: archpkg

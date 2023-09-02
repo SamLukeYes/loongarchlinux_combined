@@ -17,17 +17,20 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: brotli
-  provides: libbrotlidec.so
-  source: alpm
-- alpm: krb5
-  provides: libgssapi_krb5.so
-  source: alpm
-- alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
-- alpm: libpsl
-  provides: libpsl.so
-  source: alpm
 - alpm: libsoup3
   source: archpkg
+update_on_soname:
+- libs:
+  - libbrotlidec.so
+  pkgname: brotli
+- libs:
+  - libgssapi_krb5.so
+  pkgname: krb5
+- libs:
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  - libgio-2.0.so
+  pkgname: glib2
+- libs:
+  - libpsl.so
+  pkgname: libpsl

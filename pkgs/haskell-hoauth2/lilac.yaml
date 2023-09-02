@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hoauth2'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-hashable
-- haskell-http-conduit
-- haskell-http-types
-- haskell-microlens
-- haskell-unordered-containers
-- haskell-uri-bytestring
-- haskell-uri-bytestring-aeson
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-http-conduit
-  source: alpm
-- alpm: haskell-http-types
-  source: alpm
-- alpm: haskell-microlens
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-uri-bytestring
-  source: alpm
-- alpm: haskell-uri-bytestring-aeson
-  source: alpm
 - alpm: haskell-hoauth2
   source: archpkg

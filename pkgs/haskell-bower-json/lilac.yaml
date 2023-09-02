@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-bower-json'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-aeson-better-errors
-- haskell-scientific
-- haskell-unordered-containers
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-aeson-better-errors
-  source: alpm
-- alpm: haskell-scientific
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-bower-json
   source: archpkg

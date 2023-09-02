@@ -16,14 +16,15 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: serd
-  provides: libserd-0.so
-  source: alpm
-- alpm: sord
-  provides: libsord-0.so
-  source: alpm
-- alpm: sratom
-  provides: libsratom-0.so
-  source: alpm
 - alpm: lilv
   source: archpkg
+update_on_soname:
+- libs:
+  - libserd-0.so
+  pkgname: serd
+- libs:
+  - libsord-0.so
+  pkgname: sord
+- libs:
+  - libsratom-0.so
+  pkgname: sratom

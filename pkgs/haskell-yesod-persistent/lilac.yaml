@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-yesod-persist
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-blaze-builder
-- haskell-conduit
-- haskell-persistent
-- haskell-resource-pool
-- haskell-resourcet
-- haskell-yesod-core
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-blaze-builder
-  source: alpm
-- alpm: haskell-conduit
-  source: alpm
-- alpm: haskell-persistent
-  source: alpm
-- alpm: haskell-resource-pool
-  source: alpm
-- alpm: haskell-resourcet
-  source: alpm
-- alpm: haskell-yesod-core
-  source: alpm
 - alpm: haskell-yesod-persistent
   source: archpkg

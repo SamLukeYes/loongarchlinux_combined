@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''udp2raw'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- iptables
 update_on:
 - manual: 1
   source: manual
-- alpm: iptables
-  source: alpm
-  strip_release: true
 - alpm: udp2raw
   source: archpkg

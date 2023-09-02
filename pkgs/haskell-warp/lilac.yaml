@@ -9,63 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-warp'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-auto-update
-- haskell-bsb-http-chunked
-- haskell-case-insensitive
-- haskell-crypton-x509
-- haskell-hashable
-- haskell-http-date
-- haskell-http-types
-- haskell-http2
-- haskell-iproute
-- haskell-network
-- haskell-recv
-- haskell-simple-sendfile
-- haskell-streaming-commons
-- haskell-time-manager
-- haskell-unliftio
-- haskell-vault
-- haskell-wai
-- haskell-word8
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-auto-update
-  source: alpm
-- alpm: haskell-bsb-http-chunked
-  source: alpm
-- alpm: haskell-case-insensitive
-  source: alpm
-- alpm: haskell-crypton-x509
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-http-date
-  source: alpm
-- alpm: haskell-http-types
-  source: alpm
-- alpm: haskell-http2
-  source: alpm
-- alpm: haskell-iproute
-  source: alpm
-- alpm: haskell-network
-  source: alpm
-- alpm: haskell-recv
-  source: alpm
-- alpm: haskell-simple-sendfile
-  source: alpm
-- alpm: haskell-streaming-commons
-  source: alpm
-- alpm: haskell-time-manager
-  source: alpm
-- alpm: haskell-unliftio
-  source: alpm
-- alpm: haskell-vault
-  source: alpm
-- alpm: haskell-wai
-  source: alpm
-- alpm: haskell-word8
-  source: alpm
 - alpm: haskell-warp
   source: archpkg

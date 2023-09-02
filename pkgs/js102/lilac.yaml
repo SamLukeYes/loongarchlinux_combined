@@ -4,4 +4,7 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: readline
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: readline
+  to_pattern: \1

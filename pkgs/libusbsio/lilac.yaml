@@ -10,14 +10,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libusbsio'')
 
   '
 repo_depends:
-- systemd
 - python
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
-- alias: python
 - alpm: libusbsio
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs

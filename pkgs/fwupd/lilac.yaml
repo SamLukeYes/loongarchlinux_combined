@@ -6,34 +6,39 @@ repo_depends:
 - libcbor
 - json-glib
 - libgudev
-- modemmanager
+- modemmanager: libmm-glib
 - libqmi
 - protobuf-c
 update_on:
 - manual: 1
   source: manual
-- alias: python
-- alpm: libarchive
-  provides: libarchive.so
-  source: alpm
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
-- alpm: libcbor
-  provides: libcbor.so
-  source: alpm
-- alpm: json-glib
-  provides: libjson-glib-1.0.so
-  source: alpm
-- alpm: libgudev
-  provides: libgudev-1.0.so
-  source: alpm
-- alpm: libmm-glib
-  provides: libmm-glib.so
-  source: alpm
-- alpm: libqmi
-  provides: libqmi-glib.so
-  source: alpm
-- alpm: protobuf-c
-  provides: libprotobuf-c.so
-  source: alpm
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libarchive.so
+  pkgname: libarchive
+- libs:
+  - libcurl.so
+  pkgname: curl
+- libs:
+  - libcbor.so
+  pkgname: libcbor
+- libs:
+  - libjson-glib-1.0.so
+  pkgname: json-glib
+- libs:
+  - libgudev-1.0.so
+  pkgname: libgudev
+- libs:
+  - libmm-glib.so
+  pkgbase: modemmanager
+  pkgname: libmm-glib
+- libs:
+  - libqmi-glib.so
+  pkgname: libqmi
+- libs:
+  - libprotobuf-c.so
+  pkgname: protobuf-c

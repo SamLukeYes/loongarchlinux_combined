@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-conduit'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-mono-traversable
-- haskell-primitive
-- haskell-resourcet
-- haskell-unliftio-core
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-mono-traversable
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-resourcet
-  source: alpm
-- alpm: haskell-unliftio-core
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-conduit
   source: archpkg

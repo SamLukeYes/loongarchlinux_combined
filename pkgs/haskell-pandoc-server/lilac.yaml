@@ -9,42 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pandoc-server
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-base64
-- haskell-data-default
-- haskell-doctemplates
-- haskell-pandoc
-- haskell-pandoc-types
-- haskell-servant-server
-- haskell-skylighting
-- haskell-unicode-collation
-- haskell-wai
-- haskell-wai-cors
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-base64
-  source: alpm
-- alpm: haskell-data-default
-  source: alpm
-- alpm: haskell-doctemplates
-  source: alpm
-- alpm: haskell-pandoc
-  source: alpm
-- alpm: haskell-pandoc-types
-  source: alpm
-- alpm: haskell-servant-server
-  source: alpm
-- alpm: haskell-skylighting
-  source: alpm
-- alpm: haskell-unicode-collation
-  source: alpm
-- alpm: haskell-wai
-  source: alpm
-- alpm: haskell-wai-cors
-  source: alpm
 - alpm: haskell-pandoc-server
   source: archpkg

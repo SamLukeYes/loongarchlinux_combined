@@ -17,17 +17,18 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: cairomm-1.16
-  provides: libcairomm-1.16.so
-  source: alpm
-- alpm: glibmm-2.68
-  provides: libglibmm-2.68.so
-  source: alpm
-- alpm: pangomm-2.48
-  provides: libpangomm-2.48.so
-  source: alpm
-- alpm: libsigc++-3.0
-  provides: libsigc-3.0.so
-  source: alpm
 - alpm: gtkmm-4.0
   source: archpkg
+update_on_soname:
+- libs:
+  - libcairomm-1.16.so
+  pkgname: cairomm-1.16
+- libs:
+  - libglibmm-2.68.so
+  pkgname: glibmm-2.68
+- libs:
+  - libpangomm-2.48.so
+  pkgname: pangomm-2.48
+- libs:
+  - libsigc-3.0.so
+  pkgname: libsigc++-3.0

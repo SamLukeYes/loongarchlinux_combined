@@ -15,11 +15,13 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: nettle
-  provides: libhogweed.so
-  source: alpm
-- alpm: bzip2
-  provides: libbz2.so
-  source: alpm
 - alpm: sequoia-sop
   source: archpkg
+update_on_soname:
+- libs:
+  - libnettle.so
+  - libhogweed.so
+  pkgname: nettle
+- libs:
+  - libbz2.so
+  pkgname: bzip2

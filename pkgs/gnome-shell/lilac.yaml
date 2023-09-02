@@ -14,8 +14,9 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: mutter
-  provides: libmutter-12.so
-  source: alpm
 - alpm: gnome-shell
   source: archpkg
+update_on_soname:
+- libs:
+  - libmutter-12.so
+  pkgname: mutter

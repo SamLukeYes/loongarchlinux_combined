@@ -10,18 +10,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''espup'')
 
   '
 repo_depends:
+- python
 - bzip2
 - xz
-- python
 update_on:
 - manual: 1
   source: manual
-- alpm: bzip2
-  provides: libbz2.so
-  source: alpm
-- alpm: xz
-  provides: liblzma.so
-  source: alpm
-- alias: python
 - alpm: espup
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libbz2.so
+  pkgname: bzip2
+- libs:
+  - liblzma.so
+  pkgname: xz

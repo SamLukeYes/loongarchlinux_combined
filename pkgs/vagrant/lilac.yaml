@@ -15,7 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: ruby
-- alias: perl
 - alpm: vagrant
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: ruby
+  to_pattern: \1
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: perl
+  to_pattern: \1

@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-unicode-colla
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-th-lift-instances
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-th-lift-instances
-  source: alpm
 - alpm: haskell-unicode-collation
   source: archpkg

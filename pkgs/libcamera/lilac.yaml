@@ -10,31 +10,34 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libcamera'')
 
   '
 repo_depends:
-- systemd
+- systemd: systemd-libs
 - darktable
+- libcamera
 - libevent
-- qt5-base
 - glib2
 update_on:
 - manual: 1
   source: manual
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
-- alpm: darktable
-  provides: libcamera.so
-  source: alpm
-- alpm: libcamera
-  provides: libcamera-base.so
-  source: alpm
-- alpm: libevent
-  provides: libevent_pthreads-2.1.so
-  source: alpm
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
 - alpm: libcamera
   source: archpkg
+update_on_soname:
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libcamera.so
+  - libjpeg.so
+  - libtiff.so
+  pkgname: darktable
+- libs:
+  - libcamera-base.so
+  pkgname: libcamera
+- libs:
+  - libevent-2.1.so
+  - libevent_pthreads-2.1.so
+  pkgname: libevent
+- libs:
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  pkgname: glib2

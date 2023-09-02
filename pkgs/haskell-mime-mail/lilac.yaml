@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mime-mail'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base64-bytestring
-- haskell-blaze-builder
-- haskell-random
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base64-bytestring
-  source: alpm
-- alpm: haskell-blaze-builder
-  source: alpm
-- alpm: haskell-random
-  source: alpm
 - alpm: haskell-mime-mail
   source: archpkg

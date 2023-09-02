@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-http-types'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-case-insensitive
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-case-insensitive
-  source: alpm
 - alpm: haskell-http-types
   source: archpkg

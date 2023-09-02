@@ -10,20 +10,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wolf-shaper'')
 
   '
 repo_depends:
-- cuda
+- cuda: cuda-tools
 - liblo
 - alsa-lib
 update_on:
 - manual: 1
   source: manual
-- alpm: cuda-tools
-  provides: libGL.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
 - alpm: wolf-shaper
   source: archpkg
+update_on_soname:
+- libs:
+  - libGL.so
+  pkgbase: cuda
+  pkgname: cuda-tools
+- libs:
+  - liblo.so
+  pkgname: liblo
+- libs:
+  - libasound.so
+  pkgname: alsa-lib

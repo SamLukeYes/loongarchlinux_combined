@@ -14,8 +14,9 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: giflib
-  provides: libgif.so
-  source: alpm
 - alpm: libgdiplus
   source: archpkg
+update_on_soname:
+- libs:
+  - libgif.so
+  pkgname: giflib

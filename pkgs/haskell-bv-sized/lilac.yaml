@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-bv-sized'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-bitwise
-- haskell-panic
-- haskell-parameterized-utils
-- haskell-random
-- haskell-th-lift
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-bitwise
-  source: alpm
-- alpm: haskell-panic
-  source: alpm
-- alpm: haskell-parameterized-utils
-  source: alpm
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-th-lift
-  source: alpm
 - alpm: haskell-bv-sized
   source: archpkg

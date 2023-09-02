@@ -14,8 +14,9 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libebml
-  provides: libebml.so
-  source: alpm
 - alpm: libmatroska
   source: archpkg
+update_on_soname:
+- libs:
+  - libebml.so
+  pkgname: libebml

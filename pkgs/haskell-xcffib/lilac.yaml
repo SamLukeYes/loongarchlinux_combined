@@ -9,30 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-xcffib'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-attoparsec
-- haskell-either
-- haskell-filemanip
-- haskell-language-python
-- haskell-optparse-applicative
-- haskell-split
-- haskell-xcb-types
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-either
-  source: alpm
-- alpm: haskell-filemanip
-  source: alpm
-- alpm: haskell-language-python
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-split
-  source: alpm
-- alpm: haskell-xcb-types
-  source: alpm
 - alpm: haskell-xcffib
   source: archpkg

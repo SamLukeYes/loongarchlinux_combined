@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-data-textual'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-parsers
-- haskell-text-latin1
-- haskell-text-printer
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-parsers
-  source: alpm
-- alpm: haskell-text-latin1
-  source: alpm
-- alpm: haskell-text-printer
-  source: alpm
 - alpm: haskell-data-textual
   source: archpkg

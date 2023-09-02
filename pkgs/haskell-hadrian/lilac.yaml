@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hadrian'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-quickcheck
-- haskell-extra
-- haskell-shake
-- haskell-unordered-containers
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-quickcheck
-  source: alpm
-- alpm: haskell-extra
-  source: alpm
-- alpm: haskell-shake
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
 - alpm: haskell-hadrian
   source: archpkg

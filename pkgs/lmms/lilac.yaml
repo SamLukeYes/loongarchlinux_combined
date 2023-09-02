@@ -1,6 +1,5 @@
 destsubdir: extra
 repo_depends:
-- qt5-base
 - alsa-lib
 - fftw
 - fltk
@@ -17,45 +16,45 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3f.so
-  source: alpm
-- alpm: fltk
-  provides: libfltk.so
-  source: alpm
-- alpm: fluidsynth
-  provides: libfluidsynth.so
-  source: alpm
-- alpm: lame
-  provides: libmp3lame.so
-  source: alpm
-- alpm: libgig
-  provides: libgig.so
-  source: alpm
-- alpm: libogg
-  provides: libogg.so
-  source: alpm
-- alpm: libao
-  provides: libpulse.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbisfile.so
-  source: alpm
-- alpm: portaudio
-  provides: libportaudio.so
-  source: alpm
-- alpm: sndio
-  provides: libsndio.so
-  source: alpm
-- alpm: stk
-  provides: libstk-4.6.2.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libfftw3f.so
+  pkgname: fftw
+- libs:
+  - libfltk.so
+  pkgname: fltk
+- libs:
+  - libfluidsynth.so
+  pkgname: fluidsynth
+- libs:
+  - libmp3lame.so
+  pkgname: lame
+- libs:
+  - libgig.so
+  pkgname: libgig
+- libs:
+  - libogg.so
+  pkgname: libogg
+- libs:
+  - libpulse.so
+  pkgname: libao
+- libs:
+  - libsamplerate.so
+  pkgname: libsamplerate
+- libs:
+  - libvorbis.so
+  - libvorbisenc.so
+  - libvorbisfile.so
+  pkgname: libvorbis
+- libs:
+  - libportaudio.so
+  pkgname: portaudio
+- libs:
+  - libsndio.so
+  pkgname: sndio
+- libs:
+  - libstk-4.6.2.so
+  pkgname: stk

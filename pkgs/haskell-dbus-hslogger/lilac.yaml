@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-dbus-hslogger
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-dbus
-- haskell-hslogger
-- haskell-optparse-applicative
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-dbus
-  source: alpm
-- alpm: haskell-hslogger
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
 - alpm: haskell-dbus-hslogger
   source: archpkg

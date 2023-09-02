@@ -10,38 +10,43 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kismet'')
 
   '
 repo_depends:
+- python
 - protobuf-c
 - libusb
-- python
 - libpcap
 - protobuf
-- networkmanager
+- networkmanager: libnm
 - libwebsockets
 - lm_sensors
 update_on:
 - manual: 1
   source: manual
-- alpm: protobuf-c
-  provides: libprotobuf-c.so
-  source: alpm
-- alpm: libusb
-  provides: libusb-1.0.so
-  source: alpm
-- alias: python
-- alpm: libpcap
-  provides: libpcap.so
-  source: alpm
-- alpm: protobuf
-  provides: libprotobuf.so
-  source: alpm
-- alpm: libnm
-  provides: libnm.so
-  source: alpm
-- alpm: libwebsockets
-  provides: libwebsockets.so
-  source: alpm
-- alpm: lm_sensors
-  provides: libsensors.so
-  source: alpm
 - alpm: kismet
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libprotobuf-c.so
+  pkgname: protobuf-c
+- libs:
+  - libusb-1.0.so
+  pkgname: libusb
+- libs:
+  - libpcap.so
+  pkgname: libpcap
+- libs:
+  - libprotobuf.so
+  pkgname: protobuf
+- libs:
+  - libnm.so
+  pkgbase: networkmanager
+  pkgname: libnm
+- libs:
+  - libwebsockets.so
+  pkgname: libwebsockets
+- libs:
+  - libsensors.so
+  pkgname: lm_sensors

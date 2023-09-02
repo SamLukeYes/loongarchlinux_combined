@@ -1,6 +1,6 @@
 destsubdir: extra
 repo_depends:
-- systemd
+- systemd: systemd-libs
 - ncurses
 - curl
 - json-c
@@ -8,18 +8,20 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
-- alpm: json-c
-  provides: libjson-c.so
-  source: alpm
-- alpm: bzip2
-  provides: libbz2.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libncursesw.so
+  pkgname: ncurses
+- libs:
+  - libcurl.so
+  pkgname: curl
+- libs:
+  - libjson-c.so
+  pkgname: json-c
+- libs:
+  - libbz2.so
+  pkgname: bzip2

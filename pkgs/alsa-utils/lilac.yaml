@@ -16,14 +16,19 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libatopology.so
-  source: alpm
-- alpm: ncurses
-  provides: libpanelw.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
 - alpm: alsa-utils
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  - libatopology.so
+  pkgname: alsa-lib
+- libs:
+  - libformw.so
+  - libmenuw.so
+  - libncursesw.so
+  - libpanelw.so
+  pkgname: ncurses
+- libs:
+  - libsamplerate.so
+  pkgname: libsamplerate

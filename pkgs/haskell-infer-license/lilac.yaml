@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-infer-license
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-text-metrics
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-text-metrics
-  source: alpm
 - alpm: haskell-infer-license
   source: archpkg

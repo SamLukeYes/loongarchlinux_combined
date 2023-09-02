@@ -10,16 +10,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''liquidsfz'')
 
   '
 repo_depends:
+- readline
 - libsndfile
 - readline
 update_on:
 - manual: 1
   source: manual
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: readline
-  provides: libreadline.so
-  source: alpm
 - alpm: liquidsfz
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: readline
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libreadline.so
+  pkgname: readline

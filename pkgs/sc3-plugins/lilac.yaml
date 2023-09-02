@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: fftw
-  provides: libfftw3f.so
-  source: alpm
-- alpm: stk
-  provides: libstk-4.6.2.so
-  source: alpm
 - alpm: sc3-plugins
   source: archpkg
+update_on_soname:
+- libs:
+  - libfftw3f.so
+  pkgname: fftw
+- libs:
+  - libstk-4.6.2.so
+  pkgname: stk

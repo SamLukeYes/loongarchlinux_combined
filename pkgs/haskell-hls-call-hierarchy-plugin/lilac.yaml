@@ -9,36 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-call-hier
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-extra
-- haskell-ghcide
-- haskell-hiedb
-- haskell-hls-plugin-api
-- haskell-lens
-- haskell-lsp
-- haskell-sqlite-simple
-- haskell-unordered-containers
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-extra
-  source: alpm
-- alpm: haskell-ghcide
-  source: alpm
-- alpm: haskell-hiedb
-  source: alpm
-- alpm: haskell-hls-plugin-api
-  source: alpm
-- alpm: haskell-lens
-  source: alpm
-- alpm: haskell-lsp
-  source: alpm
-- alpm: haskell-sqlite-simple
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
 - alpm: haskell-hls-call-hierarchy-plugin
   source: archpkg

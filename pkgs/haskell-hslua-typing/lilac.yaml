@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hslua-typing'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hslua-core
-- haskell-hslua-marshalling
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hslua-core
-  source: alpm
-- alpm: haskell-hslua-marshalling
-  source: alpm
 - alpm: haskell-hslua-typing
   source: archpkg

@@ -20,26 +20,31 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: flac
-  provides: libFLAC.so
-  source: alpm
-- alpm: at-spi2-core
-  provides: libatk-1.0.so
-  source: alpm
-- alpm: libid3tag
-  provides: libid3tag.so
-  source: alpm
-- alpm: gtk3
-  provides: libgtk-3.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: harfbuzz
-  provides: libharfbuzz.so
-  source: alpm
-- alpm: pango
-  provides: libpangocairo-1.0.so
-  source: alpm
 - alpm: easytag
   source: archpkg
+update_on_soname:
+- libs:
+  - libFLAC.so
+  pkgname: flac
+- libs:
+  - libatk-1.0.so
+  pkgname: at-spi2-core
+- libs:
+  - libid3tag.so
+  pkgname: libid3tag
+- libs:
+  - libgdk-3.so
+  - libgtk-3.so
+  pkgname: gtk3
+- libs:
+  - libgio-2.0.so
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libharfbuzz.so
+  pkgname: harfbuzz
+- libs:
+  - libpango-1.0.so
+  - libpangocairo-1.0.so
+  pkgname: pango

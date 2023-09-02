@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cockatrice'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-base
-- protobuf
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alias: protobuf
 - alpm: cockatrice
   source: archpkg

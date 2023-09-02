@@ -10,38 +10,40 @@ pre_build_script: '_G.files = download_official_pkgbuild(''spectmorph'')
 
   '
 repo_depends:
+- python
 - fftw
 - freetype2
 - glib2
 - jack2
-- cuda
+- cuda: cuda-tools
 - libsndfile
-- qt5-base
-- python
 update_on:
 - manual: 1
   source: manual
-- alpm: fftw
-  provides: libfftw3f_threads.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: cuda-tools
-  provides: libGL.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alias: python
 - alpm: spectmorph
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libfftw3f.so
+  - libfftw3f_threads.so
+  pkgname: fftw
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libglib-2.0.so
+  pkgname: glib2
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libGL.so
+  pkgbase: cuda
+  pkgname: cuda-tools
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile

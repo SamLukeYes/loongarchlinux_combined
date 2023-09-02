@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-timezone-olso
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-extensible-exceptions
-- haskell-timezone-series
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-extensible-exceptions
-  source: alpm
-- alpm: haskell-timezone-series
-  source: alpm
 - alpm: haskell-timezone-olson
   source: archpkg

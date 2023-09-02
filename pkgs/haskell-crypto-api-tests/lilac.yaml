@@ -9,30 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-crypto-api-te
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-test-framework-quickcheck2
-- haskell-crypto-api
-- haskell-cereal
-- haskell-test-framework
-- haskell-test-framework-hunit
-- haskell-hunit
-- haskell-quickcheck
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-test-framework-quickcheck2
-  source: alpm
-- alpm: haskell-crypto-api
-  source: alpm
-- alpm: haskell-cereal
-  source: alpm
-- alpm: haskell-test-framework
-  source: alpm
-- alpm: haskell-test-framework-hunit
-  source: alpm
-- alpm: haskell-hunit
-  source: alpm
-- alpm: haskell-quickcheck
-  source: alpm
 - alpm: haskell-crypto-api-tests
   source: archpkg

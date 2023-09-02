@@ -15,59 +15,65 @@ repo_depends:
 - ncurses
 - pango
 - librsvg
-- systemd
+- systemd: systemd-libs
 - libxml2
 update_on:
 - manual: 1
   source: manual
-- alpm: acl
-  provides: libacl.so
-  source: alpm
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: dbus
-  provides: libdbus-1.so
-  source: alpm
-- alpm: fontconfig
-  provides: libfontconfig.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: gtk3
-  provides: libgtk-3.so
-  source: alpm
-- alpm: gdk-pixbuf2
-  provides: libgdk_pixbuf-2.0.so
-  source: alpm
-- alpm: giflib
-  provides: libgif.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: gpm
-  provides: libgpm.so
-  source: alpm
-- alpm: harfbuzz
-  provides: libharfbuzz.so
-  source: alpm
-- alpm: darktable
-  provides: libtiff.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: pango
-  provides: libpango-1.0.so
-  source: alpm
-- alpm: librsvg
-  provides: librsvg-2.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
-- alpm: libxml2
-  provides: libxml2.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libacl.so
+  pkgname: acl
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libdbus-1.so
+  pkgname: dbus
+- libs:
+  - libfontconfig.so
+  pkgname: fontconfig
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libgdk-3.so
+  - libgtk-3.so
+  pkgname: gtk3
+- libs:
+  - libgdk_pixbuf-2.0.so
+  pkgname: gdk-pixbuf2
+- libs:
+  - libgif.so
+  pkgname: giflib
+- libs:
+  - libgio-2.0.so
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libgpm.so
+  pkgname: gpm
+- libs:
+  - libharfbuzz.so
+  pkgname: harfbuzz
+- libs:
+  - libjpeg.so
+  - libtiff.so
+  pkgname: darktable
+- libs:
+  - libncursesw.so
+  pkgname: ncurses
+- libs:
+  - libpango-1.0.so
+  pkgname: pango
+- libs:
+  - librsvg-2.so
+  pkgname: librsvg
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libxml2.so
+  pkgname: libxml2

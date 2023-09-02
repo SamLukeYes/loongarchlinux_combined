@@ -10,6 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''freerdp'')
 
   '
 repo_depends:
+- icu
 - alsa-lib
 - ffmpeg
 - icu
@@ -17,37 +18,47 @@ repo_depends:
 - libao
 - libusb
 - openssl
-- openssl
 - pam
-- systemd
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libswscale.so
-  source: alpm
-- alpm: icu
-  provides: libicuuc.so
-  source: alpm
-- alpm: darktable
-  provides: libjpeg.so
-  source: alpm
-- alpm: libao
-  provides: libpulse.so
-  source: alpm
-- alpm: libusb
-  provides: libusb-1.0.so
-  source: alpm
-- alias: libcrypto
-- alias: libssl
-- alpm: pam
-  provides: libpam.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
 - alpm: freerdp
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: icu
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libavcodec.so
+  - libavutil.so
+  - libswresample.so
+  - libswscale.so
+  pkgname: ffmpeg
+- libs:
+  - libicuuc.so
+  pkgname: icu
+- libs:
+  - libjpeg.so
+  pkgname: darktable
+- libs:
+  - libpulse.so
+  pkgname: libao
+- libs:
+  - libusb-1.0.so
+  pkgname: libusb
+- libs:
+  - libcrypto.so
+  - libssl.so
+  pkgname: openssl
+- libs:
+  - libpam.so
+  pkgname: pam
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs

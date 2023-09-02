@@ -12,26 +12,29 @@ pre_build_script: '_G.files = download_official_pkgbuild(''openpgp-ca'')
 repo_depends:
 - bzip2
 - openssl
-- openssl
 - nettle
 - pcsclite
 - sqlite
 update_on:
 - manual: 1
   source: manual
-- alpm: bzip2
-  provides: libbz2.so
-  source: alpm
-- alias: libcrypto
-- alias: libssl
-- alpm: nettle
-  provides: libnettle.so
-  source: alpm
-- alpm: pcsclite
-  provides: libpcsclite.so
-  source: alpm
-- alpm: sqlite
-  provides: libsqlite3.so
-  source: alpm
 - alpm: openpgp-ca
   source: archpkg
+update_on_soname:
+- libs:
+  - libbz2.so
+  pkgname: bzip2
+- libs:
+  - libcrypto.so
+  - libssl.so
+  pkgname: openssl
+- libs:
+  - libhogweed.so
+  - libnettle.so
+  pkgname: nettle
+- libs:
+  - libpcsclite.so
+  pkgname: pcsclite
+- libs:
+  - libsqlite3.so
+  pkgname: sqlite

@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''stellarsolver'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt5-base
-- gsl
-- wcslib
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: gsl
-  source: alpm
-  strip_release: true
-- alpm: wcslib
-  source: alpm
-  strip_release: true
 - alpm: stellarsolver
   source: archpkg

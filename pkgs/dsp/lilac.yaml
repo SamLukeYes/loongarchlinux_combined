@@ -14,32 +14,37 @@ repo_depends:
 - alsa-lib
 - fftw
 - libao
-- pulseaudio
+- pulseaudio: libpulse
 - libsndfile
 - zita-convolver
 update_on:
 - manual: 1
   source: manual
-- alpm: ffmpeg
-  provides: libavutil.so
-  source: alpm
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3.so
-  source: alpm
-- alpm: libao
-  provides: libpulse.so
-  source: alpm
-- alpm: libpulse
-  provides: libpulse-simple.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: zita-convolver
-  provides: libzita-convolver.so
-  source: alpm
 - alpm: dsp
   source: archpkg
+update_on_soname:
+- libs:
+  - libavcodec.so
+  - libavformat.so
+  - libavutil.so
+  pkgname: ffmpeg
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libfftw3.so
+  pkgname: fftw
+- libs:
+  - libao.so
+  - libpulse.so
+  pkgname: libao
+- libs:
+  - libpulse-simple.so
+  pkgbase: pulseaudio
+  pkgname: libpulse
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libzita-convolver.so
+  pkgname: zita-convolver

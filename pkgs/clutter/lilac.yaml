@@ -14,8 +14,11 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: cogl
-  provides: libcogl-path.so
-  source: alpm
 - alpm: clutter
   source: archpkg
+update_on_soname:
+- libs:
+  - libcogl.so
+  - libcogl-pango.so
+  - libcogl-path.so
+  pkgname: cogl

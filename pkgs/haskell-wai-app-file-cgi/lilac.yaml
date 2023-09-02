@@ -9,60 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-app-file-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-attoparsec
-- haskell-case-insensitive
-- haskell-conduit
-- haskell-conduit-extra
-- haskell-data-default-class
-- haskell-http-client
-- haskell-http-conduit
-- haskell-http-date
-- haskell-http-types
-- haskell-mime-types
-- haskell-network
-- haskell-sockaddr
-- haskell-static-hash
-- haskell-wai
-- haskell-wai-conduit
-- haskell-warp
-- haskell-word8
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-case-insensitive
-  source: alpm
-- alpm: haskell-conduit
-  source: alpm
-- alpm: haskell-conduit-extra
-  source: alpm
-- alpm: haskell-data-default-class
-  source: alpm
-- alpm: haskell-http-client
-  source: alpm
-- alpm: haskell-http-conduit
-  source: alpm
-- alpm: haskell-http-date
-  source: alpm
-- alpm: haskell-http-types
-  source: alpm
-- alpm: haskell-mime-types
-  source: alpm
-- alpm: haskell-network
-  source: alpm
-- alpm: haskell-sockaddr
-  source: alpm
-- alpm: haskell-static-hash
-  source: alpm
-- alpm: haskell-wai
-  source: alpm
-- alpm: haskell-wai-conduit
-  source: alpm
-- alpm: haskell-warp
-  source: alpm
-- alpm: haskell-word8
-  source: alpm
 - alpm: haskell-wai-app-file-cgi
   source: archpkg

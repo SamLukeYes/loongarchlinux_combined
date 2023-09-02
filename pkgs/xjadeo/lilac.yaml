@@ -14,36 +14,41 @@ repo_depends:
 - ffmpeg
 - freetype2
 - jack2
-- cuda
+- cuda: cuda-tools
 - liblo
 - libltc
 - portmidi
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libswscale.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: cuda-tools
-  provides: libGL.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
-- alpm: libltc
-  provides: libltc.so
-  source: alpm
-- alpm: portmidi
-  provides: libportmidi.so
-  source: alpm
 - alpm: xjadeo
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libavcodec.so
+  - libavformat.so
+  - libavutil.so
+  - libswscale.so
+  pkgname: ffmpeg
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libGL.so
+  pkgbase: cuda
+  pkgname: cuda-tools
+- libs:
+  - liblo.so
+  pkgname: liblo
+- libs:
+  - libltc.so
+  pkgname: libltc
+- libs:
+  - libportmidi.so
+  pkgname: portmidi

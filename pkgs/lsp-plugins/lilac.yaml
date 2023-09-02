@@ -12,18 +12,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lsp-plugins'')
 repo_depends:
 - libsndfile
 - jack2
-- cuda
+- cuda: cuda-tools
 update_on:
 - manual: 1
   source: manual
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: cuda-tools
-  provides: libGL.so
-  source: alpm
 - alpm: lsp-plugins
   source: archpkg
+update_on_soname:
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libGL.so
+  pkgbase: cuda
+  pkgname: cuda-tools

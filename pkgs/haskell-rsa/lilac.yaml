@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-rsa'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-crypto-api
-- haskell-crypto-pubkey-types
-- haskell-sha
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-crypto-api
-  source: alpm
-- alpm: haskell-crypto-pubkey-types
-  source: alpm
-- alpm: haskell-sha
-  source: alpm
 - alpm: haskell-rsa
   source: archpkg

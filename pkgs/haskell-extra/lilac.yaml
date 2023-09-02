@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-extra'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-clock
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-clock
-  source: alpm
 - alpm: haskell-extra
   source: archpkg

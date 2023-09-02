@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-bifunctors'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base-orphans
-- haskell-comonad
-- haskell-tagged
-- haskell-th-abstraction
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base-orphans
-  source: alpm
-- alpm: haskell-comonad
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
-- alpm: haskell-th-abstraction
-  source: alpm
 - alpm: haskell-bifunctors
   source: archpkg

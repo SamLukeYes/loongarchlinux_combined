@@ -9,36 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''misfortune'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-cereal
-- haskell-knob
-- haskell-monad-loops
-- haskell-random
-- haskell-random-fu
-- haskell-regex-base
-- haskell-regex-pcre
-- haskell-utf8-string
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-cereal
-  source: alpm
-- alpm: haskell-knob
-  source: alpm
-- alpm: haskell-monad-loops
-  source: alpm
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-random-fu
-  source: alpm
-- alpm: haskell-regex-base
-  source: alpm
-- alpm: haskell-regex-pcre
-  source: alpm
-- alpm: haskell-utf8-string
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: misfortune
   source: archpkg

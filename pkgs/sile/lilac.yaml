@@ -14,18 +14,30 @@ repo_depends:
 - lua
 - freetype2
 - harfbuzz
+- icu
 update_on:
 - manual: 1
   source: manual
-- alpm: icu
-  provides: libicuuc.so
-  source: alpm
-- alias: lua
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: harfbuzz
-  provides: libharfbuzz-subset.so
-  source: alpm
 - alpm: sile
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: icu
+  to_pattern: \1
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: lua
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libharfbuzz.so
+  - libharfbuzz-subset.so
+  pkgname: harfbuzz
+- libs:
+  - libicudata.so
+  - libicui18n.so
+  - libicuio.so
+  - libicuuc.so
+  pkgname: icu

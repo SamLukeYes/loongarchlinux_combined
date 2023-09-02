@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-http2-ext
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-http-types
-- haskell-psqueues
-- haskell-wai
-- haskell-warp
-- haskell-word8
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-http-types
-  source: alpm
-- alpm: haskell-psqueues
-  source: alpm
-- alpm: haskell-wai
-  source: alpm
-- alpm: haskell-warp
-  source: alpm
-- alpm: haskell-word8
-  source: alpm
 - alpm: haskell-wai-http2-extra
   source: archpkg

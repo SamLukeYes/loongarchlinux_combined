@@ -9,48 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-statistics'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-async
-- haskell-data-default-class
-- haskell-dense-linear-algebra
-- haskell-math-functions
-- haskell-mwc-random
-- haskell-parallel
-- haskell-primitive
-- haskell-random
-- haskell-vector
-- haskell-vector-algorithms
-- haskell-vector-binary-instances
-- haskell-vector-th-unbox
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-async
-  source: alpm
-- alpm: haskell-data-default-class
-  source: alpm
-- alpm: haskell-dense-linear-algebra
-  source: alpm
-- alpm: haskell-math-functions
-  source: alpm
-- alpm: haskell-mwc-random
-  source: alpm
-- alpm: haskell-parallel
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
-- alpm: haskell-vector-algorithms
-  source: alpm
-- alpm: haskell-vector-binary-instances
-  source: alpm
-- alpm: haskell-vector-th-unbox
-  source: alpm
 - alpm: haskell-statistics
   source: archpkg

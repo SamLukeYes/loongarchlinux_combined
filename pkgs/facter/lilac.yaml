@@ -10,26 +10,41 @@ pre_build_script: '_G.files = download_official_pkgbuild(''facter'')
 
   '
 repo_depends:
+- boost
+- ruby
 - libwhereami
 - cpp-hocon
 - leatherman
-- ruby
-- util-linux
+- util-linux: util-linux-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: libwhereami
-  provides: libwhereami.so
-  source: alpm
-- alpm: cpp-hocon
-  provides: libcpp-hocon.so
-  source: alpm
-- alpm: leatherman
-  provides: leatherman_locale.so
-  source: alpm
-- alias: ruby
-- alpm: util-linux-libs
-  provides: libblkid.so
-  source: alpm
 - alpm: facter
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: boost
+  to_pattern: \1
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: ruby
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libwhereami.so
+  pkgname: libwhereami
+- libs:
+  - libcpp-hocon.so
+  pkgname: cpp-hocon
+- libs:
+  - leatherman_curl.so
+  - leatherman_ruby.so
+  - leatherman_execution.so
+  - leatherman_file_util.so
+  - leatherman_util.so
+  - leatherman_logging.so
+  - leatherman_locale.so
+  pkgname: leatherman
+- libs:
+  - libblkid.so
+  pkgbase: util-linux
+  pkgname: util-linux-libs

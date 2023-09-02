@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hslua-core'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-lua
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-lua
-  source: alpm
 - alpm: haskell-hslua-core
   source: archpkg

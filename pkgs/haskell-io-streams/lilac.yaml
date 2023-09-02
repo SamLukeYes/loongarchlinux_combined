@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-io-streams'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-attoparsec
-- haskell-network
-- haskell-primitive
-- haskell-vector
-- haskell-zlib-bindings
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-network
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
-- alpm: haskell-zlib-bindings
-  source: alpm
 - alpm: haskell-io-streams
   source: archpkg

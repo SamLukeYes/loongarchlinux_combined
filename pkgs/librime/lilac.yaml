@@ -10,10 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''librime'')
 
   '
 repo_depends:
+- boost
 - lua
 update_on:
 - manual: 1
   source: manual
-- alias: lua
 - alpm: librime
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: boost
+  to_pattern: \1
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: lua
+  to_pattern: \1

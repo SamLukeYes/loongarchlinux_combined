@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-puremd5'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-cereal
-- haskell-crypto-api
-- haskell-tagged
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-cereal
-  source: alpm
-- alpm: haskell-crypto-api
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
 - alpm: haskell-puremd5
   source: archpkg

@@ -22,32 +22,34 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: fftw
-  provides: libfftw3f.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: libltc
-  provides: libltc.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: pango
-  provides: libpangocairo-1.0.so
-  source: alpm
-- alpm: zita-convolver
-  provides: libzita-convolver.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
 - alpm: x42-plugins
   source: archpkg
+update_on_soname:
+- libs:
+  - libfftw3f.so
+  pkgname: fftw
+- libs:
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libltc.so
+  pkgname: libltc
+- libs:
+  - libsamplerate.so
+  pkgname: libsamplerate
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libpango-1.0.so
+  - libpangocairo-1.0.so
+  pkgname: pango
+- libs:
+  - libzita-convolver.so
+  pkgname: zita-convolver
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - liblo.so
+  pkgname: liblo

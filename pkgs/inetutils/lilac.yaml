@@ -13,21 +13,27 @@ repo_depends:
 - readline
 - pam
 - libxcrypt
+- readline
 - ncurses
 update_on:
 - manual: 1
   source: manual
-- alpm: readline
-  provides: libreadline.so
-  source: alpm
-- alpm: pam
-  provides: libpam.so
-  source: alpm
-- alpm: libxcrypt
-  provides: libcrypt.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
 - alpm: inetutils
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: readline
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libpam.so
+  pkgname: pam
+- libs:
+  - libcrypt.so
+  pkgname: libxcrypt
+- libs:
+  - libreadline.so
+  pkgname: readline
+- libs:
+  - libncursesw.so
+  pkgname: ncurses

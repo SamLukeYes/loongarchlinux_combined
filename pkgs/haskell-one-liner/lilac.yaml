@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-one-liner'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-bifunctors
-- haskell-contravariant
-- haskell-linear-base
-- haskell-profunctors
-- haskell-tagged
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-bifunctors
-  source: alpm
-- alpm: haskell-contravariant
-  source: alpm
-- alpm: haskell-linear-base
-  source: alpm
-- alpm: haskell-profunctors
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
 - alpm: haskell-one-liner
   source: archpkg

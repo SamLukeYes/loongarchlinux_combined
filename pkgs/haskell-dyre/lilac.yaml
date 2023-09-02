@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-dyre'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-executable-path
-- haskell-xdg-basedir
-- haskell-io-storage
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-executable-path
-  source: alpm
-- alpm: haskell-xdg-basedir
-  source: alpm
-- alpm: haskell-io-storage
-  source: alpm
 - alpm: haskell-dyre
   source: archpkg

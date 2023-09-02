@@ -10,18 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pgadmin4'')
 
   '
 repo_depends:
-- qt5-base
 - python
 - libxcrypt
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alias: python
-- alpm: libxcrypt
-  provides: libcrypt.so
-  source: alpm
 - alpm: pgadmin4
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libcrypt.so
+  pkgname: libxcrypt

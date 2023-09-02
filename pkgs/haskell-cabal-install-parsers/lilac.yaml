@@ -9,30 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cabal-install
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-base16-bytestring
-- haskell-binary-instances
-- haskell-cryptohash-sha256
-- haskell-lukko
-- haskell-network-uri
-- haskell-tar
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-base16-bytestring
-  source: alpm
-- alpm: haskell-binary-instances
-  source: alpm
-- alpm: haskell-cryptohash-sha256
-  source: alpm
-- alpm: haskell-lukko
-  source: alpm
-- alpm: haskell-network-uri
-  source: alpm
-- alpm: haskell-tar
-  source: alpm
 - alpm: haskell-cabal-install-parsers
   source: archpkg

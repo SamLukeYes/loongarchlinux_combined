@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-commonmark-ex
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-commonmark
-- haskell-emojis
-- haskell-network-uri
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-commonmark
-  source: alpm
-- alpm: haskell-emojis
-  source: alpm
-- alpm: haskell-network-uri
-  source: alpm
 - alpm: haskell-commonmark-extensions
   source: archpkg

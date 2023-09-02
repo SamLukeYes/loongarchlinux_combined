@@ -10,6 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mpd'')
 
   '
 repo_depends:
+- icu
 - alsa-lib
 - audiofile
 - avahi
@@ -32,7 +33,7 @@ repo_depends:
 - libmpdclient
 - libogg
 - libopenmpt
-- pipewire
+- pipewire: libpipewire
 - libsamplerate
 - libsndfile
 - libupnp
@@ -42,116 +43,131 @@ repo_depends:
 - openal
 - opus
 - sqlite
-- systemd
+- systemd: systemd-libs
 - twolame
 - gitlab
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: audiofile
-  provides: libaudiofile.so
-  source: alpm
-- alpm: avahi
-  provides: libavahi-common.so
-  source: alpm
-- alpm: bzip2
-  provides: libbz2.so
-  source: alpm
-- alpm: chromaprint
-  provides: libchromaprint.so
-  source: alpm
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
-- alpm: dbus
-  provides: libdbus-1.so
-  source: alpm
-- alpm: expat
-  provides: libexpat.so
-  source: alpm
-- alpm: faad2
-  provides: libfaad.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavutil.so
-  source: alpm
-- alpm: flac
-  provides: libFLAC.so
-  source: alpm
-- alpm: fluidsynth
-  provides: libfluidsynth.so
-  source: alpm
-- alpm: fmt
-  provides: libfmt.so
-  source: alpm
-- alpm: icu
-  provides: libicuuc.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: lame
-  provides: libmp3lame.so
-  source: alpm
-- alpm: libao
-  provides: libpulse.so
-  source: alpm
-- alpm: libid3tag
-  provides: libid3tag.so
-  source: alpm
-- alpm: libmikmod
-  provides: libmikmod.so
-  source: alpm
-- alpm: libmpdclient
-  provides: libmpdclient.so
-  source: alpm
-- alpm: libogg
-  provides: libogg.so
-  source: alpm
-- alpm: libopenmpt
-  provides: libopenmpt.so
-  source: alpm
-- alpm: libpipewire
-  provides: libpipewire-0.3.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: libupnp
-  provides: libupnp.so
-  source: alpm
-- alpm: liburing
-  provides: liburing.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbisenc.so
-  source: alpm
-- alpm: mpg123
-  provides: libmpg123.so
-  source: alpm
-- alpm: openal
-  provides: libopenal.so
-  source: alpm
-- alpm: opus
-  provides: libopus.so
-  source: alpm
-- alpm: sqlite
-  provides: libsqlite3.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
-- alpm: twolame
-  provides: libtwolame.so
-  source: alpm
-- alpm: gitlab
-  provides: libyajl.so
-  source: alpm
 - alpm: mpd
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: icu
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libaudiofile.so
+  pkgname: audiofile
+- libs:
+  - libavahi-client.so
+  - libavahi-common.so
+  pkgname: avahi
+- libs:
+  - libbz2.so
+  pkgname: bzip2
+- libs:
+  - libchromaprint.so
+  pkgname: chromaprint
+- libs:
+  - libcurl.so
+  pkgname: curl
+- libs:
+  - libdbus-1.so
+  pkgname: dbus
+- libs:
+  - libexpat.so
+  pkgname: expat
+- libs:
+  - libfaad.so
+  pkgname: faad2
+- libs:
+  - libavcodec.so
+  - libavfilter.so
+  - libavformat.so
+  - libavutil.so
+  pkgname: ffmpeg
+- libs:
+  - libFLAC.so
+  pkgname: flac
+- libs:
+  - libfluidsynth.so
+  pkgname: fluidsynth
+- libs:
+  - libfmt.so
+  pkgname: fmt
+- libs:
+  - libicui18n.so
+  - libicuuc.so
+  pkgname: icu
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libmp3lame.so
+  pkgname: lame
+- libs:
+  - libao.so
+  - libpulse.so
+  pkgname: libao
+- libs:
+  - libid3tag.so
+  pkgname: libid3tag
+- libs:
+  - libmikmod.so
+  pkgname: libmikmod
+- libs:
+  - libmpdclient.so
+  pkgname: libmpdclient
+- libs:
+  - libogg.so
+  pkgname: libogg
+- libs:
+  - libopenmpt.so
+  pkgname: libopenmpt
+- libs:
+  - libpipewire-0.3.so
+  pkgbase: pipewire
+  pkgname: libpipewire
+- libs:
+  - libsamplerate.so
+  pkgname: libsamplerate
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libixml.so
+  - libupnp.so
+  pkgname: libupnp
+- libs:
+  - liburing.so
+  pkgname: liburing
+- libs:
+  - libvorbis.so
+  - libvorbisenc.so
+  pkgname: libvorbis
+- libs:
+  - libmpg123.so
+  pkgname: mpg123
+- libs:
+  - libopenal.so
+  pkgname: openal
+- libs:
+  - libopus.so
+  pkgname: opus
+- libs:
+  - libsqlite3.so
+  pkgname: sqlite
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libtwolame.so
+  pkgname: twolame
+- libs:
+  - libyajl.so
+  pkgname: gitlab

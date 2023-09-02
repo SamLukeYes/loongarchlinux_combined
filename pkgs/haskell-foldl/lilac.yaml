@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-foldl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-comonad
-- haskell-contravariant
-- haskell-random
-- haskell-primitive
-- haskell-profunctors
-- haskell-semigroupoids
-- haskell-unordered-containers
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-comonad
-  source: alpm
-- alpm: haskell-contravariant
-  source: alpm
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-profunctors
-  source: alpm
-- alpm: haskell-semigroupoids
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-foldl
   source: archpkg

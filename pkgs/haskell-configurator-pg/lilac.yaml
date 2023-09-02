@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-configurator-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-megaparsec
-- haskell-protolude
-- haskell-scientific
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-megaparsec
-  source: alpm
-- alpm: haskell-protolude
-  source: alpm
-- alpm: haskell-scientific
-  source: alpm
 - alpm: haskell-configurator-pg
   source: archpkg

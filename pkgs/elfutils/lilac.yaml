@@ -10,24 +10,25 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libarchive
-  provides: libarchive.so
-  source: alpm
-- alpm: libmicrohttpd
-  provides: libmicrohttpd.so
-  source: alpm
-- alpm: sqlite
-  provides: libsqlite3.so
-  source: alpm
-- alpm: bzip2
-  provides: libbz2.so
-  source: alpm
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
-- alpm: xz
-  provides: liblzma.so
-  source: alpm
-- alpm: zstd
-  provides: libzstd.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libarchive.so
+  pkgname: libarchive
+- libs:
+  - libmicrohttpd.so
+  pkgname: libmicrohttpd
+- libs:
+  - libsqlite3.so
+  pkgname: sqlite
+- libs:
+  - libbz2.so
+  pkgname: bzip2
+- libs:
+  - libcurl.so
+  pkgname: curl
+- libs:
+  - liblzma.so
+  pkgname: xz
+- libs:
+  - libzstd.so
+  pkgname: zstd

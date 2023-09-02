@@ -7,31 +7,35 @@ repo_depends:
 - icu
 - gpm
 - ncurses
-- systemd
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: dbus
-  provides: libdbus-1.so
-  source: alpm
-- alpm: expat
-  provides: libexpat.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: icu
-  provides: libicuuc.so
-  source: alpm
-- alpm: gpm
-  provides: libgpm.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libdbus-1.so
+  pkgname: dbus
+- libs:
+  - libexpat.so
+  pkgname: expat
+- libs:
+  - libgio-2.0.so
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libicuuc.so
+  pkgname: icu
+- libs:
+  - libgpm.so
+  pkgname: gpm
+- libs:
+  - libncursesw.so
+  pkgname: ncurses
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs

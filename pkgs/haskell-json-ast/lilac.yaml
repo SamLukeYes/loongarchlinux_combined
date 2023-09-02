@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-json-ast'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-vector
-- haskell-scientific
-- haskell-unordered-containers
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-vector
-  source: alpm
-- alpm: haskell-scientific
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
 - alpm: haskell-json-ast
   source: archpkg

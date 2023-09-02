@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-parsers'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-attoparsec
-- haskell-base-orphans
-- haskell-charset
-- haskell-scientific
-- haskell-unordered-containers
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-base-orphans
-  source: alpm
-- alpm: haskell-charset
-  source: alpm
-- alpm: haskell-scientific
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
 - alpm: haskell-parsers
   source: archpkg

@@ -14,8 +14,9 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: tesseract
-  provides: libtesseract.so
-  source: alpm
 - alpm: gimagereader
   source: archpkg
+update_on_soname:
+- libs:
+  - libtesseract.so
+  pkgname: tesseract

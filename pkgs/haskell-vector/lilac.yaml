@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-vector'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-primitive
-- haskell-vector-stream
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-vector-stream
-  source: alpm
 - alpm: haskell-vector
   source: archpkg

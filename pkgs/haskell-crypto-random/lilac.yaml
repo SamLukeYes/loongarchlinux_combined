@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-crypto-random
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-securemem
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-securemem
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-crypto-random
   source: archpkg

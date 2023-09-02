@@ -19,21 +19,24 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: coeurl
-  provides: libcoeurl.so
-  source: alpm
-- alpm: fmt
-  provides: libfmt.so
-  source: alpm
-- alpm: libolm
-  provides: libolm.so
-  source: alpm
-- alias: libcrypto
-- alpm: re2
-  provides: libre2.so
-  source: alpm
-- alpm: spdlog
-  provides: libspdlog.so
-  source: alpm
 - alpm: mtxclient
   source: archpkg
+update_on_soname:
+- libs:
+  - libcoeurl.so
+  pkgname: coeurl
+- libs:
+  - libfmt.so
+  pkgname: fmt
+- libs:
+  - libolm.so
+  pkgname: libolm
+- libs:
+  - libcrypto.so
+  pkgname: openssl
+- libs:
+  - libre2.so
+  pkgname: re2
+- libs:
+  - libspdlog.so
+  pkgname: spdlog

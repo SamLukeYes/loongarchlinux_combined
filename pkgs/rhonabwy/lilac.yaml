@@ -16,14 +16,15 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
-- alpm: orcania
-  provides: liborcania.so
-  source: alpm
-- alpm: yder
-  provides: libyder.so
-  source: alpm
 - alpm: rhonabwy
   source: archpkg
+update_on_soname:
+- libs:
+  - libcurl.so
+  pkgname: curl
+- libs:
+  - liborcania.so
+  pkgname: orcania
+- libs:
+  - libyder.so
+  pkgname: yder

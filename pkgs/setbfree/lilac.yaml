@@ -15,11 +15,13 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: pango
-  provides: libpangocairo-1.0.so
-  source: alpm
 - alpm: setbfree
   source: archpkg
+update_on_soname:
+- libs:
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libpango-1.0.so
+  - libpangocairo-1.0.so
+  pkgname: pango

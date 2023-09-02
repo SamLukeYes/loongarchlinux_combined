@@ -5,9 +5,10 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libseccomp
-  provides: libseccomp.so
-  source: alpm
-- alpm: zstd
-  provides: libzstd.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libseccomp.so
+  pkgname: libseccomp
+- libs:
+  - libzstd.so
+  pkgname: zstd

@@ -10,20 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''texworks'')
 
   '
 repo_depends:
-- qt5-base
-- qt5-declarative
-- poppler
+- poppler: poppler-qt5
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: qt5-declarative
-  source: alpm
-  strip_release: true
-- alpm: poppler-qt5
-  provides: libpoppler-qt5.so
-  source: alpm
 - alpm: texworks
   source: archpkg
+update_on_soname:
+- libs:
+  - libpoppler-qt5.so
+  pkgbase: poppler
+  pkgname: poppler-qt5

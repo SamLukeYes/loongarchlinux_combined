@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hslua-module-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hslua-core
-- haskell-hslua-list
-- haskell-hslua-marshalling
-- haskell-hslua-packaging
-- haskell-hslua-typing
-- haskell-zip-archive
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hslua-core
-  source: alpm
-- alpm: haskell-hslua-list
-  source: alpm
-- alpm: haskell-hslua-marshalling
-  source: alpm
-- alpm: haskell-hslua-packaging
-  source: alpm
-- alpm: haskell-hslua-typing
-  source: alpm
-- alpm: haskell-zip-archive
-  source: alpm
 - alpm: haskell-hslua-module-zip
   source: archpkg

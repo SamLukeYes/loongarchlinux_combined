@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xmonad-extras'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-x11
-- haskell-alsa-mixer
-- haskell-hint
-- haskell-libmpd
-- haskell-network
-- haskell-regex-posix
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-x11
-  source: alpm
-- alpm: haskell-alsa-mixer
-  source: alpm
-- alpm: haskell-hint
-  source: alpm
-- alpm: haskell-libmpd
-  source: alpm
-- alpm: haskell-network
-  source: alpm
-- alpm: haskell-regex-posix
-  source: alpm
 - alpm: xmonad-extras
   source: archpkg

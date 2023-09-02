@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-text-builder-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-deferred-folds
-- haskell-isomorphism-class
-- haskell-split
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-deferred-folds
-  source: alpm
-- alpm: haskell-isomorphism-class
-  source: alpm
-- alpm: haskell-split
-  source: alpm
 - alpm: haskell-text-builder-dev
   source: archpkg

@@ -9,51 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lsp-types1.4'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-data-default
-- haskell-diff
-- haskell-dlist
-- haskell-hashable
-- haskell-hslogger
-- haskell-lens
-- haskell-mod
-- haskell-network-uri
-- haskell-rope-utf16-splay
-- haskell-scientific
-- haskell-some
-- haskell-temporary
-- haskell-unordered-containers
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-data-default
-  source: alpm
-- alpm: haskell-diff
-  source: alpm
-- alpm: haskell-dlist
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-hslogger
-  source: alpm
-- alpm: haskell-lens
-  source: alpm
-- alpm: haskell-mod
-  source: alpm
-- alpm: haskell-network-uri
-  source: alpm
-- alpm: haskell-rope-utf16-splay
-  source: alpm
-- alpm: haskell-scientific
-  source: alpm
-- alpm: haskell-some
-  source: alpm
-- alpm: haskell-temporary
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
 - alpm: haskell-lsp-types1.4
   source: archpkg

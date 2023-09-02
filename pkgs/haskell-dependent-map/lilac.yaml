@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-dependent-map
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-constraints-extras
-- haskell-dependent-sum
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-constraints-extras
-  source: alpm
-- alpm: haskell-dependent-sum
-  source: alpm
 - alpm: haskell-dependent-map
   source: archpkg

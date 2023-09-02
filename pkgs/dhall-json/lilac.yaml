@@ -9,36 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dhall-json'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-aeson-pretty
-- haskell-aeson-yaml
-- haskell-lens-family-core
-- haskell-optparse-applicative
-- haskell-prettyprinter
-- haskell-scientific
-- haskell-unordered-containers
-- haskell-prettyprinter-ansi-terminal
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-aeson-pretty
-  source: alpm
-- alpm: haskell-aeson-yaml
-  source: alpm
-- alpm: haskell-lens-family-core
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-prettyprinter
-  source: alpm
-- alpm: haskell-scientific
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-prettyprinter-ansi-terminal
-  source: alpm
 - alpm: dhall-json
   source: archpkg

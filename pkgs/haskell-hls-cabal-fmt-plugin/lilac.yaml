@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-cabal-fmt
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-ghcide
-- haskell-hls-plugin-api
-- haskell-lens
-- haskell-lsp-types
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-ghcide
-  source: alpm
-- alpm: haskell-hls-plugin-api
-  source: alpm
-- alpm: haskell-lens
-  source: alpm
-- alpm: haskell-lsp-types
-  source: alpm
 - alpm: haskell-hls-cabal-fmt-plugin
   source: archpkg

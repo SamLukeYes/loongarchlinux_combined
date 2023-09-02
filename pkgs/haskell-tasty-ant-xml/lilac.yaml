@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-ant-xml
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-generic-deriving
-- haskell-tagged
-- haskell-tasty
-- haskell-xml
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-generic-deriving
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
-- alpm: haskell-tasty
-  source: alpm
-- alpm: haskell-xml
-  source: alpm
 - alpm: haskell-tasty-ant-xml
   source: archpkg

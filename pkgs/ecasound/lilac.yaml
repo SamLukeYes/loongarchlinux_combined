@@ -10,6 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ecasound'')
 
   '
 repo_depends:
+- readline
 - alsa-lib
 - jack2
 - audiofile
@@ -22,32 +23,37 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: audiofile
-  provides: libaudiofile.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
-- alpm: lilv
-  provides: liblilv-0.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: readline
-  provides: libreadline.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
 - alpm: ecasound
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: readline
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libaudiofile.so
+  pkgname: audiofile
+- libs:
+  - liblo.so
+  pkgname: liblo
+- libs:
+  - liblilv-0.so
+  pkgname: lilv
+- libs:
+  - libncursesw.so
+  pkgname: ncurses
+- libs:
+  - libreadline.so
+  pkgname: readline
+- libs:
+  - libsamplerate.so
+  pkgname: libsamplerate
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile

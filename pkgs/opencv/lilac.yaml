@@ -1,16 +1,4 @@
 destsubdir: extra
-repo_depends:
-- protobuf
-- qt6-base
-- jsoncpp
 update_on:
 - manual: 1
   source: manual
-- alias: protobuf
-- alpm: opencv
-  source: alpm
-  strip_release: true
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
-- alias: jsoncpp

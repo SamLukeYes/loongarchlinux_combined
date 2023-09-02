@@ -11,15 +11,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''glib2'')
   '
 repo_depends:
 - libffi
-- util-linux
+- util-linux: util-linux-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: libffi
-  provides: libffi.so
-  source: alpm
-- alpm: util-linux-libs
-  provides: libmount.so
-  source: alpm
 - alpm: glib2
   source: archpkg
+update_on_soname:
+- libs:
+  - libffi.so
+  pkgname: libffi
+- libs:
+  - libmount.so
+  pkgbase: util-linux
+  pkgname: util-linux-libs

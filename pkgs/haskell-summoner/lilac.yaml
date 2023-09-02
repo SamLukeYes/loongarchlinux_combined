@@ -9,39 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-summoner'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-colourista
-- haskell-generic-data
-- haskell-gitrev
-- haskell-neat-interpolation
-- haskell-optparse-applicative
-- haskell-relude
-- haskell-shellmet
-- haskell-tomland
-- haskell-validation-selective
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-colourista
-  source: alpm
-- alpm: haskell-generic-data
-  source: alpm
-- alpm: haskell-gitrev
-  source: alpm
-- alpm: haskell-neat-interpolation
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-relude
-  source: alpm
-- alpm: haskell-shellmet
-  source: alpm
-- alpm: haskell-tomland
-  source: alpm
-- alpm: haskell-validation-selective
-  source: alpm
 - alpm: haskell-summoner
   source: archpkg

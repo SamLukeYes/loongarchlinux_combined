@@ -11,19 +11,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pipewire-media-sessio
   '
 repo_depends:
 - dbus
-- pipewire
-- systemd
+- pipewire: libpipewire
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: dbus
-  provides: libdbus-1.so
-  source: alpm
-- alpm: libpipewire
-  provides: libpipewire-0.3.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
 - alpm: pipewire-media-session
   source: archpkg
+update_on_soname:
+- libs:
+  - libdbus-1.so
+  pkgname: dbus
+- libs:
+  - libpipewire-0.3.so
+  pkgbase: pipewire
+  pkgname: libpipewire
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs

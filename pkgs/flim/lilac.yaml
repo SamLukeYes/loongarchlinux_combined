@@ -7,13 +7,8 @@ post_build_script: 'git_add_files(_G.files)
 pre_build_script: '_G.files = download_official_pkgbuild(''flim'')
 
   '
-repo_depends:
-- emacs
 update_on:
 - manual: 1
   source: manual
-- alpm: emacs
-  source: alpm
-  strip_release: true
 - alpm: flim
   source: archpkg

@@ -16,14 +16,15 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: fftw
-  provides: libfftw3f.so
-  source: alpm
-- alpm: ntk
-  provides: libntk.so
-  source: alpm
-- alpm: zita-resampler
-  provides: libzita-resampler.so
-  source: alpm
 - alpm: infamousplugins
   source: archpkg
+update_on_soname:
+- libs:
+  - libfftw3f.so
+  pkgname: fftw
+- libs:
+  - libntk.so
+  pkgname: ntk
+- libs:
+  - libzita-resampler.so
+  pkgname: zita-resampler

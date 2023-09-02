@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-uuid'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-cryptohash-md5
-- haskell-cryptohash-sha1
-- haskell-entropy
-- haskell-network-info
-- haskell-random
-- haskell-uuid-types
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-cryptohash-md5
-  source: alpm
-- alpm: haskell-cryptohash-sha1
-  source: alpm
-- alpm: haskell-entropy
-  source: alpm
-- alpm: haskell-network-info
-  source: alpm
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-uuid-types
-  source: alpm
 - alpm: haskell-uuid
   source: archpkg

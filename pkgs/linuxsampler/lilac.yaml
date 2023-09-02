@@ -17,17 +17,18 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: libgig
-  provides: libgig.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
 - alpm: linuxsampler
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libgig.so
+  pkgname: libgig
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile

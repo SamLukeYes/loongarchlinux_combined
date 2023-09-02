@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-vector-sized'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-adjunctions
-- haskell-comonad
-- haskell-distributive
-- haskell-finite-typelits
-- haskell-hashable
-- haskell-indexed-list-literals
-- haskell-primitive
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-adjunctions
-  source: alpm
-- alpm: haskell-comonad
-  source: alpm
-- alpm: haskell-distributive
-  source: alpm
-- alpm: haskell-finite-typelits
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-indexed-list-literals
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-vector-sized
   source: archpkg

@@ -10,24 +10,26 @@ pre_build_script: '_G.files = download_official_pkgbuild(''tor'')
 
   '
 repo_depends:
-- systemd
+- systemd: systemd-libs
 - zstd
 - libseccomp
 - libcap
 update_on:
 - manual: 1
   source: manual
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
-- alpm: zstd
-  provides: libzstd.so
-  source: alpm
-- alpm: libseccomp
-  provides: libseccomp.so
-  source: alpm
-- alpm: libcap
-  provides: libcap.so
-  source: alpm
 - alpm: tor
   source: archpkg
+update_on_soname:
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libzstd.so
+  pkgname: zstd
+- libs:
+  - libseccomp.so
+  pkgname: libseccomp
+- libs:
+  - libcap.so
+  pkgname: libcap

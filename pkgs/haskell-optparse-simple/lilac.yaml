@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-optparse-simp
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-githash
-- haskell-optparse-applicative
-- haskell-th-compat
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-githash
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-th-compat
-  source: alpm
 - alpm: haskell-optparse-simple
   source: archpkg

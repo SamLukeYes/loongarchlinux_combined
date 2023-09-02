@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-dependent-sum
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-dependent-sum
-- haskell-th-abstraction
-- haskell-th-extras
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-dependent-sum
-  source: alpm
-- alpm: haskell-th-abstraction
-  source: alpm
-- alpm: haskell-th-extras
-  source: alpm
 - alpm: haskell-dependent-sum-template
   source: archpkg

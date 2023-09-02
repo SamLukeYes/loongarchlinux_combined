@@ -15,9 +15,13 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: readline
-- alpm: libidn2
-  provides: libidn2.so
-  source: alpm
 - alpm: gnutls
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: readline
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libidn2.so
+  pkgname: libidn2

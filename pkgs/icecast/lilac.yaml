@@ -16,14 +16,15 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
-- alpm: libogg
-  provides: libogg.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbis.so
-  source: alpm
 - alpm: icecast
   source: archpkg
+update_on_soname:
+- libs:
+  - libcurl.so
+  pkgname: curl
+- libs:
+  - libogg.so
+  pkgname: libogg
+- libs:
+  - libvorbis.so
+  pkgname: libvorbis

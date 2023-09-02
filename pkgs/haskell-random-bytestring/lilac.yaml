@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-random-bytest
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-mwc-random
-- haskell-pcg-random
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-mwc-random
-  source: alpm
-- alpm: haskell-pcg-random
-  source: alpm
 - alpm: haskell-random-bytestring
   source: archpkg

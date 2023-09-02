@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-concurrent-ex
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-unbounded-delays
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-unbounded-delays
-  source: alpm
 - alpm: haskell-concurrent-extra
   source: archpkg

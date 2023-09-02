@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hasql-notific
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hasql
-- haskell-hasql-pool
-- haskell-postgresql-libpq
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hasql
-  source: alpm
-- alpm: haskell-hasql-pool
-  source: alpm
-- alpm: haskell-postgresql-libpq
-  source: alpm
 - alpm: haskell-hasql-notifications
   source: archpkg

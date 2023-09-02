@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hslua-repl'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hslua-core
-- haskell-isocline
-- haskell-lua
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hslua-core
-  source: alpm
-- alpm: haskell-isocline
-  source: alpm
-- alpm: haskell-lua
-  source: alpm
 - alpm: haskell-hslua-repl
   source: archpkg

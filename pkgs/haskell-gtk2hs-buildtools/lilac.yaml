@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gtk2hs-buildt
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-random
-- haskell-hashtables
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-hashtables
-  source: alpm
 - alpm: haskell-gtk2hs-buildtools
   source: archpkg

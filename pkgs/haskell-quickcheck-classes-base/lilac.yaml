@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-quickcheck-cl
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-quickcheck
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-quickcheck
-  source: alpm
 - alpm: haskell-quickcheck-classes-base
   source: archpkg

@@ -17,17 +17,20 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: evolution-data-server
-  provides: libedataserverui-1.2.so
-  source: alpm
-- alpm: folks
-  provides: libfolks.so
-  source: alpm
-- alpm: granite
-  provides: libgranite.so
-  source: alpm
-- alpm: libhandy
-  provides: libhandy-1.so
-  source: alpm
 - alpm: pantheon-mail
   source: archpkg
+update_on_soname:
+- libs:
+  - libcamel-1.2.so
+  - libedataserver-1.2.so
+  - libedataserverui-1.2.so
+  pkgname: evolution-data-server
+- libs:
+  - libfolks.so
+  pkgname: folks
+- libs:
+  - libgranite.so
+  pkgname: granite
+- libs:
+  - libhandy-1.so
+  pkgname: libhandy

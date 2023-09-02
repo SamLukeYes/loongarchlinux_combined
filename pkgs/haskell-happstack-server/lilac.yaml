@@ -9,60 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-happstack-ser
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base64-bytestring
-- haskell-blaze-html
-- haskell-extensible-exceptions
-- haskell-hslogger
-- haskell-html
-- haskell-monad-control
-- haskell-network
-- haskell-network-uri
-- haskell-old-locale
-- haskell-sendfile
-- haskell-syb
-- haskell-system-filepath
-- haskell-threads
-- haskell-transformers-base
-- haskell-transformers-compat
-- haskell-utf8-string
-- haskell-zlib
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base64-bytestring
-  source: alpm
-- alpm: haskell-blaze-html
-  source: alpm
-- alpm: haskell-extensible-exceptions
-  source: alpm
-- alpm: haskell-hslogger
-  source: alpm
-- alpm: haskell-html
-  source: alpm
-- alpm: haskell-monad-control
-  source: alpm
-- alpm: haskell-network
-  source: alpm
-- alpm: haskell-network-uri
-  source: alpm
-- alpm: haskell-old-locale
-  source: alpm
-- alpm: haskell-sendfile
-  source: alpm
-- alpm: haskell-syb
-  source: alpm
-- alpm: haskell-system-filepath
-  source: alpm
-- alpm: haskell-threads
-  source: alpm
-- alpm: haskell-transformers-base
-  source: alpm
-- alpm: haskell-transformers-compat
-  source: alpm
-- alpm: haskell-utf8-string
-  source: alpm
-- alpm: haskell-zlib
-  source: alpm
 - alpm: haskell-happstack-server
   source: archpkg

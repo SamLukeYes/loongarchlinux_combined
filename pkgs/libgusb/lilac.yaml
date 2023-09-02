@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: json-glib
-  provides: libjson-glib-1.0.so
-  source: alpm
-- alpm: libusb
-  provides: libusb-1.0.so
-  source: alpm
 - alpm: libgusb
   source: archpkg
+update_on_soname:
+- libs:
+  - libjson-glib-1.0.so
+  pkgname: json-glib
+- libs:
+  - libusb-1.0.so
+  pkgname: libusb

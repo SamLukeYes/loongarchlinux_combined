@@ -12,30 +12,32 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gamescope'')
 repo_depends:
 - libcap
 - libliftoff
-- pipewire
+- pipewire: libpipewire
 - emby-theater
 - wlroots
 - intel-oneapi-basekit
 update_on:
 - manual: 1
   source: manual
-- alpm: libcap
-  provides: libcap.so
-  source: alpm
-- alpm: libliftoff
-  provides: libliftoff.so
-  source: alpm
-- alpm: libpipewire
-  provides: libpipewire-0.3.so
-  source: alpm
-- alpm: emby-theater
-  provides: libvulkan.so
-  source: alpm
-- alpm: wlroots
-  provides: libwlroots.so
-  source: alpm
-- alpm: intel-oneapi-basekit
-  provides: libxkbcommon.so
-  source: alpm
 - alpm: gamescope
   source: archpkg
+update_on_soname:
+- libs:
+  - libcap.so
+  pkgname: libcap
+- libs:
+  - libliftoff.so
+  pkgname: libliftoff
+- libs:
+  - libpipewire-0.3.so
+  pkgbase: pipewire
+  pkgname: libpipewire
+- libs:
+  - libvulkan.so
+  pkgname: emby-theater
+- libs:
+  - libwlroots.so
+  pkgname: wlroots
+- libs:
+  - libxkbcommon.so
+  pkgname: intel-oneapi-basekit

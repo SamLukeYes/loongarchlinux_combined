@@ -10,16 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cctag'')
 
   '
 repo_depends:
-- qt6-base
-- opencv
+- boost
 update_on:
 - manual: 1
   source: manual
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
-- alpm: opencv
-  source: alpm
-  strip_release: true
 - alpm: cctag
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: boost
+  to_pattern: \1

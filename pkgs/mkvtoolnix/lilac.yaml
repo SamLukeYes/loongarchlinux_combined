@@ -10,40 +10,38 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mkvtoolnix'')
 
   '
 repo_depends:
+- boost
 - libebml
 - fmt
 - libmatroska
-- qt6-base
 - flac
 - libogg
 - libvorbis
-- cmark
 update_on:
 - manual: 1
   source: manual
-- alpm: libebml
-  provides: libebml.so
-  source: alpm
-- alpm: fmt
-  provides: libfmt.so
-  source: alpm
-- alpm: libmatroska
-  provides: libmatroska.so
-  source: alpm
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
-- alpm: flac
-  provides: libFLAC.so
-  source: alpm
-- alpm: libogg
-  provides: libogg.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbis.so
-  source: alpm
-- alpm: cmark
-  source: alpm
-  strip_release: true
 - alpm: mkvtoolnix
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: boost
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libebml.so
+  pkgname: libebml
+- libs:
+  - libfmt.so
+  pkgname: fmt
+- libs:
+  - libmatroska.so
+  pkgname: libmatroska
+- libs:
+  - libFLAC.so
+  pkgname: flac
+- libs:
+  - libogg.so
+  pkgname: libogg
+- libs:
+  - libvorbis.so
+  pkgname: libvorbis

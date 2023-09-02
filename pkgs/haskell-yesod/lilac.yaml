@@ -9,60 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-yesod'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-conduit
-- haskell-data-default-class
-- haskell-fast-logger
-- haskell-file-embed
-- haskell-monad-logger
-- haskell-shakespeare
-- haskell-streaming-commons
-- haskell-unordered-containers
-- haskell-wai
-- haskell-wai-extra
-- haskell-wai-logger
-- haskell-warp
-- haskell-yaml
-- haskell-yesod-core
-- haskell-yesod-form
-- haskell-yesod-persistent
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-conduit
-  source: alpm
-- alpm: haskell-data-default-class
-  source: alpm
-- alpm: haskell-fast-logger
-  source: alpm
-- alpm: haskell-file-embed
-  source: alpm
-- alpm: haskell-monad-logger
-  source: alpm
-- alpm: haskell-shakespeare
-  source: alpm
-- alpm: haskell-streaming-commons
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-wai
-  source: alpm
-- alpm: haskell-wai-extra
-  source: alpm
-- alpm: haskell-wai-logger
-  source: alpm
-- alpm: haskell-warp
-  source: alpm
-- alpm: haskell-yaml
-  source: alpm
-- alpm: haskell-yesod-core
-  source: alpm
-- alpm: haskell-yesod-form
-  source: alpm
-- alpm: haskell-yesod-persistent
-  source: alpm
 - alpm: haskell-yesod
   source: archpkg

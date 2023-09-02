@@ -4,6 +4,7 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: pacman
-  provides: libalpm.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libalpm.so
+  pkgname: pacman

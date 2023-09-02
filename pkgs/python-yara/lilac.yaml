@@ -15,9 +15,13 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: python
-- alpm: yara
-  provides: libyara.so
-  source: alpm
 - alpm: python-yara
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libyara.so
+  pkgname: yara

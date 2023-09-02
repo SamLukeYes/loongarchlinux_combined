@@ -11,15 +11,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wingpanel-indicator-p
   '
 repo_depends:
 - granite
-- systemd
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: granite
-  provides: libgranite.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
 - alpm: wingpanel-indicator-power
   source: archpkg
+update_on_soname:
+- libs:
+  - libgranite.so
+  pkgname: granite
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs

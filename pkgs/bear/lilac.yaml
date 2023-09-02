@@ -11,13 +11,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bear'')
   '
 repo_depends:
 - grpc
-- protobuf
 update_on:
 - manual: 1
   source: manual
-- alpm: grpc
-  provides: libgrpc++.so
-  source: alpm
-- alias: protobuf
 - alpm: bear
   source: archpkg
+update_on_soname:
+- libs:
+  - libgrpc++.so
+  pkgname: grpc

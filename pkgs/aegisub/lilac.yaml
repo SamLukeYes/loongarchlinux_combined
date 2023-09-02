@@ -10,22 +10,26 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aegisub'')
 
   '
 repo_depends:
+- boost
 - icu
 - libass
 - ffms2
-- wxwidgets
 update_on:
 - manual: 1
   source: manual
-- alias: icu
-- alpm: libass
-  provides: libass.so
-  source: alpm
-- alpm: ffms2
-  provides: libffms2.so
-  source: alpm
-- alpm: wxwidgets-gtk3
-  source: alpm
-  strip_release: true
 - alpm: aegisub
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: boost
+  to_pattern: \1
+- from_pattern: ^(\d+)\..*
+  pkgbase: icu
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libass.so
+  pkgname: libass
+- libs:
+  - libffms2.so
+  pkgname: ffms2

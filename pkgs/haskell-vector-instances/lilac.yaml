@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-vector-instan
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-comonad
-- haskell-hashable
-- haskell-keys
-- haskell-pointed
-- haskell-semigroupoids
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-comonad
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-keys
-  source: alpm
-- alpm: haskell-pointed
-  source: alpm
-- alpm: haskell-semigroupoids
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-vector-instances
   source: archpkg

@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''muse'')
   '
 repo_depends:
 - python
-- qt5-base
 - alsa-lib
 - fluidsynth
 - glib2
@@ -27,45 +26,47 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: python
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: fluidsynth
-  provides: libfluidsynth.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: libinstpatch
-  provides: libinstpatch-1.0.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: lilv
-  provides: liblilv-0.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
-- alpm: liblrdf
-  provides: liblrdf.so
-  source: alpm
-- alpm: rtaudio
-  provides: librtaudio.so
-  source: alpm
-- alpm: rubberband
-  provides: librubberband.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
 - alpm: muse
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libfluidsynth.so
+  pkgname: fluidsynth
+- libs:
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libinstpatch-1.0.so
+  pkgname: libinstpatch
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - liblilv-0.so
+  pkgname: lilv
+- libs:
+  - liblo.so
+  pkgname: liblo
+- libs:
+  - liblrdf.so
+  pkgname: liblrdf
+- libs:
+  - librtaudio.so
+  pkgname: rtaudio
+- libs:
+  - librubberband.so
+  pkgname: rubberband
+- libs:
+  - libsamplerate.so
+  pkgname: libsamplerate
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile

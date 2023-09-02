@@ -9,36 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hedgehog-clas
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-comonad
-- haskell-hedgehog
-- haskell-pretty-show
-- haskell-primitive
-- haskell-semirings
-- haskell-silently
-- haskell-vector
-- haskell-wl-pprint-annotated
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-comonad
-  source: alpm
-- alpm: haskell-hedgehog
-  source: alpm
-- alpm: haskell-pretty-show
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-semirings
-  source: alpm
-- alpm: haskell-silently
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
-- alpm: haskell-wl-pprint-annotated
-  source: alpm
 - alpm: haskell-hedgehog-classes
   source: archpkg

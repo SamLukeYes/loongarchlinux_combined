@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-iproute'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-appar
-- haskell-byteorder
-- haskell-network
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-appar
-  source: alpm
-- alpm: haskell-byteorder
-  source: alpm
-- alpm: haskell-network
-  source: alpm
 - alpm: haskell-iproute
   source: archpkg

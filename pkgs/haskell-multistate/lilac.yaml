@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-multistate'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-monad-control
-- haskell-tagged
-- haskell-transformers-base
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-monad-control
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
-- alpm: haskell-transformers-base
-  source: alpm
 - alpm: haskell-multistate
   source: archpkg

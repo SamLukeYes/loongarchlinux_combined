@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-gi-base
-- haskell-ansi-terminal
-- haskell-attoparsec
-- haskell-pretty-show
-- haskell-safe
-- haskell-xdg-basedir
-- haskell-xml-conduit
-- haskell-regex-tdfa
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-gi-base
-  source: alpm
-- alpm: haskell-ansi-terminal
-  source: alpm
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-pretty-show
-  source: alpm
-- alpm: haskell-safe
-  source: alpm
-- alpm: haskell-xdg-basedir
-  source: alpm
-- alpm: haskell-xml-conduit
-  source: alpm
-- alpm: haskell-regex-tdfa
-  source: alpm
 - alpm: haskell-gi
   source: archpkg

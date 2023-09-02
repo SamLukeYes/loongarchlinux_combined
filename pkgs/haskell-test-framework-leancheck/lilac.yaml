@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-test-framewor
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-leancheck
-- haskell-test-framework
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-leancheck
-  source: alpm
-- alpm: haskell-test-framework
-  source: alpm
 - alpm: haskell-test-framework-leancheck
   source: archpkg

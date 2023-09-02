@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-nonce'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base64-bytestring
-- haskell-entropy
-- haskell-unliftio
-- haskell-unliftio-core
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base64-bytestring
-  source: alpm
-- alpm: haskell-entropy
-  source: alpm
-- alpm: haskell-unliftio
-  source: alpm
-- alpm: haskell-unliftio-core
-  source: alpm
 - alpm: haskell-nonce
   source: archpkg

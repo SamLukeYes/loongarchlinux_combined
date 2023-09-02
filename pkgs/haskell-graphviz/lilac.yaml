@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-graphviz'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-colour
-- haskell-dlist
-- haskell-fgl
-- haskell-polyparse
-- haskell-temporary
-- haskell-wl-pprint-text
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-colour
-  source: alpm
-- alpm: haskell-dlist
-  source: alpm
-- alpm: haskell-fgl
-  source: alpm
-- alpm: haskell-polyparse
-  source: alpm
-- alpm: haskell-temporary
-  source: alpm
-- alpm: haskell-wl-pprint-text
-  source: alpm
 - alpm: haskell-graphviz
   source: archpkg

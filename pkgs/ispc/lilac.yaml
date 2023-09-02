@@ -4,4 +4,7 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: clang
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: clang
+  to_pattern: \1

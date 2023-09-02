@@ -9,42 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-servant-swagg
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-aeson-pretty
-- haskell-http-media
-- haskell-insert-ordered-containers
-- haskell-lens
-- haskell-servant
-- haskell-singleton-bool
-- haskell-swagger2
-- haskell-unordered-containers
-- haskell-hspec
-- haskell-quickcheck
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-aeson-pretty
-  source: alpm
-- alpm: haskell-http-media
-  source: alpm
-- alpm: haskell-insert-ordered-containers
-  source: alpm
-- alpm: haskell-lens
-  source: alpm
-- alpm: haskell-servant
-  source: alpm
-- alpm: haskell-singleton-bool
-  source: alpm
-- alpm: haskell-swagger2
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-hspec
-  source: alpm
-- alpm: haskell-quickcheck
-  source: alpm
 - alpm: haskell-servant-swagger
   source: archpkg

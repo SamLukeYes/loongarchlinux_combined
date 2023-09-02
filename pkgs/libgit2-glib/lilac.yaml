@@ -15,11 +15,14 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: julia
-  provides: libgit2.so
-  source: alpm
 - alpm: libgit2-glib
   source: archpkg
+update_on_soname:
+- libs:
+  - libgio-2.0.so
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libgit2.so
+  pkgname: julia

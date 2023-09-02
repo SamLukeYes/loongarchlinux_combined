@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dhall-bash'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-neat-interpolation
-- haskell-shell-escape
-- haskell-optparse-generic
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-neat-interpolation
-  source: alpm
-- alpm: haskell-shell-escape
-  source: alpm
-- alpm: haskell-optparse-generic
-  source: alpm
 - alpm: dhall-bash
   source: archpkg

@@ -20,24 +20,28 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: python
-- alpm: fftw
-  provides: libfftw3f.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: zita-convolver
-  provides: libzita-convolver.so
-  source: alpm
-- alpm: zita-jclient
-  provides: libzita-jclient.so
-  source: alpm
-- alpm: zita-resampler
-  provides: libzita-resampler.so
-  source: alpm
 - alpm: python-zita-jacktools
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libfftw3f.so
+  pkgname: fftw
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libzita-convolver.so
+  pkgname: zita-convolver
+- libs:
+  - libzita-jclient.so
+  pkgname: zita-jclient
+- libs:
+  - libzita-resampler.so
+  pkgname: zita-resampler

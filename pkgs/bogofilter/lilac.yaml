@@ -11,13 +11,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bogofilter'')
   '
 repo_depends:
 - perl
-- gsl
 update_on:
 - manual: 1
   source: manual
-- alias: perl
-- alpm: gsl
-  source: alpm
-  strip_release: true
 - alpm: bogofilter
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: perl
+  to_pattern: \1

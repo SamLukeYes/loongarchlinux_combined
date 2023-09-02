@@ -10,22 +10,31 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wireplumber'')
 
   '
 repo_depends:
-- systemd
 - lua
+- systemd: systemd-libs
 - glib2
-- pipewire
+- pipewire: libpipewire
 update_on:
 - manual: 1
   source: manual
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
-- alias: lua
-- alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
-- alpm: libpipewire
-  provides: libpipewire-0.3.so
-  source: alpm
 - alpm: wireplumber
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: lua
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libglib-2.0.so
+  - libgmodule-2.0.so
+  - libgobject-2.0.so
+  - libgio-2.0.so
+  pkgname: glib2
+- libs:
+  - libpipewire-0.3.so
+  pkgbase: pipewire
+  pkgname: libpipewire

@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-deriving-comp
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-th-abstraction
-- haskell-transformers-compat
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-th-abstraction
-  source: alpm
-- alpm: haskell-transformers-compat
-  source: alpm
 - alpm: haskell-deriving-compat
   source: archpkg

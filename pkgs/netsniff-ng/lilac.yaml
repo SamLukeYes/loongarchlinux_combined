@@ -16,14 +16,15 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: libpcap
-  provides: libpcap.so
-  source: alpm
-- alpm: libcli
-  provides: libcli.so
-  source: alpm
 - alpm: netsniff-ng
   source: archpkg
+update_on_soname:
+- libs:
+  - libncursesw.so
+  pkgname: ncurses
+- libs:
+  - libpcap.so
+  pkgname: libpcap
+- libs:
+  - libcli.so
+  pkgname: libcli

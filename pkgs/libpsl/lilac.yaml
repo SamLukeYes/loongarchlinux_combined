@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libidn2
-  provides: libidn2.so
-  source: alpm
-- alpm: libunistring
-  provides: libunistring.so
-  source: alpm
 - alpm: libpsl
   source: archpkg
+update_on_soname:
+- libs:
+  - libidn2.so
+  pkgname: libidn2
+- libs:
+  - libunistring.so
+  pkgname: libunistring

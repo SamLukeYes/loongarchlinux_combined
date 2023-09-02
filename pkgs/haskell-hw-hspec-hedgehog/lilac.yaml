@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hw-hspec-hedg
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hunit
-- haskell-call-stack
-- haskell-hedgehog
-- haskell-hspec
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hunit
-  source: alpm
-- alpm: haskell-call-stack
-  source: alpm
-- alpm: haskell-hedgehog
-  source: alpm
-- alpm: haskell-hspec
-  source: alpm
 - alpm: haskell-hw-hspec-hedgehog
   source: archpkg

@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cryptohash-cr
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-memory
-- haskell-cryptonite
-- haskell-crypto-api
-- haskell-tagged
-- haskell-cereal
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-memory
-  source: alpm
-- alpm: haskell-cryptonite
-  source: alpm
-- alpm: haskell-crypto-api
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
-- alpm: haskell-cereal
-  source: alpm
 - alpm: haskell-cryptohash-cryptoapi
   source: archpkg

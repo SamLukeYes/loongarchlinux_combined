@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-here'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-src-meta
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-src-meta
-  source: alpm
 - alpm: haskell-here
   source: archpkg

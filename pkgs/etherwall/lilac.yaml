@@ -10,18 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''etherwall'')
 
   '
 repo_depends:
-- qt5-declarative
-- protobuf
 - hidapi
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-declarative
-  source: alpm
-  strip_release: true
-- alias: protobuf
-- alpm: hidapi
-  provides: libhidapi-libusb.so
-  source: alpm
 - alpm: etherwall
   source: archpkg
+update_on_soname:
+- libs:
+  - libhidapi-libusb.so
+  pkgname: hidapi

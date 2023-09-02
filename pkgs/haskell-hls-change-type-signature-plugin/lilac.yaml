@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-change-ty
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-ghcide
-- haskell-hls-plugin-api
-- haskell-lsp-types
-- haskell-regex-tdfa
-- haskell-syb
-- haskell-unordered-containers
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-ghcide
-  source: alpm
-- alpm: haskell-hls-plugin-api
-  source: alpm
-- alpm: haskell-lsp-types
-  source: alpm
-- alpm: haskell-regex-tdfa
-  source: alpm
-- alpm: haskell-syb
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
 - alpm: haskell-hls-change-type-signature-plugin
   source: archpkg

@@ -1,9 +1,10 @@
 destsubdir: extra
 repo_depends:
 - icu
-- jsoncpp
 update_on:
 - manual: 1
   source: manual
-- alias: icu
-- alias: jsoncpp
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: icu
+  to_pattern: \1

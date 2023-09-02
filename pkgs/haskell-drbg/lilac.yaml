@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-drbg'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-cereal
-- haskell-prettyclass
-- haskell-tagged
-- haskell-crypto-api
-- haskell-cryptohash-cryptoapi
-- haskell-parallel
-- haskell-cipher-aes128
-- haskell-entropy
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-cereal
-  source: alpm
-- alpm: haskell-prettyclass
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
-- alpm: haskell-crypto-api
-  source: alpm
-- alpm: haskell-cryptohash-cryptoapi
-  source: alpm
-- alpm: haskell-parallel
-  source: alpm
-- alpm: haskell-cipher-aes128
-  source: alpm
-- alpm: haskell-entropy
-  source: alpm
 - alpm: haskell-drbg
   source: archpkg

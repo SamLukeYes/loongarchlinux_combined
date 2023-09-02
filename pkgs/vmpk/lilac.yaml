@@ -10,16 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vmpk'')
 
   '
 repo_depends:
-- qt6-base
 - drumstick
 update_on:
 - manual: 1
   source: manual
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
-- alpm: drumstick
-  provides: libdrumstick-widgets.so
-  source: alpm
 - alpm: vmpk
   source: archpkg
+update_on_soname:
+- libs:
+  - libdrumstick-rt.so
+  - libdrumstick-widgets.so
+  pkgname: drumstick

@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-logging-facad
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-call-stack
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-call-stack
-  source: alpm
 - alpm: haskell-logging-facade
   source: archpkg

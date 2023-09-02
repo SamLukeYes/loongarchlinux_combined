@@ -17,17 +17,18 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: capstone
-  provides: libcapstone.so
-  source: alpm
-- alpm: xxhash
-  provides: libxxhash.so
-  source: alpm
-- alpm: gephi
-  provides: libzip.so
-  source: alpm
-- alpm: file
-  provides: libmagic.so
-  source: alpm
 - alpm: radare2
   source: archpkg
+update_on_soname:
+- libs:
+  - libcapstone.so
+  pkgname: capstone
+- libs:
+  - libxxhash.so
+  pkgname: xxhash
+- libs:
+  - libzip.so
+  pkgname: gephi
+- libs:
+  - libmagic.so
+  pkgname: file

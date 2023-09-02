@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-quickcheck-cl
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-quickcheck
-- haskell-aeson
-- haskell-primitive
-- haskell-primitive-addr
-- haskell-quickcheck-classes-base
-- haskell-semigroupoids
-- haskell-semirings
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-quickcheck
-  source: alpm
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-primitive-addr
-  source: alpm
-- alpm: haskell-quickcheck-classes-base
-  source: alpm
-- alpm: haskell-semigroupoids
-  source: alpm
-- alpm: haskell-semirings
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-quickcheck-classes
   source: archpkg

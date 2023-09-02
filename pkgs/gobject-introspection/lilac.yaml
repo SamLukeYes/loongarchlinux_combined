@@ -15,11 +15,15 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libffi
-  provides: libffi.so
-  source: alpm
-- alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
 - alpm: gobject-introspection
   source: archpkg
+update_on_soname:
+- libs:
+  - libffi.so
+  pkgname: libffi
+- libs:
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  - libgmodule-2.0.so
+  - libgio-2.0.so
+  pkgname: glib2

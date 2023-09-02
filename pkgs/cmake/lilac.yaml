@@ -4,6 +4,7 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: jsoncpp
-  provides: libjsoncpp.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libjsoncpp.so
+  pkgname: jsoncpp

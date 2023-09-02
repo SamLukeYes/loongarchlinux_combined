@@ -11,15 +11,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''drumkv1'')
   '
 repo_depends:
 - libsndfile
-- qt6-base
 update_on:
 - manual: 1
   source: manual
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
 - alpm: drumkv1
   source: archpkg
+update_on_soname:
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile

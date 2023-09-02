@@ -14,8 +14,9 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: cryptsetup
-  provides: libcryptsetup.so
-  source: alpm
 - alpm: luksmeta
   source: archpkg
+update_on_soname:
+- libs:
+  - libcryptsetup.so
+  pkgname: cryptsetup

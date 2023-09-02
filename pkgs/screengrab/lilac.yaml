@@ -10,16 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''screengrab'')
 
   '
 repo_depends:
-- qt5-base
 - libqtxdg
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: libqtxdg
-  provides: libQt5Xdg.so
-  source: alpm
 - alpm: screengrab
   source: archpkg
+update_on_soname:
+- libs:
+  - libQt5Xdg.so
+  pkgname: libqtxdg

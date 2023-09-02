@@ -17,17 +17,18 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: brotli
-  provides: libbrotlidec.so
-  source: alpm
-- alpm: bzip2
-  provides: libbz2.so
-  source: alpm
-- alpm: gpm
-  provides: libgpm.so
-  source: alpm
-- alpm: zstd
-  provides: libzstd.so
-  source: alpm
 - alpm: links
   source: archpkg
+update_on_soname:
+- libs:
+  - libbrotlidec.so
+  pkgname: brotli
+- libs:
+  - libbz2.so
+  pkgname: bzip2
+- libs:
+  - libgpm.so
+  pkgname: gpm
+- libs:
+  - libzstd.so
+  pkgname: zstd

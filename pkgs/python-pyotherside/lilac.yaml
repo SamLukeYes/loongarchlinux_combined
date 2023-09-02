@@ -11,17 +11,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-pyotherside'')
   '
 repo_depends:
 - python
-- qt5-base
-- qt5-declarative
 update_on:
 - manual: 1
   source: manual
-- alias: python
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: qt5-declarative
-  source: alpm
-  strip_release: true
 - alpm: python-pyotherside
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1

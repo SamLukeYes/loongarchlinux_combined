@@ -11,13 +11,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''riscv64-elf-gdb'')
   '
 repo_depends:
 - python
-- guile
 update_on:
 - manual: 1
   source: manual
-- alias: python
-- alpm: guile
-  source: alpm
-  strip_release: true
 - alpm: riscv64-elf-gdb
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1

@@ -9,36 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-arithmoi'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-chimera
-- haskell-constraints
-- haskell-exact-pi
-- haskell-integer-logarithms
-- haskell-integer-roots
-- haskell-mod
-- haskell-random
-- haskell-semirings
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-chimera
-  source: alpm
-- alpm: haskell-constraints
-  source: alpm
-- alpm: haskell-exact-pi
-  source: alpm
-- alpm: haskell-integer-logarithms
-  source: alpm
-- alpm: haskell-integer-roots
-  source: alpm
-- alpm: haskell-mod
-  source: alpm
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-semirings
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-arithmoi
   source: archpkg

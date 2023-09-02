@@ -11,23 +11,25 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xscreensaver'')
   '
 repo_depends:
 - darktable
-- systemd
+- systemd: systemd-libs
 - libxcrypt
 - pam
 update_on:
 - manual: 1
   source: manual
-- alpm: darktable
-  provides: libjpeg.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
-- alpm: libxcrypt
-  provides: libcrypt.so
-  source: alpm
-- alpm: pam
-  provides: libpam.so
-  source: alpm
 - alpm: xscreensaver
   source: archpkg
+update_on_soname:
+- libs:
+  - libjpeg.so
+  pkgname: darktable
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libcrypt.so
+  pkgname: libxcrypt
+- libs:
+  - libpam.so
+  pkgname: pam

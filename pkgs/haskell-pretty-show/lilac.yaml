@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pretty-show''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-lexer
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-lexer
-  source: alpm
 - alpm: haskell-pretty-show
   source: archpkg

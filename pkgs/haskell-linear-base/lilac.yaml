@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-linear-base''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hashable
-- haskell-linear-generics
-- haskell-primitive
-- haskell-storable-tuple
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-linear-generics
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-storable-tuple
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-linear-base
   source: archpkg

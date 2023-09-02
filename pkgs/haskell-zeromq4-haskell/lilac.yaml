@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-zeromq4-haske
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-async
-- haskell-monad-control
-- haskell-transformers-base
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-async
-  source: alpm
-- alpm: haskell-monad-control
-  source: alpm
-- alpm: haskell-transformers-base
-  source: alpm
 - alpm: haskell-zeromq4-haskell
   source: archpkg

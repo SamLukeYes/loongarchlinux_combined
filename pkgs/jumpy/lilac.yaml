@@ -10,12 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''jumpy'')
 
   '
 repo_depends:
-- systemd
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
 - alpm: jumpy
   source: archpkg
+update_on_soname:
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs

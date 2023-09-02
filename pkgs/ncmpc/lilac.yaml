@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libmpdclient
-  provides: libmpdclient.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
 - alpm: ncmpc
   source: archpkg
+update_on_soname:
+- libs:
+  - libmpdclient.so
+  pkgname: libmpdclient
+- libs:
+  - libncursesw.so
+  pkgname: ncurses

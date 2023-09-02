@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hashtables'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hashable
-- haskell-primitive
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-hashtables
   source: archpkg

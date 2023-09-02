@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-with-utf8'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-safe-exceptions
-- haskell-th-env
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-safe-exceptions
-  source: alpm
-- alpm: haskell-th-env
-  source: alpm
 - alpm: haskell-with-utf8
   source: archpkg

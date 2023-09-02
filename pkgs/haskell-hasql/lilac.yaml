@@ -9,42 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hasql'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-attoparsec
-- haskell-bytestring-strict-builder
-- haskell-contravariant
-- haskell-dlist
-- haskell-hashable
-- haskell-hashtables
-- haskell-postgresql-binary
-- haskell-postgresql-libpq
-- haskell-profunctors
-- haskell-text-builder
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-bytestring-strict-builder
-  source: alpm
-- alpm: haskell-contravariant
-  source: alpm
-- alpm: haskell-dlist
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-hashtables
-  source: alpm
-- alpm: haskell-postgresql-binary
-  source: alpm
-- alpm: haskell-postgresql-libpq
-  source: alpm
-- alpm: haskell-profunctors
-  source: alpm
-- alpm: haskell-text-builder
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-hasql
   source: archpkg

@@ -17,17 +17,21 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: at-spi2-core
-  provides: libatk-1.0.so
-  source: alpm
-- alpm: gdk-pixbuf2
-  provides: libgdk_pixbuf-2.0.so
-  source: alpm
-- alpm: gtk2
-  provides: libgtk-x11-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
 - alpm: amsynth
   source: archpkg
+update_on_soname:
+- libs:
+  - libatk-1.0.so
+  pkgname: at-spi2-core
+- libs:
+  - libgdk_pixbuf-2.0.so
+  pkgname: gdk-pixbuf2
+- libs:
+  - libgdk-x11-2.0.so
+  - libgtk-x11-2.0.so
+  pkgname: gtk2
+- libs:
+  - libgio-2.0.so
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  pkgname: glib2

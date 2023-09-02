@@ -9,57 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ihaskell'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-base64-bytestring
-- haskell-cmdargs
-- haskell-ghc
-- haskell-ghc-parser
-- haskell-ghc-paths
-- haskell-http-client
-- haskell-http-client-tls
-- haskell-ipython-kernel
-- haskell-random
-- haskell-shelly
-- haskell-split
-- haskell-strict
-- haskell-unordered-containers
-- haskell-utf8-string
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-base64-bytestring
-  source: alpm
-- alpm: haskell-cmdargs
-  source: alpm
-- alpm: haskell-ghc
-  source: alpm
-- alpm: haskell-ghc-parser
-  source: alpm
-- alpm: haskell-ghc-paths
-  source: alpm
-- alpm: haskell-http-client
-  source: alpm
-- alpm: haskell-http-client-tls
-  source: alpm
-- alpm: haskell-ipython-kernel
-  source: alpm
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-shelly
-  source: alpm
-- alpm: haskell-split
-  source: alpm
-- alpm: haskell-strict
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-utf8-string
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: ihaskell
   source: archpkg

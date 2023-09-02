@@ -11,23 +11,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libplacebo'')
   '
 repo_depends:
 - emby-theater
-- glslang
 - lcms2
 - shaderc
 update_on:
 - manual: 1
   source: manual
-- alpm: emby-theater
-  provides: libvulkan.so
-  source: alpm
-- alpm: glslang
-  source: alpm
-  strip_release: true
-- alpm: lcms2
-  provides: liblcms2.so
-  source: alpm
-- alpm: shaderc
-  provides: libshaderc_shared.so
-  source: alpm
 - alpm: libplacebo
   source: archpkg
+update_on_soname:
+- libs:
+  - libvulkan.so
+  pkgname: emby-theater
+- libs:
+  - liblcms2.so
+  pkgname: lcms2
+- libs:
+  - libshaderc_shared.so
+  pkgname: shaderc

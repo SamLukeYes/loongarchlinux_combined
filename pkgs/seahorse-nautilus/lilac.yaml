@@ -10,12 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''seahorse-nautilus'')
 
   '
 repo_depends:
-- nautilus
+- nautilus: libnautilus-extension
 update_on:
 - manual: 1
   source: manual
-- alpm: libnautilus-extension
-  provides: libnautilus-extension.so
-  source: alpm
 - alpm: seahorse-nautilus
   source: archpkg
+update_on_soname:
+- libs:
+  - libnautilus-extension.so
+  pkgbase: nautilus
+  pkgname: libnautilus-extension

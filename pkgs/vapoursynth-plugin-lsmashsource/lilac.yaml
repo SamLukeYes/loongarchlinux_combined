@@ -15,11 +15,15 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: ffmpeg
-  provides: libswscale.so
-  source: alpm
-- alpm: l-smash
-  provides: liblsmash.so
-  source: alpm
 - alpm: vapoursynth-plugin-lsmashsource
   source: archpkg
+update_on_soname:
+- libs:
+  - libavcodec.so
+  - libavformat.so
+  - libavutil.so
+  - libswscale.so
+  pkgname: ffmpeg
+- libs:
+  - liblsmash.so
+  pkgname: l-smash

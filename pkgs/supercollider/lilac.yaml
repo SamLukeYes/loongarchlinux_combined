@@ -10,7 +10,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''supercollider'')
 
   '
 repo_depends:
-- qt5-base
+- boost
+- readline
 - alsa-lib
 - avahi
 - boost
@@ -18,40 +19,49 @@ repo_depends:
 - jack2
 - libsndfile
 - readline
-- systemd
+- systemd: systemd-libs
 - yaml-cpp
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: avahi
-  provides: libavahi-client.so
-  source: alpm
-- alpm: boost
-  provides: libboost_thread.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3f.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: readline
-  provides: libreadline.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
-- alpm: yaml-cpp
-  provides: libyaml-cpp.so
-  source: alpm
 - alpm: supercollider
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: boost
+  to_pattern: \1
+- from_pattern: ^(\d+)\..*
+  pkgbase: readline
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libavahi-common.so
+  - libavahi-client.so
+  pkgname: avahi
+- libs:
+  - libboost_filesystem.so
+  - libboost_program_options.so
+  - libboost_thread.so
+  pkgname: boost
+- libs:
+  - libfftw3f.so
+  pkgname: fftw
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libreadline.so
+  pkgname: readline
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libyaml-cpp.so
+  pkgname: yaml-cpp

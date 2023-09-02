@@ -16,14 +16,16 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libcanberra
-  provides: libcanberra-gtk3.so
-  source: alpm
-- alpm: granite
-  provides: libgranite.so
-  source: alpm
-- alpm: libhandy
-  provides: libhandy-1.so
-  source: alpm
 - alpm: pantheon-notifications
   source: archpkg
+update_on_soname:
+- libs:
+  - libcanberra.so
+  - libcanberra-gtk3.so
+  pkgname: libcanberra
+- libs:
+  - libgranite.so
+  pkgname: granite
+- libs:
+  - libhandy-1.so
+  pkgname: libhandy

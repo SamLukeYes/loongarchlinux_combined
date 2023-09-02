@@ -23,35 +23,36 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libcbor
-  provides: libcbor.so
-  source: alpm
-- alpm: libconfig
-  provides: libconfig.so
-  source: alpm
-- alpm: libxcrypt
-  provides: libcrypt.so
-  source: alpm
-- alpm: hoel
-  provides: libhoel.so
-  source: alpm
-- alpm: iddawc
-  provides: libiddawc.so
-  source: alpm
-- alpm: oath-toolkit
-  provides: liboath.so
-  source: alpm
-- alpm: orcania
-  provides: liborcania.so
-  source: alpm
-- alpm: rhonabwy
-  provides: librhonabwy.so
-  source: alpm
-- alpm: ulfius
-  provides: libulfius.so
-  source: alpm
-- alpm: yder
-  provides: libyder.so
-  source: alpm
 - alpm: glewlwyd
   source: archpkg
+update_on_soname:
+- libs:
+  - libcbor.so
+  pkgname: libcbor
+- libs:
+  - libconfig.so
+  pkgname: libconfig
+- libs:
+  - libcrypt.so
+  pkgname: libxcrypt
+- libs:
+  - libhoel.so
+  pkgname: hoel
+- libs:
+  - libiddawc.so
+  pkgname: iddawc
+- libs:
+  - liboath.so
+  pkgname: oath-toolkit
+- libs:
+  - liborcania.so
+  pkgname: orcania
+- libs:
+  - librhonabwy.so
+  pkgname: rhonabwy
+- libs:
+  - libulfius.so
+  pkgname: ulfius
+- libs:
+  - libyder.so
+  pkgname: yder

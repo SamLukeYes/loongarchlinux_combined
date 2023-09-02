@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-xdg-desktop-e
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-configfile
-- haskell-either
-- haskell-multimap
-- haskell-safe
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-configfile
-  source: alpm
-- alpm: haskell-either
-  source: alpm
-- alpm: haskell-multimap
-  source: alpm
-- alpm: haskell-safe
-  source: alpm
 - alpm: haskell-xdg-desktop-entry
   source: archpkg

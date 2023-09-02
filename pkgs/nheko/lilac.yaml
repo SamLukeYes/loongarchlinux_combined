@@ -10,24 +10,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nheko'')
 
   '
 repo_depends:
-- cmark
 - mtxclient
 - spdlog
 - libolm
 update_on:
 - manual: 1
   source: manual
-- alpm: cmark
-  source: alpm
-  strip_release: true
-- alpm: mtxclient
-  provides: libmatrix_client.so
-  source: alpm
-- alpm: spdlog
-  provides: libspdlog.so
-  source: alpm
-- alpm: libolm
-  provides: libolm.so
-  source: alpm
 - alpm: nheko
   source: archpkg
+update_on_soname:
+- libs:
+  - libmatrix_client.so
+  pkgname: mtxclient
+- libs:
+  - libspdlog.so
+  pkgname: spdlog
+- libs:
+  - libolm.so
+  pkgname: libolm

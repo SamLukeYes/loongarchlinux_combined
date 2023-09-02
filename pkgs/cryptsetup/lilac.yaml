@@ -10,24 +10,27 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cryptsetup'')
 
   '
 repo_depends:
-# - lvm2
-- util-linux
+- lvm2: device-mapper
+- util-linux: util-linux-libs
 - json-c
 - argon2
 update_on:
 - manual: 1
   source: manual
-- alpm: device-mapper
-  provides: libdevmapper.so
-  source: alpm
-- alpm: util-linux-libs
-  provides: libuuid.so
-  source: alpm
-- alpm: json-c
-  provides: libjson-c.so
-  source: alpm
-- alpm: argon2
-  provides: libargon2.so
-  source: alpm
 - alpm: cryptsetup
   source: archpkg
+update_on_soname:
+- libs:
+  - libdevmapper.so
+  pkgbase: lvm2
+  pkgname: device-mapper
+- libs:
+  - libuuid.so
+  pkgbase: util-linux
+  pkgname: util-linux-libs
+- libs:
+  - libjson-c.so
+  pkgname: json-c
+- libs:
+  - libargon2.so
+  pkgname: argon2

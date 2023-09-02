@@ -6,12 +6,14 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: keyutils
-  provides: libkeyutils.so
-  source: alpm
-- alpm: e2fsprogs
-  provides: libcom_err.so
-  source: alpm
-- alpm: libverto
-  provides: libverto.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libkeyutils.so
+  pkgname: keyutils
+- libs:
+  - libss.so
+  - libcom_err.so
+  pkgname: e2fsprogs
+- libs:
+  - libverto.so
+  pkgname: libverto

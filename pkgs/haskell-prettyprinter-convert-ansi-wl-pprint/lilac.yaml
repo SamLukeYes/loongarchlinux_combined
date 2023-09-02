@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-prettyprinter
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-ansi-terminal
-- haskell-ansi-wl-pprint
-- haskell-prettyprinter
-- haskell-prettyprinter-ansi-terminal
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-ansi-terminal
-  source: alpm
-- alpm: haskell-ansi-wl-pprint
-  source: alpm
-- alpm: haskell-prettyprinter
-  source: alpm
-- alpm: haskell-prettyprinter-ansi-terminal
-  source: alpm
 - alpm: haskell-prettyprinter-convert-ansi-wl-pprint
   source: archpkg

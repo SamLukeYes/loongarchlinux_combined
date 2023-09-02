@@ -12,18 +12,15 @@ pre_build_script: '_G.files = download_official_pkgbuild(''rbutil'')
 repo_depends:
 - bzip2
 - libusb
-- qt6-base
 update_on:
 - manual: 1
   source: manual
-- alpm: bzip2
-  provides: libbz2.so
-  source: alpm
-- alpm: libusb
-  provides: libusb-1.0.so
-  source: alpm
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
 - alpm: rbutil
   source: archpkg
+update_on_soname:
+- libs:
+  - libbz2.so
+  pkgname: bzip2
+- libs:
+  - libusb-1.0.so
+  pkgname: libusb

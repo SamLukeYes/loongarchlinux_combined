@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gio'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-glib
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-glib
-  source: alpm
 - alpm: haskell-gio
   source: archpkg

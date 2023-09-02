@@ -17,17 +17,20 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
-- alpm: libxml2
-  provides: libxml2.so
-  source: alpm
-- alpm: libsoup3
-  provides: libsoup-3.0.so
-  source: alpm
-- alpm: json-glib
-  provides: libjson-glib-1.0.so
-  source: alpm
 - alpm: librest
   source: archpkg
+update_on_soname:
+- libs:
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  - libgio-2.0.so
+  pkgname: glib2
+- libs:
+  - libxml2.so
+  pkgname: libxml2
+- libs:
+  - libsoup-3.0.so
+  pkgname: libsoup3
+- libs:
+  - libjson-glib-1.0.so
+  pkgname: json-glib

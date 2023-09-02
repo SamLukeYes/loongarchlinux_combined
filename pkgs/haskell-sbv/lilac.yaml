@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-sbv'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-quickcheck
-- haskell-async
-- haskell-libbf
-- haskell-random
-- haskell-syb
-- haskell-uniplate
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-quickcheck
-  source: alpm
-- alpm: haskell-async
-  source: alpm
-- alpm: haskell-libbf
-  source: alpm
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-syb
-  source: alpm
-- alpm: haskell-uniplate
-  source: alpm
 - alpm: haskell-sbv
   source: archpkg

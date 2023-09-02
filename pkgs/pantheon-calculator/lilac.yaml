@@ -14,8 +14,9 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: granite7
-  provides: libgranite-7.so
-  source: alpm
 - alpm: pantheon-calculator
   source: archpkg
+update_on_soname:
+- libs:
+  - libgranite-7.so
+  pkgname: granite7

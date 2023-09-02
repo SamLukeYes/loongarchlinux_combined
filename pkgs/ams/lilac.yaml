@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ams'')
 
   '
 repo_depends:
-- qt5-base
 - alsa-lib
 - fftw
 - jack2
@@ -19,23 +18,21 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
-- alpm: zita-alsa-pcmi
-  provides: libzita-alsa-pcmi.so
-  source: alpm
 - alpm: ams
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libfftw3.so
+  pkgname: fftw
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - liblo.so
+  pkgname: liblo
+- libs:
+  - libzita-alsa-pcmi.so
+  pkgname: zita-alsa-pcmi

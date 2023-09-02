@@ -12,6 +12,9 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: python
 - alpm: python-pyro
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1

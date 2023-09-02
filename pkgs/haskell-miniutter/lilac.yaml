@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-miniutter'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-minimorph
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-minimorph
-  source: alpm
 - alpm: haskell-miniutter
   source: archpkg

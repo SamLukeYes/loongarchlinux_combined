@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mueval'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-quickcheck
-- haskell-extensible-exceptions
-- haskell-hint
-- haskell-show
-- haskell-simple-reflect
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-quickcheck
-  source: alpm
-- alpm: haskell-extensible-exceptions
-  source: alpm
-- alpm: haskell-hint
-  source: alpm
-- alpm: haskell-show
-  source: alpm
-- alpm: haskell-simple-reflect
-  source: alpm
 - alpm: haskell-mueval
   source: archpkg

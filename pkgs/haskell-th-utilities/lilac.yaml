@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-th-utilities'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-primitive
-- haskell-syb
-- haskell-th-abstraction
-- haskell-th-orphans
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-syb
-  source: alpm
-- alpm: haskell-th-abstraction
-  source: alpm
-- alpm: haskell-th-orphans
-  source: alpm
 - alpm: haskell-th-utilities
   source: archpkg

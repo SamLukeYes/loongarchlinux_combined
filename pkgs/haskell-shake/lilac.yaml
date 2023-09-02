@@ -9,42 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-shake'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-extra
-- haskell-filepattern
-- haskell-hashable
-- haskell-heaps
-- haskell-js-dgtable
-- haskell-js-flot
-- haskell-js-jquery
-- haskell-primitive
-- haskell-random
-- haskell-unordered-containers
-- haskell-utf8-string
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-extra
-  source: alpm
-- alpm: haskell-filepattern
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-heaps
-  source: alpm
-- alpm: haskell-js-dgtable
-  source: alpm
-- alpm: haskell-js-flot
-  source: alpm
-- alpm: haskell-js-jquery
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-utf8-string
-  source: alpm
 - alpm: haskell-shake
   source: archpkg

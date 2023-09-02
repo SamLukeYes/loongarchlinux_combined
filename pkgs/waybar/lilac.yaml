@@ -19,23 +19,24 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: jsoncpp
-  provides: libjsoncpp.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: chrono-date
-  provides: libdate-tz.so
-  source: alpm
-- alpm: spdlog
-  provides: libspdlog.so
-  source: alpm
-- alpm: upower
-  provides: libupower-glib.so
-  source: alpm
-- alpm: sndio
-  provides: libsndio.so
-  source: alpm
 - alpm: waybar
   source: archpkg
+update_on_soname:
+- libs:
+  - libjsoncpp.so
+  pkgname: jsoncpp
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libdate-tz.so
+  pkgname: chrono-date
+- libs:
+  - libspdlog.so
+  pkgname: spdlog
+- libs:
+  - libupower-glib.so
+  pkgname: upower
+- libs:
+  - libsndio.so
+  pkgname: sndio

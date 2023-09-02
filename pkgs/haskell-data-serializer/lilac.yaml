@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-data-serializ
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-cereal
-- haskell-data-endian
-- haskell-parsers
-- haskell-split
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-cereal
-  source: alpm
-- alpm: haskell-data-endian
-  source: alpm
-- alpm: haskell-parsers
-  source: alpm
-- alpm: haskell-split
-  source: alpm
 - alpm: haskell-data-serializer
   source: archpkg

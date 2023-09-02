@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-fast-logger''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-auto-update
-- haskell-easy-file
-- haskell-unix-compat
-- haskell-unix-time
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-auto-update
-  source: alpm
-- alpm: haskell-easy-file
-  source: alpm
-- alpm: haskell-unix-compat
-  source: alpm
-- alpm: haskell-unix-time
-  source: alpm
 - alpm: haskell-fast-logger
   source: archpkg

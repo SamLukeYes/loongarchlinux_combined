@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hxt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hxt-charproperties
-- haskell-hxt-regex-xmlschema
-- haskell-hxt-unicode
-- haskell-network-uri
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hxt-charproperties
-  source: alpm
-- alpm: haskell-hxt-regex-xmlschema
-  source: alpm
-- alpm: haskell-hxt-unicode
-  source: alpm
-- alpm: haskell-network-uri
-  source: alpm
 - alpm: haskell-hxt
   source: archpkg

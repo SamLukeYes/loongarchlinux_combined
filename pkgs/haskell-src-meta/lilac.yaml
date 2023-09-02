@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-src-meta'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-src-exts
-- haskell-syb
-- haskell-th-orphans
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-src-exts
-  source: alpm
-- alpm: haskell-syb
-  source: alpm
-- alpm: haskell-th-orphans
-  source: alpm
 - alpm: haskell-src-meta
   source: archpkg

@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cryptohash'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-byteable
-- haskell-cryptonite
-- haskell-memory
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-byteable
-  source: alpm
-- alpm: haskell-cryptonite
-  source: alpm
-- alpm: haskell-memory
-  source: alpm
 - alpm: haskell-cryptohash
   source: archpkg

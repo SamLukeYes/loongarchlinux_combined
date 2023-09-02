@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-rio-prettypri
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-annotated-wl-pprint
-- haskell-ansi-terminal
-- haskell-colour
-- haskell-path
-- haskell-rio
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-annotated-wl-pprint
-  source: alpm
-- alpm: haskell-ansi-terminal
-  source: alpm
-- alpm: haskell-colour
-  source: alpm
-- alpm: haskell-path
-  source: alpm
-- alpm: haskell-rio
-  source: alpm
 - alpm: haskell-rio-prettyprint
   source: archpkg

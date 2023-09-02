@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-doctemplates'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-doclayout
-- haskell-safe
-- haskell-scientific
-- haskell-text-conversions
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-doclayout
-  source: alpm
-- alpm: haskell-safe
-  source: alpm
-- alpm: haskell-scientific
-  source: alpm
-- alpm: haskell-text-conversions
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-doctemplates
   source: archpkg

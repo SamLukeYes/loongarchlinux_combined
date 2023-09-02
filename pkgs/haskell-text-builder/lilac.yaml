@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-text-builder'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-text-builder-dev
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-text-builder-dev
-  source: alpm
 - alpm: haskell-text-builder
   source: archpkg

@@ -9,42 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dhall-docs'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base16-bytestring
-- haskell-cryptohash-sha256
-- haskell-file-embed
-- haskell-lens-family-core
-- haskell-lucid
-- haskell-megaparsec
-- haskell-mmark
-- haskell-optparse-applicative
-- haskell-path
-- haskell-path-io
-- haskell-prettyprinter
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base16-bytestring
-  source: alpm
-- alpm: haskell-cryptohash-sha256
-  source: alpm
-- alpm: haskell-file-embed
-  source: alpm
-- alpm: haskell-lens-family-core
-  source: alpm
-- alpm: haskell-lucid
-  source: alpm
-- alpm: haskell-megaparsec
-  source: alpm
-- alpm: haskell-mmark
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-path
-  source: alpm
-- alpm: haskell-path-io
-  source: alpm
-- alpm: haskell-prettyprinter
-  source: alpm
 - alpm: dhall-docs
   source: archpkg

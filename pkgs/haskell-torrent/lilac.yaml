@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-torrent'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-bencode
-- haskell-syb
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-bencode
-  source: alpm
-- alpm: haskell-syb
-  source: alpm
 - alpm: haskell-torrent
   source: archpkg

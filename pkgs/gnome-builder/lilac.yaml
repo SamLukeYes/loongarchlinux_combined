@@ -11,17 +11,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnome-builder'')
   '
 repo_depends:
 - clang
-- cmark
 - julia
 update_on:
 - manual: 1
   source: manual
-- alias: clang
-- alpm: cmark
-  source: alpm
-  strip_release: true
-- alpm: julia
-  provides: libgit2.so
-  source: alpm
 - alpm: gnome-builder
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: clang
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libgit2.so
+  pkgname: julia

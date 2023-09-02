@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-binary-tagged
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base16-bytestring
-- haskell-structured
-- haskell-tagged
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base16-bytestring
-  source: alpm
-- alpm: haskell-structured
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
 - alpm: haskell-binary-tagged
   source: archpkg

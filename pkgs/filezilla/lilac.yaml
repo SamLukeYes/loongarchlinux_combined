@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''filezilla'')
 
   '
 repo_depends:
-- wxwidgets
 - libfilezilla
 - dbus
 - gtk3
@@ -18,20 +17,19 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: wxwidgets-gtk3
-  source: alpm
-  strip_release: true
-- alpm: libfilezilla
-  provides: libfilezilla.so
-  source: alpm
-- alpm: dbus
-  provides: libdbus-1.so
-  source: alpm
-- alpm: gtk3
-  provides: libgdk-3.so
-  source: alpm
-- alpm: nettle
-  provides: libnettle.so
-  source: alpm
 - alpm: filezilla
   source: archpkg
+update_on_soname:
+- libs:
+  - libfilezilla.so
+  pkgname: libfilezilla
+- libs:
+  - libdbus-1.so
+  pkgname: dbus
+- libs:
+  - libgtk-3.so
+  - libgdk-3.so
+  pkgname: gtk3
+- libs:
+  - libnettle.so
+  pkgname: nettle

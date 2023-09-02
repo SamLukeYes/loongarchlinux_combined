@@ -9,57 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-yesod-form'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-attoparsec
-- haskell-blaze-builder
-- haskell-blaze-html
-- haskell-blaze-markup
-- haskell-byteable
-- haskell-data-default
-- haskell-email-validate
-- haskell-network-uri
-- haskell-persistent
-- haskell-resourcet
-- haskell-shakespeare
-- haskell-wai
-- haskell-xss-sanitize
-- haskell-yesod-core
-- haskell-yesod-persistent
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-blaze-builder
-  source: alpm
-- alpm: haskell-blaze-html
-  source: alpm
-- alpm: haskell-blaze-markup
-  source: alpm
-- alpm: haskell-byteable
-  source: alpm
-- alpm: haskell-data-default
-  source: alpm
-- alpm: haskell-email-validate
-  source: alpm
-- alpm: haskell-network-uri
-  source: alpm
-- alpm: haskell-persistent
-  source: alpm
-- alpm: haskell-resourcet
-  source: alpm
-- alpm: haskell-shakespeare
-  source: alpm
-- alpm: haskell-wai
-  source: alpm
-- alpm: haskell-xss-sanitize
-  source: alpm
-- alpm: haskell-yesod-core
-  source: alpm
-- alpm: haskell-yesod-persistent
-  source: alpm
 - alpm: haskell-yesod-form
   source: archpkg

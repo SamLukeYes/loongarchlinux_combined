@@ -12,18 +12,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libgit2'')
 repo_depends:
 - libssh2
 - openssl
-- openssl
 - pcre2
 update_on:
 - manual: 1
   source: manual
-- alpm: libssh2
-  provides: libssh2.so
-  source: alpm
-- alias: libcrypto
-- alias: libssl
-- alpm: pcre2
-  provides: libpcre2-8.so
-  source: alpm
 - alpm: libgit2
   source: archpkg
+update_on_soname:
+- libs:
+  - libssh2.so
+  pkgname: libssh2
+- libs:
+  - libcrypto.so
+  - libssl.so
+  pkgname: openssl
+- libs:
+  - libpcre2-8.so
+  pkgname: pcre2

@@ -11,17 +11,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''python-xapian'')
   '
 repo_depends:
 - python
-- util-linux
+- util-linux: util-linux-libs
 - xapian-core
 update_on:
 - manual: 1
   source: manual
-- alias: python
-- alpm: util-linux-libs
-  provides: libuuid.so
-  source: alpm
-- alpm: xapian-core
-  provides: libxapian.so
-  source: alpm
 - alpm: python-xapian
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libuuid.so
+  pkgbase: util-linux
+  pkgname: util-linux-libs
+- libs:
+  - libxapian.so
+  pkgname: xapian-core

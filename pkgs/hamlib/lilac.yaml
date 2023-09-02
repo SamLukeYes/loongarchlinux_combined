@@ -13,15 +13,18 @@ repo_depends:
 - perl
 - python
 - lua
-- libindi
 update_on:
 - manual: 1
   source: manual
-- alias: perl
-- alias: python
-- alias: lua
-- alpm: libindi
-  source: alpm
-  strip_release: true
 - alpm: hamlib
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: perl
+  to_pattern: \1
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: lua
+  to_pattern: \1

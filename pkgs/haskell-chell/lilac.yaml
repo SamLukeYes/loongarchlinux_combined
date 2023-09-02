@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-chell'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-ansi-terminal
-- haskell-options
-- haskell-patience
-- haskell-random
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-ansi-terminal
-  source: alpm
-- alpm: haskell-options
-  source: alpm
-- alpm: haskell-patience
-  source: alpm
-- alpm: haskell-random
-  source: alpm
 - alpm: haskell-chell
   source: archpkg

@@ -15,11 +15,14 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libwpe
-  provides: libwpe-1.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
 - alpm: wpebackend-fdo
   source: archpkg
+update_on_soname:
+- libs:
+  - libwpe-1.0.so
+  pkgname: libwpe
+- libs:
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  - libgio-2.0.so
+  pkgname: glib2

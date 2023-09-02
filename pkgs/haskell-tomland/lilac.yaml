@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tomland'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hashable
-- haskell-megaparsec
-- haskell-parser-combinators
-- haskell-unordered-containers
-- haskell-validation-selective
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-megaparsec
-  source: alpm
-- alpm: haskell-parser-combinators
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-validation-selective
-  source: alpm
 - alpm: haskell-tomland
   source: archpkg

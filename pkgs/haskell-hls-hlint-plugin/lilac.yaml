@@ -9,63 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-hlint-plu
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-diff
-- haskell-aeson
-- haskell-apply-refact
-- haskell-data-default
-- haskell-extra
-- haskell-ghc
-- haskell-ghc-exactprint
-- haskell-ghc-lib-parser-ex
-- haskell-ghcide
-- haskell-hashable
-- haskell-hls-plugin-api
-- haskell-hslogger
-- haskell-lens
-- haskell-lsp
-- haskell-refact
-- haskell-regex-tdfa
-- haskell-temporary
-- haskell-unordered-containers
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-diff
-  source: alpm
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-apply-refact
-  source: alpm
-- alpm: haskell-data-default
-  source: alpm
-- alpm: haskell-extra
-  source: alpm
-- alpm: haskell-ghc
-  source: alpm
-- alpm: haskell-ghc-exactprint
-  source: alpm
-- alpm: haskell-ghc-lib-parser-ex
-  source: alpm
-- alpm: haskell-ghcide
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-hls-plugin-api
-  source: alpm
-- alpm: haskell-hslogger
-  source: alpm
-- alpm: haskell-lens
-  source: alpm
-- alpm: haskell-lsp
-  source: alpm
-- alpm: haskell-refact
-  source: alpm
-- alpm: haskell-regex-tdfa
-  source: alpm
-- alpm: haskell-temporary
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
 - alpm: haskell-hls-hlint-plugin
   source: archpkg

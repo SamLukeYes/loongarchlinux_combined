@@ -5,9 +5,10 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: granite
-  provides: libgranite.so
-  source: alpm
-- alpm: libhandy
-  provides: libhandy-1.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libgranite.so
+  pkgname: granite
+- libs:
+  - libhandy-1.so
+  pkgname: libhandy

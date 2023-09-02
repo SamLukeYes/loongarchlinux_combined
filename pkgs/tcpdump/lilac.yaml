@@ -16,12 +16,15 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libpcap
-  provides: libpcap.so
-  source: alpm
-- alpm: libcap-ng
-  provides: libcap-ng.so
-  source: alpm
-- alias: libcrypto
 - alpm: tcpdump
   source: archpkg
+update_on_soname:
+- libs:
+  - libpcap.so
+  pkgname: libpcap
+- libs:
+  - libcap-ng.so
+  pkgname: libcap-ng
+- libs:
+  - libcrypto.so
+  pkgname: openssl

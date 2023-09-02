@@ -11,13 +11,12 @@ pre_build_script: '_G.files = download_official_pkgbuild(''auto-multiple-choice'
   '
 repo_depends:
 - perl
-- opencv
 update_on:
 - manual: 1
   source: manual
-- alias: perl
-- alpm: opencv
-  source: alpm
-  strip_release: true
 - alpm: auto-multiple-choice
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: perl
+  to_pattern: \1

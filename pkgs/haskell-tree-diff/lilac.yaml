@@ -9,60 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tree-diff'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-ansi-wl-pprint
-- haskell-ansi-terminal
-- haskell-base-compat
-- haskell-data-array-byte
-- haskell-hashable
-- haskell-parsers
-- haskell-primitive
-- haskell-quickcheck
-- haskell-scientific
-- haskell-semialign
-- haskell-strict
-- haskell-tagged
-- haskell-these
-- haskell-unordered-containers
-- haskell-uuid-types
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-ansi-wl-pprint
-  source: alpm
-- alpm: haskell-ansi-terminal
-  source: alpm
-- alpm: haskell-base-compat
-  source: alpm
-- alpm: haskell-data-array-byte
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-parsers
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-quickcheck
-  source: alpm
-- alpm: haskell-scientific
-  source: alpm
-- alpm: haskell-semialign
-  source: alpm
-- alpm: haskell-strict
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
-- alpm: haskell-these
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-uuid-types
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-tree-diff
   source: archpkg

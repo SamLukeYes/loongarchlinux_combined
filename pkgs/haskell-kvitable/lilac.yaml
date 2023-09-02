@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-kvitable'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-lucid
-- haskell-microlens
-- haskell-prettyprinter
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-lucid
-  source: alpm
-- alpm: haskell-microlens
-  source: alpm
-- alpm: haskell-prettyprinter
-  source: alpm
 - alpm: haskell-kvitable
   source: archpkg

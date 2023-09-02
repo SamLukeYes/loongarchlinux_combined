@@ -14,8 +14,10 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: nettle
-  provides: libnettle.so
-  source: alpm
 - alpm: sequoia-keyring-linter
   source: archpkg
+update_on_soname:
+- libs:
+  - libhogweed.so
+  - libnettle.so
+  pkgname: nettle

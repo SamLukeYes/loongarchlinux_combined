@@ -9,36 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-butcher'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-bifunctors
-- haskell-deque
-- haskell-extra
-- haskell-free
-- haskell-microlens
-- haskell-microlens-th
-- haskell-multistate
-- haskell-unsafe
-- haskell-void
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-bifunctors
-  source: alpm
-- alpm: haskell-deque
-  source: alpm
-- alpm: haskell-extra
-  source: alpm
-- alpm: haskell-free
-  source: alpm
-- alpm: haskell-microlens
-  source: alpm
-- alpm: haskell-microlens-th
-  source: alpm
-- alpm: haskell-multistate
-  source: alpm
-- alpm: haskell-unsafe
-  source: alpm
-- alpm: haskell-void
-  source: alpm
 - alpm: haskell-butcher
   source: archpkg

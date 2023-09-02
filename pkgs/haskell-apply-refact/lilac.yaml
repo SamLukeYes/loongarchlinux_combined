@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-apply-refact'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-extra
-- haskell-filemanip
-- haskell-ghc-exactprint
-- haskell-optparse-applicative
-- haskell-refact
-- haskell-syb
-- haskell-uniplate
-- haskell-unix-compat
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-extra
-  source: alpm
-- alpm: haskell-filemanip
-  source: alpm
-- alpm: haskell-ghc-exactprint
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-refact
-  source: alpm
-- alpm: haskell-syb
-  source: alpm
-- alpm: haskell-uniplate
-  source: alpm
-- alpm: haskell-unix-compat
-  source: alpm
 - alpm: haskell-apply-refact
   source: archpkg

@@ -10,24 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''csoundqt'')
 
   '
 repo_depends:
-- qt5-base
-- qt5-declarative
 - csound
 - rtmidi
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: qt5-declarative
-  source: alpm
-  strip_release: true
-- alpm: csound
-  provides: libcsound64.so
-  source: alpm
-- alpm: rtmidi
-  provides: librtmidi.so
-  source: alpm
 - alpm: csoundqt
   source: archpkg
+update_on_soname:
+- libs:
+  - libcsnd6.so
+  - libcsound64.so
+  pkgname: csound
+- libs:
+  - librtmidi.so
+  pkgname: rtmidi

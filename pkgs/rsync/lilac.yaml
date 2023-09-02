@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: acl
-  provides: libacl.so
-  source: alpm
-- alpm: xxhash
-  provides: libxxhash.so
-  source: alpm
 - alpm: rsync
   source: archpkg
+update_on_soname:
+- libs:
+  - libacl.so
+  pkgname: acl
+- libs:
+  - libxxhash.so
+  pkgname: xxhash

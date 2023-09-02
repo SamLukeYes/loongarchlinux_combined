@@ -10,15 +10,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''p11-kit'')
 
   '
 repo_depends:
-- systemd
+- p11-kit: libp11-kit
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: libp11-kit
-  provides: libp11-kit.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
 - alpm: p11-kit
   source: archpkg
+update_on_soname:
+- libs:
+  - libp11-kit.so
+  pkgbase: p11-kit
+  pkgname: libp11-kit
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs

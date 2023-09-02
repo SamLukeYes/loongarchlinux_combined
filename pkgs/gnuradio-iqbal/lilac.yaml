@@ -16,12 +16,17 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: python
-- alpm: fftw
-  provides: libfftw3f.so
-  source: alpm
-- alpm: gnuradio
-  provides: libgnuradio-runtime.so
-  source: alpm
 - alpm: gnuradio-iqbal
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libfftw3f.so
+  pkgname: fftw
+- libs:
+  - libgnuradio-pmt.so
+  - libgnuradio-runtime.so
+  pkgname: gnuradio

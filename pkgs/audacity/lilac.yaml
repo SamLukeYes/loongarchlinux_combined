@@ -10,6 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''audacity'')
 
   '
 repo_depends:
+- python
 - alsa-lib
 - flac
 - gdk-pixbuf2
@@ -25,75 +26,79 @@ repo_depends:
 - portaudio
 - portmidi
 - portsmf
-- python
 - sqlite
 - suil
 - twolame
-- wxwidgets
 - vamp-plugin-sdk
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: flac
-  provides: libFLAC++.so
-  source: alpm
-- alpm: gdk-pixbuf2
-  provides: libgdk_pixbuf-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: gtk3
-  provides: libgtk-3.so
-  source: alpm
-- alpm: libid3tag
-  provides: libid3tag.so
-  source: alpm
-- alpm: libogg
-  provides: libogg.so
-  source: alpm
-- alpm: libsbsms
-  provides: libsbsms.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbisfile.so
-  source: alpm
-- alpm: lilv
-  provides: liblilv-0.so
-  source: alpm
-- alpm: mpg123
-  provides: libmpg123.so
-  source: alpm
-- alpm: portaudio
-  provides: libportaudio.so
-  source: alpm
-- alpm: portmidi
-  provides: libportmidi.so
-  source: alpm
-- alpm: portsmf
-  provides: libportSMF.so
-  source: alpm
-- alias: python
-- alpm: sqlite
-  provides: libsqlite3.so
-  source: alpm
-- alpm: suil
-  provides: libsuil-0.so
-  source: alpm
-- alpm: twolame
-  provides: libtwolame.so
-  source: alpm
-- alpm: wxwidgets-gtk3
-  source: alpm
-  strip_release: true
-- alpm: vamp-plugin-sdk
-  provides: libvamp-hostsdk.so
-  source: alpm
 - alpm: audacity
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libFLAC.so
+  - libFLAC++.so
+  pkgname: flac
+- libs:
+  - libgdk_pixbuf-2.0.so
+  pkgname: gdk-pixbuf2
+- libs:
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libgdk-3.so
+  - libgtk-3.so
+  pkgname: gtk3
+- libs:
+  - libid3tag.so
+  pkgname: libid3tag
+- libs:
+  - libogg.so
+  pkgname: libogg
+- libs:
+  - libsbsms.so
+  pkgname: libsbsms
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libvorbis.so
+  - libvorbisenc.so
+  - libvorbisfile.so
+  pkgname: libvorbis
+- libs:
+  - liblilv-0.so
+  pkgname: lilv
+- libs:
+  - libmpg123.so
+  pkgname: mpg123
+- libs:
+  - libportaudio.so
+  pkgname: portaudio
+- libs:
+  - libportmidi.so
+  pkgname: portmidi
+- libs:
+  - libportSMF.so
+  pkgname: portsmf
+- libs:
+  - libsqlite3.so
+  pkgname: sqlite
+- libs:
+  - libsuil-0.so
+  pkgname: suil
+- libs:
+  - libtwolame.so
+  pkgname: twolame
+- libs:
+  - libvamp-hostsdk.so
+  pkgname: vamp-plugin-sdk

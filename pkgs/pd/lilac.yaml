@@ -18,20 +18,21 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3f.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: portaudio
-  provides: libportaudio.so
-  source: alpm
-- alpm: portmidi
-  provides: libportmidi.so
-  source: alpm
 - alpm: pd
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libfftw3f.so
+  pkgname: fftw
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libportaudio.so
+  pkgname: portaudio
+- libs:
+  - libportmidi.so
+  pkgname: portmidi

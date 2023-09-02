@@ -15,7 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: icu
-- alias: readline
 - alpm: bind
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: icu
+  to_pattern: \1
+- from_pattern: ^(\d+)\..*
+  pkgbase: readline
+  to_pattern: \1

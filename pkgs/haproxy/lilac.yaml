@@ -10,14 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haproxy'')
 
   '
 repo_depends:
-- libxcrypt
 - lua
+- libxcrypt
 update_on:
 - manual: 1
   source: manual
-- alpm: libxcrypt
-  provides: libcrypt.so
-  source: alpm
-- alias: lua
 - alpm: haproxy
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: lua
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libcrypt.so
+  pkgname: libxcrypt

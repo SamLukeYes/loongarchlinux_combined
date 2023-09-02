@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''kdesignerplugin'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- kconfig
 update_on:
 - manual: 1
   source: manual
-- alpm: kconfig
-  source: alpm
-  strip_release: true
 - alpm: kdesignerplugin
   source: archpkg

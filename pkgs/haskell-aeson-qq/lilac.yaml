@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-aeson-qq'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-attoparsec
-- haskell-base-compat
-- haskell-src-meta
-- haskell-scientific
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-base-compat
-  source: alpm
-- alpm: haskell-src-meta
-  source: alpm
-- alpm: haskell-scientific
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-aeson-qq
   source: archpkg

@@ -9,30 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-middlewar
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base16-bytestring
-- haskell-cryptohash-sha1
-- haskell-expiring-cache-map
-- haskell-http-types
-- haskell-mime-types
-- haskell-old-locale
-- haskell-wai
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base16-bytestring
-  source: alpm
-- alpm: haskell-cryptohash-sha1
-  source: alpm
-- alpm: haskell-expiring-cache-map
-  source: alpm
-- alpm: haskell-http-types
-  source: alpm
-- alpm: haskell-mime-types
-  source: alpm
-- alpm: haskell-old-locale
-  source: alpm
-- alpm: haskell-wai
-  source: alpm
 - alpm: haskell-wai-middleware-static
   source: archpkg

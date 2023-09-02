@@ -9,45 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-authenticate'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-attoparsec
-- haskell-blaze-builder
-- haskell-case-insensitive
-- haskell-conduit
-- haskell-html-conduit
-- haskell-http-conduit
-- haskell-http-types
-- haskell-network-uri
-- haskell-resourcet
-- haskell-unordered-containers
-- haskell-xml-conduit
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-blaze-builder
-  source: alpm
-- alpm: haskell-case-insensitive
-  source: alpm
-- alpm: haskell-conduit
-  source: alpm
-- alpm: haskell-html-conduit
-  source: alpm
-- alpm: haskell-http-conduit
-  source: alpm
-- alpm: haskell-http-types
-  source: alpm
-- alpm: haskell-network-uri
-  source: alpm
-- alpm: haskell-resourcet
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-xml-conduit
-  source: alpm
 - alpm: haskell-authenticate
   source: archpkg

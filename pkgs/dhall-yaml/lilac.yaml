@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dhall-yaml'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hsyaml
-- haskell-hsyaml-aeson
-- haskell-aeson
-- haskell-ansi-terminal
-- haskell-optparse-applicative
-- haskell-prettyprinter
-- haskell-prettyprinter-ansi-terminal
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hsyaml
-  source: alpm
-- alpm: haskell-hsyaml-aeson
-  source: alpm
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-ansi-terminal
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-prettyprinter
-  source: alpm
-- alpm: haskell-prettyprinter-ansi-terminal
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: dhall-yaml
   source: archpkg

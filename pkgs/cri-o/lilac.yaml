@@ -10,20 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cri-o'')
 
   '
 repo_depends:
-- iptables
-- lvm2
+- lvm2: device-mapper
 - libseccomp
 update_on:
 - manual: 1
   source: manual
-- alpm: iptables
-  source: alpm
-  strip_release: true
-- alpm: device-mapper
-  provides: libdevmapper.so
-  source: alpm
-- alpm: libseccomp
-  provides: libseccomp.so
-  source: alpm
 - alpm: cri-o
   source: archpkg
+update_on_soname:
+- libs:
+  - libdevmapper.so
+  pkgbase: lvm2
+  pkgname: device-mapper
+- libs:
+  - libseccomp.so
+  pkgname: libseccomp

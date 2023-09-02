@@ -17,17 +17,18 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: clxclient
-  provides: libclxclient.so
-  source: alpm
-- alpm: clthreads
-  provides: libclthreads.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: zita-resampler
-  provides: libzita-resampler.so
-  source: alpm
 - alpm: ebumeter
   source: archpkg
+update_on_soname:
+- libs:
+  - libclxclient.so
+  pkgname: clxclient
+- libs:
+  - libclthreads.so
+  pkgname: clthreads
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libzita-resampler.so
+  pkgname: zita-resampler

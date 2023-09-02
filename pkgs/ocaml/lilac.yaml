@@ -2,6 +2,3 @@ destsubdir: extra
 update_on:
 - manual: 1
   source: manual
-- alpm: ocaml
-  source: alpm
-  strip_release: true

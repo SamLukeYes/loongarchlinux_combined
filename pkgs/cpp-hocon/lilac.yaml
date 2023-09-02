@@ -10,12 +10,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''cpp-hocon'')
 
   '
 repo_depends:
+- boost
 - leatherman
 update_on:
 - manual: 1
   source: manual
-- alpm: leatherman
-  provides: leatherman_locale.so
-  source: alpm
 - alpm: cpp-hocon
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: boost
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - leatherman_util.so
+  - leatherman_locale.so
+  pkgname: leatherman

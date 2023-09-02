@@ -1,19 +1,23 @@
 destsubdir: extra
 repo_depends:
+- readline
+- python
 - ncurses
 - readline
-- guile
-- python
 update_on:
 - manual: 1
   source: manual
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: readline
-  provides: libreadline.so
-  source: alpm
-- alpm: guile
-  source: alpm
-  strip_release: true
-- alias: python
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: readline
+  to_pattern: \1
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libncursesw.so
+  pkgname: ncurses
+- libs:
+  - libreadline.so
+  pkgname: readline

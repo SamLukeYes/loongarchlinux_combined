@@ -9,63 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gtk-sni-tray'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-dbus
-- haskell-dbus-hslogger
-- haskell-enclosed-exceptions
-- haskell-gi-cairo
-- haskell-gi-cairo-connector
-- haskell-gi-cairo-render
-- haskell-gi-dbusmenugtk3
-- haskell-gi-gdk3
-- haskell-gi-gdkpixbuf
-- haskell-gi-glib
-- haskell-gi-gtk3
-- haskell-gtk-strut
-- haskell-gi
-- haskell-gi-base
-- haskell-hslogger
-- haskell-optparse-applicative
-- haskell-status-notifier-item
-- haskell-transformers-base
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-dbus
-  source: alpm
-- alpm: haskell-dbus-hslogger
-  source: alpm
-- alpm: haskell-enclosed-exceptions
-  source: alpm
-- alpm: haskell-gi-cairo
-  source: alpm
-- alpm: haskell-gi-cairo-connector
-  source: alpm
-- alpm: haskell-gi-cairo-render
-  source: alpm
-- alpm: haskell-gi-dbusmenugtk3
-  source: alpm
-- alpm: haskell-gi-gdk3
-  source: alpm
-- alpm: haskell-gi-gdkpixbuf
-  source: alpm
-- alpm: haskell-gi-glib
-  source: alpm
-- alpm: haskell-gi-gtk3
-  source: alpm
-- alpm: haskell-gtk-strut
-  source: alpm
-- alpm: haskell-gi
-  source: alpm
-- alpm: haskell-gi-base
-  source: alpm
-- alpm: haskell-hslogger
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-status-notifier-item
-  source: alpm
-- alpm: haskell-transformers-base
-  source: alpm
 - alpm: haskell-gtk-sni-tray
   source: archpkg

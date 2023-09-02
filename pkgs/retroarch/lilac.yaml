@@ -12,22 +12,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''retroarch'')
 repo_depends:
 - libass
 - freetype2
-- systemd
-- qt5-base
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: libass
-  provides: libass.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: retroarch
   source: archpkg
+update_on_soname:
+- libs:
+  - libass.so
+  pkgname: libass
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs

@@ -17,17 +17,18 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libcap
-  provides: libcap.so
-  source: alpm
-- alpm: libedit
-  provides: libedit.so
-  source: alpm
-- alpm: libseccomp
-  provides: libseccomp.so
-  source: alpm
-- alpm: nettle
-  provides: libnettle.so
-  source: alpm
 - alpm: chrony
   source: archpkg
+update_on_soname:
+- libs:
+  - libcap.so
+  pkgname: libcap
+- libs:
+  - libedit.so
+  pkgname: libedit
+- libs:
+  - libseccomp.so
+  pkgname: libseccomp
+- libs:
+  - libnettle.so
+  pkgname: nettle

@@ -9,51 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hedgehog'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-ansi-terminal
-- haskell-async
-- haskell-barbies
-- haskell-concurrent-output
-- haskell-erf
-- haskell-lifted-async
-- haskell-mmorph
-- haskell-monad-control
-- haskell-pretty-show
-- haskell-primitive
-- haskell-random
-- haskell-resourcet
-- haskell-transformers-base
-- haskell-wl-pprint-annotated
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-ansi-terminal
-  source: alpm
-- alpm: haskell-async
-  source: alpm
-- alpm: haskell-barbies
-  source: alpm
-- alpm: haskell-concurrent-output
-  source: alpm
-- alpm: haskell-erf
-  source: alpm
-- alpm: haskell-lifted-async
-  source: alpm
-- alpm: haskell-mmorph
-  source: alpm
-- alpm: haskell-monad-control
-  source: alpm
-- alpm: haskell-pretty-show
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-resourcet
-  source: alpm
-- alpm: haskell-transformers-base
-  source: alpm
-- alpm: haskell-wl-pprint-annotated
-  source: alpm
 - alpm: haskell-hedgehog
   source: archpkg

@@ -14,8 +14,9 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
 - alpm: artyfx
   source: archpkg
+update_on_soname:
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile

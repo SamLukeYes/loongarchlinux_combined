@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-language-hask
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-regex-posix
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-regex-posix
-  source: alpm
 - alpm: haskell-language-haskell-extract
   source: archpkg

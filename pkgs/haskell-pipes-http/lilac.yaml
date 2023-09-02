@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pipes-http'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-http-client
-- haskell-http-client-tls
-- haskell-pipes
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-http-client
-  source: alpm
-- alpm: haskell-http-client-tls
-  source: alpm
-- alpm: haskell-pipes
-  source: alpm
 - alpm: haskell-pipes-http
   source: archpkg

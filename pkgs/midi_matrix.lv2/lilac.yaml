@@ -14,8 +14,9 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: glew
-  provides: libGLEW.so
-  source: alpm
 - alpm: midi_matrix.lv2
   source: archpkg
+update_on_soname:
+- libs:
+  - libGLEW.so
+  pkgname: glew

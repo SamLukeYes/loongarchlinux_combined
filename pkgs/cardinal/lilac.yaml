@@ -13,7 +13,7 @@ repo_depends:
 - dbus
 - file
 - libarchive
-- cuda
+- cuda: cuda-tools
 - liblo
 - libsamplerate
 - libsndfile
@@ -21,29 +21,31 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: dbus
-  provides: libdbus-1.so
-  source: alpm
-- alpm: file
-  provides: libmagic.so
-  source: alpm
-- alpm: libarchive
-  provides: libarchive.so
-  source: alpm
-- alpm: cuda-tools
-  provides: libGL.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: speexdsp
-  provides: libspeexdsp.so
-  source: alpm
 - alpm: cardinal
   source: archpkg
+update_on_soname:
+- libs:
+  - libdbus-1.so
+  pkgname: dbus
+- libs:
+  - libmagic.so
+  pkgname: file
+- libs:
+  - libarchive.so
+  pkgname: libarchive
+- libs:
+  - libGL.so
+  pkgbase: cuda
+  pkgname: cuda-tools
+- libs:
+  - liblo.so
+  pkgname: liblo
+- libs:
+  - libsamplerate.so
+  pkgname: libsamplerate
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libspeexdsp.so
+  pkgname: speexdsp

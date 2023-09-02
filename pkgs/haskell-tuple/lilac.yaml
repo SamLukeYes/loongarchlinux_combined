@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tuple'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-onetuple
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-onetuple
-  source: alpm
 - alpm: haskell-tuple
   source: archpkg

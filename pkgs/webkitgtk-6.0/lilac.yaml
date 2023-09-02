@@ -16,12 +16,16 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: icu
-- alpm: wpebackend-fdo
-  provides: libWPEBackend-fdo-1.0.so
-  source: alpm
-- alpm: libwpe
-  provides: libwpe-1.0.so
-  source: alpm
 - alpm: webkitgtk-6.0
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: icu
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libWPEBackend-fdo-1.0.so
+  pkgname: wpebackend-fdo
+- libs:
+  - libwpe-1.0.so
+  pkgname: libwpe

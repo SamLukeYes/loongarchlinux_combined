@@ -9,42 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-servant-clien
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-base-compat
-- haskell-base64-bytestring
-- haskell-constraints
-- haskell-free
-- haskell-http-media
-- haskell-http-types
-- haskell-network-uri
-- haskell-safe
-- haskell-servant
-- haskell-sop-core
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-base-compat
-  source: alpm
-- alpm: haskell-base64-bytestring
-  source: alpm
-- alpm: haskell-constraints
-  source: alpm
-- alpm: haskell-free
-  source: alpm
-- alpm: haskell-http-media
-  source: alpm
-- alpm: haskell-http-types
-  source: alpm
-- alpm: haskell-network-uri
-  source: alpm
-- alpm: haskell-safe
-  source: alpm
-- alpm: haskell-servant
-  source: alpm
-- alpm: haskell-sop-core
-  source: alpm
 - alpm: haskell-servant-client-core
   source: archpkg

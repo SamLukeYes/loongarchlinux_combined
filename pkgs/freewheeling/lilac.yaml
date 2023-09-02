@@ -19,23 +19,26 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: fluidsynth
-  provides: libfluidsynth.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbisfile.so
-  source: alpm
 - alpm: freewheeling
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libfluidsynth.so
+  pkgname: fluidsynth
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - liblo.so
+  pkgname: liblo
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libvorbis.so
+  - libvorbisenc.so
+  - libvorbisfile.so
+  pkgname: libvorbis

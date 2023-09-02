@@ -10,6 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''ardour'')
 
   '
 repo_depends:
+- readline
 - alsa-lib
 - atkmm
 - aubio
@@ -44,98 +45,109 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: atkmm
-  provides: libatkmm-1.6.so
-  source: alpm
-- alpm: aubio
-  provides: libaubio.so
-  source: alpm
-- alpm: cairomm
-  provides: libcairomm-1.0.so
-  source: alpm
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
-- alpm: dbus
-  provides: libdbus-1.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3f_threads.so
-  source: alpm
-- alpm: fluidsynth
-  provides: libfluidsynth.so
-  source: alpm
-- alpm: fontconfig
-  provides: libfontconfig.so
-  source: alpm
-- alpm: gdk-pixbuf2
-  provides: libgdk_pixbuf-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: glibmm
-  provides: libglibmm-2.4.so
-  source: alpm
-- alpm: gtk2
-  provides: libgtk-x11-2.0.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: libarchive
-  provides: libarchive.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
-- alpm: libao
-  provides: libpulse.so
-  source: alpm
-- alpm: liblrdf
-  provides: liblrdf.so
-  source: alpm
-- alpm: libltc
-  provides: libltc.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: libusb
-  provides: libusb-1.0.so
-  source: alpm
-- alpm: libwebsockets
-  provides: libwebsockets.so
-  source: alpm
-- alpm: libxml2
-  provides: libxml2.so
-  source: alpm
-- alpm: lilv
-  provides: liblilv-0.so
-  source: alpm
-- alpm: pango
-  provides: libpangoft2-1.0.so
-  source: alpm
-- alpm: pangomm
-  provides: libpangomm-1.4.so
-  source: alpm
-- alpm: readline
-  provides: libreadline.so
-  source: alpm
-- alpm: rubberband
-  provides: librubberband.so
-  source: alpm
-- alpm: suil
-  provides: libsuil-0.so
-  source: alpm
-- alpm: vamp-plugin-sdk
-  provides: libvamp-sdk.so
-  source: alpm
 - alpm: ardour
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: readline
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libatkmm-1.6.so
+  pkgname: atkmm
+- libs:
+  - libaubio.so
+  pkgname: aubio
+- libs:
+  - libcairomm-1.0.so
+  pkgname: cairomm
+- libs:
+  - libcurl.so
+  pkgname: curl
+- libs:
+  - libdbus-1.so
+  pkgname: dbus
+- libs:
+  - libfftw3f.so
+  - libfftw3f_threads.so
+  pkgname: fftw
+- libs:
+  - libfluidsynth.so
+  pkgname: fluidsynth
+- libs:
+  - libfontconfig.so
+  pkgname: fontconfig
+- libs:
+  - libgdk_pixbuf-2.0.so
+  pkgname: gdk-pixbuf2
+- libs:
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libglibmm-2.4.so
+  pkgname: glibmm
+- libs:
+  - libgdk-x11-2.0.so
+  - libgtk-x11-2.0.so
+  pkgname: gtk2
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libarchive.so
+  pkgname: libarchive
+- libs:
+  - liblo.so
+  pkgname: liblo
+- libs:
+  - libpulse.so
+  pkgname: libao
+- libs:
+  - liblrdf.so
+  pkgname: liblrdf
+- libs:
+  - libltc.so
+  pkgname: libltc
+- libs:
+  - libsamplerate.so
+  pkgname: libsamplerate
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libusb-1.0.so
+  pkgname: libusb
+- libs:
+  - libwebsockets.so
+  pkgname: libwebsockets
+- libs:
+  - libxml2.so
+  pkgname: libxml2
+- libs:
+  - liblilv-0.so
+  pkgname: lilv
+- libs:
+  - libpango-1.0.so
+  - libpangocairo-1.0.so
+  - libpangoft2-1.0.so
+  pkgname: pango
+- libs:
+  - libpangomm-1.4.so
+  pkgname: pangomm
+- libs:
+  - libreadline.so
+  pkgname: readline
+- libs:
+  - librubberband.so
+  pkgname: rubberband
+- libs:
+  - libsuil-0.so
+  pkgname: suil
+- libs:
+  - libvamp-hostsdk.so
+  - libvamp-sdk.so
+  pkgname: vamp-plugin-sdk

@@ -17,17 +17,18 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: orcania
-  provides: liborcania.so
-  source: alpm
-- alpm: rhonabwy
-  provides: librhonabwy.so
-  source: alpm
-- alpm: ulfius
-  provides: libulfius.so
-  source: alpm
-- alpm: yder
-  provides: libyder.so
-  source: alpm
 - alpm: iddawc
   source: archpkg
+update_on_soname:
+- libs:
+  - liborcania.so
+  pkgname: orcania
+- libs:
+  - librhonabwy.so
+  pkgname: rhonabwy
+- libs:
+  - libulfius.so
+  pkgname: ulfius
+- libs:
+  - libyder.so
+  pkgname: yder

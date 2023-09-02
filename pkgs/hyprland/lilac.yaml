@@ -10,16 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''hyprland'')
 
   '
 repo_depends:
-- glslang
 - libdisplay-info
 update_on:
 - manual: 1
   source: manual
-- alpm: glslang
-  source: alpm
-  strip_release: true
-- alpm: libdisplay-info
-  provides: libdisplay-info.so
-  source: alpm
 - alpm: hyprland
   source: archpkg
+update_on_soname:
+- libs:
+  - libdisplay-info.so
+  pkgname: libdisplay-info

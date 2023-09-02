@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-vec'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-quickcheck
-- haskell-adjunctions
-- haskell-boring
-- haskell-distributive
-- haskell-fin
-- haskell-hashable
-- haskell-indexed-traversable
-- haskell-semigroupoids
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-quickcheck
-  source: alpm
-- alpm: haskell-adjunctions
-  source: alpm
-- alpm: haskell-boring
-  source: alpm
-- alpm: haskell-distributive
-  source: alpm
-- alpm: haskell-fin
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-indexed-traversable
-  source: alpm
-- alpm: haskell-semigroupoids
-  source: alpm
 - alpm: haskell-vec
   source: archpkg

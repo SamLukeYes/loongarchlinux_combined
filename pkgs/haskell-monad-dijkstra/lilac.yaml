@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-monad-dijkstr
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-free
-- haskell-psqueues
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-free
-  source: alpm
-- alpm: haskell-psqueues
-  source: alpm
 - alpm: haskell-monad-dijkstra
   source: archpkg

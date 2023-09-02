@@ -1,19 +1,15 @@
 destsubdir: extra
 repo_depends:
-- jack2
-- qt6-declarative
-- qt5-declarative
 - python
+- jack2
 update_on:
 - manual: 1
   source: manual
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: qt6-declarative
-  source: alpm
-  strip_release: true
-- alpm: qt5-declarative
-  source: alpm
-  strip_release: true
-- alias: python
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libjack.so
+  pkgname: jack2

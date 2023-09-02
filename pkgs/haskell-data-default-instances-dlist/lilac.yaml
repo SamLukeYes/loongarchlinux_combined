@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-data-default-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-data-default-class
-- haskell-dlist
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-data-default-class
-  source: alpm
-- alpm: haskell-dlist
-  source: alpm
 - alpm: haskell-data-default-instances-dlist
   source: archpkg

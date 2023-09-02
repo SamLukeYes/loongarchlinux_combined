@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-texmath'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-network-uri
-- haskell-pandoc-types
-- haskell-split
-- haskell-syb
-- haskell-xml
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-network-uri
-  source: alpm
-- alpm: haskell-pandoc-types
-  source: alpm
-- alpm: haskell-split
-  source: alpm
-- alpm: haskell-syb
-  source: alpm
-- alpm: haskell-xml
-  source: alpm
 - alpm: haskell-texmath
   source: archpkg

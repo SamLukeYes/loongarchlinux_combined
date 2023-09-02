@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-network-proto
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-gnuidn
-- haskell-gnutls
-- haskell-gsasl
-- haskell-libxml-sax
-- haskell-monads-tf
-- haskell-network
-- haskell-network-simple
-- haskell-xml-types
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-gnuidn
-  source: alpm
-- alpm: haskell-gnutls
-  source: alpm
-- alpm: haskell-gsasl
-  source: alpm
-- alpm: haskell-libxml-sax
-  source: alpm
-- alpm: haskell-monads-tf
-  source: alpm
-- alpm: haskell-network
-  source: alpm
-- alpm: haskell-network-simple
-  source: alpm
-- alpm: haskell-xml-types
-  source: alpm
 - alpm: haskell-network-protocol-xmpp
   source: archpkg

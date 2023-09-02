@@ -17,17 +17,19 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: fftw
-  provides: libfftw3f_threads.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: zita-convolver
-  provides: libzita-convolver.so
-  source: alpm
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
 - alpm: ambix
   source: archpkg
+update_on_soname:
+- libs:
+  - libfftw3f.so
+  - libfftw3f_threads.so
+  pkgname: fftw
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libzita-convolver.so
+  pkgname: zita-convolver
+- libs:
+  - libasound.so
+  pkgname: alsa-lib

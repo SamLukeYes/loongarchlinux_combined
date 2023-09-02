@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-regex-pcre'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-regex-base
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-regex-base
-  source: alpm
 - alpm: haskell-regex-pcre
   source: archpkg

@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-chell-quickch
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-chell
-- haskell-quickcheck
-- haskell-random
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-chell
-  source: alpm
-- alpm: haskell-quickcheck
-  source: alpm
-- alpm: haskell-random
-  source: alpm
 - alpm: haskell-chell-quickcheck
   source: archpkg

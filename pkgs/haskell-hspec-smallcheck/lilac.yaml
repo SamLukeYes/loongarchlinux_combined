@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-smallch
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-call-stack
-- haskell-hspec-core
-- haskell-hunit
-- haskell-smallcheck
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-call-stack
-  source: alpm
-- alpm: haskell-hspec-core
-  source: alpm
-- alpm: haskell-hunit
-  source: alpm
-- alpm: haskell-smallcheck
-  source: alpm
 - alpm: haskell-hspec-smallcheck
   source: archpkg

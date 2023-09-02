@@ -21,29 +21,32 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libass
-  provides: libass.so
-  source: alpm
-- alpm: chromaprint
-  provides: libchromaprint.so
-  source: alpm
-- alpm: dav1d
-  provides: libdav1d.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: libva
-  provides: libva.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbis.so
-  source: alpm
-- alpm: x264
-  provides: libx264.so
-  source: alpm
-- alpm: x265
-  provides: libx265.so
-  source: alpm
 - alpm: emby-server
   source: archpkg
+update_on_soname:
+- libs:
+  - libass.so
+  pkgname: libass
+- libs:
+  - libchromaprint.so
+  pkgname: chromaprint
+- libs:
+  - libdav1d.so
+  pkgname: dav1d
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libva-drm.so
+  - libva.so
+  pkgname: libva
+- libs:
+  - libvorbisenc.so
+  - libvorbis.so
+  pkgname: libvorbis
+- libs:
+  - libx264.so
+  pkgname: x264
+- libs:
+  - libx265.so
+  pkgname: x265

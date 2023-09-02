@@ -17,45 +17,49 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libass
-  provides: libass.so
-  source: alpm
-- alpm: libbluray
-  provides: libbluray.so
-  source: alpm
-- alpm: dav1d
-  provides: libdav1d.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: rav1e
-  provides: librav1e.so
-  source: alpm
-- alpm: librsvg
-  provides: librsvg-2.so
-  source: alpm
-- alpm: libva
-  provides: libva-x11.so
-  source: alpm
-- alpm: vid.stab
-  provides: libvidstab.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbis.so
-  source: alpm
-- alpm: libvpx
-  provides: libvpx.so
-  source: alpm
-- alpm: x264
-  provides: libx264.so
-  source: alpm
-- alpm: x265
-  provides: libx265.so
-  source: alpm
-- alpm: xvidcore
-  provides: libxvidcore.so
-  source: alpm
-- alpm: zimg
-  provides: libzimg.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libass.so
+  pkgname: libass
+- libs:
+  - libbluray.so
+  pkgname: libbluray
+- libs:
+  - libdav1d.so
+  pkgname: dav1d
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - librav1e.so
+  pkgname: rav1e
+- libs:
+  - librsvg-2.so
+  pkgname: librsvg
+- libs:
+  - libva.so
+  - libva-drm.so
+  - libva-x11.so
+  pkgname: libva
+- libs:
+  - libvidstab.so
+  pkgname: vid.stab
+- libs:
+  - libvorbisenc.so
+  - libvorbis.so
+  pkgname: libvorbis
+- libs:
+  - libvpx.so
+  pkgname: libvpx
+- libs:
+  - libx264.so
+  pkgname: x264
+- libs:
+  - libx265.so
+  pkgname: x265
+- libs:
+  - libxvidcore.so
+  pkgname: xvidcore
+- libs:
+  - libzimg.so
+  pkgname: zimg

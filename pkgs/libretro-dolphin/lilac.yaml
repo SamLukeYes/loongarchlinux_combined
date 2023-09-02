@@ -13,25 +13,28 @@ repo_depends:
 - fmt
 - hidapi
 - sfml
-- systemd
+- systemd: systemd-libs
 - libusb
 update_on:
 - manual: 1
   source: manual
-- alpm: fmt
-  provides: libfmt.so
-  source: alpm
-- alpm: hidapi
-  provides: libhidapi-hidraw.so
-  source: alpm
-- alpm: sfml
-  provides: libsfml-system.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
-- alpm: libusb
-  provides: libusb-1.0.so
-  source: alpm
 - alpm: libretro-dolphin
   source: archpkg
+update_on_soname:
+- libs:
+  - libfmt.so
+  pkgname: fmt
+- libs:
+  - libhidapi-hidraw.so
+  pkgname: hidapi
+- libs:
+  - libsfml-network.so
+  - libsfml-system.so
+  pkgname: sfml
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libusb-1.0.so
+  pkgname: libusb

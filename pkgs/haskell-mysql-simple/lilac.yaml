@@ -9,30 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-mysql-simple'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-attoparsec
-- haskell-base16-bytestring
-- haskell-blaze-builder
-- haskell-blaze-textual
-- haskell-mysql
-- haskell-old-locale
-- haskell-pcre-light
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-base16-bytestring
-  source: alpm
-- alpm: haskell-blaze-builder
-  source: alpm
-- alpm: haskell-blaze-textual
-  source: alpm
-- alpm: haskell-mysql
-  source: alpm
-- alpm: haskell-old-locale
-  source: alpm
-- alpm: haskell-pcre-light
-  source: alpm
 - alpm: haskell-mysql-simple
   source: archpkg

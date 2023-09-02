@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-crypto-cipher
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-byteable
-- haskell-securemem
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-byteable
-  source: alpm
-- alpm: haskell-securemem
-  source: alpm
 - alpm: haskell-crypto-cipher-types
   source: archpkg

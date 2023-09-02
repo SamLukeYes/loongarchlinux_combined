@@ -18,20 +18,23 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: gtk2
-  provides: libgtk-x11-2.0.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: zita-convolver
-  provides: libzita-convolver.so
-  source: alpm
 - alpm: ir.lv2
   source: archpkg
+update_on_soname:
+- libs:
+  - libgdk-x11-2.0.so
+  - libgtk-x11-2.0.so
+  pkgname: gtk2
+- libs:
+  - libgobject-2.0.so
+  - libglib-2.0.so
+  pkgname: glib2
+- libs:
+  - libsamplerate.so
+  pkgname: libsamplerate
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libzita-convolver.so
+  pkgname: zita-convolver

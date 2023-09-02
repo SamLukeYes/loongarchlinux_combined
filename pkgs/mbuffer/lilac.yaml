@@ -14,6 +14,9 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: libcrypto
 - alpm: mbuffer
   source: archpkg
+update_on_soname:
+- libs:
+  - libcrypto.so
+  pkgname: openssl

@@ -9,39 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-implicit-hie-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base16-bytestring
-- haskell-extra
-- haskell-hie-bios
-- haskell-hslogger
-- haskell-implicit-hie
-- haskell-temporary
-- haskell-unix-compat
-- haskell-unordered-containers
-- haskell-vector
-- haskell-yaml
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base16-bytestring
-  source: alpm
-- alpm: haskell-extra
-  source: alpm
-- alpm: haskell-hie-bios
-  source: alpm
-- alpm: haskell-hslogger
-  source: alpm
-- alpm: haskell-implicit-hie
-  source: alpm
-- alpm: haskell-temporary
-  source: alpm
-- alpm: haskell-unix-compat
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
-- alpm: haskell-yaml
-  source: alpm
 - alpm: haskell-implicit-hie-cradle
   source: archpkg

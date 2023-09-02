@@ -12,22 +12,25 @@ pre_build_script: '_G.files = download_official_pkgbuild(''avldrums.lv2'')
 repo_depends:
 - fluidsynth
 - glib2
-- cuda
+- cuda: cuda-tools
 - pango
 update_on:
 - manual: 1
   source: manual
-- alpm: fluidsynth
-  provides: libfluidsynth.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: cuda-tools
-  provides: libGL.so
-  source: alpm
-- alpm: pango
-  provides: libpangocairo-1.0.so
-  source: alpm
 - alpm: avldrums.lv2
   source: archpkg
+update_on_soname:
+- libs:
+  - libfluidsynth.so
+  pkgname: fluidsynth
+- libs:
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libGL.so
+  pkgbase: cuda
+  pkgname: cuda-tools
+- libs:
+  - libpango-1.0.so
+  - libpangocairo-1.0.so
+  pkgname: pango

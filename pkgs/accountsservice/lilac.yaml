@@ -12,18 +12,22 @@ pre_build_script: '_G.files = download_official_pkgbuild(''accountsservice'')
 repo_depends:
 - libxcrypt
 - glib2
-- systemd
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: libxcrypt
-  provides: libcrypt.so
-  source: alpm
-- alpm: glib2
-  provides: libgio-2.0.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
 - alpm: accountsservice
   source: archpkg
+update_on_soname:
+- libs:
+  - libcrypt.so
+  pkgname: libxcrypt
+- libs:
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  - libgio-2.0.so
+  pkgname: glib2
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs

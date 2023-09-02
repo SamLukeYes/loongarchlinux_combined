@@ -16,14 +16,15 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: glew
-  provides: libGLEW.so
-  source: alpm
-- alpm: faust
-  provides: libfaust.so
-  source: alpm
-- alpm: fontconfig
-  provides: libfontconfig.so
-  source: alpm
 - alpm: mephisto.lv2
   source: archpkg
+update_on_soname:
+- libs:
+  - libGLEW.so
+  pkgname: glew
+- libs:
+  - libfaust.so
+  pkgname: faust
+- libs:
+  - libfontconfig.so
+  pkgname: fontconfig

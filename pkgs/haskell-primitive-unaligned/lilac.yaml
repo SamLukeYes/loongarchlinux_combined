@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-primitive-una
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-primitive
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-primitive
-  source: alpm
 - alpm: haskell-primitive-unaligned
   source: archpkg

@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-scientific'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hashable
-- haskell-integer-logarithms
-- haskell-primitive
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-integer-logarithms
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
 - alpm: haskell-scientific
   source: archpkg

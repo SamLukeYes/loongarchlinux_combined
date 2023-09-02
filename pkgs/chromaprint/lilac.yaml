@@ -14,8 +14,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: ffmpeg
-  provides: libswresample.so
-  source: alpm
 - alpm: chromaprint
   source: archpkg
+update_on_soname:
+- libs:
+  - libavcodec.so
+  - libavformat.so
+  - libavutil.so
+  - libswresample.so
+  pkgname: ffmpeg

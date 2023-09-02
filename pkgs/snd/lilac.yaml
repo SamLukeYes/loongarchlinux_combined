@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''snd'')
 
   '
 repo_depends:
-- gsl
 - alsa-lib
 - fftw
 - jack2
@@ -18,20 +17,18 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: gsl
-  source: alpm
-  strip_release: true
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
 - alpm: snd
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libfftw3.so
+  pkgname: fftw
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libsamplerate.so
+  pkgname: libsamplerate

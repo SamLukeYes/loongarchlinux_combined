@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-hedgeho
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hspec
-- haskell-hspec-core
-- haskell-hedgehog
-- haskell-hunit
-- haskell-quickcheck
-- haskell-splitmix
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hspec
-  source: alpm
-- alpm: haskell-hspec-core
-  source: alpm
-- alpm: haskell-hedgehog
-  source: alpm
-- alpm: haskell-hunit
-  source: alpm
-- alpm: haskell-quickcheck
-  source: alpm
-- alpm: haskell-splitmix
-  source: alpm
 - alpm: haskell-hspec-hedgehog
   source: archpkg

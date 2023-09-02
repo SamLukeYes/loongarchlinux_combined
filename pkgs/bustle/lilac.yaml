@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''bustle'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-cairo
-- haskell-gio
-- haskell-glib
-- haskell-gtk3
-- haskell-pango
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-cairo
-  source: alpm
-- alpm: haskell-gio
-  source: alpm
-- alpm: haskell-glib
-  source: alpm
-- alpm: haskell-gtk3
-  source: alpm
-- alpm: haskell-pango
-  source: alpm
 - alpm: bustle
   source: archpkg

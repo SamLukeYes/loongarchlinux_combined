@@ -10,20 +10,13 @@ pre_build_script: '_G.files = download_official_pkgbuild(''minitube'')
 
   '
 repo_depends:
-- qt5-base
-- qt5-declarative
 - mpv
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: qt5-declarative
-  source: alpm
-  strip_release: true
-- alpm: mpv
-  provides: libmpv.so
-  source: alpm
 - alpm: minitube
   source: archpkg
+update_on_soname:
+- libs:
+  - libmpv.so
+  pkgname: mpv

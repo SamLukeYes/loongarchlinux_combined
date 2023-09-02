@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libconfig
-  provides: libconfig.so
-  source: alpm
-- alpm: protobuf-c
-  provides: libprotobuf-c.so
-  source: alpm
 - alpm: umurmur
   source: archpkg
+update_on_soname:
+- libs:
+  - libconfig.so
+  pkgname: libconfig
+- libs:
+  - libprotobuf-c.so
+  pkgname: protobuf-c

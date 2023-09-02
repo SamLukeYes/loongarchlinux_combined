@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-expecta
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hspec-expectations
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hspec-expectations
-  source: alpm
 - alpm: haskell-hspec-expectations-lifted
   source: archpkg

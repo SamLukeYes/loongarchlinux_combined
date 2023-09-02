@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-optparse-gene
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-only
-- haskell-optparse-applicative
-- haskell-transformers-compat
-- haskell-void
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-only
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-transformers-compat
-  source: alpm
-- alpm: haskell-void
-  source: alpm
 - alpm: haskell-optparse-generic
   source: archpkg

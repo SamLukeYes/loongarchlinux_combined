@@ -15,9 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: libcrypto
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
 - alpm: wit
   source: archpkg
+update_on_soname:
+- libs:
+  - libcrypto.so
+  pkgname: openssl
+- libs:
+  - libncursesw.so
+  pkgname: ncurses

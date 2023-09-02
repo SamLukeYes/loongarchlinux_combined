@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
-- alpm: lilv
-  provides: liblilv-0.so
-  source: alpm
 - alpm: lv2lint
   source: archpkg
+update_on_soname:
+- libs:
+  - libcurl.so
+  pkgname: curl
+- libs:
+  - liblilv-0.so
+  pkgname: lilv

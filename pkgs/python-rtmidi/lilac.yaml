@@ -16,12 +16,16 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: python
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
 - alpm: python-rtmidi
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libjack.so
+  pkgname: jack2

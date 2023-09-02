@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: fontconfig
-  provides: libfontconfig.so
-  source: alpm
-- alpm: fribidi
-  provides: libfribidi.so
-  source: alpm
 - alpm: fluxbox
   source: archpkg
+update_on_soname:
+- libs:
+  - libfontconfig.so
+  pkgname: fontconfig
+- libs:
+  - libfribidi.so
+  pkgname: fribidi

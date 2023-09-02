@@ -10,9 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libopenshot'')
 
   '
 repo_depends:
-- opencv
 - python
-- qt5-base
 - ffmpeg
 - jsoncpp
 - libopenshot-audio
@@ -21,27 +19,29 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: opencv
-  source: alpm
-  strip_release: true
-- alias: python
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: ffmpeg
-  provides: libswresample.so
-  source: alpm
-- alpm: jsoncpp
-  provides: libjsoncpp.so
-  source: alpm
-- alpm: libopenshot-audio
-  provides: libopenshot-audio.so
-  source: alpm
-- alpm: protobuf
-  provides: libprotobuf.so
-  source: alpm
-- alpm: zeromq
-  provides: libzmq.so
-  source: alpm
 - alpm: libopenshot
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libavcodec.so
+  - libavformat.so
+  - libavutil.so
+  - libswscale.so
+  - libswresample.so
+  pkgname: ffmpeg
+- libs:
+  - libjsoncpp.so
+  pkgname: jsoncpp
+- libs:
+  - libopenshot-audio.so
+  pkgname: libopenshot-audio
+- libs:
+  - libprotobuf.so
+  pkgname: protobuf
+- libs:
+  - libzmq.so
+  pkgname: zeromq

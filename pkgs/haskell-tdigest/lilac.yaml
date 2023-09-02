@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tdigest'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base-compat
-- haskell-reducers
-- haskell-semigroupoids
-- haskell-vector
-- haskell-vector-algorithms
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base-compat
-  source: alpm
-- alpm: haskell-reducers
-  source: alpm
-- alpm: haskell-semigroupoids
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
-- alpm: haskell-vector-algorithms
-  source: alpm
 - alpm: haskell-tdigest
   source: archpkg

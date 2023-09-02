@@ -9,42 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-brick0.71'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-vty
-- haskell-data-clist
-- haskell-dlist
-- haskell-microlens
-- haskell-microlens-th
-- haskell-microlens-mtl
-- haskell-config-ini
-- haskell-vector
-- haskell-contravariant
-- haskell-text-zipper
-- haskell-word-wrap
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-vty
-  source: alpm
-- alpm: haskell-data-clist
-  source: alpm
-- alpm: haskell-dlist
-  source: alpm
-- alpm: haskell-microlens
-  source: alpm
-- alpm: haskell-microlens-th
-  source: alpm
-- alpm: haskell-microlens-mtl
-  source: alpm
-- alpm: haskell-config-ini
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
-- alpm: haskell-contravariant
-  source: alpm
-- alpm: haskell-text-zipper
-  source: alpm
-- alpm: haskell-word-wrap
-  source: alpm
 - alpm: haskell-brick0.71
   source: archpkg

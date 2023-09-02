@@ -19,23 +19,26 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: flac
-  provides: libFLAC.so
-  source: alpm
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: darktable
-  provides: libjpeg.so
-  source: alpm
-- alpm: libogg
-  provides: libogg.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbisfile.so
-  source: alpm
 - alpm: stochas
   source: archpkg
+update_on_soname:
+- libs:
+  - libFLAC.so
+  pkgname: flac
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libjpeg.so
+  pkgname: darktable
+- libs:
+  - libogg.so
+  pkgname: libogg
+- libs:
+  - libvorbis.so
+  - libvorbisenc.so
+  - libvorbisfile.so
+  pkgname: libvorbis

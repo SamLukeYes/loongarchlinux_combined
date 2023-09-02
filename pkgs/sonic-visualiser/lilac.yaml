@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''sonic-visualiser'')
 
   '
 repo_depends:
-- qt5-base
 - alsa-lib
 - bzip2
 - capnproto
@@ -30,56 +29,55 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: bzip2
-  provides: libbz2.so
-  source: alpm
-- alpm: capnproto
-  provides: libkj.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3.so
-  source: alpm
-- alpm: libfishsound
-  provides: libfishsound.so
-  source: alpm
-- alpm: libid3tag
-  provides: libid3tag.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
-- alpm: liblrdf
-  provides: liblrdf.so
-  source: alpm
-- alpm: liboggz
-  provides: liboggz.so
-  source: alpm
-- alpm: libao
-  provides: libpulse.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: portaudio
-  provides: libportaudio.so
-  source: alpm
-- alpm: rubberband
-  provides: librubberband.so
-  source: alpm
-- alpm: serd
-  provides: libserd-0.so
-  source: alpm
-- alpm: sord
-  provides: libsord-0.so
-  source: alpm
 - alpm: sonic-visualiser
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libbz2.so
+  pkgname: bzip2
+- libs:
+  - libcapnp.so
+  - libkj.so
+  pkgname: capnproto
+- libs:
+  - libfftw3.so
+  pkgname: fftw
+- libs:
+  - libfishsound.so
+  pkgname: libfishsound
+- libs:
+  - libid3tag.so
+  pkgname: libid3tag
+- libs:
+  - liblo.so
+  pkgname: liblo
+- libs:
+  - liblrdf.so
+  pkgname: liblrdf
+- libs:
+  - liboggz.so
+  pkgname: liboggz
+- libs:
+  - libpulse.so
+  pkgname: libao
+- libs:
+  - libsamplerate.so
+  pkgname: libsamplerate
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libportaudio.so
+  pkgname: portaudio
+- libs:
+  - librubberband.so
+  pkgname: rubberband
+- libs:
+  - libserd-0.so
+  pkgname: serd
+- libs:
+  - libsord-0.so
+  pkgname: sord

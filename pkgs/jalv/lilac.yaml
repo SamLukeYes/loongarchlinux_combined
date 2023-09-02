@@ -19,23 +19,25 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: lilv
-  provides: liblilv-0.so
-  source: alpm
-- alpm: serd
-  provides: libserd-0.so
-  source: alpm
-- alpm: sratom
-  provides: libsratom-0.so
-  source: alpm
-- alpm: suil
-  provides: libsuil-0.so
-  source: alpm
 - alpm: jalv
   source: archpkg
+update_on_soname:
+- libs:
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - liblilv-0.so
+  pkgname: lilv
+- libs:
+  - libserd-0.so
+  pkgname: serd
+- libs:
+  - libsratom-0.so
+  pkgname: sratom
+- libs:
+  - libsuil-0.so
+  pkgname: suil

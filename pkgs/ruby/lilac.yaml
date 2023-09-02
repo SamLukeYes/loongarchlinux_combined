@@ -1,4 +1,10 @@
 destsubdir: extra
+repo_depends:
+- ruby
 update_on:
 - manual: 1
   source: manual
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: ruby
+  to_pattern: \1

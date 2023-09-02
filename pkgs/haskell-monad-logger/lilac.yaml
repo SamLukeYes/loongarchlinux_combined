@@ -9,42 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-monad-logger'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-conduit
-- haskell-conduit-extra
-- haskell-fast-logger
-- haskell-lifted-base
-- haskell-monad-control
-- haskell-monad-loops
-- haskell-resourcet
-- haskell-stm-chans
-- haskell-transformers-base
-- haskell-transformers-compat
-- haskell-unliftio-core
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-conduit
-  source: alpm
-- alpm: haskell-conduit-extra
-  source: alpm
-- alpm: haskell-fast-logger
-  source: alpm
-- alpm: haskell-lifted-base
-  source: alpm
-- alpm: haskell-monad-control
-  source: alpm
-- alpm: haskell-monad-loops
-  source: alpm
-- alpm: haskell-resourcet
-  source: alpm
-- alpm: haskell-stm-chans
-  source: alpm
-- alpm: haskell-transformers-base
-  source: alpm
-- alpm: haskell-transformers-compat
-  source: alpm
-- alpm: haskell-unliftio-core
-  source: alpm
 - alpm: haskell-monad-logger
   source: archpkg

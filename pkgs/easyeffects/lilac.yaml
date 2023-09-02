@@ -11,7 +11,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''easyeffects'')
   '
 repo_depends:
 - fmt
-- gsl
 - libadwaita
 - libbs2b
 - libsamplerate
@@ -21,29 +20,27 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: fmt
-  provides: libfmt.so
-  source: alpm
-- alpm: gsl
-  source: alpm
-  strip_release: true
-- alpm: libadwaita
-  provides: libadwaita-1.so
-  source: alpm
-- alpm: libbs2b
-  provides: libbs2b.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: libsigc++-3.0
-  provides: libsigc-3.0.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: lilv
-  provides: liblilv-0.so
-  source: alpm
 - alpm: easyeffects
   source: archpkg
+update_on_soname:
+- libs:
+  - libfmt.so
+  pkgname: fmt
+- libs:
+  - libadwaita-1.so
+  pkgname: libadwaita
+- libs:
+  - libbs2b.so
+  pkgname: libbs2b
+- libs:
+  - libsamplerate.so
+  pkgname: libsamplerate
+- libs:
+  - libsigc-3.0.so
+  pkgname: libsigc++-3.0
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - liblilv-0.so
+  pkgname: lilv

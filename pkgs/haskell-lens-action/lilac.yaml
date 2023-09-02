@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lens-action''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-comonad
-- haskell-contravariant
-- haskell-lens
-- haskell-profunctors
-- haskell-semigroupoids
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-comonad
-  source: alpm
-- alpm: haskell-contravariant
-  source: alpm
-- alpm: haskell-lens
-  source: alpm
-- alpm: haskell-profunctors
-  source: alpm
-- alpm: haskell-semigroupoids
-  source: alpm
 - alpm: haskell-lens-action
   source: archpkg

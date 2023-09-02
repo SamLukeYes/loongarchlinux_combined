@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-xmlgen'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-blaze-builder
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-blaze-builder
-  source: alpm
 - alpm: haskell-xmlgen
   source: archpkg

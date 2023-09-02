@@ -9,66 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-extra'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-ansi-terminal
-- haskell-base64-bytestring
-- haskell-case-insensitive
-- haskell-cookie
-- haskell-data-default-class
-- haskell-fast-logger
-- haskell-http-types
-- haskell-iproute
-- haskell-network
-- haskell-resourcet
-- haskell-streaming-commons
-- haskell-vault
-- haskell-wai
-- haskell-wai-logger
-- haskell-warp
-- haskell-word8
-- haskell-hunit
-- haskell-call-stack
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-ansi-terminal
-  source: alpm
-- alpm: haskell-base64-bytestring
-  source: alpm
-- alpm: haskell-case-insensitive
-  source: alpm
-- alpm: haskell-cookie
-  source: alpm
-- alpm: haskell-data-default-class
-  source: alpm
-- alpm: haskell-fast-logger
-  source: alpm
-- alpm: haskell-http-types
-  source: alpm
-- alpm: haskell-iproute
-  source: alpm
-- alpm: haskell-network
-  source: alpm
-- alpm: haskell-resourcet
-  source: alpm
-- alpm: haskell-streaming-commons
-  source: alpm
-- alpm: haskell-vault
-  source: alpm
-- alpm: haskell-wai
-  source: alpm
-- alpm: haskell-wai-logger
-  source: alpm
-- alpm: haskell-warp
-  source: alpm
-- alpm: haskell-word8
-  source: alpm
-- alpm: haskell-hunit
-  source: alpm
-- alpm: haskell-call-stack
-  source: alpm
 - alpm: haskell-wai-extra
   source: archpkg

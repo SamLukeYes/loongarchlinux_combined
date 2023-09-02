@@ -11,19 +11,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mosquitto'')
   '
 repo_depends:
 - c-ares
-- systemd
+- systemd: systemd-libs
 - libwebsockets
 update_on:
 - manual: 1
   source: manual
-- alpm: c-ares
-  provides: libcares.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
-- alpm: libwebsockets
-  provides: libwebsockets.so
-  source: alpm
 - alpm: mosquitto
   source: archpkg
+update_on_soname:
+- libs:
+  - libcares.so
+  pkgname: c-ares
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libwebsockets.so
+  pkgname: libwebsockets

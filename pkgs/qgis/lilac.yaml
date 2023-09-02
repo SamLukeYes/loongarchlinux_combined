@@ -9,23 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qgis'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- protobuf
-- qt5-base
-- qt5-declarative
-- gsl
 update_on:
 - manual: 1
   source: manual
-- alias: protobuf
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: qt5-declarative
-  source: alpm
-  strip_release: true
-- alpm: gsl
-  source: alpm
-  strip_release: true
 - alpm: qgis
   source: archpkg

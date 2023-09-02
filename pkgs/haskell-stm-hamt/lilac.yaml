@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-stm-hamt'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-deferred-folds
-- haskell-focus
-- haskell-hashable
-- haskell-list-t
-- haskell-primitive
-- haskell-primitive-extras
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-deferred-folds
-  source: alpm
-- alpm: haskell-focus
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-list-t
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-primitive-extras
-  source: alpm
 - alpm: haskell-stm-hamt
   source: archpkg

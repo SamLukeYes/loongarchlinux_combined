@@ -18,20 +18,21 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: rtaudio
-  provides: librtaudio.so
-  source: alpm
-- alpm: rtmidi
-  provides: librtmidi.so
-  source: alpm
 - alpm: adljack
   source: archpkg
+update_on_soname:
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - liblo.so
+  pkgname: liblo
+- libs:
+  - libncursesw.so
+  pkgname: ncurses
+- libs:
+  - librtaudio.so
+  pkgname: rtaudio
+- libs:
+  - librtmidi.so
+  pkgname: rtmidi

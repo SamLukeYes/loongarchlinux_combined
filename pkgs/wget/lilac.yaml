@@ -11,23 +11,25 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wget'')
   '
 repo_depends:
 - libidn2
-- util-linux
+- util-linux: util-linux-libs
 - libpsl
 - nettle
 update_on:
 - manual: 1
   source: manual
-- alpm: libidn2
-  provides: libidn2.so
-  source: alpm
-- alpm: util-linux-libs
-  provides: libuuid.so
-  source: alpm
-- alpm: libpsl
-  provides: libpsl.so
-  source: alpm
-- alpm: nettle
-  provides: libnettle.so
-  source: alpm
 - alpm: wget
   source: archpkg
+update_on_soname:
+- libs:
+  - libidn2.so
+  pkgname: libidn2
+- libs:
+  - libuuid.so
+  pkgbase: util-linux
+  pkgname: util-linux-libs
+- libs:
+  - libpsl.so
+  pkgname: libpsl
+- libs:
+  - libnettle.so
+  pkgname: nettle

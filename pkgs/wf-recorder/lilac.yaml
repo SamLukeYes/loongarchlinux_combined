@@ -12,22 +12,29 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wf-recorder'')
 repo_depends:
 - ffmpeg
 - libao
-- pulseaudio
+- pulseaudio: libpulse
 - wayland
 update_on:
 - manual: 1
   source: manual
-- alpm: ffmpeg
-  provides: libswresample.so
-  source: alpm
-- alpm: libao
-  provides: libpulse.so
-  source: alpm
-- alpm: libpulse
-  provides: libpulse-simple.so
-  source: alpm
-- alpm: wayland
-  provides: libwayland-client.so
-  source: alpm
 - alpm: wf-recorder
   source: archpkg
+update_on_soname:
+- libs:
+  - libavcodec.so
+  - libavdevice.so
+  - libavfilter.so
+  - libavformat.so
+  - libavutil.so
+  - libswresample.so
+  pkgname: ffmpeg
+- libs:
+  - libpulse.so
+  pkgname: libao
+- libs:
+  - libpulse-simple.so
+  pkgbase: pulseaudio
+  pkgname: libpulse
+- libs:
+  - libwayland-client.so
+  pkgname: wayland

@@ -15,9 +15,13 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: readline
-- alpm: jsoncpp
-  provides: libjsoncpp.so
-  source: alpm
 - alpm: opendht
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: readline
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libjsoncpp.so
+  pkgname: jsoncpp

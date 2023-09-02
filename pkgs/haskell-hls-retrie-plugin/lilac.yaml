@@ -9,42 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-retrie-pl
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-extra
-- haskell-ghc
-- haskell-ghcide
-- haskell-hashable
-- haskell-hls-plugin-api
-- haskell-lsp
-- haskell-lsp-types
-- haskell-retrie
-- haskell-safe-exceptions
-- haskell-unordered-containers
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-extra
-  source: alpm
-- alpm: haskell-ghc
-  source: alpm
-- alpm: haskell-ghcide
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-hls-plugin-api
-  source: alpm
-- alpm: haskell-lsp
-  source: alpm
-- alpm: haskell-lsp-types
-  source: alpm
-- alpm: haskell-retrie
-  source: alpm
-- alpm: haskell-safe-exceptions
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
 - alpm: haskell-hls-retrie-plugin
   source: archpkg

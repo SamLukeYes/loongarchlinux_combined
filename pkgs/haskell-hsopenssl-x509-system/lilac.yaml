@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hsopenssl-x50
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hsopenssl
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hsopenssl
-  source: alpm
 - alpm: haskell-hsopenssl-x509-system
   source: archpkg

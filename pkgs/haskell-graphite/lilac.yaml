@@ -9,30 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-graphite'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-quickcheck
-- haskell-cassava
-- haskell-graphviz
-- haskell-hashable
-- haskell-random
-- haskell-unordered-containers
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-quickcheck
-  source: alpm
-- alpm: haskell-cassava
-  source: alpm
-- alpm: haskell-graphviz
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-graphite
   source: archpkg

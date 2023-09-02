@@ -4,6 +4,7 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libisl
-  provides: libisl.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libisl.so
+  pkgname: libisl

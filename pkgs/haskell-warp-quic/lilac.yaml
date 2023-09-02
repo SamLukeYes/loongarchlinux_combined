@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-warp-quic'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-http3
-- haskell-quic
-- haskell-tls
-- haskell-wai
-- haskell-warp
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-http3
-  source: alpm
-- alpm: haskell-quic
-  source: alpm
-- alpm: haskell-tls
-  source: alpm
-- alpm: haskell-wai
-  source: alpm
-- alpm: haskell-warp
-  source: alpm
 - alpm: haskell-warp-quic
   source: archpkg

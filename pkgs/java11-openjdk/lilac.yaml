@@ -8,18 +8,19 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: darktable
-  provides: libjpeg.so
-  source: alpm
-- alpm: lcms2
-  provides: liblcms2.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: harfbuzz
-  provides: libharfbuzz.so
-  source: alpm
-- alpm: giflib
-  provides: libgif.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libjpeg.so
+  pkgname: darktable
+- libs:
+  - liblcms2.so
+  pkgname: lcms2
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libharfbuzz.so
+  pkgname: harfbuzz
+- libs:
+  - libgif.so
+  pkgname: giflib

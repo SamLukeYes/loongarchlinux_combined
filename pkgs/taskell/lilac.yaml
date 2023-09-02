@@ -9,48 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''taskell'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-attoparsec
-- haskell-brick0.71
-- haskell-config-ini
-- haskell-file-embed
-- haskell-fold-debounce
-- haskell-http-client
-- haskell-http-conduit
-- haskell-http-types
-- haskell-lens
-- haskell-tz
-- haskell-vty
-- haskell-classy-prelude
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-brick0.71
-  source: alpm
-- alpm: haskell-config-ini
-  source: alpm
-- alpm: haskell-file-embed
-  source: alpm
-- alpm: haskell-fold-debounce
-  source: alpm
-- alpm: haskell-http-client
-  source: alpm
-- alpm: haskell-http-conduit
-  source: alpm
-- alpm: haskell-http-types
-  source: alpm
-- alpm: haskell-lens
-  source: alpm
-- alpm: haskell-tz
-  source: alpm
-- alpm: haskell-vty
-  source: alpm
-- alpm: haskell-classy-prelude
-  source: alpm
 - alpm: taskell
   source: archpkg

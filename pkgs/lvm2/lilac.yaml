@@ -10,24 +10,32 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lvm2'')
 
   '
 repo_depends:
-- systemd
-- util-linux
+- readline
+- systemd: systemd-libs
+- util-linux: util-linux-libs
 - readline
 - libaio
 update_on:
 - manual: 1
   source: manual
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
-- alpm: util-linux-libs
-  provides: libblkid.so
-  source: alpm
-- alpm: readline
-  provides: libreadline.so
-  source: alpm
-- alpm: libaio
-  provides: libaio.so
-  source: alpm
 - alpm: lvm2
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: readline
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libblkid.so
+  pkgbase: util-linux
+  pkgname: util-linux-libs
+- libs:
+  - libreadline.so
+  pkgname: readline
+- libs:
+  - libaio.so
+  pkgname: libaio

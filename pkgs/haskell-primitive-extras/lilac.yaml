@@ -9,36 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-primitive-ext
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-cereal
-- haskell-deferred-folds
-- haskell-focus
-- haskell-foldl
-- haskell-list-t
-- haskell-primitive
-- haskell-primitive-unlifted
-- haskell-profunctors
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-cereal
-  source: alpm
-- alpm: haskell-deferred-folds
-  source: alpm
-- alpm: haskell-focus
-  source: alpm
-- alpm: haskell-foldl
-  source: alpm
-- alpm: haskell-list-t
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-primitive-unlifted
-  source: alpm
-- alpm: haskell-profunctors
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-primitive-extras
   source: archpkg

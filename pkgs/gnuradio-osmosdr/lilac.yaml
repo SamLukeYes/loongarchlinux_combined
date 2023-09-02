@@ -11,19 +11,29 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnuradio-osmosdr'')
   '
 repo_depends:
 - boost
+- boost
 - gnuradio
 - gnuradio-iqbal
 update_on:
 - manual: 1
   source: manual
-- alpm: boost
-  provides: libboost_thread.so
-  source: alpm
-- alpm: gnuradio
-  provides: libgnuradio-uhd.so
-  source: alpm
-- alpm: gnuradio-iqbal
-  provides: libgnuradio-iqbalance.so
-  source: alpm
 - alpm: gnuradio-osmosdr
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: boost
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libboost_chrono.so
+  - libboost_thread.so
+  pkgname: boost
+- libs:
+  - libgnuradio-blocks.so
+  - libgnuradio-runtime.so
+  - libgnuradio-pmt.so
+  - libgnuradio-uhd.so
+  pkgname: gnuradio
+- libs:
+  - libgnuradio-iqbalance.so
+  pkgname: gnuradio-iqbal

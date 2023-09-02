@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-rank2classes'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-data-functor-logistic
-- haskell-distributive
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-data-functor-logistic
-  source: alpm
-- alpm: haskell-distributive
-  source: alpm
 - alpm: haskell-rank2classes
   source: archpkg

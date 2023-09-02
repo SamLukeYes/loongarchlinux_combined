@@ -16,14 +16,15 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbisfile.so
-  source: alpm
 - alpm: marsyas
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libvorbisfile.so
+  pkgname: libvorbis

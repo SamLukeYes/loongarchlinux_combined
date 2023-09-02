@@ -16,14 +16,15 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: zita-convolver
-  provides: libzita-convolver.so
-  source: alpm
 - alpm: jconvolver
   source: archpkg
+update_on_soname:
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libzita-convolver.so
+  pkgname: zita-convolver

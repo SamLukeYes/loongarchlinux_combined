@@ -18,16 +18,22 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: lua
-- alpm: flac
-  provides: libFLAC.so
-  source: alpm
-- alpm: libid3tag
-  provides: libid3tag.so
-  source: alpm
-- alias: libssl
-- alpm: pcre2
-  provides: libpcre2-8.so
-  source: alpm
 - alpm: mympd
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: lua
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libFLAC.so
+  pkgname: flac
+- libs:
+  - libid3tag.so
+  pkgname: libid3tag
+- libs:
+  - libssl.so
+  pkgname: openssl
+- libs:
+  - libpcre2-8.so
+  pkgname: pcre2

@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-zip-archive''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-digest
-- haskell-old-time
-- haskell-temporary
-- haskell-zlib
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-digest
-  source: alpm
-- alpm: haskell-old-time
-  source: alpm
-- alpm: haskell-temporary
-  source: alpm
-- alpm: haskell-zlib
-  source: alpm
 - alpm: haskell-zip-archive
   source: archpkg

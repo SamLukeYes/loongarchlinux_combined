@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-crypton-x509-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-crypton-x509
-- haskell-crypton-x509-store
-- haskell-pem
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-crypton-x509
-  source: alpm
-- alpm: haskell-crypton-x509-store
-  source: alpm
-- alpm: haskell-pem
-  source: alpm
 - alpm: haskell-crypton-x509-system
   source: archpkg

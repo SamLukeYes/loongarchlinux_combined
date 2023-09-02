@@ -9,36 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-brittany-
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-brittany
-- haskell-czipwith
-- haskell-extra
-- haskell-ghc
-- haskell-ghc-exactprint
-- haskell-ghcide
-- haskell-hls-plugin-api
-- haskell-lens
-- haskell-lsp-types
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-brittany
-  source: alpm
-- alpm: haskell-czipwith
-  source: alpm
-- alpm: haskell-extra
-  source: alpm
-- alpm: haskell-ghc
-  source: alpm
-- alpm: haskell-ghc-exactprint
-  source: alpm
-- alpm: haskell-ghcide
-  source: alpm
-- alpm: haskell-hls-plugin-api
-  source: alpm
-- alpm: haskell-lens
-  source: alpm
-- alpm: haskell-lsp-types
-  source: alpm
 - alpm: haskell-hls-brittany-plugin
   source: archpkg

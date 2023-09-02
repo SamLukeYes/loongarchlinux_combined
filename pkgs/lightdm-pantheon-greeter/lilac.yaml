@@ -17,17 +17,21 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: gtk3
-  provides: libgtk-3.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: granite
-  provides: libgranite.so
-  source: alpm
-- alpm: libhandy
-  provides: libhandy-1.so
-  source: alpm
 - alpm: lightdm-pantheon-greeter
   source: archpkg
+update_on_soname:
+- libs:
+  - libgdk-3.so
+  - libgtk-3.so
+  pkgname: gtk3
+- libs:
+  - libgio-2.0.so
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libgranite.so
+  pkgname: granite
+- libs:
+  - libhandy-1.so
+  pkgname: libhandy

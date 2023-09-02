@@ -10,6 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''aeolus'')
 
   '
 repo_depends:
+- readline
 - alsa-lib
 - clthreads
 - clxclient
@@ -19,23 +20,28 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: clthreads
-  provides: libclthreads.so
-  source: alpm
-- alpm: clxclient
-  provides: libclxclient.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: readline
-  provides: libreadline.so
-  source: alpm
-- alpm: zita-alsa-pcmi
-  provides: libzita-alsa-pcmi.so
-  source: alpm
 - alpm: aeolus
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: readline
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libclthreads.so
+  pkgname: clthreads
+- libs:
+  - libclxclient.so
+  pkgname: clxclient
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libreadline.so
+  pkgname: readline
+- libs:
+  - libzita-alsa-pcmi.so
+  pkgname: zita-alsa-pcmi

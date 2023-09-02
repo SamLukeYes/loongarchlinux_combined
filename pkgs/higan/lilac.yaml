@@ -11,27 +11,26 @@ pre_build_script: '_G.files = download_official_pkgbuild(''higan'')
   '
 repo_depends:
 - alsa-lib
-- pulseaudio
+- pulseaudio: libpulse
 - libao
-- systemd
-- qt5-base
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: libpulse
-  provides: libpulse-simple.so
-  source: alpm
-- alpm: libao
-  provides: libpulse.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: higan
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libpulse-simple.so
+  pkgbase: pulseaudio
+  pkgname: libpulse
+- libs:
+  - libpulse.so
+  pkgname: libao
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs

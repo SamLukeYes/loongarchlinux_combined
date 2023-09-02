@@ -9,30 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pandoc-lua-ma
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-hslua
-- haskell-hslua-list
-- haskell-hslua-marshalling
-- haskell-lua
-- haskell-pandoc-types
-- haskell-safe
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-hslua
-  source: alpm
-- alpm: haskell-hslua-list
-  source: alpm
-- alpm: haskell-hslua-marshalling
-  source: alpm
-- alpm: haskell-lua
-  source: alpm
-- alpm: haskell-pandoc-types
-  source: alpm
-- alpm: haskell-safe
-  source: alpm
 - alpm: haskell-pandoc-lua-marshal
   source: archpkg

@@ -9,42 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-turtle'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-ansi-wl-pprint
-- haskell-async
-- haskell-clock
-- haskell-foldl
-- haskell-hostname
-- haskell-managed
-- haskell-optparse-applicative
-- haskell-optional-args
-- haskell-streaming-commons
-- haskell-temporary
-- haskell-unix-compat
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-ansi-wl-pprint
-  source: alpm
-- alpm: haskell-async
-  source: alpm
-- alpm: haskell-clock
-  source: alpm
-- alpm: haskell-foldl
-  source: alpm
-- alpm: haskell-hostname
-  source: alpm
-- alpm: haskell-managed
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-optional-args
-  source: alpm
-- alpm: haskell-streaming-commons
-  source: alpm
-- alpm: haskell-temporary
-  source: alpm
-- alpm: haskell-unix-compat
-  source: alpm
 - alpm: haskell-turtle
   source: archpkg

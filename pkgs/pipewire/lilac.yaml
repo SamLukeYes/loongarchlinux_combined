@@ -5,10 +5,11 @@ repo_depends:
 - dbus
 - glib2
 - ncurses
+- pipewire: libpipewire
 - readline
-- systemd
+- systemd: systemd-libs
 - alsa-lib
-- bluez
+- bluez: bluez-libs
 - libfdk-aac
 - libfreeaptx
 - liblc3
@@ -27,78 +28,84 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libcamera
-  provides: libcamera-base.so
-  source: alpm
-- alpm: darktable
-  provides: libcamera.so
-  source: alpm
-- alpm: dbus
-  provides: libdbus-1.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: libpipewire
-  provides: libpipewire-0.3.so
-  source: alpm
-- alpm: readline
-  provides: libreadline.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: bluez-libs
-  provides: libbluetooth.so
-  source: alpm
-- alpm: libfdk-aac
-  provides: libfdk-aac.so
-  source: alpm
-- alpm: libfreeaptx
-  provides: libfreeaptx.so
-  source: alpm
-- alpm: liblc3
-  provides: liblc3.so
-  source: alpm
-- alpm: libldac
-  provides: libldacBT_enc.so
-  source: alpm
-- alpm: lilv
-  provides: liblilv-0.so
-  source: alpm
-- alpm: libmysofa
-  provides: libmysofa.so
-  source: alpm
-- alpm: opus
-  provides: libopus.so
-  source: alpm
-- alpm: sbc
-  provides: libsbc.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: libusb
-  provides: libusb-1.0.so
-  source: alpm
-- alpm: webrtc-audio-processing
-  provides: libwebrtc_audio_processing.so
-  source: alpm
-- alpm: libffado
-  provides: libffado.so
-  source: alpm
-- alpm: avahi
-  provides: libavahi-common.so
-  source: alpm
-- alpm: libao
-  provides: libpulse.so
-  source: alpm
-- alpm: libcanberra
-  provides: libcanberra.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libcamera-base.so
+  pkgname: libcamera
+- libs:
+  - libcamera.so
+  pkgname: darktable
+- libs:
+  - libdbus-1.so
+  pkgname: dbus
+- libs:
+  - libglib-2.0.so
+  pkgname: glib2
+- libs:
+  - libncursesw.so
+  pkgname: ncurses
+- libs:
+  - libpipewire-0.3.so
+  pkgbase: pipewire
+  pkgname: libpipewire
+- libs:
+  - libreadline.so
+  pkgname: readline
+- libs:
+  - libsystemd.so
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libbluetooth.so
+  pkgbase: bluez
+  pkgname: bluez-libs
+- libs:
+  - libfdk-aac.so
+  pkgname: libfdk-aac
+- libs:
+  - libfreeaptx.so
+  pkgname: libfreeaptx
+- libs:
+  - liblc3.so
+  pkgname: liblc3
+- libs:
+  - libldacBT_enc.so
+  pkgname: libldac
+- libs:
+  - liblilv-0.so
+  pkgname: lilv
+- libs:
+  - libmysofa.so
+  pkgname: libmysofa
+- libs:
+  - libopus.so
+  pkgname: opus
+- libs:
+  - libsbc.so
+  pkgname: sbc
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libusb-1.0.so
+  pkgname: libusb
+- libs:
+  - libwebrtc_audio_processing.so
+  pkgname: webrtc-audio-processing
+- libs:
+  - libffado.so
+  pkgname: libffado
+- libs:
+  - libavahi-client.so
+  - libavahi-common.so
+  pkgname: avahi
+- libs:
+  - libpulse.so
+  pkgname: libao
+- libs:
+  - libcanberra.so
+  pkgname: libcanberra

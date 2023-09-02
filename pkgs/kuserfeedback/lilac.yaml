@@ -1,9 +1,4 @@
 destsubdir: extra
-repo_depends:
-- qt5-base
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true

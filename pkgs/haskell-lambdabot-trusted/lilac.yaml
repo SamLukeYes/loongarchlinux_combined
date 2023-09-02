@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-lambdabot-tru
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-quickcheck
-- haskell-quickcheck-safe
-- haskell-oeis
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-quickcheck
-  source: alpm
-- alpm: haskell-quickcheck-safe
-  source: alpm
-- alpm: haskell-oeis
-  source: alpm
 - alpm: haskell-lambdabot-trusted
   source: archpkg

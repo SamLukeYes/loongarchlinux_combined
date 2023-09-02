@@ -4,32 +4,39 @@ repo_depends:
 - glib2
 - graphite
 - cairo
+- harfbuzz
 - icu
 - chafa
+- harfbuzz: harfbuzz-cairo
 update_on:
 - manual: 1
   source: manual
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: graphite
-  provides: libgraphite2.so
-  source: alpm
-- alpm: cairo
-  provides: libcairo.so
-  source: alpm
-- alpm: harfbuzz
-  provides: libharfbuzz.so
-  source: alpm
-- alpm: icu
-  provides: libicuuc.so
-  source: alpm
-- alpm: chafa
-  provides: libchafa.so
-  source: alpm
-- alpm: harfbuzz-cairo
-  provides: libharfbuzz-cairo.so
-  source: alpm
+update_on_soname:
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libgraphite2.so
+  pkgname: graphite
+- libs:
+  - libcairo.so
+  pkgname: cairo
+- libs:
+  - libharfbuzz.so
+  - libharfbuzz-gobject.so
+  - libharfbuzz-subset.so
+  pkgname: harfbuzz
+- libs:
+  - libicuuc.so
+  pkgname: icu
+- libs:
+  - libchafa.so
+  pkgname: chafa
+- libs:
+  - libharfbuzz-cairo.so
+  pkgbase: harfbuzz
+  pkgname: harfbuzz-cairo

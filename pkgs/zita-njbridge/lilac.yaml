@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: zita-resampler
-  provides: libzita-resampler.so
-  source: alpm
 - alpm: zita-njbridge
   source: archpkg
+update_on_soname:
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libzita-resampler.so
+  pkgname: zita-resampler

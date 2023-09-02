@@ -11,12 +11,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''podofo'')
   '
 repo_depends:
 - lua
+- podofo
 update_on:
 - manual: 1
   source: manual
-- alias: lua
-- alpm: podofo
-  provides: libpodofo.so
-  source: alpm
 - alpm: podofo
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: lua
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libpodofo.so
+  pkgname: podofo

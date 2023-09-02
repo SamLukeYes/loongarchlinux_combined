@@ -10,6 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gnupg'')
 
   '
 repo_depends:
+- readline
 - bzip2
 - libassuan
 - npth
@@ -17,17 +18,22 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: bzip2
-  provides: libbz2.so
-  source: alpm
-- alpm: libassuan
-  provides: libassuan.so
-  source: alpm
-- alpm: npth
-  provides: libnpth.so
-  source: alpm
-- alpm: readline
-  provides: libreadline.so
-  source: alpm
 - alpm: gnupg
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: readline
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libbz2.so
+  pkgname: bzip2
+- libs:
+  - libassuan.so
+  pkgname: libassuan
+- libs:
+  - libnpth.so
+  pkgname: npth
+- libs:
+  - libreadline.so
+  pkgname: readline

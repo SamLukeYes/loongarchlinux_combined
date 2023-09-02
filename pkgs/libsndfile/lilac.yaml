@@ -19,23 +19,25 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: flac
-  provides: libFLAC.so
-  source: alpm
-- alpm: lame
-  provides: libmp3lame.so
-  source: alpm
-- alpm: libogg
-  provides: libogg.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbisenc.so
-  source: alpm
-- alpm: mpg123
-  provides: libmpg123.so
-  source: alpm
-- alpm: opus
-  provides: libopus.so
-  source: alpm
 - alpm: libsndfile
   source: archpkg
+update_on_soname:
+- libs:
+  - libFLAC.so
+  pkgname: flac
+- libs:
+  - libmp3lame.so
+  pkgname: lame
+- libs:
+  - libogg.so
+  pkgname: libogg
+- libs:
+  - libvorbis.so
+  - libvorbisenc.so
+  pkgname: libvorbis
+- libs:
+  - libmpg123.so
+  pkgname: mpg123
+- libs:
+  - libopus.so
+  pkgname: opus

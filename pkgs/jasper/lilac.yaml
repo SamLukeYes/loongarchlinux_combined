@@ -14,8 +14,9 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: darktable
-  provides: libjpeg.so
-  source: alpm
 - alpm: jasper
   source: archpkg
+update_on_soname:
+- libs:
+  - libjpeg.so
+  pkgname: darktable

@@ -9,27 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-ormolu'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-ansi-terminal
-- haskell-diff
-- haskell-dlist
-- haskell-gitrev
-- haskell-optparse-applicative
-- haskell-syb
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-ansi-terminal
-  source: alpm
-- alpm: haskell-diff
-  source: alpm
-- alpm: haskell-dlist
-  source: alpm
-- alpm: haskell-gitrev
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-syb
-  source: alpm
 - alpm: haskell-ormolu
   source: archpkg

@@ -9,42 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-alternate
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-extra
-- haskell-ghcide
-- haskell-hie-compat
-- haskell-hls-graph
-- haskell-hls-plugin-api
-- haskell-lens
-- haskell-lsp
-- haskell-regex-tdfa
-- haskell-syb
-- haskell-unordered-containers
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-extra
-  source: alpm
-- alpm: haskell-ghcide
-  source: alpm
-- alpm: haskell-hie-compat
-  source: alpm
-- alpm: haskell-hls-graph
-  source: alpm
-- alpm: haskell-hls-plugin-api
-  source: alpm
-- alpm: haskell-lens
-  source: alpm
-- alpm: haskell-lsp
-  source: alpm
-- alpm: haskell-regex-tdfa
-  source: alpm
-- alpm: haskell-syb
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
 - alpm: haskell-hls-alternate-number-format-plugin
   source: archpkg

@@ -11,19 +11,21 @@ pre_build_script: '_G.files = download_official_pkgbuild(''switchboard-plug-pare
   '
 repo_depends:
 - granite
-- malcontent
+- malcontent: libmalcontent
 - switchboard
 update_on:
 - manual: 1
   source: manual
-- alpm: granite
-  provides: libgranite.so
-  source: alpm
-- alpm: libmalcontent
-  provides: libmalcontent-0.so
-  source: alpm
-- alpm: switchboard
-  provides: libswitchboard-2.0.so
-  source: alpm
 - alpm: switchboard-plug-parental-controls
   source: archpkg
+update_on_soname:
+- libs:
+  - libgranite.so
+  pkgname: granite
+- libs:
+  - libmalcontent-0.so
+  pkgbase: malcontent
+  pkgname: libmalcontent
+- libs:
+  - libswitchboard-2.0.so
+  pkgname: switchboard

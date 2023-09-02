@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tamarin-prove
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hunit
-- haskell-attoparsec
-- haskell-dlist
-- haskell-safe
-- haskell-tamarin-prover-utils
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hunit
-  source: alpm
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-dlist
-  source: alpm
-- alpm: haskell-safe
-  source: alpm
-- alpm: haskell-tamarin-prover-utils
-  source: alpm
 - alpm: haskell-tamarin-prover-term
   source: archpkg

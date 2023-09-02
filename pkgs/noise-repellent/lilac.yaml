@@ -14,8 +14,9 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libspecbleach
-  provides: libspecbleach.so
-  source: alpm
 - alpm: noise-repellent
   source: archpkg
+update_on_soname:
+- libs:
+  - libspecbleach.so
+  pkgname: libspecbleach

@@ -10,32 +10,30 @@ pre_build_script: '_G.files = download_official_pkgbuild(''drumstick'')
 
   '
 repo_depends:
-- qt6-base
 - alsa-lib
 - fluidsynth
 - libao
-- pulseaudio
+- pulseaudio: libpulse
 - sonivox
 update_on:
 - manual: 1
   source: manual
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: fluidsynth
-  provides: libfluidsynth.so
-  source: alpm
-- alpm: libao
-  provides: libpulse.so
-  source: alpm
-- alpm: libpulse
-  provides: libpulse-simple.so
-  source: alpm
-- alpm: sonivox
-  provides: libsonivox.so
-  source: alpm
 - alpm: drumstick
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libfluidsynth.so
+  pkgname: fluidsynth
+- libs:
+  - libpulse.so
+  pkgname: libao
+- libs:
+  - libpulse-simple.so
+  pkgbase: pulseaudio
+  pkgname: libpulse
+- libs:
+  - libsonivox.so
+  pkgname: sonivox

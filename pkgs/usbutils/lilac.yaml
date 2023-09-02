@@ -11,15 +11,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''usbutils'')
   '
 repo_depends:
 - libusb
-- systemd
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: libusb
-  provides: libusb-1.0.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
 - alpm: usbutils
   source: archpkg
+update_on_soname:
+- libs:
+  - libusb-1.0.so
+  pkgname: libusb
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs

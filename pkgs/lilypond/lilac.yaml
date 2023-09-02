@@ -18,20 +18,23 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: fontconfig
-  provides: libfontconfig.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: guile2.2
-  provides: libguile-2.2.so
-  source: alpm
-- alpm: pango
-  provides: libpango-1.0.so
-  source: alpm
 - alpm: lilypond
   source: archpkg
+update_on_soname:
+- libs:
+  - libfontconfig.so
+  pkgname: fontconfig
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libglib-2.0.so
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libguile-2.2.so
+  pkgname: guile2.2
+- libs:
+  - libpangoft2-1.0.so
+  - libpango-1.0.so
+  pkgname: pango

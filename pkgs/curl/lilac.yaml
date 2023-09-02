@@ -19,23 +19,24 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: brotli
-  provides: libbrotlidec.so
-  source: alpm
-- alpm: krb5
-  provides: libgssapi_krb5.so
-  source: alpm
-- alpm: libidn2
-  provides: libidn2.so
-  source: alpm
-- alpm: libpsl
-  provides: libpsl.so
-  source: alpm
-- alpm: libssh2
-  provides: libssh2.so
-  source: alpm
-- alpm: zstd
-  provides: libzstd.so
-  source: alpm
 - alpm: curl
   source: archpkg
+update_on_soname:
+- libs:
+  - libbrotlidec.so
+  pkgname: brotli
+- libs:
+  - libgssapi_krb5.so
+  pkgname: krb5
+- libs:
+  - libidn2.so
+  pkgname: libidn2
+- libs:
+  - libpsl.so
+  pkgname: libpsl
+- libs:
+  - libssh2.so
+  pkgname: libssh2
+- libs:
+  - libzstd.so
+  pkgname: zstd

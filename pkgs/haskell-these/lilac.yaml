@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-these'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-assoc
-- haskell-hashable
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-assoc
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
 - alpm: haskell-these
   source: archpkg

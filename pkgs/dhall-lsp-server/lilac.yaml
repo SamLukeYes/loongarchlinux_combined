@@ -9,51 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dhall-lsp-server'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-aeson-pretty
-- haskell-data-default
-- haskell-lsp1.4
-- haskell-hslogger
-- haskell-lens
-- haskell-lens-family-core
-- haskell-megaparsec
-- haskell-network-uri
-- haskell-optparse-applicative
-- haskell-prettyprinter
-- haskell-rope-utf16-splay
-- haskell-unordered-containers
-- haskell-uri-encode
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-aeson-pretty
-  source: alpm
-- alpm: haskell-data-default
-  source: alpm
-- alpm: haskell-lsp1.4
-  source: alpm
-- alpm: haskell-hslogger
-  source: alpm
-- alpm: haskell-lens
-  source: alpm
-- alpm: haskell-lens-family-core
-  source: alpm
-- alpm: haskell-megaparsec
-  source: alpm
-- alpm: haskell-network-uri
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-prettyprinter
-  source: alpm
-- alpm: haskell-rope-utf16-splay
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-uri-encode
-  source: alpm
 - alpm: dhall-lsp-server
   source: archpkg

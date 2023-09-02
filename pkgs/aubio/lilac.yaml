@@ -14,23 +14,28 @@ repo_depends:
 - jack2
 - libsamplerate
 - libsndfile
+- aubio
 update_on:
 - manual: 1
   source: manual
-- alpm: ffmpeg
-  provides: libswresample.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: aubio
-  provides: libaubio.so
-  source: alpm
 - alpm: aubio
   source: archpkg
+update_on_soname:
+- libs:
+  - libavcodec.so
+  - libavformat.so
+  - libavutil.so
+  - libswresample.so
+  pkgname: ffmpeg
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libsamplerate.so
+  pkgname: libsamplerate
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libaubio.so
+  pkgname: aubio

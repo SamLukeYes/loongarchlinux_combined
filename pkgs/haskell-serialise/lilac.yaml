@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-serialise'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-cborg
-- haskell-half
-- haskell-hashable
-- haskell-primitive
-- haskell-strict
-- haskell-these
-- haskell-unordered-containers
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-cborg
-  source: alpm
-- alpm: haskell-half
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-strict
-  source: alpm
-- alpm: haskell-these
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-serialise
   source: archpkg

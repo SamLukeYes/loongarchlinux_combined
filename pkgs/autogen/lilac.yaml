@@ -1,11 +1,10 @@
 destsubdir: extra
 repo_depends:
-- guile
 - perl
 update_on:
 - manual: 1
   source: manual
-- alpm: guile
-  source: alpm
-  strip_release: true
-- alias: perl
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: perl
+  to_pattern: \1

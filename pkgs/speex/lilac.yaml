@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libogg
-  provides: libogg.so
-  source: alpm
-- alpm: speexdsp
-  provides: libspeexdsp.so
-  source: alpm
 - alpm: speex
   source: archpkg
+update_on_soname:
+- libs:
+  - libogg.so
+  pkgname: libogg
+- libs:
+  - libspeexdsp.so
+  pkgname: speexdsp

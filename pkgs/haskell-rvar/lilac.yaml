@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-rvar'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-monadprompt
-- haskell-random
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-monadprompt
-  source: alpm
-- alpm: haskell-random
-  source: alpm
 - alpm: haskell-rvar
   source: archpkg

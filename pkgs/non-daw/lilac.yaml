@@ -18,20 +18,22 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
-- alpm: liblrdf
-  provides: liblrdf.so
-  source: alpm
-- alpm: ntk
-  provides: libntk_images.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
 - alpm: non-daw
   source: archpkg
+update_on_soname:
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - liblo.so
+  pkgname: liblo
+- libs:
+  - liblrdf.so
+  pkgname: liblrdf
+- libs:
+  - libntk.so
+  - libntk_images.so
+  pkgname: ntk
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile

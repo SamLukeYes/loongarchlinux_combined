@@ -9,51 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-classy-prelud
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-async
-- haskell-chunked-data
-- haskell-dlist
-- haskell-hashable
-- haskell-mono-traversable
-- haskell-primitive
-- haskell-unliftio
-- haskell-stm-chans
-- haskell-unordered-containers
-- haskell-vector-instances
-- haskell-say
-- haskell-mutable-containers
-- haskell-basic-prelude
-- haskell-mono-traversable-instances
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-async
-  source: alpm
-- alpm: haskell-chunked-data
-  source: alpm
-- alpm: haskell-dlist
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-mono-traversable
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-unliftio
-  source: alpm
-- alpm: haskell-stm-chans
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-vector-instances
-  source: alpm
-- alpm: haskell-say
-  source: alpm
-- alpm: haskell-mutable-containers
-  source: alpm
-- alpm: haskell-basic-prelude
-  source: alpm
-- alpm: haskell-mono-traversable-instances
-  source: alpm
 - alpm: haskell-classy-prelude
   source: archpkg

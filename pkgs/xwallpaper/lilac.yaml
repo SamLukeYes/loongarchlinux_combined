@@ -16,14 +16,15 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libseccomp
-  provides: libseccomp.so
-  source: alpm
-- alpm: pixman
-  provides: libpixman-1.so
-  source: alpm
-- alpm: darktable
-  provides: libjpeg.so
-  source: alpm
 - alpm: xwallpaper
   source: archpkg
+update_on_soname:
+- libs:
+  - libseccomp.so
+  pkgname: libseccomp
+- libs:
+  - libpixman-1.so
+  pkgname: pixman
+- libs:
+  - libjpeg.so
+  pkgname: darktable

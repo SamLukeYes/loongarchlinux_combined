@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pcg-random'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-entropy
-- haskell-primitive
-- haskell-random
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-entropy
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-random
-  source: alpm
 - alpm: haskell-pcg-random
   source: archpkg

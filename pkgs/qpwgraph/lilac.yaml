@@ -10,20 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''qpwgraph'')
 
   '
 repo_depends:
-- qt6-base
 - alsa-lib
-- pipewire
+- pipewire: libpipewire
 update_on:
 - manual: 1
   source: manual
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: libpipewire
-  provides: libpipewire-0.3.so
-  source: alpm
 - alpm: qpwgraph
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libpipewire-0.3.so
+  pkgbase: pipewire
+  pkgname: libpipewire

@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-type-errors''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-first-class-families
-- haskell-syb
-- haskell-th-abstraction
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-first-class-families
-  source: alpm
-- alpm: haskell-syb
-  source: alpm
-- alpm: haskell-th-abstraction
-  source: alpm
 - alpm: haskell-type-errors
   source: archpkg

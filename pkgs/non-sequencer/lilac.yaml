@@ -16,14 +16,16 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: liblo
-  provides: liblo.so
-  source: alpm
-- alpm: ntk
-  provides: libntk_images.so
-  source: alpm
 - alpm: non-sequencer
   source: archpkg
+update_on_soname:
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - liblo.so
+  pkgname: liblo
+- libs:
+  - libntk.so
+  - libntk_images.so
+  pkgname: ntk

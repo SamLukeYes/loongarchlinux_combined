@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''polyphone'')
 
   '
 repo_depends:
-- qt5-base
 - flac
 - jack2
 - libogg
@@ -21,29 +20,29 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: flac
-  provides: libFLAC.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: libogg
-  provides: libogg.so
-  source: alpm
-- alpm: portaudio
-  provides: libportaudio.so
-  source: alpm
-- alpm: qcustomplot
-  provides: libqcustomplot.so
-  source: alpm
-- alpm: stk
-  provides: libstk-4.6.2.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbisfile.so
-  source: alpm
 - alpm: polyphone
   source: archpkg
+update_on_soname:
+- libs:
+  - libFLAC.so
+  pkgname: flac
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libogg.so
+  pkgname: libogg
+- libs:
+  - libportaudio.so
+  pkgname: portaudio
+- libs:
+  - libqcustomplot.so
+  pkgname: qcustomplot
+- libs:
+  - libstk-4.6.2.so
+  pkgname: stk
+- libs:
+  - libvorbis.so
+  - libvorbisenc.so
+  - libvorbisfile.so
+  pkgname: libvorbis

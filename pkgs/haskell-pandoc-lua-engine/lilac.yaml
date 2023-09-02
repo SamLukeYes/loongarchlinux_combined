@@ -9,63 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-pandoc-lua-en
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-sha
-- haskell-aeson
-- haskell-citeproc
-- haskell-data-default
-- haskell-doclayout
-- haskell-doctemplates
-- haskell-hslua
-- haskell-hslua-module-doclayout
-- haskell-hslua-module-path
-- haskell-hslua-module-system
-- haskell-hslua-module-text
-- haskell-hslua-module-version
-- haskell-hslua-module-zip
-- haskell-hslua-repl
-- haskell-lpeg
-- haskell-pandoc
-- haskell-pandoc-lua-marshal
-- haskell-pandoc-types
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-sha
-  source: alpm
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-citeproc
-  source: alpm
-- alpm: haskell-data-default
-  source: alpm
-- alpm: haskell-doclayout
-  source: alpm
-- alpm: haskell-doctemplates
-  source: alpm
-- alpm: haskell-hslua
-  source: alpm
-- alpm: haskell-hslua-module-doclayout
-  source: alpm
-- alpm: haskell-hslua-module-path
-  source: alpm
-- alpm: haskell-hslua-module-system
-  source: alpm
-- alpm: haskell-hslua-module-text
-  source: alpm
-- alpm: haskell-hslua-module-version
-  source: alpm
-- alpm: haskell-hslua-module-zip
-  source: alpm
-- alpm: haskell-hslua-repl
-  source: alpm
-- alpm: haskell-lpeg
-  source: alpm
-- alpm: haskell-pandoc
-  source: alpm
-- alpm: haskell-pandoc-lua-marshal
-  source: alpm
-- alpm: haskell-pandoc-types
-  source: alpm
 - alpm: haskell-pandoc-lua-engine
   source: archpkg

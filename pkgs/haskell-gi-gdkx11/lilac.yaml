@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-gi-gdkx11'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-gi-cairo
-- haskell-gi-gdk
-- haskell-gi-gio
-- haskell-gi-gobject
-- haskell-gi-xlib
-- haskell-gi
-- haskell-gi-base
-- haskell-gi-overloading
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-gi-cairo
-  source: alpm
-- alpm: haskell-gi-gdk
-  source: alpm
-- alpm: haskell-gi-gio
-  source: alpm
-- alpm: haskell-gi-gobject
-  source: alpm
-- alpm: haskell-gi-xlib
-  source: alpm
-- alpm: haskell-gi
-  source: alpm
-- alpm: haskell-gi-base
-  source: alpm
-- alpm: haskell-gi-overloading
-  source: alpm
 - alpm: haskell-gi-gdkx11
   source: archpkg

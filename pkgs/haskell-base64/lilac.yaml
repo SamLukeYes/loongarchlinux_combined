@@ -9,12 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-base64'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-text-short
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-text-short
-  source: alpm
 - alpm: haskell-base64
   source: archpkg

@@ -14,8 +14,11 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: tpm2-tss
-  provides: libtss2-tctildr.so
-  source: alpm
 - alpm: tpm2-tss-engine
   source: archpkg
+update_on_soname:
+- libs:
+  - libtss2-esys.so
+  - libtss2-mu.so
+  - libtss2-tctildr.so
+  pkgname: tpm2-tss

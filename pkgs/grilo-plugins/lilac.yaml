@@ -15,9 +15,15 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: lua
-- alpm: grilo
-  provides: libgrlpls-0.3.so
-  source: alpm
 - alpm: grilo-plugins
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: lua
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libgrilo-0.3.so
+  - libgrlnet-0.3.so
+  - libgrlpls-0.3.so
+  pkgname: grilo

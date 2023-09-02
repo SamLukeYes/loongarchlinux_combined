@@ -9,30 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-free'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-comonad
-- haskell-distributive
-- haskell-indexed-traversable
-- haskell-profunctors
-- haskell-semigroupoids
-- haskell-th-abstraction
-- haskell-transformers-base
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-comonad
-  source: alpm
-- alpm: haskell-distributive
-  source: alpm
-- alpm: haskell-indexed-traversable
-  source: alpm
-- alpm: haskell-profunctors
-  source: alpm
-- alpm: haskell-semigroupoids
-  source: alpm
-- alpm: haskell-th-abstraction
-  source: alpm
-- alpm: haskell-transformers-base
-  source: alpm
 - alpm: haskell-free
   source: archpkg

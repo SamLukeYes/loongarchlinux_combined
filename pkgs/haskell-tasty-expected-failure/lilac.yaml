@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-tasty-expecte
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-tagged
-- haskell-tasty
-- haskell-unbounded-delays
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-tagged
-  source: alpm
-- alpm: haskell-tasty
-  source: alpm
-- alpm: haskell-unbounded-delays
-  source: alpm
 - alpm: haskell-tasty-expected-failure
   source: archpkg

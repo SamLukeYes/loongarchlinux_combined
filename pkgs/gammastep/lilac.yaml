@@ -14,8 +14,11 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
 - alpm: gammastep
   source: archpkg
+update_on_soname:
+- libs:
+  - libgio-2.0.so
+  - libgobject-2.0.so
+  - libglib-2.0.so
+  pkgname: glib2

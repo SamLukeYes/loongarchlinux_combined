@@ -2,26 +2,32 @@ destsubdir: extra
 repo_depends:
 - lua
 - ncurses
-- nvidia-settings
-- systemd
+- nvidia-settings: libxnvctrl
+- systemd: systemd-libs
 - libao
 - curl
 update_on:
 - manual: 1
   source: manual
-- alias: lua
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: libxnvctrl
-  provides: libXNVCtrl.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
-- alpm: libao
-  provides: libpulse.so
-  source: alpm
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: lua
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libncursesw.so
+  pkgname: ncurses
+- libs:
+  - libXNVCtrl.so
+  pkgbase: nvidia-settings
+  pkgname: libxnvctrl
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libpulse.so
+  pkgname: libao
+- libs:
+  - libcurl.so
+  pkgname: curl

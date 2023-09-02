@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-incremental-p
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-input-parsers
-- haskell-monoid-subclasses
-- haskell-parsers
-- haskell-rank2classes
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-input-parsers
-  source: alpm
-- alpm: haskell-monoid-subclasses
-  source: alpm
-- alpm: haskell-parsers
-  source: alpm
-- alpm: haskell-rank2classes
-  source: alpm
 - alpm: haskell-incremental-parser
   source: archpkg

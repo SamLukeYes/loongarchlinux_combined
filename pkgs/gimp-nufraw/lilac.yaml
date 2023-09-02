@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''gimp-nufraw'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- cfitsio
 update_on:
 - manual: 1
   source: manual
-- alpm: cfitsio
-  source: alpm
-  strip_release: true
 - alpm: gimp-nufraw
   source: archpkg

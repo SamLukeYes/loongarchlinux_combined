@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: gtk4
-  provides: libgtk-4.so
-  source: alpm
-- alpm: webkitgtk-6.0
-  provides: libwebkitgtk-6.0.so
-  source: alpm
 - alpm: evolution-data-server
   source: archpkg
+update_on_soname:
+- libs:
+  - libgtk-4.so
+  pkgname: gtk4
+- libs:
+  - libwebkitgtk-6.0.so
+  pkgname: webkitgtk-6.0

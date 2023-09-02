@@ -1,11 +1,14 @@
 destsubdir: extra
 repo_depends:
-- gsl
+- boost
 - python
 update_on:
 - manual: 1
   source: manual
-- alpm: gsl
-  source: alpm
-  strip_release: true
-- alias: python
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: boost
+  to_pattern: \1
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1

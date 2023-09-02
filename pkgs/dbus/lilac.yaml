@@ -11,15 +11,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''dbus'')
   '
 repo_depends:
 - audit
-- systemd
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: audit
-  provides: libaudit.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
 - alpm: dbus
   source: archpkg
+update_on_soname:
+- libs:
+  - libaudit.so
+  pkgname: audit
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs

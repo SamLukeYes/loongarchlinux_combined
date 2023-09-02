@@ -9,36 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-http-conduit'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-attoparsec
-- haskell-conduit
-- haskell-conduit-extra
-- haskell-http-client
-- haskell-http-client-tls
-- haskell-http-types
-- haskell-resourcet
-- haskell-unliftio-core
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-conduit
-  source: alpm
-- alpm: haskell-conduit-extra
-  source: alpm
-- alpm: haskell-http-client
-  source: alpm
-- alpm: haskell-http-client-tls
-  source: alpm
-- alpm: haskell-http-types
-  source: alpm
-- alpm: haskell-resourcet
-  source: alpm
-- alpm: haskell-unliftio-core
-  source: alpm
 - alpm: haskell-http-conduit
   source: archpkg

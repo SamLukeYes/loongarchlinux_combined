@@ -16,14 +16,16 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: bzip2
-  provides: libbz2.so
-  source: alpm
-- alpm: nettle
-  provides: libnettle.so
-  source: alpm
-- alpm: pcsclite
-  provides: libpcsclite.so
-  source: alpm
 - alpm: openpgp-card-tools
   source: archpkg
+update_on_soname:
+- libs:
+  - libbz2.so
+  pkgname: bzip2
+- libs:
+  - libhogweed.so
+  - libnettle.so
+  pkgname: nettle
+- libs:
+  - libpcsclite.so
+  pkgname: pcsclite

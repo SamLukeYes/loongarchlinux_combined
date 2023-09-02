@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: ntk
-  provides: libntk.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
 - alpm: fabla
   source: archpkg
+update_on_soname:
+- libs:
+  - libntk.so
+  pkgname: ntk
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile

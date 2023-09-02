@@ -9,30 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-cassava'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-attoparsec
-- haskell-hashable
-- haskell-only
-- haskell-scientific
-- haskell-text-short
-- haskell-unordered-containers
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-only
-  source: alpm
-- alpm: haskell-scientific
-  source: alpm
-- alpm: haskell-text-short
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-cassava
   source: archpkg

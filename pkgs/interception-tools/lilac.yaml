@@ -12,18 +12,20 @@ pre_build_script: '_G.files = download_official_pkgbuild(''interception-tools'')
 repo_depends:
 - libevdev
 - yaml-cpp
-- systemd
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: libevdev
-  provides: libevdev.so
-  source: alpm
-- alpm: yaml-cpp
-  provides: libyaml-cpp.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
 - alpm: interception-tools
   source: archpkg
+update_on_soname:
+- libs:
+  - libevdev.so
+  pkgname: libevdev
+- libs:
+  - libyaml-cpp.so
+  pkgname: yaml-cpp
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs

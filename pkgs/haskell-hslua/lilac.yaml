@@ -9,30 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hslua'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hslua-aeson
-- haskell-hslua-classes
-- haskell-hslua-core
-- haskell-hslua-marshalling
-- haskell-hslua-objectorientation
-- haskell-hslua-packaging
-- haskell-hslua-typing
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hslua-aeson
-  source: alpm
-- alpm: haskell-hslua-classes
-  source: alpm
-- alpm: haskell-hslua-core
-  source: alpm
-- alpm: haskell-hslua-marshalling
-  source: alpm
-- alpm: haskell-hslua-objectorientation
-  source: alpm
-- alpm: haskell-hslua-packaging
-  source: alpm
-- alpm: haskell-hslua-typing
-  source: alpm
 - alpm: haskell-hslua
   source: archpkg

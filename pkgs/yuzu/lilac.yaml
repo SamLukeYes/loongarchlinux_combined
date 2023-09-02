@@ -17,45 +17,45 @@ repo_depends:
 - libinih
 - opus
 - speexdsp
-- openssl
 - libusb
 - libva
 - zstd
-- qt5-base
 update_on:
 - manual: 1
   source: manual
-- alpm: ffmpeg
-  provides: libswscale.so
-  source: alpm
-- alpm: boost
-  provides: libboost_context.so
-  source: alpm
-- alias: libcrypto
-- alpm: fmt
-  provides: libfmt.so
-  source: alpm
-- alpm: libinih
-  provides: libINIReader.so
-  source: alpm
-- alpm: opus
-  provides: libopus.so
-  source: alpm
-- alpm: speexdsp
-  provides: libspeexdsp.so
-  source: alpm
-- alias: libssl
-- alpm: libusb
-  provides: libusb-1.0.so
-  source: alpm
-- alpm: libva
-  provides: libva.so
-  source: alpm
-- alpm: zstd
-  provides: libzstd.so
-  source: alpm
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
 - alpm: yuzu
   source: archpkg
+update_on_soname:
+- libs:
+  - libavcodec.so
+  - libavutil.so
+  - libswscale.so
+  pkgname: ffmpeg
+- libs:
+  - libboost_context.so
+  pkgname: boost
+- libs:
+  - libcrypto.so
+  - libssl.so
+  pkgname: openssl
+- libs:
+  - libfmt.so
+  pkgname: fmt
+- libs:
+  - libINIReader.so
+  pkgname: libinih
+- libs:
+  - libopus.so
+  pkgname: opus
+- libs:
+  - libspeexdsp.so
+  pkgname: speexdsp
+- libs:
+  - libusb-1.0.so
+  pkgname: libusb
+- libs:
+  - libva.so
+  pkgname: libva
+- libs:
+  - libzstd.so
+  pkgname: zstd

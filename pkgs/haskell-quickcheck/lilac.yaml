@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-quickcheck'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-erf
-- haskell-random
-- haskell-splitmix
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-erf
-  source: alpm
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-splitmix
-  source: alpm
 - alpm: haskell-quickcheck
   source: archpkg

@@ -10,38 +10,42 @@ pre_build_script: '_G.files = download_official_pkgbuild(''profanity'')
 
   '
 repo_depends:
+- python
 - curl
 - ncurses
 - libnotify
 - gpgme
-- python
 - readline
 - libstrophe
 - gtk3
 update_on:
 - manual: 1
   source: manual
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: libnotify
-  provides: libnotify.so
-  source: alpm
-- alpm: gpgme
-  provides: libgpgme.so
-  source: alpm
-- alias: python
-- alpm: readline
-  provides: libreadline.so
-  source: alpm
-- alpm: libstrophe
-  provides: libstrophe.so
-  source: alpm
-- alpm: gtk3
-  provides: libgtk-3.so
-  source: alpm
 - alpm: profanity
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libcurl.so
+  pkgname: curl
+- libs:
+  - libncursesw.so
+  pkgname: ncurses
+- libs:
+  - libnotify.so
+  pkgname: libnotify
+- libs:
+  - libgpgme.so
+  pkgname: gpgme
+- libs:
+  - libreadline.so
+  pkgname: readline
+- libs:
+  - libstrophe.so
+  pkgname: libstrophe
+- libs:
+  - libgtk-3.so
+  pkgname: gtk3

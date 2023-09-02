@@ -10,16 +10,19 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pcsclite'')
 
   '
 repo_depends:
-- systemd
+- systemd: systemd-libs
 - polkit
 update_on:
 - manual: 1
   source: manual
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
-- alpm: polkit
-  provides: libpolkit-gobject-1.so
-  source: alpm
 - alpm: pcsclite
   source: archpkg
+update_on_soname:
+- libs:
+  - libsystemd.so
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libpolkit-gobject-1.so
+  pkgname: polkit

@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''step'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- gsl
 update_on:
 - manual: 1
   source: manual
-- alpm: gsl
-  source: alpm
-  strip_release: true
 - alpm: step
   source: archpkg

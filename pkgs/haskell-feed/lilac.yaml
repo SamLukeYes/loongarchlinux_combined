@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-feed'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base-compat
-- haskell-old-locale
-- haskell-old-time
-- haskell-safe
-- haskell-time-locale-compat
-- haskell-utf8-string
-- haskell-xml-types
-- haskell-xml-conduit
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base-compat
-  source: alpm
-- alpm: haskell-old-locale
-  source: alpm
-- alpm: haskell-old-time
-  source: alpm
-- alpm: haskell-safe
-  source: alpm
-- alpm: haskell-time-locale-compat
-  source: alpm
-- alpm: haskell-utf8-string
-  source: alpm
-- alpm: haskell-xml-types
-  source: alpm
-- alpm: haskell-xml-conduit
-  source: alpm
 - alpm: haskell-feed
   source: archpkg

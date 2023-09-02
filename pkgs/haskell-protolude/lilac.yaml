@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-protolude'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-async
-- haskell-hashable
-- haskell-transformers-compat
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-async
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-transformers-compat
-  source: alpm
 - alpm: haskell-protolude
   source: archpkg

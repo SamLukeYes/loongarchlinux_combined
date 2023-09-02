@@ -10,12 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''i2pd'')
 
   '
 repo_depends:
+- boost
 - miniupnpc
 update_on:
 - manual: 1
   source: manual
-- alpm: miniupnpc
-  provides: libminiupnpc.so
-  source: alpm
 - alpm: i2pd
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: boost
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libminiupnpc.so
+  pkgname: miniupnpc

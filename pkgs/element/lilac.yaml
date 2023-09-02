@@ -19,23 +19,24 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: lilv
-  provides: liblilv-0.so
-  source: alpm
-- alpm: suil
-  provides: libsuil-0.so
-  source: alpm
 - alpm: element
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libcurl.so
+  pkgname: curl
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - liblilv-0.so
+  pkgname: lilv
+- libs:
+  - libsuil-0.so
+  pkgname: suil

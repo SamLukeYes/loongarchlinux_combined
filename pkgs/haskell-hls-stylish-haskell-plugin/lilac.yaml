@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hls-stylish-h
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-ghc
-- haskell-ghcide
-- haskell-hls-plugin-api
-- haskell-lsp-types
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-ghc
-  source: alpm
-- alpm: haskell-ghcide
-  source: alpm
-- alpm: haskell-hls-plugin-api
-  source: alpm
-- alpm: haskell-lsp-types
-  source: alpm
 - alpm: haskell-hls-stylish-haskell-plugin
   source: archpkg

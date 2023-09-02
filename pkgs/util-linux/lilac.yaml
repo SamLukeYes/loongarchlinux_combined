@@ -10,24 +10,27 @@ pre_build_script: '_G.files = download_official_pkgbuild(''util-linux'')
 
   '
 repo_depends:
-# - systemd
+- systemd: systemd-libs
 - libxcrypt
 - file
 - ncurses
 update_on:
 - manual: 1
   source: manual
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
-- alpm: libxcrypt
-  provides: libcrypt.so
-  source: alpm
-- alpm: file
-  provides: libmagic.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
 - alpm: util-linux
   source: archpkg
+update_on_soname:
+- libs:
+  - libsystemd.so
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libcrypt.so
+  pkgname: libxcrypt
+- libs:
+  - libmagic.so
+  pkgname: file
+- libs:
+  - libncursesw.so
+  pkgname: ncurses

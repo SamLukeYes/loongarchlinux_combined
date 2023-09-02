@@ -9,63 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-quic'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base16-bytestring
-- haskell-crypto-token
-- haskell-crypton
-- haskell-crypton-x509
-- haskell-crypton-x509-system
-- haskell-data-default-class
-- haskell-fast-logger
-- haskell-iproute
-- haskell-memory
-- haskell-network
-- haskell-network-byte-order
-- haskell-network-udp
-- haskell-psqueues
-- haskell-random
-- haskell-tls
-- haskell-unix-time
-- haskell-unliftio
-- haskell-unliftio-core
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base16-bytestring
-  source: alpm
-- alpm: haskell-crypto-token
-  source: alpm
-- alpm: haskell-crypton
-  source: alpm
-- alpm: haskell-crypton-x509
-  source: alpm
-- alpm: haskell-crypton-x509-system
-  source: alpm
-- alpm: haskell-data-default-class
-  source: alpm
-- alpm: haskell-fast-logger
-  source: alpm
-- alpm: haskell-iproute
-  source: alpm
-- alpm: haskell-memory
-  source: alpm
-- alpm: haskell-network
-  source: alpm
-- alpm: haskell-network-byte-order
-  source: alpm
-- alpm: haskell-network-udp
-  source: alpm
-- alpm: haskell-psqueues
-  source: alpm
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-tls
-  source: alpm
-- alpm: haskell-unix-time
-  source: alpm
-- alpm: haskell-unliftio
-  source: alpm
-- alpm: haskell-unliftio-core
-  source: alpm
 - alpm: haskell-quic
   source: archpkg

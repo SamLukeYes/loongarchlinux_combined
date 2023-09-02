@@ -14,24 +14,26 @@ repo_depends:
 - libcap-ng
 - ncurses
 - numactl
-- systemd
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: libcap-ng
-  provides: libcap-ng.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: numactl
-  provides: libnuma.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
 - alpm: irqbalance
   source: archpkg
+update_on_soname:
+- libs:
+  - libglib-2.0.so
+  pkgname: glib2
+- libs:
+  - libcap-ng.so
+  pkgname: libcap-ng
+- libs:
+  - libncursesw.so
+  pkgname: ncurses
+- libs:
+  - libnuma.so
+  pkgname: numactl
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs

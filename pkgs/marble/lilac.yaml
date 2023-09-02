@@ -9,11 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''marble'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- protobuf
 update_on:
 - manual: 1
   source: manual
-- alias: protobuf
 - alpm: marble
   source: archpkg

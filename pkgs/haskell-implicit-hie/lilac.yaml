@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-implicit-hie'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-attoparsec
-- haskell-filepattern
-- haskell-yaml
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-filepattern
-  source: alpm
-- alpm: haskell-yaml
-  source: alpm
 - alpm: haskell-implicit-hie
   source: archpkg

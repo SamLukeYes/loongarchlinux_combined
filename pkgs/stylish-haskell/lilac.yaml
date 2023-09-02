@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''stylish-haskell'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-file-embed
-- haskell-ghc-lib-parser
-- haskell-optparse-applicative
-- haskell-strict
-- haskell-syb
-- haskell-hsyaml
-- haskell-hsyaml-aeson
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-file-embed
-  source: alpm
-- alpm: haskell-ghc-lib-parser
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-strict
-  source: alpm
-- alpm: haskell-syb
-  source: alpm
-- alpm: haskell-hsyaml
-  source: alpm
-- alpm: haskell-hsyaml-aeson
-  source: alpm
 - alpm: stylish-haskell
   source: archpkg

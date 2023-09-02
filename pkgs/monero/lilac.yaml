@@ -10,20 +10,27 @@ pre_build_script: '_G.files = download_official_pkgbuild(''monero'')
 
   '
 repo_depends:
+- boost
 - readline
-- protobuf
-- systemd
+- systemd: systemd-libs
 - unbound
 update_on:
 - manual: 1
   source: manual
-- alias: readline
-- alias: protobuf
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
-- alpm: unbound
-  provides: libunbound.so
-  source: alpm
 - alpm: monero
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: boost
+  to_pattern: \1
+- from_pattern: ^(\d+)\..*
+  pkgbase: readline
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libunbound.so
+  pkgname: unbound

@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-unixutils'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-process-extras
-- haskell-puremd5
-- haskell-regex-tdfa
-- haskell-zlib
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-process-extras
-  source: alpm
-- alpm: haskell-puremd5
-  source: alpm
-- alpm: haskell-regex-tdfa
-  source: alpm
-- alpm: haskell-zlib
-  source: alpm
 - alpm: haskell-unixutils
   source: archpkg

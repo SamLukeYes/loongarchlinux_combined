@@ -14,8 +14,10 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: efivar
-  provides: libefivar.so
-  source: alpm
 - alpm: efibootmgr
   source: archpkg
+update_on_soname:
+- libs:
+  - libefiboot.so
+  - libefivar.so
+  pkgname: efivar

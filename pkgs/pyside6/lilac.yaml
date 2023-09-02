@@ -9,17 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''pyside6'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- qt6-base
-- qt6-declarative
 update_on:
 - manual: 1
   source: manual
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
-- alpm: qt6-declarative
-  source: alpm
-  strip_release: true
 - alpm: pyside6
   source: archpkg

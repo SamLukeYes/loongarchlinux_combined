@@ -18,18 +18,22 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: python
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: jsoncpp
-  provides: libjsoncpp.so
-  source: alpm
-- alpm: libusb
-  provides: libusb-1.0.so
-  source: alpm
 - alpm: bespokesynth
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libjsoncpp.so
+  pkgname: jsoncpp
+- libs:
+  - libusb-1.0.so
+  pkgname: libusb

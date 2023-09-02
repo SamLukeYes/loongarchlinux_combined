@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libdeflate
-  provides: libdeflate.so
-  source: alpm
-- alpm: zopfli
-  provides: libzopfli.so
-  source: alpm
 - alpm: maxcso
   source: archpkg
+update_on_soname:
+- libs:
+  - libdeflate.so
+  pkgname: libdeflate
+- libs:
+  - libzopfli.so
+  pkgname: zopfli

@@ -9,45 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-binary-instan
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-binary-orphans
-- haskell-case-insensitive
-- haskell-hashable
-- haskell-primitive
-- haskell-scientific
-- haskell-tagged
-- haskell-text-binary
-- haskell-time-compat
-- haskell-unordered-containers
-- haskell-vector
-- haskell-vector-binary-instances
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-binary-orphans
-  source: alpm
-- alpm: haskell-case-insensitive
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-primitive
-  source: alpm
-- alpm: haskell-scientific
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
-- alpm: haskell-text-binary
-  source: alpm
-- alpm: haskell-time-compat
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
-- alpm: haskell-vector-binary-instances
-  source: alpm
 - alpm: haskell-binary-instances
   source: archpkg

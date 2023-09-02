@@ -17,17 +17,18 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: aml
-  provides: libaml.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavcodec.so
-  source: alpm
-- alpm: pixman
-  provides: libpixman-1.so
-  source: alpm
-- alpm: libjpeg-turbo
-  provides: libturbojpeg.so
-  source: alpm
 - alpm: neatvnc
   source: archpkg
+update_on_soname:
+- libs:
+  - libaml.so
+  pkgname: aml
+- libs:
+  - libavcodec.so
+  pkgname: ffmpeg
+- libs:
+  - libpixman-1.so
+  pkgname: pixman
+- libs:
+  - libturbojpeg.so
+  pkgname: libjpeg-turbo

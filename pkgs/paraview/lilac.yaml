@@ -10,14 +10,18 @@ pre_build_script: '_G.files = download_official_pkgbuild(''paraview'')
 
   '
 repo_depends:
-- protobuf
+- boost
 - jsoncpp
 update_on:
 - manual: 1
   source: manual
-- alias: protobuf
-- alpm: jsoncpp
-  provides: libjsoncpp.so
-  source: alpm
 - alpm: paraview
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: boost
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libjsoncpp.so
+  pkgname: jsoncpp

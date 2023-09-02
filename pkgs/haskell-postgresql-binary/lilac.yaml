@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-postgresql-bi
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-binary-parser
-- haskell-bytestring-strict-builder
-- haskell-network-ip
-- haskell-scientific
-- haskell-unordered-containers
-- haskell-uuid
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-binary-parser
-  source: alpm
-- alpm: haskell-bytestring-strict-builder
-  source: alpm
-- alpm: haskell-network-ip
-  source: alpm
-- alpm: haskell-scientific
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-uuid
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-postgresql-binary
   source: archpkg

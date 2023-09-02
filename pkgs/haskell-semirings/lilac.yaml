@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-semirings'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base-compat-batteries
-- haskell-hashable
-- haskell-unordered-containers
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base-compat-batteries
-  source: alpm
-- alpm: haskell-hashable
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
 - alpm: haskell-semirings
   source: archpkg

@@ -15,11 +15,12 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libsoup
-  provides: libsoup-2.4.so
-  source: alpm
-- alpm: libsoup3
-  provides: libsoup-3.0.so
-  source: alpm
 - alpm: geocode-glib
   source: archpkg
+update_on_soname:
+- libs:
+  - libsoup-2.4.so
+  pkgname: libsoup
+- libs:
+  - libsoup-3.0.so
+  pkgname: libsoup3

@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-wai-cors'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-attoparsec
-- haskell-base-unicode-symbols
-- haskell-case-insensitive
-- haskell-http-types
-- haskell-wai
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-base-unicode-symbols
-  source: alpm
-- alpm: haskell-case-insensitive
-  source: alpm
-- alpm: haskell-http-types
-  source: alpm
-- alpm: haskell-wai
-  source: alpm
 - alpm: haskell-wai-cors
   source: archpkg

@@ -14,8 +14,10 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: libevent
-  provides: libevent_pthreads-2.1.so
-  source: alpm
 - alpm: openpmix
   source: archpkg
+update_on_soname:
+- libs:
+  - libevent_core-2.1.so
+  - libevent_pthreads-2.1.so
+  pkgname: libevent

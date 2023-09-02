@@ -10,6 +10,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''thunderbird'')
 
   '
 repo_depends:
+- icu
 - gtk3
 - dbus
 - libvpx
@@ -26,44 +27,51 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: gtk3
-  provides: libgtk-3.so
-  source: alpm
-- alpm: dbus
-  provides: libdbus-1.so
-  source: alpm
-- alpm: libvpx
-  provides: libvpx.so
-  source: alpm
-- alpm: bzip2
-  provides: libbz2.so
-  source: alpm
-- alpm: darktable
-  provides: libwebp.so
-  source: alpm
-- alpm: libwebp
-  provides: libwebpdemux.so
-  source: alpm
-- alpm: libffi
-  provides: libffi.so
-  source: alpm
-- alpm: pango
-  provides: libpango-1.0.so
-  source: alpm
-- alpm: icu
-  provides: libicuuc.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: fontconfig
-  provides: libfontconfig.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: pixman
-  provides: libpixman-1.so
-  source: alpm
 - alpm: thunderbird
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+)\..*
+  pkgbase: icu
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libgdk-3.so
+  - libgtk-3.so
+  pkgname: gtk3
+- libs:
+  - libdbus-1.so
+  pkgname: dbus
+- libs:
+  - libvpx.so
+  pkgname: libvpx
+- libs:
+  - libbz2.so
+  pkgname: bzip2
+- libs:
+  - libwebp.so
+  pkgname: darktable
+- libs:
+  - libwebpdemux.so
+  pkgname: libwebp
+- libs:
+  - libffi.so
+  pkgname: libffi
+- libs:
+  - libpango-1.0.so
+  pkgname: pango
+- libs:
+  - libicui18n.so
+  - libicuuc.so
+  pkgname: icu
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libfontconfig.so
+  pkgname: fontconfig
+- libs:
+  - libglib-2.0.so
+  pkgname: glib2
+- libs:
+  - libpixman-1.so
+  pkgname: pixman

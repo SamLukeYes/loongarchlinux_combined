@@ -17,37 +17,42 @@ repo_depends:
 - darktable
 - libusb
 - libxml2
-- poppler
-- systemd
+- poppler: poppler-glib
+- systemd: systemd-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: avahi
-  provides: libavahi-common.so
-  source: alpm
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: libgphoto2
-  provides: libgphoto2_port.so
-  source: alpm
-- alpm: darktable
-  provides: libtiff.so
-  source: alpm
-- alpm: libusb
-  provides: libusb-1.0.so
-  source: alpm
-- alpm: libxml2
-  provides: libxml2.so
-  source: alpm
-- alpm: poppler-glib
-  provides: libpoppler-glib.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libsystemd.so
-  source: alpm
 - alpm: sane
   source: archpkg
+update_on_soname:
+- libs:
+  - libavahi-client.so
+  - libavahi-common.so
+  pkgname: avahi
+- libs:
+  - libcurl.so
+  pkgname: curl
+- libs:
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libgphoto2.so
+  - libgphoto2_port.so
+  pkgname: libgphoto2
+- libs:
+  - libtiff.so
+  pkgname: darktable
+- libs:
+  - libusb-1.0.so
+  pkgname: libusb
+- libs:
+  - libxml2.so
+  pkgname: libxml2
+- libs:
+  - libpoppler-glib.so
+  pkgbase: poppler
+  pkgname: poppler-glib
+- libs:
+  - libsystemd.so
+  pkgbase: systemd
+  pkgname: systemd-libs

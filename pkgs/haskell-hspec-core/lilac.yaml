@@ -9,39 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hspec-core'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-ansi-terminal
-- haskell-call-stack
-- haskell-hspec-expectations
-- haskell-hunit
-- haskell-lexer
-- haskell-quickcheck
-- haskell-quickcheck-io
-- haskell-random
-- haskell-setenv
-- haskell-tf-random
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-ansi-terminal
-  source: alpm
-- alpm: haskell-call-stack
-  source: alpm
-- alpm: haskell-hspec-expectations
-  source: alpm
-- alpm: haskell-hunit
-  source: alpm
-- alpm: haskell-lexer
-  source: alpm
-- alpm: haskell-quickcheck
-  source: alpm
-- alpm: haskell-quickcheck-io
-  source: alpm
-- alpm: haskell-random
-  source: alpm
-- alpm: haskell-setenv
-  source: alpm
-- alpm: haskell-tf-random
-  source: alpm
 - alpm: haskell-hspec-core
   source: archpkg

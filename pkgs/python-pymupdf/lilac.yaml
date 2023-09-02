@@ -16,12 +16,16 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alias: python
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: darktable
-  provides: libjpeg.so
-  source: alpm
 - alpm: python-pymupdf
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libjpeg.so
+  pkgname: darktable

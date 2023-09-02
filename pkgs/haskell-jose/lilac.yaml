@@ -9,36 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-jose'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-base64-bytestring
-- haskell-concise
-- haskell-cryptonite
-- haskell-lens
-- haskell-memory
-- haskell-monad-time
-- haskell-network-uri
-- haskell-x509
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-base64-bytestring
-  source: alpm
-- alpm: haskell-concise
-  source: alpm
-- alpm: haskell-cryptonite
-  source: alpm
-- alpm: haskell-lens
-  source: alpm
-- alpm: haskell-memory
-  source: alpm
-- alpm: haskell-monad-time
-  source: alpm
-- alpm: haskell-network-uri
-  source: alpm
-- alpm: haskell-x509
-  source: alpm
 - alpm: haskell-jose
   source: archpkg

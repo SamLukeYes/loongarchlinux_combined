@@ -17,17 +17,18 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: aml
-  provides: libaml.so
-  source: alpm
-- alpm: neatvnc
-  provides: libneatvnc.so
-  source: alpm
-- alpm: pixman
-  provides: libpixman-1.so
-  source: alpm
-- alpm: intel-oneapi-basekit
-  provides: libxkbcommon.so
-  source: alpm
 - alpm: wayvnc
   source: archpkg
+update_on_soname:
+- libs:
+  - libaml.so
+  pkgname: aml
+- libs:
+  - libneatvnc.so
+  pkgname: neatvnc
+- libs:
+  - libpixman-1.so
+  pkgname: pixman
+- libs:
+  - libxkbcommon.so
+  pkgname: intel-oneapi-basekit

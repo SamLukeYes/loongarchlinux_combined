@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hasql-dynamic
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-hasql
-- haskell-hasql-implicits
-- haskell-ptr
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-hasql
-  source: alpm
-- alpm: haskell-hasql-implicits
-  source: alpm
-- alpm: haskell-ptr
-  source: alpm
 - alpm: haskell-hasql-dynamic-statements
   source: archpkg

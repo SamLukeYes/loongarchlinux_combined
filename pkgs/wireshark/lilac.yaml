@@ -15,26 +15,32 @@ repo_depends:
 - brotli
 - c-ares
 - krb5
+- wireshark: wireshark-cli
 update_on:
 - manual: 1
   source: manual
-- alpm: libpcap
-  provides: libpcap.so
-  source: alpm
-- alpm: libcap
-  provides: libcap.so
-  source: alpm
-- alpm: brotli
-  provides: libbrotlidec.so
-  source: alpm
-- alpm: c-ares
-  provides: libcares.so
-  source: alpm
-- alpm: krb5
-  provides: libk5crypto.so
-  source: alpm
-- alpm: wireshark-cli
-  provides: libwsutil.so
-  source: alpm
 - alpm: wireshark
   source: archpkg
+update_on_soname:
+- libs:
+  - libpcap.so
+  pkgname: libpcap
+- libs:
+  - libcap.so
+  pkgname: libcap
+- libs:
+  - libbrotlidec.so
+  pkgname: brotli
+- libs:
+  - libcares.so
+  pkgname: c-ares
+- libs:
+  - libkrb5.so
+  - libk5crypto.so
+  pkgname: krb5
+- libs:
+  - libwireshark.so
+  - libwiretap.so
+  - libwsutil.so
+  pkgbase: wireshark
+  pkgname: wireshark-cli

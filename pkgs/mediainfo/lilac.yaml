@@ -9,13 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mediainfo'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- wxwidgets
 update_on:
 - manual: 1
   source: manual
-- alpm: wxwidgets-gtk3
-  source: alpm
-  strip_release: true
 - alpm: mediainfo
   source: archpkg

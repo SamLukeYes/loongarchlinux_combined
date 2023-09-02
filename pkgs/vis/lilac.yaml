@@ -10,22 +10,26 @@ pre_build_script: '_G.files = download_official_pkgbuild(''vis'')
 
   '
 repo_depends:
+- lua
 - acl
 - ncurses
 - libtermkey
-- lua
 update_on:
 - manual: 1
   source: manual
-- alpm: acl
-  provides: libacl.so
-  source: alpm
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: libtermkey
-  provides: libtermkey.so
-  source: alpm
-- alias: lua
 - alpm: vis
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: lua
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libacl.so
+  pkgname: acl
+- libs:
+  - libncursesw.so
+  pkgname: ncurses
+- libs:
+  - libtermkey.so
+  pkgname: libtermkey

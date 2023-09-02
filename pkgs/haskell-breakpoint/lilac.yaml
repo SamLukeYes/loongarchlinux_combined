@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-breakpoint'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-ansi-terminal
-- haskell-ghc
-- haskell-pretty-simple
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-ansi-terminal
-  source: alpm
-- alpm: haskell-ghc
-  source: alpm
-- alpm: haskell-pretty-simple
-  source: alpm
 - alpm: haskell-breakpoint
   source: archpkg

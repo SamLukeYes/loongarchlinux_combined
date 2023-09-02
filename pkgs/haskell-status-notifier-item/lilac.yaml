@@ -9,33 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-status-notifi
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-byte-order
-- haskell-bytestring-to-vector
-- haskell-dbus
-- haskell-dbus-hslogger
-- haskell-hslogger
-- haskell-lens
-- haskell-optparse-applicative
-- haskell-vector
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-byte-order
-  source: alpm
-- alpm: haskell-bytestring-to-vector
-  source: alpm
-- alpm: haskell-dbus
-  source: alpm
-- alpm: haskell-dbus-hslogger
-  source: alpm
-- alpm: haskell-hslogger
-  source: alpm
-- alpm: haskell-lens
-  source: alpm
-- alpm: haskell-optparse-applicative
-  source: alpm
-- alpm: haskell-vector
-  source: alpm
 - alpm: haskell-status-notifier-item
   source: archpkg

@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-xss-sanitize'
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-attoparsec
-- haskell-css-text
-- haskell-network-uri
-- haskell-tagsoup
-- haskell-utf8-string
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-css-text
-  source: alpm
-- alpm: haskell-network-uri
-  source: alpm
-- alpm: haskell-tagsoup
-  source: alpm
-- alpm: haskell-utf8-string
-  source: alpm
 - alpm: haskell-xss-sanitize
   source: archpkg

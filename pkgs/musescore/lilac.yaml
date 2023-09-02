@@ -13,25 +13,18 @@ repo_depends:
 - alsa-lib
 - freetype2
 - libsndfile
-- qt5-base
-- qt5-declarative
 update_on:
 - manual: 1
   source: manual
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: freetype2
-  provides: libfreetype.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: qt5-declarative
-  source: alpm
-  strip_release: true
 - alpm: musescore
   source: archpkg
+update_on_soname:
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libfreetype.so
+  pkgname: freetype2
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile

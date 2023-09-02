@@ -12,30 +12,33 @@ pre_build_script: '_G.files = download_official_pkgbuild(''wlroots0.15'')
 repo_depends:
 - pixman
 - seatd
-- systemd
+- systemd: systemd-libs
 - emby-theater
 - wayland
 - intel-oneapi-basekit
 update_on:
 - manual: 1
   source: manual
-- alpm: pixman
-  provides: libpixman-1.so
-  source: alpm
-- alpm: seatd
-  provides: libseat.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
-- alpm: emby-theater
-  provides: libvulkan.so
-  source: alpm
-- alpm: wayland
-  provides: libwayland-server.so
-  source: alpm
-- alpm: intel-oneapi-basekit
-  provides: libxkbcommon.so
-  source: alpm
 - alpm: wlroots0.15
   source: archpkg
+update_on_soname:
+- libs:
+  - libpixman-1.so
+  pkgname: pixman
+- libs:
+  - libseat.so
+  pkgname: seatd
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libvulkan.so
+  pkgname: emby-theater
+- libs:
+  - libwayland-client.so
+  - libwayland-server.so
+  pkgname: wayland
+- libs:
+  - libxkbcommon.so
+  pkgname: intel-oneapi-basekit

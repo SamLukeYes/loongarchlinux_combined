@@ -11,27 +11,29 @@ pre_build_script: '_G.files = download_official_pkgbuild(''zam-plugins'')
   '
 repo_depends:
 - dbus
-- cuda
+- cuda: cuda-tools
 - libsamplerate
 - zita-convolver
 - alsa-lib
 update_on:
 - manual: 1
   source: manual
-- alpm: dbus
-  provides: libdbus-1.so
-  source: alpm
-- alpm: cuda-tools
-  provides: libGL.so
-  source: alpm
-- alpm: libsamplerate
-  provides: libsamplerate.so
-  source: alpm
-- alpm: zita-convolver
-  provides: libzita-convolver.so
-  source: alpm
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
 - alpm: zam-plugins
   source: archpkg
+update_on_soname:
+- libs:
+  - libdbus-1.so
+  pkgname: dbus
+- libs:
+  - libGL.so
+  pkgbase: cuda
+  pkgname: cuda-tools
+- libs:
+  - libsamplerate.so
+  pkgname: libsamplerate
+- libs:
+  - libzita-convolver.so
+  pkgname: zita-convolver
+- libs:
+  - libasound.so
+  pkgname: alsa-lib

@@ -10,16 +10,14 @@ pre_build_script: '_G.files = download_official_pkgbuild(''xdg-desktop-portal-hy
 
   '
 repo_depends:
-- util-linux
-- qt6-base
+- util-linux: util-linux-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: util-linux-libs
-  provides: libuuid.so
-  source: alpm
-- alpm: qt6-base
-  source: alpm
-  strip_release: true
 - alpm: xdg-desktop-portal-hyprland
   source: archpkg
+update_on_soname:
+- libs:
+  - libuuid.so
+  pkgbase: util-linux
+  pkgname: util-linux-libs

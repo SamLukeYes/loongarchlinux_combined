@@ -10,7 +10,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''mixxx'')
 
   '
 repo_depends:
-- qt5-base
 - chromaprint
 - flac
 - ffmpeg
@@ -29,53 +28,55 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alpm: chromaprint
-  provides: libchromaprint.so
-  source: alpm
-- alpm: flac
-  provides: libFLAC.so
-  source: alpm
-- alpm: ffmpeg
-  provides: libavutil.so
-  source: alpm
-- alpm: fftw
-  provides: libfftw3.so
-  source: alpm
-- alpm: glib2
-  provides: libgobject-2.0.so
-  source: alpm
-- alpm: libid3tag
-  provides: libid3tag.so
-  source: alpm
-- alpm: libogg
-  provides: libogg.so
-  source: alpm
-- alpm: libsndfile
-  provides: libsndfile.so
-  source: alpm
-- alpm: libusb
-  provides: libusb-1.0.so
-  source: alpm
-- alpm: libvorbis
-  provides: libvorbisfile.so
-  source: alpm
-- alpm: lilv
-  provides: liblilv-0.so
-  source: alpm
-- alpm: portaudio
-  provides: libportaudio.so
-  source: alpm
-- alpm: portmidi
-  provides: libportmidi.so
-  source: alpm
-- alpm: protobuf
-  provides: libprotobuf-lite.so
-  source: alpm
-- alpm: rubberband
-  provides: librubberband.so
-  source: alpm
 - alpm: mixxx
   source: archpkg
+update_on_soname:
+- libs:
+  - libchromaprint.so
+  pkgname: chromaprint
+- libs:
+  - libFLAC.so
+  pkgname: flac
+- libs:
+  - libavcodec.so
+  - libavformat.so
+  - libavutil.so
+  pkgname: ffmpeg
+- libs:
+  - libfftw3.so
+  pkgname: fftw
+- libs:
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libid3tag.so
+  pkgname: libid3tag
+- libs:
+  - libogg.so
+  pkgname: libogg
+- libs:
+  - libsndfile.so
+  pkgname: libsndfile
+- libs:
+  - libusb-1.0.so
+  pkgname: libusb
+- libs:
+  - libvorbis.so
+  - libvorbisenc.so
+  - libvorbisfile.so
+  pkgname: libvorbis
+- libs:
+  - liblilv-0.so
+  pkgname: lilv
+- libs:
+  - libportaudio.so
+  pkgname: portaudio
+- libs:
+  - libportmidi.so
+  pkgname: portmidi
+- libs:
+  - libprotobuf-lite.so
+  pkgname: protobuf
+- libs:
+  - librubberband.so
+  pkgname: rubberband

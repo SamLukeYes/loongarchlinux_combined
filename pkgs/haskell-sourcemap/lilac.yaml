@@ -9,21 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-sourcemap'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-aeson
-- haskell-attoparsec
-- haskell-unordered-containers
-- haskell-utf8-string
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-aeson
-  source: alpm
-- alpm: haskell-attoparsec
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-utf8-string
-  source: alpm
 - alpm: haskell-sourcemap
   source: archpkg

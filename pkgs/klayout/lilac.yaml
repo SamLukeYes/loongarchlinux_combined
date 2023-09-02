@@ -10,16 +10,17 @@ pre_build_script: '_G.files = download_official_pkgbuild(''klayout'')
 
   '
 repo_depends:
-- qt5-base
 - python
 - ruby
 update_on:
 - manual: 1
   source: manual
-- alpm: qt5-base
-  source: alpm
-  strip_release: true
-- alias: python
-- alias: ruby
 - alpm: klayout
   source: archpkg
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: ruby
+  to_pattern: \1

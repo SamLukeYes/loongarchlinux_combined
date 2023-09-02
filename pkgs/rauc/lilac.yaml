@@ -13,21 +13,25 @@ repo_depends:
 - curl
 - glib2
 - json-glib
-- util-linux
+- util-linux: util-linux-libs
 update_on:
 - manual: 1
   source: manual
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
-- alpm: glib2
-  provides: libglib-2.0.so
-  source: alpm
-- alpm: json-glib
-  provides: libjson-glib-1.0.so
-  source: alpm
-- alpm: util-linux-libs
-  provides: libfdisk.so
-  source: alpm
 - alpm: rauc
   source: archpkg
+update_on_soname:
+- libs:
+  - libcurl.so
+  pkgname: curl
+- libs:
+  - libgobject-2.0.so
+  - libgio-2.0.so
+  - libglib-2.0.so
+  pkgname: glib2
+- libs:
+  - libjson-glib-1.0.so
+  pkgname: json-glib
+- libs:
+  - libfdisk.so
+  pkgbase: util-linux
+  pkgname: util-linux-libs

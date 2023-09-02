@@ -1,5 +1,6 @@
 destsubdir: extra
 repo_depends:
+- python
 - glib2
 - libcap-ng
 - numactl
@@ -9,10 +10,10 @@ repo_depends:
 - spice
 - curl
 - bzip2
-- cuda
+- cuda: cuda-tools
 - brltty
 - liburing
-- systemd
+- systemd: systemd-libs
 - pixman
 - libusb
 - pam
@@ -22,7 +23,6 @@ repo_depends:
 - libseccomp
 - libslirp
 - intel-oneapi-basekit
-- python
 - ncurses
 - gdk-pixbuf2
 - gtk3
@@ -30,82 +30,92 @@ repo_depends:
 update_on:
 - manual: 1
   source: manual
-- alpm: glib2
-  provides: libgmodule-2.0.so
-  source: alpm
-- alpm: libcap-ng
-  provides: libcap-ng.so
-  source: alpm
-- alpm: numactl
-  provides: libnuma.so
-  source: alpm
-- alpm: alsa-lib
-  provides: libasound.so
-  source: alpm
-- alpm: jack2
-  provides: libjack.so
-  source: alpm
-- alpm: libao
-  provides: libpulse.so
-  source: alpm
-- alpm: spice
-  provides: libspice-server.so
-  source: alpm
-- alpm: curl
-  provides: libcurl.so
-  source: alpm
-- alpm: bzip2
-  provides: libbz2.so
-  source: alpm
-- alpm: cuda-tools
-  provides: libssh.so
-  source: alpm
-- alpm: brltty
-  provides: libbrlapi.so
-  source: alpm
-- alpm: liburing
-  provides: liburing.so
-  source: alpm
-- alpm: systemd-libs
-  provides: libudev.so
-  source: alpm
-- alpm: pixman
-  provides: libpixman-1.so
-  source: alpm
-- alpm: libusb
-  provides: libusb-1.0.so
-  source: alpm
-- alpm: pam
-  provides: libpam.so
-  source: alpm
-- alpm: zstd
-  provides: libzstd.so
-  source: alpm
-- alpm: libbpf
-  provides: libbpf.so
-  source: alpm
-- alpm: darktable
-  provides: libjpeg.so
-  source: alpm
-- alpm: libseccomp
-  provides: libseccomp.so
-  source: alpm
-- alpm: libslirp
-  provides: libslirp.so
-  source: alpm
-- alpm: intel-oneapi-basekit
-  provides: libxkbcommon.so
-  source: alpm
-- alias: python
-- alpm: ncurses
-  provides: libncursesw.so
-  source: alpm
-- alpm: gdk-pixbuf2
-  provides: libgdk_pixbuf-2.0.so
-  source: alpm
-- alpm: gtk3
-  provides: libgtk-3.so
-  source: alpm
-- alpm: vte3
-  provides: libvte-2.91.so
-  source: alpm
+update_on_build:
+- from_pattern: ^(\d+\.\d+)\..*
+  pkgbase: python
+  to_pattern: \1
+update_on_soname:
+- libs:
+  - libglib-2.0.so
+  - libgmodule-2.0.so
+  - libgio-2.0.so
+  - libgobject-2.0.so
+  pkgname: glib2
+- libs:
+  - libcap-ng.so
+  pkgname: libcap-ng
+- libs:
+  - libnuma.so
+  pkgname: numactl
+- libs:
+  - libasound.so
+  pkgname: alsa-lib
+- libs:
+  - libjack.so
+  pkgname: jack2
+- libs:
+  - libpulse.so
+  pkgname: libao
+- libs:
+  - libspice-server.so
+  pkgname: spice
+- libs:
+  - libcurl.so
+  pkgname: curl
+- libs:
+  - libbz2.so
+  pkgname: bzip2
+- libs:
+  - libssh.so
+  pkgbase: cuda
+  pkgname: cuda-tools
+- libs:
+  - libbrlapi.so
+  pkgname: brltty
+- libs:
+  - liburing.so
+  pkgname: liburing
+- libs:
+  - libudev.so
+  pkgbase: systemd
+  pkgname: systemd-libs
+- libs:
+  - libpixman-1.so
+  pkgname: pixman
+- libs:
+  - libusb-1.0.so
+  pkgname: libusb
+- libs:
+  - libpam.so
+  pkgname: pam
+- libs:
+  - libzstd.so
+  pkgname: zstd
+- libs:
+  - libbpf.so
+  pkgname: libbpf
+- libs:
+  - libjpeg.so
+  pkgname: darktable
+- libs:
+  - libseccomp.so
+  pkgname: libseccomp
+- libs:
+  - libslirp.so
+  pkgname: libslirp
+- libs:
+  - libxkbcommon.so
+  pkgname: intel-oneapi-basekit
+- libs:
+  - libncursesw.so
+  pkgname: ncurses
+- libs:
+  - libgdk_pixbuf-2.0.so
+  pkgname: gdk-pixbuf2
+- libs:
+  - libgdk-3.so
+  - libgtk-3.so
+  pkgname: gtk3
+- libs:
+  - libvte-2.91.so
+  pkgname: vte3

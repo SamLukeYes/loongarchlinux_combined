@@ -9,39 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-clientsession
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-base64-bytestring
-- haskell-cereal
-- haskell-cipher-aes
-- haskell-cprng-aes
-- haskell-crypto-api
-- haskell-crypto-random
-- haskell-entropy
-- haskell-setenv
-- haskell-skein
-- haskell-tagged
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-base64-bytestring
-  source: alpm
-- alpm: haskell-cereal
-  source: alpm
-- alpm: haskell-cipher-aes
-  source: alpm
-- alpm: haskell-cprng-aes
-  source: alpm
-- alpm: haskell-crypto-api
-  source: alpm
-- alpm: haskell-crypto-random
-  source: alpm
-- alpm: haskell-entropy
-  source: alpm
-- alpm: haskell-setenv
-  source: alpm
-- alpm: haskell-skein
-  source: alpm
-- alpm: haskell-tagged
-  source: alpm
 - alpm: haskell-clientsession
   source: archpkg

@@ -9,18 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-hyphenation''
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-file-embed
-- haskell-unordered-containers
-- haskell-zlib
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-file-embed
-  source: alpm
-- alpm: haskell-unordered-containers
-  source: alpm
-- alpm: haskell-zlib
-  source: alpm
 - alpm: haskell-hyphenation
   source: archpkg

@@ -9,24 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''haskell-fsnotify'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- haskell-async
-- haskell-hinotify
-- haskell-monad-control
-- haskell-safe-exceptions
-- haskell-unix-compat
 update_on:
 - manual: 1
   source: manual
-- alpm: haskell-async
-  source: alpm
-- alpm: haskell-hinotify
-  source: alpm
-- alpm: haskell-monad-control
-  source: alpm
-- alpm: haskell-safe-exceptions
-  source: alpm
-- alpm: haskell-unix-compat
-  source: alpm
 - alpm: haskell-fsnotify
   source: archpkg
