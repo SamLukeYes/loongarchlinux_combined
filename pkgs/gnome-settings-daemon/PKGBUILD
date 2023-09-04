@@ -2,10 +2,10 @@
 
 pkgname=gnome-settings-daemon
 pkgver=44.1
-pkgrel=1
+pkgrel=2
 pkgdesc="GNOME Settings Daemon"
 url="https://gitlab.gnome.org/GNOME/gnome-settings-daemon"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL)
 depends=(
   dconf
