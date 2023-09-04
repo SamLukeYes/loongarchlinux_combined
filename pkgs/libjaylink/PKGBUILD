@@ -4,9 +4,9 @@
 
 pkgname=libjaylink
 pkgver=0.3.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Library for accessing SEGGER J-Link and compatible devices'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://gitlab.zapb.de/libjaylink/libjaylink'
 license=('GPL')
 depends=('libusb')
