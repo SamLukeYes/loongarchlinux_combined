@@ -9,15 +9,8 @@ pre_build_script: '_G.files = download_official_pkgbuild(''nautilus'')
   add_into_array(''arch'', [''loong64''])
 
   '
-repo_depends:
-- nautilus: libnautilus-extension
 update_on:
 - manual: 1
   source: manual
 - alpm: nautilus
   source: archpkg
-update_on_soname:
-- libs:
-  - libnautilus-extension.so
-  pkgbase: nautilus
-  pkgname: libnautilus-extension

@@ -13,7 +13,6 @@ repo_depends:
 - python
 - krb5
 - libcap-ng
-- audit
 update_on:
 - manual: 1
   source: manual
@@ -31,7 +30,3 @@ update_on_soname:
 - libs:
   - libcap-ng.so
   pkgname: libcap-ng
-- libs:
-  - libaudit.so
-  - libauparse.so
-  pkgname: audit

@@ -4,10 +4,8 @@ repo_depends:
 - glib2
 - graphite
 - cairo
-- harfbuzz
 - icu
 - chafa
-- harfbuzz: harfbuzz-cairo
 update_on:
 - manual: 1
   source: manual
@@ -26,17 +24,8 @@ update_on_soname:
   - libcairo.so
   pkgname: cairo
 - libs:
-  - libharfbuzz.so
-  - libharfbuzz-gobject.so
-  - libharfbuzz-subset.so
-  pkgname: harfbuzz
-- libs:
   - libicuuc.so
   pkgname: icu
 - libs:
   - libchafa.so
   pkgname: chafa
-- libs:
-  - libharfbuzz-cairo.so
-  pkgbase: harfbuzz
-  pkgname: harfbuzz-cairo

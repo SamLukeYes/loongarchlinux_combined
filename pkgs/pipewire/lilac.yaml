@@ -5,7 +5,6 @@ repo_depends:
 - dbus
 - glib2
 - ncurses
-- pipewire: libpipewire
 - readline
 - systemd: systemd-libs
 - alsa-lib
@@ -44,10 +43,6 @@ update_on_soname:
 - libs:
   - libncursesw.so
   pkgname: ncurses
-- libs:
-  - libpipewire-0.3.so
-  pkgbase: pipewire
-  pkgname: libpipewire
 - libs:
   - libreadline.so
   pkgname: readline

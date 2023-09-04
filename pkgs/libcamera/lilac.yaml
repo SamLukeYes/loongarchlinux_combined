@@ -12,7 +12,6 @@ pre_build_script: '_G.files = download_official_pkgbuild(''libcamera'')
 repo_depends:
 - systemd: systemd-libs
 - darktable
-- libcamera
 - libevent
 - glib2
 update_on:
@@ -30,9 +29,6 @@ update_on_soname:
   - libjpeg.so
   - libtiff.so
   pkgname: darktable
-- libs:
-  - libcamera-base.so
-  pkgname: libcamera
 - libs:
   - libevent-2.1.so
   - libevent_pthreads-2.1.so

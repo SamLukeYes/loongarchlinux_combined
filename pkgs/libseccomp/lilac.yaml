@@ -1,7 +1,6 @@
 destsubdir: core
 repo_depends:
 - python
-- libseccomp
 update_on:
 - manual: 1
   source: manual
@@ -9,7 +8,3 @@ update_on_build:
 - from_pattern: ^(\d+\.\d+)\..*
   pkgbase: python
   to_pattern: \1
-update_on_soname:
-- libs:
-  - libseccomp.so
-  pkgname: libseccomp

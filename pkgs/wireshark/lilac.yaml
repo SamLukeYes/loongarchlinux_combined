@@ -15,7 +15,6 @@ repo_depends:
 - brotli
 - c-ares
 - krb5
-- wireshark: wireshark-cli
 update_on:
 - manual: 1
   source: manual
@@ -38,9 +37,3 @@ update_on_soname:
   - libkrb5.so
   - libk5crypto.so
   pkgname: krb5
-- libs:
-  - libwireshark.so
-  - libwiretap.so
-  - libwsutil.so
-  pkgbase: wireshark
-  pkgname: wireshark-cli

@@ -6,7 +6,6 @@ repo_depends:
 - opus
 - systemd: systemd-libs
 - expat
-- jack2
 update_on:
 - manual: 1
   source: manual
@@ -30,6 +29,3 @@ update_on_soname:
 - libs:
   - libexpat.so
   pkgname: expat
-- libs:
-  - libjackserver.so
-  pkgname: jack2

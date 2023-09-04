@@ -14,7 +14,6 @@ repo_depends:
 - jack2
 - libsamplerate
 - libsndfile
-- aubio
 update_on:
 - manual: 1
   source: manual
@@ -36,6 +35,3 @@ update_on_soname:
 - libs:
   - libsndfile.so
   pkgname: libsndfile
-- libs:
-  - libaubio.so
-  pkgname: aubio
