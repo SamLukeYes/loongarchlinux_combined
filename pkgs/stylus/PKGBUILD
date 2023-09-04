@@ -3,7 +3,7 @@
 pkgname=stylus
 pkgdesc='Robust, expressive, and feature-rich CSS superset'
 pkgver=0.59.0
-pkgrel=1
+pkgrel=2
 arch=('any')
 url='https://github.com/stylus/stylus'
 license=('MIT')
