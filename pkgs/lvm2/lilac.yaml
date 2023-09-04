@@ -11,7 +11,7 @@ pre_build_script: '_G.files = download_official_pkgbuild(''lvm2'')
   '
 repo_depends:
 - readline
-- systemd: systemd-libs
+# - systemd: systemd-libs
 - util-linux: util-linux-libs
 - readline
 - libaio
