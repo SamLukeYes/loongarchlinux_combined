@@ -3,9 +3,9 @@
 
 pkgname=strawberry
 pkgver=1.0.18
-pkgrel=1
+pkgrel=3
 pkgdesc='A music player aimed at audio enthusiasts and music collectors'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://www.strawbs.org/'
 license=(GPL3)
 depends=(qt6-base chromaprint protobuf gst-plugins-base gst-plugins-good udisks2 libcdio libgpod libmtp fftw)
