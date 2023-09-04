@@ -12,10 +12,10 @@ pkgname=(
   pulseaudio-rtp
 )
 pkgver=16.1
-pkgrel=6
+pkgrel=7
 pkgdesc="A featureful, general-purpose sound server"
 url="https://www.freedesktop.org/wiki/Software/PulseAudio/"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL)
 makedepends=(
   alsa-lib
