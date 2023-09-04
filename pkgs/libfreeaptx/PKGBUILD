@@ -2,10 +2,10 @@
 
 pkgname=libfreeaptx
 pkgver=0.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Open Source aptX codec library"
 url="https://github.com/iamthehorker/libfreeaptx"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(LGPL)
 depends=(glibc)
 makedepends=(git)
