@@ -2,10 +2,10 @@
 
 pkgname=gnome-session
 pkgver=44.0
-pkgrel=1
+pkgrel=2
 pkgdesc="The GNOME Session Handler"
 url="https://gitlab.gnome.org/GNOME/gnome-session"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL)
 depends=(
   dconf
