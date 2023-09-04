@@ -3,9 +3,9 @@
 
 pkgname=libifp
 pkgver=1.0.0.2
-pkgrel=7
+pkgrel=8
 pkgdesc="General-purpose library-driver for iRiver's iFP portable audio players"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL')
 url="http://ifp-driver.sourceforge.net/libifp/"
 depends=('libusb-compat')
