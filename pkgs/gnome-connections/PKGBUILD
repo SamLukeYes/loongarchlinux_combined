@@ -3,9 +3,9 @@
 
 pkgname=gnome-connections
 pkgver=44.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Remote desktop client for the GNOME desktop environment'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://gitlab.gnome.org/GNOME/connections'
 license=('GPL3')
 depends=('cairo' 'dconf' 'freerdp' 'gdk-pixbuf2' 'glib2' 'glibc' 'gtk3' 'gtk-vnc'
