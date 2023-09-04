@@ -3,7 +3,7 @@
 pkgname=ruby-maxitest
 pkgver=4.5.0
 _commit=ea6ed8e73f61c095648760d384afcdba3d1446c8
-pkgrel=1
+pkgrel=2
 pkgdesc='Minitest + all the features you always wanted'
 arch=(any)
 url='https://github.com/grosser/maxitest'
