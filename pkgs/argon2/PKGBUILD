@@ -2,9 +2,9 @@
 
 pkgname=argon2
 pkgver=20190702
-pkgrel=5
+pkgrel=6
 pkgdesc='A password-hashing function (reference C implementation)'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://github.com/P-H-C/phc-winner-argon2'
 license=('Apache' 'custom:CC0')
 depends=('glibc')
