@@ -3,9 +3,9 @@
 
 pkgname=stdoutisatty
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Make programs think their stdout is a tty / terminal."
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://github.com/lilydjwg/stdoutisatty'
 license=('BSD')
 depends=('glibc')
