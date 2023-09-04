@@ -4,9 +4,9 @@
 pkgname=libieee1284
 pkgver=0.2.11
 _tag=${pkgver//\./_}
-pkgrel=15
+pkgrel=16
 pkgdesc="A library to query devices connected in parallel port"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL2')
 url="https://github.com/twaugh/libieee1284"
 optdepends=('python: for python module')
