@@ -2,15 +2,14 @@
 
 pkgname=gnome-logs
 pkgver=43.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A log viewer for the systemd journal"
 url="https://wiki.gnome.org/Apps/Logs"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL)
 depends=(systemd gtk4 libadwaita gsettings-desktop-schemas)
 makedepends=(appstream-glib git meson yelp-tools)
 groups=(gnome)
-options=(debug)
 _commit=3fa0b8a7f734e6adf865cc5df673f6a74809b56d  # tags/43.0^0
 source=("git+https://gitlab.gnome.org/GNOME/gnome-logs.git#commit=$_commit")
 sha256sums=('SKIP')
