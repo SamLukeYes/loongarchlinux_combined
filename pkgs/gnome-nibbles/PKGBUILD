@@ -3,10 +3,10 @@
 
 pkgname=gnome-nibbles
 pkgver=3.38.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Guide a worm around a maze"
 url="https://wiki.gnome.org/Apps/Nibbles"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL)
 depends=(
   clutter-gtk
