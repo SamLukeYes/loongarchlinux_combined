@@ -4,9 +4,9 @@
 
 pkgname=libid3tag
 pkgver=0.15.1b
-pkgrel=12
+pkgrel=13
 pkgdesc="ID3 tag manipulation library"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://www.underbit.com/products/mad/"
 license=(GPL2)
 depends=(glibc zlib)
