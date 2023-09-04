@@ -2,9 +2,9 @@
 
 pkgname=gnome-firmware
 pkgver=43.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Manage firmware on devices supported by fwupd"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://gitlab.gnome.org/World/gnome-firmware"
 license=(GPL2)
 depends=(gtk4 glib2 fwupd libadwaita libxmlb systemd)
