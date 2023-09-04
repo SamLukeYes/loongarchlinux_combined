@@ -3,10 +3,10 @@
 pkgbase=opencc
 pkgname=(opencc opencc-doc)
 pkgver=1.1.6
-pkgrel=2
+pkgrel=3
 pkgdesc="Library for Open Chinese Convert"
 url="https://github.com/BYVoid/OpenCC"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('Apache')
 makedepends=('chrpath' 'cmake' 'darts' 'doxygen' 'marisa' 'pybind11' 'python-setuptools'
              'python-wheel' 'rapidjson' 'tclap' 'gtest')
