@@ -3,11 +3,11 @@
 
 pkgname=gnome-control-center
 pkgver=44.3
-pkgrel=1
+pkgrel=2
 pkgdesc="GNOME's main interface to configure various aspects of the desktop"
 url="https://gitlab.gnome.org/GNOME/gnome-control-center"
 license=(GPL3)
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 depends=(
   accountsservice
   bolt
