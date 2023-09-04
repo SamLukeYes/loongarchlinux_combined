@@ -2,9 +2,9 @@
 
 pkgname=gnome-multi-writer
 pkgver=3.35.90
-pkgrel=1
+pkgrel=2
 pkgdesc='Write an ISO file to multiple USB devices at once'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://wiki.gnome.org/Apps/MultiWriter'
 license=('GPL')
 groups=('gnome-extra')
