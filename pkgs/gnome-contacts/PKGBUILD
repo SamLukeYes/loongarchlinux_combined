@@ -3,10 +3,10 @@
 
 pkgname=gnome-contacts
 pkgver=44.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Contacts Manager for GNOME"
 url="https://wiki.gnome.org/Apps/Contacts"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL2)
 depends=(
   evolution-data-server
