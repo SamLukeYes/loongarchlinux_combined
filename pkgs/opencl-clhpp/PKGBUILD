@@ -2,7 +2,7 @@
 
 pkgname=opencl-clhpp
 pkgver=2023.04.17
-pkgrel=1
+pkgrel=2
 pkgdesc='OpenCL C++ header files'
 arch=('any')
 url='https://github.com/KhronosGroup/OpenCL-CLHPP'
