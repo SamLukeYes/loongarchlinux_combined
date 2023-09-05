@@ -2,9 +2,9 @@
 
 pkgname=deepin-app-services
 pkgver=0.0.22
-pkgrel=1
+pkgrel=2
 pkgdesc='Service collection of DDE applications, including dconfig-center'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://github.com/linuxdeepin/dde-app-services"
 license=('GPL3')
 depends=(dtkwidget)
