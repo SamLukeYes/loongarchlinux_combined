@@ -2,10 +2,10 @@
 # Contributor: John Hawthorn (john.hawthorn@gmail.com)
 pkgname=fzy
 pkgver=1.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A better fuzzy finder"
 url="https://github.com/jhawthorn/fzy"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('MIT')
 depends=('glibc')
 source=(https://github.com/jhawthorn/${pkgname}/archive/${pkgver}.tar.gz)
