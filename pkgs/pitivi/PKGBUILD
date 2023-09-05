@@ -5,9 +5,9 @@
 
 pkgname=pitivi
 pkgver=2023.03
-pkgrel=2
+pkgrel=3
 pkgdesc='Editor for audio/video projects using the GStreamer framework'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='http://pitivi.org/'
 license=('LGPL')
 depends=('gsound' 'gst-editing-services' 'gst-plugin-gtk' 'gst-plugins-bad' 'gst-plugins-good' 'gst-python'
