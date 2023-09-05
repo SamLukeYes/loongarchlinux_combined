@@ -3,7 +3,7 @@
 
 pkgname=hyphen-hu
 pkgver=20201216
-pkgrel=1
+pkgrel=2
 pkgdesc='Hungarian hyphenation rules'
 arch=('any')
 url='https://magyarispell.sourceforge.net/'
