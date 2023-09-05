@@ -5,10 +5,10 @@
 
 pkgname=fwbuilder
 pkgver=5.3.7
-pkgrel=13
+pkgrel=14
 pkgdesc="Object-oriented GUI and set of compilers for various firewall platforms"
 url="https://github.com/fwbuilder"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL')
 depends=('libxslt' 'net-snmp' 'qt5-base' 'desktop-file-utils' 'hicolor-icon-theme' 'shared-mime-info')
 conflicts=('libfwbuilder')
