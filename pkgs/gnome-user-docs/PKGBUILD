@@ -3,7 +3,7 @@
 
 pkgname=gnome-user-docs
 pkgver=44.3
-pkgrel=1
+pkgrel=2
 pkgdesc="User documentation for GNOME"
 url="https://gitlab.gnome.org/GNOME/gnome-user-docs"
 arch=(any)
