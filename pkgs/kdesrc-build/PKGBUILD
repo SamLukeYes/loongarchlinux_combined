@@ -4,7 +4,7 @@
 
 pkgname=kdesrc-build
 pkgver=22.07
-pkgrel=1
+pkgrel=2
 pkgdesc='Script to streamline setting up and maintaining KDE software development environment'
 url='https://apps.kde.org/kdesrc_build/'
 arch=(any)
