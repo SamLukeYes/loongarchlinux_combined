@@ -3,10 +3,10 @@
 
 pkgname=wayland-utils
 pkgver=1.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Wayland tools to display information about current compositor'
 url='https://gitlab.freedesktop.org/wayland/wayland-utils'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(MIT)
 depends=(wayland libdrm)
 makedepends=(meson wayland-protocols)
