@@ -3,9 +3,9 @@
 
 pkgname=ebook-tools
 pkgver=0.2.2
-pkgrel=7
+pkgrel=8
 pkgdesc="Tools for accessing and converting various ebook file formats"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://sourceforge.net/projects/ebook-tools/"
 license=(custom)
 depends=(libzip libxml2 convertlit)
