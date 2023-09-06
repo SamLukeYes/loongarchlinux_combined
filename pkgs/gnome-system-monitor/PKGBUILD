@@ -3,10 +3,10 @@
 
 pkgname=gnome-system-monitor
 pkgver=44.0
-pkgrel=1
+pkgrel=2
 pkgdesc="View current processes and monitor system state"
 url="https://wiki.gnome.org/Apps/SystemMonitor"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL)
 depends=(
   gtkmm3
