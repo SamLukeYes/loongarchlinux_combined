@@ -2,10 +2,10 @@
 
 pkgname=gnome-themes-extra
 pkgver=3.28+r6+g45b1d457
-pkgrel=1
+pkgrel=2
 pkgdesc="Extra Themes for GNOME Applications"
 url="https://gitlab.gnome.org/GNOME/gnome-themes-extra"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(LGPL2.1)
 depends=(cantarell-fonts)
 makedepends=(intltool gtk2 gtk3 git)
