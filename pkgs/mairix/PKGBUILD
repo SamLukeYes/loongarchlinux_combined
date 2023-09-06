@@ -5,9 +5,9 @@
 
 pkgname=mairix
 pkgver=0.24
-pkgrel=3
+pkgrel=4
 pkgdesc="A program for indexing and searching emails"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="http://www.rpcurnow.force9.co.uk/mairix/"
 license=('GPL')
 depends=(bzip2 zlib)
