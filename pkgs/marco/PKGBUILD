@@ -4,10 +4,10 @@
 
 pkgname=marco
 pkgver=1.26.2
-pkgrel=2
+pkgrel=3
 pkgdesc="A window manager for MATE"
 url="https://mate-desktop.org"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL')
 depends=('libcanberra' 'libgtop' 'mate-desktop' 'zenity' 'libxpresent' 'gettext' 'libxres' 'libsm')
 makedepends=('itstool')
