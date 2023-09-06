@@ -2,9 +2,9 @@
 
 pkgname=maliit-keyboard
 pkgver=2.3.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Virtual keyboard based on Maliit framework'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://maliit.github.io/'
 license=(LGPL)
 depends=(maliit-framework hunspell presage qt5-multimedia qt5-quickcontrols2 qt5-feedback)
