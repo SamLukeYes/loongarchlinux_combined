@@ -3,9 +3,9 @@
 
 pkgname=editline
 pkgver=1.17.1
-pkgrel=2
+pkgrel=3
 pkgdesc='A readline() replacement for UNIX without termcap (ncurses)'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='http://troglobit.com/editline.html'
 license=('BSD')
 install="$pkgname.install"
