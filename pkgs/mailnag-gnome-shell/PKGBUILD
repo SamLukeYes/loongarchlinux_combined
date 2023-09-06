@@ -3,9 +3,9 @@
 
 pkgname=mailnag-gnome-shell
 pkgver=40.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Mailnag GNOME Shell extension'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://github.com/pulb/mailnag-gnome-shell'
 license=('GPL')
 depends=('folks' 'gnome-shell' 'mailnag')
