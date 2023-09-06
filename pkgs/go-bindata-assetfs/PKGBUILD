@@ -2,9 +2,9 @@
 
 pkgname=go-bindata-assetfs
 pkgver=1.0.1
-pkgrel=3
+pkgrel=4
 pkgdesc="Serves embedded files from jteeuwen/go-bindata with net/http"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://github.com/elazarl/go-bindata-assetfs"
 license=('BSD')
 depends=('glibc')
