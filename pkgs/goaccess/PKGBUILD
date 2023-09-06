@@ -4,9 +4,9 @@
 
 pkgname=goaccess
 pkgver=1.7.2
-pkgrel=1
+pkgrel=2
 pkgdesc="An open source real-time web log analyzer and interactive viewer"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://goaccess.io'
 license=('GPL')
 depends=('ncurses' 'libmaxminddb' 'openssl')
