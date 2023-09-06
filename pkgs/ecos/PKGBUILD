@@ -3,11 +3,11 @@
 
 pkgname=ecos
 pkgver=2.0.10
-pkgrel=2
+pkgrel=3
 pkgdesc='A lightweight conic solver for second-order cone programming'
 url='https://github.com/embotech/ecos/wiki'
 license=(GPL3)
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 depends=(glibc)
 makedepends=(cmake)
 source=(https://github.com/embotech/ecos/archive/v$pkgver/$pkgname-$pkgver.tar.gz)
