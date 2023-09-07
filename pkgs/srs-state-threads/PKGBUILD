@@ -3,10 +3,10 @@
 
 pkgname=srs-state-threads
 pkgver=1.9.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Fork of state-threads, patched for SRS"
 _pkgcommit=843e74b038b53bde526dbf0ef35d008d1f3ff85b
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://github.com/ossrs/state-threads/"
 license=('GPL2' 'MPL')
 makedepends=('git')
