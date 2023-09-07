@@ -6,7 +6,7 @@
 
 pkgname=vcsh
 pkgver=2.0.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Version Control System for $HOME that manages multiple Git repositories'
 arch=(any)
 url="https://github.com/RichiH/$pkgname"
