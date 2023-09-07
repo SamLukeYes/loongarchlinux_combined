@@ -5,10 +5,10 @@
 
 pkgname=nullmailer
 pkgver=2.2
-pkgrel=3
+pkgrel=4
 pkgdesc='Simple relay-only mail transport agent'
 url='https://www.untroubled.org/nullmailer/'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL2')
 depends=('gnutls')
 provides=('smtp-forwarder')
