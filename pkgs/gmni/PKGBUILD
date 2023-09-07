@@ -2,9 +2,9 @@
 
 pkgname=gmni
 pkgver=1.0
-pkgrel=2
+pkgrel=3
 pkgdesc='A Gemini client'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://git.sr.ht/~sircmpwn/gmni'
 license=('GPL3')
 depends=('bearssl')
