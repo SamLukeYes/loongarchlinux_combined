@@ -4,10 +4,10 @@
 
 pkgname=libdmtx
 pkgver=0.7.7
-pkgrel=1
+pkgrel=2
 pkgdesc="A software for reading and writing Data Matrix 2D barcodes"
 url="https://libdmtx.sourceforge.net/"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL2)
 depends=(glibc)
 source=("https://github.com/dmtx/libdmtx/archive/v$pkgver/$pkgname-$pkgver.tar.gz")
