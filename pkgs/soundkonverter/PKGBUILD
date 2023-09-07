@@ -6,9 +6,9 @@
 
 pkgname=soundkonverter
 pkgver=3.0.1
-pkgrel=6
+pkgrel=7
 pkgdesc='Front-end to various audio converters'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://www.linux-apps.com/content/show.php?content=29024'
 license=(GPL)
 depends=(hicolor-icon-theme kdelibs4support libkcddb cdparanoia taglib phonon-qt5)
