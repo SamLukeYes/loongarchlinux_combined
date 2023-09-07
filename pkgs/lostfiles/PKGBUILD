@@ -3,7 +3,7 @@
 
 pkgname=lostfiles
 pkgver=4.12
-pkgrel=1
+pkgrel=2
 pkgdesc="Find orphaned files not owned by any Arch packages"
 arch=(any)
 url="https://github.com/graysky2/lostfiles"
