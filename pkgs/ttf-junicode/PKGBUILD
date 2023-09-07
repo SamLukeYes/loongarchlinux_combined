@@ -3,7 +3,7 @@
 
 pkgname=ttf-junicode
 pkgver=1.003
-pkgrel=2
+pkgrel=3
 pkgdesc='Junius-Unicode: Font for Medievalists'
 url='https://github.com/psb1558/Junicode-font/'
 license=('custom:OFL')
