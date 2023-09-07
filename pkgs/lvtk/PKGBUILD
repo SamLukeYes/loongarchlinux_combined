@@ -2,9 +2,9 @@
 
 pkgname=lvtk
 pkgver=1.2.0
-pkgrel=4
+pkgrel=5
 pkgdesc="Libraries wrapping the LV2 C API and extensions into C++ classes"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://github.com/lvtk/lvtk"
 license=(GPL3)
 depends=(
