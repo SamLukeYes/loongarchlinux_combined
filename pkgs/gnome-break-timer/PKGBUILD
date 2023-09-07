@@ -2,9 +2,9 @@
 
 pkgname=gnome-break-timer
 pkgver=2.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Keeps track of how much you are using the computer, and it reminds you to take regular breaks"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://wiki.gnome.org/Apps/BreakTimer"
 license=('GPL3')
 depends=('gsound' 'gtk3' 'libnotify')
@@ -24,5 +24,5 @@ build() {
 }
 
 package() {
-  DESTDIR="$pkgdir" meson install -C build
+  meson install -C build --destdir "$pkgdir"
 }
