@@ -3,10 +3,10 @@
 
 pkgname=gnome-calculator
 pkgver=44.0
-pkgrel=1
+pkgrel=2
 pkgdesc="GNOME Scientific calculator"
 url="https://wiki.gnome.org/Apps/Calculator"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL)
 depends=(
   dconf
