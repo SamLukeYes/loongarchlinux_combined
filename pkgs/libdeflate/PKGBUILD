@@ -3,9 +3,9 @@
 
 pkgname=libdeflate
 pkgver=1.18
-pkgrel=1
+pkgrel=2
 pkgdesc='Heavily optimized library for DEFLATE/zlib/gzip compression and decompression'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url=https://github.com/ebiggers/libdeflate
 license=(MIT)
 depends=(glibc)
