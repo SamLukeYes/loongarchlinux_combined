@@ -3,7 +3,7 @@
 
 pkgname=gnome-backgrounds
 pkgver=44.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Background images and data for GNOME"
 url="https://gitlab.gnome.org/GNOME/gnome-backgrounds"
 arch=(any)
