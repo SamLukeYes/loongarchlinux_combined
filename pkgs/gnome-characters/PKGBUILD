@@ -3,10 +3,10 @@
 
 pkgname=gnome-characters
 pkgver=44.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A character map application"
 url="https://gitlab.gnome.org/GNOME/gnome-characters"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL2)
 depends=(
   emoji-font
@@ -14,7 +14,6 @@ depends=(
   gnome-desktop-4
   gtk4
   libadwaita
-  libunistring
 )
 makedepends=(
   appstream-glib
