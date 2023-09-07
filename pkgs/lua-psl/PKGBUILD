@@ -2,8 +2,8 @@
 
 pkgname=('lua-psl' 'lua51-psl' 'lua52-psl' 'lua53-psl')
 pkgver=0.3
-pkgrel=3
-arch=('loong64' 'x86_64')
+pkgrel=4
+arch=("loong64" "x86_64")
 pkgdesc='libpsl bindings for Lua'
 url='https://github.com/daurnimator/lua-psl'
 license=('MIT')
