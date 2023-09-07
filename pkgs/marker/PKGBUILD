@@ -3,9 +3,9 @@
 
 pkgname=marker
 pkgver=2023.05.02
-pkgrel=1
+pkgrel=2
 pkgdesc='Simple yet robust Markdown editor made with GTK'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://fabiocolacio.github.io/Marker/'
 license=('GPL3')
 depends=('gtksourceview3' 'gtkspell3' 'webkit2gtk-4.1')
