@@ -6,9 +6,9 @@
 pkgname=podofo-0.9
 _pkgname=podofo
 pkgver=0.9.8
-pkgrel=5
+pkgrel=6
 pkgdesc="A C++ library to work with the PDF file format (legacy version)"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="http://podofo.sourceforge.net"
 license=('GPL')
 depends=('openssl' 'fontconfig' 'libtiff' 'libidn' 'libjpeg-turbo' 'libunistring')
