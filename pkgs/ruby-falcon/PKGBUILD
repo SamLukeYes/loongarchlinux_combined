@@ -2,7 +2,7 @@
 
 pkgname=ruby-falcon
 pkgver=0.42.3
-pkgrel=2
+pkgrel=3
 pkgdesc='A fast, asynchronous, rack-compatible web server'
 arch=(any)
 url='https://github.com/socketry/falcon'
