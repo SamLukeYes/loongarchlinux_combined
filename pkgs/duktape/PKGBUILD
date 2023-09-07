@@ -3,10 +3,10 @@
 
 pkgname=duktape
 pkgver=2.7.0
-pkgrel=6
+pkgrel=7
 pkgdesc='Embeddable Javascript engine'
 url='https://duktape.org/'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(MIT)
 depends=(
   glibc
