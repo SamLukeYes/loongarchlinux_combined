@@ -2,11 +2,11 @@
 
 pkgname=python-ukkonen
 pkgver=1.0.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Implementation of bounded Levenshtein distance (Ukkonen)"
 url="https://github.com/asottile/ukkonen"
 license=('MIT')
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 depends=('python-cffi')
 makedepends=('python-setuptools')
 checkdepends=('python-pytest')
