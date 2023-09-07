@@ -2,9 +2,9 @@
 
 pkgname=lrcalc
 pkgver=2.1
-pkgrel=4
+pkgrel=5
 pkgdesc="Littlewood-Richardson calculator"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://math.rutgers.edu/~asbuch/lrcalc/"
 license=(GPL3)
 depends=(glibc)
