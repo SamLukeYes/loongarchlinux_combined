@@ -6,11 +6,11 @@
 
 pkgname=girara
 pkgver=0.4.0
-pkgrel=1
+pkgrel=2
 
 pkgdesc="User interface library focused on simplicity and minimalism"
 url="https://pwmt.org/projects/girara"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('custom')
 
 provides=('girara-gtk3' 'girara-common')
