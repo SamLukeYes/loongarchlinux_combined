@@ -3,9 +3,9 @@
 
 pkgname=nsxiv
 pkgver=31
-pkgrel=4
+pkgrel=5
 pkgdesc='Neo (or New or Not) Simple (or Small or Suckless) X Image Viewer'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL2')
 url='https://nsxiv.codeberg.page/'
 
