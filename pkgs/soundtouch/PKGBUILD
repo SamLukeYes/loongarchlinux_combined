@@ -3,9 +3,9 @@
 
 pkgname=soundtouch
 pkgver=2.3.2
-pkgrel=1
+pkgrel=2
 pkgdesc='An audio processing library'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url=https://www.surina.net/soundtouch/
 license=(LGPL2.1)
 depends=(gcc-libs)
