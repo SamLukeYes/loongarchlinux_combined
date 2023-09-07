@@ -2,9 +2,9 @@
 
 pkgname=spglib
 pkgver=2.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc='C library for finding and handling crystal symmetries'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://atztogo.github.io/spglib/'
 license=(custom)
 depends=(gcc-libs)
