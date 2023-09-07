@@ -5,9 +5,9 @@
 
 pkgname=joyutils
 pkgver=1.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc='jscal, jstest, and jsattach utilities for the Linux joystick driver'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL)
 url='https://packages.debian.org/sid/joystick'
 conflicts=(linuxconsole)
