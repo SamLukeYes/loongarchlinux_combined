@@ -4,7 +4,7 @@
 
 pkgname=vicious
 pkgver=2.6.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Widgets for the Awesome window manager'
 url="https://github.com/Mic92/$pkgname"
 arch=(any)
