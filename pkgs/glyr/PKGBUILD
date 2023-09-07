@@ -3,9 +3,9 @@
 
 pkgname=glyr
 pkgver=1.0.10
-pkgrel=5
+pkgrel=6
 pkgdesc='Music metadata searchengine utility and library written in C'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://github.com/sahib/glyr'
 license=('LGPL3')
 depends=('curl' 'glib2' 'sqlite')
