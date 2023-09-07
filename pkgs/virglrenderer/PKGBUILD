@@ -2,9 +2,9 @@
 
 pkgname=virglrenderer
 pkgver=0.10.4
-pkgrel=1
+pkgrel=2
 pkgdesc='A virtual 3D GPU library, that allows the guest operating system to use the host GPU to accelerate 3D rendering'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://virgil3d.github.io/'
 license=(MIT)
 depends=(libepoxy mesa libva)
