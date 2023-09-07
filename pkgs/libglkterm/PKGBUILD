@@ -3,9 +3,9 @@
 
 pkgname=libglkterm
 pkgver=1.0.4
-pkgrel=2
+pkgrel=3
 pkgdesc="An interface standard for interactive fiction."
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="http://eblong.com/zarf/glk/"
 license=('MIT')
 depends=('ncurses')
