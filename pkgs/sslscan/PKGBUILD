@@ -4,10 +4,10 @@
 
 pkgname=sslscan
 pkgver=2.0.16
-pkgrel=1
+pkgrel=2
 pkgdesc="A fast tool to scan SSL services such as HTTPS to determine supported ciphers"
 url="https://github.com/rbsec/sslscan"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL3')
 depends=('glibc' 'openssl')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/$pkgver.tar.gz")
