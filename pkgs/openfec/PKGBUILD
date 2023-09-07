@@ -2,9 +2,9 @@
 
 pkgname=openfec
 pkgver=1.4.2.9
-pkgrel=1
+pkgrel=2
 pkgdesc="Open Forward Erasure Codecs"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="http://openfec.org/"
 license=(custom:CeCILL-C)
 depends=(glibc)
