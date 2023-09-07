@@ -2,8 +2,11 @@
 # Contributor: Sébastien Luttringer
 
 pkgname=dokuwiki
+# use underscore for versions with letter
+# for example: 20230404_a
+# PKGBUILD modifies it into proper values
 pkgver=20230404
-pkgrel=2
+pkgrel=3
 _pkgver=${pkgver:0:4}-${pkgver:4:2}-${pkgver:6}
 _pkgver=${_pkgver/_/}
 _pkgver=${_pkgver/rc/}
