@@ -2,9 +2,9 @@
 
 pkgname=libetpan
 pkgver=1.9.4
-pkgrel=3
+pkgrel=4
 pkgdesc="A portable middleware for email access"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://www.etpan.org/libetpan.html"
 license=("custom:etpan")
 depends=('libgcrypt' 'gnutls' 'libsasl' 'zlib')
