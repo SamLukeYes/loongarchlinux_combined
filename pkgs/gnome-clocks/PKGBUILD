@@ -2,10 +2,10 @@
 
 pkgname=gnome-clocks
 pkgver=44.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Clocks applications for GNOME"
 url="https://wiki.gnome.org/Apps/Clocks"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL)
 depends=(
   geoclue
