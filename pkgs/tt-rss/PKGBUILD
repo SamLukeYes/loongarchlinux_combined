@@ -6,7 +6,7 @@
 
 pkgname=tt-rss
 pkgver=r11545.718af52a1
-pkgrel=1
+pkgrel=2
 epoch=2
 pkgdesc='Web-based news feed (RSS/Atom) aggregator'
 arch=(any)
