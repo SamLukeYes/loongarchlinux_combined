@@ -3,9 +3,9 @@
 
 pkgname=noise-suppression-for-voice
 pkgver=1.03
-pkgrel=1
+pkgrel=2
 pkgdesc='A real-time noise suppression plugin for voice'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://github.com/werman/noise-suppression-for-voice'
 license=(GPL3)
 depends=(freetype2)
