@@ -1,9 +1,9 @@
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 pkgname=jshon
 pkgver=20131105
-pkgrel=5
+pkgrel=6
 pkgdesc="A json parser for the shell."
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="http://kmkeen.com/jshon/"
 license=('MIT')
 depends=('jansson')
