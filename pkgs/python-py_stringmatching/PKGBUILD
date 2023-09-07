@@ -3,9 +3,9 @@
 _pkg=py_stringmatching
 pkgname=python-${_pkg}
 pkgver=0.4.3
-pkgrel=2
+pkgrel=3
 pkgdesc="Comprehensive and scalable set of string tokenizers and similarity measures"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://github.com/anhaidgroup/py_stringmatching"
 license=(BSD)
 depends=(python-numpy python-six)
