@@ -3,7 +3,7 @@
 
 pkgname=jruby
 pkgver=9.4.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="100% pure-Java implementation of the Ruby programming language"
 url="https://www.jruby.org/"
 arch=(any)
