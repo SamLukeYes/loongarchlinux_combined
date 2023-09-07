@@ -4,9 +4,9 @@
 
 pkgname=libdv
 pkgver=1.0.0
-pkgrel=11
+pkgrel=12
 pkgdesc='Decoder library for DV video'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://libdv.sourceforge.net/'
 license=('LGPL')
 depends=('glibc' 'popt')
