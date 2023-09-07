@@ -3,7 +3,7 @@
 
 pkgname=josm
 pkgver=18721
-pkgrel=1
+pkgrel=2
 pkgdesc="An editor for OpenStreetMap written in Java"
 arch=('any')
 url="https://josm.openstreetmap.de/"
