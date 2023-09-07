@@ -2,9 +2,9 @@
 
 pkgname=python-persistent
 pkgver=5.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Translucent persistent objects"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('ZPL')
 url="https://github.com/zopefoundation/persistent/"
 depends=('python-cffi' 'python-zope-interface')
