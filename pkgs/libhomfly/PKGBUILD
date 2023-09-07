@@ -2,9 +2,9 @@
 
 pkgname=libhomfly
 pkgver=1.02r6
-pkgrel=2
+pkgrel=3
 pkgdesc="Library to compute the homfly polynomial of a link"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://github.com/miguelmarco/libhomfly"
 license=(custom)
 depends=(gc)
