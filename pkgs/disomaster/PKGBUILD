@@ -2,9 +2,9 @@
 
 pkgname=disomaster
 pkgver=5.0.8
-pkgrel=1
+pkgrel=2
 pkgdesc='A libisoburn wrapper class for Qt'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://github.com/linuxdeepin/disomaster"
 license=('GPL3')
 depends=('libisoburn' 'qt5-base')
