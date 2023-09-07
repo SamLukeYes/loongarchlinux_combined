@@ -5,9 +5,9 @@
 
 pkgname=lxterminal
 pkgver=0.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc="VTE-based terminal emulator (part of LXDE)"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://lxde.org/"
 license=('GPL2')
 groups=('lxde' 'lxde-gtk3')
