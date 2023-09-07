@@ -3,9 +3,9 @@
 
 pkgname=elfkickers
 pkgver=3.2
-pkgrel=4
+pkgrel=5
 pkgdesc='Collection of ELF utilities (includes sstrip)'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://www.muppetlabs.com/~breadbox/software/elfkickers.html'
 license=(GPL2)
 makedepends=(git setconf)
