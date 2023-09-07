@@ -5,9 +5,9 @@
 
 pkgname=djvulibre
 pkgver=3.5.28
-pkgrel=5
+pkgrel=6
 pkgdesc='Library and utilities to create, manipulate and view DjVu (déjà vu) documents'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://djvu.sourceforge.net/'
 license=('GPL2')
 depends=('bash' 'gcc-libs' 'glibc' 'hicolor-icon-theme' 'libjpeg-turbo' 'libtiff')
