@@ -2,9 +2,9 @@
 
 pkgname=vorbis-tools
 pkgver=1.4.2
-pkgrel=3
+pkgrel=4
 pkgdesc='Extra tools for Ogg-Vorbis'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://www.xiph.org/vorbis/'
 license=('GPL2')
 depends=('curl' 'flac' 'libao' 'libvorbis' 'opusfile')
