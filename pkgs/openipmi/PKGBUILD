@@ -6,10 +6,10 @@
 pkgname=openipmi
 _pkgname=OpenIPMI
 pkgver=2.0.33
-pkgrel=3
+pkgrel=4
 pkgdesc='Full-function IPMI (Intelligent Platform Management Interface) system'
 url='http://openipmi.sourceforge.net/'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('LGPL2.1')
 makedepends=('python' 'swig')
 depends=('popt' 'ncurses' 'net-snmp' 'glib2' 'gdbm' 'libedit')
