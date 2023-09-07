@@ -8,7 +8,7 @@
 
 pkgname=vim-nerdtree
 pkgver=6.10.16
-pkgrel=1
+pkgrel=2
 pkgdesc='Tree explorer plugin for navigating the filesystem'
 url='https://github.com/preservim/nerdtree'
 arch=('any')
