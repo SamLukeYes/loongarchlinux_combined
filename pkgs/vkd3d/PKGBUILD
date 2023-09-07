@@ -3,9 +3,9 @@
 
 pkgname=vkd3d
 pkgver=1.7.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Direct3D 12 to Vulkan translation library By WineHQ'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://wiki.winehq.org/Vkd3d'
 license=('LGPL')
 depends=('spirv-tools' 'vulkan-icd-loader')
