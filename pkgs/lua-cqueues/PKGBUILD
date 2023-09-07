@@ -2,8 +2,8 @@
 
 pkgname=('lua-cqueues' 'lua51-cqueues' 'lua52-cqueues' 'lua53-cqueues')
 pkgver=20200726
-pkgrel=4
-arch=('loong64' 'x86_64')
+pkgrel=5
+arch=("loong64" "x86_64")
 pkgdesc='Continuation Queues: Embeddable asynchronous networking, threading, and notification framework'
 url='http://25thandclement.com/~william/projects/cqueues.html'
 license=('MIT')
