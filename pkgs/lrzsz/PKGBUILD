@@ -4,11 +4,11 @@
 
 pkgname=lrzsz
 pkgver=0.12.20
-pkgrel=8
+pkgrel=10
 pkgdesc="xmodem, ymodem and zmodem file transfer protocols"
 url="https://www.ohse.de/uwe/software/lrzsz.html"
 license=('GPL2')
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 source=(https://www.ohse.de/uwe/releases/$pkgname-$pkgver.tar.gz
 	https://src.fedoraproject.org/rpms/lrzsz/raw/rawhide/f/lrzsz-0.12.20.patch
 	lrzsz.patch)
@@ -25,9 +25,8 @@ prepare() {
 
 build() {
   cd "$srcdir"/$pkgname-$pkgver
-  # Rename file so they can be used with minicom
   ./configure --prefix=/usr --mandir=/usr/share/man \
-	--program-transform-name=s/l//
+    --program-transform-name=s/l/lrzsz-/
   make -j1
 }
 
