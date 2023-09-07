@@ -3,9 +3,9 @@
 
 pkgname=lsscsi
 pkgver=0.32
-pkgrel=1
+pkgrel=2
 pkgdesc='A tool that lists devices connected via SCSI and its transports'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='http://sg.danny.cz/scsi/lsscsi.html'
 license=('GPL')
 depends=('sysfsutils')
