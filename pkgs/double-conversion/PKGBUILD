@@ -5,9 +5,9 @@
 
 pkgname=double-conversion
 pkgver=3.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Binary-decimal and decimal-binary routines for IEEE doubles'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://github.com/google/double-conversion'
 license=(BSD)
 depends=(gcc-libs)
