@@ -3,9 +3,9 @@
 
 pkgname=libgtop
 pkgver=2.41.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Library for collecting system monitoring data'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://gitlab.gnome.org/GNOME/libgtop'
 license=('GPL')
 depends=('glib2' 'glibc' 'libxau')
