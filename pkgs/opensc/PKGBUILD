@@ -5,9 +5,9 @@
 
 pkgname=opensc
 pkgver=0.23.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Tools and libraries for smart cards'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://github.com/OpenSC/OpenSC/wiki'
 license=('LGPL')
 backup=('etc/opensc.conf')
