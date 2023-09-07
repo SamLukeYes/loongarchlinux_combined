@@ -2,9 +2,9 @@
 
 pkgname=brial
 pkgver=1.2.12
-pkgrel=2
+pkgrel=3
 pkgdesc='Library for polynomials over boolean rings'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://github.com/BRiAl/BRiAl'
 license=(GPL)
 depends=(m4ri)
