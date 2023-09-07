@@ -4,14 +4,14 @@
 
 pkgname=libeatmydata
 pkgver=130
-pkgrel=1
+pkgrel=2
 pkgdesc='Library and utilities designed to disable fsync and friends.'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://github.com/stewartsmith/libeatmydata'
 license=('GPL3')
 depends=('bash')
 source=("https://github.com/stewartsmith/libeatmydata/archive/v$pkgver/$pkgname-$pkgver.tar.gz")
-md5sums=('560c0704ae4e8533e79a363ccf46f632')
+sha256sums=('1b4d53c84381acc7f39f61764d97f63e3f56e4ab6a67480bba9180c2059e210d')
 
 prepare() {
   cd libeatmydata-$pkgver
