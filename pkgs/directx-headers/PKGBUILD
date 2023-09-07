@@ -4,8 +4,8 @@
 pkgname=directx-headers
 pkgdesc="DirectX headers for using D3D12"
 pkgver=1.610.0
-pkgrel=1
-arch=('loong64' 'x86_64')
+pkgrel=2
+arch=("loong64" "x86_64")
 makedepends=('meson')
 url="https://github.com/microsoft/DirectX-Headers"
 license=('MIT')
