@@ -3,7 +3,7 @@
 
 pkgname=openfire
 pkgver=4.7.5
-pkgrel=3
+pkgrel=4
 pkgdesc="High performance XMPP (Jabber) server."
 arch=('any')
 url='https://www.igniterealtime.org/projects/openfire/'
