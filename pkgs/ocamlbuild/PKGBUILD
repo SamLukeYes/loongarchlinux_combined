@@ -3,9 +3,9 @@
 
 pkgname=ocamlbuild
 pkgver=0.14.2
-pkgrel=3
+pkgrel=4
 pkgdesc='Build tool, that has built-in rules for building OCaml library and programs'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL2)
 url='https://github.com/ocaml/ocamlbuild/releases'
 depends=('ocaml>=5.0.0')
