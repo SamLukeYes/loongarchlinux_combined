@@ -2,7 +2,7 @@
 
 pkgname=("lua-dkjson" "lua53-dkjson" "lua52-dkjson" "lua51-dkjson")
 pkgver=2.6
-pkgrel=1
+pkgrel=2
 pkgdesc='David Kolf’s Pure Lua JSON module with UTF-8 support and no external dependencies'
 arch=('any')
 url="http://dkolf.de/src/dkjson-lua.fsl/home"
