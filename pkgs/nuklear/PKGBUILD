@@ -3,7 +3,7 @@
 
 pkgname=nuklear
 pkgver=4.10.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Single-header ANSI C immediate mode cross-platform GUI library'
 url='https://github.com/Immediate-Mode-UI/Nuklear'
 arch=('any')
