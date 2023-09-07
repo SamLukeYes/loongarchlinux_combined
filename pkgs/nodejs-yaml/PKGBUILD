@@ -3,7 +3,7 @@
 _npmname=yaml
 pkgname=nodejs-$_npmname
 pkgver=2.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="JavaScript parser and stringifier for YAML"
 arch=('any')
 url="https://eemeli.org/yaml/"
