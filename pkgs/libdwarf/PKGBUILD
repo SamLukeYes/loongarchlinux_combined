@@ -5,9 +5,9 @@
 pkgname=libdwarf
 epoch=1
 pkgver=0.7.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A library for handling DWARF Debugging Information Format"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=('GPL' 'LGPL')
 url="https://www.prevanders.net/dwarf.html"
 depends=('elfutils')
