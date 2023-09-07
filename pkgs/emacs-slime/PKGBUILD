@@ -7,7 +7,7 @@
 pkgbase=emacs-slime
 pkgname=('emacs-slime' 'cl-swank')
 pkgver=2.28
-pkgrel=2
+pkgrel=3
 pkgdesc='Superior Lisp Interaction Mode for Emacs'
 arch=('any')
 url='https://slime.common-lisp.dev'
