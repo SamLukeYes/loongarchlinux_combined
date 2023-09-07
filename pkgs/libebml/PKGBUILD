@@ -4,9 +4,9 @@
 
 pkgname=libebml
 pkgver=1.4.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Extensible Binary Meta Language library'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url=https://github.com/Matroska-Org/libebml
 license=(LGPL2.1)
 depends=(gcc-libs)
