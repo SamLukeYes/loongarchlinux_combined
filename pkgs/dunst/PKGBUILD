@@ -5,10 +5,10 @@
 
 pkgname=dunst
 pkgver=1.9.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Customizable and lightweight notification-daemon"
 url="https://dunst-project.org/"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('BSD')
 depends=('libxinerama' 'dbus' 'systemd' 'wayland' 'libxss' 'pango' 'gdk-pixbuf2' 'libxrandr' 'glib2')
 makedepends=('libnotify')
