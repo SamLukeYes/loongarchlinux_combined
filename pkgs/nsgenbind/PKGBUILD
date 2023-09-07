@@ -3,9 +3,9 @@
 
 pkgname=nsgenbind
 pkgver=0.8
-pkgrel=3
+pkgrel=4
 pkgdesc='NetSurf JavaScript binding generator'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://git.netsurf-browser.org/nsgenbind.git'
 license=(GPL)
 makedepends=(git netsurf-buildsystem)
