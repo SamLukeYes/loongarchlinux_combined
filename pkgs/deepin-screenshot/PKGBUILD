@@ -4,9 +4,9 @@
 
 pkgname=deepin-screenshot
 pkgver=5.0.0
-pkgrel=6
+pkgrel=7
 pkgdesc="Easy-to-use screenshot tool for linuxdeepin desktop environment"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://github.com/linuxdeepin/deepin-screenshot"
 license=('GPL3')
 depends=('deepin-qt5integration' 'dtkwm' 'deepin-turbo')
