@@ -4,9 +4,9 @@
 
 pkgname=blueman
 pkgver=2.3.5
-pkgrel=2
+pkgrel=3
 pkgdesc="GTK+ Bluetooth Manager"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://github.com/blueman-project/blueman"
 license=('GPL')
 depends=('bluez' 'bluez-libs' 'gtk3' 'libnm' 'python-cairo' 'python-gobject')
