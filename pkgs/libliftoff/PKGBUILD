@@ -4,9 +4,9 @@
 
 pkgname=libliftoff
 pkgver=0.4.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Lightweight KMS plane library'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url=https://gitlab.freedesktop.org/emersion/libliftoff
 license=(MIT)
 depends=(
