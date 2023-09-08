@@ -8,8 +8,8 @@
 pkgbase=projectm
 pkgname=('projectm' 'projectm-sdl' 'projectm-pulseaudio')
 pkgver=3.1.12
-pkgrel=4
-arch=('loong64' 'x86_64')
+pkgrel=5
+arch=("loong64" "x86_64")
 url='https://github.com/projectM-visualizer/projectm'
 license=('LGPL')
 makedepends=('mesa-libgl' 'glm' 'qt5-base' 'ftgl' 'glew' 'sdl2' 'libpulse')
