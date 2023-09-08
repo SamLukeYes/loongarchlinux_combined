@@ -4,11 +4,11 @@
 
 pkgname=zh-autoconvert
 pkgver=0.3.16
-pkgrel=5
+pkgrel=6
 pkgdesc="An intelligent Chinese Encoding converter"
 url="https://code.google.com/archive/p/libhz/"
 license=('LGPL')
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 depends=('glibc')
 source=(https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/libhz/${pkgname}-${pkgver}.tar.gz
         autoconvert.patch)
