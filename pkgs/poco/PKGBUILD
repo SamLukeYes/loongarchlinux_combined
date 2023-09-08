@@ -8,9 +8,9 @@
 pkgname=poco
 pkgver=1.12.4
 _pkgver=${pkgver/_/}
-pkgrel=1
+pkgrel=2
 pkgdesc="C++ class libraries for network-centric, portable applications, complete edition with debug libraries"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="http://www.pocoproject.org/"
 license=('custom:boost')
 depends=('mariadb-libs' 'openssl' 'unixodbc')
