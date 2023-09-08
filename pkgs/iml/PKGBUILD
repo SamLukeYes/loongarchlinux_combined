@@ -3,9 +3,9 @@
 
 pkgname=iml
 pkgver=1.0.5
-pkgrel=3
+pkgrel=4
 pkgdesc="C Library of integer matrix algorithms"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://cs.uwaterloo.ca/~astorjoh/iml.html"
 license=(GPL)
 depends=(gmp cblas)
