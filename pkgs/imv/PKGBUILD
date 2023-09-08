@@ -3,10 +3,10 @@
 
 pkgname=imv
 pkgver=4.4.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Image viewer for Wayland and X11'
 url='https://sr.ht/~exec64/imv/'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL)
 depends=(freeimage glu libheif libinih libnsgif librsvg libxkbcommon libxkbcommon-x11 pango)
 makedepends=(asciidoc cmocka meson)
