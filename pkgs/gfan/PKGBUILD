@@ -3,9 +3,9 @@
 
 pkgname=gfan
 pkgver=0.6.2
-pkgrel=2
+pkgrel=3
 pkgdesc="A software package for computing Gröbner fans and tropical varieties"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="http://home.imf.au.dk/jensen/software/gfan/gfan.html"
 license=(GPL)
 depends=(cddlib)
@@ -22,6 +22,7 @@ prepare() {
 
 build() {
   cd gfan$pkgver
+  CFLAGS+=" -I/usr/include/cddlib" \
   make cddnoprefix=true
 }
 
