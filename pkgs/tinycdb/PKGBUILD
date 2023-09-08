@@ -4,9 +4,9 @@
 
 pkgname=tinycdb
 pkgver=0.78
-pkgrel=6
+pkgrel=7
 pkgdesc='Very fast and simple package for creating and reading constant data bases'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://www.corpit.ru/mjt/tinycdb.html"
 license=(custom)
 depends=(glibc)
