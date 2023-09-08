@@ -3,9 +3,9 @@
 
 pkgname=pqiv
 pkgver=2.12
-pkgrel=6
+pkgrel=7
 pkgdesc='Powerful image viewer with minimal UI'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://github.com/phillipberndt/pqiv"
 license=(GPL3)
 depends=(gtk3 gdk-pixbuf2 glib2 cairo)
