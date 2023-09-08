@@ -5,9 +5,9 @@
 
 pkgname=uasm
 pkgver=2.56.2
-pkgrel=1
+pkgrel=2
 pkgdesc='A MASM-compatible assembler'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='http://www.terraspace.co.uk/uasm.html'
 # Previous versions were licensed under the following licenses:
 # - JWasm License
