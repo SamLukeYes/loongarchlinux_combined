@@ -2,10 +2,10 @@
 
 pkgname=gdl
 pkgver=3.40.0
-pkgrel=1
+pkgrel=2
 pkgdesc="GNOME Docking Library"
 url="https://gitlab.gnome.org/GNOME/gdl"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL)
 depends=(gtk3)
 makedepends=(gtk-doc intltool gobject-introspection git)
