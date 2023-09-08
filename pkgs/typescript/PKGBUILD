@@ -4,7 +4,7 @@
 
 _name=TypeScript
 pkgname=typescript
-pkgver=5.1.5
+pkgver=5.2.2
 pkgrel=1
 pkgdesc='JavaScript with syntax for types'
 arch=('any')
@@ -13,7 +13,7 @@ license=('Apache')
 depends=('nodejs')
 makedepends=('npm' 'rsync')
 source=("https://github.com/microsoft/$_name/archive/v$pkgver/$pkgname-$pkgver.tar.gz")
-b2sums=('32773daf29fe6c9cf76d3a729d018e9c655bfc7cec5999f76bfe95baaf973e554e0146e756c663c38e1ca3a86dd8e71d9d821eeeccd56fed68fdd15d841ee69e')
+b2sums=('3fa418b69c22494df80be0cdcd39ae52e13d35d908f084aec57af52a2d65d4a8081704239dbf47fad177ae3da907dcb384e61a3131f5751cf1f90b13a4bece8a')
 
 prepare() {
   cd $_name-$pkgver
