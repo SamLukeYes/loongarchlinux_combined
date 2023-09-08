@@ -2,9 +2,9 @@
 
 pkgname=glava
 pkgver=1.6.3
-pkgrel=2
+pkgrel=3
 pkgdesc='OpenGL audio spectrum visualizer'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://github.com/wacossusca34/glava'
 license=('GPL3')
 depends=('x-server' 'pulseaudio' 'libxext' 'libxcomposite' 'libxrender')
