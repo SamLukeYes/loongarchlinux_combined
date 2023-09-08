@@ -4,8 +4,8 @@
 pkgname=pps-tools
 pkgdesc="LinuxPPS user-space tools"
 pkgver=1.0.3
-pkgrel=1
-arch=('loong64' 'x86_64')
+pkgrel=2
+arch=("loong64" "x86_64")
 url="http://linuxpps.org/"
 license=('GPL2')
 depends=('bash')
