@@ -2,7 +2,7 @@
 
 pkgname=liri-cmake-shared
 pkgver=1.1.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Extra imports and modules for Cmake"
 arch=('any')
 url='https://liri.io'
