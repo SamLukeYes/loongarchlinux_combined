@@ -2,9 +2,9 @@
 
 pkgname=plfit
 pkgver=0.9.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Fitting power-law distributions to empirical data'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://github.com/ntamas/plfit'
 license=(GPL2)
 depends=(glibc)
