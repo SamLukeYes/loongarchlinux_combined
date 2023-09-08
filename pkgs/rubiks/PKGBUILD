@@ -2,9 +2,9 @@
 
 pkgname=rubiks
 pkgver=20070912
-pkgrel=4
+pkgrel=5
 pkgdesc="Several programs for working with Rubik's cubes"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://www.sagemath.org"
 license=(GPL)
 depends=(gcc-libs)
