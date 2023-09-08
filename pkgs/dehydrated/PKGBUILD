@@ -5,7 +5,7 @@
 
 pkgname=dehydrated
 pkgver=0.7.1
-pkgrel=1
+pkgrel=2
 pkgdesc='letsencrypt/acme client implemented as a shell-script – just add water'
 arch=('any')
 url=https://dehydrated.io
