@@ -2,9 +2,9 @@
 
 pkgname=ukui-system-monitor
 pkgver=1.0.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Monitor for UKUI desktop environment"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL')
 url="https://github.com/ukui/ukui-system-monitor"
 groups=('ukui')
