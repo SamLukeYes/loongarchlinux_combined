@@ -3,10 +3,10 @@
 pkgdesc='Client-side decorations library for Wayland clients'
 pkgname=libdecor
 pkgver=0.1.1
-pkgrel=2
+pkgrel=3
 url="https://gitlab.gnome.org/jadahl/libdecor"
 license=('MIT')
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 depends=('wayland' 'pango' 'dbus')
 makedepends=('cmake' 'ninja' 'meson' 'wayland-protocols')
 source=("https://gitlab.gnome.org/jadahl/libdecor/-/archive/${pkgver}/libdecor-${pkgver}.tar.gz")
