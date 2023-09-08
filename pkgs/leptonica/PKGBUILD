@@ -3,9 +3,9 @@
 
 pkgname=leptonica
 pkgver=1.83.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Software that is broadly useful for image processing and image analysis applications"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="http://www.leptonica.com/"
 license=('custom')
 depends=('giflib' 'libjpeg-turbo' 'libpng' 'libtiff' 'zlib' 'libwebp' 'openjpeg2')
