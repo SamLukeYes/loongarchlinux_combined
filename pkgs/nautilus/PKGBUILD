@@ -8,10 +8,10 @@ pkgname=(
   libnautilus-extension-docs
 )
 pkgver=44.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Default file manager for GNOME"
 url="https://wiki.gnome.org/Apps/Files"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL)
 depends=(
   dconf
