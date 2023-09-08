@@ -2,9 +2,9 @@
 
 pkgname=imlib
 pkgver=1.9.15
-pkgrel=18
+pkgrel=19
 pkgdesc="General image handling library for X11 and Gtk"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="http://freshmeat.net/projects/imlib/"
 license=('GPL')
 depends=('giflib' 'libpng' 'libtiff' 'libxext')
