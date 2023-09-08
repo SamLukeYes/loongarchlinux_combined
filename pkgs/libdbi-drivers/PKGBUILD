@@ -5,18 +5,18 @@
 
 pkgname=libdbi-drivers
 pkgver=0.9.0
-pkgrel=10
+pkgrel=11
 pkgdesc="Database drivers for libdbi (MySQL, PostgreSQL, and SQLite)"
 url="http://libdbi-drivers.sourceforge.net/"
 license=('LGPL')
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 depends=('libdbi')
 makedepends=('mariadb-libs' 'postgresql-libs' 'sqlite')
 optdepends=('mariadb-libs: To work with MariaDB using libdbdmysql'
             'postgresql-libs: To work with PostgreSQL using libdbdpgsql'
             'sqlite: To work with SQLite using libdbdsqlite3')
 source=("https://downloads.sourceforge.net/$pkgname/$pkgname-$pkgver.tar.gz")
-sha1sums=('8472875d30c216540d48d591b442e40ba4f7df5d')
+sha256sums=('43d2eacd573a4faff296fa925dd97fbf2aedbf1ae35c6263478210c61004c854')
 
 build() {
   cd $pkgname-$pkgver
