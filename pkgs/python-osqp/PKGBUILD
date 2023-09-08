@@ -3,11 +3,11 @@
 _pyname=osqp
 pkgname=python-$_pyname
 pkgver=0.6.2.post9
-pkgrel=1
+pkgrel=2
 pkgdesc='Python wrapper for OSQP: the Operator Splitting QP Solver'
 url='https://osqp.org/'
 license=(Apache)
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 depends=(python-scipy python-qdldl)
 makedepends=(python-build python-installer python-setuptools python-wheel cmake)
 checkdepends=(python-pytest intel-oneapi-mkl)
