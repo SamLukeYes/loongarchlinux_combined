@@ -2,9 +2,9 @@
 
 pkgname=uget
 pkgver=2.2.3
-pkgrel=6
+pkgrel=7
 pkgdesc='GTK download manager featuring download classification and HTML import'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://ugetdm.com/'
 license=('LGPL')
 depends=('libnotify' 'gtk3' 'gstreamer' 'curl')
