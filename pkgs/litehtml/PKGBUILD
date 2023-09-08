@@ -2,10 +2,10 @@
 
 pkgname=litehtml
 pkgver=0.8
-pkgrel=1
+pkgrel=2
 pkgdesc='Fast and lightweight HTML/CSS rendering engine'
 url='http://www.litehtml.com/'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(BSD)
 depends=(gumbo-parser gcc-libs)
 makedepends=(cmake)
