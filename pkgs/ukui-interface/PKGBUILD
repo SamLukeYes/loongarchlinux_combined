@@ -2,9 +2,9 @@
 
 pkgname=ukui-interface
 pkgver=1.0.1
-pkgrel=2
+pkgrel=3
 pkgdesc="UKUI interface for system configuration and related libraries"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL')
 url="https://github.com/ukui/ukui-interface"
 groups=('ukui')
