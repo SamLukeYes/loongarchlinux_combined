@@ -3,11 +3,11 @@
 
 pkgname=power-profiles-daemon
 pkgver=0.13
-pkgrel=1
+pkgrel=2
 pkgdesc='Makes power profiles handling available over D-Bus'
 url='https://gitlab.freedesktop.org/hadess/power-profiles-daemon'
 license=(GPL3)
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 depends=(upower polkit)
 optdepends=('python-gobject: for powerprofilesctl')
 makedepends=(meson)
