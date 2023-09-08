@@ -2,10 +2,10 @@
 
 pkgname=polari
 pkgver=43.0
-pkgrel=3
+pkgrel=4
 pkgdesc="An IRC Client for GNOME"
 url="https://wiki.gnome.org/Apps/Polari"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL)
 depends=(
   gjs
