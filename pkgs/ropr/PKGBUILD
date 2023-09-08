@@ -2,10 +2,10 @@
 
 pkgname=ropr
 pkgver=0.2.22
-pkgrel=1
+pkgrel=2
 pkgdesc='Blazing fast multithreaded ROP Gadget finder'
 url='https://github.com/Ben-Lichtman/ropr'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('Apache')
 depends=('glibc' 'gcc-libs')
 makedepends=('cargo')
