@@ -2,9 +2,9 @@
 # Contributor: Adrian Perez de Castro <aperez@igalia.com>
 pkgname=libdispatch
 pkgver=5.5.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Comprehensive support for concurrent code execution on multicore hardware'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url=https://apple.github.io/swift-corelibs-libdispatch
 license=('Apache')
 depends=('glibc')
