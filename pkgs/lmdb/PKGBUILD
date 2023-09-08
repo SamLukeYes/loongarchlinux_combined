@@ -4,9 +4,9 @@
 pkgname=lmdb
 pkgver=0.9.30
 _commit=8f44dca45d87bc1f8da65428172668c5e6154179
-pkgrel=3
+pkgrel=4
 pkgdesc="Symas Lightning Memory-Mapped Database"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://symas.com/lmdb"
 license=('custom:OpenLDAP')
 depends=('glibc')
