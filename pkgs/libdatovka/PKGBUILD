@@ -2,9 +2,9 @@
 
 pkgname=libdatovka
 pkgver=0.3.0
-pkgrel=3
+pkgrel=4
 pkgdesc="ISDS client library"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://www.datovka.cz/cs/pages/libdatovka.html"
 license=('LGPL')
 depends=('libxml2' 'openssl' 'curl')
