@@ -6,9 +6,9 @@
 pkgname=greetd-gtkgreet
 _pkgname=${pkgname#*-}
 pkgver=0.7
-pkgrel=2
+pkgrel=3
 pkgdesc='GTK based greeter for greetd'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://git.sr.ht/~kennylevinsen/$_pkgname"
 license=(GPL3)
 depends=(json-c
