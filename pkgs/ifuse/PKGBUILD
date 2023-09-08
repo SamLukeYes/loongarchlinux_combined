@@ -7,10 +7,10 @@
 
 pkgname=ifuse
 pkgver=1.1.4
-pkgrel=4
+pkgrel=5
 pkgdesc="A fuse filesystem to access the contents of an iPhone or iPod Touch"
 url="https://libimobiledevice.org/"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(LGPL2.1)
 depends=(
   fuse2
