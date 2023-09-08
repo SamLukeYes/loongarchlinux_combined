@@ -3,16 +3,16 @@
 # Contributor: Denis Zawada <deno@bajtogrod.pl>
 
 pkgname=igraph
-pkgver=0.10.5
+pkgver=0.10.7
 pkgrel=1
 pkgdesc='A library for creating and manipulating (un)directed graphs'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://igraph.org/c/'
 license=(GPL2)
 depends=(glpk arpack libxml2 plfit)
 makedepends=(cmake)
 source=(https://github.com/igraph/igraph/releases/download/$pkgver/$pkgname-$pkgver.tar.gz)
-sha256sums=('1c2725122fda9b72065095794bc7748939d90d942d312cb63c6160cd98d50f1e')
+sha256sums=('b9e2a46b70896a379d784ea227f076b59750cc7411463b1d4accbf9e38b361ad')
 
 build() {
   cmake -B build -S $pkgname-$pkgver \
