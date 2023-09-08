@@ -3,9 +3,9 @@
 
 pkgname=libck
 pkgver=0.7.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A concurrency primitives, safe memory reclamation mechanisms C library"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="http://concurrencykit.org"
 license=('BSD' 'Apache' 'Custom')
 depends=('glibc')
