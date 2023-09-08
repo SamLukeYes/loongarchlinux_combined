@@ -1,7 +1,7 @@
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 
 pkgname=('geoip-database' 'geoip-database-extra')
-pkgver=20230519
+pkgver=20230901
 pkgrel=1
 arch=('any')
 url="https://mailfud.org/geoip-legacy/"
@@ -15,12 +15,12 @@ source=(GeoIP-$pkgver.dat.gz::$_source_base/GeoIP.dat.gz
         GeoIPCityv6-$pkgver.dat.gz::$_source_base/GeoIPCityv6.dat.gz
         GeoIPASNum-$pkgver.dat.gz::$_source_base/GeoIPASNum.dat.gz
         GeoIPASNumv6-$pkgver.dat.gz::$_source_base/GeoIPASNumv6.dat.gz)
-sha256sums=('873df1726f1e5616845d81a7b9b66e1cdf601042f56a3e2ac7cb7b1564c82905'
-            '2ddb998dcff3093e08ed7f6a919942676ce4427dc6a3c75d0459fe4c8d9a565c'
-            'c84fae48e7af344f56d1b024aa88fa9f383ab05eda9041de279a6b70a2cff1aa'
-            '3f077f52e7d65bea3781253eb7849d3b3d812cc3ab573f44cfcbb83f9dceb0e7'
-            'c6172fa73f830e46412d2c1f73d74d01d2c1404b42c647999f4a8967889fc498'
-            'ba5598f34f35f16febbf4da7ce272dd3bb1b163f433e1941eca310635a93a3f0')
+sha256sums=('3cc915a2a37e5fec0a11850dcf0c3f531ac11bd83dee99c8aa3946a229fc7732'
+            '16c14488bbc06b599be4342588a2ff949bda002b66b1b3011f6e2d2bbb01ed73'
+            '3fe1e42b1992060165c79168e6a18cf7ccfed26e5cba641052435eb68f1db32b'
+            '21ab998910417ccf8a4552d91ee2e8034e2fab52fa8b723d3c78901869ed092a'
+            'cc40c97892e87201b4c4349f2175d6f6dc8834b10a3af7247a1b93ab0177e902'
+            '85979f42a3115cc466afe4346b1f933b76f295843459e9452de176b8f383e7e2')
 
 prepare() {
   cd "$srcdir"
@@ -30,32 +30,32 @@ prepare() {
 check() {
   cd "$srcdir"
 
-  if [[ $(geoiplookup -f GeoIP.dat 8.8.8.8) != *'US, United States' ]]; then
+  if [[ $(geoiplookup -f GeoIP.dat archlinux.org) != *'FI, Finland' ]]; then
     echo >&2 'Unable to resolve IPv4 address to country.'
     return 1
   fi
 
-  if [[ $(geoiplookup6 -f GeoIPv6.dat 2001:4860:4860::8888) != *'US, United States' ]]; then
+  if [[ $(geoiplookup6 -f GeoIPv6.dat archlinux.org) != *'FI, Finland' ]]; then
     echo >&2 'Unable to resolve IPv6 address to country.'
     return 1
   fi
 
-  if [[ $(geoiplookup -f GeoIPCity.dat 8.8.8.8) != *'US, CA, California, Los Angeles'* ]]; then
+  if [[ $(geoiplookup -f GeoIPCity.dat archlinux.org) != *'FI, 18, N/A, Helsinki'* ]]; then
     echo >&2 'Unable to resolve IPv4 address to city.'
     return 1
   fi
 
-  if [[ $(geoiplookup6 -f GeoIPCityv6.dat 2001:4860:4860::8888) != *'US, 00, N/A, N/A'* ]]; then
+  if [[ $(geoiplookup6 -f GeoIPCityv6.dat archlinux.org) != *'FI, 18, Helsinki'* ]]; then
     echo >&2 'Unable to resolve IPv6 address to city.'
     return 1
   fi
 
-  if [[ $(geoiplookup -f GeoIPASNum.dat 8.8.8.8) != *'AS15169 GOOGLE' ]]; then
+  if [[ $(geoiplookup -f GeoIPASNum.dat archlinux.org) != *'AS24940 Hetzner Online GmbH' ]]; then
     echo >&2 'Unable to resolve IPv4 address to ASN.'
     return 1
   fi
 
-  if [[ $(geoiplookup6 -f GeoIPASNumv6.dat 2001:4860:4860::8888) != *'AS15169 GOOGLE' ]]; then
+  if [[ $(geoiplookup6 -f GeoIPASNumv6.dat archlinux.org) != *'AS24940 Hetzner Online GmbH' ]]; then
     echo >&2 'Unable to resolve IPv6 address to ASN.'
     return 1
   fi
