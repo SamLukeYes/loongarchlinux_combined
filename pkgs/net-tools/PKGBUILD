@@ -3,9 +3,9 @@
 
 pkgname=net-tools
 pkgver=2.10
-pkgrel=2
+pkgrel=3
 pkgdesc="Configuration tools for Linux networking"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL2')
 url="http://net-tools.sourceforge.net/"
 depends=('glibc')
