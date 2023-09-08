@@ -3,10 +3,10 @@
 
 pkgname=gtk2
 pkgver=2.24.33
-pkgrel=3
+pkgrel=4
 pkgdesc="GObject-based multi-platform GUI toolkit (legacy)"
 url="https://www.gtk.org/"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 depends=(
   atk
   cairo
