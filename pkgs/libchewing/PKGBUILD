@@ -5,10 +5,10 @@
 
 pkgname=libchewing
 pkgver=0.5.1
-pkgrel=4
+pkgrel=5
 pkgdesc='Intelligent Chinese phonetic input method'
-url='http://chewing.im/'
-arch=('loong64' 'x86_64')
+url='https://chewing.im/'
+arch=("loong64" "x86_64")
 license=('LGPL2.1')
 depends=('sqlite')
 optdepends=(
