@@ -3,9 +3,9 @@
 
 pkgname=ispell
 pkgver=3.4.05
-pkgrel=1
+pkgrel=2
 pkgdesc="An interactive spell-checking program for Unix"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://www.cs.hmc.edu/~geoff/ispell.html"
 license=('BSD')
 depends=('ncurses' 'sh')
