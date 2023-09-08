@@ -4,7 +4,7 @@ pkgname=python-freezegun
 pkgver=1.2.2
 # https://github.com/spulec/freezegun/issues/468
 _commit=9d5ea73e0464e5856bc7ab75cc45b35d7eb88c32
-pkgrel=2
+pkgrel=3
 pkgdesc="Let your Python tests travel through time"
 arch=('any')
 license=('Apache')
