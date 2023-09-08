@@ -2,9 +2,9 @@
 
 pkgname=zutty
 pkgver=0.14
-pkgrel=1
+pkgrel=2
 pkgdesc='Terminal emulator'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://tomscii.sig7.se/zutty'
 license=(GPL3)
 depends=(freetype2 libglvnd libxmu xorg-fonts-misc)
