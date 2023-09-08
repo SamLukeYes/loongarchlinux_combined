@@ -4,9 +4,9 @@
 
 pkgname=smpeg
 pkgver=2.0.0
-pkgrel=2
+pkgrel=3
 pkgdesc="SDL MPEG Player Library"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://icculus.org/smpeg/"
 license=(LGPL)
 depends=(sdl2)
