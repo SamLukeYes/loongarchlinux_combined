@@ -2,9 +2,9 @@
 
 pkgname=gcolor3
 pkgver=2.4.0
-pkgrel=5
+pkgrel=6
 pkgdesc='Simple color chooser written in GTK'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://www.hjdskes.nl/projects/gcolor3/'
 license=('GPL2')
 depends=('at-spi2-core' 'cairo' 'gdk-pixbuf2' 'glib2' 'gtk3' 'hicolor-icon-theme')
