@@ -2,9 +2,9 @@
 
 pkgname=gd
 pkgver=2.3.3
-pkgrel=6
+pkgrel=7
 pkgdesc="Library for the dynamic creation of images by programmers"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://libgd.github.io/"
 license=('custom')
 depends=('fontconfig' 'libxpm' 'libwebp' 'libavif' 'libheif')
