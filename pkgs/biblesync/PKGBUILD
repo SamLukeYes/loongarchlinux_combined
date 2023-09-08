@@ -4,9 +4,9 @@
 
 pkgname=biblesync
 pkgver=2.1.0
-pkgrel=3
+pkgrel=4
 pkgdesc='multicast shared co-navigation library for Bible programs'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://github.com/karlkleinpaste/biblesync"
 license=('custom')
 makedepends=('cmake')
