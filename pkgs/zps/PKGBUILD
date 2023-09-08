@@ -2,9 +2,9 @@
 
 pkgname=zps
 pkgver=1.2.8
-pkgrel=1
+pkgrel=2
 pkgdesc="A small utility for listing and cleaning up zombie processes"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://github.com/orhun/zps"
 license=('GPL3')
 depends=('glibc')
