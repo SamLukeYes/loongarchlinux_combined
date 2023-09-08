@@ -3,9 +3,9 @@
 
 pkgname=libdc1394
 pkgver=2.2.7
-pkgrel=1
+pkgrel=2
 pkgdesc='Library to control IEEE 1394 based cameras'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://damien.douxchamps.net/ieee1394/libdc1394/'
 license=('LGPL')
 depends=('glibc' 'libraw1394' 'libusb')
