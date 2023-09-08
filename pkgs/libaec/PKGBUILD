@@ -2,9 +2,9 @@
 
 pkgname=libaec
 pkgver=1.0.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Adaptive Entropy Coding library"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://gitlab.dkrz.de/k202009/libaec"
 license=(custom)
 depends=(glibc)
