@@ -2,7 +2,7 @@
 
 pkgname=tuning-library
 pkgver=1.1.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Micro-tuning format parsing and frequency finding as a header-only C+ library"
 arch=(any)
 url="https://surge-synth-team.org/tuning-library/"
