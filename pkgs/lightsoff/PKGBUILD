@@ -3,10 +3,10 @@
 
 pkgname=lightsoff
 pkgver=40.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Turn off all the lights"
 url="https://wiki.gnome.org/Apps/Lightsoff"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL)
 depends=(gtk3 librsvg)
 makedepends=(yelp-tools vala git meson)
