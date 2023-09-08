@@ -6,9 +6,9 @@
 
 pkgname=tupitube
 pkgver=0.2.18
-pkgrel=5
+pkgrel=6
 pkgdesc='Design and authoring tool for digital artists interested in 2D animation'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://tupitube.com/'
 license=('GPL2')
 depends=('ffmpeg' 'qt5-multimedia' 'qt5-svg' 'quazip')
