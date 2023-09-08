@@ -4,9 +4,9 @@
 
 pkgname=libaccounts-glib
 pkgver=1.26
-pkgrel=2
+pkgrel=3
 pkgdesc='Glib-based client library for accessing the online accounts database'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://gitlab.com/accounts-sso/libaccounts-glib'
 license=(LGPL)
 depends=(glib2 libxml2 sqlite)
