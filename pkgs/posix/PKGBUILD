@@ -12,7 +12,7 @@
 pkgbase=posix
 pkgname=('posix' 'posix-xsi' 'posix-user-portability' 'posix-c-development' 'posix-software-development')
 pkgver=2017
-pkgrel=3
+pkgrel=4
 pkgdesc="metapackage providing the POSIX shell and utilities (XCU)"
 arch=('any')
 url="https://pubs.opengroup.org/onlinepubs/9699919799/"
