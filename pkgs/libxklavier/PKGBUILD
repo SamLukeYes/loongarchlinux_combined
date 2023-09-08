@@ -4,9 +4,9 @@
 
 pkgname=libxklavier
 pkgver=5.4
-pkgrel=5
+pkgrel=6
 pkgdesc='High-level API for X Keyboard Extension (deprecated)'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://www.freedesktop.org/wiki/Software/LibXklavier/'
 license=('LGPL')
 depends=('glib2' 'glibc' 'iso-codes' 'libx11' 'libxi' 'libxkbfile' 'libxml2' 'xkeyboard-config' 'xorg-xkbcomp')
