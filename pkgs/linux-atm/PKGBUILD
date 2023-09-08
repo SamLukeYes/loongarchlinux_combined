@@ -3,9 +3,9 @@
 
 pkgname=linux-atm
 pkgver=2.5.2
-pkgrel=8
+pkgrel=9
 pkgdesc="Drivers and tools to support ATM networking under Linux."
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 depends=('glibc')
 optdepends=('flex: for atmsigd')
 url="http://linux-atm.sourceforge.net/"
