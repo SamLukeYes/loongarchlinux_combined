@@ -2,9 +2,9 @@
 
 pkgname=indicator-china-weather
 pkgver=3.0.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Indicator that displays China weather information"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL')
 url="https://github.com/UbuntuKylin/indicator-china-weather"
 groups=('ukui')
