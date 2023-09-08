@@ -4,9 +4,9 @@
 pkgbase=intel-metee
 pkgname=(intel-metee intel-metee-doc)
 pkgver=3.2.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Access library for Intel CSME HECI interface"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://github.com/intel/metee/"
 license=(Apache)
 makedepends=(cmake doxygen)
