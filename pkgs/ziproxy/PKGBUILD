@@ -3,9 +3,9 @@
 
 pkgname=ziproxy
 pkgver=3.3.2
-pkgrel=4
+pkgrel=5
 pkgdesc="forwarding, non-caching, compressing HTTP proxy server"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="http://ziproxy.sourceforge.net/"
 license=('GPL2')
 depends=('giflib' 'libpng' 'libjpeg' 'zlib' 'jasper' 'libsasl')
