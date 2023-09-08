@@ -3,9 +3,9 @@
 
 pkgname=libcgif
 pkgver=0.3.2
-pkgrel=1
+pkgrel=2
 pkgdesc='A fast and lightweight GIF encoding library'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://github.com/dloebl/cgif"
 license=('MIT')
 depends=('glibc')
