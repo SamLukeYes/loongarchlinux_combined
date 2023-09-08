@@ -4,9 +4,9 @@
 
 pkgname=glabels
 pkgver=3.4.1
-pkgrel=9
+pkgrel=10
 pkgdesc='Creating labels and business cards the very easy way'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://gitlab.gnome.org/Archive/glabels'
 license=('GPL3')
 depends=('evolution-data-server' 'iec16022' 'qrencode')
