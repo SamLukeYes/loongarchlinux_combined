@@ -2,7 +2,7 @@
 
 pkgname=simde
 pkgver=0.7.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Implementations of SIMD instruction sets"
 arch=(any)
 url="https://github.com/simd-everywhere/simde"
