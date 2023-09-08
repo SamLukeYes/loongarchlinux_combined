@@ -5,9 +5,9 @@
 
 pkgname=netsurf
 pkgver=3.10
-pkgrel=7
+pkgrel=8
 pkgdesc='Lightweight and fast web browser'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://www.netsurf-browser.org/'
 license=(GPL2 MIT)
 depends=(curl gtk3 'libcss>=0.9.1' 'libdom>=0.4.1' 'libhubbub=0.3.7'
