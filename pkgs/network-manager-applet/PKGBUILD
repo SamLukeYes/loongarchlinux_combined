@@ -11,10 +11,10 @@ pkgname=(
   nm-connection-editor
 )
 pkgver=1.32.0
-pkgrel=3
+pkgrel=4
 pkgdesc="Applet for managing network connections"
 url="https://gitlab.gnome.org/GNOME/network-manager-applet"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(
   GPL
   LGPL
