@@ -6,9 +6,9 @@
 
 pkgname=geany
 pkgver=1.38
-pkgrel=3
+pkgrel=4
 pkgdesc='Fast and lightweight IDE'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://www.geany.org/'
 license=(GPL)
 depends=(gtk3)
