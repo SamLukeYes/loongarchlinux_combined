@@ -3,9 +3,9 @@
 
 pkgname=garcon
 pkgver=4.18.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Freedesktop.org compliant menu library"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://docs.xfce.org/xfce/garcon/start"
 license=('LGPL')
 groups=('xfce4')
