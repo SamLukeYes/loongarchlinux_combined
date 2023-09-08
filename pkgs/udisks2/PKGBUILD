@@ -3,9 +3,9 @@
 
 pkgname=udisks2
 pkgver=2.9.4
-pkgrel=4
+pkgrel=5
 pkgdesc="Disk Management Service, version 2"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://www.freedesktop.org/wiki/Software/udisks/"
 license=('GPL2')
 depends=('acl' 'polkit' 'glib2' 'gcc-libs' 'glibc' 'libatasmart' 'libgudev' 'libblockdev'
