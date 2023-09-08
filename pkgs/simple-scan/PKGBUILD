@@ -5,10 +5,10 @@
 
 pkgname=simple-scan
 pkgver=44.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Simple scanning utility"
 url="https://gitlab.gnome.org/GNOME/simple-scan"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL3)
 depends=(
   colord-sane
