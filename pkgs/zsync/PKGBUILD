@@ -4,7 +4,7 @@
 
 pkgname=zsync
 pkgver=0.6.2
-pkgrel=5
+pkgrel=6
 pkgdesc="A file transfer program that's able to connect to rsync servers"
 arch=("loong64" "x86_64")
 url="http://zsync.moria.org.uk/"
