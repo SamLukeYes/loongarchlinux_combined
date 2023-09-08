@@ -2,7 +2,7 @@
 
 pkgname=pm2
 pkgver=5.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Production process manager for Node.JS applications with a built-in load balancer'
 arch=('any')
 url='https://pm2.keymetrics.io'
