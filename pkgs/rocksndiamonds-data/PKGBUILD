@@ -3,7 +3,7 @@
 
 pkgname=rocksndiamonds-data
 pkgver=4.3.4.0
-pkgrel=1
+pkgrel=2
 arch=(any)
 pkgdesc='rockndiamonds game data and levels'
 url="https://www.artsoft.org/rocksndiamonds/"
