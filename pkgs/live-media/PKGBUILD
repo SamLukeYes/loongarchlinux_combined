@@ -4,10 +4,10 @@
 
 pkgname=live-media
 pkgver=2023.01.19
-pkgrel=1
+pkgrel=2
 pkgdesc='Set of C++ libraries for multimedia streaming'
 url='http://live555.com/liveMedia'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('LGPL')
 depends=('gcc-libs' 'openssl')
 source=(https://download.videolan.org/contrib/live555/live.${pkgver}.tar.gz)
