@@ -3,9 +3,9 @@
 
 pkgname=libnsl
 pkgver=2.0.0
-pkgrel=3
+pkgrel=4
 pkgdesc="Public client interface library for NIS(YP)"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://github.com/thkukuk/libnsl"
 license=(LGPL2.1)
 depends=(glibc libtirpc)
