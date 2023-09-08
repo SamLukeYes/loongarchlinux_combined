@@ -3,9 +3,9 @@
 pkgname=lidia
 pkgver=2.3.0
 _patchver=2019-05-02
-pkgrel=4
+pkgrel=5
 pkgdesc="A library for computational number theory"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://www.math.ucdavis.edu/~latte/"
 license=(GPL)
 depends=(gmp)
