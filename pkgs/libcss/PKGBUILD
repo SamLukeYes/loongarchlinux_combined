@@ -4,9 +4,9 @@
 
 pkgname=libcss
 pkgver=0.9.1
-pkgrel=6
+pkgrel=7
 pkgdesc='CSS parser and selection engine'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://www.netsurf-browser.org/projects/libcss/'
 license=(MIT)
 makedepends=(netsurf-buildsystem)
