@@ -2,9 +2,9 @@
 
 pkgname=ukwm
 pkgver=1.2.1
-pkgrel=4
+pkgrel=5
 pkgdesc="A lightweight GTK+ window manager"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL')
 url="https://github.com/ukui/ukwm"
 groups=('ukui')
