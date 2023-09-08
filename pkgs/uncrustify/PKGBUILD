@@ -3,9 +3,9 @@
 
 pkgname=uncrustify
 pkgver=0.75.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A source code beautifier"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="http://uncrustify.sourceforge.net/"
 license=(GPL)
 depends=(gcc-libs)
