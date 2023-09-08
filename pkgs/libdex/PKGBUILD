@@ -7,10 +7,10 @@ pkgname=(
   libdex-docs
 )
 pkgver=0.2.0
-pkgrel=3
+pkgrel=4
 pkgdesc="A library supporting 'Deferred Execution'"
 url="https://gitlab.gnome.org/GNOME/libdex"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(LGPL)
 depends=(
   glib2
