@@ -2,7 +2,7 @@
 
 pkgname=unicode-emoji
 pkgver=15.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Unicode Emoji Data Files"
 arch=(any)
 license=(BSD)
