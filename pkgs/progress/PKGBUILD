@@ -6,8 +6,8 @@
 pkgname=progress
 pkgdesc="Shows running coreutils basic commands and displays stats"
 pkgver=0.16
-pkgrel=1
-arch=('loong64' 'x86_64')
+pkgrel=2
+arch=("loong64" "x86_64")
 license=('GPL3')
 url="https://github.com/Xfennec/progress"
 depends=('ncurses')
