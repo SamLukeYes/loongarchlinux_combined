@@ -4,9 +4,9 @@
 
 pkgname=liri-text
 pkgver=0.5.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Material Design text editor'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://github.com/lirios/text'
 license=('GPL')
 depends=('fluid')
