@@ -2,9 +2,9 @@
 
 pkgname=glacier-calc
 pkgver=0.3.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Nemo calculator"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://github.com/nemomobile-ux/glacier-calc"
 license=('LGPL')
 depends=('qt5-quickcontrols-nemo')
