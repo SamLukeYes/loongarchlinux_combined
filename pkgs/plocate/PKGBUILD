@@ -3,9 +3,9 @@
 
 pkgname=plocate
 pkgver=1.1.19
-pkgrel=1
+pkgrel=2
 pkgdesc="Alternative to locate, faster and compatible with mlocate's database."
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://plocate.sesse.net"
 license=('GPL2')
 depends=('zstd' 'liburing' 'systemd')
