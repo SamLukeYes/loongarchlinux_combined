@@ -3,10 +3,10 @@
 
 pkgname=python-nptyping
 pkgver=2.5.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Type hints for Numpy'
 url="https://github.com/ramonhagenaars/nptyping"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(MIT)
 depends=(python-numpy python-typing_extensions)
 makedepends=(python-build python-installer python-setuptools python-wheel)
