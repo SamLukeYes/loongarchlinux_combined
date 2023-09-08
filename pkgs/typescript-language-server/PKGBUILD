@@ -2,7 +2,7 @@
 
 pkgname=typescript-language-server
 pkgver=3.3.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Language Server Protocol (LSP) implementation for TypeScript using tsserver'
 url=https://github.com/theia-ide/typescript-language-server
 arch=('any')
