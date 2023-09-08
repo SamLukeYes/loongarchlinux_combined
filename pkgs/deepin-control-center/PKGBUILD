@@ -4,9 +4,9 @@
 
 pkgname=deepin-control-center
 pkgver=5.5.158
-pkgrel=1
+pkgrel=2
 pkgdesc='New control center for linux deepin'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://github.com/linuxdeepin/dde-control-center"
 license=('GPL3')
 depends=('desktop-file-utils' 'dtkwidget' 'deepin-account-faces' 'deepin-api' 'geoip' 'libpwquality'
