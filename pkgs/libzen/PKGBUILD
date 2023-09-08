@@ -3,9 +3,9 @@
 
 pkgname=libzen
 pkgver=0.4.41
-pkgrel=1
+pkgrel=2
 pkgdesc='A C++ utility library'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://mediaarea.net'
 license=('BSD')
 depends=('glibc' 'gcc-libs')
