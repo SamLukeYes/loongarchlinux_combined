@@ -4,9 +4,9 @@
 
 pkgname=iperf
 pkgver=2.1.9
-pkgrel=1
+pkgrel=2
 pkgdesc='A tool to measure maximum TCP bandwidth'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('custom')
 url='https://sourceforge.net/projects/iperf2/'
 depends=('glibc' 'gcc-libs')
