@@ -2,9 +2,9 @@
 
 pkgname=deepin-pw-check
 pkgver=5.1.18
-pkgrel=1
+pkgrel=2
 pkgdesc='Tool to verify the validity of the password'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://github.com/linuxdeepin/deepin-pw-check"
 license=('GPL3')
 depends=('cracklib' 'gtk3' 'iniparser')
