@@ -3,10 +3,10 @@
 
 pkgname=rofi-emoji
 pkgver=3.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc='A Rofi plugin for selecting emojis'
 url='https://github.com/Mange/rofi-emoji'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('MIT')
 depends=('rofi')
 checkdepends=('check')
