@@ -3,9 +3,9 @@
 
 pkgname=libatasmart
 pkgver=0.19
-pkgrel=6
+pkgrel=7
 pkgdesc='ATA S.M.A.R.T. reader and parser library'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://0pointer.de/blog/projects/being-smart.html'
 license=('LGPL')
 depends=('glibc' 'systemd-libs')
