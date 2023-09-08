@@ -5,9 +5,9 @@
 
 pkgname=giggle
 pkgver=0.7
-pkgrel=11
+pkgrel=12
 pkgdesc='Git repository viewer'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://wiki.gnome.org/Apps/giggle'
 license=(GPL)
 depends=(git gtksourceview3 vte3)
