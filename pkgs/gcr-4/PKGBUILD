@@ -4,10 +4,10 @@
 pkgbase=gcr-4
 pkgname=(gcr-4 gcr-4-docs)
 pkgver=4.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A library for bits of crypto UI and parsing"
 url="https://gitlab.gnome.org/GNOME/gcr"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL2)
 depends=(
   glib2
