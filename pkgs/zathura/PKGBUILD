@@ -6,11 +6,11 @@
 
 pkgname=zathura
 pkgver=0.5.2
-pkgrel=2
+pkgrel=3
 
 pkgdesc="Minimalistic document viewer"
 url="https://pwmt.org/projects/zathura/"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('custom')
 
 makedepends=('python-sphinx' 'texlive-bin' 'meson' 'ninja' 'appstream-glib' 'check')
