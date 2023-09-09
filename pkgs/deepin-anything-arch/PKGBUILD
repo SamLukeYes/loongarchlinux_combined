@@ -2,9 +2,9 @@
 
 pkgname=deepin-anything-arch
 pkgver=6.1.2
-pkgrel=2
+pkgrel=21
 pkgdesc="Deepin Anything file search tool, kernel module for Arch kernel"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://github.com/linuxdeepin/deepin-anything"
 license=('GPL3')
 makedepends=('linux-headers')
