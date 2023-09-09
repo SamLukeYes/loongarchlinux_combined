@@ -6,10 +6,10 @@
 
 pkgname=libtorrent
 pkgver=0.13.8
-pkgrel=3
+pkgrel=4
 pkgdesc='BitTorrent library with a focus on high performance and good code'
 url='https://rakshasa.github.io/rtorrent/'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL')
 depends=('openssl')
 source=("https://github.com/rakshasa/rtorrent/releases/download/v0.9.${pkgver##*.}/${pkgname}-${pkgver}.tar.gz")
