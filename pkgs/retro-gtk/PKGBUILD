@@ -5,9 +5,9 @@
 
 pkgname=retro-gtk
 pkgver=1.0.2
-pkgrel=3
+pkgrel=4
 pkgdesc='Toolkit to write GTK based Libretro frontends'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://gnome.pages.gitlab.gnome.org/retro-gtk/'
 license=('GPL3')
 depends=('gcc-libs' 'gdk-pixbuf2' 'glib2' 'glibc' 'gtk3' 'libepoxy' 'libpulse' 'libsamplerate')
