@@ -1,11 +1,11 @@
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=rime-stroke
-pkgver=0.0.0.20230204
-_commit=c8bc4050d4d667be8f3f4892ab96e4d0881865a4
+pkgver=0.0.0.20230609
+_commit=e6c7608925009636577ff7469eecc870f1de18f3
 pkgrel=1
 pkgdesc="Stroke input for rime"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://github.com/rime/rime-stroke"
 license=('LGPL')
 # dependency for reverse lookup
