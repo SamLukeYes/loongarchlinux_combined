@@ -2,9 +2,9 @@
 
 pkgname=kvirc
 pkgver=5.0.0
-pkgrel=8
+pkgrel=9
 pkgdesc='Qt based IRC client'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='http://kvirc.net/'
 license=('GPL2')
 depends=('enchant' 'hicolor-icon-theme' 'qt5-multimedia' 'qt5-svg' 'qt5-x11extras')
