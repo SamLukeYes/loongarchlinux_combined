@@ -6,9 +6,9 @@
 
 pkgname=('sauerbraten' 'sauerbraten-data')
 pkgver=2020_12_29
-pkgrel=1
+pkgrel=2
 pkgdesc="FPS that uses an improved version of the Cube engine"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="http://www.sauerbraten.org/"
 license=('ZLIB')
 makedepends=('sdl2_mixer' 'sdl2_image' 'mesa-libgl' 'glu')
