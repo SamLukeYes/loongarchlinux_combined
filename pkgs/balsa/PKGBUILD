@@ -5,9 +5,9 @@
 
 pkgname=balsa
 pkgver=2.6.4
-pkgrel=1
+pkgrel=2
 pkgdesc="An e-mail client for GNOME"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://pawsa.fedorapeople.org/balsa/'
 license=('GPL')
 depends=('gmime3' 'webkit2gtk' 'libical' 'libnotify'
