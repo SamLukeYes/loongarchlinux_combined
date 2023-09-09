@@ -5,10 +5,10 @@
 
 pkgname=ncftp
 pkgver=3.2.6
-pkgrel=5
+pkgrel=6
 pkgdesc="A set of free application programs implementing FTP"
 url="https://www.ncftp.com/"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('custom')
 depends=('ncurses')
 source=("ftp://ftp.ncftp.com/ncftp/$pkgname-$pkgver-src.tar.xz"
