@@ -3,9 +3,9 @@
 
 pkgname=reiserfsprogs
 pkgver=3.6.27
-pkgrel=4
+pkgrel=5
 pkgdesc="Reiserfs utilities"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://www.kernel.org/"
 license=('GPL')
 depends=('util-linux')
