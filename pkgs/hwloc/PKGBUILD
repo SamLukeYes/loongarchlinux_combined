@@ -5,10 +5,10 @@
 
 pkgname=hwloc
 pkgver=2.9.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Portable Hardware Locality is a portable abstraction of hierarchical architectures'
 url='https://www.open-mpi.org/projects/hwloc/'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('BSD')
 depends=('glibc' 'libtool' 'systemd-libs' 'libpciaccess')
 makedepends=('cairo' 'libxml2' 'pciutils' 'systemd' 'libx11')
