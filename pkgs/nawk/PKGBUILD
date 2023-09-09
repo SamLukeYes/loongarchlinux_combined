@@ -4,12 +4,12 @@
 
 pkgname=nawk
 pkgver=20220912
-_commit=(9e248c317b88470fc86aa7c988919dc49452c88c) # master
-pkgrel=1
+_commit=9e248c317b88470fc86aa7c988919dc49452c88c # master
+pkgrel=2
 pkgdesc='The one, true implementation of AWK'
 url="https://github.com/onetrueawk/awk"
 license=(custom)
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 options=(!makeflags)
 depends=(glibc)
 makedepends=(git)
