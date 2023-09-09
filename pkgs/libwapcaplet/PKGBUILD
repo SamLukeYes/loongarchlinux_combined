@@ -4,9 +4,9 @@
 
 pkgname=libwapcaplet
 pkgver=0.4.3
-pkgrel=2
+pkgrel=3
 pkgdesc='String internment library with rapid string comparison'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://www.netsurf-browser.org/projects/libwapcaplet/'
 license=(MIT)
 makedepends=(netsurf-buildsystem)
