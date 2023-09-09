@@ -2,9 +2,9 @@
 
 pkgname=regexxer
 pkgver=0.10
-pkgrel=10
+pkgrel=11
 pkgdesc="Interactive search and replace tool for GNOME"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="http://regexxer.sourceforge.net/"
 license=('GPL')
 depends=('gtksourceviewmm')
