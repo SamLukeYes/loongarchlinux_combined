@@ -3,9 +3,9 @@
 
 pkgname=redmine
 pkgver=5.0.5
-pkgrel=1
+pkgrel=2
 pkgdesc="A flexible project management web application written using Ruby on Rails framework."
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://www.redmine.org"
 license=('GPL2')
 depends=('ruby2.7' 'imagemagick' 'libxml2' 'libxslt')
