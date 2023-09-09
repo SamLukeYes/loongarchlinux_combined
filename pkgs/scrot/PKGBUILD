@@ -6,10 +6,10 @@
 
 pkgname=scrot
 pkgver=1.10
-pkgrel=1
+pkgrel=2
 pkgdesc='Simple command-line screenshot utility for X'
 url='https://github.com/resurrecting-open-source-projects/scrot'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('MIT')
 depends=('imlib2' 'libxext' 'libxinerama' 'libxfixes' 'libxcomposite' 'libbsd')
 makedepends=('autoconf-archive')
