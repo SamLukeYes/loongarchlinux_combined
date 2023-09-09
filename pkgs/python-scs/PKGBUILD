@@ -3,11 +3,11 @@
 _pyname=scs
 pkgname=python-$_pyname
 pkgver=3.2.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Splitting Conic Solver'
 url='https://github.com/cvxgrp/scs/'
 license=(MIT)
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 depends=(python-scipy)
 makedepends=(python-build python-installer python-setuptools python-wheel)
 checkdepends=(python-pytest)
