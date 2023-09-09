@@ -2,10 +2,10 @@
 
 pkgname=libudev0-shim
 pkgver=1
-pkgrel=4
+pkgrel=5
 pkgdesc='libudev.so.0 compatibility library for systems with newer udev versions'
 url='https://github.com/archlinux/libudev0-shim'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL')
 provides=('libudev0')
 conflicts=('libudev0')
