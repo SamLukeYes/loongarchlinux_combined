@@ -6,9 +6,9 @@
 
 pkgname=ristretto
 pkgver=0.13.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A fast and lightweight picture viewer for Xfce"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://docs.xfce.org/apps/ristretto/start"
 license=('GPL')
 groups=('xfce4-goodies')
