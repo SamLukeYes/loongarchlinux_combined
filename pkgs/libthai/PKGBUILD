@@ -4,9 +4,9 @@
 
 pkgname=libthai
 pkgver=0.1.29
-pkgrel=3
+pkgrel=4
 pkgdesc='Thai language support library'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://linux.thai.net/projects/libthai'
 license=('LGPL')
 depends=('glibc' 'libdatrie')
