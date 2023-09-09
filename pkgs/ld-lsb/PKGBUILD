@@ -4,9 +4,9 @@
 
 pkgname=ld-lsb
 pkgver=3
-pkgrel=8
+pkgrel=9
 pkgdesc='Faking a Linux Standard Base runtime'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL')
 url="https://www.linuxfoundation.org/"
 depends=('glibc')
