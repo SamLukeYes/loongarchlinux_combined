@@ -4,10 +4,10 @@
 
 pkgname=reprepro
 pkgver=5.4.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Debian package repository producer'
 url="https://salsa.debian.org/debian/reprepro"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL2')
 depends=('db5.3' 'gpgme' 'zlib' 'bzip2' 'xz' 'libarchive' 'libgpg-error')
 source=("https://salsa.debian.org/debian/reprepro/-/archive/reprepro-${pkgver}/reprepro-reprepro-${pkgver}.tar.bz2"
