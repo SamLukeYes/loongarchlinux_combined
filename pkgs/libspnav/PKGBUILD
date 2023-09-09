@@ -4,9 +4,9 @@
 
 pkgname=libspnav
 pkgver=1.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Alternative to the proprietary 3Dconnexion device driver and SDK for their 3D input devices'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://spacenav.sourceforge.net/'
 license=(GPL)
 depends=(libx11)
