@@ -3,9 +3,9 @@
 
 pkgname=nautilus-share
 pkgver=0.7.5
-pkgrel=3
+pkgrel=4
 pkgdesc='Nautilus extension to share folder using Samba'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://git.gnome.org/browse/nautilus-share"
 license=('GPL')
 depends=('nautilus' 'samba')
