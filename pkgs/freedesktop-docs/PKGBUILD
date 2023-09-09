@@ -2,7 +2,7 @@
 
 pkgname=freedesktop-docs
 pkgver=20220526.af8e64a
-pkgrel=1
+pkgrel=2
 pkgdesc="Specifications from freedesktop.org"
 arch=('any')
 url="https://standards.freedesktop.org"
