@@ -2,7 +2,7 @@
 
 pkgname=pinyin-data
 pkgver=0.13.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Pinyin Data for Hanzi"
 arch=('any')
 license=('MIT')
