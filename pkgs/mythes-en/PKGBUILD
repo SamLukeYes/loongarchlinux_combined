@@ -4,7 +4,7 @@ pkgname=mythes-en
 # https://cgit.freedesktop.org/libreoffice/dictionaries/log/en
 _commit=81c820ae2e0f447d3bd71855c3bc7e8912740d11 # last commit "en" subdir - 2022-11-02
 pkgver=20221102
-pkgrel=2
+pkgrel=3
 pkgdesc="English thesaurus"
 arch=('any')
 url="https://wiki.documentfoundation.org/Development/Dictionaries"
