@@ -2,9 +2,9 @@
 
 pkgname=hq
 pkgver=3.1
-pkgrel=2
+pkgrel=3
 pkgdesc='HTML processor inspired by jq'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://github.com/coderobe/hq'
 license=('AGPL3')
 depends=('gcc-libs' 'modest')
