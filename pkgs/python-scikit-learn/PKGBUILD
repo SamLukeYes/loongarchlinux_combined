@@ -4,9 +4,9 @@
 
 pkgname=python-scikit-learn
 pkgver=1.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc='A set of python modules for machine learning and data mining'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://scikit-learn.org'
 _url='https://github.com/scikit-learn/scikit-learn'
 license=(BSD)
