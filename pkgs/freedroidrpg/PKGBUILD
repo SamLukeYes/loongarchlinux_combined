@@ -5,8 +5,8 @@
 pkgname='freedroidrpg'
 pkgdesc="Isometric 3D role playing game taking place in the future, on Earth"
 pkgver=1.0
-pkgrel=1
-arch=('loong64' 'x86_64')
+pkgrel=2
+arch=("loong64" "x86_64")
 url="https://gitlab.com/freedroid/freedroid-src"
 license=('GPL')
 depends=('sdl_mixer' 'sdl_image' 'sdl_gfx' 'libogg' 'libvorbis' 'libgl' 'glu' 'glew' 'hicolor-icon-theme')
