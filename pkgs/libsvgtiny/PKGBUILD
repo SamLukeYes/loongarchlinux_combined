@@ -2,9 +2,9 @@
 
 pkgname=libsvgtiny
 pkgver=0.1.7
-pkgrel=4
+pkgrel=5
 pkgdesc='SVG Tiny library'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://www.netsurf-browser.org/projects/libsvgtiny/'
 license=(MIT)
 makedepends=(netsurf-buildsystem git libwapcaplet libdom gperf)
