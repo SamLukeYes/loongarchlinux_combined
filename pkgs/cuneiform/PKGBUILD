@@ -4,9 +4,9 @@
 
 pkgname=cuneiform
 pkgver=1.1.0
-pkgrel=22
+pkgrel=23
 pkgdesc="Linux port of an OCR system developed in Russia. Supports more than 20 languages"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://launchpad.net/cuneiform-linux"
 license=('BSD')
 depends=('libmagick')
@@ -28,6 +28,10 @@ prepare() {
 }
 
 build() {
+  # this uses malloc_usable_size, which is incompatible with fortification level 3
+  export CFLAGS="${CFLAGS/_FORTIFY_SOURCE=3/_FORTIFY_SOURCE=2}"
+  export CXXFLAGS="${CXXFLAGS/_FORTIFY_SOURCE=3/_FORTIFY_SOURCE=2}"
+
   CFLAGS+=' -fcommon'
   cmake -B build -S $pkgname-linux-$pkgver .. \
     -DCMAKE_INSTALL_PREFIX=/usr
