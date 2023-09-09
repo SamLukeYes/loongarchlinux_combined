@@ -2,9 +2,9 @@
 
 pkgname=scip
 pkgver=8.0.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Solving Constraint Integer Programs'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://www.scipopt.org/'
 license=(Apache)
 depends=(tbb mpfr)
