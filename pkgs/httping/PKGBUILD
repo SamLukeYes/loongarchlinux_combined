@@ -5,10 +5,10 @@
 
 pkgname=httping
 pkgver=2.9
-pkgrel=1
-pkgdesc='A ping-like tool for http-requests'
+pkgrel=2
+pkgdesc='A ping-like tool for HTTP requests'
 url='https://www.vanheusden.com/httping/'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL3')
 depends=('openssl' 'ncurses' 'fftw')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/folkertvanheusden/HTTPing/archive/refs/tags/v${pkgver}.tar.gz")
