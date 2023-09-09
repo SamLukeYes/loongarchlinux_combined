@@ -2,7 +2,7 @@
 
 pkgname=debian-ports-archive-keyring
 pkgver=2023.02.01
-pkgrel=1
+pkgrel=2
 pkgdesc="GnuPG archive keys of the debian-ports archive"
 arch=('any')
 url="https://packages.debian.org/sid/debian-ports-archive-keyring"
