@@ -3,9 +3,9 @@
 pkgbase=ktikz
 pkgname=(ktikz qtikz)
 pkgver=0.13.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Small application helping you to create TikZ diagrams (from the LaTeX pgf package)"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://github.com/fhackenberger/ktikz"
 license=(GPL)
 depends=(poppler-qt5)
