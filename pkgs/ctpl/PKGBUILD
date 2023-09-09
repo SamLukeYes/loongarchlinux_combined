@@ -4,9 +4,9 @@
 
 pkgname=ctpl
 pkgver=0.3.4
-pkgrel=4
+pkgrel=5
 pkgdesc='Template engine library written in C'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://ctpl.tuxfamily.org/'
 license=('GPL')
 depends=('glib2')
