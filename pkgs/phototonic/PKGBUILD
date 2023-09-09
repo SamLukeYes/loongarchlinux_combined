@@ -5,9 +5,9 @@
 
 pkgname=phototonic
 pkgver=2.1
-pkgrel=5
+pkgrel=6
 pkgdesc='Image viewer and organizer built with Qt and Exiv2'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://github.com/oferkv/phototonic/'
 license=('GPL3')
 depends=('exiv2' 'hicolor-icon-theme' 'qt5-imageformats' 'qt5-svg')
