@@ -4,9 +4,9 @@
 
 pkgname=libtheora
 pkgver=1.1.1
-pkgrel=6
+pkgrel=7
 pkgdesc='Standard encoder and decoder library for the Theora video compression format'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url='https://www.theora.org/'
 license=('BSD')
 depends=('glibc' 'libogg')
