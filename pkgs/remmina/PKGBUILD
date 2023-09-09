@@ -4,10 +4,10 @@
 pkgname=remmina
 epoch=1
 pkgver=1.4.31
-pkgrel=1
+pkgrel=2
 pkgdesc="remote desktop client written in GTK+"
 url="https://www.remmina.org/"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('GPL')
 depends=('avahi' 'libgcrypt' 'libssh' 'vte3' 'libsodium' 'libayatana-appindicator' 'libsoup3')
 makedepends=('cmake' 'freerdp' 'libvncserver' 'spice-gtk' 'spice-protocol'
