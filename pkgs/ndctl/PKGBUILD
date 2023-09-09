@@ -2,9 +2,9 @@
 
 pkgname=ndctl
 pkgver=76.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Utility library for managing the libnvdimm (non-volatile memory device) sub-system in the Linux kernel'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://github.com/pmem/ndctl"
 license=('LGPL')
 depends=('iniparser' 'json-c' 'keyutils' 'kmod' 'libtraceevent' 'libtracefs' 'systemd-libs'
