@@ -2,9 +2,9 @@
 
 pkgname=shared_meataxe
 pkgver=1.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A set of programs for working with matrix representations over finite fields"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url="https://users.minet.uni-jena.de/~king/SharedMeatAxe/"
 license=(GPL)
 depends=(glibc)
@@ -17,6 +17,11 @@ build() {
   cd $pkgname-$pkgver
   ./configure --prefix=/usr
   make
+}
+
+check() {
+  cd $pkgname-$pkgver
+  make check
 }
 
 package() {
