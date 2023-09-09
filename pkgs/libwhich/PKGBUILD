@@ -2,9 +2,9 @@
 
 pkgname=libwhich
 pkgver=1.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Like `which`, for dynamic libraries'
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 url='https://github.com/vtjnash/libwhich'
 license=(MIT)
 depends=(glibc)
