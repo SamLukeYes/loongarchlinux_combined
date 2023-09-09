@@ -3,10 +3,10 @@
 
 pkgname=nasm
 pkgver=2.16.01
-pkgrel=1
+pkgrel=2
 pkgdesc='80x86 assembler designed for portability and modularity'
 url='https://www.nasm.us'
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 license=('BSD')
 depends=('glibc')
 makedepends=('perl-font-ttf' 'perl-sort-versions' 'fontconfig' 'adobe-source-sans-pro-fonts'
