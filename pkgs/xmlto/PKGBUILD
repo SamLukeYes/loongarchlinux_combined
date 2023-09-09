@@ -5,9 +5,9 @@
 
 pkgname=xmlto
 pkgver=0.0.28
-pkgrel=4
+pkgrel=5
 pkgdesc="Convert xml to many other formats"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://pagure.io/xmlto/"
 license=('GPL')
 depends=('libxslt')
