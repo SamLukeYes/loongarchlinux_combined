@@ -3,10 +3,10 @@
 
 pkgname=mousetweaks
 pkgver=3.32.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Mouse accessibility enhancements"
 url="https://wiki.gnome.org/Projects/Mousetweaks"
-arch=(loong64 x86_64)
+arch=("loong64" "x86_64")
 license=(GPL3 FDL)
 depends=(libxtst gtk3 gsettings-desktop-schemas)
 makedepends=(python git)
