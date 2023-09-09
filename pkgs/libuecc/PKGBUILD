@@ -3,7 +3,7 @@
 pkgname=libuecc
 arch=("loong64" "x86_64")
 pkgver=7
-pkgrel=3
+pkgrel=4
 pkgdesc="Very small Elliptic Curve Cryptography library"
 makedepends=('cmake')
 depends=('glibc')
