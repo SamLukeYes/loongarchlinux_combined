@@ -2,9 +2,9 @@
 
 pkgname=fishui
 pkgver=0.8
-pkgrel=1
+pkgrel=2
 pkgdesc="GUI library based on QQC2 for Cutefish applications"
-arch=('loong64' 'x86_64')
+arch=("loong64" "x86_64")
 url="https://github.com/cutefishos/fishui"
 license=('GPL')
 depends=('kwindowsystem' 'qt5-declarative' 'qt5-graphicaleffects' 'qt5-quickcontrols2')
