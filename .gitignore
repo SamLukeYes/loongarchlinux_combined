@@ -1,4 +1,6 @@
 pkgs/*/*/
 *.log
 *.tar*
-.SRCINFO
+# .SRCINFO
+
+!pkgs/*/keys
